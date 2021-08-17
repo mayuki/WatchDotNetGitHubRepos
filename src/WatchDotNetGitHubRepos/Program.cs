@@ -14,6 +14,8 @@ namespace ConsoleApp5
 {
     class Program
     {
+        private const string FeedBaseTitle = ".NET related GitHub";
+
         static void Main(string[] args)
         {
             CoconaLiteApp.Run<Program>(args);
@@ -68,7 +70,7 @@ namespace ConsoleApp5
 
             // Consolidated
             {
-                var feed = AtomFeedFormatter.CreateFeed("GitHub Releases", "https://github.com/", allEntries);
+                var feed = AtomFeedFormatter.CreateFeed($"{FeedBaseTitle} Releases", "https://github.com/", allEntries);
                 if (!Directory.Exists(outputDir))
                 {
                     Directory.CreateDirectory(outputDir);
@@ -155,7 +157,7 @@ namespace ConsoleApp5
 
             // Consolidated
             {
-                var feed = AtomFeedFormatter.CreateFeed("GitHub Issues & Pull Requests", "https://github.com/", allEntries);
+                var feed = AtomFeedFormatter.CreateFeed($"{FeedBaseTitle} Issues & Pull Requests", "https://github.com/", allEntries);
                 if (!Directory.Exists(outputDir))
                 {
                     Directory.CreateDirectory(outputDir);
