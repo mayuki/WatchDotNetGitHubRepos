@@ -24,7 +24,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cd WatchDotNetGitHubRepos
+          cd src/WatchDotNetGitHubRepos
           TARGET_REPOS=(
             dotnet/runtime
             dotnet/runtimelab
@@ -37,8 +37,8 @@ jobs:
             dotnet/efcore
             dotnet/installer
           )
-          dotnet run -c Debug --no-build -- issues-and-pull-requests --output-dir ../public/IssuesAndPRs ${TARGET_REPOS[*]}
-          dotnet run -c Debug --no-build -- releases --output-dir ../public/Releases ${TARGET_REPOS[*]}
+          dotnet run -c Debug --no-build -- issues-and-pull-requests --output-dir ../../public/IssuesAndPRs ${TARGET_REPOS[*]}
+          dotnet run -c Debug --no-build -- releases --output-dir ../../public/Releases ${TARGET_REPOS[*]}
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
