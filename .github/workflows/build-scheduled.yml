@@ -1,0 +1,47 @@
+name: Build-Scheduled
+on:
+  push:
+    branches:
+      - master
+      - main
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+jobs:
+  generate:
+    name: Generate Feeds
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '5.0.x'
+      - name: dotnet build
+        run: dotnet build -c Debug
+      - name: dotnet run
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p public/IssuesAndPRs
+          cd ConsoleApp5
+          TARGET_REPOS=(
+            dotnet/runtime
+            dotnet/runtimelab
+            dotnet/sdk
+            dotnet/csharplang
+            dotnet/roslyn
+            dotnet/aspnetcore
+            dotnet/diagnostics
+            dotnet/maui
+            dotnet/efcore
+            dotnet/installer
+          )
+          dotnet run -c Debug --no-build -- issues-and-pull-requests --output-dir ../public/IssuesAndPRs ${TARGET_REPOS[*]}
+          dotnet run -c Debug --no-build -- releases --output-dir ../public/Releases ${TARGET_REPOS[*]}
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
