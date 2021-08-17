@@ -213,7 +213,7 @@ namespace ConsoleApp5
                 <div>
                     {string.Concat(published.Select(x => @$"
                         <article>
-                            <h1><a href=""{Escape(x.Url)}"">{Escape(x.Name)}</a></h1>
+                            <h2><a href=""{Escape(x.Url)}"">{Escape(x.Name)}</a></h2>
                             <div>
                                 {x.DescriptionHTML}
                             </div>
@@ -231,7 +231,7 @@ namespace ConsoleApp5
 
                 return new []
                 {
-                    new XElement("h2", title),
+                    new XElement("h3", title),
                     new XElement("ul",
                         issues.Select(x =>
                             new XElement("li",
@@ -248,7 +248,7 @@ namespace ConsoleApp5
             }
 
             return new XElement("section",
-                new XElement("h1", "Issues"),
+                new XElement("h2", "Issues"),
                 new [] { ("Created", created), ("Closed", closed), ("Updated", updated) }.SelectMany(x => CreateFromIssues(x.Item1, x.Item2.ToArray()))
             );
         }
@@ -260,7 +260,7 @@ namespace ConsoleApp5
 
                 return new[]
                 {
-                    new XElement("h2", title),
+                    new XElement("h3", title),
                     new XElement("ul",
                         pullRequests.Select(x =>
                             new XElement("li",
@@ -277,7 +277,7 @@ namespace ConsoleApp5
             }
 
             return new XElement("section",
-                new XElement("h1", "PullRequests"),
+                new XElement("h2", "PullRequests"),
                 new[] { ("Created", created), ("Merged", merged), ("Updated", updated) }.SelectMany(x => CreateFromPRs(x.Item1, x.Item2.ToArray()))
             );
         }
