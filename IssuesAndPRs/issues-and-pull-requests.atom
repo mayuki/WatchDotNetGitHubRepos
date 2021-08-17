@@ -1,17 +1,35 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>GitHub Issues &amp; Pull Requests</title>
+  <title>.NET related GitHub Issues &amp; Pull Requests</title>
   <link href="https://github.com/" />
-  <updated>2021-08-17T13:42:52Z</updated>
+  <updated>2021-08-17T13:52:10Z</updated>
   <id>https://github.com/</id>
   <entry>
     <title>dotnet/runtime - Issues &amp; Pull Requests - 2021-08-16</title>
     <id>https://github.com/dotnet/runtime#2021-08-16</id>
     <link href="https://github.com/dotnet/runtime" />
-    <updated>2021-08-17T13:42:40Z</updated>
+    <updated>2021-08-17T13:52:03Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h1&gt;Issues&lt;/h1&gt;
   &lt;h2&gt;Updated&lt;/h2&gt;
   &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/57539"&gt;Test failure:JIT/CodeGenBringUpTests/ArrayExc_d/ArrayExc_d.sh #57539&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;arch-x64, os-android, area-Infrastructure, needs further triage, 7.0.0&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/56163"&gt;.NET 6 Android AOT fails on certain folder names #56163&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-Build-mono, 6.0.0&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/57568"&gt;Command line arguments not parsing with section  #57568&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;untriaged&lt;/div&gt;
+    &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/runtime/issues/49215"&gt;OutOfMemoryException at Monitor.ReliableEnterTimeout with plenty free memory available  #49215&lt;/a&gt;
@@ -20,9 +38,9 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/57539"&gt;Test failure:JIT/CodeGenBringUpTests/ArrayExc_d/ArrayExc_d.sh #57539&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/57535"&gt;JIT crash/assert while compiling Grpc.core codebase #57535&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;arch-x64, os-android, area-Infrastructure, needs further triage&lt;/div&gt;
+      &lt;div&gt;area-CodeGen-coreclr, needs further triage, 6.0.0&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -53,24 +71,6 @@
         &lt;a href="https://github.com/dotnet/runtime/issues/57495"&gt;[API Proposal]: RuntimeHelpers.ChangeType&amp;lt;TDelegate&amp;gt;(Delegate) API #57495&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;api-suggestion, untriaged&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/57564"&gt;ObservableCounter is not work  #57564&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;untriaged&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/57554"&gt;EventPipeEventDispatcher throttling. #57554&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-Tracing-coreclr, untriaged&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/53624"&gt;[MacCatalyst][libraries] Test suites flake with App Crash on CI #53624&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-CoreLib-mono, os-maccatalyst, 7.0.0&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;&lt;section&gt;
@@ -157,6 +157,24 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/57445"&gt;[Group 1] Enable nullable annotations for `Microsoft.Extensions.DependencyModel` #57445&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-DependencyModel, new-api-needs-documentation, community-contribution&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/57086"&gt;[mono] Check for additional implemented variant interfaces #57086&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-VM-meta-mono&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/57292"&gt;Use CustomCommand to run runtime tests for mobile targets on helix  #57292&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
         &lt;a href="https://github.com/dotnet/runtime/pull/57277"&gt;Search native code in all R2R ni.dll in version bubble #57277&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;area-crossgen2-coreclr, community-contribution&lt;/div&gt;
@@ -187,21 +205,9 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/57292"&gt;Use CustomCommand to run runtime tests for mobile targets on helix  #57292&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
         &lt;a href="https://github.com/dotnet/runtime/pull/57563"&gt;[main] Update dependencies from dnceng/internal/dotnet-optimization dotnet/arcade dotnet/icu dotnet/llvm-project dotnet/runtime-assets dotnet/msquic #57563&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/57086"&gt;[mono] Check for additional implemented variant interfaces #57086&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-VM-meta-mono&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -299,12 +305,6 @@
       &lt;/div&gt;
       &lt;div&gt;* NO MERGE *, arch-wasm&lt;/div&gt;
     &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/57562"&gt;[release/5.0] Fix ReadOnlySequence created out of sliced Memory owned by MemoryManager #57562&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-System.Memory, 5.0.x&lt;/div&gt;
-    &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;</content>
   </entry>
@@ -312,7 +312,7 @@
     <title>dotnet/runtimelab - Issues &amp; Pull Requests - 2021-08-16</title>
     <id>https://github.com/dotnet/runtimelab#2021-08-16</id>
     <link href="https://github.com/dotnet/runtimelab" />
-    <updated>2021-08-17T13:42:41Z</updated>
+    <updated>2021-08-17T13:52:04Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h1&gt;Issues&lt;/h1&gt;
   &lt;h2&gt;Closed&lt;/h2&gt;
@@ -390,6 +390,12 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtimelab/pull/1425"&gt;NativeAOT-LLVM: merge past the .net tools change from 5 to 6 #1425&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
         &lt;a href="https://github.com/dotnet/runtimelab/pull/1422"&gt;Fix handling of constrained calls on ValueTypes #1422&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;area-NativeAOT&lt;/div&gt;
@@ -407,7 +413,7 @@
     <title>dotnet/sdk - Issues &amp; Pull Requests - 2021-08-16</title>
     <id>https://github.com/dotnet/sdk#2021-08-16</id>
     <link href="https://github.com/dotnet/sdk" />
-    <updated>2021-08-17T13:42:43Z</updated>
+    <updated>2021-08-17T13:52:07Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h1&gt;Issues&lt;/h1&gt;
   &lt;h2&gt;Created&lt;/h2&gt;
@@ -748,7 +754,7 @@
     <title>dotnet/csharplang - Issues &amp; Pull Requests - 2021-08-16</title>
     <id>https://github.com/dotnet/csharplang#2021-08-16</id>
     <link href="https://github.com/dotnet/csharplang" />
-    <updated>2021-08-17T13:42:43Z</updated>
+    <updated>2021-08-17T13:52:07Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h1&gt;Issues&lt;/h1&gt;
   &lt;h2&gt;Closed&lt;/h2&gt;
@@ -807,7 +813,7 @@
     <title>dotnet/roslyn - Issues &amp; Pull Requests - 2021-08-16</title>
     <id>https://github.com/dotnet/roslyn#2021-08-16</id>
     <link href="https://github.com/dotnet/roslyn" />
-    <updated>2021-08-17T13:42:44Z</updated>
+    <updated>2021-08-17T13:52:08Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h1&gt;Issues&lt;/h1&gt;
   &lt;h2&gt;Created&lt;/h2&gt;
@@ -842,18 +848,6 @@
       &lt;/div&gt;
       &lt;div&gt;Area-IDE, Test, Flaky, untriaged&lt;/div&gt;
     &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/55637"&gt;[LSP] Initial semantic tokens should be computed against frozen compilation  #55637&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-IDE, LSP, untriaged&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/55636"&gt;Visual Studio 2022 Changes Refactoring Order #55636&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-IDE, untriaged&lt;/div&gt;
-    &lt;/li&gt;
   &lt;/ul&gt;
   &lt;h2&gt;Closed&lt;/h2&gt;
   &lt;ul&gt;
@@ -872,6 +866,18 @@
   &lt;/ul&gt;
   &lt;h2&gt;Updated&lt;/h2&gt;
   &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/55668"&gt;Switch case after `or` pattern does not match #55668&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Area-Compilers, untriaged&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/55667"&gt;[Nullable] Compiler doesn't consider `Where(x =&amp;gt; x != null)` to be a null check #55667&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Concept-API, Area-Compilers, Feature Request, untriaged&lt;/div&gt;
+    &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/roslyn/issues/55666"&gt;Nullable references checks and params arrays #55666&lt;/a&gt;
@@ -919,18 +925,6 @@
         &lt;a href="https://github.com/dotnet/roslyn/issues/46414"&gt;Flaky test 'InteractiveHostDesktopTests.StackOverflow' #46414&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;Area-Interactive, Test, Flaky, Disabled Test, Backlog&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/53392"&gt;InteractiveHostCoreTests.Stackoverflow #53392&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Bug, Area-Interactive, Test, Disabled Test&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/53391"&gt;Attempt to load System.Runtime reference assembly for execution causes test failure #53391&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-IDE, Test, Flaky, 17.0&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;&lt;section&gt;
@@ -1154,7 +1148,7 @@
     <title>dotnet/aspnetcore - Issues &amp; Pull Requests - 2021-08-16</title>
     <id>https://github.com/dotnet/aspnetcore#2021-08-16</id>
     <link href="https://github.com/dotnet/aspnetcore" />
-    <updated>2021-08-17T13:42:46Z</updated>
+    <updated>2021-08-17T13:52:08Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h1&gt;Issues&lt;/h1&gt;
   &lt;h2&gt;Created&lt;/h2&gt;
@@ -1188,12 +1182,6 @@
         &lt;a href="https://github.com/dotnet/aspnetcore/issues/35410"&gt;dotnet watch stomps over existing hosting startup assemblies #35410&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;area-commandlinetools, feature-dotnetwatch&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/aspnetcore/issues/35381"&gt;Cannot use ASP.NET Core without using Entity Framework. #35381&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-web-frameworks, Discussions&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -1236,6 +1224,12 @@
         &lt;a href="https://github.com/dotnet/aspnetcore/issues/35364"&gt;.Net 6 Preview 7 - Cannot set reponse headers before returning IAsyncEnumerable in controller #35364&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;:heavy_check_mark: Resolution: Answered, Status: Resolved, area-web-frameworks&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/issues/35302"&gt;Blazor AOT .Net6 Preview 7 - Still downloading Dlls #35302&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-blazor, blazor-wasm, feature-blazor-aot-compilation, Discussions&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;&lt;section&gt;
@@ -1334,6 +1328,12 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/pull/35336"&gt;Add ability to modify UseRouting/UseEndpoint behavior for WebApplicationBuilder  #35336&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-runtime, feature-minimal-hosting, area-web-frameworks&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
         &lt;a href="https://github.com/dotnet/aspnetcore/pull/35414"&gt;E2E test fixes #35414&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
@@ -1361,12 +1361,6 @@
         &lt;a href="https://github.com/dotnet/aspnetcore/pull/35133"&gt;Fixes for internal runtime usage in build and PRs #35133&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;area-infrastructure&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/aspnetcore/pull/35336"&gt;Add ability to modify UseRouting/UseEndpoint behavior for WebApplicationBuilder  #35336&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-runtime, feature-minimal-hosting, area-web-frameworks&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -1435,7 +1429,7 @@
     <title>dotnet/diagnostics - Issues &amp; Pull Requests - 2021-08-16</title>
     <id>https://github.com/dotnet/diagnostics#2021-08-16</id>
     <link href="https://github.com/dotnet/diagnostics" />
-    <updated>2021-08-17T13:42:47Z</updated>
+    <updated>2021-08-17T13:52:09Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h1&gt;Issues&lt;/h1&gt;
   &lt;h2&gt;Updated&lt;/h2&gt;
@@ -1500,7 +1494,7 @@
     <title>dotnet/maui - Issues &amp; Pull Requests - 2021-08-16</title>
     <id>https://github.com/dotnet/maui#2021-08-16</id>
     <link href="https://github.com/dotnet/maui" />
-    <updated>2021-08-17T13:42:47Z</updated>
+    <updated>2021-08-17T13:52:09Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h1&gt;Issues&lt;/h1&gt;
   &lt;h2&gt;Created&lt;/h2&gt;
@@ -1680,6 +1674,12 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/maui/pull/2130"&gt;Add UseMaui project capability #2130&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
         &lt;a href="https://github.com/dotnet/maui/pull/2043"&gt;[release/6.0.1xx-preview7] Update dependencies from xamarin/xamarin-macios #2043&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
@@ -1707,12 +1707,6 @@
         &lt;a href="https://github.com/dotnet/maui/pull/2127"&gt;Fix Failing Android API 30 Device Tests (only on CI) #2127&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;6.0.100-rc.1&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/pull/2130"&gt;Add UseMaui project capability #2130&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -1757,7 +1751,7 @@
     <title>dotnet/efcore - Issues &amp; Pull Requests - 2021-08-16</title>
     <id>https://github.com/dotnet/efcore#2021-08-16</id>
     <link href="https://github.com/dotnet/efcore" />
-    <updated>2021-08-17T13:42:50Z</updated>
+    <updated>2021-08-17T13:52:09Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h1&gt;Issues&lt;/h1&gt;
   &lt;h2&gt;Created&lt;/h2&gt;
@@ -1783,6 +1777,12 @@
   &lt;/ul&gt;
   &lt;h2&gt;Updated&lt;/h2&gt;
   &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/25551"&gt;Operation on Entities without code dublication #25551&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;customer-reported&lt;/div&gt;
+    &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/efcore/issues/25486"&gt;EntityFrameworkCore.Internal.LazyLoader using lots of memory #25486&lt;/a&gt;
@@ -1836,12 +1836,6 @@
         &lt;a href="https://github.com/dotnet/efcore/issues/25499"&gt;Breaking Change - Not truncating/rounding decimals after upgrade to EF Core 5, Out of Range Exception #25499&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;customer-reported&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/23830"&gt;EF Core 5 Table Valued Functions Unable to translate collection subquery in projection since the parent query doesn't project key columns of all Exception #23830&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;type-enhancement, needs-design, customer-reported, area-query, punted-for-6.0, Backlog&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;&lt;section&gt;
@@ -1927,7 +1921,7 @@
     <title>dotnet/installer - Issues &amp; Pull Requests - 2021-08-16</title>
     <id>https://github.com/dotnet/installer#2021-08-16</id>
     <link href="https://github.com/dotnet/installer" />
-    <updated>2021-08-17T13:42:52Z</updated>
+    <updated>2021-08-17T13:52:10Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h1&gt;Issues&lt;/h1&gt;
   &lt;h2&gt;Created&lt;/h2&gt;
@@ -1997,6 +1991,12 @@
   &lt;/ul&gt;
   &lt;h2&gt;Updated&lt;/h2&gt;
   &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/installer/pull/11558"&gt;[main] Update dependencies from dotnet/sdk #11558&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/installer/pull/11483"&gt;[ArPow] Add installer repo to tarball #11483&lt;/a&gt;

@@ -1,17 +1,35 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/runtime - Issues &amp; Pull Requests</title>
   <link href="https://github.com/dotnet/runtime" />
-  <updated>2021-08-17T13:42:40Z</updated>
+  <updated>2021-08-17T13:52:03Z</updated>
   <id>https://github.com/dotnet/runtime</id>
   <entry>
     <title>dotnet/runtime - Issues &amp; Pull Requests - 2021-08-16</title>
     <id>https://github.com/dotnet/runtime#2021-08-16</id>
     <link href="https://github.com/dotnet/runtime" />
-    <updated>2021-08-17T13:42:40Z</updated>
+    <updated>2021-08-17T13:52:03Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h1&gt;Issues&lt;/h1&gt;
   &lt;h2&gt;Updated&lt;/h2&gt;
   &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/57539"&gt;Test failure:JIT/CodeGenBringUpTests/ArrayExc_d/ArrayExc_d.sh #57539&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;arch-x64, os-android, area-Infrastructure, needs further triage, 7.0.0&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/56163"&gt;.NET 6 Android AOT fails on certain folder names #56163&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-Build-mono, 6.0.0&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/57568"&gt;Command line arguments not parsing with section  #57568&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;untriaged&lt;/div&gt;
+    &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/runtime/issues/49215"&gt;OutOfMemoryException at Monitor.ReliableEnterTimeout with plenty free memory available  #49215&lt;/a&gt;
@@ -20,9 +38,9 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/57539"&gt;Test failure:JIT/CodeGenBringUpTests/ArrayExc_d/ArrayExc_d.sh #57539&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/57535"&gt;JIT crash/assert while compiling Grpc.core codebase #57535&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;arch-x64, os-android, area-Infrastructure, needs further triage&lt;/div&gt;
+      &lt;div&gt;area-CodeGen-coreclr, needs further triage, 6.0.0&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -53,24 +71,6 @@
         &lt;a href="https://github.com/dotnet/runtime/issues/57495"&gt;[API Proposal]: RuntimeHelpers.ChangeType&amp;lt;TDelegate&amp;gt;(Delegate) API #57495&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;api-suggestion, untriaged&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/57564"&gt;ObservableCounter is not work  #57564&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;untriaged&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/57554"&gt;EventPipeEventDispatcher throttling. #57554&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-Tracing-coreclr, untriaged&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/53624"&gt;[MacCatalyst][libraries] Test suites flake with App Crash on CI #53624&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-CoreLib-mono, os-maccatalyst, 7.0.0&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;&lt;section&gt;
@@ -157,6 +157,24 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/57445"&gt;[Group 1] Enable nullable annotations for `Microsoft.Extensions.DependencyModel` #57445&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-DependencyModel, new-api-needs-documentation, community-contribution&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/57086"&gt;[mono] Check for additional implemented variant interfaces #57086&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-VM-meta-mono&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/57292"&gt;Use CustomCommand to run runtime tests for mobile targets on helix  #57292&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
         &lt;a href="https://github.com/dotnet/runtime/pull/57277"&gt;Search native code in all R2R ni.dll in version bubble #57277&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;area-crossgen2-coreclr, community-contribution&lt;/div&gt;
@@ -187,21 +205,9 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/57292"&gt;Use CustomCommand to run runtime tests for mobile targets on helix  #57292&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
         &lt;a href="https://github.com/dotnet/runtime/pull/57563"&gt;[main] Update dependencies from dnceng/internal/dotnet-optimization dotnet/arcade dotnet/icu dotnet/llvm-project dotnet/runtime-assets dotnet/msquic #57563&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/57086"&gt;[mono] Check for additional implemented variant interfaces #57086&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-VM-meta-mono&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -298,12 +304,6 @@
         &lt;a href="https://github.com/dotnet/runtime/pull/54011"&gt;[WASM] Enabled strict mode on all JS files #54011&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;* NO MERGE *, arch-wasm&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/57562"&gt;[release/5.0] Fix ReadOnlySequence created out of sliced Memory owned by MemoryManager #57562&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-System.Memory, 5.0.x&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;</content>
