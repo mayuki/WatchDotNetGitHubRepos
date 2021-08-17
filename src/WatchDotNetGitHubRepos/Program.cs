@@ -14,6 +14,7 @@ namespace ConsoleApp5
 {
     class Program
     {
+        private const string FeedSiteUrl = "https://github.com/mayuki/WatchDotNetGitHubRepos";
         private const string FeedBaseTitle = ".NET related GitHub";
 
         static void Main(string[] args)
@@ -70,7 +71,7 @@ namespace ConsoleApp5
 
             // Consolidated
             {
-                var feed = AtomFeedFormatter.CreateFeed($"{FeedBaseTitle} Releases", "https://github.com/", allEntries);
+                var feed = AtomFeedFormatter.CreateFeed($"{FeedBaseTitle} Releases", FeedSiteUrl, allEntries);
                 if (!Directory.Exists(outputDir))
                 {
                     Directory.CreateDirectory(outputDir);
@@ -157,7 +158,7 @@ namespace ConsoleApp5
 
             // Consolidated
             {
-                var feed = AtomFeedFormatter.CreateFeed($"{FeedBaseTitle} Issues & Pull Requests", "https://github.com/", allEntries);
+                var feed = AtomFeedFormatter.CreateFeed($"{FeedBaseTitle} Issues & Pull Requests", FeedSiteUrl, allEntries);
                 if (!Directory.Exists(outputDir))
                 {
                     Directory.CreateDirectory(outputDir);
