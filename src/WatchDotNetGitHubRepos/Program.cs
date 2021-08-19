@@ -247,6 +247,11 @@ namespace WatchDotNetGitHubRepos
                 };
             }
 
+            if (!updated.Any() && !created.Any() && !closed.Any())
+            {
+                return new XElement("div");
+            }
+
             return new XElement("section",
                 new XElement("h2", "Issues"),
                 new [] { ("Created", created), ("Closed", closed), ("Updated", updated) }.SelectMany(x => CreateFromIssues(x.Item1, x.Item2.ToArray()))
@@ -274,6 +279,11 @@ namespace WatchDotNetGitHubRepos
                         )
                     )
                 };
+            }
+
+            if (!updated.Any() && !created.Any() && !merged.Any())
+            {
+                return new XElement("div");
             }
 
             return new XElement("section",
