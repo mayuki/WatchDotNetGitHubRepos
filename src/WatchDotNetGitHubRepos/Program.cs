@@ -113,11 +113,11 @@ namespace ConsoleApp5
                     closedIssuesTask
                 );
 
-                var updatedIssues = updatedIssuesTask.Result.Repository.Issues.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.UpdatedAt).ToArray(); // Yesterday and Today
                 var createdIssues = createdIssuesTask.Result.Repository.Issues.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.CreatedAt && x.CreatedAt < beginOfToday).ToArray(); // Yesterday
+                var updatedIssues = updatedIssuesTask.Result.Repository.Issues.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.UpdatedAt && !createdIssues.Contains(x)).ToArray(); // Yesterday and Today
                 var closedIssues = closedIssuesTask.Result.Repository.Issues.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.ClosedAt && x.ClosedAt < beginOfToday).ToArray(); // Yesterday
-                var updatedPRs = updatedPRsTask.Result.Repository.PullRequests.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.UpdatedAt).ToArray(); // Yesterday and Today
                 var createdPRs = createdPRsTask.Result.Repository.PullRequests.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.CreatedAt && x.CreatedAt < beginOfToday).ToArray(); // Yesterday
+                var updatedPRs = updatedPRsTask.Result.Repository.PullRequests.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.UpdatedAt && !createdPRs.Contains(x)).ToArray(); // Yesterday and Today
                 var mergedPRs = mergedPRsTask.Result.Repository.PullRequests.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.MergedAt && x.MergedAt < beginOfToday).ToArray(); // Yesterday
 
                 var title = $"{owner}/{repository} - Issues & Pull Requests";
@@ -292,6 +292,7 @@ namespace ConsoleApp5
                 releases(first: 10, orderBy: {field: CREATED_AT, direction: DESC}) {
                   edges {
                     node {
+                      id
                       url
                       name
                       publishedAt
@@ -310,6 +311,7 @@ namespace ConsoleApp5
                 issues(first: 10, orderBy: {field: $orderField, direction: DESC}, states: $issueState) {
                   edges {
                     node {
+                      id
                       title
                       url
                       number
@@ -336,6 +338,7 @@ namespace ConsoleApp5
                 pullRequests(first: 25, orderBy: {field: $orderField, direction: DESC}, states: $prState) {
                   edges {
                     node {
+                      id
                       title
                       url
                       number
@@ -345,7 +348,7 @@ namespace ConsoleApp5
                       labels(first: 10) {
                         edges {
                           node {
-                	          name
+                            name
                           }
                         }
                       }

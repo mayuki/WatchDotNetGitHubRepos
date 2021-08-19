@@ -79,8 +79,9 @@ namespace ConsoleApp5
         public EdgesType<Release> Releases { get; set; }
     }
 
-    public class Release
+    public class Release : IEquatable<Release>
     {
+        public string Id { get; set; }
         public string Name { get; set; }
         public string Url { get; set; }
         public bool IsPrerelease { get; set; }
@@ -90,10 +91,31 @@ namespace ConsoleApp5
         public DateTimeOffset CreatedAt { get; set; }
         public DateTimeOffset UpdatedAt { get; set; }
         public DateTimeOffset PublishedAt { get; set; }
+
+        public bool Equals(Release other)
+        {
+            if (ReferenceEquals(null, other)) return false;
+            if (ReferenceEquals(this, other)) return true;
+            return Id == other.Id;
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((Release)obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return (Id != null ? Id.GetHashCode() : 0);
+        }
     }
 
-    public class Issue
+    public class Issue : IEquatable<Issue>
     {
+        public string Id { get; set; }
         public string Title { get; set; }
         public string Url { get; set; }
         public int Number { get; set; }
@@ -105,11 +127,32 @@ namespace ConsoleApp5
 
         public override string ToString()
             => $"{Title} #{Number}";
+
+        public bool Equals(Issue other)
+        {
+            if (ReferenceEquals(null, other)) return false;
+            if (ReferenceEquals(this, other)) return true;
+            return Id == other.Id;
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((Issue)obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return (Id != null ? Id.GetHashCode() : 0);
+        }
     }
 
 
-    public class PullRequest
+    public class PullRequest : IEquatable<PullRequest>
     {
+        public string Id { get; set; }
         public string Title { get; set; }
         public string Url { get; set; }
         public int Number { get; set; }
@@ -121,6 +164,26 @@ namespace ConsoleApp5
 
         public override string ToString()
             => $"{Title} #{Number}";
+
+        public bool Equals(PullRequest other)
+        {
+            if (ReferenceEquals(null, other)) return false;
+            if (ReferenceEquals(this, other)) return true;
+            return Id == other.Id;
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((PullRequest)obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return (Id != null ? Id.GetHashCode() : 0);
+        }
     }
 
     public class Milestone
