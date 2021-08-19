@@ -10,7 +10,7 @@ using GraphQL;
 using GraphQL.Client.Http;
 using GraphQL.Client.Serializer.SystemTextJson;
 
-namespace ConsoleApp5
+namespace WatchDotNetGitHubRepos
 {
     class Program
     {

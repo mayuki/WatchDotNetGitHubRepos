@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp5
+namespace WatchDotNetGitHubRepos
 {
     /// <summary>
     /// The possible states of an issue.
