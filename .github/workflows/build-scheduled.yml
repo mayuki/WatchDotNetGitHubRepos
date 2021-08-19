@@ -38,8 +38,31 @@ jobs:
             dotnet/efcore
             dotnet/installer
           )
+          RELEASE_WATCH_REPOS=(
+            autofac/Autofac
+            domaindrivendev/Swashbuckle.AspNetCore
+            dotnet/command-line-api
+            fluentassertions/fluentassertions
+            grpc/grpc
+            grpc/grpc-dotnet
+            icsharpcode/ILSpy
+            jbogard/MediatR
+            microsoft/CsWin32
+            mysql-net/MySqlConnector
+            neuecc/MessagePack-CSharp
+            npgsql/npgsql
+            unoplatform/uno
+            App-vNext/Polly
+            AutoMapper/AutoMapper
+            AvaloniaUI/Avalonia
+            FluentValidation/FluentValidation
+            JamesNK/Newtonsoft.Json
+            JoshClose/CsvHelper
+            StackExchange/StackExchange.Redis
+            Tyrrrz/CliFx
+          )
           dotnet run -c Debug --no-build -- issues-and-pull-requests --output-dir ../../public/IssuesAndPRs ${TARGET_REPOS[*]}
-          dotnet run -c Debug --no-build -- releases --output-dir ../../public/Releases ${TARGET_REPOS[*]}
+          dotnet run -c Debug --no-build -- releases --output-dir ../../public/Releases ${TARGET_REPOS[*]} ${RELEASE_WATCH_REPOS[*]}
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
