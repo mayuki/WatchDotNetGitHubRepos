@@ -1,13 +1,13 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Issues &amp; Pull Requests</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2021-08-19T10:51:09Z</updated>
+  <updated>2021-08-19T11:27:23Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
     <title>dotnet/announcements - Issues &amp; Pull Requests - 2021-08-18</title>
     <id>https://github.com/dotnet/announcements#2021-08-18</id>
     <link href="https://github.com/dotnet/announcements" />
-    <updated>2021-08-19T10:50:47Z</updated>
+    <updated>2021-08-19T11:26:58Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
@@ -25,7 +25,7 @@
     <title>dotnet/runtime - Issues &amp; Pull Requests - 2021-08-18</title>
     <id>https://github.com/dotnet/runtime#2021-08-18</id>
     <link href="https://github.com/dotnet/runtime" />
-    <updated>2021-08-19T10:50:49Z</updated>
+    <updated>2021-08-19T11:27:00Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
@@ -368,15 +368,39 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/56478"&gt;System.Net.Security test run killed on Mono Linux #56478&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/55815"&gt;[QUIC] MsQuicStream ctor code shuffles #55815&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;area-System.Net.Security, test-run-core, untriaged, runtime-mono&lt;/div&gt;
+      &lt;div&gt;area-System.Net.Quic, in pr, 6.0.0&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/57723"&gt;Blazor WASM CurrentInfo DateTimeFormat GetMonthName doesn't return the correct result .NET 5 #57723&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-System.Globalization, untriaged&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/43686"&gt;System.Net test suites crashing in CI on OSX #43686&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-System.Net.Security, os-mac-os-x, test bug, test-run-core, 7.0.0&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/runtime/issues/57722"&gt;Assertion failed: OpenSsl error queue is not empty #57722&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;area-System.Net.Security, test-run-core, untriaged&lt;/div&gt;
+      &lt;div&gt;area-System.Net.Security, os-linux, test-run-core, untriaged&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/53432"&gt;Is current FileMode.Append implementation optimal? #53432&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-System.IO, in pr, 7.0.0&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/56478"&gt;System.Net.Security test run killed on Mono Linux #56478&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-System.Net.Security, test-run-core, untriaged, runtime-mono&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -840,30 +864,6 @@
       &lt;/div&gt;
       &lt;div&gt;User Story, area-System.Net.Quic, 7.0.0&lt;/div&gt;
     &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/57604"&gt;HttpClient deflate decompression error #57604&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-System.Net.Http, 6.0.0&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/57542"&gt;Symbols for crossgen2 are not indexed #57542&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-crossgen2-coreclr, 6.0.0&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/56864"&gt;System.Text.Json source generator does not handle reference types with design time custom converter properly #56864&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-System.Text.Json, blocking-release, 6.0.0&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/53895"&gt;Proposal: GC.RegisterMemoryPressureCallback #53895&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;api-suggestion, area-GC-coreclr, Future&lt;/div&gt;
-    &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;&lt;section&gt;
   &lt;h2&gt;PullRequests&lt;/h2&gt;
@@ -1213,9 +1213,21 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/57721"&gt;[release/6.0-rc1] Bump timeout for workloads build job #57721&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/57715"&gt;Minor stress improvement #57715&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;area-Infrastructure-mono&lt;/div&gt;
+      &lt;div&gt;area-System.Net.Http&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/55465"&gt;Use O_APPEND and FILE_APPEND_DATA to allow for atomic file appends #55465&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-System.IO&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/55327"&gt;FileStream.Unix: improve DeleteOnClose when FileShare.None. #55327&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-System.IO, community-contribution, 7.0.0&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -1225,15 +1237,15 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/57561"&gt;Validate CompressionLevel value is defined in BrotliStream ctor #57561&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/57721"&gt;[release/6.0-rc1] Bump timeout for workloads build job #57721&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;area-System.IO.Compression, breaking-change, needs-breaking-change-doc-created, community-contribution, 7.0.0&lt;/div&gt;
+      &lt;div&gt;area-Infrastructure-mono&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/57715"&gt;Minor stress improvement #57715&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/57561"&gt;Validate CompressionLevel value is defined in BrotliStream ctor #57561&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;area-System.Net.Http&lt;/div&gt;
+      &lt;div&gt;area-System.IO.Compression, breaking-change, needs-breaking-change-doc-created, community-contribution, 7.0.0&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -1252,12 +1264,6 @@
         &lt;a href="https://github.com/dotnet/runtime/pull/57718"&gt;cache SystemPageSize #57718&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;area-System.Runtime, 7.0.0&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/55327"&gt;FileStream.Unix: improve DeleteOnClose when FileShare.None. #55327&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-System.IO, community-contribution, 7.0.0&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -1452,7 +1458,7 @@
     <title>dotnet/runtimelab - Issues &amp; Pull Requests - 2021-08-18</title>
     <id>https://github.com/dotnet/runtimelab#2021-08-18</id>
     <link href="https://github.com/dotnet/runtimelab" />
-    <updated>2021-08-19T10:50:50Z</updated>
+    <updated>2021-08-19T11:27:02Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
@@ -1544,7 +1550,7 @@
     <title>dotnet/sdk - Issues &amp; Pull Requests - 2021-08-18</title>
     <id>https://github.com/dotnet/sdk#2021-08-18</id>
     <link href="https://github.com/dotnet/sdk" />
-    <updated>2021-08-19T10:50:53Z</updated>
+    <updated>2021-08-19T11:27:04Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
@@ -2150,6 +2156,12 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/19872"&gt;[release/6.0.1xx-rc1] Update dependencies from dotnet/templating #19872&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
         &lt;a href="https://github.com/dotnet/sdk/pull/19870"&gt;[main] Update dependencies from dotnet/templating #19870&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
@@ -2209,11 +2221,17 @@
     <title>dotnet/csharplang - Issues &amp; Pull Requests - 2021-08-18</title>
     <id>https://github.com/dotnet/csharplang#2021-08-18</id>
     <link href="https://github.com/dotnet/csharplang" />
-    <updated>2021-08-19T10:50:53Z</updated>
+    <updated>2021-08-19T11:27:05Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Updated&lt;/h3&gt;
   &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/csharplang/issues/3630"&gt;[Proposal] Required Properties #3630&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Proposal, Proposal champion, Working Set&lt;/div&gt;
+    &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/csharplang/issues/4436"&gt;[Proposal]: Static abstract members in interfaces #4436&lt;/a&gt;
@@ -2223,12 +2241,6 @@
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/csharplang/issues/4304"&gt;[Proposal]: Raw string literal #4304&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Proposal, Proposal champion, Working Set&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/csharplang/issues/3630"&gt;[Proposal] Required Properties #3630&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;Proposal, Proposal champion, Working Set&lt;/div&gt;
     &lt;/li&gt;
@@ -2280,7 +2292,7 @@
     <title>dotnet/roslyn - Issues &amp; Pull Requests - 2021-08-18</title>
     <id>https://github.com/dotnet/roslyn#2021-08-18</id>
     <link href="https://github.com/dotnet/roslyn" />
-    <updated>2021-08-19T10:51:00Z</updated>
+    <updated>2021-08-19T11:27:12Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
@@ -2873,7 +2885,7 @@
     <title>dotnet/aspnetcore - Issues &amp; Pull Requests - 2021-08-18</title>
     <id>https://github.com/dotnet/aspnetcore#2021-08-18</id>
     <link href="https://github.com/dotnet/aspnetcore" />
-    <updated>2021-08-19T10:51:02Z</updated>
+    <updated>2021-08-19T11:27:15Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
@@ -3628,7 +3640,7 @@
     <title>dotnet/diagnostics - Issues &amp; Pull Requests - 2021-08-18</title>
     <id>https://github.com/dotnet/diagnostics#2021-08-18</id>
     <link href="https://github.com/dotnet/diagnostics" />
-    <updated>2021-08-19T10:51:04Z</updated>
+    <updated>2021-08-19T11:27:16Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
@@ -3696,7 +3708,7 @@
     <title>dotnet/maui - Issues &amp; Pull Requests - 2021-08-18</title>
     <id>https://github.com/dotnet/maui#2021-08-18</id>
     <link href="https://github.com/dotnet/maui" />
-    <updated>2021-08-19T10:51:05Z</updated>
+    <updated>2021-08-19T11:27:17Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
@@ -4007,7 +4019,7 @@
     <title>dotnet/efcore - Issues &amp; Pull Requests - 2021-08-18</title>
     <id>https://github.com/dotnet/efcore#2021-08-18</id>
     <link href="https://github.com/dotnet/efcore" />
-    <updated>2021-08-19T10:51:08Z</updated>
+    <updated>2021-08-19T11:27:20Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
@@ -4354,7 +4366,7 @@
     <title>dotnet/installer - Issues &amp; Pull Requests - 2021-08-18</title>
     <id>https://github.com/dotnet/installer#2021-08-18</id>
     <link href="https://github.com/dotnet/installer" />
-    <updated>2021-08-19T10:51:09Z</updated>
+    <updated>2021-08-19T11:27:23Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Updated&lt;/h3&gt;
