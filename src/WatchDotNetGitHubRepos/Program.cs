@@ -297,9 +297,9 @@ namespace WatchDotNetGitHubRepos
     {
         // https://docs.github.com/en/graphql/overview/explorer
         const string Query = @"
-            query GetReleases($repository: String!, $owner: String!) {
+            query GetReleases($repository: String!, $owner: String!, $count: Int) {
               repository(name: $repository, owner: $owner) {
-                releases(first: 10, orderBy: {field: CREATED_AT, direction: DESC}) {
+                releases(first: $count, orderBy: {field: CREATED_AT, direction: DESC}) {
                   edges {
                     node {
                       id
@@ -316,9 +316,9 @@ namespace WatchDotNetGitHubRepos
                 }
               }
             }
-            query GetIssues($repository: String!, $owner: String!, $orderField: IssueOrderField!, $issueState: [IssueState!]) {
+            query GetIssues($repository: String!, $owner: String!, $orderField: IssueOrderField!, $issueState: [IssueState!], $count: Int) {
               repository(name: $repository, owner: $owner) {
-                issues(first: 10, orderBy: {field: $orderField, direction: DESC}, states: $issueState) {
+                issues(first: $count, orderBy: {field: $orderField, direction: DESC}, states: $issueState) {
                   edges {
                     node {
                       id
@@ -343,9 +343,9 @@ namespace WatchDotNetGitHubRepos
                 }
               }
             }
-            query GetPullRequests($repository: String!, $owner: String!, $orderField: IssueOrderField!, $prState: [PullRequestState!]) {
+            query GetPullRequests($repository: String!, $owner: String!, $orderField: IssueOrderField!, $prState: [PullRequestState!], $count: Int) {
               repository(name: $repository, owner: $owner) {
-                pullRequests(first: 25, orderBy: {field: $orderField, direction: DESC}, states: $prState) {
+                pullRequests(first: $count, orderBy: {field: $orderField, direction: DESC}, states: $prState) {
                   edges {
                     node {
                       id
@@ -372,6 +372,8 @@ namespace WatchDotNetGitHubRepos
             }
         ";
 
+        private const int MaxFetchCount = 100;
+
         public static async Task<RepositoryQueryResponse> GetReleases(string owner, string repository)
         {
             var graphQLClient = new GraphQLHttpClient("https://api.github.com/graphql", new SystemTextJsonSerializer());
@@ -385,6 +387,7 @@ namespace WatchDotNetGitHubRepos
                 {
                     owner = owner,
                     repository = repository,
+                    count = MaxFetchCount,
                 }
             });
 
@@ -406,6 +409,7 @@ namespace WatchDotNetGitHubRepos
                     repository = repository,
                     orderField = orderField,
                     prState = prState,
+                    count = MaxFetchCount,
                 }
             });
 
@@ -426,6 +430,7 @@ namespace WatchDotNetGitHubRepos
                     repository = repository,
                     orderField = orderField,
                     issueState = issueState,
+                    count = MaxFetchCount,
                 }
             });
 
