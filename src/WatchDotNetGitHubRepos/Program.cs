@@ -9,6 +9,8 @@ using Cocona;
 using GraphQL;
 using GraphQL.Client.Http;
 using GraphQL.Client.Serializer.SystemTextJson;
+using Polly;
+using Polly.Retry;
 
 namespace WatchDotNetGitHubRepos
 {
@@ -96,29 +98,20 @@ namespace WatchDotNetGitHubRepos
                 var (owner, repository) = (parts[0], parts[1]);
 
                 Console.WriteLine($"Fetching Issues / PullRequests of {owner}/{repository} ({beginOfYesterday})");
-                var updatedPRsTask = Queries.GetPullRequestsAsync(owner, repository, IssueOrderField.UPDATED_AT, PullRequestState.OPEN);
-                var createdPRsTask = Queries.GetPullRequestsAsync(owner, repository, IssueOrderField.CREATED_AT, PullRequestState.OPEN);
-                var mergedPRsTask = Queries.GetPullRequestsAsync(owner, repository, IssueOrderField.UPDATED_AT, PullRequestState.MERGED);
+                var fetchedUpdatedPRs = await Queries.GetPullRequestsAsync(owner, repository, IssueOrderField.UPDATED_AT, PullRequestState.OPEN);
+                var fetchedCreatedPRs = await Queries.GetPullRequestsAsync(owner, repository, IssueOrderField.CREATED_AT, PullRequestState.OPEN);
+                var fetchedMergedPRs = await Queries.GetPullRequestsAsync(owner, repository, IssueOrderField.UPDATED_AT, PullRequestState.MERGED);
 
-                var updatedIssuesTask = Queries.GetIssuesAsync(owner, repository, IssueOrderField.UPDATED_AT, IssueState.OPEN);
-                var createdIssuesTask = Queries.GetIssuesAsync(owner, repository, IssueOrderField.CREATED_AT, IssueState.OPEN);
-                var closedIssuesTask = Queries.GetIssuesAsync(owner, repository, IssueOrderField.UPDATED_AT, IssueState.CLOSED);
+                var fetchedUpdatedIssues = await Queries.GetIssuesAsync(owner, repository, IssueOrderField.UPDATED_AT, IssueState.OPEN);
+                var fetchedCreatedIssues = await Queries.GetIssuesAsync(owner, repository, IssueOrderField.CREATED_AT, IssueState.OPEN);
+                var fetchedClosedIssues = await Queries.GetIssuesAsync(owner, repository, IssueOrderField.UPDATED_AT, IssueState.CLOSED);
 
-                await Task.WhenAll(
-                    updatedPRsTask,
-                    createdPRsTask,
-                    mergedPRsTask,
-                    updatedIssuesTask,
-                    createdIssuesTask,
-                    closedIssuesTask
-                );
-
-                var createdIssues = createdIssuesTask.Result.Repository.Issues.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.CreatedAt && x.CreatedAt < beginOfToday).ToArray(); // Yesterday
-                var updatedIssues = updatedIssuesTask.Result.Repository.Issues.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.UpdatedAt && !createdIssues.Contains(x)).ToArray(); // Yesterday and Today
-                var closedIssues = closedIssuesTask.Result.Repository.Issues.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.ClosedAt && x.ClosedAt < beginOfToday).ToArray(); // Yesterday
-                var createdPRs = createdPRsTask.Result.Repository.PullRequests.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.CreatedAt && x.CreatedAt < beginOfToday).ToArray(); // Yesterday
-                var updatedPRs = updatedPRsTask.Result.Repository.PullRequests.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.UpdatedAt && !createdPRs.Contains(x)).ToArray(); // Yesterday and Today
-                var mergedPRs = mergedPRsTask.Result.Repository.PullRequests.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.MergedAt && x.MergedAt < beginOfToday).ToArray(); // Yesterday
+                var createdIssues = fetchedCreatedIssues.Repository.Issues.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.CreatedAt && x.CreatedAt < beginOfToday).ToArray(); // Yesterday
+                var updatedIssues = fetchedUpdatedIssues.Repository.Issues.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.UpdatedAt && !createdIssues.Contains(x)).ToArray(); // Yesterday and Today
+                var closedIssues = fetchedClosedIssues.Repository.Issues.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.ClosedAt && x.ClosedAt < beginOfToday).ToArray(); // Yesterday
+                var createdPRs = fetchedCreatedPRs.Repository.PullRequests.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.CreatedAt && x.CreatedAt < beginOfToday).ToArray(); // Yesterday
+                var updatedPRs = fetchedUpdatedPRs.Repository.PullRequests.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.UpdatedAt && !createdPRs.Contains(x)).ToArray(); // Yesterday and Today
+                var mergedPRs = fetchedMergedPRs.Repository.PullRequests.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.MergedAt && x.MergedAt < beginOfToday).ToArray(); // Yesterday
 
                 var title = $"{owner}/{repository} - Issues & Pull Requests";
                 var repositoryUrl = $"https://github.com/{owner}/{repository}";
@@ -213,7 +206,7 @@ namespace WatchDotNetGitHubRepos
                 <div>
                     {string.Concat(published.Select(x => @$"
                         <article>
-                            <h2><a href=""{Escape(x.Url)}"">{Escape(x.Name)}</a></h2>
+                            <h2><a href=""{Escape(x.Url)}"">{Escape(string.IsNullOrWhiteSpace(x.Name) ? x.TagName : x.Name)}</a></h2>
                             <div>
                                 {x.DescriptionHTML}
                             </div>
@@ -305,6 +298,7 @@ namespace WatchDotNetGitHubRepos
                       id
                       url
                       name
+                      tagName
                       publishedAt
                       createdAt
                       updatedAt
@@ -376,10 +370,14 @@ namespace WatchDotNetGitHubRepos
 
         public static async Task<RepositoryQueryResponse> GetReleases(string owner, string repository)
         {
+            var jitterer = new Random();
+            var retryPolicy = Polly.Policy.Handle<GraphQLHttpRequestException>()
+                .WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)) + TimeSpan.FromMilliseconds(jitterer.Next(0, 1000)));
+
             var graphQLClient = new GraphQLHttpClient("https://api.github.com/graphql", new SystemTextJsonSerializer());
             graphQLClient.HttpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {Helper.GetAccessToken()}");
 
-            var response = await graphQLClient.SendQueryAsync<RepositoryQueryResponse>(new GraphQLRequest
+            var response = await retryPolicy.ExecuteAsync(() => graphQLClient.SendQueryAsync<RepositoryQueryResponse>(new GraphQLRequest
             {
                 Query = Query,
                 OperationName = "GetReleases",
@@ -389,17 +387,21 @@ namespace WatchDotNetGitHubRepos
                     repository = repository,
                     count = MaxFetchCount,
                 }
-            });
+            }));
 
             return response.Data;
         }
 
         public static async Task<RepositoryQueryResponse> GetPullRequestsAsync(string owner, string repository, IssueOrderField orderField, PullRequestState prState)
         {
+            var jitterer = new Random();
+            var retryPolicy = Polly.Policy.Handle<GraphQLHttpRequestException>()
+                .WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)) + TimeSpan.FromMilliseconds(jitterer.Next(0, 1000)));
+
             var graphQLClient = new GraphQLHttpClient("https://api.github.com/graphql", new SystemTextJsonSerializer());
             graphQLClient.HttpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {Helper.GetAccessToken()}");
 
-            var response = await graphQLClient.SendQueryAsync<RepositoryQueryResponse>(new GraphQLRequest
+            var response = await retryPolicy.ExecuteAsync(() => graphQLClient.SendQueryAsync<RepositoryQueryResponse>(new GraphQLRequest
             {
                 Query = Query,
                 OperationName = "GetPullRequests",
@@ -411,16 +413,20 @@ namespace WatchDotNetGitHubRepos
                     prState = prState,
                     count = MaxFetchCount,
                 }
-            });
+            }));
 
             return response.Data;
         }
         public static async Task<RepositoryQueryResponse> GetIssuesAsync(string owner, string repository, IssueOrderField orderField, IssueState issueState)
         {
+            var jitterer = new Random();
+            var retryPolicy = Polly.Policy.Handle<GraphQLHttpRequestException>()
+                .WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)) + TimeSpan.FromMilliseconds(jitterer.Next(0, 1000)));
+
             var graphQLClient = new GraphQLHttpClient("https://api.github.com/graphql", new SystemTextJsonSerializer());
             graphQLClient.HttpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {Helper.GetAccessToken()}");
 
-            var response = await graphQLClient.SendQueryAsync<RepositoryQueryResponse>(new GraphQLRequest
+            var response = await retryPolicy.ExecuteAsync(() => graphQLClient.SendQueryAsync<RepositoryQueryResponse>(new GraphQLRequest
             {
                 Query = Query,
                 OperationName = "GetIssues",
@@ -432,7 +438,7 @@ namespace WatchDotNetGitHubRepos
                     issueState = issueState,
                     count = MaxFetchCount,
                 }
-            });
+            }));
 
             return response.Data;
         }
