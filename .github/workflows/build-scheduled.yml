@@ -37,6 +37,7 @@ jobs:
             dotnet/maui
             dotnet/efcore
             dotnet/installer
+            dotnet/Comet
           )
           dotnet run -c Debug --no-build -- issues-and-pull-requests --output-dir ../../public/IssuesAndPRs ${TARGET_REPOS[*]}
 

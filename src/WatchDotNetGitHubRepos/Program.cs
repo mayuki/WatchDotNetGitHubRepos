@@ -98,20 +98,14 @@ namespace WatchDotNetGitHubRepos
                 var (owner, repository) = (parts[0], parts[1]);
 
                 Console.WriteLine($"Fetching Issues / PullRequests of {owner}/{repository} ({beginOfYesterday})");
-                var fetchedUpdatedPRs = await Queries.GetPullRequestsAsync(owner, repository, IssueOrderField.UPDATED_AT, PullRequestState.OPEN);
-                var fetchedCreatedPRs = await Queries.GetPullRequestsAsync(owner, repository, IssueOrderField.CREATED_AT, PullRequestState.OPEN);
-                var fetchedMergedPRs = await Queries.GetPullRequestsAsync(owner, repository, IssueOrderField.UPDATED_AT, PullRequestState.MERGED);
+                var issuesAndPRs = await Queries.GetIssuesAndPullRequestsAsync(owner, repository);
 
-                var fetchedUpdatedIssues = await Queries.GetIssuesAsync(owner, repository, IssueOrderField.UPDATED_AT, IssueState.OPEN);
-                var fetchedCreatedIssues = await Queries.GetIssuesAsync(owner, repository, IssueOrderField.CREATED_AT, IssueState.OPEN);
-                var fetchedClosedIssues = await Queries.GetIssuesAsync(owner, repository, IssueOrderField.UPDATED_AT, IssueState.CLOSED);
-
-                var createdIssues = fetchedCreatedIssues.Repository.Issues.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.CreatedAt && x.CreatedAt < beginOfToday).ToArray(); // Yesterday
-                var updatedIssues = fetchedUpdatedIssues.Repository.Issues.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.UpdatedAt && !createdIssues.Contains(x)).ToArray(); // Yesterday and Today
-                var closedIssues = fetchedClosedIssues.Repository.Issues.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.ClosedAt && x.ClosedAt < beginOfToday).ToArray(); // Yesterday
-                var createdPRs = fetchedCreatedPRs.Repository.PullRequests.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.CreatedAt && x.CreatedAt < beginOfToday).ToArray(); // Yesterday
-                var updatedPRs = fetchedUpdatedPRs.Repository.PullRequests.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.UpdatedAt && !createdPRs.Contains(x)).ToArray(); // Yesterday and Today
-                var mergedPRs = fetchedMergedPRs.Repository.PullRequests.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.MergedAt && x.MergedAt < beginOfToday).ToArray(); // Yesterday
+                var createdIssues = issuesAndPRs.Repository.CreatedIssues.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.CreatedAt && x.CreatedAt < beginOfToday).ToArray(); // Yesterday
+                var updatedIssues = issuesAndPRs.Repository.UpdatedIssues.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.UpdatedAt && !createdIssues.Contains(x)).ToArray(); // Yesterday and Today
+                var closedIssues = issuesAndPRs.Repository.ClosedIssues.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.ClosedAt && x.ClosedAt < beginOfToday).ToArray(); // Yesterday
+                var createdPRs = issuesAndPRs.Repository.CreatedPullRequests.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.CreatedAt && x.CreatedAt < beginOfToday).ToArray(); // Yesterday
+                var updatedPRs = issuesAndPRs.Repository.UpdatedPullRequests.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.UpdatedAt && !createdPRs.Contains(x)).ToArray(); // Yesterday and Today
+                var mergedPRs = issuesAndPRs.Repository.MergedPullRequests.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.MergedAt && x.MergedAt < beginOfToday).ToArray(); // Yesterday
 
                 var title = $"{owner}/{repository} - Issues & Pull Requests";
                 var repositoryUrl = $"https://github.com/{owner}/{repository}";
@@ -290,77 +284,103 @@ namespace WatchDotNetGitHubRepos
     {
         // https://docs.github.com/en/graphql/overview/explorer
         const string Query = @"
-            query GetReleases($repository: String!, $owner: String!, $count: Int) {
-              repository(name: $repository, owner: $owner) {
-                releases(first: $count, orderBy: {field: CREATED_AT, direction: DESC}) {
-                  edges {
-                    node {
-                      id
-                      url
-                      name
-                      tagName
-                      publishedAt
-                      createdAt
-                      updatedAt
-                      description
-                      descriptionHTML
-                      isPrerelease
+            fragment PullRequestEdges on PullRequestConnection {
+              edges {
+                node {
+                  id
+                  title
+                  url
+                  number
+                  createdAt
+                  updatedAt
+                  mergedAt
+                  labels(first: 10) {
+                    edges {
+                      node {
+                        name
+                      }
                     }
+                  }
+                  milestone {
+                    title
                   }
                 }
               }
             }
+            fragment IssueEdges on IssueConnection {
+              edges {
+                node {
+                  title
+                  url
+                  number
+                  createdAt
+                  updatedAt
+                  closedAt
+                  milestone {
+                    title
+                  }
+                }
+              }
+            }
+            fragment ReleaseEdges on ReleaseConnection {
+              edges {
+                node {
+                  id
+                  url
+                  name
+                  tagName
+                  publishedAt
+                  createdAt
+                  updatedAt
+                  description
+                  descriptionHTML
+                  isPrerelease
+                }
+              }
+            }
+
+            query GetReleases($repository: String!, $owner: String!, $count: Int) {
+              repository(name: $repository, owner: $owner) {
+                releases(first: $count, orderBy: {field: CREATED_AT, direction: DESC}) {
+                  ...ReleaseEdges
+                }
+              }
+            }
+
+            query GetIssuesAndPullRequests($repository: String!, $owner: String!, $count: Int) {
+              repository(name: $repository, owner: $owner) {
+                updatedIssues: issues(first: $count, orderBy: {field: UPDATED_AT, direction: DESC}, states: OPEN) {
+                  ...IssueEdges
+                }
+                createdIssues: issues(first: $count, orderBy: {field: CREATED_AT, direction: DESC}, states: OPEN) {
+                  ...IssueEdges
+                }
+                closedIssues: issues(first: $count, orderBy: {field: UPDATED_AT, direction: DESC}, states: CLOSED) {
+                  ...IssueEdges
+                }
+                updatedPullRequests: pullRequests(first: $count, orderBy: {field: UPDATED_AT, direction: DESC}, states: OPEN) {
+                  ...PullRequestEdges
+                }
+                createdPullRequests: pullRequests(first: $count, orderBy: {field: CREATED_AT, direction: DESC}, states: OPEN) {
+                  ...PullRequestEdges
+                }
+                mergedPullRequests: pullRequests(first: $count, orderBy: {field: UPDATED_AT, direction: DESC}, states: MERGED) {
+                  ...PullRequestEdges
+                }
+              }
+            }
+
             query GetIssues($repository: String!, $owner: String!, $orderField: IssueOrderField!, $issueState: [IssueState!], $count: Int) {
               repository(name: $repository, owner: $owner) {
                 issues(first: $count, orderBy: {field: $orderField, direction: DESC}, states: $issueState) {
-                  edges {
-                    node {
-                      id
-                      title
-                      url
-                      number
-                      createdAt
-                      updatedAt
-                      closedAt
-                      labels(first: 10) {
-                        edges {
-                          node {
-                            name
-                          }
-                        }
-                      }
-                      milestone {
-                        title
-                      }
-                    }
-                  }
+                  ...IssueEdges
                 }
               }
             }
             query GetPullRequests($repository: String!, $owner: String!, $orderField: IssueOrderField!, $prState: [PullRequestState!], $count: Int) {
               repository(name: $repository, owner: $owner) {
                 pullRequests(first: $count, orderBy: {field: $orderField, direction: DESC}, states: $prState) {
-                  edges {
-                    node {
-                      id
-                      title
-                      url
-                      number
-                      createdAt
-                      updatedAt
-                      mergedAt
-                      labels(first: 10) {
-                        edges {
-                          node {
-                            name
-                          }
-                        }
-                      }
-                      milestone {
-                        title
-                      }
-                    }
-                  }
+                  ...PullRequestEdges
                 }
               }
             }
@@ -381,6 +401,30 @@ namespace WatchDotNetGitHubRepos
             {
                 Query = Query,
                 OperationName = "GetReleases",
+                Variables = new
+                {
+                    owner = owner,
+                    repository = repository,
+                    count = MaxFetchCount,
+                }
+            }));
+
+            return response.Data;
+        }
+
+        public static async Task<GetIssuesAndPullRequestsRepositoryQueryResponse> GetIssuesAndPullRequestsAsync(string owner, string repository)
+        {
+            var jitterer = new Random();
+            var retryPolicy = Polly.Policy.Handle<GraphQLHttpRequestException>()
+                .WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)) + TimeSpan.FromMilliseconds(jitterer.Next(0, 1000)));
+
+            var graphQLClient = new GraphQLHttpClient("https://api.github.com/graphql", new SystemTextJsonSerializer());
+            graphQLClient.HttpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {Helper.GetAccessToken()}");
+
+            var response = await retryPolicy.ExecuteAsync(() => graphQLClient.SendQueryAsync<GetIssuesAndPullRequestsRepositoryQueryResponse>(new GraphQLRequest
+            {
+                Query = Query,
+                OperationName = "GetIssuesAndPullRequests",
                 Variables = new
                 {
                     owner = owner,

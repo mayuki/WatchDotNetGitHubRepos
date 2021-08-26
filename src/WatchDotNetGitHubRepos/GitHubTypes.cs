@@ -66,6 +66,19 @@ namespace WatchDotNetGitHubRepos
         public EdgeNode<T>[] Edges { get; set; }
     }
 
+    public class GetIssuesAndPullRequestsRepositoryQueryResponse
+    {
+        public GetIssuesAndPullRequestsRepository Repository { get; set; }
+    }
+    public class GetIssuesAndPullRequestsRepository
+    {
+        public EdgesType<PullRequest> UpdatedPullRequests { get; set; }
+        public EdgesType<PullRequest> CreatedPullRequests { get; set; }
+        public EdgesType<PullRequest> MergedPullRequests { get; set; }
+        public EdgesType<Issue> CreatedIssues { get; set; }
+        public EdgesType<Issue> UpdatedIssues { get; set; }
+        public EdgesType<Issue> ClosedIssues { get; set; }
+    }
 
     public class RepositoryQueryResponse
     {
