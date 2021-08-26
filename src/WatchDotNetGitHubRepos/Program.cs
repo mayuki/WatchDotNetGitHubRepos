@@ -91,6 +91,9 @@ namespace WatchDotNetGitHubRepos
             var beginOfToday = now.UtcDateTime.Date;
             var beginOfYesterday = now.UtcDateTime.Date.AddDays(-1);
 
+            static bool IsUpdateDependencies(string title)
+                => title.Contains("Update dependencies from");
+
             var allEntries = new List<XElement>();
             foreach (var target in targets)
             {
@@ -103,9 +106,9 @@ namespace WatchDotNetGitHubRepos
                 var createdIssues = issuesAndPRs.Repository.CreatedIssues.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.CreatedAt && x.CreatedAt < beginOfToday).ToArray(); // Yesterday
                 var updatedIssues = issuesAndPRs.Repository.UpdatedIssues.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.UpdatedAt && !createdIssues.Contains(x)).ToArray(); // Yesterday and Today
                 var closedIssues = issuesAndPRs.Repository.ClosedIssues.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.ClosedAt && x.ClosedAt < beginOfToday).ToArray(); // Yesterday
-                var createdPRs = issuesAndPRs.Repository.CreatedPullRequests.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.CreatedAt && x.CreatedAt < beginOfToday).ToArray(); // Yesterday
-                var updatedPRs = issuesAndPRs.Repository.UpdatedPullRequests.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.UpdatedAt && !createdPRs.Contains(x)).ToArray(); // Yesterday and Today
-                var mergedPRs = issuesAndPRs.Repository.MergedPullRequests.Edges.Select(x => x.Node).Where(x => beginOfYesterday <= x.MergedAt && x.MergedAt < beginOfToday).ToArray(); // Yesterday
+                var createdPRs = issuesAndPRs.Repository.CreatedPullRequests.Edges.Select(x => x.Node).Where(x => !IsUpdateDependencies(x.Title) && beginOfYesterday <= x.CreatedAt && x.CreatedAt < beginOfToday).ToArray(); // Yesterday
+                var updatedPRs = issuesAndPRs.Repository.UpdatedPullRequests.Edges.Select(x => x.Node).Where(x => !IsUpdateDependencies(x.Title) && beginOfYesterday <= x.UpdatedAt && !createdPRs.Contains(x)).ToArray(); // Yesterday and Today
+                var mergedPRs = issuesAndPRs.Repository.MergedPullRequests.Edges.Select(x => x.Node).Where(x => !IsUpdateDependencies(x.Title) && beginOfYesterday <= x.MergedAt && x.MergedAt < beginOfToday).ToArray(); // Yesterday
 
                 var title = $"{owner}/{repository} - Issues & Pull Requests";
                 var repositoryUrl = $"https://github.com/{owner}/{repository}";
