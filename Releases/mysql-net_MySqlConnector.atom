@@ -1,47 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>mysql-net/MySqlConnector - Releases</title>
   <link href="https://github.com/mysql-net/MySqlConnector" />
-  <updated>2021-10-03T00:03:36Z</updated>
+  <updated>2021-10-04T00:03:29Z</updated>
   <id>https://github.com/mysql-net/MySqlConnector</id>
-  <entry>
-    <title>mysql-net/MySqlConnector - Releases - 2021-10-02</title>
-    <id>https://github.com/mysql-net/MySqlConnector#2021-10-02</id>
-    <link href="https://github.com/mysql-net/MySqlConnector" />
-    <updated>2021-10-03T00:03:36Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/mysql-net/MySqlConnector/releases/tag/1.4.0-beta.4"&gt;1.4.0-beta.4&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Breaking&lt;/strong&gt; Remove &lt;code&gt;ConnectionIdlePingTime&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1004902990" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1042" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1042/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1042"&gt;#1042&lt;/a&gt;.
-&lt;ul&gt;
-&lt;li&gt;The &lt;code&gt;Connection Idle Ping Time&lt;/code&gt; connection string option is still accepted, but has no effect.&lt;/li&gt;
-&lt;li&gt;If &lt;code&gt;Connection Reset = False&lt;/code&gt;, &lt;code&gt;MySqlConnection.Open&lt;/code&gt; will return a pooled connection (if one is available) without testing it for liveness (by pinging the server). This improves performance but may degrade reliability. (&lt;code&gt;Connection Reset = True&lt;/code&gt;, which is the default, is still recommended for greatest reliability.)&lt;/li&gt;
-&lt;li&gt;If the server has closed the pooled connection, &lt;code&gt;MySqlConnection.Open&lt;/code&gt; will succeed, but the first operation on that connection will fail. Command execution should be wrapped in a try/catch/retry loop to handle this scenario.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Add more values to &lt;code&gt;MySqlErrorCode&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1014056139" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1048" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1048/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1048"&gt;#1048&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Fix bug executing stored procedures with backticks in their names: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="992038525" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1029" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1029/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1029"&gt;#1029&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Remove inner exception for &lt;code&gt;UnableToConnectToHost&lt;/code&gt; exception: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="999760901" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1035" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1035/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1035"&gt;#1035&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Fix rare &lt;code&gt;ObjectDisposedException&lt;/code&gt; that could be thrown when a connection timeout occurred.&lt;/li&gt;
-&lt;li&gt;Reword "recovering leaked sessions" log message.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/mysql-net/MySqlConnector/releases/tag/1.3.13"&gt;1.3.13&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;Remove inner exception for &lt;code&gt;UnableToConnectToHost&lt;/code&gt; exception: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="999760901" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1035" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1035/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1035"&gt;#1035&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Reword "recovering leaked sessions" log message.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
