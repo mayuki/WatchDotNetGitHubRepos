@@ -1,50 +1,38 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Issues &amp; Pull Requests</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2021-10-31T00:03:14Z</updated>
+  <updated>2021-11-01T00:03:52Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>dotnet/runtime - Issues &amp; Pull Requests - 2021-10-30</title>
-    <id>https://github.com/dotnet/runtime#2021-10-30</id>
+    <title>dotnet/runtime - Issues &amp; Pull Requests - 2021-10-31</title>
+    <id>https://github.com/dotnet/runtime#2021-10-31</id>
     <link href="https://github.com/dotnet/runtime" />
-    <updated>2021-10-31T00:02:47Z</updated>
+    <updated>2021-11-01T00:03:18Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/61040"&gt;Loop cloning misses definitions for fields of promoted structs #61040&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/61048"&gt;Overhaul Regex's handling of RegexOptions.IgnoreCase #61048&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;7.0.0&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/61047"&gt;Issue with HexEncoder #61047&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/61039"&gt;Int32Converter tolerates outrageous syntax 0X+FFFFFFFF #61039&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/61046"&gt;Error when trying to use Quic with current .NET 6 RC #61046&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/61038"&gt;DateTime.Parse throw FormatException in centos7.9 #61038&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/61036"&gt;Convert empty string to number in base throws AOORException #61036&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/61032"&gt;Race condition in MemoryCache will crash the process #61032&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/61031"&gt;dotnet support android sdk, runtime #61031&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/61044"&gt;System.Text.Json Serialization Regression in NET6 (Net5 worked) #61044&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -53,7 +41,19 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/61041"&gt;Get mangled name #61041&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/61011"&gt;.NET 6 RC2 websocket receive allocations #61011&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/60348"&gt;[mono] Crash in github runner due to null AssemblyLoadContext.GetLoadContext result #60348&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;6.0.0&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/61038"&gt;DateTime.Parse throw FormatException in centos7.9 #61038&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -64,13 +64,22 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/61043"&gt;Disallow parsing '0X+F' as a valid integer #61043&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/61049"&gt;Morph `ASG(ONE_FLD_STRUCT, CALL)` using `BITCAST` #61049&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;* NO MERGE *, area-System.ComponentModel, community-contribution&lt;/div&gt;
+      &lt;div&gt;area-CodeGen-coreclr, community-contribution&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/61042"&gt;[arm64] JIT: Optimize zero-extend for byte/short to uint/ulong via &amp;amp; 0xFF.. #61042&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/61045"&gt;[arm64] JIT: Recognize sbfiz/ubfiz idioms #61045&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-CodeGen-coreclr&lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;Updated&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/61034"&gt;Some VN refactoring #61034&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;area-CodeGen-coreclr&lt;/div&gt;
     &lt;/li&gt;
@@ -82,21 +91,27 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/61035"&gt;[arm64] JIT: Fix IsContainableImmed for arm64 v8.1 or higher #61035&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/61023"&gt;JIT: limited version of forward substitution for some relops #61023&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;area-CodeGen-coreclr&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/61034"&gt;Some VN refactoring #61034&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/61006"&gt;JIT: Disable implicit tailcalls for throwhelpers #61006&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;area-CodeGen-coreclr&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/61030"&gt;Use SIMD operations in genCodeForInitBlkUnroll and increase INITBLK_UNROLL_LIMIT to 128 bytes #61030&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/60846"&gt;POC src/tests tree test xunit-based source generated runner #60846&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;arch-arm64, area-CodeGen-coreclr, 7.0.0&lt;/div&gt;
+      &lt;div&gt;area-Infrastructure&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/60984"&gt;WIP: Initial implementation of the ILPROJ analyzer utility to assist the planned runtime test refactoring #60984&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -106,105 +121,9 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/61027"&gt;Fix common workflow issues #61027&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/60873"&gt;[wasm][debugger] Fix debugging blazor app after ts changes. #60873&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;community-contribution&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Merged&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/60994"&gt;Add a fallback RuntimeProductVersion in runtime_version.h #60994&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-Infrastructure-coreclr&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/60450"&gt;Use LastIndexOf in MSBuild for a single char #60450&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/61029"&gt;Fix to run all the tests for the scheduled builds, as intended #61029&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-Infrastructure-libraries&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Updated&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/60842"&gt;Throwing `FormatException` when a required property from `Microsoft.Extensions.DependencyModel` is empy #60842&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-DependencyModel, community-contribution&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/52639"&gt;Fix LastWriteTime and LastAccessTime of a symlink on Windows and Unix #52639&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-System.IO, breaking-change, needs-breaking-change-doc-created, community-contribution, 7.0.0&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/60995"&gt;Fix various dump generation issues for VS4Mac #60995&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-Diagnostics-coreclr&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/61020"&gt;[mono][interp] Fix GetType called on ptr constrained to Nullable` #61020&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-Codegen-Interpreter-mono&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/60988"&gt;disable sending NT Authority in TLS handshake if specific trust was specified #60988&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-System.Net.Security&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/61025"&gt;Seed the unified System.Security.Cryptography.dll #61025&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-System.Security, 7.0.0&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/59085"&gt;CI matrix change: Add OSX 12 arm #59085&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-Infrastructure&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/61023"&gt;JIT: limited version of forward substitution for some relops #61023&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-CodeGen-coreclr&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/61026"&gt;Arm64: addressing modes #61026&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-CodeGen-coreclr&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/58678"&gt;removed argument requestId from loopbackserver.cs #58678&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-System.Net&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/60561"&gt;[release/6.0] [mono/win] Increase stack size (reserve) to 8MB #60561&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Servicing-consider, area-Codegen-AOT-mono, 6.0.1&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/61018"&gt;[IGNORE] trying wasm pipelines #61018&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
+      &lt;div&gt;* NO MERGE *, arch-wasm, area-Debugger-mono&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -214,139 +133,112 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/59503"&gt;Bring up full library test CI runs on iOS / tvOS devices #59503&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/61035"&gt;[arm64] JIT: Fix IsContainableImmed for arm64 v8.1 or higher #61035&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;area-Infrastructure-libraries&lt;/div&gt;
+      &lt;div&gt;area-CodeGen-coreclr&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/60942"&gt;lock protect nullability cache of symbolic regex node #60942&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/52639"&gt;Fix LastWriteTime and LastAccessTime of a symlink on Windows and Unix #52639&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;area-System.Text.RegularExpressions&lt;/div&gt;
+      &lt;div&gt;area-System.IO, breaking-change, needs-breaking-change-doc-created, community-contribution, 7.0.0&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/60798"&gt;Removed two unused packages #60798&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-Meta, community-contribution&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/61020"&gt;[mono][interp] Fix GetType called on ptr constrained to Nullable` #61020&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-Codegen-Interpreter-mono&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;</content>
   </entry>
   <entry>
-    <title>dotnet/runtimelab - Issues &amp; Pull Requests - 2021-10-30</title>
-    <id>https://github.com/dotnet/runtimelab#2021-10-30</id>
-    <link href="https://github.com/dotnet/runtimelab" />
-    <updated>2021-10-31T00:02:49Z</updated>
-    <content type="html">&lt;section&gt;
-  &lt;h2&gt;Issues&lt;/h2&gt;
-  &lt;h3&gt;Created&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtimelab/issues/1688"&gt;[NativeAOT-LLVM] Question - implicit truncation of longs? #1688&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/section&gt;&lt;section&gt;
-  &lt;h2&gt;PullRequests&lt;/h2&gt;
-  &lt;h3&gt;Merged&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtimelab/pull/1687"&gt;[NativeAOT-LLVM] Fix build regressions #1687&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtimelab/pull/1685"&gt;Change how we deal with scanning failures #1685&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtimelab/pull/1686"&gt;Add generic cycle detection to generic virtual methods #1686&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Updated&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtimelab/pull/1683"&gt;[NativeAOT-LLVM] : Add support for more helpers #1683&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/section&gt;</content>
-  </entry>
-  <entry>
-    <title>dotnet/sdk - Issues &amp; Pull Requests - 2021-10-30</title>
-    <id>https://github.com/dotnet/sdk#2021-10-30</id>
+    <title>dotnet/sdk - Issues &amp; Pull Requests - 2021-10-31</title>
+    <id>https://github.com/dotnet/sdk#2021-10-31</id>
     <link href="https://github.com/dotnet/sdk" />
-    <updated>2021-10-31T00:02:51Z</updated>
+    <updated>2021-11-01T00:03:24Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/issues/22407"&gt;Can 'system. Resources. Extensions' support lower versions of the. Netframework. For example, 4.0 #22407&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/22411"&gt;`workload install android` fails on Ubuntu (works on Win/Mac) #22411&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
-&lt;/section&gt;&lt;section&gt;
-  &lt;h2&gt;PullRequests&lt;/h2&gt;
-  &lt;h3&gt;Merged&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/21361"&gt;Fix Bash shebang for scripts to run under FreeBSD #21361&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-Infrastructure&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/section&gt;</content>
+&lt;/section&gt;&lt;div /&gt;</content>
   </entry>
   <entry>
-    <title>dotnet/csharplang - Issues &amp; Pull Requests - 2021-10-30</title>
-    <id>https://github.com/dotnet/csharplang#2021-10-30</id>
+    <title>dotnet/csharplang - Issues &amp; Pull Requests - 2021-10-31</title>
+    <id>https://github.com/dotnet/csharplang#2021-10-31</id>
     <link href="https://github.com/dotnet/csharplang" />
-    <updated>2021-10-31T00:02:53Z</updated>
+    <updated>2021-11-01T00:03:26Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Updated&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/csharplang/issues/5354"&gt;[Proposal]: Collection literals #5354&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/csharplang/issues/140"&gt;Proposal: Semi-Auto-Properties; `field` keyword #140&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
+      &lt;div&gt;Working Set&lt;/div&gt;
     &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/section&gt;&lt;section&gt;
-  &lt;h2&gt;PullRequests&lt;/h2&gt;
-  &lt;h3&gt;Merged&lt;/h3&gt;
-  &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/csharplang/pull/5365"&gt;Update the interpolated string handler spec #5365&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/csharplang/issues/1239"&gt;[Proposal]:  Support generics and generic type parameters in aliases #1239&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
+      &lt;div&gt;Backlog&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
-&lt;/section&gt;</content>
+&lt;/section&gt;&lt;div /&gt;</content>
   </entry>
   <entry>
-    <title>dotnet/roslyn - Issues &amp; Pull Requests - 2021-10-30</title>
-    <id>https://github.com/dotnet/roslyn#2021-10-30</id>
+    <title>dotnet/roslyn - Issues &amp; Pull Requests - 2021-10-31</title>
+    <id>https://github.com/dotnet/roslyn#2021-10-31</id>
     <link href="https://github.com/dotnet/roslyn" />
-    <updated>2021-10-31T00:02:56Z</updated>
+    <updated>2021-11-01T00:03:34Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/57484"&gt;IFlowCaptureReferenceOperation.InInitialization #57484&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/57490"&gt;VS2022 Lightbulb configure severity of Analyzer did not change editorconfig #57490&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/57489"&gt;Roslyn fails to verify nullablility violations in 'with' expressions with tuples #57489&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/57488"&gt;Allow dotnet run to run solution files #57488&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;Closed&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/57180"&gt;Remove legacy tagger APIs once TypeScript moves to new API. #57180&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;17.1&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/57235"&gt;KeyNotFoundException from FindReferencesSearchEngine.ProcessDocumentAsync #57235&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;17.1&lt;/div&gt;
     &lt;/li&gt;
@@ -357,33 +249,27 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/57483"&gt;Interpolated string handlers in the CFG #57483&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/57487"&gt;Fix 'simplify conditional expression' with VB value equality #57487&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-Compilers&lt;/div&gt;
+      &lt;div&gt;Area-IDE&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
   &lt;h3&gt;Merged&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/57139"&gt;Options refactoring #57139&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/57454"&gt;Remove legacy property from tagging #57454&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-IDE, UX Review Not Required, Next&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/57456"&gt;Forbid interpolated string handler conversions that reference an instance as indexer arguments in nested member initializers #57456&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-Compilers, Next&lt;/div&gt;
+      &lt;div&gt;Area-IDE, Next&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
   &lt;h3&gt;Updated&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/57254"&gt;Options5 #57254&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/57410"&gt;Classify method group assignments as methods #57410&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-IDE, Needs UX Triage&lt;/div&gt;
+      &lt;div&gt;Area-IDE&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -391,47 +277,72 @@
       &lt;/div&gt;
       &lt;div&gt;Area-Compilers, Community&lt;/div&gt;
     &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/57457"&gt;Slice value is always assumed to be not null #57457&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-Compilers, Community&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/57458"&gt;Update SymReader packages to the latest #57458&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-Compilers&lt;/div&gt;
-    &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;</content>
   </entry>
   <entry>
-    <title>dotnet/aspnetcore - Issues &amp; Pull Requests - 2021-10-30</title>
-    <id>https://github.com/dotnet/aspnetcore#2021-10-30</id>
+    <title>dotnet/aspnetcore - Issues &amp; Pull Requests - 2021-10-31</title>
+    <id>https://github.com/dotnet/aspnetcore#2021-10-31</id>
     <link href="https://github.com/dotnet/aspnetcore" />
-    <updated>2021-10-31T00:03:01Z</updated>
+    <updated>2021-11-01T00:03:39Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/aspnetcore/issues/37953"&gt;How to set AppInsightKey based on Environment Variable in Blazor wasm Hosted App #37953&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/issues/37965"&gt;blazor was server prerendering error #37965&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/aspnetcore/issues/37951"&gt;Perf regression: caching, mapaction, single_query
- #37951&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/issues/37963"&gt;Identity: TwoFactorRememberMe scheme should be signed out if authorization for this scheme failed due to the failure of validation of the security stamp (leads to login/logout loop if the next login does not sign in two factor remember this machine). #37963&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/aspnetcore/issues/37950"&gt;Perf improvement: json, plaintext_nodejs, single_query
- #37950&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/issues/37962"&gt;Startup improvement: connectionclosehttps
+ #37962&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/issues/37960"&gt;Blazor HeadOutlet is not pre-rendering #37960&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/issues/37959"&gt;BlazorDesktop - Failed to create component 'BlazorWebView'  in WinForms Designer #37959&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/issues/37958"&gt;Can not use BaseIntermediateOutputPath with v5.0.8 #37958&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/issues/37957"&gt;Single file build time regression: proxy-yarp, proxy-yarp
+ #37957&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/issues/37956"&gt;Single file build time regression: json, json, json, json
+ #37956&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/issues/37954"&gt;Features.Set&amp;lt;IHttpResponseBodyFeature&amp;gt; no longer calling provided stream #37954&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -440,28 +351,40 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/aspnetcore/issues/37952"&gt;Startup improvement: mapaction
- #37952&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/issues/37955"&gt;Startup regression: fortunes_dapper
+ #37955&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/aspnetcore/issues/35937"&gt;Hot reload/dotnet watch not able to find source generated code #35937&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/aspnetcore/issues/37014"&gt;Add Docs For Blazor Server SignalR Usage #37014&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;6.0-docs-infra&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;&lt;section&gt;
   &lt;h2&gt;PullRequests&lt;/h2&gt;
-  &lt;h3&gt;Created&lt;/h3&gt;
+  &lt;h3&gt;Updated&lt;/h3&gt;
   &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/pull/37940"&gt;Create ReleasePlanning.md #37940&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Docs, area-infrastructure&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/pull/37934"&gt;Update StartupAnalyzers to use Analyzer.Testing library #37934&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/pull/37739"&gt;[SPA] Update NPM dependencies #37739&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-mvc, 5.0.x&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/pull/37776"&gt;[SPA] Updates npm dependencies #37776&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-mvc, 3.1.x&lt;/div&gt;
+    &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/aspnetcore/pull/37949"&gt;Adding descriptions in HttpSysOptions #37949&lt;/a&gt;
@@ -470,93 +393,43 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/aspnetcore/pull/37948"&gt;Make in-memory HTTP/2 tests more deterministic #37948&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/pull/37873"&gt;feat (Codespaces) - Added Commonly used tasks to `tasks.json` for VSCode users.  #37873&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;area-runtime&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Merged&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/aspnetcore/pull/37942"&gt;Bump helix timeout for iis functionals #37942&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-runtime, 7.0-preview1&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/aspnetcore/pull/37944"&gt;Quarantine HttpClientHttp2InteropTests.Echo #37944&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-runtime, 7.0-preview1&lt;/div&gt;
+      &lt;div&gt;area-infrastructure, community-contribution&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;</content>
   </entry>
   <entry>
-    <title>dotnet/diagnostics - Issues &amp; Pull Requests - 2021-10-30</title>
-    <id>https://github.com/dotnet/diagnostics#2021-10-30</id>
-    <link href="https://github.com/dotnet/diagnostics" />
-    <updated>2021-10-31T00:03:04Z</updated>
-    <content type="html">&lt;section&gt;
-  &lt;h2&gt;Issues&lt;/h2&gt;
-  &lt;h3&gt;Updated&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/diagnostics/issues/2717"&gt;Document new Microsoft.Diagnostics.NETCore.Client.DiagnosticsClient.WriteDump/WriteDumpAsync APIs #2717&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;7.0.0&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/section&gt;&lt;section&gt;
-  &lt;h2&gt;PullRequests&lt;/h2&gt;
-  &lt;h3&gt;Created&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/diagnostics/pull/2720"&gt;Fix some workflow issues #2720&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Updated&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/diagnostics/pull/2715"&gt;Add enable crash report flag to WriteDump client API #2715&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/diagnostics/pull/2718"&gt;Enable dotnet-dump tests on OSX #2718&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/section&gt;</content>
-  </entry>
-  <entry>
-    <title>dotnet/maui - Issues &amp; Pull Requests - 2021-10-30</title>
-    <id>https://github.com/dotnet/maui#2021-10-30</id>
+    <title>dotnet/maui - Issues &amp; Pull Requests - 2021-10-31</title>
+    <id>https://github.com/dotnet/maui#2021-10-31</id>
     <link href="https://github.com/dotnet/maui" />
-    <updated>2021-10-31T00:03:06Z</updated>
+    <updated>2021-11-01T00:03:44Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/issues/3199"&gt;[Bug] AppActions and other gestures trigger multiple windows or instances to display #3199&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/maui/issues/3207"&gt;[Enhancement] Image Animation #3207&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Closed&lt;/h3&gt;
-  &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/issues/3190"&gt;[Bug] XAML Live preview don't work on Windows build #3190&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/maui/issues/3206"&gt;[Enhancement] Image FailedImage / LoadingImage #3206&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/maui/issues/3204"&gt;[Bug] File -&amp;gt; New MAUI App does not compile #3204&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/maui/issues/3200"&gt;[Bug] Xamarin Page and View Templates break MAUI Apps #3200&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -564,6 +437,15 @@
 &lt;/section&gt;&lt;section&gt;
   &lt;h2&gt;PullRequests&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/maui/pull/3205"&gt;Add IHighlightLayer #3205&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;Updated&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -578,29 +460,20 @@
       &lt;div&gt;t/housekeeping ♻︎&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
-  &lt;h3&gt;Updated&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/pull/1202"&gt;Maui 395 port editor autosize to handler #1202&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
 &lt;/section&gt;</content>
   </entry>
   <entry>
-    <title>dotnet/efcore - Issues &amp; Pull Requests - 2021-10-30</title>
-    <id>https://github.com/dotnet/efcore#2021-10-30</id>
+    <title>dotnet/efcore - Issues &amp; Pull Requests - 2021-10-31</title>
+    <id>https://github.com/dotnet/efcore#2021-10-31</id>
     <link href="https://github.com/dotnet/efcore" />
-    <updated>2021-10-31T00:03:11Z</updated>
+    <updated>2021-11-01T00:03:47Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/26493"&gt;Shouldn't DbContext.Update() result in commands to delete (set all null) an entity's owned type navigation property if it is null? #26493&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/26494"&gt;SqliteCommand.GetStatements allocates List&amp;lt;T&amp;gt; enumerator per every prepared query #26494&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -608,10 +481,10 @@
 &lt;/section&gt;&lt;div /&gt;</content>
   </entry>
   <entry>
-    <title>dotnet/installer - Issues &amp; Pull Requests - 2021-10-30</title>
-    <id>https://github.com/dotnet/installer#2021-10-30</id>
+    <title>dotnet/installer - Issues &amp; Pull Requests - 2021-10-31</title>
+    <id>https://github.com/dotnet/installer#2021-10-31</id>
     <link href="https://github.com/dotnet/installer" />
-    <updated>2021-10-31T00:03:13Z</updated>
+    <updated>2021-11-01T00:03:51Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Updated&lt;/h3&gt;
@@ -623,17 +496,6 @@
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
-&lt;/section&gt;&lt;section&gt;
-  &lt;h2&gt;PullRequests&lt;/h2&gt;
-  &lt;h3&gt;Merged&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/installer/pull/12120"&gt;Fix Bash shebang for scripts to run under FreeBSD #12120&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/section&gt;</content>
+&lt;/section&gt;&lt;div /&gt;</content>
   </entry>
 </feed>
