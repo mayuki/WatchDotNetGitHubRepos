@@ -1,6 +1,54 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>icsharpcode/ILSpy - Releases</title>
   <link href="https://github.com/icsharpcode/ILSpy" />
-  <updated>2021-11-08T00:03:33Z</updated>
+  <updated>2021-11-09T00:03:41Z</updated>
   <id>https://github.com/icsharpcode/ILSpy</id>
+  <entry>
+    <title>icsharpcode/ILSpy - Releases - 2021-11-08</title>
+    <id>https://github.com/icsharpcode/ILSpy#2021-11-08</id>
+    <link href="https://github.com/icsharpcode/ILSpy" />
+    <updated>2021-11-09T00:03:41Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/icsharpcode/ILSpy/releases/tag/v7.2-preview2"&gt;ILSpy 7.2 Preview 2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h1&gt;New Language Features&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;C# 9.0 skip locals init&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Contributions&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Various improvements in pattern detection for records (by &lt;a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/yyjdelete/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/yyjdelete"&gt;@yyjdelete&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="963171147" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2476" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/2476/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/2476"&gt;#2476&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;ILSpyCmd: Added support for single-file bundles (by &lt;a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/Freakness109/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Freakness109"&gt;@Freakness109&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="993804324" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2499" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/2499/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/2499"&gt;#2499&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;BAML decompiler: Add missing &lt;code&gt;x:Static&lt;/code&gt; (by &lt;a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/wwh1004/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/wwh1004"&gt;@wwh1004&lt;/a&gt; and &lt;a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/bert2/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/bert2"&gt;@bert2&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1046008276" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2536" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/2536/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/2536"&gt;#2536&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Visual Studio AddIn&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;We now have an addin for VS2022 &lt;a href="https://marketplace.visualstudio.com/items?itemName=SharpDevelopTeam.ILSpy2022" rel="nofollow"&gt;https://marketplace.visualstudio.com/items?itemName=SharpDevelopTeam.ILSpy2022&lt;/a&gt; that is separate from the legacy addin. If you had ILSpy installed in a preview version of VS2022, please uninstall the old version and install this new one.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Enhancements&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Added ETW instrumentation to the decompiler for performance measurements.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;DecompilerTypeSystem.CreateAsync&lt;/code&gt; to allow asynchronous initialization.&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1029621824" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2522" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2522/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2522"&gt;#2522&lt;/a&gt;: Support backticks in fully-qualified names when searching for type&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1024692654" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2520" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2520/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2520"&gt;#2520&lt;/a&gt;: The matched pairs are hardly visible in the dark theme&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="804578686" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2298" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2298/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2298"&gt;#2298&lt;/a&gt;: Allow to change the DecompilerTextView's font size through scrolling.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Bug fixes&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1022859769" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2518" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2518/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2518"&gt;#2518&lt;/a&gt;: "Other resources" section in resource files was not properly displayed&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1043174882" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2534" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2534/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2534"&gt;#2534&lt;/a&gt;: Handle default implementations of properties and events in interfaces&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="952025687" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2458" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2458/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2458"&gt;#2458&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="952027332" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2459" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2459/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2459"&gt;#2459&lt;/a&gt;: Fixed various correctness issues in IL code generated by C++/CLI.&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1039873920" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2530" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2530/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2530"&gt;#2530&lt;/a&gt;: Stability fixes in pattern matching detection&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="868416843" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2378" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2378/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2378"&gt;#2378&lt;/a&gt;: Stability fixes in deconstruction detection&lt;/li&gt;
+&lt;li&gt;And many other fixes, for a full list click &lt;a href="https://github.com/icsharpcode/ILSpy/compare/v7.2-preview1...v7.2-preview2"&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
