@@ -1,6 +1,73 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>mysql-net/MySqlConnector - Releases</title>
   <link href="https://github.com/mysql-net/MySqlConnector" />
-  <updated>2021-11-09T00:03:44Z</updated>
+  <updated>2021-11-10T00:03:36Z</updated>
   <id>https://github.com/mysql-net/MySqlConnector</id>
+  <entry>
+    <title>mysql-net/MySqlConnector - Releases - 2021-11-09</title>
+    <id>https://github.com/mysql-net/MySqlConnector#2021-11-09</id>
+    <link href="https://github.com/mysql-net/MySqlConnector" />
+    <updated>2021-11-10T00:03:36Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/mysql-net/MySqlConnector/releases/tag/2.0.0"&gt;2.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;Target .NET 6.0.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Breaking&lt;/strong&gt; Update the &lt;code&gt;MySqlBatch&lt;/code&gt; (experimental API) to match .NET 6.0 API changes.&lt;/li&gt;
+&lt;li&gt;Support &lt;code&gt;DateOnly&lt;/code&gt; and &lt;code&gt;TimeOnly&lt;/code&gt; structs: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="840660845" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/963" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/963/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/963"&gt;#963&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;ZLibStream&lt;/code&gt; for compression: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="831234875" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/957" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/957/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/957"&gt;#957&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;X_OR_GREATER&lt;/code&gt; preprocessor definitions: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="831285763" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/958" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/958/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/958"&gt;#958&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Breaking&lt;/strong&gt; Improve &lt;code&gt;MySqlBulkCopy&lt;/code&gt; API: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="936490185" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1012" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1012/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1012"&gt;#1012&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Breaking&lt;/strong&gt; Remove &lt;code&gt;ConnectionIdlePingTime&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1004902990" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1042" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1042/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1042"&gt;#1042&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;Connection Idle Ping Time&lt;/code&gt; connection string option is still accepted, but has no effect.&lt;/li&gt;
+&lt;li&gt;If &lt;code&gt;Connection Reset = False&lt;/code&gt;, &lt;code&gt;MySqlConnection.Open&lt;/code&gt; will return a pooled connection (if one is available) without testing it for liveness (by pinging the server). This improves performance but may degrade reliability. (&lt;code&gt;Connection Reset = True&lt;/code&gt;, which is the default, is still recommended for greatest reliability.)&lt;/li&gt;
+&lt;li&gt;If the server has closed the pooled connection, &lt;code&gt;MySqlConnection.Open&lt;/code&gt; will succeed, but the first operation on that connection will fail. Command execution should be wrapped in a try/catch/retry loop to handle this scenario.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Breaking&lt;/strong&gt; Change how option keys are serialized when retrieving the &lt;code&gt;MySqlConnectionStringBuilder.ConnectionString&lt;/code&gt; property:
+&lt;ul&gt;
+&lt;li&gt;For example, &lt;code&gt;User Id&lt;/code&gt; is now &lt;code&gt;User ID&lt;/code&gt;, &lt;code&gt;DefaultCommandTimeout&lt;/code&gt; is now &lt;code&gt;Default Command Timeout&lt;/code&gt;, etc.&lt;/li&gt;
+&lt;li&gt;All existing connection strings are still valid, and all the previous aliases for connection string options are still accepted.&lt;/li&gt;
+&lt;li&gt;The primary connection string option key is listed first in the documentation at &lt;a href="https://mysqlconnector.net/connection-options/" rel="nofollow"&gt;https://mysqlconnector.net/connection-options/&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Breaking&lt;/strong&gt; Seal &lt;code&gt;MySqlCommandBuilder&lt;/code&gt; and &lt;code&gt;MySqlConversionException&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Remove &lt;code&gt;netstandard1.3&lt;/code&gt; and &lt;code&gt;netcoreapp2.1&lt;/code&gt; target frameworks: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="993189737" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1031" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1031/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1031"&gt;#1031&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1034268272" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1067" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1067/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1067"&gt;#1067&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;ActivitySource&lt;/code&gt; for tracing: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1000077179" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1036" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1036/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1036"&gt;#1036&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Reduce default log message severity: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="873203705" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/981" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/981/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/981"&gt;#981&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;MySqlConnection.ProvideClientCertificatesCallback&lt;/code&gt;, &lt;code&gt;MySqlConnection.ProvidePasswordCallback&lt;/code&gt;, &lt;code&gt;MySqlConnection.RemoteCertificateValidationCallback&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="601007522" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/800" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/800/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/800"&gt;#800&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="866056694" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/976" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/976/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/976"&gt;#976&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Support &lt;code&gt;BigInteger&lt;/code&gt; as parameter value: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1034442567" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1069" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1069/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1069"&gt;#1069&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Add more values to &lt;code&gt;MySqlErrorCode&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1014056139" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1048" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1048/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1048"&gt;#1048&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Make &lt;code&gt;MySqlError.Code&lt;/code&gt; obsolete: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="935895260" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1011" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1011/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1011"&gt;#1011&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;Use &lt;code&gt;ErrorCode&lt;/code&gt; property instead.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Remove &lt;code&gt;BackgroundConnectionResetHelper&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="937258154" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1013" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1013/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1013"&gt;#1013&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;MySqlConnectionStringBuilder.DeferConnectionReset&lt;/code&gt; is obsolete and will always be treated as if it's &lt;code&gt;true&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Add NuGet package READMEs: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1016471378" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1053" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1053/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1053"&gt;#1053&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;[Category]&lt;/code&gt;, &lt;code&gt;[DefaultValue]&lt;/code&gt;, and &lt;code&gt;[Description]&lt;/code&gt; attributes to all &lt;code&gt;MySqlConnectionStringBuilder&lt;/code&gt; properties.&lt;/li&gt;
+&lt;li&gt;Improve performance of Regex usage internally.&lt;/li&gt;
+&lt;li&gt;Throw an informative exception if &lt;code&gt;DELIMITER&lt;/code&gt; is used in a SQL statement: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="935842843" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1010" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1010/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1010"&gt;#1010&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Fix &lt;code&gt;MySqlConnectionStringBuilder.TryGetValue&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="992446910" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1030" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1030/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1030"&gt;#1030&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Fix incorrect value for &lt;code&gt;MySqlCommand.LastInsertedId&lt;/code&gt; when executing multiple commands: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="977339058" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1026" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1026/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1026"&gt;#1026&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Fix bug executing stored procedures with backticks in their names: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="992038525" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1029" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1029/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1029"&gt;#1029&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Fix rare &lt;code&gt;ObjectDisposedException&lt;/code&gt; that could be thrown when a connection timeout occurred.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
