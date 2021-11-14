@@ -1,47 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc-dotnet - Releases</title>
   <link href="https://github.com/grpc/grpc-dotnet" />
-  <updated>2021-11-13T00:03:35Z</updated>
+  <updated>2021-11-14T00:03:48Z</updated>
   <id>https://github.com/grpc/grpc-dotnet</id>
-  <entry>
-    <title>grpc/grpc-dotnet - Releases - 2021-11-12</title>
-    <id>https://github.com/grpc/grpc-dotnet#2021-11-12</id>
-    <link href="https://github.com/grpc/grpc-dotnet" />
-    <updated>2021-11-13T00:03:35Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc-dotnet/releases/tag/v2.41.0-pre1"&gt;Release v2.41.0-pre1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h1&gt;New features&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Add more info to UserAgent header (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="995571909" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1411" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1411/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1411"&gt;#1411&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Add trimming attributes and eliminate trim warnings in .NET 6 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1042628087" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1465" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1465/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1465"&gt;#1465&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Add support for per-address attributes (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1046865610" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1472" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1472/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1472"&gt;#1472&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Changes&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Add detail to server RPC error log message and remove exception (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1013919762" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1436" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1436/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1436"&gt;#1436&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Refactor client factory channel and interceptor lifetime (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1011887949" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1430" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1430/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1430"&gt;#1430&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Fixes&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix combining auth and retry (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="998873031" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1414" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1414/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1414"&gt;#1414&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix deadline counter not being incremented if server returns first (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="987410311" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1399" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1399/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1399"&gt;#1399&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Client handle server cancellation for deadline (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="989005351" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1402" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1402/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1402"&gt;#1402&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix streaming with no response messages not successful (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="988163200" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1401" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1401/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1401"&gt;#1401&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Update check for secure channel in ReadCredentials (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1010078713" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1428" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1428/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1428"&gt;#1428&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix race between CompleteAsync and call dispose (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1010329518" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1429" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1429/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1429"&gt;#1429&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix race by throwing response error after completing call (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1017235860" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1443" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1443/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1443"&gt;#1443&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Ensure That Timer Callback Does not Call Method on Disposed Timer (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1019088091" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1445" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1445/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1445"&gt;#1445&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Reset HTTP/3 request on deadline exceeded (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1021508815" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1446" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1446/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1446"&gt;#1446&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix server trim error from dependency injection (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1045513238" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1471" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1471/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1471"&gt;#1471&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
