@@ -1,26 +1,20 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/roslyn - Issues &amp; Pull Requests</title>
   <link href="https://github.com/dotnet/roslyn" />
-  <updated>2021-12-28T00:03:40Z</updated>
+  <updated>2021-12-29T00:03:23Z</updated>
   <id>https://github.com/dotnet/roslyn</id>
   <entry>
-    <title>dotnet/roslyn - Issues &amp; Pull Requests - 2021-12-27</title>
-    <id>https://github.com/dotnet/roslyn#2021-12-27</id>
+    <title>dotnet/roslyn - Issues &amp; Pull Requests - 2021-12-28</title>
+    <id>https://github.com/dotnet/roslyn#2021-12-28</id>
     <link href="https://github.com/dotnet/roslyn" />
-    <updated>2021-12-28T00:03:40Z</updated>
+    <updated>2021-12-29T00:03:23Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/58503"&gt;Is there an API syntax node that allows developers to get error messages through error messages? #58503&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/58502"&gt;Move static members to another type does not use the correct visibility #58502&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/58514"&gt;InterpolatedStringHandlerArgumentAttribute("") is not correctly taken into account when the receiver is a struct #58514&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -29,15 +23,21 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/58501"&gt;Line-end errors overlap with the line content #58501&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/58510"&gt;IDE0161 - #endif not retained [C#] #58510&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/58504"&gt;Suggestion: Lower specific calls to String.StartsWith to faster code #58504&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/58513"&gt;CS8345 (ERR_FieldAutoPropCantBeByRefLike) wording can be misleading #58513&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/58133"&gt;Intellisense suggesting code improvement not supported for the project's C# version #58133&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;17.1&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;&lt;section&gt;
@@ -46,39 +46,54 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/58506"&gt;Allow valid metadata name characters in source generator hint names #58506&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/58515"&gt;Remove IsAutoPropertyWithGetAccessor #58515&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-Compilers&lt;/div&gt;
+      &lt;div&gt;Area-Compilers, Community&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/58505"&gt;Fix branch link in language feature status #58505&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/58511"&gt;Merge main into features/RawStringLiterals #58511&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-Compilers, Community&lt;/div&gt;
+      &lt;div&gt;Area-IDE, Needs UX Triage&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/58509"&gt;Adjust design behind Nullable analysis for target-typed expressions and add handling for target-typed new. #58509&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Area-Compilers, New Language Feature - Nullable Reference Types, New Language Feature - Target-Typed New&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/58508"&gt;Cleanup Renamer.RenameDocumentAction API  #58508&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Area-IDE&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/58507"&gt;declaration errors #58507&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Area-Compilers&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
   &lt;h3&gt;Merged&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/57076"&gt;Semi auto implemented properties #57076&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/58516"&gt;Make sure Index and Range are acceptable before offering refactorings #58516&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-Compilers, Community&lt;/div&gt;
+      &lt;div&gt;Area-IDE, Next&lt;/div&gt;
     &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Updated&lt;/h3&gt;
-  &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/58204"&gt;Fix Integration test MetadataReference #58204&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/58452"&gt;Report level 7 name warning for `record` when langversion is below 9 #58452&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-IDE&lt;/div&gt;
+      &lt;div&gt;Area-Compilers, Next&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/roslyn/pull/58458"&gt;Stack Trace Explorer improvements #58458&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-IDE, Needs UX Triage&lt;/div&gt;
+      &lt;div&gt;Area-IDE, Needs UX Triage, Next&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -86,35 +101,26 @@
       &lt;/div&gt;
       &lt;div&gt;Area-Compilers&lt;/div&gt;
     &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;Updated&lt;/h3&gt;
+  &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/57295"&gt;Synthesize delegate types for lambdas with parameter types or return type that are not valid type arguments #57295&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/55971"&gt;Theme some dialogs #55971&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-Compilers&lt;/div&gt;
+      &lt;div&gt;Area-IDE, Needs UX Triage&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/58500"&gt;Avoid race condition in map for TupleElementIndex  #58500&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/48754"&gt;Allow nameof to access instance members. #48754&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-Compilers, New Language Feature - Tuples&lt;/div&gt;
+      &lt;div&gt;Area-Compilers, Community&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/58452"&gt;Report level 7 name warning for `record` when langversion is below 9 #58452&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/41000"&gt;Update Public API files #41000&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-Compilers&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/58430"&gt;Improve error reporting for 'this()' initializer from 'record struct' constructor #58430&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-Compilers&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/52923"&gt;Make IOperation.ChildOperations public #52923&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-Compilers&lt;/div&gt;
+      &lt;div&gt;Area-Compilers, Concept-Null Annotations&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -124,9 +130,27 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/44388"&gt;Support Pattern Matching ReadOnlySpan&amp;lt;char&amp;gt; on constant string #44388&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/58488"&gt;Enable indenter tests #58488&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-Compilers, Community, Compiler.Next&lt;/div&gt;
+      &lt;div&gt;Area-IDE&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/57295"&gt;Synthesize delegate types for lambdas with parameter types or return type that are not valid type arguments #57295&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Area-Compilers&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/31843"&gt;SignatureHelp: guess best overload for incomplete invocations #31843&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Area-IDE, Feature Request, Backlog&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/58506"&gt;Allow valid metadata name characters in source generator hint names #58506&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Area-Compilers&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;</content>
