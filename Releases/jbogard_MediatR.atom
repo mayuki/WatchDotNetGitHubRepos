@@ -1,53 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>jbogard/MediatR - Releases</title>
   <link href="https://github.com/jbogard/MediatR" />
-  <updated>2022-01-07T17:23:13Z</updated>
+  <updated>2022-01-08T00:03:48Z</updated>
   <id>https://github.com/jbogard/MediatR</id>
-  <entry>
-    <title>jbogard/MediatR - Releases - 2022-01-06</title>
-    <id>https://github.com/jbogard/MediatR#2022-01-06</id>
-    <link href="https://github.com/jbogard/MediatR" />
-    <updated>2022-01-07T17:23:13Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/jbogard/MediatR/releases/tag/v10.0.0"&gt;10.0.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;This release adds support for &lt;code&gt;IAsyncEnumerable&amp;lt;T&amp;gt;&lt;/code&gt;. A new request type, &lt;code&gt;IStreamRequest&amp;lt;T&amp;gt;&lt;/code&gt; represents a request to create a stream, with a new handler type &lt;code&gt;IStreamRequestHandler&amp;lt;TRequest, TResponse&amp;gt;&lt;/code&gt; to handle. An example:&lt;/p&gt;
-&lt;div class="highlight highlight-source-cs position-relative overflow-auto" data-snippet-clipboard-copy-content="public class StreamPing : IStreamRequest&amp;lt;Pong&amp;gt;
-{
-    public string? Message { get; init; }
-}
-
-public class PingStreamHandler : IStreamRequestHandler&amp;lt;StreamPing, Pong&amp;gt;
-{
-    public async IAsyncEnumerable&amp;lt;Pong&amp;gt; Handle(StreamPing request, 
-        [EnumeratorCancellation] CancellationToken cancellationToken)
-    {
-        yield return await Task.Run(() =&amp;gt; new Pong { Message = request.Message + &amp;quot; Pang&amp;quot; }, cancellationToken);
-    }
-}"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;public&lt;/span&gt; &lt;span class="pl-k"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;StreamPing&lt;/span&gt; : &lt;span class="pl-k"&gt;IStreamRequest&lt;/span&gt;&amp;lt;&lt;span class="pl-k"&gt;Pong&lt;/span&gt;&amp;gt;
-{
-    &lt;span class="pl-k"&gt;public&lt;/span&gt; &lt;span class="pl-k"&gt;string&lt;/span&gt;? &lt;span class="pl-en"&gt;Message&lt;/span&gt; { &lt;span class="pl-k"&gt;get&lt;/span&gt;; &lt;span class="pl-k"&gt;init&lt;/span&gt;; }
-}
-
-&lt;span class="pl-k"&gt;public&lt;/span&gt; &lt;span class="pl-k"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;PingStreamHandler&lt;/span&gt; : &lt;span class="pl-k"&gt;IStreamRequestHandler&lt;/span&gt;&amp;lt;&lt;span class="pl-k"&gt;StreamPing&lt;/span&gt;, &lt;span class="pl-k"&gt;Pong&lt;/span&gt;&amp;gt;
-{
-    &lt;span class="pl-k"&gt;public&lt;/span&gt; &lt;span class="pl-k"&gt;async&lt;/span&gt; &lt;span class="pl-k"&gt;IAsyncEnumerable&lt;/span&gt;&amp;lt;&lt;span class="pl-k"&gt;Pong&lt;/span&gt;&amp;gt; &lt;span class="pl-en"&gt;Handle&lt;/span&gt;(&lt;span class="pl-k"&gt;StreamPing&lt;/span&gt; &lt;span class="pl-en"&gt;request&lt;/span&gt;, 
-        [&lt;span class="pl-k"&gt;EnumeratorCancellation&lt;/span&gt;] &lt;span class="pl-k"&gt;CancellationToken&lt;/span&gt; &lt;span class="pl-en"&gt;cancellationToken&lt;/span&gt;)
-    {
-        &lt;span class="pl-k"&gt;yield&lt;/span&gt; &lt;span class="pl-k"&gt;return&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-smi"&gt;Task&lt;/span&gt;.&lt;span class="pl-en"&gt;Run&lt;/span&gt;(() &lt;span class="pl-k"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-k"&gt;Pong&lt;/span&gt; { &lt;span class="pl-smi"&gt;Message&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;request&lt;/span&gt;.&lt;span class="pl-smi"&gt;Message&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt; Pang&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; }, &lt;span class="pl-smi"&gt;cancellationToken&lt;/span&gt;);
-    }
-}&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Where the work inside of the handler would likely be calling some other streaming API, such as gRPC, EF Core streaming support, Dapper streaming etc.&lt;/p&gt;
-&lt;p&gt;There are also separate behaviors, with &lt;code&gt;IStreamPipelineBehavior&lt;/code&gt; that are separate from the normal &lt;code&gt;IPipelineBehavior&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;With the addition of &lt;code&gt;IAsyncEnumerable&lt;/code&gt;, this release now targets &lt;code&gt;netstandard2.1&lt;/code&gt; exclusively.&lt;/p&gt;
-&lt;p&gt;There are some breaking API changes, called out in the &lt;a href="https://github.com/jbogard/MediatR/wiki/Migration-Guide-9.x-to-10.0"&gt;10.0 migration guide&lt;/a&gt;.&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
