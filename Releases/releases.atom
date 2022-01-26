@@ -1,22 +1,39 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2022-01-25T00:04:59Z</updated>
+  <updated>2022-01-26T00:03:40Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>grpc/grpc - Releases - 2022-01-24</title>
-    <id>https://github.com/grpc/grpc#2022-01-24</id>
-    <link href="https://github.com/grpc/grpc" />
-    <updated>2022-01-25T00:04:50Z</updated>
+    <title>mysql-net/MySqlConnector - Releases - 2022-01-25</title>
+    <id>https://github.com/mysql-net/MySqlConnector#2022-01-25</id>
+    <link href="https://github.com/mysql-net/MySqlConnector" />
+    <updated>2022-01-26T00:03:37Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.44.0-pre1"&gt;Release v1.44.0-pre1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/mysql-net/MySqlConnector/releases/tag/2.1.4"&gt;2.1.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;This is a prerelease of gRPC Core 1.44.0 (great).&lt;/p&gt;
-&lt;p&gt;Please see the notes for the previous releases here: &lt;a href="https://github.com/grpc/grpc/releases"&gt;https://github.com/grpc/grpc/releases&lt;/a&gt;. Please consult &lt;a href="https://grpc.io/" rel="nofollow"&gt;https://grpc.io/&lt;/a&gt; for all information regarding this product.&lt;/p&gt;
-&lt;p&gt;This prerelease contains refinements, improvements, and bug fixes.&lt;/p&gt;
+                                &lt;ul&gt;
+&lt;li&gt;Fix &lt;code&gt;InvalidOperationException&lt;/code&gt; if &lt;code&gt;MySqlDataReader.RecordsAffected&lt;/code&gt; was read after calling &lt;code&gt;Close()&lt;/code&gt; or &lt;code&gt;Dispose()&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1114007795" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1122" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1122/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1122"&gt;#1122&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;This was a regression introduced by &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1068123117" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1096" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1096/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1096"&gt;#1096&lt;/a&gt; in &lt;a href="https://github.com/mysql-net/MySqlConnector/releases/tag/2.1.3"&gt;2.1.3&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/mysql-net/MySqlConnector/releases/tag/2.1.3"&gt;2.1.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;Fix &lt;code&gt;Use Compression = True&lt;/code&gt; when running under .NET 6.0: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1113248905" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1120" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1120/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1120"&gt;#1120&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Fix calculation of affected rows (the return value of &lt;code&gt;ExecuteNonQuery&lt;/code&gt;) for compound statements: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1068123117" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1096" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1096/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1096"&gt;#1096&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Use a better &lt;code&gt;FormatException&lt;/code&gt; message when a GUID can't be read: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1096565472" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1114" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1114/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1114"&gt;#1114&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Use cryptographic one-shot operations on .NET 5.0 and later.&lt;/li&gt;
+&lt;li&gt;Performance: Use &lt;code&gt;SkipLocalsInit&lt;/code&gt; where possible.&lt;/li&gt;
+&lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
