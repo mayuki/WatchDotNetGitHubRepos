@@ -1,6 +1,60 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2022-02-15T00:04:17Z</updated>
+  <updated>2022-02-16T00:03:29Z</updated>
   <id>https://github.com/grpc/grpc</id>
+  <entry>
+    <title>grpc/grpc - Releases - 2022-02-15</title>
+    <id>https://github.com/grpc/grpc#2022-02-15</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2022-02-16T00:03:29Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.44.0"&gt;Release v1.44.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release 1.44.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;great&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;xDS: Rbac filter updates (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1104062569" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/28568" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28568/hovercard" href="https://github.com/grpc/grpc/pull/28568"&gt;#28568&lt;/a&gt;). (&lt;a href="https://github.com/grpc/grpc/pull/28608" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28608/hovercard"&gt;#28608&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix xDS client for multiple watchers. (&lt;a href="https://github.com/grpc/grpc/pull/28521" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28521/hovercard"&gt;#28521&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;bump C-core version for upcoming release. (&lt;a href="https://github.com/grpc/grpc/pull/28527" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28527/hovercard"&gt;#28527&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add a trace to list which filters are contained in a channel stack. (&lt;a href="https://github.com/grpc/grpc/pull/28530" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28530/hovercard"&gt;#28530&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Remove grpc_httpcli_context. (&lt;a href="https://github.com/grpc/grpc/pull/27867" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/27867/hovercard"&gt;#27867&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;xDS: Add support for RBAC HTTP filter. (&lt;a href="https://github.com/grpc/grpc/pull/28309" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28309/hovercard"&gt;#28309&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;API to cancel grpc_resolve_address. (&lt;a href="https://github.com/grpc/grpc/pull/27883" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/27883/hovercard"&gt;#27883&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Replace work serializer with a mutex in c-ares resolver. (&lt;a href="https://github.com/grpc/grpc/pull/27858" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/27858/hovercard"&gt;#27858&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;xDS: Add graceful shutdown for old connections on listener resource update. (&lt;a href="https://github.com/grpc/grpc/pull/28154" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28154/hovercard"&gt;#28154&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C++&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Promote ClientContext::set_wait_for_ready to be non-experimental. (&lt;a href="https://github.com/grpc/grpc/pull/28247" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28247/hovercard"&gt;#28247&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C#&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Only apply "singleplatform" nuget suffix when actually needed. (&lt;a href="https://github.com/grpc/grpc/pull/28677" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28677/hovercard"&gt;#28677&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[C#] Add ConfigureAwait to AsyncUnaryCall and AsyncClientStreamingCall. (&lt;a href="https://github.com/grpc/grpc/pull/28235" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28235/hovercard"&gt;#28235&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Add python async example for hellostreamingworld using generator. (&lt;a href="https://github.com/grpc/grpc/pull/27343" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/27343/hovercard"&gt;#27343&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Disable __wrap_memcpy hack for Python builds. (&lt;a href="https://github.com/grpc/grpc/pull/28410" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28410/hovercard"&gt;#28410&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Bump Bazel Python Cython dependency to 0.29.26. (&lt;a href="https://github.com/grpc/grpc/pull/28398" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28398/hovercard"&gt;#28398&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix libatomic linking on Raspberry Pi OS Bullseye. (&lt;a href="https://github.com/grpc/grpc/pull/28041" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28041/hovercard"&gt;#28041&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Allow generated proto sources in remote repositories for py_proto_library. (&lt;a href="https://github.com/grpc/grpc/pull/28103" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28103/hovercard"&gt;#28103&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ruby&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Remove ruby 2.4 support. (&lt;a href="https://github.com/grpc/grpc/pull/28522" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28522/hovercard"&gt;#28522&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add an env var to override make parallelism in ruby build. (&lt;a href="https://github.com/grpc/grpc/pull/28250" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28250/hovercard"&gt;#28250&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
