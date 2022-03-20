@@ -1,6 +1,67 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2022-03-19T00:04:20Z</updated>
+  <updated>2022-03-20T00:04:35Z</updated>
   <id>https://github.com/grpc/grpc</id>
+  <entry>
+    <title>grpc/grpc - Releases - 2022-03-19</title>
+    <id>https://github.com/grpc/grpc#2022-03-19</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2022-03-20T00:04:35Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.45.0"&gt;Release v1.45.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release 1.45.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;gravity&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Backport "Include ADS stream error in XDS error updates (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1159037206" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/29014" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29014/hovercard" href="https://github.com/grpc/grpc/pull/29014"&gt;#29014&lt;/a&gt;)" to 1.45.x. (&lt;a href="https://github.com/grpc/grpc/pull/29121" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29121/hovercard"&gt;#29121&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Bump core version to 23.0.0 for upcoming release. (&lt;a href="https://github.com/grpc/grpc/pull/29026" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29026/hovercard"&gt;#29026&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix memory leak in HTTP request security handshake cancellation. (&lt;a href="https://github.com/grpc/grpc/pull/28971" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28971/hovercard"&gt;#28971&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;CompositeChannelCredentials: Comparator implementation. (&lt;a href="https://github.com/grpc/grpc/pull/28902" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28902/hovercard"&gt;#28902&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Delete custom iomgr. (&lt;a href="https://github.com/grpc/grpc/pull/28816" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28816/hovercard"&gt;#28816&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Implement transparent retries. (&lt;a href="https://github.com/grpc/grpc/pull/28548" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28548/hovercard"&gt;#28548&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Uniquify channel args keys. (&lt;a href="https://github.com/grpc/grpc/pull/28799" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28799/hovercard"&gt;#28799&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Set trailing_metadata_available for recv_initial_metadata ops when generating a fake status. (&lt;a href="https://github.com/grpc/grpc/pull/28827" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28827/hovercard"&gt;#28827&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Eliminate gRPC insecure build. (&lt;a href="https://github.com/grpc/grpc/pull/25586" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/25586/hovercard"&gt;#25586&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix for a racy WorkSerializer shutdown. (&lt;a href="https://github.com/grpc/grpc/pull/28769" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28769/hovercard"&gt;#28769&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;InsecureCredentials: singleton object. (&lt;a href="https://github.com/grpc/grpc/pull/28777" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28777/hovercard"&gt;#28777&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add http cancel api. (&lt;a href="https://github.com/grpc/grpc/pull/28354" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28354/hovercard"&gt;#28354&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Memory leak fix on windows in grpc_tcp_create(). (&lt;a href="https://github.com/grpc/grpc/pull/27457" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/27457/hovercard"&gt;#27457&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;xDS: Rbac filter updates. (&lt;a href="https://github.com/grpc/grpc/pull/28568" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28568/hovercard"&gt;#28568&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C++&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bump the minimum gcc to 5. (&lt;a href="https://github.com/grpc/grpc/pull/28786" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28786/hovercard"&gt;#28786&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add experimental API for CRL checking support to gRPC C++ TlsCredentials. (&lt;a href="https://github.com/grpc/grpc/pull/28407" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28407/hovercard"&gt;#28407&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C#&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[C#] Add cancellation token overloads to streaming interfaces. (&lt;a href="https://github.com/grpc/grpc/pull/27886" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/27886/hovercard"&gt;#27886&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[C#] Grpc.Core.Api nullable fixes. (&lt;a href="https://github.com/grpc/grpc/pull/28616" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28616/hovercard"&gt;#28616&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Objective-C&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Patch GRPCCallOptions to use nonatomic properties. (&lt;a href="https://github.com/grpc/grpc/pull/28972" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28972/hovercard"&gt;#28972&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reimplement Gevent Integration. (&lt;a href="https://github.com/grpc/grpc/pull/28276" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28276/hovercard"&gt;#28276&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Support musllinux binary wheels on x64 and x86. (&lt;a href="https://github.com/grpc/grpc/pull/28092" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28092/hovercard"&gt;#28092&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Increase the Python protobuf requirement to &amp;gt;=3.12.0. (&lt;a href="https://github.com/grpc/grpc/pull/28604" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28604/hovercard"&gt;#28604&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Other&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgrade googletest. (&lt;a href="https://github.com/grpc/grpc/pull/27287" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/27287/hovercard"&gt;#27287&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
