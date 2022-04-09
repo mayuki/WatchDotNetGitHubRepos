@@ -1,37 +1,26 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2022-04-08T00:04:36Z</updated>
+  <updated>2022-04-09T00:04:39Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>grpc/grpc-dotnet - Releases - 2022-04-07</title>
-    <id>https://github.com/grpc/grpc-dotnet#2022-04-07</id>
-    <link href="https://github.com/grpc/grpc-dotnet" />
-    <updated>2022-04-08T00:04:30Z</updated>
+    <title>grpc/grpc - Releases - 2022-04-08</title>
+    <id>https://github.com/grpc/grpc#2022-04-08</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2022-04-09T00:04:33Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc-dotnet/releases/tag/v2.45.0-pre1"&gt;Release v2.45.0-pre1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.45.2"&gt;Release v1.45.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h1&gt;New features&lt;/h1&gt;
+                                &lt;p&gt;This is release 1.45.2 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;gravity&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Support WriteAsync cancellation token (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1174828971" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1645" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1645/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1645"&gt;#1645&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Reconnect backoff configuration (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1192816241" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1668" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1668/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1668"&gt;#1668&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Changes&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Log HTTP method when adding endpoint (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1167249866" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1637" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1637/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1637"&gt;#1637&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;WriteAsync on the server now throws on failure (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1174828971" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1645" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1645/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1645"&gt;#1645&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;WriteAsync on the client with hedging now waits for success before continuing (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1174828971" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1645" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1645/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1645"&gt;#1645&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Fixes&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix calls throw TaskCanceledException after previous call is canceled (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1190623095" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1664" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1664/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1664"&gt;#1664&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix unobserved exception from failed calls (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1189645313" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1660" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1660/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1660"&gt;#1660&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix dotnet-grpc error when additionalImportDirs is null (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1191645392" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1666" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1666/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1666"&gt;#1666&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix not flushing buffered writes when client streaming and hedging (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1174828971" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1645" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1645/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1645"&gt;#1645&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix race between server FlushAsync exiting and request cancellation token (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1174828971" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/1645" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/1645/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/1645"&gt;#1645&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Various fixes related to XDS (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1193430789" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/29314" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29314/hovercard" href="https://github.com/grpc/grpc/pull/29314"&gt;#29314&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1195305971" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/29340" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29340/hovercard" href="https://github.com/grpc/grpc/pull/29340"&gt;#29340&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1195303743" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/29339" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29339/hovercard" href="https://github.com/grpc/grpc/pull/29339"&gt;#29339&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;HTTP2: Should not run cancelling logic on servers when receiving GOAWAY (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1192618448" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/29307" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29307/hovercard" href="https://github.com/grpc/grpc/pull/29307"&gt;#29307&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
