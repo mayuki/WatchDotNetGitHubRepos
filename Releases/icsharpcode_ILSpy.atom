@@ -1,67 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>icsharpcode/ILSpy - Releases</title>
   <link href="https://github.com/icsharpcode/ILSpy" />
-  <updated>2022-04-21T00:05:31Z</updated>
+  <updated>2022-04-22T00:04:58Z</updated>
   <id>https://github.com/icsharpcode/ILSpy</id>
-  <entry>
-    <title>icsharpcode/ILSpy - Releases - 2022-04-20</title>
-    <id>https://github.com/icsharpcode/ILSpy#2022-04-20</id>
-    <link href="https://github.com/icsharpcode/ILSpy" />
-    <updated>2022-04-21T00:05:31Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/icsharpcode/ILSpy/releases/tag/v8.0-preview1"&gt;ILSpy 8.0 Preview 1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;ILSpy 8 is based on .NET 6.0 compared to .NET Framework 4.7.2 for the previous generations of ILSpy. All artifacts &lt;strong&gt;except&lt;/strong&gt; the self-contained distribution are built framework-dependent, which means &lt;a href="https://dotnet.microsoft.com/en-us/download/dotnet/6.0" rel="nofollow"&gt;.NET 6.0&lt;/a&gt; must be installed prior to starting ILSpy. This is true for:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;the installer&lt;/li&gt;
-&lt;li&gt;the framework-dependent zip&lt;/li&gt;
-&lt;li&gt;the VSIXs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Functionality is supposed to be unchanged and fully functional in this release compared to 7.2. If something works in 7.2 but not 8.0-preview1, please file a bug.&lt;/p&gt;
-&lt;h1&gt;Breaking Changes&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;ILSpy 8.0 will target &lt;code&gt;net60-windows&lt;/code&gt; (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1161091253" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2642" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/2642/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/2642"&gt;#2642&lt;/a&gt;) and all plugins will have to be migrated to the new platform.
-&lt;ul&gt;
-&lt;li&gt;Note: The &lt;code&gt;ICSharpCode.Decompiler&lt;/code&gt; engine and NuGet package will continue to target &lt;code&gt;netstandard2.0&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Platform-independent APIs will be moved to ICSharpCode.ILSpyX, currently that includes (but is not limited to):
-&lt;ul&gt;
-&lt;li&gt;LoadedAssembly and AssemblyList APIs&lt;/li&gt;
-&lt;li&gt;PdbProvider APIs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;LoadedAssembly.WaitUntilLoaded()&lt;/code&gt; was removed, because it leads to bugs; use &lt;code&gt;await LoadedAssembly.GetLoadResultAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;The MSIX project has been removed and the installer introduced in 7.x will take its place in the Microsoft Store going forward (at RC/RTM).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Contributions&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;ilspycmd&lt;/code&gt; received support for the "nested directories" option on project export. (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1158595322" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2636" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/2636/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/2636"&gt;#2636&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/GreyXor/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/GreyXor"&gt;@GreyXor&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ilspycmd&lt;/code&gt; support for generating a solution from multiple projects (based on code provided by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/marwie/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/marwie"&gt;@marwie&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="849667699" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2364" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/2364/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/2364"&gt;#2364&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Namespace nesting in ILSpy tree view (based on code provided by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ds5678/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ds5678"&gt;@ds5678&lt;/a&gt; in  &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1195122572" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2667" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/2667/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/2667"&gt;#2667&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix the ordering of COM interface methods, properties, and events to appear in their originally defined order (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1160281120" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2639" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/2639/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/2639"&gt;#2639&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/zhuman/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/zhuman"&gt;@zhuman&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Enhancements&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Performance optimization of analyzers (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1161674321" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2643" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/2643/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/2643"&gt;#2643&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Bug fixes&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1154534249" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2634" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2634/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2634"&gt;#2634&lt;/a&gt;: target expressions of delegate references were not decompiled correctly&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1139788428" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2632" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2632/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2632"&gt;#2632&lt;/a&gt;: Make sure that changing the setting "ExpandMemberDefinitions" has an effect when refreshing a decompiled view.&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1130976354" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2629" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2629/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2629"&gt;#2629&lt;/a&gt;: Indentation of method-call chains.&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1171986102" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2653" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2653/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2653"&gt;#2653&lt;/a&gt;: ILSpy reports wrong visibility for overridden protected internal properties if located in another assembly.&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1104818986" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2610" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2610/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2610"&gt;#2610&lt;/a&gt;: Explicitly qualify members in TemplateBindings.&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1174919781" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2655" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2655/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2655"&gt;#2655&lt;/a&gt;: TranslateArrayInitializer crashes with out of order array init&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;And many other fixes, for a full list click &lt;a href="https://github.com/icsharpcode/ILSpy/compare/v7.2.1...v8.0-preview1"&gt;here&lt;/a&gt;.&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
