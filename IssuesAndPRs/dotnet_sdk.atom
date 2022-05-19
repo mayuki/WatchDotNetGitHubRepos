@@ -1,26 +1,44 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/sdk - Issues &amp; Pull Requests</title>
   <link href="https://github.com/dotnet/sdk" />
-  <updated>2022-05-18T00:04:27Z</updated>
+  <updated>2022-05-19T00:04:25Z</updated>
   <id>https://github.com/dotnet/sdk</id>
   <entry>
-    <title>dotnet/sdk - Issues &amp; Pull Requests - 2022-05-17</title>
-    <id>https://github.com/dotnet/sdk#2022-05-17</id>
+    <title>dotnet/sdk - Issues &amp; Pull Requests - 2022-05-18</title>
+    <id>https://github.com/dotnet/sdk#2022-05-18</id>
     <link href="https://github.com/dotnet/sdk" />
-    <updated>2022-05-18T00:04:27Z</updated>
+    <updated>2022-05-19T00:04:25Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/issues/25486"&gt;Incorrect description when update dotnet tool with prerelease version #25486&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/25514"&gt;dotnet run looks in the wrong bin/obj directories if targetting only one non-AnyCPU platform in &amp;lt;Platforms&amp;gt;, but works with &amp;lt;Platform&amp;gt; added #25514&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/issues/25478"&gt;.NET 6.0.5 Patch - SDK Update necessary? #25478&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/25510"&gt;[dotnet-watch] hot reload script injection should be more permisive. #25510&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/25509"&gt;Some exceptions cannot be caught by a try/catch block or global exception handler #25509&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/25508"&gt;Enable running Microsoft.NET.Build.Tasks.UnitTests in CI #25508&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/25504"&gt;When multiple TargetFrameworks are used, RunProduceContentAssets is skipped on rebuild #25504&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -29,15 +47,15 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/issues/25377"&gt;Fix package signature verification when installing workloads. #25377&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/24943"&gt;PackageValidation with --no-build when project has ProjectReference causes NETSDK1085 #24943&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;6.0.3xx&lt;/div&gt;
+      &lt;div&gt;7.0.1xx&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/issues/23403"&gt;Workload feature band fallback doesn't work with workload update #23403&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/25289"&gt;[dotnet-sdk-7.0.100-preview.5.22257.3] All WPF apps launch failed with black screen or with exception about loading dlls #25289&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;6.0.4xx&lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;&lt;section&gt;
@@ -46,10 +64,19 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/25490"&gt;document long paths-related error message when building on windows #25490&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/25505"&gt;Implement functionality for templating workload and version constraints #25505&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;Area-Infrastructure&lt;/div&gt;
     &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/25494"&gt;Remove dependency on Assembly.GetCallingAssembly #25494&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Area-Infrastructure, DO NOT MERGE&lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;Merged&lt;/h3&gt;
+  &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/sdk/pull/25480"&gt;Clear DOTNET_ROOT_arch environment variable #25480&lt;/a&gt;
@@ -58,40 +85,13 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/25479"&gt;Update the target framework for the test projects #25479&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/25132"&gt;Update Microsoft.NET.Compatibility.Common.targets #25132&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-Infrastructure&lt;/div&gt;
+      &lt;div&gt;Area-Compatibility&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/25476"&gt;Update the hardcoded netcoreapp1.0 to the current framework #25476&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-Infrastructure&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Merged&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/25393"&gt;Enable the 4.8.1 target in sdk style projects #25393&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-Infrastructure&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/24678"&gt;Feature band fallback with workload update #24678&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-Workloads&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/25443"&gt;Remove duplicated PackageReference #25443&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-Infrastructure&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/25467"&gt;[automated] Merge branch 'release/6.0.3xx' =&amp;gt; 'release/6.0.4xx' #25467&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/25490"&gt;document long paths-related error message when building on windows #25490&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;Area-Infrastructure&lt;/div&gt;
     &lt;/li&gt;
@@ -100,9 +100,15 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/25346"&gt;Localized file check-in by OneLocBuild Task: Build definition ID 140: Build ID 1776107 #25346&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/25454"&gt;add tests to cover the resolution of AnalysisLevel known-strings #25454&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-Infrastructure&lt;/div&gt;
+      &lt;div&gt;Area-NetSDK&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/25323"&gt;Check if publishaot is used #25323&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -112,21 +118,9 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/24928"&gt;Cache pipeline inputs when suppressed: #24928&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/25346"&gt;Localized file check-in by OneLocBuild Task: Build definition ID 140: Build ID 1777920 #25346&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-AspNetCore&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/25358"&gt;Support suppressing transitive framework reference downloads, and other changes #25358&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/25454"&gt;add tests to cover the resolution of AnalysisLevel known-strings #25454&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-NetSDK&lt;/div&gt;
+      &lt;div&gt;Area-Infrastructure&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -136,13 +130,7 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/22233"&gt;Update the target framework for the test projects #22233&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-Infrastructure&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/25350"&gt;Update the hardcoded netcoreapp1.1 to the current framework #25350&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/25479"&gt;Update the target framework for the test projects #25479&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;Area-Infrastructure&lt;/div&gt;
     &lt;/li&gt;
