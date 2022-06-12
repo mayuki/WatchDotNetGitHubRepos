@@ -1,55 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2022-06-11T00:05:13Z</updated>
+  <updated>2022-06-12T00:06:48Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
-  <entry>
-    <title>FluentValidation/FluentValidation - Releases - 2022-06-10</title>
-    <id>https://github.com/FluentValidation/FluentValidation#2022-06-10</id>
-    <link href="https://github.com/FluentValidation/FluentValidation" />
-    <updated>2022-06-11T00:05:11Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/FluentValidation/FluentValidation/releases/tag/11.0.3"&gt;11.0.3&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h1&gt;Release notes&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://docs.fluentvalidation.net/en/latest/upgrading-to-11.html" rel="nofollow"&gt;Please read the upgrade guide if you are moving from 10.x to 11.x&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;Changes in 11.0.3&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix &lt;code&gt;AsyncValidatorInvokedSynchronouslyException&lt;/code&gt; being incorrectly thrown when the top-level &lt;code&gt;When&lt;/code&gt; method with &lt;code&gt;RuleForEach&lt;/code&gt;, even when invoked asynchronously (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1267800925" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1955" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/1955/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/1955"&gt;#1955&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Changes in 11.0.2&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Child validator contexts now contain a reference to their parent context (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1246943627" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1945" data-hovercard-type="pull_request" data-hovercard-url="/FluentValidation/FluentValidation/pull/1945/hovercard" href="https://github.com/FluentValidation/FluentValidation/pull/1945"&gt;#1945&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Support deserialization of &lt;code&gt;ValidationResult&lt;/code&gt; using System.Text.Json (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1210684893" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1928" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/1928/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/1928"&gt;#1928&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Changes in 11.0.1&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix regression in the Test Helper affecting the &lt;code&gt;With*&lt;/code&gt; and &lt;code&gt;Without*&lt;/code&gt; assertion methods (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1226259876" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1937" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/1937/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/1937"&gt;#1937&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Changes in 11.0&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Throw exceptions when async validator is invoked synchronously (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="860388999" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1705" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/1705/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/1705"&gt;#1705&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Removal deprecated OnFailure/OnAnyFailure callbacks.&lt;/li&gt;
-&lt;li&gt;Remove deprecated &lt;code&gt;RunDefaultMvcValidationAfterFluentValidationExecutes&lt;/code&gt; option from ASP.NET integration.&lt;/li&gt;
-&lt;li&gt;Remove deprecated &lt;code&gt;Options&lt;/code&gt; property from RuleComponent.&lt;/li&gt;
-&lt;li&gt;Remove deprecated TestHelper methods.&lt;/li&gt;
-&lt;li&gt;Remove non-generic &lt;code&gt;PropertyValidator&lt;/code&gt; backwards compatibility layer.&lt;/li&gt;
-&lt;li&gt;Add method &lt;code&gt;Only()&lt;/code&gt; to the test helper asserting that no other validation errors were raised.&lt;/li&gt;
-&lt;li&gt;Ensure property covariance is properly handled throughout the internal model (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="862890386" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1713" data-hovercard-type="pull_request" data-hovercard-url="/FluentValidation/FluentValidation/pull/1713/hovercard" href="https://github.com/FluentValidation/FluentValidation/pull/1713"&gt;#1713&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Downloads&lt;/h1&gt;
-&lt;p&gt;Binaries can be downloaded from nuget:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://nuget.org/packages/fluentvalidation" rel="nofollow"&gt;FluentValidation&lt;/a&gt; - Main package&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://nuget.org/packages/fluentvalidation.aspnetcore" rel="nofollow"&gt;FluentValidation.AspNetCore&lt;/a&gt; - ASP.NET Core integration&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
