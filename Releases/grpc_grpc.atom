@@ -1,6 +1,62 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2022-06-22T00:05:49Z</updated>
+  <updated>2022-06-23T00:05:17Z</updated>
   <id>https://github.com/grpc/grpc</id>
+  <entry>
+    <title>grpc/grpc - Releases - 2022-06-22</title>
+    <id>https://github.com/grpc/grpc#2022-06-22</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2022-06-23T00:05:17Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.47.0"&gt;Release v1.47.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release 1.47.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;gridman&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Announcement&lt;/h2&gt;
+&lt;p&gt;gRPC C++ 1.47.0 is the first release requiring C++14 (&lt;a href="https://github.com/grpc/proposal/blob/master/L98-requiring-cpp14.md"&gt;proposal&lt;/a&gt;). For those who cannot upgrade to C++14 right now, you can use gRPC C++ 1.46.x in the meantime and gRPC C++ 1.46.x will be maintained by having fixes for critical bugs (P0) and security fixes until 2023-06-01.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;xDS: Workaround to get gRPC clients working with istio (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1254287691" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/29841" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29841/hovercard" href="https://github.com/grpc/grpc/pull/29841"&gt;#29841&lt;/a&gt;). (&lt;a href="https://github.com/grpc/grpc/pull/29850" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29850/hovercard"&gt;#29850&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Bump core version to 25.0.0 for upcoming release. (&lt;a href="https://github.com/grpc/grpc/pull/29775" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29775/hovercard"&gt;#29775&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Initial support for Haiku. (&lt;a href="https://github.com/grpc/grpc/pull/27793" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/27793/hovercard"&gt;#27793&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add NetBSD support (Community-supported). (&lt;a href="https://github.com/grpc/grpc/pull/29542" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29542/hovercard"&gt;#29542&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;server: per-rpc backend metric reporting. (&lt;a href="https://github.com/grpc/grpc/pull/29621" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29621/hovercard"&gt;#29621&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Remove C# implementation (individual packages will continue to be maintained through v2.46.x patches or moved to grpc-dotnet). (&lt;a href="https://github.com/grpc/grpc/pull/29225" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29225/hovercard"&gt;#29225&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C++&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Expose NoOpCertificateVerifier to C++. (&lt;a href="https://github.com/grpc/grpc/pull/29322" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29322/hovercard"&gt;#29322&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;RouteGuide example: Abort if database file not found. (&lt;a href="https://github.com/grpc/grpc/pull/29398" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29398/hovercard"&gt;#29398&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C#&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;C#: Suppress CS8981 in generated source. (&lt;a href="https://github.com/grpc/grpc/pull/29708" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29708/hovercard"&gt;#29708&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Set Correct Platform Tag in Wheels on Mac OS with Python 3.10 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1256862768" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/29857" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29857/hovercard" href="https://github.com/grpc/grpc/pull/29857"&gt;#29857&lt;/a&gt;). (&lt;a href="https://github.com/grpc/grpc/pull/30026" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30026/hovercard"&gt;#30026&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Removed manylinux2010 python artifacts. (&lt;a href="https://github.com/grpc/grpc/pull/29734" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29734/hovercard"&gt;#29734&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Allow grpcio to be built against system abseil-cpp. (&lt;a href="https://github.com/grpc/grpc/pull/27550" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/27550/hovercard"&gt;#27550&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Add an UDS example. (&lt;a href="https://github.com/grpc/grpc/pull/29592" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29592/hovercard"&gt;#29592&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ruby&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Backport "Support for prebuilt Ruby binary on x64-mingw-ucrt platform (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1235393893" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/29684" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29684/hovercard" href="https://github.com/grpc/grpc/pull/29684"&gt;#29684&lt;/a&gt;)" to 1.47.x. (&lt;a href="https://github.com/grpc/grpc/pull/29868" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29868/hovercard"&gt;#29868&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Upgrade ruby rake-compiler-dock images (and stop building ruby gem artifacts on mac, in favor of rake-compile-dock darwin builds). (&lt;a href="https://github.com/grpc/grpc/pull/29304" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29304/hovercard"&gt;#29304&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Other&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Downgrade io_bazel_rules_go to v0.27.0 restore Bazel 3.x support. (&lt;a href="https://github.com/grpc/grpc/pull/29596" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29596/hovercard"&gt;#29596&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
