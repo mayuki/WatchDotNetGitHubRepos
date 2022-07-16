@@ -1,23 +1,27 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2022-07-15T00:05:51Z</updated>
+  <updated>2022-07-16T00:06:32Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>mysql-net/MySqlConnector - Releases - 2022-07-14</title>
-    <id>https://github.com/mysql-net/MySqlConnector#2022-07-14</id>
-    <link href="https://github.com/mysql-net/MySqlConnector" />
-    <updated>2022-07-15T00:05:44Z</updated>
+    <title>grpc/grpc - Releases - 2022-07-15</title>
+    <id>https://github.com/grpc/grpc#2022-07-15</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2022-07-16T00:06:26Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/mysql-net/MySqlConnector/releases/tag/2.1.11"&gt;2.1.11&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.47.1"&gt;Release v1.47.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;Fix &lt;code&gt;NullReferenceException&lt;/code&gt; in &lt;code&gt;MySqlConnector.Utilities.TimerQueue.Callback&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1253378715" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1177" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1177/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1177"&gt;#1177&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Support floating point infinity: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1285656968" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1185" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1185/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1185"&gt;#1185&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Thanks to &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/maicodio/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/maicodio"&gt;@maicodio&lt;/a&gt; for contributions to this release.&lt;/li&gt;
+                                &lt;p&gt;This is release gRPC Core 1.47.1 (gridman).&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Backport] Using string rep for status-time (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1286366900" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/30123" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30123/hovercard" href="https://github.com/grpc/grpc/pull/30123"&gt;#30123&lt;/a&gt;) &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1289337026" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/30145" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30145/hovercard" href="https://github.com/grpc/grpc/pull/30145"&gt;#30145&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Backport] Tell MSVC to build grpc with utf-8 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1270066212" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/30003" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30003/hovercard" href="https://github.com/grpc/grpc/pull/30003"&gt;#30003&lt;/a&gt;) &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1290023366" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/30153" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30153/hovercard" href="https://github.com/grpc/grpc/pull/30153"&gt;#30153&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Backport] Ring hash: fix picker propagation bug in xds_cluster_manager policy (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1265385900" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/29959" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/29959/hovercard" href="https://github.com/grpc/grpc/pull/29959"&gt;#29959&lt;/a&gt;) &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1298140645" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/30241" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30241/hovercard" href="https://github.com/grpc/grpc/pull/30241"&gt;#30241&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
