@@ -1,54 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2022-07-31T00:05:58Z</updated>
+  <updated>2022-08-01T00:06:18Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
-  <entry>
-    <title>icsharpcode/ILSpy - Releases - 2022-07-30</title>
-    <id>https://github.com/icsharpcode/ILSpy#2022-07-30</id>
-    <link href="https://github.com/icsharpcode/ILSpy" />
-    <updated>2022-07-31T00:05:53Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/icsharpcode/ILSpy/releases/tag/v8.0-preview2"&gt;ILSpy 8.0 Preview 2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;ILSpy 8 is based on .NET 6.0 compared to .NET Framework 4.7.2 for the previous generations of ILSpy. All artifacts &lt;strong&gt;except&lt;/strong&gt; the self-contained distribution are built framework-dependent, which means &lt;a href="https://dotnet.microsoft.com/en-us/download/dotnet/6.0" rel="nofollow"&gt;.NET 6.0&lt;/a&gt; must be installed prior to starting ILSpy.&lt;/p&gt;
-&lt;h1&gt;New Language Features&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;C# 11: ref fields&lt;/li&gt;
-&lt;li&gt;C# 10: record structs&lt;/li&gt;
-&lt;li&gt;C# 10: Support DefaultInterpolatedStringHandler&lt;/li&gt;
-&lt;li&gt;Updated pattern detection for Roslyn 4.3.0&lt;/li&gt;
-&lt;li&gt;Output attributes on lambda expressions&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Contributions&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Allow user to provide ID when generating a PDB (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1217923207" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2678" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/2678/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/2678"&gt;#2678&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/andrewcrawley/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/andrewcrawley"&gt;@andrewcrawley&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Assume conventionally named unresolved method references are properties or events (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1216161975" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2677" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/2677/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/2677"&gt;#2677&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/fowl2/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/fowl2"&gt;@fowl2&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Add EnableWindowsTargeting propery to csprojs targeting net6.0-windows (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1306949606" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2752" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/2752/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/2752"&gt;#2752&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/clin1234/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/clin1234"&gt;@clin1234&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Reduce allocations in TransformArrayInitializers (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1291679812" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2731" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/2731/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/2731"&gt;#2731&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ElektroKill/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ElektroKill"&gt;@ElektroKill&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix allowed language versions in &lt;code&gt;ilspycmd&lt;/code&gt; (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1260227259" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2703" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/2703/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/2703"&gt;#2703&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/superstrom/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/superstrom"&gt;@superstrom&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix crash target framework detection with C++/CLI (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1252309749" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2698" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/2698/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/2698"&gt;#2698&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/kant2002/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/kant2002"&gt;@kant2002&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Enhancements&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1221426955" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2684" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/2684/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/2684"&gt;#2684&lt;/a&gt;: Iteratively unhide compiler-generated code, if it is referenced by user-code&lt;/li&gt;
-&lt;li&gt;Use &lt;code&gt;Unsafe.SizeOf&lt;/code&gt; when taking the size of a managed type&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1275752341" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2718" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2718/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2718"&gt;#2718&lt;/a&gt;: Move XAML files that have an x:Class declaration next to their C# counterparts when using WholeProjectDecompiler&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Bug fixes&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1237182092" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2691" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2691/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2691"&gt;#2691&lt;/a&gt;: Do not use AssemblyDefintion.GetAssemblyName(). This fails in culture-invariant mode (ilspycmd) when trying to work with satellite assemblies, because System.Reflection.AssemblyName tries to retrieve CultureInfo of the assembly culture&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1292282029" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2733" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2733/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2733"&gt;#2733&lt;/a&gt;: Ignore bad metadata when trying to resolve ResolutionScope&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1301097001" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2741" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2741/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2741"&gt;#2741&lt;/a&gt;: CallBuilder produces invalid invocation target when disambiguating calls to protected methods&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;And many other fixes, for a full list click &lt;a href="https://github.com/icsharpcode/ILSpy/compare/v8.0-preview1...v8.0-preview2"&gt;here&lt;/a&gt;.&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
