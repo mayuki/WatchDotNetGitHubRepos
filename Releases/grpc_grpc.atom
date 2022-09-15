@@ -1,6 +1,46 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2022-09-14T00:06:12Z</updated>
+  <updated>2022-09-15T00:05:38Z</updated>
   <id>https://github.com/grpc/grpc</id>
+  <entry>
+    <title>grpc/grpc - Releases - 2022-09-14</title>
+    <id>https://github.com/grpc/grpc#2022-09-14</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2022-09-15T00:05:38Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.49.0"&gt;Release v1.49.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release 1.49.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;gamma&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Backport: "stabilize the C2P resolver URI scheme" to v1.49.x. (&lt;a href="https://github.com/grpc/grpc/pull/30654" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30654/hovercard"&gt;#30654&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Bump core version. (&lt;a href="https://github.com/grpc/grpc/pull/30588" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30588/hovercard"&gt;#30588&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update OpenCensus to HEAD. (&lt;a href="https://github.com/grpc/grpc/pull/30567" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30567/hovercard"&gt;#30567&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update protobuf submodule to 3.21.5. (&lt;a href="https://github.com/grpc/grpc/pull/30548" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30548/hovercard"&gt;#30548&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update third_party/protobuf to 3.21.4. (&lt;a href="https://github.com/grpc/grpc/pull/30377" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30377/hovercard"&gt;#30377&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[core] Remove GRPC_INITIAL_METADATA_CORKED flag. (&lt;a href="https://github.com/grpc/grpc/pull/30443" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30443/hovercard"&gt;#30443&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;HTTP2: Fix keepalive time throttling. (&lt;a href="https://github.com/grpc/grpc/pull/30164" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30164/hovercard"&gt;#30164&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Use AnyInvocable in EventEngine APIs. (&lt;a href="https://github.com/grpc/grpc/pull/30220" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30220/hovercard"&gt;#30220&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Support Python 3.11 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1359237828" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/30818" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30818/hovercard" href="https://github.com/grpc/grpc/pull/30818"&gt;#30818&lt;/a&gt;). (&lt;a href="https://github.com/grpc/grpc/pull/30944" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30944/hovercard"&gt;#30944&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add type stub generation support to grpcio-tools. (&lt;a href="https://github.com/grpc/grpc/pull/30498" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30498/hovercard"&gt;#30498&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ruby&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Backport "Drop support for ruby 2.5 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1346826399" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/30699" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30699/hovercard" href="https://github.com/grpc/grpc/pull/30699"&gt;#30699&lt;/a&gt;)" to v1.49.x. (&lt;a href="https://github.com/grpc/grpc/pull/30762" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30762/hovercard"&gt;#30762&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
