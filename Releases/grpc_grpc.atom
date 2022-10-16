@@ -1,55 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2022-10-15T00:07:40Z</updated>
+  <updated>2022-10-16T00:07:54Z</updated>
   <id>https://github.com/grpc/grpc</id>
-  <entry>
-    <title>grpc/grpc - Releases - 2022-10-14</title>
-    <id>https://github.com/grpc/grpc#2022-10-14</id>
-    <link href="https://github.com/grpc/grpc" />
-    <updated>2022-10-15T00:07:40Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.50.0"&gt;Release v1.50.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;This is release gRPC Core 1.50.0 (galley).&lt;/p&gt;
-&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
-&lt;h2&gt;Core&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Derive EventEngine from std::enable_shared_from_this. (&lt;a href="https://github.com/grpc/grpc/pull/31060" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31060/hovercard"&gt;#31060&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Revert "Revert "[chttp2] fix stream leak with queued flow control update and absence of writes (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1367355615" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/30907" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30907/hovercard" href="https://github.com/grpc/grpc/pull/30907"&gt;#30907&lt;/a&gt;)" (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1373619976" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/30991" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30991/hovercard" href="https://github.com/grpc/grpc/pull/30991"&gt;#30991&lt;/a&gt;)". (&lt;a href="https://github.com/grpc/grpc/pull/30992" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30992/hovercard"&gt;#30992&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[chttp2] fix stream leak with queued flow control update and absence of writes. (&lt;a href="https://github.com/grpc/grpc/pull/30907" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30907/hovercard"&gt;#30907&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Remove &lt;code&gt;gpr_codegen&lt;/code&gt;. (&lt;a href="https://github.com/grpc/grpc/pull/30899" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30899/hovercard"&gt;#30899&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;client_channel: allow LB policy to communicate update errors to resolver. (&lt;a href="https://github.com/grpc/grpc/pull/30809" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30809/hovercard"&gt;#30809&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;FaultInjection: Fix random number generation. (&lt;a href="https://github.com/grpc/grpc/pull/30623" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30623/hovercard"&gt;#30623&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;C++&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;OpenCensus Plugin: Add measure and views for started RPCs. (&lt;a href="https://github.com/grpc/grpc/pull/31034" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31034/hovercard"&gt;#31034&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;C#&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Grpc.Tools: Parse warnings from libprotobuf (fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1009726434" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/27502" data-hovercard-type="issue" data-hovercard-url="/grpc/grpc/issues/27502/hovercard" href="https://github.com/grpc/grpc/issues/27502"&gt;#27502&lt;/a&gt;). (&lt;a href="https://github.com/grpc/grpc/pull/30371" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30371/hovercard"&gt;#30371&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Grpc.Tools add support for env variable GRPC_PROTOC_PLUGIN (fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="978102476" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/27099" data-hovercard-type="issue" data-hovercard-url="/grpc/grpc/issues/27099/hovercard" href="https://github.com/grpc/grpc/issues/27099"&gt;#27099&lt;/a&gt;). (&lt;a href="https://github.com/grpc/grpc/pull/30411" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30411/hovercard"&gt;#30411&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Grpc.Tools document AdditionalImportDirs. (&lt;a href="https://github.com/grpc/grpc/pull/30405" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30405/hovercard"&gt;#30405&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix OutputOptions and GrpcOutputOptions (issue &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="855413405" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/25950" data-hovercard-type="issue" data-hovercard-url="/grpc/grpc/issues/25950/hovercard" href="https://github.com/grpc/grpc/issues/25950"&gt;#25950&lt;/a&gt;). (&lt;a href="https://github.com/grpc/grpc/pull/30410" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30410/hovercard"&gt;#30410&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Python&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Support Python 3.11. (&lt;a href="https://github.com/grpc/grpc/pull/30818" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30818/hovercard"&gt;#30818&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Ruby&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix ruby windows ucrt build. (&lt;a href="https://github.com/grpc/grpc/pull/31051" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31051/hovercard"&gt;#31051&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Drop support for ruby 2.5. (&lt;a href="https://github.com/grpc/grpc/pull/30699" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30699/hovercard"&gt;#30699&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
