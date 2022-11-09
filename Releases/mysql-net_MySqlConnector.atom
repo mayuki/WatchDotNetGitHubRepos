@@ -1,6 +1,55 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>mysql-net/MySqlConnector - Releases</title>
   <link href="https://github.com/mysql-net/MySqlConnector" />
-  <updated>2022-11-08T00:06:55Z</updated>
+  <updated>2022-11-09T00:06:12Z</updated>
   <id>https://github.com/mysql-net/MySqlConnector</id>
+  <entry>
+    <title>mysql-net/MySqlConnector - Releases - 2022-11-08</title>
+    <id>https://github.com/mysql-net/MySqlConnector#2022-11-08</id>
+    <link href="https://github.com/mysql-net/MySqlConnector" />
+    <updated>2022-11-09T00:06:12Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/mysql-net/MySqlConnector/releases/tag/2.2.0"&gt;2.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;Support .NET 7.0.
+&lt;ul&gt;
+&lt;li&gt;Add &lt;code&gt;MySqlDataSource&lt;/code&gt;, an implementation of &lt;code&gt;DbDataSource&lt;/code&gt; for MySQL: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1343935254" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1208" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1208/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1208"&gt;#1208&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Use source-generated regular expressions.&lt;/li&gt;
+&lt;li&gt;Use UTF-8 literals to perform UTF-8 conversion at compile-time instead of runtime.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Breaking&lt;/strong&gt; Drop support for .NET 4.5: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1343953085" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1209" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1209/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1209"&gt;#1209&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;DNS Check Interval&lt;/code&gt; connection string option: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1337236414" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1201" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1201/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1201"&gt;#1201&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Support restrictions in &lt;code&gt;MySqlConnection.GetSchema&lt;/code&gt;.
+&lt;ul&gt;
+&lt;li&gt;Schema collections are code-generated: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1300291498" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1190" data-hovercard-type="pull_request" data-hovercard-url="/mysql-net/MySqlConnector/pull/1190/hovercard" href="https://github.com/mysql-net/MySqlConnector/pull/1190"&gt;#1190&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Use user-provided callbacks when opening new connection to &lt;code&gt;KILL QUERY&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1261048348" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1179" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1179/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1179"&gt;#1179&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Set activity tags when opening a connection fails: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1322221130" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1196" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1196/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1196"&gt;#1196&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Raise &lt;code&gt;Component.Disposed&lt;/code&gt; event from &lt;code&gt;MySqlConnection.DisposeAsync&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1429905973" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1235" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1235/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1235"&gt;#1235&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;ValueTask&lt;/code&gt; instead of &lt;code&gt;ValueTask&amp;lt;int&amp;gt;&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1413509750" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1233" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1233/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1233"&gt;#1233&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Breaking&lt;/strong&gt; This changes the return type of &lt;code&gt;MySqlConnection.ResetConnectionAsync&lt;/code&gt; for &lt;code&gt;netstandard2.0&lt;/code&gt;, &lt;code&gt;net461&lt;/code&gt;, &lt;code&gt;net471&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Possibly Breaking&lt;/strong&gt; Normalize the order of keys in the connection string returned by &lt;code&gt;MySqlConnectionStringBuilder.ConnectionString&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1373599740" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1217" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1217/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1217"&gt;#1217&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Possibly Breaking&lt;/strong&gt; Update dependencies.
+&lt;ul&gt;
+&lt;li&gt;Update System.Diagnostics.DiagnosticSource to 6.0.0.&lt;/li&gt;
+&lt;li&gt;Update System.Memory to 4.5.5.&lt;/li&gt;
+&lt;li&gt;Update System.Threading.Tasks.Extensions to 4.5.4: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1145157474" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1144" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1144/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1144"&gt;#1144&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
