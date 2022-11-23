@@ -1,61 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2022-11-22T00:05:16Z</updated>
+  <updated>2022-11-23T00:05:48Z</updated>
   <id>https://github.com/grpc/grpc</id>
-  <entry>
-    <title>grpc/grpc - Releases - 2022-11-21</title>
-    <id>https://github.com/grpc/grpc#2022-11-21</id>
-    <link href="https://github.com/grpc/grpc" />
-    <updated>2022-11-22T00:05:16Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.51.0"&gt;Release v1.51.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;This is release gRPC Core 1.51.0 (galaxy).&lt;/p&gt;
-&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This release contains refinements, improvements, and bug fixes.&lt;/p&gt;
-&lt;h2&gt;Core&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Bump core version 202211082118. (&lt;a href="https://github.com/grpc/grpc/pull/31585" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31585/hovercard"&gt;#31585&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;c-ares DNS resolver: fix logical race between resolution timeout/cancellation and fd readability. (&lt;a href="https://github.com/grpc/grpc/pull/31443" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31443/hovercard"&gt;#31443&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[log] Longer space for filenames. (&lt;a href="https://github.com/grpc/grpc/pull/31432" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31432/hovercard"&gt;#31432&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;c-ares DNS resolver: remove unnecessary code in SRV callback. (&lt;a href="https://github.com/grpc/grpc/pull/31426" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31426/hovercard"&gt;#31426&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Correct the domain-socket client address read out from the ServerContext. (&lt;a href="https://github.com/grpc/grpc/pull/31108" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31108/hovercard"&gt;#31108&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;outlier detection: remove env var protection. (&lt;a href="https://github.com/grpc/grpc/pull/31251" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31251/hovercard"&gt;#31251&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;EventEngineFactoryReset - remove custom factory and reset default engine. (&lt;a href="https://github.com/grpc/grpc/pull/30554" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30554/hovercard"&gt;#30554&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[tls] Remove support for pthread tls. (&lt;a href="https://github.com/grpc/grpc/pull/31040" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31040/hovercard"&gt;#31040&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;C++&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Added version macros to gRPC C++. (&lt;a href="https://github.com/grpc/grpc/pull/31033" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31033/hovercard"&gt;#31033&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;OpenCensus: Move measures, views and CensusContext to include file. (&lt;a href="https://github.com/grpc/grpc/pull/31341" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31341/hovercard"&gt;#31341&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;GcpObservability: Add experimental public target. (&lt;a href="https://github.com/grpc/grpc/pull/31339" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31339/hovercard"&gt;#31339&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;C#&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix msbuild failing when '@' is present in path (2nd attempt). (&lt;a href="https://github.com/grpc/grpc/pull/31527" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31527/hovercard"&gt;#31527&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Revert "Fix msbuild failing when '@' is present in path". (&lt;a href="https://github.com/grpc/grpc/pull/31464" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31464/hovercard"&gt;#31464&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix msbuild failing when '@' is present in path. (&lt;a href="https://github.com/grpc/grpc/pull/31133" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31133/hovercard"&gt;#31133&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;PHP&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;fixing php 8.2 deprecations. (&lt;a href="https://github.com/grpc/grpc/pull/30997" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30997/hovercard"&gt;#30997&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Python&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix lack of cooldown between poll attempts. (&lt;a href="https://github.com/grpc/grpc/pull/31550" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31550/hovercard"&gt;#31550&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Build with System OpenSSL on Mac OS arm64. (&lt;a href="https://github.com/grpc/grpc/pull/31096" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31096/hovercard"&gt;#31096&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Remove enum and future. (&lt;a href="https://github.com/grpc/grpc/pull/31381" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31381/hovercard"&gt;#31381&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Remove Six] Remove dependency on six. (&lt;a href="https://github.com/grpc/grpc/pull/31340" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31340/hovercard"&gt;#31340&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Update xds-protos package to pull in protobuf 4.X. (&lt;a href="https://github.com/grpc/grpc/pull/31113" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31113/hovercard"&gt;#31113&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
