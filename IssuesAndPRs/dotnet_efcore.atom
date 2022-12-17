@@ -1,44 +1,44 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/efcore - Issues &amp; Pull Requests</title>
   <link href="https://github.com/dotnet/efcore" />
-  <updated>2022-12-16T00:04:21Z</updated>
+  <updated>2022-12-17T00:05:03Z</updated>
   <id>https://github.com/dotnet/efcore</id>
   <entry>
-    <title>dotnet/efcore - Issues &amp; Pull Requests - 2022-12-15</title>
-    <id>https://github.com/dotnet/efcore#2022-12-15</id>
+    <title>dotnet/efcore - Issues &amp; Pull Requests - 2022-12-16</title>
+    <id>https://github.com/dotnet/efcore#2022-12-16</id>
     <link href="https://github.com/dotnet/efcore" />
-    <updated>2022-12-16T00:04:21Z</updated>
+    <updated>2022-12-17T00:05:03Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/29869"&gt;Using `ModelBuilder.Entity` in `DbContext.OnModelCreating` for an owned entity type results in a `System.InvalidOperationException` #29869&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/29877"&gt;Using same type as nested owned property cause "Attempted to update or delete an entity that does not exist in the store" in disconnected state. #29877&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/29868"&gt;Issue with nested owned types and nullability #29868&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/29875"&gt;Replacing PK to PK dependent with different type fails using in-memory provider #29875&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/29863"&gt;Reverse-engineer sequence columns #29863&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/29874"&gt;Replacing PK to PK TPT or TPC dependent with different type fails #29874&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/29862"&gt;Owned value object not materialized after using Linq To SQL Union #29862&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/29873"&gt;Validate that the type mapping has a value comparer if the type is a non IEquatable reference type #29873&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/29860"&gt;Add more validation for shared rows #29860&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/29872"&gt;Microsoft.EntityFrameworkCore.Cosmos create too many IServiceProvider #29872&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -47,19 +47,19 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/29829"&gt;Linq query is throwing exception "could not be translated. Either rewrite the query in a form that can be translated... #29829&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/29871"&gt;EF 7.0.1: EFCore 7.0 Bug - Invalid Operation Exception RE "Temporary Value" #29871&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/29861"&gt;sql error when using CancellationToken and cancelling it fast multiple times #29861&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/29758"&gt;Allow UseSequence and HiLo on non-key properties #29758&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
+      &lt;div&gt;8.0.0&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/28824"&gt;API for raw JSONPATH queries #28824&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/29870"&gt;FromSqlInterpolated causes 'nvarchar' is not a recognized CURSOR option error #29870&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -70,25 +70,7 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/29867"&gt;[release/7.0] Revert shared columns validation breaking change #29867&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Servicing-consider&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/29866"&gt;Don't validate shared columns have the same provider type unless they are used in a key, foreign key or a unique index #29866&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/29865"&gt;Most of explicit and lazy loading for no-tracking queries #29865&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/29864"&gt;Allow SQLServer Sequence/HiLo on non-key properties #29864&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/29876"&gt;Update discriminator columns when PK-to-PK dependent type is changed #29876&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -97,19 +79,10 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/29849"&gt;Don't try to discover FK properties when conflicting with 2 or more other FKs #29849&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/29866"&gt;Don't validate shared columns have the same provider type unless they are used in a key, foreign key or a unique index #29866&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/29857"&gt;SQLite Scaffolding: Reverse engineer collation #29857&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Updated&lt;/h3&gt;
-  &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/efcore/pull/29805"&gt;Avoid redundant looping in property metadata #29805&lt;/a&gt;
@@ -118,45 +91,24 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/29850"&gt;[release/7.0] Avoid infinite loop during foreign key discovery #29850&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/29864"&gt;Allow SQLServer Sequence/HiLo on non-key properties #29864&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Servicing-approved, 7.0.3&lt;/div&gt;
+      &lt;div&gt;auto-merge&lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;Updated&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/29865"&gt;Most of explicit and lazy loading for no-tracking queries #29865&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/29807"&gt;[release/7.0] Avoid redundant looping in property metadata #29807&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/29867"&gt;[release/7.0] Revert shared columns validation breaking change #29867&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Servicing-approved, 7.0.3&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/29779"&gt;[release/7.0] Scaffolding: Handle FK on keyless entity type #29779&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Servicing-approved, 7.0.3&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/29820"&gt;[release/7.0] Include table name for overrides in snapshot. #29820&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Servicing-approved, 7.0.3&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/29822"&gt;[release/7.0] Allow underscores in identifiers again #29822&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Servicing-approved, 7.0.3&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/29793"&gt;[release/7.0] Scaffolding: Fix code for EF6 many-to-many pattern #29793&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Servicing-approved, 7.0.3&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/29731"&gt;[release/7.0] Scaffolding: Fix missing HasForeignKey when principal key is an alternate key #29731&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Servicing-approved, 7.0.3&lt;/div&gt;
+      &lt;div&gt;Servicing-consider&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;</content>
