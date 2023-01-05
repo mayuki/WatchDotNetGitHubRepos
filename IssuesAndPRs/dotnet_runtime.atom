@@ -1,13 +1,13 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/runtime - Issues &amp; Pull Requests</title>
   <link href="https://github.com/dotnet/runtime" />
-  <updated>2023-01-05T00:04:29Z</updated>
+  <updated>2023-01-05T01:57:03Z</updated>
   <id>https://github.com/dotnet/runtime</id>
   <entry>
     <title>dotnet/runtime - Issues &amp; Pull Requests - 2023-01-04</title>
     <id>https://github.com/dotnet/runtime#2023-01-04</id>
     <link href="https://github.com/dotnet/runtime" />
-    <updated>2023-01-05T00:04:29Z</updated>
+    <updated>2023-01-05T01:57:03Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
@@ -143,6 +143,12 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/79874"&gt;emcc received SIGKILL #79874&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
         &lt;a href="https://github.com/dotnet/runtime/issues/80056"&gt;Hang when HTTP/2 WebSocket connects to a HTTP/1.1 non-TLS kestrel endpoint #80056&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;8.0.0&lt;/div&gt;
@@ -215,12 +221,6 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/79874"&gt;emcc received SIGKILL #79874&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
         &lt;a href="https://github.com/dotnet/runtime/issues/79892"&gt;running "Convert to GeneratedRegexAttribute" fixer wants to fix all kinds of other things #79892&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;8.0.0&lt;/div&gt;
@@ -280,7 +280,7 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/80198"&gt;[Test] Enable installer tests on osx-arm64 #80198&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/80198"&gt;Enable installer tests on osx-arm64 #80198&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;area-Infrastructure-installer&lt;/div&gt;
     &lt;/li&gt;
@@ -377,6 +377,12 @@
   &lt;/ul&gt;
   &lt;h3&gt;Merged&lt;/h3&gt;
   &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/80030"&gt;[release/6.0] Update 10.15 to 12.00 queues #80030&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/runtime/pull/80066"&gt;Fix HTTP/2 extended connect hang #80066&lt;/a&gt;
@@ -571,12 +577,6 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/80030"&gt;[release/6.0] Update 10.15 to 12.00 queues #80030&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
         &lt;a href="https://github.com/dotnet/runtime/pull/79666"&gt;[release/7.0] Upgrade .NET Framework queue #79666&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;area-Infrastructure, 7.0.x&lt;/div&gt;
@@ -628,6 +628,42 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/80219"&gt;Improve logging of GC ref map mismatches #80219&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-VM-coreclr&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/80218"&gt;Fix HFA detection in Crossgen2 #80218&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-crossgen2-coreclr&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/80216"&gt;Fix bug introduced by page bitmap removal #80216&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-PAL-coreclr, 8.0.0&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/74623"&gt;Address Sanitizer support in CoreCLR #74623&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;NO-MERGE, NO-REVIEW, tenet-reliability, area-Infrastructure&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/80147"&gt;Ensure that we don't root the compilation when using a custom exception marshalling type. #80147&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-System.Runtime.InteropServices, source-generator&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/79284"&gt;[wasm][debugger] Implement support to symbolOptions from dap. #79284&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-Debugger-mono&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
         &lt;a href="https://github.com/dotnet/runtime/pull/79630"&gt;[JIT] X64/ARM64 - Fold 'x &amp;amp; 255' and 'x &amp;amp; 65535' to a cast #79630&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;area-CodeGen-coreclr&lt;/div&gt;
@@ -643,12 +679,6 @@
         &lt;a href="https://github.com/dotnet/runtime/pull/78863"&gt;Add AVX2 support to IndexOfAnyValues #78863&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;area-System.Memory, tenet-performance, 8.0.0&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/79284"&gt;[wasm][debugger] Implement support to symbolOptions from dap. #79284&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-Debugger-mono&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -859,12 +889,6 @@
         &lt;a href="https://github.com/dotnet/runtime/pull/72812"&gt;[wasm][debugger] Removing console.debug message helper to make debugger work. #72812&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;arch-wasm, area-Debugger-mono, 8.0.0&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/74623"&gt;Address Sanitizer support in CoreCLR #74623&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;NO-MERGE, NO-REVIEW, tenet-reliability, area-Infrastructure&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
