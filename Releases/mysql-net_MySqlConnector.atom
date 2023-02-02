@@ -1,6 +1,50 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>mysql-net/MySqlConnector - Releases</title>
   <link href="https://github.com/mysql-net/MySqlConnector" />
-  <updated>2023-02-01T00:05:37Z</updated>
+  <updated>2023-02-02T00:05:30Z</updated>
   <id>https://github.com/mysql-net/MySqlConnector</id>
+  <entry>
+    <title>mysql-net/MySqlConnector - Releases - 2023-02-01</title>
+    <id>https://github.com/mysql-net/MySqlConnector#2023-02-01</id>
+    <link href="https://github.com/mysql-net/MySqlConnector" />
+    <updated>2023-02-02T00:05:30Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/mysql-net/MySqlConnector/releases/tag/2.3.0-beta.1"&gt;2.3.0 Beta 1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;MySqlDataSource&lt;/code&gt; is now available for all TFMs, not just .NET 7.0: &lt;a aria-label="Pull request #1269" class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1512284124" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1269" data-hovercard-type="pull_request" data-hovercard-url="/mysql-net/MySqlConnector/pull/1269/hovercard" href="https://github.com/mysql-net/MySqlConnector/pull/1269"&gt;#1269&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;This provides a single place to configure a MySQL connection and makes it easier to register &lt;code&gt;MySqlConnection&lt;/code&gt; with dependency injection.&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;MySqlDataSourceBuilder&lt;/code&gt; class to configure &lt;code&gt;MySqlDataSource&lt;/code&gt; instances.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Logging is now used as the core logging abstraction: &lt;a aria-label="Issue #1110" class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1092084374" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1110" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1110/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1110"&gt;#1110&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;MySqlConnectorLogManager.Provider&lt;/code&gt; can still be used to add a logging destination, but it is now deprecated.&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;MySqlDataSourceBuilder.UseLoggerFactory&lt;/code&gt; to configure logging.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Add new MySqlConnector.DependencyInjection package: &lt;a aria-label="Issue #1271" class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1513092090" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1271" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1271/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1271"&gt;#1271&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;MySqlDataSource&lt;/code&gt; and &lt;code&gt;MySqlConnection&lt;/code&gt; can be registered with dependency injection by using &lt;code&gt;builder.Services.AddMySqlDataSource(connectionString)&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;This also configures logging automatically.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Drop support for .NET 4.6.1 and .NET Core 3.1: &lt;a aria-label="Issue #636" class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="443035395" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/636" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/636/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/636"&gt;#636&lt;/a&gt;, &lt;a aria-label="Issue #1273" class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1515215353" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1273" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1273/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1273"&gt;#1273&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;.NET 4.6.1 support ended on 26 April 2022, and .NET Core 3.1 on 13 December 2022.&lt;/li&gt;
+&lt;li&gt;The minimum supported versions are now .NET Framework 4.6.2 and .NET 6.0, although other frameworks should be supported via &lt;code&gt;netstandard2.0&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fix bug that didn't copy &lt;code&gt;MySqlDataSource&lt;/code&gt; in &lt;code&gt;MySqlConnection.Clone&lt;/code&gt;: &lt;a aria-label="Issue #1267" class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1511947230" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1267" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1267/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1267"&gt;#1267&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
