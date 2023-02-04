@@ -1,6 +1,55 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2023-02-03T00:04:50Z</updated>
+  <updated>2023-02-04T00:04:42Z</updated>
   <id>https://github.com/grpc/grpc</id>
+  <entry>
+    <title>grpc/grpc - Releases - 2023-02-03</title>
+    <id>https://github.com/grpc/grpc#2023-02-03</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2023-02-04T00:04:42Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.52.0"&gt;Release v1.52.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release 1.52.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;gribkoff&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[༺ EventEngine ༻] Specify requirements for Run* immediate execution. (&lt;a href="https://github.com/grpc/grpc/pull/32028" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32028/hovercard"&gt;#32028&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Tracing: Add annotations for when call is removed from resolver result queue and lb pick queue. (&lt;a href="https://github.com/grpc/grpc/pull/31913" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31913/hovercard"&gt;#31913&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;ring_hash LB: cap ring size to 4096 with channel arg to override. (&lt;a href="https://github.com/grpc/grpc/pull/31692" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31692/hovercard"&gt;#31692&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C++&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Cmake add separate export for plugin targets. (&lt;a href="https://github.com/grpc/grpc/pull/31525" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31525/hovercard"&gt;#31525&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C#&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Add internal documentation for Grpc.Tools MSBuild integration. (&lt;a href="https://github.com/grpc/grpc/pull/31784" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31784/hovercard"&gt;#31784&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Change Aio abort() function return type to NoReturn. (&lt;a href="https://github.com/grpc/grpc/pull/31984" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31984/hovercard"&gt;#31984&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Change the annotated return type of &lt;code&gt;UnaryStreamCall&lt;/code&gt; and &lt;code&gt;StreamStreamCall&lt;/code&gt; from &lt;code&gt;AsyncIterable&lt;/code&gt; to &lt;code&gt;AsyncIterator&lt;/code&gt;. (&lt;a href="https://github.com/grpc/grpc/pull/31906" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31906/hovercard"&gt;#31906&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Build native MacOS arm64 artifacts (universal2). (&lt;a href="https://github.com/grpc/grpc/pull/31747" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31747/hovercard"&gt;#31747&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Respect CC variable in grpcio python build. (&lt;a href="https://github.com/grpc/grpc/pull/26480" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/26480/hovercard"&gt;#26480&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Revert "Build with System OpenSSL on Mac OS arm64 (&lt;a aria-label="Pull request #31096" class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1382066914" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/31096" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31096/hovercard" href="https://github.com/grpc/grpc/pull/31096"&gt;#31096&lt;/a&gt;)". (&lt;a href="https://github.com/grpc/grpc/pull/31741" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31741/hovercard"&gt;#31741&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ruby&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Backport "[ruby]: add pre-compiled binaries for ruby 3.2; drop them for ruby 2.6 &lt;a aria-label="Pull request #32089" class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1531414447" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/32089" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32089/hovercard" href="https://github.com/grpc/grpc/pull/32089"&gt;#32089&lt;/a&gt;" to v1.52.x. (&lt;a href="https://github.com/grpc/grpc/pull/32157" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32157/hovercard"&gt;#32157&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;remove some default allocators. (&lt;a href="https://github.com/grpc/grpc/pull/30434" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30434/hovercard"&gt;#30434&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix Ruby build errors in 3.2.0 on Apple M1. (&lt;a href="https://github.com/grpc/grpc/pull/31997" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31997/hovercard"&gt;#31997&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Ruby] build: make exported symbol files platform-specific. (&lt;a href="https://github.com/grpc/grpc/pull/31970" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31970/hovercard"&gt;#31970&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
