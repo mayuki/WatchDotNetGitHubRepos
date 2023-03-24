@@ -1,59 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2023-03-23T00:05:02Z</updated>
+  <updated>2023-03-24T00:05:34Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
-  <entry>
-    <title>grpc/grpc - Releases - 2023-03-22</title>
-    <id>https://github.com/grpc/grpc#2023-03-22</id>
-    <link href="https://github.com/grpc/grpc" />
-    <updated>2023-03-23T00:04:48Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.53.0"&gt;Release v1.53.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;This is release 1.53.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;glockenspiel&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
-&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
-&lt;h2&gt;Core&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;xDS: fix crash when removing the last endpoint from the last locality in weighted_target. (&lt;a href="https://github.com/grpc/grpc/pull/32592" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32592/hovercard"&gt;#32592&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;filter stack: pass peer name up via recv_initial_metadata batch. (&lt;a href="https://github.com/grpc/grpc/pull/31933" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31933/hovercard"&gt;#31933&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[EventEngine] Add advice against blocking work in callbacks. (&lt;a href="https://github.com/grpc/grpc/pull/32397" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32397/hovercard"&gt;#32397&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[http2] Dont drop connections on metadata limit exceeded. (&lt;a href="https://github.com/grpc/grpc/pull/32309" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32309/hovercard"&gt;#32309&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;xDS: reject aggregate cluster with empty cluster list. (&lt;a href="https://github.com/grpc/grpc/pull/32238" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32238/hovercard"&gt;#32238&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix Python epoll1 Fork Support. (&lt;a href="https://github.com/grpc/grpc/pull/32196" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32196/hovercard"&gt;#32196&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;server: introduce ServerMetricRecorder API and move per-call reporting from a C++ interceptor to a C-core filter. (&lt;a href="https://github.com/grpc/grpc/pull/32106" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32106/hovercard"&gt;#32106&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[EventEngine] Add invalid handle types to the public API. (&lt;a href="https://github.com/grpc/grpc/pull/32202" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32202/hovercard"&gt;#32202&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[EventEngine] Refactoring the EventEngine Test Suite: Part 1. (&lt;a href="https://github.com/grpc/grpc/pull/32127" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32127/hovercard"&gt;#32127&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;xDS: fix WeightedClusters total weight handling. (&lt;a href="https://github.com/grpc/grpc/pull/32134" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32134/hovercard"&gt;#32134&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;C++&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Update minimum MSVC version to 2019. (&lt;a href="https://github.com/grpc/grpc/pull/32615" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32615/hovercard"&gt;#32615&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Use CMake variables for paths in pkg-config files. (&lt;a href="https://github.com/grpc/grpc/pull/31671" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31671/hovercard"&gt;#31671&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;C#&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Grpc.Tools: Use x86 protoc binaries on arm64 Windows. (&lt;a href="https://github.com/grpc/grpc/pull/32017" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32017/hovercard"&gt;#32017&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Python&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Support python 3.11 on aarch64. (&lt;a href="https://github.com/grpc/grpc/pull/32270" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32270/hovercard"&gt;#32270&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Include .pyi file. (&lt;a href="https://github.com/grpc/grpc/pull/32268" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32268/hovercard"&gt;#32268&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;De-experimentalize wait-for-ready. (&lt;a href="https://github.com/grpc/grpc/pull/32143" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32143/hovercard"&gt;#32143&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;De-experimentalize compression. (&lt;a href="https://github.com/grpc/grpc/pull/32138" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32138/hovercard"&gt;#32138&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Ruby&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[ruby]: add pre-compiled binaries for ruby 3.2; drop them for ruby 2.6. (&lt;a href="https://github.com/grpc/grpc/pull/32089" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32089/hovercard"&gt;#32089&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
