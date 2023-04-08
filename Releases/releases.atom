@@ -1,6 +1,136 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2023-04-07T00:05:22Z</updated>
+  <updated>2023-04-08T00:05:37Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
+  <entry>
+    <title>grpc/grpc - Releases - 2023-04-07</title>
+    <id>https://github.com/grpc/grpc#2023-04-07</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2023-04-08T00:05:08Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.54.0-pre2"&gt;Release v1.54.0-pre2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is a prerelease of gRPC Core 1.54.0 (gracious).&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This prerelease contains refinements, improvements, and bug fixes.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>FluentValidation/FluentValidation - Releases - 2023-04-07</title>
+    <id>https://github.com/FluentValidation/FluentValidation#2023-04-07</id>
+    <link href="https://github.com/FluentValidation/FluentValidation" />
+    <updated>2023-04-08T00:05:34Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/FluentValidation/FluentValidation/releases/tag/11.5.2"&gt;11.5.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h1&gt;Release notes&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://docs.fluentvalidation.net/en/latest/upgrading-to-11.html" rel="nofollow"&gt;Please read the upgrade guide if you are moving from 10.x to 11.x&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Note that the after 11.1.0 release, the &lt;code&gt;FluentValidation.AspNetCore&lt;/code&gt; package has been moved to a separate repository and is now versioned and released separately. These release notes now only apply to the core &lt;code&gt;FluentValidation&lt;/code&gt; package. For &lt;code&gt;FluentValidation.AspNetCore&lt;/code&gt; release notes, please visit the &lt;a href="https://github.com/FluentValidation/FluentValidation.AspNetCore"&gt;FluentValidation.AspNetCore repository&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Changes in 11.5.2&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Resolve issue with ruleset propagation for multiple levels of child rules (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1647999318" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/2097" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/2097/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/2097"&gt;#2097&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changes in 11.5.1&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Deprecated the ability to disable the root model null check via overriding &lt;code&gt;AbstractValidator.EnsureInstanceNotNull&lt;/code&gt; (See &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1590679229" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/2069" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/2069/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/2069"&gt;#2069&lt;/a&gt; for migration steps)&lt;/li&gt;
+&lt;li&gt;Deprecated the &lt;code&gt;Transform&lt;/code&gt; and &lt;code&gt;TransformAsync&lt;/code&gt; methods (See &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1591668217" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/2072" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/2072/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/2072"&gt;#2072&lt;/a&gt; for migration steps)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changes in 11.5.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;MemberNameValidatorSelector now supports wildcard indexes in property paths (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1552104529" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/2056" data-hovercard-type="pull_request" data-hovercard-url="/FluentValidation/FluentValidation/pull/2056/hovercard" href="https://github.com/FluentValidation/FluentValidation/pull/2056"&gt;#2056&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added overload of TestValidateAsync that accepts a context (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1537380277" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/2052" data-hovercard-type="pull_request" data-hovercard-url="/FluentValidation/FluentValidation/pull/2052/hovercard" href="https://github.com/FluentValidation/FluentValidation/pull/2052"&gt;#2052&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Minor optimization to regex validator (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1502191029" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/2035" data-hovercard-type="pull_request" data-hovercard-url="/FluentValidation/FluentValidation/pull/2035/hovercard" href="https://github.com/FluentValidation/FluentValidation/pull/2035"&gt;#2035&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added Kazakh translations (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1504777997" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/2036" data-hovercard-type="pull_request" data-hovercard-url="/FluentValidation/FluentValidation/pull/2036/hovercard" href="https://github.com/FluentValidation/FluentValidation/pull/2036"&gt;#2036&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added Catalan translations and updated Spanish translations (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1535152250" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/2050" data-hovercard-type="pull_request" data-hovercard-url="/FluentValidation/FluentValidation/pull/2050/hovercard" href="https://github.com/FluentValidation/FluentValidation/pull/2050"&gt;#2050&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Updates to Uzbek Latin and Cyrillic translations (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1516946428" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/2040" data-hovercard-type="pull_request" data-hovercard-url="/FluentValidation/FluentValidation/pull/2040/hovercard" href="https://github.com/FluentValidation/FluentValidation/pull/2040"&gt;#2040&lt;/a&gt;/&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1516947756" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/2041" data-hovercard-type="pull_request" data-hovercard-url="/FluentValidation/FluentValidation/pull/2041/hovercard" href="https://github.com/FluentValidation/FluentValidation/pull/2041"&gt;#2041&lt;/a&gt;/&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1524308454" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/2045" data-hovercard-type="pull_request" data-hovercard-url="/FluentValidation/FluentValidation/pull/2045/hovercard" href="https://github.com/FluentValidation/FluentValidation/pull/2045"&gt;#2045&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Updates to Italian translations (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1514569001" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/2039" data-hovercard-type="pull_request" data-hovercard-url="/FluentValidation/FluentValidation/pull/2039/hovercard" href="https://github.com/FluentValidation/FluentValidation/pull/2039"&gt;#2039&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Updates to French translations (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1577113907" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/2065" data-hovercard-type="pull_request" data-hovercard-url="/FluentValidation/FluentValidation/pull/2065/hovercard" href="https://github.com/FluentValidation/FluentValidation/pull/2065"&gt;#2065&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changes in 11.4.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Deprecate &lt;code&gt;ScalePrecision&lt;/code&gt; validator and introduce &lt;code&gt;PrecisionScale&lt;/code&gt; validator as its replacement (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1457761483" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/2030" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/2030/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/2030"&gt;#2030&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changes in 11.3.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Add a net7 build&lt;/li&gt;
+&lt;li&gt;Annotate string parameters with &lt;code&gt;StringSyntaxAttribute.Regex&lt;/code&gt; in net7 builds (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1275261407" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1957" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/1957/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/1957"&gt;#1957&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixes to SourceLink integration (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1417179015" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/2019" data-hovercard-type="pull_request" data-hovercard-url="/FluentValidation/FluentValidation/pull/2019/hovercard" href="https://github.com/FluentValidation/FluentValidation/pull/2019"&gt;#2019&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add Uzbek Latin and Cyrillic languages (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1382033435" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/2013" data-hovercard-type="pull_request" data-hovercard-url="/FluentValidation/FluentValidation/pull/2013/hovercard" href="https://github.com/FluentValidation/FluentValidation/pull/2013"&gt;#2013&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Updates to Danish language (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1377847773" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/2012" data-hovercard-type="pull_request" data-hovercard-url="/FluentValidation/FluentValidation/pull/2012/hovercard" href="https://github.com/FluentValidation/FluentValidation/pull/2012"&gt;#2012&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changes in 11.2.2&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;MemberNameValidatorSelector&lt;/code&gt; should make use of &lt;code&gt;PropertyNameResolver&lt;/code&gt; when parsing expressions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1365041981" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/2003" data-hovercard-type="pull_request" data-hovercard-url="/FluentValidation/FluentValidation/pull/2003/hovercard" href="https://github.com/FluentValidation/FluentValidation/pull/2003"&gt;#2003&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changes in 11.2.1&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix test helper &lt;code&gt;Only()&lt;/code&gt; not taking into account parent-level unmatched failures (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1327968705" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1986" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/1986/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/1986"&gt;#1986&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changes in 11.2.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Resolve issue with unexpected results when with nested &lt;code&gt;Include&lt;/code&gt; calls with the &lt;code&gt;MemberNameValidatorSelector&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1332073766" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1989" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/1989/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/1989"&gt;#1989&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add a new Selector Factory for the Composite Selector (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1331779922" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1988" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/1988/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/1988"&gt;#1988&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changes in 11.1.1&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix issue with incorrect rulesets being executed in a child validator when combined with ChildRules (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1323980691" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1981" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/1981/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/1981"&gt;#1981&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Bulgarian translations of default messages (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1291183823" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1973" data-hovercard-type="pull_request" data-hovercard-url="/FluentValidation/FluentValidation/pull/1973/hovercard" href="https://github.com/FluentValidation/FluentValidation/pull/1973"&gt;#1973&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changes in 11.1.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Added a &lt;code&gt;ToDictionary&lt;/code&gt; method to &lt;code&gt;ValidationResult&lt;/code&gt; (particularly useful when working with Minimal APIs)-&lt;/li&gt;
+&lt;li&gt;MVC auto validation: Deprecated Implicit validation of child properties (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1275743963" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1960" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/1960/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/1960"&gt;#1960&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;MVC auto validation: Deprecated Implicit validation of root collection elements (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1275743963" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1960" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/1960/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/1960"&gt;#1960&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Deprecated &lt;code&gt;InjectValidator&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1275743963" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1960" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/1960/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/1960"&gt;#1960&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Deprecated &lt;code&gt;IValidatorFactory&lt;/code&gt; and &lt;code&gt;ServiceProviderValidatorFactory&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1275753576" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1961" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/1961/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/1961"&gt;#1961&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Introduce &lt;code&gt;services.AddFluentValidationAutoValidation()&lt;/code&gt; and &lt;code&gt;services.AddFluentValidationClientsideAdapters()&lt;/code&gt; as replacements for &lt;code&gt;services.AddFluentValidation()&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1276049462" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1965" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/1965/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/1965"&gt;#1965&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Remove duplication between sync and async validation in the internal model.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changes in 11.0.3&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix &lt;code&gt;AsyncValidatorInvokedSynchronouslyException&lt;/code&gt; being incorrectly thrown when the top-level &lt;code&gt;When&lt;/code&gt; method with &lt;code&gt;RuleForEach&lt;/code&gt;, even when invoked asynchronously (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1267800925" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1955" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/1955/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/1955"&gt;#1955&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changes in 11.0.2&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Child validator contexts now contain a reference to their parent context (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1246943627" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1945" data-hovercard-type="pull_request" data-hovercard-url="/FluentValidation/FluentValidation/pull/1945/hovercard" href="https://github.com/FluentValidation/FluentValidation/pull/1945"&gt;#1945&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Support deserialization of &lt;code&gt;ValidationResult&lt;/code&gt; using System.Text.Json (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1210684893" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1928" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/1928/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/1928"&gt;#1928&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changes in 11.0.1&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix regression in the Test Helper affecting the &lt;code&gt;With*&lt;/code&gt; and &lt;code&gt;Without*&lt;/code&gt; assertion methods (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1226259876" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1937" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/1937/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/1937"&gt;#1937&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changes in 11.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Throw exceptions when async validator is invoked synchronously (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="860388999" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1705" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/1705/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/1705"&gt;#1705&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Removal deprecated OnFailure/OnAnyFailure callbacks.&lt;/li&gt;
+&lt;li&gt;Remove deprecated &lt;code&gt;RunDefaultMvcValidationAfterFluentValidationExecutes&lt;/code&gt; option from ASP.NET integration.&lt;/li&gt;
+&lt;li&gt;Remove deprecated &lt;code&gt;Options&lt;/code&gt; property from RuleComponent.&lt;/li&gt;
+&lt;li&gt;Remove deprecated TestHelper methods.&lt;/li&gt;
+&lt;li&gt;Remove non-generic &lt;code&gt;PropertyValidator&lt;/code&gt; backwards compatibility layer.&lt;/li&gt;
+&lt;li&gt;Add method &lt;code&gt;Only()&lt;/code&gt; to the test helper asserting that no other validation errors were raised.&lt;/li&gt;
+&lt;li&gt;Ensure property covariance is properly handled throughout the internal model (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="862890386" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/1713" data-hovercard-type="pull_request" data-hovercard-url="/FluentValidation/FluentValidation/pull/1713/hovercard" href="https://github.com/FluentValidation/FluentValidation/pull/1713"&gt;#1713&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Downloads&lt;/h1&gt;
+&lt;p&gt;Binaries can be downloaded from nuget:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://nuget.org/packages/fluentvalidation" rel="nofollow"&gt;FluentValidation&lt;/a&gt; - Main package&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://nuget.org/packages/fluentvalidation.aspnetcore" rel="nofollow"&gt;FluentValidation.AspNetCore&lt;/a&gt; - ASP.NET Core integration&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
