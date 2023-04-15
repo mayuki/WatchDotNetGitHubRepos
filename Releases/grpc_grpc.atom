@@ -1,53 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2023-04-14T00:04:40Z</updated>
+  <updated>2023-04-15T00:05:02Z</updated>
   <id>https://github.com/grpc/grpc</id>
-  <entry>
-    <title>grpc/grpc - Releases - 2023-04-13</title>
-    <id>https://github.com/grpc/grpc#2023-04-13</id>
-    <link href="https://github.com/grpc/grpc" />
-    <updated>2023-04-14T00:04:40Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.54.0"&gt;Release v1.54.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;This is release 1.54.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;gracious&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
-&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
-&lt;h2&gt;Core&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Per &lt;a href="https://github.com/google/oss-policies-info/blob/main/foundational-cxx-support-matrix.md"&gt;Foundational C++ Support&lt;/a&gt;, gRPC dropped Visual Studio 2017 support, the minimum version of Visual Studio that gRPC supports is 2019.&lt;/li&gt;
-&lt;li&gt;XDS: enable XDS federation by default. (&lt;a href="https://github.com/grpc/grpc/pull/32711" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32711/hovercard"&gt;#32711&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[EventEngine] Add EventEngine::*Handle equality operators. (&lt;a href="https://github.com/grpc/grpc/pull/32695" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32695/hovercard"&gt;#32695&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;TlsCreds: Support revocation of intermediate in chain. (&lt;a href="https://github.com/grpc/grpc/pull/32544" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32544/hovercard"&gt;#32544&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[config] Move global config alongside core configuration. (&lt;a href="https://github.com/grpc/grpc/pull/30788" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/30788/hovercard"&gt;#30788&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;feat: Auth lib: Remove 3PI config url validation. (&lt;a href="https://github.com/grpc/grpc/pull/32450" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32450/hovercard"&gt;#32450&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;C++&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgrade abseil to 20230125.2. (&lt;a href="https://github.com/grpc/grpc/pull/32733" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32733/hovercard"&gt;#32733&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Update minimum MSVC version to 2019. (&lt;a href="https://github.com/grpc/grpc/pull/32614" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32614/hovercard"&gt;#32614&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[GcpObservability  C++] Backport: De-experimentalize API (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1640206864" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/32715" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32715/hovercard" href="https://github.com/grpc/grpc/pull/32715"&gt;#32715&lt;/a&gt;). (&lt;a href="https://github.com/grpc/grpc/pull/32813" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32813/hovercard"&gt;#32813&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;OpenCensus: Fix round_trip time. (&lt;a href="https://github.com/grpc/grpc/pull/32694" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32694/hovercard"&gt;#32694&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Update OpenCensus to HEAD (5501a1a). (&lt;a href="https://github.com/grpc/grpc/pull/32687" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32687/hovercard"&gt;#32687&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;OpenCensus: Add annotations for messages. (&lt;a href="https://github.com/grpc/grpc/pull/32646" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32646/hovercard"&gt;#32646&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;PHP&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Use correct namespace for checking if the isDefaultRootsPemSet method exists. (&lt;a href="https://github.com/grpc/grpc/pull/31580" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31580/hovercard"&gt;#31580&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Python&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix DeprecationWarning when calling asyncio.get_event_loop(). (&lt;a href="https://github.com/grpc/grpc/pull/32533" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32533/hovercard"&gt;#32533&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Remove references to deprecated syntax field. (&lt;a href="https://github.com/grpc/grpc/pull/32497" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32497/hovercard"&gt;#32497&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>

@@ -1,6 +1,35 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>mysql-net/MySqlConnector - Releases</title>
   <link href="https://github.com/mysql-net/MySqlConnector" />
-  <updated>2023-04-14T00:04:48Z</updated>
+  <updated>2023-04-15T00:05:12Z</updated>
   <id>https://github.com/mysql-net/MySqlConnector</id>
+  <entry>
+    <title>mysql-net/MySqlConnector - Releases - 2023-04-14</title>
+    <id>https://github.com/mysql-net/MySqlConnector#2023-04-14</id>
+    <link href="https://github.com/mysql-net/MySqlConnector" />
+    <updated>2023-04-15T00:05:12Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/mysql-net/MySqlConnector/releases/tag/2.3.0-beta.2"&gt;2.3.0 Beta 2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;Support skipping metadata for prepared statements with MariaDB 10.6 and later: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1649425451" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1301" data-hovercard-type="pull_request" data-hovercard-url="/mysql-net/MySqlConnector/pull/1301/hovercard" href="https://github.com/mysql-net/MySqlConnector/pull/1301"&gt;#1301&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Support multiple authentication methods when connecting: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1657778824" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1303" data-hovercard-type="pull_request" data-hovercard-url="/mysql-net/MySqlConnector/pull/1303/hovercard" href="https://github.com/mysql-net/MySqlConnector/pull/1303"&gt;#1303&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Recycle &lt;code&gt;MySqlDataReader&lt;/code&gt; objects: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1522967730" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1277" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1277/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1277"&gt;#1277&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Optimize parameter encoding for ASCII strings: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1631851752" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1296" data-hovercard-type="pull_request" data-hovercard-url="/mysql-net/MySqlConnector/pull/1296/hovercard" href="https://github.com/mysql-net/MySqlConnector/pull/1296"&gt;#1296&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;TcpClient.ConnectAsync&lt;/code&gt; overload with &lt;code&gt;CancellationToken&lt;/code&gt; on .NET 5.0 and later: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1625252575" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1291" data-hovercard-type="pull_request" data-hovercard-url="/mysql-net/MySqlConnector/pull/1291/hovercard" href="https://github.com/mysql-net/MySqlConnector/pull/1291"&gt;#1291&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Fix cancellation when using a redirected connection: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1659398906" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1305" data-hovercard-type="pull_request" data-hovercard-url="/mysql-net/MySqlConnector/pull/1305/hovercard" href="https://github.com/mysql-net/MySqlConnector/pull/1305"&gt;#1305&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Fix &lt;code&gt;MySqlConnection.CloneWith&lt;/code&gt; for connections created from a &lt;code&gt;MySqlDataSource&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1659661167" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1306" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1306/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1306"&gt;#1306&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Work around ephemeral PEM bug on Windows: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1524768149" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1278" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1278/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1278"&gt;#1278&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Remove some unnecessary allocations.&lt;/li&gt;
+&lt;li&gt;Thanks to &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/gboucher90/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/gboucher90"&gt;@gboucher90&lt;/a&gt;,  &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rusher/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rusher"&gt;@rusher&lt;/a&gt;, and &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/stilettk/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/stilettk"&gt;@stilettk&lt;/a&gt; for contributions to this release.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
