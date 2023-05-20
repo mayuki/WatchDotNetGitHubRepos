@@ -1,28 +1,103 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2023-05-19T00:04:54Z</updated>
+  <updated>2023-05-20T00:04:34Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>AvaloniaUI/Avalonia - Releases - 2023-05-18</title>
-    <id>https://github.com/AvaloniaUI/Avalonia#2023-05-18</id>
-    <link href="https://github.com/AvaloniaUI/Avalonia" />
-    <updated>2023-05-19T00:04:51Z</updated>
+    <title>grpc/grpc - Releases - 2023-05-19</title>
+    <id>https://github.com/grpc/grpc#2023-05-19</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2023-05-20T00:04:17Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/AvaloniaUI/Avalonia/releases/tag/0.10.20"&gt;0.10.20&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.55.0"&gt;Release v1.55.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release 1.55.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;grandslam&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Compiler Fix] Backport - Bring declarations and definitions to be in sync (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1677588568" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/32911" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32911/hovercard" href="https://github.com/grpc/grpc/pull/32911"&gt;#32911&lt;/a&gt;). (&lt;a href="https://github.com/grpc/grpc/pull/32915" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32915/hovercard"&gt;#32915&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[XDS] Revert "Revert "XDS: enable XDS federation by default (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1640011767" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/32711" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32711/hovercard" href="https://github.com/grpc/grpc/pull/32711"&gt;#32711&lt;/a&gt;)" (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1656392835" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/32814" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32814/hovercard" href="https://github.com/grpc/grpc/pull/32814"&gt;#32814&lt;/a&gt;). (&lt;a href="https://github.com/grpc/grpc/pull/32902" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32902/hovercard"&gt;#32902&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[cleanup] Remove public_headers_must_be_c89 test. (&lt;a href="https://github.com/grpc/grpc/pull/32898" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32898/hovercard"&gt;#32898&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[tcp] Add channel argument for SO_RVCBUF size. (&lt;a href="https://github.com/grpc/grpc/pull/32887" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32887/hovercard"&gt;#32887&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[xds] Remove variable protection from custom LB policies. (&lt;a href="https://github.com/grpc/grpc/pull/32888" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32888/hovercard"&gt;#32888&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[BoringSSL] Update third_party/boringssl-with-bazel. (&lt;a href="https://github.com/grpc/grpc/pull/32868" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32868/hovercard"&gt;#32868&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[protobuf] Upgrade third_party/protobuf to 22.x. (&lt;a href="https://github.com/grpc/grpc/pull/32606" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32606/hovercard"&gt;#32606&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[HTTP Proxy] Support CIDR blocks in &lt;code&gt;no_proxy&lt;/code&gt; config. (&lt;a href="https://github.com/grpc/grpc/pull/31119" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/31119/hovercard"&gt;#31119&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;All wrapped languages&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Deps] Backport-1.55: Upgrade Protobuf to v23.1. (&lt;a href="https://github.com/grpc/grpc/pull/33165" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33165/hovercard"&gt;#33165&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C++&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Build] Backport-1.55: Removed gRPC_PROTOBUF_PACKAGE_TYPE, supporting config only. (&lt;a href="https://github.com/grpc/grpc/pull/33018" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33018/hovercard"&gt;#33018&lt;/a&gt;)
+&lt;ul&gt;
+&lt;li&gt;FindProtobuf doesn’t work with Protobuf v22 and later so gRPC stops giving an option to choose a search mode when finding a Protobuf Package, expecting Protobuf is installed using CMake.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ruby&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Ruby] rubify type names start with lower case or non-alpha characters. (&lt;a href="https://github.com/grpc/grpc/pull/32604" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32604/hovercard"&gt;#32604&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>neuecc/MessagePack-CSharp - Releases - 2023-05-19</title>
+    <id>https://github.com/neuecc/MessagePack-CSharp#2023-05-19</id>
+    <link href="https://github.com/neuecc/MessagePack-CSharp" />
+    <updated>2023-05-20T00:04:25Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/neuecc/MessagePack-CSharp/releases/tag/v2.6.95-alpha"&gt;v2.6.95-alpha&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Convert mpc and msbuild task package to a roslyn source generator by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1664623028" data-permission-text="Title is private" data-url="https://github.com/neuecc/MessagePack-CSharp/issues/1599" data-hovercard-type="pull_request" data-hovercard-url="/neuecc/MessagePack-CSharp/pull/1599/hovercard" href="https://github.com/neuecc/MessagePack-CSharp/pull/1599"&gt;#1599&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix bug unsafe formatter by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/pCYSl5EDgo/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/pCYSl5EDgo"&gt;@pCYSl5EDgo&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1645358968" data-permission-text="Title is private" data-url="https://github.com/neuecc/MessagePack-CSharp/issues/1584" data-hovercard-type="pull_request" data-hovercard-url="/neuecc/MessagePack-CSharp/pull/1584/hovercard" href="https://github.com/neuecc/MessagePack-CSharp/pull/1584"&gt;#1584&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump Microsoft.NET.StringTools from 17.4.0 to 17.5.0 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1650422024" data-permission-text="Title is private" data-url="https://github.com/neuecc/MessagePack-CSharp/issues/1588" data-hovercard-type="pull_request" data-hovercard-url="/neuecc/MessagePack-CSharp/pull/1588/hovercard" href="https://github.com/neuecc/MessagePack-CSharp/pull/1588"&gt;#1588&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add built-in formatters for several more System.Numerics types by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1657662688" data-permission-text="Title is private" data-url="https://github.com/neuecc/MessagePack-CSharp/issues/1597" data-hovercard-type="pull_request" data-hovercard-url="/neuecc/MessagePack-CSharp/pull/1597/hovercard" href="https://github.com/neuecc/MessagePack-CSharp/pull/1597"&gt;#1597&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Set nullable in unity by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Y-YoL/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Y-YoL"&gt;@Y-YoL&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1664677943" data-permission-text="Title is private" data-url="https://github.com/neuecc/MessagePack-CSharp/issues/1600" data-hovercard-type="pull_request" data-hovercard-url="/neuecc/MessagePack-CSharp/pull/1600/hovercard" href="https://github.com/neuecc/MessagePack-CSharp/pull/1600"&gt;#1600&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bring back support for the additional allow types by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1665017911" data-permission-text="Title is private" data-url="https://github.com/neuecc/MessagePack-CSharp/issues/1602" data-hovercard-type="pull_request" data-hovercard-url="/neuecc/MessagePack-CSharp/pull/1602/hovercard" href="https://github.com/neuecc/MessagePack-CSharp/pull/1602"&gt;#1602&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Report diagnostics instead of throw from TypeCollector by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1666375673" data-permission-text="Title is private" data-url="https://github.com/neuecc/MessagePack-CSharp/issues/1605" data-hovercard-type="pull_request" data-hovercard-url="/neuecc/MessagePack-CSharp/pull/1605/hovercard" href="https://github.com/neuecc/MessagePack-CSharp/pull/1605"&gt;#1605&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Enable P2P generic test by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1665561418" data-permission-text="Title is private" data-url="https://github.com/neuecc/MessagePack-CSharp/issues/1604" data-hovercard-type="pull_request" data-hovercard-url="/neuecc/MessagePack-CSharp/pull/1604/hovercard" href="https://github.com/neuecc/MessagePack-CSharp/pull/1604"&gt;#1604&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Y-YoL/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Y-YoL"&gt;@Y-YoL&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1664677943" data-permission-text="Title is private" data-url="https://github.com/neuecc/MessagePack-CSharp/issues/1600" data-hovercard-type="pull_request" data-hovercard-url="/neuecc/MessagePack-CSharp/pull/1600/hovercard" href="https://github.com/neuecc/MessagePack-CSharp/pull/1600"&gt;#1600&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/neuecc/MessagePack-CSharp/compare/v2.5.108...v2.6.95-alpha"&gt;&lt;tt&gt;v2.5.108...v2.6.95-alpha&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>AvaloniaUI/Avalonia - Releases - 2023-05-19</title>
+    <id>https://github.com/AvaloniaUI/Avalonia#2023-05-19</id>
+    <link href="https://github.com/AvaloniaUI/Avalonia" />
+    <updated>2023-05-20T00:04:31Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/AvaloniaUI/Avalonia/releases/tag/0.10.21"&gt;0.10.21&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;ul&gt;
-&lt;li&gt;Critical MacOS fix, after 24 hours mouse events behave strangely.&lt;/li&gt;
-&lt;li&gt;Crash could occur if tooltip open / close collided with window resizing.&lt;/li&gt;
-&lt;li&gt;Fix popup pointer positioning from touch.&lt;/li&gt;
-&lt;li&gt;When ExtendClientAreaToDecorations is true, and CanResize = false, dont allow Zoom osx or Maximize on Windows.&lt;/li&gt;
+&lt;li&gt;Remove msbuild debug code, causing a "test.bin" file to be left next to the main project.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;other small bug fixes&lt;br&gt;
-&lt;a class="commit-link" href="https://github.com/AvaloniaUI/Avalonia/compare/release/0.10.19...release/0.10.20"&gt;&lt;tt&gt;release/0.10.19...release/0.10.20&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.nuget.org/packages/Avalonia/0.10.20" rel="nofollow"&gt;https://www.nuget.org/packages/Avalonia/0.10.20&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.nuget.org/packages/Avalonia/0.10.21" rel="nofollow"&gt;https://www.nuget.org/packages/Avalonia/0.10.21&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
