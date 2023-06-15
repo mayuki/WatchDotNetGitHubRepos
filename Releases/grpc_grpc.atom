@@ -1,22 +1,58 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2023-06-14T00:04:57Z</updated>
+  <updated>2023-06-15T00:04:46Z</updated>
   <id>https://github.com/grpc/grpc</id>
   <entry>
-    <title>grpc/grpc - Releases - 2023-06-13</title>
-    <id>https://github.com/grpc/grpc#2023-06-13</id>
+    <title>grpc/grpc - Releases - 2023-06-14</title>
+    <id>https://github.com/grpc/grpc#2023-06-14</id>
     <link href="https://github.com/grpc/grpc" />
-    <updated>2023-06-14T00:04:57Z</updated>
+    <updated>2023-06-15T00:04:46Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.56.0-pre3"&gt;Release v1.56.0-pre3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.56.0"&gt;Release v1.56.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;This is a prerelease of gRPC Core 1.56.0 (galvanized).&lt;/p&gt;
+                                &lt;p&gt;This is release 1.56.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;galvanized&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
 &lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This prerelease contains refinements, improvements, and bug fixes.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[c-ares] Backport "[c-ares] Upgrade c-ares dependency to 1.19.1 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1750478052" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/33392" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33392/hovercard" href="https://github.com/grpc/grpc/pull/33392"&gt;#33392&lt;/a&gt;)" to v1.56.x. (&lt;a href="https://github.com/grpc/grpc/pull/33411" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33411/hovercard"&gt;#33411&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Rls] Backport "[Rls] de-experimentalize RLS in XDS (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1734645605" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/33290" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33290/hovercard" href="https://github.com/grpc/grpc/pull/33290"&gt;#33290&lt;/a&gt;)" to v1.56.x. (&lt;a href="https://github.com/grpc/grpc/pull/33330" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33330/hovercard"&gt;#33330&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[core] Add support for vsock transport. (&lt;a href="https://github.com/grpc/grpc/pull/32847" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32847/hovercard"&gt;#32847&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[JSON] fix bug that incorrectly allowed trailing commas after an empty container. (&lt;a href="https://github.com/grpc/grpc/pull/33158" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33158/hovercard"&gt;#33158&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[BoringSSL] Update third_party/boringssl-with-bazel. (&lt;a href="https://github.com/grpc/grpc/pull/33150" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33150/hovercard"&gt;#33150&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[outlier detection] fix crash with pick_first and add tests. (&lt;a href="https://github.com/grpc/grpc/pull/33069" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33069/hovercard"&gt;#33069&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[EventEngine] Change TXT lookup result type to &lt;code&gt;std::vector&amp;lt;std::string&amp;gt;&lt;/code&gt;. (&lt;a href="https://github.com/grpc/grpc/pull/33030" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33030/hovercard"&gt;#33030&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Build] Removed gRPC_PROTOBUF_PACKAGE_TYPE, supporting config only. (&lt;a href="https://github.com/grpc/grpc/pull/32988" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32988/hovercard"&gt;#32988&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[EventEngine] Update contract for Listener's on_shutdown execution. (&lt;a href="https://github.com/grpc/grpc/pull/33003" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33003/hovercard"&gt;#33003&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Documentation] Update docs for TryCancel() on ServerContext. (&lt;a href="https://github.com/grpc/grpc/pull/32889" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32889/hovercard"&gt;#32889&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Compiler Fix] Bring declarations and definitions to be in sync. (&lt;a href="https://github.com/grpc/grpc/pull/32911" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32911/hovercard"&gt;#32911&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C++&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Authz] Support customizable audit functionality for authorization policy. (&lt;a href="https://github.com/grpc/grpc/pull/33145" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33145/hovercard"&gt;#33145&lt;/a&gt;, &lt;a href="https://github.com/grpc/grpc/pull/32995" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32995/hovercard"&gt;#32995&lt;/a&gt;, &lt;a href="https://github.com/grpc/grpc/pull/32944" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32944/hovercard"&gt;#32944&lt;/a&gt;, &lt;a href="https://github.com/grpc/grpc/pull/32970" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32970/hovercard"&gt;#32970&lt;/a&gt;, &lt;a href="https://github.com/grpc/grpc/pull/33196" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33196/hovercard"&gt;#33196&lt;/a&gt;, &lt;a href="https://github.com/grpc/grpc/pull/32750" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32750/hovercard"&gt;#32750&lt;/a&gt;, &lt;a href="https://github.com/grpc/grpc/pull/33183" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33183/hovercard"&gt;#33183&lt;/a&gt;, &lt;a href="https://github.com/grpc/grpc/pull/33026" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33026/hovercard"&gt;#33026&lt;/a&gt;, &lt;a href="https://github.com/grpc/grpc/pull/32828" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32828/hovercard"&gt;#32828&lt;/a&gt;, &lt;a href="https://github.com/grpc/grpc/pull/33252" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33252/hovercard"&gt;#33252&lt;/a&gt;, &lt;a href="https://github.com/grpc/grpc/pull/33004" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33004/hovercard"&gt;#33004&lt;/a&gt;, &lt;a href="https://github.com/grpc/grpc/pull/32976" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32976/hovercard"&gt;#32976&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[example] Server reflection. (&lt;a href="https://github.com/grpc/grpc/pull/33162" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33162/hovercard"&gt;#33162&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C#&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[CSHARP] Add base_namespace experimental option to C# plugin. (&lt;a href="https://github.com/grpc/grpc/pull/32636" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32636/hovercard"&gt;#32636&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[csharp proto plugin] Apply Obsolete attribute to deprecated services and methods in C# generated code. (&lt;a href="https://github.com/grpc/grpc/pull/32414" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32414/hovercard"&gt;#32414&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Objective-C&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Deps] Upgrade Protobuf to v23.1. (&lt;a href="https://github.com/grpc/grpc/pull/33164" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33164/hovercard"&gt;#33164&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[aio types] Fix some grpc.aio python types. (&lt;a href="https://github.com/grpc/grpc/pull/32475" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32475/hovercard"&gt;#32475&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ruby&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ruby] fix re2 compilation when older system version installed. (&lt;a href="https://github.com/grpc/grpc/pull/32580" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32580/hovercard"&gt;#32580&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
