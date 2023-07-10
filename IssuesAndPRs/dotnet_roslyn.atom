@@ -1,32 +1,56 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/roslyn - Issues &amp; Pull Requests</title>
   <link href="https://github.com/dotnet/roslyn" />
-  <updated>2023-07-09T00:05:32Z</updated>
+  <updated>2023-07-10T00:05:00Z</updated>
   <id>https://github.com/dotnet/roslyn</id>
   <entry>
-    <title>dotnet/roslyn - Issues &amp; Pull Requests - 2023-07-08</title>
-    <id>https://github.com/dotnet/roslyn#2023-07-08</id>
+    <title>dotnet/roslyn - Issues &amp; Pull Requests - 2023-07-09</title>
+    <id>https://github.com/dotnet/roslyn#2023-07-09</id>
     <link href="https://github.com/dotnet/roslyn" />
-    <updated>2023-07-09T00:05:32Z</updated>
+    <updated>2023-07-10T00:05:00Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/68935"&gt;Refactor `CheckFeatureAvailability` to not accept a `Location` parameter #68935&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/68947"&gt;Have some way to skip nullable analysis when calling semantic model methods #68947&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/68934"&gt;Consider caching `SyntaxNode.Location` #68934&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/68946"&gt;Consider having a threshold to choose between list/array vs dictionary for lookup #68946&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/68933"&gt;Update `ConstructedNamedTypeSymbol` to use OneOrMany instead of ImmutableArray for type arguments #68933&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/68945"&gt;"async" detection refactoring bug #68945&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/68943"&gt;Address comment about allocations in `MergedNamespaceSymbol.GetTypeMembers` #68943&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/68939"&gt;Possible room to optimize `GetSymbolInfo` #68939&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/68938"&gt;roslyn publish update mechanism #68938&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/68937"&gt;Correctness build with analyzers only reports subset of issues at once #68937&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -35,15 +59,9 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/68929"&gt;Optimize+ doesn't seem to fully discard all unreachable code #68929&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/68944"&gt;Revise old perf-related comment #68944&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/60818"&gt;Code cleanup on save while resolving merge conflicts #60818&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;17.6 P3&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;&lt;section&gt;
@@ -52,55 +70,49 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/68936"&gt;Reduce allocations of Location instances #68936&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/68942"&gt;Update License.txt to MIT #68942&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-Compilers, Community, untriaged&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/68931"&gt;Report nullable safety warnings (vs. "W"-warnings) for assignments to captured primary constructor parameters. #68931&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-Compilers, untriaged, New Feature - Primary Constructors&lt;/div&gt;
+      &lt;div&gt;Area-IDE, untriaged&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
   &lt;h3&gt;Merged&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/68916"&gt;Update analyzers to 23356.2 #68916&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/68910"&gt;EnC analyzer refactoring: Abstract member bodies #68910&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-Infrastructure, untriaged, Next&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/68894"&gt;Gracefully handle exceptions from DiagnosticSuppressor.SupportedSuppressions in IDE #68894&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-IDE, untriaged, Next&lt;/div&gt;
+      &lt;div&gt;Area-Interactive, untriaged, Next&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
   &lt;h3&gt;Updated&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/68910"&gt;EnC analyzer refactoring: Abstract member bodies #68910&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-Interactive, untriaged&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/68694"&gt;Avoid creating a result temp for is-expressions #68694&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-Compilers, Community, untriaged&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/68928"&gt;Merge latest bits from `main` into `roles` feature branch #68928&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/68930"&gt;Collection literals: collection builder methods #68930&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;Area-Compilers, untriaged&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/68771"&gt;Enable support for an LSP client to open source generated files #68771&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/68919"&gt;Fix lossy error message when lexer encounters certain characters #68919&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Area-Compilers, untriaged&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/68936"&gt;Reduce allocations of Location instances #68936&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Area-Compilers, Community, untriaged&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/67600"&gt;Allow function breakpoints before module symbols are loaded #67600&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Area-Interactive, untriaged&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/68896"&gt;External Access EditorConfig generation  #68896&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;Area-IDE, untriaged&lt;/div&gt;
     &lt;/li&gt;
