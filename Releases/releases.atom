@@ -1,32 +1,56 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2023-08-01T00:05:38Z</updated>
+  <updated>2023-08-02T00:05:28Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>AvaloniaUI/Avalonia - Releases - 2023-07-31</title>
-    <id>https://github.com/AvaloniaUI/Avalonia#2023-07-31</id>
-    <link href="https://github.com/AvaloniaUI/Avalonia" />
-    <updated>2023-08-01T00:05:36Z</updated>
+    <title>grpc/grpc - Releases - 2023-08-01</title>
+    <id>https://github.com/grpc/grpc#2023-08-01</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2023-08-02T00:05:07Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/AvaloniaUI/Avalonia/releases/tag/11.0.2"&gt;11.0.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.55.3"&gt;Release v1.55.3&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;&lt;a href="https://www.nuget.org/packages/Avalonia/11.0.2" rel="nofollow"&gt;https://www.nuget.org/packages/Avalonia/11.0.2&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;What's Changed&lt;/h2&gt;
+                                &lt;p&gt;This is release 1.55.3 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;grandslam&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Use embedded pdb for analyzers and build tasks by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/MrJul/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/MrJul"&gt;@MrJul&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1822123701" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/12336" data-hovercard-type="pull_request" data-hovercard-url="/AvaloniaUI/Avalonia/pull/12336/hovercard" href="https://github.com/AvaloniaUI/Avalonia/pull/12336"&gt;#12336&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix window incorrect positioning with window startup location CenterScreen on MacOS by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Takoooooo/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Takoooooo"&gt;@Takoooooo&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1820709843" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/12327" data-hovercard-type="pull_request" data-hovercard-url="/AvaloniaUI/Avalonia/pull/12327/hovercard" href="https://github.com/AvaloniaUI/Avalonia/pull/12327"&gt;#12327&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fixed issue where RowDetailsTemplate was getting the wrong DataContext by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Gundz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Gundz"&gt;@Gundz&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1802972432" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/12174" data-hovercard-type="pull_request" data-hovercard-url="/AvaloniaUI/Avalonia/pull/12174/hovercard" href="https://github.com/AvaloniaUI/Avalonia/pull/12174"&gt;#12174&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Catch dbus errors so that WatchAsync can register all names by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ThereGoesMySanity/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ThereGoesMySanity"&gt;@ThereGoesMySanity&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1827613423" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/12377" data-hovercard-type="pull_request" data-hovercard-url="/AvaloniaUI/Avalonia/pull/12377/hovercard" href="https://github.com/AvaloniaUI/Avalonia/pull/12377"&gt;#12377&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[backport][iomgr][EventEngine] Improve server handling of file descriptor exhaustion by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/drfloob/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/drfloob"&gt;@drfloob&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1801610037" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/33669" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33669/hovercard" href="https://github.com/grpc/grpc/pull/33669"&gt;#33669&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Gundz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Gundz"&gt;@Gundz&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1802972432" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/12174" data-hovercard-type="pull_request" data-hovercard-url="/AvaloniaUI/Avalonia/pull/12174/hovercard" href="https://github.com/AvaloniaUI/Avalonia/pull/12174"&gt;#12174&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[iOS] Disable posix polling on iOS (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1707871513" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/33094" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33094/hovercard" href="https://github.com/grpc/grpc/pull/33094"&gt;#33094&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/gnossen/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/gnossen"&gt;@gnossen&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1738631980" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/33326" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33326/hovercard" href="https://github.com/grpc/grpc/pull/33326"&gt;#33326&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/AvaloniaUI/Avalonia/compare/11.0.1...11.0.2"&gt;&lt;tt&gt;11.0.1...11.0.2&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.54.3"&gt;Release v1.54.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release 1.54.3 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;gracious&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[backport][iomgr][EventEngine] Improve server handling of file descriptor exhaustion by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/drfloob/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/drfloob"&gt;@drfloob&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1801617246" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/33670" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33670/hovercard" href="https://github.com/grpc/grpc/pull/33670"&gt;#33670&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.53.2"&gt;Release v1.53.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release gRPC Core 1.53.2 (glockenspiel).&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[backport][iomgr][EventEngine] Improve server handling of file descriptor exhaustion by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/drfloob/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/drfloob"&gt;@drfloob&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1801620898" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/33672" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33672/hovercard" href="https://github.com/grpc/grpc/pull/33672"&gt;#33672&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
