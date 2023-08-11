@@ -1,68 +1,45 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2023-08-10T00:05:53Z</updated>
+  <updated>2023-08-11T00:05:01Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>grpc/grpc - Releases - 2023-08-09</title>
-    <id>https://github.com/grpc/grpc#2023-08-09</id>
-    <link href="https://github.com/grpc/grpc" />
-    <updated>2023-08-10T00:05:30Z</updated>
+    <title>AvaloniaUI/Avalonia - Releases - 2023-08-10</title>
+    <id>https://github.com/AvaloniaUI/Avalonia#2023-08-10</id>
+    <link href="https://github.com/AvaloniaUI/Avalonia" />
+    <updated>2023-08-11T00:04:58Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.57.0"&gt;Release v1.57.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/AvaloniaUI/Avalonia/releases/tag/0.10.22"&gt;0.10.22&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;This is release 1.57.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;grounded&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
-&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
-&lt;h2&gt;Core&lt;/h2&gt;
+                                &lt;p&gt;Minor bug fixes:&lt;br&gt;
+&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1402245516" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/9135" data-hovercard-type="pull_request" data-hovercard-url="/AvaloniaUI/Avalonia/pull/9135/hovercard" href="https://github.com/AvaloniaUI/Avalonia/pull/9135"&gt;#9135&lt;/a&gt; - Datagrid issues&lt;br&gt;
+&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1607030177" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/10532" data-hovercard-type="pull_request" data-hovercard-url="/AvaloniaUI/Avalonia/pull/10532/hovercard" href="https://github.com/AvaloniaUI/Avalonia/pull/10532"&gt;#10532&lt;/a&gt; - MacOS window sizing issue.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/AvaloniaUI/Avalonia/releases/tag/11.0.3"&gt;11.0.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;Minor fixes and improvements&lt;/p&gt;
+&lt;h2&gt;What's Changed&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;[EventEngine] Change &lt;code&gt;GetDNSResolver&lt;/code&gt; to return &lt;code&gt;absl::StatusOr&amp;lt;std::unique_ptr&amp;lt;DNSResolver&amp;gt;&amp;gt;&lt;/code&gt;. (&lt;a href="https://github.com/grpc/grpc/pull/33744" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33744/hovercard"&gt;#33744&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[deps] Remove libuv dependency. (&lt;a href="https://github.com/grpc/grpc/pull/33748" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33748/hovercard"&gt;#33748&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[ssl] Fix SSL stack to handle large handshake messages whose length exceeds the BIO buffer size. (&lt;a href="https://github.com/grpc/grpc/pull/33638" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33638/hovercard"&gt;#33638&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[BoringSSL] Update third_party/boringssl-with-bazel. (&lt;a href="https://github.com/grpc/grpc/pull/33690" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33690/hovercard"&gt;#33690&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[iomgr][EventEngine] Improve server handling of file descriptor exhaustion. (&lt;a href="https://github.com/grpc/grpc/pull/33656" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33656/hovercard"&gt;#33656&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[ruby] experimental client side fork support. (&lt;a href="https://github.com/grpc/grpc/pull/33430" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33430/hovercard"&gt;#33430&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[core] Add a channel argument to set DSCP on streams. (&lt;a href="https://github.com/grpc/grpc/pull/28322" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/28322/hovercard"&gt;#28322&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[xDS LB] xDS pick first support. (&lt;a href="https://github.com/grpc/grpc/pull/33540" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33540/hovercard"&gt;#33540&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[tls] Remove use of SSL_CTX_set_client_CA_list for TLS server credentials. (&lt;a href="https://github.com/grpc/grpc/pull/33558" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33558/hovercard"&gt;#33558&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[EventEngine] Simplify &lt;code&gt;EventEngine::DNSResolver&lt;/code&gt; API. (&lt;a href="https://github.com/grpc/grpc/pull/33459" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33459/hovercard"&gt;#33459&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[iomgr][Windows] Return proper error code to client when connection is reset. (&lt;a href="https://github.com/grpc/grpc/pull/33502" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33502/hovercard"&gt;#33502&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[fork] simplify Fork::SetResetChildPollingEngineFunc to fix nested forking. (&lt;a href="https://github.com/grpc/grpc/pull/33495" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33495/hovercard"&gt;#33495&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[lb pick_first] Enable random shuffling of address list. (&lt;a href="https://github.com/grpc/grpc/pull/33254" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33254/hovercard"&gt;#33254&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[HTTP2] Fix inconsistencies in keepalive configuration. (&lt;a href="https://github.com/grpc/grpc/pull/33428" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33428/hovercard"&gt;#33428&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[c-ares] Upgrade c-ares dependency to 1.19.1. (&lt;a href="https://github.com/grpc/grpc/pull/33392" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33392/hovercard"&gt;#33392&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Rls] de-experimentalize RLS in XDS. (&lt;a href="https://github.com/grpc/grpc/pull/33290" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33290/hovercard"&gt;#33290&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;feat(NumericUpDown): TextAlignment by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/workgroupengineering/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/workgroupengineering"&gt;@workgroupengineering&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1826510674" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/12368" data-hovercard-type="pull_request" data-hovercard-url="/AvaloniaUI/Avalonia/pull/12368/hovercard" href="https://github.com/AvaloniaUI/Avalonia/pull/12368"&gt;#12368&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Make the animation display complete by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Coloryr/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Coloryr"&gt;@Coloryr&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1825801900" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/12364" data-hovercard-type="pull_request" data-hovercard-url="/AvaloniaUI/Avalonia/pull/12364/hovercard" href="https://github.com/AvaloniaUI/Avalonia/pull/12364"&gt;#12364&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add null check for TextInputMethodClient in OnSelectionChanged() method by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/3dfxuser/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/3dfxuser"&gt;@3dfxuser&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1832745727" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/12415" data-hovercard-type="pull_request" data-hovercard-url="/AvaloniaUI/Avalonia/pull/12415/hovercard" href="https://github.com/AvaloniaUI/Avalonia/pull/12415"&gt;#12415&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Generate pdb for ref assemblies by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/MrJul/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/MrJul"&gt;@MrJul&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1831654386" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/12410" data-hovercard-type="pull_request" data-hovercard-url="/AvaloniaUI/Avalonia/pull/12410/hovercard" href="https://github.com/AvaloniaUI/Avalonia/pull/12410"&gt;#12410&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix not working hotkey on a custom control. closes &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1820161402" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/12323" data-hovercard-type="issue" data-hovercard-url="/AvaloniaUI/Avalonia/issues/12323/hovercard" href="https://github.com/AvaloniaUI/Avalonia/issues/12323"&gt;#12323&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/flexxxxer/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/flexxxxer"&gt;@flexxxxer&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1823419871" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/12347" data-hovercard-type="pull_request" data-hovercard-url="/AvaloniaUI/Avalonia/pull/12347/hovercard" href="https://github.com/AvaloniaUI/Avalonia/pull/12347"&gt;#12347&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix DataContext not getting GC'd/Finalized. closes &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1796143020" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/12123" data-hovercard-type="issue" data-hovercard-url="/AvaloniaUI/Avalonia/issues/12123/hovercard" href="https://github.com/AvaloniaUI/Avalonia/issues/12123"&gt;#12123&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/flexxxxer/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/flexxxxer"&gt;@flexxxxer&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1835639223" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/12430" data-hovercard-type="pull_request" data-hovercard-url="/AvaloniaUI/Avalonia/pull/12430/hovercard" href="https://github.com/AvaloniaUI/Avalonia/pull/12430"&gt;#12430&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Unwrap win32 data object by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/kekekeks/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/kekekeks"&gt;@kekekeks&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1840927366" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/12478" data-hovercard-type="pull_request" data-hovercard-url="/AvaloniaUI/Avalonia/pull/12478/hovercard" href="https://github.com/AvaloniaUI/Avalonia/pull/12478"&gt;#12478&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Allow embedded root automation peers. by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/grokys/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/grokys"&gt;@grokys&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1821228402" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/12330" data-hovercard-type="pull_request" data-hovercard-url="/AvaloniaUI/Avalonia/pull/12330/hovercard" href="https://github.com/AvaloniaUI/Avalonia/pull/12330"&gt;#12330&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;C++&lt;/h2&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;[otel] Add bazel dependency. (&lt;a href="https://github.com/grpc/grpc/pull/33548" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33548/hovercard"&gt;#33548&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;C#&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[csharp] Include correct build of Grpc.Tools in nightly packages. (&lt;a href="https://github.com/grpc/grpc/pull/33595" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33595/hovercard"&gt;#33595&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[csharp] reintroduce base_namespace experimental option to C# (with a patch). (&lt;a href="https://github.com/grpc/grpc/pull/33535" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33535/hovercard"&gt;#33535&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Objective-C&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[Protobuf] Upgrade third_party/protobuf to 23.4. (&lt;a href="https://github.com/grpc/grpc/pull/33695" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33695/hovercard"&gt;#33695&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Python&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[posix] Enable systemd sockets for libsystemd&amp;gt;=233. (&lt;a href="https://github.com/grpc/grpc/pull/32671" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32671/hovercard"&gt;#32671&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[python O11Y] Initial Implementation. (&lt;a href="https://github.com/grpc/grpc/pull/32974" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/32974/hovercard"&gt;#32974&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Ruby&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[ruby] experimental client side fork support (&lt;a href="https://github.com/grpc/grpc/pull/33430" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33430/hovercard"&gt;#33430&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[ruby] backport "[ruby] remove unnecessary background thread startup wait logic that interferes with forking &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1816128062" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/33805" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33805/hovercard" href="https://github.com/grpc/grpc/pull/33805"&gt;#33805&lt;/a&gt;" to v1.57.x. (&lt;a href="https://github.com/grpc/grpc/pull/33846" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33846/hovercard"&gt;#33846&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Ruby] remove manual strip in ruby ext conf. (&lt;a href="https://github.com/grpc/grpc/pull/33641" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33641/hovercard"&gt;#33641&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[ruby] simplify shutdown; remove unnecessary attempts at grpc_shutdown. (&lt;a href="https://github.com/grpc/grpc/pull/33674" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33674/hovercard"&gt;#33674&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[ruby] Add &lt;code&gt;-weak_framework CoreFoundation&lt;/code&gt; to link line. (&lt;a href="https://github.com/grpc/grpc/pull/33538" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33538/hovercard"&gt;#33538&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Ruby] Fix memory leak in grpc_rb_call_run_batch. (&lt;a href="https://github.com/grpc/grpc/pull/33368" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33368/hovercard"&gt;#33368&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Ruby] Fix memory leak in grpc_rb_server_request_call. (&lt;a href="https://github.com/grpc/grpc/pull/33371" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33371/hovercard"&gt;#33371&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Coloryr/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Coloryr"&gt;@Coloryr&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1825801900" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/12364" data-hovercard-type="pull_request" data-hovercard-url="/AvaloniaUI/Avalonia/pull/12364/hovercard" href="https://github.com/AvaloniaUI/Avalonia/pull/12364"&gt;#12364&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/3dfxuser/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/3dfxuser"&gt;@3dfxuser&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1832745727" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/12415" data-hovercard-type="pull_request" data-hovercard-url="/AvaloniaUI/Avalonia/pull/12415/hovercard" href="https://github.com/AvaloniaUI/Avalonia/pull/12415"&gt;#12415&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/flexxxxer/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/flexxxxer"&gt;@flexxxxer&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1823419871" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/12347" data-hovercard-type="pull_request" data-hovercard-url="/AvaloniaUI/Avalonia/pull/12347/hovercard" href="https://github.com/AvaloniaUI/Avalonia/pull/12347"&gt;#12347&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
