@@ -1,45 +1,26 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2023-08-12T00:05:10Z</updated>
+  <updated>2023-08-13T00:05:08Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>autofac/Autofac - Releases - 2023-08-11</title>
-    <id>https://github.com/autofac/Autofac#2023-08-11</id>
-    <link href="https://github.com/autofac/Autofac" />
-    <updated>2023-08-12T00:04:41Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/autofac/Autofac/releases/tag/v7.1.0"&gt;v7.1.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1830324793" data-permission-text="Title is private" data-url="https://github.com/autofac/Autofac/issues/1388" data-hovercard-type="issue" data-hovercard-url="/autofac/Autofac/issues/1388/hovercard" href="https://github.com/autofac/Autofac/issues/1388"&gt;#1388&lt;/a&gt;: Re-enabled &lt;code&gt;RegsiterTypes&lt;/code&gt; filtering. This was an accidental behavior regression where the &lt;code&gt;RegisterTypes&lt;/code&gt; method wouldn't filter out non-registerable types.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;RegisterType&amp;lt;T&amp;gt;&lt;/code&gt; and &lt;code&gt;RegisterType(Type t)&lt;/code&gt; will now throw when non-registerable types are provided, for example &lt;code&gt;containerBuilder.RegisterType&amp;lt;IInterface&amp;gt;()&lt;/code&gt; (you can't register &lt;em&gt;interfaces&lt;/em&gt; - you can register things &lt;code&gt;As&amp;lt;IInterface&amp;gt;&lt;/code&gt;). This used to throw at container build time; now it throws at &lt;code&gt;RegisterType&lt;/code&gt; time and it has a more precise error message so you can handle these issues more proactively.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/autofac/Autofac/compare/v7.0.1...v7.1.0"&gt;&lt;tt&gt;v7.0.1...v7.1.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>FluentValidation/FluentValidation - Releases - 2023-08-11</title>
-    <id>https://github.com/FluentValidation/FluentValidation#2023-08-11</id>
+    <title>FluentValidation/FluentValidation - Releases - 2023-08-12</title>
+    <id>https://github.com/FluentValidation/FluentValidation#2023-08-12</id>
     <link href="https://github.com/FluentValidation/FluentValidation" />
-    <updated>2023-08-12T00:05:07Z</updated>
+    <updated>2023-08-13T00:05:06Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/FluentValidation/FluentValidation/releases/tag/11.7.0"&gt;11.7.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/FluentValidation/FluentValidation/releases/tag/11.7.1"&gt;11.7.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;h1&gt;Release notes&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://docs.fluentvalidation.net/en/latest/upgrading-to-11.html" rel="nofollow"&gt;Please read the upgrade guide if you are moving from 10.x to 11.x&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Note that the after 11.1.0 release, the &lt;code&gt;FluentValidation.AspNetCore&lt;/code&gt; package has been moved to a separate repository and is now versioned and released separately. These release notes now only apply to the core &lt;code&gt;FluentValidation&lt;/code&gt; package. For &lt;code&gt;FluentValidation.AspNetCore&lt;/code&gt; release notes, please visit the &lt;a href="https://github.com/FluentValidation/FluentValidation.AspNetCore"&gt;FluentValidation.AspNetCore repository&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Changes in 11.7.1&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Resolved issue with combining multiple ValidationResult instances where RuleSetsExecuted wasn't properly set on the combined result (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1815024067" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/2125" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/2125/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/2125"&gt;#2125&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2&gt;Changes in 11.7.0&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Add additional constructor for combining multiple ValidationResult instances (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1815024067" data-permission-text="Title is private" data-url="https://github.com/FluentValidation/FluentValidation/issues/2125" data-hovercard-type="issue" data-hovercard-url="/FluentValidation/FluentValidation/issues/2125/hovercard" href="https://github.com/FluentValidation/FluentValidation/issues/2125"&gt;#2125&lt;/a&gt;)&lt;/li&gt;
