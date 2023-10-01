@@ -1,50 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2023-09-30T00:04:55Z</updated>
+  <updated>2023-10-01T00:05:28Z</updated>
   <id>https://github.com/grpc/grpc</id>
-  <entry>
-    <title>grpc/grpc - Releases - 2023-09-29</title>
-    <id>https://github.com/grpc/grpc#2023-09-29</id>
-    <link href="https://github.com/grpc/grpc" />
-    <updated>2023-09-30T00:04:55Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.59.0"&gt;Release v1.59.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;This is release 1.59.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;generative&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
-&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
-&lt;h2&gt;Core&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[Release] Bump core version 202309251628. (&lt;a href="https://github.com/grpc/grpc/pull/34476" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34476/hovercard"&gt;#34476&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[xds ssa] Remove environment variable protection for stateful affinity. (&lt;a href="https://github.com/grpc/grpc/pull/34435" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34435/hovercard"&gt;#34435&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[windows DNS] Simplify c-ares Windows code. (&lt;a href="https://github.com/grpc/grpc/pull/33965" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/33965/hovercard"&gt;#33965&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[c-ares] fix spin loop bug when c-ares gives up on a socket that still has data left in its read buffer. (&lt;a href="https://github.com/grpc/grpc/pull/34185" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34185/hovercard"&gt;#34185&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Deps] Adding upb as a submodule. (&lt;a href="https://github.com/grpc/grpc/pull/34199" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34199/hovercard"&gt;#34199&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[EventEngine] Update Cancel contract on closure deletion timeline. (&lt;a href="https://github.com/grpc/grpc/pull/34167" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34167/hovercard"&gt;#34167&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;C#&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[csharp codegen] Handle empty base_namespace option value to fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1859616504" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/34113" data-hovercard-type="issue" data-hovercard-url="/grpc/grpc/issues/34113/hovercard" href="https://github.com/grpc/grpc/issues/34113"&gt;#34113&lt;/a&gt;. (&lt;a href="https://github.com/grpc/grpc/pull/34137" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34137/hovercard"&gt;#34137&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Python&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[Python 3.12] Support Python 3.12. (&lt;a href="https://github.com/grpc/grpc/pull/34398" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34398/hovercard"&gt;#34398&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Python 3.12] Deprecate distutil. (&lt;a href="https://github.com/grpc/grpc/pull/34186" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34186/hovercard"&gt;#34186&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Ruby&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[ruby] Fix linking errors on x86-darwin. (&lt;a href="https://github.com/grpc/grpc/pull/34134" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34134/hovercard"&gt;#34134&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Ruby] replace strdup with gpr_strdup. (&lt;a href="https://github.com/grpc/grpc/pull/34177" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34177/hovercard"&gt;#34177&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[ruby] drop ruby 2.6 support. (&lt;a href="https://github.com/grpc/grpc/pull/34198" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34198/hovercard"&gt;#34198&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
