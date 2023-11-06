@@ -1,46 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>mysql-net/MySqlConnector - Releases</title>
   <link href="https://github.com/mysql-net/MySqlConnector" />
-  <updated>2023-11-05T00:05:39Z</updated>
+  <updated>2023-11-06T00:05:11Z</updated>
   <id>https://github.com/mysql-net/MySqlConnector</id>
-  <entry>
-    <title>mysql-net/MySqlConnector - Releases - 2023-11-04</title>
-    <id>https://github.com/mysql-net/MySqlConnector#2023-11-04</id>
-    <link href="https://github.com/mysql-net/MySqlConnector" />
-    <updated>2023-11-05T00:05:39Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/mysql-net/MySqlConnector/releases/tag/2.3.0-beta.4"&gt;2.3.0 Beta 4&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;Support .NET 8.0.
-&lt;ul&gt;
-&lt;li&gt;Mark some serialization APIs as &lt;code&gt;[Obsolete]&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Implement &lt;code&gt;DbBatchCommand.CreateParameter&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1831133009" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1352" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1352/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1352"&gt;#1352&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Optimizations: Use &lt;code&gt;IUtf8SpanFormattable&lt;/code&gt;, &lt;code&gt;Ascii.FromUtf16&lt;/code&gt;, &lt;code&gt;Guid(bigEndian: true)&lt;/code&gt; constructor, argument-throwing helpers, etc.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Expose connection pool metrics: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="318746327" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/491" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/491/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/491"&gt;#491&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Support .NET Framework 4.8 (&lt;code&gt;net48&lt;/code&gt;) TFM: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5535038" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/discussions/1355" data-hovercard-type="discussion" data-hovercard-url="/mysql-net/MySqlConnector/discussions/1355/hovercard" href="https://github.com/mysql-net/MySqlConnector/discussions/1355"&gt;#1355&lt;/a&gt;.
-&lt;ul&gt;
-&lt;li&gt;This allows &lt;code&gt;TlsVersion = TLSv1.3&lt;/code&gt; to be used on .NET Framework 4.8.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Remove &lt;code&gt;COM_MULTI&lt;/code&gt; protocol support: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="808051418" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/946" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/946/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/946"&gt;#946&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Reduce allocations on common code paths.&lt;/li&gt;
-&lt;li&gt;Support &lt;code&gt;ZEROFILL&lt;/code&gt; columns in &lt;code&gt;MySqlDecimal&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1854013854" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1354" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1354/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1354"&gt;#1354&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Support higher-precision &lt;code&gt;DateTime&lt;/code&gt; values: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1931487928" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1379" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1379/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1379"&gt;#1379&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Use &lt;code&gt;ValueTask&lt;/code&gt; in &lt;code&gt;MySqlBulkCopy&lt;/code&gt; API for all TFMs: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1878888294" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1364" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1364/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1364"&gt;#1364&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Fix bug when column name begins with &lt;code&gt;@&lt;/code&gt; in &lt;code&gt;MySqlBulkCopy&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1879101419" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1365" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1365/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1365"&gt;#1365&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Ignore &lt;code&gt;MySqlDbType&lt;/code&gt; when serializing enum values: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1976761546" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1384" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1384/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1384"&gt;#1384&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Thanks to &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/stilettk/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/stilettk"&gt;@stilettk&lt;/a&gt; for contributions to this release.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
