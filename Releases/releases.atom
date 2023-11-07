@@ -1,6 +1,64 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2023-11-06T00:05:23Z</updated>
+  <updated>2023-11-07T00:05:22Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
+  <entry>
+    <title>icsharpcode/ILSpy - Releases - 2023-11-06</title>
+    <id>https://github.com/icsharpcode/ILSpy#2023-11-06</id>
+    <link href="https://github.com/icsharpcode/ILSpy" />
+    <updated>2023-11-07T00:05:03Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/icsharpcode/ILSpy/releases/tag/v8.2"&gt;ILSpy 8.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;ILSpy 8.x is based on .NET 6.0. All artifacts &lt;strong&gt;except&lt;/strong&gt; the self-contained distribution are built framework-dependent, which means &lt;a href="https://dotnet.microsoft.com/en-us/download/dotnet/6.0" rel="nofollow"&gt;.NET 6.0.2 or later&lt;/a&gt; must be installed prior to starting ILSpy.&lt;/p&gt;
+&lt;h1&gt;New Language Features&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;C# 7.1 Pattern matching with generics&lt;/li&gt;
+&lt;li&gt;C# 8.0 Recursive patterns&lt;/li&gt;
+&lt;li&gt;C# 9.0 Relational patterns&lt;/li&gt;
+&lt;li&gt;C# 9.0 &lt;code&gt;not&lt;/code&gt; patterns&lt;/li&gt;
+&lt;li&gt;C# 10.0 static abstract members in interfaces&lt;/li&gt;
+&lt;li&gt;C# 11.0 switch on &lt;code&gt;(ReadOnly)Span&amp;lt;char&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Contributions&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Add entry size info (&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/startewho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/startewho"&gt;@startewho&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1840627622" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3052" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3052/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3052"&gt;#3052&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add GC Info to R2R output (&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/eduardo-vp/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/eduardo-vp"&gt;@eduardo-vp&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1878107848" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3076" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3076/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3076"&gt;#3076&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update R2R (&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/cshung/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/cshung"&gt;@cshung&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1909708165" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3088" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3088/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3088"&gt;#3088&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Reduce "unsafe" by replacing byte* pointer usage with ReadOnlySpan&amp;lt;byte&amp;gt; (&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/fowl2/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/fowl2"&gt;@fowl2&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1949287044" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3106" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3106/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3106"&gt;#3106&lt;/a&gt; )&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Enhancements&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1919789088" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3090" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3090/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3090"&gt;#3090&lt;/a&gt;: add support for the &lt;code&gt;NUGET_PACKAGES&lt;/code&gt; environment variable&lt;/li&gt;
+&lt;li&gt;Fixed some quirks in our search: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1868236135" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3064" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3064/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3064"&gt;#3064&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1868238046" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3065" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3065/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3065"&gt;#3065&lt;/a&gt; and &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1806493760" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3038" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3038/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3038"&gt;#3038&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Performance&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1877834115" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3075" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3075/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3075"&gt;#3075&lt;/a&gt;: Avoid processing already-transformed blocks by introducing &lt;code&gt;BlockTransformContext.IndexOfFirstAlreadyTransformedInstruction&lt;/code&gt;, which allows us to track already transformed instructions after a block has been merged into another by &lt;code&gt;ConditionDetection&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1877834115" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3075" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3075/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3075"&gt;#3075&lt;/a&gt;: Add &lt;code&gt;NextSetBit&lt;/code&gt; operation to &lt;code&gt;BitSet&lt;/code&gt; to avoid looking at every store bit individually in &lt;code&gt;ReachingDefinitionsVisitor.GetStores()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1877834115" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3075" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3075/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3075"&gt;#3075&lt;/a&gt;: Fix &lt;code&gt;ILVariableEqualityComparer.GetHashCode&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1877834115" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3075" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3075/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3075"&gt;#3075&lt;/a&gt;: Improve performance of &lt;code&gt;CSharpResolver.LookupSimpleNameOrTypeName&lt;/code&gt; in cases with a large number of local variables.&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1877834115" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3075" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3075/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3075"&gt;#3075&lt;/a&gt;: Eliminate recursion in some parts of the decompiler engine&lt;/li&gt;
+&lt;li&gt;ILSpy UI: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1853702062" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3057" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3057/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3057"&gt;#3057&lt;/a&gt; - sub-optimal use of &lt;code&gt;StringBuilder&lt;/code&gt; when constructing tree-node labels&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Bug fixes&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1860778565" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3061" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3061/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3061"&gt;#3061&lt;/a&gt;: Handler blocks of exception filter blocks do not have a header.&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1947637635" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3103" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3103/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3103"&gt;#3103&lt;/a&gt;: unaligned.stobj cannot be transformed into inline assignment&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1920663010" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3091" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3091/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3091"&gt;#3091&lt;/a&gt;: extension methods named &lt;code&gt;Add&lt;/code&gt; were skipping some checks in &lt;code&gt;AccessPathElement.IsMethodApplicable&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1751585953" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3004" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3004/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3004"&gt;#3004&lt;/a&gt;: MetadataModule.ResolveEntity() returning null for System.IntPtr when C# 11 native integers are enabled.&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1948468480" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3105" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3105/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3105"&gt;#3105&lt;/a&gt; - VS2017-2019 addin didn't properly match subdirectory structure of 2022 addin&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1761955347" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3014" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3014/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3014"&gt;#3014&lt;/a&gt;: Missing type information in lambda expressions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And many other fixes, for a full list click &lt;a href="https://github.com/icsharpcode/ILSpy/compare/v8.1.1...v8.2"&gt;here&lt;/a&gt;.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
