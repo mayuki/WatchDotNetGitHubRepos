@@ -1,6 +1,110 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/efcore - Releases</title>
   <link href="https://github.com/dotnet/efcore" />
-  <updated>2023-11-14T00:05:02Z</updated>
+  <updated>2023-11-15T00:04:48Z</updated>
   <id>https://github.com/dotnet/efcore</id>
+  <entry>
+    <title>dotnet/efcore - Releases - 2023-11-14</title>
+    <id>https://github.com/dotnet/efcore#2023-11-14</id>
+    <link href="https://github.com/dotnet/efcore" />
+    <updated>2023-11-15T00:04:48Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/efcore/releases/tag/v8.0.0"&gt;EF Core 8 (EF8)&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;EF Core 8 (EF8) is &lt;a href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/8.0.0" rel="nofollow"&gt;available from NuGet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;EF8 contains many new features and enhancements, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/29424" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/29424/hovercard"&gt;Allow Multi-region or Application Preferred Regions in EF Core Cosmos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/9906" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/9906/hovercard"&gt;Use C# structs or classes as value objects&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/31489" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/31489/hovercard"&gt;Support primitive collections in the compiled model&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/31414" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/31414/hovercard"&gt;Migrations and model snapshot for primitive collections&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/31365" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/31365/hovercard"&gt;Query: add support for projecting JSON entities that have been composed on&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/31355" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/31355/hovercard"&gt;SQLite: Add EF.Functions.Unhex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/30677" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/30677/hovercard"&gt;Add type mapping APIs to customize JSON value serialization/deserialization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/30408" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/30408/hovercard"&gt;SQL Server Index options SortInTempDB and DataCompression&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/30965" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/30965/hovercard"&gt;Analyzer: warn (and code fix) for use of interpolation in SQL methods accepting raw strings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/30955" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/30955/hovercard"&gt;Translate Contains to IN with subquery instead of EXISTS where relevant&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/30732" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/30732/hovercard"&gt;Allow inline primitive collections with parameters, translating to VALUES&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/30708" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/30708/hovercard"&gt;Translate DateOnly.FromDateTime&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/30604" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/30604/hovercard"&gt;Implement JSON serialization/deserialization via Utf8JsonReader/Utf8JsonWriter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/13613" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/13613/hovercard"&gt;Update pattern for scaffolding column default constraints&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/31386" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/31386/hovercard"&gt;Use IN instead of EXISTS with ExecuteDelete and entity containment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/31406" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/31406/hovercard"&gt;Allow ExecuteUpdate to update properties of multiple queries as long as the map to a single table&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/31364" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/31364/hovercard"&gt;Query: add support for projecting primitive collections from JSON entities&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/31100" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/31100/hovercard"&gt;Switch to storing enums as ints in JSON instead of strings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/30926" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/30926/hovercard"&gt;Translate DegreesToRadians&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/30730" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/30730/hovercard"&gt;Metadata and type mapping support for primitive collections&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/30727" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/30727/hovercard"&gt;JSON type representations and conversions to store types&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/29755" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/29755/hovercard"&gt;Allow stripping away all model building code to reduce application size&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/28688" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/28688/hovercard"&gt;Json: add support for collection of primitive types inside JSON columns&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/28616" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/28616/hovercard"&gt;Support LINQ querying of non-primitive collections within JSON&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/8824" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/8824/hovercard"&gt;SQLite RevEng: Sample data to determine CLR type&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/701" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/701/hovercard"&gt;Allow default value check in value generation to be customized&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/15070" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/15070/hovercard"&gt;Update handling of non-nullable store-generated properties&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/13617" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/13617/hovercard"&gt;IN() list queries are not parameterized, causing increased SQL Server CPU usage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/30704" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/30704/hovercard"&gt;Allow 'unsharing' connection between contexts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/30684" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/30684/hovercard"&gt;Remove unneeded subquery and projection when using ordering without limit/offset in set operations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/30610" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/30610/hovercard"&gt;Make SequentialGuidValueGenerator non-allocating&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/30426" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/30426/hovercard"&gt;Support querying over primitive collections&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/30334" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/30334/hovercard"&gt;JSON/Sqlite: use -&amp;gt; and -&amp;gt;&amp;gt; where possible when traversing JSON, rather than json_extract&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/30072" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/30072/hovercard"&gt;Add Generic version of EntityTypeConfiguration Attribute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/29725" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/29725/hovercard"&gt;NativeAOT/trimming compatibility for Microsoft.Data.Sqlite&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/29427" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/29427/hovercard"&gt;Map collections of primitive types to JSON column in relational database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/28925" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/28925/hovercard"&gt;Translate DateTimeOffset.ToUnixTime(Seconds|Milliseconds)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/27752" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/27752/hovercard"&gt;Allow pooling DbContext with singleton services&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/26560" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/26560/hovercard"&gt;Optional RestartSequenceOperation.StartValue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/24896" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/24896/hovercard"&gt;Generate compiled relational model&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/24476" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/24476/hovercard"&gt;Global query filters produce too many parameters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/30410" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/30410/hovercard"&gt;Optimize update path for single property JSON element&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/29602" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/29602/hovercard"&gt;JSON columns can be used in compiled models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/26767" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/26767/hovercard"&gt;Unneeded parentheses removed in SQL queries &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/19129" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/19129/hovercard"&gt;Set operations are supported over non-entity projections with different facets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/28816" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/28816/hovercard"&gt;Json: add support for Sqlite provider&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/365" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/365/hovercard"&gt;SQL Server: Support hierarchyid&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/29916" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/29916/hovercard"&gt;Configuration to opt out of occasionally problematic SaveChanges optimizations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/28687" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/28687/hovercard"&gt;Add convention types for triggers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/28648" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/28648/hovercard"&gt;Translate element access of a JSON array&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/ef/core/what-is-new/ef-core-8.0/plan#sql-queries-for-unmapped-types" rel="nofollow"&gt;Raw SQL queries for unmapped types&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/24507" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/24507/hovercard"&gt;Support the new BCL DateOnly and TimeOnly structs for SQL Server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/17066" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/17066/hovercard"&gt;Translate ElementAt(OrDefault)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/10787" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/10787/hovercard"&gt;Opt-out of lazy-loading for specific navigations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/10042" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/10042/hovercard"&gt;Lazy-loading for no-tracking queries&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/29121" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/29121/hovercard"&gt;Reverse engineer Synapse and Dynamics 365 TDS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/10691" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/10691/hovercard"&gt;Set MaxLength on TPH discriminator property by convention&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/20839" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/20839/hovercard"&gt;Translate ToString() on a string column&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/29476" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/29476/hovercard"&gt;Generic overload of ConventionSetBuilder.Remove&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/29685" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/29685/hovercard"&gt;Lookup tracked entities by primary key, alternate key, or foreign key&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/29758" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/29758/hovercard"&gt;Allow UseSequence and HiLo on non-key properties&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/29910" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/29910/hovercard"&gt;Pass query tracking behavior to materialization interceptor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/27526" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/27526/hovercard"&gt;Use case-insensitive string key comparisons on SQL Server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/24771" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/24771/hovercard"&gt;Allow value converters to change the DbType&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/13540" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/13540/hovercard"&gt;Resolve application services in EF services&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/12434" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/12434/hovercard"&gt;Numeric rowersion properties automatically convert to binary&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/24199" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/24199/hovercard"&gt;Allow transfer of ownership of DbConnection from application to DbContext&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/efcore/issues/18715" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/18715/hovercard"&gt;Provide more information when 'No DbContext was found' error is generated&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See GitHub for all issues resolved in &lt;a href="https://github.com/dotnet/efcore/issues?q=is%3Aissue+milestone%3A8.0.0+is%3Aclosed"&gt;8.0.0&lt;/a&gt;.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/efcore/releases/tag/v7.0.14"&gt;EF Core 7.0.14&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is a &lt;a href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/7.0.14" rel="nofollow"&gt;patch release of EF Core 7.0&lt;/a&gt; containing only updates to dependencies. There are no additional fixes in this release beyond those already shipped in EF Core 7.0.13.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/efcore/releases/tag/v6.0.25"&gt;EF Core 6.0.25&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is a &lt;a href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/6.1.25" rel="nofollow"&gt;patch release of EF Core 6.0&lt;/a&gt; containing only updates to dependencies. There are no additional fixes in this release beyond those already shipped in EF Core 6.1.24.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
