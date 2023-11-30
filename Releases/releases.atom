@@ -1,59 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2023-11-29T00:05:41Z</updated>
+  <updated>2023-11-30T00:05:36Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
-  <entry>
-    <title>grpc/grpc - Releases - 2023-11-28</title>
-    <id>https://github.com/grpc/grpc#2023-11-28</id>
-    <link href="https://github.com/grpc/grpc" />
-    <updated>2023-11-29T00:05:12Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.60.0"&gt;Release v1.60.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;This is release 1.60.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;gjallarhorn&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
-&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
-&lt;h2&gt;Core&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Implemented dualstack IPv4 and IPv6 backend support, as per &lt;a href="https://github.com/grpc/proposal/pull/356" data-hovercard-type="pull_request" data-hovercard-url="/grpc/proposal/pull/356/hovercard"&gt;draft gRFC A61&lt;/a&gt;.  xDS support currently guarded by &lt;code&gt;GRPC_EXPERIMENTAL_XDS_DUALSTACK_ENDPOINTS&lt;/code&gt; env var.&lt;/li&gt;
-&lt;li&gt;Dropped Bazel 5 support. (&lt;a href="https://github.com/grpc/grpc/pull/34813" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34813/hovercard"&gt;#34813&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[deps] Upgrade protobuf version to v25.0. (&lt;a href="https://github.com/grpc/grpc/pull/34513" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34513/hovercard"&gt;#34513&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Security - Revocation] Crl Directory Watcher Implementation. (&lt;a href="https://github.com/grpc/grpc/pull/34749" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34749/hovercard"&gt;#34749&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[server] Cap size of pending request queue with RealRequestMatcher. (&lt;a href="https://github.com/grpc/grpc/pull/34782" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34782/hovercard"&gt;#34782&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[chttp2] Fix outgoing data stats. (&lt;a href="https://github.com/grpc/grpc/pull/34693" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34693/hovercard"&gt;#34693&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[EventEngine] Enable Posix EventEngine Listener on all builds. (&lt;a href="https://github.com/grpc/grpc/pull/34748" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34748/hovercard"&gt;#34748&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[EventEngine] Enable Windows EventEngine Listener on all builds. (&lt;a href="https://github.com/grpc/grpc/pull/34436" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34436/hovercard"&gt;#34436&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[chttp2] Alternative protection for too many streams in the system. (&lt;a href="https://github.com/grpc/grpc/pull/34697" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34697/hovercard"&gt;#34697&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Proxy] Support for setting proxy for addresses. (&lt;a href="https://github.com/grpc/grpc/pull/34617" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34617/hovercard"&gt;#34617&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[client idleness] client channels go idle after 30 minutes by default. (&lt;a href="https://github.com/grpc/grpc/pull/34653" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34653/hovercard"&gt;#34653&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[chttp2] Add an experiment to separate liveness checks from ping timeouts. (&lt;a href="https://github.com/grpc/grpc/pull/34647" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34647/hovercard"&gt;#34647&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[chttp2] Tarpit invalid requests. (&lt;a href="https://github.com/grpc/grpc/pull/34641" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34641/hovercard"&gt;#34641&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[chttp2] Enforce settings acks. (&lt;a href="https://github.com/grpc/grpc/pull/34640" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34640/hovercard"&gt;#34640&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[chttp2] Limit work per read cycle. (&lt;a href="https://github.com/grpc/grpc/pull/34639" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34639/hovercard"&gt;#34639&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[chttp2] Limit request count before receiving settings ack. (&lt;a href="https://github.com/grpc/grpc/pull/34638" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34638/hovercard"&gt;#34638&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[chttp2] Randomly ping on RST_STREAM. (&lt;a href="https://github.com/grpc/grpc/pull/34637" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34637/hovercard"&gt;#34637&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;C++&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[xds] C++ XdsServerBuilder Remove src/... header dependency from public header. (&lt;a href="https://github.com/grpc/grpc/pull/34790" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34790/hovercard"&gt;#34790&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[reflection] Add v1 reflection. (&lt;a href="https://github.com/grpc/grpc/pull/34535" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34535/hovercard"&gt;#34535&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;C#&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[csharp] Grpc.Tools documentation for sharing proto files between projects and nuget packages. (&lt;a href="https://github.com/grpc/grpc/pull/34521" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34521/hovercard"&gt;#34521&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Ruby&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[ruby] create debug symbol packages. (&lt;a href="https://github.com/grpc/grpc/pull/34632" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34632/hovercard"&gt;#34632&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
