@@ -1,6 +1,54 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2024-01-31T00:05:10Z</updated>
+  <updated>2024-02-01T00:05:40Z</updated>
   <id>https://github.com/grpc/grpc</id>
+  <entry>
+    <title>grpc/grpc - Releases - 2024-01-31</title>
+    <id>https://github.com/grpc/grpc#2024-01-31</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2024-02-01T00:05:40Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.61.0"&gt;Release v1.61.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release 1.61.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;grand&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[xDS] fix aggregate cluster design. (&lt;a href="https://github.com/grpc/grpc/pull/35313" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/35313/hovercard"&gt;#35313&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[SSA] change xds_override_host policy to manage subchannels based on last-used time rather than EDS health state. (&lt;a href="https://github.com/grpc/grpc/pull/35397" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/35397/hovercard"&gt;#35397&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[xDS] read connection idle timeout from CDS resource. (&lt;a href="https://github.com/grpc/grpc/pull/35395" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/35395/hovercard"&gt;#35395&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[xDS] move CDS and EDS watchers into xds resolver. (&lt;a href="https://github.com/grpc/grpc/pull/35011" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/35011/hovercard"&gt;#35011&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[alpn] Remove grpc-exp experimental ALPN protocol. (&lt;a href="https://github.com/grpc/grpc/pull/34876" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/34876/hovercard"&gt;#34876&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Updated zlib to 1.3. (&lt;a href="https://github.com/grpc/grpc/pull/35147" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/35147/hovercard"&gt;#35147&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[EventEngine] Clarify API: callback cancellation and thread safety. (&lt;a href="https://github.com/grpc/grpc/pull/35009" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/35009/hovercard"&gt;#35009&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C++&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[OTel] De-experimentalize API. (&lt;a href="https://github.com/grpc/grpc/pull/35509" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/35509/hovercard"&gt;#35509&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[OTel] Experimental API for metrics. (&lt;a href="https://github.com/grpc/grpc/pull/35348" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/35348/hovercard"&gt;#35348&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[OTel] Update OTel Bazel dep to v1.13.0. (&lt;a href="https://github.com/grpc/grpc/pull/35352" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/35352/hovercard"&gt;#35352&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[example] C++ Debugging. (&lt;a href="https://github.com/grpc/grpc/pull/35222" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/35222/hovercard"&gt;#35222&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[otel] Update OTel to head. (&lt;a href="https://github.com/grpc/grpc/pull/35151" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/35151/hovercard"&gt;#35151&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Python O11Y] Add _registered_method to &lt;strong&gt;init&lt;/strong&gt;.py. (&lt;a href="https://github.com/grpc/grpc/pull/35482" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/35482/hovercard"&gt;#35482&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python Otel] Re-apply Otel. (&lt;a href="https://github.com/grpc/grpc/pull/35439" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/35439/hovercard"&gt;#35439&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[python O11Y] Implement OpenTelemetry. (&lt;a href="https://github.com/grpc/grpc/pull/35292" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/35292/hovercard"&gt;#35292&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ruby&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ruby] backport "Build/test ruby 3.3 and build native gems with Ruby 3.3 support (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2057948109" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/35399" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/35399/hovercard" href="https://github.com/grpc/grpc/pull/35399"&gt;#35399&lt;/a&gt;)". (&lt;a href="https://github.com/grpc/grpc/pull/35614" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/35614/hovercard"&gt;#35614&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
