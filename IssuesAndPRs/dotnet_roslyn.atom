@@ -1,17 +1,38 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/roslyn - Issues &amp; Pull Requests</title>
   <link href="https://github.com/dotnet/roslyn" />
-  <updated>2024-02-18T00:04:54Z</updated>
+  <updated>2024-02-19T00:04:39Z</updated>
   <id>https://github.com/dotnet/roslyn</id>
   <entry>
-    <title>dotnet/roslyn - Issues &amp; Pull Requests - 2024-02-17</title>
-    <id>https://github.com/dotnet/roslyn#2024-02-17</id>
+    <title>dotnet/roslyn - Issues &amp; Pull Requests - 2024-02-18</title>
+    <id>https://github.com/dotnet/roslyn#2024-02-18</id>
     <link href="https://github.com/dotnet/roslyn" />
-    <updated>2024-02-18T00:04:54Z</updated>
+    <updated>2024-02-19T00:04:39Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
-  &lt;h3&gt;Created&lt;/h3&gt;
+  &lt;h3&gt;Closed&lt;/h3&gt;
   &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/72165"&gt;Unused byref dereference is removed despite NRE as a side effect #72165&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;Updated&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/72098"&gt;False positive for CS1503 with MSBuild 17.10, but not dotnet build #72098&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/72141"&gt;dotnet 8.0.200 breaking change - wrong exception is thrown when rethrow in a catch inside another catch using async methods #72141&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/roslyn/issues/72164"&gt;Analyzer for dependent static fields of value types. #72164&lt;/a&gt;
@@ -20,34 +41,7 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/72162"&gt;Remove unnecessary imports analyzer is significantly slowing builds (11% CPU time) #72162&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/72161"&gt;Too much string allocations in `GetCategoryBasedDotnetAnalyzerDiagnosticSeverityKey` #72161&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/72160"&gt;dotnet format incorrectly removing using directives of Blazor/Razor components since 8.0.201 #72160&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Closed&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/71638"&gt;Verbatim identifier prefix is displayed inconsistently in tooltips for anonymous types #71638&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Backlog&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/67929"&gt;[Feature request]: Code folding for invocation expressions that span multiple lines #67929&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/71411"&gt;Translation of lines is causing incorrect formatting #71411&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -58,85 +52,22 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/72163"&gt;Reduce string allocations from `GetCategoryBasedDotnetAnalyzerDiagnosticSeverityKey` #72163&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/72166"&gt;GetRelative paths accepts paths shorter than the base directory #72166&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-Analyzers, Community, untriaged&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/72159"&gt;Reduce allocations in TextDocumentStates.SelectAs* methods #72159&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-IDE, untriaged&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Merged&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/72047"&gt;Fix quick info for anonymous types not escaping identifiers named as keywords #72047&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-IDE, Community, untriaged, Next&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/72158"&gt;Slight reduction in allocations under CSharpRecommendationServiceRunner.IsUndesirable #72158&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-IDE, untriaged, Next&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/71064"&gt;Support code folding for argument lists #71064&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-IDE, Community, untriaged, Next&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/72154"&gt;Remove unused OmniSharp extension method #72154&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-IDE, untriaged, Next&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/72115"&gt;Support more than one frozen source generated document at once #72115&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-IDE, Next&lt;/div&gt;
+      &lt;div&gt;Area-Compilers, Community, untriaged&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
   &lt;h3&gt;Updated&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/72087"&gt;Remove nonreentrantlock type #72087&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-IDE, untriaged&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/72144"&gt;Reduce allocations during check for duplicate analyzers #72144&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-Analyzers, untriaged&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/71036"&gt;Using Nullable Disabled semantic model to compute semantic classification #71036&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/71793"&gt;Improve codegen for concatenation of `string` and `char` (attempt 2) #71793&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;Area-Compilers, Community, untriaged&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/68771"&gt;Enable support for an LSP client to open source generated files #68771&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-IDE&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/72072"&gt;Add invariant around nullable conditional state #72072&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-Compilers, New Language Feature - Nullable Reference Types, untriaged, 17.10&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/71879"&gt;Support relative paths in interceptors #71879&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/72144"&gt;Reduce allocations during check for duplicate analyzers #72144&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;Area-Compilers, untriaged&lt;/div&gt;
     &lt;/li&gt;
