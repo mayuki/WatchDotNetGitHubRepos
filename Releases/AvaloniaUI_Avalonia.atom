@@ -1,6 +1,82 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>AvaloniaUI/Avalonia - Releases</title>
   <link href="https://github.com/AvaloniaUI/Avalonia" />
-  <updated>2024-03-12T00:04:54Z</updated>
+  <updated>2024-03-13T00:05:12Z</updated>
   <id>https://github.com/AvaloniaUI/Avalonia</id>
+  <entry>
+    <title>AvaloniaUI/Avalonia - Releases - 2024-03-12</title>
+    <id>https://github.com/AvaloniaUI/Avalonia#2024-03-12</id>
+    <link href="https://github.com/AvaloniaUI/Avalonia" />
+    <updated>2024-03-13T00:05:12Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/AvaloniaUI/Avalonia/releases/tag/11.1.0-beta1"&gt;11.1.0-beta1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href="https://github.com/AvaloniaUI/Avalonia/commits/11.1.0-beta1"&gt;https://github.com/AvaloniaUI/Avalonia/commits/11.1.0-beta1&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;Full API Diff&lt;/strong&gt;: &lt;a href="https://gist.github.com/maxkatz6/a7df42607cc7187b94e2e693ccf15f6d"&gt;https://gist.github.com/maxkatz6/a7df42607cc7187b94e2e693ccf15f6d&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Please install latest &lt;a href="https://github.com/AvaloniaUI/avalonia-dotnet-templates"&gt;dotnet templates&lt;/a&gt;.&lt;br&gt;
+Most of new features are still pending updated documentation.&lt;br&gt;
+You can follow progress on this issue - &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2174952434" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/avalonia-docs/issues/384" data-hovercard-type="issue" data-hovercard-url="/AvaloniaUI/avalonia-docs/issues/384/hovercard" href="https://github.com/AvaloniaUI/avalonia-docs/issues/384"&gt;AvaloniaUI/avalonia-docs#384&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;New features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Binding markup extension was refactored, and now supports UpdateSourceTrigger!&lt;/li&gt;
+&lt;li&gt;Tizen backend with Tizen TV support.&lt;/li&gt;
+&lt;li&gt;XAML warnings support, starting with Obsolete and TemplatePart warnings. Configurable via csproj and editorconfig. XAML error reporting is now also improved, not being limited by a single error at a time.&lt;/li&gt;
+&lt;li&gt;New top-level and application services: ILauncher, IInputPane, IActivatableLifetime.&lt;/li&gt;
+&lt;li&gt;XY focus with arrow keys and remote DPad is now available.&lt;/li&gt;
+&lt;li&gt;Global exception handling via Dispatcher UnhandledException and UnhandledExceptionFilter.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New and extended controls:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;HyperlinkButton is now available.&lt;/li&gt;
+&lt;li&gt;MenuItem now supports ToggleType property, including CheckBox and Radio types with radio groups.&lt;/li&gt;
+&lt;li&gt;Border now includes a new BackgroundSizing property, allowing customizing transparent border brushes rendering.&lt;/li&gt;
+&lt;li&gt;Many interactive controls were updated to be usable with TV remote control, where only DPad buttons and Space (Select) + Escape (Back) are available.&lt;/li&gt;
+&lt;li&gt;NumericUpDown and AutoCompleteBox: MaxLength, InnerLeftContent, and InnerRightContent.&lt;/li&gt;
+&lt;li&gt;WindowNotificationManager was refactored and now can be embedded at any level of the controls tree, not being hardcoded to the top level.&lt;/li&gt;
+&lt;li&gt;RadialGradientBrush now has separated &lt;code&gt;RadiusX&lt;/code&gt; and &lt;code&gt;RadiusY&lt;/code&gt; properties that allow absolute and relative values. Old &lt;code&gt;Radius&lt;/code&gt; property is now obsolete.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New platform features&lt;/h2&gt;
+&lt;h3&gt;Windows&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;DirectComposition rendering mode is now supported for older Windows versions (8.1+)&lt;/li&gt;
+&lt;li&gt;It's now possible to add &lt;code&gt;WndProc&lt;/code&gt; and &lt;code&gt;WindowStyles&lt;/code&gt; callbacks via &lt;code&gt;Win32Properties&lt;/code&gt; API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;macOS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;TrayIcon&lt;/code&gt; now includes &lt;code&gt;MacOSProperties.IsTemplateIcon&lt;/code&gt; attached property, allowing monochrome icons consistent with macOS system icons&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Linux&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;It's now possible to set &lt;code&gt;NetWmWindowType&lt;/code&gt; and &lt;code&gt;WmClass&lt;/code&gt; on any window via &lt;code&gt;X11Properties&lt;/code&gt; attached properties.&lt;/li&gt;
+&lt;li&gt;Avalonia now respects XGD accent color spec.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Browser&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;StaticWebAssets&lt;/code&gt; SDK is now supported. It brings support for building in .NET Brotli compression and caching. To use this SDK, please recreate the browser project from the new template using the 11.1.0-beta1 version.&lt;/li&gt;
+&lt;li&gt;WebGL2 is now enabled by default.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;iOS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Metal rendering mode was implemented and now can be enabled via iOSPlatformOptions.&lt;/li&gt;
+&lt;li&gt;Physical keyboard and mouse input handling now work.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;tvOS support was added&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Android&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Android TV support was added&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;strong&gt;Breaking Changes&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;iOS and Android backends now require .NET 8 or newer, as per .NET mobile workloads support timelines.&lt;/li&gt;
+&lt;li&gt;Browser backend now also requires .NET 8 or newer, but also has changes to its project structure. We recommend using newer Avalonia templates as a reference, but a migration guide specifically for the browser is also planned.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

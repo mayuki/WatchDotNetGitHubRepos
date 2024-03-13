@@ -1,34 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>StackExchange/StackExchange.Redis - Releases</title>
   <link href="https://github.com/StackExchange/StackExchange.Redis" />
-  <updated>2024-03-12T00:04:55Z</updated>
+  <updated>2024-03-13T00:05:14Z</updated>
   <id>https://github.com/StackExchange/StackExchange.Redis</id>
-  <entry>
-    <title>StackExchange/StackExchange.Redis - Releases - 2024-03-11</title>
-    <id>https://github.com/StackExchange/StackExchange.Redis#2024-03-11</id>
-    <link href="https://github.com/StackExchange/StackExchange.Redis" />
-    <updated>2024-03-12T00:04:55Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/2.7.33"&gt;2.7.33&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Potentiallty Breaking&lt;/strong&gt;: Fix &lt;code&gt;CheckTrustedIssuer&lt;/code&gt; certificate validation for broken chain scenarios (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2173992277" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2665" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2665/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2665"&gt;#2665&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/NickCraver/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/NickCraver"&gt;@NickCraver&lt;/a&gt;)
-&lt;ul&gt;
-&lt;li&gt;Users inadvertently trusting a remote cert with a broken chain could not be failing custom validation before this change. This is only in play if you are using &lt;code&gt;ConfigurationOptions.TrustIssuer&lt;/code&gt; at all.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Add new &lt;code&gt;LoggingTunnel&lt;/code&gt; API; see &lt;a href="https://stackexchange.github.io/StackExchange.Redis/Logging" rel="nofollow"&gt;https://stackexchange.github.io/StackExchange.Redis/Logging&lt;/a&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2163381789" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2660" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2660/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2660"&gt;#2660&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2173839164" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2664" data-hovercard-type="issue" data-hovercard-url="/StackExchange/StackExchange.Redis/issues/2664/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/issues/2664"&gt;#2664&lt;/a&gt;: Move ProcessBacklog to fully sync to prevent thread pool hopping and blocking on awaits (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2176425588" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2667" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2667/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2667"&gt;#2667&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/NickCraver/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/NickCraver"&gt;@NickCraver&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/2.7.27...2.7.33"&gt;&lt;tt&gt;2.7.27...2.7.33&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
