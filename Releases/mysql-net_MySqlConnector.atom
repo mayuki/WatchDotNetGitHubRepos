@@ -1,6 +1,40 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>mysql-net/MySqlConnector - Releases</title>
   <link href="https://github.com/mysql-net/MySqlConnector" />
-  <updated>2024-03-20T00:05:00Z</updated>
+  <updated>2024-03-21T00:05:22Z</updated>
   <id>https://github.com/mysql-net/MySqlConnector</id>
+  <entry>
+    <title>mysql-net/MySqlConnector - Releases - 2024-03-20</title>
+    <id>https://github.com/mysql-net/MySqlConnector#2024-03-20</id>
+    <link href="https://github.com/mysql-net/MySqlConnector" />
+    <updated>2024-03-21T00:05:22Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/mysql-net/MySqlConnector/releases/tag/2.3.6"&gt;2.3.6&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;Fix &lt;code&gt;VerifyCA&lt;/code&gt; incompatibility with AWS Aurora: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2189350930" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1462" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1462/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1462"&gt;#1462&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Verify that the server's root certificate is present (in the list of provided CA certificates) when using the &lt;code&gt;SslCa&lt;/code&gt; connection string option and &lt;code&gt;SslMode&lt;/code&gt; is &lt;code&gt;VerifyCA&lt;/code&gt; or &lt;code&gt;VerifyFull&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Optimization: Use pipelining to begin a transaction: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1598017966" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1286" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1286/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1286"&gt;#1286&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;Use &lt;code&gt;Pipelining = False;&lt;/code&gt; in your connection string to disable this optimization if there are compatibility issues.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Optimization: cache &lt;code&gt;START TRANSACTION&lt;/code&gt; payloads.&lt;/li&gt;
+&lt;li&gt;Add transaction logging: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2028709422" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1411" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1411/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1411"&gt;#1411&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Fix incompatibility with MySQL Server 5.1: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2105178484" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1445" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1445/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1445"&gt;#1445&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;This fixes a regression introduced in &lt;a href="https://github.com/mysql-net/MySqlConnector/releases/tag/2.3.0"&gt;2.3.0&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Thanks to &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/CRC32EX/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/CRC32EX"&gt;@CRC32EX&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dlenski/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dlenski"&gt;@dlenski&lt;/a&gt;, and &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rbanks54/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rbanks54"&gt;@rbanks54&lt;/a&gt; for documentation contributions in this release.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
