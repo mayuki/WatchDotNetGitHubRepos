@@ -1,6 +1,73 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2024-04-01T00:05:32Z</updated>
+  <updated>2024-04-02T00:05:18Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
+  <entry>
+    <title>icsharpcode/ILSpy - Releases - 2024-04-01</title>
+    <id>https://github.com/icsharpcode/ILSpy#2024-04-01</id>
+    <link href="https://github.com/icsharpcode/ILSpy" />
+    <updated>2024-04-02T00:05:02Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/icsharpcode/ILSpy/releases/tag/v9.0-preview1"&gt;ILSpy 9.0 Preview 1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;ILSpy 9.x is based on .NET 8.0. All artifacts &lt;strong&gt;except&lt;/strong&gt; the self-contained distribution are built framework-dependent, which means &lt;a href="https://dotnet.microsoft.com/en-us/download/dotnet/8.0" rel="nofollow"&gt;.NET 8.0 or later&lt;/a&gt; must be installed prior to starting ILSpy.&lt;/p&gt;
+&lt;h1&gt;Breaking Changes&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;ICSharpCode.Decompiler: Added &lt;code&gt;MetadataFile&lt;/code&gt; base class for &lt;code&gt;PEFile&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;ICSharpCode.Decompiler: &lt;code&gt;IModule.PEFile&lt;/code&gt; is now named &lt;code&gt;IModule.MetadataFile&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;ICSharpCode.Decompiler/ILSpyX: Added &lt;code&gt;IFileLoader&lt;/code&gt; API to allow for easier extensibility of supported file formats (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2216851618" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3191" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3191/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3191"&gt;#3191&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;ILSpy: Split BAML decompiler into library and add-in (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2192742726" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3178" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3178/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3178"&gt;#3178&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;ILSpy/ILSpyX: Moved non-UI analyzer API to ILSpyX (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2214959706" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3186" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3186/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3186"&gt;#3186&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;ICSharpCode.Decompiler: &lt;code&gt;IProjectFileWriter&lt;/code&gt; and &lt;code&gt;IProjectInfoProvider&lt;/code&gt; APIs are now public (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2061798282" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3151" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3151/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3151"&gt;#3151&lt;/a&gt; and &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2216851618" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3191" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3191/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3191"&gt;#3191&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Performance&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Activate Dynamic Adaptation To Application Sizes (DATAS) (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2000830581" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3122" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3122/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3122"&gt;#3122&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;RDP hardware acceleration (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2000830581" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3122" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3122/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3122"&gt;#3122&lt;/a&gt;): Enabling hardware acceleration for Remote Desktop Protocol (RDP) to boost performance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;New Language Features&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Update pattern-detection to Roslyn v4.9.2&lt;/li&gt;
+&lt;li&gt;Added support for switch on &lt;code&gt;(ReadOnly)Span&amp;lt;char&amp;gt;&lt;/code&gt; using a compiler-generated hash function.&lt;/li&gt;
+&lt;li&gt;Added new &lt;code&gt;a.GetValueOrDefault(b) -&amp;gt; a ?? b&lt;/code&gt; transform for side-effect-free default values.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Enhancements&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for reading standalone ECMA-335 metadata (portable PDB and other metadata blobs) (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2061163292" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3149" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3149/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3149"&gt;#3149&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added support for reading WebCIL assemblies (IL embedded in WASM) (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2204384363" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3184" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3184/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3184"&gt;#3184&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1995962610" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3118" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3118/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3118"&gt;#3118&lt;/a&gt;: Add "Clear assembly list" menu item.&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1574763001" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2893" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2893/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2893"&gt;#2893&lt;/a&gt;: Add option to disable automatic assembly loading.&lt;/li&gt;
+&lt;li&gt;IL output: Add indentation level to make it easier to see custom attributes belonging to interface implementations.&lt;/li&gt;
+&lt;li&gt;IL output: Print metadata token of custom attribute.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Contributions&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix metadata display of &lt;code&gt;DynamicLocalVariable&lt;/code&gt; and &lt;code&gt;DefaultNamespace&lt;/code&gt; custom debug information (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1979991239" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3111" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3111/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3111"&gt;#3111&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ElektroKill/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ElektroKill"&gt;@ElektroKill&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Read and use tuple element names and dynamic type information from PDBs (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1982196071" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3114" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3114/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3114"&gt;#3114&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ElektroKill/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ElektroKill"&gt;@ElektroKill&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Adjust colors of AvalonEdit built-in highlightings for dark themes (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2044916470" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3138" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3138/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3138"&gt;#3138&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ltrzesniewski/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ltrzesniewski"&gt;@ltrzesniewski&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Bugfix: infinite loop in &lt;code&gt;DetermineEffectiveAccessibility&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2135438142" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3164" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3164/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3164"&gt;#3164&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/yzdeveloper/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/yzdeveloper"&gt;@yzdeveloper&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;TreeView: Add referenced types, members and exported types under references (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1928319534" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3092" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3092/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3092"&gt;#3092&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/fowl2/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/fowl2"&gt;@fowl2&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add support for &lt;code&gt;Mono C# compiler 2.6.4&lt;/code&gt; pinned region with array variable (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1977493862" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3110" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3110/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3110"&gt;#3110&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ElektroKill/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ElektroKill"&gt;@ElektroKill&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Bug fixes&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1873293639" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3072" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3072/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3072"&gt;#3072&lt;/a&gt;: Ignoring resources with the same name as a namespace.&lt;/li&gt;
+&lt;li&gt;Fix bug in &lt;code&gt;UnknownType&lt;/code&gt;: Ensuring that the FullName of nested unknown types contains the outer type name(s), not just the namespace and nested type name.&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2073393861" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3153" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3153/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3153"&gt;#3153&lt;/a&gt;: Always using SHA1 for public key tokens.&lt;/li&gt;
+&lt;li&gt;Fix ILSpy for ZIP files/VSIX with bundle signatures: Enabling ILSpy to open ZIP files and VSIX packages containing bundle signatures.&lt;/li&gt;
+&lt;li&gt;Omit package entries from the treeview that denote the directory.&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2054048190" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3142" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3142/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3142"&gt;#3142&lt;/a&gt;: Exception when analyzing source of library with global assembly attributes&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1982099939" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3113" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3113/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3113"&gt;#3113&lt;/a&gt;: Remove GetAlternativeName and instead reuse existing names, if there are no conflicts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And many other fixes, for a full list click &lt;a href="https://github.com/icsharpcode/ILSpy/compare/v8.2...v9.0-preview1"&gt;here&lt;/a&gt;.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
