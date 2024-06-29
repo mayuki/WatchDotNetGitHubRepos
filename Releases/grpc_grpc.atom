@@ -1,6 +1,65 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2024-06-28T00:05:28Z</updated>
+  <updated>2024-06-29T00:05:26Z</updated>
   <id>https://github.com/grpc/grpc</id>
+  <entry>
+    <title>grpc/grpc - Releases - 2024-06-28</title>
+    <id>https://github.com/grpc/grpc#2024-06-28</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2024-06-29T00:05:26Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.65.0"&gt;Release v1.65.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release gRPC Core 1.65.0 (gnarly).&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes.&lt;/p&gt;
+&lt;p&gt;This is release 1.65.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;gnarly&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[OTPlugin] Per-channel OpenTelemetry plugin. (&lt;a href="https://github.com/grpc/grpc/pull/36729" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36729/hovercard"&gt;#36729&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Gpr_To_Absl_Logging] Migrating from gpr to absl logging - gpr_set_log_function. (&lt;a href="https://github.com/grpc/grpc/pull/36844" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36844/hovercard"&gt;#36844&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[grpc][Gpr_To_Absl_Logging] Supporting verbosity flag. (&lt;a href="https://github.com/grpc/grpc/pull/36798" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36798/hovercard"&gt;#36798&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[build] Support clang-cl for Windows builds (best effort). (&lt;a href="https://github.com/grpc/grpc/pull/36831" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36831/hovercard"&gt;#36831&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[grpc][Gpr_To_Absl_Logging] Disable the ConfigVar because it wont work anymore. (&lt;a href="https://github.com/grpc/grpc/pull/36761" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36761/hovercard"&gt;#36761&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[BoringSSL] Update third_party/boringssl-with-bazel. (&lt;a href="https://github.com/grpc/grpc/pull/36716" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36716/hovercard"&gt;#36716&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[http2] Add experiment to modify behavior of GRPC_ARG_HTTP2_MAX_PINGS_WITHOUT_DATA to throttle pings instead of blocking. (&lt;a href="https://github.com/grpc/grpc/pull/36374" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36374/hovercard"&gt;#36374&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[xDS] fix "tls" channel cred in bootstrap to actually work. (&lt;a href="https://github.com/grpc/grpc/pull/36726" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36726/hovercard"&gt;#36726&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[StatsPlugin] Fix use-after-free issue. (&lt;a href="https://github.com/grpc/grpc/pull/36664" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36664/hovercard"&gt;#36664&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[EventEngine] Enable the EventEngine DNS Resolver on Windows. (&lt;a href="https://github.com/grpc/grpc/pull/36286" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36286/hovercard"&gt;#36286&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C++&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[OTel] Generate pkg-config file for grpcpp_otel_plugin. (&lt;a href="https://github.com/grpc/grpc/pull/36686" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36686/hovercard"&gt;#36686&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[OTel] Add find_package call for OTel dependency in installed gRPC configuration. (&lt;a href="https://github.com/grpc/grpc/pull/36674" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36674/hovercard"&gt;#36674&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[OTel C++] Deprecate SetTargetAttributeFilter method on OpenTelemetryPluginBuilder. (&lt;a href="https://github.com/grpc/grpc/pull/36567" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36567/hovercard"&gt;#36567&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[security] Add notices for functions we will be removing. (&lt;a href="https://github.com/grpc/grpc/pull/36488" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36488/hovercard"&gt;#36488&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Objective-C&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Replace bind() targets with alias() ones. (&lt;a href="https://github.com/grpc/grpc/pull/35272" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/35272/hovercard"&gt;#35272&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Python O11y] Implement CSM observability for Python. (&lt;a href="https://github.com/grpc/grpc/pull/36557" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36557/hovercard"&gt;#36557&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python AIO] Return EOF from UnaryStreamCall.read() as documented. (&lt;a href="https://github.com/grpc/grpc/pull/36660" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36660/hovercard"&gt;#36660&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python Otel] Deprecate target_attribute_filter. (&lt;a href="https://github.com/grpc/grpc/pull/36697" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36697/hovercard"&gt;#36697&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python Server] Remove abstractmethod notation for add_registered_method_handlers. (&lt;a href="https://github.com/grpc/grpc/pull/36684" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36684/hovercard"&gt;#36684&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ruby&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ruby] backport "Update google-protobuf dep to allow 3.x and 4.x versions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2363168325" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/36982" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36982/hovercard" href="https://github.com/grpc/grpc/pull/36982"&gt;#36982&lt;/a&gt;)" to 1.65.x. (&lt;a href="https://github.com/grpc/grpc/pull/37001" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37001/hovercard"&gt;#37001&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[ruby] backport "[ruby] improve the way completion queue pluck operations handle signals and process shutdown &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2349695029" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/36903" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36903/hovercard" href="https://github.com/grpc/grpc/pull/36903"&gt;#36903&lt;/a&gt;". (&lt;a href="https://github.com/grpc/grpc/pull/36916" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36916/hovercard"&gt;#36916&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
