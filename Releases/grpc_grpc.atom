@@ -1,6 +1,51 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2024-08-22T00:05:52Z</updated>
+  <updated>2024-08-23T00:05:50Z</updated>
   <id>https://github.com/grpc/grpc</id>
+  <entry>
+    <title>grpc/grpc - Releases - 2024-08-22</title>
+    <id>https://github.com/grpc/grpc#2024-08-22</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2024-08-23T00:05:50Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.66.0"&gt;Release v1.66.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release 1.66.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;gladiator&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Python Otel] Manage call tracer life cycle use call arena. (v1.66.x backport). (&lt;a href="https://github.com/grpc/grpc/pull/37479" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37479/hovercard"&gt;#37479&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[BoringSSL] Update third_party/boringssl-with-bazel. (&lt;a href="https://github.com/grpc/grpc/pull/37223" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37223/hovercard"&gt;#37223&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Dep] Upgrading Protobuf to v27.2. (&lt;a href="https://github.com/grpc/grpc/pull/36753" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36753/hovercard"&gt;#36753&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Gpr_To_Absl_Logging] Fixing bugs . (&lt;a href="https://github.com/grpc/grpc/pull/36961" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36961/hovercard"&gt;#36961&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[chttp2] don't access endpoint in transport ops if it's already been destroyed. (&lt;a href="https://github.com/grpc/grpc/pull/36921" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36921/hovercard"&gt;#36921&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C++&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[OTel C++] Fix race when adding and removing callbacks (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2467129279" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/37485" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37485/hovercard" href="https://github.com/grpc/grpc/pull/37485"&gt;#37485&lt;/a&gt;). (&lt;a href="https://github.com/grpc/grpc/pull/37508" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37508/hovercard"&gt;#37508&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[RlsLB] Fix Deadlock (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2461978561" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/37459" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37459/hovercard" href="https://github.com/grpc/grpc/pull/37459"&gt;#37459&lt;/a&gt;). (&lt;a href="https://github.com/grpc/grpc/pull/37502" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37502/hovercard"&gt;#37502&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Python Distrib] Change warning to RuntimeError for version incompatibility (v1.66.x backport). (&lt;a href="https://github.com/grpc/grpc/pull/37477" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37477/hovercard"&gt;#37477&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix issues/36613. (&lt;a href="https://github.com/grpc/grpc/pull/37022" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37022/hovercard"&gt;#37022&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[fix] updated invocation_metadata return type hint. (&lt;a href="https://github.com/grpc/grpc/pull/36894" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36894/hovercard"&gt;#36894&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Release] Add warning about PyPi latest version not necessarily matching Github latest version. (&lt;a href="https://github.com/grpc/grpc/pull/36965" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36965/hovercard"&gt;#36965&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ruby&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ruby] Update google-protobuf dep to allow 3.x and 4.x versions. (&lt;a href="https://github.com/grpc/grpc/pull/36982" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36982/hovercard"&gt;#36982&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[ruby] improve the way completion queue pluck operations handle signals and process shutdown. (&lt;a href="https://github.com/grpc/grpc/pull/36903" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36903/hovercard"&gt;#36903&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
