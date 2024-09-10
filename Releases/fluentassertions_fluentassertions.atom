@@ -1,6 +1,51 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>fluentassertions/fluentassertions - Releases</title>
   <link href="https://github.com/fluentassertions/fluentassertions" />
-  <updated>2024-09-09T00:05:59Z</updated>
+  <updated>2024-09-10T00:05:54Z</updated>
   <id>https://github.com/fluentassertions/fluentassertions</id>
+  <entry>
+    <title>fluentassertions/fluentassertions - Releases - 2024-09-09</title>
+    <id>https://github.com/fluentassertions/fluentassertions#2024-09-09</id>
+    <link href="https://github.com/fluentassertions/fluentassertions" />
+    <updated>2024-09-10T00:05:54Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/fluentassertions/fluentassertions/releases/tag/6.12.1"&gt;6.12.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                
+&lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;h3&gt;Improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Improve &lt;code&gt;BeEmpty()&lt;/code&gt; and &lt;code&gt;BeNullOrEmpty()&lt;/code&gt; performance for &lt;code&gt;IEnumerable&amp;lt;T&amp;gt;&lt;/code&gt;, by materializing only the first item - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2530" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2530/hovercard"&gt;#2530&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed formatting error when checking nullable &lt;code&gt;DateTimeOffset&lt;/code&gt; with &lt;code&gt;BeWithin(...).Before(...)&lt;/code&gt; - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2312" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2312/hovercard"&gt;#2312&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BeEquivalentTo&lt;/code&gt; will now find and can map subject properties that are implemented through an explicitly-implemented interface - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2152" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2152/hovercard"&gt;#2152&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fixed that the &lt;code&gt;because&lt;/code&gt; and &lt;code&gt;becauseArgs&lt;/code&gt; were not passed down the equivalency tree - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2318" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2318/hovercard"&gt;#2318&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BeEquivalentTo&lt;/code&gt; can again compare a non-generic &lt;code&gt;IDictionary&lt;/code&gt; with a generic one - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2358" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2358/hovercard"&gt;#2358&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fixed that the &lt;code&gt;FormattingOptions&lt;/code&gt; were not respected in inner &lt;code&gt;AssertionScope&lt;/code&gt; - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2329" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2329/hovercard"&gt;#2329&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Capitalize &lt;code&gt;true&lt;/code&gt; and &lt;code&gt;false&lt;/code&gt; in failure messages and make them formattable to a custom &lt;code&gt;BooleanFormatter&lt;/code&gt; - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2390" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2390/hovercard"&gt;#2390&lt;/a&gt;, &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2393" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2393/hovercard"&gt;#2393&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Improved the failure message for &lt;code&gt;NotBeOfType&lt;/code&gt; when wrapped in an &lt;code&gt;AssertionScope&lt;/code&gt; and the subject is null  - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2399" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2399/hovercard"&gt;#2399&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Improved the failure message for &lt;code&gt;BeWritable&lt;/code&gt;/&lt;code&gt;BeReadable&lt;/code&gt; when wrapped in an &lt;code&gt;AssertionScope&lt;/code&gt; and the subject is read-only/write-only - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2399" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2399/hovercard"&gt;#2399&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Improved the failure message for &lt;code&gt;ThrowExactly[Async]&lt;/code&gt; when wrapped in an &lt;code&gt;AssertionScope&lt;/code&gt; and no exception is thrown - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2398" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2398/hovercard"&gt;#2398&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Improved the failure message for &lt;code&gt;[Not]HaveExplicitProperty&lt;/code&gt; when wrapped in an &lt;code&gt;AssertionScope&lt;/code&gt; and not implementing the interface - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2403" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2403/hovercard"&gt;#2403&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Improved the failure message for &lt;code&gt;[Not]HaveExplicitMethod&lt;/code&gt; when wrapped in an &lt;code&gt;AssertionScope&lt;/code&gt; and not implementing the interface - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2403" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2403/hovercard"&gt;#2403&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Changed &lt;code&gt;BeEquivalentTo&lt;/code&gt; to exclude &lt;code&gt;private protected&lt;/code&gt; members from the comparison - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2417" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2417/hovercard"&gt;#2417&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fixed using &lt;code&gt;BeEquivalentTo&lt;/code&gt; on an empty &lt;code&gt;ArraySegment&lt;/code&gt; - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2445" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2445/hovercard"&gt;#2445&lt;/a&gt;, &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2511" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2511/hovercard"&gt;#2511&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BeEquivalentTo&lt;/code&gt; with a custom comparer can now handle null values - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2489" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2489/hovercard"&gt;#2489&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ensured that nested calls to &lt;code&gt;AssertionScope(context)&lt;/code&gt; create a chained context - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2607" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2607/hovercard"&gt;#2607&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;One overload of the &lt;code&gt;AssertionScope&lt;/code&gt; constructor would not create an actual scope associated with the thread - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2607" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2607/hovercard"&gt;#2607&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;ThrowWithinAsync&lt;/code&gt; not respecting &lt;code&gt;OperationCanceledException&lt;/code&gt; - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2614" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2614/hovercard"&gt;#2614&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fixed using &lt;code&gt;BeEquivalentTo&lt;/code&gt; with an &lt;code&gt;IEqualityComparer&lt;/code&gt; targeting nullable types - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2648" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2648/hovercard"&gt;#2648&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/fluentassertions/fluentassertions/compare/6.12.0...6.12.1"&gt;&lt;tt&gt;6.12.0...6.12.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
