@@ -1,47 +1,20 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2024-09-10T00:06:18Z</updated>
+  <updated>2024-09-11T00:06:28Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>fluentassertions/fluentassertions - Releases - 2024-09-09</title>
-    <id>https://github.com/fluentassertions/fluentassertions#2024-09-09</id>
-    <link href="https://github.com/fluentassertions/fluentassertions" />
-    <updated>2024-09-10T00:05:54Z</updated>
+    <title>dotnet/runtime - Releases - 2024-09-10</title>
+    <id>https://github.com/dotnet/runtime#2024-09-10</id>
+    <link href="https://github.com/dotnet/runtime" />
+    <updated>2024-09-11T00:05:44Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/fluentassertions/fluentassertions/releases/tag/6.12.1"&gt;6.12.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/runtime/releases/tag/v9.0.0-rc.1.24431.7"&gt;.NET 9.0 RC 1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                
-&lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;h3&gt;Improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Improve &lt;code&gt;BeEmpty()&lt;/code&gt; and &lt;code&gt;BeNullOrEmpty()&lt;/code&gt; performance for &lt;code&gt;IEnumerable&amp;lt;T&amp;gt;&lt;/code&gt;, by materializing only the first item - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2530" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2530/hovercard"&gt;#2530&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed formatting error when checking nullable &lt;code&gt;DateTimeOffset&lt;/code&gt; with &lt;code&gt;BeWithin(...).Before(...)&lt;/code&gt; - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2312" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2312/hovercard"&gt;#2312&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;BeEquivalentTo&lt;/code&gt; will now find and can map subject properties that are implemented through an explicitly-implemented interface - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2152" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2152/hovercard"&gt;#2152&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fixed that the &lt;code&gt;because&lt;/code&gt; and &lt;code&gt;becauseArgs&lt;/code&gt; were not passed down the equivalency tree - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2318" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2318/hovercard"&gt;#2318&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;BeEquivalentTo&lt;/code&gt; can again compare a non-generic &lt;code&gt;IDictionary&lt;/code&gt; with a generic one - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2358" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2358/hovercard"&gt;#2358&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fixed that the &lt;code&gt;FormattingOptions&lt;/code&gt; were not respected in inner &lt;code&gt;AssertionScope&lt;/code&gt; - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2329" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2329/hovercard"&gt;#2329&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Capitalize &lt;code&gt;true&lt;/code&gt; and &lt;code&gt;false&lt;/code&gt; in failure messages and make them formattable to a custom &lt;code&gt;BooleanFormatter&lt;/code&gt; - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2390" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2390/hovercard"&gt;#2390&lt;/a&gt;, &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2393" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2393/hovercard"&gt;#2393&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Improved the failure message for &lt;code&gt;NotBeOfType&lt;/code&gt; when wrapped in an &lt;code&gt;AssertionScope&lt;/code&gt; and the subject is null  - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2399" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2399/hovercard"&gt;#2399&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Improved the failure message for &lt;code&gt;BeWritable&lt;/code&gt;/&lt;code&gt;BeReadable&lt;/code&gt; when wrapped in an &lt;code&gt;AssertionScope&lt;/code&gt; and the subject is read-only/write-only - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2399" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2399/hovercard"&gt;#2399&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Improved the failure message for &lt;code&gt;ThrowExactly[Async]&lt;/code&gt; when wrapped in an &lt;code&gt;AssertionScope&lt;/code&gt; and no exception is thrown - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2398" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2398/hovercard"&gt;#2398&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Improved the failure message for &lt;code&gt;[Not]HaveExplicitProperty&lt;/code&gt; when wrapped in an &lt;code&gt;AssertionScope&lt;/code&gt; and not implementing the interface - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2403" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2403/hovercard"&gt;#2403&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Improved the failure message for &lt;code&gt;[Not]HaveExplicitMethod&lt;/code&gt; when wrapped in an &lt;code&gt;AssertionScope&lt;/code&gt; and not implementing the interface - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2403" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2403/hovercard"&gt;#2403&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Changed &lt;code&gt;BeEquivalentTo&lt;/code&gt; to exclude &lt;code&gt;private protected&lt;/code&gt; members from the comparison - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2417" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2417/hovercard"&gt;#2417&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fixed using &lt;code&gt;BeEquivalentTo&lt;/code&gt; on an empty &lt;code&gt;ArraySegment&lt;/code&gt; - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2445" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2445/hovercard"&gt;#2445&lt;/a&gt;, &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2511" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2511/hovercard"&gt;#2511&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;BeEquivalentTo&lt;/code&gt; with a custom comparer can now handle null values - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2489" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2489/hovercard"&gt;#2489&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Ensured that nested calls to &lt;code&gt;AssertionScope(context)&lt;/code&gt; create a chained context - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2607" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2607/hovercard"&gt;#2607&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;One overload of the &lt;code&gt;AssertionScope&lt;/code&gt; constructor would not create an actual scope associated with the thread - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2607" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2607/hovercard"&gt;#2607&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fixed &lt;code&gt;ThrowWithinAsync&lt;/code&gt; not respecting &lt;code&gt;OperationCanceledException&lt;/code&gt; - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2614" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2614/hovercard"&gt;#2614&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fixed using &lt;code&gt;BeEquivalentTo&lt;/code&gt; with an &lt;code&gt;IEqualityComparer&lt;/code&gt; targeting nullable types - &lt;a href="https://github.com/fluentassertions/fluentassertions/pull/2648" data-hovercard-type="pull_request" data-hovercard-url="/fluentassertions/fluentassertions/pull/2648/hovercard"&gt;#2648&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/fluentassertions/fluentassertions/compare/6.12.0...6.12.1"&gt;&lt;tt&gt;6.12.0...6.12.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                                &lt;p&gt;&lt;a href="https://github.com/dotnet/core/releases/tag/v9.0.0-rc.1"&gt;Release&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
@@ -49,21 +22,17 @@
             </content>
   </entry>
   <entry>
-    <title>jbogard/MediatR - Releases - 2024-09-09</title>
-    <id>https://github.com/jbogard/MediatR#2024-09-09</id>
-    <link href="https://github.com/jbogard/MediatR" />
-    <updated>2024-09-10T00:05:59Z</updated>
+    <title>dotnet/sdk - Releases - 2024-09-10</title>
+    <id>https://github.com/dotnet/sdk#2024-09-10</id>
+    <link href="https://github.com/dotnet/sdk" />
+    <updated>2024-09-11T00:05:45Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/jbogard/MediatR/releases/tag/v12.4.1"&gt;v12.4.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/sdk/releases/tag/v9.0.100-rc.1.24452.12"&gt;.NET 9.0 RC 1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Make Auto Registration of Generic Handlers OPT-IN by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/zachpainter77/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/zachpainter77"&gt;@zachpainter77&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2445934825" data-permission-text="Title is private" data-url="https://github.com/jbogard/MediatR/issues/1057" data-hovercard-type="pull_request" data-hovercard-url="/jbogard/MediatR/pull/1057/hovercard" href="https://github.com/jbogard/MediatR/pull/1057"&gt;#1057&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/jbogard/MediatR/compare/v12.4.0...v12.4.1"&gt;&lt;tt&gt;v12.4.0...v12.4.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                                &lt;p&gt;&lt;a href="https://github.com/dotnet/core/releases/tag/v9.0.0-rc.1"&gt;Release&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
@@ -71,25 +40,190 @@
             </content>
   </entry>
   <entry>
-    <title>StackExchange/StackExchange.Redis - Releases - 2024-09-09</title>
-    <id>https://github.com/StackExchange/StackExchange.Redis#2024-09-09</id>
-    <link href="https://github.com/StackExchange/StackExchange.Redis" />
-    <updated>2024-09-10T00:06:18Z</updated>
+    <title>dotnet/aspnetcore - Releases - 2024-09-10</title>
+    <id>https://github.com/dotnet/aspnetcore#2024-09-10</id>
+    <link href="https://github.com/dotnet/aspnetcore" />
+    <updated>2024-09-11T00:05:46Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/2.8.14"&gt;2.8.14&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/aspnetcore/releases/tag/v9.0.0-rc.1.24452.1"&gt;.NET 9.0 RC 1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+                                &lt;p&gt;&lt;a href="https://github.com/dotnet/core/releases/tag/v9.0.0-rc.1"&gt;Release&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>dotnet/maui - Releases - 2024-09-10</title>
+    <id>https://github.com/dotnet/maui#2024-09-10</id>
+    <link href="https://github.com/dotnet/maui" />
+    <updated>2024-09-11T00:05:53Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/maui/releases/tag/9.0.0-rc.1.24453.9"&gt;9.0.0-rc.1.24453.9&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h1&gt;What's Changed&lt;/h1&gt;
+&lt;h2&gt;MAUI Product Fixes&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2514156274" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2793" data-hovercard-type="issue" data-hovercard-url="/StackExchange/StackExchange.Redis/issues/2793/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/issues/2793"&gt;#2793&lt;/a&gt;: Update Envoyproxy's command map according to latest Envoy documentation (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2514166327" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2794" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2794/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2794"&gt;#2794&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dbarbosapn/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dbarbosapn"&gt;@dbarbosapn&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix HostIdentifier bindings for item templates by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jfversluis/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jfversluis"&gt;@jfversluis&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/23912" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/23912/hovercard"&gt;#23912&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Windows] Handle non-seekable streams in PlatformImage.FromStream (take 2) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/MartyIX/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/MartyIX"&gt;@MartyIX&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/23824" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/23824/hovercard"&gt;#23824&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fixes Android FontModel Glide In-Memory Caching by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/albyrock87/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/albyrock87"&gt;@albyrock87&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24021" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24021/hovercard"&gt;#24021&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[iOS] Add a Container around ImageButton by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/PureWeen/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/PureWeen"&gt;@PureWeen&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24020" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24020/hovercard"&gt;#24020&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Windows] Fix CarouselView not showing new items by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Foda/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Foda"&gt;@Foda&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/23779" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/23779/hovercard"&gt;#23779&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Check to see if Image Should Reload When Attached by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/PureWeen/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/PureWeen"&gt;@PureWeen&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24023" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24023/hovercard"&gt;#24023&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Android] Border Stroke gradient can only switch to another gradient - fix by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/kubaflo/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/kubaflo"&gt;@kubaflo&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/22168" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/22168/hovercard"&gt;#22168&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Windows] Fix memory leak w/ main window by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Foda/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Foda"&gt;@Foda&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24176" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24176/hovercard"&gt;#24176&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix Shell.NavBarIsVisible property by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jsuarezruiz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jsuarezruiz"&gt;@jsuarezruiz&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/20173" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/20173/hovercard"&gt;#20173&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fixed scroll to group item on Android + Windows by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Foda/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Foda"&gt;@Foda&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/16704" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/16704/hovercard"&gt;#16704&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Android] App crash when text exceeds Entry MaxLength by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/kubaflo/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/kubaflo"&gt;@kubaflo&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24138" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24138/hovercard"&gt;#24138&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Windows] Fix crash using ScrollTo on CollectionView by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jsuarezruiz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jsuarezruiz"&gt;@jsuarezruiz&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/19921" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/19921/hovercard"&gt;#19921&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Android] Removing TapGestureRecognizer with at least 2 taps causes Exception - fix by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/kubaflo/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/kubaflo"&gt;@kubaflo&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/21714" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/21714/hovercard"&gt;#21714&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;NavigationBar properties not updating - fix by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/kubaflo/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/kubaflo"&gt;@kubaflo&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/23076" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/23076/hovercard"&gt;#23076&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Windows] Make WebView.CaptureAsync() work by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/MartyIX/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/MartyIX"&gt;@MartyIX&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/23474" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/23474/hovercard"&gt;#23474&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Remove the ‘Resources’ prefix from BundleResource by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mattleibow/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mattleibow"&gt;@mattleibow&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/23978" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/23978/hovercard"&gt;#23978&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Use explicit platform versions by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mattleibow/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mattleibow"&gt;@mattleibow&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/23995" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/23995/hovercard"&gt;#23995&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Windows] Fix Span Foreground property by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Vignesh-SF3580/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Vignesh-SF3580"&gt;@Vignesh-SF3580&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24063" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24063/hovercard"&gt;#24063&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Android] Fix ToolbarItem font color issue after changing available state. by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Tamilarasan-Paranthaman/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Tamilarasan-Paranthaman"&gt;@Tamilarasan-Paranthaman&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24065" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24065/hovercard"&gt;#24065&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fixed FlyoutItemIsVisible is not working with bindings by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dhindrik/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dhindrik"&gt;@dhindrik&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24212" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24212/hovercard"&gt;#24212&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add support for TextAlignment.Justify - fix by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/MartyIX/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/MartyIX"&gt;@MartyIX&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24376" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24376/hovercard"&gt;#24376&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Windows][GestureManager] Unsubscribe control tap events only if they were subscribed by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/MartyIX/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/MartyIX"&gt;@MartyIX&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/23976" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/23976/hovercard"&gt;#23976&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Revert “[X] do not apply Bindings if DataType doesnt match (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2263585683" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/22056" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/22056/hovercard" href="https://github.com/dotnet/maui/pull/22056"&gt;#22056&lt;/a&gt;)” by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/PureWeen/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/PureWeen"&gt;@PureWeen&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24046" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24046/hovercard"&gt;#24046&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Docs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Remove excessive Grid API comment by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jfversluis/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jfversluis"&gt;@jfversluis&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24037" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24037/hovercard"&gt;#24037&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Remove excessive StackLayout API docs by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jfversluis/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jfversluis"&gt;@jfversluis&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24114" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24114/hovercard"&gt;#24114&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Correct “can not” to “cannot” in messages, comments, etc. by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Eilon/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Eilon"&gt;@Eilon&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24124" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24124/hovercard"&gt;#24124&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Remove excessive ListView API doc by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jfversluis/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jfversluis"&gt;@jfversluis&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24327" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24327/hovercard"&gt;#24327&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Testing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[UI Testing] Add legacy tests (alternative) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jsuarezruiz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jsuarezruiz"&gt;@jsuarezruiz&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/22635" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/22635/hovercard"&gt;#22635&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Testing] Added a support for the device’s theme change by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/kubaflo/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/kubaflo"&gt;@kubaflo&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/22508" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/22508/hovercard"&gt;#22508&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Testing] Added specific actions by platform by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jsuarezruiz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jsuarezruiz"&gt;@jsuarezruiz&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/21330" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/21330/hovercard"&gt;#21330&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Testing] Added UITest to validate the Switch OnColor property by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jsuarezruiz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jsuarezruiz"&gt;@jsuarezruiz&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/20542" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/20542/hovercard"&gt;#20542&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ci] Fix yaml uitests by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24316" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24316/hovercard"&gt;#24316&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Disable (old) ControlGallery UI tests on main by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jfversluis/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jfversluis"&gt;@jfversluis&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24307" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24307/hovercard"&gt;#24307&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Optimize UI Tests build time in CI by only building TestCases.HostApp by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jfversluis/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jfversluis"&gt;@jfversluis&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24334" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24334/hovercard"&gt;#24334&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Move EnsureSupportForCustomWebViewClients to Appium by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/PureWeen/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/PureWeen"&gt;@PureWeen&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24167" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24167/hovercard"&gt;#24167&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Dependency Updates&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[main] Update dependencies from dotnet/xharness by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-maestro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24012" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24012/hovercard"&gt;#24012&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[net9.0] Update dependencies from xamarin/xamarin-macios by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-maestro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24157" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24157/hovercard"&gt;#24157&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[net9.0] Update dependencies from dotnet/android by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-maestro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24208" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24208/hovercard"&gt;#24208&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[main] Update dependencies from dotnet/xharness by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-maestro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24154" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24154/hovercard"&gt;#24154&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[net9.0] Update dependencies from xamarin/xamarin-macios by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-maestro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24259" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24259/hovercard"&gt;#24259&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[net9.0] Update packages rc1 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24371" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24371/hovercard"&gt;#24371&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[net9.0] Update sdk and aspnet rc1 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24348" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24348/hovercard"&gt;#24348&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[net9.0] Update dependencies from dotnet/android by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-maestro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24352" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24352/hovercard"&gt;#24352&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Housekeeping&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ci] Revert arcade version bump by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/23930" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/23930/hovercard"&gt;#23930&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add SR7 Versions for bug reports by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/PureWeen/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/PureWeen"&gt;@PureWeen&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/23990" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/23990/hovercard"&gt;#23990&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update Rebase GitHub Action by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jfversluis/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jfversluis"&gt;@jfversluis&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24031" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24031/hovercard"&gt;#24031&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update the aar from CI by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mattleibow/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mattleibow"&gt;@mattleibow&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24038" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24038/hovercard"&gt;#24038&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump main to 8.0.90 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/PureWeen/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/PureWeen"&gt;@PureWeen&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24050" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24050/hovercard"&gt;#24050&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release Branding SR8 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/PureWeen/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/PureWeen"&gt;@PureWeen&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24052" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24052/hovercard"&gt;#24052&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Remove the huge xcsync for now by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mattleibow/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mattleibow"&gt;@mattleibow&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24071" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24071/hovercard"&gt;#24071&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update bug-report.yml with 8.0.80 SR8 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/PureWeen/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/PureWeen"&gt;@PureWeen&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24083" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24083/hovercard"&gt;#24083&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Split template tests into parallel jobs by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mattleibow/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mattleibow"&gt;@mattleibow&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24080" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24080/hovercard"&gt;#24080&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Merge things from release/9.0.1xx-preview7 into net9.0 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mattleibow/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mattleibow"&gt;@mattleibow&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24070" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24070/hovercard"&gt;#24070&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ci] Simplify shipping drop metadata names by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/pjcollins/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/pjcollins"&gt;@pjcollins&lt;/a&gt; in &lt;a href="https://github.com/github/dotnet/maui/pull/24103"&gt;#24103&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ci] Use passwordless auth for darc/maestro by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/pjcollins/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/pjcollins"&gt;@pjcollins&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24220" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24220/hovercard"&gt;#24220&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Print the workload rollback after install by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mattleibow/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mattleibow"&gt;@mattleibow&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24265" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24265/hovercard"&gt;#24265&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix cake scripts to work locally by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/PureWeen/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/PureWeen"&gt;@PureWeen&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24111" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24111/hovercard"&gt;#24111&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Merge main into net9.0 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mattleibow/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mattleibow"&gt;@mattleibow&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24341" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24341/hovercard"&gt;#24341&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[net9.0] Merge main to net9.0 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a href="https://github.com/dotnet/maui/pull/24115" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24115/hovercard"&gt;#24115&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;New Contributors&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dbarbosapn/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dbarbosapn"&gt;@dbarbosapn&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2514166327" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2794" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2794/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2794"&gt;#2794&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jpiechowiak/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jpiechowiak"&gt;@jpiechowiak&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2440039471" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/23945" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/23945/hovercard" href="https://github.com/dotnet/maui/pull/23945"&gt;#23945&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TommiGustafsson-HMP/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TommiGustafsson-HMP"&gt;@TommiGustafsson-HMP&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2438463881" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/23924" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/23924/hovercard" href="https://github.com/dotnet/maui/pull/23924"&gt;#23924&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/daltzctr/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/daltzctr"&gt;@daltzctr&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2331961774" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/22809" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/22809/hovercard" href="https://github.com/dotnet/maui/pull/22809"&gt;#22809&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/lizharems/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/lizharems"&gt;@lizharems&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2456436574" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/24109" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/24109/hovercard" href="https://github.com/dotnet/maui/pull/24109"&gt;#24109&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/2.8.12...2.8.14"&gt;&lt;tt&gt;2.8.12...2.8.14&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/dotnet/maui/compare/9.0.0-preview.7.24407.4...9.0.0-rc.1.24453.9"&gt;&lt;tt&gt;9.0.0-preview.7.24407.4...9.0.0-rc.1.24453.9&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>dotnet/efcore - Releases - 2024-09-10</title>
+    <id>https://github.com/dotnet/efcore#2024-09-10</id>
+    <link href="https://github.com/dotnet/efcore" />
+    <updated>2024-09-11T00:05:55Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/efcore/releases/tag/v9.0.0-rc.1.24451.1"&gt;.NET 9.0 RC 1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;&lt;a href="https://github.com/dotnet/core/releases/tag/v9.0.0-rc.1"&gt;Release&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>npgsql/npgsql - Releases - 2024-09-10</title>
+    <id>https://github.com/npgsql/npgsql#2024-09-10</id>
+    <link href="https://github.com/npgsql/npgsql" />
+    <updated>2024-09-11T00:06:14Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/npgsql/npgsql/releases/tag/v6.0.12"&gt;v6.0.12&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/npgsql/npgsql/compare/v6.0.11...v6.0.12"&gt;&lt;tt&gt;v6.0.11...v6.0.12&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/npgsql/npgsql/releases/tag/v7.0.8"&gt;v7.0.8&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/npgsql/npgsql/compare/v7.0.7...v7.0.8"&gt;&lt;tt&gt;v7.0.7...v7.0.8&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/npgsql/npgsql/releases/tag/v8.0.4"&gt;v8.0.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;A large number of number of bugs have been fixed, &lt;a href="https://github.com/npgsql/npgsql/milestone/115?closed=1"&gt;here is the full list&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/npgsql/npgsql/compare/v8.0.3...v8.0.4"&gt;&lt;tt&gt;v8.0.3...v8.0.4&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>StackExchange/StackExchange.Redis - Releases - 2024-09-10</title>
+    <id>https://github.com/StackExchange/StackExchange.Redis#2024-09-10</id>
+    <link href="https://github.com/StackExchange/StackExchange.Redis" />
+    <updated>2024-09-11T00:06:27Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/2.8.16"&gt;2.8.16&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix: PhysicalBridge: Always perform "last read" check in heartbeat when &lt;code&gt;HeartbeatConsistencyChecks&lt;/code&gt; is enabled (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2516779036" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2795" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2795/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2795"&gt;#2795&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/NickCraver/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/NickCraver"&gt;@NickCraver&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/2.8.14...2.8.16"&gt;&lt;tt&gt;2.8.14...2.8.16&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
