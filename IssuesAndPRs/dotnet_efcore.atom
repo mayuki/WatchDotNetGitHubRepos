@@ -1,32 +1,38 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/efcore - Issues &amp; Pull Requests</title>
   <link href="https://github.com/dotnet/efcore" />
-  <updated>2024-09-24T00:05:53Z</updated>
+  <updated>2024-09-25T00:05:40Z</updated>
   <id>https://github.com/dotnet/efcore</id>
   <entry>
-    <title>dotnet/efcore - Issues &amp; Pull Requests - 2024-09-23</title>
-    <id>https://github.com/dotnet/efcore#2024-09-23</id>
+    <title>dotnet/efcore - Issues &amp; Pull Requests - 2024-09-24</title>
+    <id>https://github.com/dotnet/efcore#2024-09-24</id>
     <link href="https://github.com/dotnet/efcore" />
-    <updated>2024-09-24T00:05:53Z</updated>
+    <updated>2024-09-25T00:05:40Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/34741"&gt;Support ExecuteDelete and ExecuetUpdate for sqllite #34741&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/34751"&gt;How to extract projection logic into separate methods #34751&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/34739"&gt;Migration source generator #34739&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/34750"&gt;Using ToString() on a value object causes unnecesssary case expression in query #34750&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/34738"&gt;`Contains` on `IQueryable&amp;lt;string&amp;gt;` seems to consistently evaluate to FALSE. #34738&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/34749"&gt;Created query for projection with ownedMany and join is wrong and leads to null exception #34749&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/34747"&gt;The SaveChanges can't track items created by Enumerable.Repeat #34747&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -35,21 +41,21 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/34736"&gt;Add support for logical XOR #34736&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/34748"&gt;custom migration name and support for undo #34748&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/34151"&gt;[9.0] New translations and SQL optimization/simplification #34151&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/34728"&gt;Split query with AsNoTrackingWithIdentityResolution() throws ArgumentOutOfRangeException #34728&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;9.0.0&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/34672"&gt;InvalidOperationException with multiple HasDbFunction in 9 RC1 #34672&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/33489"&gt;SaveChangesAsync_accepts_changes_with_ConfigureAwait_true failed in C.I. #33489&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;9.0.0&lt;/div&gt;
+      &lt;div&gt;MQ&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;&lt;section&gt;
@@ -58,13 +64,7 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/34743"&gt;[release/9.0] Fix to #34728 - Split query with AsNoTrackingWithIdentityResolution() throws ArgumentOutOfRangeException #34743&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/34742"&gt;Fix to #34728 - Split query with AsNoTrackingWithIdentityResolution() throws ArgumentOutOfRangeException #34742&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/34746"&gt;[automated] Merge branch 'release/9.0' =&amp;gt; 'main' #34746&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -73,21 +73,30 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/34740"&gt;Bump Microsoft.Azure.Cosmos from 3.43.0 to 3.43.1 #34740&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-infrastructure, type-dependency update :arrow_up_small:&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/34719"&gt;[automated] Merge branch 'release/9.0' =&amp;gt; 'main' #34719&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/34742"&gt;Fix to #34728 - Split query with AsNoTrackingWithIdentityResolution() throws ArgumentOutOfRangeException #34742&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/34731"&gt;Fix test and a bit of code cleanup #34731&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/34744"&gt;[release/9.0] Disabling a flaky test #34744&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-test, tell-mode&lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;Updated&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/34097"&gt;Make sort order consistent in split queries #34097&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/34743"&gt;[release/9.0] Fix to #34728 - Split query with AsNoTrackingWithIdentityResolution() throws ArgumentOutOfRangeException #34743&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Servicing-approved, 9.0.0&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;</content>
