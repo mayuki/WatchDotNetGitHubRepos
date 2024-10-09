@@ -1,6 +1,50 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2024-10-08T00:05:59Z</updated>
+  <updated>2024-10-09T00:06:04Z</updated>
   <id>https://github.com/grpc/grpc</id>
+  <entry>
+    <title>grpc/grpc - Releases - 2024-10-08</title>
+    <id>https://github.com/grpc/grpc#2024-10-08</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2024-10-09T00:06:04Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.67.0"&gt;Release v1.67.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release 1.67.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;gesundheit&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ruby] reduce an INFO log to DEBUG (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2506372646" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/37633" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37633/hovercard" href="https://github.com/grpc/grpc/pull/37633"&gt;#37633&lt;/a&gt;). (&lt;a href="https://github.com/grpc/grpc/pull/37686" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37686/hovercard"&gt;#37686&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[release] Bump core version to 44.0.0. (&lt;a href="https://github.com/grpc/grpc/pull/37661" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37661/hovercard"&gt;#37661&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[RlsLB] Fix Deadlock. (&lt;a href="https://github.com/grpc/grpc/pull/37459" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37459/hovercard"&gt;#37459&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python Otel] Manage call tracer life cycle use call arena. (&lt;a href="https://github.com/grpc/grpc/pull/37460" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37460/hovercard"&gt;#37460&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C++&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[OTel C++] Fix race when adding and removing callbacks. (&lt;a href="https://github.com/grpc/grpc/pull/37485" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37485/hovercard"&gt;#37485&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Backport to 1.67.x] Add templating and support for Python 3.13 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2508008378" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/37643" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37643/hovercard" href="https://github.com/grpc/grpc/pull/37643"&gt;#37643&lt;/a&gt;). (&lt;a href="https://github.com/grpc/grpc/pull/37803" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37803/hovercard"&gt;#37803&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add templating and support for Python 3.13. (&lt;a href="https://github.com/grpc/grpc/pull/37643" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37643/hovercard"&gt;#37643&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python Distrib] Change warning to RuntimeError for version incompatibility. (&lt;a href="https://github.com/grpc/grpc/pull/37466" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37466/hovercard"&gt;#37466&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[reflection]: python: reflection returns &lt;code&gt;original_request&lt;/code&gt;. (&lt;a href="https://github.com/grpc/grpc/pull/36944" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/36944/hovercard"&gt;#36944&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ruby&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ruby] drop ruby 2.7 support. (&lt;a href="https://github.com/grpc/grpc/pull/37430" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37430/hovercard"&gt;#37430&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[ruby] reduce ruby gpr_log invocations from INFO to DEBUG. (&lt;a href="https://github.com/grpc/grpc/pull/37426" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37426/hovercard"&gt;#37426&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[ruby] refactor flaky test and expose cancel_with_status. (&lt;a href="https://github.com/grpc/grpc/pull/37410" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37410/hovercard"&gt;#37410&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
