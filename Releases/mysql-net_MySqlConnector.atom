@@ -1,53 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>mysql-net/MySqlConnector - Releases</title>
   <link href="https://github.com/mysql-net/MySqlConnector" />
-  <updated>2024-11-13T00:06:42Z</updated>
+  <updated>2024-11-14T00:06:49Z</updated>
   <id>https://github.com/mysql-net/MySqlConnector</id>
-  <entry>
-    <title>mysql-net/MySqlConnector - Releases - 2024-11-12</title>
-    <id>https://github.com/mysql-net/MySqlConnector#2024-11-12</id>
-    <link href="https://github.com/mysql-net/MySqlConnector" />
-    <updated>2024-11-13T00:06:42Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/mysql-net/MySqlConnector/releases/tag/2.4.0"&gt;2.4.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;Support .NET 9.0.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Possibly breaking&lt;/strong&gt; Mark &lt;code&gt;MySqlConnectorLogManager.Provider&lt;/code&gt; as &lt;code&gt;[Obsolete]&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2000645454" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1397" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1397/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1397"&gt;#1397&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Possibly breaking&lt;/strong&gt; Remove end-of-life .NET 7 target framework.
-&lt;ul&gt;
-&lt;li&gt;Users who wish to use &lt;code&gt;DbDataSource&lt;/code&gt; need to target .NET 8.0 or later.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Possibly breaking&lt;/strong&gt; Update dependencies:
-&lt;ul&gt;
-&lt;li&gt;Microsoft.Extensions.Logging.Abstractions from 7.0.1 to 8.0.2.&lt;/li&gt;
-&lt;li&gt;System.Diagnostics.DiagnosticSource from 7.0.2 to 8.0.1.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Support trimming and native AOT: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1509860598" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1265" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1265/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1265"&gt;#1265&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;MySqlDataSourceBuilder.UseConnectionOpenedCallback&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2487150975" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1508" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1508/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1508"&gt;#1508&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;MySqlDbColumn.TableName&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2601615806" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1521" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1521/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1521"&gt;#1521&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Support &lt;a href="https://mariadb.org/mission-impossible-zero-configuration-ssl/" rel="nofollow"&gt;zero-configuration SSL&lt;/a&gt; with MariaDB: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2432359069" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1500" data-hovercard-type="pull_request" data-hovercard-url="/mysql-net/MySqlConnector/pull/1500/hovercard" href="https://github.com/mysql-net/MySqlConnector/pull/1500"&gt;#1500&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Support &lt;code&gt;SET&lt;/code&gt; data type in functions: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2399369461" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1491" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1491/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1491"&gt;#1491&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Remove &lt;code&gt;TABLESPACES&lt;/code&gt; schema: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2273587109" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1477" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1477/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1477"&gt;#1477&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Rewrite server redirection logic based on latest MariaDB specification: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2420811812" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1499" data-hovercard-type="pull_request" data-hovercard-url="/mysql-net/MySqlConnector/pull/1499/hovercard" href="https://github.com/mysql-net/MySqlConnector/pull/1499"&gt;#1499&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Change variable name for better server compatibility: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2439477021" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1502" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1502/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1502"&gt;#1502&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Performance: Avoid &lt;code&gt;SET NAMES&lt;/code&gt; commands when not necessary: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2412476420" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1497" data-hovercard-type="pull_request" data-hovercard-url="/mysql-net/MySqlConnector/pull/1497/hovercard" href="https://github.com/mysql-net/MySqlConnector/pull/1497"&gt;#1497&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Fix "Can't replace active reader": &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2214681362" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1469" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1469/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1469"&gt;#1469&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Fix potential &lt;code&gt;NullReferenceException&lt;/code&gt; in &lt;code&gt;MySqlConnection.Cancel&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2467628160" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1506" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1506/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1506"&gt;#1506&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Fix &lt;code&gt;InvalidOperationException&lt;/code&gt; in &lt;code&gt;FinishQuerying&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1786226927" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1341" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1341/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1341"&gt;#1341&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Provide logger to new MySqlConnection: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2494317389" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1510" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1510/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1510"&gt;#1510&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Use correct hostname when cancelling query: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2564947986" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1514" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1514/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1514"&gt;#1514&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Thanks to &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AlexKerman/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AlexKerman"&gt;@AlexKerman&lt;/a&gt; and &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rusher/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rusher"&gt;@rusher&lt;/a&gt; for contributions to this release.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
