@@ -1,50 +1,32 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Issues &amp; Pull Requests</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2024-12-29T00:06:42Z</updated>
+  <updated>2024-12-30T00:06:21Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>dotnet/announcements - Issues &amp; Pull Requests - 2024-12-28</title>
-    <id>https://github.com/dotnet/announcements#2024-12-28</id>
-    <link href="https://github.com/dotnet/announcements" />
-    <updated>2024-12-29T00:06:22Z</updated>
-    <content type="html">&lt;section&gt;
-  &lt;h2&gt;Issues&lt;/h2&gt;
-  &lt;h3&gt;Updated&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/announcements/issues/336"&gt;Critical: .NET install domains and URLs are changing #336&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/section&gt;&lt;div /&gt;</content>
-  </entry>
-  <entry>
-    <title>dotnet/runtime - Issues &amp; Pull Requests - 2024-12-28</title>
-    <id>https://github.com/dotnet/runtime#2024-12-28</id>
+    <title>dotnet/runtime - Issues &amp; Pull Requests - 2024-12-29</title>
+    <id>https://github.com/dotnet/runtime#2024-12-29</id>
     <link href="https://github.com/dotnet/runtime" />
-    <updated>2024-12-29T00:06:23Z</updated>
+    <updated>2024-12-30T00:06:05Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/110981"&gt;Random "Access violation writing location" error while calling ToFrozenDictionary after updating from .NET 8 to .NET 9 #110981&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/110987"&gt;Assert failure in SetLoaderAllocator() when calling a DynamicMethod in separate module and custom AssemblyLoadContext #110987&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/110979"&gt;Does Native AOT support exporting apis by serial number? #110979&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/110986"&gt;JIT doesn't elide bounds checking when iterating over a span and an array of known length #110986&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
+      &lt;div&gt;Future&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/110975"&gt;Calling certain native functions from custom hosted dotnet causes error #110975&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/110984"&gt;[API Proposal]: Add some Memory API to do tricky mappings #110984&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -53,7 +35,13 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/110978"&gt;public static readonly field not generated until accessed with no explicit static constructor #110978&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/110800"&gt;Environment.ProcessPath hangs with exe path &amp;gt; MAX_PATH #110800&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/110981"&gt;Random "Access violation writing location" error while calling ToFrozenDictionary after updating from .NET 8 to .NET 9 #110981&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -64,28 +52,70 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/110980"&gt;Use correct product version in SPC in servicing #110980&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/110985"&gt;[S390x] Fix endian bug in minipal #110985&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;area-System.Runtime&lt;/div&gt;
+      &lt;div&gt;community-contribution, needs-area-label&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/110977"&gt;[Test] Add logging and fail-fast option when a thread is reinitialized after cleanup #110977&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/110983"&gt;Revert "Fix NativeAOT ThunksPool thunk data block size handling." #110983&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;NO-MERGE, area-System.Threading, Future&lt;/div&gt;
+      &lt;div&gt;area-NativeAOT-coreclr&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/110982"&gt;Observe any exception on HTTP connection scavenge. #110982&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-System.Net.Http, community-contribution&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
   &lt;h3&gt;Merged&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/110953"&gt;Remove redundant 'unsafe' context #110953&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/110888"&gt;Fix GetModuleFileName in GetProcessPath #110888&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;area-Meta&lt;/div&gt;
+      &lt;div&gt;area-System.Runtime, community-contribution&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
   &lt;h3&gt;Updated&lt;/h3&gt;
   &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/110945"&gt;System.Reflection.CustomAttributeFormatException thrown on a retrieval of derived attribute with overridden property getter #110945&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-System.Reflection, community-contribution&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/110086"&gt;Warn on method access in Requires analyzers #110086&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;linkable-framework, area-Tools-ILLink&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/110229"&gt;Unwrap NullableValue for diagnostics creation and add try/catch for formatting diagnostics #110229&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;linkable-framework, area-Tools-ILLink, 10.0.0&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/110417"&gt;Use managed signer for bundles #110417&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-HostModel&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/110980"&gt;Use correct product version in SPC in servicing #110980&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-System.Runtime&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/98643"&gt;Add BFloat16 #98643&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-System.Numerics, new-api-needs-documentation, community-contribution&lt;/div&gt;
+    &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/runtime/pull/110973"&gt;Fix `ConvertTypeCheckPatternToNullCheck` #110973&lt;/a&gt;
@@ -94,25 +124,7 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/110910"&gt;Code modernization in System.Linq #110910&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-System.Linq&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/110888"&gt;Fix GetModuleFileName in GetProcessPath #110888&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-System.Runtime, community-contribution&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/108799"&gt;[JIT] [APX] Enable additional General Purpose Registers. #108799&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-CodeGen-coreclr, community-contribution, apx, 10.0.0&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/110819"&gt;JIT: Optimize struct parameter register accesses in the backend #110819&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/110113"&gt;Clean up in LowerFusedMultiplyAdd #110113&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;area-CodeGen-coreclr&lt;/div&gt;
     &lt;/li&gt;
@@ -120,10 +132,28 @@
 &lt;/section&gt;</content>
   </entry>
   <entry>
-    <title>dotnet/sdk - Issues &amp; Pull Requests - 2024-12-28</title>
-    <id>https://github.com/dotnet/sdk#2024-12-28</id>
+    <title>dotnet/runtimelab - Issues &amp; Pull Requests - 2024-12-29</title>
+    <id>https://github.com/dotnet/runtimelab#2024-12-29</id>
+    <link href="https://github.com/dotnet/runtimelab" />
+    <updated>2024-12-30T00:06:06Z</updated>
+    <content type="html">&lt;div /&gt;&lt;section&gt;
+  &lt;h2&gt;PullRequests&lt;/h2&gt;
+  &lt;h3&gt;Updated&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtimelab/pull/2883"&gt;[NativeAOT-LLVM] Emit type debug info into a single module #2883&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-NativeAOT-LLVM&lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/section&gt;</content>
+  </entry>
+  <entry>
+    <title>dotnet/sdk - Issues &amp; Pull Requests - 2024-12-29</title>
+    <id>https://github.com/dotnet/sdk#2024-12-29</id>
     <link href="https://github.com/dotnet/sdk" />
-    <updated>2024-12-29T00:06:26Z</updated>
+    <updated>2024-12-30T00:06:08Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Updated&lt;/h3&gt;
@@ -190,66 +220,80 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/issues/10017"&gt;%2F in path not properly interpreted when dotnet build #10017&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/42651"&gt;error NU1903: Warning As Error: Package 'System.Private.Uri' 4.3.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-xhfc-gr8f-ffwc #42651&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/1113"&gt;Multi-targeted project puts both DLLs in same location #1113&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;Backlog&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/issues/14285"&gt;Use of dotnet core / net5 on unix/linux when using a HttpListener has no method to specify a SSL certificate if using https #14285&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/43470"&gt;Building an ASP.NET project 2-10x slower with .NET 9 vs .NET 8 #43470&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Backlog&lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
-&lt;/section&gt;&lt;div /&gt;</content>
-  </entry>
-  <entry>
-    <title>dotnet/csharplang - Issues &amp; Pull Requests - 2024-12-28</title>
-    <id>https://github.com/dotnet/csharplang#2024-12-28</id>
-    <link href="https://github.com/dotnet/csharplang" />
-    <updated>2024-12-29T00:06:28Z</updated>
-    <content type="html">&lt;section&gt;
-  &lt;h2&gt;Issues&lt;/h2&gt;
-  &lt;h3&gt;Closed&lt;/h3&gt;
+&lt;/section&gt;&lt;section&gt;
+  &lt;h2&gt;PullRequests&lt;/h2&gt;
+  &lt;h3&gt;Updated&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/csharplang/issues/107"&gt;Champion "Replace/original and code generation extensions" #107&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/42416"&gt;Commands for generating shell completion scripts + statically-generated bash script #42416&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Backlog&lt;/div&gt;
+      &lt;div&gt;Area-Infrastructure, untriaged, Area-CLI, cli-ux&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/csharplang/issues/3957"&gt;[Proposal]: Target Typed Anonymous Type Initializers #3957&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/45019"&gt;Use managed Mach-O signer on non-Mac hosts #45019&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Backlog&lt;/div&gt;
+      &lt;div&gt;area-Host, untriaged&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
-&lt;/section&gt;&lt;div /&gt;</content>
+&lt;/section&gt;</content>
   </entry>
   <entry>
-    <title>dotnet/roslyn - Issues &amp; Pull Requests - 2024-12-28</title>
-    <id>https://github.com/dotnet/roslyn#2024-12-28</id>
-    <link href="https://github.com/dotnet/roslyn" />
-    <updated>2024-12-29T00:06:31Z</updated>
+    <title>dotnet/csharplang - Issues &amp; Pull Requests - 2024-12-29</title>
+    <id>https://github.com/dotnet/csharplang#2024-12-29</id>
+    <link href="https://github.com/dotnet/csharplang" />
+    <updated>2024-12-30T00:06:09Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/76575"&gt;CSharpTestEmbeddedLanguageClassifier crashes with index out of range #76575&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/csharplang/issues/8947"&gt;[Proposal]: `left join` and `right join` query expression clauses #8947&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
-  &lt;h3&gt;Closed&lt;/h3&gt;
+&lt;/section&gt;&lt;div /&gt;</content>
+  </entry>
+  <entry>
+    <title>dotnet/roslyn - Issues &amp; Pull Requests - 2024-12-29</title>
+    <id>https://github.com/dotnet/roslyn#2024-12-29</id>
+    <link href="https://github.com/dotnet/roslyn" />
+    <updated>2024-12-30T00:06:11Z</updated>
+    <content type="html">&lt;section&gt;
+  &lt;h2&gt;Issues&lt;/h2&gt;
+  &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/76514"&gt;"Requires `unsafe` context" error in an `unsafe` iterator #76514&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/76579"&gt;Misleading completion for cref in inheritdoc #76579&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
+      &lt;div&gt;Backlog&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/76578"&gt;IDE0060 (Remove unused parameter) false positive for interpolated string handler argument #76578&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Backlog&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;&lt;section&gt;
@@ -258,7 +302,22 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/76576"&gt;Fix crash when classifying embedded test classifications #76576&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/76580"&gt;CSharpIndentationService simplification #76580&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Area-IDE, Community, untriaged, VSCode&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/76577"&gt;Continued Extract method cleanup #76577&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Area-IDE, untriaged, VSCode&lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;Updated&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/76550"&gt;Extract method cleanup #76550&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;Area-IDE, untriaged, VSCode&lt;/div&gt;
     &lt;/li&gt;
@@ -266,17 +325,32 @@
 &lt;/section&gt;</content>
   </entry>
   <entry>
-    <title>dotnet/aspnetcore - Issues &amp; Pull Requests - 2024-12-28</title>
-    <id>https://github.com/dotnet/aspnetcore#2024-12-28</id>
+    <title>dotnet/aspnetcore - Issues &amp; Pull Requests - 2024-12-29</title>
+    <id>https://github.com/dotnet/aspnetcore#2024-12-29</id>
     <link href="https://github.com/dotnet/aspnetcore" />
-    <updated>2024-12-29T00:06:35Z</updated>
+    <updated>2024-12-30T00:06:16Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/aspnetcore/issues/59651"&gt;Perf regression: ApiCrudListProducts #59651&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/issues/59655"&gt;BackgroundService not stopping gracefully with an open Blazor Server SignalR circuit on dotnet 9 #59655&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/issues/59654"&gt;Blazor Webassembly: Wrong time zone information for Africa/Cairo Time zone #59654&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;Closed&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/issues/59653"&gt;Perf improvement: https #59653&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -286,18 +360,44 @@
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Closed&lt;/h3&gt;
-  &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/aspnetcore/issues/59649"&gt;Perf improvement: updates #59649&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/issues/59647"&gt;Enhancement: Move email confirmation handling to the client #59647&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/section&gt;&lt;section&gt;
+  &lt;h2&gt;PullRequests&lt;/h2&gt;
+  &lt;h3&gt;Updated&lt;/h3&gt;
+  &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/aspnetcore/issues/59645"&gt;Perf regression: updates #59645&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/pull/59652"&gt;Dispose CTS when the Stream is claimed or timeout occurs #59652&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-blazor, community-contribution&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/aspnetcore/pull/57565"&gt;Feature/httpendpoint #57565&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;stale, community-contribution, pr: pending author input, pending-ci-rerun, area-networking, 10.0-preview1&lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/section&gt;</content>
+  </entry>
+  <entry>
+    <title>dotnet/maui - Issues &amp; Pull Requests - 2024-12-29</title>
+    <id>https://github.com/dotnet/maui#2024-12-29</id>
+    <link href="https://github.com/dotnet/maui" />
+    <updated>2024-12-30T00:06:18Z</updated>
+    <content type="html">&lt;section&gt;
+  &lt;h2&gt;Issues&lt;/h2&gt;
+  &lt;h3&gt;Created&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/maui/issues/26853"&gt;Text-To-Speech unable to override system's default voices #26853&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -308,168 +408,22 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/aspnetcore/pull/59652"&gt;Dispose CTS when the Stream is claimed or timeout occurs #59652&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/maui/pull/26854"&gt;[Android] ListView ContextActions in modal page #26854&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;area-blazor, community-contribution&lt;/div&gt;
+      &lt;div&gt;platform/android 🤖, community ✨, area-controls-modal&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
-  &lt;h3&gt;Updated&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/aspnetcore/pull/59646"&gt;Apply HeadersLengthLimit to preamble in MultipartReader #59646&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;feature-http-abstractions, area-networking&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/aspnetcore/pull/59557"&gt;Add AuthN/AuthZ metrics #59557&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;pending-ci-rerun, area-security&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/aspnetcore/pull/59551"&gt;Use the live crossgen2 corresponding to the runtime we're building against #59551&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-infrastructure, pending-ci-rerun&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/section&gt;</content>
-  </entry>
-  <entry>
-    <title>dotnet/diagnostics - Issues &amp; Pull Requests - 2024-12-28</title>
-    <id>https://github.com/dotnet/diagnostics#2024-12-28</id>
-    <link href="https://github.com/dotnet/diagnostics" />
-    <updated>2024-12-29T00:06:37Z</updated>
-    <content type="html">&lt;div /&gt;&lt;section&gt;
-  &lt;h2&gt;PullRequests&lt;/h2&gt;
-  &lt;h3&gt;Updated&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/diagnostics/pull/5129"&gt;Misc service and implementation cleanup #5129&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/section&gt;</content>
-  </entry>
-  <entry>
-    <title>dotnet/maui - Issues &amp; Pull Requests - 2024-12-28</title>
-    <id>https://github.com/dotnet/maui#2024-12-28</id>
-    <link href="https://github.com/dotnet/maui" />
-    <updated>2024-12-29T00:06:39Z</updated>
-    <content type="html">&lt;section&gt;
-  &lt;h2&gt;Issues&lt;/h2&gt;
-  &lt;h3&gt;Closed&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/issues/22745"&gt;[Android] Numeric Editor's cursor is not visible when tapping it inside a ListView #22745&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/issues/19149"&gt;[iOS] MenuItem Command not executed with FlyoutHeader set #19149&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/issues/26534"&gt;[Windows] System.Runtime.InteropServices.COMException when using the GroupShortNameBinding property in Grouped ListView #26534&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Backlog&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Updated&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/issues/18569"&gt;Android: Pinch gesture not working properly in Carousel #18569&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Backlog&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/issues/26619"&gt;Border label text cut off #26619&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Backlog&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/issues/17884"&gt;[Android] Entire words omitted &amp;amp; letters truncated from Label display #17884&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Backlog&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/issues/26849"&gt;[MAUI][dotnet8][Windows] - A blink occurs when opening a new window #26849&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/issues/23159"&gt;[BUG] ios LineBreakMode and MaxLines on Label controls does not work well #23159&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Backlog&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/issues/7906"&gt;Entry and Editor: option to disable borders and underline (focus)  #7906&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Backlog&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/issues/26848"&gt;AddHostObjectToScript does not work in MAUI app (at least for WINDOWS). #26848&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/issues/26835"&gt;Allow generic  and nested types in x:DataType and x:Type #26835&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/issues/24903"&gt;[Android] EdgeToEdge does not work for Modal page #24903&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;.NET 9 Servicing&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/section&gt;&lt;section&gt;
-  &lt;h2&gt;PullRequests&lt;/h2&gt;
   &lt;h3&gt;Merged&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/pull/26613"&gt;[Windows] Fix for Exception occurring when using the GroupShortNameBinding in a Grouped ListView #26613&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/maui/pull/26829"&gt;[Testing] Enable Catalyst UI Tests with Screenshot Verification #26829&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;community ✨, area-controls-listview, partner/syncfusion, .NET 9 SR3&lt;/div&gt;
+      &lt;div&gt;area-testing, community ✨, partner/syncfusion, .NET 9 SR3&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
   &lt;h3&gt;Updated&lt;/h3&gt;
   &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/pull/26629"&gt;Change iOS SetNeedsLayout propagation mechanism #26629&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-layout, community ✨, .NET 9 SR3&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/pull/26834"&gt;[Windows] Tap Events Incorrectly passed Through Button - fix #26834&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;p/0, community ✨, .NET 9 SR3&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/pull/26648"&gt;[iOS] Label with a fixed WidthRequest has wrong height in Grid #26648&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;platform/iOS 🍎, community ✨, area-controls-label, layout-grid&lt;/div&gt;
-    &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/maui/pull/26823"&gt;[Testing] Enabling ported UITests from Xamarin.UITests to Appium - 64 #26823&lt;/a&gt;
@@ -478,37 +432,40 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/maui/pull/26851"&gt;[Android &amp;amp; iOS] PopToRootAsync for modal pages - improvements #26851&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/maui/pull/26789"&gt;Android shadow performance #26789&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;community ✨, area-controls-modal&lt;/div&gt;
+      &lt;div&gt;area-drawing, community ✨, .NET 9 SR4&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/maui/pull/26834"&gt;[Windows] Tap Events Incorrectly passed Through Button - fix #26834&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;platform/windows 🪟, p/0, community ✨, area-gestures, .NET 9 SR3&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/maui/pull/26825"&gt;Fix ScrollToPosition.Center behavior in ScrollView on iOS and MacCatalyst #26825&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;platform/macOS 🍏, platform/iOS 🍎, community ✨, area-controls-scrollview, partner/syncfusion&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/maui/pull/26629"&gt;Change iOS SetNeedsLayout propagation mechanism #26629&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-layout, community ✨, .NET 9 SR3&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;</content>
   </entry>
   <entry>
-    <title>dotnet/efcore - Issues &amp; Pull Requests - 2024-12-28</title>
-    <id>https://github.com/dotnet/efcore#2024-12-28</id>
+    <title>dotnet/efcore - Issues &amp; Pull Requests - 2024-12-29</title>
+    <id>https://github.com/dotnet/efcore#2024-12-29</id>
     <link href="https://github.com/dotnet/efcore" />
-    <updated>2024-12-29T00:06:40Z</updated>
+    <updated>2024-12-30T00:06:19Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
-  &lt;h3&gt;Closed&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/35388"&gt;WeakReference Class #35388&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
   &lt;h3&gt;Updated&lt;/h3&gt;
   &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/35293"&gt;Exception thrown with split tables: System.InvalidOperationException: 'Sequence contains more than one element' #35293&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/efcore/issues/34149"&gt;Optimize SQL expression comparison by caching hash codes #34149&lt;/a&gt;
@@ -517,45 +474,30 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/26457"&gt;Support for temporal tables for TPT (Table per Type) and other entity-splitting scenarios #26457&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/35293"&gt;Exception thrown with split tables: System.InvalidOperationException: 'Sequence contains more than one element' #35293&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Backlog&lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/35387"&gt;Generating a sql query #35387&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/32018"&gt;Accept `Action&amp;lt;SetPropertyCalls&amp;gt;` in `ExecuteUpdate` #32018&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
+      &lt;div&gt;10.0.0&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;&lt;section&gt;
   &lt;h2&gt;PullRequests&lt;/h2&gt;
-  &lt;h3&gt;Created&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/35390"&gt;Support accessing members of a conditional value #35390&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
   &lt;h3&gt;Updated&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/30010"&gt;Feature/translate json functions #29306 #30010&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/35328"&gt;Adding Half type support for SqlLite #35328&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/34172"&gt;Avoid duplicating complex expression in comparisons #34172&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/35389"&gt;Add EF.Functions.JsonExists(expression, path) DbFunction #35389&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/35257"&gt;Change ExecuteUpdate to accept non-expression lambda #35257&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;

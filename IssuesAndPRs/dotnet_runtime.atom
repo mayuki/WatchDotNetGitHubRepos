@@ -1,32 +1,32 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/runtime - Issues &amp; Pull Requests</title>
   <link href="https://github.com/dotnet/runtime" />
-  <updated>2024-12-29T00:06:23Z</updated>
+  <updated>2024-12-30T00:06:05Z</updated>
   <id>https://github.com/dotnet/runtime</id>
   <entry>
-    <title>dotnet/runtime - Issues &amp; Pull Requests - 2024-12-28</title>
-    <id>https://github.com/dotnet/runtime#2024-12-28</id>
+    <title>dotnet/runtime - Issues &amp; Pull Requests - 2024-12-29</title>
+    <id>https://github.com/dotnet/runtime#2024-12-29</id>
     <link href="https://github.com/dotnet/runtime" />
-    <updated>2024-12-29T00:06:23Z</updated>
+    <updated>2024-12-30T00:06:05Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/110981"&gt;Random "Access violation writing location" error while calling ToFrozenDictionary after updating from .NET 8 to .NET 9 #110981&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/110987"&gt;Assert failure in SetLoaderAllocator() when calling a DynamicMethod in separate module and custom AssemblyLoadContext #110987&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/110979"&gt;Does Native AOT support exporting apis by serial number? #110979&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/110986"&gt;JIT doesn't elide bounds checking when iterating over a span and an array of known length #110986&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
+      &lt;div&gt;Future&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/110975"&gt;Calling certain native functions from custom hosted dotnet causes error #110975&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/110984"&gt;[API Proposal]: Add some Memory API to do tricky mappings #110984&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -35,7 +35,13 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/issues/110978"&gt;public static readonly field not generated until accessed with no explicit static constructor #110978&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/110800"&gt;Environment.ProcessPath hangs with exe path &amp;gt; MAX_PATH #110800&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/issues/110981"&gt;Random "Access violation writing location" error while calling ToFrozenDictionary after updating from .NET 8 to .NET 9 #110981&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -46,28 +52,70 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/110980"&gt;Use correct product version in SPC in servicing #110980&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/110985"&gt;[S390x] Fix endian bug in minipal #110985&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;area-System.Runtime&lt;/div&gt;
+      &lt;div&gt;community-contribution, needs-area-label&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/110977"&gt;[Test] Add logging and fail-fast option when a thread is reinitialized after cleanup #110977&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/110983"&gt;Revert "Fix NativeAOT ThunksPool thunk data block size handling." #110983&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;NO-MERGE, area-System.Threading, Future&lt;/div&gt;
+      &lt;div&gt;area-NativeAOT-coreclr&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/110982"&gt;Observe any exception on HTTP connection scavenge. #110982&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-System.Net.Http, community-contribution&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
   &lt;h3&gt;Merged&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/110953"&gt;Remove redundant 'unsafe' context #110953&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/110888"&gt;Fix GetModuleFileName in GetProcessPath #110888&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;area-Meta&lt;/div&gt;
+      &lt;div&gt;area-System.Runtime, community-contribution&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
   &lt;h3&gt;Updated&lt;/h3&gt;
   &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/110945"&gt;System.Reflection.CustomAttributeFormatException thrown on a retrieval of derived attribute with overridden property getter #110945&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-System.Reflection, community-contribution&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/110086"&gt;Warn on method access in Requires analyzers #110086&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;linkable-framework, area-Tools-ILLink&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/110229"&gt;Unwrap NullableValue for diagnostics creation and add try/catch for formatting diagnostics #110229&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;linkable-framework, area-Tools-ILLink, 10.0.0&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/110417"&gt;Use managed signer for bundles #110417&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-HostModel&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/110980"&gt;Use correct product version in SPC in servicing #110980&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-System.Runtime&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/98643"&gt;Add BFloat16 #98643&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-System.Numerics, new-api-needs-documentation, community-contribution&lt;/div&gt;
+    &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/runtime/pull/110973"&gt;Fix `ConvertTypeCheckPatternToNullCheck` #110973&lt;/a&gt;
@@ -76,25 +124,7 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/110910"&gt;Code modernization in System.Linq #110910&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-System.Linq&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/110888"&gt;Fix GetModuleFileName in GetProcessPath #110888&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-System.Runtime, community-contribution&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/108799"&gt;[JIT] [APX] Enable additional General Purpose Registers. #108799&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;area-CodeGen-coreclr, community-contribution, apx, 10.0.0&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/runtime/pull/110819"&gt;JIT: Optimize struct parameter register accesses in the backend #110819&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/runtime/pull/110113"&gt;Clean up in LowerFusedMultiplyAdd #110113&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;area-CodeGen-coreclr&lt;/div&gt;
     &lt;/li&gt;
