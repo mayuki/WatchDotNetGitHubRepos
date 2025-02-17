@@ -13,13 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: '5.0.x'
+        uses: actions/setup-dotnet@v4
       - name: dotnet build
-        run: dotnet build -c Debug
+        run: dotnet build -c Release
       - name: dotnet run
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -27,47 +25,62 @@ jobs:
           cd src/WatchDotNetGitHubRepos
           TARGET_REPOS=(
             dotnet/announcements
+            dotnet/aspnetcore
+            dotnet/Comet
+            dotnet/csharplang
+            dotnet/efcore
+            dotnet/installer
+            dotnet/maui
+            dotnet/roslyn
             dotnet/runtime
             dotnet/runtimelab
             dotnet/sdk
-            dotnet/csharplang
-            dotnet/roslyn
-            dotnet/aspnetcore
-            dotnet/diagnostics
-            dotnet/maui
-            dotnet/efcore
-            dotnet/installer
-            dotnet/Comet
           )
-          dotnet run -c Debug --no-build -- issues-and-pull-requests --output-dir ../../public/IssuesAndPRs ${TARGET_REPOS[*]}
+          dotnet run -c Release --no-build -- issues-and-pull-requests --output-dir ../../public/IssuesAndPRs ${TARGET_REPOS[*]}
 
           RELEASE_WATCH_REPOS=(
             ${TARGET_REPOS[*]}
+            App-vNext/Polly
             autofac/Autofac
+            AutoMapper/AutoMapper
+            AvaloniaUI/Avalonia
+            aws/aws-sdk-net
+            Azure/azure-cosmos-dotnet-v3
+            Azure/azure-sdk-for-net
+            DataDog/dd-trace-dotnet
             domaindrivendev/Swashbuckle.AspNetCore
+            dotnet/aspire
             dotnet/command-line-api
-            fluentassertions/fluentassertions
+            dotnet/diagnostics
+            dotnet/dotnet-monitor
+            dotnet/machinelearning
+            dotnet/orleans
+            dotnet/SqlClient
+            dotnet/wcf
+            dotnet/yarp
+            FluentValidation/FluentValidation
+            googleapis/google-cloud-dotnet
             grpc/grpc
             grpc/grpc-dotnet
             icsharpcode/ILSpy
+            JamesNK/Newtonsoft.Json
             jbogard/MediatR
+            JoshClose/CsvHelper
+            MessagePack-CSharp/MessagePack-CSharp
             microsoft/CsWin32
             microsoft/microsoft-ui-xaml
             microsoft/WindowsAppSDK
             mysql-net/MySqlConnector
-            neuecc/MessagePack-CSharp
+            newrelic/newrelic-dotnet-agent
             npgsql/npgsql
-            unoplatform/uno
-            App-vNext/Polly
-            AutoMapper/AutoMapper
-            AvaloniaUI/Avalonia
-            FluentValidation/FluentValidation
-            JamesNK/Newtonsoft.Json
-            JoshClose/CsvHelper
+            open-telemetry/opentelemetry-dotnet
+            open-telemetry/opentelemetry-dotnet-contrib
+            spectreconsole/spectre.console
             StackExchange/StackExchange.Redis
             Tyrrrz/CliFx
+            unoplatform/uno
           )
-          dotnet run -c Debug --no-build -- releases --output-dir ../../public/Releases ${RELEASE_WATCH_REPOS[*]}
+          dotnet run -c Release --no-build -- releases --output-dir ../../public/Releases ${RELEASE_WATCH_REPOS[*]}
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
