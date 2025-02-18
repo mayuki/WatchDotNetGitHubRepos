@@ -1,6 +1,80 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-02-17T02:23:13Z</updated>
+  <updated>2025-02-18T00:07:06Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
+  <entry>
+    <title>aws/aws-sdk-net - Releases - 2025-02-17</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-02-17</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2025-02-18T00:07:06Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.984.0"&gt;3.7.984.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;3.7.984.0 (2025-02-17 19:18 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Amplify (3.7.404.0)
+&lt;ul&gt;
+&lt;li&gt;Add ComputeRoleArn to CreateApp, UpdateApp, CreateBranch, and UpdateBranch, allowing caller to specify a role to be assumed by Amplify Hosting for server-side rendered applications.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DatabaseMigrationService (3.7.407.0)
+&lt;ul&gt;
+&lt;li&gt;Support replicationConfigArn in DMS DescribeApplicableIndividualAssessments API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;TimestreamInfluxDB (3.7.406.0)
+&lt;ul&gt;
+&lt;li&gt;This release introduces APIs to manage DbClusters and adds support for read replicas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.402.2
+&lt;ul&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.0.0-preview.7"&gt;4.0.0.0-preview.7&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.0.0-preview.7 (2025-02-17 16:10 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;EC2 (4.0.0.0)
+&lt;ul&gt;
+&lt;li&gt;[Breaking Change] Removed EC2: DiskImageImporter, ImportCleanup, EC2Metadata, and S3UploadPolicy classes which are obsolete.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3 (4.0.0.0)
+&lt;ul&gt;
+&lt;li&gt;Removed GlobalSuppressions for removed EC2 classes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.0.0
+&lt;ul&gt;
+&lt;li&gt;[Breaking Change] Removal of AWSConfigsS3.UseSignatureVersion4 and AWSConfigsS3.UseSigV4SetExplicitly to always use SigV4.&lt;/li&gt;
+&lt;li&gt;[Breaking Change] Removal of ClientConfig.SignatureVersion only used by S3 for backward compatibility.&lt;/li&gt;
+&lt;li&gt;[Breaking Change] Removal of Endpoint.SignatureVersionOverride from the obsolete Endpoint class used to handle overriding signature versions for S3.&lt;/li&gt;
+&lt;li&gt;[Breaking Change] Removal of the obsolete EventBridgeSigner class.&lt;/li&gt;
+&lt;li&gt;[Breaking Change] Updated AmazonS3Util.PostUpload and S3PostUploadSignedPolicy.GetSignedPolicy to use SigV4. S3PostUploadSignedPolicy.GetSignedPolicyV4 removed and overwrote to S3PostUploadSignedPolicy.GetSignedPolicy.&lt;/li&gt;
+&lt;li&gt;Fixed issue where &lt;code&gt;System.Text.Json&lt;/code&gt; dependencies were not being copied to the AWS SDK for .NET ZIP artifacts&lt;/li&gt;
+&lt;li&gt;Refactor &lt;code&gt;Core&lt;/code&gt; to remove &lt;code&gt;LitJson&lt;/code&gt; references and use &lt;code&gt;System.Text.Json&lt;/code&gt; instead&lt;/li&gt;
+&lt;li&gt;Refactor tests and services to use &lt;code&gt;System.Text.Json&lt;/code&gt; instead of &lt;code&gt;LitJson&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Updated S3 GetPreSignedURL to always use SigV4 unless the expiration date is greater than seven days and it is a region which supports SigV2.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
