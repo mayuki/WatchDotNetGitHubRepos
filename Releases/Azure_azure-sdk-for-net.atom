@@ -1,6 +1,110 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-02-21T00:06:49Z</updated>
+  <updated>2025-02-22T00:06:21Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-02-21</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-02-21</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2025-02-22T00:06:21Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Messaging.EventGrid.SystemEvents_1.0.0-beta.2"&gt;Azure.Messaging.EventGrid.SystemEvents_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.2 (2025-02-21)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
+&lt;li&gt;Added various new system events and properties for existing events.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;MQTT event naming was fixed to use correct casing.&lt;/li&gt;
+&lt;li&gt;Media services events were removed as the service has been deprecated.&lt;/li&gt;
+&lt;li&gt;Various properties were changed to be nullable.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetApp_1.9.0"&gt;Azure.ResourceManager.NetApp_1.9.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.9.0 (2025-02-21)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version tag from 'package-2024-07' to 'package-2024-09-01'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/81330ee21a8300ad377eacbaaf16efabb91d56c0/specification/netapp/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/81330ee21a8300ad377eacbaaf16efabb91d56c0/specification/netapp/resource-manager/readme.md&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;CoolAccessTiering&lt;/code&gt; to &lt;code&gt;NetAppVolumePatch&lt;/code&gt;, &lt;code&gt;NetAppVolumeData&lt;/code&gt;, &lt;code&gt;NetAppVolumeGroupVolume&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;TransitionToCmk&lt;/code&gt; &lt;code&gt;ChangeKeyVault&lt;/code&gt; and &lt;code&gt;GetKeyVaultStatus&lt;/code&gt; to &lt;code&gt;NetAppAccountResource&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Analytics.Synapse.Artifacts_1.0.0-preview.21"&gt;Azure.Analytics.Synapse.Artifacts_1.0.0-preview.21&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-preview.21 (2025-03-07)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Model Dataset has a new parameter schema&lt;/li&gt;
+&lt;li&gt;Model LinkedService parameter AzureFileStorageLinkedService support MI auth&lt;/li&gt;
+&lt;li&gt;Model LinkedService parameter AzureTableStorageLinkedService support MI auth&lt;/li&gt;
+&lt;li&gt;Model LinkedService parameter DynamicsCrmLinkedService has a new properties credential&lt;/li&gt;
+&lt;li&gt;Model LinkedService parameter DynamicsLinkedService has a new properties domain&lt;/li&gt;
+&lt;li&gt;Model LinkedService parameter GreenplumLinkedService has some new connection properties&lt;/li&gt;
+&lt;li&gt;Model LinkedService parameter MySqlLinkedService has some new properties&lt;/li&gt;
+&lt;li&gt;Model LinkedService parameter OracleLinkedService update properties&lt;/li&gt;
+&lt;li&gt;Model LinkedService parameter RestService and SharePointOnlineList support ServicePrincipalCert auth&lt;/li&gt;
+&lt;li&gt;Model LinkedService parameter SAP ODP update properties sncMode&lt;/li&gt;
+&lt;li&gt;Model LinkedService parameter SnowflakeV2LinkedService has a new properties host&lt;/li&gt;
+&lt;li&gt;Model LinkedService parameter SqlServerLinkedService add authenticationType UserAssignedManagedIdentity&lt;/li&gt;
+&lt;li&gt;Model LinkedService parameter TeradataLinkedService has some new Teradata connection properties&lt;/li&gt;
+&lt;li&gt;Model LinkedService parameter VerticaLinkedService support Vertica V2&lt;/li&gt;
+&lt;li&gt;Model LinkedService has a new parameter version&lt;/li&gt;
+&lt;li&gt;Model Pipeline Add credential reference in notebook and spark job definition activity&lt;/li&gt;
+&lt;li&gt;Model Pipeline feature snowflake support multi-resultset&lt;/li&gt;
+&lt;li&gt;Model Pipeline feature snowflake support storage integration&lt;/li&gt;
+&lt;li&gt;Model Pipeline parameter ExecuteDataFlowActivity has a new properties continuationSettings&lt;/li&gt;
+&lt;li&gt;Model Pipeline parameter ExpressionV2 has a new properties page_size&lt;/li&gt;
+&lt;li&gt;Model Pipeline parameter SalesforceV2Source has a new properties page_size&lt;/li&gt;
+&lt;li&gt;Model Pipeline support Iceberg Format As Sink&lt;/li&gt;
+&lt;li&gt;Model Pipeline support TeradataSink&lt;/li&gt;
+&lt;li&gt;Model Dataset support Iceberg Format As Sink&lt;/li&gt;
+&lt;li&gt;Model runNotebook parameter runId update description&lt;/li&gt;
+&lt;li&gt;Model LinkedService support sslMode and useSystemTrustStore for MariaDB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Model LinkedService parameter PostgreSqlV2LinkedService has a new required properties authentication_type&lt;/li&gt;
+&lt;li&gt;Model LinkedService parameter SapOdpLinkedService update properties sncMode&lt;/li&gt;
+&lt;li&gt;Model LinkedService parameter AzureSqlDWLinkedService update required properties&lt;/li&gt;
+&lt;li&gt;Model LinkedService parameter SqlServerLinkedService update required properties&lt;/li&gt;
+&lt;li&gt;Model LinkedService parameter AmazonRdsForSqlServerLinkedService update required properties&lt;/li&gt;
+&lt;li&gt;Model LinkedService parameter AzureSqlDatabaseLinkedService update required properties&lt;/li&gt;
+&lt;li&gt;Model LinkedService parameter AzureSqlMILinkedService update required properties&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Compute_1.8.0"&gt;Azure.ResourceManager.Compute_1.8.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.8.0 (2025-02-05)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version tag from 'package-2024-11-03' to 'package-2024-11-04'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/bf420af156ea90b4226e96582bdb4c9647491ae6/specification/compute/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/bf420af156ea90b4226e96582bdb4c9647491ae6/specification/compute/resource-manager/readme.md&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Added a new property named &lt;code&gt;IsBootstrapCertificate&lt;/code&gt; to &lt;code&gt;CloudServiceRoleProfile&lt;/code&gt; class.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Change a few parameters in one of the overload of &lt;code&gt;ArmComputeModelFactory.VirtualMachineScaleSetData&lt;/code&gt; to required to reduce the possibility of ambiguous invocation.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
