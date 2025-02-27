@@ -1,85 +1,64 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-02-26T00:06:59Z</updated>
+  <updated>2025-02-27T00:06:54Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-02-25</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-02-25</id>
+    <title>aws/aws-sdk-net - Releases - 2025-02-26</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-02-26</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-02-26T00:06:59Z</updated>
+    <updated>2025-02-27T00:06:54Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.990.0"&gt;3.7.990.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.991.0"&gt;3.7.991.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.990.0 (2025-02-25 19:27 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.991.0 (2025-02-26 19:46 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;CodeBuild (3.7.412.0)
+&lt;li&gt;ApplicationSignals (3.7.404.0)
 &lt;ul&gt;
-&lt;li&gt;Adding "reportArns" field in output of BatchGetBuildBatches API. "reportArns" is an array that contains the ARNs of reports created by merging reports from builds associated with the batch build.&lt;/li&gt;
+&lt;li&gt;This release adds API support for reading Service Level Objectives and Services from monitoring accounts, from SLO and Service-scoped operations, including ListServices and ListServiceLevelObjectives.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DeviceFarm (3.7.402.0)
+&lt;li&gt;Batch (3.7.405.0)
 &lt;ul&gt;
-&lt;li&gt;Add an optional configuration to the ScheduleRun and CreateRemoteAccessSession API to set a device level http/s proxy.&lt;/li&gt;
+&lt;li&gt;AWS Batch: Resource Aware Scheduling feature support&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (3.7.431.0)
+&lt;li&gt;Chime (3.7.401.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for time-based EBS-backed AMI copy operations. Time-based copy ensures that EBS-backed AMIs are copied within and across Regions in a specified timeframe.&lt;/li&gt;
+&lt;li&gt;Removes the Amazon Chime SDK APIs from the "chime" namespace.  Amazon Chime SDK APIs continue to be available in the AWS SDK via the dedicated Amazon Chime SDK namespaces: chime-sdk-identity, chime-sdk-mediapipelines, chime-sdk-meetings, chime-sdk-messaging, and chime-sdk-voice.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IoT (3.7.407.0)
+&lt;li&gt;CloudFront (3.7.404.37)
 &lt;ul&gt;
-&lt;li&gt;AWS IoT - AWS IoT Device Defender adds support for a new Device Defender Audit Check that monitors device certificate age and custom threshold configurations for both the new device certificate age check and existing device certificate expiry check.&lt;/li&gt;
+&lt;li&gt;Documentation update for VPC origin config.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;TaxSettings (3.7.403.0)
+&lt;li&gt;EC2 (3.7.432.0)
 &lt;ul&gt;
-&lt;li&gt;PutTaxRegistration API changes for Egypt, Greece, Vietnam countries&lt;/li&gt;
+&lt;li&gt;Amazon EC2 Fleet customers can now override the Block Device Mapping specified in the Launch Template when creating a new Fleet request, saving the effort of creating and associating new Launch Templates to customize the Block Device Mapping.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 3.7.402.7
+&lt;li&gt;IoTFleetWise (3.7.404.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds an optional listResponseScope request parameter in certain list API requests to limit the response to metadata only.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;OAM (3.7.401.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for sharing AWS::ApplicationSignals::Service and AWS::ApplicationSignals::ServiceLevelObjective resources.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SageMaker (3.7.426.0)
+&lt;ul&gt;
+&lt;li&gt;AWS SageMaker InferenceComponents now support rolling update deployments for Inference Components.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.402.8
 &lt;ul&gt;
 &lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.0.0-preview.8"&gt;4.0.0.0-preview.8&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;4.0.0.0-preview.8 (2025-02-25 13:38 UTC)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;DataExchange (4.0.0.0)
-&lt;ul&gt;
-&lt;li&gt;Updated &lt;code&gt;SendApiAsset&lt;/code&gt; operation to set correct &lt;code&gt;Content-Type&lt;/code&gt; header&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (4.0.0.0)
-&lt;ul&gt;
-&lt;li&gt;Improved error message in DataModel when in Native AOT mode and nested types have been trimmed.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;EC2 (4.0.0.0)
-&lt;ul&gt;
-&lt;li&gt;[Breaking Change] Obsoleted DryRun method from service client. To perform a dry run use the DryRun property on the request object for individual EC2 operations.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.0.0.0
-&lt;ul&gt;
-&lt;li&gt;[Breaking Change] Remove &lt;code&gt;LitJson&lt;/code&gt; source from SDK and clean up all references.&lt;/li&gt;
-&lt;li&gt;[Breaking Change] Remove support for deprecated IMDS v1.&lt;/li&gt;
-&lt;li&gt;[Breaking Change] Updated EventStreams Byte to SByte to be inline with the spec where Byte was intended to be signed.&lt;/li&gt;
-&lt;li&gt;Fixed &lt;code&gt;JsonRPCRequestMarshaller&lt;/code&gt; to properly handle enum payloads by setting content headers to plain text instead of JSON object&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Microsoft.Extensions.AI&lt;/code&gt; to &lt;code&gt;9.3.0-preview.1.25114.11&lt;/code&gt; in the &lt;code&gt;AWSSDK.Extensions.Bedrock.MEAI&lt;/code&gt; package&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;restJson1&lt;/code&gt; protocol services to use &lt;code&gt;text/plain&lt;/code&gt; as &lt;code&gt;Content-Type&lt;/code&gt; (instead of &lt;code&gt;application/json&lt;/code&gt;) for string payloads&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;XmlDictionary&lt;/code&gt; and &lt;code&gt;KeyValueUnmarshallers&lt;/code&gt; to be able to handle any key and value XML element names&lt;/li&gt;
 &lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
