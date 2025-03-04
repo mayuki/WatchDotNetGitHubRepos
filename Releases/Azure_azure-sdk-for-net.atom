@@ -1,6 +1,64 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-03-03T00:07:15Z</updated>
+  <updated>2025-03-04T00:07:06Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-03-03</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-03-03</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2025-03-04T00:07:06Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Storage_1.4.0"&gt;Azure.ResourceManager.Storage_1.4.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.4.0 (2025-02-18)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version tag from 'package-2023-05' to 'package-2024-01'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/982bec06ab5076c1e91935640a09a15857761b66/specification/storage/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/982bec06ab5076c1e91935640a09a15857761b66/specification/storage/resource-manager/readme.md&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;Supported new Storage Account Sku: "StandardV2_LRS", "StandardV2_GRS", "StandardV2_ZRS", "StandardV2_GZRS", "PremiumV2_LRS", "PremiumV2_ZRS".&lt;/li&gt;
+&lt;li&gt;Supported Get File Service Usage on Files Provisioned v2 account type.&lt;/li&gt;
+&lt;li&gt;Supported new File Share properties on Files Provisioned v2 account type: editable properties: "provisionedIops", "provisionedBandwidthMibps"; readonly properties: "includedBurstIops", "maxBurstCreditsForIops","nextAllowedQuotaDowngradeTime", "nextAllowedProvisionedIopsDowngradeTime", "nextAllowedProvisionedBandwidthDowngradeTime".&lt;/li&gt;
+&lt;li&gt;Supported new File Share properties on Files Provisioned v1 SSD account type: "fileSharePaidBursting", which include child properties "paidBurstingMaxIops", "paidBurstingMaxIops", "paidBurstingMaxBandwidthMibps".&lt;/li&gt;
+&lt;li&gt;Supported new ObjectReplicationPolicy Properties: "metrics.enabled".&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DeviceRegistry_1.0.0"&gt;Azure.ResourceManager.DeviceRegistry_1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0 (2025-02-28)&lt;/h2&gt;
+&lt;p&gt;This release is the first stable release of the Device Registry Management client library.&lt;/p&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Aligned resource types to Microsoft.DeviceRegistry API version &lt;code&gt;2024-11-01&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Quota_1.1.0"&gt;Azure.ResourceManager.Quota_1.1.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.1.0 (2025-02-28)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version tag from 'package-2024-12-18-preview' to 'package-2025-03-01'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/8abab3c9c1ff7c4f9d393c2ddb00e5f735289b37/specification/quota/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/8abab3c9c1ff7c4f9d393c2ddb00e5f735289b37/specification/quota/resource-manager/readme.md&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue where the GroupQuotaLimits and SubscriptionQuotaAllocations operations were erroring out even though the action completed successfully.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
