@@ -1,93 +1,50 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-03-05T00:07:23Z</updated>
+  <updated>2025-03-06T00:07:15Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-03-04</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-03-04</id>
+    <title>aws/aws-sdk-net - Releases - 2025-03-05</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-03-05</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-03-05T00:07:23Z</updated>
+    <updated>2025-03-06T00:07:15Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.995.0"&gt;3.7.995.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.996.0"&gt;3.7.996.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.995.0 (2025-03-04 21:22 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.996.0 (2025-03-05 19:30 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;CloudFront (3.7.404.41)
+&lt;li&gt;BedrockRuntime (3.7.414.0)
 &lt;ul&gt;
-&lt;li&gt;Mark AmazonCloudFrontUtil as obsolete and will be removed in the next major version.&lt;/li&gt;
+&lt;li&gt;This releases adds support for Custom Prompt Router ARN&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (3.7.405.33)
+&lt;li&gt;DataSync (3.7.404.0)
 &lt;ul&gt;
-&lt;li&gt;Fixed an issue for incorrect DateTime epoch serialization when date falls out of epoch supported range. (Thanks &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/sander1095/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/sander1095"&gt;@sander1095&lt;/a&gt; for initial contribution)&lt;/li&gt;
+&lt;li&gt;AWS DataSync now supports modifying ServerHostname while updating locations SMB, NFS, and ObjectStorage.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (3.7.433.1)
+&lt;li&gt;GameLiftStreams (3.7.400.0)
 &lt;ul&gt;
-&lt;li&gt;Mark ImageUtilities as obsolete and will be removed in the next major version.&lt;/li&gt;
-&lt;li&gt;Mark VPCUtilities as obsolete and will be removed in the next major version.&lt;/li&gt;
+&lt;li&gt;New Service: Amazon GameLift Streams delivers low-latency game streaming from AWS global infrastructure to virtually any device with a browser at up to 1080p resolution and 60 fps.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElastiCache (3.7.402.50)
+&lt;li&gt;IoTFleetWise (3.7.405.0)
 &lt;ul&gt;
-&lt;li&gt;Doc only update, listing 'valkey7' and 'valkey8' as engine options for parameter groups.&lt;/li&gt;
+&lt;li&gt;This release adds floating point support for CAN/OBD signals and adds support for signed OBD signals.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IoTManagedIntegrations (3.7.400.0)
+&lt;li&gt;WorkSpaces (3.7.409.0)
 &lt;ul&gt;
-&lt;li&gt;Adding managed integrations APIs for IoT Device Management to setup and control devices across different manufacturers and connectivity protocols. APIs include managedthing operations, credential and provisioning profile management, notification configuration, and OTA update.&lt;/li&gt;
+&lt;li&gt;Added DeviceTypeWorkSpacesThinClient type to allow users to access their WorkSpaces through a WorkSpaces Thin Client.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IoTSiteWise (3.7.404.0)
+&lt;li&gt;Core 3.7.402.13
 &lt;ul&gt;
-&lt;li&gt;AWS IoT SiteWise now supports MQTT-enabled, V3 gateways. Configure data destinations for real-time ingestion into AWS IoT SiteWise or buffered ingestion using Amazon S3 storage. You can also use path filters for precise data collection from specific MQTT topics.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;RDS (3.7.410.44)
-&lt;ul&gt;
-&lt;li&gt;Note support for Database Insights for Amazon RDS.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 3.7.402.12
-&lt;ul&gt;
-&lt;li&gt;Added method AWSSDKUtils.ConvertFromUnixLongEpochSeconds() for converting Unix epoch seconds to DateTime structure.&lt;/li&gt;
+&lt;li&gt;Update the SDK checksum component to better validate whether the AWS Common Runtime dependency can be used.&lt;/li&gt;
 &lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.0.0-preview.9"&gt;4.0.0.0-preview.9&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;4.0.0.0-preview.9 (2025-03-04 14:29 UTC)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;DynamoDBv2 (4.0.0.0)
-&lt;ul&gt;
-&lt;li&gt;Implement DynamoDBDerivedTypeAttribute to enable polymorphism support for nested items on save and load data.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3 (4.0.0.0)
-&lt;ul&gt;
-&lt;li&gt;Manual sweep of S3 for protocol test compliance.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.0.0.0
-&lt;ul&gt;
-&lt;li&gt;[Breaking Change] Rework how SDK logs can be outputted. The AWSSDK.Extensions.Logging.ILoggerAdaptor and AWSSDK.Extensions.Logging.Log4NetAdaptor adaptor packages were added to support outputting the SDK logs to Microsoft.Extensions.Logging or log4net.&lt;/li&gt;
-&lt;li&gt;Do not send null values, but do send empty strings and empty lists over the wire in headers for restxml and restjson protocols&lt;/li&gt;
-&lt;li&gt;Improved error message when searching for AWS credentials and no credentials were found.&lt;/li&gt;
-&lt;li&gt;The &lt;code&gt;CredentialsRetriever&lt;/code&gt; pipeline handler has been removed and each signer now retrieves credentials from the &lt;code&gt;Identity&lt;/code&gt; property directly instead.&lt;/li&gt;
-&lt;li&gt;The &lt;code&gt;FallbackCredentialsFactory&lt;/code&gt; has been marked as deprecated, and the &lt;code&gt;DefaultAWSCredentialsIdentityResolver&lt;/code&gt; class should be used instead. This new class follows the credential resolution order as the other AWS SDKs and will re-evaluate credentials when environment variables (such as &lt;code&gt;AWS_PROFILE&lt;/code&gt;) change - which can happen in interactive PowerShell sessions.&lt;/li&gt;
-&lt;li&gt;The &lt;code&gt;ImmutableCredentials&lt;/code&gt; property of the &lt;code&gt;RequestContext&lt;/code&gt; has been removed - as it's only applicable to AWS credentials. A new property named &lt;code&gt;Identity&lt;/code&gt; is available instead (it'll be used for anonymous and token credentials as well).&lt;/li&gt;
-&lt;li&gt;The AWS SDK for .NET has been updated to resolve credentials at request time, instead of resolving them when a client is instantiated (note: credentials are still cached between executions, the SDK won't attempt to retrieve them again - e.g. by calling &lt;code&gt;AssumeRole&lt;/code&gt; - if they're valid from a previous call).&lt;/li&gt;
-&lt;li&gt;The signature for the signer classes (such as &lt;code&gt;AWS4Signer&lt;/code&gt;) has been changed as they now implement a new interface.&lt;/li&gt;
 &lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;

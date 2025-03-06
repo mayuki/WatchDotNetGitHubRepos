@@ -1,60 +1,49 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2025-03-05T00:08:36Z</updated>
+  <updated>2025-03-06T00:08:29Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-03-04</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-03-04</id>
+    <title>aws/aws-sdk-net - Releases - 2025-03-05</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-03-05</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-03-05T00:07:23Z</updated>
+    <updated>2025-03-06T00:07:15Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.995.0"&gt;3.7.995.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.996.0"&gt;3.7.996.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.995.0 (2025-03-04 21:22 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.996.0 (2025-03-05 19:30 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;CloudFront (3.7.404.41)
+&lt;li&gt;BedrockRuntime (3.7.414.0)
 &lt;ul&gt;
-&lt;li&gt;Mark AmazonCloudFrontUtil as obsolete and will be removed in the next major version.&lt;/li&gt;
+&lt;li&gt;This releases adds support for Custom Prompt Router ARN&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (3.7.405.33)
+&lt;li&gt;DataSync (3.7.404.0)
 &lt;ul&gt;
-&lt;li&gt;Fixed an issue for incorrect DateTime epoch serialization when date falls out of epoch supported range. (Thanks &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/sander1095/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/sander1095"&gt;@sander1095&lt;/a&gt; for initial contribution)&lt;/li&gt;
+&lt;li&gt;AWS DataSync now supports modifying ServerHostname while updating locations SMB, NFS, and ObjectStorage.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (3.7.433.1)
+&lt;li&gt;GameLiftStreams (3.7.400.0)
 &lt;ul&gt;
-&lt;li&gt;Mark ImageUtilities as obsolete and will be removed in the next major version.&lt;/li&gt;
-&lt;li&gt;Mark VPCUtilities as obsolete and will be removed in the next major version.&lt;/li&gt;
+&lt;li&gt;New Service: Amazon GameLift Streams delivers low-latency game streaming from AWS global infrastructure to virtually any device with a browser at up to 1080p resolution and 60 fps.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElastiCache (3.7.402.50)
+&lt;li&gt;IoTFleetWise (3.7.405.0)
 &lt;ul&gt;
-&lt;li&gt;Doc only update, listing 'valkey7' and 'valkey8' as engine options for parameter groups.&lt;/li&gt;
+&lt;li&gt;This release adds floating point support for CAN/OBD signals and adds support for signed OBD signals.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IoTManagedIntegrations (3.7.400.0)
+&lt;li&gt;WorkSpaces (3.7.409.0)
 &lt;ul&gt;
-&lt;li&gt;Adding managed integrations APIs for IoT Device Management to setup and control devices across different manufacturers and connectivity protocols. APIs include managedthing operations, credential and provisioning profile management, notification configuration, and OTA update.&lt;/li&gt;
+&lt;li&gt;Added DeviceTypeWorkSpacesThinClient type to allow users to access their WorkSpaces through a WorkSpaces Thin Client.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IoTSiteWise (3.7.404.0)
+&lt;li&gt;Core 3.7.402.13
 &lt;ul&gt;
-&lt;li&gt;AWS IoT SiteWise now supports MQTT-enabled, V3 gateways. Configure data destinations for real-time ingestion into AWS IoT SiteWise or buffered ingestion using Amazon S3 storage. You can also use path filters for precise data collection from specific MQTT topics.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;RDS (3.7.410.44)
-&lt;ul&gt;
-&lt;li&gt;Note support for Database Insights for Amazon RDS.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 3.7.402.12
-&lt;ul&gt;
-&lt;li&gt;Added method AWSSDKUtils.ConvertFromUnixLongEpochSeconds() for converting Unix epoch seconds to DateTime structure.&lt;/li&gt;
+&lt;li&gt;Update the SDK checksum component to better validate whether the AWS Common Runtime dependency can be used.&lt;/li&gt;
 &lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
 &lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
@@ -63,81 +52,36 @@
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.0.0-preview.9"&gt;4.0.0.0-preview.9&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;4.0.0.0-preview.9 (2025-03-04 14:29 UTC)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;DynamoDBv2 (4.0.0.0)
-&lt;ul&gt;
-&lt;li&gt;Implement DynamoDBDerivedTypeAttribute to enable polymorphism support for nested items on save and load data.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3 (4.0.0.0)
-&lt;ul&gt;
-&lt;li&gt;Manual sweep of S3 for protocol test compliance.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.0.0.0
-&lt;ul&gt;
-&lt;li&gt;[Breaking Change] Rework how SDK logs can be outputted. The AWSSDK.Extensions.Logging.ILoggerAdaptor and AWSSDK.Extensions.Logging.Log4NetAdaptor adaptor packages were added to support outputting the SDK logs to Microsoft.Extensions.Logging or log4net.&lt;/li&gt;
-&lt;li&gt;Do not send null values, but do send empty strings and empty lists over the wire in headers for restxml and restjson protocols&lt;/li&gt;
-&lt;li&gt;Improved error message when searching for AWS credentials and no credentials were found.&lt;/li&gt;
-&lt;li&gt;The &lt;code&gt;CredentialsRetriever&lt;/code&gt; pipeline handler has been removed and each signer now retrieves credentials from the &lt;code&gt;Identity&lt;/code&gt; property directly instead.&lt;/li&gt;
-&lt;li&gt;The &lt;code&gt;FallbackCredentialsFactory&lt;/code&gt; has been marked as deprecated, and the &lt;code&gt;DefaultAWSCredentialsIdentityResolver&lt;/code&gt; class should be used instead. This new class follows the credential resolution order as the other AWS SDKs and will re-evaluate credentials when environment variables (such as &lt;code&gt;AWS_PROFILE&lt;/code&gt;) change - which can happen in interactive PowerShell sessions.&lt;/li&gt;
-&lt;li&gt;The &lt;code&gt;ImmutableCredentials&lt;/code&gt; property of the &lt;code&gt;RequestContext&lt;/code&gt; has been removed - as it's only applicable to AWS credentials. A new property named &lt;code&gt;Identity&lt;/code&gt; is available instead (it'll be used for anonymous and token credentials as well).&lt;/li&gt;
-&lt;li&gt;The AWS SDK for .NET has been updated to resolve credentials at request time, instead of resolving them when a client is instantiated (note: credentials are still cached between executions, the SDK won't attempt to retrieve them again - e.g. by calling &lt;code&gt;AssumeRole&lt;/code&gt; - if they're valid from a previous call).&lt;/li&gt;
-&lt;li&gt;The signature for the signer classes (such as &lt;code&gt;AWS4Signer&lt;/code&gt;) has been changed as they now implement a new interface.&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
                 &lt;/div&gt;
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-03-04</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-03-04</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-03-05</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-03-05</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-03-05T00:07:26Z</updated>
+    <updated>2025-03-06T00:07:18Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ServiceNetworking_1.1.0"&gt;Azure.ResourceManager.ServiceNetworking_1.1.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.4620850"&gt;Azure.Template_1.0.3-beta.4620850&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.1.0 (2025-03-04)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.3-beta.4620850 (2025-03-05)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Release DPG library&lt;/li&gt;
+&lt;li&gt;Add Grow-up story&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerService_1.2.3"&gt;Azure.ResourceManager.ContainerService_1.2.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.3 (2025-03-05)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Stable release for api-version &lt;code&gt;2025-01-01&lt;/code&gt;. Detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/tree/aaa30aa706969369385454abb690e425d2e5addb/specification/servicenetworking/ServiceNetworking.Management"&gt;https://github.com/Azure/azure-rest-api-specs/tree/aaa30aa706969369385454abb690e425d2e5addb/specification/servicenetworking/ServiceNetworking.Management&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded Azure.Core from 1.36.0 to 1.45.0&lt;/li&gt;
-&lt;li&gt;Upgraded Azure.ResourceManager from 1.9.0 to 1.13.0&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.SignalRService_2.0.0"&gt;Microsoft.Azure.WebJobs.Extensions.SignalRService_2.0.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;2.0.0 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Modify &lt;code&gt;AddDefaultAuth&lt;/code&gt; method in &lt;code&gt;SignalRFunctionsHostBuilderExtensions.cs&lt;/code&gt; to use &lt;code&gt;IServiceCollection&lt;/code&gt; instead of &lt;code&gt;IFunctionsHostBuilder&lt;/code&gt; to remove the dependency for legacy package &lt;code&gt;Microsoft.Azure.Functions.Extensions&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Correctly support returning result for SignalR invocation in MessagePack protocol from isolated-worker process.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update &lt;code&gt;MessagePack&lt;/code&gt; to 2.5.192&lt;/li&gt;
-&lt;li&gt;Update &lt;code&gt;Microsoft.Azure.SignalR&lt;/code&gt;, &lt;code&gt;Microsoft.Azure.SignalR.Management&lt;/code&gt;, &lt;code&gt;Microsoft.Azure.SignalR.Protocols&lt;/code&gt; to 1.29.0&lt;/li&gt;
+&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -146,32 +90,21 @@
             </content>
   </entry>
   <entry>
-    <title>googleapis/google-cloud-dotnet - Releases - 2025-03-04</title>
-    <id>https://github.com/googleapis/google-cloud-dotnet#2025-03-04</id>
-    <link href="https://github.com/googleapis/google-cloud-dotnet" />
-    <updated>2025-03-05T00:08:04Z</updated>
+    <title>newrelic/newrelic-dotnet-agent - Releases - 2025-03-05</title>
+    <id>https://github.com/newrelic/newrelic-dotnet-agent#2025-03-05</id>
+    <link href="https://github.com/newrelic/newrelic-dotnet-agent" />
+    <updated>2025-03-06T00:08:17Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.AIPlatform.V1-3.21.0"&gt;Google.Cloud.AIPlatform.V1 version 3.21.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/releases/tag/v10.38.0"&gt;v10.38.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;Changes in this release:&lt;/p&gt;
-&lt;p&gt;Note: the bug fix here is clearly a breaking change due to an API publication error. We believe it is less disruptive to publish this in a minor version (one day after the now-removed API surface was published) than to take a new major version. Apologies if you are disrupted by this.&lt;/p&gt;
-&lt;h3&gt;Bug fixes&lt;/h3&gt;
+                                &lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/compare/v10.37.0...v10.38.0"&gt;10.38.0&lt;/a&gt; (2025-03-04)&lt;/h2&gt;
+&lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;BREAKING CHANGE&lt;/strong&gt; Remove VertexAISearch.engine option (&lt;a href="https://github.com/googleapis/google-cloud-dotnet/commit/966aaea6a4398972d2ae0ad3df399044c584ac7d"&gt;commit 966aaea&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.AIPlatform.V1Beta1-1.0.0-beta20"&gt;Google.Cloud.AIPlatform.V1Beta1 version 1.0.0-beta20&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;Changes in this release:&lt;/p&gt;
-&lt;h3&gt;Bug fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;BREAKING CHANGE&lt;/strong&gt; Remove VertexAISearch.engine option (&lt;a href="https://github.com/googleapis/google-cloud-dotnet/commit/18d4598f4fb71440f1c2b82505a0a79a7bbe3d46"&gt;commit 18d4598&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add support for PackageReference with NewRelic.Azure.WebSites packages. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3001" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3001/hovercard"&gt;#3001&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/8fb397fe4d7b8c11f5939182119ce00097ae0640"&gt;8fb397f&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Azure Function instrumentation is enabled by default (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3007" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3007/hovercard"&gt;#3007&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/8eba1bf0da15d8efdb606bd49ffdb881c8c0549f"&gt;8eba1bf&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -180,84 +113,432 @@
             </content>
   </entry>
   <entry>
-    <title>open-telemetry/opentelemetry-dotnet - Releases - 2025-03-04</title>
-    <id>https://github.com/open-telemetry/opentelemetry-dotnet#2025-03-04</id>
+    <title>open-telemetry/opentelemetry-dotnet - Releases - 2025-03-05</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet#2025-03-05</id>
     <link href="https://github.com/open-telemetry/opentelemetry-dotnet" />
-    <updated>2025-03-05T00:08:29Z</updated>
+    <updated>2025-03-06T00:08:20Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.11.2"&gt;core-1.11.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/coreunstable-1.11.2-beta.1"&gt;coreunstable-1.11.2-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;For highlights and announcements pertaining to this release see: &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/RELEASENOTES.md#1112"&gt;Release Notes &amp;gt; 1.11.2&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The following changes are from the previous release &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.11.1"&gt;1.11.1&lt;/a&gt;.&lt;/p&gt;
+                                &lt;p&gt;The following changes are from the previous release &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/coreunstable-1.11.0-beta.1"&gt;1.11.0-beta.1&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry/1.11.2" rel="nofollow"&gt;OpenTelemetry v1.11.2&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No notable changes.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.11.2/src/OpenTelemetry/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Api/1.11.2" rel="nofollow"&gt;OpenTelemetry.Api v1.11.2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Prometheus.AspNetCore/1.11.2-beta.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Prometheus.AspNetCore v1.11.2-beta.1&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Revert optimize performance of &lt;code&gt;TraceContextPropagator.Extract&lt;/code&gt; introduced&lt;br&gt;
-in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2409085131" data-permission-text="Title is private" data-url="https://github.com/open-telemetry/opentelemetry-dotnet/issues/5749" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/5749/hovercard" href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/5749"&gt;#5749&lt;/a&gt; to resolve &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2885873850" data-permission-text="Title is private" data-url="https://github.com/open-telemetry/opentelemetry-dotnet/issues/6158" data-hovercard-type="issue" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/issues/6158/hovercard" href="https://github.com/open-telemetry/opentelemetry-dotnet/issues/6158"&gt;#6158&lt;/a&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6161" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6161/hovercard"&gt;#6161&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6169" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6169/hovercard"&gt;#6169&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.11.2/src/OpenTelemetry.Api/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/coreunstable-1.11.2-beta.1/src/OpenTelemetry.Exporter.Prometheus.AspNetCore/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Api.ProviderBuilderExtensions/1.11.2" rel="nofollow"&gt;OpenTelemetry.Api.ProviderBuilderExtensions v1.11.2&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No notable changes.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.11.2/src/OpenTelemetry.Api.ProviderBuilderExtensions/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Console/1.11.2" rel="nofollow"&gt;OpenTelemetry.Exporter.Console v1.11.2&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No notable changes.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.11.2/src/OpenTelemetry.Exporter.Console/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.InMemory/1.11.2" rel="nofollow"&gt;OpenTelemetry.Exporter.InMemory v1.11.2&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No notable changes.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.11.2/src/OpenTelemetry.Exporter.InMemory/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.OpenTelemetryProtocol/1.11.2" rel="nofollow"&gt;OpenTelemetry.Exporter.OpenTelemetryProtocol v1.11.2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Prometheus.HttpListener/1.11.2-beta.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Prometheus.HttpListener v1.11.2-beta.1&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed a bug in .NET Framework gRPC export client where the default success&lt;br&gt;
-export response was incorrectly marked as false, now changed to true, ensuring&lt;br&gt;
-exports are correctly marked as successful.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6099" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6099/hovercard"&gt;#6099&lt;/a&gt;)&lt;/p&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6169" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6169/hovercard"&gt;#6169&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/coreunstable-1.11.2-beta.1/src/OpenTelemetry.Exporter.Prometheus.HttpListener/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Fixed an issues causing trace exports to fail when&lt;br&gt;
-&lt;code&gt;Activity.StatusDescription&lt;/code&gt; exceeds 127 bytes.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6119" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6119/hovercard"&gt;#6119&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed incorrect log serialization of attributes with null values, causing&lt;br&gt;
-some backends to reject logs.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6149" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6149/hovercard"&gt;#6149&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Shims.OpenTracing/1.11.2-beta.1" rel="nofollow"&gt;OpenTelemetry.Shims.OpenTracing v1.11.2-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6169" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6169/hovercard"&gt;#6169&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/coreunstable-1.11.2-beta.1/src/OpenTelemetry.Shims.OpenTracing/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.11.2/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2025-03-05</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2025-03-05</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2025-03-06T00:08:24Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.ProcessRuntime-1.11.0-beta.2"&gt;Resources.ProcessRuntime-1.11.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.ProcessRuntime/1.11.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Resources.ProcessRuntime v1.11.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.ProcessRuntime-1.11.0-beta.2/src/OpenTelemetry.Resources.ProcessRuntime/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.Process-1.11.0-beta.2"&gt;Resources.Process-1.11.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.Process/1.11.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Resources.Process v1.11.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.Process-1.11.0-beta.2/src/OpenTelemetry.Resources.Process/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.OperatingSystem-1.11.0-beta.2"&gt;Resources.OperatingSystem-1.11.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.OperatingSystem/1.11.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Resources.OperatingSystem v1.11.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.OperatingSystem-1.11.0-beta.2/src/OpenTelemetry.Resources.OperatingSystem/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.Host-1.11.0-beta.2"&gt;Resources.Host-1.11.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.Host/1.11.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Resources.Host v1.11.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.Host-1.11.0-beta.2/src/OpenTelemetry.Resources.Host/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.Container-1.11.0-beta.2"&gt;Resources.Container-1.11.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.Container/1.11.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Resources.Container v1.11.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.Container-1.11.0-beta.2/src/OpenTelemetry.Resources.Container/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.Azure-1.11.0-beta.2"&gt;Resources.Azure-1.11.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.Azure/1.11.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Resources.Azure v1.11.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.Azure-1.11.0-beta.2/src/OpenTelemetry.Resources.Azure/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Wcf-1.11.0-beta.2"&gt;Instrumentation.Wcf-1.11.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Wcf/1.11.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Wcf v1.11.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Wcf-1.11.0-beta.2/src/OpenTelemetry.Instrumentation.Wcf/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.StackExchangeRedis-1.11.0-beta.2"&gt;Instrumentation.StackExchangeRedis-1.11.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.StackExchangeRedis/1.11.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.StackExchangeRedis v1.11.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.StackExchangeRedis-1.11.0-beta.2/src/OpenTelemetry.Instrumentation.StackExchangeRedis/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.SqlClient-1.11.0-beta.2"&gt;Instrumentation.SqlClient-1.11.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.SqlClient/1.11.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.SqlClient v1.11.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.SqlClient-1.11.0-beta.2/src/OpenTelemetry.Instrumentation.SqlClient/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Runtime-1.11.1"&gt;Instrumentation.Runtime-1.11.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Runtime/1.11.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Runtime v1.11.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Runtime-1.11.1/src/OpenTelemetry.Instrumentation.Runtime/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Quartz-1.11.0-beta.2"&gt;Instrumentation.Quartz-1.11.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Quartz/1.11.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Quartz v1.11.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Quartz-1.11.0-beta.2/src/OpenTelemetry.Instrumentation.Quartz/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Process-1.11.0-beta.2"&gt;Instrumentation.Process-1.11.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Process/1.11.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Process v1.11.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Process-1.11.0-beta.2/src/OpenTelemetry.Instrumentation.Process/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Http-1.11.1"&gt;Instrumentation.Http-1.11.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Http/1.11.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Http v1.11.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Http-1.11.1/src/OpenTelemetry.Instrumentation.Http/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Owin-1.11.0-beta.1"&gt;Instrumentation.Owin-1.11.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Owin/1.11.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Owin v1.11.0-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Owin-1.11.0-beta.1/src/OpenTelemetry.Instrumentation.Owin/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.EntityFrameworkCore-1.11.0-beta.2"&gt;Instrumentation.EntityFrameworkCore-1.11.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.EntityFrameworkCore/1.11.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.EntityFrameworkCore v1.11.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed attribute &lt;code&gt;db.system&lt;/code&gt; for following providers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Devart.Data.SQLite.Entity.EFCore&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Devart.Data.MySql.Entity.EFCore&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Devart.Data.PostgreSql.Entity.EFCore&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2571" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2571/hovercard"&gt;#2571&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Zipkin/1.11.2" rel="nofollow"&gt;OpenTelemetry.Exporter.Zipkin v1.11.2&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No notable changes.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.11.2/src/OpenTelemetry.Exporter.Zipkin/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.EntityFrameworkCore-1.11.0-beta.2/src/OpenTelemetry.Instrumentation.EntityFrameworkCore/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Exporter.OneCollector-1.11.1"&gt;Exporter.OneCollector-1.11.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.OneCollector/1.11.1" rel="nofollow"&gt;OpenTelemetry.Exporter.OneCollector v1.11.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Exporter.OneCollector-1.11.1/src/OpenTelemetry.Exporter.OneCollector/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Exporter.Geneva-1.11.1"&gt;Exporter.Geneva-1.11.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Geneva/1.11.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Geneva v1.11.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Exporter.Geneva-1.11.1/src/OpenTelemetry.Exporter.Geneva/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.GrpcNetClient-1.11.0-beta.2"&gt;Instrumentation.GrpcNetClient-1.11.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.GrpcNetClient/1.11.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.GrpcNetClient v1.11.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.GrpcNetClient-1.11.0-beta.2/src/OpenTelemetry.Instrumentation.GrpcNetClient/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.AspNetCore-1.11.1"&gt;Instrumentation.AspNetCore-1.11.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.AspNetCore/1.11.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.AspNetCore v1.11.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Added support for listening to ASP.NET Core SignalR activities.&lt;br&gt;
+Configurable with the&lt;br&gt;
+&lt;code&gt;AspNetCoreTraceInstrumentationOptions.EnableAspNetCoreSignalRSupport&lt;/code&gt;&lt;br&gt;
+option which defaults to &lt;code&gt;true&lt;/code&gt;. Only applies to .NET 9.0 or greater.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2539" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2539/hovercard"&gt;#2539&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Hosting/1.11.2" rel="nofollow"&gt;OpenTelemetry.Extensions.Hosting v1.11.2&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No notable changes.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.11.2/src/OpenTelemetry.Extensions.Hosting/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AspNetCore-1.11.1/src/OpenTelemetry.Instrumentation.AspNetCore/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.AspNet-1.11.0-beta.2"&gt;Instrumentation.AspNet-1.11.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.AspNet/1.11.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.AspNet v1.11.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AspNet-1.11.0-beta.2/src/OpenTelemetry.Instrumentation.AspNet/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Propagators/1.11.2" rel="nofollow"&gt;OpenTelemetry.Extensions.Propagators v1.11.2&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No notable changes.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.11.2/src/OpenTelemetry.Extensions.Propagators/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.AspNet.TelemetryHttpModule/1.11.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.AspNet.TelemetryHttpModule v1.11.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AspNet-1.11.0-beta.2/src/OpenTelemetry.Instrumentation.AspNet.TelemetryHttpModule/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Extensions-1.11.0-beta.1"&gt;Extensions-1.11.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions/1.11.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Extensions v1.11.0-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Extensions-1.11.0-beta.1/src/OpenTelemetry.Extensions/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Extensions.Enrichment-0.1.0-alpha.2"&gt;Extensions.Enrichment-0.1.0-alpha.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Enrichment/0.1.0-alpha.2" rel="nofollow"&gt;OpenTelemetry.Extensions.Enrichment v0.1.0-alpha.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.11.2&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2582" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2582/hovercard"&gt;#2582&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Extensions.Enrichment-0.1.0-alpha.2/src/OpenTelemetry.Extensions.Enrichment/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
