@@ -1,6 +1,118 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-03-13T00:07:31Z</updated>
+  <updated>2025-03-15T00:07:22Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
+  <entry>
+    <title>aws/aws-sdk-net - Releases - 2025-03-14</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-03-14</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2025-03-15T00:07:22Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1002.0"&gt;3.7.1002.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;3.7.1002.0 (2025-03-14 18:14 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;CognitoIdentity (3.7.402.33)
+&lt;ul&gt;
+&lt;li&gt;Updated API model build artifacts for identity pools&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CognitoIdentityProvider (3.7.407.8)
+&lt;ul&gt;
+&lt;li&gt;Minor description updates to API parameters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Glue (3.7.414.0)
+&lt;ul&gt;
+&lt;li&gt;This release added AllowFullTableExternalDataAccess to glue catalog resource.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LakeFormation (3.7.403.0)
+&lt;ul&gt;
+&lt;li&gt;This release added "condition" to LakeFormation OptIn APIs, also added WithPrivilegedAccess flag to RegisterResource and DescribeResource.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.402.19
+&lt;ul&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1001.0"&gt;3.7.1001.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;3.7.1001.0 (2025-03-13 22:07 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ACMPCA (3.7.402.0)
+&lt;ul&gt;
+&lt;li&gt;Private Certificate Authority service now supports P521 and RSA3072 key algorithms.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Amplify (3.7.405.0)
+&lt;ul&gt;
+&lt;li&gt;Introduced support for Skew Protection. Added enableSkewProtection field to createBranch and updateBranch API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CloudWatchLogs (3.7.410.0)
+&lt;ul&gt;
+&lt;li&gt;Updated CreateLogAnomalyDetector to accept only kms key arn&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CodeBuild (3.7.413.0)
+&lt;ul&gt;
+&lt;li&gt;AWS CodeBuild now supports webhook filtering by organization name&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DataZone (3.7.409.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support to update projects and environments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DynamoDBv2 (3.7.406.0)
+&lt;ul&gt;
+&lt;li&gt;Generate account endpoints for DynamoDB requests using ARN-sourced account ID when available&lt;/li&gt;
+&lt;li&gt;Fixed an issue where for a Nullable DateTime property decorated with StoreAsEpochLong attribute, null value was incorrectly stored as -62135596800 in DynamoDB.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EC2 (3.7.436.0)
+&lt;ul&gt;
+&lt;li&gt;This release changes the CreateLaunchTemplate, CreateLaunchTemplateVersion, ModifyLaunchTemplate CLI and SDKs such that if you do not specify a client token, a randomly generated token is used for the request to ensure idempotency.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IVSRealTime (3.7.405.0)
+&lt;ul&gt;
+&lt;li&gt;IVS Real-Time now offers customers the ability to adjust the participant &amp;amp; composition recording segment duration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaPackageV2 (3.7.404.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds the ResetChannelState and ResetOriginEndpointState operation to reset MediaPackage V2 channel and origin endpoint. This release also adds a new field, UrlEncodeChildManifest, for HLS/LL-HLS to allow URL-encoding child manifest query string based on the requirements of AWS SigV4.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3Control (3.7.406.0)
+&lt;ul&gt;
+&lt;li&gt;Updating GetDataAccess response for S3 Access Grants to include the matched Grantee for the requested prefix&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.402.18
+&lt;ul&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
