@@ -1,6 +1,67 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>microsoft/WindowsAppSDK - Releases</title>
   <link href="https://github.com/microsoft/WindowsAppSDK" />
-  <updated>2025-03-19T00:08:45Z</updated>
+  <updated>2025-03-20T00:08:28Z</updated>
   <id>https://github.com/microsoft/WindowsAppSDK</id>
+  <entry>
+    <title>microsoft/WindowsAppSDK - Releases - 2025-03-19</title>
+    <id>https://github.com/microsoft/WindowsAppSDK#2025-03-19</id>
+    <link href="https://github.com/microsoft/WindowsAppSDK" />
+    <updated>2025-03-20T00:08:28Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.7.0"&gt;Windows App SDK 1.7.0 (1.7.250310001)&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Windows App SDK 1.7.0 (1.7.25031001)&lt;/h2&gt;
+&lt;p&gt;WinAppSDK 1.7.0 is the latest stable version of WinAppSDK providing new features and improvements to the platform.&lt;/p&gt;
+&lt;p&gt;Whats new in WinAppSDK 1.7.0:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New &lt;code&gt;Microsoft.UI.Windowing.AppWindow&lt;/code&gt; APIs make it easier to control your app windows to create a great experience. New capabilities include using:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;SetTaskBarIcon&lt;/code&gt; and &lt;code&gt;SetTitleBarIcon&lt;/code&gt; to independently set the taskbar and titlebar icons&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AppWindowTitleBar.PreferredTheme&lt;/code&gt; to set the light/dark theme of the titlebar&lt;/li&gt;
+&lt;li&gt;using new properties like &lt;code&gt;OverlappedPresenter.PreferredMinimumWidth&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OverlappedPresenter.PreferredMaximumHeight&lt;/code&gt; to set a minimum or maximum width or height for the window.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;New &lt;code&gt;Microsoft.Windows.Media.Capture.CameraCaptureUI&lt;/code&gt; API to WinAppSDK to provide a streamlined solution with feature parity, now supporting WindowID in the constructor for enhanced desktop compatibility.&lt;/li&gt;
+&lt;li&gt;New &lt;code&gt;OAuth2Manager&lt;/code&gt; API provides a streamlined solution for web authentication, offering OAuth 2.0 capabilities with full feature parity across all Windows platforms supported by Windows App SDK.&lt;/li&gt;
+&lt;li&gt;New  &lt;code&gt;BackgroundTaskBuilder&lt;/code&gt; API provides WinAppSDK dependent apps the ability to directly register the full trust COM components with background tasks, removing the need to implement a workaround.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TitleBar&lt;/code&gt; control makes it much easier to create a great, customizable titlebar for your app.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RichEditBox&lt;/code&gt; now supports MathML, via &lt;code&gt;RichEditTextDocument.SetMathMode&lt;/code&gt; and &lt;code&gt;RichEditTextDocument.SetMathML&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Windows App SDK's &lt;a href="/microsoft/WindowsAppSDK/blob/v1.7.0/windows/apps/desktop/modernize/framework-packages/use-the-dynamic-dependency-api"&gt;Dynamic Dependencies APIs&lt;/a&gt; delegate all calls to Windows 11's implementation when running on &amp;gt;= Windows 11 24H2 (10.0.26100.0) providing improved performance and robustness.&lt;/li&gt;
+&lt;li&gt;Updates in the Microsoft.UI.Content namespace introduce several significant enhancements and new features aimed at improving the functionality and interoperability of the ContentIsland APIs.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;DesktopPopupSiteBridge&lt;/code&gt;: Enables hosting a &lt;code&gt;ContentIsland&lt;/code&gt; in the environment of a Win32 window with WS_POPUP style.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ChildSiteLink&lt;/code&gt;: Allows a parent &lt;code&gt;ContentIsland&lt;/code&gt; to host a nested child &lt;code&gt;ContentIsland&lt;/code&gt;, providing a seamless partitioning of the rendering surface without user experience seams.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DesktopAttachedSiteBridge&lt;/code&gt;: Attaches to an existing Win32 window instead of creating a new one, designed to host a &lt;code&gt;ContentIsland&lt;/code&gt; with Windows.UI.Composition.Visuals at the root of the Win32 window hierarchy, ensuring full control over Win32-based input processing and accessibility.&lt;/li&gt;
+&lt;li&gt;Enhanced rendering and input synchronization&lt;/li&gt;
+&lt;li&gt;ContentIslands with Windows.UI.Composition.Visuals&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;New &lt;code&gt;RuntimeCompatibilityOptions&lt;/code&gt; support will allow more control over how servicing changes affect apps. For more info, see GitHub &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/4966" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/WindowsAppSDK/pull/4966/hovercard"&gt;#4966&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;A new &lt;code&gt;ReleaseInfo&lt;/code&gt; API provides easy access to the version of the Windows App SDK Runtime in use. For more info, see GitHub &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/2893" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/WindowsAppSDK/pull/2893/hovercard"&gt;#2893&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Note: Windows Copilot Runtime APIs are not included this release. To experiment with these APIs, please continue to use the 1.7-experimental3 release and share your feedback!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;To see everything that's new and changed, see the full &lt;a href="https://aka.ms/windowsappsdk/1.7/1.7.0/release-notes" rel="nofollow"&gt;Windows App SDK 1.7 release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.7.250310001" rel="nofollow"&gt;1.7.250310001 NuGet&lt;/a&gt; package to use WinAppSDK 1.7 in your app.&lt;/li&gt;
+&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Getting Started&lt;/h3&gt;
+&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools &lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

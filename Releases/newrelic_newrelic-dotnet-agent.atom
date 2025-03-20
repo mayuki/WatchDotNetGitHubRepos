@@ -1,6 +1,40 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>newrelic/newrelic-dotnet-agent - Releases</title>
   <link href="https://github.com/newrelic/newrelic-dotnet-agent" />
-  <updated>2025-03-19T00:08:48Z</updated>
+  <updated>2025-03-20T00:08:32Z</updated>
   <id>https://github.com/newrelic/newrelic-dotnet-agent</id>
+  <entry>
+    <title>newrelic/newrelic-dotnet-agent - Releases - 2025-03-19</title>
+    <id>https://github.com/newrelic/newrelic-dotnet-agent#2025-03-19</id>
+    <link href="https://github.com/newrelic/newrelic-dotnet-agent" />
+    <updated>2025-03-20T00:08:32Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/releases/tag/v10.39.0"&gt;v10.39.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/compare/v10.38.0...v10.39.0"&gt;10.39.0&lt;/a&gt; (2025-03-19)&lt;/h2&gt;
+&lt;h3&gt;Notice&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Automatic browser agent injection for ASP.NET Core v6+ web applications has been enabled by default. If you experience any issues with this feature, please see item 2 on &lt;a href="https://docs.newrelic.com/docs/apm/agents/net-agent/other-features/browser-monitoring-net-agent/#enable_netcore6plus" rel="nofollow"&gt;this page&lt;/a&gt; for a setting that can be set to &lt;code&gt;false&lt;/code&gt; to disable the feature and &lt;a href="https://docs.newrelic.com/docs/new-relic-solutions/solve-common-issues/find-help-use-support-portal/" rel="nofollow"&gt;contact us for support&lt;/a&gt;. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/051ceab6e2747209c965dc7d9156d9cf59dbf9e2"&gt;051ceab&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Enable ASP.NET Core browser auto-injection by default. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/051ceab6e2747209c965dc7d9156d9cf59dbf9e2"&gt;051ceab&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Instrument In-Process Azure Function invocations, with distributed tracing support for Http and Service Bus triggers. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3003" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3003/hovercard"&gt;#3003&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/47d22a11321f160084d230785b8d6475181e77c7"&gt;47d22a1&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Look for &lt;code&gt;ASPNETCORE_IIS_APP_POOL_ID&lt;/code&gt; if &lt;code&gt;APP_POOL_ID&lt;/code&gt; isn't found. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3036" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3036/hovercard"&gt;#3036&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/620064c3c3c59891f5daa3948663bf892bed8358"&gt;620064c&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Remove diagnostics tracing output from agent API calls (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3029" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3029/hovercard"&gt;#3029&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/be7b7f4b3b57a5d056313c940026c4681243b038"&gt;be7b7f4&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Remove unnecessary dependency on &lt;code&gt;System.Runtime.InteropServices.RuntimeInformation&lt;/code&gt; in .NET 4.6.2  builds. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3033" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3033/hovercard"&gt;#3033&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/ab81d1c5eaed14b3928bcaed0fe2c64b31795ad9"&gt;ab81d1c&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Set Profiler logger to initialized when configuration load fails. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3015" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3015/hovercard"&gt;#3015&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/7ab30d712ab59901d21c434019b8d28eb95f7280"&gt;7ab30d7&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

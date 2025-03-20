@@ -1,446 +1,71 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-03-19T00:07:56Z</updated>
+  <updated>2025-03-20T00:07:31Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-03-18</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-03-18</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-03-19</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-03-19</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-03-19T00:07:56Z</updated>
+    <updated>2025-03-20T00:07:31Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.StorageSync_1.2.1"&gt;Azure.ResourceManager.StorageSync_1.2.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.OpenAI_2.2.0-beta.4"&gt;Azure.AI.OpenAI_2.2.0-beta.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.1 (2025-03-11)&lt;/h2&gt;
+                                &lt;h2&gt;2.2.0-beta.4 (2025-03-18)&lt;/h2&gt;
+&lt;p&gt;This update brings compatibility with the &lt;code&gt;2025-03-01-preview&lt;/code&gt; service API version, including support for the new &lt;code&gt;/responses&lt;/code&gt; API via &lt;code&gt;OpenAIResponseClient&lt;/code&gt;.&lt;/p&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
+&lt;li&gt;To use the new &lt;code&gt;/responses&lt;/code&gt; endpoint, call &lt;code&gt;GetOpenAIResponseClient()&lt;/code&gt; on an &lt;code&gt;AzureOpenAIClient&lt;/code&gt; instance, following the same pattern as other operations. Using the overload without a deployment name will not be able to create new responses, only retrieve and list existing response data.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In addition to the new features transitive via the &lt;code&gt;OpenAI&lt;/code&gt; library:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Azure OpenAI file upload for batch (&lt;code&gt;FileUploadPurpose.Batch&lt;/code&gt;) now supports the specification of a custom expiration policy in supported regions. To use this capability, call one of the supplied extension method overloads of &lt;code&gt;UploadFile()&lt;/code&gt; that accepts an &lt;code&gt;AzureFileExpirationOptions&lt;/code&gt; parameter.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Transitive from the OpenAI package, several types in the &lt;code&gt;[Experimental]&lt;/code&gt; attributed &lt;code&gt;Assistants&lt;/code&gt;, &lt;code&gt;VectorStores&lt;/code&gt;, and &lt;code&gt;RealtimeConversation&lt;/code&gt; namespaces have removed use of the &lt;code&gt;required&lt;/code&gt; keyword, standardizing their constructor-based required input patterns with the rest of the library. To address these build breaks, use one of the new constructor signatures that accepts required parameters previously provided via property &lt;code&gt;init&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Media_1.3.1"&gt;Azure.ResourceManager.Media_1.3.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Inference_1.0.0-beta.4"&gt;Azure.AI.Inference_1.0.0-beta.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.3.1 (2025-03-11)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.4 (2025-03-18)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ManagementPartner_1.0.0-beta.5"&gt;Azure.ResourceManager.ManagementPartner_1.0.0-beta.5&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.5 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Marketplace_1.1.2"&gt;Azure.ResourceManager.Marketplace_1.1.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.2 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.MarketplaceOrdering_1.1.1"&gt;Azure.ResourceManager.MarketplaceOrdering_1.1.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.1 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.SqlVirtualMachine_1.1.1"&gt;Azure.ResourceManager.SqlVirtualMachine_1.1.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.1 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Synapse_1.2.1"&gt;Azure.ResourceManager.Synapse_1.2.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.1 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Workloads_1.1.1"&gt;Azure.ResourceManager.Workloads_1.1.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.1 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Subscription_1.1.1"&gt;Azure.ResourceManager.Subscription_1.1.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.1 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.SpringAppDiscovery_1.0.0-beta.2"&gt;Azure.ResourceManager.SpringAppDiscovery_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.2 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ServiceLinker_1.1.1"&gt;Azure.ResourceManager.ServiceLinker_1.1.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.1 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.StoragePool_1.1.1"&gt;Azure.ResourceManager.StoragePool_1.1.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.1 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.StreamAnalytics_1.2.1"&gt;Azure.ResourceManager.StreamAnalytics_1.2.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.1 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.WorkloadMonitor_1.0.0-beta.5"&gt;Azure.ResourceManager.WorkloadMonitor_1.0.0-beta.5&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.5 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.VoiceServices_1.0.2"&gt;Azure.ResourceManager.VoiceServices_1.0.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.2 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Reservations_1.4.1"&gt;Azure.ResourceManager.Reservations_1.4.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.4.1 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.SecurityDevOps_1.0.0-beta.5"&gt;Azure.ResourceManager.SecurityDevOps_1.0.0-beta.5&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.5 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.PrivateDns_1.2.1"&gt;Azure.ResourceManager.PrivateDns_1.2.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.1 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ProviderHub_1.1.1"&gt;Azure.ResourceManager.ProviderHub_1.1.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.1 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.PowerBIDedicated_1.0.0-beta.5"&gt;Azure.ResourceManager.PowerBIDedicated_1.0.0-beta.5&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.5 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.RecoveryServicesBackup_1.2.1"&gt;Azure.ResourceManager.RecoveryServicesBackup_1.2.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.1 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;p&gt;Fix an issue that the &lt;code&gt;IaasComputeVmProtectedItem&lt;/code&gt; can't handle empty &lt;code&gt;resourceId&lt;/code&gt;. Issue at &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2710283627" data-permission-text="Title is private" data-url="https://github.com/Azure/azure-sdk-for-net/issues/47381" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/47381/hovercard" href="https://github.com/Azure/azure-sdk-for-net/issues/47381"&gt;#47381&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.PolicyInsights_1.2.1"&gt;Azure.ResourceManager.PolicyInsights_1.2.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.1 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Peering_1.2.2"&gt;Azure.ResourceManager.Peering_1.2.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.2 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Relay_1.2.1"&gt;Azure.ResourceManager.Relay_1.2.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.1 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Orbital_1.1.1"&gt;Azure.ResourceManager.Orbital_1.1.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.1 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.PaloAltoNetworks.Ngfw_1.1.1"&gt;Azure.ResourceManager.PaloAltoNetworks.Ngfw_1.1.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.1 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ResourceHealth_1.1.0-beta.4"&gt;Azure.ResourceManager.ResourceHealth_1.1.0-beta.4&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.0-beta.4 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ResourceConnector_1.0.0-beta.3"&gt;Azure.ResourceManager.ResourceConnector_1.0.0-beta.3&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.3 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ResourceMover_1.1.2-beta.2"&gt;Azure.ResourceManager.ResourceMover_1.1.2-beta.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.2-beta.2 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
+&lt;li&gt;Added extension methods to get &lt;code&gt;ChatCompletionsClient&lt;/code&gt; and &lt;code&gt;EmbeddingsClient&lt;/code&gt; using &lt;a href="https://learn.microsoft.com/dotnet/api/azure.ai.projects.aiprojectclient?view=azure-dotnet-preview" rel="nofollow"&gt;AIProjectClient&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/30952" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/30952/hovercard"&gt;Issue#30952&lt;/a&gt; fixed, add operation: &lt;code&gt;MoveCollections_Delete&lt;/code&gt; back.&lt;/li&gt;
+&lt;li&gt;Fixed an issue with the audio samples not properly showcasing the intended workflow.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.RecoveryServicesDataReplication_1.0.0-beta.3"&gt;Azure.ResourceManager.RecoveryServicesDataReplication_1.0.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DatabaseWatcher_1.0.0-beta.1"&gt;Azure.ResourceManager.DatabaseWatcher_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.3 (2025-03-11)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2025-03-19)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.EnergyServices_1.0.0-beta.3"&gt;Azure.ResourceManager.EnergyServices_1.0.0-beta.3&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.3 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetworkAnalytics_1.0.1"&gt;Azure.ResourceManager.NetworkAnalytics_1.0.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.1 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetworkFunction_1.0.0-beta.5"&gt;Azure.ResourceManager.NetworkFunction_1.0.0-beta.5&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.5 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ManagedServices_1.1.1"&gt;Azure.ResourceManager.ManagedServices_1.1.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.1 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.MixedReality_1.1.1"&gt;Azure.ResourceManager.MixedReality_1.1.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.1 (2025-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization by using the System.ClientModel, refer this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Communication.Rooms_1.2.0"&gt;Azure.Communication.Rooms_1.2.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0 (2025-03-13)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;p&gt;General Availability version of participant Collaborator role.&lt;/p&gt;
+&lt;p&gt;This package follows the &lt;a href="https://azure.github.io/azure-sdk/general_introduction.html" rel="nofollow"&gt;new Azure SDK guidelines&lt;/a&gt;, and provides many core capabilities:&lt;/p&gt;
+&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
+- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
+- HTTP pipeline with custom policies.
+- Better error-handling.
+- Support uniform telemetry across all languages."&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
+- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
+- HTTP pipeline with custom policies.
+- Better error-handling.
+- Support uniform telemetry across all languages.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This package is a Public Preview version, so expect incompatible changes in subsequent releases as we improve the product. To provide feedback, submit an issue in our &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues"&gt;Azure SDK for .NET GitHub repo&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: For more information about unified authentication, please refer to &lt;a href="https://docs.microsoft.com//dotnet/api/overview/azure/identity-readme?view=azure-dotnet" rel="nofollow"&gt;Microsoft Azure Identity documentation for .NET&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
