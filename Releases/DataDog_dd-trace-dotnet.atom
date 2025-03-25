@@ -1,6 +1,92 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>DataDog/dd-trace-dotnet - Releases</title>
   <link href="https://github.com/DataDog/dd-trace-dotnet" />
-  <updated>2025-03-24T00:07:48Z</updated>
+  <updated>2025-03-25T00:07:47Z</updated>
   <id>https://github.com/DataDog/dd-trace-dotnet</id>
+  <entry>
+    <title>DataDog/dd-trace-dotnet - Releases - 2025-03-24</title>
+    <id>https://github.com/DataDog/dd-trace-dotnet#2025-03-24</id>
+    <link href="https://github.com/DataDog/dd-trace-dotnet" />
+    <updated>2025-03-25T00:07:47Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/releases/tag/v3.13.0"&gt;3.13.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Summary&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix RabbitMQ V7+ headers being overwritten (thanks &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/johang88/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/johang88"&gt;@johang88&lt;/a&gt;)!&lt;/li&gt;
+&lt;li&gt;Update the default value of &lt;code&gt;DD_TRACE_128_BIT_TRACEID_LOGGING_ENABLED&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fix &lt;code&gt;Microsoft.Extensions.Telemetry&lt;/code&gt; logging integration in &lt;code&gt;9.3.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;[Test Optimization] Flaky Test Management feature&lt;/li&gt;
+&lt;li&gt;Temporarily remove instrumentation for Protobuf Schema tagging&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changes&lt;/h2&gt;
+&lt;h3&gt;Tracer&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[Tracing] Update the default value of DD_TRACE_128_BIT_TRACEID_LOGGING_ENABLED to true  (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2903974928" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6751" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6751/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6751"&gt;#6751&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Tracer] Fix Rabbitmq7 header injection overwrites user supplied basic properties [from external PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2887130257" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6730" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6730/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6730"&gt;#6730&lt;/a&gt;] (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2907937950" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6753" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6753/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6753"&gt;#6753&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix Microsoft.Extensions.Telemetry logging integration in 9.3.0 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2924681007" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6773" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6773/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6773"&gt;#6773&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Refactor RabbitMQ test sample (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2932098478" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6778" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6778/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6778"&gt;#6778&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Clarify doc comment for DD_TRACE_128_BIT_TRACEID_LOGGING_ENABLED (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2935953010" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6791" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6791/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6791"&gt;#6791&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fix: container ID prefix in metadata and related tests (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2937998144" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6793" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6793/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6793"&gt;#6793&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;CI Visibility&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[Test Optimization] Flaky Test Management feature (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2894743779" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6740" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6740/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6740"&gt;#6740&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Test Optimization] Add missing &lt;code&gt;test_session&lt;/code&gt; metric (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2927800487" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6776" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6776/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6776"&gt;#6776&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;ASM&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[ASM] Fix IAST Grpc DotNet flaky test (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2924602054" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6772" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6772/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6772"&gt;#6772&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Continuous Profiler&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[Profiler] Change profiler to use the libdatadog dynamic library instead (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2669184987" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6301" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6301/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6301"&gt;#6301&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Debugger&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Skip the failing debugger tests (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2910177726" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6755" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6755/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6755"&gt;#6755&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Serverless&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add AWS Lamda testing for .NET 9 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2932244447" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6779" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6779/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6779"&gt;#6779&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[BUG]: RabbitMQ Basic Properties overwritten to default values (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2884170031" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6723" data-hovercard-type="issue" data-hovercard-url="/DataDog/dd-trace-dotnet/issues/6723/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/issues/6723"&gt;#6723&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix: Rabbitmq7 header injection overwrites user supplied basic properties (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2887130257" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6730" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6730/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6730"&gt;#6730&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Remove instrumentation for Protobuf Schema tagging (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2936520324" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6792" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6792/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6792"&gt;#6792&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Build / Test&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix dependabot configuration for gh-actions-packages group (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2868971373" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6696" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6696/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6696"&gt;#6696&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[IAST] LDAP flakiness fix (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2875307787" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6706" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6706/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6706"&gt;#6706&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[fleet installer] Add some integration tests (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2878881215" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6714" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6714/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6714"&gt;#6714&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Test Package Versions Bump] Updating package versions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2889238198" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6732" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6732/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6732"&gt;#6732&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[CI] Stop running windows throughput tests (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2907516252" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6752" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6752/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6752"&gt;#6752&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Remove profiler throughput tests and bump timeouts (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2910909040" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6757" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6757/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6757"&gt;#6757&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;feat: add dev container for consistent development environment (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2913440469" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6761" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6761/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6761"&gt;#6761&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Benchmarks] Migrate linux throughput tests (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2917733594" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6765" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6765/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6765"&gt;#6765&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;ssi tests onepipeline (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2919467210" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6767" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6767/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6767"&gt;#6767&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Remove graphql scenarios from CI system tests (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2920091185" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6768" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6768/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6768"&gt;#6768&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Pin github actions to sha (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2925495989" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6774" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6774/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6774"&gt;#6774&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Disable the merge queue (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2932673565" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6780" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6780/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6780"&gt;#6780&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update dependabot to scan composite actions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2935194258" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6784" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6784/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6784"&gt;#6784&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Miscellaneous&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[fleet installer] Try to fix Gac Installer issue when older versions are already installed (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2878921044" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6715" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6715/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6715"&gt;#6715&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;add kafka topic to messaging.destination.name tag (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2911067415" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6758" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6758/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6758"&gt;#6758&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[fleet installer] Split the &lt;code&gt;install&lt;/code&gt; command in two (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2918050099" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6766" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6766/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6766"&gt;#6766&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[fleet installer] Update logging for fleet installer (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2932765855" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6782" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6782/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6782"&gt;#6782&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/compare/v3.12.0...v3.13.0"&gt;Changes since 3.12.0&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
