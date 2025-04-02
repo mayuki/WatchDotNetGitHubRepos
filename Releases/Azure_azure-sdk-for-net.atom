@@ -1,59 +1,36 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-04-01T00:08:13Z</updated>
+  <updated>2025-04-02T00:07:31Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-03-31</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-03-31</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-04-01</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-04-01</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-04-01T00:08:13Z</updated>
+    <updated>2025-04-02T00:07:31Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.CodeTransparency_1.0.0-beta.3"&gt;Azure.Security.CodeTransparency_1.0.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Migration.Assessment_1.0.0-beta.1"&gt;Azure.ResourceManager.Migration.Assessment_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.3 (2025-03-31)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2025-03-19)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Aligned with the latest changes (Feb 25) of the IETF draft: &lt;a href="https://datatracker.ietf.org/doc/draft-ietf-scitt-architecture/" rel="nofollow"&gt;https://datatracker.ietf.org/doc/draft-ietf-scitt-architecture/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Updated receipt verification logic.&lt;/li&gt;
-&lt;li&gt;Exposed &lt;code&gt;JsonModelWriteCore&lt;/code&gt; for model serialization procedure.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DataBox_1.1.0"&gt;Azure.ResourceManager.DataBox_1.1.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.0 (2025-03-27)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version tag from 'package-2022-12' to 'package-2025-02'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/535377f6ef91e9d847bbee77d55871eb8b37b7b2/specification/databox/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/535377f6ef91e9d847bbee77d55871eb8b37b7b2/specification/databox/resource-manager/readme.md&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.EventGrid_1.1.0"&gt;Azure.ResourceManager.EventGrid_1.1.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.0 (2025-03-31)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version tag from 'package-2024-06-preview' to 'package-2025-02-15'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/8a059231d92b10d87ffc3f18515516e84dae87cc/specification/eventgrid/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/8a059231d92b10d87ffc3f18515516e84dae87cc/specification/eventgrid/resource-manager/readme.md&lt;/a&gt; .
-&lt;ul&gt;
-&lt;li&gt;Namespace resources  (namespace, topic, eventsubscription (Push/Pull) + all mqtt resources (clients, clientgroups, etc)&lt;/li&gt;
-&lt;li&gt;Custom Domains&lt;/li&gt;
-&lt;li&gt;minimumTlsVersion&lt;/li&gt;
-&lt;li&gt;eventTypeInfo&lt;/li&gt;
-&lt;li&gt;RoutingEnrichments&lt;/li&gt;
-&lt;li&gt;MonitorAlert as destination&lt;/li&gt;
-&lt;li&gt;Namespace topic as destination&lt;/li&gt;
-&lt;li&gt;TopicTypeAdditionalEnforcedPermission&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;This package follows the &lt;a href="https://azure.github.io/azure-sdk/general_introduction.html" rel="nofollow"&gt;new Azure SDK guidelines&lt;/a&gt;, and provides many core capabilities:&lt;/p&gt;
+&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
+- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
+- HTTP pipeline with custom policies.
+- Better error-handling.
+- Support uniform telemetry across all languages."&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
+- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
+- HTTP pipeline with custom policies.
+- Better error-handling.
+- Support uniform telemetry across all languages.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This package is a Public Preview version, so expect incompatible changes in subsequent releases as we improve the product. To provide feedback, submit an issue in our &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues"&gt;Azure SDK for .NET GitHub repo&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: For more information about unified authentication, please refer to &lt;a href="https://docs.microsoft.com//dotnet/api/overview/azure/identity-readme?view=azure-dotnet" rel="nofollow"&gt;Microsoft Azure Identity documentation for .NET&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
