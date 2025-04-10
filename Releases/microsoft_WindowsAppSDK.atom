@@ -1,6 +1,77 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>microsoft/WindowsAppSDK - Releases</title>
   <link href="https://github.com/microsoft/WindowsAppSDK" />
-  <updated>2025-04-09T00:08:20Z</updated>
+  <updated>2025-04-10T00:08:21Z</updated>
   <id>https://github.com/microsoft/WindowsAppSDK</id>
+  <entry>
+    <title>microsoft/WindowsAppSDK - Releases - 2025-04-09</title>
+    <id>https://github.com/microsoft/WindowsAppSDK#2025-04-09</id>
+    <link href="https://github.com/microsoft/WindowsAppSDK" />
+    <updated>2025-04-10T00:08:21Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.6.7"&gt;Windows App SDK 1.6.7 (1.6.250402001)&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Windows App SDK 1.6.7 (1.6.250402001)&lt;/h2&gt;
+&lt;p&gt;Windows App SDK 1.6.7 is a stable servicing release that fixes the following critical bugs for 1.6:&lt;/p&gt;
+&lt;p&gt;This is a servicing release of the Windows App SDK that includes critical bug fixes for the 1.6 release.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved the telemetry for failure scenarios in &lt;code&gt;WindowsAppRuntimeInstall-&amp;lt;arch&amp;gt;.exe&lt;/code&gt;. For more info, see GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/pull/5291" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/WindowsAppSDK/pull/5291/hovercard"&gt;#5291&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Fixed an issue where pointer input would stop working when using arrow keys at the same time. For more info, see GitHub issue &lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/10126" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/10126/hovercard"&gt;#10126&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Fixed an issue where apps in remote desktop stop responding to pointer input. For more info, see GitHub issue &lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/10009" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/10009/hovercard"&gt;#10009&lt;/a&gt;. (This is the same fix as the pointer input plus arrow keys fix, due to remote desktop automatically sending some key input during the switch away and back.)&lt;/li&gt;
+&lt;li&gt;Fixed a potential crash trying to restore focus if a window activation event is delivered for a window which is closing.&lt;/li&gt;
+&lt;li&gt;Fixed a performance regression introduced in WinAppSDK 1.6 due to WinUI binaries missing some linker optimizations.&lt;/li&gt;
+&lt;li&gt;Fixed a small performance issue when creating multiple WinUI windows/islands.&lt;/li&gt;
+&lt;li&gt;Fixed a potential crash if &lt;code&gt;ProgressBar::SetProgressBarIndicatorWidth&lt;/code&gt; is called on a ProgressBar which is not in the tree.&lt;/li&gt;
+&lt;li&gt;Fixed a potential crash caused by &lt;code&gt;CPopup::EnsureBridgeClosed&lt;/code&gt; sometimes triggering reentrancy.&lt;/li&gt;
+&lt;li&gt;Fixed a potential crash when closing a popup due to &lt;code&gt;CUIElement::FlushPendingKeepVisibleOperations&lt;/code&gt; using a null children collection.&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;PackageDeploymentManager.EnsurePackage*Ready&lt;/code&gt; to ensure version supersedence. For more info, see GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/pull/5225" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/WindowsAppSDK/pull/5225/hovercard"&gt;#5225&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Check out our &lt;a href="https://aka.ms/windowsappsdk/1.6/1.6.7/release-notes" rel="nofollow"&gt;release notes&lt;/a&gt; for the list of issues fixed in this release.&lt;/p&gt;
+&lt;h3&gt;Updating to this version&lt;/h3&gt;
+&lt;p&gt;The 1.6.7 package is available at &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.6.250402001" rel="nofollow"&gt;https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.6.250402001&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.7.1"&gt;Windows App SDK 1.7.1 (1.7.250401001)&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Windows App SDK 1.7.1 (1.7.250401001)&lt;/h2&gt;
+&lt;p&gt;WinAppSDK 1.7.1 is the latest stable version of WinAppSDK providing new features and improvements to the platform.&lt;/p&gt;
+&lt;p&gt;Whats new in WinAppSDK 1.7.1:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved the telemetry for failure scenarios in &lt;code&gt;WindowsAppRuntimeInstall-&amp;lt;arch&amp;gt;.exe&lt;/code&gt;. For more info, see GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/pull/5289" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/WindowsAppSDK/pull/5289/hovercard"&gt;#5289&lt;/a&gt;. (RuntimeCompatibilityChange: N/A for this installer change)&lt;/li&gt;
+&lt;li&gt;Fixed an issue where pointer input would stop working when using arrow keys at the same time. For more info, see GitHub issue &lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/10126" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/10126/hovercard"&gt;#10126&lt;/a&gt;. (RuntimeCompatibilityChange: &lt;code&gt;FixStuckPointerInputQueue&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed an issue where apps in remote desktop stop responding to pointer input. For more info, see GitHub issue &lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/10009" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/10009/hovercard"&gt;#10009&lt;/a&gt;. (This is the same fix as the pointer input plus arrow keys fix, due to remote desktop automatically sending some key input during the switch away and back.)  (RuntimeCompatibilityChange: &lt;code&gt;FixStuckPointerInputQueue&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed a potential crash trying to restore focus if a window activation event is delivered for a window which is closing. (RuntimeCompatibilityChange: &lt;code&gt;FixWindowCloseFocusCrash&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed a performance regression introduced in WinAppSDK 1.6 due to WinUI binaries missing some linker optimizations. (RuntimeCompatibilityChange: N/A, changed linker options)&lt;/li&gt;
+&lt;li&gt;Fixed a potential crash if &lt;code&gt;ProgressBar::SetProgressBarIndicatorWidth&lt;/code&gt; is called on a ProgressBar which is not in the tree. (RuntimeCompatibilityChange: &lt;code&gt;FixSetProgressBarIndicatorWidthCrash&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed a potential crash caused by &lt;code&gt;CPopup::EnsureBridgeClosed&lt;/code&gt; sometimes triggering reentrancy. (RuntimeCompatibilityChange: &lt;code&gt;FixPopupClosingReentrancyCrash&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed a potential crash when closing a popup due to &lt;code&gt;CUIElement::FlushPendingKeepVisibleOperations&lt;/code&gt; using a null children collection. (RuntimeCompatibilityChange: &lt;code&gt;FixPopupUnloadingCrash&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;PackageDeploymentManager.EnsurePackage*Ready&lt;/code&gt; to ensure version supersedence. For more info, see GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/pull/5191" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/WindowsAppSDK/pull/5191/hovercard"&gt;#5191&lt;/a&gt;.  (RuntimeCompatibilityChange: &lt;code&gt;EnsurePackageReadyVersionSupercedence&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed a potential crash caused by &lt;code&gt;WebView2::UpdateCoreWebViewVisibility&lt;/code&gt; sometimes triggering reentrancy. For more info, see GitHub issue &lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/10305" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/10305/hovercard"&gt;#10305&lt;/a&gt;. (RuntimeCompatibilityChange: &lt;code&gt;FixWebViewVisibilityReentrancyCrash&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed an issue where app UI sometimes permanently freezes and can stop rendering due to the DispatcherQueue getting stuck. (RuntimeCompatibilityChange: &lt;code&gt;FixRandomUIFreezeInDispatcher&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note: Windows Copilot Runtime APIs are not included this release. To experiment with these APIs, please continue to use the 1.7-experimental3 release and share your feedback!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To see everything that's new and changed, see the full &lt;a href="https://aka.ms/windowsappsdk/1.7/1.7.1/release-notes" rel="nofollow"&gt;Windows App SDK 1.7 release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.7.250401001" rel="nofollow"&gt;1.7.250401001NuGet&lt;/a&gt; package to use WinAppSDK 1.7 in your app.&lt;/li&gt;
+&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Getting Started&lt;/h3&gt;
+&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools &lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

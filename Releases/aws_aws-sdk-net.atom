@@ -1,59 +1,75 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-04-09T00:07:11Z</updated>
+  <updated>2025-04-10T00:07:17Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-04-08</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-04-08</id>
+    <title>aws/aws-sdk-net - Releases - 2025-04-09</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-04-09</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-04-09T00:07:11Z</updated>
+    <updated>2025-04-10T00:07:17Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1019.0"&gt;3.7.1019.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1020.0"&gt;3.7.1020.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1019.0 (2025-04-08 18:53 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1020.0 (2025-04-09 18:36 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;BedrockRuntime (3.7.418.0)
+&lt;li&gt;ControlCatalog (3.7.403.0)
 &lt;ul&gt;
-&lt;li&gt;This release introduces our latest bedrock runtime API, InvokeModelWithBidirectionalStream. The API supports both input and output streams and is supported by only HTTP2.0.&lt;/li&gt;
+&lt;li&gt;The GetControl API now surfaces a control's Severity, CreateTime, and Identifier for a control's Implementation. The ListControls API now surfaces a control's Behavior, Severity, CreateTime, and Identifier for a control's Implementation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CostExplorer (3.7.406.0)
+&lt;li&gt;DynamoDBv2 (3.7.406.19)
 &lt;ul&gt;
-&lt;li&gt;This release supports Pagination traits on Cost Anomaly Detection APIs.&lt;/li&gt;
+&lt;li&gt;Documentation update for secondary indexes and Create_Table.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CostOptimizationHub (3.7.404.0)
+&lt;li&gt;Glue (3.7.416.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds resource type "MemoryDbReservedInstances" and resource type "DynamoDbReservedCapacity" to the GetRecommendation, ListRecommendations, and ListRecommendationSummaries APIs to support new MemoryDB and DynamoDB RI recommendations.&lt;/li&gt;
+&lt;li&gt;The TableOptimizer APIs in AWS Glue now return the DpuHours field in each TableOptimizerRun, providing clients visibility to the DPU-hours used for billing in managed Apache Iceberg table compaction optimization.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IoTFleetWise (3.7.406.0)
+&lt;li&gt;GroundStation (3.7.401.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds the option to update the strategy of state templates already associated to a vehicle, without the need to remove and re-add them.&lt;/li&gt;
+&lt;li&gt;Support tagging Agents and adjust input field validations&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SecurityHub (3.7.403.20)
+&lt;li&gt;Transfer (3.7.407.0)
 &lt;ul&gt;
-&lt;li&gt;Documentation updates for AWS Security Hub.&lt;/li&gt;
+&lt;li&gt;This launch includes 2 enhancements to SFTP connectors user-experience: 1) Customers can self-serve concurrent connections setting for their connectors, and 2) Customers can discover the public host key of remote servers using their SFTP connectors.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;StorageGateway (3.7.404.0)
-&lt;ul&gt;
-&lt;li&gt;Added new ActiveDirectoryStatus value, ListCacheReports paginator, and support for longer pagination tokens.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;TaxSettings (3.7.405.0)
-&lt;ul&gt;
-&lt;li&gt;Uzbekistan Launch on TaxSettings Page&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 3.7.402.36
+&lt;li&gt;Core 3.7.402.37
 &lt;ul&gt;
 &lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.0.0-preview.13"&gt;4.0.0.0-preview.13&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.0.0-preview.13 (2025-04-09 16:44 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;BedrockRuntime (4.0.0.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for &lt;a href="https://aws.amazon.com/blogs/aws/introducing-amazon-nova-sonic-human-like-voice-conversations-for-generative-ai-applications/" rel="nofollow"&gt;Amazon Nova Sonic: Human-like voice conversations for generative AI applications&lt;/a&gt; (note: Only available in .NET 8 and later)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DynamoDBv2 (4.0.0.0)
+&lt;ul&gt;
+&lt;li&gt;Allow to set DynamoDBEntryConversion per table.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.0.0
+&lt;ul&gt;
+&lt;li&gt;Enable error protocol tests and make headers case insensitive in test project&lt;/li&gt;
+&lt;li&gt;Update auth resolver async flow to add user agent details after resolving identity&lt;/li&gt;
 &lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;

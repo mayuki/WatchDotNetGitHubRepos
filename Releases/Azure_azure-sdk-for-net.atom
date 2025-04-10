@@ -1,248 +1,109 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-04-09T00:07:13Z</updated>
+  <updated>2025-04-10T00:07:19Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-04-08</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-04-08</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-04-09</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-04-09</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-04-09T00:07:13Z</updated>
+    <updated>2025-04-10T00:07:19Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Messaging.EventHubs.Processor_5.12.0"&gt;Azure.Messaging.EventHubs.Processor_5.12.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.EventHubs_6.5.1"&gt;Microsoft.Azure.WebJobs.Extensions.EventHubs_6.5.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;5.12.0 (2025-04-08)&lt;/h2&gt;
-&lt;h3&gt;Acknowledgments&lt;/h3&gt;
-&lt;p&gt;Thank you to our developer community members who helped to make the Event Hubs client libraries better with their contributions to this release:&lt;/p&gt;
+                                &lt;h2&gt;6.5.1 (2025-04-09)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;tovyhnal &lt;em&gt;(&lt;a href="https://github.com/tovyhnal"&gt;GitHub&lt;/a&gt;)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Fixed a bug which caused the placeholder value used to represent missing offsets in v5.11.3 - v5.11.6 to not be properly detected and incorrectly used as a valid offset when reading from a partition.&lt;/li&gt;
 &lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Messaging.EventHubs.Processor_5.12.1"&gt;Azure.Messaging.EventHubs.Processor_5.12.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;5.12.1 (2025-04-09)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed a bug which caused the placeholder value used to represent missing offsets in v5.11.3 - v5.11.6 to not be properly detected and incorrectly used as a valid offset when reading from a partition.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Messaging.EventHubs_5.12.1"&gt;Azure.Messaging.EventHubs_5.12.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;5.12.1 (2025-04-09)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed a bug which caused the placeholder value used to represent missing offsets in v5.11.3 - v5.11.6 to not be properly detected and incorrectly used as a valid offset when reading from a partition.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Keys_4.8.0-beta.1"&gt;Azure.Security.KeyVault.Keys_4.8.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;4.8.0-beta.1 (2025-04-08)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Support for the Event Hubs geographic data replication feature has been enabled. Checking for whether or not this feature is enabled for your namespace can be done by querying for Event Hub properties using &lt;code&gt;EventHubProducerClient&lt;/code&gt; or &lt;code&gt;EventHubConsumerClient&lt;/code&gt; and referencing the the &lt;code&gt;IsGeoReplicationEnabled&lt;/code&gt; property of the result.&lt;/p&gt;
-&lt;p&gt;As part of this feature, the type of offset-related data has been changed from &lt;code&gt;long&lt;/code&gt; to &lt;code&gt;string&lt;/code&gt; to align with changes to the Event Hubs service API. To preserve backwards compatibility, the existing offset-related members have not been changed, and new members with names similar to &lt;code&gt;OffsetString&lt;/code&gt; and string-based parameters for method overloads have been introduced.&lt;/p&gt;
-&lt;p&gt;The long-based offset members will continue to work for Event Hubs namespaces that do not have GeoDR replication enabled, but are discouraged for use and have been marked as obsolete.&lt;/p&gt;
-&lt;p&gt;Obsoleted properties:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;EventData.Offset&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;LastEnqueuedEventProperties.Offset&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PartitionProperties.LastEnqueuedOffset&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added Hmac algorithms in &lt;code&gt;SignatureAlgorithm&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added CkmAesKeyWrap algorithm in &lt;code&gt;EncryptionAlgorithm&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added Attestation property for Keys in Managed HSM Key Vaults.&lt;/li&gt;
+&lt;li&gt;New &lt;code&gt;GetKeyAttestation&lt;/code&gt; operation to get the public part of a stored key along with its attestation blob.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Obsoleted method overloads:&lt;/p&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;EventPosition.FromOffset&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;EventHubsModelFactory.EventData&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;BlobCheckpointStore.UpdateCheckpointAsync&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;EventProcessorClient.UpdateCheckpointAsync&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;The default service version is now "7.6-preview.2".&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Administration_4.6.0-beta.1"&gt;Azure.Security.KeyVault.Administration_4.6.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;4.6.0-beta.1 (2025-04-08)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;StartPreRestore&lt;/code&gt; and &lt;code&gt;StartPreBackup&lt;/code&gt; operations to the &lt;code&gt;KeyVaultBackupClient&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The default service version is now "7.6-preview.2".&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Secrets_4.8.0-beta.1"&gt;Azure.Security.KeyVault.Secrets_4.8.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;4.8.0-beta.1 (2025-04-08)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The default service version is now "7.6-preview.2".&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Certificates_4.8.0-beta.1"&gt;Azure.Security.KeyVault.Certificates_4.8.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;4.8.0-beta.1 (2025-04-08)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;New &lt;code&gt;preserveCertificateOrder&lt;/code&gt; option when creating and importing certificates. It can be set as an optional paremeter in &lt;code&gt;StartCreateCertificate&lt;/code&gt;, as an option in &lt;code&gt;ImportCertificateOptions&lt;/code&gt;, and it can be retrieved from certificates of type &lt;code&gt;KeyVaultCertificateWithPolicy&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed behavior in the &lt;code&gt;UpdateCheckpointAsync&lt;/code&gt; method of &lt;code&gt;EventProcessorClient&lt;/code&gt; to properly await the call to the checkpoint store.  Previously, this was not awaited, causing the OTel span to open and close almost immediately and skip reporting any errors observed.&lt;/li&gt;
+&lt;li&gt;Corrected a typo in the documentation for &lt;code&gt;CertificatePolicy.KeySize&lt;/code&gt;, changing the RSA key length from "4092" to "4096".&lt;/li&gt;
+&lt;li&gt;Removed an extra &lt;code&gt;/&lt;/code&gt; when building the request Uri for &lt;code&gt;CertificateClient.ImportCertificate&lt;/code&gt; and &lt;code&gt;CertificateClient.ImportCertificateAsync&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Enhanced retry logic to consider additional cases for web socket-based failures.  In many cases, a &lt;code&gt;WebSocketException&lt;/code&gt; is triggered which wraps a &lt;code&gt;SocketException&lt;/code&gt; with the details for the specific network conditions.  Retry decisions are now based on the internal exception, if present, to ensure retries are correctly applied.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added annotations to make the package compatible with trimming and native AOT compilation.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added Event Hub name to processor load balancing logs for additional context.  &lt;em&gt;(A community contribution, courtesy of &lt;a href="https://github.com/tovyhnal"&gt;tovyhnal&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Updated the &lt;code&gt;Microsoft.Azure.Amqp&lt;/code&gt; dependency to 2.6.9, which contains several bug fixes. &lt;em&gt;(see: &lt;a href="https://github.com/Azure/azure-amqp/commits/hotfix/"&gt;commits&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.EventHubs_6.5.0"&gt;Microsoft.Azure.WebJobs.Extensions.EventHubs_6.5.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;6.5.0 (2025-04-08)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Support for the Event Hubs geographic data replication feature has been enabled.  As part of this feature, the type of offset-related data has been changed from &lt;code&gt;long&lt;/code&gt; to &lt;code&gt;string&lt;/code&gt; to align with changes to the Event Hubs service API. To preserve backwards compatibility, the existing offset-related members have not been changed, and new members with names similar to &lt;code&gt;OffsetString&lt;/code&gt; and string-based parameters for method overloads have been introduced.&lt;/p&gt;
-&lt;p&gt;The long-based offset members will continue to work for Event Hubs namespaces that do not have GeoDR replication enabled, but are discouraged for use and have been marked as obsolete.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed a misspelling of "PartitionId" in the trigger input data passed to the function executor.  This caused function logs and metrics reported by AppInsights and the portal to reflect the wrong label.  To ensure that applications that rely on the misspelling are not impacted, a new member with the correct spelling was added.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updating .NET runtime dependencies to the 6.x line, the Azure extensions to 1.8.0, and the latest dependencies for the Functions host.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.ServiceBus_5.16.6"&gt;Microsoft.Azure.WebJobs.Extensions.ServiceBus_5.16.6&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;5.16.6 (2025-04-08)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Bump dependency on &lt;code&gt;Azure.Messaging.ServiceBus&lt;/code&gt; to 7.19.0&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity.Broker_1.3.0-beta.2"&gt;Azure.Identity.Broker_1.3.0-beta.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.3.0-beta.2 (2025-04-08)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Support for dynamic addition of the broker authentication to &lt;code&gt;DefaultAzureCredential&lt;/code&gt; has been added. This allows the broker authentication to be used as part of the default credential chain by only adding a reference to this package to your application.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Messaging.EventHubs_5.12.0"&gt;Azure.Messaging.EventHubs_5.12.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;5.12.0 (2025-04-08)&lt;/h2&gt;
-&lt;h3&gt;Acknowledgments&lt;/h3&gt;
-&lt;p&gt;Thank you to our developer community members who helped to make the Event Hubs client libraries better with their contributions to this release:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;tovyhnal &lt;em&gt;(&lt;a href="https://github.com/tovyhnal"&gt;GitHub&lt;/a&gt;)&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Support for the Event Hubs geographic data replication feature has been enabled. Checking for whether or not this feature is enabled for your namespace can be done by querying for Event Hub properties using &lt;code&gt;EventHubProducerClient&lt;/code&gt; or &lt;code&gt;EventHubConsumerClient&lt;/code&gt; and referencing the the &lt;code&gt;IsGeoReplicationEnabled&lt;/code&gt; property of the result.&lt;/p&gt;
-&lt;p&gt;As part of this feature, the type of offset-related data has been changed from &lt;code&gt;long&lt;/code&gt; to &lt;code&gt;string&lt;/code&gt; to align with changes to the Event Hubs service API. To preserve backwards compatibility, the existing offset-related members have not been changed, and new members with names similar to &lt;code&gt;OffsetString&lt;/code&gt; and string-based parameters for method overloads have been introduced.&lt;/p&gt;
-&lt;p&gt;The long-based offset members will continue to work for Event Hubs namespaces that do not have GeoDR replication enabled, but are discouraged for use and have been marked as obsolete.&lt;/p&gt;
-&lt;p&gt;Obsoleted properties:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;EventData.Offset&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;LastEnqueuedEventProperties.Offset&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PartitionProperties.LastEnqueuedOffset&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Obsoleted method overloads:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;EventPosition.FromOffset&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;EventHubsModelFactory.EventData&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;BlobCheckpointStore.UpdateCheckpointAsync&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;EventProcessorClient.UpdateCheckpointAsync&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Querying runtime data and other management operations will now correctly guards against the race condition where an AMQP link is in the process of closing as the operation attempts to use it.  These errors will now properly be classified as retriable as they are for producer and consumer operations.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed an obscure edge case in the &lt;code&gt;EventHubBufferedProducer&lt;/code&gt; client where an unlikely race condition when flushing/enqueuing events concurrently with disposing the producer could cause a semaphore to be released inappropriately.  This error superseded the &lt;code&gt;TaskCanceledException&lt;/code&gt; that should have been surfaced.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Enhanced retry logic to consider additional cases for web socket-based failures.  In many cases, a &lt;code&gt;WebSocketException&lt;/code&gt; is triggered which wraps a &lt;code&gt;SocketException&lt;/code&gt; with the details for the specific network conditions.  Retry decisions are now based on the internal exception, if present, to ensure retries are correctly applied.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added annotations to make the package compatible with trimming and native AOT compilation.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added Event Hub name to processor load balancing logs for additional context.  &lt;em&gt;(A community contribution, courtesy of &lt;a href="https://github.com/tovyhnal"&gt;tovyhnal&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Updated the &lt;code&gt;Microsoft.Azure.Amqp&lt;/code&gt; dependency to 2.6.9, which contains several bug fixes. &lt;em&gt;(see: &lt;a href="https://github.com/Azure/azure-amqp/commits/hotfix/"&gt;commits&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Messaging.ServiceBus_7.19.0"&gt;Azure.Messaging.ServiceBus_7.19.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;7.19.0 (2025-04-08)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;ServiceBusClientOptions&lt;/code&gt; now supports registering a callback delegate for participating in the validation of SSL certificates when connections are established.  This delegate may override the built-in validation and allow or deny certificates based on application-specific logic.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Added jitter to the lock renewal timer to reduce the likelihood of lock renewal collisions when using the &lt;code&gt;ServiceBusProcessor&lt;/code&gt; or the &lt;code&gt;ServiceBusSessionProcessor&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Enhanced retry logic to consider additional cases for web socket-based failures.  In many cases, a &lt;code&gt;WebSocketException&lt;/code&gt; is triggered which wraps a &lt;code&gt;SocketException&lt;/code&gt; with the details for the specific network conditions.  Retry decisions are now based on the internal exception, if present, to ensure retries are correctly applied.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity_1.14.0-beta.3"&gt;Azure.Identity_1.14.0-beta.3&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.14.0-beta.3 (2025-04-08)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;DefaultAzureCredential&lt;/code&gt; now includes silent authentication via the authentication broker on Windows if the &lt;code&gt;Azure.Identity.Broker&lt;/code&gt; NuGet package is referenced. This allows for a more seamless authentication experience when using the &lt;code&gt;DefaultAzureCredential&lt;/code&gt; in Windows environments. Setting the &lt;code&gt;ExcludeBrokerCredential&lt;/code&gt; property on &lt;code&gt;DefaultAzureCredentialOptions&lt;/code&gt; disables this feature.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;DefaultAzureCredential&lt;/code&gt; no longer sends a probe request on each call to &lt;code&gt;GetToken&lt;/code&gt;. It now only happens on the first call.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Marked &lt;code&gt;VisualStudioCodeCredential&lt;/code&gt; as obsolete because the VS Code Azure Account extension on which this credential relies has been deprecated. See the Azure Account extension deprecation notice &lt;a href="https://github.com/microsoft/vscode-azure-account/issues/964" data-hovercard-type="issue" data-hovercard-url="/microsoft/vscode-azure-account/issues/964/hovercard"&gt;here&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Projects.AI_1.0.0-beta.1"&gt;Azure.Projects.AI_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2025-04-08)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Initial release of the Azure.Projects.AI package.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Projects.Web_1.0.0-beta.1"&gt;Azure.Projects.Web_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2025-04-08)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Initial release of the Azure.Projects.Web package.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Projects.Provisioning_1.0.0-beta.1"&gt;Azure.Projects.Provisioning_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2025-04-08)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Initial release of the Azure.Projects.Provisioning package.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Projects_1.0.0-beta.1"&gt;Azure.Projects_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2025-04-08)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Initial release of the Azure.Projects package.&lt;/li&gt;
+&lt;li&gt;The default service version is now "7.6-preview.2".&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
