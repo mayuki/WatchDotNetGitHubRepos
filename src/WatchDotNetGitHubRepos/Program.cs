@@ -389,7 +389,8 @@ namespace WatchDotNetGitHubRepos
             }
         ";
 
-        private const int MaxFetchCount = 100;
+        private const int MaxFetchIssueCount = 100;
+        private const int MaxFetchReleaseCount = 10;
         private const int MaxRetryCount = 10;
 
         private static AsyncRetryPolicy CreateRetryPolicy()
@@ -411,7 +412,7 @@ namespace WatchDotNetGitHubRepos
                 {
                     owner = owner,
                     repository = repository,
-                    count = MaxFetchCount,
+                    count = MaxFetchReleaseCount,
                 }
             }));
 
@@ -431,7 +432,7 @@ namespace WatchDotNetGitHubRepos
                 {
                     owner = owner,
                     repository = repository,
-                    count = MaxFetchCount,
+                    count = MaxFetchIssueCount,
                 }
             }));
 
@@ -453,7 +454,7 @@ namespace WatchDotNetGitHubRepos
                     repository = repository,
                     orderField = orderField,
                     prState = prState,
-                    count = MaxFetchCount,
+                    count = MaxFetchIssueCount,
                 }
             }));
 
@@ -474,7 +475,7 @@ namespace WatchDotNetGitHubRepos
                     repository = repository,
                     orderField = orderField,
                     issueState = issueState,
-                    count = MaxFetchCount,
+                    count = MaxFetchIssueCount,
                 }
             }));
 
