@@ -390,17 +390,20 @@ namespace WatchDotNetGitHubRepos
         ";
 
         private const int MaxFetchCount = 100;
+        private const int MaxRetryCount = 10;
+
+        private static AsyncRetryPolicy CreateRetryPolicy()
+        {
+            return Policy.Handle<GraphQLHttpRequestException>()
+                .WaitAndRetryAsync(MaxRetryCount, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)) + TimeSpan.FromMilliseconds(Random.Shared.Next(0, 1000)));
+        }
 
         public static async Task<RepositoryQueryResponse> GetReleases(string owner, string repository)
         {
-            var jitterer = new Random();
-            var retryPolicy = Polly.Policy.Handle<GraphQLHttpRequestException>()
-                .WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)) + TimeSpan.FromMilliseconds(jitterer.Next(0, 1000)));
-
             var graphQLClient = new GraphQLHttpClient("https://api.github.com/graphql", new SystemTextJsonSerializer());
             graphQLClient.HttpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {Helper.GetAccessToken()}");
 
-            var response = await retryPolicy.ExecuteAsync(() => graphQLClient.SendQueryAsync<RepositoryQueryResponse>(new GraphQLRequest
+            var response = await CreateRetryPolicy().ExecuteAsync(() => graphQLClient.SendQueryAsync<RepositoryQueryResponse>(new GraphQLRequest
             {
                 Query = Query,
                 OperationName = "GetReleases",
@@ -417,14 +420,10 @@ namespace WatchDotNetGitHubRepos
 
         public static async Task<GetIssuesAndPullRequestsRepositoryQueryResponse> GetIssuesAndPullRequestsAsync(string owner, string repository)
         {
-            var jitterer = new Random();
-            var retryPolicy = Polly.Policy.Handle<GraphQLHttpRequestException>()
-                .WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)) + TimeSpan.FromMilliseconds(jitterer.Next(0, 1000)));
-
             var graphQLClient = new GraphQLHttpClient("https://api.github.com/graphql", new SystemTextJsonSerializer());
             graphQLClient.HttpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {Helper.GetAccessToken()}");
 
-            var response = await retryPolicy.ExecuteAsync(() => graphQLClient.SendQueryAsync<GetIssuesAndPullRequestsRepositoryQueryResponse>(new GraphQLRequest
+            var response = await CreateRetryPolicy().ExecuteAsync(() => graphQLClient.SendQueryAsync<GetIssuesAndPullRequestsRepositoryQueryResponse>(new GraphQLRequest
             {
                 Query = Query,
                 OperationName = "GetIssuesAndPullRequests",
@@ -441,14 +440,10 @@ namespace WatchDotNetGitHubRepos
 
         public static async Task<RepositoryQueryResponse> GetPullRequestsAsync(string owner, string repository, IssueOrderField orderField, PullRequestState prState)
         {
-            var jitterer = new Random();
-            var retryPolicy = Polly.Policy.Handle<GraphQLHttpRequestException>()
-                .WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)) + TimeSpan.FromMilliseconds(jitterer.Next(0, 1000)));
-
             var graphQLClient = new GraphQLHttpClient("https://api.github.com/graphql", new SystemTextJsonSerializer());
             graphQLClient.HttpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {Helper.GetAccessToken()}");
 
-            var response = await retryPolicy.ExecuteAsync(() => graphQLClient.SendQueryAsync<RepositoryQueryResponse>(new GraphQLRequest
+            var response = await CreateRetryPolicy().ExecuteAsync(() => graphQLClient.SendQueryAsync<RepositoryQueryResponse>(new GraphQLRequest
             {
                 Query = Query,
                 OperationName = "GetPullRequests",
@@ -466,14 +461,10 @@ namespace WatchDotNetGitHubRepos
         }
         public static async Task<RepositoryQueryResponse> GetIssuesAsync(string owner, string repository, IssueOrderField orderField, IssueState issueState)
         {
-            var jitterer = new Random();
-            var retryPolicy = Polly.Policy.Handle<GraphQLHttpRequestException>()
-                .WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)) + TimeSpan.FromMilliseconds(jitterer.Next(0, 1000)));
-
             var graphQLClient = new GraphQLHttpClient("https://api.github.com/graphql", new SystemTextJsonSerializer());
             graphQLClient.HttpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {Helper.GetAccessToken()}");
 
-            var response = await retryPolicy.ExecuteAsync(() => graphQLClient.SendQueryAsync<RepositoryQueryResponse>(new GraphQLRequest
+            var response = await CreateRetryPolicy().ExecuteAsync(() => graphQLClient.SendQueryAsync<RepositoryQueryResponse>(new GraphQLRequest
             {
                 Query = Query,
                 OperationName = "GetIssues",
