@@ -1,6 +1,198 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2025-04-28T02:57:51Z</updated>
+  <updated>2025-04-29T00:07:34Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
+  <entry>
+    <title>aws/aws-sdk-net - Releases - 2025-04-28</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-04-28</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2025-04-29T00:07:21Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1032.0"&gt;3.7.1032.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;3.7.1032.0 (2025-04-28 18:16 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;BedrockRuntime (3.7.420.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds native h2 support for the bedrock runtime API, the support is only limited to SDKs that support h2 requests natively.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CertificateManager (3.7.401.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for file-based HTTP domain control validation, available through Amazon CloudFront.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CloudFront (3.7.405.0)
+&lt;ul&gt;
+&lt;li&gt;Add distribution tenant, connection group, and multi-tenant distribution APIs to the CloudFront SDK.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DynamoDBv2 (3.7.407.2)
+&lt;ul&gt;
+&lt;li&gt;Doc only update for GSI descriptions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Imagebuilder (3.7.404.0)
+&lt;ul&gt;
+&lt;li&gt;Add integration with SSM Parameter Store to Image Builder.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.402.47
+&lt;ul&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.0.0"&gt;4.0.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.0.0 (2025-04-28 18:14 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;BedrockRuntime (4.0.0.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds native h2 support for the bedrock runtime API, the support is only limited to SDKs that support h2 requests natively.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CertificateManager (4.0.0.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for file-based HTTP domain control validation, available through Amazon CloudFront.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CloudFront (4.0.0.0)
+&lt;ul&gt;
+&lt;li&gt;Add distribution tenant, connection group, and multi-tenant distribution APIs to the CloudFront SDK.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DynamoDBv2 (4.0.0.0)
+&lt;ul&gt;
+&lt;li&gt;Doc only update for GSI descriptions.&lt;/li&gt;
+&lt;li&gt;Update paginators to handle scenarios where the token is a collection (that's null by default in V4)&lt;/li&gt;
+&lt;li&gt;Fixed trim warnings in Object Persistence high level library introduced by PR adding polymorphic support.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Imagebuilder (4.0.0.0)
+&lt;ul&gt;
+&lt;li&gt;Add integration with SSM Parameter Store to Image Builder.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.0.0
+&lt;ul&gt;
+&lt;li&gt;[Breaking Change] Allow source_profile to be used in conjunction with sso_session. If the profile specified via source_profile has sso_session, and the sso_session section is correctly configured, credentials will be retrieved from sso. The sso credentials will then be used to assume the role specified in the original profile. Previous behavior was that it assumed the role specified in source_profile, which does not follow the assume role profile chaining pattern.&lt;/li&gt;
+&lt;li&gt;Add observability feature IDs to User Agent header&lt;/li&gt;
+&lt;li&gt;fix: User-Agent header is growing when reusing the request object&lt;/li&gt;
+&lt;li&gt;Remove unused internal legacy .NET Framework 3.5 code.&lt;/li&gt;
+&lt;li&gt;Update documentation for the &lt;code&gt;AWSConfigs.InitializeCollections&lt;/code&gt; property to specify the correct default value for V4 (and how to restore the V3 behavior)&lt;/li&gt;
+&lt;li&gt;Update SDK to respect &lt;code&gt;Profile&lt;/code&gt; property set in the client config when resolving credentials.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-04-28</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-04-28</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2025-04-29T00:07:21Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/System.ClientModel_1.4.0-beta.6"&gt;System.ClientModel_1.4.0-beta.6&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.4.0-beta.6 (2025-04-28)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added additional supported scenarios to System.ClientModel.SourceGeneration.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.StorageSync_1.3.0"&gt;Azure.ResourceManager.StorageSync_1.3.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.3.0 (2025-05-01)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgrade the ApiVersion to 2022-09-01&lt;/li&gt;
+&lt;li&gt;Managaed Identity support for Storage Sync Service.&lt;/li&gt;
+&lt;li&gt;Fast DR V2 support for Storage Sync Service.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>googleapis/google-cloud-dotnet - Releases - 2025-04-28</title>
+    <id>https://github.com/googleapis/google-cloud-dotnet#2025-04-28</id>
+    <link href="https://github.com/googleapis/google-cloud-dotnet" />
+    <updated>2025-04-29T00:07:28Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.DocumentAI.V1Beta3-2.0.0-beta25"&gt;Google.Cloud.DocumentAI.V1Beta3 version 2.0.0-beta25&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;Changes in this release:&lt;/p&gt;
+&lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added config options to enable image annotation (&lt;a href="https://github.com/googleapis/google-cloud-dotnet/commit/7e02ca8c5f7fe43124026f9550cc00e002e9409c"&gt;commit 7e02ca8&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add image block and blob asset in Document proto (&lt;a href="https://github.com/googleapis/google-cloud-dotnet/commit/2d344c0f62d7a544101870aba929cea850e23b43"&gt;commit 2d344c0&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Bigtable.Admin.V2-3.26.0"&gt;Google.Cloud.Bigtable.Admin.V2 version 3.26.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;Changes in this release:&lt;/p&gt;
+&lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add deletion_protection support for LVs (&lt;a href="https://github.com/googleapis/google-cloud-dotnet/commit/1fd088c1e42f8cfba8d32bc2e90a44bfc1515db0"&gt;commit 1fd088c&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Asset.V1-3.13.0"&gt;Google.Cloud.Asset.V1 version 3.13.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;Changes in this release:&lt;/p&gt;
+&lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A new message &lt;code&gt;ResourceOwners&lt;/code&gt; is added (&lt;a href="https://github.com/googleapis/google-cloud-dotnet/commit/f8d84babb77910cc432d74e149ea243fa4741d7d"&gt;commit f8d84ba&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;A new value &lt;code&gt;REMOVE_GRANT&lt;/code&gt; is added to enum &lt;code&gt;MethodType&lt;/code&gt; (&lt;a href="https://github.com/googleapis/google-cloud-dotnet/commit/f8d84babb77910cc432d74e149ea243fa4741d7d"&gt;commit f8d84ba&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;A new value &lt;code&gt;GOVERN_TAGS&lt;/code&gt; is added to enum &lt;code&gt;MethodType&lt;/code&gt; (&lt;a href="https://github.com/googleapis/google-cloud-dotnet/commit/f8d84babb77910cc432d74e149ea243fa4741d7d"&gt;commit f8d84ba&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;AssetEnrichment&lt;/code&gt; is added (&lt;a href="https://github.com/googleapis/google-cloud-dotnet/commit/f8d84babb77910cc432d74e149ea243fa4741d7d"&gt;commit f8d84ba&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;enrichments&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.asset.v1.ResourceSearchResult&lt;/code&gt; (&lt;a href="https://github.com/googleapis/google-cloud-dotnet/commit/f8d84babb77910cc432d74e149ea243fa4741d7d"&gt;commit f8d84ba&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A comment for field &lt;code&gt;service_account_impersonation_analysis&lt;/code&gt; in message &lt;code&gt;.google.cloud.asset.v1.AnalyzeIamPolicyResponse&lt;/code&gt; is changed (&lt;a href="https://github.com/googleapis/google-cloud-dotnet/commit/f8d84babb77910cc432d74e149ea243fa4741d7d"&gt;commit f8d84ba&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;consolidated_policy&lt;/code&gt; in message &lt;code&gt;.google.cloud.asset.v1.AnalyzeOrgPoliciesResponse&lt;/code&gt; is changed (&lt;a href="https://github.com/googleapis/google-cloud-dotnet/commit/f8d84babb77910cc432d74e149ea243fa4741d7d"&gt;commit f8d84ba&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;policy_bundle&lt;/code&gt; in message &lt;code&gt;.google.cloud.asset.v1.AnalyzeOrgPoliciesResponse&lt;/code&gt; is changed (&lt;a href="https://github.com/googleapis/google-cloud-dotnet/commit/f8d84babb77910cc432d74e149ea243fa4741d7d"&gt;commit f8d84ba&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;policy_bundle&lt;/code&gt; in message &lt;code&gt;.google.cloud.asset.v1.AnalyzeOrgPolicyGovernedContainersResponse&lt;/code&gt; is changed (&lt;a href="https://github.com/googleapis/google-cloud-dotnet/commit/f8d84babb77910cc432d74e149ea243fa4741d7d"&gt;commit f8d84ba&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;policy_bundle&lt;/code&gt; in message &lt;code&gt;.google.cloud.asset.v1.AnalyzeOrgPolicyGovernedAssetsResponse&lt;/code&gt; is changed (&lt;a href="https://github.com/googleapis/google-cloud-dotnet/commit/f8d84babb77910cc432d74e149ea243fa4741d7d"&gt;commit f8d84ba&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;attached_resource&lt;/code&gt; in message &lt;code&gt;.google.cloud.asset.v1.EffectiveTagDetails&lt;/code&gt; is changed (&lt;a href="https://github.com/googleapis/google-cloud-dotnet/commit/f8d84babb77910cc432d74e149ea243fa4741d7d"&gt;commit f8d84ba&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Comments are clarified for certain fields in messages &lt;code&gt;QueryAssetsResponse&lt;/code&gt; and &lt;code&gt;ResourceSearchResult&lt;/code&gt; (&lt;a href="https://github.com/googleapis/google-cloud-dotnet/commit/dabdcadfd6dd65693b9059d775d5919951109556"&gt;commit dabdcad&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
