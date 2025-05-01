@@ -1,62 +1,72 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-04-30T00:07:29Z</updated>
+  <updated>2025-05-01T00:08:03Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-04-29</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-04-29</id>
+    <title>aws/aws-sdk-net - Releases - 2025-04-30</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-04-30</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-04-30T00:07:29Z</updated>
+    <updated>2025-05-01T00:08:03Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1033.0"&gt;3.7.1033.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1034.0"&gt;3.7.1034.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1033.0 (2025-04-29 20:03 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1034.0 (2025-04-30 18:39 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;ConnectCases (3.7.403.0)
+&lt;li&gt;Bedrock (3.7.420.0)
 &lt;ul&gt;
-&lt;li&gt;Introduces CustomEntity as part of the UserUnion data type. This field is used to indicate the entity who is performing the API action.&lt;/li&gt;
+&lt;li&gt;You can now specify a cross region inference profile as a teacher model for the CreateModelCustomizationJob API. Additionally, the GetModelCustomizationJob API has been enhanced to return the sub-task statuses of a customization job within the StatusDetails response field.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Kinesis (3.7.403.0)
+&lt;li&gt;BedrockAgent (3.7.425.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon KDS now supports tagging and attribute-based access control (ABAC) for enhanced fan-out consumers.&lt;/li&gt;
+&lt;li&gt;Features:    Add inline code node to prompt flow&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PinpointSMSVoiceV2 (3.7.405.0)
+&lt;li&gt;BedrockAgentRuntime (3.7.425.0)
 &lt;ul&gt;
-&lt;li&gt;AWS End User Messaging has added MONITOR and FILTER functionality to SMS Protect.&lt;/li&gt;
+&lt;li&gt;Support for Custom Orchestration within InlineAgents&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;QBusiness (3.7.414.0)
+&lt;li&gt;CleanRooms (3.7.406.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for anonymous user access for Q Business applications&lt;/li&gt;
+&lt;li&gt;This release adds support for ProtectedQuery results to be delivered to more than one collaboration member via the new distribute output configuration in StartProtectedQuery.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMaker (3.7.437.0)
+&lt;li&gt;CloudWatchLogs (3.7.411.0)
 &lt;ul&gt;
-&lt;li&gt;Introduced support for P5en instance types on SageMaker Studio for JupyterLab and CodeEditor applications.&lt;/li&gt;
+&lt;li&gt;CloudWatch Logs supports "DELIVERY" log class. This log class is used only for delivering AWS Lambda logs to Amazon S3 or Amazon Data Firehose.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMakerMetrics (3.7.402.0)
+&lt;li&gt;Deadline (3.7.406.0)
 &lt;ul&gt;
-&lt;li&gt;SageMaker Metrics Service now supports FIPS endpoint in all US and Canada Commercial regions.&lt;/li&gt;
+&lt;li&gt;Adds support for tag management on workers and tag inheritance from fleets to their associated workers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SimpleSystemsManagement (3.7.405.0)
+&lt;li&gt;EC2 (3.7.439.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for just-In-time node access in AWS Systems Manager. Just-in-time node access enables customers to move towards zero standing privileges by requiring operators to request access and obtain approval before remotely connecting to nodes managed by the SSM Agent.&lt;/li&gt;
+&lt;li&gt;Launch of cost distribution feature for IPAM owners to distribute costs to internal teams.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SSMGuiConnect (3.7.400.0)
+&lt;li&gt;ECR (3.7.411.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds API support for the connection recording GUI Connect feature of AWS Systems Manager&lt;/li&gt;
+&lt;li&gt;Adds dualstack support for Amazon Elastic Container Registry (Amazon ECR).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 3.7.402.48
+&lt;li&gt;ECRPublic (3.7.405.0)
+&lt;ul&gt;
+&lt;li&gt;Adds dualstack support for Amazon Elastic Container Registry Public (Amazon ECR Public).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MailManager (3.7.408.0)
+&lt;ul&gt;
+&lt;li&gt;Introducing new RuleSet rule PublishToSns action, which allows customers to publish email notifications to an Amazon SNS topic. New PublishToSns action enables customers to easily integrate their email workflows via Amazon SNS, allowing them to notify other systems about important email events.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.402.49
 &lt;ul&gt;
 &lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
 &lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
@@ -67,58 +77,64 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.1.0"&gt;4.0.1.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.2.0"&gt;4.0.2.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.1.0 (2025-04-29 20:03 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.2.0 (2025-04-30 18:35 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;ConnectCases (4.0.1.0)
+&lt;li&gt;Bedrock (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;Introduces CustomEntity as part of the UserUnion data type. This field is used to indicate the entity who is performing the API action.&lt;/li&gt;
+&lt;li&gt;You can now specify a cross region inference profile as a teacher model for the CreateModelCustomizationJob API. Additionally, the GetModelCustomizationJob API has been enhanced to return the sub-task statuses of a customization job within the StatusDetails response field.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (4.0.0.1)
+&lt;li&gt;BedrockAgent (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;Update endpoint resolver to handle anonymous credentials when trying to retrieve account IDs&lt;/li&gt;
+&lt;li&gt;Features:    Add inline code node to prompt flow&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Kinesis (4.0.1.0)
+&lt;li&gt;BedrockAgentRuntime (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon KDS now supports tagging and attribute-based access control (ABAC) for enhanced fan-out consumers.&lt;/li&gt;
+&lt;li&gt;Support for Custom Orchestration within InlineAgents&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PinpointSMSVoiceV2 (4.0.1.0)
+&lt;li&gt;CleanRooms (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;AWS End User Messaging has added MONITOR and FILTER functionality to SMS Protect.&lt;/li&gt;
+&lt;li&gt;This release adds support for ProtectedQuery results to be delivered to more than one collaboration member via the new distribute output configuration in StartProtectedQuery.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;QBusiness (4.0.1.0)
+&lt;li&gt;CloudWatchLogs (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for anonymous user access for Q Business applications&lt;/li&gt;
+&lt;li&gt;CloudWatch Logs supports "DELIVERY" log class. This log class is used only for delivering AWS Lambda logs to Amazon S3 or Amazon Data Firehose.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.1.0)
+&lt;li&gt;Deadline (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;Introduced support for P5en instance types on SageMaker Studio for JupyterLab and CodeEditor applications.&lt;/li&gt;
+&lt;li&gt;Adds support for tag management on workers and tag inheritance from fleets to their associated workers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMakerMetrics (4.0.1.0)
+&lt;li&gt;EC2 (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;SageMaker Metrics Service now supports FIPS endpoint in all US and Canada Commercial regions.&lt;/li&gt;
+&lt;li&gt;Launch of cost distribution feature for IPAM owners to distribute costs to internal teams.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SimpleSystemsManagement (4.0.1.0)
+&lt;li&gt;ECR (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for just-In-time node access in AWS Systems Manager. Just-in-time node access enables customers to move towards zero standing privileges by requiring operators to request access and obtain approval before remotely connecting to nodes managed by the SSM Agent.&lt;/li&gt;
+&lt;li&gt;Adds dualstack support for Amazon Elastic Container Registry (Amazon ECR).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SSMGuiConnect (4.0.0.0)
+&lt;li&gt;ECRPublic (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds API support for the connection recording GUI Connect feature of AWS Systems Manager&lt;/li&gt;
+&lt;li&gt;Adds dualstack support for Amazon Elastic Container Registry Public (Amazon ECR Public).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 4.0.0.1
+&lt;li&gt;MailManager (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;chore: Move AWSSDK.Extensions.Bedrock.MEAI to a preview version&lt;/li&gt;
+&lt;li&gt;Introducing new RuleSet rule PublishToSns action, which allows customers to publish email notifications to an Amazon SNS topic. New PublishToSns action enables customers to easily integrate their email workflows via Amazon SNS, allowing them to notify other systems about important email events.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.0.2
+&lt;ul&gt;
+&lt;li&gt;Set assembly version for all targets to fixed 4.0 version number to avoid binding issues. The assembly file version should be used to understand the version of the assembly.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
