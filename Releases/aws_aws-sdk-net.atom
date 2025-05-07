@@ -1,47 +1,42 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-05-06T00:07:20Z</updated>
+  <updated>2025-05-07T00:07:07Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-05-05</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-05-05</id>
+    <title>aws/aws-sdk-net - Releases - 2025-05-06</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-05-06</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-05-06T00:07:20Z</updated>
+    <updated>2025-05-07T00:07:07Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1037.0"&gt;3.7.1037.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1038.0"&gt;3.7.1038.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1037.0 (2025-05-05 18:19 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1038.0 (2025-05-06 18:20 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;DataZone (3.7.413.0)
+&lt;li&gt;EC2 (3.7.441.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds a new authorization policy to control the usage of custom AssetType when creating an Asset. Customer can now add new grant(s) of policyType USE_ASSET_TYPE for custom AssetTypes to apply authorization policy to projects members and domain unit owners.&lt;/li&gt;
+&lt;li&gt;This release adds support for Amazon EBS Provisioned Rate for Volume Initialization, which lets you specify a volume initialization rate to ensure that your EBS volumes are initialized in a predictable amount of time.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DeviceFarm (3.7.403.0)
+&lt;li&gt;ServiceCatalog (3.7.401.0)
 &lt;ul&gt;
-&lt;li&gt;Add an optional parameter to the GetDevicePoolCompatibility API to pass in project information to check device pool compatibility.&lt;/li&gt;
+&lt;li&gt;ServiceCatalog's APIs (DeleteServiceAction, DisassociateServiceActionFromProvisioningArtifact, AssociateServiceActionWithProvisioningArtifact) now throw InvalidParametersException when IdempotencyToken is invalid.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (3.7.440.0)
+&lt;li&gt;TimestreamQuery (3.7.403.0)
 &lt;ul&gt;
-&lt;li&gt;This update introduces API operations to manage and create local gateway VIF and VIF groups. It also includes API operations to describe Outpost LAGs and service link VIFs.&lt;/li&gt;
+&lt;li&gt;Add dualstack endpoints support and correct us-gov-west-1 FIPS endpoint.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ECS (3.7.410.8)
+&lt;li&gt;TimestreamWrite (3.7.401.0)
 &lt;ul&gt;
-&lt;li&gt;Add support to roll back an In_Progress ECS Service Deployment&lt;/li&gt;
+&lt;li&gt;Add dualstack endpoints support.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MediaConvert (3.7.412.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds an optional sidecar per-frame video quality metrics report and an ALL_PCM option for audio selectors. It also changes the data type for Probe API response fields related to video and audio bitrate from integer to double.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 3.7.402.52
+&lt;li&gt;Core 3.7.402.53
 &lt;ul&gt;
 &lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
 &lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
@@ -52,33 +47,34 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.5.0"&gt;4.0.5.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.6.0"&gt;4.0.6.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.5.0 (2025-05-05 18:22 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.6.0 (2025-05-06 18:20 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;DataZone (4.0.1.0)
+&lt;li&gt;EC2 (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds a new authorization policy to control the usage of custom AssetType when creating an Asset. Customer can now add new grant(s) of policyType USE_ASSET_TYPE for custom AssetTypes to apply authorization policy to projects members and domain unit owners.&lt;/li&gt;
+&lt;li&gt;This release adds support for Amazon EBS Provisioned Rate for Volume Initialization, which lets you specify a volume initialization rate to ensure that your EBS volumes are initialized in a predictable amount of time.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DeviceFarm (4.0.1.0)
+&lt;li&gt;ServiceCatalog (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;Add an optional parameter to the GetDevicePoolCompatibility API to pass in project information to check device pool compatibility.&lt;/li&gt;
+&lt;li&gt;ServiceCatalog's APIs (DeleteServiceAction, DisassociateServiceActionFromProvisioningArtifact, AssociateServiceActionWithProvisioningArtifact) now throw InvalidParametersException when IdempotencyToken is invalid.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.2.0)
+&lt;li&gt;TimestreamQuery (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;This update introduces API operations to manage and create local gateway VIF and VIF groups. It also includes API operations to describe Outpost LAGs and service link VIFs.&lt;/li&gt;
+&lt;li&gt;Add dualstack endpoints support and correct us-gov-west-1 FIPS endpoint.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ECS (4.0.0.2)
+&lt;li&gt;TimestreamWrite (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;Add support to roll back an In_Progress ECS Service Deployment&lt;/li&gt;
+&lt;li&gt;Add dualstack endpoints support.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MediaConvert (4.0.1.0)
+&lt;li&gt;Core 4.0.0.3
 &lt;ul&gt;
-&lt;li&gt;This release adds an optional sidecar per-frame video quality metrics report and an ALL_PCM option for audio selectors. It also changes the data type for Probe API response fields related to video and audio bitrate from integer to double.&lt;/li&gt;
+&lt;li&gt;Fix regression where &lt;code&gt;Amazon.Auth.AccessControlPolicy.Policy.FromJson&lt;/code&gt; was not correctly handling objects in the &lt;code&gt;Principal&lt;/code&gt; property (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3040767184" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/3791" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/3791/hovercard" href="https://github.com/aws/aws-sdk-net/issues/3791"&gt;#3791&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
