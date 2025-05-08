@@ -1,42 +1,47 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-05-07T00:07:07Z</updated>
+  <updated>2025-05-08T00:07:23Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-05-06</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-05-06</id>
+    <title>aws/aws-sdk-net - Releases - 2025-05-07</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-05-07</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-05-07T00:07:07Z</updated>
+    <updated>2025-05-08T00:07:23Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1038.0"&gt;3.7.1038.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1039.0"&gt;3.7.1039.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1038.0 (2025-05-06 18:20 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1039.0 (2025-05-07 18:24 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;EC2 (3.7.441.0)
+&lt;li&gt;EC2 (3.7.442.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for Amazon EBS Provisioned Rate for Volume Initialization, which lets you specify a volume initialization rate to ensure that your EBS volumes are initialized in a predictable amount of time.&lt;/li&gt;
+&lt;li&gt;This release adds API support for Path Component Exclusion (Filter Out ARN) for Reachability Analyzer&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ServiceCatalog (3.7.401.0)
+&lt;li&gt;Imagebuilder (3.7.404.7)
 &lt;ul&gt;
-&lt;li&gt;ServiceCatalog's APIs (DeleteServiceAction, DisassociateServiceActionFromProvisioningArtifact, AssociateServiceActionWithProvisioningArtifact) now throw InvalidParametersException when IdempotencyToken is invalid.&lt;/li&gt;
+&lt;li&gt;Updated the CreateImageRecipeRequest ParentImage description to include all valid values as updated with the SSM Parameters project.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;TimestreamQuery (3.7.403.0)
+&lt;li&gt;MediaLive (3.7.417.0)
 &lt;ul&gt;
-&lt;li&gt;Add dualstack endpoints support and correct us-gov-west-1 FIPS endpoint.&lt;/li&gt;
+&lt;li&gt;Enables Updating Anywhere Settings on a MediaLive Anywhere Channel.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;TimestreamWrite (3.7.401.0)
+&lt;li&gt;SageMaker (3.7.439.0)
 &lt;ul&gt;
-&lt;li&gt;Add dualstack endpoints support.&lt;/li&gt;
+&lt;li&gt;SageMaker AI Studio users can now migrate to SageMaker Unified Studio, which offers a unified web-based development experience that integrates AWS data, analytics, artificial intelligence (AI), and machine learning (ML) services, as well as additional tools and resource&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 3.7.402.53
+&lt;li&gt;Synthetics (3.7.404.0)
+&lt;ul&gt;
+&lt;li&gt;Add support to test a canary update by invoking a dry run of a canary. This behavior can be used via the new StartCanaryDryRun API along with new fields in UpdateCanary to apply dry run changes. Also includes changes in GetCanary and GetCanaryRuns to support retrieving dry run configurations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.402.54
 &lt;ul&gt;
 &lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
 &lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
@@ -47,34 +52,38 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.6.0"&gt;4.0.6.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.7.0"&gt;4.0.7.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.6.0 (2025-05-06 18:20 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.7.0 (2025-05-07 18:23 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;EC2 (4.0.3.0)
+&lt;li&gt;EC2 (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for Amazon EBS Provisioned Rate for Volume Initialization, which lets you specify a volume initialization rate to ensure that your EBS volumes are initialized in a predictable amount of time.&lt;/li&gt;
+&lt;li&gt;This release adds API support for Path Component Exclusion (Filter Out ARN) for Reachability Analyzer&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ServiceCatalog (4.0.1.0)
+&lt;li&gt;Imagebuilder (4.0.0.3)
 &lt;ul&gt;
-&lt;li&gt;ServiceCatalog's APIs (DeleteServiceAction, DisassociateServiceActionFromProvisioningArtifact, AssociateServiceActionWithProvisioningArtifact) now throw InvalidParametersException when IdempotencyToken is invalid.&lt;/li&gt;
+&lt;li&gt;Updated the CreateImageRecipeRequest ParentImage description to include all valid values as updated with the SSM Parameters project.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;TimestreamQuery (4.0.1.0)
+&lt;li&gt;MediaLive (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;Add dualstack endpoints support and correct us-gov-west-1 FIPS endpoint.&lt;/li&gt;
+&lt;li&gt;Enables Updating Anywhere Settings on a MediaLive Anywhere Channel.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;TimestreamWrite (4.0.1.0)
+&lt;li&gt;S3 (4.0.0.3)
 &lt;ul&gt;
-&lt;li&gt;Add dualstack endpoints support.&lt;/li&gt;
+&lt;li&gt;Fix regression where presigned URLs could not be created when using a custom &lt;code&gt;ServiceURL&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 4.0.0.3
+&lt;li&gt;SageMaker (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Fix regression where &lt;code&gt;Amazon.Auth.AccessControlPolicy.Policy.FromJson&lt;/code&gt; was not correctly handling objects in the &lt;code&gt;Principal&lt;/code&gt; property (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3040767184" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/3791" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/3791/hovercard" href="https://github.com/aws/aws-sdk-net/issues/3791"&gt;#3791&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;SageMaker AI Studio users can now migrate to SageMaker Unified Studio, which offers a unified web-based development experience that integrates AWS data, analytics, artificial intelligence (AI), and machine learning (ML) services, as well as additional tools and resource&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Synthetics (4.0.1.0)
+&lt;ul&gt;
+&lt;li&gt;Add support to test a canary update by invoking a dry run of a canary. This behavior can be used via the new StartCanaryDryRun API along with new fields in UpdateCanary to apply dry run changes. Also includes changes in GetCanary and GetCanaryRuns to support retrieving dry run configurations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

@@ -1,42 +1,71 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2025-05-07T00:07:23Z</updated>
+  <updated>2025-05-08T00:07:38Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-05-06</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-05-06</id>
-    <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-05-07T00:07:07Z</updated>
+    <title>autofac/Autofac - Releases - 2025-05-07</title>
+    <id>https://github.com/autofac/Autofac#2025-05-07</id>
+    <link href="https://github.com/autofac/Autofac" />
+    <updated>2025-05-08T00:07:21Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1038.0"&gt;3.7.1038.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/autofac/Autofac/releases/tag/v8.3.0"&gt;v8.3.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1038.0 (2025-05-06 18:20 UTC)&lt;/h3&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;EC2 (3.7.441.0)
+&lt;li&gt;Corrected nullable markup on &lt;code&gt;IIndex&amp;lt;K,V&amp;gt;.TryGetValue()&lt;/code&gt; since it may return null on failure.&lt;/li&gt;
+&lt;li&gt;Composite services can now be keyed (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3038208490" data-permission-text="Title is private" data-url="https://github.com/autofac/Autofac/issues/1458" data-hovercard-type="pull_request" data-hovercard-url="/autofac/Autofac/pull/1458/hovercard" href="https://github.com/autofac/Autofac/pull/1458"&gt;#1458&lt;/a&gt; - thanks &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/syko9000/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/syko9000"&gt;@syko9000&lt;/a&gt;!)&lt;/li&gt;
+&lt;li&gt;Packages for core Autofac are no longer published to MyGet. Instead, builds are now available from &lt;a href="https://github.com/orgs/autofac/packages?repo_name=Autofac"&gt;GitHub Packages&lt;/a&gt; This also means the actual packages themselves won't be manually attached to the release - you can get them from the package source now.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/autofac/Autofac/compare/v8.2.1...v8.3.0"&gt;&lt;tt&gt;v8.2.1...v8.3.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>aws/aws-sdk-net - Releases - 2025-05-07</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-05-07</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2025-05-08T00:07:23Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1039.0"&gt;3.7.1039.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;3.7.1039.0 (2025-05-07 18:24 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;This release adds support for Amazon EBS Provisioned Rate for Volume Initialization, which lets you specify a volume initialization rate to ensure that your EBS volumes are initialized in a predictable amount of time.&lt;/li&gt;
+&lt;li&gt;EC2 (3.7.442.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds API support for Path Component Exclusion (Filter Out ARN) for Reachability Analyzer&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ServiceCatalog (3.7.401.0)
+&lt;li&gt;Imagebuilder (3.7.404.7)
 &lt;ul&gt;
-&lt;li&gt;ServiceCatalog's APIs (DeleteServiceAction, DisassociateServiceActionFromProvisioningArtifact, AssociateServiceActionWithProvisioningArtifact) now throw InvalidParametersException when IdempotencyToken is invalid.&lt;/li&gt;
+&lt;li&gt;Updated the CreateImageRecipeRequest ParentImage description to include all valid values as updated with the SSM Parameters project.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;TimestreamQuery (3.7.403.0)
+&lt;li&gt;MediaLive (3.7.417.0)
 &lt;ul&gt;
-&lt;li&gt;Add dualstack endpoints support and correct us-gov-west-1 FIPS endpoint.&lt;/li&gt;
+&lt;li&gt;Enables Updating Anywhere Settings on a MediaLive Anywhere Channel.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;TimestreamWrite (3.7.401.0)
+&lt;li&gt;SageMaker (3.7.439.0)
 &lt;ul&gt;
-&lt;li&gt;Add dualstack endpoints support.&lt;/li&gt;
+&lt;li&gt;SageMaker AI Studio users can now migrate to SageMaker Unified Studio, which offers a unified web-based development experience that integrates AWS data, analytics, artificial intelligence (AI), and machine learning (ML) services, as well as additional tools and resource&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 3.7.402.53
+&lt;li&gt;Synthetics (3.7.404.0)
+&lt;ul&gt;
+&lt;li&gt;Add support to test a canary update by invoking a dry run of a canary. This behavior can be used via the new StartCanaryDryRun API along with new fields in UpdateCanary to apply dry run changes. Also includes changes in GetCanary and GetCanaryRuns to support retrieving dry run configurations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.402.54
 &lt;ul&gt;
 &lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
 &lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
@@ -47,34 +76,38 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.6.0"&gt;4.0.6.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.7.0"&gt;4.0.7.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.6.0 (2025-05-06 18:20 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.7.0 (2025-05-07 18:23 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;EC2 (4.0.3.0)
+&lt;li&gt;EC2 (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for Amazon EBS Provisioned Rate for Volume Initialization, which lets you specify a volume initialization rate to ensure that your EBS volumes are initialized in a predictable amount of time.&lt;/li&gt;
+&lt;li&gt;This release adds API support for Path Component Exclusion (Filter Out ARN) for Reachability Analyzer&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ServiceCatalog (4.0.1.0)
+&lt;li&gt;Imagebuilder (4.0.0.3)
 &lt;ul&gt;
-&lt;li&gt;ServiceCatalog's APIs (DeleteServiceAction, DisassociateServiceActionFromProvisioningArtifact, AssociateServiceActionWithProvisioningArtifact) now throw InvalidParametersException when IdempotencyToken is invalid.&lt;/li&gt;
+&lt;li&gt;Updated the CreateImageRecipeRequest ParentImage description to include all valid values as updated with the SSM Parameters project.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;TimestreamQuery (4.0.1.0)
+&lt;li&gt;MediaLive (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;Add dualstack endpoints support and correct us-gov-west-1 FIPS endpoint.&lt;/li&gt;
+&lt;li&gt;Enables Updating Anywhere Settings on a MediaLive Anywhere Channel.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;TimestreamWrite (4.0.1.0)
+&lt;li&gt;S3 (4.0.0.3)
 &lt;ul&gt;
-&lt;li&gt;Add dualstack endpoints support.&lt;/li&gt;
+&lt;li&gt;Fix regression where presigned URLs could not be created when using a custom &lt;code&gt;ServiceURL&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 4.0.0.3
+&lt;li&gt;SageMaker (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Fix regression where &lt;code&gt;Amazon.Auth.AccessControlPolicy.Policy.FromJson&lt;/code&gt; was not correctly handling objects in the &lt;code&gt;Principal&lt;/code&gt; property (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3040767184" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/3791" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/3791/hovercard" href="https://github.com/aws/aws-sdk-net/issues/3791"&gt;#3791&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;SageMaker AI Studio users can now migrate to SageMaker Unified Studio, which offers a unified web-based development experience that integrates AWS data, analytics, artificial intelligence (AI), and machine learning (ML) services, as well as additional tools and resource&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Synthetics (4.0.1.0)
+&lt;ul&gt;
+&lt;li&gt;Add support to test a canary update by invoking a dry run of a canary. This behavior can be used via the new StartCanaryDryRun API along with new fields in UpdateCanary to apply dry run changes. Also includes changes in GetCanary and GetCanaryRuns to support retrieving dry run configurations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -85,135 +118,50 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-05-06</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-05-06</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-05-07</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-05-07</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-05-07T00:07:08Z</updated>
+    <updated>2025-05-08T00:07:23Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.46.0"&gt;Azure.Core_1.46.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Extensions.AspNetCore.DataProtection.Keys_1.5.0"&gt;Azure.Extensions.AspNetCore.DataProtection.Keys_1.5.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.46.0 (2025-05-06)&lt;/h2&gt;
+                                &lt;h2&gt;1.5.0 (2025-05-06)&lt;/h2&gt;
+&lt;h3&gt;Acknowledgments&lt;/h3&gt;
+&lt;p&gt;Thank you to our developer community members who helped to make the Event Hubs client libraries better with their contributions to this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Matt Kotsenas &lt;em&gt;(&lt;a href="https://github.com/MattKotsenas"&gt;GitHub&lt;/a&gt;)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Adding AzureCoreContext to support AOT compatible reading and writing of types owned by Azure.Core through ModelReaderWriter&lt;/li&gt;
+&lt;li&gt;An overload was added to &lt;code&gt;ProtectKeysWithAzureKeyVault&lt;/code&gt; which allows for resolving the key identifier dynamically using &lt;code&gt;IServiceProvider&lt;/code&gt; rather than using a static identifier.  &lt;em&gt;(A community contribution, courtesy of &lt;a href="https://github.com/MattKotsenas"&gt;MattKotsenas&lt;/a&gt;)&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.55"&gt;Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.55&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DataFactory_1.8.0"&gt;Azure.ResourceManager.DataFactory_1.8.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.0.0-preview.55 (2025-05-06)&lt;/h2&gt;
+                                &lt;h2&gt;1.8.0 (2025-05-09)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for Amazon RDS for Oracle V2 linked service.&lt;/li&gt;
+&lt;li&gt;Added property to Azure Databricks linked service definition.&lt;/li&gt;
+&lt;li&gt;Added certificate authentication support for Microsoft 365 SharePoint linked service.&lt;/li&gt;
+&lt;li&gt;Added Snowflake V2 linked service definition.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.Batch_12.22.0-beta.1"&gt;Azure.Storage.Blobs.Batch_12.22.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.22.0-beta.1 (2025-05-06)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Added support for service version 2025-07-05.&lt;/li&gt;
-&lt;li&gt;Added BlobChangeFeedClient.GetLastConsumable() and .GetLastConsumableAsync().&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.DataLake_12.23.0-beta.1"&gt;Azure.Storage.Files.DataLake_12.23.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.23.0-beta.1 (2025-05-06)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for service version 2025-07-05.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.Shares_12.23.0-beta.1"&gt;Azure.Storage.Files.Shares_12.23.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.23.0-beta.1 (2025-05-06)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for service version 2025-07-05.&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;ShareFileClient.CreateSymbolicLink()&lt;/code&gt;, &lt;code&gt;.CreateSymbolicLinkAsync()&lt;/code&gt;, &lt;code&gt;.GetSymbolicLink()&lt;/code&gt;, and &lt;code&gt;.GetSymbolicLinkAsync()&lt;/code&gt; APIs.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Queues_12.23.0-beta.1"&gt;Azure.Storage.Queues_12.23.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.23.0-beta.1 (2025-05-06)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for service version 2025-07-05.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs_12.25.0-beta.1"&gt;Azure.Storage.Blobs_12.25.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.25.0-beta.1 (2025-05-06)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for service version 2025-07-05.&lt;/li&gt;
-&lt;li&gt;Added support for the &lt;code&gt;SourceShareTokenIntent&lt;/code&gt; parameter to &lt;code&gt;AppendBlobClient.AppendBlockFromUri()&lt;/code&gt;, &lt;code&gt;.AppendBlockFromUriAsync()&lt;/code&gt;, &lt;code&gt;BlockBlobClient.StageBlockFromUri()&lt;/code&gt;, &lt;code&gt;.StageBlockFromUriAsync()&lt;/code&gt;, &lt;code&gt;BlockBlobClient.SyncUploadFromUri()&lt;/code&gt;, &lt;code&gt;.SyncUploadFromUriAsync()&lt;/code&gt;, &lt;code&gt;BlobBaseClient.SyncCopyFromUri()&lt;/code&gt;, &lt;code&gt;.SyncCopyFromUriAsync()&lt;/code&gt;, &lt;code&gt;PageBlobClient.UploadPagesFromUri()&lt;/code&gt;, &lt;code&gt;.UploadPagesFromUriAsync()&lt;/code&gt;,&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;PageBlobCreateOptions.PremiumPageBlobAccessTier&lt;/code&gt; to &lt;code&gt;PageBlobClient.Create(..)&lt;/code&gt; overloads.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Common_12.24.0-beta.1"&gt;Azure.Storage.Common_12.24.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.24.0-beta.1 (2025-05-06)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;StorageBearerTokenChallengeAuthorizationPolicy&lt;/code&gt; now will attempt to handle Continuous Access Evaluation (CAE) challenges, if present, by default.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.WorkloadsSapVirtualInstance_1.0.0-beta.1"&gt;Azure.ResourceManager.WorkloadsSapVirtualInstance_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2025-04-29)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;p&gt;This package follows the &lt;a href="https://azure.github.io/azure-sdk/general_introduction.html" rel="nofollow"&gt;new Azure SDK guidelines&lt;/a&gt;, and provides many core capabilities:&lt;/p&gt;
-&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
-- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
-- HTTP pipeline with custom policies.
-- Better error-handling.
-- Support uniform telemetry across all languages."&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
-- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
-- HTTP pipeline with custom policies.
-- Better error-handling.
-- Support uniform telemetry across all languages.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This package is a Public Preview version, so expect incompatible changes in subsequent releases as we improve the product. To provide feedback, submit an issue in our &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues"&gt;Azure SDK for .NET GitHub repo&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;NOTE: For more information about unified authentication, please refer to &lt;a href="https://docs.microsoft.com//dotnet/api/overview/azure/identity-readme?view=azure-dotnet" rel="nofollow"&gt;Microsoft Azure Identity documentation for .NET&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Sql_1.3.0"&gt;Azure.ResourceManager.Sql_1.3.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.3.0 (2025-05-01)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version tag to 'package-2023-08'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/8c2c4da647cc9dbe6317a5961138fd058ed78401/specification/sql/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/8c2c4da647cc9dbe6317a5961138fd058ed78401/specification/sql/resource-manager/readme.md&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Data.Tables_12.11.0"&gt;Azure.Data.Tables_12.11.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.11.0 (2025-05-06)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for specifying the token credential's Microsoft Entra audience when creating a client.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -222,360 +170,192 @@
             </content>
   </entry>
   <entry>
-    <title>DataDog/dd-trace-dotnet - Releases - 2025-05-06</title>
-    <id>https://github.com/DataDog/dd-trace-dotnet#2025-05-06</id>
-    <link href="https://github.com/DataDog/dd-trace-dotnet" />
-    <updated>2025-05-07T00:07:08Z</updated>
+    <title>googleapis/google-cloud-dotnet - Releases - 2025-05-07</title>
+    <id>https://github.com/googleapis/google-cloud-dotnet#2025-05-07</id>
+    <link href="https://github.com/googleapis/google-cloud-dotnet" />
+    <updated>2025-05-08T00:07:32Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/releases/tag/v3.16.0"&gt;3.16.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.ModelArmor.V1-1.0.0-beta01"&gt;Google.Cloud.ModelArmor.V1 version 1.0.0-beta01&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;Summary&lt;/h2&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;[IAST] Add support for .NET 9 &lt;code&gt;ReadOnlySpan&amp;lt;T&amp;gt;&lt;/code&gt; overloads for &lt;code&gt;string&lt;/code&gt;  manipulation&lt;/li&gt;
-&lt;li&gt;[IAST] Change cookie filter default value to avoid flooding&lt;/li&gt;
-&lt;li&gt;[Continuous Profiler] Add WaitHandle wait duration profiling&lt;/li&gt;
-&lt;li&gt;[Continuous Profiler] Fix possible shut down crash scenarios&lt;/li&gt;
-&lt;li&gt;[Exception Replay] Added support for top-most failing local root span&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Changes&lt;/h2&gt;
-&lt;h3&gt;Tracer&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[Tracer] update sampling formula (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3002069181" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6866" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6866/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6866"&gt;#6866&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;ASM&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[ASM] Removed unneeded rewrite PInvoke call for ASM (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3031920910" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6914" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6914/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6914"&gt;#6914&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[IAST] Add support for Dotnet 9 ReadOnlySpan String overloads (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2989231687" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6846" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6846/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6846"&gt;#6846&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[IAST] Change cookie filter default value (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3014762649" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6889" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6889/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6889"&gt;#6889&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[IAST] Iast Aspects logs refactor (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3014229172" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6888" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6888/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6888"&gt;#6888&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Continuous Profiler&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[Profiler] Implement WaitHandle wait duration profiling (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2735173676" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6426" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6426/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6426"&gt;#6426&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Profiler] Bump libdatadog to v17.0.0 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2962836937" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6805" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6805/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6805"&gt;#6805&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Profiler] Fix timer_create bug (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2966182970" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6811" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6811/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6811"&gt;#6811&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Profiler] Fix short lived threads scenario (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3001983632" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6864" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6864/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6864"&gt;#6864&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Profiler] Fix missing http profiler in profiler_list tag (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3002048120" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6865" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6865/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6865"&gt;#6865&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Profiler] Remove logs in buggybits if needed (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3020219313" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6898" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6898/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6898"&gt;#6898&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Profiler] Fix IpcServer for .NET Framework (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3025392867" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6903" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6903/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6903"&gt;#6903&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Tracer] Fix possible crash in ContextTracker on shutdown (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3017832936" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6893" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6893/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6893"&gt;#6893&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Debugger&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[Exception Replay] Added support for top-most failing local root span + Communicating failure to capture errors (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2996446623" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6859" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6859/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6859"&gt;#6859&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Remove not required samples (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2999312688" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6862" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6862/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6862"&gt;#6862&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Miscellaneous&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add readme for MacOS development (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2516964111" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6018" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6018/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6018"&gt;#6018&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Add documentation around Xunit.Combinatorial (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3011854023" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6880" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6880/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6880"&gt;#6880&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Dynamic Instrumentation] DEBUG-3492 Remove duration from non method snapshots (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2891763394" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6735" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6735/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6735"&gt;#6735&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Revert "[Dynamic Instrumentation] DEBUG-3492 Remove duration from non… (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3024349596" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6902" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6902/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6902"&gt;#6902&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Build / Test&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Bump Microsoft.Azure.Functions.Worker.Extensions.Http from 3.2.0 to 3.3.0 in /tracer/test/test-applications/azure-functions/Samples.AzureFunctions.V4Isolated (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2818688964" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6605" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6605/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6605"&gt;#6605&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;Xunit.Combinatorial&lt;/code&gt; for Combinatorial/Pairwise testing (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2989319272" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6847" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6847/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6847"&gt;#6847&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Add traits to exclude tests that will not run anyway (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2996297127" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6858" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6858/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6858"&gt;#6858&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix build warnings in debugger and ASM samples (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3002170700" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6867" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6867/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6867"&gt;#6867&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Test Package Versions Bump] Updating package versions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3006723563" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6874" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6874/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6874"&gt;#6874&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Expand ownership of Version Bump related files (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3008807012" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6877" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6877/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6877"&gt;#6877&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Add "all-green" job to enfore green CI policy (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3011466303" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6879" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6879/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6879"&gt;#6879&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[CI] Use public symbol org API KEY (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3012054591" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6881" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6881/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6881"&gt;#6881&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Update to use &lt;code&gt;9.0.203&lt;/code&gt; of the .NET SDK (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3013298921" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6883" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6883/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6883"&gt;#6883&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Don't run throughput tests on PRs (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3013594698" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6884" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6884/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6884"&gt;#6884&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Dump the docker compose logs to try to see what's going on (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3013966039" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6886" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6886/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6886"&gt;#6886&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Adds a "flaky" attribute, that we can use to automatically retry flaky tests (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3016625483" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6891" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6891/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6891"&gt;#6891&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix Couchbase flaky tests (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3017325111" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6892" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6892/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6892"&gt;#6892&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Use code owners in build variable generation (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3019889054" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6896" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6896/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6896"&gt;#6896&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Test Package Versions Bump] Updating package versions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3022500213" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6900" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6900/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6900"&gt;#6900&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Try to fix flake in building runner tool (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3027698678" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6905" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6905/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6905"&gt;#6905&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Use mirrored, latest, image in GitLab build (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3027731202" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6906" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6906/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6906"&gt;#6906&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Update Serverless teams in &lt;code&gt;CODEOWNERS&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3034235177" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6918" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6918/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6918"&gt;#6918&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/compare/v3.15.0...v3.16.0"&gt;Changes since 3.15.0&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>open-telemetry/opentelemetry-dotnet - Releases - 2025-05-06</title>
-    <id>https://github.com/open-telemetry/opentelemetry-dotnet#2025-05-06</id>
-    <link href="https://github.com/open-telemetry/opentelemetry-dotnet" />
-    <updated>2025-05-07T00:07:21Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/coreunstable-1.12.0-beta.1"&gt;coreunstable-1.12.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;The following changes are from the previous release &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/coreunstable-1.11.2-beta.1"&gt;1.11.2-beta.1&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Prometheus.AspNetCore/1.12.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Prometheus.AspNetCore v1.12.0-beta.1&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.12.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6269" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6269/hovercard"&gt;#6269&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/coreunstable-1.12.0-beta.1/src/OpenTelemetry.Exporter.Prometheus.AspNetCore/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Prometheus.HttpListener/1.12.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Prometheus.HttpListener v1.12.0-beta.1&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.12.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6269" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6269/hovercard"&gt;#6269&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/coreunstable-1.12.0-beta.1/src/OpenTelemetry.Exporter.Prometheus.HttpListener/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Shims.OpenTracing/1.12.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Shims.OpenTracing v1.12.0-beta.1&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.12.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6269" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6269/hovercard"&gt;#6269&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/coreunstable-1.12.0-beta.1/src/OpenTelemetry.Shims.OpenTracing/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2025-05-06</title>
-    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2025-05-06</id>
-    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-    <updated>2025-05-07T00:07:22Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Exporter.Geneva-1.12.0"&gt;Exporter.Geneva-1.12.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Geneva/1.12.0" rel="nofollow"&gt;OpenTelemetry.Exporter.Geneva v1.12.0&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.12.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2725" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2725/hovercard"&gt;#2725&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Exporter.Geneva-1.12.0/src/OpenTelemetry.Exporter.Geneva/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Initial generation for Google.Cloud.ModelArmor.V1&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.SqlClient-1.12.0-beta.1"&gt;Instrumentation.SqlClient-1.12.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Logging.Console-1.5.0"&gt;Google.Cloud.Logging.Console version 1.5.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.SqlClient/1.12.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.SqlClient v1.12.0-beta.1&lt;/a&gt;&lt;/p&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Fix issue where IPv6 addresses were improperly parsed from the the&lt;br&gt;
-connection's &lt;code&gt;DataSource&lt;/code&gt; when used to populate the &lt;code&gt;server.address&lt;/code&gt;&lt;br&gt;
-attribute.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2674" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2674/hovercard"&gt;#2674&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Updates have been made to adhere to recent changes in the new semantic&lt;br&gt;
-conventions. These affect you if you have opted in to the new conventions.&lt;br&gt;
-When &lt;code&gt;CommandType&lt;/code&gt; is &lt;code&gt;StoredProcedure&lt;/code&gt;, the &lt;code&gt;db.stored_procedure.name&lt;/code&gt; has&lt;br&gt;
-been added and the &lt;code&gt;db.query.text&lt;/code&gt;, &lt;code&gt;db.operation.name&lt;/code&gt;, and&lt;br&gt;
-&lt;code&gt;db.collection.name&lt;/code&gt; attributes have been removed.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2693" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2693/hovercard"&gt;#2693&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.12.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2725" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2725/hovercard"&gt;#2725&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixes an issue that throws &lt;code&gt;IndexOutOfRangeException&lt;/code&gt; in &lt;code&gt;SqlProcessor&lt;/code&gt; when the&lt;br&gt;
-SQL statement ends with the beginning of a keyword such as &lt;code&gt;UPDATE&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2674" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2674/hovercard"&gt;#2674&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.SqlClient-1.12.0-beta.1/src/OpenTelemetry.Instrumentation.SqlClient/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Add EmitNumericTypes option for format parameters and scopes&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.ProcessRuntime-1.12.0-beta.1"&gt;Resources.ProcessRuntime-1.12.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.DevTools.ContainerAnalysis-3.9.0"&gt;Google.Cloud.DevTools.ContainerAnalysis version 3.9.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.ProcessRuntime/1.12.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Resources.ProcessRuntime v1.12.0-beta.1&lt;/a&gt;&lt;/p&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.12.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2725" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2725/hovercard"&gt;#2725&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.ProcessRuntime-1.12.0-beta.1/src/OpenTelemetry.Resources.ProcessRuntime/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Support for Secrets&lt;/li&gt;
+&lt;li&gt;Support for Layer Details&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.Process-1.12.0-beta.1"&gt;Resources.Process-1.12.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Storage.Control.V2-1.3.0"&gt;Google.Cloud.Storage.Control.V2 version 1.3.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.Process/1.12.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Resources.Process v1.12.0-beta.1&lt;/a&gt;&lt;/p&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.12.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2725" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2725/hovercard"&gt;#2725&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add Anywhere cache control APIs&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.Process-1.12.0-beta.1/src/OpenTelemetry.Resources.Process/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added comments for Anywhere cache messages&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.OperatingSystem-1.12.0-beta.1"&gt;Resources.OperatingSystem-1.12.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Retail.V2-2.13.0"&gt;Google.Cloud.Retail.V2 version 2.13.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.OperatingSystem/1.12.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Resources.OperatingSystem v1.12.0-beta.1&lt;/a&gt;&lt;/p&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.12.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2725" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2725/hovercard"&gt;#2725&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;add language_code, region_code and place_id to SearchRequest&lt;/li&gt;
+&lt;li&gt;add pin_control_metadata to SearchResponse&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.OperatingSystem-1.12.0-beta.1/src/OpenTelemetry.Resources.OperatingSystem/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;keep the API doc up-to-date with recent changes&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.Host-1.12.0-beta.1"&gt;Resources.Host-1.12.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.NetApp.V1-1.9.0"&gt;Google.Cloud.NetApp.V1 version 1.9.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.Host/1.12.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Resources.Host v1.12.0-beta.1&lt;/a&gt;&lt;/p&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.12.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2725" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2725/hovercard"&gt;#2725&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;add &lt;code&gt;volume_region&lt;/code&gt; and &lt;code&gt;backup_region&lt;/code&gt; to backup &lt;code&gt;Backup&lt;/code&gt; message&lt;/li&gt;
+&lt;li&gt;add &lt;code&gt;source_region&lt;/code&gt;, &lt;code&gt;backup_region&lt;/code&gt;, &lt;code&gt;source_backup_vault&lt;/code&gt;, &lt;code&gt;destination_backup_vault&lt;/code&gt;, &lt;code&gt;backupVault_type&lt;/code&gt; (of new enum type &lt;code&gt;BackupVaultType&lt;/code&gt;) to &lt;code&gt;BackupVault&lt;/code&gt; message&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.Host-1.12.0-beta.1/src/OpenTelemetry.Resources.Host/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A comment for field &lt;code&gt;cooling_threshold_days&lt;/code&gt; in message &lt;code&gt;.google.cloud.netapp.v1.TieringPolicy&lt;/code&gt; is changed&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.Container-1.12.0-beta.1"&gt;Resources.Container-1.12.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Memorystore.V1-1.0.0-beta03"&gt;Google.Cloud.Memorystore.V1 version 1.0.0-beta03&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.Container/1.12.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Resources.Container v1.12.0-beta.1&lt;/a&gt;&lt;/p&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.12.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2725" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2725/hovercard"&gt;#2725&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;A new resource_definition &lt;code&gt;cloudkms.googleapis.com/CryptoKey&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new method &lt;code&gt;RescheduleMaintenance&lt;/code&gt; is added to service &lt;code&gt;Memorystore&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new method &lt;code&gt;ListBackupCollections&lt;/code&gt; is added to service &lt;code&gt;Memorystore&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new method &lt;code&gt;GetBackupCollection&lt;/code&gt; is added to service &lt;code&gt;Memorystore&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new method &lt;code&gt;ListBackups&lt;/code&gt; is added to service &lt;code&gt;Memorystore&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new method &lt;code&gt;GetBackup&lt;/code&gt; is added to service &lt;code&gt;Memorystore&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new method &lt;code&gt;DeleteBackup&lt;/code&gt; is added to service &lt;code&gt;Memorystore&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new method &lt;code&gt;ExportBackup&lt;/code&gt; is added to service &lt;code&gt;Memorystore&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new method &lt;code&gt;BackupInstance&lt;/code&gt; is added to service &lt;code&gt;Memorystore&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;target_engine_version&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.memorystore.v1.Instance&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;target_node_type&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.memorystore.v1.Instance&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;GcsBackupSource&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;ManagedBackupSource&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;gcs_source&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.memorystore.v1.Instance&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;managed_backup_source&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.memorystore.v1.Instance&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;psc_attachment_details&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.memorystore.v1.Instance&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;ondemand_maintenance&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.memorystore.v1.Instance&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;maintenance_policy&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.memorystore.v1.Instance&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;maintenance_schedule&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.memorystore.v1.Instance&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;cross_instance_replication_config&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.memorystore.v1.Instance&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;async_instance_endpoints_deletion_enabled&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.memorystore.v1.Instance&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;backup_collection&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.memorystore.v1.Instance&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;automated_backup_config&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.memorystore.v1.Instance&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;AutomatedBackupConfig&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;BackupCollection&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new resource_definition &lt;code&gt;memorystore.googleapis.com/BackupCollection&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;Backup&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new resource_definition &lt;code&gt;memorystore.googleapis.com/Backup&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;BackupFile&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;CrossInstanceReplicationConfig&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;MaintenancePolicy&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;WeeklyMaintenanceWindow&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;MaintenanceSchedule&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;PscAttachmentDetail&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;port&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.memorystore.v1.PscConnection&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;RescheduleMaintenanceRequest&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;ListBackupCollectionsRequest&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;ListBackupCollectionsResponse&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;GetBackupCollectionRequest&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;ListBackupsRequest&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;ListBackupsResponse&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;GetBackupRequest&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;DeleteBackupRequest&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;ExportBackupRequest&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;BackupInstanceRequest&lt;/code&gt; is added&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.Container-1.12.0-beta.1/src/OpenTelemetry.Resources.Container/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A comment for field &lt;code&gt;psc_auto_connection&lt;/code&gt; in message &lt;code&gt;.google.cloud.memorystore.v1.Instance&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;discovery_endpoints&lt;/code&gt; in message &lt;code&gt;.google.cloud.memorystore.v1.Instance&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;node_type&lt;/code&gt; in message &lt;code&gt;.google.cloud.memorystore.v1.Instance&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;engine_version&lt;/code&gt; in message &lt;code&gt;.google.cloud.memorystore.v1.Instance&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;psc_auto_connections&lt;/code&gt; in message &lt;code&gt;.google.cloud.memorystore.v1.Instance&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;port&lt;/code&gt; in message &lt;code&gt;.google.cloud.memorystore.v1.PscAutoConnection&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;psc_connection_id&lt;/code&gt; in message &lt;code&gt;.google.cloud.memorystore.v1.PscConnection&lt;/code&gt; is changed&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.Azure-1.12.0-beta.1"&gt;Resources.Azure-1.12.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.CloudControlsPartner.V1-1.2.0"&gt;Google.Cloud.CloudControlsPartner.V1 version 1.2.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.Azure/1.12.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Resources.Azure v1.12.0-beta.1&lt;/a&gt;&lt;/p&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.12.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2725" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2725/hovercard"&gt;#2725&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Enable partners to create, update and delete their customers&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;organization_domain&lt;/code&gt; is added to message &lt;code&gt;Customer&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.Azure-1.12.0-beta.1/src/OpenTelemetry.Resources.Azure/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Mark the enum value &lt;code&gt;EkmSolution.VIRTRU&lt;/code&gt; as deprecated&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Wcf-1.12.0-beta.1"&gt;Instrumentation.Wcf-1.12.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.AIPlatform.V1-3.28.0"&gt;Google.Cloud.AIPlatform.V1 version 3.28.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Wcf/1.12.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Wcf v1.12.0-beta.1&lt;/a&gt;&lt;/p&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.12.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2725" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2725/hovercard"&gt;#2725&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Preservers &lt;code&gt;IsReadOnly&lt;/code&gt; state of instrumented HTTP Headers.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2716" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2716/hovercard"&gt;#2716&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Expose llm parser to public v1 proto to prepare for GA&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Wcf-1.12.0-beta.1/src/OpenTelemetry.Instrumentation.Wcf/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;update an outdated URL&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.StackExchangeRedis-1.12.0-beta.1"&gt;Instrumentation.StackExchangeRedis-1.12.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.AIPlatform.V1Beta1-1.0.0-beta28"&gt;Google.Cloud.AIPlatform.V1Beta1 version 1.0.0-beta28&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.StackExchangeRedis/1.12.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.StackExchangeRedis v1.12.0-beta.1&lt;/a&gt;&lt;/p&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;System.Reflection.Emit.Lightweight&lt;/code&gt; is referenced only by &lt;code&gt;netstandard2.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2667" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2667/hovercard"&gt;#2667&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.12.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2725" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2725/hovercard"&gt;#2725&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;system_labels&lt;/code&gt; is added to message &lt;code&gt;google.cloud.aiplatform.v1beta1.DeployRequest&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.StackExchangeRedis-1.12.0-beta.1/src/OpenTelemetry.Instrumentation.StackExchangeRedis/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>StackExchange/StackExchange.Redis - Releases - 2025-05-06</title>
-    <id>https://github.com/StackExchange/StackExchange.Redis#2025-05-06</id>
-    <link href="https://github.com/StackExchange/StackExchange.Redis" />
-    <updated>2025-05-07T00:07:23Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/2.8.37"&gt;2.8.37&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Add &lt;code&gt;ConfigurationOptions.SetUserPemCertificate(...)&lt;/code&gt; and &lt;code&gt;ConfigurationOptions.SetUserPfxCertificate(...)&lt;/code&gt; methods to simplify using client certificates (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2990357162" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2873" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2873/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2873"&gt;#2873&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Add logging for when a Multiplexer reconfigures (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2957048668" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2864" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2864/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2864"&gt;#2864&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/st-dev-gh/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/st-dev-gh"&gt;@st-dev-gh&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix: Move &lt;code&gt;AuthenticateAsClient&lt;/code&gt; to fully async after dropping older framework support, to help client thread starvation in cases TLS negotiation stalls server-side (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3037460744" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2878" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2878/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2878"&gt;#2878&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/NickCraver/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/NickCraver"&gt;@NickCraver&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;update an outdated URL&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;New Contributors&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/st-dev-gh/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/st-dev-gh"&gt;@st-dev-gh&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2957048668" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2864" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2864/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2864"&gt;#2864&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/2.8.31...2.8.37"&gt;&lt;tt&gt;2.8.31...2.8.37&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
