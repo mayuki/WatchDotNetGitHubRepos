@@ -1,6 +1,65 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-05-13T00:07:11Z</updated>
+  <updated>2025-05-15T05:26:53Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-05-14</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-05-14</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2025-05-15T05:26:53Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Search.Documents_11.7.0-beta.4"&gt;Azure.Search.Documents_11.7.0-beta.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;11.7.0-beta.4 (2025-05-14)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added new &lt;code&gt;KnowledgeAgent&lt;/code&gt; resource APIs in &lt;code&gt;SearchIndexClient&lt;/code&gt; and introduced &lt;code&gt;KnowledgeAgentRetrievalClient&lt;/code&gt; for managing and querying KnowledgeAgents, enabling multi-index grounding for agentic retrieval.&lt;/li&gt;
+&lt;li&gt;Added a method overload for search query to include the &lt;code&gt;QuerySourceAuthorization&lt;/code&gt; parameter to enforce per-user filtering in queries.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;Resync&lt;/code&gt; method in &lt;code&gt;SearchIndexerClient&lt;/code&gt; to resync selective options from the data source to be re-ingested by the indexer.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;PermissionFilter&lt;/code&gt; to &lt;code&gt;SearchField&lt;/code&gt;, &lt;code&gt;SimpleField&lt;/code&gt;, and &lt;code&gt;SimpleFieldAttribute&lt;/code&gt;, indicating whether the field should be used as a permission filter.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;PermissionFilterOption&lt;/code&gt; to &lt;code&gt;SearchIndex&lt;/code&gt;, indicating whether permission filtering is enabled for the index.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;RerankerBoostedScore&lt;/code&gt; to &lt;code&gt;SemanticSearchResult&lt;/code&gt; and updated &lt;code&gt;SemanticConfiguration&lt;/code&gt; with a new &lt;code&gt;RankingOrder&lt;/code&gt; property.&lt;/li&gt;
+&lt;li&gt;Introduced new skill &lt;code&gt;ChatCompletionSkill&lt;/code&gt; that integrates with Azure AI Foundry.&lt;/li&gt;
+&lt;li&gt;Enhanced &lt;code&gt;DocumentIntelligenceLayoutSkill&lt;/code&gt; with new properties: &lt;code&gt;ChunkingProperties&lt;/code&gt;, &lt;code&gt;ExtractionOptions&lt;/code&gt;, and &lt;code&gt;OutputFormat&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;IndexerPermissionOptions&lt;/code&gt; to &lt;code&gt;SearchIndexerDataSourceConnection&lt;/code&gt; to support ingestion of various types of permission data.&lt;/li&gt;
+&lt;li&gt;Introduced sub-field vector support (multi-vectors) via &lt;code&gt;VectorQuery.Fields&lt;/code&gt;, and added new query option &lt;code&gt;VectorQuery.PerDocumentVectorLimit&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Agents.Persistent_1.0.0-beta.2"&gt;Azure.AI.Agents.Persistent_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.2 (2025-05-14)&lt;/h2&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ThreadRunSteps methods were moved to Runs.&lt;/li&gt;
+&lt;li&gt;VectorStoreFileBatches and VectorStoreFiles methods were moved to VectorStores.&lt;/li&gt;
+&lt;li&gt;The AzureAISearchResource was replaced by AzureAISearchToolResource.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Sample updates&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added sample demonstrating uploading single file to vector store and listing run steps.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Inference_1.0.0-beta.5"&gt;Azure.AI.Inference_1.0.0-beta.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.5 (2025-05-14)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated support for &lt;code&gt;AIInferenceExtensions&lt;/code&gt; methods to consume stable SCM version.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
