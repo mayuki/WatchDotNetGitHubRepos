@@ -1,39 +1,55 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-05-15T05:26:53Z</updated>
+  <updated>2025-05-16T00:07:17Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-05-14</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-05-14</id>
+    <title>aws/aws-sdk-net - Releases - 2025-05-15</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-05-15</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-05-15T05:26:53Z</updated>
+    <updated>2025-05-16T00:07:17Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1044.0"&gt;3.7.1044.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.13.0"&gt;4.0.13.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1044.0 (2025-05-14 18:25 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.13.0 (2025-05-15 18:27 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;CloudWatchLogs (3.7.413.0)
+&lt;li&gt;BedrockAgent (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds a new API "ListLogGroups" and an improvement in API "DescribeLogGroups"&lt;/li&gt;
+&lt;li&gt;Amazon Bedrock Flows introduces DoWhile loops nodes, parallel node executions, and enhancements to knowledge base nodes.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CognitoIdentityProvider (3.7.409.0)
+&lt;li&gt;CodeBuild (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;Add exceptions to WebAuthn operations.&lt;/li&gt;
+&lt;li&gt;AWS CodeBuild now supports Docker Server capability&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;KinesisFirehose (3.7.403.0)
+&lt;li&gt;ControlTower (4.0.1.1)
 &lt;ul&gt;
-&lt;li&gt;This release adds catalogARN support for s3 tables multi-catalog catalogARNs.&lt;/li&gt;
+&lt;li&gt;Updated the descriptions for the AWS Control Tower Baseline APIs to make them more intuitive.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MediaConvert (3.7.413.0)
+&lt;li&gt;DatabaseMigrationService (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;This update enables cropping for video overlays and adds a new STL to Teletext upconversion toggle to preserve styling.&lt;/li&gt;
+&lt;li&gt;Introduces Data Resync feature to describe-table-statistics and IAM database authentication for MariaDB, MySQL, and PostgreSQL.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PCS (4.0.1.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for Slurm accounting. For more information, see the Slurm accounting topic in the AWS PCS User Guide. Slurm accounting is supported for Slurm 24.11 and later. This release also adds 24.11 as a valid value for the version parameter of the Scheduler data type.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkSpaces (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;Added the new AlwaysOn running mode for WorkSpaces Pools. Customers can now choose between AlwaysOn (for instant access, with hourly usage billing regardless of connection status), or AutoStop (to optimize cost, with a brief startup delay) for their pools.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.0.4
+&lt;ul&gt;
+&lt;li&gt;Fixed issue when model properties had customization exposing IsSet methods that empty collections would not be sent as part of the request. For example the L and M properties of AttributeValue in DynamoDB.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -41,28 +57,38 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.12.0"&gt;4.0.12.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1045.0"&gt;3.7.1045.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.12.0 (2025-05-14 18:22 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1045.0 (2025-05-15 18:30 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;CloudWatchLogs (4.0.3.0)
+&lt;li&gt;BedrockAgent (3.7.426.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds a new API "ListLogGroups" and an improvement in API "DescribeLogGroups"&lt;/li&gt;
+&lt;li&gt;Amazon Bedrock Flows introduces DoWhile loops nodes, parallel node executions, and enhancements to knowledge base nodes.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CognitoIdentityProvider (4.0.1.0)
+&lt;li&gt;CodeBuild (3.7.419.0)
 &lt;ul&gt;
-&lt;li&gt;Add exceptions to WebAuthn operations.&lt;/li&gt;
+&lt;li&gt;AWS CodeBuild now supports Docker Server capability&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;KinesisFirehose (4.0.1.0)
+&lt;li&gt;ControlTower (3.7.403.1)
 &lt;ul&gt;
-&lt;li&gt;This release adds catalogARN support for s3 tables multi-catalog catalogARNs.&lt;/li&gt;
+&lt;li&gt;Updated the descriptions for the AWS Control Tower Baseline APIs to make them more intuitive.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MediaConvert (4.0.2.0)
+&lt;li&gt;DatabaseMigrationService (3.7.409.0)
 &lt;ul&gt;
-&lt;li&gt;This update enables cropping for video overlays and adds a new STL to Teletext upconversion toggle to preserve styling.&lt;/li&gt;
+&lt;li&gt;Introduces Data Resync feature to describe-table-statistics and IAM database authentication for MariaDB, MySQL, and PostgreSQL.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PCS (3.7.403.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for Slurm accounting. For more information, see the Slurm accounting topic in the AWS PCS User Guide. Slurm accounting is supported for Slurm 24.11 and later. This release also adds 24.11 as a valid value for the version parameter of the Scheduler data type.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkSpaces (3.7.412.0)
+&lt;ul&gt;
+&lt;li&gt;Added the new AlwaysOn running mode for WorkSpaces Pools. Customers can now choose between AlwaysOn (for instant access, with hourly usage billing regardless of connection status), or AutoStop (to optimize cost, with a brief startup delay) for their pools.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
