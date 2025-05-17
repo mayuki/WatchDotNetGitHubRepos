@@ -1,23 +1,43 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-05-16T00:07:17Z</updated>
+  <updated>2025-05-17T00:07:14Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-05-15</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-05-15</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-05-16</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-05-16</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-05-16T00:07:17Z</updated>
+    <updated>2025-05-17T00:07:14Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Agents.Persistent_1.0.0"&gt;Azure.AI.Agents.Persistent_1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects_1.0.0-beta.9"&gt;Azure.AI.Projects_1.0.0-beta.9&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0 (2025-05-15)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.9 (2025-05-16)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;First stable release of Azure AI Agents Persistent client library.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Deployments&lt;/code&gt; methods to enumerate AI models deployed to your AI Foundry Project.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Datasets&lt;/code&gt; methods to upload documents and reference them. To be used with Evaluations.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Indexes&lt;/code&gt; methods to handle Search Indexes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Azure AI Foundry Project endpoint is now required to construct the &lt;code&gt;AIProjectClient&lt;/code&gt;. It has the form&lt;br&gt;
+&lt;code&gt;https://&amp;lt;your-ai-services-account-name&amp;gt;.services.ai.azure.com/api/projects/&amp;lt;your-project-name&amp;gt;&lt;/code&gt;. Find it in your AI Foundry Project Overview page.&lt;/li&gt;
+&lt;li&gt;Agents are now implemented in a separate package &lt;code&gt;Azure.AI.Agents.Persistent&lt;/code&gt;. Use the &lt;code&gt;GetPersistentAgentsClient&lt;/code&gt; method on the&lt;br&gt;
+&lt;code&gt;AIProjectsClient&lt;/code&gt; to create, run and delete agents. However there have been some breaking changes in these operations. See &lt;a href="https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/ai/Azure.AI.Agents.Persistent"&gt;Agents package document and samples&lt;/a&gt; for more details.&lt;/li&gt;
+&lt;li&gt;Several changes to the &lt;code&gt;Connections&lt;/code&gt; methods, including the response object (now it is simply called &lt;code&gt;Connection&lt;/code&gt;). The class &lt;code&gt;ConnectionProperties&lt;/code&gt; was renamed to &lt;code&gt;Connection&lt;/code&gt;, and its properties have changed.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GetAzureOpenAIChatClient&lt;/code&gt; now supports returning an authenticated &lt;code&gt;AzureOpenAI&lt;/code&gt; ChatClient to be used with&lt;br&gt;
+AI models deployed to the Project's AI Services.&lt;/li&gt;
+&lt;li&gt;The method &lt;code&gt;UploadFileRequest&lt;/code&gt; on &lt;code&gt;AIProjectClient&lt;/code&gt; had been removed, use &lt;code&gt;UploadFile&lt;/code&gt; in &lt;code&gt;Datasets&lt;/code&gt; instead.&lt;/li&gt;
+&lt;li&gt;Property &lt;code&gt;scope&lt;/code&gt; on &lt;code&gt;AIProjectClient&lt;/code&gt; is removed.&lt;/li&gt;
+&lt;li&gt;Evaluator Ids are available using the class &lt;code&gt;EvaluatorIDs&lt;/code&gt; and no longer require &lt;code&gt;Azure.AI.Evaluation&lt;/code&gt; package to be installed.&lt;/li&gt;
+&lt;li&gt;Property &lt;code&gt;Id&lt;/code&gt; on Evaluation is replaced with &lt;code&gt;name&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Sample Updates&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;All samples have been updated. New ones have been added for Deployments, Datasets, and Indexes.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
