@@ -1,79 +1,35 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2025-05-30T00:07:51Z</updated>
+  <updated>2025-05-31T00:07:32Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-05-29</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-05-29</id>
+    <title>aws/aws-sdk-net - Releases - 2025-05-30</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-05-30</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-05-30T00:07:29Z</updated>
+    <updated>2025-05-31T00:07:14Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1054.0"&gt;3.7.1054.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1055.0"&gt;3.7.1055.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1054.0 (2025-05-29 18:34 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1055.0 (2025-05-30 18:21 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Amplify (3.7.407.0)
+&lt;li&gt;EMRServerless (3.7.404.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for customizable build instance sizes. CreateApp and UpdateApp operations now accept a new JobConfig parameter composed of BuildComputeType.&lt;/li&gt;
+&lt;li&gt;This release adds the capability for users to specify an optional Execution IAM policy in the StartJobRun action. The resulting permissions assumed by the job run is the intersection of the permissions in the Execution Role and the specified Execution IAM Policy.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AutoScaling (3.7.408.0)
+&lt;li&gt;SageMaker (3.7.442.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for "apple" CpuManufacturer in ABIS&lt;/li&gt;
+&lt;li&gt;Release new parameter CapacityReservationConfig in ProductionVariant&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BCMPricingCalculator (3.7.405.0)
+&lt;li&gt;Core 3.7.402.64
 &lt;ul&gt;
-&lt;li&gt;Add AFTER_DISCOUNTS_AND_COMMITMENTS to Workload Estimate Rate Type. Set ListWorkLoadEstimateUsage maxResults range to minimum of 0 and maximum of 300.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CloudTrail (3.7.404.0)
-&lt;ul&gt;
-&lt;li&gt;CloudTrail Feature Release: Support for Enriched Events with Configurable Context for Event Data Store&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Connect (3.7.422.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon Connect Service Feature: Email Recipient Limit Increase&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DataExchange (3.7.402.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds Tag support for Event Action resource, through which customers can create event actions with Tags and retrieve event actions with Tags.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DataSync (3.7.406.0)
-&lt;ul&gt;
-&lt;li&gt;AgentArns field is made optional for Object Storage and Azure Blob location create requests. Location credentials are now managed via Secrets Manager, and may be encrypted with service managed or customer managed keys. Authentication is now optional for Azure Blob locations.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;FSx (3.7.404.0)
-&lt;ul&gt;
-&lt;li&gt;FSx API changes to support the public launch of new Intelligent Tiering storage class on Amazon FSx for Lustre&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IVSRealTime (3.7.406.0)
-&lt;ul&gt;
-&lt;li&gt;IVS Real-Time now offers customers the participant replication that allow customers to copy a participant from one stage to another.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MWAA (3.7.403.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon MWAA now lets you choose a worker replacement strategy when updating an environment. This release adds two worker replacement strategies: FORCED (default), which stops workers immediately, and GRACEFUL, which allows workers to finish current tasks before shutting down.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3 (3.7.417.0)
-&lt;ul&gt;
-&lt;li&gt;Adding checksum support for S3 PutBucketOwnershipControls API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMaker (3.7.441.0)
-&lt;ul&gt;
-&lt;li&gt;Add maintenance status field to DescribeMlflowTrackingServer API response&lt;/li&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -81,74 +37,23 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.22.0"&gt;4.0.22.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.23.0"&gt;4.0.23.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.22.0 (2025-05-29 18:31 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.23.0 (2025-05-30 18:19 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Amplify (4.0.1.0)
+&lt;li&gt;EMRServerless (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for customizable build instance sizes. CreateApp and UpdateApp operations now accept a new JobConfig parameter composed of BuildComputeType.&lt;/li&gt;
+&lt;li&gt;This release adds the capability for users to specify an optional Execution IAM policy in the StartJobRun action. The resulting permissions assumed by the job run is the intersection of the permissions in the Execution Role and the specified Execution IAM Policy.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AutoScaling (4.0.1.0)
+&lt;li&gt;S3 (4.0.1.1)
 &lt;ul&gt;
-&lt;li&gt;Add support for "apple" CpuManufacturer in ABIS&lt;/li&gt;
+&lt;li&gt;Fixed an issue where CancellationToken for async call was not passed along in underlying invocations while uploading unseekable steam using Multipart Upload.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BCMPricingCalculator (4.0.1.0)
+&lt;li&gt;SageMaker (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;Add AFTER_DISCOUNTS_AND_COMMITMENTS to Workload Estimate Rate Type. Set ListWorkLoadEstimateUsage maxResults range to minimum of 0 and maximum of 300.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CloudFormation (4.0.0.5)
-&lt;ul&gt;
-&lt;li&gt;Fixed an issue where NullReferenceException was thrown while invoking AmazonCloudFormationClient.UpdateStackAsync().&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CloudTrail (4.0.1.0)
-&lt;ul&gt;
-&lt;li&gt;CloudTrail Feature Release: Support for Enriched Events with Configurable Context for Event Data Store&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Connect (4.0.2.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon Connect Service Feature: Email Recipient Limit Increase&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DataExchange (4.0.1.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds Tag support for Event Action resource, through which customers can create event actions with Tags and retrieve event actions with Tags.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DataSync (4.0.2.0)
-&lt;ul&gt;
-&lt;li&gt;AgentArns field is made optional for Object Storage and Azure Blob location create requests. Location credentials are now managed via Secrets Manager, and may be encrypted with service managed or customer managed keys. Authentication is now optional for Azure Blob locations.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;FSx (4.0.1.0)
-&lt;ul&gt;
-&lt;li&gt;FSx API changes to support the public launch of new Intelligent Tiering storage class on Amazon FSx for Lustre&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IVSRealTime (4.0.1.0)
-&lt;ul&gt;
-&lt;li&gt;IVS Real-Time now offers customers the participant replication that allow customers to copy a participant from one stage to another.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MWAA (4.0.1.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon MWAA now lets you choose a worker replacement strategy when updating an environment. This release adds two worker replacement strategies: FORCED (default), which stops workers immediately, and GRACEFUL, which allows workers to finish current tasks before shutting down.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3 (4.0.1.0)
-&lt;ul&gt;
-&lt;li&gt;Adding checksum support for S3 PutBucketOwnershipControls API.&lt;/li&gt;
-&lt;li&gt;Fixed an issue where NullReferenceException was thrown when calling AddPartETags() on CompleteMultipartUploadRequest object.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.5.0)
-&lt;ul&gt;
-&lt;li&gt;Add maintenance status field to DescribeMlflowTrackingServer API response&lt;/li&gt;
+&lt;li&gt;Release new parameter CapacityReservationConfig in ProductionVariant&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -159,32 +64,51 @@
             </content>
   </entry>
   <entry>
-    <title>googleapis/google-cloud-dotnet - Releases - 2025-05-29</title>
-    <id>https://github.com/googleapis/google-cloud-dotnet#2025-05-29</id>
-    <link href="https://github.com/googleapis/google-cloud-dotnet" />
-    <updated>2025-05-30T00:07:41Z</updated>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-05-30</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-05-30</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2025-05-31T00:07:15Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.ModelArmor.V1Beta-1.0.0-beta01"&gt;Google.Cloud.ModelArmor.V1Beta version 1.0.0-beta01&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.MongoDBAtlas_1.0.0-beta.1"&gt;Azure.ResourceManager.MongoDBAtlas_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Initial generation for Google.Cloud.ModelArmor.V1Beta&lt;/li&gt;
-&lt;/ul&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2025-05-29)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;p&gt;This package follows the &lt;a href="https://azure.github.io/azure-sdk/general_introduction.html" rel="nofollow"&gt;new Azure SDK guidelines&lt;/a&gt;, and provides many core capabilities:&lt;/p&gt;
+&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
+- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
+- HTTP pipeline with custom policies.
+- Better error-handling.
+- Support uniform telemetry across all languages."&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
+- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
+- HTTP pipeline with custom policies.
+- Better error-handling.
+- Support uniform telemetry across all languages.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This package is a Public Preview version, so expect incompatible changes in subsequent releases as we improve the product. To provide feedback, submit an issue in our &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues"&gt;Azure SDK for .NET GitHub repo&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: For more information about unified authentication, please refer to &lt;a href="https://docs.microsoft.com//dotnet/api/overview/azure/identity-readme?view=azure-dotnet" rel="nofollow"&gt;Microsoft Azure Identity documentation for .NET&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>googleapis/google-cloud-dotnet - Releases - 2025-05-30</title>
+    <id>https://github.com/googleapis/google-cloud-dotnet#2025-05-30</id>
+    <link href="https://github.com/googleapis/google-cloud-dotnet" />
+    <updated>2025-05-31T00:07:25Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.AIPlatform.V1-3.32.0"&gt;Google.Cloud.AIPlatform.V1 version 3.32.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/docs-common-proto-2.17.0"&gt;docs-common-proto version 2.17.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;A new field &lt;code&gt;include_thoughts&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.aiplatform.v1.Part&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;A new field &lt;code&gt;thought&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.aiplatform.v1.Part&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;A new field &lt;code&gt;thought_signature&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.aiplatform.v1.GenerationConfig.ThinkingConfig&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+                                &lt;p&gt;(Docs only release.)&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
