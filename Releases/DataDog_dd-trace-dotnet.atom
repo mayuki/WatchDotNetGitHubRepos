@@ -1,6 +1,68 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>DataDog/dd-trace-dotnet - Releases</title>
   <link href="https://github.com/DataDog/dd-trace-dotnet" />
-  <updated>2025-06-02T00:07:41Z</updated>
+  <updated>2025-06-03T00:07:23Z</updated>
   <id>https://github.com/DataDog/dd-trace-dotnet</id>
+  <entry>
+    <title>DataDog/dd-trace-dotnet - Releases - 2025-06-02</title>
+    <id>https://github.com/DataDog/dd-trace-dotnet#2025-06-02</id>
+    <link href="https://github.com/DataDog/dd-trace-dotnet" />
+    <updated>2025-06-03T00:07:23Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/releases/tag/v3.18.0"&gt;3.18.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Summary&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Add support for async Oracle DB commands&lt;/li&gt;
+&lt;li&gt;Add support for Microsoft.Extensions.Telemetry v9.5.0&lt;/li&gt;
+&lt;li&gt;Various bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changes&lt;/h2&gt;
+&lt;h3&gt;Tracer&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Differentiate between error states in logs (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3100554076" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7030" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7030/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7030"&gt;#7030&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;ASM&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[AAP] Update waf value obfuscation default regex value (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3089582078" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7004" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7004/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7004"&gt;#7004&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[AAP] Update waf to v1.25.0 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3089592363" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7005" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7005/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7005"&gt;#7005&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Ensure that there is an ActiveScope for AWS SDK Http integration (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3093760351" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7013" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7013/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7013"&gt;#7013&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix Microsoft.Extensions.Telemetry logging integration for 9.5.0 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3073971314" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6989" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6989/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6989"&gt;#6989&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix a &lt;code&gt;NullReferenceException&lt;/code&gt; in AWS SDK &lt;code&gt;RuntimePipelineInvokeAsyncIntegration&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3094675780" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7019" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7019/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7019"&gt;#7019&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fix: enable retries on failure due to script error (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3097037052" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7022" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7022/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7022"&gt;#7022&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix support for async Oracle DB commands (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3101091023" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7034" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7034/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7034"&gt;#7034&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Code Origin] DEBUG-3935 Fix type handle mismatch when resolving attribute type (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3080136085" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6994" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6994/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6994"&gt;#6994&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Miscellaneous&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add &lt;code&gt;net8.0&lt;/code&gt; and &lt;code&gt;net9.0&lt;/code&gt; to trimming nuspec (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3068905168" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6983" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6983/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6983"&gt;#6983&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;ILogger.ErrorSkipTelemetry()&lt;/code&gt; to exclude certain logs from telemetry (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3099961691" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7028" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7028/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7028"&gt;#7028&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Build / Test&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update Microsoft.Azure.Functions.Worker.Sdk to 2.0.3 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3080936547" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/6996" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/6996/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/6996"&gt;#6996&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Pre-install the .NET SDK in Windows CI runners (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3085893935" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7001" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7001/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7001"&gt;#7001&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix timeout exception (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3091529441" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7007" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7007/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7007"&gt;#7007&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add timeouts and retries to &lt;code&gt;LiveDebuggerTests&lt;/code&gt; when debugger is disabled (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3093454039" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7010" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7010/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7010"&gt;#7010&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Allow specifying &lt;code&gt;SampleName&lt;/code&gt; filter and comprehensive version testing (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3094429015" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7015" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7015/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7015"&gt;#7015&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Revert "Benchmarks: Update microbenchmarks to customize BenchmarkDotNet command line arguments" (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3094510339" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7016" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7016/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7016"&gt;#7016&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update Microsoft.Azure.Functions.Worker.Sdk to 2.0.4 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3094595845" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7018" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7018/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7018"&gt;#7018&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Replace DownloadPipelineArtifact by a pipeline step (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3096575831" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7021" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7021/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7021"&gt;#7021&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Skip flaky debugger tests on x86 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3097039567" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7023" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7023/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7023"&gt;#7023&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Streamline release process by not explicitly creating a tag in &lt;code&gt;create_draft_release.yml&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3097072463" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7024" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7024/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7024"&gt;#7024&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Mark a couple of tests as flaky (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3098161961" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7026" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7026/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7026"&gt;#7026&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/compare/v3.17.0...v3.18.0"&gt;Changes since 3.17.0&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
