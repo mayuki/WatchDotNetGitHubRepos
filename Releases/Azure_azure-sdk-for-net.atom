@@ -1,32 +1,54 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-06-04T00:07:21Z</updated>
+  <updated>2025-06-05T00:07:26Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-06-03</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-06-03</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-06-04</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-06-04</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-06-04T00:07:21Z</updated>
+    <updated>2025-06-05T00:07:26Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Messaging.EventGrid.SystemEvents_1.0.0-beta.4"&gt;Azure.Messaging.EventGrid.SystemEvents_1.0.0-beta.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Communication.CallAutomation_1.4.0"&gt;Azure.Communication.CallAutomation_1.4.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.4 (2025-06-03)&lt;/h2&gt;
+                                &lt;h2&gt;1.4.0 (2025-06-04)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added backcompat models.&lt;/li&gt;
-&lt;li&gt;Mark media events as &lt;code&gt;EditorBrowsableState.Never&lt;/code&gt; as the service has been deprecated.&lt;/li&gt;
+&lt;li&gt;Real-time transcription support&lt;/li&gt;
+&lt;li&gt;Audio and DTMF streaming capabilities&lt;/li&gt;
+&lt;li&gt;Integration of ConnectAPI for seamless streaming and transcription&lt;/li&gt;
+&lt;li&gt;Improved media streaming with bidirectional functionality, allowing audio formats in both directions, currently supporting sample rates of 24kHz and 16kHz&lt;/li&gt;
+&lt;li&gt;Support for custom speech models has been integrated into transcription&lt;/li&gt;
+&lt;li&gt;A confidence level for recognized speech has been introduced, ranging from 0.0 to 1.0 when available&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.4937207"&gt;Azure.Template_1.0.3-beta.4937207&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Messaging.EventGrid_5.0.0-beta.1"&gt;Azure.Messaging.EventGrid_5.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.3-beta.4937207 (2025-06-03)&lt;/h2&gt;
+                                &lt;h2&gt;5.0.0-beta.1 (2025-06-04)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added a dependency on the &lt;code&gt;Azure.Messaging.EventGrid.SystemEvents&lt;/code&gt; package.&lt;br&gt;
+The system events are now referenced via type-forwarding.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Various system events have been updated to reflect the actual service behavior.&lt;br&gt;
+There are no binary breaks or compilation breaks, but there are behavior breaking changes. For instance,&lt;br&gt;
+some properties that were previously incorrectly marked as optional, have been marked as required.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.4941449"&gt;Azure.Template_1.0.3-beta.4941449&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.3-beta.4941449 (2025-06-04)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Release DPG library&lt;/li&gt;
@@ -36,33 +58,73 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.4936822"&gt;Azure.Template_1.0.3-beta.4936822&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Messaging.EventGrid.SystemEvents_1.0.0-beta.5"&gt;Azure.Messaging.EventGrid.SystemEvents_1.0.0-beta.5&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.3-beta.4936822 (2025-06-03)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.5 (2025-06-04)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Release DPG library&lt;/li&gt;
-&lt;li&gt;Add Grow-up story&lt;/li&gt;
+&lt;li&gt;Reshipping due to issue with symbols publishing in previous version.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.4936344"&gt;Azure.Template_1.0.3-beta.4936344&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ApiCenter_1.0.0"&gt;Azure.ResourceManager.ApiCenter_1.0.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.3-beta.4936344 (2025-06-03)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
+                                &lt;h2&gt;1.0.0 (2025-06-06)&lt;/h2&gt;
+&lt;p&gt;This release is the first stable release of the Azure API Center library.&lt;/p&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Release DPG library&lt;/li&gt;
-&lt;li&gt;Add Grow-up story&lt;/li&gt;
+&lt;li&gt;Upgraded api-version tag to 'package-2024-03'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/2d701c73fb5ee44f95b97b6c3eaf8c4aeb051e73/specification/apicenter/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/2d701c73fb5ee44f95b97b6c3eaf8c4aeb051e73/specification/apicenter/resource-manager/readme.md&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.4936309"&gt;Azure.Template_1.0.3-beta.4936309&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Communication.Common_1.4.0"&gt;Azure.Communication.Common_1.4.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.3-beta.4936309 (2025-06-03)&lt;/h2&gt;
+                                &lt;h2&gt;1.4.0 (2025-06-04)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduced support for &lt;code&gt;Azure.Core.TokenCredential&lt;/code&gt; with &lt;code&gt;EntraCommunicationTokenCredentialOptions&lt;/code&gt;, allowing an Entra user with a Teams license to use Teams Phone Extensibility features through the Azure Communication Services resource.&lt;/li&gt;
+&lt;li&gt;Added support for a new communication identifier &lt;code&gt;TeamsExtensionUserIdentifier&lt;/code&gt; which maps rawIds with format &lt;code&gt;8:acs:{resourceId}_{tenantId}_{userId}&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;IsAnonymous&lt;/code&gt; and &lt;code&gt;AssertedId&lt;/code&gt; properties to &lt;code&gt;PhoneNumberIdentifier&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning_1.0.1"&gt;Azure.Provisioning_1.0.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.1 (2025-05-30)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Now floating number values are properly serialized into bicep via &lt;code&gt;json()&lt;/code&gt; function (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/48249" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/48249/hovercard"&gt;#48249&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed issues in interpolated strings (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/48493" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/48493/hovercard"&gt;#48493&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.IotFirmwareDefense_1.1.0-beta.1"&gt;Azure.ResourceManager.IotFirmwareDefense_1.1.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.1.0-beta.1 (2025-06-02)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated Microsoft.IoTfirmwareDefense API version to &lt;code&gt;2025-04-01-preview&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added new get operations for fetching workspace usage metrics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Renamed models as per previous API/SDK review instructions to align with standard naming conventions&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.4937780"&gt;Azure.Template_1.0.3-beta.4937780&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.3-beta.4937780 (2025-06-04)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Release DPG library&lt;/li&gt;
@@ -93,19 +155,6 @@
 &lt;li&gt;&lt;code&gt;messageId&lt;/code&gt; to &lt;code&gt;az.digitaltwins.message.id&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Communication.Common_1.4.0"&gt;Azure.Communication.Common_1.4.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.4.0 (2025-06-04)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Introduced support for &lt;code&gt;Azure.Core.TokenCredential&lt;/code&gt; with &lt;code&gt;EntraCommunicationTokenCredentialOptions&lt;/code&gt;, allowing an Entra user with a Teams license to use Teams Phone Extensibility features through the Azure Communication Services resource.&lt;/li&gt;
-&lt;li&gt;Added support for a new communication identifier &lt;code&gt;TeamsExtensionUserIdentifier&lt;/code&gt; which maps rawIds with format &lt;code&gt;8:acs:{resourceId}_{tenantId}_{userId}&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;IsAnonymous&lt;/code&gt; and &lt;code&gt;AssertedId&lt;/code&gt; properties to &lt;code&gt;PhoneNumberIdentifier&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
