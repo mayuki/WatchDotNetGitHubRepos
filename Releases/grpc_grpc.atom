@@ -1,6 +1,51 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2025-06-07T00:07:48Z</updated>
+  <updated>2025-06-08T00:08:15Z</updated>
   <id>https://github.com/grpc/grpc</id>
+  <entry>
+    <title>grpc/grpc - Releases - 2025-06-07</title>
+    <id>https://github.com/grpc/grpc#2025-06-07</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2025-06-08T00:08:15Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.73.0"&gt;Release v1.73.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release 1.73.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;gradient&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;p&gt;As of this version, gRPC on MacOS &amp;amp; iOS will utilize Abseil's synchronization features, aligning it with other platforms. Should you encounter any issues due to this update, you can disable it by enabling GPR_DISABLE_ABSEIL_SYNC. If you do this, please report any problems by filing a bug at &lt;a href="https://github.com/grpc/grpc"&gt;https://github.com/grpc/grpc&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[Dep] Update Protobuf to v31.0. (&lt;a href="https://github.com/grpc/grpc/pull/39392" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39392/hovercard"&gt;#39392&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Core] Added GPR_DISABLE_ABSEIL_SYNC. (&lt;a href="https://github.com/grpc/grpc/pull/39562" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39562/hovercard"&gt;#39562&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[xds_override_host] pass through per-endpoint args when creating subchannels. (&lt;a href="https://github.com/grpc/grpc/pull/39532" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39532/hovercard"&gt;#39532&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Expose GRPC_OPENSSL_CLEANUP_TIMEOUT to control shutdown grace period. (&lt;a href="https://github.com/grpc/grpc/pull/39297" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39297/hovercard"&gt;#39297&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[URI] fix parsing of user_info in proxy settings. (&lt;a href="https://github.com/grpc/grpc/pull/39004" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39004/hovercard"&gt;#39004&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[EventEngine] Fix busy loop in thread pool when shutting down. (&lt;a href="https://github.com/grpc/grpc/pull/39258" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39258/hovercard"&gt;#39258&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Dep] Added a flag to build with &lt;code&gt;openssl&lt;/code&gt; instead of &lt;code&gt;boringssl&lt;/code&gt;. (&lt;a href="https://github.com/grpc/grpc/pull/39188" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39188/hovercard"&gt;#39188&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[EventEngine] Cleanup: EventEngine client, listener, and dns experiments are on by default on all platforms. (&lt;a href="https://github.com/grpc/grpc/pull/39079" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39079/hovercard"&gt;#39079&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C++&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[OpenCensus] Mark OpenCensus and dependent APIs as deprecated. (&lt;a href="https://github.com/grpc/grpc/pull/39554" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39554/hovercard"&gt;#39554&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Python] Pin Cython to 3.1.1. (&lt;a href="https://github.com/grpc/grpc/pull/39609" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39609/hovercard"&gt;#39609&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] grpc_tools: make PythonGrpcGenerator handle dot &lt;code&gt;.&lt;/code&gt; in proto paths the same way as native Generator/PyiGenerator. (&lt;a href="https://github.com/grpc/grpc/pull/39586" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39586/hovercard"&gt;#39586&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ruby&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Ruby] add remove_unused_artifacts to opt build. (&lt;a href="https://github.com/grpc/grpc/pull/39593" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39593/hovercard"&gt;#39593&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

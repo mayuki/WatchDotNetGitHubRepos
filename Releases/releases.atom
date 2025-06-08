@@ -1,102 +1,46 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2025-06-07T00:07:56Z</updated>
+  <updated>2025-06-08T00:08:21Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-06-06</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-06-06</id>
-    <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-06-07T00:07:35Z</updated>
+    <title>grpc/grpc - Releases - 2025-06-07</title>
+    <id>https://github.com/grpc/grpc#2025-06-07</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2025-06-08T00:08:15Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.28.0"&gt;4.0.28.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.73.0"&gt;Release v1.73.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.28.0 (2025-06-06 18:28 UTC)&lt;/h3&gt;
+                                &lt;p&gt;This is release 1.73.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;gradient&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;p&gt;As of this version, gRPC on MacOS &amp;amp; iOS will utilize Abseil's synchronization features, aligning it with other platforms. Should you encounter any issues due to this update, you can disable it by enabling GPR_DISABLE_ABSEIL_SYNC. If you do this, please report any problems by filing a bug at &lt;a href="https://github.com/grpc/grpc"&gt;https://github.com/grpc/grpc&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;BedrockAgentRuntime (4.0.4.0)
-&lt;ul&gt;
-&lt;li&gt;This release introduces the &lt;code&gt;PromptCreationConfigurations&lt;/code&gt; input parameter, which includes fields to control prompt population for &lt;code&gt;InvokeAgent&lt;/code&gt; or &lt;code&gt;InvokeInlineAgent&lt;/code&gt; requests.&lt;/li&gt;
+&lt;li&gt;[Dep] Update Protobuf to v31.0. (&lt;a href="https://github.com/grpc/grpc/pull/39392" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39392/hovercard"&gt;#39392&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Core] Added GPR_DISABLE_ABSEIL_SYNC. (&lt;a href="https://github.com/grpc/grpc/pull/39562" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39562/hovercard"&gt;#39562&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[xds_override_host] pass through per-endpoint args when creating subchannels. (&lt;a href="https://github.com/grpc/grpc/pull/39532" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39532/hovercard"&gt;#39532&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Expose GRPC_OPENSSL_CLEANUP_TIMEOUT to control shutdown grace period. (&lt;a href="https://github.com/grpc/grpc/pull/39297" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39297/hovercard"&gt;#39297&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[URI] fix parsing of user_info in proxy settings. (&lt;a href="https://github.com/grpc/grpc/pull/39004" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39004/hovercard"&gt;#39004&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[EventEngine] Fix busy loop in thread pool when shutting down. (&lt;a href="https://github.com/grpc/grpc/pull/39258" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39258/hovercard"&gt;#39258&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Dep] Added a flag to build with &lt;code&gt;openssl&lt;/code&gt; instead of &lt;code&gt;boringssl&lt;/code&gt;. (&lt;a href="https://github.com/grpc/grpc/pull/39188" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39188/hovercard"&gt;#39188&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[EventEngine] Cleanup: EventEngine client, listener, and dns experiments are on by default on all platforms. (&lt;a href="https://github.com/grpc/grpc/pull/39079" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39079/hovercard"&gt;#39079&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;KeyManagementService (4.0.2.0)
+&lt;h2&gt;C++&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Remove unpopulated KeyMaterialId from Encrypt Response&lt;/li&gt;
+&lt;li&gt;[OpenCensus] Mark OpenCensus and dependent APIs as deprecated. (&lt;a href="https://github.com/grpc/grpc/pull/39554" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39554/hovercard"&gt;#39554&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;RDS (4.0.2.0)
+&lt;h2&gt;Python&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Include Global Cluster Identifier in DBCluster if the DBCluster is a Global Cluster Member.&lt;/li&gt;
+&lt;li&gt;[Python] Pin Cython to 3.1.1. (&lt;a href="https://github.com/grpc/grpc/pull/39609" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39609/hovercard"&gt;#39609&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] grpc_tools: make PythonGrpcGenerator handle dot &lt;code&gt;.&lt;/code&gt; in proto paths the same way as native Generator/PyiGenerator. (&lt;a href="https://github.com/grpc/grpc/pull/39586" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39586/hovercard"&gt;#39586&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Rekognition (4.0.1.0)
+&lt;h2&gt;Ruby&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Adds support for defining an ordered preference list of different Rekognition Face Liveness challenge types when calling CreateFaceLivenessSession.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Route53 (4.0.1.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon Route 53 now supports the Asia Pacific (Taipei) Region (ap-east-2) for latency records, geoproximity records, and private DNS for Amazon VPCs in that region.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3Tables (4.0.1.0)
-&lt;ul&gt;
-&lt;li&gt;S3 Tables now supports getting details about a table via its table ARN.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SQS (4.0.0.6)
-&lt;ul&gt;
-&lt;li&gt;Fix &lt;code&gt;GetQueueAttributesResponse&lt;/code&gt; to handle attributes potentially being null (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3106849468" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/3852" data-hovercard-type="pull_request" data-hovercard-url="/aws/aws-sdk-net/pull/3852/hovercard" href="https://github.com/aws/aws-sdk-net/pull/3852"&gt;#3852&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1060.0"&gt;3.7.1060.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;3.7.1060.0 (2025-06-06 18:29 UTC)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;BedrockAgentRuntime (3.7.428.0)
-&lt;ul&gt;
-&lt;li&gt;This release introduces the &lt;code&gt;PromptCreationConfigurations&lt;/code&gt; input parameter, which includes fields to control prompt population for &lt;code&gt;InvokeAgent&lt;/code&gt; or &lt;code&gt;InvokeInlineAgent&lt;/code&gt; requests.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;KeyManagementService (3.7.402.0)
-&lt;ul&gt;
-&lt;li&gt;Remove unpopulated KeyMaterialId from Encrypt Response&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;RDS (3.7.413.0)
-&lt;ul&gt;
-&lt;li&gt;Include Global Cluster Identifier in DBCluster if the DBCluster is a Global Cluster Member.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Rekognition (3.7.401.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for defining an ordered preference list of different Rekognition Face Liveness challenge types when calling CreateFaceLivenessSession.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Route53 (3.7.408.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon Route 53 now supports the Asia Pacific (Taipei) Region (ap-east-2) for latency records, geoproximity records, and private DNS for Amazon VPCs in that region.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3Tables (3.7.403.0)
-&lt;ul&gt;
-&lt;li&gt;S3 Tables now supports getting details about a table via its table ARN.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 3.7.402.68
-&lt;ul&gt;
-&lt;li&gt;Fixed Document.cs serialization issue that caused WebAuthn operations to fail when response contained Dictionary structures&lt;/li&gt;
-&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;[Ruby] add remove_unused_artifacts to opt build. (&lt;a href="https://github.com/grpc/grpc/pull/39593" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39593/hovercard"&gt;#39593&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -105,57 +49,31 @@
             </content>
   </entry>
   <entry>
-    <title>CommunityToolkit/Maui - Releases - 2025-06-06</title>
-    <id>https://github.com/CommunityToolkit/Maui#2025-06-06</id>
-    <link href="https://github.com/CommunityToolkit/Maui" />
-    <updated>2025-06-07T00:07:38Z</updated>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2025-06-07</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2025-06-07</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2025-06-08T00:08:20Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/3.0.0-camera"&gt;v3.0.0 Camera: Refactorings!&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Exporter.Geneva-1.13.0-alpha.1"&gt;Exporter.Geneva-1.13.0-alpha.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Geneva/1.13.0-alpha.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Geneva v1.13.0-alpha.1&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Refactor &lt;code&gt;CameraView.CaptureImage&lt;/code&gt;, &lt;code&gt;CameraView.StartCameraPreview&lt;/code&gt; and &lt;code&gt;CameraView.StopCameraPreview&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3043821630" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2655" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/2655/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/2655"&gt;#2655&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Experimental&lt;/strong&gt;: Added an option for configuring a custom string size limit in&lt;br&gt;
+the MessagePack serializer. The maximum string length, in characters, can be&lt;br&gt;
+set using the &lt;code&gt;PrivatePreviewLogMessagePackStringSizeLimit=&amp;lt;CharCount&amp;gt;&lt;/code&gt;&lt;br&gt;
+connection string parameter.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2813" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2813/hovercard"&gt;#2813&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add httpUrl for HTTP server spans mapped from multiple attributes.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2818" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2818/hovercard"&gt;#2818&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/11.2.0...3.0.0-camera"&gt;&lt;tt&gt;11.2.0...3.0.0-camera&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/6.1.0-mediaelement"&gt;v6.1.0 MediaElement: Hitting pause on the bugs!&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Add missing PlayerListener stubs back to Media Element by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ne0rrmatrix/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ne0rrmatrix"&gt;@ne0rrmatrix&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2859947643" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2530" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/2530/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/2530"&gt;#2530&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Remove MediaElement Handler disconnect in popups by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ne0rrmatrix/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ne0rrmatrix"&gt;@ne0rrmatrix&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3044594503" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2656" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/2656/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/2656"&gt;#2656&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[MediaElement][Android][API &amp;lt; 30] Fix System Bar After Transition From Fullscreen by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/phunkeler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/phunkeler"&gt;@phunkeler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3037783390" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2652" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/2652/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/2652"&gt;#2652&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;No artwork shown in-app on MediaElement using meta data &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3046539849" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2659" data-hovercard-type="issue" data-hovercard-url="/CommunityToolkit/Maui/issues/2659/hovercard" href="https://github.com/CommunityToolkit/Maui/issues/2659"&gt;#2659&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/elaurentin/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/elaurentin"&gt;@elaurentin&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3070526377" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2666" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/2666/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/2666"&gt;#2666&lt;/a&gt;&lt;/li&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Exporter.Geneva-1.13.0-alpha.1/src/OpenTelemetry.Exporter.Geneva/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;New Contributors&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/elaurentin/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/elaurentin"&gt;@elaurentin&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3070526377" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2666" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/2666/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/2666"&gt;#2666&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/11.2.0...6.1.0-mediaelement"&gt;&lt;tt&gt;11.2.0...6.1.0-mediaelement&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>googleapis/google-cloud-dotnet - Releases - 2025-06-06</title>
-    <id>https://github.com/googleapis/google-cloud-dotnet#2025-06-06</id>
-    <link href="https://github.com/googleapis/google-cloud-dotnet" />
-    <updated>2025-06-07T00:07:48Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Area120.Tables.V1Alpha1-2.0.0-alpha17"&gt;Google.Area120.Tables.V1Alpha1 version 2.0.0-alpha17&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;More release process testing&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
