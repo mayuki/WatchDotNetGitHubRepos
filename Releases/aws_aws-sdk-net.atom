@@ -1,30 +1,55 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-06-11T00:07:26Z</updated>
+  <updated>2025-06-12T00:07:36Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-06-10</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-06-10</id>
+    <title>aws/aws-sdk-net - Releases - 2025-06-11</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-06-11</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-06-11T00:07:26Z</updated>
+    <updated>2025-06-12T00:07:36Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.29.1"&gt;4.0.29.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1062.0"&gt;3.7.1062.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.29.1 (2025-06-10 18:11 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1062.0 (2025-06-11 18:22 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;GameLiftStreams (4.0.0.6)
+&lt;li&gt;ControlCatalog (3.7.404.0)
 &lt;ul&gt;
-&lt;li&gt;Documentation updates for Amazon GameLift Streams to address formatting errors, correct resource ID examples, and update links to other guides&lt;/li&gt;
+&lt;li&gt;Introduced ListControlMappings API that retrieves control mappings. Added control aliases and governed resources fields in GetControl and ListControls APIs. New filtering capability in ListControls API, with implementation identifiers and implementation types.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 4.0.0.8
+&lt;li&gt;EKS (3.7.417.0)
 &lt;ul&gt;
-&lt;li&gt;Fixed Document.cs serialization issue that caused WebAuthn operations to fail when response contained Dictionary structures &lt;a href="https://github.com/aws/aws-sdk-net/issues/3837" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/3837/hovercard"&gt;issue 3837&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fixed issue with public IsSet properties not working correctly for collection properties when set to false.&lt;/li&gt;
+&lt;li&gt;Release for EKS Pod Identity Cross Account feature and disableSessionTags flag.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LexModelsV2 (3.7.404.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for the Assisted NLU feature to improve bot performance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;NetworkManager (3.7.403.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for public DNS hostname resolution to private IP addresses across Cloud WAN-managed VPCs. Add support for security group referencing across Cloud WAN-managed VPCs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RDS (3.7.413.3)
+&lt;ul&gt;
+&lt;li&gt;Updates Amazon RDS documentation for Amazon RDS for Db2 cross-Region replicas in standby mode.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WAFV2 (3.7.408.0)
+&lt;ul&gt;
+&lt;li&gt;WAF now provides two DDoS protection options: resource-level monitoring for Application Load Balancers and the AWSManagedRulesAntiDDoSRuleSet managed rule group for CloudFront distributions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.402.71
+&lt;ul&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;Updating partitions.json file.&lt;/li&gt;
 &lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -33,18 +58,44 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1061.1"&gt;3.7.1061.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.30.0"&gt;4.0.30.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1061.1 (2025-06-10 18:13 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.30.0 (2025-06-11 18:19 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;GameLiftStreams (3.7.401.44)
+&lt;li&gt;ControlCatalog (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;Documentation updates for Amazon GameLift Streams to address formatting errors, correct resource ID examples, and update links to other guides&lt;/li&gt;
+&lt;li&gt;Introduced ListControlMappings API that retrieves control mappings. Added control aliases and governed resources fields in GetControl and ListControls APIs. New filtering capability in ListControls API, with implementation identifiers and implementation types.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 3.7.402.70
+&lt;li&gt;EKS (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;Release for EKS Pod Identity Cross Account feature and disableSessionTags flag.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LexModelsV2 (4.0.1.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for the Assisted NLU feature to improve bot performance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;NetworkManager (4.0.1.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for public DNS hostname resolution to private IP addresses across Cloud WAN-managed VPCs. Add support for security group referencing across Cloud WAN-managed VPCs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RDS (4.0.2.2)
+&lt;ul&gt;
+&lt;li&gt;Updates Amazon RDS documentation for Amazon RDS for Db2 cross-Region replicas in standby mode.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WAFV2 (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;WAF now provides two DDoS protection options: resource-level monitoring for Application Load Balancers and the AWSManagedRulesAntiDDoSRuleSet managed rule group for CloudFront distributions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.0.9
+&lt;ul&gt;
+&lt;li&gt;Add &lt;code&gt;AWSConfigs.AWSCredentialsGenerators&lt;/code&gt; option so that a custom credential resolution order can be specified globally (matching the behavior from &lt;code&gt;FallbackCredentialsFactory.CredentialsGenerators&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Updating partitions.json file.&lt;/li&gt;
 &lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;

@@ -1,64 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>microsoft/WindowsAppSDK - Releases</title>
   <link href="https://github.com/microsoft/WindowsAppSDK" />
-  <updated>2025-06-11T00:07:45Z</updated>
+  <updated>2025-06-12T00:07:47Z</updated>
   <id>https://github.com/microsoft/WindowsAppSDK</id>
-  <entry>
-    <title>microsoft/WindowsAppSDK - Releases - 2025-06-10</title>
-    <id>https://github.com/microsoft/WindowsAppSDK#2025-06-10</id>
-    <link href="https://github.com/microsoft/WindowsAppSDK" />
-    <updated>2025-06-11T00:07:45Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.6.9"&gt;Windows App SDK 1.6.9 (1.6.250602001)&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;Windows App SDK 1.6.9 (1.6.250602001)&lt;/h2&gt;
-&lt;p&gt;This is a servicing release of the Windows App SDK that includes critical bug fixes and a new feature for the 1.6 release.&lt;/p&gt;
-&lt;p&gt;This release includes fixes the following critical bugs for 1.6:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed a potential crash in WindowChrome::SetTitleBar when closing a window. For more info, see GitHub issue &lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/9203" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/9203/hovercard"&gt;#9203&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Check out our &lt;a href="https://aka.ms/windowsappsdk/1.6/1.6.9/release-notes" rel="nofollow"&gt;release notes&lt;/a&gt; for the list of issues fixed in this release.&lt;/p&gt;
-&lt;h3&gt;Updating to this version&lt;/h3&gt;
-&lt;p&gt;The 1.6.9 package is available at &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.6.250602001" rel="nofollow"&gt;https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.6.250602001&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.7.3"&gt;Windows App SDK 1.7.3 (1.7.250606001)&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;Windows App SDK 1.7.3 (1.7.250606001)&lt;/h2&gt;
-&lt;p&gt;WinAppSDK 1.7.3 is the latest stable version of WinAppSDK providing new features and improvements to the platform. WinAppSDK 1.7.3 introduces exciting new features designed to bring artificial intelligence (AI) to your products with the power of Phi Silica and Windows AI APIs.&lt;/p&gt;
-&lt;p&gt;Whats new in WinAppSDK 1.7.3:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Added a new &lt;code&gt;Rank&lt;/code&gt; property to Widgets. Rank may be used by the platform's recommendation engine to sort Widgets from a same application package identity. Should multiple widgets from the same provider be recommended for a UI surface, the Rank property will determine the order in which they appear. The Rank property does not change how a Widget is placed compared to other provider's Widgets, nor does it affect the chance a Widget will be recommended.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This release also includes the following Bug Fixes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Added the following sentence to section 1a of the .nupkg license: When building Generative AI applications follow the guidelines in &lt;a href="https://learn.microsoft.com/windows/ai/rai" rel="nofollow"&gt;https://learn.microsoft.com/windows/ai/rai&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Fixed a potential crash in ApplicationDataProvider::GetStateFolderUris caused by reentrancy. For more info, see GitHub issue #10513. (&lt;a href="/microsoft/WindowsAppSDK/blob/v1.7.3/windows/windows-app-sdk/api/winrt/microsoft.windows.applicationmodel.windowsappruntime.runtimecompatibilityoptions.disabledchanges"&gt;RuntimeCompatibilityChange&lt;/a&gt;: ApplicationDataProvider_ReentrancyProtection)&lt;/li&gt;
-&lt;li&gt;Fixed a potential crash in WindowChrome::SetTitleBar when closing a window. For more info, see GitHub issue #9203. (&lt;a href="/microsoft/WindowsAppSDK/blob/v1.7.3/windows/windows-app-sdk/api/winrt/microsoft.windows.applicationmodel.windowsappruntime.runtimecompatibilityoptions.disabledchanges"&gt;RuntimeCompatibilityChange&lt;/a&gt;: WindowChrome_SetTitleBarCrash)&lt;/li&gt;
-&lt;li&gt;Fixed a potential crash in PointerInputObserverWinRT::FlushCoalescedInput_Callback when there is reentrancy while processing input. (&lt;a href="/microsoft/WindowsAppSDK/blob/v1.7.3/windows/windows-app-sdk/api/winrt/microsoft.windows.applicationmodel.windowsappruntime.runtimecompatibilityoptions.disabledchanges"&gt;RuntimeCompatibilityChange&lt;/a&gt;: InputPointerSource_FlushReentrancyCrash)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;To see everything that's new and changed, see the full &lt;a href="https://aka.ms/windowsappsdk/1.7/1.7.3/release-notes" rel="nofollow"&gt;Windows App SDK 1.7 release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
-&lt;h3&gt;Try it out&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.7.250606001" rel="nofollow"&gt;1.7.250513003NuGet&lt;/a&gt; package to use WinAppSDK 1.7 in your app.&lt;/li&gt;
-&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Getting Started&lt;/h3&gt;
-&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools &lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>

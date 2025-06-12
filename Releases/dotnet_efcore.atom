@@ -1,6 +1,108 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/efcore - Releases</title>
   <link href="https://github.com/dotnet/efcore" />
-  <updated>2025-06-11T00:07:10Z</updated>
+  <updated>2025-06-12T00:07:23Z</updated>
   <id>https://github.com/dotnet/efcore</id>
+  <entry>
+    <title>dotnet/efcore - Releases - 2025-06-11</title>
+    <id>https://github.com/dotnet/efcore#2025-06-11</id>
+    <link href="https://github.com/dotnet/efcore" />
+    <updated>2025-06-12T00:07:23Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/efcore/releases/tag/v9.0.6"&gt;v9.0.6&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Bug Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Cosmos/FTS: Improved FullTextScore Translation for Multiple Keywords&lt;/strong&gt;&lt;br&gt;
+The translation of &lt;code&gt;FullTextScore&lt;/code&gt; in Cosmos Full-Text Search has been updated to use multiple keywords instead of a keyword array, addressing issues with search accuracy and query compatibility. This resolves &lt;a href="https://github.com/dotnet/efcore/issues/35983" data-hovercard-type="issue" data-hovercard-url="/dotnet/efcore/issues/35983/hovercard"&gt;#35983&lt;/a&gt; and ensures more reliable full-text search results.&lt;br&gt;
+&lt;a href="https://github.com/dotnet/efcore/pull/36000" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/efcore/pull/36000/hovercard"&gt;#36000&lt;/a&gt; by &lt;a href="https://github.com/maumar"&gt;@maumar&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Dependency Updates&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[release/8.0] Update dependencies from dotnet/arcade&lt;/strong&gt;&lt;br&gt;
+Updated the Arcade build infrastructure dependencies for the 8.0 release branch, bringing in the latest improvements and security fixes from the Arcade ecosystem.&lt;br&gt;
+&lt;a href="https://github.com/dotnet/efcore/pull/35930" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/efcore/pull/35930/hovercard"&gt;#35930&lt;/a&gt; by &lt;a href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[release/9.0] Update dependencies from dotnet/arcade&lt;/strong&gt;&lt;br&gt;
+Updated Arcade dependencies for the 9.0 release branch, ensuring the build system benefits from the latest tooling and reliability enhancements.&lt;br&gt;
+&lt;a href="https://github.com/dotnet/efcore/pull/36006" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/efcore/pull/36006/hovercard"&gt;#36006&lt;/a&gt; by &lt;a href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[release/8.0] Update dependencies from dotnet/arcade&lt;/strong&gt;&lt;br&gt;
+Another update to Arcade dependencies for the 8.0 branch, further aligning with upstream improvements and fixes.&lt;br&gt;
+&lt;a href="https://github.com/dotnet/efcore/pull/36085" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/efcore/pull/36085/hovercard"&gt;#36085&lt;/a&gt; by &lt;a href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[release/9.0] Update dependencies from dotnet/arcade&lt;/strong&gt;&lt;br&gt;
+Additional update to Arcade dependencies for the 9.0 branch, maintaining up-to-date build tooling and infrastructure.&lt;br&gt;
+&lt;a href="https://github.com/dotnet/efcore/pull/36065" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/efcore/pull/36065/hovercard"&gt;#36065&lt;/a&gt; by &lt;a href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Technical Improvements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Merging Internal Commits for release/8.0&lt;/strong&gt;&lt;br&gt;
+Integrated various internal commits into the 8.0 release branch, improving code quality, maintainability, and aligning with internal standards.&lt;br&gt;
+&lt;a href="https://github.com/dotnet/efcore/pull/35926" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/efcore/pull/35926/hovercard"&gt;#35926&lt;/a&gt; by &lt;a href="https://github.com/vseanreesermsft"&gt;@vseanreesermsft&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Merging Internal Commits for release/8.0&lt;/strong&gt;&lt;br&gt;
+Additional internal commits merged into the 8.0 branch, further enhancing stability and maintainability.&lt;br&gt;
+&lt;a href="https://github.com/dotnet/efcore/pull/36080" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/efcore/pull/36080/hovercard"&gt;#36080&lt;/a&gt; by &lt;a href="https://github.com/vseanreesermsft"&gt;@vseanreesermsft&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Merging Internal Commits for release/9.0&lt;/strong&gt;&lt;br&gt;
+Integrated internal improvements into the 9.0 branch, ensuring consistency and codebase health.&lt;br&gt;
+&lt;a href="https://github.com/dotnet/efcore/pull/36081" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/efcore/pull/36081/hovercard"&gt;#36081&lt;/a&gt; by &lt;a href="https://github.com/vseanreesermsft"&gt;@vseanreesermsft&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Infrastructure&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Update Branding to 9.0.6&lt;/strong&gt;&lt;br&gt;
+Updated the product branding and version numbers to 9.0.6, ensuring that all assemblies and packages reflect the correct release version.&lt;br&gt;
+&lt;a href="https://github.com/dotnet/efcore/pull/36044" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/efcore/pull/36044/hovercard"&gt;#36044&lt;/a&gt; by &lt;a href="https://github.com/vseanreesermsft"&gt;@vseanreesermsft&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Update Branding to 8.0.17&lt;/strong&gt;&lt;br&gt;
+Updated branding for the 8.0 release line to version 8.0.17, keeping versioning consistent across all release artifacts.&lt;br&gt;
+&lt;a href="https://github.com/dotnet/efcore/pull/36043" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/efcore/pull/36043/hovercard"&gt;#36043&lt;/a&gt; by &lt;a href="https://github.com/vseanreesermsft"&gt;@vseanreesermsft&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Miscellaneous&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[automated] Merge branch 'release/8.0' =&amp;gt; 'release/9.0'&lt;/strong&gt;&lt;br&gt;
+Automated merge of changes from the 8.0 branch into the 9.0 branch, ensuring that all relevant fixes and improvements are carried forward.&lt;br&gt;
+&lt;a href="https://github.com/dotnet/efcore/pull/35927" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/efcore/pull/35927/hovercard"&gt;#35927&lt;/a&gt; by &lt;a href="https://github.com/github-actions"&gt;@github-actions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Merge release/9.0 to release/9.0-staging&lt;/strong&gt;&lt;br&gt;
+Merged the 9.0 branch into the 9.0-staging branch, preparing for further testing and validation before final release.&lt;br&gt;
+&lt;a href="https://github.com/dotnet/efcore/pull/36051" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/efcore/pull/36051/hovercard"&gt;#36051&lt;/a&gt; by &lt;a href="https://github.com/AndriySvyryd"&gt;@AndriySvyryd&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[automated] Merge branch 'release/8.0' =&amp;gt; 'release/9.0'&lt;/strong&gt;&lt;br&gt;
+Another automated merge from 8.0 to 9.0, keeping branches synchronized.&lt;br&gt;
+&lt;a href="https://github.com/dotnet/efcore/pull/36088" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/efcore/pull/36088/hovercard"&gt;#36088&lt;/a&gt; by &lt;a href="https://github.com/github-actions"&gt;@github-actions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[release/9.0] Merge release/9.0-staging to release/9.0&lt;/strong&gt;&lt;br&gt;
+Merged changes from the 9.0-staging branch back into the main 9.0 branch, finalizing updates for this release.&lt;br&gt;
+&lt;a href="https://github.com/dotnet/efcore/pull/36089" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/efcore/pull/36089/hovercard"&gt;#36089&lt;/a&gt; by &lt;a href="https://github.com/AndriySvyryd"&gt;@AndriySvyryd&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;This summary is generated and may contain inaccuracies. For complete details, please review the linked pull requests.&lt;/p&gt;
+&lt;p&gt;Full Changelog: &lt;a href="https://github.com/dotnet/efcore/compare/v9.0.5...v9.0.6"&gt;v9.0.5...v9.0.6&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/efcore/releases/tag/v8.0.17"&gt;v8.0.17&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Dependency Updates&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Update dependencies from dotnet/arcade&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/efcore/pull/36085" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/efcore/pull/36085/hovercard"&gt;#36085&lt;/a&gt;)&lt;br&gt;
+Updates the project's dependencies using the latest versions from the dotnet/arcade repository. This ensures that the build infrastructure and related tooling are up to date, which can bring in important bug fixes, security patches, and improvements from upstream.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Miscellaneous&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Update branding to 8.0.17&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/efcore/pull/36043" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/efcore/pull/36043/hovercard"&gt;#36043&lt;/a&gt;)&lt;br&gt;
+Updates the internal version branding to 8.0.17. This change ensures that the product and its packages correctly reflect the new release version, helping users and developers identify the build.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Merging internal commits for release/8.0&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/efcore/pull/36080" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/efcore/pull/36080/hovercard"&gt;#36080&lt;/a&gt;)&lt;br&gt;
+Integrates various internal commits into the release/8.0 branch. This merge brings together important updates and ensures the release branch is synchronized with recent internal development, maintaining consistency and stability for the release.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;This summary is generated and may contain inaccuracies. For complete details, please review the linked pull requests.&lt;/p&gt;
+&lt;p&gt;Full Changelog: &lt;a href="https://github.com/dotnet/efcore/compare/v8.0.16...v8.0.17"&gt;v8.0.16...v8.0.17&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
