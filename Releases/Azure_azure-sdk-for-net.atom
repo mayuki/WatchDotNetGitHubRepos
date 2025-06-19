@@ -1,142 +1,23 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-06-18T00:07:21Z</updated>
+  <updated>2025-06-19T00:07:33Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-06-17</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-06-17</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-06-18</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-06-18</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-06-18T00:07:21Z</updated>
+    <updated>2025-06-19T00:07:33Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Certificates_4.8.0"&gt;Azure.Security.KeyVault.Certificates_4.8.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Administration_4.6.0"&gt;Azure.Security.KeyVault.Administration_4.6.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;4.8.0 (2025-06-16)&lt;/h2&gt;
-&lt;h3&gt;Acknowledgments&lt;/h3&gt;
-&lt;p&gt;Thank you to our developer community members who helped to make the Key Vault client libraries better with their contributions to this release:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;James Gould &lt;em&gt;(&lt;a href="https://github.com/james-gould"&gt;GitHub&lt;/a&gt;)&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Removed additional forward slash in &lt;code&gt;RestoreCertificateBackup&lt;/code&gt; and &lt;code&gt;RestoreCertificateBackupAsync&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
+                                &lt;h2&gt;4.6.0 (2025-06-16)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;The default service version is now "7.6".&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Secrets_4.8.0"&gt;Azure.Security.KeyVault.Secrets_4.8.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;4.8.0 (2025-06-13)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The default service version is now "7.6".&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.DataMovement.Files.Shares_12.2.0-beta.1"&gt;Azure.Storage.DataMovement.Files.Shares_12.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.2.0-beta.1 (2025-06-17)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for preserving NFS properties and permissions in Share Files and Share Directories for Share-to-Share copy transfers.&lt;/li&gt;
-&lt;li&gt;Added support for preserving SMB properties and permissions in Share Directories for Share-to-Share copy transfers.&lt;/li&gt;
-&lt;li&gt;Added basic support for handling hard links and soft links in NFS Share-to-Share copy and Share-to-local download transfers.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added protocol validation for Share-to-Share copy transfers. Validation is enabled by default and will fail the transfer if there are no share-level permissions. To bypass this, please enable &lt;code&gt;SkipProtocolValidation&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.DataMovement.Blobs_12.2.0-beta.1"&gt;Azure.Storage.DataMovement.Blobs_12.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.2.0-beta.1 (2025-06-17)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Explicitly setting &lt;code&gt;BlobStorageResourceOptions.AccessTier&lt;/code&gt; to &lt;code&gt;null&lt;/code&gt; will disable preserving the access tier value from the source blob to the destination blob.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed bug where AccessTier for Premium Page Blobs were not being preserved.&lt;/li&gt;
-&lt;li&gt;Fixed some issues when transferring virtual directories with Blob Storage as the source.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.DataMovement_12.2.0-beta.1"&gt;Azure.Storage.DataMovement_12.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.2.0-beta.1 (2025-06-17)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed issue where transfers added concurrently to the local checkpointer would throw collision exceptions intermittently.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Search.Documents_11.6.1"&gt;Azure.Search.Documents_11.6.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;11.6.1 (2025-06-17)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for HTTP status code 206 (Partial Content) in the &lt;code&gt;Search&lt;/code&gt; method to handle partial results returned by the service.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Search.Documents_11.7.0-beta.5"&gt;Azure.Search.Documents_11.7.0-beta.5&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;11.7.0-beta.5 (2025-06-17)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed a failure in the search response when the service returned a 206(Partial Content) status code.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Search_1.1.0-beta.1"&gt;Azure.Provisioning.Search_1.1.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.0-beta.1 (2025-06-16)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated to use latest API version.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.CosmosDB_1.1.0-beta.1"&gt;Azure.Provisioning.CosmosDB_1.1.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.0-beta.1 (2025-06-16)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated to use latest API version.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Storage_1.1.0"&gt;Azure.Provisioning.Storage_1.1.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.0 (2025-06-16)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated to use latest API version.&lt;/li&gt;
+&lt;li&gt;Service version is now &lt;code&gt;7.6&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
