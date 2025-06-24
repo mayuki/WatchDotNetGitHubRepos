@@ -1,6 +1,186 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2025-06-23T00:08:24Z</updated>
+  <updated>2025-06-24T00:07:34Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
+  <entry>
+    <title>aws/aws-sdk-net - Releases - 2025-06-23</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-06-23</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2025-06-24T00:07:14Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.37.0"&gt;4.0.37.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.37.0 (2025-06-23 18:23 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;DynamoDBv2 (4.0.1.9)
+&lt;ul&gt;
+&lt;li&gt;Fix issue where &lt;code&gt;ReturnValuesOnConditionCheckFailure&lt;/code&gt; could not be used if the provided document included properties that ended with &lt;code&gt;code&lt;/code&gt; or &lt;code&gt;message&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3002182657" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/3764" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/3764/hovercard" href="https://github.com/aws/aws-sdk-net/issues/3764"&gt;#3764&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Glue (4.0.6.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Glue now supports sort and z-order strategy for managed automated compaction for Iceberg tables in addition to binpack.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3 (4.0.2.1)
+&lt;ul&gt;
+&lt;li&gt;Generate GetBucketReplication, PutBucketReplication, GetBucketPolicy, GetBucketLocation, GetBucketMetadataTableConfiguration, GetBucketOwnershipControls&lt;/li&gt;
+&lt;li&gt;[Breaking Change] The following public IsSet() methods are now internal: IsSetAccountId() in Amazon.S3.Model.ReplicationDestination. IsSetEncryptionConfiguration() in Amazon.S3.Model.ReplicationDestination, IsSetAccessControlTranslation() in Amazon.S3.Model.ReplicationDestination.&lt;/li&gt;
+&lt;li&gt;[Breaking Change] Priority in Amazon.S3.Model.ReplicationRule changed from int to int?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3Tables (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;S3 Tables now supports sort and z-order compaction strategies for Iceberg tables in addition to binpack.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkspacesInstances (4.0.0.0)
+&lt;ul&gt;
+&lt;li&gt;Added support for Amazon WorkSpaces Instances API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.0.13
+&lt;ul&gt;
+&lt;li&gt;Update &lt;code&gt;JsonErrorResponseUnmarshaller&lt;/code&gt; not to check nested properties when trying to populate details for operations that failed.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1069.0"&gt;3.7.1069.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;3.7.1069.0 (2025-06-23 18:25 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;DynamoDBv2 (3.7.407.29)
+&lt;ul&gt;
+&lt;li&gt;Fix issue where &lt;code&gt;ReturnValuesOnConditionCheckFailure&lt;/code&gt; could not be used if the provided document included properties that ended with &lt;code&gt;code&lt;/code&gt; or &lt;code&gt;message&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3002182657" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/3764" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/3764/hovercard" href="https://github.com/aws/aws-sdk-net/issues/3764"&gt;#3764&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Glue (3.7.422.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Glue now supports sort and z-order strategy for managed automated compaction for Iceberg tables in addition to binpack.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3Tables (3.7.404.0)
+&lt;ul&gt;
+&lt;li&gt;S3 Tables now supports sort and z-order compaction strategies for Iceberg tables in addition to binpack.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkspacesInstances (3.7.400.0)
+&lt;ul&gt;
+&lt;li&gt;Added support for Amazon WorkSpaces Instances API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.402.74
+&lt;ul&gt;
+&lt;li&gt;Update &lt;code&gt;JsonErrorResponseUnmarshaller&lt;/code&gt; not to check nested properties when trying to populate details for operations that failed.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-06-23</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-06-23</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2025-06-24T00:07:15Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Extensions.AspNetCore.DataProtection.Keys_1.6.1"&gt;Azure.Extensions.AspNetCore.DataProtection.Keys_1.6.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.6.1 (2025-06-23)&lt;/h2&gt;
+&lt;h3&gt;Acknowledgments&lt;/h3&gt;
+&lt;p&gt;Thank you to our developer community members who helped to make the Event Hubs client libraries better with their contributions to this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mike Alhayek &lt;em&gt;(&lt;a href="https://github.com/MikeAlhayek"&gt;GitHub&lt;/a&gt;)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated &lt;code&gt;ConfigureKeyManagementKeyVaultEncryptorClientOptions&lt;/code&gt; to ensure that its dependencies were resolved in the correct scope to prevent issues due to lifetime drift.  Previously, a new scope was created to resolve &lt;code&gt;AzureKeyVaultXmlEncryptor&lt;/code&gt;.  However, &lt;code&gt;AzureKeyVaultXmlEncryptor&lt;/code&gt; is registered as a singleton and should be resolved from the same scope in which the options are being configured. Creating a new scope introduced unnecessary overhead and potential for unexpected behavior due to differences in service lifetime management.  &lt;em&gt;(A community contribution, courtesy of &lt;a href="https://github.com/MikeAlhayek"&gt;danielmarbach&lt;/a&gt;)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Extensions.AspNetCore.DataProtection.Blobs_1.5.1"&gt;Azure.Extensions.AspNetCore.DataProtection.Blobs_1.5.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.5.1 (2025-06-23)&lt;/h2&gt;
+&lt;h3&gt;Acknowledgments&lt;/h3&gt;
+&lt;p&gt;Thank you to our developer community members who helped to make the Event Hubs client libraries better with their contributions to this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mike Alhayek &lt;em&gt;(&lt;a href="https://github.com/MikeAlhayek"&gt;GitHub&lt;/a&gt;)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated &lt;code&gt;ConfigureKeyManagementBlobClientOptions&lt;/code&gt; to ensure that its dependencies were resolved in the correct scope to prevent issues due to lifetime drift.  Previously, a new scope was created to resolve &lt;code&gt;AzureBlobXmlRepository&lt;/code&gt;.  However, &lt;code&gt;AzureBlobXmlRepository&lt;/code&gt; is registered as a singleton and should be resolved from the same scope in which the options are being configured. Creating a new scope introduced unnecessary overhead and potential for unexpected behavior due to differences in service lifetime management.  &lt;em&gt;(A community contribution, courtesy of &lt;a href="https://github.com/MikeAlhayek"&gt;danielmarbach&lt;/a&gt;)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Resources_1.11.0"&gt;Azure.ResourceManager.Resources_1.11.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.11.0 (2025-06-23)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Bump &lt;code&gt;DeploymentScript&lt;/code&gt; api-version to &lt;code&gt;2023-08-01&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager_1.14.0-beta.1"&gt;Azure.ResourceManager_1.14.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.14.0-beta.1 (2025-06-23)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Use ModelReaderWriter instead of System.Text.Json.JsonSerializer for serialization of ManagedServiceIdentity.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2025-06-23</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2025-06-23</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2025-06-24T00:07:32Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Hangfire-1.12.0-beta.1"&gt;Instrumentation.Hangfire-1.12.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Hangfire/1.12.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Hangfire v1.12.0-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.12.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2725" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2725/hovercard"&gt;#2725&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Hangfire-1.12.0-beta.1/src/OpenTelemetry.Instrumentation.Hangfire/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
