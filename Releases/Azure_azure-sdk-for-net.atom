@@ -1,66 +1,78 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-06-24T00:07:15Z</updated>
+  <updated>2025-06-25T00:07:33Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-06-23</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-06-23</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-06-24</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-06-24</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-06-24T00:07:15Z</updated>
+    <updated>2025-06-25T00:07:33Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Extensions.AspNetCore.DataProtection.Keys_1.6.1"&gt;Azure.Extensions.AspNetCore.DataProtection.Keys_1.6.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity_1.14.1"&gt;Azure.Identity_1.14.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.6.1 (2025-06-23)&lt;/h2&gt;
-&lt;h3&gt;Acknowledgments&lt;/h3&gt;
-&lt;p&gt;Thank you to our developer community members who helped to make the Event Hubs client libraries better with their contributions to this release:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Mike Alhayek &lt;em&gt;(&lt;a href="https://github.com/MikeAlhayek"&gt;GitHub&lt;/a&gt;)&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
+                                &lt;h2&gt;1.14.1 (2025-07-08)&lt;/h2&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated &lt;code&gt;ConfigureKeyManagementKeyVaultEncryptorClientOptions&lt;/code&gt; to ensure that its dependencies were resolved in the correct scope to prevent issues due to lifetime drift.  Previously, a new scope was created to resolve &lt;code&gt;AzureKeyVaultXmlEncryptor&lt;/code&gt;.  However, &lt;code&gt;AzureKeyVaultXmlEncryptor&lt;/code&gt; is registered as a singleton and should be resolved from the same scope in which the options are being configured. Creating a new scope introduced unnecessary overhead and potential for unexpected behavior due to differences in service lifetime management.  &lt;em&gt;(A community contribution, courtesy of &lt;a href="https://github.com/MikeAlhayek"&gt;danielmarbach&lt;/a&gt;)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Added support in AzurePowerShellCredential for the Az.Accounts 5.0.0+ (Az 14.0.0+) breaking change where Get-AzAccessToken returns PSSecureAccessToken with a SecureString Token property instead of plaintext.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Extensions.AspNetCore.DataProtection.Blobs_1.5.1"&gt;Azure.Extensions.AspNetCore.DataProtection.Blobs_1.5.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Communication.Chat_1.4.0"&gt;Azure.Communication.Chat_1.4.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.5.1 (2025-06-23)&lt;/h2&gt;
-&lt;h3&gt;Acknowledgments&lt;/h3&gt;
-&lt;p&gt;Thank you to our developer community members who helped to make the Event Hubs client libraries better with their contributions to this release:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Mike Alhayek &lt;em&gt;(&lt;a href="https://github.com/MikeAlhayek"&gt;GitHub&lt;/a&gt;)&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated &lt;code&gt;ConfigureKeyManagementBlobClientOptions&lt;/code&gt; to ensure that its dependencies were resolved in the correct scope to prevent issues due to lifetime drift.  Previously, a new scope was created to resolve &lt;code&gt;AzureBlobXmlRepository&lt;/code&gt;.  However, &lt;code&gt;AzureBlobXmlRepository&lt;/code&gt; is registered as a singleton and should be resolved from the same scope in which the options are being configured. Creating a new scope introduced unnecessary overhead and potential for unexpected behavior due to differences in service lifetime management.  &lt;em&gt;(A community contribution, courtesy of &lt;a href="https://github.com/MikeAlhayek"&gt;danielmarbach&lt;/a&gt;)&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Resources_1.11.0"&gt;Azure.ResourceManager.Resources_1.11.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.11.0 (2025-06-23)&lt;/h2&gt;
+                                &lt;h2&gt;1.4.0 (2025-06-17)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Bump &lt;code&gt;DeploymentScript&lt;/code&gt; api-version to &lt;code&gt;2023-08-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Support data retention policy.&lt;/li&gt;
+&lt;li&gt;Support thread level and member level metadata.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager_1.14.0-beta.1"&gt;Azure.ResourceManager_1.14.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.SignalRService_1.14.1"&gt;Microsoft.Azure.WebJobs.Extensions.SignalRService_1.14.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.14.0-beta.1 (2025-06-23)&lt;/h2&gt;
+                                &lt;h2&gt;1.14.1 (2025-06-24)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update &lt;code&gt;MessagePack&lt;/code&gt; to 2.5.192&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Language.Conversations_2.0.0-beta.3"&gt;Azure.AI.Language.Conversations_2.0.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;2.0.0-beta.3 (2025-06-23)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Use ModelReaderWriter instead of System.Text.Json.JsonSerializer for serialization of ManagedServiceIdentity.&lt;/li&gt;
+&lt;li&gt;Added AI Conversation Analyze feature&lt;/li&gt;
+&lt;li&gt;Added support for analyze-conversation API Versions
+&lt;ul&gt;
+&lt;li&gt;2025-05-15-preview&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Language.Text_1.0.0-beta.3"&gt;Azure.AI.Language.Text_1.0.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.3 (2025-06-23)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added Value Exclusion, synonyms, and new entity types to the detection of Personally Identifiable Information (PII).&lt;/li&gt;
+&lt;li&gt;Added support for analyze-text API Versions
+&lt;ul&gt;
+&lt;li&gt;2025-05-15-preview&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
