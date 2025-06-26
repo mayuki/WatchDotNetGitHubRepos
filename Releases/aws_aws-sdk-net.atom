@@ -1,69 +1,54 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-06-25T00:07:32Z</updated>
+  <updated>2025-06-26T00:07:24Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-06-24</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-06-24</id>
+    <title>aws/aws-sdk-net - Releases - 2025-06-25</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-06-25</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-06-25T00:07:32Z</updated>
+    <updated>2025-06-26T00:07:24Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.38.0"&gt;4.0.38.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1071.0"&gt;3.7.1071.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.38.0 (2025-06-24 18:33 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1071.0 (2025-06-25 18:29 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AIOps (4.0.1.0)
+&lt;li&gt;ECS (3.7.412.2)
 &lt;ul&gt;
-&lt;li&gt;Adds support for cross account investigations for CloudWatch investigations AI Operations (AIOps).&lt;/li&gt;
+&lt;li&gt;Updates for change to Amazon ECS default log driver mode from blocking to non-blocking&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Batch (4.0.1.0)
+&lt;li&gt;FSx (3.7.405.0)
 &lt;ul&gt;
-&lt;li&gt;Add userdataType to LaunchTemplateSpecification and LaunchTemplateSpecificationOverride.&lt;/li&gt;
+&lt;li&gt;Add support for the ability to create Amazon S3 Access Points for Amazon FSx for OpenZFS file systems.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Bedrock (4.0.6.0)
+&lt;li&gt;S3 (3.7.419.0)
 &lt;ul&gt;
-&lt;li&gt;We are making ListFoundationModelAgreementOffers, DeleteFoundationModelAgreement, CreateFoundationModelAgreement, GetFoundationModelAvailability, PutUseCaseForModelAccess and GetUseCaseForModelAccess APIs public, previously they were console.&lt;/li&gt;
+&lt;li&gt;Adds support for additional server-side encryption mode and storage class values for accessing Amazon FSx data from Amazon S3 using S3 Access Points&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.14.0)
+&lt;li&gt;S3Control (3.7.410.0)
 &lt;ul&gt;
-&lt;li&gt;This release allows you to create and register AMIs while maintaining their underlying EBS snapshots within Local Zones.&lt;/li&gt;
+&lt;li&gt;Add support for the ability to use Amazon S3 Access Points with Amazon FSx for OpenZFS file systems.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticLoadBalancingV2 (4.0.1.0)
+&lt;li&gt;StorageGateway (3.7.405.0)
 &lt;ul&gt;
-&lt;li&gt;Add Paginator for DescribeAccountLimits, and fix Paginators for DescribeTrustStoreAssociations, DescribeTrustStoreRevocations, and DescribeTrustStores&lt;/li&gt;
+&lt;li&gt;This release adds IPv6 support to the Storage Gateway APIs. APIs that previously only accept or return IPv4 address will now accept or return both IPv4 and IPv6 addresses.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GameLift (4.0.1.0)
+&lt;li&gt;Textract (3.7.401.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for UDP ping beacons to ListLocations API, including new PingBeacon and UDPEndpoint data types within its Locations return value. Use UDP ping beacon endpoints to help measure real-time network latency for multiplayer games.&lt;/li&gt;
+&lt;li&gt;Add RotationAngle field to Geometry of WORD blocks for Textract AnalyzeDocument API&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;LicenseManager (4.0.2.0)
+&lt;li&gt;WorkSpacesThinClient (3.7.405.0)
 &lt;ul&gt;
-&lt;li&gt;AWS License Manager now supports license type conversions for AWS Marketplace products. Customers can provide Marketplace codes in the source license context or destination license context in the CreateLicenseConversionTaskForResource requests.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;RDS (4.0.3.0)
-&lt;ul&gt;
-&lt;li&gt;Adding support for RDS on Dedicated Local Zones, including local backup target, snapshot availability zone and snapshot target&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Route53Resolver (4.0.1.0)
-&lt;ul&gt;
-&lt;li&gt;Add support for iterative DNS queries through the new INBOUND_DELEGATION endpoint. Add delegation support through the Outbound Endpoints with DELEGATE rules.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;TranscribeService (4.0.2.0)
-&lt;ul&gt;
-&lt;li&gt;This Feature Adds Support for the "et-EE" Locale for Batch Operations&lt;/li&gt;
+&lt;li&gt;Remove Tags field from Get API responses&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -71,58 +56,43 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1070.0"&gt;3.7.1070.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.39.0"&gt;4.0.39.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1070.0 (2025-06-24 18:30 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.39.0 (2025-06-25 18:27 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AIOps (3.7.401.0)
+&lt;li&gt;ECS (4.0.2.2)
 &lt;ul&gt;
-&lt;li&gt;Adds support for cross account investigations for CloudWatch investigations AI Operations (AIOps).&lt;/li&gt;
+&lt;li&gt;Updates for change to Amazon ECS default log driver mode from blocking to non-blocking&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Batch (3.7.407.0)
+&lt;li&gt;FSx (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;Add userdataType to LaunchTemplateSpecification and LaunchTemplateSpecificationOverride.&lt;/li&gt;
+&lt;li&gt;Add support for the ability to create Amazon S3 Access Points for Amazon FSx for OpenZFS file systems.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Bedrock (3.7.425.0)
+&lt;li&gt;S3 (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;We are making ListFoundationModelAgreementOffers, DeleteFoundationModelAgreement, CreateFoundationModelAgreement, GetFoundationModelAvailability, PutUseCaseForModelAccess and GetUseCaseForModelAccess APIs public, previously they were console.&lt;/li&gt;
+&lt;li&gt;Adds support for additional server-side encryption mode and storage class values for accessing Amazon FSx data from Amazon S3 using S3 Access Points&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (3.7.452.0)
+&lt;li&gt;S3Control (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;This release allows you to create and register AMIs while maintaining their underlying EBS snapshots within Local Zones.&lt;/li&gt;
+&lt;li&gt;Add support for the ability to use Amazon S3 Access Points with Amazon FSx for OpenZFS file systems.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticLoadBalancingV2 (3.7.410.0)
+&lt;li&gt;StorageGateway (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;Add Paginator for DescribeAccountLimits, and fix Paginators for DescribeTrustStoreAssociations, DescribeTrustStoreRevocations, and DescribeTrustStores&lt;/li&gt;
+&lt;li&gt;This release adds IPv6 support to the Storage Gateway APIs. APIs that previously only accept or return IPv4 address will now accept or return both IPv4 and IPv6 addresses.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GameLift (3.7.406.0)
+&lt;li&gt;Textract (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for UDP ping beacons to ListLocations API, including new PingBeacon and UDPEndpoint data types within its Locations return value. Use UDP ping beacon endpoints to help measure real-time network latency for multiplayer games.&lt;/li&gt;
+&lt;li&gt;Add RotationAngle field to Geometry of WORD blocks for Textract AnalyzeDocument API&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;LicenseManager (3.7.402.0)
+&lt;li&gt;WorkSpacesThinClient (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;AWS License Manager now supports license type conversions for AWS Marketplace products. Customers can provide Marketplace codes in the source license context or destination license context in the CreateLicenseConversionTaskForResource requests.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;RDS (3.7.414.0)
-&lt;ul&gt;
-&lt;li&gt;Adding support for RDS on Dedicated Local Zones, including local backup target, snapshot availability zone and snapshot target&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Route53Resolver (3.7.403.0)
-&lt;ul&gt;
-&lt;li&gt;Add support for iterative DNS queries through the new INBOUND_DELEGATION endpoint. Add delegation support through the Outbound Endpoints with DELEGATE rules.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;TranscribeService (3.7.405.0)
-&lt;ul&gt;
-&lt;li&gt;This Feature Adds Support for the "et-EE" Locale for Batch Operations&lt;/li&gt;
+&lt;li&gt;Remove Tags field from Get API responses&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
