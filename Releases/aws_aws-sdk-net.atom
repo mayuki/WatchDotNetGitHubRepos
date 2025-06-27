@@ -1,54 +1,64 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-06-26T00:07:24Z</updated>
+  <updated>2025-06-27T00:07:42Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-06-25</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-06-25</id>
+    <title>aws/aws-sdk-net - Releases - 2025-06-26</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-06-26</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-06-26T00:07:24Z</updated>
+    <updated>2025-06-27T00:07:42Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1071.0"&gt;3.7.1071.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.40.0"&gt;4.0.40.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1071.0 (2025-06-25 18:29 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.40.0 (2025-06-26 18:31 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;ECS (3.7.412.2)
+&lt;li&gt;Deadline (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;Updates for change to Amazon ECS default log driver mode from blocking to non-blocking&lt;/li&gt;
+&lt;li&gt;Added fields to track cumulative task retry attempts for steps and jobs&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;FSx (3.7.405.0)
+&lt;li&gt;EC2 (4.0.15.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for the ability to create Amazon S3 Access Points for Amazon FSx for OpenZFS file systems.&lt;/li&gt;
+&lt;li&gt;This release adds support for OdbNetworkArn as a target in VPC Route Tables&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (3.7.419.0)
+&lt;li&gt;IoTManagedIntegrations (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for additional server-side encryption mode and storage class values for accessing Amazon FSx data from Amazon S3 using S3 Access Points&lt;/li&gt;
+&lt;li&gt;Adding managed integrations APIs for IoT Device Management to onboard and control devices across different manufacturers, connectivity protocols and third party vendor clouds. APIs include managed thing operations, provisioning profile management, and cloud connector operations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3Control (3.7.410.0)
+&lt;li&gt;KeyManagementService (4.0.3.4)
 &lt;ul&gt;
-&lt;li&gt;Add support for the ability to use Amazon S3 Access Points with Amazon FSx for OpenZFS file systems.&lt;/li&gt;
+&lt;li&gt;This release updates AWS CLI examples for KMS APIs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;StorageGateway (3.7.405.0)
+&lt;li&gt;Keyspaces (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds IPv6 support to the Storage Gateway APIs. APIs that previously only accept or return IPv4 address will now accept or return both IPv4 and IPv6 addresses.&lt;/li&gt;
+&lt;li&gt;This release provides change data capture (CDC) streams support through updates to the Amazon Keyspaces API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Textract (3.7.401.0)
+&lt;li&gt;KeyspacesStreams (4.0.0.0)
 &lt;ul&gt;
-&lt;li&gt;Add RotationAngle field to Geometry of WORD blocks for Textract AnalyzeDocument API&lt;/li&gt;
+&lt;li&gt;This release adds change data capture (CDC) streams support through the new Amazon Keyspaces Streams API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;WorkSpacesThinClient (3.7.405.0)
+&lt;li&gt;QBusiness (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;Remove Tags field from Get API responses&lt;/li&gt;
+&lt;li&gt;Added support for App level authentication for QBusiness DataAccessor using AWS IAM Identity center Trusted Token issuer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3 (4.0.3.1)
+&lt;ul&gt;
+&lt;li&gt;Generate GetBucketRequestPayment, GetBucketTagging, and GetObjectAttributes, GetObjectLegalHold, GetObjectLockConfiguration, GetObjectRetention, GetObjectTagging, GetPublicAccessBlock&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkSpaces (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Updated modifyStreamingProperties to support PrivateLink VPC endpoints for directories&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -56,43 +66,54 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.39.0"&gt;4.0.39.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1072.0"&gt;3.7.1072.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.39.0 (2025-06-25 18:27 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1072.0 (2025-06-26 18:31 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;ECS (4.0.2.2)
+&lt;li&gt;Deadline (3.7.409.0)
 &lt;ul&gt;
-&lt;li&gt;Updates for change to Amazon ECS default log driver mode from blocking to non-blocking&lt;/li&gt;
+&lt;li&gt;Added fields to track cumulative task retry attempts for steps and jobs&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;FSx (4.0.2.0)
+&lt;li&gt;EC2 (3.7.453.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for the ability to create Amazon S3 Access Points for Amazon FSx for OpenZFS file systems.&lt;/li&gt;
+&lt;li&gt;This release adds support for OdbNetworkArn as a target in VPC Route Tables&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (4.0.3.0)
+&lt;li&gt;IoTManagedIntegrations (3.7.401.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for additional server-side encryption mode and storage class values for accessing Amazon FSx data from Amazon S3 using S3 Access Points&lt;/li&gt;
+&lt;li&gt;Adding managed integrations APIs for IoT Device Management to onboard and control devices across different manufacturers, connectivity protocols and third party vendor clouds. APIs include managed thing operations, provisioning profile management, and cloud connector operations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3Control (4.0.2.0)
+&lt;li&gt;KeyManagementService (3.7.403.4)
 &lt;ul&gt;
-&lt;li&gt;Add support for the ability to use Amazon S3 Access Points with Amazon FSx for OpenZFS file systems.&lt;/li&gt;
+&lt;li&gt;This release updates AWS CLI examples for KMS APIs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;StorageGateway (4.0.1.0)
+&lt;li&gt;Keyspaces (3.7.404.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds IPv6 support to the Storage Gateway APIs. APIs that previously only accept or return IPv4 address will now accept or return both IPv4 and IPv6 addresses.&lt;/li&gt;
+&lt;li&gt;This release provides change data capture (CDC) streams support through updates to the Amazon Keyspaces API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Textract (4.0.1.0)
+&lt;li&gt;KeyspacesStreams (3.7.400.0)
 &lt;ul&gt;
-&lt;li&gt;Add RotationAngle field to Geometry of WORD blocks for Textract AnalyzeDocument API&lt;/li&gt;
+&lt;li&gt;This release adds change data capture (CDC) streams support through the new Amazon Keyspaces Streams API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;WorkSpacesThinClient (4.0.2.0)
+&lt;li&gt;QBusiness (3.7.415.0)
 &lt;ul&gt;
-&lt;li&gt;Remove Tags field from Get API responses&lt;/li&gt;
+&lt;li&gt;Added support for App level authentication for QBusiness DataAccessor using AWS IAM Identity center Trusted Token issuer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkSpaces (3.7.413.0)
+&lt;ul&gt;
+&lt;li&gt;Updated modifyStreamingProperties to support PrivateLink VPC endpoints for directories&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.402.75
+&lt;ul&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
