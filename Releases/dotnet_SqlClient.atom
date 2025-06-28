@@ -1,6 +1,179 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/SqlClient - Releases</title>
   <link href="https://github.com/dotnet/SqlClient" />
-  <updated>2025-06-27T00:07:52Z</updated>
+  <updated>2025-06-28T00:07:10Z</updated>
   <id>https://github.com/dotnet/SqlClient</id>
+  <entry>
+    <title>dotnet/SqlClient - Releases - 2025-06-27</title>
+    <id>https://github.com/dotnet/SqlClient#2025-06-27</id>
+    <link href="https://github.com/dotnet/SqlClient" />
+    <updated>2025-06-28T00:07:10Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/SqlClient/releases/tag/v6.1.0-preview2"&gt;Preview Release 6.1.0-preview2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Preview Release 6.1.0-preview2.25178.5 - 2025-06-27&lt;/h2&gt;
+&lt;p&gt;This update brings the following changes since the &lt;a href="/dotnet/SqlClient/blob/v6.1.0-preview2/6.1.0-preview1.md"&gt;6.1.0-preview1&lt;/a&gt; release:&lt;/p&gt;
+&lt;h3&gt;Added&lt;/h3&gt;
+&lt;h4&gt;Added dedicated SQL Server vector datatype support&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;What Changed:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Optimized vector communications between MDS and SQL Server 2025, employing a custom binary format over the TDS protocol. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3433" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3433/hovercard"&gt;#3433&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3443" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3443/hovercard"&gt;#3443&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Reduced processing load compared to existing JSON-based vector support.&lt;/li&gt;
+&lt;li&gt;Initial support for 32-bit single-precision floating point vectors.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Who Benefits:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Applications moving large vector data sets will see beneficial improvements to processing times and memory requirements.&lt;/li&gt;
+&lt;li&gt;Vector-specific APIs are ready to support future numeric representations with a consistent look-and-feel.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Impact:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reduced transmission and processing times for vector operations versus JSON using SQL Server 2025 preview:
+&lt;ul&gt;
+&lt;li&gt;Reads:  50x improvement&lt;/li&gt;
+&lt;li&gt;Writes: 3.3x improvement&lt;/li&gt;
+&lt;li&gt;Bulk Copy: 19x improvement&lt;/li&gt;
+&lt;li&gt;(Observed with vector column of max 1998 size, and 10,000 records for each operation.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Improved memory footprint due to the elimination of JSON serialization/deserialization and string representation bloat.&lt;/li&gt;
+&lt;li&gt;For backwards compatibility with earlier SQL Server Vector implementations, applications may continue to use JSON strings to send/receive vector data, although they will not see any of the performance improvements noted above.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Revived .NET Standard 2.0 target support&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;What Changed:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Support for targeting .NET Standard 2.0 has returned. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3381" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3381/hovercard"&gt;#3381&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Support had previously been removed in the 6.0 release, with the [community voicing concerns] (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="7828764" data-permission-text="Title is private" data-url="https://github.com/dotnet/SqlClient/discussions/3115" data-hovercard-type="discussion" data-hovercard-url="/dotnet/SqlClient/discussions/3115/hovercard" href="https://github.com/dotnet/SqlClient/discussions/3115"&gt;#3115&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Who Benefits:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Libraries that depend on MDS may seamlessly target any of the following frameworks:
+&lt;ul&gt;
+&lt;li&gt;.NET Standard 2.0&lt;/li&gt;
+&lt;li&gt;.NET Framework 4.6.2 and above&lt;/li&gt;
+&lt;li&gt;.NET 8.0&lt;/li&gt;
+&lt;li&gt;.NET 9.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Applications should continue to target runtimes.
+&lt;ul&gt;
+&lt;li&gt;The MDS .NET Standard 2.0 target framework support does not include an actual implementation, and cannot be used with a runtime.&lt;/li&gt;
+&lt;li&gt;An application's build/publish process should always pick the appropriate MDS .NET/.NET Framework runtime implementation.&lt;/li&gt;
+&lt;li&gt;Custom build/publish actions that incorrectly try to deploy the MDS .NET Standard 2.0 reference DLL at runtime are not supported.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Impact:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Libraries targeting .NET Standard 2.0 will no longer receive warnings like this:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;warning NU1701: Package 'Microsoft.Data.SqlClient 6.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed missing &amp;lt;NeutralLanguage&amp;gt; property. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3325" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3325/hovercard"&gt;#3325&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed injection of UTF-8 BOM during bulk copy. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3399" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3399/hovercard"&gt;#3399&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;SqlCachedBuffer&lt;/code&gt; async read edge case. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3329" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3329/hovercard"&gt;#3329&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;SqlSequentialTextReader&lt;/code&gt; edge case with single-byte reads. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3383" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3383/hovercard"&gt;#3383&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed an incorrect error message when parsing connection string &lt;code&gt;PoolBlockingPeriod&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3411" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3411/hovercard"&gt;#3411&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added missing &lt;code&gt;ToString()&lt;/code&gt; override to &lt;code&gt;SqlJson&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3427" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3427/hovercard"&gt;#3427&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Reduced allocations when opening a connection. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3364" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3364/hovercard"&gt;#3364&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Various performance improvements related to TDS parsing. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3337" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3337/hovercard"&gt;#3337&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3377" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3377/hovercard"&gt;#3377&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3422" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3422/hovercard"&gt;#3422&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Improved native AOT support. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3364" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3364/hovercard"&gt;#3364&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3369" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3369/hovercard"&gt;#3369&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3401" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3401/hovercard"&gt;#3401&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Progress towards &lt;a href="https://github.com/dotnet/SqlClient/issues/2253" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/2253/hovercard"&gt;SSPI extensibility&lt;/a&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/2454" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/2454/hovercard"&gt;#2454&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Progress towards &lt;a href="https://github.com/dotnet/SqlClient/issues/3356" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/3356/hovercard"&gt;connection pooling improvements&lt;/a&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3352" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3352/hovercard"&gt;#3352&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3396" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3396/hovercard"&gt;#3396&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Expanded/clarified SqlConnection's &lt;a href="https://learn.microsoft.com/en-us/dotnet/api/microsoft.data.sqlclient.sqlconnection.accesstoken" rel="nofollow"&gt;AccessToken&lt;/a&gt; and &lt;a href="https://learn.microsoft.com/en-us/dotnet/api/microsoft.data.sqlclient.sqlconnection.accesstokencallback" rel="nofollow"&gt;AccessTokenCallback&lt;/a&gt; documentation. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3339" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3339/hovercard"&gt;#3339&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed some poorly formatted tables in the API docs. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3391" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3391/hovercard"&gt;#3391&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Code merge towards a unified SqlClient project, aligning .NET Framework and .NET Core implementations. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3262" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3262/hovercard"&gt;#3262&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3291" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3291/hovercard"&gt;#3291&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3305" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3305/hovercard"&gt;#3305&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3306" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3306/hovercard"&gt;#3306&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3310" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3310/hovercard"&gt;#3310&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3323" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3323/hovercard"&gt;#3323&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3326" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3326/hovercard"&gt;#3326&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3335" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3335/hovercard"&gt;#3335&lt;/a&gt;,&lt;br&gt;
+&lt;a href="https://github.com/dotnet/SqlClient/pull/3338" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3338/hovercard"&gt;#3338&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3340" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3340/hovercard"&gt;#3340&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3341" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3341/hovercard"&gt;#3341&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3343" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3343/hovercard"&gt;#3343&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3345" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3345/hovercard"&gt;#3345&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3353" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3353/hovercard"&gt;#3353&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3355" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3355/hovercard"&gt;#3355&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3368" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3368/hovercard"&gt;#3368&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3373" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3373/hovercard"&gt;#3373&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3376" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3376/hovercard"&gt;#3376&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3388" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3388/hovercard"&gt;#3388&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3389" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3389/hovercard"&gt;#3389&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3393" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3393/hovercard"&gt;#3393&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3405" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3405/hovercard"&gt;#3405&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3414" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3414/hovercard"&gt;#3414&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3416" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3416/hovercard"&gt;#3416&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3417" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3417/hovercard"&gt;#3417&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3420" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3420/hovercard"&gt;#3420&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3431" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3431/hovercard"&gt;#3431&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3438" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3438/hovercard"&gt;#3438&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Test improvements include a new unit test project, updates to test dependencies, removal of hardcoded credentials, and improved robustness. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3204" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3204/hovercard"&gt;#3204&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3379" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3379/hovercard"&gt;#3379&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3380" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3380/hovercard"&gt;#3380&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3402" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3402/hovercard"&gt;#3402&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added dependency on &lt;code&gt;System.Text.Json&lt;/code&gt; &lt;a href="https://www.nuget.org/packages/System.Text.Json/8.0.5" rel="nofollow"&gt;8.0.5&lt;/a&gt; (.NET 8.0) and &lt;a href="https://www.nuget.org/packages/System.Text.Json/9.0.5" rel="nofollow"&gt;9.0.5&lt;/a&gt; (.NET Standard 2.0, .NET 9.0) to avoid transitive vulnerabilities (&lt;a href="https://github.com/advisories/GHSA-8g4q-xg66-9fp4"&gt;CVE-2024-43485&lt;/a&gt;). (&lt;a href="https://github.com/dotnet/SqlClient/pull/3403" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3403/hovercard"&gt;#3403&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;We thank the following public contributors. Their efforts toward this project&lt;br&gt;
+are very much appreciated.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/edwardneal"&gt;edwardneal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/ErikEJ"&gt;ErikEJ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/twsouthwick"&gt;twsouthwick&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Wraith2"&gt;Wraith2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;New Contributors&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/BradBarnich"&gt;BradBarnich&lt;/a&gt; made their first contribution in &lt;a href="https://github.com/dotnet/SqlClient/pull/3325" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3325/hovercard"&gt;#3325&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/deusanyjunior"&gt;deusanyjunior&lt;/a&gt; made their first contribution in &lt;a href="https://github.com/dotnet/SqlClient/pull/3310" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3310/hovercard"&gt;#3310&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Target Platform Support&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;.NET Framework 4.6.2+ (Windows ARM64, Windows x86, Windows x64)&lt;/li&gt;
+&lt;li&gt;.NET 8.0+ (Windows x86, Windows x64, Windows ARM64, Windows ARM, Linux, macOS)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Dependencies&lt;/h3&gt;
+&lt;h4&gt;.NET Standard 2.0&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Azure.Identity 1.13.2&lt;/li&gt;
+&lt;li&gt;Microsoft.Bcl.Cryptography 9.0.4&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.SNI.runtime 6.0.2&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 9.0.4&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 7.7.1&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 7.7.1&lt;/li&gt;
+&lt;li&gt;Microsoft.SqlServer.Server 1.0.0&lt;/li&gt;
+&lt;li&gt;System.Configuration.ConfigurationManager 9.0.4&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 9.0.4&lt;/li&gt;
+&lt;li&gt;System.Text.Json 9.0.5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;.NET Framework 4.6.2+&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Azure.Identity 1.13.2&lt;/li&gt;
+&lt;li&gt;Microsoft.Bcl.Cryptography 8.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.SNI 6.0.2&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 8.0.1&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 7.7.1&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 7.7.1&lt;/li&gt;
+&lt;li&gt;System.Buffers 4.5.1&lt;/li&gt;
+&lt;li&gt;System.Data.Common 4.3.0&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Text.Encodings.Web 8.0.0&lt;/li&gt;
+&lt;li&gt;System.Text.Json 8.0.5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;.NET 8.0&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Azure.Identity 1.13.2&lt;/li&gt;
+&lt;li&gt;Microsoft.Bcl.Cryptography 8.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.SNI.runtime 6.0.2&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 8.0.1&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 7.7.1&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 7.7.1&lt;/li&gt;
+&lt;li&gt;Microsoft.SqlServer.Server 1.0.0&lt;/li&gt;
+&lt;li&gt;System.Configuration.ConfigurationManager 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Text.Json 8.0.5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;.NET 9.0&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Azure.Identity 1.13.2&lt;/li&gt;
+&lt;li&gt;Microsoft.Bcl.Cryptography 9.0.4&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.SNI.runtime 6.0.2&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 9.0.4&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 7.7.1&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 7.7.1&lt;/li&gt;
+&lt;li&gt;Microsoft.SqlServer.Server 1.0.0&lt;/li&gt;
+&lt;li&gt;System.Configuration.ConfigurationManager 9.0.4&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 9.0.4&lt;/li&gt;
+&lt;li&gt;System.Text.Json 9.0.5&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
