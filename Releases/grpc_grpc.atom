@@ -1,40 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2025-06-29T00:08:34Z</updated>
+  <updated>2025-06-30T00:08:27Z</updated>
   <id>https://github.com/grpc/grpc</id>
-  <entry>
-    <title>grpc/grpc - Releases - 2025-06-28</title>
-    <id>https://github.com/grpc/grpc#2025-06-28</id>
-    <link href="https://github.com/grpc/grpc" />
-    <updated>2025-06-29T00:08:34Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.71.2"&gt;Release v1.71.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;This is release 1.71.2 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;gears&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
-&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
-&lt;h2&gt;C++&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[Backport of &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2999249768" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/39266" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39266/hovercard" href="https://github.com/grpc/grpc/pull/39266"&gt;#39266&lt;/a&gt; to v1.71.x] Protect grpc generated sources from unwanted system macros (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3041669372" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/39484" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39484/hovercard" href="https://github.com/grpc/grpc/pull/39484"&gt;#39484&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Python&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[Backport of &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3152589129" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/39894" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39894/hovercard" href="https://github.com/grpc/grpc/pull/39894"&gt;#39894&lt;/a&gt; to v1.71.x] Fix the issue with gRPC Python Client not reconnecting in certain situations: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2741993311" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/38290" data-hovercard-type="issue" data-hovercard-url="/grpc/grpc/issues/38290/hovercard" href="https://github.com/grpc/grpc/issues/38290"&gt;#38290&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2957757249" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/39113" data-hovercard-type="issue" data-hovercard-url="/grpc/grpc/issues/39113/hovercard" href="https://github.com/grpc/grpc/issues/39113"&gt;#39113&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3082561659" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/39631" data-hovercard-type="issue" data-hovercard-url="/grpc/grpc/issues/39631/hovercard" href="https://github.com/grpc/grpc/issues/39631"&gt;#39631&lt;/a&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3166666378" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/39948" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39948/hovercard" href="https://github.com/grpc/grpc/pull/39948"&gt;#39948&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;[Backport of &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3077759178" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/39609" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39609/hovercard" href="https://github.com/grpc/grpc/pull/39609"&gt;#39609&lt;/a&gt; to v1.71.x] Pin Cython to 3.1.1 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3084230589" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/39636" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39636/hovercard" href="https://github.com/grpc/grpc/pull/39636"&gt;#39636&lt;/a&gt;). This addresses several issues:
-&lt;ul&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3069416918" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/39588" data-hovercard-type="issue" data-hovercard-url="/grpc/grpc/issues/39588/hovercard" href="https://github.com/grpc/grpc/issues/39588"&gt;#39588&lt;/a&gt; Using inconsistent Cython version in released platform-specific wheels within the same grpcio release.&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3069295536" data-permission-text="Title is private" data-url="https://github.com/cython/cython/issues/6878" data-hovercard-type="issue" data-hovercard-url="/cython/cython/issues/6878/hovercard" href="https://github.com/cython/cython/issues/6878"&gt;cython/cython#6878&lt;/a&gt; Several published grpcio wheels were built with Cython 3.1.0 and are affected by Cython memory leak issue when using AsyncIO APIs (&lt;code&gt;grpc.aio.*&lt;/code&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
