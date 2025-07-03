@@ -1,60 +1,69 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2025-07-02T00:07:36Z</updated>
+  <updated>2025-07-03T00:07:59Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-07-01</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-07-01</id>
-    <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-07-02T00:07:19Z</updated>
+    <title>AutoMapper/AutoMapper - Releases - 2025-07-02</title>
+    <id>https://github.com/AutoMapper/AutoMapper#2025-07-02</id>
+    <link href="https://github.com/AutoMapper/AutoMapper" />
+    <updated>2025-07-03T00:07:39Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.43.0"&gt;4.0.43.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/LuckyPennySoftware/AutoMapper/releases/tag/v15.0.0"&gt;v15.0.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.43.0 (2025-07-01 20:51 UTC)&lt;/h3&gt;
+                                &lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/LuckyPennySoftware/AutoMapper/compare/v14.0.0...v15.0.0"&gt;&lt;tt&gt;v14.0.0...v15.0.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;CleanRoomsML (4.0.1.0)
+&lt;li&gt;Added support for .NET Standard 2.0&lt;/li&gt;
+&lt;li&gt;Requiring license key&lt;/li&gt;
+&lt;li&gt;Moving from MIT license to dual commercial/OSS license&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To set your license key:&lt;/p&gt;
+&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="services.AddAutoMapper(cfg =&amp;gt; {
+    cfg.LicenseKey = &amp;quot;&amp;lt;License key here&amp;gt;&amp;quot;;
+});"&gt;&lt;pre&gt;&lt;span class="pl-s1"&gt;services&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;AddAutoMapper&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;cfg &lt;span class="pl-c1"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="pl-kos"&gt;{&lt;/span&gt;
+    &lt;span class="pl-s1"&gt;cfg&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;LicenseKey&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;"&amp;lt;License key here&amp;gt;"&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+&lt;span class="pl-kos"&gt;}&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can obtain your license key at &lt;a href="https://automapper.io" rel="nofollow"&gt;AutoMapper.io&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>aws/aws-sdk-net - Releases - 2025-07-02</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-07-02</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2025-07-03T00:07:40Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1076.0"&gt;3.7.1076.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;3.7.1076.0 (2025-07-02 18:18 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;This release introduces support for incremental training and distributed training for custom models in AWS Clean Rooms ML.&lt;/li&gt;
+&lt;li&gt;ConnectCases (3.7.404.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds DeleteCase and DeleteRelatedItem APIs, which enable deleting cases and comments, undoing contact association, and removing service level agreements (SLAs) from cases. Contact center admins can use these APIs to delete cases when requested by customers and correct agent errors.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DataZone (4.0.2.0)
+&lt;li&gt;EC2 (3.7.455.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for the new optional domain-unit-id parameter in the UpdateProject API.&lt;/li&gt;
+&lt;li&gt;AWS Site-to-Site VPN now supports IPv6 addresses on outer tunnel IPs, making it easier for customers to build or transition to IPv6-only networks.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.16.0)
+&lt;li&gt;S3 (3.7.420.0)
 &lt;ul&gt;
-&lt;li&gt;Add Context to GetInstanceTypesFromInstanceRequirements API&lt;/li&gt;
+&lt;li&gt;Added support for directory bucket creation with tags and bucket ARN retrieval in CreateBucket, ListDirectoryBuckets, and HeadBucket operations&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Odb (4.0.0.0)
+&lt;li&gt;S3Control (3.7.411.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds API operations for Oracle Database@AWS. You can use the APIs to create Exadata infrastructure, ODB networks, and Exadata and Autonomous VM clusters inside AWS data centers. The infrastructure is managed by OCI. You can integrate these resources with AWS services.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;QBusiness (4.0.3.0)
-&lt;ul&gt;
-&lt;li&gt;New ChatResponseConfiguration to Customize Q Business chat responses for specific use cases and communication needs. Updated Boosting capability allowing admins to provide preference on date attributes for recency and/or provide a preferred data source.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;RDS (4.0.4.1)
-&lt;ul&gt;
-&lt;li&gt;Amazon RDS Custom for Oracle now supports multi-AZ database instances.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.11.0)
-&lt;ul&gt;
-&lt;li&gt;Updated field validation requirements for InstanceGroups.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.0.0.14
-&lt;ul&gt;
-&lt;li&gt;Add new protocol tests. Update JSON response unmarshallers to return safely if the service returns an empty string as a response instead of an empty json body&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Added TagResource, UntagResource, and ListTagsForResource support for directory bucket&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -62,50 +71,28 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1075.0"&gt;3.7.1075.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.44.0"&gt;4.0.44.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1075.0 (2025-07-01 18:21 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.44.0 (2025-07-02 18:17 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;CleanRoomsML (3.7.403.0)
+&lt;li&gt;ConnectCases (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;This release introduces support for incremental training and distributed training for custom models in AWS Clean Rooms ML.&lt;/li&gt;
+&lt;li&gt;This release adds DeleteCase and DeleteRelatedItem APIs, which enable deleting cases and comments, undoing contact association, and removing service level agreements (SLAs) from cases. Contact center admins can use these APIs to delete cases when requested by customers and correct agent errors.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DataZone (3.7.414.0)
+&lt;li&gt;EC2 (4.0.17.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for the new optional domain-unit-id parameter in the UpdateProject API.&lt;/li&gt;
+&lt;li&gt;AWS Site-to-Site VPN now supports IPv6 addresses on outer tunnel IPs, making it easier for customers to build or transition to IPv6-only networks.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (3.7.454.0)
+&lt;li&gt;S3 (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;Add Context to GetInstanceTypesFromInstanceRequirements API&lt;/li&gt;
+&lt;li&gt;Added support for directory bucket creation with tags and bucket ARN retrieval in CreateBucket, ListDirectoryBuckets, and HeadBucket operations&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Odb (3.7.400.0)
+&lt;li&gt;S3Control (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds API operations for Oracle Database@AWS. You can use the APIs to create Exadata infrastructure, ODB networks, and Exadata and Autonomous VM clusters inside AWS data centers. The infrastructure is managed by OCI. You can integrate these resources with AWS services.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;QBusiness (3.7.416.0)
-&lt;ul&gt;
-&lt;li&gt;New ChatResponseConfiguration to Customize Q Business chat responses for specific use cases and communication needs. Updated Boosting capability allowing admins to provide preference on date attributes for recency and/or provide a preferred data source.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;RDS (3.7.415.2)
-&lt;ul&gt;
-&lt;li&gt;Amazon RDS Custom for Oracle now supports multi-AZ database instances.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMaker (3.7.447.0)
-&lt;ul&gt;
-&lt;li&gt;Updated field validation requirements for InstanceGroups.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 3.7.402.78
-&lt;ul&gt;
-&lt;li&gt;Update to consume latest protocol tests (1.60.3). Add query compatible protocol tests.&lt;/li&gt;
-&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Added TagResource, UntagResource, and ListTagsForResource support for directory bucket&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -116,44 +103,29 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-07-01</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-07-01</id>
-    <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-07-02T00:07:19Z</updated>
+    <title>jbogard/MediatR - Releases - 2025-07-02</title>
+    <id>https://github.com/jbogard/MediatR#2025-07-02</id>
+    <link href="https://github.com/jbogard/MediatR" />
+    <updated>2025-07-03T00:07:53Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Developer.Playwright.NUnit_1.0.0-beta.1"&gt;Azure.Developer.Playwright.NUnit_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/LuckyPennySoftware/MediatR/releases/tag/v13.0.0"&gt;v13.0.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2025-07-01)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/LuckyPennySoftware/MediatR/compare/v12.5.0...v13.0.0"&gt;&lt;tt&gt;v12.5.0...v13.0.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Added authentication using Microsoft Entra ID for the service.&lt;/li&gt;
-&lt;li&gt;Added support for NUnit runner.&lt;/li&gt;
+&lt;li&gt;Added support for .NET Standard 2.0&lt;/li&gt;
+&lt;li&gt;Requiring license key&lt;/li&gt;
+&lt;li&gt;Moving from Apache license to dual commercial/OSS license&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Developer.Playwright_1.0.0-beta.1"&gt;Azure.Developer.Playwright_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2025-07-01)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added authentication using Microsoft Entra ID for the service.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Network_1.11.1"&gt;Azure.ResourceManager.Network_1.11.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.11.1 (2025-07-01)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed an issue that if &lt;code&gt;LoadBalancingRuleData.FrontendIPConfigurationId&lt;/code&gt; or other hidden properties on &lt;code&gt;LoadBalancingRuleData&lt;/code&gt; class are assigned with values, the corresponding service operation would fail with &lt;code&gt;NullReferenceException&lt;/code&gt; because the collection properties on &lt;code&gt;LoadBalancingRuleData&lt;/code&gt; class are not initialized.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;To set your license key:&lt;/p&gt;
+&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="services.AddMediatR(cfg =&amp;gt; {
+    cfg.LicenseKey = &amp;quot;&amp;lt;License key here&amp;gt;&amp;quot;;
+});"&gt;&lt;pre&gt;&lt;span class="pl-s1"&gt;services&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;AddMediatR&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;cfg &lt;span class="pl-c1"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="pl-kos"&gt;{&lt;/span&gt;
+    &lt;span class="pl-s1"&gt;cfg&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;LicenseKey&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;"&amp;lt;License key here&amp;gt;"&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+&lt;span class="pl-kos"&gt;}&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can obtain your license key at &lt;a href="https://mediatr.io" rel="nofollow"&gt;MediatR.io&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
