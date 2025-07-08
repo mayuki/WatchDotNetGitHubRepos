@@ -1,6 +1,235 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2025-07-07T00:08:21Z</updated>
+  <updated>2025-07-08T00:07:51Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-07-07</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-07-07</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2025-07-08T00:07:37Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/System.ClientModel_1.5.0"&gt;System.ClientModel_1.5.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.5.0 (2025-07-07)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added the following types for 3rd-party Authentication support: &lt;code&gt;AuthenticationTokenProvider&lt;/code&gt;, &lt;code&gt;GetTokenOptions&lt;/code&gt;, &lt;code&gt;AuthenticationToken&lt;/code&gt;, &lt;code&gt;AuthenticationPolicy&lt;/code&gt;, and &lt;code&gt;BearerTokenPolicy&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Source Breaking Change&lt;/strong&gt;: Updated &lt;code&gt;IJsonModel&amp;lt;T&amp;gt;.Create&lt;/code&gt; and &lt;code&gt;IPersistableModel&amp;lt;T&amp;gt;.Create&lt;/code&gt; method return types from &lt;code&gt;T&lt;/code&gt; to &lt;code&gt;T?&lt;/code&gt; to allow returning &lt;code&gt;null&lt;/code&gt; when deserialization fails. This change only affects code with nullable reference types enabled.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;For consumers calling these methods&lt;/strong&gt;: To fix compilation errors, either:
+&lt;ul&gt;
+&lt;li&gt;Use null-conditional operators (&lt;code&gt;?.&lt;/code&gt;) when calling these methods, or&lt;/li&gt;
+&lt;li&gt;Add null-forgiving operators (&lt;code&gt;!&lt;/code&gt;) if you're certain the result won't be null, or&lt;/li&gt;
+&lt;li&gt;Add explicit null checks before using the returned value&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;For implementers of these interfaces&lt;/strong&gt;: Update method signatures in your models to return &lt;code&gt;T?&lt;/code&gt; instead of &lt;code&gt;T&lt;/code&gt;, and decide whether to return &lt;code&gt;null&lt;/code&gt; or throw exceptions in error scenarios&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>DataDog/dd-trace-dotnet - Releases - 2025-07-07</title>
+    <id>https://github.com/DataDog/dd-trace-dotnet#2025-07-07</id>
+    <link href="https://github.com/DataDog/dd-trace-dotnet" />
+    <updated>2025-07-08T00:07:38Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/releases/tag/v3.20.1"&gt;3.20.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Ensures we never load the Continuous Profiler on linux arm64, as it's unsupported. Loading an unloading the Continuous Profiler can trigger crash conditions on some old versions of glibc.&lt;/p&gt;
+&lt;h2&gt;Changes&lt;/h2&gt;
+&lt;h3&gt;Continuous Profiler&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Don't load the profiler on arm64 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3195518714" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7169" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7169/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7169"&gt;#7169&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Miscellaneous&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[fleet installer] Remove the global instrumentation commands (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3203043214" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7182" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7182/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7182"&gt;#7182&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Build / Test&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix release process by removing check for SSI artifacts (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3202911670" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7180" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7180/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7180"&gt;#7180&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add workaround for messed up execution_benchmark results (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3202987036" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7181" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7181/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7181"&gt;#7181&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/compare/v3.20.0...v3.20.1"&gt;Changes since 3.20.0&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>googleapis/google-cloud-dotnet - Releases - 2025-07-07</title>
+    <id>https://github.com/googleapis/google-cloud-dotnet#2025-07-07</id>
+    <link href="https://github.com/googleapis/google-cloud-dotnet" />
+    <updated>2025-07-08T00:07:45Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.ModelArmor.V1Beta-1.0.0-beta02"&gt;Google.Cloud.ModelArmor.V1Beta version 1.0.0-beta02&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add MultiLingual Support for Sanitize APIs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated docs for Multi Language Detection Metadata&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.ModelArmor.V1-1.0.0-beta02"&gt;Google.Cloud.ModelArmor.V1 version 1.0.0-beta02&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add client libraries for v1beta API&lt;/li&gt;
+&lt;li&gt;Support added for &lt;code&gt;TXT&lt;/code&gt; and &lt;code&gt;CSV&lt;/code&gt; files&lt;/li&gt;
+&lt;li&gt;Add MultiLingual Support for Sanitize APIs&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Shopping.Merchant.Accounts.V1Beta-1.0.0-beta09"&gt;Google.Shopping.Merchant.Accounts.V1Beta version 1.0.0-beta09&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add CheckoutSettings service&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.SecurityCenter.V2-1.2.0"&gt;Google.Cloud.SecurityCenter.V2 version 1.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add AffectedResources proto&lt;/li&gt;
+&lt;li&gt;Add AiModel proto&lt;/li&gt;
+&lt;li&gt;Add ChokePoint proto&lt;/li&gt;
+&lt;li&gt;Add IpRules proto&lt;/li&gt;
+&lt;li&gt;Add Job proto&lt;/li&gt;
+&lt;li&gt;Add Network proto&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.PubSub.V1-3.27.0"&gt;Google.Cloud.PubSub.V1 version 3.27.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add MessageTransformationFailureReason to IngestionFailureEvent&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Document that the &lt;code&gt;acknowledge_confirmation&lt;/code&gt; and &lt;code&gt;modify_ack_deadline_confirmation&lt;/code&gt; fields in message &lt;code&gt;.google.pubsub.v1.StreamingPullResponse&lt;/code&gt; are not guaranteed to be populated&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Dialogflow.Cx.V3-2.24.0"&gt;Google.Cloud.Dialogflow.Cx.V3 version 2.24.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add support for generator settings on fulfillment&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Dataproc.V1-5.20.0"&gt;Google.Cloud.Dataproc.V1 version 5.20.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add &lt;code&gt;cluster_tier&lt;/code&gt; to support creating premium clusters&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Dataplex.V1-3.9.0"&gt;Google.Cloud.Dataplex.V1 version 3.9.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A new field &lt;code&gt;semantic_search&lt;/code&gt; is added to &lt;code&gt;message.google.cloud.dataplex.v1.SearchEntriesRequest&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A comment for message &lt;code&gt;MetadataJob&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for message &lt;code&gt;MetadataJob&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for message &lt;code&gt;MetadataJob&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;exported_entries&lt;/code&gt; in message &lt;code&gt;.google.cloud.dataplex.v1.MetadataJob&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;error_message&lt;/code&gt; in message &lt;code&gt;.google.cloud.dataplex.v1.MetadataJob&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for enum &lt;code&gt;SyncMode&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;source_storage_uri&lt;/code&gt; in message &lt;code&gt;.google.cloud.dataplex.v1.MetadataJob&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;organization_level&lt;/code&gt; in message &lt;code&gt;.google.cloud.dataplex.v1.MetadataJob&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;projects&lt;/code&gt; in message &lt;code&gt;.google.cloud.dataplex.v1.MetadataJob&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;entry_groups&lt;/code&gt; in message &lt;code&gt;.google.cloud.dataplex.v1.MetadataJob&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;entry_types&lt;/code&gt; in message &lt;code&gt;.google.cloud.dataplex.v1.MetadataJob&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;aspect_types&lt;/code&gt; in message &lt;code&gt;.google.cloud.dataplex.v1.MetadataJob&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;scope&lt;/code&gt; in message &lt;code&gt;.google.cloud.dataplex.v1.MetadataJob&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;output_path&lt;/code&gt; in message &lt;code&gt;.google.cloud.dataplex.v1.MetadataJob&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for enum value &lt;code&gt;EXPORT&lt;/code&gt; in enum &lt;code&gt;Type&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for enum value &lt;code&gt;INTERNAL_ERROR&lt;/code&gt; in enum &lt;code&gt;ErrorCode&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;encryption_config_id&lt;/code&gt; in message &lt;code&gt;.google.cloud.dataplex.v1.CreateEncryptionConfigRequest&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for message &lt;code&gt;DataDiscoveryResult&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;scan_statistics&lt;/code&gt; in message &lt;code&gt;.google.cloud.dataplex.v1.DataDiscoveryResult&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;Minor changes&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Bigtable.V2-3.19.0"&gt;Google.Cloud.Bigtable.V2 version 3.19.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add Idempotency to Cloud Bigtable MutateRowRequest API&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.AIPlatform.V1-3.37.0"&gt;Google.Cloud.AIPlatform.V1 version 3.37.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add message ColabImage, add field colab_image to NotebookSoftwareConfig&lt;/li&gt;
+&lt;li&gt;Allow user input for schedule_resource_name in NotebookExecutionJob&lt;/li&gt;
+&lt;li&gt;Add computer use support to tools&lt;/li&gt;
+&lt;li&gt;Add invoke_route_prefix to ModelContainerSpec in aiplatform v1 models.proto&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A comment for message NotebookRuntime is changed&lt;/li&gt;
+&lt;li&gt;A comment for enum value BEING_STARTED in enum NotebookRuntime.RuntimeState is changed&lt;/li&gt;
+&lt;li&gt;A comment for message NotebookSoftwareConfig is changed&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
