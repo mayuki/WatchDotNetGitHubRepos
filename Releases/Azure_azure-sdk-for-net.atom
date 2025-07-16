@@ -1,108 +1,116 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-07-15T00:07:44Z</updated>
+  <updated>2025-07-16T00:07:39Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-07-14</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-07-14</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-07-15</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-07-15</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-07-15T00:07:44Z</updated>
+    <updated>2025-07-16T00:07:39Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.OpenAI_2.2.0-beta.5"&gt;Azure.AI.OpenAI_2.2.0-beta.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.47.1"&gt;Azure.Core_1.47.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;2.2.0-beta.5 (2025-07-11)&lt;/h2&gt;
-&lt;p&gt;This update converges new feature updates from the recent &lt;code&gt;2.2.0&lt;/code&gt; release of &lt;code&gt;OpenAI&lt;/code&gt; together with support based on the contemporary &lt;code&gt;2025-04-01-preview&lt;/code&gt; Azure OpenAI Service API label.&lt;/p&gt;
+                                &lt;h2&gt;1.47.1 (2025-07-15)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;A substantial number of new features are carried forward from the &lt;code&gt;OpenAI&lt;/code&gt; library. Please see &lt;a href="https://github.com/openai/openai-dotnet/blob/main/CHANGELOG.md#220-2025-07-02"&gt;the full 2.2.0 release notes&lt;/a&gt; for details.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes (Preview APIs)&lt;/h3&gt;
-&lt;p&gt;The following are carried forward from changes in the 2.2.0 release of &lt;code&gt;OpenAI&lt;/code&gt;. Please see &lt;a href="https://github.com/openai/openai-dotnet/blob/main/CHANGELOG.md#220-2025-07-02"&gt;the changelog&lt;/a&gt; for full details.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Removed the implicit operator from all models that converts a model to &lt;code&gt;BinaryContent&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Removed the explicit operator from all models that converts a &lt;code&gt;ClientResult&lt;/code&gt; to a model.&lt;/li&gt;
-&lt;li&gt;OpenAI:
-&lt;ul&gt;
-&lt;li&gt;Renamed the &lt;code&gt;GetRealtimeConversationClient&lt;/code&gt; method from &lt;code&gt;OpenAIClient&lt;/code&gt; to &lt;code&gt;GetRealtimeClient&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;OpenAI.FineTuning:
-&lt;ul&gt;
-&lt;li&gt;Renamed the &lt;code&gt;FineTuningJobOperation&lt;/code&gt; class to &lt;code&gt;FineTuningJob&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Removed protocol methods for &lt;code&gt;CreateFineTuningJob&lt;/code&gt;, &lt;code&gt;GetJob&lt;/code&gt;, and &lt;code&gt;GetJobs&lt;/code&gt; and added convenience methods for them.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;OpenAI.Realtime:
-&lt;ul&gt;
-&lt;li&gt;Updated namespace from &lt;code&gt;OpenAI.Conversations&lt;/code&gt; to &lt;code&gt;OpenAI.Realtime&lt;/code&gt;. All APIs and types related to real-time conversations have been moved to the new &lt;code&gt;OpenAI.Realtime&lt;/code&gt; namespace.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;OpenAI.Responses:
-&lt;ul&gt;
-&lt;li&gt;Removed the &lt;code&gt;SummaryTextParts&lt;/code&gt; property of &lt;code&gt;ReasoningResponseItem&lt;/code&gt; in favor a new property called &lt;code&gt;SummaryParts&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Removed the following public constructors:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;FileSearchCallResponseItem(IEnumerable&amp;lt;string&amp;gt; queries, IEnumerable&amp;lt;FileSearchCallResult&amp;gt; results)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;FunctionCallOutputResponseItem(string callId, string functionOutput)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;FunctionCallResponseItem(string callId, string functionName, BinaryData functionArguments)&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Made several properties read-only that were previously settable:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;CallId&lt;/code&gt; and &lt;code&gt;Output&lt;/code&gt; in &lt;code&gt;ComputerCallOutputResponseItem&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Action&lt;/code&gt;, &lt;code&gt;CallId&lt;/code&gt;, and &lt;code&gt;Status&lt;/code&gt; in &lt;code&gt;ComputerCallResponseItem&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Results&lt;/code&gt; and &lt;code&gt;Status&lt;/code&gt; in &lt;code&gt;FileSearchCallResponseItem&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;CallId&lt;/code&gt; in &lt;code&gt;FunctionCallOutputResponseItem&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;CallId&lt;/code&gt; in &lt;code&gt;FunctionCallResponseItem&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Changed the following property types:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Attributes&lt;/code&gt; in &lt;code&gt;FileSearchCallResult&lt;/code&gt; is now &lt;code&gt;IReadOnlyDictionary&amp;lt;string, BinaryData&amp;gt;&lt;/code&gt; instead of &lt;code&gt;IDictionary&amp;lt;string, BinaryData&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Status&lt;/code&gt; properties are now nullable in multiple response item types.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Code&lt;/code&gt; in &lt;code&gt;ResponseError&lt;/code&gt; is now &lt;code&gt;ResponseErrorCode&lt;/code&gt; instead of &lt;code&gt;string&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Renamed the &lt;code&gt;WebSearchToolContextSize&lt;/code&gt; extensible enum to &lt;code&gt;WebSearchContextSize&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Renamed the &lt;code&gt;WebSearchToolLocation&lt;/code&gt; class to &lt;code&gt;WebSearchUserLocation&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;OpenAI.VectorStores:
-&lt;ul&gt;
-&lt;li&gt;Renamed method parameters from &lt;code&gt;vectorStore&lt;/code&gt; to &lt;code&gt;options&lt;/code&gt; in &lt;code&gt;CreateVectorStore&lt;/code&gt; and &lt;code&gt;ModifyVectorStore&lt;/code&gt; methods in &lt;code&gt;VectorStoreClient&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;Adopt System.ClientModel 1.5.1&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ManagedServiceIdentities_1.4.0"&gt;Azure.ResourceManager.ManagedServiceIdentities_1.4.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Storage_1.1.2"&gt;Azure.Provisioning.Storage_1.1.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.4.0 (2025-07-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version tag from 'package-2023-01-31' to 'package-2024-11-30'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/bf90cab9d5f6060ce1f7775ffac88ed8eda785ca/specification/msi/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/bf90cab9d5f6060ce1f7775ffac88ed8eda785ca/specification/msi/resource-manager/readme.md&lt;/a&gt;.
-&lt;ul&gt;
-&lt;li&gt;Exposed User-Assigned Identity &lt;code&gt;IsolationScope&lt;/code&gt; property.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning_1.2.1"&gt;Azure.Provisioning_1.2.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.1 (2025-07-09)&lt;/h2&gt;
+                                &lt;h2&gt;1.1.2 (2025-07-15)&lt;/h2&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed the incorrect property name for discriminators in &lt;code&gt;AzureCliScript&lt;/code&gt; and &lt;code&gt;AzurePowerShellScript&lt;/code&gt; (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/51135" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/51135/hovercard"&gt;#51135&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fixed the incorrect format for &lt;code&gt;TimeSpan&lt;/code&gt; properties in &lt;code&gt;AzureCliScript&lt;/code&gt; and &lt;code&gt;AzurePowerShellScript&lt;/code&gt; (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/51135" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/51135/hovercard"&gt;#51135&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Name&lt;/code&gt; property of &lt;code&gt;TableService&lt;/code&gt; now always has the value of &lt;code&gt;default&lt;/code&gt; since this is its only valid value. Fixes &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/51210" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/51210/hovercard"&gt;#51210&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/System.ClientModel_1.5.1"&gt;System.ClientModel_1.5.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.5.1 (2025-07-14)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue where System.ClientModel.SourceGeneration was running slowly for large projects with many dependencies.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The System.ClientModel.SourceGeneration used to auto-discover &lt;code&gt;IJsonModel&amp;lt;T&amp;gt;&lt;/code&gt;'s that were in the project as well as any types &lt;code&gt;T&lt;/code&gt; used in &lt;code&gt;ModelReaderWriter.Read&amp;lt;T&amp;gt;&lt;/code&gt; and &lt;code&gt;ModelReaderWriter.Write&amp;lt;T&amp;gt;&lt;/code&gt;.  Now you must explicitly add a &lt;code&gt;ModelReaderWriterBuildableAttribute&lt;/code&gt; with each type that needs to have AOT friendly reading and writing.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.DataLake_12.23.0"&gt;Azure.Storage.Files.DataLake_12.23.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.23.0 (2025-07-14)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Includes all features from 12.23.0-beta.1&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.Batch_12.22.0"&gt;Azure.Storage.Blobs.Batch_12.22.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.22.0 (2025-07-14)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Includes all features from 12.22.0-beta.1&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.Shares_12.23.0"&gt;Azure.Storage.Files.Shares_12.23.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.23.0 (2025-07-14)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Includes all features from 12.23.0-beta.1&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs_12.25.0"&gt;Azure.Storage.Blobs_12.25.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.25.0 (2025-07-14)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Includes all features from 12.25.0-beta.1&lt;/li&gt;
+&lt;li&gt;Includes all features from 12.24.1&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Queues_12.23.0"&gt;Azure.Storage.Queues_12.23.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.23.0 (2025-07-14)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Includes all features from 12.23.0-beta.1&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Common_12.24.0"&gt;Azure.Storage.Common_12.24.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.24.0 (2025-07-14)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;This release contains bug fixes to improve quality.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;

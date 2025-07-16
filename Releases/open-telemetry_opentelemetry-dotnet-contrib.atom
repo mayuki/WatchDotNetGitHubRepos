@@ -1,6 +1,55 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>open-telemetry/opentelemetry-dotnet-contrib - Releases</title>
   <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-  <updated>2025-07-15T00:08:03Z</updated>
+  <updated>2025-07-16T00:07:53Z</updated>
   <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib</id>
+  <entry>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2025-07-15</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2025-07-15</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2025-07-16T00:07:53Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.SqlClient-1.12.0-beta.2"&gt;Instrumentation.SqlClient-1.12.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.SqlClient/1.12.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.SqlClient v1.12.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Add the &lt;code&gt;db.operation.name&lt;/code&gt; attribute when &lt;code&gt;CommandType&lt;/code&gt; is&lt;br&gt;
+&lt;code&gt;StoredProcedure&lt;/code&gt; to conform to the new semantic conventions.&lt;br&gt;
+This affects you if you have opted into the new conventions.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2800" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2800/hovercard"&gt;#2800&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add the &lt;code&gt;db.query.summary&lt;/code&gt; attribute. This affects you if you have opted into&lt;br&gt;
+the new conventions.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2811" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2811/hovercard"&gt;#2811&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added &lt;code&gt;OTEL_DOTNET_EXPERIMENTAL_SQLCLIENT_ENABLE_TRACE_CONTEXT_PROPAGATION&lt;/code&gt;&lt;br&gt;
+environment variable to propagate trace context to SQL Server databases.&lt;br&gt;
+This will remain experimental while the &lt;a href="https://github.com/open-telemetry/semantic-conventions/blob/main/docs/database/sql-server.md#context-propagation"&gt;specification&lt;/a&gt;&lt;br&gt;
+remains in development.&lt;br&gt;
+It is now only available on .NET 8 and newer.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2709" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2709/hovercard"&gt;#2709&lt;/a&gt;)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Propagate &lt;code&gt;traceparent&lt;/code&gt; information to SQL Server databases&lt;br&gt;
+(see &lt;a href="https://learn.microsoft.com/en-us/sql/t-sql/statements/set-context-info-transact-sql?view=sql-server-ver16" rel="nofollow"&gt;SET CONTEXT_INFO&lt;/a&gt;).&lt;br&gt;
+Note that this option incurs an additional round-trip to the database.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.SqlClient-1.12.0-beta.2/src/OpenTelemetry.Instrumentation.SqlClient/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

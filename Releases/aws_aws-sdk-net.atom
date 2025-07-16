@@ -1,6 +1,188 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-07-15T00:07:43Z</updated>
+  <updated>2025-07-16T00:07:38Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
+  <entry>
+    <title>aws/aws-sdk-net - Releases - 2025-07-15</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-07-15</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2025-07-16T00:07:38Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1079.0"&gt;3.7.1079.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;3.7.1079.0 (2025-07-15 18:34 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;BedrockAgent (3.7.428.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for S3 Vectors as a vector store.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DataZone (3.7.415.0)
+&lt;ul&gt;
+&lt;li&gt;Removing restriction of environment profile identifier as required field, S3 feature release&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DynamoDBv2 (3.7.409.0)
+&lt;ul&gt;
+&lt;li&gt;Added support for optional shard filter parameter in DescribeStream api that allows customers to fetch child shards of a read_only parent shard.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EC2 (3.7.458.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for volume initialization status, which enables you to monitor when the initialization process for an EBS volume is completed. This release also adds IPv6 support to EC2 Instance Connect Endpoints, allowing you to connect to your EC2 Instance via a private IPv6 address.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ECS (3.7.413.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon ECS supports native blue/green deployments, allowing you to validate new service revisions before directing production traffic to them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EventBridge (3.7.407.0)
+&lt;ul&gt;
+&lt;li&gt;Add customer-facing logging for the EventBridge Event Bus, enabling customers to better observe their events and extract insights about their EventBridge usage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;OpenSearchService (3.7.405.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Opensearch adds support for enabling s3 vector engine options. After enabling this option, customers will be able to create indices with s3 vector engine.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Pricing (3.7.402.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for new filter types in GetProducts API, including EQUALS, CONTAINS, ANY_OF, and NONE_OF.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;QuickSight (3.7.417.0)
+&lt;ul&gt;
+&lt;li&gt;Introduced custom instructions for topics.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Repostspace (3.7.402.0)
+&lt;ul&gt;
+&lt;li&gt;This release introduces Channels functionality with CreateChannel, GetChannel, ListChannels, and UpdateChannel operations. Channels provide dedicated collaboration spaces where teams can organize discussions and knowledge by projects, business units, or areas of responsibility.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3 (3.7.421.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon S3 Metadata live inventory tables provide a queryable inventory of all the objects in your general purpose bucket so that you can determine the latest state of your data. To help minimize your storage costs, use journal table record expiration to set a retention period for your records.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3Tables (3.7.405.0)
+&lt;ul&gt;
+&lt;li&gt;Adds table bucket type to ListTableBucket and GetTableBucket API operations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3Vectors (3.7.400.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon S3 Vectors provides cost-effective, elastic, and durable vector storage for queries based on semantic meaning and similarity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SageMaker (3.7.449.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for a new Restricted instance group type to enable a specialized environment for running Nova customization jobs on SageMaker HyperPod clusters. This release also adds support for SageMaker pipeline versioning.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.402.81
+&lt;ul&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.47.0"&gt;4.0.47.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.47.0 (2025-07-15 18:41 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;BedrockAgent (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for S3 Vectors as a vector store.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DataZone (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Removing restriction of environment profile identifier as required field, S3 feature release&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DynamoDBStreams (4.0.1.0)
+&lt;ul&gt;
+&lt;li&gt;Added support for optional shard filter parameter in DescribeStream api that allows customers to fetch child shards of a read_only parent shard.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EC2 (4.0.20.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for volume initialization status, which enables you to monitor when the initialization process for an EBS volume is completed. This release also adds IPv6 support to EC2 Instance Connect Endpoints, allowing you to connect to your EC2 Instance via a private IPv6 address.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ECS (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon ECS supports native blue/green deployments, allowing you to validate new service revisions before directing production traffic to them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EventBridge (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Add customer-facing logging for the EventBridge Event Bus, enabling customers to better observe their events and extract insights about their EventBridge usage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;OpenSearchService (4.0.1.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Opensearch adds support for enabling s3 vector engine options. After enabling this option, customers will be able to create indices with s3 vector engine.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Pricing (4.0.1.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for new filter types in GetProducts API, including EQUALS, CONTAINS, ANY_OF, and NONE_OF.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;QuickSight (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;Introduced custom instructions for topics.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Repostspace (4.0.1.0)
+&lt;ul&gt;
+&lt;li&gt;This release introduces Channels functionality with CreateChannel, GetChannel, ListChannels, and UpdateChannel operations. Channels provide dedicated collaboration spaces where teams can organize discussions and knowledge by projects, business units, or areas of responsibility.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3 (4.0.5.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon S3 Metadata live inventory tables provide a queryable inventory of all the objects in your general purpose bucket so that you can determine the latest state of your data. To help minimize your storage costs, use journal table record expiration to set a retention period for your records.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3Tables (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adds table bucket type to ListTableBucket and GetTableBucket API operations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3Vectors (4.0.0.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon S3 Vectors provides cost-effective, elastic, and durable vector storage for queries based on semantic meaning and similarity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SageMaker (4.0.13.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for a new Restricted instance group type to enable a specialized environment for running Nova customization jobs on SageMaker HyperPod clusters. This release also adds support for SageMaker pipeline versioning.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.0.16
+&lt;ul&gt;
+&lt;li&gt;Add &lt;code&gt;AWSConfigs.DisableLegacyPersistenceStore&lt;/code&gt; option to instruct the SDK not to use the &lt;a href="https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/sdk-store.html" rel="nofollow"&gt;SDK Store&lt;/a&gt; in its default profile resolution search&lt;/li&gt;
+&lt;li&gt;Update &lt;code&gt;PersistenceManager&lt;/code&gt; not to throw an exception when the SDK is used with a read-only file system (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3047801981" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/3801" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/3801/hovercard" href="https://github.com/aws/aws-sdk-net/issues/3801"&gt;#3801&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
