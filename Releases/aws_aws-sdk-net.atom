@@ -1,95 +1,84 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-07-16T00:07:38Z</updated>
+  <updated>2025-07-17T00:07:28Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-07-15</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-07-15</id>
+    <title>aws/aws-sdk-net - Releases - 2025-07-16</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-07-16</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-07-16T00:07:38Z</updated>
+    <updated>2025-07-17T00:07:28Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1079.0"&gt;3.7.1079.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1081.0"&gt;3.7.1081.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1079.0 (2025-07-15 18:34 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1081.0 (2025-07-16 15:37 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;BedrockAgent (3.7.428.0)
+&lt;li&gt;Bedrock (3.7.427.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for S3 Vectors as a vector store.&lt;/li&gt;
+&lt;li&gt;This release adds support for on-demand custom model inference through CustomModelDeployment APIs for Amazon Bedrock.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DataZone (3.7.415.0)
+&lt;li&gt;BedrockAgentCore (3.7.400.0)
 &lt;ul&gt;
-&lt;li&gt;Removing restriction of environment profile identifier as required field, S3 feature release&lt;/li&gt;
+&lt;li&gt;Initial release of Amazon Bedrock AgentCore SDK including Runtime, Built-In Tools, Memory, Gateway and Identity.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (3.7.409.0)
+&lt;li&gt;BedrockAgentCoreControl (3.7.400.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for optional shard filter parameter in DescribeStream api that allows customers to fetch child shards of a read_only parent shard.&lt;/li&gt;
+&lt;li&gt;Initial release of Amazon Bedrock AgentCore SDK including Runtime, Built-In Tools, Memory, Gateway and Identity.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (3.7.458.0)
+&lt;li&gt;BedrockRuntime (3.7.422.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for volume initialization status, which enables you to monitor when the initialization process for an EBS volume is completed. This release also adds IPv6 support to EC2 Instance Connect Endpoints, allowing you to connect to your EC2 Instance via a private IPv6 address.&lt;/li&gt;
+&lt;li&gt;document update to support on demand custom model.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ECS (3.7.413.0)
+&lt;li&gt;CloudWatchLogs (3.7.416.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon ECS supports native blue/green deployments, allowing you to validate new service revisions before directing production traffic to them.&lt;/li&gt;
+&lt;li&gt;CloudWatch Logs updates: Added X-Ray tracing for Amazon Bedrock Agent resources. Logs introduced Log Group level resource policies (managed through Put/Delete/Describe Resource Policy APIs). For more information, see CloudWatch Logs API documentation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EventBridge (3.7.407.0)
+&lt;li&gt;DataSync (3.7.407.0)
 &lt;ul&gt;
-&lt;li&gt;Add customer-facing logging for the EventBridge Event Bus, enabling customers to better observe their events and extract insights about their EventBridge usage.&lt;/li&gt;
+&lt;li&gt;AWS DataSync now supports IPv6 address inputs and outputs in create, update, and describe operations for NFS, SMB, and Object Storage locations&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;OpenSearchService (3.7.405.0)
+&lt;li&gt;Glue (3.7.425.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Opensearch adds support for enabling s3 vector engine options. After enabling this option, customers will be able to create indices with s3 vector engine.&lt;/li&gt;
+&lt;li&gt;AWS Glue now supports schema, partition and sort management of Apache Iceberg tables using Glue SDK&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Pricing (3.7.402.0)
+&lt;li&gt;GuardDuty (3.7.409.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for new filter types in GetProducts API, including EQUALS, CONTAINS, ANY_OF, and NONE_OF.&lt;/li&gt;
+&lt;li&gt;Add expectedBucketOwner parameter to ThreatIntel and IPSet APIs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;QuickSight (3.7.417.0)
+&lt;li&gt;IoTWireless (3.7.403.0)
 &lt;ul&gt;
-&lt;li&gt;Introduced custom instructions for topics.&lt;/li&gt;
+&lt;li&gt;FuotaTaskId is not a valid IdentifierType for EventConfiguration and is being removed from possible IdentifierType values.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Repostspace (3.7.402.0)
+&lt;li&gt;MediaPackageV2 (3.7.407.0)
 &lt;ul&gt;
-&lt;li&gt;This release introduces Channels functionality with CreateChannel, GetChannel, ListChannels, and UpdateChannel operations. Channels provide dedicated collaboration spaces where teams can organize discussions and knowledge by projects, business units, or areas of responsibility.&lt;/li&gt;
+&lt;li&gt;This release adds support for CDN Authentication using Static Headers in MediaPackage v2.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (3.7.421.0)
+&lt;li&gt;NetworkFlowMonitor (3.7.403.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon S3 Metadata live inventory tables provide a queryable inventory of all the objects in your general purpose bucket so that you can determine the latest state of your data. To help minimize your storage costs, use journal table record expiration to set a retention period for your records.&lt;/li&gt;
+&lt;li&gt;Introducing 2 new scope status types - DEACTIVATING and DEACTIVATED.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3Tables (3.7.405.0)
+&lt;li&gt;PaymentCryptographyData (3.7.404.0)
 &lt;ul&gt;
-&lt;li&gt;Adds table bucket type to ListTableBucket and GetTableBucket API operations&lt;/li&gt;
+&lt;li&gt;Expand length of message data field for Mac generation and validation to 8192 characters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3Vectors (3.7.400.0)
+&lt;li&gt;StepFunctions (3.7.403.120)
 &lt;ul&gt;
-&lt;li&gt;Amazon S3 Vectors provides cost-effective, elastic, and durable vector storage for queries based on semantic meaning and similarity.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMaker (3.7.449.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds support for a new Restricted instance group type to enable a specialized environment for running Nova customization jobs on SageMaker HyperPod clusters. This release also adds support for SageMaker pipeline versioning.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 3.7.402.81
-&lt;ul&gt;
-&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Doc-only update to introduction, and edits to clarify input parameter and the set of control characters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -97,84 +86,111 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.47.0"&gt;4.0.47.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.49.0"&gt;4.0.49.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.47.0 (2025-07-15 18:41 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.49.0 (2025-07-16 15:39 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;BedrockAgent (4.0.4.0)
+&lt;li&gt;Bedrock (4.0.8.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for S3 Vectors as a vector store.&lt;/li&gt;
+&lt;li&gt;This release adds support for on-demand custom model inference through CustomModelDeployment APIs for Amazon Bedrock.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DataZone (4.0.3.0)
+&lt;li&gt;BedrockAgentCore (4.0.0.0)
 &lt;ul&gt;
-&lt;li&gt;Removing restriction of environment profile identifier as required field, S3 feature release&lt;/li&gt;
+&lt;li&gt;Initial release of Amazon Bedrock AgentCore SDK including Runtime, Built-In Tools, Memory, Gateway and Identity.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DynamoDBStreams (4.0.1.0)
+&lt;li&gt;BedrockAgentCoreControl (4.0.0.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for optional shard filter parameter in DescribeStream api that allows customers to fetch child shards of a read_only parent shard.&lt;/li&gt;
+&lt;li&gt;Initial release of Amazon Bedrock AgentCore SDK including Runtime, Built-In Tools, Memory, Gateway and Identity.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.20.0)
+&lt;li&gt;BedrockRuntime (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for volume initialization status, which enables you to monitor when the initialization process for an EBS volume is completed. This release also adds IPv6 support to EC2 Instance Connect Endpoints, allowing you to connect to your EC2 Instance via a private IPv6 address.&lt;/li&gt;
+&lt;li&gt;document update to support on demand custom model.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ECS (4.0.3.0)
+&lt;li&gt;CloudWatchLogs (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon ECS supports native blue/green deployments, allowing you to validate new service revisions before directing production traffic to them.&lt;/li&gt;
+&lt;li&gt;CloudWatch Logs updates: Added X-Ray tracing for Amazon Bedrock Agent resources. Logs introduced Log Group level resource policies (managed through Put/Delete/Describe Resource Policy APIs). For more information, see CloudWatch Logs API documentation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EventBridge (4.0.3.0)
+&lt;li&gt;DataSync (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Add customer-facing logging for the EventBridge Event Bus, enabling customers to better observe their events and extract insights about their EventBridge usage.&lt;/li&gt;
+&lt;li&gt;AWS DataSync now supports IPv6 address inputs and outputs in create, update, and describe operations for NFS, SMB, and Object Storage locations&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;OpenSearchService (4.0.1.0)
+&lt;li&gt;DynamoDBv2 (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Opensearch adds support for enabling s3 vector engine options. After enabling this option, customers will be able to create indices with s3 vector engine.&lt;/li&gt;
+&lt;li&gt;Add native support for LINQ expression trees in the IDynamoDBContext API for ScanAsync() and QueryAsync()&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Pricing (4.0.1.0)
+&lt;li&gt;Glue (4.0.9.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for new filter types in GetProducts API, including EQUALS, CONTAINS, ANY_OF, and NONE_OF.&lt;/li&gt;
+&lt;li&gt;AWS Glue now supports schema, partition and sort management of Apache Iceberg tables using Glue SDK&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;QuickSight (4.0.2.0)
+&lt;li&gt;GuardDuty (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Introduced custom instructions for topics.&lt;/li&gt;
+&lt;li&gt;Add expectedBucketOwner parameter to ThreatIntel and IPSet APIs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Repostspace (4.0.1.0)
+&lt;li&gt;IoTWireless (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release introduces Channels functionality with CreateChannel, GetChannel, ListChannels, and UpdateChannel operations. Channels provide dedicated collaboration spaces where teams can organize discussions and knowledge by projects, business units, or areas of responsibility.&lt;/li&gt;
+&lt;li&gt;FuotaTaskId is not a valid IdentifierType for EventConfiguration and is being removed from possible IdentifierType values.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (4.0.5.0)
+&lt;li&gt;MediaPackageV2 (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon S3 Metadata live inventory tables provide a queryable inventory of all the objects in your general purpose bucket so that you can determine the latest state of your data. To help minimize your storage costs, use journal table record expiration to set a retention period for your records.&lt;/li&gt;
+&lt;li&gt;This release adds support for CDN Authentication using Static Headers in MediaPackage v2.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3Tables (4.0.3.0)
+&lt;li&gt;NetworkFlowMonitor (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;Adds table bucket type to ListTableBucket and GetTableBucket API operations&lt;/li&gt;
+&lt;li&gt;Introducing 2 new scope status types - DEACTIVATING and DEACTIVATED.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3Vectors (4.0.0.0)
+&lt;li&gt;PaymentCryptographyData (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon S3 Vectors provides cost-effective, elastic, and durable vector storage for queries based on semantic meaning and similarity.&lt;/li&gt;
+&lt;li&gt;Expand length of message data field for Mac generation and validation to 8192 characters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.13.0)
+&lt;li&gt;StepFunctions (4.0.0.15)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for a new Restricted instance group type to enable a specialized environment for running Nova customization jobs on SageMaker HyperPod clusters. This release also adds support for SageMaker pipeline versioning.&lt;/li&gt;
+&lt;li&gt;Doc-only update to introduction, and edits to clarify input parameter and the set of control characters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 4.0.0.16
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.48.0"&gt;4.0.48.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.48.0 (2025-07-16 00:41 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Add &lt;code&gt;AWSConfigs.DisableLegacyPersistenceStore&lt;/code&gt; option to instruct the SDK not to use the &lt;a href="https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/sdk-store.html" rel="nofollow"&gt;SDK Store&lt;/a&gt; in its default profile resolution search&lt;/li&gt;
-&lt;li&gt;Update &lt;code&gt;PersistenceManager&lt;/code&gt; not to throw an exception when the SDK is used with a read-only file system (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3047801981" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/3801" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/3801/hovercard" href="https://github.com/aws/aws-sdk-net/issues/3801"&gt;#3801&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;ECS (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;This release removes hookDetails for the Amazon ECS native blue/green deployments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1080.0"&gt;3.7.1080.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;3.7.1080.0 (2025-07-16 00:42 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ECS (3.7.414.0)
+&lt;ul&gt;
+&lt;li&gt;This release removes hookDetails for the Amazon ECS native blue/green deployments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.402.82
+&lt;ul&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
 &lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
