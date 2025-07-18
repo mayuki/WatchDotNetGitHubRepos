@@ -1,197 +1,120 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-07-17T00:07:28Z</updated>
+  <updated>2025-07-18T00:07:22Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-07-16</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-07-16</id>
+    <title>aws/aws-sdk-net - Releases - 2025-07-17</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-07-17</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-07-17T00:07:28Z</updated>
+    <updated>2025-07-18T00:07:22Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1081.0"&gt;3.7.1081.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1082.0"&gt;3.7.1082.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1081.0 (2025-07-16 15:37 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1082.0 (2025-07-17 18:23 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Bedrock (3.7.427.0)
+&lt;li&gt;CleanRoomsML (3.7.404.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for on-demand custom model inference through CustomModelDeployment APIs for Amazon Bedrock.&lt;/li&gt;
+&lt;li&gt;This release introduces Parquet result format support for ML Input Channel models in AWS Clean Rooms ML.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCore (3.7.400.0)
+&lt;li&gt;CloudFront (3.7.405.36)
 &lt;ul&gt;
-&lt;li&gt;Initial release of Amazon Bedrock AgentCore SDK including Runtime, Built-In Tools, Memory, Gateway and Identity.&lt;/li&gt;
+&lt;li&gt;Doc only update for CloudFront that fixes some customer-reported issues&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (3.7.400.0)
+&lt;li&gt;EC2 (3.7.459.0)
 &lt;ul&gt;
-&lt;li&gt;Initial release of Amazon Bedrock AgentCore SDK including Runtime, Built-In Tools, Memory, Gateway and Identity.&lt;/li&gt;
+&lt;li&gt;AWS Free Tier Version2 Support&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockRuntime (3.7.422.0)
+&lt;li&gt;KeyspacesStreams (3.7.400.8)
 &lt;ul&gt;
-&lt;li&gt;document update to support on demand custom model.&lt;/li&gt;
+&lt;li&gt;Doc only update for the Amazon Keyspaces Streams API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudWatchLogs (3.7.416.0)
+&lt;li&gt;MailManager (3.7.409.0)
 &lt;ul&gt;
-&lt;li&gt;CloudWatch Logs updates: Added X-Ray tracing for Amazon Bedrock Agent resources. Logs introduced Log Group level resource policies (managed through Put/Delete/Describe Resource Policy APIs). For more information, see CloudWatch Logs API documentation.&lt;/li&gt;
+&lt;li&gt;Allow underscores in the local part of the input of the "Email recipients rewrite" action in rule sets.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DataSync (3.7.407.0)
+&lt;li&gt;MediaConvert (3.7.416.0)
 &lt;ul&gt;
-&lt;li&gt;AWS DataSync now supports IPv6 address inputs and outputs in create, update, and describe operations for NFS, SMB, and Object Storage locations&lt;/li&gt;
+&lt;li&gt;This release expands the range of supported audio outputs to include xHE, 192khz FLAC and the deprecation of dual mono for AC3.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Glue (3.7.425.0)
+&lt;li&gt;StepFunctions (3.7.403.121)
 &lt;ul&gt;
-&lt;li&gt;AWS Glue now supports schema, partition and sort management of Apache Iceberg tables using Glue SDK&lt;/li&gt;
+&lt;li&gt;Align input with style guidelines.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GuardDuty (3.7.409.0)
+&lt;li&gt;Synthetics (3.7.408.0)
 &lt;ul&gt;
-&lt;li&gt;Add expectedBucketOwner parameter to ThreatIntel and IPSet APIs.&lt;/li&gt;
+&lt;li&gt;This feature allows AWS Synthetics customers to provide code dependencies using lambda layer while creating a canary&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IoTWireless (3.7.403.0)
-&lt;ul&gt;
-&lt;li&gt;FuotaTaskId is not a valid IdentifierType for EventConfiguration and is being removed from possible IdentifierType values.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MediaPackageV2 (3.7.407.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds support for CDN Authentication using Static Headers in MediaPackage v2.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;NetworkFlowMonitor (3.7.403.0)
-&lt;ul&gt;
-&lt;li&gt;Introducing 2 new scope status types - DEACTIVATING and DEACTIVATED.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;PaymentCryptographyData (3.7.404.0)
-&lt;ul&gt;
-&lt;li&gt;Expand length of message data field for Mac generation and validation to 8192 characters.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;StepFunctions (3.7.403.120)
-&lt;ul&gt;
-&lt;li&gt;Doc-only update to introduction, and edits to clarify input parameter and the set of control characters.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.49.0"&gt;4.0.49.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;4.0.49.0 (2025-07-16 15:39 UTC)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Bedrock (4.0.8.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds support for on-demand custom model inference through CustomModelDeployment APIs for Amazon Bedrock.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BedrockAgentCore (4.0.0.0)
-&lt;ul&gt;
-&lt;li&gt;Initial release of Amazon Bedrock AgentCore SDK including Runtime, Built-In Tools, Memory, Gateway and Identity.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.0.0)
-&lt;ul&gt;
-&lt;li&gt;Initial release of Amazon Bedrock AgentCore SDK including Runtime, Built-In Tools, Memory, Gateway and Identity.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BedrockRuntime (4.0.2.0)
-&lt;ul&gt;
-&lt;li&gt;document update to support on demand custom model.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CloudWatchLogs (4.0.6.0)
-&lt;ul&gt;
-&lt;li&gt;CloudWatch Logs updates: Added X-Ray tracing for Amazon Bedrock Agent resources. Logs introduced Log Group level resource policies (managed through Put/Delete/Describe Resource Policy APIs). For more information, see CloudWatch Logs API documentation.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DataSync (4.0.3.0)
-&lt;ul&gt;
-&lt;li&gt;AWS DataSync now supports IPv6 address inputs and outputs in create, update, and describe operations for NFS, SMB, and Object Storage locations&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (4.0.3.0)
-&lt;ul&gt;
-&lt;li&gt;Add native support for LINQ expression trees in the IDynamoDBContext API for ScanAsync() and QueryAsync()&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Glue (4.0.9.0)
-&lt;ul&gt;
-&lt;li&gt;AWS Glue now supports schema, partition and sort management of Apache Iceberg tables using Glue SDK&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;GuardDuty (4.0.3.0)
-&lt;ul&gt;
-&lt;li&gt;Add expectedBucketOwner parameter to ThreatIntel and IPSet APIs.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IoTWireless (4.0.1.0)
-&lt;ul&gt;
-&lt;li&gt;FuotaTaskId is not a valid IdentifierType for EventConfiguration and is being removed from possible IdentifierType values.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MediaPackageV2 (4.0.3.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds support for CDN Authentication using Static Headers in MediaPackage v2.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;NetworkFlowMonitor (4.0.2.0)
-&lt;ul&gt;
-&lt;li&gt;Introducing 2 new scope status types - DEACTIVATING and DEACTIVATED.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;PaymentCryptographyData (4.0.2.0)
-&lt;ul&gt;
-&lt;li&gt;Expand length of message data field for Mac generation and validation to 8192 characters.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;StepFunctions (4.0.0.15)
-&lt;ul&gt;
-&lt;li&gt;Doc-only update to introduction, and edits to clarify input parameter and the set of control characters.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.48.0"&gt;4.0.48.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;4.0.48.0 (2025-07-16 00:41 UTC)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;ECS (4.0.4.0)
-&lt;ul&gt;
-&lt;li&gt;This release removes hookDetails for the Amazon ECS native blue/green deployments.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1080.0"&gt;3.7.1080.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;3.7.1080.0 (2025-07-16 00:42 UTC)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;ECS (3.7.414.0)
-&lt;ul&gt;
-&lt;li&gt;This release removes hookDetails for the Amazon ECS native blue/green deployments.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 3.7.402.82
+&lt;li&gt;Core 3.7.402.83
 &lt;ul&gt;
 &lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
 &lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.50.0"&gt;4.0.50.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.50.0 (2025-07-17 18:22 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;CleanRoomsML (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;This release introduces Parquet result format support for ML Input Channel models in AWS Clean Rooms ML.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CloudFront (4.0.0.16)
+&lt;ul&gt;
+&lt;li&gt;Doc only update for CloudFront that fixes some customer-reported issues&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EC2 (4.0.21.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Free Tier Version2 Support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;KeyspacesStreams (4.0.0.4)
+&lt;ul&gt;
+&lt;li&gt;Doc only update for the Amazon Keyspaces Streams API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MailManager (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;Allow underscores in the local part of the input of the "Email recipients rewrite" action in rule sets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaConvert (4.0.5.0)
+&lt;ul&gt;
+&lt;li&gt;This release expands the range of supported audio outputs to include xHE, 192khz FLAC and the deprecation of dual mono for AC3.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3 (4.0.5.1)
+&lt;ul&gt;
+&lt;li&gt;Decorated AnalyticsId and StorageClassAnalysis properties in AnalyticsConfiguration class with [AWSProperty(Required = true)] attribute per S3 service API model.&lt;/li&gt;
+&lt;li&gt;Decorated AnalyticsConfiguration property in PutBucketAnalyticsConfigurationRequest class with [AWSProperty(Required = true)] attribute per S3 service API model.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;StepFunctions (4.0.0.16)
+&lt;ul&gt;
+&lt;li&gt;Align input with style guidelines.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Synthetics (4.0.5.0)
+&lt;ul&gt;
+&lt;li&gt;This feature allows AWS Synthetics customers to provide code dependencies using lambda layer while creating a canary&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
