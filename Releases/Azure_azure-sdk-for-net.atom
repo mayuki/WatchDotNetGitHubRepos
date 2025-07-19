@@ -1,38 +1,35 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-07-18T00:07:22Z</updated>
+  <updated>2025-07-19T00:07:34Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-07-17</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-07-17</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-07-18</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-07-18</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-07-18T00:07:22Z</updated>
+    <updated>2025-07-19T00:07:34Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity_1.15.0-beta.1"&gt;Azure.Identity_1.15.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.5106894"&gt;Azure.Template_1.0.3-beta.5106894&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.15.0-beta.1 (2025-07-17)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Expanded the set of acceptable values for environment variable &lt;code&gt;AZURE_TOKEN_CREDENTIALS&lt;/code&gt; to allow for selection of a specific credential in the &lt;code&gt;DefaultAzureCredential&lt;/code&gt; chain. The valid values now include any of the credential names available in the default chain (&lt;code&gt;VisualStudioCredential&lt;/code&gt;, &lt;code&gt;VisualStudioCodeCredential&lt;/code&gt;, &lt;code&gt;AzureCliCredential&lt;/code&gt;, &lt;code&gt;AzurePowerShellCredential&lt;/code&gt;, &lt;code&gt;AzureDeveloperCliCredential&lt;/code&gt;, &lt;code&gt;EnvironmentCredential&lt;/code&gt;, &lt;code&gt;WorkloadIdentityCredential&lt;/code&gt;, &lt;code&gt;ManagedIdentityCredential&lt;/code&gt;, &lt;code&gt;InteractiveBrowserCredential&lt;/code&gt;, or &lt;code&gt;BrokerAuthenticationCredential&lt;/code&gt;.) &lt;strong&gt;Note:&lt;/strong&gt; &lt;code&gt;BrokerAuthenticationCredential&lt;/code&gt; requires that the project include a reference to package Azure.Identity.Broker.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Re-introduced &lt;code&gt;VisualStudioCodeCredential&lt;/code&gt; and included it in the &lt;code&gt;DefaultAzureCredential&lt;/code&gt; authentication flow. This credential now supports Single Sign-On (SSO) through the authentication broker on Windows, macOS, and Linux using the Azure.Identity.Broker package.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;ManagedIdentityCredential&lt;/code&gt; now retries 410 status responses for at least 70 seconds total duration as required by &lt;a href="https://learn.microsoft.com/azure/virtual-machines/instance-metadata-service?tabs=windows#errors-and-debugging" rel="nofollow"&gt;Azure IMDS documentation&lt;/a&gt;. Previously, 410 responses were retried with the same short exponential backoff as other status codes, resulting in insufficient retry duration (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/50724" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/50724/hovercard"&gt;#50724&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ManagedIdentityCredential&lt;/code&gt; throws &lt;code&gt;CredentialUnavailableException&lt;/code&gt; when the IMDS endpoint is unavailable. This addresses a regression in how it behaves in the &lt;code&gt;ChainedTokenCredential&lt;/code&gt; (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/47057" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/47057/hovercard"&gt;47057&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
+                                &lt;h2&gt;1.0.3-beta.5106894 (2025-07-18)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;VisualStudioCredential&lt;/code&gt; throws &lt;code&gt;CredentialUnavailableException&lt;/code&gt; for all failures except for OperationCancelledException due to cancellation being requested for a &lt;code&gt;CancellationToken&lt;/code&gt;. This ensures that it falls through for most failures when part of a chained credential.&lt;/li&gt;
-&lt;li&gt;Removed &lt;code&gt;AzureApplicationCredential&lt;/code&gt;. For context, see issue &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/49781" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/49781/hovercard"&gt;49781&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Release DPG library&lt;/li&gt;
+&lt;li&gt;Add Grow-up story&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager_1.13.2"&gt;Azure.ResourceManager_1.13.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.13.2 (2025-07-18)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager&lt;/code&gt; AOT-compatible.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
