@@ -1,57 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2025-07-24T00:07:42Z</updated>
+  <updated>2025-07-25T00:07:41Z</updated>
   <id>https://github.com/grpc/grpc</id>
-  <entry>
-    <title>grpc/grpc - Releases - 2025-07-23</title>
-    <id>https://github.com/grpc/grpc#2025-07-23</id>
-    <link href="https://github.com/grpc/grpc" />
-    <updated>2025-07-24T00:07:42Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.74.0"&gt;Release v1.74.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;This is release 1.74.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;gee&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
-&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
-&lt;h2&gt;Core&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[OTel C++, Posix EE] Plumb TCP write timestamps and metrics to OTel tracers. (&lt;a href="https://github.com/grpc/grpc/pull/39946" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39946/hovercard"&gt;#39946&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[EventEngine] Fix Python reconnect issues: use iomgr backup poller when EE is disabled. (&lt;a href="https://github.com/grpc/grpc/pull/39894" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39894/hovercard"&gt;#39894&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Python] Upgrade Pytype (Part - 1). (&lt;a href="https://github.com/grpc/grpc/pull/39816" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39816/hovercard"&gt;#39816&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Python] Upgrade black. (&lt;a href="https://github.com/grpc/grpc/pull/39774" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39774/hovercard"&gt;#39774&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[event_engine] Implement fork support in Posix Event Engine. (&lt;a href="https://github.com/grpc/grpc/pull/38980" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/38980/hovercard"&gt;#38980&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[http2] Fix GRPC_ARG_HTTP2_STREAM_LOOKAHEAD_BYTES for when BDP is disabled. (&lt;a href="https://github.com/grpc/grpc/pull/39585" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39585/hovercard"&gt;#39585&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Objective-C&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[dep] Upgrade Protobuf Version 31.1. (&lt;a href="https://github.com/grpc/grpc/pull/39916" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39916/hovercard"&gt;#39916&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;PHP&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[PHP] Fully qualify stdClass with global namespace. (&lt;a href="https://github.com/grpc/grpc/pull/39996" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39996/hovercard"&gt;#39996&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[php] Fix PHPDoc so that UnaryCall defines the proper return type. (&lt;a href="https://github.com/grpc/grpc/pull/37563" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/37563/hovercard"&gt;#37563&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;fix typing of nullable parameters. (&lt;a href="https://github.com/grpc/grpc/pull/39199" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39199/hovercard"&gt;#39199&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Python&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix gRPC Python docs website layout - use spaces optimally. (&lt;a href="https://github.com/grpc/grpc/pull/40073" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/40073/hovercard"&gt;#40073&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Ruby&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[Ruby] Add rubygems support for linux-gnu and linux-musl platforms . (&lt;a href="https://github.com/grpc/grpc/pull/40174" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/40174/hovercard"&gt;#40174&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[ruby] enable EE fork support. (&lt;a href="https://github.com/grpc/grpc/pull/39786" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39786/hovercard"&gt;#39786&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[ruby] Return nil for c functions expected to return a VALUE. (&lt;a href="https://github.com/grpc/grpc/pull/39214" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39214/hovercard"&gt;#39214&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[ruby] remove connectivity state watch thread, fix cancellations from spurious signals. (&lt;a href="https://github.com/grpc/grpc/pull/39409" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39409/hovercard"&gt;#39409&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[ruby] Drop Ruby 3.0 support. (&lt;a href="https://github.com/grpc/grpc/pull/39607" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39607/hovercard"&gt;#39607&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
