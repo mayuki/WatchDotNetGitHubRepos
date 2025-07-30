@@ -1,27 +1,48 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>open-telemetry/opentelemetry-dotnet-contrib - Releases</title>
   <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-  <updated>2025-07-29T00:08:44Z</updated>
+  <updated>2025-07-30T00:08:07Z</updated>
   <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib</id>
   <entry>
-    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2025-07-28</title>
-    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2025-07-28</id>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2025-07-29</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2025-07-29</id>
     <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-    <updated>2025-07-29T00:08:44Z</updated>
+    <updated>2025-07-30T00:08:07Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.StackExchangeRedis-1.12.0-beta.2"&gt;Instrumentation.StackExchangeRedis-1.12.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Exporter.Stackdriver-1.12.0-beta.1"&gt;Exporter.Stackdriver-1.12.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.StackExchangeRedis/1.12.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.StackExchangeRedis v1.12.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Stackdriver/1.12.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Stackdriver v1.12.0-beta.1&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Add support for early filtering of telemetry collection via a &lt;code&gt;Filter&lt;/code&gt; option&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2804" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2804/hovercard"&gt;#2804&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Drop support for .NET 6 as this target is no longer supported&lt;br&gt;
+and add .NET Standard 2.0 target.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2127" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2127/hovercard"&gt;#2127&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update Google Cloud libraries:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Google.Cloud.Monitoring.V3 3.4.0 -&amp;gt; 3.15.0&lt;/li&gt;
+&lt;li&gt;Google.Cloud.Trace.V2 3.3.0 -&amp;gt; 3.6.0&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2127" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2127/hovercard"&gt;#2127&lt;/a&gt;,&lt;br&gt;
+&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2925" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2925/hovercard"&gt;#2925&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.StackExchangeRedis-1.12.0-beta.2/src/OpenTelemetry.Instrumentation.StackExchangeRedis/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.12.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2725" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2725/hovercard"&gt;#2725&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Obsolete &lt;code&gt;OpenTelemetry.Exporter.Stackdriver&lt;/code&gt; package&lt;br&gt;
+in favor of OTLP protocol in GCP.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2925" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2925/hovercard"&gt;#2925&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Exporter.Stackdriver-1.12.0-beta.1/src/OpenTelemetry.Exporter.Stackdriver/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
