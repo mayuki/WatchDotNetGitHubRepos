@@ -1,86 +1,64 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-08-01T00:08:50Z</updated>
+  <updated>2025-08-02T00:07:58Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-07-31</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-07-31</id>
+    <title>aws/aws-sdk-net - Releases - 2025-08-01</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-08-01</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-08-01T00:08:50Z</updated>
+    <updated>2025-08-02T00:07:58Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1092.0"&gt;3.7.1092.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.61.0"&gt;4.0.61.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1092.0 (2025-07-31 18:27 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.61.0 (2025-08-01 18:25 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;CustomerProfiles (3.7.500.0)
+&lt;li&gt;ACMPCA (4.0.0.16)
 &lt;ul&gt;
-&lt;li&gt;The release updates standard profile with 2 new fields that supports account-level engagement. Updated APIs include CreateProfile, UpdateProfile, MergeProfiles, SearchProfiles, BatchGetProfile, GetSegmentMembership, CreateSegmentDefinition, CreateSegmentEstimate.&lt;/li&gt;
+&lt;li&gt;Doc-only update to add more information to GetCertificate action.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (3.7.500.0)
+&lt;li&gt;AIOps (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for the force option for the EC2 instance terminate command. This feature enables customers to recover resources associated with an instance stuck in the shutting-down state as a result of rare issues caused by a frozen operating system or an underlying hardware problem.&lt;/li&gt;
+&lt;li&gt;This release includes fix for InvestigationGroup timestamp conversion issue.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticLoadBalancingV2 (3.7.500.0)
+&lt;li&gt;ARCRegionswitch (4.0.0.0)
 &lt;ul&gt;
-&lt;li&gt;This release enables secondary IP addresses for Network Load Balancers.&lt;/li&gt;
+&lt;li&gt;This is the initial SDK release for Region switch&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EntityResolution (3.7.500.0)
+&lt;li&gt;AuditManager (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for creating advanced rule-based matching workflows in AWS Entity Resolution.&lt;/li&gt;
+&lt;li&gt;Added a note to Framework APIs (CreateAssessmentFramework, GetAssessmentFramework, UpdateAssessmentFramework) clarifying that the Controls object returns a partial response when called through Framework APIs. Added documentation that the Framework's controlSources parameter is no longer supported.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Glue (3.7.500.0)
+&lt;li&gt;Lightsail (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for Route node, S3 Iceberg sources/targets, catalog Iceberg sources, DynamoDB ELT connector, AutoDataQuality evaluation, enhanced PII detection with redaction, Kinesis fan-out support, and new R-series worker types.&lt;/li&gt;
+&lt;li&gt;This release adds support for the Asia Pacific (Jakarta) (ap-southeast-3) Region.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Inspector2 (3.7.500.0)
+&lt;li&gt;ObservabilityAdmin (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;Extend usage to include agentless hours and add CODE_REPOSITORY to aggregation resource type&lt;/li&gt;
+&lt;li&gt;CloudWatch Observability Admin adds the ability to enable telemetry on AWS resources such as Amazon VPCs (Flow Logs) in customers AWS Accounts and Organizations. The release introduces new APIs to manage telemetry rules, which define telemetry settings to be applied on AWS resources.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IoT (3.7.500.0)
+&lt;li&gt;PCS (4.0.5.0)
 &lt;ul&gt;
-&lt;li&gt;This release allows AWS IoT Core users to use their own AWS KMS keys for data protection&lt;/li&gt;
+&lt;li&gt;Add support for IPv6 Networking for Clusters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;OpenSearchService (3.7.500.0)
+&lt;li&gt;SecurityHub (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;Granular access control support for NEO-SAML with IAMFederation for AOS data source&lt;/li&gt;
+&lt;li&gt;Release new resource detail type CodeRepository&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;QuickSight (3.7.500.0)
+&lt;li&gt;SimpleNotificationService (4.0.0.16)
 &lt;ul&gt;
-&lt;li&gt;Added Impala connector support&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3Control (3.7.500.0)
-&lt;ul&gt;
-&lt;li&gt;Add Tags field to CreateAccessPoint&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SimpleEmailV2 (3.7.500.0)
-&lt;ul&gt;
-&lt;li&gt;This release introduces support for Multi-tenant management&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WorkSpacesWeb (3.7.500.0)
-&lt;ul&gt;
-&lt;li&gt;Added ability to log session activity on a portal to an S3 bucket.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 3.7.500.0
-&lt;ul&gt;
-&lt;li&gt;Changed Legacy configuration defaults for StsRegionalEndpoints to StsRegionalEndpointsValue.Regional.&lt;/li&gt;
-&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Amazon SNS support for Amazon SQS fair queues&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -88,88 +66,59 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.60.0"&gt;4.0.60.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1093.0"&gt;3.7.1093.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.60.0 (2025-07-31 18:26 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1093.0 (2025-08-01 18:22 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;CognitoIdentity (4.0.0.16)
+&lt;li&gt;ACMPCA (3.7.500.1)
 &lt;ul&gt;
-&lt;li&gt;Avoid cloning &lt;code&gt;ImmutableCredentials&lt;/code&gt; objects.&lt;/li&gt;
+&lt;li&gt;Doc-only update to add more information to GetCertificate action.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CustomerProfiles (4.0.3.0)
+&lt;li&gt;AIOps (3.7.501.0)
 &lt;ul&gt;
-&lt;li&gt;The release updates standard profile with 2 new fields that supports account-level engagement. Updated APIs include CreateProfile, UpdateProfile, MergeProfiles, SearchProfiles, BatchGetProfile, GetSegmentMembership, CreateSegmentDefinition, CreateSegmentEstimate.&lt;/li&gt;
+&lt;li&gt;This release includes fix for InvestigationGroup timestamp conversion issue.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.26.0)
+&lt;li&gt;ARCRegionswitch (3.7.500.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for the force option for the EC2 instance terminate command. This feature enables customers to recover resources associated with an instance stuck in the shutting-down state as a result of rare issues caused by a frozen operating system or an underlying hardware problem.&lt;/li&gt;
+&lt;li&gt;This is the initial SDK release for Region switch&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticLoadBalancingV2 (4.0.1.5)
+&lt;li&gt;AuditManager (3.7.501.0)
 &lt;ul&gt;
-&lt;li&gt;This release enables secondary IP addresses for Network Load Balancers.&lt;/li&gt;
+&lt;li&gt;Added a note to Framework APIs (CreateAssessmentFramework, GetAssessmentFramework, UpdateAssessmentFramework) clarifying that the Controls object returns a partial response when called through Framework APIs. Added documentation that the Framework's controlSources parameter is no longer supported.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EntityResolution (4.0.2.0)
+&lt;li&gt;Lightsail (3.7.501.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for creating advanced rule-based matching workflows in AWS Entity Resolution.&lt;/li&gt;
+&lt;li&gt;This release adds support for the Asia Pacific (Jakarta) (ap-southeast-3) Region.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GameLift (4.0.1.5)
+&lt;li&gt;ObservabilityAdmin (3.7.501.0)
 &lt;ul&gt;
-&lt;li&gt;Avoid cloning &lt;code&gt;ImmutableCredentials&lt;/code&gt; objects.&lt;/li&gt;
+&lt;li&gt;CloudWatch Observability Admin adds the ability to enable telemetry on AWS resources such as Amazon VPCs (Flow Logs) in customers AWS Accounts and Organizations. The release introduces new APIs to manage telemetry rules, which define telemetry settings to be applied on AWS resources.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Glue (4.0.11.0)
+&lt;li&gt;PCS (3.7.501.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for Route node, S3 Iceberg sources/targets, catalog Iceberg sources, DynamoDB ELT connector, AutoDataQuality evaluation, enhanced PII detection with redaction, Kinesis fan-out support, and new R-series worker types.&lt;/li&gt;
+&lt;li&gt;Add support for IPv6 Networking for Clusters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Inspector2 (4.0.3.0)
+&lt;li&gt;SecurityHub (3.7.501.0)
 &lt;ul&gt;
-&lt;li&gt;Extend usage to include agentless hours and add CODE_REPOSITORY to aggregation resource type&lt;/li&gt;
+&lt;li&gt;Release new resource detail type CodeRepository&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IoT (4.0.1.0)
+&lt;li&gt;SimpleNotificationService (3.7.500.1)
 &lt;ul&gt;
-&lt;li&gt;This release allows AWS IoT Core users to use their own AWS KMS keys for data protection&lt;/li&gt;
+&lt;li&gt;Amazon SNS support for Amazon SQS fair queues&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;OpenSearchService (4.0.2.0)
+&lt;li&gt;Core 3.7.500.1
 &lt;ul&gt;
-&lt;li&gt;Granular access control support for NEO-SAML with IAMFederation for AOS data source&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;QuickSight (4.0.3.0)
-&lt;ul&gt;
-&lt;li&gt;Added Impala connector support&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3Control (4.0.4.0)
-&lt;ul&gt;
-&lt;li&gt;Add Tags field to CreateAccessPoint&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SecurityToken (4.0.1.7)
-&lt;ul&gt;
-&lt;li&gt;Avoid cloning &lt;code&gt;ImmutableCredentials&lt;/code&gt; objects.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SimpleEmailV2 (4.0.3.0)
-&lt;ul&gt;
-&lt;li&gt;This release introduces support for Multi-tenant management&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WorkSpacesWeb (4.0.1.0)
-&lt;ul&gt;
-&lt;li&gt;Added ability to log session activity on a portal to an S3 bucket.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.0.0.19
-&lt;ul&gt;
-&lt;li&gt;Avoid cloning &lt;code&gt;ImmutableCredentials&lt;/code&gt; objects.&lt;/li&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
