@@ -1,70 +1,54 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-08-12T00:07:19Z</updated>
+  <updated>2025-08-13T00:07:17Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-08-11</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-08-11</id>
+    <title>aws/aws-sdk-net - Releases - 2025-08-12</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-08-12</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-08-12T00:07:19Z</updated>
+    <updated>2025-08-13T00:07:17Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1099.0"&gt;3.7.1099.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.68.0"&gt;4.0.68.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1099.0 (2025-08-11 18:25 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.68.0 (2025-08-12 19:48 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Bedrock (3.7.502.0)
+&lt;li&gt;BackupSearch (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;This release includes model updates and enhanced SDK documentation for union fields in automated reasoning policy components. Added docs cover policy definitions, mutations (add/update for rules/types/variables), build assets, workflow sources, test results, and tag exception handling.&lt;/li&gt;
+&lt;li&gt;Using recommended smithy trait to generate regional endpoints for Backup Search&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CognitoIdentityProvider (3.7.501.0)
+&lt;li&gt;CodeBuild (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Remove SigV4 auth requirement for GetTokensFromRefreshToken&lt;/li&gt;
+&lt;li&gt;AWS CodeBuild now supports PullRequestBuildPolicy in webhook object.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (3.7.502.0)
+&lt;li&gt;EC2 (4.0.29.0)
 &lt;ul&gt;
-&lt;li&gt;Updating SearchUserHierarchyGroups API&lt;/li&gt;
+&lt;li&gt;Release to allow route table association with a PublicIpv4Pool.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Deadline (3.7.501.0)
+&lt;li&gt;Organizations (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for Wait and Save feature in service-managed fleets&lt;/li&gt;
+&lt;li&gt;This release introduces 2 new APIs in Organizations: 1. ListAccountsWithInvalidEffectivePolicy 2. ListEffectivePolicyValidationErrors&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (3.7.502.0)
+&lt;li&gt;SageMaker (4.0.18.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds AvailabilityZoneId support for CreateVolume, DescribeVolume, LaunchTemplates, RunInstances, DescribeInstances, CreateDefaultSubnet, SpotInstances, and CreateDefaultSubnet APIs.&lt;/li&gt;
+&lt;li&gt;IAM Identity Center trusted identity propagation is now supported in SageMaker Studio.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Evs (3.7.501.4)
+&lt;li&gt;TranscribeService (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Update for general availability of Amazon Elastic VMware Service (EVS).&lt;/li&gt;
+&lt;li&gt;AWS HealthScribe now supports specifying preferred patient pronouns through the MedicalScribeContext parameter for use in the generated clinical notes.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Lambda (3.7.500.6)
+&lt;li&gt;TranscribeStreaming (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;Doc-only update for Lambda that updates the maximum payload size for response streaming invocations to 200 MB.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;QuickSight (3.7.501.0)
-&lt;ul&gt;
-&lt;li&gt;Add RowAxisDisplayOptions and ColumnAxisDisplayOptions to HeatMapConfiguration, add Actions to PluginVisual, increase limit for CalculatedFields list&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SSOAdmin (3.7.501.0)
-&lt;ul&gt;
-&lt;li&gt;Added support for managing user background session for applications&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 3.7.500.6
-&lt;ul&gt;
-&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;AWS HealthScribe now supports specifying preferred patient pronouns through the MedicalScribeContext parameter for use in the generated clinical notes.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -72,53 +56,44 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.67.0"&gt;4.0.67.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1100.0"&gt;3.7.1100.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.67.0 (2025-08-11 18:26 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1100.0 (2025-08-12 18:21 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Bedrock (4.0.10.0)
+&lt;li&gt;BackupSearch (3.7.502.0)
 &lt;ul&gt;
-&lt;li&gt;This release includes model updates and enhanced SDK documentation for union fields in automated reasoning policy components. Added docs cover policy definitions, mutations (add/update for rules/types/variables), build assets, workflow sources, test results, and tag exception handling.&lt;/li&gt;
+&lt;li&gt;Using recommended smithy trait to generate regional endpoints for Backup Search&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CognitoIdentityProvider (4.0.2.0)
+&lt;li&gt;CodeBuild (3.7.502.0)
 &lt;ul&gt;
-&lt;li&gt;Remove SigV4 auth requirement for GetTokensFromRefreshToken&lt;/li&gt;
+&lt;li&gt;AWS CodeBuild now supports PullRequestBuildPolicy in webhook object.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.6.0)
+&lt;li&gt;EC2 (3.7.503.0)
 &lt;ul&gt;
-&lt;li&gt;Updating SearchUserHierarchyGroups API&lt;/li&gt;
+&lt;li&gt;Release to allow route table association with a PublicIpv4Pool.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Deadline (4.0.8.0)
+&lt;li&gt;Organizations (3.7.501.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for Wait and Save feature in service-managed fleets&lt;/li&gt;
+&lt;li&gt;This release introduces 2 new APIs in Organizations: 1. ListAccountsWithInvalidEffectivePolicy 2. ListEffectivePolicyValidationErrors&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.28.0)
+&lt;li&gt;SageMaker (3.7.504.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds AvailabilityZoneId support for CreateVolume, DescribeVolume, LaunchTemplates, RunInstances, DescribeInstances, CreateDefaultSubnet, SpotInstances, and CreateDefaultSubnet APIs.&lt;/li&gt;
+&lt;li&gt;IAM Identity Center trusted identity propagation is now supported in SageMaker Studio.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Evs (4.0.1.2)
+&lt;li&gt;TranscribeService (3.7.501.0)
 &lt;ul&gt;
-&lt;li&gt;Update for general availability of Amazon Elastic VMware Service (EVS).&lt;/li&gt;
+&lt;li&gt;AWS HealthScribe now supports specifying preferred patient pronouns through the MedicalScribeContext parameter for use in the generated clinical notes.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Lambda (4.0.2.4)
+&lt;li&gt;Core 3.7.500.7
 &lt;ul&gt;
-&lt;li&gt;Doc-only update for Lambda that updates the maximum payload size for response streaming invocations to 200 MB.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;QuickSight (4.0.4.0)
-&lt;ul&gt;
-&lt;li&gt;Add RowAxisDisplayOptions and ColumnAxisDisplayOptions to HeatMapConfiguration, add Actions to PluginVisual, increase limit for CalculatedFields list&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SSOAdmin (4.0.2.0)
-&lt;ul&gt;
-&lt;li&gt;Added support for managing user background session for applications&lt;/li&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
