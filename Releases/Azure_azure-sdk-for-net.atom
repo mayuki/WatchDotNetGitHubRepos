@@ -1,145 +1,34 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-08-13T00:07:18Z</updated>
+  <updated>2025-08-14T00:07:15Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-08-12</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-08-12</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-08-13</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-08-13</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-08-13T00:07:18Z</updated>
+    <updated>2025-08-14T00:07:15Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Monitor.Query_1.7.1"&gt;Azure.Monitor.Query_1.7.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Agents.Persistent_1.2.0-beta.2"&gt;Azure.AI.Agents.Persistent_1.2.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.7.1 (2025-08-12)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated internal serialization paths to use an AOT-friendly approach.  The package now fully supports AOT and is trimmable.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.47.2"&gt;Azure.Core_1.47.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.47.2 (2025-08-11)&lt;/h2&gt;
+                                &lt;h2&gt;1.2.0-beta.2 (2025-08-13)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Adopt System.ClientModel 1.6.0&lt;/li&gt;
+&lt;li&gt;Implemented streaming scenario for MCP tool.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;RunStepDetailsActivity&lt;/code&gt;, describing MCP function parameters.&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Compute_1.11.0"&gt;Azure.ResourceManager.Compute_1.11.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.11.0 (2025-08-12)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.Compute&lt;/code&gt; AOT-compatible&lt;/li&gt;
-&lt;li&gt;Upgraded api-version tag from 'package-2025-02-01' to 'package-2025-03-01'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/0f03ae6d4107a964b20a48aa87fa520052750bb9/specification/compute/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/0f03ae6d4107a964b20a48aa87fa520052750bb9/specification/compute/resource-manager/readme.md&lt;/a&gt;.
-&lt;ul&gt;
-&lt;li&gt;Added new classes: &lt;code&gt;SupportedSecurityOption&lt;/code&gt;, &lt;code&gt;AvailabilityPolicyDiskDelay&lt;/code&gt;, &lt;code&gt;SnapshotAccessState&lt;/code&gt;, &lt;code&gt;AvailabilityPolicy&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;SecurityMetadataUri&lt;/code&gt; and &lt;code&gt;InstantAccessDurationMinutes&lt;/code&gt; properties to &lt;code&gt;DiskCreationData&lt;/code&gt; class.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;SecurityMetadataAccessSas&lt;/code&gt; property to &lt;code&gt;AccessUri&lt;/code&gt; class.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;AvailabilityPolicy&lt;/code&gt; property to &lt;code&gt;ManagedDiskData&lt;/code&gt; and &lt;code&gt;ManagedDiskUpdateData&lt;/code&gt; classes.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;SupportedSecurityOption&lt;/code&gt; property to &lt;code&gt;SupportedCapabilities&lt;/code&gt; class.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;SnapshotAccessState&lt;/code&gt; to &lt;code&gt;SnapshotData&lt;/code&gt; and &lt;code&gt;SnapshotUpdateData&lt;/code&gt; classes.&lt;/li&gt;
+&lt;li&gt;Fixed the deserialization issue, when agent service returns the customized lists of trusted and requiring authentication MCP tools.&lt;/li&gt;
+&lt;li&gt;Added classes for deserialization of &lt;code&gt;RunStepDeltaAzureAISearchToolCall&lt;/code&gt;, &lt;code&gt;RunStepDeltaOpenAPIToolCall&lt;/code&gt; and &lt;code&gt;RunStepDeltaDeepResearchToolCall&lt;/code&gt;, required to get the real time updates when Azure AI Search, OpenAPI or Deep Research tools are being used during streaming scenarios.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;RunStepConnectedAgentToolCall&lt;/code&gt; and &lt;code&gt;RunStepDeltaConnectedAgentToolCall&lt;/code&gt; for deserializing Connected Agent tool updates in non-streaming and streaming scenarios.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;h3&gt;Sample updates&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Removed &lt;code&gt;GetVirtualMachineImagesWithPropertiesExpand&lt;/code&gt; class as it has no utility.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerServiceFleet_1.2.0-beta.1"&gt;Azure.ResourceManager.ContainerServiceFleet_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.1 (2025-08-12)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version tag to 'package-2025-04-01-preview'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/d19d4d8c69cf37c355ee55095b335ca92643120e/specification/containerservice/resource-manager/Microsoft.ContainerService/fleet/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/d19d4d8c69cf37c355ee55095b335ca92643120e/specification/containerservice/resource-manager/Microsoft.ContainerService/fleet/readme.md&lt;/a&gt;.
-&lt;ul&gt;
-&lt;li&gt;Added Gates support.&lt;/li&gt;
-&lt;li&gt;Added FleetMember labels support.&lt;/li&gt;
-&lt;li&gt;Added TargetKubernetesVersion support.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.ContainerServiceFleet&lt;/code&gt; AOT-compatible.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DataMigration_1.0.0-beta.6"&gt;Azure.ResourceManager.DataMigration_1.0.0-beta.6&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.6 (2025-08-04)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded the API version to 2025-03-15-preview.&lt;/li&gt;
-&lt;li&gt;Added support for Azure Blob to SQL MI migrations using Managed Identities.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.MySql_1.1.2"&gt;Azure.ResourceManager.MySql_1.1.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.2 (2025-08-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.MySql&lt;/code&gt; AOT-compatible&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerRegistry_1.3.1"&gt;Azure.ResourceManager.ContainerRegistry_1.3.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.3.1 (2025-08-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.ContainerRegistry&lt;/code&gt; AOT-compatible&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.MachineLearning_1.2.3"&gt;Azure.ResourceManager.MachineLearning_1.2.3&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.3 (2025-08-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.MachineLearning&lt;/code&gt; AOT-compatible&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DesktopVirtualization_1.3.2"&gt;Azure.ResourceManager.DesktopVirtualization_1.3.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.3.2 (2025-08-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.DesktopVirtualization&lt;/code&gt; AOT-compatible&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Search.Documents_11.7.0-beta.6"&gt;Azure.Search.Documents_11.7.0-beta.6&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;11.7.0-beta.6 (2025-08-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable the new model serialization using System.ClientModel, refer to this &lt;a href="https://aka.ms/azsdk/net/mrw" rel="nofollow"&gt;document&lt;/a&gt; for more details.&lt;/li&gt;
-&lt;li&gt;Added new AOT-compatible overloads for &lt;code&gt;Search&amp;lt;T&amp;gt;&lt;/code&gt; and &lt;code&gt;SearchAsync&amp;lt;T&amp;gt;&lt;/code&gt; that take &lt;code&gt;JsonTypeInfo&amp;lt;T&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added the streaming sample for Bing grounding.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
