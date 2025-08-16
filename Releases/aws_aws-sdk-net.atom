@@ -1,84 +1,66 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-08-15T00:07:15Z</updated>
+  <updated>2025-08-16T00:07:04Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-08-14</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-08-14</id>
+    <title>aws/aws-sdk-net - Releases - 2025-08-15</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-08-15</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-08-15T00:07:15Z</updated>
+    <updated>2025-08-16T00:07:04Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1102.0"&gt;3.7.1102.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.71.0"&gt;4.0.71.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1102.0 (2025-08-14 18:38 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.71.0 (2025-08-15 18:17 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;ARCRegionswitch (3.7.501.0)
+&lt;li&gt;ApiGatewayV2 (4.0.1.15)
 &lt;ul&gt;
-&lt;li&gt;Endpoint rule test and documentation update.&lt;/li&gt;
+&lt;li&gt;Add required attributes to properties that have been renamed&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BCMRecommendedActions (3.7.500.0)
+&lt;li&gt;BedrockAgent (4.0.5.0)
 &lt;ul&gt;
-&lt;li&gt;Initial SDK release for AWS Billing and Cost Management Recommended Actions.&lt;/li&gt;
+&lt;li&gt;This release adds support for saving Bedrock Flows while node configuration is still in progress, even if the Flow is not yet able to be invoked&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DirectConnect (3.7.501.0)
+&lt;li&gt;Glue (4.0.14.0)
 &lt;ul&gt;
-&lt;li&gt;Added pagination support for DescribeHostedConnections, DescribeVirtualInterfaces, DescribeConnections, DescribeInterconnects, DescribeLags. Added asnLong support for BGP peer operations which supports a large range.&lt;/li&gt;
+&lt;li&gt;AWS Glue Zero ETL now supports On-demand snapshot load&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (3.7.501.0)
+&lt;li&gt;PrometheusService (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;This release 1/ Adds support for throttled keys mode for CloudWatch Contributor Insights, 2/ Adds throttling reasons to exceptions across dataplane APIs. 3/ Explicitly models ThrottlingException as a class in statically typed languages. Refer to the launch day blog post for more details.&lt;/li&gt;
+&lt;li&gt;Add Resource-based Policy APIs for Amazon Prometheus&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (3.7.504.0)
+&lt;li&gt;S3 (4.0.6.6)
 &lt;ul&gt;
-&lt;li&gt;This release adds ModifyInstanceConnectEndpoint API to update configurations on existing EC2 Instance Connect Endpoints and improves IPv6 support through dualstack DNS names for EC2 Instance Connect Endpoints.&lt;/li&gt;
+&lt;li&gt;Fixes issue &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3324727267" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/3959" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/3959/hovercard" href="https://github.com/aws/aws-sdk-net/issues/3959"&gt;#3959&lt;/a&gt;. Do not send empty lists for headers. ListObjectsV2 calls were failing if AWSConfigs.InitializeCollections was set to true. This was causing the SDK to send the &lt;code&gt;x-amz-optional-attributes&lt;/code&gt; as an empty string which is not a valid value.&lt;/li&gt;
+&lt;li&gt;Add required attributes to properties that have been renamed&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;FSx (3.7.502.0)
+&lt;li&gt;SimpleWorkflow (4.0.0.19)
 &lt;ul&gt;
-&lt;li&gt;Amazon FSx for NetApp ONTAP 2nd generation file systems now support decreasing SSD storage capacity.&lt;/li&gt;
+&lt;li&gt;Add required attributes to properties that have been renamed&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Glue (3.7.502.0)
+&lt;li&gt;WAF (4.0.0.19)
 &lt;ul&gt;
-&lt;li&gt;AWS Glue now supports Trusted Identity Propagation.&lt;/li&gt;
+&lt;li&gt;Add required attributes to properties that have been renamed&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GuardDuty (3.7.502.0)
+&lt;li&gt;WAFRegional (4.0.0.19)
 &lt;ul&gt;
-&lt;li&gt;Added support for entity lists.&lt;/li&gt;
+&lt;li&gt;Add required attributes to properties that have been renamed&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MediaLive (3.7.501.0)
+&lt;li&gt;Core 4.0.0.23
 &lt;ul&gt;
-&lt;li&gt;CMAF Ingest output groups in MediaLive can now accept one additional destination url for single pipeline channels and up to two additional destination urls for standard channels.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;PCS (3.7.502.0)
-&lt;ul&gt;
-&lt;li&gt;Updated the regex pattern and description of iamInstanceProfileArn in the CreateComputeNodeGroup and UpdateComputeNodeGroup API actions. Name and path requirements apply to the ARN of the IAM role associated with the instance profile and not the ARN of the instance profile.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;QApps (3.7.500.8)
-&lt;ul&gt;
-&lt;li&gt;Documentation update for Amazon Q Apps API Reference&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ServiceDiscovery (3.7.501.0)
-&lt;ul&gt;
-&lt;li&gt;Added support for cross account through Id parameter overloading with ARN and allow owner account for some APIs instead of ARN&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WorkSpaces (3.7.501.0)
-&lt;ul&gt;
-&lt;li&gt;New APIs introduced to import WorkSpaces BYOL image using a new process that leveraged EC2 Image Builder. WorkSpaces tests and fixes your image's compatibility issues and supports customized VM images.&lt;/li&gt;
+&lt;li&gt;Update SDK not to mutate credentials in provided config object (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3303443658" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/3950" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/3950/hovercard" href="https://github.com/aws/aws-sdk-net/issues/3950"&gt;#3950&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -86,73 +68,23 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.70.0"&gt;4.0.70.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1103.0"&gt;3.7.1103.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.70.0 (2025-08-14 18:35 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1103.0 (2025-08-15 18:25 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;ARCRegionswitch (4.0.1.0)
+&lt;li&gt;BedrockAgent (3.7.501.0)
 &lt;ul&gt;
-&lt;li&gt;Endpoint rule test and documentation update.&lt;/li&gt;
+&lt;li&gt;This release adds support for saving Bedrock Flows while node configuration is still in progress, even if the Flow is not yet able to be invoked&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BCMRecommendedActions (4.0.0.0)
+&lt;li&gt;Glue (3.7.503.0)
 &lt;ul&gt;
-&lt;li&gt;Initial SDK release for AWS Billing and Cost Management Recommended Actions.&lt;/li&gt;
+&lt;li&gt;AWS Glue Zero ETL now supports On-demand snapshot load&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DirectConnect (4.0.2.0)
+&lt;li&gt;PrometheusService (3.7.501.0)
 &lt;ul&gt;
-&lt;li&gt;Added pagination support for DescribeHostedConnections, DescribeVirtualInterfaces, DescribeConnections, DescribeInterconnects, DescribeLags. Added asnLong support for BGP peer operations which supports a large range.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (4.0.4.0)
-&lt;ul&gt;
-&lt;li&gt;This release 1/ Adds support for throttled keys mode for CloudWatch Contributor Insights, 2/ Adds throttling reasons to exceptions across dataplane APIs. 3/ Explicitly models ThrottlingException as a class in statically typed languages. Refer to the launch day blog post for more details.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;EC2 (4.0.30.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds ModifyInstanceConnectEndpoint API to update configurations on existing EC2 Instance Connect Endpoints and improves IPv6 support through dualstack DNS names for EC2 Instance Connect Endpoints.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;FSx (4.0.4.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon FSx for NetApp ONTAP 2nd generation file systems now support decreasing SSD storage capacity.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Glue (4.0.13.0)
-&lt;ul&gt;
-&lt;li&gt;AWS Glue now supports Trusted Identity Propagation.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;GuardDuty (4.0.5.0)
-&lt;ul&gt;
-&lt;li&gt;Added support for entity lists.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MediaLive (4.0.3.0)
-&lt;ul&gt;
-&lt;li&gt;CMAF Ingest output groups in MediaLive can now accept one additional destination url for single pipeline channels and up to two additional destination urls for standard channels.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;PCS (4.0.6.0)
-&lt;ul&gt;
-&lt;li&gt;Updated the regex pattern and description of iamInstanceProfileArn in the CreateComputeNodeGroup and UpdateComputeNodeGroup API actions. Name and path requirements apply to the ARN of the IAM role associated with the instance profile and not the ARN of the instance profile.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;QApps (4.0.0.19)
-&lt;ul&gt;
-&lt;li&gt;Documentation update for Amazon Q Apps API Reference&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ServiceDiscovery (4.0.1.0)
-&lt;ul&gt;
-&lt;li&gt;Added support for cross account through Id parameter overloading with ARN and allow owner account for some APIs instead of ARN&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WorkSpaces (4.0.4.0)
-&lt;ul&gt;
-&lt;li&gt;New APIs introduced to import WorkSpaces BYOL image using a new process that leveraged EC2 Image Builder. WorkSpaces tests and fixes your image's compatibility issues and supports customized VM images.&lt;/li&gt;
+&lt;li&gt;Add Resource-based Policy APIs for Amazon Prometheus&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

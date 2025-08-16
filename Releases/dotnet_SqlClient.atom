@@ -1,6 +1,78 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/SqlClient - Releases</title>
   <link href="https://github.com/dotnet/SqlClient" />
-  <updated>2025-08-15T00:07:25Z</updated>
+  <updated>2025-08-16T00:07:15Z</updated>
   <id>https://github.com/dotnet/SqlClient</id>
+  <entry>
+    <title>dotnet/SqlClient - Releases - 2025-08-15</title>
+    <id>https://github.com/dotnet/SqlClient#2025-08-15</id>
+    <link href="https://github.com/dotnet/SqlClient" />
+    <updated>2025-08-16T00:07:15Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/SqlClient/releases/tag/AKV_6.1.1"&gt;[AzureKeyVaultProvider] Stable Release v6.1.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This update brings below changes over the previous stable releases.&lt;/p&gt;
+&lt;h3&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed AzureKeyVaultProvider package key caching to serialize Azure key fetch&lt;br&gt;
+operations. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3477" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3477/hovercard"&gt;#3477&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Marked AKV provider as trimmable and enabled AOT support. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3401" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3401/hovercard"&gt;#3401&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Changed Microsoft.Data.SqlClient version range to &lt;code&gt;[6.1.1,7.0.0)&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3569" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3569/hovercard"&gt;#3569&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Target Platform Support&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;.NET Framework 4.6.2+ (Windows ARM64, Windows x86, Windows x64)&lt;/li&gt;
+&lt;li&gt;.NET 8.0+ (Windows x86, Windows x64, Windows ARM64, Windows ARM, Linux, macOS)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Dependencies&lt;/h2&gt;
+&lt;h3&gt;.NET Framework&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Azure.Core 1.47.1&lt;/li&gt;
+&lt;li&gt;Azure.Security.KeyVault.Keys 4.7.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient 6.1.1&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 8.0.1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;.NET 8.0&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Azure.Core 1.47.1&lt;/li&gt;
+&lt;li&gt;Azure.Security.KeyVault.Keys 4.7.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient 6.1.1&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 8.0.1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;.NET 9.0&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Azure.Core 1.47.1&lt;/li&gt;
+&lt;li&gt;Azure.Security.KeyVault.Keys 4.7.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient 6.1.1&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 9.0.4&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/SqlClient/releases/tag/v6.1.1"&gt;Stable Release v6.1.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This update includes the following changes since the &lt;a href="/dotnet/SqlClient/blob/v6.1.1/6.1.0.md"&gt;6.1.0&lt;/a&gt; release:&lt;/p&gt;
+&lt;h3&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Reverted changes related to improving partial packet detection, fixup, and replay functionality. This revert addresses regressions introduced in 6.1.0. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3556" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3556/hovercard"&gt;#3556&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Applied reference assembly corrections supporting vector, fixed JSON tests, and ensured related tests are enabled. &lt;a href="https://github.com/dotnet/SqlClient/pull/3562" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3562/hovercard"&gt;#3562&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;SqlVector&amp;lt;T&amp;gt;.Null&lt;/code&gt; API signature in Reference assembly. &lt;a href="https://github.com/dotnet/SqlClient/pull/3521" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3521/hovercard"&gt;#3521&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded &lt;code&gt;Azure.Identity&lt;/code&gt; and other dependencies to newer versions. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3538" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3538/hovercard"&gt;#3538&lt;/a&gt;) (&lt;a href="https://github.com/dotnet/SqlClient/pull/3552" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3552/hovercard"&gt;#3552&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
