@@ -1,58 +1,61 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>googleapis/google-cloud-dotnet - Releases</title>
   <link href="https://github.com/googleapis/google-cloud-dotnet" />
-  <updated>2025-08-20T00:06:49Z</updated>
+  <updated>2025-08-21T00:05:55Z</updated>
   <id>https://github.com/googleapis/google-cloud-dotnet</id>
   <entry>
-    <title>googleapis/google-cloud-dotnet - Releases - 2025-08-19</title>
-    <id>https://github.com/googleapis/google-cloud-dotnet#2025-08-19</id>
+    <title>googleapis/google-cloud-dotnet - Releases - 2025-08-20</title>
+    <id>https://github.com/googleapis/google-cloud-dotnet#2025-08-20</id>
     <link href="https://github.com/googleapis/google-cloud-dotnet" />
-    <updated>2025-08-20T00:06:49Z</updated>
+    <updated>2025-08-21T00:05:55Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.DocumentAI.V1-3.21.0"&gt;Google.Cloud.DocumentAI.V1 version 3.21.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.AIPlatform.V1-3.45.0"&gt;Google.Cloud.AIPlatform.V1 version 3.45.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added config options for derived fields and signature detection. Some annotation changes changes to mark fields explicitly output only (no changes in semantics just readability)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;A comment for field &lt;code&gt;document_schema&lt;/code&gt; in message &lt;code&gt;.google.cloud.documentai.v1.ProcessorVersion&lt;/code&gt; is changed to describe as output only.&lt;/li&gt;
-&lt;li&gt;A comment for field &lt;code&gt;create_time&lt;/code&gt; in message &lt;code&gt;.google.cloud.documentai.v1.ProcessorVersion&lt;/code&gt;  is changed to describe as output only.&lt;/li&gt;
-&lt;li&gt;A comment for field &lt;code&gt;latest_evaluation&lt;/code&gt; in message &lt;code&gt;.google.cloud.documentai.v1.ProcessorVersion&lt;/code&gt;  is changed to describe as output only.&lt;/li&gt;
-&lt;li&gt;A comment for field &lt;code&gt;kms_key_name&lt;/code&gt; in message &lt;code&gt;.google.cloud.documentai.v1.ProcessorVersion&lt;/code&gt;  is changed to describe as output only.&lt;/li&gt;
-&lt;li&gt;A comment for field &lt;code&gt;kms_key_version_name&lt;/code&gt; in message &lt;code&gt;.google.cloud.documentai.v1.ProcessorVersion&lt;/code&gt;  is changed to describe as output only.&lt;/li&gt;
-&lt;li&gt;A comment for field &lt;code&gt;deprecation_info&lt;/code&gt; in message &lt;code&gt;.google.cloud.documentai.v1.ProcessorVersion&lt;/code&gt;  is changed to describe as output only.&lt;/li&gt;
-&lt;li&gt;A comment for field &lt;code&gt;create_time&lt;/code&gt; in message &lt;code&gt;.google.cloud.documentai.v1.Processor&lt;/code&gt;  is changed to describe as output only.&lt;/li&gt;
+&lt;li&gt;Add data foundry service synthetic data generation API for v1&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.CloudBuild.V1-2.16.0"&gt;Google.Cloud.CloudBuild.V1 version 2.16.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Analytics.Admin.V1Alpha-2.0.0-alpha27"&gt;Google.Analytics.Admin.V1Alpha version 2.0.0-alpha27&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Add option to enable nested virtualization if available&lt;/li&gt;
+&lt;li&gt;Add the &lt;code&gt;GetReportingIdentitySettings&lt;/code&gt; method&lt;/li&gt;
+&lt;li&gt;Add the &lt;code&gt;GetReportingIdentitySettingsRequest&lt;/code&gt; resource&lt;/li&gt;
+&lt;li&gt;Add the &lt;code&gt;REPORTING_IDENTITY_SETTINGS&lt;/code&gt; resource type to the &lt;code&gt;ChangeHistoryResourceType&lt;/code&gt; enum&lt;/li&gt;
+&lt;li&gt;Add reporting_identity_settings&lt;code&gt;fields to the&lt;/code&gt;ChangeHistoryResource` resource&lt;/li&gt;
+&lt;li&gt;Add the &lt;code&gt;ReportingIdentitySettings&lt;/code&gt; resource&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Remove the &lt;code&gt;SetAutomatedGa4ConfigurationOptOut&lt;/code&gt; method&lt;/li&gt;
+&lt;li&gt;Remove the &lt;code&gt;FetchAutomatedGa4ConfigurationOptOut&lt;/code&gt; method&lt;/li&gt;
+&lt;li&gt;Remove the &lt;code&gt;CreateConnectedSiteTag&lt;/code&gt; method&lt;/li&gt;
+&lt;li&gt;Remove the &lt;code&gt;DeleteConnectedSiteTag&lt;/code&gt; method&lt;/li&gt;
+&lt;li&gt;Remove the &lt;code&gt;ListConnectedSiteTags&lt;/code&gt; method&lt;/li&gt;
+&lt;li&gt;Remove the &lt;code&gt;FetchConnectedGa4Property&lt;/code&gt; method&lt;/li&gt;
+&lt;li&gt;Remove the &lt;code&gt;SetAutomatedGa4ConfigurationOptOutRequest&lt;/code&gt; resource&lt;/li&gt;
+&lt;li&gt;Remove the &lt;code&gt;SetAutomatedGa4ConfigurationOptOutResponse&lt;/code&gt; resource&lt;/li&gt;
+&lt;li&gt;Remove the &lt;code&gt;FetchAutomatedGa4ConfigurationOptOutRequest&lt;/code&gt; resource&lt;/li&gt;
+&lt;li&gt;Remove the &lt;code&gt;FetchAutomatedGa4ConfigurationOptOutResponse&lt;/code&gt; resource&lt;/li&gt;
+&lt;li&gt;Remove the &lt;code&gt;CreateConnectedSiteTagRequest&lt;/code&gt; resource&lt;/li&gt;
+&lt;li&gt;Remove the &lt;code&gt;CreateConnectedSiteTagResponse&lt;/code&gt; resource&lt;/li&gt;
+&lt;li&gt;Remove the &lt;code&gt;DeleteConnectedSiteTagRequest&lt;/code&gt; resource&lt;/li&gt;
+&lt;li&gt;Remove the &lt;code&gt;ListConnectedSiteTagsRequest&lt;/code&gt; resource&lt;/li&gt;
+&lt;li&gt;Remove the &lt;code&gt;ListConnectedSiteTagsResponse&lt;/code&gt; resource&lt;/li&gt;
+&lt;li&gt;Remove the &lt;code&gt;FetchConnectedGa4PropertyRequest&lt;/code&gt; resource&lt;/li&gt;
+&lt;li&gt;Remove the &lt;code&gt;FetchConnectedGa4PropertyResponse&lt;/code&gt; resource&lt;/li&gt;
+&lt;li&gt;Remove the &lt;code&gt;ConnectedSiteTag&lt;/code&gt; resource&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Documentation improvements&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Update comments for &lt;code&gt;machine_type&lt;/code&gt; and &lt;code&gt;disk_size_gb&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Updated Private Service Connect IP ranges when route_all_traffic is false&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.BigQuery.Reservation.V1-2.8.0"&gt;Google.Cloud.BigQuery.Reservation.V1 version 2.8.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add Reservation.max_slots field to Reservation proto, indicating the total max number of slots this reservation can use up to&lt;/li&gt;
-&lt;li&gt;Add Reservation.scaling_mode field and its corresponding enum message ScalingMode. This field should be used together with Reservation.max_slots&lt;/li&gt;
+&lt;li&gt;Provide additional guidelines for the &lt;code&gt;user_provided_data&lt;/code&gt; field in the &lt;code&gt;SubmitUserDeletionRequest&lt;/code&gt; resource&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
