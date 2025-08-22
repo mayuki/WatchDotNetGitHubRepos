@@ -1,20 +1,20 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-08-21T00:05:46Z</updated>
+  <updated>2025-08-22T00:06:51Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-08-20</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-08-20</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-08-21</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-08-21</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-08-21T00:05:46Z</updated>
+    <updated>2025-08-22T00:06:51Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.5242116"&gt;Azure.Template_1.0.3-beta.5242116&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.5246113"&gt;Azure.Template_1.0.3-beta.5246113&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.3-beta.5242116 (2025-08-20)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.3-beta.5246113 (2025-08-21)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Release DPG library&lt;/li&gt;
@@ -24,61 +24,12 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects_1.0.0-beta.11"&gt;Azure.AI.Projects_1.0.0-beta.11&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ResourceHealth_1.1.0-beta.5"&gt;Azure.ResourceManager.ResourceHealth_1.1.0-beta.5&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.11 (2025-08-20)&lt;/h2&gt;
+                                &lt;h2&gt;1.1.0-beta.5 (2025-08-21)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added a constructor for &lt;code&gt;AIProjectClient&lt;/code&gt; which takes a &lt;code&gt;System.ClientModel.AuthenticationTokenProvider&lt;/code&gt; object for authentication. We will be switching away from &lt;code&gt;Azure.Core.TokenCredential&lt;/code&gt; with the upcoming stable release.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Class changes:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;AIDeployment&lt;/code&gt; has been renamed &lt;code&gt;AssetDeployment&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;AssetCredentialResponse&lt;/code&gt; has been renamed &lt;code&gt;DatasetCredential&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;DatasetIndex&lt;/code&gt; has been renamed &lt;code&gt;SearchIndex&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PendingUploadRequest&lt;/code&gt; has been renamed &lt;code&gt;PendingUploadConfiguration&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PendingUploadResponse&lt;/code&gt; has been renamed &lt;code&gt;PendingUploadResult&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;In &lt;code&gt;Datasets&lt;/code&gt;, methods &lt;code&gt;PendingUpload&lt;/code&gt; and &lt;code&gt;PendingUploadAsync&lt;/code&gt;, argument &lt;code&gt;body&lt;/code&gt; was replaced with &lt;code&gt;configuration&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;GetAzureOpenAIChatClient&lt;/code&gt; and &lt;code&gt;GetAzureOpenAIEmbeddingClient&lt;/code&gt; methods have been removed and replaced with a single &lt;code&gt;GetOpenAIClient&lt;/code&gt; method. This method returns an OpenAI client which has properties for accessing individual operation clients. More information is available in the &lt;code&gt;Inference&lt;/code&gt; samples.&lt;/li&gt;
-&lt;li&gt;All operations methods have been renamed to include the object the operation is for. For example, &lt;code&gt;Connections.GetDefault&lt;/code&gt; has been renamed to &lt;code&gt;Connections.GetDefaultConnection&lt;/code&gt;, and &lt;code&gt;Datasets.Get&lt;/code&gt; has been renamed to &lt;code&gt;Datasets.GetDatasets&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Deployments.GetModelDeployment&lt;/code&gt; and &lt;code&gt;Deployments.GetModelDeploymentAsync&lt;/code&gt; methods have been removed. Use &lt;code&gt;Deployments.GetDeployment&lt;/code&gt; and &lt;code&gt;Deployments.GetDeploymentAsync&lt;/code&gt; instead.`&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.47.3"&gt;Azure.Core_1.47.3&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.47.3 (2025-08-20)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Adopt System.ClientModel 1.6.1&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Resources_1.11.1"&gt;Azure.ResourceManager.Resources_1.11.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.11.1 (2025-08-20)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.Resources&lt;/code&gt; AOT-compatible&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/System.ClientModel_1.6.1"&gt;System.ClientModel_1.6.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.6.1 (2025-08-20)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix the behavior of Roslyn not properly handling partial classes with attributes in different files&lt;/li&gt;
+&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.ResourceHealth&lt;/code&gt; AOT-compatible&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
