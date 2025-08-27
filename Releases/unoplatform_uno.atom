@@ -1,6 +1,138 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>unoplatform/uno - Releases</title>
   <link href="https://github.com/unoplatform/uno" />
-  <updated>2025-08-26T00:07:11Z</updated>
+  <updated>2025-08-27T00:07:33Z</updated>
   <id>https://github.com/unoplatform/uno</id>
+  <entry>
+    <title>unoplatform/uno - Releases - 2025-08-26</title>
+    <id>https://github.com/unoplatform/uno#2025-08-26</id>
+    <link href="https://github.com/unoplatform/uno" />
+    <updated>2025-08-27T00:07:33Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/unoplatform/uno/releases/tag/6.2.58"&gt;6.2.58&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;It’s only been five weeks since &lt;a href="https://aka.platform.uno/blog-6-1" rel="nofollow"&gt;6.1&lt;/a&gt;, and we’re already back with Uno Platform 6.2.&lt;br&gt;
+That’s the cadence we’re aiming for: focused releases that solve real issues you’ve flagged.&lt;/p&gt;
+&lt;p&gt;This cycle closes nearly 100 issues raised by the community and enterprise teams, and brings another round of improvements to Hot Design. The result: smoother workflows, faster iteration, better reliability across all platforms.&lt;/p&gt;
+&lt;p&gt;Read more &lt;a href="https://aka.platform.uno/blog-6-2" rel="nofollow"&gt;on our blog post&lt;/a&gt;!&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Here's the full change log:&lt;/p&gt;
+&lt;h3&gt;Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Allow zooming keyboard shortcut on WASM (&lt;a href="https://github.com/unoplatform/uno/commit/cafef83abcc0ca2b9a886fa312250bcac8872b2e"&gt;cafef83&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Constrain full popup placement by visible bounds (&lt;a href="https://github.com/unoplatform/uno/commit/ceefd29e6afd0c910de7678555b1af9a126ea518"&gt;ceefd29&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;desktop:&lt;/strong&gt; Trim rare Skia build variants by default (&lt;a href="https://github.com/unoplatform/uno/commit/439370ee4b1e062e24af90aeaaa47be62c97408a"&gt;439370e&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;enhance devserver testing infrastructure and implement lifecycle telemetry (&lt;a href="https://github.com/unoplatform/uno/commit/a8e10e2a0421a33834ae9e9d88c379b0bd59aa59"&gt;a8e10e2&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Ensure &lt;code&gt;PagerControl&lt;/code&gt; is up to date (&lt;a href="https://github.com/unoplatform/uno/commit/9f699e03a94d9fee23b209741239b86fb9c7d89b"&gt;9f699e0&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;hotreload-telemetry:&lt;/strong&gt; Add server-side Hot Reload telemetry measurements and documentation (&lt;a href="https://github.com/unoplatform/uno/commit/85628180c006dbea1f200e12694ad07c1b43ddea"&gt;8562818&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;implement centralized telemetry anonymization with MD5 hashing (&lt;a href="https://github.com/unoplatform/uno/commit/5f648b92a8041f9e8cc88a76cec4607d047f2682"&gt;5f648b9&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;implement CTRL-C via stdin for graceful devserver shutdown (&lt;a href="https://github.com/unoplatform/uno/commit/2ba2eabe7ad86a4b3b567fd10e2a6c9e634b83ec"&gt;2ba2eab&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Move &lt;code&gt;VisibleBounds&lt;/code&gt; to &lt;code&gt;VisualTree&lt;/code&gt; as the source of truth (&lt;a href="https://github.com/unoplatform/uno/commit/363ae0bf60a5bbdae0d71f3ce4f3f5b3e9553bcd"&gt;363ae0b&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Set tree render dirty on rasterization scale change (&lt;a href="https://github.com/unoplatform/uno/commit/6d2e55143acf0986ff14785fb27fee99550664a0"&gt;6d2e551&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Shared &lt;code&gt;SKPicture&lt;/code&gt; recording (&lt;a href="https://github.com/unoplatform/uno/commit/93eddfe25a1ed6778fcfdd86ec45d38a2bf0784e"&gt;93eddfe&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Split rendering on iOS (&lt;a href="https://github.com/unoplatform/uno/commit/0b916831d7081a260788edecd22280f18a9c08c2"&gt;0b91683&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Support for &lt;code&gt;Vector2&lt;/code&gt; and &lt;code&gt;Vector3&lt;/code&gt; conversion in &lt;code&gt;XamlLoader&lt;/code&gt; (&lt;a href="https://github.com/unoplatform/uno/commit/e3d97f506fb30d52057b116ac5f5024d12485e2e"&gt;e3d97f5&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Support for &lt;code&gt;Vector2&lt;/code&gt; conversion in XAML source generator (&lt;a href="https://github.com/unoplatform/uno/commit/79d5a4a8b94a7d51dc499f92e07c1dc152a91b0d"&gt;79d5a4a&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Support gitpod on RemoteControlClient with WASM Skia (&lt;a href="https://github.com/unoplatform/uno/commit/6a6d27013ffe6b9f373ae297cdbd86a57d267e36"&gt;6a6d270&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;telemetry:&lt;/strong&gt; add EventsPrefix support to FileTelemetry and propagate from ServiceCollectionExtensions (&lt;a href="https://github.com/unoplatform/uno/commit/074e50c23f93f6990e75521fe6dd9425e940b407"&gt;074e50c&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;telemetry:&lt;/strong&gt; Added a graceful shutdown when parent process dies (&lt;a href="https://github.com/unoplatform/uno/commit/c0712b077f20041c04c77db90d4b8f74e0c181c0"&gt;c0712b0&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;telemetry:&lt;/strong&gt; implement server-side telemetry logging - add-in discovery, loading, and processor discovery with comprehensive error handling and timing measurements (&lt;a href="https://github.com/unoplatform/uno/commit/9e78bd9185f019bd2e212d1fe105cc04f66cfca9"&gt;9e78bd9&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;telemetry:&lt;/strong&gt; implement telemetry for hot reload events (&lt;a href="https://github.com/unoplatform/uno/commit/66fc8f9b93f90cef740e19a593f89a4927ef44c0"&gt;66fc8f9&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;test:&lt;/strong&gt; add DevServer test infrastructure with telemetry redirection support (&lt;a href="https://github.com/unoplatform/uno/commit/1a3c6593383ac4adab84003489674c70ef029e7c"&gt;1a3c659&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ui-tests:&lt;/strong&gt; Added console output detail to nunit file format (&lt;a href="https://github.com/unoplatform/uno/commit/d8422a024e430b3159d521f6d61479803c59d5e0"&gt;d8422a0&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Unify the methods generation (&lt;a href="https://github.com/unoplatform/uno/commit/517696e6c953a5f884dd6acc4f5dbf95a4f1ba8c"&gt;517696e&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Use shared &lt;code&gt;SKPicture&lt;/code&gt; recording on macOS (&lt;a href="https://github.com/unoplatform/uno/commit/bff04cdf634f1755e37efdccec8b9713b733b67c"&gt;bff04cd&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Use shared &lt;code&gt;SKPicture&lt;/code&gt; recording on WASM (&lt;a href="https://github.com/unoplatform/uno/commit/17deaa4fb630897eb3721e8ac571fe2999fbbd39"&gt;17deaa4&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Performance Improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;image:&lt;/strong&gt; simplify all logic to just use Linear samplers when both upscaling and downscaling and remove mipmapping (&lt;a href="https://github.com/unoplatform/uno/commit/a18e210d5581c25ee62282780d2c8a927569c023"&gt;a18e210&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;images:&lt;/strong&gt; reduce the impact of using Catmull-Rom filters to upscale images (&lt;a href="https://github.com/unoplatform/uno/commit/d506af26fc106c7b133bba5807570be7b48576dd"&gt;d506af2&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;migrate duration measurements from DateTime to Stopwatch API (&lt;a href="https://github.com/unoplatform/uno/commit/f1327577629e74c2fa8e728afd5076c087f65abe"&gt;f132757&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;PageStackEntry&lt;/code&gt; descriptor handling (&lt;a href="https://github.com/unoplatform/uno/commit/9291fab6a3a5106830bf1285deaee6e445c87d38"&gt;9291fab&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RenderTransformOrigin&lt;/code&gt; should not override &lt;code&gt;CenterPoint&lt;/code&gt; (&lt;a href="https://github.com/unoplatform/uno/commit/7af1bf531b675cdecaf919cc321697f126bc1c8b"&gt;7af1bf5&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add Android.OS import in ApplicationLanguages (&lt;a href="https://github.com/unoplatform/uno/commit/0891ff4119f8f7155349d5f37e9e500ea6432f04"&gt;0891ff4&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Adjust check for https in RemoteControlClient (&lt;a href="https://github.com/unoplatform/uno/commit/a316e1e2ac583c82b4abb812f1c570d2b94c70fa"&gt;a316e1e&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Adjust incorrect visual state condition (&lt;a href="https://github.com/unoplatform/uno/commit/c4ad5e18a34d5c2799c265e8940f5204a4424fae"&gt;c4ad5e1&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Adjust new conditional tests (&lt;a href="https://github.com/unoplatform/uno/commit/0334527da49fffee7d22e55944ee0a5537b86e5c"&gt;0334527&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;applicationview:&lt;/strong&gt; ApplicationView has outdated VisibleBounds values when XamlRoot.Bounds changes (&lt;a href="https://github.com/unoplatform/uno/commit/c21038672a72b942b3496784b7f705fd87737d68"&gt;c210386&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Avoid index adjusting logic in ItemsControl (&lt;a href="https://github.com/unoplatform/uno/commit/aa4f05fc503e53941304f2afd16c90292ba1c145"&gt;aa4f05f&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;avoid race to call some API before NSApplication is running (&lt;a href="https://github.com/unoplatform/uno/commit/b38057fe5bf1acfe670411a9fe6545278eac6ee2"&gt;b38057f&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Avoid syncing default theme on load (&lt;a href="https://github.com/unoplatform/uno/commit/ea71e0647e83330ca8578f87b397b122f70ff8a8"&gt;ea71e06&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Avoid using indexes for naming methods and calsses in code to imporve HR support (&lt;a href="https://github.com/unoplatform/uno/commit/74d83c37bd141930f07d4652b25b54be0b17763f"&gt;74d83c3&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Avoid white borders for HDPI screens (&lt;a href="https://github.com/unoplatform/uno/commit/4cbec7a3eaf51490296d5e71c9ddc70bfd6ac492"&gt;4cbec7a&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Call &lt;code&gt;OnItemsSourceSingleCollectionChanged&lt;/code&gt; before &lt;code&gt;OnItemsChanged&lt;/code&gt; (&lt;a href="https://github.com/unoplatform/uno/commit/f49563c547a590020d77b0411cf22d7c7dac34ba"&gt;f49563c&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;combobox:&lt;/strong&gt; do not refresh the virtualized panel every time the drop down menu is opened (&lt;a href="https://github.com/unoplatform/uno/commit/238f468e5dbef080b0beee22953f83dde7d84dd4"&gt;238f468&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Correctly enqueue the invalidation (&lt;a href="https://github.com/unoplatform/uno/commit/9dddda91ce11a46a5d29bfafac27fd6f9f0793d4"&gt;9dddda9&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Correctly set &lt;code&gt;shouldShowOverflowButton&lt;/code&gt; (&lt;a href="https://github.com/unoplatform/uno/commit/b8882c0f5ea4463155b65bb3cf3bcd5a74197390"&gt;b8882c0&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DevServer:&lt;/strong&gt; Remove BuildServiceProvider anti-pattern in AddInsExtensions (&lt;a href="https://github.com/unoplatform/uno/commit/b0148166ebb5cce8ef760be9f0706549797550ca"&gt;b014816&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Disable flaky tests (&lt;a href="https://github.com/unoplatform/uno/commit/45622b360371ab19e3fb728630ea236d2e55dd1b"&gt;45622b3&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Disable new templated parent support (enabled by new code gen, but which fails tests like When_RadioButtons_TemplateBinding) (&lt;a href="https://github.com/unoplatform/uno/commit/f5602756bdc7eb347019e3fcaa3def56e3ad59e9"&gt;f560275&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Do not dispose &lt;code&gt;CompositeDisposable&lt;/code&gt; (&lt;a href="https://github.com/unoplatform/uno/commit/3cb19edd7b22b6552a5eff65308bc51739715433"&gt;3cb19ed&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Ensure osx-x64 runtime pack is restored (&lt;a href="https://github.com/unoplatform/uno/commit/00e12c242deebc38fe3c74a787a8bfc64c201e8d"&gt;00e12c2&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Ensure scale is updated along with window size (&lt;a href="https://github.com/unoplatform/uno/commit/a284ca541db0dd221f9c04bac993321d286a032e"&gt;a284ca5&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Ensure the test waits properly (&lt;a href="https://github.com/unoplatform/uno/commit/91a4d41f673345ecbc412d4f60244c60a3153b62"&gt;91a4d41&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Explicitly unhook old &lt;code&gt;SelectionNode&lt;/code&gt; children (&lt;a href="https://github.com/unoplatform/uno/commit/d8b1f80753084108d0cba7d0c7fa09d3de362b22"&gt;d8b1f80&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix DataTemplate not reloading (&lt;a href="https://github.com/unoplatform/uno/commit/7b2ecd93afa062e9b570c74cefef862ea84edf17"&gt;7b2ecd9&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix direct access to name subject (&lt;a href="https://github.com/unoplatform/uno/commit/ef72151729e845b3005d11754a8a4f5d470e046e"&gt;ef72151&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix double generation of resources init (&lt;a href="https://github.com/unoplatform/uno/commit/03b86bd359d60640ff4b9952b4de8a119d4aa38b"&gt;03b86bd&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix invalid double increment (&lt;a href="https://github.com/unoplatform/uno/commit/6dab4efda1cdeb66cee96d235bfde1a9e1433655"&gt;6dab4ef&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix OOO in roslyn (&lt;a href="https://github.com/unoplatform/uno/commit/2719f71f33d40afeaa6c58b042f5924fc17a47e3"&gt;2719f71&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix possible duplicated class name for event handlers (&lt;a href="https://github.com/unoplatform/uno/commit/bc6d029df1aabf5806158f759d072cd79de479bf"&gt;bc6d029&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix possible name clash for event handlers (&lt;a href="https://github.com/unoplatform/uno/commit/6801f306a7bdaafbb44d768ca1ddb1c452706085"&gt;6801f30&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Further adjustments to container/index logic (&lt;a href="https://github.com/unoplatform/uno/commit/cceec84ca053229ac4ed217fefeafb4df9351fc1"&gt;cceec84&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Further flakiness (&lt;a href="https://github.com/unoplatform/uno/commit/0e2c85c2c74d9ba13837d3f8e8f824ac2c06be6c"&gt;0e2c85c&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;hr:&lt;/strong&gt; Do not report error if known to not be problematic (&lt;a href="https://github.com/unoplatform/uno/commit/70ce1dfc26480c8e791df15e62b0943dc915d35e"&gt;70ce1df&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;hr:&lt;/strong&gt; Workaround roslyn bug (&lt;a href="https://github.com/unoplatform/uno/commit/9ca0256d00a81bd4fa4c9aa7104447d7921d036f"&gt;9ca0256&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;imagesource:&lt;/strong&gt; image loading on multi threaded wasm calling OnOpened on a non-ui thread (&lt;a href="https://github.com/unoplatform/uno/commit/f2e09a6df9cdadcab3f97d808231994064f872bc"&gt;f2e09a6&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;initpartial formatting (&lt;a href="https://github.com/unoplatform/uno/commit/734ee111d86ad8b3691bf50cb432af6a1d269b34"&gt;734ee11&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;ios skia statusbar init (&lt;a href="https://github.com/unoplatform/uno/commit/6061a6d65d6691c4f3979f5a941f4fcabc0a4704"&gt;6061a6d&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;iOS:&lt;/strong&gt; image picker filters (&lt;a href="https://github.com/unoplatform/uno/commit/b3ab90e5bd7f3f1f443c93bcce0a9b5cacf545b1"&gt;b3ab90e&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Lazy init components when HR enabled (&lt;a href="https://github.com/unoplatform/uno/commit/f5508a4080bde1b5e372af599618119eaabaa60c"&gt;f5508a4&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;lint errors (&lt;a href="https://github.com/unoplatform/uno/commit/2c31ec17fb2ae411b294869f56d5547024bc29da"&gt;2c31ec1&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;linter errors (&lt;a href="https://github.com/unoplatform/uno/commit/5cf602c79ec80ec480b1c2dbd2a33d10b6b93357"&gt;5cf602c&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;listview:&lt;/strong&gt; drag-n-drop reorder leads to missing items (&lt;a href="https://github.com/unoplatform/uno/commit/82c8ccbc9cc20673a891c376475c478374bf9126"&gt;82c8ccb&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Move diffignore changes to 6.1 base version (&lt;a href="https://github.com/unoplatform/uno/commit/cdad9c0f05828f1f4e99afe6285fdac5a5933d78"&gt;cdad9c0&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PhoneCallManager:&lt;/strong&gt; Ensure launch phone call on ui thread (&lt;a href="https://github.com/unoplatform/uno/commit/3784d4656d341e92ca0811d60ca0f54db63cbb09"&gt;3784d46&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Requested theme sync (&lt;a href="https://github.com/unoplatform/uno/commit/981606fcef7e2ff327ac4271e6110a96dce1de81"&gt;981606f&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Return correct &lt;code&gt;VisibleBounds&lt;/code&gt; for Uno islands (&lt;a href="https://github.com/unoplatform/uno/commit/8db38e223038b6911fd94181e6a7cbb570288d2f"&gt;8db38e2&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ScrollcontentPresenter:&lt;/strong&gt; strategy update event sent to multiple listeners (&lt;a href="https://github.com/unoplatform/uno/commit/f4d65dda7b815743a79576686bf9e6b4aeacc9fd"&gt;f4d65dd&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;scrollviewer update offsets when on compositor strategy (&lt;a href="https://github.com/unoplatform/uno/commit/be4adb64e6faf88d934986ad4ca096d09f037f3d"&gt;be4adb6&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ScrollViewer:&lt;/strong&gt; invoke update also when animation stops (&lt;a href="https://github.com/unoplatform/uno/commit/ff36b5f0375953497d95532fe0b8431c6112eb69"&gt;ff36b5f&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;SDK location notes (&lt;a href="https://github.com/unoplatform/uno/commit/e9ec3236248d6425a19d48507ef346c239010457"&gt;e9ec323&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Set the &lt;code&gt;IsOpen&lt;/code&gt; property later (&lt;a href="https://github.com/unoplatform/uno/commit/8dcdd59c4987876e0efaf016e352cd2ae2895bf2"&gt;8dcdd59&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SKCanvasElement:&lt;/strong&gt; make SKCanvasElement hit-testable (&lt;a href="https://github.com/unoplatform/uno/commit/c19f7bdeff17fafdb07eeaf42f8c060593b5bd5c"&gt;c19f7bd&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;skia-droid WindowBounds and VisibleBounds with StatusBar.Background (&lt;a href="https://github.com/unoplatform/uno/commit/049d7968d52b3695f06c2bddc7d16b614f9b2479"&gt;049d796&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Startup assert is invalid for Islands (&lt;a href="https://github.com/unoplatform/uno/commit/a0f531b1bed3ae7e8da781ae766502ca89ea5c1c"&gt;a0f531b&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;textblock:&lt;/strong&gt; adjust rendering offsets to match Padding (&lt;a href="https://github.com/unoplatform/uno/commit/ace004c8719d05c21308f42deb568d385c76fc7f"&gt;ace004c&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;textblock:&lt;/strong&gt; invalidate render after arranging (&lt;a href="https://github.com/unoplatform/uno/commit/056ffa961271641cb3d93d4ae2c4af76fa4ea7ab"&gt;056ffa9&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;textbox within a flyout hard to focus (&lt;a href="https://github.com/unoplatform/uno/commit/d0882480a80eba07921b4a50203acefede417169"&gt;d088248&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update diffignore (&lt;a href="https://github.com/unoplatform/uno/commit/32f41973563c58e2034e8eea96e378c9d8349844"&gt;32f4197&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;update failing telemetry tests (&lt;a href="https://github.com/unoplatform/uno/commit/fc03cae26d8906b6ea8c729fcc66f2eff5e5e4d0"&gt;fc03cae&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update for Android 5 support (&lt;a href="https://github.com/unoplatform/uno/commit/a1cff7aaf5ec96358e57edab4729e913d16a1f7f"&gt;a1cff7a&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;QueueInvalidateRender&lt;/code&gt; everywhere (&lt;a href="https://github.com/unoplatform/uno/commit/32fa624ed97849bad7e0fc85299d1dab47cc11c5"&gt;32fa624&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Use more generic characters (&lt;a href="https://github.com/unoplatform/uno/commit/510fa9dede97e205892077eface9c868552fe603"&gt;510fa9d&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;visual subtree removal not triggering re-render (&lt;a href="https://github.com/unoplatform/uno/commit/00192cc65a792cb163386ed500180d074f5cf68d"&gt;00192cc&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WebView2:&lt;/strong&gt; Fix HistoryChanged calling priority on iOS (&lt;a href="https://github.com/unoplatform/uno/commit/37f606f0c6e35f7391f284a01f48506e23484156"&gt;37f606f&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WebView2:&lt;/strong&gt; Unify mobile WebView2 behavior to match WinUI (&lt;a href="https://github.com/unoplatform/uno/commit/a3f9a483c29742cfcf72904904f87770c0d1fabb"&gt;a3f9a48&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;x11:&lt;/strong&gt; opengl crash on startup (&lt;a href="https://github.com/unoplatform/uno/commit/e00b03ad1f1346770dee3d6541b51eee02b75787"&gt;e00b03a&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;xbind:&lt;/strong&gt; no longer trigger on host reload (&lt;a href="https://github.com/unoplatform/uno/commit/fa94fecf5e28fa84bcea02b445f5ab0bd41b9a12"&gt;fa94fec&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Reverts&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Revert "Merge pull request &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3154248388" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/20808" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/20808/hovercard" href="https://github.com/unoplatform/uno/pull/20808"&gt;#20808&lt;/a&gt; from ramezgerges/textblock_binding_paint_timing" (&lt;a href="https://github.com/unoplatform/uno/commit/dd7cfdd7825eb7bcb1e5134ad0e0ada5ddf02d34"&gt;dd7cfdd&lt;/a&gt;), closes &lt;a href="https://github.com/unoplatform/uno/issues/20808" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/20808/hovercard"&gt;#20808&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Revert "Merge pull request &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3307941202" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/21236" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/21236/hovercard" href="https://github.com/unoplatform/uno/pull/21236"&gt;#21236&lt;/a&gt; from unoplatform/mergify/bp/release/stable/6.2/pr-21189" (&lt;a href="https://github.com/unoplatform/uno/commit/ce3fa4a148ab7420bd971ac41bd03e0e27d21bb9"&gt;ce3fa4a&lt;/a&gt;), closes &lt;a href="https://github.com/unoplatform/uno/issues/21236" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/21236/hovercard"&gt;#21236&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
