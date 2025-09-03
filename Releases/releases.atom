@@ -1,6 +1,115 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2025-09-02T00:07:14Z</updated>
+  <updated>2025-09-03T00:06:48Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
+  <entry>
+    <title>aws/aws-sdk-net - Releases - 2025-09-02</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-09-02</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2025-09-03T00:06:30Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.82.0"&gt;4.0.82.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.82.0 (2025-09-02 18:32 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;EC2 (4.0.36.0)
+&lt;ul&gt;
+&lt;li&gt;MaximumEbsAttachments and AttachmentLimitType fields added to DescribeInstanceTypesResponse. G6f, Gr6f, R8i, R8i-flex and p5.4xlarge instance types added to InstanceTypes enum.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Neptune (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Removed the deprecated marker from publiclyAccessible parameter from DbInstance, CreateDbInstance and ModifyDbInstance and added relevant usage information for the parameter.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Notifications (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;Added Org support for notifications:  - &lt;code&gt;ListMemberAccounts&lt;/code&gt; gets member accounts list, &lt;code&gt;AssociateOrganizationalUnit&lt;/code&gt; links OU to notification configuration, &lt;code&gt;DisassociateOrganizationalUnit&lt;/code&gt; removes OU from notification configuration, &lt;code&gt;ListOrganizationalUnits&lt;/code&gt; shows OUs configured for notifications.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3 (4.0.6.13)
+&lt;ul&gt;
+&lt;li&gt;Fix issue &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3374709524" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/3993" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/3993/hovercard" href="https://github.com/aws/aws-sdk-net/issues/3993"&gt;#3993&lt;/a&gt;. PutObjectAcl was failing when Grantee's Type member was set because  the xml attribute not being written first leading to invalid xml. PutBucketAcl would also fail with the same issue if Type is set. This change writes the attributes first if they are present.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkMail (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;Make RoleArn an optional parameter for the PutEmailMonitoringConfiguration API, and add UnsupportedOperationException to RegisterToWorkMail.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1114.0"&gt;3.7.1114.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;3.7.1114.0 (2025-09-02 18:17 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;EC2 (3.7.510.0)
+&lt;ul&gt;
+&lt;li&gt;MaximumEbsAttachments and AttachmentLimitType fields added to DescribeInstanceTypesResponse. G6f, Gr6f, R8i, R8i-flex and p5.4xlarge instance types added to InstanceTypes enum.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Neptune (3.7.502.0)
+&lt;ul&gt;
+&lt;li&gt;Removed the deprecated marker from publiclyAccessible parameter from DbInstance, CreateDbInstance and ModifyDbInstance and added relevant usage information for the parameter.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Notifications (3.7.502.0)
+&lt;ul&gt;
+&lt;li&gt;Added Org support for notifications:  - &lt;code&gt;ListMemberAccounts&lt;/code&gt; gets member accounts list, &lt;code&gt;AssociateOrganizationalUnit&lt;/code&gt; links OU to notification configuration, &lt;code&gt;DisassociateOrganizationalUnit&lt;/code&gt; removes OU from notification configuration, &lt;code&gt;ListOrganizationalUnits&lt;/code&gt; shows OUs configured for notifications.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkMail (3.7.502.0)
+&lt;ul&gt;
+&lt;li&gt;Make RoleArn an optional parameter for the PutEmailMonitoringConfiguration API, and add UnsupportedOperationException to RegisterToWorkMail.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.500.13
+&lt;ul&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>dotnet/aspire - Releases - 2025-09-02</title>
+    <id>https://github.com/dotnet/aspire#2025-09-02</id>
+    <link href="https://github.com/dotnet/aspire" />
+    <updated>2025-09-03T00:06:35Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/aspire/releases/tag/v9.4.2"&gt;Aspire 9.4.2 Release&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[release/9.4] Simplify Aspire CLI project name validation to only reject path separators by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3291224583" data-permission-text="Title is private" data-url="https://github.com/dotnet/aspire/issues/10832" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/aspire/pull/10832/hovercard" href="https://github.com/dotnet/aspire/pull/10832"&gt;#10832&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[release/9.4] External Services with URL Parameter fails to generate manifests by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3284200993" data-permission-text="Title is private" data-url="https://github.com/dotnet/aspire/issues/10806" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/aspire/pull/10806/hovercard" href="https://github.com/dotnet/aspire/pull/10806"&gt;#10806&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[release/9.4] Always update resource list in console logs after hidden bool changes by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3275330877" data-permission-text="Title is private" data-url="https://github.com/dotnet/aspire/issues/10738" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/aspire/pull/10738/hovercard" href="https://github.com/dotnet/aspire/pull/10738"&gt;#10738&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[release/9.4] serve blazor.web.js from wwwroot by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3326862185" data-permission-text="Title is private" data-url="https://github.com/dotnet/aspire/issues/10990" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/aspire/pull/10990/hovercard" href="https://github.com/dotnet/aspire/pull/10990"&gt;#10990&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Branding updates for 9.4.2 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/joperezr/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/joperezr"&gt;@joperezr&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3338973830" data-permission-text="Title is private" data-url="https://github.com/dotnet/aspire/issues/11026" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/aspire/pull/11026/hovercard" href="https://github.com/dotnet/aspire/pull/11026"&gt;#11026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[release/9.4] Port  Fix creating projects with GB18030 chars by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/danmoseley/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/danmoseley"&gt;@danmoseley&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3339529831" data-permission-text="Title is private" data-url="https://github.com/dotnet/aspire/issues/11032" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/aspire/pull/11032/hovercard" href="https://github.com/dotnet/aspire/pull/11032"&gt;#11032&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[release/9.4] Fix Azure AI Foundry resource name by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3339865388" data-permission-text="Title is private" data-url="https://github.com/dotnet/aspire/issues/11038" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/aspire/pull/11038/hovercard" href="https://github.com/dotnet/aspire/pull/11038"&gt;#11038&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[release/9.4] Fixed properties override when publishing an update in external service by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3287658406" data-permission-text="Title is private" data-url="https://github.com/dotnet/aspire/issues/10824" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/aspire/pull/10824/hovercard" href="https://github.com/dotnet/aspire/pull/10824"&gt;#10824&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/dotnet/aspire/compare/v9.4.1...v9.4.2"&gt;&lt;tt&gt;v9.4.1...v9.4.2&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

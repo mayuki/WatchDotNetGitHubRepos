@@ -1,6 +1,86 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-09-02T00:06:58Z</updated>
+  <updated>2025-09-03T00:06:30Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
+  <entry>
+    <title>aws/aws-sdk-net - Releases - 2025-09-02</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-09-02</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2025-09-03T00:06:30Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.82.0"&gt;4.0.82.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.82.0 (2025-09-02 18:32 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;EC2 (4.0.36.0)
+&lt;ul&gt;
+&lt;li&gt;MaximumEbsAttachments and AttachmentLimitType fields added to DescribeInstanceTypesResponse. G6f, Gr6f, R8i, R8i-flex and p5.4xlarge instance types added to InstanceTypes enum.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Neptune (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Removed the deprecated marker from publiclyAccessible parameter from DbInstance, CreateDbInstance and ModifyDbInstance and added relevant usage information for the parameter.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Notifications (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;Added Org support for notifications:  - &lt;code&gt;ListMemberAccounts&lt;/code&gt; gets member accounts list, &lt;code&gt;AssociateOrganizationalUnit&lt;/code&gt; links OU to notification configuration, &lt;code&gt;DisassociateOrganizationalUnit&lt;/code&gt; removes OU from notification configuration, &lt;code&gt;ListOrganizationalUnits&lt;/code&gt; shows OUs configured for notifications.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3 (4.0.6.13)
+&lt;ul&gt;
+&lt;li&gt;Fix issue &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3374709524" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/3993" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/3993/hovercard" href="https://github.com/aws/aws-sdk-net/issues/3993"&gt;#3993&lt;/a&gt;. PutObjectAcl was failing when Grantee's Type member was set because  the xml attribute not being written first leading to invalid xml. PutBucketAcl would also fail with the same issue if Type is set. This change writes the attributes first if they are present.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkMail (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;Make RoleArn an optional parameter for the PutEmailMonitoringConfiguration API, and add UnsupportedOperationException to RegisterToWorkMail.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1114.0"&gt;3.7.1114.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;3.7.1114.0 (2025-09-02 18:17 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;EC2 (3.7.510.0)
+&lt;ul&gt;
+&lt;li&gt;MaximumEbsAttachments and AttachmentLimitType fields added to DescribeInstanceTypesResponse. G6f, Gr6f, R8i, R8i-flex and p5.4xlarge instance types added to InstanceTypes enum.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Neptune (3.7.502.0)
+&lt;ul&gt;
+&lt;li&gt;Removed the deprecated marker from publiclyAccessible parameter from DbInstance, CreateDbInstance and ModifyDbInstance and added relevant usage information for the parameter.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Notifications (3.7.502.0)
+&lt;ul&gt;
+&lt;li&gt;Added Org support for notifications:  - &lt;code&gt;ListMemberAccounts&lt;/code&gt; gets member accounts list, &lt;code&gt;AssociateOrganizationalUnit&lt;/code&gt; links OU to notification configuration, &lt;code&gt;DisassociateOrganizationalUnit&lt;/code&gt; removes OU from notification configuration, &lt;code&gt;ListOrganizationalUnits&lt;/code&gt; shows OUs configured for notifications.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkMail (3.7.502.0)
+&lt;ul&gt;
+&lt;li&gt;Make RoleArn an optional parameter for the PutEmailMonitoringConfiguration API, and add UnsupportedOperationException to RegisterToWorkMail.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.500.13
+&lt;ul&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
