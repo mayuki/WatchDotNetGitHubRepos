@@ -1,94 +1,45 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-09-10T00:06:02Z</updated>
+  <updated>2025-09-11T00:06:10Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-09-09</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-09-09</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-09-10</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-09-10</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-09-10T00:06:02Z</updated>
+    <updated>2025-09-11T00:06:10Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity_1.16.0"&gt;Azure.Identity_1.16.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.DataMovement.Blobs_12.2.2"&gt;Azure.Storage.DataMovement.Blobs_12.2.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.16.0 (2025-09-09)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added a new &lt;code&gt;DefaultAzureCredential&lt;/code&gt; constructor that accepts a custom environment variable name for credential configuration. This provides flexibility beyond the default &lt;code&gt;AZURE_TOKEN_CREDENTIALS&lt;/code&gt; environment variable. The constructor accepts any environment variable name and uses the same credential selection logic as the existing &lt;code&gt;AZURE_TOKEN_CREDENTIALS&lt;/code&gt; processing.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;DefaultAzureCredential.DefaultEnvironmentVariableName&lt;/code&gt; constant property that returns &lt;code&gt;"AZURE_TOKEN_CREDENTIALS"&lt;/code&gt; for convenience when referencing the default environment variable name.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;AzureCliCredential&lt;/code&gt;, &lt;code&gt;AzurePowerShellCredential&lt;/code&gt;, and &lt;code&gt;AzureDeveloperCliCredential&lt;/code&gt; now throw an &lt;code&gt;AuthenticationFailedException&lt;/code&gt; when the &lt;code&gt;TokenRequestContext&lt;/code&gt; includes claims, as these credentials do not support claims challenges. The exception message includes guidance for handling such scenarios.&lt;/li&gt;
-&lt;li&gt;When &lt;code&gt;AZURE_TOKEN_CREDENTIALS&lt;/code&gt; or the equivalent custom environment variable is configured to &lt;code&gt;ManagedIdentityCredential&lt;/code&gt;, the &lt;code&gt;DefaultAzureCredential&lt;/code&gt; does not issue a probe request and performs retries with exponential backoff.&lt;/li&gt;
-&lt;/ul&gt;
+                                &lt;h2&gt;12.2.2 (2025-09-10)&lt;/h2&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed &lt;code&gt;AzureDeveloperCliCredential&lt;/code&gt; hanging when the &lt;code&gt;AZD_DEBUG&lt;/code&gt; environment variable is set by adding the &lt;code&gt;--no-prompt&lt;/code&gt; flag to prevent interactive prompts (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/52005" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/52005/hovercard"&gt;#52005&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;BrokerCredential&lt;/code&gt; is now included in the chain when &lt;code&gt;AZURE_TOKEN_CREDENTIALS&lt;/code&gt; is set to &lt;code&gt;dev&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Fixed an issue that prevented ManagedIdentityCredential from utilizing the token cache in Workload Identity Federation environments.&lt;/li&gt;
-&lt;li&gt;Fixed a bug in &lt;code&gt;DefaultAzureCredential&lt;/code&gt; that caused the credential chain to be constructed incorrectly when using AZURE_TOKEN_CREDENTIALS in combination with &lt;code&gt;DefaultAzureCredentialOptions&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The &lt;code&gt;BrokerCredential&lt;/code&gt; is now always included in the &lt;code&gt;DefaultAzureCredential&lt;/code&gt; chain. If the &lt;code&gt;Azure.Identity.Broker&lt;/code&gt; package is not referenced, an exception will be thrown when &lt;code&gt;GetToken&lt;/code&gt; is called, making its behavior consistent with the rest of the credentials in the chain.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Microsoft.Identity.Client&lt;/code&gt; dependency to version 4.76.0.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Microsoft.Identity.Client.Extensions.Msal&lt;/code&gt; dependency to version 4.76.0.&lt;/li&gt;
+&lt;li&gt;Fixed an issue on upload transfers where file/directory names on the destination may be incorrect. The issue could occur if the path passed to &lt;code&gt;LocalFilesStorageResourceProvider.FromDirectory&lt;/code&gt; contained a trailing slash.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.Storage_5.3.6"&gt;Microsoft.Azure.WebJobs.Extensions.Storage_5.3.6&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.DataMovement.Files.Shares_12.2.2"&gt;Azure.Storage.DataMovement.Files.Shares_12.2.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;5.3.6 (2025-09-09)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;p&gt;Please refer to &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs/CHANGELOG.md"&gt;&lt;code&gt;Microsoft.Azure.WebJobs.Extension.Storage.Blobs&lt;/code&gt;&lt;/a&gt; and &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage.Queues/CHANGELOG.md"&gt;&lt;code&gt;Microsoft.Azure.WebJobs.Extension.Storage.Queues&lt;/code&gt;&lt;/a&gt; for detailed list of changes.&lt;/p&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;p&gt;Please refer to &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs/CHANGELOG.md"&gt;&lt;code&gt;Microsoft.Azure.WebJobs.Extension.Storage.Blobs&lt;/code&gt;&lt;/a&gt; and &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage.Queues/CHANGELOG.md"&gt;&lt;code&gt;Microsoft.Azure.WebJobs.Extension.Storage.Queues&lt;/code&gt;&lt;/a&gt; for detailed list of changes.&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs_5.3.6"&gt;Microsoft.Azure.WebJobs.Extensions.Storage.Blobs_5.3.6&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;5.3.6 (2025-09-09)&lt;/h2&gt;
+                                &lt;h2&gt;12.2.2 (2025-09-10)&lt;/h2&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Reverted change where the scan will continue scanning AzureWebJobsStorage even when configuring a target storage account&lt;/li&gt;
+&lt;li&gt;Fixed an issue on upload transfers where file/directory names on the destination may be incorrect. The issue could occur if the path passed to &lt;code&gt;LocalFilesStorageResourceProvider.FromDirectory&lt;/code&gt; contained a trailing slash.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.Storage.Queues_5.3.6"&gt;Microsoft.Azure.WebJobs.Extensions.Storage.Queues_5.3.6&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.DataMovement_12.2.2"&gt;Azure.Storage.DataMovement_12.2.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;5.3.6 (2025-09-09)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;This release contains bug fixes to improve quality.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.48.0"&gt;Azure.Core_1.48.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.48.0 (2025-09-09)&lt;/h2&gt;
+                                &lt;h2&gt;12.2.2 (2025-09-10)&lt;/h2&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed an issue that prevented unbranded generated clients from utilizing an instance of &lt;code&gt;TokenCredential&lt;/code&gt; with APIs that accept &lt;code&gt;AuthenticationTokenProvider&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Fabric_1.0.0"&gt;Azure.ResourceManager.Fabric_1.0.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0 (2025-09-05)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated versioning for general availability.&lt;/li&gt;
+&lt;li&gt;Fixed an issue on upload transfers where file/directory names on the destination may be incorrect. The issue could occur if the path passed to &lt;code&gt;LocalFilesStorageResourceProvider.FromDirectory&lt;/code&gt; contained a trailing slash.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
