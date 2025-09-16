@@ -1,6 +1,71 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/SqlClient - Releases</title>
   <link href="https://github.com/dotnet/SqlClient" />
-  <updated>2025-09-15T00:07:20Z</updated>
+  <updated>2025-09-16T00:06:52Z</updated>
   <id>https://github.com/dotnet/SqlClient</id>
+  <entry>
+    <title>dotnet/SqlClient - Releases - 2025-09-15</title>
+    <id>https://github.com/dotnet/SqlClient#2025-09-15</id>
+    <link href="https://github.com/dotnet/SqlClient" />
+    <updated>2025-09-16T00:06:52Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/SqlClient/releases/tag/v7.0.0-preview1"&gt;Preview Release v7.0.0-preview1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This update brings the following changes since the [6.1.0] &lt;a href="https://github.com/dotnet/SqlClient/blob/v6.1.1/6.1.0.md"&gt;https://github.com/dotnet/SqlClient/blob/v6.1.1/6.1.0.md&lt;/a&gt;) release:&lt;/p&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed &lt;code&gt;Constrained Execution Region&lt;/code&gt; error handling blocks and associated &lt;code&gt;SqlConnection&lt;/code&gt; cleanup which may affect how potentially-broken connections are expunged from the pool. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3535" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3535/hovercard"&gt;#3535&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Packet multiplexing disabled by default, and several bug fixes. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3534" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3534/hovercard"&gt;#3534&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3537" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3537/hovercard"&gt;#3537&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;SqlColumnEncryptionCertificateStoreProvider&lt;/code&gt; now works on Windows, Linux, and macOS. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3014" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3014/hovercard"&gt;#3014&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Updated &lt;code&gt;SqlVector.Null&lt;/code&gt; to return a nullable &lt;code&gt;SqlVector&lt;/code&gt; instance in the reference API to match the implementation. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3521" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3521/hovercard"&gt;#3521&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Performance improvements for all built-in &lt;code&gt;SqlColumnEncryptionKeyStoreProvider&lt;/code&gt; implementations. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3554" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3554/hovercard"&gt;#3554&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Various test improvements. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3456" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3456/hovercard"&gt;#3456&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/2968" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/2968/hovercard"&gt;#2968&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3458" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3458/hovercard"&gt;#3458&lt;/a&gt;,  &lt;a href="https://github.com/dotnet/SqlClient/pull/3494" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3494/hovercard"&gt;#3494&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3559" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3559/hovercard"&gt;#3559&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3575" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3575/hovercard"&gt;#3575&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Codebase merge project and related cleanup. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3436" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3436/hovercard"&gt;#3436&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3434" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3434/hovercard"&gt;#3434&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3448" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3448/hovercard"&gt;#3448&lt;/a&gt;,  &lt;a href="https://github.com/dotnet/SqlClient/pull/3454" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3454/hovercard"&gt;#3454&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3462" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3462/hovercard"&gt;#3462&lt;/a&gt;,  &lt;a href="https://github.com/dotnet/SqlClient/pull/3435" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3435/hovercard"&gt;#3435&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3492" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3492/hovercard"&gt;#3492&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3473" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3473/hovercard"&gt;#3473&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3469" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3469/hovercard"&gt;#3469&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3394" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3394/hovercard"&gt;#3394&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3493" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3493/hovercard"&gt;#3493&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3593" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3593/hovercard"&gt;#3593&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Documentation improvements. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3490" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3490/hovercard"&gt;#3490&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated &lt;code&gt;Azure.Identity&lt;/code&gt; dependency to v1.14.2. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3538" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3538/hovercard"&gt;#3538&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;We thank the following public contributors. Their efforts toward this project&lt;br&gt;
+are very much appreciated.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/edwardneal"&gt;edwardneal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/emmanuel-ferdman"&gt;emmanuel-ferdman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/ErikEJ"&gt;ErikEJ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/twsouthwick"&gt;twsouthwick&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Wraith2"&gt;Wraith2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;New Contributors&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/frankbuckley"&gt;frankbuckley&lt;/a&gt; made their first contribution in &lt;a href="https://github.com/dotnet/SqlClient/pull/3521" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3521/hovercard"&gt;#3521&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

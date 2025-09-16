@@ -1,6 +1,63 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2025-09-15T00:07:21Z</updated>
+  <updated>2025-09-16T00:06:54Z</updated>
   <id>https://github.com/grpc/grpc</id>
+  <entry>
+    <title>grpc/grpc - Releases - 2025-09-15</title>
+    <id>https://github.com/grpc/grpc#2025-09-15</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2025-09-16T00:06:54Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.75.0"&gt;Release v1.75.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release 1.75.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;gemini&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Security] Cherry Pick Spiffe Verification. (&lt;a href="https://github.com/grpc/grpc/pull/40515" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/40515/hovercard"&gt;#40515&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python][Typeguard] Part 3 - Add Typeguard to AIO stack in tests. (&lt;a href="https://github.com/grpc/grpc/pull/40217" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/40217/hovercard"&gt;#40217&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[c-ares] update version to 1.34.5. (&lt;a href="https://github.com/grpc/grpc/pull/39508" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39508/hovercard"&gt;#39508&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[pick_first] fix bug that caused us to stop attempting to connect. (&lt;a href="https://github.com/grpc/grpc/pull/40162" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/40162/hovercard"&gt;#40162&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C++&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[OTel C++] Implement retry metrics. (&lt;a href="https://github.com/grpc/grpc/pull/39195" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39195/hovercard"&gt;#39195&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Objective-C&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix data race by adding custom getter for &lt;code&gt;state&lt;/code&gt; property with &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/synchronized/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/synchronized"&gt;@synchronized&lt;/a&gt; locking. (&lt;a href="https://github.com/grpc/grpc/pull/40146" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/40146/hovercard"&gt;#40146&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;gRPC Python (grpcio) now depends on &lt;code&gt;typing-extensions~=4.13&lt;/code&gt;. (&lt;a href="https://github.com/grpc/grpc/pull/40137" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/40137/hovercard"&gt;#40137&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update musllinux wheels from musllinux_1_1 to musllinux_1_2. (&lt;a href="https://github.com/grpc/grpc/pull/40317" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/40317/hovercard"&gt;#40317&lt;/a&gt;)
+&lt;ul&gt;
+&lt;li&gt;Dropping musllinux_1_1 because it reached EOL in November 2024&lt;/li&gt;
+&lt;li&gt;Reference on musllinux platform tags: &lt;a href="https://peps.python.org/pep-0656" rel="nofollow"&gt;https://peps.python.org/pep-0656&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[Python][Typeguard] Part 2 - Add Typeguard to AIO stack in tests . (&lt;a href="https://github.com/grpc/grpc/pull/40215" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/40215/hovercard"&gt;#40215&lt;/a&gt;, &lt;a href="https://github.com/grpc/grpc/pull/40217" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/40217/hovercard"&gt;#40217&lt;/a&gt;)
+&lt;ul&gt;
+&lt;li&gt;Fixes type hints for &lt;code&gt;grpc.aio._utils&lt;/code&gt;, &lt;code&gt;grpc.aio._call&lt;/code&gt;, &lt;code&gt;grpc.aio._interceptor&lt;/code&gt; and &lt;code&gt;grpc.aio._utils&lt;/code&gt;&lt;br&gt;
+Fixing the error in public API - ClientCallDetails where method was str but actually it should be bytes. Done because the code flow actually sends bytes instead of str see - &lt;a href="https://github.com/grpc/grpc/blob/master/src/python/grpcio/grpc/aio/_interceptor.py#L655"&gt;https://github.com/grpc/grpc/blob/master/src/python/grpcio/grpc/aio/_interceptor.py#L655&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[Python] Fixes issue 40325 - grpcio fails to install on all non-Mac Apple devices internal builds. (&lt;a href="https://github.com/grpc/grpc/pull/40347" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/40347/hovercard"&gt;#40347&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ruby&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ruby: Mark credential object in channel. (&lt;a href="https://github.com/grpc/grpc/pull/40394" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/40394/hovercard"&gt;#40394&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Ruby] Add rubygems support for linux-gnu and linux-musl platforms. (&lt;a href="https://github.com/grpc/grpc/pull/39549" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39549/hovercard"&gt;#39549&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
