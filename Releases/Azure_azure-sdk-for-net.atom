@@ -1,50 +1,70 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-09-17T00:06:47Z</updated>
+  <updated>2025-09-18T00:05:52Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-09-16</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-09-16</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-09-17</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-09-17</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-09-17T00:06:47Z</updated>
+    <updated>2025-09-18T00:05:52Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.DataMovement.Blobs_12.3.0-beta.1"&gt;Azure.Storage.DataMovement.Blobs_12.3.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.IotFirmwareDefense_1.1.0"&gt;Azure.ResourceManager.IotFirmwareDefense_1.1.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.3.0-beta.1 (2025-09-16)&lt;/h2&gt;
+                                &lt;h2&gt;1.1.0 (2025-09-15)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;This release contains features and bug fixes to improve quality.&lt;/li&gt;
+&lt;li&gt;Updated Microsoft.IoTFirmwareDefense API version to &lt;code&gt;2025-08-02&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Improve backwards compatibility for CVE data models&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.DataMovement.Files.Shares_12.3.0-beta.1"&gt;Azure.Storage.DataMovement.Files.Shares_12.3.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerInstance_1.3.0-beta.4"&gt;Azure.ResourceManager.ContainerInstance_1.3.0-beta.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.3.0-beta.1 (2025-09-16)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for NFS -&amp;gt; SMB and SMB -&amp;gt; NFS Share-to-Share copy transfers.&lt;/li&gt;
-&lt;/ul&gt;
+                                &lt;h2&gt;1.3.0-beta.4 (2025-09-16)&lt;/h2&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed property/permission/metadata preservation when overwriting an existing directory for SMB and NFS transfers.&lt;/li&gt;
+&lt;li&gt;Added missing ContainerGroup properties: ConfigMap, ContainerGroupProfile, StandbyPoolProfile, and IsCreatedFromStandbyPool.&lt;/li&gt;
+&lt;li&gt;Corrected required flag on properties in Container and ContainerGroup models.&lt;/li&gt;
+&lt;li&gt;Fixed the response handling for ContainerGroupProfile DELETE operation.&lt;/li&gt;
+&lt;li&gt;Aligned requiredness of ContainerGroupProfile properties and normalized the Revision property format with the existing codebase.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.DataMovement_12.3.0-beta.1"&gt;Azure.Storage.DataMovement_12.3.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.WorkloadOrchestration_1.0.0"&gt;Azure.ResourceManager.WorkloadOrchestration_1.0.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.3.0-beta.1 (2025-09-16)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0 (2025-09-01)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;This release contains features and bug fixes to improve quality.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;This package follows the &lt;a href="https://azure.github.io/azure-sdk/general_introduction.html" rel="nofollow"&gt;new Azure SDK guidelines&lt;/a&gt;, and provides many core capabilities:&lt;/p&gt;
+&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
+- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
+- HTTP pipeline with custom policies.
+- Better error-handling.
+- Support uniform telemetry across all languages."&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
+- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
+- HTTP pipeline with custom policies.
+- Better error-handling.
+- Support uniform telemetry across all languages.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: For more information about unified authentication, please refer to &lt;a href="https://docs.microsoft.com//dotnet/api/overview/azure/identity-readme?view=azure-dotnet" rel="nofollow"&gt;Microsoft Azure Identity documentation for .NET&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.VoiceLive_1.0.0-beta.1"&gt;Azure.AI.VoiceLive_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2025-09-16)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;p&gt;Initial Addition of VoiceLiveClient and associated classes.&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
