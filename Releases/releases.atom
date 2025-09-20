@@ -1,39 +1,54 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2025-09-19T00:07:35Z</updated>
+  <updated>2025-09-20T00:06:31Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-09-18</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-09-18</id>
+    <title>aws/aws-sdk-net - Releases - 2025-09-19</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-09-19</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-09-19T00:07:12Z</updated>
+    <updated>2025-09-20T00:06:03Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1126.0"&gt;3.7.1126.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.95.0"&gt;4.0.95.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1126.0 (2025-09-18 18:38 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.95.0 (2025-09-19 18:45 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Bedrock (3.7.503.0)
+&lt;li&gt;BedrockAgentCoreControl (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;Release includes an increase to the maximum policy build document size, an update to DeleteAutomatedReasoningPolicyBuildWorkflow to add ResourceInUseException, and corrections to UpdateAutomatedReasoningPolicyTestCaseRequest.&lt;/li&gt;
+&lt;li&gt;Add tagging and VPC support to AgentCore Runtime, Code Interpreter, and Browser resources. Add support for configuring request headers in Runtime. Fix AgentCore Runtime shape names.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Budgets (3.7.504.0)
+&lt;li&gt;ConfigService (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Added BillingViewHealthStatus Exception which is thrown when a Budget is created or updated with a Billing View that is not in the HEALTHY status&lt;/li&gt;
+&lt;li&gt;Add UNKNOWN state to RemediationExecutionState and add IN_PROGRESS/EXITED/UNKNOWN states to RemediationExecutionStepState.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ChimeSDKMessaging (3.7.501.0)
+&lt;li&gt;Connect (4.0.11.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon Chime SDK Messaging GetMessagingSessionEndpoint API now returns dual-stack WebSocket endpoints supporting IPv4/IPv6.&lt;/li&gt;
+&lt;li&gt;This release adds a persistent connection field to UserPhoneConfig that maintains agent's softphone media connection for faster call connections.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (3.7.513.0)
+&lt;li&gt;KendraRanking (4.0.0.23)
 &lt;ul&gt;
-&lt;li&gt;Allowed AMIs adds support for four new parameters - marketplaceProductCodes, deprecationTimeCondition, creationDateCondition and imageNames&lt;/li&gt;
+&lt;li&gt;Model whitespace change - no client difference&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LicenseManagerUserSubscriptions (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;Added support for cross-account Active Directories.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaLive (4.0.6.0)
+&lt;ul&gt;
+&lt;li&gt;Add MinBitrate for QVBR mode under H264/H265/AV1 output codec. Add GopBReference, GopNumBFrames, SubGopLength fields under H265 output codec.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SQS (4.0.1.4)
+&lt;ul&gt;
+&lt;li&gt;Update invalid character handling documentation for SQS SendMessage API&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -41,28 +56,49 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.94.0"&gt;4.0.94.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1127.0"&gt;3.7.1127.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.94.0 (2025-09-18 18:27 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1127.0 (2025-09-19 18:43 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Bedrock (4.0.11.0)
+&lt;li&gt;BedrockAgentCoreControl (3.7.502.0)
 &lt;ul&gt;
-&lt;li&gt;Release includes an increase to the maximum policy build document size, an update to DeleteAutomatedReasoningPolicyBuildWorkflow to add ResourceInUseException, and corrections to UpdateAutomatedReasoningPolicyTestCaseRequest.&lt;/li&gt;
+&lt;li&gt;Add tagging and VPC support to AgentCore Runtime, Code Interpreter, and Browser resources. Add support for configuring request headers in Runtime. Fix AgentCore Runtime shape names.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Budgets (4.0.5.0)
+&lt;li&gt;ConfigService (3.7.502.0)
 &lt;ul&gt;
-&lt;li&gt;Added BillingViewHealthStatus Exception which is thrown when a Budget is created or updated with a Billing View that is not in the HEALTHY status&lt;/li&gt;
+&lt;li&gt;Add UNKNOWN state to RemediationExecutionState and add IN_PROGRESS/EXITED/UNKNOWN states to RemediationExecutionStepState.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ChimeSDKMessaging (4.0.1.0)
+&lt;li&gt;Connect (3.7.507.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon Chime SDK Messaging GetMessagingSessionEndpoint API now returns dual-stack WebSocket endpoints supporting IPv4/IPv6.&lt;/li&gt;
+&lt;li&gt;This release adds a persistent connection field to UserPhoneConfig that maintains agent's softphone media connection for faster call connections.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.39.0)
+&lt;li&gt;KendraRanking (3.7.500.21)
 &lt;ul&gt;
-&lt;li&gt;Allowed AMIs adds support for four new parameters - marketplaceProductCodes, deprecationTimeCondition, creationDateCondition and imageNames&lt;/li&gt;
+&lt;li&gt;Model whitespace change - no client difference&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LicenseManagerUserSubscriptions (3.7.502.0)
+&lt;ul&gt;
+&lt;li&gt;Added support for cross-account Active Directories.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaLive (3.7.504.0)
+&lt;ul&gt;
+&lt;li&gt;Add MinBitrate for QVBR mode under H264/H265/AV1 output codec. Add GopBReference, GopNumBFrames, SubGopLength fields under H265 output codec.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SQS (3.7.501.12)
+&lt;ul&gt;
+&lt;li&gt;Update invalid character handling documentation for SQS SendMessage API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.500.21
+&lt;ul&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -73,128 +109,78 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-09-18</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-09-18</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-09-19</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-09-19</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-09-19T00:07:13Z</updated>
+    <updated>2025-09-20T00:06:04Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Agents.Persistent_1.2.0-beta.5"&gt;Azure.AI.Agents.Persistent_1.2.0-beta.5&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.5 (2025-09-18)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix issue with image block serialization &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/52571" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/52571/hovercard"&gt;issue&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Language.Conversations_2.0.0-beta.4"&gt;Azure.AI.Language.Conversations_2.0.0-beta.4&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;2.0.0-beta.4 (2025-09-18)&lt;/h2&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;removed &lt;code&gt;AIConversation&lt;/code&gt; and &lt;code&gt;ConversationalAIItem&lt;/code&gt;, and reuse &lt;code&gt;TextConversation&lt;/code&gt; and &lt;code&gt;TextConversationItem&lt;/code&gt; for AI Conversation Analyze feature.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Communication.Sms_1.0.2"&gt;Azure.Communication.Sms_1.0.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Communication.Email_1.0.2"&gt;Azure.Communication.Email_1.0.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;h2&gt;1.0.2 (2025-09-19)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Dependency versions updated.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to &lt;code&gt;1.47.3&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2025-09-18</title>
-    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2025-09-18</id>
-    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-    <updated>2025-09-19T00:07:32Z</updated>
-    <content type="html">
-                &lt;div&gt;
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Hci.Vm_1.0.0-beta.1"&gt;Azure.ResourceManager.Hci.Vm_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2025-09-19)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;p&gt;This package follows the &lt;a href="https://azure.github.io/azure-sdk/general_introduction.html" rel="nofollow"&gt;new Azure SDK guidelines&lt;/a&gt;, and provides many core capabilities:&lt;/p&gt;
+&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
+- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
+- HTTP pipeline with custom policies.
+- Better error-handling.
+- Support uniform telemetry across all languages."&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
+- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
+- HTTP pipeline with custom policies.
+- Better error-handling.
+- Support uniform telemetry across all languages.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This package is a Public Preview version, so expect incompatible changes in subsequent releases as we improve the product. To provide feedback, submit an issue in our &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues"&gt;Azure SDK for .NET GitHub repo&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: For more information about unified authentication, please refer to &lt;a href="https://docs.microsoft.com//dotnet/api/overview/azure/identity-readme?view=azure-dotnet" rel="nofollow"&gt;Microsoft Azure Identity documentation for .NET&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.AspNet-1.12.0-beta.2"&gt;Instrumentation.AspNet-1.12.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Quota_1.2.0-beta.1"&gt;Azure.ResourceManager.Quota_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.AspNet/1.12.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.AspNet v1.12.0-beta.2&lt;/a&gt;&lt;/p&gt;
+                                &lt;h2&gt;1.2.0-beta.1 (2025-09-17)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt;: Renamed &lt;code&gt;MeterProviderBuilderExtensions&lt;/code&gt; and&lt;br&gt;
-&lt;code&gt;TracerProviderBuilderExtensions&lt;/code&gt; to&lt;br&gt;
-&lt;code&gt;AspNetInstrumentationMeterProviderBuilderExtensions&lt;/code&gt;&lt;br&gt;
-and &lt;code&gt;AspNetInstrumentationTracerProviderBuilderExtensions&lt;/code&gt; respectively.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2910" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2910/hovercard"&gt;#2910&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt;: Made metrics generation independent from traces.&lt;br&gt;
-Tracing must no longer be enabled to calculate metrics. A compatible version&lt;br&gt;
-of &lt;code&gt;OpenTelemetry.Instrumentation.AspNet.TelemetryHttpModule&lt;/code&gt; is required.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2970" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2970/hovercard"&gt;#2970&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt;: Metrics related option renamed:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;delegate &lt;code&gt;AspNetMetricsInstrumentationOptions.EnrichFunc&lt;/code&gt; to&lt;br&gt;
-&lt;code&gt;AspNetMetricsInstrumentationOptions.EnrichWithHttpContextAction&lt;/code&gt;,&lt;/li&gt;
-&lt;li&gt;property &lt;code&gt;AspNetMetricsInstrumentationOptions.Enrich&lt;/code&gt; to&lt;br&gt;
-&lt;code&gt;AspNetMetricsInstrumentationOptions.EnrichWithHttpContext&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3070" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3070/hovercard"&gt;#3070&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Upgraded api-version tag from 'package-2025-03-01' to 'package-2025-09-01'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/520e1f6bc250b4ce51a22eaa7583cc0b24564b71/specification/quota/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/520e1f6bc250b4ce51a22eaa7583cc0b24564b71/specification/quota/resource-manager/readme.md&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt;: Change in public API contract.&lt;br&gt;
-All usages of &lt;code&gt;HttpRequest&lt;/code&gt;, &lt;code&gt;HttpResponse&lt;/code&gt; and &lt;code&gt;HttpContext&lt;/code&gt; replaced by&lt;br&gt;
-&lt;code&gt;HttpRequestBase&lt;/code&gt;, &lt;code&gt;HttpResponseBase&lt;/code&gt; and &lt;code&gt;HttpContextBase&lt;/code&gt; respectively.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3110" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3110/hovercard"&gt;#3110&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AspNet-1.12.0-beta.2/src/OpenTelemetry.Instrumentation.AspNet/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.AspNet.TelemetryHttpModule/1.12.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.AspNet.TelemetryHttpModule v1.12.0-beta.2&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt;: Modified request lifecycle callbacks to always fire.&lt;br&gt;
-This is required as part of making ASP.NET metrics generation&lt;br&gt;
-independent from traces.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2970" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2970/hovercard"&gt;#2970&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt;: Activity source name changed from&lt;br&gt;
-&lt;code&gt;OpenTelemetry.Instrumentation.AspNet.Telemetry&lt;/code&gt; to&lt;br&gt;
-&lt;code&gt;OpenTelemetry.Instrumentation.AspNet&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3071" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3071/hovercard"&gt;#3071&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt;: Following constants was removed from the public API&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;TelemetryHttpModule.AspNetActivityName&lt;/code&gt;,&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;TelemetryHttpModule.AspNetSourceName&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3071" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3071/hovercard"&gt;#3071&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt;: Change in public API contract.&lt;br&gt;
-All usages of &lt;code&gt;HttpContext&lt;/code&gt; replaced by &lt;code&gt;HttpContextBase&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3110" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3110/hovercard"&gt;#3110&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AspNet-1.12.0-beta.2/src/OpenTelemetry.Instrumentation.AspNet.TelemetryHttpModule/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.VirtualEnclaves_1.0.0-beta.1"&gt;Azure.ResourceManager.VirtualEnclaves_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2025-09-19)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;p&gt;This package follows the &lt;a href="https://azure.github.io/azure-sdk/general_introduction.html" rel="nofollow"&gt;new Azure SDK guidelines&lt;/a&gt;, and provides many core capabilities:&lt;/p&gt;
+&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
+- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
+- HTTP pipeline with custom policies.
+- Better error-handling.
+- Support uniform telemetry across all languages."&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
+- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
+- HTTP pipeline with custom policies.
+- Better error-handling.
+- Support uniform telemetry across all languages.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This package is a Public Preview version, so expect incompatible changes in subsequent releases as we improve the product. To provide feedback, submit an issue in our &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues"&gt;Azure SDK for .NET GitHub repo&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: For more information about unified authentication, please refer to &lt;a href="https://docs.microsoft.com//dotnet/api/overview/azure/identity-readme?view=azure-dotnet" rel="nofollow"&gt;Microsoft Azure Identity documentation for .NET&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
