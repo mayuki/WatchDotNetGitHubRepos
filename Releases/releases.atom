@@ -1,44 +1,85 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2025-09-23T00:07:32Z</updated>
+  <updated>2025-09-24T00:07:32Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-09-22</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-09-22</id>
+    <title>aws/aws-sdk-net - Releases - 2025-09-23</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-09-23</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-09-23T00:07:02Z</updated>
+    <updated>2025-09-24T00:07:10Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1128.0"&gt;3.7.1128.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.97.0"&gt;4.0.97.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1128.0 (2025-09-22 18:22 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.97.0 (2025-09-23 18:23 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Batch (3.7.500.25)
+&lt;li&gt;CleanRooms (4.0.7.0)
 &lt;ul&gt;
-&lt;li&gt;Starting in JAN 2026, AWS Batch will change the default AMI for new Amazon ECS compute environments from Amazon Linux 2 to Amazon Linux 2023. We recommend migrating AWS Batch Amazon ECS compute environments to Amazon Linux 2023 to maintain optimal performance and security.&lt;/li&gt;
+&lt;li&gt;Added support for running incremental ID mapping for rule-based workflows.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EKS (3.7.504.0)
+&lt;li&gt;EC2 (4.0.40.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for RepairConfig overrides and configurations in EKS Managed Node Groups.&lt;/li&gt;
+&lt;li&gt;Add Amazon EC2 R8gn instance types&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Imagebuilder (3.7.502.0)
+&lt;li&gt;EntityResolution (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;Version ARNs are no longer required for the EC2 Image Builder list-image-build-version, list-component-build-version, and list-workflow-build-version APIs. Calling these APIs without the ARN returns all build versions for the given resource type in the requesting account.&lt;/li&gt;
+&lt;li&gt;Support incremental id mapping workflow for AWS Entity Resolution&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (3.7.501.7)
+&lt;li&gt;SimpleSystemsManagement (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;Fixed a bug where PutObject was failing when sending zero-byte InputStream with DisablePayloadSigning set to true.&lt;/li&gt;
+&lt;li&gt;Added Dualstack support to GetDeployablePatchSnapshotForInstance&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 3.7.500.22
+&lt;li&gt;SSOAdmin (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;Add support for encryption at rest with Customer Managed KMS Key in AWS IAM Identity Center&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SSOOIDC (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;This release includes exception definition and documentation updates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Extension Extensions.Bedrock.MEAI (4.0.3.2)
+&lt;ul&gt;
+&lt;li&gt;Updating AssemblyFileVersion.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Extension Extensions.CborProtocol (4.0.0.3)
+&lt;ul&gt;
+&lt;li&gt;Updating AssemblyFileVersion.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Extension Extensions.CloudFront.Signers (4.0.0.2)
+&lt;ul&gt;
+&lt;li&gt;Updating AssemblyFileVersion.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Extension Extensions.CrtIntegration (4.0.0.2)
+&lt;ul&gt;
+&lt;li&gt;Updating AssemblyFileVersion.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Extension Extensions.EC2.DecryptPassword (4.0.0.2)
+&lt;ul&gt;
+&lt;li&gt;Updating AssemblyFileVersion.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Extension Extensions.NETCore.Setup (4.0.3.1)
+&lt;ul&gt;
+&lt;li&gt;Updating AssemblyFileVersion.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.0.29
+&lt;ul&gt;
+&lt;li&gt;Skip adding extra empty chunk for empty streams in TrailingHeadersWrapperStream.&lt;/li&gt;
+&lt;li&gt;Updating partitions.json file.&lt;/li&gt;
 &lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -47,28 +88,45 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.96.0"&gt;4.0.96.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1129.0"&gt;3.7.1129.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.96.0 (2025-09-22 18:22 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1129.0 (2025-09-23 18:26 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Batch (4.0.2.11)
+&lt;li&gt;CleanRooms (3.7.505.0)
 &lt;ul&gt;
-&lt;li&gt;Starting in JAN 2026, AWS Batch will change the default AMI for new Amazon ECS compute environments from Amazon Linux 2 to Amazon Linux 2023. We recommend migrating AWS Batch Amazon ECS compute environments to Amazon Linux 2023 to maintain optimal performance and security.&lt;/li&gt;
+&lt;li&gt;Added support for running incremental ID mapping for rule-based workflows.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EKS (4.0.6.0)
+&lt;li&gt;EC2 (3.7.514.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for RepairConfig overrides and configurations in EKS Managed Node Groups.&lt;/li&gt;
+&lt;li&gt;Add Amazon EC2 R8gn instance types&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Imagebuilder (4.0.2.0)
+&lt;li&gt;EntityResolution (3.7.502.0)
 &lt;ul&gt;
-&lt;li&gt;Version ARNs are no longer required for the EC2 Image Builder list-image-build-version, list-component-build-version, and list-workflow-build-version APIs. Calling these APIs without the ARN returns all build versions for the given resource type in the requesting account.&lt;/li&gt;
+&lt;li&gt;Support incremental id mapping workflow for AWS Entity Resolution&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (4.0.7.3)
+&lt;li&gt;SimpleSystemsManagement (3.7.502.0)
 &lt;ul&gt;
-&lt;li&gt;Fixed a bug where PutObject was failing when sending zero-byte InputStream with DisablePayloadSigning set to true.&lt;/li&gt;
+&lt;li&gt;Added Dualstack support to GetDeployablePatchSnapshotForInstance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SSOAdmin (3.7.502.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for encryption at rest with Customer Managed KMS Key in AWS IAM Identity Center&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SSOOIDC (3.7.502.0)
+&lt;ul&gt;
+&lt;li&gt;This release includes exception definition and documentation updates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.500.23
+&lt;ul&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;Updating partitions.json file.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -79,52 +137,61 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-09-22</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-09-22</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-09-23</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-09-23</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-09-23T00:07:03Z</updated>
+    <updated>2025-09-24T00:07:11Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.VoiceLive_1.0.0-beta.2"&gt;Azure.AI.VoiceLive_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.EventHubs_1.2.1"&gt;Azure.ResourceManager.EventHubs_1.2.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.2 (2025-09-22)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;p&gt;Added overloads for MessageItem creation to accept a single content part.&lt;/p&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;p&gt;AudioFormat was split into InputAudioFormat and OutputAudioFormat.&lt;br&gt;
-Emotion classes / options dropped.&lt;br&gt;
-Eou and TurnDetection classes renamed.&lt;br&gt;
-API properties that were duration based are now TimeSpans&lt;br&gt;
-Methods to configure session collapsed to ConfigureSession&lt;br&gt;
-Renamed ToolChoiceFunctionObjectFunction to ToolChoiceFunctionObject&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/System.ClientModel_1.7.0"&gt;System.ClientModel_1.7.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.7.0 (2025-09-22)&lt;/h2&gt;
+                                &lt;h2&gt;1.2.1 (2025-09-23)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Added &lt;code&gt;ClientConnection&lt;/code&gt; constructor, accepting credentials and metadata.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added &lt;code&gt;JsonPatch&lt;/code&gt; which allows for applying JSON Patch operations to JSON documents.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.EventHubs&lt;/code&gt; AOT-compatible&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Extensions.Azure_1.13.0"&gt;Microsoft.Extensions.Azure_1.13.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebPubSub.AspNetCore_1.5.0"&gt;Microsoft.Azure.WebPubSub.AspNetCore_1.5.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.13.0 (2025-09-22)&lt;/h2&gt;
+                                &lt;h2&gt;1.5.0 (2025-09-23)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Support a custom hub name in &lt;code&gt;MapWebPubSubHub&lt;/code&gt; extension method.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated the Azure.Identity dependency to version 1.16.0&lt;/li&gt;
+&lt;li&gt;Upgrade &lt;code&gt;Azure.Messaging.WebPubSub&lt;/code&gt; to 1.6.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.49.0"&gt;Azure.Core_1.49.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.49.0 (2025-09-22)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Adopt System.ClientModel 1.7.0&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Network_1.12.0"&gt;Azure.ResourceManager.Network_1.12.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.12.0 (2025-09-19)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version tag from 'package-2024-07-01' to 'package-2024-10-01'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/cbfe154470792d8aea255885a4a96609603982cc/specification/network/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/cbfe154470792d8aea255885a4a96609603982cc/specification/network/resource-manager/readme.md&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded Azure.Core from 1.47.3 to 1.48.0&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -133,87 +200,55 @@ Renamed ToolChoiceFunctionObjectFunction to ToolChoiceFunctionObject&lt;/p&gt;
             </content>
   </entry>
   <entry>
-    <title>DataDog/dd-trace-dotnet - Releases - 2025-09-22</title>
-    <id>https://github.com/DataDog/dd-trace-dotnet#2025-09-22</id>
-    <link href="https://github.com/DataDog/dd-trace-dotnet" />
-    <updated>2025-09-23T00:07:04Z</updated>
+    <title>microsoft/microsoft-ui-xaml - Releases - 2025-09-23</title>
+    <id>https://github.com/microsoft/microsoft-ui-xaml#2025-09-23</id>
+    <link href="https://github.com/microsoft/microsoft-ui-xaml" />
+    <updated>2025-09-24T00:07:28Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/releases/tag/v3.27.0"&gt;3.27.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/releases/tag/winui3/release/1.8.1"&gt;WinUI 3 in WinAppSDK 1.8.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;Summary&lt;/h2&gt;
-&lt;p&gt;Various bug fixes and optimizations. Includes fix for Runtime Metrics that could be missing and more accurate telemetry reporting.&lt;/p&gt;
-&lt;h2&gt;Changes&lt;/h2&gt;
-&lt;h3&gt;Tracer&lt;/h3&gt;
+                                &lt;p&gt;The source code for the version of WinUI 3 in the WinAppSDK 1.8.1 is available. 1.8.1 is a stable servicing release for the WinAppSDK that fixes critical bugs for 1.8.&lt;/p&gt;
+&lt;p&gt;Check out our &lt;a href="https://aka.ms/windowsappsdk/1.8/1.8.1/release-notes" rel="nofollow"&gt;release notes&lt;/a&gt; for the list of issues fixed in this release.&lt;/p&gt;
+&lt;p&gt;Download the NuGet package for 1.8.1 here: &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.7.250916003" rel="nofollow"&gt;https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.7.250916003&lt;/a&gt;.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>microsoft/WindowsAppSDK - Releases - 2025-09-23</title>
+    <id>https://github.com/microsoft/WindowsAppSDK#2025-09-23</id>
+    <link href="https://github.com/microsoft/WindowsAppSDK" />
+    <updated>2025-09-24T00:07:28Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.8.1"&gt;Windows App SDK 1.8.1 (1.8.250916003)&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Windows App SDK 1.8.1 ( 1.8.250916003 )&lt;/h2&gt;
+&lt;p&gt;WinAppSDK 1.8.1 is the latest stable version of WinAppSDK 1.8 providing new features and improvements to the platform. &lt;strong&gt;To see everything that's new and changed, see the full &lt;a href="https://aka.ms/windowsappsdk/1.8/1.8.1/release-notes" rel="nofollow"&gt;Windows App SDK 1.8 release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Whats new in WinAppSDK 1.8.1:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Remove unused dynamic settings (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3394807089" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7487" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7487/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7487"&gt;#7487&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix incorrect usages of TracerManager PerTraceSettings (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3394828215" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7488" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7488/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7488"&gt;#7488&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Add additional compiler flags to allow &lt;code&gt;required&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3405875283" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7501" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7501/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7501"&gt;#7501&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix .NET 10 RC1 bugs (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3409666460" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7506" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7506/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7506"&gt;#7506&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;fix(telemetry): correct heartbeat interval calculation (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3410444116" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7507" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7507/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7507"&gt;#7507&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix &lt;code&gt;ManualInstrumentationConfigSource&lt;/code&gt; and introduce base type (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3410848696" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7508" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7508/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7508"&gt;#7508&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Allow optimized creating of composite configuration source (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3410863775" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7509" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7509/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7509"&gt;#7509&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Move partial flush settings from &lt;code&gt;ExporterSettings&lt;/code&gt; to &lt;code&gt;TracerSettings&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3417264740" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7516" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7516/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7516"&gt;#7516&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;fix: change Language value from '.NET' to 'dotnet' in trace headers (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3422247309" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7523" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7523/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7523"&gt;#7523&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Hide problematic public APIs using &lt;code&gt;[EditorBrowsable]&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3429969462" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7531" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7531/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7531"&gt;#7531&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Add a Continuous Profiler availability check (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3430763657" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7534" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7534/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7534"&gt;#7534&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href="/microsoft/WindowsAppSDK/blob/v1.8.1/windows/ai/new-windows-ml/overview"&gt;Windows ML&lt;/a&gt; enables developers to run ONNX AI models locally on Windows PCs on a shared system-wide copy of the ONNX Runtime using dynamically-installed hardware-specific execution providers.&lt;/li&gt;
+&lt;li&gt;LanguageModel text generation is now available using Phi Silica to generate text responses to broad user prompts with built-in content moderation.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;ASM&lt;/h3&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;[AAP] Update waf version to v1.28.0 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3398990096" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7494" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7494/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7494"&gt;#7494&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[AAP] Update waf to v1.28.1 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3422433689" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7524" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7524/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7524"&gt;#7524&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[AAP] Test endpoint collection with APM tracing disabled (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3431044790" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7535" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7535/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7535"&gt;#7535&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.8.250916003" rel="nofollow"&gt;1.8.250916003 NuGet&lt;/a&gt; package to use WinAppSDK 1.8 in your app.&lt;/li&gt;
+&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Debugger&lt;/h3&gt;
+&lt;h3&gt;Getting Started&lt;/h3&gt;
+&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[Dynamic Instrumentation] Added native hot standby mode to support Remote Enablement and Stable Config (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3358804018" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7441" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7441/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7441"&gt;#7441&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Dynamic Instrumentation] Avoid async instrumentation if the type &lt;code&gt;AsyncMethodDebuggerInvokerV2&lt;/code&gt; does not exist (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3414060591" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7513" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7513/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7513"&gt;#7513&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools &lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Serverless&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[Azure Functions] bump &lt;code&gt;Datadog.Serverless.Compat&lt;/code&gt; nuget package reference (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3399625198" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7497" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7497/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7497"&gt;#7497&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;More cleanup in native loader code (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3386868756" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7475" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7475/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7475"&gt;#7475&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix dependabot again by allowing private feed access (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3387728632" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7480" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7480/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7480"&gt;#7480&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Tracer] Updating Statsd in RuntimeEventListener (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3413869442" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7512" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7512/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7512"&gt;#7512&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Miscellaneous&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[OTEL] Metrics API Support - Configurations &amp;amp; Telemetry (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3336130582" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7420" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7420/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7420"&gt;#7420&lt;/a&gt;)
-&lt;ul&gt;
-&lt;li&gt;This feature is incomplete and still in development&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Simplify Windows benchmarks credential setup (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3401522955" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7498" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7498/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7498"&gt;#7498&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Allow passing fallback values to &lt;code&gt;IntegrationSettingsCollection&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3410897225" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7510" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7510/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7510"&gt;#7510&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Add AGENTS.md file (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3433514112" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7539" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7539/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7539"&gt;#7539&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Build / Test&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Timeout error installer_smoke_tests (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3383309025" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7468" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7468/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7468"&gt;#7468&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Attempt to improve Kafka timeout flake in tests (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3385128049" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7474" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7474/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7474"&gt;#7474&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Try fixing ASAN job crashes (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3387134410" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7476" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7476/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7476"&gt;#7476&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Update Windows macrobenchmark tooling (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3387889629" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7481" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7481/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7481"&gt;#7481&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Update Windows microbenchmark tooling (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3388152480" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7482" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7482/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7482"&gt;#7482&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Hands-off config] add integration test (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3388154817" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7483" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7483/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7483"&gt;#7483&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Test Package Versions Bump] Updating package versions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3391004585" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7484" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7484/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7484"&gt;#7484&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Check for errors when signing (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3397882038" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7490" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7490/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7490"&gt;#7490&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Sign artifacts using 0.3.5 of the &lt;code&gt;dd wcs&lt;/code&gt; tool (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3398115071" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7492" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7492/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7492"&gt;#7492&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Decrease Nuke restore verbosity job (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3398515039" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7493" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7493/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7493"&gt;#7493&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Decrease log level when uncompressing files in Nuke (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3399141961" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7496" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7496/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7496"&gt;#7496&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix macos build (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3405945335" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7503" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7503/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7503"&gt;#7503&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Mark kafkatests as flaky (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3409577238" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7505" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7505/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7505"&gt;#7505&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Upload execution benchmark log files and cleanup (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3421402654" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7521" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7521/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7521"&gt;#7521&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;chore(CI): add ForceDebugRun variable for debug control system tests (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3425843523" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7528" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7528/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7528"&gt;#7528&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Ensure &lt;code&gt;execution_benchmarks&lt;/code&gt; download the profiler (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3429471641" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7529" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7529/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7529"&gt;#7529&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Capture timeout exceptions in IAST tests (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3430292089" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7533" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7533/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7533"&gt;#7533&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix the &lt;code&gt;verify_app_trimming_changes_are_persisted&lt;/code&gt; job (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3440349072" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7542" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7542/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7542"&gt;#7542&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/compare/v3.26.3...v3.27.0"&gt;Changes since 3.26.3&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
