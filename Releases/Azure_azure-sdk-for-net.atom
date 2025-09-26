@@ -1,83 +1,50 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-09-25T00:06:51Z</updated>
+  <updated>2025-09-26T00:06:50Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-09-24</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-09-24</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-09-25</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-09-25</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-09-25T00:06:51Z</updated>
+    <updated>2025-09-26T00:06:50Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs_12.25.1"&gt;Azure.Storage.Blobs_12.25.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Health.Deidentification_1.1.0-beta.1"&gt;Azure.Health.Deidentification_1.1.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.25.1 (2025-09-24)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+                                &lt;h2&gt;1.1.0-beta.1 (2025-09-30)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed bug for processing partitioned downloads for empty blobs with content validation enabled.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;DeidentificationOperationType.SurrogateOnly&lt;/code&gt;, which returns output text where user-defined PHI entities are replaced with realistic replacement values. When using this operation, include &lt;code&gt;DeidentificationContent.TaggedEntities&lt;/code&gt;, which allows user input of PHI entities detected in the input text. The service will skip tagging and apply surrogation directly to the user-defined entities.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;DeidentificationCustomizationOptions.InputLocale&lt;/code&gt; to allow specifying the locale of the input text for TAG and REDACT operations.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Compute_1.12.0"&gt;Azure.ResourceManager.Compute_1.12.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DisconnectedOperations_1.0.0-beta.1"&gt;Azure.ResourceManager.DisconnectedOperations_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.12.0 (2025-09-26)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2025-09-24)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version tag from 'package-2025-02-01' to 'package-2025-04-01'&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;VirtualMachineScaleSet.ScaleOut&lt;/code&gt; Operation.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;Tags&lt;/code&gt; to &lt;code&gt;VirtualMachineScaleSetNetworkConfiguration&lt;/code&gt;, &lt;code&gt;VirtualMachineScaleSetIPConfiguration&lt;/code&gt;, &lt;code&gt;VirtualMachineScaleSetPublicIPAddressConfiguration&lt;/code&gt; and &lt;code&gt;VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings&lt;/code&gt; classes.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;Placement&lt;/code&gt; property to &lt;code&gt;VirtualMachineScaleSet&lt;/code&gt; class.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ZoneAllocationPolicy&lt;/code&gt; property to &lt;code&gt;ResiliencyPolicy&lt;/code&gt; class.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;MaxInstancePercentPerZonePolicy&lt;/code&gt; property to &lt;code&gt;AutomaticZoneRebalancingPolicy&lt;/code&gt; class.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ReservationType&lt;/code&gt; property to &lt;code&gt;CapacityReservationGroup&lt;/code&gt; class.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ScheduleProfile&lt;/code&gt; property to &lt;code&gt;CapacityReservation&lt;/code&gt; class.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;AddProxyAgentExtension&lt;/code&gt; property to &lt;code&gt;ProxyAgentSettings&lt;/code&gt; class.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ScriptShellTypes&lt;/code&gt; enum to &lt;code&gt;RunCommandScriptSource&lt;/code&gt; class.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;GalleryScriptReferenceId&lt;/code&gt; property to &lt;code&gt;RunCommandScriptSource&lt;/code&gt; class.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;AllInstancesDown&lt;/code&gt; property to &lt;code&gt;ScheduledEventsPolicy&lt;/code&gt; class.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ScheduledEventsApiVersion&lt;/code&gt; property to &lt;code&gt;EventGridAndResourceGraph&lt;/code&gt; class.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;AutomaticZoneRebalancing&lt;/code&gt; property to &lt;code&gt;OrchetrationServiceNames&lt;/code&gt; class.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;highSpeedInterconnectPlacement&lt;/code&gt; property to &lt;code&gt;VirtualMachineScaleSetProperties&lt;/code&gt; class.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;patchNameMasksToInclude&lt;/code&gt; and &lt;code&gt;patchNameMasksToExclude&lt;/code&gt; properties to &lt;code&gt;WindowsParameters&lt;/code&gt; class.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;The Disconnected operations resource provider offers APIs for managing the lifecycle of a disconnected operations device and getting the required software for deploying and updating the disconnected operations control plane.&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Quota_1.2.0"&gt;Azure.ResourceManager.Quota_1.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Storage_1.5.0"&gt;Azure.ResourceManager.Storage_1.5.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0 (2025-09-25)&lt;/h2&gt;
+                                &lt;h2&gt;1.5.0 (2025-09-26)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Stable release for api-version '2025-09-01'.&lt;/li&gt;
-&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.Quota&lt;/code&gt; AOT-compatible.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DataProtectionBackup_1.7.0"&gt;Azure.ResourceManager.DataProtectionBackup_1.7.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.7.0 (2025-09-25)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;li&gt;Upgraded api-version tag from 'package-2024-01' to 'package-2025-01'. Tag details available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/9e8f84cab64ffb562abbb0790f2b1e7a707b5ad6/specification/storage/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/9e8f84cab64ffb562abbb0790f2b1e7a707b5ad6/specification/storage/resource-manager/readme.md&lt;/a&gt;.
 &lt;ul&gt;
-&lt;li&gt;Stable version release for API version 2025-07-01.
-&lt;ul&gt;
-&lt;li&gt;Added property &lt;code&gt;RenameTo&lt;/code&gt; in the model &lt;code&gt;ItemPathBasedRestoreCriteria&lt;/code&gt; to support rename during restore.&lt;/li&gt;
-&lt;li&gt;Added model &lt;code&gt;AdlsBlobBackupDatasourceParameters&lt;/code&gt; to support ADLS Gen2 backup datasource.&lt;/li&gt;
+&lt;li&gt;Supported new property isSmbOauth on Storage accounts.&lt;/li&gt;
+&lt;li&gt;Supported new properties Zone and ZonePlacementPolicy on Storage accounts.&lt;/li&gt;
+&lt;li&gt;Supported new property EncryptionInTransit in NFS and SMB settings.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.DataProtectionBackup&lt;/code&gt; AOT-compatible.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded Azure.Core from 1.45.0 to 1.49.0&lt;/li&gt;
-&lt;li&gt;Upgraded Azure.ResourceManager from 1.13.0 to 1.13.2&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;

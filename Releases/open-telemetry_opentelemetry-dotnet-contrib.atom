@@ -1,6 +1,58 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>open-telemetry/opentelemetry-dotnet-contrib - Releases</title>
   <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-  <updated>2025-09-25T00:07:12Z</updated>
+  <updated>2025-09-26T00:07:08Z</updated>
   <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib</id>
+  <entry>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2025-09-25</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2025-09-25</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2025-09-26T00:07:08Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.SqlClient-1.12.0-beta.3"&gt;Instrumentation.SqlClient-1.12.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.SqlClient/1.12.0-beta.3" rel="nofollow"&gt;OpenTelemetry.Instrumentation.SqlClient v1.12.0-beta.3&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Add &lt;code&gt;db.query.parameter.&amp;lt;key&amp;gt;&lt;/code&gt; attribute(s) to query spans if opted into using&lt;br&gt;
+the &lt;code&gt;OTEL_DOTNET_EXPERIMENTAL_SQLCLIENT_ENABLE_TRACE_DB_QUERY_PARAMETERS&lt;/code&gt;&lt;br&gt;
+environment variable. Not supported on .NET Framework.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3015" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3015/hovercard"&gt;#3015&lt;/a&gt;,&lt;br&gt;
+&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3081" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3081/hovercard"&gt;#3081&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fix activities not being stopped on .NET Framework when using a global activity&lt;br&gt;
+listener.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3041" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3041/hovercard"&gt;#3041&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Breaking change&lt;/strong&gt;: The &lt;code&gt;SetDbStatementForText&lt;/code&gt; property has been removed.&lt;br&gt;
+Behaviors related to this option are now always enabled.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3072" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3072/hovercard"&gt;#3072&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Breaking change&lt;/strong&gt;: The &lt;code&gt;Enrich&lt;/code&gt;, &lt;code&gt;Filter&lt;/code&gt; and &lt;code&gt;RecordException&lt;/code&gt; properties have&lt;br&gt;
+been removed for .NET Framework where they were non-functional.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3079" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3079/hovercard"&gt;#3079&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Breaking change&lt;/strong&gt;: The &lt;code&gt;Enrich&lt;/code&gt; property has been renamed to&lt;br&gt;
+&lt;code&gt;EnrichWithSqlCommand&lt;/code&gt; and no longer passes an event name to the delegate.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3080" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3080/hovercard"&gt;#3080&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.SqlClient-1.12.0-beta.3/src/OpenTelemetry.Instrumentation.SqlClient/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
