@@ -1,42 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2025-09-27T00:06:13Z</updated>
+  <updated>2025-09-28T00:07:53Z</updated>
   <id>https://github.com/grpc/grpc</id>
-  <entry>
-    <title>grpc/grpc - Releases - 2025-09-26</title>
-    <id>https://github.com/grpc/grpc#2025-09-26</id>
-    <link href="https://github.com/grpc/grpc" />
-    <updated>2025-09-27T00:06:13Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.75.1"&gt;Release v1.75.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;This is release gRPC Core 1.75.1 (gemini).&lt;/p&gt;
-&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This release contains refinements, improvements, and bug fixes.&lt;/p&gt;
-&lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;h3&gt;Python&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Release grpcio wheels with Python 3.14 support (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3295902862" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/40403" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/40403/hovercard" href="https://github.com/grpc/grpc/pull/40403"&gt;#40403&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Asyncio: fixes grpc shutdown race condition occurring during python interpreter finalizations. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3323428350" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/40447" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/40447/hovercard" href="https://github.com/grpc/grpc/pull/40447"&gt;#40447&lt;/a&gt;)
-&lt;ul&gt;
-&lt;li&gt;This also addresses previously reported issues with empty error message on Python interpreter exit (&lt;code&gt;Error in sys.excepthook:&lt;/code&gt;/&lt;code&gt;Original exception was:&lt;/code&gt; empty): &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2302293359" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/36655" data-hovercard-type="issue" data-hovercard-url="/grpc/grpc/issues/36655/hovercard" href="https://github.com/grpc/grpc/issues/36655"&gt;#36655&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2830408093" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/38679" data-hovercard-type="issue" data-hovercard-url="/grpc/grpc/issues/38679/hovercard" href="https://github.com/grpc/grpc/issues/38679"&gt;#38679&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1741250315" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/33342" data-hovercard-type="issue" data-hovercard-url="/grpc/grpc/issues/33342/hovercard" href="https://github.com/grpc/grpc/issues/33342"&gt;#33342&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Python 3.14: preserve current behavior when using grpc.aio async methods outside of a running event loop. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3440256904" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/40750" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/40750/hovercard" href="https://github.com/grpc/grpc/pull/40750"&gt;#40750&lt;/a&gt;)
-&lt;ul&gt;
-&lt;li&gt;Note: using async methods outside of a running event loop is &lt;a href="https://docs.python.org/3.14/library/asyncio-policy.html#asyncio-policies" rel="nofollow"&gt;discouraged&lt;/a&gt; by Python, and &lt;strong&gt;will be deprecated in future gRPC releases&lt;/strong&gt;. Please use the &lt;a href="https://docs.python.org/3.14/library/asyncio-runner.html#asyncio.run" rel="nofollow"&gt;asyncio.run()&lt;/a&gt; function (or &lt;a href="https://docs.python.org/3.14/library/asyncio-runner.html#asyncio.Runner" rel="nofollow"&gt;asyncio.Runner&lt;/a&gt; for custom loop factories). For interactive mode, use dedicated &lt;a href="https://docs.python.org/3/library/asyncio.html#asyncio-cli" rel="nofollow"&gt;asyncio REPL&lt;/a&gt;: &lt;code&gt;python -m asyncio&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/grpc/grpc/compare/v1.75.0...v1.75.1"&gt;&lt;tt&gt;v1.75.0...v1.75.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
