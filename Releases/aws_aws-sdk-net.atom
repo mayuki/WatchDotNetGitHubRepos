@@ -1,45 +1,94 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-09-30T00:07:20Z</updated>
+  <updated>2025-10-01T00:07:56Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-09-29</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-09-29</id>
+    <title>aws/aws-sdk-net - Releases - 2025-09-30</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-09-30</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-09-30T00:07:20Z</updated>
+    <updated>2025-10-01T00:07:56Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1133.0"&gt;3.7.1133.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.102.0"&gt;4.0.102.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1133.0 (2025-09-29 18:17 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.102.0 (2025-09-30 18:38 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Bedrock (3.7.504.0)
+&lt;li&gt;ApplicationSignals (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;Release for fixing GetFoundationModel API behavior. Imported and custom models have their own exclusive API and GetFM should not accept those ARNS as input&lt;/li&gt;
+&lt;li&gt;Amazon CloudWatch Application Signals is introducing the Application Map to give users a more comprehensive view of their service health. Users will now be able to group services, track their latest deployments, and view automated audit findings concerning service performance.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockRuntime (3.7.505.0)
+&lt;li&gt;BedrockAgentCoreControl (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;New stop reason for Converse and ConverseStream&lt;/li&gt;
+&lt;li&gt;Tagging support for AgentCore Gateway&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Imagebuilder (3.7.503.0)
+&lt;li&gt;ChimeSDKVoice (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;This release introduces several new features and improvements to enhance pipeline management, logging, and resource configuration.&lt;/li&gt;
+&lt;li&gt;Added support for IPv4-only and dual-stack network configurations for VoiceConnector and CreateVoiceConnector API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;VPCLattice (3.7.502.0)
+&lt;li&gt;ConnectCases (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for specifying the number of IPv4 addresses in each ENI for the resource gateway for VPC Lattice.&lt;/li&gt;
+&lt;li&gt;This release adds support for two new related item types: ConnectCase for linking Amazon Connect cases and Custom for user-defined related items with configurable fields.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 3.7.500.26
+&lt;li&gt;CustomerProfiles (4.0.5.0)
 &lt;ul&gt;
-&lt;li&gt;Add user agent header to list of headers to ignore during signing&lt;/li&gt;
-&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;This release introduces ListProfileHistoryRecords and GetProfileHistoryRecord APIs for comprehensive profile history tracking with complete audit trails of creation, updates, merges, deletions, and data ingestion events.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DataSync (4.0.5.0)
+&lt;ul&gt;
+&lt;li&gt;Added support for FIPS VPC endpoints in FIPS-enabled AWS Regions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DataZone (4.0.10.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for creation of EMR on EKS Connections in Amazon DataZone.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DirectoryService (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Directory service now supports IPv6-native and dual-stack configurations for AWS Managed Microsoft AD, AD Connector, and Simple AD (dual-stack only). Additionally, AWS Managed Microsoft AD Standard Edition directories can be upgraded to Enterprise Edition directories through a single API call.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ECS (4.0.6.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for Managed Instances on Amazon ECS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;FSx (4.0.5.0)
+&lt;ul&gt;
+&lt;li&gt;Add Dual-Stack support for Amazon FSx for NetApp ONTAP and Windows File Server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaTailor (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding TPS Traffic Shaping to Prefetch Schedules&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;QuickSight (4.0.6.4)
+&lt;ul&gt;
+&lt;li&gt;added warnings to a few CLI pages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RDS (4.0.10.0)
+&lt;ul&gt;
+&lt;li&gt;Enhanced RDS error handling: Added DBProxyEndpointNotFoundFault, DBShardGroupNotFoundFault, KMSKeyNotAccessibleFault for snapshots/restores/backups, NetworkTypeNotSupported, StorageTypeNotSupportedFault for restores, and granular state validation faults. Changed DBInstanceNotReadyFault to HTTP 400.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Transfer (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for updating server identity provider type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.0.31
+&lt;ul&gt;
+&lt;li&gt;Update code generator to use fully qualified name for InvokeOptions to avoid name collisions&lt;/li&gt;
 &lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -48,33 +97,84 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.101.0"&gt;4.0.101.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1134.0"&gt;3.7.1134.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.101.0 (2025-09-29 18:18 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1134.0 (2025-09-30 18:37 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Bedrock (4.0.12.0)
+&lt;li&gt;ApplicationSignals (3.7.502.0)
 &lt;ul&gt;
-&lt;li&gt;Release for fixing GetFoundationModel API behavior. Imported and custom models have their own exclusive API and GetFM should not accept those ARNS as input&lt;/li&gt;
+&lt;li&gt;Amazon CloudWatch Application Signals is introducing the Application Map to give users a more comprehensive view of their service health. Users will now be able to group services, track their latest deployments, and view automated audit findings concerning service performance.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockRuntime (4.0.7.0)
+&lt;li&gt;BedrockAgentCoreControl (3.7.503.0)
 &lt;ul&gt;
-&lt;li&gt;New stop reason for Converse and ConverseStream&lt;/li&gt;
+&lt;li&gt;Tagging support for AgentCore Gateway&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Imagebuilder (4.0.3.0)
+&lt;li&gt;ChimeSDKVoice (3.7.502.0)
 &lt;ul&gt;
-&lt;li&gt;This release introduces several new features and improvements to enhance pipeline management, logging, and resource configuration.&lt;/li&gt;
+&lt;li&gt;Added support for IPv4-only and dual-stack network configurations for VoiceConnector and CreateVoiceConnector API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;VPCLattice (4.0.2.0)
+&lt;li&gt;ConnectCases (3.7.502.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for specifying the number of IPv4 addresses in each ENI for the resource gateway for VPC Lattice.&lt;/li&gt;
+&lt;li&gt;This release adds support for two new related item types: ConnectCase for linking Amazon Connect cases and Custom for user-defined related items with configurable fields.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 4.0.0.30
+&lt;li&gt;CustomerProfiles (3.7.502.0)
 &lt;ul&gt;
-&lt;li&gt;Expand sso profile types to allow more combinations of credential profile options. It is valid to have a profile contain only the SsoSession option and point to an sso-session section.&lt;/li&gt;
+&lt;li&gt;This release introduces ListProfileHistoryRecords and GetProfileHistoryRecord APIs for comprehensive profile history tracking with complete audit trails of creation, updates, merges, deletions, and data ingestion events.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DataSync (3.7.502.0)
+&lt;ul&gt;
+&lt;li&gt;Added support for FIPS VPC endpoints in FIPS-enabled AWS Regions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DataZone (3.7.506.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for creation of EMR on EKS Connections in Amazon DataZone.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DirectoryService (3.7.503.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Directory service now supports IPv6-native and dual-stack configurations for AWS Managed Microsoft AD, AD Connector, and Simple AD (dual-stack only). Additionally, AWS Managed Microsoft AD Standard Edition directories can be upgraded to Enterprise Edition directories through a single API call.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ECS (3.7.502.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for Managed Instances on Amazon ECS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;FSx (3.7.503.0)
+&lt;ul&gt;
+&lt;li&gt;Add Dual-Stack support for Amazon FSx for NetApp ONTAP and Windows File Server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaTailor (3.7.502.0)
+&lt;ul&gt;
+&lt;li&gt;Adding TPS Traffic Shaping to Prefetch Schedules&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;QuickSight (3.7.503.9)
+&lt;ul&gt;
+&lt;li&gt;added warnings to a few CLI pages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RDS (3.7.506.0)
+&lt;ul&gt;
+&lt;li&gt;Enhanced RDS error handling: Added DBProxyEndpointNotFoundFault, DBShardGroupNotFoundFault, KMSKeyNotAccessibleFault for snapshots/restores/backups, NetworkTypeNotSupported, StorageTypeNotSupportedFault for restores, and granular state validation faults. Changed DBInstanceNotReadyFault to HTTP 400.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Transfer (3.7.502.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for updating server identity provider type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.500.27
+&lt;ul&gt;
+&lt;li&gt;Update code generator to use fully qualified name for InvokeOptions to avoid name collisions&lt;/li&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
 &lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
