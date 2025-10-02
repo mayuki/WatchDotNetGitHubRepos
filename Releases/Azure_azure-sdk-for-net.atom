@@ -1,75 +1,43 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-10-01T00:07:57Z</updated>
+  <updated>2025-10-02T00:06:41Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-09-30</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-09-30</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-10-01</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-10-01</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-10-01T00:07:57Z</updated>
+    <updated>2025-10-02T00:06:41Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.VoiceLive_1.0.0-beta.4"&gt;Azure.AI.VoiceLive_1.0.0-beta.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects_1.0.0"&gt;Azure.AI.Projects_1.0.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.4 (2025-09-30)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0 (2025-10-01)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added convenience &lt;code&gt;CreateOrUpdate&lt;/code&gt; methods for &lt;code&gt;AIProjectIndex&lt;/code&gt; objects&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Removed all synchronous methods from &lt;code&gt;VoiceLiveClient&lt;/code&gt; and &lt;code&gt;VoiceLiveSession&lt;/code&gt; classes.
+&lt;li&gt;Name changes:
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveClient.StartSession()&lt;/code&gt; - use &lt;code&gt;StartSessionAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.AddItem()&lt;/code&gt; - use &lt;code&gt;AddItemAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.AppendAudioToTurn()&lt;/code&gt; - use &lt;code&gt;AppendAudioToTurnAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.CancelAudioTurn()&lt;/code&gt; - use &lt;code&gt;CancelAudioTurnAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.CancelResponse()&lt;/code&gt; - use &lt;code&gt;CancelResponseAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.ClearInputAudio()&lt;/code&gt; - use &lt;code&gt;ClearInputAudioAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.ClearStreamingAudio()&lt;/code&gt; - use &lt;code&gt;ClearStreamingAudioAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.Close()&lt;/code&gt; - use &lt;code&gt;CloseAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.CommitInputAudio()&lt;/code&gt; - use &lt;code&gt;CommitInputAudioAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.ConfigureSession()&lt;/code&gt; - use &lt;code&gt;ConfigureSessionAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.Connect()&lt;/code&gt; - use &lt;code&gt;ConnectAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.ConnectAvatar()&lt;/code&gt; - use &lt;code&gt;ConnectAvatarAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.DeleteItem()&lt;/code&gt; - use &lt;code&gt;DeleteItemAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.EndAudioTurn()&lt;/code&gt; - use &lt;code&gt;EndAudioTurnAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.GetUpdates()&lt;/code&gt; - use &lt;code&gt;GetUpdatesAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.ReceiveUpdates()&lt;/code&gt; - use &lt;code&gt;ReceiveUpdatesAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.RequestItemRetrieval()&lt;/code&gt; - use &lt;code&gt;RequestItemRetrievalAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.SendCommand()&lt;/code&gt; - use &lt;code&gt;SendCommandAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.SendInputAudio()&lt;/code&gt; - use &lt;code&gt;SendInputAudioAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.StartAudioTurn()&lt;/code&gt; - use &lt;code&gt;StartAudioTurnAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.StartResponse()&lt;/code&gt; - use &lt;code&gt;StartResponseAsync()&lt;/code&gt; instead&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceLiveSession.TruncateConversation()&lt;/code&gt; - use &lt;code&gt;TruncateConversationAsync()&lt;/code&gt; instead&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AssetDeployment&lt;/code&gt; has been renamed to &lt;code&gt;AIProjectDeployment&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BlobReference&lt;/code&gt; has been renamed to &lt;code&gt;AIProjectBlobReference&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ConnectionProperties&lt;/code&gt; has been renamed to &lt;code&gt;AIProjectConnection&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FileDatasetVersion&lt;/code&gt; has been renamed to &lt;code&gt;FileDataset&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FolderDatasetVersion&lt;/code&gt; has been renamed to &lt;code&gt;FolderDataset&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SasCredential&lt;/code&gt; has been renamed to &lt;code&gt;BlobReferenceSasCredential&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SearchIndex&lt;/code&gt; has been renamed to &lt;code&gt;AIProjectIndex&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Removed &lt;code&gt;RespondingAgentOptions&lt;/code&gt; and associated property usage.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;GetOpenAIClient&lt;/code&gt; method. Look at Inference samples for how to get the client now.&lt;/li&gt;
+&lt;li&gt;All other &lt;code&gt;Get*Client&lt;/code&gt; methods have been removed. Use the &lt;code&gt;AIProjectClient&lt;/code&gt; properties &lt;code&gt;Connections&lt;/code&gt;, &lt;code&gt;Datasets&lt;/code&gt;, &lt;code&gt;Deployments&lt;/code&gt;, and &lt;code&gt;Indexes&lt;/code&gt; instead.&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.OracleDatabase_1.2.0"&gt;Azure.ResourceManager.OracleDatabase_1.2.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0 (2025-09-30)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for API version 2025-09-01.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.StorageCache_1.4.0"&gt;Azure.ResourceManager.StorageCache_1.4.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.4.0 (2025-09-30)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version tag from 'package-2024-03' to 'package-2025-07-01'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/ec0ec094fc9eae3a75ac16b175a3b596a482003b/specification/storagecache/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/ec0ec094fc9eae3a75ac16b175a3b596a482003b/specification/storagecache/resource-manager/readme.md&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded Azure.Core from 1.47.3 to 1.49.0&lt;/li&gt;
+&lt;li&gt;Properly handle secret key population for &lt;code&gt;AIProjectConnectionCustomCredential&lt;/code&gt;, &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/52355" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/52355/hovercard"&gt;see GitHub issue 52355&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
