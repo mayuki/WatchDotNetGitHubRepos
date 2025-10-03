@@ -1,43 +1,68 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-10-02T00:06:41Z</updated>
+  <updated>2025-10-03T00:06:48Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-10-01</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-10-01</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-10-02</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-10-02</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-10-02T00:06:41Z</updated>
+    <updated>2025-10-03T00:06:48Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects_1.0.0"&gt;Azure.AI.Projects_1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.VoiceLive_1.0.0"&gt;Azure.AI.VoiceLive_1.0.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;h2&gt;1.0.0 (2025-10-01)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added convenience &lt;code&gt;CreateOrUpdate&lt;/code&gt; methods for &lt;code&gt;AIProjectIndex&lt;/code&gt; objects&lt;/li&gt;
-&lt;/ul&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Name changes:
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;SessionResponse changes:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;AssetDeployment&lt;/code&gt; has been renamed to &lt;code&gt;AIProjectDeployment&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;BlobReference&lt;/code&gt; has been renamed to &lt;code&gt;AIProjectBlobReference&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ConnectionProperties&lt;/code&gt; has been renamed to &lt;code&gt;AIProjectConnection&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;FileDatasetVersion&lt;/code&gt; has been renamed to &lt;code&gt;FileDataset&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;FolderDatasetVersion&lt;/code&gt; has been renamed to &lt;code&gt;FolderDataset&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;SasCredential&lt;/code&gt; has been renamed to &lt;code&gt;BlobReferenceSasCredential&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;SearchIndex&lt;/code&gt; has been renamed to &lt;code&gt;AIProjectIndex&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed public &lt;code&gt;Object&lt;/code&gt; property (now internal)&lt;/li&gt;
+&lt;li&gt;Renamed &lt;code&gt;ModalitiesInternal&lt;/code&gt; property to &lt;code&gt;Modalities&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed &lt;code&gt;Voice&lt;/code&gt; property type from &lt;code&gt;BinaryData&lt;/code&gt; to strongly typed &lt;code&gt;VoiceProvider&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed &lt;code&gt;MaxOutputTokens&lt;/code&gt; property type from &lt;code&gt;BinaryData&lt;/code&gt; to strongly typed &lt;code&gt;MaxResponseOutputTokensOption&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Removed &lt;code&gt;GetOpenAIClient&lt;/code&gt; method. Look at Inference samples for how to get the client now.&lt;/li&gt;
-&lt;li&gt;All other &lt;code&gt;Get*Client&lt;/code&gt; methods have been removed. Use the &lt;code&gt;AIProjectClient&lt;/code&gt; properties &lt;code&gt;Connections&lt;/code&gt;, &lt;code&gt;Datasets&lt;/code&gt;, &lt;code&gt;Deployments&lt;/code&gt;, and &lt;code&gt;Indexes&lt;/code&gt; instead.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;SessionResponseItem changes:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Properly handle secret key population for &lt;code&gt;AIProjectConnectionCustomCredential&lt;/code&gt;, &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/52355" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/52355/hovercard"&gt;see GitHub issue 52355&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Removed public &lt;code&gt;Object&lt;/code&gt; property (now internal)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;VoiceLiveSessionResponse changes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No longer inherits from &lt;code&gt;VoiceLiveSessionOptions&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Constructor changed from internal to public&lt;/li&gt;
+&lt;li&gt;Properties now have public setters: &lt;code&gt;Id&lt;/code&gt;, &lt;code&gt;Model&lt;/code&gt;, &lt;code&gt;Animation&lt;/code&gt;, &lt;code&gt;Instructions&lt;/code&gt;, &lt;code&gt;InputAudioSamplingRate&lt;/code&gt;, &lt;code&gt;InputAudioFormat&lt;/code&gt;, &lt;code&gt;OutputAudioFormat&lt;/code&gt;, &lt;code&gt;InputAudioNoiseReduction&lt;/code&gt;, &lt;code&gt;InputAudioEchoCancellation&lt;/code&gt;, &lt;code&gt;Avatar&lt;/code&gt;, &lt;code&gt;InputAudioTranscription&lt;/code&gt;, &lt;code&gt;Temperature&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added new read-only properties: &lt;code&gt;Voice&lt;/code&gt;, &lt;code&gt;MaxResponseOutputTokens&lt;/code&gt;, &lt;code&gt;ToolChoice&lt;/code&gt;, &lt;code&gt;TurnDetection&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;VoiceProvider changes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed internal &lt;code&gt;ToBinaryData()&lt;/code&gt; method&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved API design by replacing &lt;code&gt;BinaryData&lt;/code&gt; properties with strongly typed models for better type safety and developer experience&lt;/li&gt;
+&lt;li&gt;Removed unnecessary custom implementation files for voice provider classes&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Communication.Messages_1.3.0-beta.2"&gt;Azure.Communication.Messages_1.3.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.3.0-beta.2 (2025-10-01)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add support for read receipt and typing indicator.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;

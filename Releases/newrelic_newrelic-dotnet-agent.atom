@@ -1,33 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>newrelic/newrelic-dotnet-agent - Releases</title>
   <link href="https://github.com/newrelic/newrelic-dotnet-agent" />
-  <updated>2025-10-02T00:06:57Z</updated>
+  <updated>2025-10-03T00:07:05Z</updated>
   <id>https://github.com/newrelic/newrelic-dotnet-agent</id>
-  <entry>
-    <title>newrelic/newrelic-dotnet-agent - Releases - 2025-10-01</title>
-    <id>https://github.com/newrelic/newrelic-dotnet-agent#2025-10-01</id>
-    <link href="https://github.com/newrelic/newrelic-dotnet-agent" />
-    <updated>2025-10-02T00:06:57Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/releases/tag/v10.45.0"&gt;v10.45.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/compare/v10.44.1...v10.45.0"&gt;10.45.0&lt;/a&gt; (2025-09-30)&lt;/h2&gt;
-&lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add a new Distributed Tracing sampler, the TraceId Ratio-Based Sampler, which is based on the &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry/Trace/Sampler/TraceIdRatioBasedSampler.cs"&gt;OpenTelemetry implementation&lt;/a&gt;. This sampler makes its sampling decision using the TraceId (a random GUID) and a configured sampling ratio (a target percentage of traces to be sampled).  For more information, see the &lt;a href="https://opentelemetry.io/docs/specs/otel/trace/tracestate-probability-sampling/" rel="nofollow"&gt;OpenTelemetry specification&lt;/a&gt;. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3211" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3211/hovercard"&gt;#3211&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/63ca603ca6cb86110431413c03afbf8a8c8e9367"&gt;63ca603&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;MSSQL connection string parsing can throw exceptions and disable Datastore instrumentation (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3263" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3263/hovercard"&gt;#3263&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/cdf000b73fe4beaa73fa4bfe3d338f8eb6698cf1"&gt;cdf000b&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Resolve issues with Kafka "Consume" instrumentation to ensure that automatic instrumentation works in conjunction with custom instrumentation. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3257" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3257/hovercard"&gt;#3257&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/1dbd1c51aeaf6e2909d23b078029ee78b721b3bc"&gt;1dbd1c5&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
