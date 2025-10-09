@@ -1,6 +1,48 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/SqlClient - Releases</title>
   <link href="https://github.com/dotnet/SqlClient" />
-  <updated>2025-10-08T00:06:48Z</updated>
+  <updated>2025-10-09T00:07:02Z</updated>
   <id>https://github.com/dotnet/SqlClient</id>
+  <entry>
+    <title>dotnet/SqlClient - Releases - 2025-10-08</title>
+    <id>https://github.com/dotnet/SqlClient#2025-10-08</id>
+    <link href="https://github.com/dotnet/SqlClient" />
+    <updated>2025-10-09T00:07:02Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/SqlClient/releases/tag/v6.0.3"&gt;Stable Release v6.0.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This update brings the below changes over the previous stable release:&lt;/p&gt;
+&lt;h3&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue where a Custom SqlClientAuthenticationProvider was being overwritten by default implementation. &lt;a href="https://github.com/dotnet/SqlClient/pull/3652" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3652/hovercard"&gt;#3652&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fixed a concurrency issue in connection pooling where the number of active connections could be lower than the configured maximum pool size. &lt;a href="https://github.com/dotnet/SqlClient/pull/3654" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3654/hovercard"&gt;#3654&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated MSAL usage as per code compliance requirements &lt;a href="https://github.com/dotnet/SqlClient/pull/3360" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3360/hovercard"&gt;#3360&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;SqlDecimal&lt;/code&gt; implementation to improve code compliance &lt;a href="https://github.com/dotnet/SqlClient/pull/3466" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3466/hovercard"&gt;#3466&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Updated Azure.Identity and related dependencies &lt;a href="https://github.com/dotnet/SqlClient/pull/3553" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3553/hovercard"&gt;#3553&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/SqlClient/releases/tag/v6.1.2"&gt;Stable Release v6.1.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This update brings the below changes over the previous stable release:&lt;/p&gt;
+&lt;h3&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue where initializing PerformanceCounters would throw &lt;code&gt;System.InvalidOperationException&lt;/code&gt; &lt;a href="https://github.com/dotnet/sqlclient/pull/3629" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3629/hovercard"&gt;#3629&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fixed an issue where a Custom SqlClientAuthenticationProvider was being overwritten by default implementation. &lt;a href="https://github.com/dotnet/SqlClient/pull/3651" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3651/hovercard"&gt;#3651&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fixed a concurrency issue in connection pooling where the number of active connections could be lower than the configured maximum pool size. &lt;a href="https://github.com/dotnet/SqlClient/pull/3653" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3653/hovercard"&gt;#3653&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
