@@ -1,6 +1,73 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-10-09T00:06:51Z</updated>
+  <updated>2025-10-10T00:07:29Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-10-09</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-10-09</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2025-10-10T00:07:29Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Search.Documents_11.7.0"&gt;Azure.Search.Documents_11.7.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;11.7.0 (2025-10-09)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for &lt;code&gt;2025-09-01&lt;/code&gt; service version.&lt;/li&gt;
+&lt;li&gt;Support for reranker boosted scores in search results and the ability to sort results on either reranker or reranker boosted scores in &lt;code&gt;SemanticConfiguration.RankingOrder&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Support for &lt;code&gt;VectorSearchCompression.RescoringOptions&lt;/code&gt; to configure how vector compression handles the original vector when indexing and how vectors are used during rescoring.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;SearchIndex.Description&lt;/code&gt; to provide a textual description of the index.&lt;/li&gt;
+&lt;li&gt;Support for &lt;code&gt;LexicalNormalizer&lt;/code&gt; when defining &lt;code&gt;SearchIndex&lt;/code&gt;, &lt;code&gt;SimpleField&lt;/code&gt;, and &lt;code&gt;SearchableField&lt;/code&gt; and the ability to use it when analyzing text with &lt;code&gt;SearchIndexClient.AnalyzeText&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Support &lt;code&gt;DocumentIntelligenceLayoutSkill&lt;/code&gt; skillset skill and &lt;code&gt;OneLake&lt;/code&gt; &lt;code&gt;SearchIndexerDataSourceConnection&lt;/code&gt; data source.&lt;/li&gt;
+&lt;li&gt;Support for &lt;code&gt;QueryDebugMode&lt;/code&gt; in searching to retrieve detailed information about search processing. Only vector is supported for &lt;code&gt;QueryDebugMode&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;VectorSearchCompression.RerankWithOriginalVectors&lt;/code&gt; and &lt;code&gt;VectorSearchCompression.DefaultOversampling&lt;/code&gt; don't work with&lt;br&gt;
+&lt;code&gt;2025-09-01&lt;/code&gt; and were replaced by &lt;code&gt;VectorSearchCompression.RescoringOptions.EnabledRescoring&lt;/code&gt; and&lt;br&gt;
+&lt;code&gt;VectorSearchCompression.RescoringOptions.DefaultOversampling&lt;/code&gt;. If using &lt;code&gt;2024-07-01&lt;/code&gt; continue using the old properties,&lt;br&gt;
+otherwise if using &lt;code&gt;2025-09-01&lt;/code&gt; use the new properties in &lt;code&gt;RescoringOptions&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Authorization_1.1.6"&gt;Azure.ResourceManager.Authorization_1.1.6&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.1.6 (2025-11-09)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Support the &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/53089" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/53089/hovercard"&gt;case&lt;/a&gt; where the delegatedManagedIdentityResourceId of RoleAssignment may be an empty string rather than null.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.AppContainers_1.5.0"&gt;Azure.ResourceManager.AppContainers_1.5.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.5.0 (2025-10-09)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version tag 'package-2024-03' to 'package-2025-01-01'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/33a2135c8115465b292b71a521ea50c1cc336c8c/specification/app/resource-manager/Microsoft.App/ContainerApps/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/33a2135c8115465b292b71a521ea50c1cc336c8c/specification/app/resource-manager/Microsoft.App/ContainerApps/readme.md&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;Support Logic App Extension&lt;/li&gt;
+&lt;li&gt;Support async for connected environment sub resources&lt;/li&gt;
+&lt;li&gt;Support ingressConfiguration&lt;/li&gt;
+&lt;li&gt;Support advanced ingress&lt;/li&gt;
+&lt;li&gt;Support private endpoint connections for managed environment&lt;/li&gt;
+&lt;li&gt;Support app health check configuration for DAPR&lt;/li&gt;
+&lt;li&gt;Support key vault for environment storage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
