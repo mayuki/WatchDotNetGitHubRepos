@@ -1,6 +1,101 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>open-telemetry/opentelemetry-dotnet-contrib - Releases</title>
   <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-  <updated>2025-10-15T00:07:25Z</updated>
+  <updated>2025-10-16T00:07:11Z</updated>
   <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib</id>
+  <entry>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2025-10-15</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2025-10-15</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2025-10-16T00:07:11Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Wcf-1.13.0-beta.1"&gt;Instrumentation.Wcf-1.13.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Wcf/1.13.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Wcf v1.13.0-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Added server instrumentation support for &lt;code&gt;RecordException&lt;/code&gt; option.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2880" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2880/hovercard"&gt;#2880&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Breaking changes&lt;/strong&gt; Adjust to breaking changes from&lt;br&gt;
+&lt;code&gt;OpenTelemetry.Instrumentation.AspNet&lt;/code&gt; version &lt;code&gt;1.13.0-beta.1&lt;/code&gt;.&lt;br&gt;
+Fixing span hierarchy when hosted in ASP.NET.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3151" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3151/hovercard"&gt;#3151&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.13.1&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3218" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3218/hovercard"&gt;#3218&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Wcf-1.13.0-beta.1/src/OpenTelemetry.Instrumentation.Wcf/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.AspNet-1.13.0-beta.1"&gt;Instrumentation.AspNet-1.13.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.AspNet/1.13.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.AspNet v1.13.0-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Following attributes are available while sampling:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;http.request.method&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;server.address&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;server.port&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;url.path&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;url.query&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;url.scheme&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;user_agent.original&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3151" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3151/hovercard"&gt;#3151&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Replace static routing tokens with actual values in the route template.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3160" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3160/hovercard"&gt;#3160&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.13.1&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3218" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3218/hovercard"&gt;#3218&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AspNet-1.13.0-beta.1/src/OpenTelemetry.Instrumentation.AspNet/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.AspNet.TelemetryHttpModule/1.13.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.AspNet.TelemetryHttpModule v1.13.0-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt;: This module is no longer responsible for creating activities.&lt;br&gt;
+The contract of &lt;code&gt;TelemetryHttpModuleOptions.OnRequestStartedCallback&lt;/code&gt; was changed&lt;br&gt;
+to &lt;code&gt;Func&amp;lt;HttpContextBase, ActivityContext, Activity?&amp;gt;?&lt;/code&gt;. The consumer is now&lt;br&gt;
+responsible for providing function returning &lt;code&gt;Activity&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3151" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3151/hovercard"&gt;#3151&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed an inaccurate span end of time.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3171" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3171/hovercard"&gt;#3171&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.13.1&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3218" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3218/hovercard"&gt;#3218&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AspNet-1.13.0-beta.1/src/OpenTelemetry.Instrumentation.AspNet.TelemetryHttpModule/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
