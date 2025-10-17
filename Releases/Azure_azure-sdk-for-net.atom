@@ -1,48 +1,74 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-10-16T00:06:55Z</updated>
+  <updated>2025-10-17T00:07:16Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-10-15</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-10-15</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-10-16</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-10-16</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-10-16T00:06:55Z</updated>
+    <updated>2025-10-17T00:07:16Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.HDInsight_1.2.0-beta.5"&gt;Azure.ResourceManager.HDInsight_1.2.0-beta.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Monitor.OpenTelemetry.Exporter_1.5.0-beta.1"&gt;Azure.Monitor.OpenTelemetry.Exporter_1.5.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.5 (2025-10-15)&lt;/h2&gt;
+                                &lt;h2&gt;1.5.0-beta.1 (2025-10-16)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Make &lt;code&gt;Azure.ResourceManager.HDInsight&lt;/code&gt; AOT-compatible&lt;/p&gt;
+&lt;p&gt;Added mapping for &lt;code&gt;enduser.pseudo.id&lt;/code&gt; attribute to &lt;code&gt;user_Id&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Upgraded api-version tag from 'package-2024-08-preview' to 'package-2025-01-preview'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/4c0f7731c93696af01bd2bb9927bf28d2afcbc98/specification/hdinsight/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/4c0f7731c93696af01bd2bb9927bf28d2afcbc98/specification/hdinsight/resource-manager/readme.md&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Added support for configuring sampling via OpenTelemetry environment&lt;br&gt;
+variables:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Support to use Entra User as cluster administrator credential instead of using username/password during HDInsight cluster creation.&lt;/li&gt;
-&lt;li&gt;Support to update Entra User Information in an existing Entra User enabled HDInsight cluster.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OTEL_TRACES_SAMPLER&lt;/code&gt; (supported values: &lt;code&gt;microsoft.rate_limited&lt;/code&gt;,&lt;br&gt;
+&lt;code&gt;microsoft.fixed_percentage&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OTEL_TRACES_SAMPLER_ARG&lt;/code&gt; (rate limit in traces/sec for&lt;br&gt;
+&lt;code&gt;microsoft.rate_limited&lt;/code&gt;, sampling ratio 0.0 - 1.0 for&lt;br&gt;
+&lt;code&gt;microsoft.fixed_percentage&lt;/code&gt;). This now applies to both&lt;br&gt;
+&lt;code&gt;UseAzureMonitorExporter&lt;/code&gt; and the direct&lt;br&gt;
+&lt;code&gt;Sdk.CreateTracerProviderBuilder().AddAzureMonitorTraceExporter(...)&lt;/code&gt; path.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/52720" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/52720/hovercard"&gt;#52720&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded Azure.Core from 1.42.0 to 1.44.1&lt;/li&gt;
-&lt;li&gt;Upgraded Azure.ResourceManager from 1.12.0 to 1.13.0&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added handling of stable database client span semantic conventions&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/53050" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/53050/hovercard"&gt;#53050&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.FrontDoor_1.4.1"&gt;Azure.ResourceManager.FrontDoor_1.4.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Monitor.Query.Metrics_1.0.0"&gt;Azure.Monitor.Query.Metrics_1.0.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.4.1 (2025-10-15)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0 (2025-10-15)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;p&gt;This package contains the first release of Microsoft Azure Monitor Metrics Query client library. This library replaces metrics querying operations of the Azure.Monitor.Query package.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.StorageDiscovery_1.0.0"&gt;Azure.ResourceManager.StorageDiscovery_1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0 (2025-10-13)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;WirePath&lt;/code&gt; attribute for all models' properties.&lt;/li&gt;
+&lt;li&gt;First stable (GA) release of Azure Storage Discovery client library.&lt;/li&gt;
+&lt;li&gt;API surface is now considered stable; no breaking changes since 1.0.0-beta.1.&lt;/li&gt;
+&lt;li&gt;Core features now generally available:
+&lt;ul&gt;
+&lt;li&gt;Out-of-the-box support for MSAL.NET authentication via Azure.Identity.&lt;/li&gt;
+&lt;li&gt;Distributed tracing with OpenTelemetry.&lt;/li&gt;
+&lt;li&gt;Customizable HTTP pipeline with custom policies.&lt;/li&gt;
+&lt;li&gt;Improved error handling.&lt;/li&gt;
+&lt;li&gt;Uniform telemetry support across all languages.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;For feedback or issues, please visit our &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues"&gt;Azure SDK for .NET GitHub repo&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
