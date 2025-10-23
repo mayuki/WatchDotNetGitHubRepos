@@ -1,187 +1,97 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-10-22T00:07:19Z</updated>
+  <updated>2025-10-23T00:07:18Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-10-21</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-10-21</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-10-22</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-10-22</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-10-22T00:07:19Z</updated>
+    <updated>2025-10-23T00:07:18Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.DataMovement.Files.Shares_12.3.0"&gt;Azure.Storage.DataMovement.Files.Shares_12.3.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Monitor.OpenTelemetry.AspNetCore_1.4.0-beta.1"&gt;Azure.Monitor.OpenTelemetry.AspNetCore_1.4.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.3.0 (2025-10-21)&lt;/h2&gt;
+                                &lt;h2&gt;1.4.0-beta.1 (2025-10-21)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;This release includes all features from 12.3.0-beta.1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;li&gt;Added support for configuring sampling via OpenTelemetry environment&lt;br&gt;
+variables:
 &lt;ul&gt;
-&lt;li&gt;Resolved memory leak issue with &lt;code&gt;CancellationTokenSource&lt;/code&gt; usage not being properly disposed, namely in the following areas:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;TransferOperation&lt;/code&gt; disposes the &lt;code&gt;CancellationTokenSource&lt;/code&gt; after transfer reaches a &lt;code&gt;Completed&lt;/code&gt; or &lt;code&gt;Paused&lt;/code&gt; state&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;TransferManager&lt;/code&gt; uses a &lt;code&gt;CancellationTokenSource&lt;/code&gt; also does not link the&lt;code&gt;CancellationToken&lt;/code&gt; passed to it's methods&lt;/li&gt;
-&lt;li&gt;Removed usage of &lt;code&gt;CancellationTokenSource&lt;/code&gt; from handling the chunking of large transfers. This only affects transfers that cannot be completed in one request.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OTEL_TRACES_SAMPLER&lt;/code&gt; (supported values: &lt;code&gt;microsoft.rate_limited&lt;/code&gt;,&lt;br&gt;
+&lt;code&gt;microsoft.fixed_percentage&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OTEL_TRACES_SAMPLER_ARG&lt;/code&gt; (rate limit in traces/sec for&lt;br&gt;
+&lt;code&gt;microsoft.rate_limited&lt;/code&gt;, sampling ratio 0.0 - 1.0 for&lt;br&gt;
+&lt;code&gt;microsoft.fixed_percentage&lt;/code&gt;).&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/52720" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/52720/hovercard"&gt;#52720&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Fixed bug where cached referenced &lt;code&gt;TransferOperation&lt;/code&gt;s from the &lt;code&gt;TransferManager&lt;/code&gt; were not being cleared on dispose.&lt;/li&gt;
-&lt;li&gt;Fixed bug where referenced &lt;code&gt;TransferOperation&lt;/code&gt; from the transfers stored in the &lt;code&gt;TransferManager&lt;/code&gt; after they reach a &lt;code&gt;Completed&lt;/code&gt; or &lt;code&gt;Paused&lt;/code&gt; state where not being removed.&lt;/li&gt;
+&lt;li&gt;Added handling of stable database client span semantic conventions&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/53050" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/53050/hovercard"&gt;#53050&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added new performance monitoring capabilities to help track application health and resource usage. Newly added metrics:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;\.NET CLR Exceptions(??APP_CLR_PROC??)\# of Exceps Thrown / sec&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\ASP.NET Applications(??APP_W3SVC_PROC??)\Requests/Sec&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\Process(??APP_WIN32_PROC??)\% Processor Time"&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\Process(??APP_WIN32_PROC??)\% Processor Time Normalized&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\Process(??APP_WIN32_PROC??)\Private Bytes&lt;/code&gt;&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/52705" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/52705/hovercard"&gt;#52705&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Added built-in monitoring to track SDK performance and health. Emitted metrics:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;preview.item.success.count&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;preview.item.dropped.count&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;preview.item.retry.count&lt;/code&gt;&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/53010" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/53010/hovercard"&gt;#53010&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;enduser.pseudo.id&lt;/code&gt; as ai.user.id&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/52722" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/52722/hovercard"&gt;#52722&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;ai.location.ip&lt;/code&gt; mapping for all telemetry types (&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/52211" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/52211/hovercard"&gt;#52211&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.DataMovement.Blobs_12.3.0"&gt;Azure.Storage.DataMovement.Blobs_12.3.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Qumulo_1.2.0"&gt;Azure.ResourceManager.Qumulo_1.2.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.3.0 (2025-10-21)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Resolved memory leak issue with &lt;code&gt;CancellationTokenSource&lt;/code&gt; usage not being properly disposed, namely in the following areas:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;TransferOperation&lt;/code&gt; disposes the &lt;code&gt;CancellationTokenSource&lt;/code&gt; after transfer reaches a &lt;code&gt;Completed&lt;/code&gt; or &lt;code&gt;Paused&lt;/code&gt; state&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;TransferManager&lt;/code&gt; uses a &lt;code&gt;CancellationTokenSource&lt;/code&gt; also does not link the&lt;code&gt;CancellationToken&lt;/code&gt; passed to it's methods&lt;/li&gt;
-&lt;li&gt;Removed usage of &lt;code&gt;CancellationTokenSource&lt;/code&gt; from handling the chunking of large transfers. This only affects transfers that cannot be completed in one request.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Fixed bug where cached referenced &lt;code&gt;TransferOperation&lt;/code&gt;s from the &lt;code&gt;TransferManager&lt;/code&gt; were not being cleared on dispose.&lt;/li&gt;
-&lt;li&gt;Fixed bug where referenced &lt;code&gt;TransferOperation&lt;/code&gt; from the transfers stored in the &lt;code&gt;TransferManager&lt;/code&gt; after they reach a &lt;code&gt;Completed&lt;/code&gt; or &lt;code&gt;Paused&lt;/code&gt; state where not being removed.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.DataMovement_12.3.0"&gt;Azure.Storage.DataMovement_12.3.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.3.0 (2025-10-21)&lt;/h2&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[BREAKING BEHAVIOR CHANGE] Transfers that are in a &lt;code&gt;Paused&lt;/code&gt; or &lt;code&gt;Completed&lt;/code&gt; state will now throw an &lt;code&gt;ArgumentException&lt;/code&gt; when attempting to call &lt;code&gt;PauseAsync&lt;/code&gt; on them. Before transfers in a &lt;code&gt;Paused&lt;/code&gt; or &lt;code&gt;Completed&lt;/code&gt; state would not throw an exception when calling &lt;code&gt;PauseAsync&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Resolved memory leak issue with &lt;code&gt;CancellationTokenSource&lt;/code&gt; usage not being properly disposed, namely in the following areas:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;TransferOperation&lt;/code&gt; disposes the &lt;code&gt;CancellationTokenSource&lt;/code&gt; after transfer reaches a &lt;code&gt;Completed&lt;/code&gt; or &lt;code&gt;Paused&lt;/code&gt; state&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;TransferManager&lt;/code&gt; uses a &lt;code&gt;CancellationTokenSource&lt;/code&gt; also does not link the&lt;code&gt;CancellationToken&lt;/code&gt; passed to it's methods&lt;/li&gt;
-&lt;li&gt;Removed usage of &lt;code&gt;CancellationTokenSource&lt;/code&gt; from handling the chunking of large transfers. This only affects transfers that cannot be completed in one request.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Fixed bug where cached referenced &lt;code&gt;TransferOperation&lt;/code&gt;s from the &lt;code&gt;TransferManager&lt;/code&gt; were not being cleared on dispose.&lt;/li&gt;
-&lt;li&gt;Fixed bug where referenced &lt;code&gt;TransferOperation&lt;/code&gt; from the transfers stored in the &lt;code&gt;TransferManager&lt;/code&gt; after they reach a &lt;code&gt;Completed&lt;/code&gt; or &lt;code&gt;Paused&lt;/code&gt; state where not being removed.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.MongoCluster_1.0.0"&gt;Azure.ResourceManager.MongoCluster_1.0.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0 (2025-10-30)&lt;/h2&gt;
+                                &lt;h2&gt;1.2.0 (2025-10-22)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded api-version tag to 'package-2025-09-01'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/main/specification/mongocluster/resource-manager/Microsoft.DocumentDB/MongoCluster/readme.md#tag-package-2025-09-01"&gt;https://github.com/Azure/azure-rest-api-specs/blob/main/specification/mongocluster/resource-manager/Microsoft.DocumentDB/MongoCluster/readme.md#tag-package-2025-09-01&lt;/a&gt;.
-&lt;ul&gt;
-&lt;li&gt;Added DataApi support on MongoClusterProperties&lt;/li&gt;
-&lt;li&gt;Added AuthConfig support on MongoClusterProperties&lt;/li&gt;
-&lt;li&gt;Added Encryption support on MongoClusterProperties&lt;/li&gt;
-&lt;li&gt;Added Identity support on MongoClusterData&lt;/li&gt;
-&lt;li&gt;Added property type to StorageProperties&lt;/li&gt;
-&lt;li&gt;Added model AuthConfigProperties&lt;/li&gt;
-&lt;li&gt;Added model AuthenticationMode&lt;/li&gt;
-&lt;li&gt;Added model CustomerManagedKeyEncryptionProperties&lt;/li&gt;
-&lt;li&gt;Added model DataApiMode&lt;/li&gt;
-&lt;li&gt;Added model DataApiProperties&lt;/li&gt;
-&lt;li&gt;Added model DatabaseRole&lt;/li&gt;
-&lt;li&gt;Added model EncryptionProperties&lt;/li&gt;
-&lt;li&gt;Added model EntraIdentityProvider&lt;/li&gt;
-&lt;li&gt;Added model EntraIdentityProviderProperties&lt;/li&gt;
-&lt;li&gt;Added model EntraPrincipalType&lt;/li&gt;
-&lt;li&gt;Added model IdentityProvider&lt;/li&gt;
-&lt;li&gt;Added model IdentityProviderType&lt;/li&gt;
-&lt;li&gt;Added model KeyEncryptionKeyIdentity&lt;/li&gt;
-&lt;li&gt;Added model KeyEncryptionKeyIdentityType&lt;/li&gt;
-&lt;li&gt;Added model StorageType&lt;/li&gt;
-&lt;li&gt;Added new resource User&lt;/li&gt;
-&lt;li&gt;Added User operations on MongoClusterResource&lt;/li&gt;
-&lt;li&gt;Added model UserProperties&lt;/li&gt;
-&lt;li&gt;Added model UserRole&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;Upgrade to API version 2024-06-19.&lt;/li&gt;
+&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.Qumulo&lt;/code&gt; AOT-compatible.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ProviderHub_1.2.0"&gt;Azure.ResourceManager.ProviderHub_1.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.PolicyInsights_1.3.0"&gt;Azure.ResourceManager.PolicyInsights_1.3.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0 (2025-10-21)&lt;/h2&gt;
+                                &lt;h2&gt;1.3.0 (2025-10-22)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded api-version tag from 'package-2020-11-20' to 'package-2024-09-01'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/247a38a5fea02ac50132f591f3b53fec06e9377b/specification/providerhub/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/247a38a5fea02ac50132f591f3b53fec06e9377b/specification/providerhub/resource-manager/readme.md&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.ProviderHub&lt;/code&gt; AOT-compatible.&lt;/li&gt;
+&lt;li&gt;Upgraded API version of Policy Insights to 2024-10-01.&lt;/li&gt;
+&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.Compute&lt;/code&gt; AOT-compatible.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.HealthBot_1.2.0"&gt;Azure.ResourceManager.HealthBot_1.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0 (2025-10-22)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version tag from 'package-2021-06-10' to 'package-2025-05-25'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/69eadf978055e646bc6b0ef1fa92fdac394eaab2/specification/healthbot/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/69eadf978055e646bc6b0ef1fa92fdac394eaab2/specification/healthbot/resource-manager/readme.md&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.HealthBot&lt;/code&gt; AOT-compatible.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Upgraded Azure.Core from 1.45.0 to 1.49.0&lt;/li&gt;
 &lt;li&gt;Upgraded Azure.ResourceManager from 1.13.0 to 1.13.2&lt;/li&gt;
-&lt;li&gt;Obsoleted property 'IList ResourceAccessRoles' in type Azure.ResourceManager.ProviderHub.Models.ResourceProviderManagement&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.TrafficManager_1.2.0-beta.1"&gt;Azure.ResourceManager.TrafficManager_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.1 (2025-10-21)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version tag from 'package-2022-04' to 'package-preview-2024-04'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/ff99df7c551a54d3a3e9e395cb5cf6c62c8c53f7/specification/trafficmanager/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/ff99df7c551a54d3a3e9e395cb5cf6c62c8c53f7/specification/trafficmanager/resource-manager/readme.md&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.TrafficManager&lt;/code&gt; AOT-compatible.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded Azure.Core from 1.45.0 to 1.49.0&lt;/li&gt;
-&lt;li&gt;Upgraded Azure.ResourceManager from 1.13.0 to 1.13.2&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.EventHubs_6.5.3"&gt;Microsoft.Azure.WebJobs.Extensions.EventHubs_6.5.3&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;6.5.3 (2025-10-20)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed an issue where a legacy ownership record without checkpoint data was interpreted as a valid checkpoint and used to initialize a partition when no current generation checkpoint was present.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Grafana_1.2.0-beta.3"&gt;Azure.ResourceManager.Grafana_1.2.0-beta.3&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.3 (2025-08-07)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added missing long running operation header for Grafana Update operation.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Network_1.13.0"&gt;Azure.ResourceManager.Network_1.13.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.13.0 (2025-10-24)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version tag from 'package-2024-10-01' to 'package-2025-01-01'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/c712a519a493d13c1cd997aa4e5adbab8df76e85/specification/network/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/c712a519a493d13c1cd997aa4e5adbab8df76e85/specification/network/resource-manager/readme.md&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded Azure.Core from 1.48.0 to 1.49.0&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
