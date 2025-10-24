@@ -1,97 +1,81 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-10-23T00:07:18Z</updated>
+  <updated>2025-10-24T00:05:56Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-10-22</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-10-22</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-10-23</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-10-23</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-10-23T00:07:18Z</updated>
+    <updated>2025-10-24T00:05:56Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Monitor.OpenTelemetry.AspNetCore_1.4.0-beta.1"&gt;Azure.Monitor.OpenTelemetry.AspNetCore_1.4.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.CodeTransparency_1.0.0-beta.5"&gt;Azure.Security.CodeTransparency_1.0.0-beta.5&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.4.0-beta.1 (2025-10-21)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.5 (2025-10-20)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for configuring sampling via OpenTelemetry environment&lt;br&gt;
-variables:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;OTEL_TRACES_SAMPLER&lt;/code&gt; (supported values: &lt;code&gt;microsoft.rate_limited&lt;/code&gt;,&lt;br&gt;
-&lt;code&gt;microsoft.fixed_percentage&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;OTEL_TRACES_SAMPLER_ARG&lt;/code&gt; (rate limit in traces/sec for&lt;br&gt;
-&lt;code&gt;microsoft.rate_limited&lt;/code&gt;, sampling ratio 0.0 - 1.0 for&lt;br&gt;
-&lt;code&gt;microsoft.fixed_percentage&lt;/code&gt;).&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/52720" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/52720/hovercard"&gt;#52720&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Added handling of stable database client span semantic conventions&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/53050" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/53050/hovercard"&gt;#53050&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Added new performance monitoring capabilities to help track application health and resource usage. Newly added metrics:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;\.NET CLR Exceptions(??APP_CLR_PROC??)\# of Exceps Thrown / sec&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;\ASP.NET Applications(??APP_W3SVC_PROC??)\Requests/Sec&lt;/code&gt;;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;\Process(??APP_WIN32_PROC??)\% Processor Time"&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;\Process(??APP_WIN32_PROC??)\% Processor Time Normalized&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;\Process(??APP_WIN32_PROC??)\Private Bytes&lt;/code&gt;&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/52705" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/52705/hovercard"&gt;#52705&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Added built-in monitoring to track SDK performance and health. Emitted metrics:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;preview.item.success.count&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;preview.item.dropped.count&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;preview.item.retry.count&lt;/code&gt;&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/53010" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/53010/hovercard"&gt;#53010&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;enduser.pseudo.id&lt;/code&gt; as ai.user.id&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/52722" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/52722/hovercard"&gt;#52722&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;ai.location.ip&lt;/code&gt; mapping for all telemetry types (&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/52211" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/52211/hovercard"&gt;#52211&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Qumulo_1.2.0"&gt;Azure.ResourceManager.Qumulo_1.2.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0 (2025-10-22)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgrade to API version 2024-06-19.&lt;/li&gt;
-&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.Qumulo&lt;/code&gt; AOT-compatible.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.PolicyInsights_1.3.0"&gt;Azure.ResourceManager.PolicyInsights_1.3.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.3.0 (2025-10-22)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded API version of Policy Insights to 2024-10-01.&lt;/li&gt;
-&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.Compute&lt;/code&gt; AOT-compatible.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.HealthBot_1.2.0"&gt;Azure.ResourceManager.HealthBot_1.2.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0 (2025-10-22)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version tag from 'package-2021-06-10' to 'package-2025-05-25'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/69eadf978055e646bc6b0ef1fa92fdac394eaab2/specification/healthbot/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/69eadf978055e646bc6b0ef1fa92fdac394eaab2/specification/healthbot/resource-manager/readme.md&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.HealthBot&lt;/code&gt; AOT-compatible.&lt;/li&gt;
+&lt;li&gt;Exposed &lt;code&gt;CborUtils&lt;/code&gt; to extract values from CBOR maps, which would otherwise require working directly with a CBOR library&lt;/li&gt;
+&lt;li&gt;Added new static verification method &lt;code&gt;CodeTransparencyClient.VerifyTransparentStatement&lt;/code&gt; which accepts &lt;code&gt;CodeTransparencyVerificationOptions&lt;/code&gt;, this allows verifying receipts from specific issuers&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded Azure.Core from 1.45.0 to 1.49.0&lt;/li&gt;
-&lt;li&gt;Upgraded Azure.ResourceManager from 1.13.0 to 1.13.2&lt;/li&gt;
+&lt;li&gt;Updated samples&lt;/li&gt;
+&lt;li&gt;Fixed grammar in README files&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ImpactReporting_1.0.0-beta.1"&gt;Azure.ResourceManager.ImpactReporting_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2025-10-23)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;p&gt;This package follows the &lt;a href="https://azure.github.io/azure-sdk/general_introduction.html" rel="nofollow"&gt;new Azure SDK guidelines&lt;/a&gt;, and provides many core capabilities:&lt;/p&gt;
+&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
+- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
+- HTTP pipeline with custom policies.
+- Better error-handling.
+- Support uniform telemetry across all languages."&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
+- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
+- HTTP pipeline with custom policies.
+- Better error-handling.
+- Support uniform telemetry across all languages.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This package is a Public Preview version, so expect incompatible changes in subsequent releases as we improve the product. To provide feedback, submit an issue in our &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues"&gt;Azure SDK for .NET GitHub repo&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: For more information about unified authentication, please refer to &lt;a href="https://docs.microsoft.com//dotnet/api/overview/azure/identity-readme?view=azure-dotnet" rel="nofollow"&gt;Microsoft Azure Identity documentation for .NET&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Storage_1.6.0"&gt;Azure.ResourceManager.Storage_1.6.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.6.0 (2025-10-24)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version tag from 'package-2025-01' to 'package-2025-06'. Tag details available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/1e7684349abdacee94cbf89200f319cd49e323f2/specification/storage/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/1e7684349abdacee94cbf89200f319cd49e323f2/specification/storage/resource-manager/readme.md&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;Supported new property GeoPriorityReplicationStatus.IsBlobEnabled on Storage accounts.&lt;/li&gt;
+&lt;li&gt;Supported new ObjectReplicationPolicy Properties: PriorityReplication.Enabled.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetApp_1.13.0-beta.1"&gt;Azure.ResourceManager.NetApp_1.13.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.13.0-beta.1 (2025-10-22)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version tag from 'package-2025-06-01' to 'package-2025-07-01-preview'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/c2c7ee70dea80830fe9ea94aed2cec6182c4e9e6/specification/netapp/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/c2c7ee70dea80830fe9ea94aed2cec6182c4e9e6/specification/netapp/resource-manager/readme.md&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;Bucket&lt;/code&gt; resource type&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;GetNetAppResourceQuotaLimitsAccountsAsync&lt;/code&gt; to &lt;code&gt;NetAppAccountResource&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
