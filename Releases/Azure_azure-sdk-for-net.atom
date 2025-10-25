@@ -1,81 +1,28 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-10-24T00:05:56Z</updated>
+  <updated>2025-10-25T00:06:58Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-10-23</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-10-23</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-10-24</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-10-24</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-10-24T00:05:56Z</updated>
+    <updated>2025-10-25T00:06:58Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.CodeTransparency_1.0.0-beta.5"&gt;Azure.Security.CodeTransparency_1.0.0-beta.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DeviceRegistry_1.1.0-beta.1"&gt;Azure.ResourceManager.DeviceRegistry_1.1.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.5 (2025-10-20)&lt;/h2&gt;
+                                &lt;h2&gt;1.1.0-beta.1 (2025-10-23)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Exposed &lt;code&gt;CborUtils&lt;/code&gt; to extract values from CBOR maps, which would otherwise require working directly with a CBOR library&lt;/li&gt;
-&lt;li&gt;Added new static verification method &lt;code&gt;CodeTransparencyClient.VerifyTransparentStatement&lt;/code&gt; which accepts &lt;code&gt;CodeTransparencyVerificationOptions&lt;/code&gt;, this allows verifying receipts from specific issuers&lt;/li&gt;
+&lt;li&gt;Aligned resource types to Microsoft.DeviceRegistry API version &lt;code&gt;2025-10-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;Namespaces&lt;/code&gt;, &lt;code&gt;NamespaceAssets&lt;/code&gt;, &lt;code&gt;NamespaceDiscoveredAssets&lt;/code&gt;, &lt;code&gt;NamespaceDevices&lt;/code&gt;, &lt;code&gt;NamespaceDiscoveredDevices&lt;/code&gt; resource types from Microsoft.DeviceRegistry OpenAPI spec version &lt;code&gt;2025-10-01&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated samples&lt;/li&gt;
-&lt;li&gt;Fixed grammar in README files&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ImpactReporting_1.0.0-beta.1"&gt;Azure.ResourceManager.ImpactReporting_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2025-10-23)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;p&gt;This package follows the &lt;a href="https://azure.github.io/azure-sdk/general_introduction.html" rel="nofollow"&gt;new Azure SDK guidelines&lt;/a&gt;, and provides many core capabilities:&lt;/p&gt;
-&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
-- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
-- HTTP pipeline with custom policies.
-- Better error-handling.
-- Support uniform telemetry across all languages."&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
-- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
-- HTTP pipeline with custom policies.
-- Better error-handling.
-- Support uniform telemetry across all languages.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This package is a Public Preview version, so expect incompatible changes in subsequent releases as we improve the product. To provide feedback, submit an issue in our &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues"&gt;Azure SDK for .NET GitHub repo&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;NOTE: For more information about unified authentication, please refer to &lt;a href="https://docs.microsoft.com//dotnet/api/overview/azure/identity-readme?view=azure-dotnet" rel="nofollow"&gt;Microsoft Azure Identity documentation for .NET&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Storage_1.6.0"&gt;Azure.ResourceManager.Storage_1.6.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.6.0 (2025-10-24)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version tag from 'package-2025-01' to 'package-2025-06'. Tag details available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/1e7684349abdacee94cbf89200f319cd49e323f2/specification/storage/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/1e7684349abdacee94cbf89200f319cd49e323f2/specification/storage/resource-manager/readme.md&lt;/a&gt;.
-&lt;ul&gt;
-&lt;li&gt;Supported new property GeoPriorityReplicationStatus.IsBlobEnabled on Storage accounts.&lt;/li&gt;
-&lt;li&gt;Supported new ObjectReplicationPolicy Properties: PriorityReplication.Enabled.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetApp_1.13.0-beta.1"&gt;Azure.ResourceManager.NetApp_1.13.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.13.0-beta.1 (2025-10-22)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version tag from 'package-2025-06-01' to 'package-2025-07-01-preview'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/c2c7ee70dea80830fe9ea94aed2cec6182c4e9e6/specification/netapp/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/c2c7ee70dea80830fe9ea94aed2cec6182c4e9e6/specification/netapp/resource-manager/readme.md&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;Bucket&lt;/code&gt; resource type&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;GetNetAppResourceQuotaLimitsAccountsAsync&lt;/code&gt; to &lt;code&gt;NetAppAccountResource&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Change &lt;code&gt;Schemas&lt;/code&gt; and &lt;code&gt;SchemaVersions&lt;/code&gt; DELETE operations to be asynchronous operations, returning 202 HTTP status codes.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
