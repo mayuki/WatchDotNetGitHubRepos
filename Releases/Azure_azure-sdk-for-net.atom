@@ -1,33 +1,58 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-10-29T00:07:22Z</updated>
+  <updated>2025-10-30T00:07:30Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-10-28</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-10-28</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-10-29</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-10-29</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-10-29T00:07:22Z</updated>
+    <updated>2025-10-30T00:07:30Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Agents.Persistent_1.2.0-beta.7"&gt;Azure.AI.Agents.Persistent_1.2.0-beta.7&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.Storage.Queues_5.3.7"&gt;Microsoft.Azure.WebJobs.Extensions.Storage.Queues_5.3.7&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.7 (2025-10-28)&lt;/h2&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+                                &lt;h2&gt;5.3.7 (2025-10-29)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;The &lt;code&gt;trust&lt;/code&gt; parameter for &lt;code&gt;MCPApproval&lt;/code&gt; constructor was renamed to &lt;code&gt;requireApproval&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;This release contains bug fixes to improve quality.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs_5.3.7"&gt;Microsoft.Azure.WebJobs.Extensions.Storage.Blobs_5.3.7&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;5.3.7 (2025-10-29)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Relax the validation of previous conversation in the &lt;code&gt;PersistentAgentsChatClient&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The following optimizations were added to Blob Trigger processing:
+&lt;ul&gt;
+&lt;li&gt;Exclude containers that are not intended for monitoring.&lt;/li&gt;
+&lt;li&gt;Do not perform unnecessary scanning for container(s) detected during the initial write log.&lt;/li&gt;
+&lt;li&gt;Cache recently found write entry to avoid analyzing log blobs again.&lt;/li&gt;
+&lt;li&gt;Migrate ScaleMonitor to TargetScaler.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.IotHub_1.2.0-beta.2"&gt;Azure.ResourceManager.IotHub_1.2.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0-beta.2 (2025-10-29)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version tag from 'package-2023-06' to 'package-preview-2025-08'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/72cee8dc40fe3bc4b7956c87f269f5a363411913/specification/iothub/resource-manager/Microsoft.Devices/IoTHub/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/72cee8dc40fe3bc4b7956c87f269f5a363411913/specification/iothub/resource-manager/Microsoft.Devices/IoTHub/readme.md&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.IotHub&lt;/code&gt; AOT-compatible.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Expand AIFunction support to also include any AIFunctionDeclaration.&lt;/li&gt;
-&lt;li&gt;Add an extension AsAITool method that makes it easy to add any persistent ToolDefinition to ChatOptions.Tools.&lt;/li&gt;
-&lt;li&gt;Add HostedMcpServerTool support for &lt;code&gt;PersistentAgentsChatClient&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Upgraded Azure.Core from 1.44.1 to 1.49.0&lt;/li&gt;
+&lt;li&gt;Upgraded Azure.ResourceManager from 1.13.0 to 1.13.2&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;

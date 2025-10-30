@@ -1,43 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/machinelearning - Releases</title>
   <link href="https://github.com/dotnet/machinelearning" />
-  <updated>2025-10-29T00:07:30Z</updated>
+  <updated>2025-10-30T00:07:39Z</updated>
   <id>https://github.com/dotnet/machinelearning</id>
-  <entry>
-    <title>dotnet/machinelearning - Releases - 2025-10-28</title>
-    <id>https://github.com/dotnet/machinelearning#2025-10-28</id>
-    <link href="https://github.com/dotnet/machinelearning" />
-    <updated>2025-10-29T00:07:30Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/machinelearning/releases/tag/v4.0.3"&gt;ML.NET 4.0.3&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h1&gt;&lt;a href="http://dot.net/ml" rel="nofollow"&gt;ML.NET&lt;/a&gt; 4.0.3&lt;/h1&gt;
-&lt;h2&gt;&lt;strong&gt;Bug Fixes&lt;/strong&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;[release/4.0] Improve unique directory generation for temp files&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7528" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7528/hovercard"&gt;#7528&lt;/a&gt;)
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Compatibility note: This change resolves a performance problem where past versions of ML.NET would leave behind folders with the pattern &lt;code&gt;ml_dotnet\d+&lt;/code&gt; in the temp directory, which would cause model opening performance to degrade.  This fixes the problem.  You may also wish to delete these empty folders once after updating.&lt;/p&gt;
-&lt;p&gt;Using powershell:&lt;/p&gt;
-&lt;div class="highlight highlight-source-powershell notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Get-ChildItem &amp;quot;$env:TEMP&amp;quot; -Directory -Filter &amp;quot;ml_dotnet*&amp;quot; | Remove-Item -Recurse -Force"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Get-ChildItem&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$&lt;span class="pl-c1"&gt;env:&lt;/span&gt;TEMP&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;-&lt;/span&gt;Directory &lt;span class="pl-k"&gt;-&lt;/span&gt;Filter &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ml_dotnet*&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;|&lt;/span&gt; &lt;span class="pl-c1"&gt;Remove-Item&lt;/span&gt; &lt;span class="pl-k"&gt;-&lt;/span&gt;Recurse &lt;span class="pl-k"&gt;-&lt;/span&gt;Force&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Using Bash:&lt;/p&gt;
-&lt;div class="highlight highlight-source-shell notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="find &amp;quot;$TEMP&amp;quot; -type d -name &amp;quot;ml_dotnet*&amp;quot; -exec rm -rf {} +"&gt;&lt;pre&gt;find &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$TEMP&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; -type d -name &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ml_dotnet*&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; -exec rm -rf {} +&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;strong&gt;Build / Test updates&lt;/strong&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;[release/4.0] Update dependencies from dotnet/arcade&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7470" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7470/hovercard"&gt;#7470&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[release/4.0] Use arcade script for installing MacOS dependencies&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7534" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7534/hovercard"&gt;#7534&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
