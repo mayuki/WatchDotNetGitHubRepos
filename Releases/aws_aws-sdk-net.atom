@@ -1,30 +1,60 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-11-05T00:07:16Z</updated>
+  <updated>2025-11-06T00:07:03Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-11-04</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-11-04</id>
+    <title>aws/aws-sdk-net - Releases - 2025-11-05</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-11-05</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-11-05T00:07:16Z</updated>
+    <updated>2025-11-06T00:07:03Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1158.0"&gt;3.7.1158.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.127.0"&gt;4.0.127.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1158.0 (2025-11-04 19:19 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.127.0 (2025-11-05 19:35 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;PinpointSMSVoiceV2 (3.7.504.0)
+&lt;li&gt;CloudFront (4.0.8.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for the CarrierLookup API, which returns information about a destination phone number including if the number is valid, the carrier, and more.&lt;/li&gt;
+&lt;li&gt;This release adds new and updated API operations. You can now use the IpAddressType field to specify either ipv4 or dualstack for your Anycast static IP list. You can also enable cross-account resource sharing to share your VPC origins with other AWS accounts&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 3.7.500.42
+&lt;li&gt;DataZone (4.0.13.0)
 &lt;ul&gt;
-&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Added support for Project Resource Tags&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EC2 (4.0.48.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds AvailabilityZoneId support for DescribeFastSnapshotRestores, DisableFastSnapshotRestores, and EnableFastSnapshotRestores APIs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;FSx (4.0.7.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon FSx now enables secure management of Active Directory credentials through AWS Secrets Manager integration. Customers can use Secret ARNs instead of direct credentials when joining resources to Active Directory domains.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GroundStation (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;Introduce CreateDataflowEndpointGroupV2 action&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3 (4.0.10.0)
+&lt;ul&gt;
+&lt;li&gt;Launch IPv6 dual-stack support for S3 Express&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SageMaker (4.0.30.0)
+&lt;ul&gt;
+&lt;li&gt;Add new fields in SageMaker Hyperpod DescribeCluster API response: TargetStateCount, SoftwareUpdateStatus and ActiveSoftwareDeploymentConfig to provide AMI update progress visibility .&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.2.0
+&lt;ul&gt;
+&lt;li&gt;Added support for Bedrock Environment Token Provider specification. Bedrock API keys user guide: &lt;a href="https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys.html" rel="nofollow"&gt;https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -32,13 +62,43 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.126.0"&gt;4.0.126.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1159.0"&gt;3.7.1159.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.126.0 (2025-11-04 19:19 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1159.0 (2025-11-05 19:25 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;PinpointSMSVoiceV2 (4.0.5.0)
+&lt;li&gt;CloudFront (3.7.506.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for the CarrierLookup API, which returns information about a destination phone number including if the number is valid, the carrier, and more.&lt;/li&gt;
+&lt;li&gt;This release adds new and updated API operations. You can now use the IpAddressType field to specify either ipv4 or dualstack for your Anycast static IP list. You can also enable cross-account resource sharing to share your VPC origins with other AWS accounts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DataZone (3.7.509.0)
+&lt;ul&gt;
+&lt;li&gt;Added support for Project Resource Tags&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EC2 (3.7.522.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds AvailabilityZoneId support for DescribeFastSnapshotRestores, DisableFastSnapshotRestores, and EnableFastSnapshotRestores APIs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;FSx (3.7.505.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon FSx now enables secure management of Active Directory credentials through AWS Secrets Manager integration. Customers can use Secret ARNs instead of direct credentials when joining resources to Active Directory domains.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GroundStation (3.7.502.0)
+&lt;ul&gt;
+&lt;li&gt;Introduce CreateDataflowEndpointGroupV2 action&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3 (3.7.504.0)
+&lt;ul&gt;
+&lt;li&gt;Launch IPv6 dual-stack support for S3 Express&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SageMaker (3.7.516.0)
+&lt;ul&gt;
+&lt;li&gt;Add new fields in SageMaker Hyperpod DescribeCluster API response: TargetStateCount, SoftwareUpdateStatus and ActiveSoftwareDeploymentConfig to provide AMI update progress visibility .&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
