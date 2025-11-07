@@ -1,60 +1,80 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-11-06T00:07:03Z</updated>
+  <updated>2025-11-07T00:07:13Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-11-05</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-11-05</id>
+    <title>aws/aws-sdk-net - Releases - 2025-11-06</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-11-06</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-11-06T00:07:03Z</updated>
+    <updated>2025-11-07T00:07:13Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.127.0"&gt;4.0.127.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1160.0"&gt;3.7.1160.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.127.0 (2025-11-05 19:35 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1160.0 (2025-11-06 19:55 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;CloudFront (4.0.8.0)
+&lt;li&gt;AccessAnalyzer (3.7.503.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds new and updated API operations. You can now use the IpAddressType field to specify either ipv4 or dualstack for your Anycast static IP list. You can also enable cross-account resource sharing to share your VPC origins with other AWS accounts&lt;/li&gt;
+&lt;li&gt;New field totalActiveErrors added to getFindingsStatistics response.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DataZone (4.0.13.0)
+&lt;li&gt;Backup (3.7.504.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for Project Resource Tags&lt;/li&gt;
+&lt;li&gt;AWS Backup now supports customer-managed keys (CMK) for logically air-gapped vaults, enabling customers to maintain full control over their encryption key lifecycle. This feature helps organizations meet specific internal governance requirements or external regulatory compliance standards.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.48.0)
+&lt;li&gt;Connect (3.7.511.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds AvailabilityZoneId support for DescribeFastSnapshotRestores, DisableFastSnapshotRestores, and EnableFastSnapshotRestores APIs.&lt;/li&gt;
+&lt;li&gt;Added support for Conditional Questions in Evaluation Forms. Introduced Auto Evaluation capability for Evaluation Forms and Contact Evaluations. Added new API operations: SearchEvaluationForms and SearchContactEvaluations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;FSx (4.0.7.0)
+&lt;li&gt;EC2 (3.7.523.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon FSx now enables secure management of Active Directory credentials through AWS Secrets Manager integration. Customers can use Secret ARNs instead of direct credentials when joining resources to Active Directory domains.&lt;/li&gt;
+&lt;li&gt;Add Amazon EC2 R8a instance types&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GroundStation (4.0.2.0)
+&lt;li&gt;GameLift (3.7.503.0)
 &lt;ul&gt;
-&lt;li&gt;Introduce CreateDataflowEndpointGroupV2 action&lt;/li&gt;
+&lt;li&gt;Amazon GameLift Servers now supports game builds that use the Windows 2022 operating system.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (4.0.10.0)
+&lt;li&gt;IdentityStore (3.7.503.0)
 &lt;ul&gt;
-&lt;li&gt;Launch IPv6 dual-stack support for S3 Express&lt;/li&gt;
+&lt;li&gt;IdentityStore API: added new KMSExceptionReason fields to the Exception object; added multiple new fields to the User APIs - UserStatus, Birthdate, Website and Photos; added multiple new metadata fields for User, Groups and Membership APIs - CreatedAt, CreatedBy, UpdatedAt and UpdatedBy.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.30.0)
+&lt;li&gt;QuickSight (3.7.505.0)
 &lt;ul&gt;
-&lt;li&gt;Add new fields in SageMaker Hyperpod DescribeCluster API response: TargetStateCount, SoftwareUpdateStatus and ActiveSoftwareDeploymentConfig to provide AMI update progress visibility .&lt;/li&gt;
+&lt;li&gt;Support for New Data Prep Experience&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 4.0.2.0
+&lt;li&gt;S3Tables (3.7.503.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for Bedrock Environment Token Provider specification. Bedrock API keys user guide: &lt;a href="https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys.html" rel="nofollow"&gt;https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Adds support for tagging APIs for S3 Tables&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3Vectors (3.7.503.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon S3 Vectors provides cost-effective, elastic, and durable vector storage for queries based on semantic meaning and similarity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SageMaker (3.7.517.0)
+&lt;ul&gt;
+&lt;li&gt;Added NodeProvisioningMode parameter to UpdateCluster API to determine how instance provisioning is handled during cluster operations; in Continuous mode. Added VpcId field in UpdateDomain request for SageMaker Unified Studio domains with no VPC to add a customer VPC.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SimpleSystemsManagement (3.7.504.0)
+&lt;ul&gt;
+&lt;li&gt;Provides NoLongerSupportedException error message&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.500.43
+&lt;ul&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -62,43 +82,73 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1159.0"&gt;3.7.1159.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.128.0"&gt;4.0.128.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1159.0 (2025-11-05 19:25 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.128.0 (2025-11-06 19:55 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;CloudFront (3.7.506.0)
+&lt;li&gt;AccessAnalyzer (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds new and updated API operations. You can now use the IpAddressType field to specify either ipv4 or dualstack for your Anycast static IP list. You can also enable cross-account resource sharing to share your VPC origins with other AWS accounts&lt;/li&gt;
+&lt;li&gt;New field totalActiveErrors added to getFindingsStatistics response.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DataZone (3.7.509.0)
+&lt;li&gt;Backup (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for Project Resource Tags&lt;/li&gt;
+&lt;li&gt;AWS Backup now supports customer-managed keys (CMK) for logically air-gapped vaults, enabling customers to maintain full control over their encryption key lifecycle. This feature helps organizations meet specific internal governance requirements or external regulatory compliance standards.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (3.7.522.0)
+&lt;li&gt;Connect (4.0.15.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds AvailabilityZoneId support for DescribeFastSnapshotRestores, DisableFastSnapshotRestores, and EnableFastSnapshotRestores APIs.&lt;/li&gt;
+&lt;li&gt;Added support for Conditional Questions in Evaluation Forms. Introduced Auto Evaluation capability for Evaluation Forms and Contact Evaluations. Added new API operations: SearchEvaluationForms and SearchContactEvaluations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;FSx (3.7.505.0)
+&lt;li&gt;EC2 (4.0.49.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon FSx now enables secure management of Active Directory credentials through AWS Secrets Manager integration. Customers can use Secret ARNs instead of direct credentials when joining resources to Active Directory domains.&lt;/li&gt;
+&lt;li&gt;Add Amazon EC2 R8a instance types&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GroundStation (3.7.502.0)
+&lt;li&gt;GameLift (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;Introduce CreateDataflowEndpointGroupV2 action&lt;/li&gt;
+&lt;li&gt;Amazon GameLift Servers now supports game builds that use the Windows 2022 operating system.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (3.7.504.0)
+&lt;li&gt;IdentityStore (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Launch IPv6 dual-stack support for S3 Express&lt;/li&gt;
+&lt;li&gt;IdentityStore API: added new KMSExceptionReason fields to the Exception object; added multiple new fields to the User APIs - UserStatus, Birthdate, Website and Photos; added multiple new metadata fields for User, Groups and Membership APIs - CreatedAt, CreatedBy, UpdatedAt and UpdatedBy.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMaker (3.7.516.0)
+&lt;li&gt;QuickSight (4.0.8.0)
 &lt;ul&gt;
-&lt;li&gt;Add new fields in SageMaker Hyperpod DescribeCluster API response: TargetStateCount, SoftwareUpdateStatus and ActiveSoftwareDeploymentConfig to provide AMI update progress visibility .&lt;/li&gt;
+&lt;li&gt;Support for New Data Prep Experience&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3 (4.0.11.0)
+&lt;ul&gt;
+&lt;li&gt;Increasing the default part size for S3 multipart upload from 5MB to 8MB when no part size is specified. This will reduce the number of API calls for multipart uploads.&lt;/li&gt;
+&lt;li&gt;Update AssemblyInfo to give S3 Unit Test project access to internals.&lt;/li&gt;
+&lt;li&gt;Fixed issue where PartSize and IsLastPart fields were not properly set on Transfer Utility Upload Part Request.&lt;/li&gt;
+&lt;li&gt;Add additional validations for Transfer Utility requests to ensure Upload Parts have the proper Content Length and File Offsets.&lt;/li&gt;
+&lt;li&gt;Create AbortMultipartUploads api that takes in TransferUtilityAbortMultipartUploadRequest.&lt;/li&gt;
+&lt;li&gt;Add missing fields to Transfer Utility request objects. ContentType on TransferUtilityUploadRequest and TransferUtilityUploadDirectoryRequest now directly updates the ContentType header, instead of being a separate field on those objects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3Tables (4.0.6.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for tagging APIs for S3 Tables&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3Vectors (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon S3 Vectors provides cost-effective, elastic, and durable vector storage for queries based on semantic meaning and similarity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SageMaker (4.0.31.0)
+&lt;ul&gt;
+&lt;li&gt;Added NodeProvisioningMode parameter to UpdateCluster API to determine how instance provisioning is handled during cluster operations; in Continuous mode. Added VpcId field in UpdateDomain request for SageMaker Unified Studio domains with no VPC to add a customer VPC.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SimpleSystemsManagement (4.0.6.0)
+&lt;ul&gt;
+&lt;li&gt;Provides NoLongerSupportedException error message&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
