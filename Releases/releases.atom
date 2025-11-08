@@ -1,80 +1,55 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2025-11-07T00:07:41Z</updated>
+  <updated>2025-11-08T00:07:03Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-11-06</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-11-06</id>
+    <title>aws/aws-sdk-net - Releases - 2025-11-07</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-11-07</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-11-07T00:07:13Z</updated>
+    <updated>2025-11-08T00:06:46Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1160.0"&gt;3.7.1160.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.129.0"&gt;4.0.129.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1160.0 (2025-11-06 19:55 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.129.0 (2025-11-07 19:49 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AccessAnalyzer (3.7.503.0)
+&lt;li&gt;ControlTower (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;New field totalActiveErrors added to getFindingsStatistics response.&lt;/li&gt;
+&lt;li&gt;Added Parent Identifier support to ListEnabledControls and GetEnabledControl API. Implemented RemediationType support for Landing Zone operations: CreateLandingZone, UpdateLandingZone and GetLandingZone APIs&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Backup (3.7.504.0)
+&lt;li&gt;EC2 (4.0.50.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Backup now supports customer-managed keys (CMK) for logically air-gapped vaults, enabling customers to maintain full control over their encryption key lifecycle. This feature helps organizations meet specific internal governance requirements or external regulatory compliance standards.&lt;/li&gt;
+&lt;li&gt;Adds PrivateDnsPreference and PrivateDnsSpecifiedDomains to control private DNS resolution for resource and service network VPC endpoints and IpamScopeExternalAuthorityConfiguration to integrate Amazon VPC IPAM with a third-party IPAM service&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (3.7.511.0)
+&lt;li&gt;KeyManagementService (4.0.7.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for Conditional Questions in Evaluation Forms. Introduced Auto Evaluation capability for Evaluation Forms and Contact Evaluations. Added new API operations: SearchEvaluationForms and SearchContactEvaluations.&lt;/li&gt;
+&lt;li&gt;Added support for new ECC_NIST_EDWARDS25519 AWS KMS key spec&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (3.7.523.0)
+&lt;li&gt;OpenSearchService (4.0.5.0)
 &lt;ul&gt;
-&lt;li&gt;Add Amazon EC2 R8a instance types&lt;/li&gt;
+&lt;li&gt;This release introduces the Default Application feature, allowing users to set, change, or unset a preferred OpenSearch UI application on a per-region basis for a streamlined and consistent user experience.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GameLift (3.7.503.0)
+&lt;li&gt;S3 (4.0.11.1)
 &lt;ul&gt;
-&lt;li&gt;Amazon GameLift Servers now supports game builds that use the Windows 2022 operating system.&lt;/li&gt;
+&lt;li&gt;Fix an issue with Transfer Utility's UploadDirectory where the content type of 1 file was persisting for all the files in the directory.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IdentityStore (3.7.503.0)
+&lt;li&gt;VPCLattice (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;IdentityStore API: added new KMSExceptionReason fields to the Exception object; added multiple new fields to the User APIs - UserStatus, Birthdate, Website and Photos; added multiple new metadata fields for User, Groups and Membership APIs - CreatedAt, CreatedBy, UpdatedAt and UpdatedBy.&lt;/li&gt;
+&lt;li&gt;Amazon VPC Lattice now supports custom domain name for resource configurations&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;QuickSight (3.7.505.0)
+&lt;li&gt;Core 4.0.3.0
 &lt;ul&gt;
-&lt;li&gt;Support for New Data Prep Experience&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3Tables (3.7.503.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for tagging APIs for S3 Tables&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3Vectors (3.7.503.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon S3 Vectors provides cost-effective, elastic, and durable vector storage for queries based on semantic meaning and similarity.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMaker (3.7.517.0)
-&lt;ul&gt;
-&lt;li&gt;Added NodeProvisioningMode parameter to UpdateCluster API to determine how instance provisioning is handled during cluster operations; in Continuous mode. Added VpcId field in UpdateDomain request for SageMaker Unified Studio domains with no VPC to add a customer VPC.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SimpleSystemsManagement (3.7.504.0)
-&lt;ul&gt;
-&lt;li&gt;Provides NoLongerSupportedException error message&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 3.7.500.43
-&lt;ul&gt;
-&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Re-introduce background refresh of credentials during their preempt expiry period (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3475059675" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/4024" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/4024/hovercard" href="https://github.com/aws/aws-sdk-net/issues/4024"&gt;#4024&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -82,73 +57,33 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.128.0"&gt;4.0.128.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1161.0"&gt;3.7.1161.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.128.0 (2025-11-06 19:55 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1161.0 (2025-11-07 19:22 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AccessAnalyzer (4.0.4.0)
+&lt;li&gt;ControlTower (3.7.502.0)
 &lt;ul&gt;
-&lt;li&gt;New field totalActiveErrors added to getFindingsStatistics response.&lt;/li&gt;
+&lt;li&gt;Added Parent Identifier support to ListEnabledControls and GetEnabledControl API. Implemented RemediationType support for Landing Zone operations: CreateLandingZone, UpdateLandingZone and GetLandingZone APIs&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Backup (4.0.6.0)
+&lt;li&gt;EC2 (3.7.524.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Backup now supports customer-managed keys (CMK) for logically air-gapped vaults, enabling customers to maintain full control over their encryption key lifecycle. This feature helps organizations meet specific internal governance requirements or external regulatory compliance standards.&lt;/li&gt;
+&lt;li&gt;Adds PrivateDnsPreference and PrivateDnsSpecifiedDomains to control private DNS resolution for resource and service network VPC endpoints and IpamScopeExternalAuthorityConfiguration to integrate Amazon VPC IPAM with a third-party IPAM service&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.15.0)
+&lt;li&gt;KeyManagementService (3.7.504.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for Conditional Questions in Evaluation Forms. Introduced Auto Evaluation capability for Evaluation Forms and Contact Evaluations. Added new API operations: SearchEvaluationForms and SearchContactEvaluations.&lt;/li&gt;
+&lt;li&gt;Added support for new ECC_NIST_EDWARDS25519 AWS KMS key spec&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.49.0)
+&lt;li&gt;OpenSearchService (3.7.503.0)
 &lt;ul&gt;
-&lt;li&gt;Add Amazon EC2 R8a instance types&lt;/li&gt;
+&lt;li&gt;This release introduces the Default Application feature, allowing users to set, change, or unset a preferred OpenSearch UI application on a per-region basis for a streamlined and consistent user experience.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GameLift (4.0.4.0)
+&lt;li&gt;VPCLattice (3.7.504.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon GameLift Servers now supports game builds that use the Windows 2022 operating system.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IdentityStore (4.0.3.0)
-&lt;ul&gt;
-&lt;li&gt;IdentityStore API: added new KMSExceptionReason fields to the Exception object; added multiple new fields to the User APIs - UserStatus, Birthdate, Website and Photos; added multiple new metadata fields for User, Groups and Membership APIs - CreatedAt, CreatedBy, UpdatedAt and UpdatedBy.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;QuickSight (4.0.8.0)
-&lt;ul&gt;
-&lt;li&gt;Support for New Data Prep Experience&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3 (4.0.11.0)
-&lt;ul&gt;
-&lt;li&gt;Increasing the default part size for S3 multipart upload from 5MB to 8MB when no part size is specified. This will reduce the number of API calls for multipart uploads.&lt;/li&gt;
-&lt;li&gt;Update AssemblyInfo to give S3 Unit Test project access to internals.&lt;/li&gt;
-&lt;li&gt;Fixed issue where PartSize and IsLastPart fields were not properly set on Transfer Utility Upload Part Request.&lt;/li&gt;
-&lt;li&gt;Add additional validations for Transfer Utility requests to ensure Upload Parts have the proper Content Length and File Offsets.&lt;/li&gt;
-&lt;li&gt;Create AbortMultipartUploads api that takes in TransferUtilityAbortMultipartUploadRequest.&lt;/li&gt;
-&lt;li&gt;Add missing fields to Transfer Utility request objects. ContentType on TransferUtilityUploadRequest and TransferUtilityUploadDirectoryRequest now directly updates the ContentType header, instead of being a separate field on those objects.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3Tables (4.0.6.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for tagging APIs for S3 Tables&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3Vectors (4.0.3.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon S3 Vectors provides cost-effective, elastic, and durable vector storage for queries based on semantic meaning and similarity.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.31.0)
-&lt;ul&gt;
-&lt;li&gt;Added NodeProvisioningMode parameter to UpdateCluster API to determine how instance provisioning is handled during cluster operations; in Continuous mode. Added VpcId field in UpdateDomain request for SageMaker Unified Studio domains with no VPC to add a customer VPC.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SimpleSystemsManagement (4.0.6.0)
-&lt;ul&gt;
-&lt;li&gt;Provides NoLongerSupportedException error message&lt;/li&gt;
+&lt;li&gt;Amazon VPC Lattice now supports custom domain name for resource configurations&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -159,259 +94,41 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-11-06</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-11-06</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-11-07</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-11-07</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-11-07T00:07:14Z</updated>
+    <updated>2025-11-08T00:06:47Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.AppService_1.3.0-beta.1"&gt;Azure.Provisioning.AppService_1.3.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.50.0"&gt;Azure.Core_1.50.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.3.0-beta.1 (2025-11-07)&lt;/h2&gt;
+                                &lt;h2&gt;1.50.0 (2025-11-05)&lt;/h2&gt;
+&lt;h3&gt;Acknowledgments&lt;/h3&gt;
+&lt;p&gt;Thank you to our developer community members who helped to make the Azure.Core library better with their contributions to this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Daniel Marbach  &lt;em&gt;(&lt;a href="https://github.com/danielmarbach"&gt;GitHub&lt;/a&gt;)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Bump api-version to latest.&lt;/li&gt;
+&lt;li&gt;Adopt System.ClientModel 1.8.0&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Deprecated models &lt;code&gt;AseV3NetworkingConfigurationData&lt;/code&gt;, &lt;code&gt;CustomDnsSuffixConfigurationData&lt;/code&gt; and &lt;code&gt;StaticSiteUserProvidedFunctionAppData&lt;/code&gt;. Please use &lt;code&gt;AseV3NetworkingConfiguration&lt;/code&gt;, &lt;code&gt;CustomDnsSuffixConfiguration&lt;/code&gt; and &lt;code&gt;StaticSiteUserProvidedFunctionApp&lt;/code&gt; instead.&lt;/li&gt;
-&lt;li&gt;Deprecated properties &lt;code&gt;AppServiceEnvironment.CustomDnsSuffixConfiguration&lt;/code&gt;, &lt;code&gt;AppServiceEnvironment.NetworkingConfiguration&lt;/code&gt; and &lt;code&gt;StaticSite.UserProvidedFunctionApps&lt;/code&gt;. Please use &lt;code&gt;AppServiceEnvironment.CustomDnsSuffixConfig&lt;/code&gt;, &lt;code&gt;AppServiceEnvironment.NetworkingConfig&lt;/code&gt; and &lt;code&gt;StaticSite.UserFunctionApps&lt;/code&gt; instead.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Property &lt;code&gt;Name&lt;/code&gt; of &lt;code&gt;WebSiteSlot&lt;/code&gt; is now settable. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3558105864" data-permission-text="Title is private" data-url="https://github.com/Azure/azure-sdk-for-net/issues/53508" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/53508/hovercard" href="https://github.com/Azure/azure-sdk-for-net/issues/53508"&gt;#53508&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Several performance and efficiency improvements were made to how request content is created and managed.   &lt;em&gt;(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/52488" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/52488/hovercard"&gt;#52488&lt;/a&gt;, a community contribution, courtesy of &lt;a href="https://github.com/danielmarbach"&gt;danielmarbach&lt;/a&gt;)&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerRegistry_1.4.0"&gt;Azure.ResourceManager.ContainerRegistry_1.4.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Dns_1.0.0-beta.1"&gt;Azure.Provisioning.Dns_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.4.0 (2025-11-05)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2025-11-07)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded api-version to 2025-11-01.&lt;/li&gt;
+&lt;li&gt;Initial beta release of new Azure.Provisioning.Dns.&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>googleapis/google-cloud-dotnet - Releases - 2025-11-06</title>
-    <id>https://github.com/googleapis/google-cloud-dotnet#2025-11-06</id>
-    <link href="https://github.com/googleapis/google-cloud-dotnet" />
-    <updated>2025-11-07T00:07:29Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Shopping.Merchant.Reports.V1-1.1.0"&gt;Google.Shopping.Merchant.Reports.V1 version 1.1.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update dependencies&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Shopping.Merchant.Promotions.V1-1.1.0"&gt;Google.Shopping.Merchant.Promotions.V1 version 1.1.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update dependencies&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Shopping.Merchant.Products.V1-1.2.0"&gt;Google.Shopping.Merchant.Products.V1 version 1.2.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update dependencies&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Shopping.Merchant.OrderTracking.V1-1.1.0"&gt;Google.Shopping.Merchant.OrderTracking.V1 version 1.1.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update dependencies&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Shopping.Merchant.Accounts.V1-1.2.0"&gt;Google.Shopping.Merchant.Accounts.V1 version 1.2.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update dependencies&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Shopping.Merchant.Quota.V1-1.1.0"&gt;Google.Shopping.Merchant.Quota.V1 version 1.1.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update dependencies&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Shopping.Merchant.Lfp.V1-1.1.0"&gt;Google.Shopping.Merchant.Lfp.V1 version 1.1.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update dependencies&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Shopping.Merchant.IssueResolution.V1-1.1.0"&gt;Google.Shopping.Merchant.IssueResolution.V1 version 1.1.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update dependencies&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update docs for issue resolution&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Shopping.Merchant.Notifications.V1-1.1.0"&gt;Google.Shopping.Merchant.Notifications.V1 version 1.1.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update dependencies&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Shopping.Merchant.Inventories.V1-1.1.0"&gt;Google.Shopping.Merchant.Inventories.V1 version 1.1.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update dependencies&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>microsoft/microsoft-ui-xaml - Releases - 2025-11-06</title>
-    <id>https://github.com/microsoft/microsoft-ui-xaml#2025-11-06</id>
-    <link href="https://github.com/microsoft/microsoft-ui-xaml" />
-    <updated>2025-11-07T00:07:34Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/releases/tag/winui3/release/2.0.0-experimental2"&gt;WinUI 3 in WinAppSDK 2.0-experimental2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;The source code for the version of WinUI 3 in the WinAppSDK 2.0.0 experimental2 is available. 2.0.0 experimental2 is an experimental release for the WinAppSDK that includes bug fixes for earlier versions, access to non-stable APIs.&lt;/p&gt;
-&lt;p&gt;Check out our &lt;a href="https://aka.ms/windowsappsdk/2.0/2.0.0-experimental2/release-notes" rel="nofollow"&gt;release notes&lt;/a&gt; for the list of fixed issues and new or experimental APIs in this release.&lt;/p&gt;
-&lt;p&gt;Download the NuGet package for 2.0-experimental2 here: &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.0.0-experimental2" rel="nofollow"&gt;https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.0.0-experimental2&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>microsoft/WindowsAppSDK - Releases - 2025-11-06</title>
-    <id>https://github.com/microsoft/WindowsAppSDK#2025-11-06</id>
-    <link href="https://github.com/microsoft/WindowsAppSDK" />
-    <updated>2025-11-07T00:07:35Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.0-exp2"&gt;2.0.0 Experimental 2 (2.0.0-experimental2) 🧪&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;Windows App SDK 2.0-Experimental2 (2.0.0-experimental2)&lt;/h2&gt;
-&lt;p&gt;WinAppSDK 2.0.0 Experimental 2 is the latest experimental version of WinAppSDK providing new features and improvements to the platform.&lt;/p&gt;
-&lt;h3&gt;What's new in WinAppSDK 2.0.0 Experimental 2:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;New AppContentIndexer API&lt;/strong&gt; enables application to efficiently index their content enabling the following experiences:
-&lt;ul&gt;
-&lt;li&gt;Semantic Search enables apps to return results based on intent and meaning rather than keyword match&lt;/li&gt;
-&lt;li&gt;Retrieval-Augmented Generation (RAG) allowing indexed content to be served as a knowledge base for generative AI models.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Windows ML Model Catalog allows apps or libraries to dynamically discover and download large AI model files from your own online model catalogs.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;InputUnderlyingWindowController&lt;/code&gt; allows callers to specify the HWND that will receive the input messages originally directed to a &lt;code&gt;ContentIsland&lt;/code&gt; created from a &lt;code&gt;SystemVisual&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;SystemBackdropHost&lt;/code&gt; provides XAML-compatible approach to placing a system backdrop anywhere within an application's visual tree.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PopupAnchor&lt;/code&gt; now allows &lt;code&gt;DesktopPopupSiteBridge&lt;/code&gt; to support relative positioning by anchoring to its owning window or island.&lt;/li&gt;
-&lt;li&gt;The latest &lt;code&gt;Storage.Pickers&lt;/code&gt; update streamlines file and folder selection by letting developers set initial and persistent folder locations, and by grouping filetype filters with clear labels for easier navigation.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;WrapPanel&lt;/code&gt; allows arranging child elements in a sequential position from left to right, items overflowing the line will break to the next line automatically.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;To see everything that's new and changed, see the full &lt;a href="https://aka.ms/windowsappsdk/2.0/2.0.0-experimental2/release-notes" rel="nofollow"&gt;Windows App SDK 2.0 Experimental release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
-&lt;h3&gt;Try it out&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.0.0-experimental2" rel="nofollow"&gt;2.0.0-experimental2 NuGet&lt;/a&gt; package to use WinAppSDK 2.0 in your app.&lt;/li&gt;
-&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Getting Started&lt;/h3&gt;
-&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools &lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>StackExchange/StackExchange.Redis - Releases - 2025-11-06</title>
-    <id>https://github.com/StackExchange/StackExchange.Redis#2025-11-06</id>
-    <link href="https://github.com/StackExchange/StackExchange.Redis" />
-    <updated>2025-11-07T00:07:40Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/2.10.1"&gt;2.10.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;Adds support for Redis 8.4 features&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;support multi-string-set with expiration &lt;code&gt;MSETEX ...&lt;/code&gt;; details controlled via new &lt;code&gt;Expiration&lt;/code&gt; API&lt;/li&gt;
-&lt;li&gt;support checked string-set &lt;code&gt;SET ... IFEQ/IFNE/IFDEQ/IFDNE digestOrValue&lt;/code&gt;; details controlled via new &lt;code&gt;ValueCondition&lt;/code&gt; API; also uses &lt;code&gt;Expiration&lt;/code&gt; for expiry&lt;/li&gt;
-&lt;li&gt;support checked string-delete &lt;code&gt;DELEX ... IFEQ/IFNE/IFDEQ/IFDNE digestOrValue&lt;/code&gt; (again via &lt;code&gt;ValueCondition&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;use checked string-set/delete to implement &lt;code&gt;LockExtend[Async]&lt;/code&gt;/&lt;code&gt;LockRelease[Async]&lt;/code&gt; when possible&lt;/li&gt;
-&lt;li&gt;support &lt;code&gt;XREADGROUP ... CLAIM minIdleTime&lt;/code&gt; for simplified stream processing&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Note that niche &lt;code&gt;StringSet[Async]&lt;/code&gt; scenarios may require trivial build changes due to removing default parameter values; this simplify means explicitly specifying &lt;code&gt;keepTtl&lt;/code&gt;, or using the new &lt;code&gt;Expiration&lt;/code&gt; API. There is no impact to already compiled code (no methods have been removed).&lt;/p&gt;
-&lt;p&gt;8.4 also includes "hybrid search"; this is not currently exposed in SE.Redis, and will be added to NRedisStack ASAP.&lt;/p&gt;
-&lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;docker image: use client-libs-test by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3566121752" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2976" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2976/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2976"&gt;#2976&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Support MSETEX by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3570825632" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2977" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2977/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2977"&gt;#2977&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;propose support for XREADGROUP CLAIM by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3537000214" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2972" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2972/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2972"&gt;#2972&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Support 8.4 CAS/CAD (IF*) operations by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3581688746" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2978" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2978/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2978"&gt;#2978&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Combine fixups from 8.4 changes by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3591922453" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2979" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2979/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2979"&gt;#2979&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/2.9.32...2.10.1"&gt;&lt;tt&gt;2.9.32...2.10.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     

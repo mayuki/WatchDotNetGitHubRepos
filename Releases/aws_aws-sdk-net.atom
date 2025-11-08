@@ -1,80 +1,55 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-11-07T00:07:13Z</updated>
+  <updated>2025-11-08T00:06:46Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-11-06</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-11-06</id>
+    <title>aws/aws-sdk-net - Releases - 2025-11-07</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-11-07</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-11-07T00:07:13Z</updated>
+    <updated>2025-11-08T00:06:46Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1160.0"&gt;3.7.1160.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.129.0"&gt;4.0.129.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1160.0 (2025-11-06 19:55 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.129.0 (2025-11-07 19:49 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AccessAnalyzer (3.7.503.0)
+&lt;li&gt;ControlTower (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;New field totalActiveErrors added to getFindingsStatistics response.&lt;/li&gt;
+&lt;li&gt;Added Parent Identifier support to ListEnabledControls and GetEnabledControl API. Implemented RemediationType support for Landing Zone operations: CreateLandingZone, UpdateLandingZone and GetLandingZone APIs&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Backup (3.7.504.0)
+&lt;li&gt;EC2 (4.0.50.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Backup now supports customer-managed keys (CMK) for logically air-gapped vaults, enabling customers to maintain full control over their encryption key lifecycle. This feature helps organizations meet specific internal governance requirements or external regulatory compliance standards.&lt;/li&gt;
+&lt;li&gt;Adds PrivateDnsPreference and PrivateDnsSpecifiedDomains to control private DNS resolution for resource and service network VPC endpoints and IpamScopeExternalAuthorityConfiguration to integrate Amazon VPC IPAM with a third-party IPAM service&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (3.7.511.0)
+&lt;li&gt;KeyManagementService (4.0.7.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for Conditional Questions in Evaluation Forms. Introduced Auto Evaluation capability for Evaluation Forms and Contact Evaluations. Added new API operations: SearchEvaluationForms and SearchContactEvaluations.&lt;/li&gt;
+&lt;li&gt;Added support for new ECC_NIST_EDWARDS25519 AWS KMS key spec&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (3.7.523.0)
+&lt;li&gt;OpenSearchService (4.0.5.0)
 &lt;ul&gt;
-&lt;li&gt;Add Amazon EC2 R8a instance types&lt;/li&gt;
+&lt;li&gt;This release introduces the Default Application feature, allowing users to set, change, or unset a preferred OpenSearch UI application on a per-region basis for a streamlined and consistent user experience.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GameLift (3.7.503.0)
+&lt;li&gt;S3 (4.0.11.1)
 &lt;ul&gt;
-&lt;li&gt;Amazon GameLift Servers now supports game builds that use the Windows 2022 operating system.&lt;/li&gt;
+&lt;li&gt;Fix an issue with Transfer Utility's UploadDirectory where the content type of 1 file was persisting for all the files in the directory.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IdentityStore (3.7.503.0)
+&lt;li&gt;VPCLattice (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;IdentityStore API: added new KMSExceptionReason fields to the Exception object; added multiple new fields to the User APIs - UserStatus, Birthdate, Website and Photos; added multiple new metadata fields for User, Groups and Membership APIs - CreatedAt, CreatedBy, UpdatedAt and UpdatedBy.&lt;/li&gt;
+&lt;li&gt;Amazon VPC Lattice now supports custom domain name for resource configurations&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;QuickSight (3.7.505.0)
+&lt;li&gt;Core 4.0.3.0
 &lt;ul&gt;
-&lt;li&gt;Support for New Data Prep Experience&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3Tables (3.7.503.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for tagging APIs for S3 Tables&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3Vectors (3.7.503.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon S3 Vectors provides cost-effective, elastic, and durable vector storage for queries based on semantic meaning and similarity.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMaker (3.7.517.0)
-&lt;ul&gt;
-&lt;li&gt;Added NodeProvisioningMode parameter to UpdateCluster API to determine how instance provisioning is handled during cluster operations; in Continuous mode. Added VpcId field in UpdateDomain request for SageMaker Unified Studio domains with no VPC to add a customer VPC.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SimpleSystemsManagement (3.7.504.0)
-&lt;ul&gt;
-&lt;li&gt;Provides NoLongerSupportedException error message&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 3.7.500.43
-&lt;ul&gt;
-&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Re-introduce background refresh of credentials during their preempt expiry period (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3475059675" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/4024" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/4024/hovercard" href="https://github.com/aws/aws-sdk-net/issues/4024"&gt;#4024&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -82,73 +57,33 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.128.0"&gt;4.0.128.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1161.0"&gt;3.7.1161.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.128.0 (2025-11-06 19:55 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1161.0 (2025-11-07 19:22 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AccessAnalyzer (4.0.4.0)
+&lt;li&gt;ControlTower (3.7.502.0)
 &lt;ul&gt;
-&lt;li&gt;New field totalActiveErrors added to getFindingsStatistics response.&lt;/li&gt;
+&lt;li&gt;Added Parent Identifier support to ListEnabledControls and GetEnabledControl API. Implemented RemediationType support for Landing Zone operations: CreateLandingZone, UpdateLandingZone and GetLandingZone APIs&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Backup (4.0.6.0)
+&lt;li&gt;EC2 (3.7.524.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Backup now supports customer-managed keys (CMK) for logically air-gapped vaults, enabling customers to maintain full control over their encryption key lifecycle. This feature helps organizations meet specific internal governance requirements or external regulatory compliance standards.&lt;/li&gt;
+&lt;li&gt;Adds PrivateDnsPreference and PrivateDnsSpecifiedDomains to control private DNS resolution for resource and service network VPC endpoints and IpamScopeExternalAuthorityConfiguration to integrate Amazon VPC IPAM with a third-party IPAM service&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.15.0)
+&lt;li&gt;KeyManagementService (3.7.504.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for Conditional Questions in Evaluation Forms. Introduced Auto Evaluation capability for Evaluation Forms and Contact Evaluations. Added new API operations: SearchEvaluationForms and SearchContactEvaluations.&lt;/li&gt;
+&lt;li&gt;Added support for new ECC_NIST_EDWARDS25519 AWS KMS key spec&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.49.0)
+&lt;li&gt;OpenSearchService (3.7.503.0)
 &lt;ul&gt;
-&lt;li&gt;Add Amazon EC2 R8a instance types&lt;/li&gt;
+&lt;li&gt;This release introduces the Default Application feature, allowing users to set, change, or unset a preferred OpenSearch UI application on a per-region basis for a streamlined and consistent user experience.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GameLift (4.0.4.0)
+&lt;li&gt;VPCLattice (3.7.504.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon GameLift Servers now supports game builds that use the Windows 2022 operating system.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IdentityStore (4.0.3.0)
-&lt;ul&gt;
-&lt;li&gt;IdentityStore API: added new KMSExceptionReason fields to the Exception object; added multiple new fields to the User APIs - UserStatus, Birthdate, Website and Photos; added multiple new metadata fields for User, Groups and Membership APIs - CreatedAt, CreatedBy, UpdatedAt and UpdatedBy.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;QuickSight (4.0.8.0)
-&lt;ul&gt;
-&lt;li&gt;Support for New Data Prep Experience&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3 (4.0.11.0)
-&lt;ul&gt;
-&lt;li&gt;Increasing the default part size for S3 multipart upload from 5MB to 8MB when no part size is specified. This will reduce the number of API calls for multipart uploads.&lt;/li&gt;
-&lt;li&gt;Update AssemblyInfo to give S3 Unit Test project access to internals.&lt;/li&gt;
-&lt;li&gt;Fixed issue where PartSize and IsLastPart fields were not properly set on Transfer Utility Upload Part Request.&lt;/li&gt;
-&lt;li&gt;Add additional validations for Transfer Utility requests to ensure Upload Parts have the proper Content Length and File Offsets.&lt;/li&gt;
-&lt;li&gt;Create AbortMultipartUploads api that takes in TransferUtilityAbortMultipartUploadRequest.&lt;/li&gt;
-&lt;li&gt;Add missing fields to Transfer Utility request objects. ContentType on TransferUtilityUploadRequest and TransferUtilityUploadDirectoryRequest now directly updates the ContentType header, instead of being a separate field on those objects.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3Tables (4.0.6.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for tagging APIs for S3 Tables&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3Vectors (4.0.3.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon S3 Vectors provides cost-effective, elastic, and durable vector storage for queries based on semantic meaning and similarity.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.31.0)
-&lt;ul&gt;
-&lt;li&gt;Added NodeProvisioningMode parameter to UpdateCluster API to determine how instance provisioning is handled during cluster operations; in Continuous mode. Added VpcId field in UpdateDomain request for SageMaker Unified Studio domains with no VPC to add a customer VPC.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SimpleSystemsManagement (4.0.6.0)
-&lt;ul&gt;
-&lt;li&gt;Provides NoLongerSupportedException error message&lt;/li&gt;
+&lt;li&gt;Amazon VPC Lattice now supports custom domain name for resource configurations&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

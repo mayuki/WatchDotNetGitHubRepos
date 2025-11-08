@@ -1,42 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>StackExchange/StackExchange.Redis - Releases</title>
   <link href="https://github.com/StackExchange/StackExchange.Redis" />
-  <updated>2025-11-07T00:07:40Z</updated>
+  <updated>2025-11-08T00:07:02Z</updated>
   <id>https://github.com/StackExchange/StackExchange.Redis</id>
-  <entry>
-    <title>StackExchange/StackExchange.Redis - Releases - 2025-11-06</title>
-    <id>https://github.com/StackExchange/StackExchange.Redis#2025-11-06</id>
-    <link href="https://github.com/StackExchange/StackExchange.Redis" />
-    <updated>2025-11-07T00:07:40Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/2.10.1"&gt;2.10.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;Adds support for Redis 8.4 features&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;support multi-string-set with expiration &lt;code&gt;MSETEX ...&lt;/code&gt;; details controlled via new &lt;code&gt;Expiration&lt;/code&gt; API&lt;/li&gt;
-&lt;li&gt;support checked string-set &lt;code&gt;SET ... IFEQ/IFNE/IFDEQ/IFDNE digestOrValue&lt;/code&gt;; details controlled via new &lt;code&gt;ValueCondition&lt;/code&gt; API; also uses &lt;code&gt;Expiration&lt;/code&gt; for expiry&lt;/li&gt;
-&lt;li&gt;support checked string-delete &lt;code&gt;DELEX ... IFEQ/IFNE/IFDEQ/IFDNE digestOrValue&lt;/code&gt; (again via &lt;code&gt;ValueCondition&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;use checked string-set/delete to implement &lt;code&gt;LockExtend[Async]&lt;/code&gt;/&lt;code&gt;LockRelease[Async]&lt;/code&gt; when possible&lt;/li&gt;
-&lt;li&gt;support &lt;code&gt;XREADGROUP ... CLAIM minIdleTime&lt;/code&gt; for simplified stream processing&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Note that niche &lt;code&gt;StringSet[Async]&lt;/code&gt; scenarios may require trivial build changes due to removing default parameter values; this simplify means explicitly specifying &lt;code&gt;keepTtl&lt;/code&gt;, or using the new &lt;code&gt;Expiration&lt;/code&gt; API. There is no impact to already compiled code (no methods have been removed).&lt;/p&gt;
-&lt;p&gt;8.4 also includes "hybrid search"; this is not currently exposed in SE.Redis, and will be added to NRedisStack ASAP.&lt;/p&gt;
-&lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;docker image: use client-libs-test by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3566121752" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2976" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2976/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2976"&gt;#2976&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Support MSETEX by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3570825632" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2977" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2977/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2977"&gt;#2977&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;propose support for XREADGROUP CLAIM by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3537000214" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2972" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2972/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2972"&gt;#2972&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Support 8.4 CAS/CAD (IF*) operations by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3581688746" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2978" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2978/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2978"&gt;#2978&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Combine fixups from 8.4 changes by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3591922453" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2979" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2979/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2979"&gt;#2979&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/2.9.32...2.10.1"&gt;&lt;tt&gt;2.9.32...2.10.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
