@@ -1,6 +1,122 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>CommunityToolkit/Maui - Releases</title>
   <link href="https://github.com/CommunityToolkit/Maui" />
-  <updated>2025-11-12T00:07:47Z</updated>
+  <updated>2025-11-13T00:07:24Z</updated>
   <id>https://github.com/CommunityToolkit/Maui</id>
+  <entry>
+    <title>CommunityToolkit/Maui - Releases - 2025-11-12</title>
+    <id>https://github.com/CommunityToolkit/Maui#2025-11-12</id>
+    <link href="https://github.com/CommunityToolkit/Maui" />
+    <updated>2025-11-13T00:07:24Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/4.0.0-maps"&gt;4.0.0 Maps: .NET 10 support is here!&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Breaking Changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;.NET 10 Required&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Add .NET 10 Support by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3492324558" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2902" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/2902/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/2902"&gt;#2902&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/3.0.3-maps...4.0.0-maps"&gt;&lt;tt&gt;3.0.3-maps...4.0.0-maps&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/5.0.0-camera"&gt;5.0.0 Camera: .NET 10 support is here!&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Breaking Changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;.NET 10 Required&lt;/li&gt;
+&lt;li&gt;(CameraView) Developers must manually request &lt;code&gt;Permissions.Camera&lt;/code&gt; and &lt;code&gt;Permissions.Microphone&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="var cameraPermissionsRequest = await Permissions.RequestAsync&amp;lt;Permissions.Camera&amp;gt;();
+var microphonePermissionsRequest = await Permissions.RequestAsync&amp;lt;Permissions.Microphone&amp;gt;();"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;cameraPermissionsRequest&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;RequestAsync&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;Camera&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;microphonePermissionsRequest&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;RequestAsync&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;Microphone&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Add .NET 10 Support by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3492324558" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2902" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/2902/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/2902"&gt;#2902&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/4.0.0-camera...5.0.0-camera"&gt;&lt;tt&gt;4.0.0-camera...5.0.0-camera&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/7.0.0-mediaelement"&gt;7.0.0 MediaElement: .NET 10 support is here!&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Breaking Changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;.NET 10 Required&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Add .NET 10 Support by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3492324558" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2902" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/2902/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/2902"&gt;#2902&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/6.1.3-mediaelement...7.0.0-mediaelement"&gt;&lt;tt&gt;6.1.3-mediaelement...7.0.0-mediaelement&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/13.0.0"&gt;13.0.0: .NET 10 Support is here!&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Breaking Changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;.NET 10 Required&lt;/li&gt;
+&lt;li&gt;Removed Deprecated &lt;code&gt;IPopup&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed Deprecated &lt;code&gt;MauiPopup&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed Deprecated &lt;code&gt;PopupHandler&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed Deprecated &lt;code&gt;PopupExtensions&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;(CameraView) Developers must manually request &lt;code&gt;Permissions.Camera&lt;/code&gt; and &lt;code&gt;Permissions.Microphone&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="var cameraPermissionsRequest = await Permissions.RequestAsync&amp;lt;Permissions.Camera&amp;gt;();
+var microphonePermissionsRequest = await Permissions.RequestAsync&amp;lt;Permissions.Microphone&amp;gt;();"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;cameraPermissionsRequest&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;RequestAsync&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;Camera&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;microphonePermissionsRequest&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;RequestAsync&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;Microphone&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;(FileSaver) Developers must manually request &lt;code&gt;Permissions.StorageRead&lt;/code&gt; and &lt;code&gt;Permissions.StorageWrite&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="var readPermissionStatus = await Permissions.RequestAsync&amp;lt;Permissions.StorageRead&amp;gt;();
+var writePermissionStatus = await Permissions.RequestAsync&amp;lt;Permissions.StorageWrite&amp;gt;();"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;readPermissionStatus&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;RequestAsync&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;StorageRead&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;writePermissionStatus&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;RequestAsync&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;StorageWrite&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;(FolderPicker) Developers must manually request &lt;code&gt;Permissions.StorageRead&lt;/code&gt; and &lt;code&gt;Permissions.StorageWrite&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="var readPermissionStatus = await Permissions.RequestAsync&amp;lt;Permissions.StorageRead&amp;gt;();
+var writePermissionStatus = await Permissions.RequestAsync&amp;lt;Permissions.StorageWrite&amp;gt;();"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;readPermissionStatus&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;RequestAsync&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;StorageRead&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;writePermissionStatus&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;RequestAsync&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;StorageWrite&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;(SpeechToText) Developers must manually request permissions for &lt;code&gt;Permissions.Microphone&lt;/code&gt; and manually call &lt;code&gt;ISpeechToText.RequestPermissions()&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    static async Task&amp;lt;bool&amp;gt; ArePermissionsGranted(ISpeechToText speechToText)
+    {
+        var microphonePermissionStatus = await Permissions.RequestAsync&amp;lt;Permissions.Microphone&amp;gt;();
+        var isSpeechToTextRequestPermissionsGranted = await speechToText.RequestPermissions(CancellationToken.None);
+
+        return microphonePermissionStatus is PermissionStatus.Granted
+               &amp;amp;&amp;amp; isSpeechToTextRequestPermissionsGranted;
+    }"&gt;&lt;pre&gt;    &lt;span class="pl-k"&gt;&lt;span class="pl-k"&gt;static&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;async&lt;/span&gt; &lt;span class="pl-smi"&gt;Task&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-smi"&gt;bool&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-en"&gt;ArePermissionsGranted&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-smi"&gt;ISpeechToText&lt;/span&gt; &lt;span class="pl-s1"&gt;speechToText&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;
+    &lt;span class="pl-kos"&gt;{&lt;/span&gt;
+        &lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;microphonePermissionStatus&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;RequestAsync&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;Microphone&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+        &lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;isSpeechToTextRequestPermissionsGranted&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;speechToText&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;RequestPermissions&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s1"&gt;CancellationToken&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;None&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+
+        &lt;span class="pl-k"&gt;return&lt;/span&gt; &lt;span class="pl-s1"&gt;microphonePermissionStatus&lt;/span&gt; &lt;span class="pl-k"&gt;is&lt;/span&gt; &lt;span class="pl-s1"&gt;PermissionStatus&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;Granted&lt;/span&gt;
+               &lt;span class="pl-c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="pl-s1"&gt;isSpeechToTextRequestPermissionsGranted&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+    &lt;span class="pl-kos"&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;CarouselViewHandler2 &lt;code&gt;InvalidCastException&lt;/code&gt; for &lt;code&gt;MauiMediaElement.macios.cs&lt;/code&gt; when using &lt;code&gt;CollectionViewHandler2&lt;/code&gt; and &lt;code&gt;CarouselViewHandler2&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3587891896" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2926" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/2926/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/2926"&gt;#2926&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;(Popup) Enable Popup v2 Inside Custom NavigationPage by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/pictos/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/pictos"&gt;@pictos&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3559592830" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2919" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/2919/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/2919"&gt;#2919&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add .NET 10 Support by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3492324558" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2902" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/2902/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/2902"&gt;#2902&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Allow Developers to Manually Request Permissions when using &lt;code&gt;CameraView&lt;/code&gt;, &lt;code&gt;FileSaver&lt;/code&gt;, &lt;code&gt;FolderPicker&lt;/code&gt; and &lt;code&gt;SpeechToText&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/VladislavAntonyuk/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/VladislavAntonyuk"&gt;@VladislavAntonyuk&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3600546650" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2934" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/2934/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/2934"&gt;#2934&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/12.3.0...13.0.0"&gt;&lt;tt&gt;12.3.0...13.0.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
