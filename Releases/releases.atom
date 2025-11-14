@@ -1,499 +1,74 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2025-11-13T00:07:48Z</updated>
+  <updated>2025-11-14T00:07:32Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>dotnet/maui - Releases - 2025-11-12</title>
-    <id>https://github.com/dotnet/maui#2025-11-12</id>
-    <link href="https://github.com/dotnet/maui" />
-    <updated>2025-11-13T00:07:11Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/maui/releases/tag/10.0.0"&gt;10.0.0 GA&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;p&gt;.NET MAUI 10.0.0 introduces significant improvements across all platforms with focus on quality, performance, and developer experience. This release includes 73 commits with various improvements, bug fixes, and enhancements.&lt;/p&gt;
-&lt;h2&gt;Breaking Changes&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;You might have to set your ContentPage to "SafeAreaEdges.Container" to restore .NET9 behavior on Android. In order to fully support edge to edge and make the behavior consistent with iOS we defaulted this to "SafeAreaEdges.None" on .NET 10.  &lt;a href="https://learn.microsoft.com/en-us/dotnet/maui/user-interface/safe-area?view=net-maui-10.0#android" rel="nofollow"&gt;https://learn.microsoft.com/en-us/dotnet/maui/user-interface/safe-area?view=net-maui-10.0#android&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;.NET MAUI Product Fixes&lt;/h2&gt;
-&lt;h2&gt;.NET 10 Features&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;[net10.0] Merge main to net10.0  by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3457681086" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31792" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31792/hovercard" href="https://github.com/dotnet/maui/pull/31792"&gt;#31792&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[net10.0] [housekeeping] Update maui net9 by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3478979908" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31856" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31856/hovercard" href="https://github.com/dotnet/maui/pull/31856"&gt;#31856&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/31853" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31853/hovercard"&gt;[housekeeping] Update maui net9&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[net10] Move to rtm by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3488345487" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31883" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31883/hovercard" href="https://github.com/dotnet/maui/pull/31883"&gt;#31883&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[net10.0] Bumps Syncfusion.Maui.Toolkit dependency to version 1.0.7 by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3500215670" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31952" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31952/hovercard" href="https://github.com/dotnet/maui/pull/31952"&gt;#31952&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/31932" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31932/hovercard"&gt;Bumps Syncfusion.Maui.Toolkit dependency to version 1.0.7&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[NET10.0] Change ContentPage SafeAreaEdges default to None for consistent edge-to-edge behavior by @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3496671911" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31926" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31926/hovercard" href="https://github.com/dotnet/maui/pull/31926"&gt;#31926&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/31925" data-hovercard-type="issue" data-hovercard-url="/dotnet/maui/issues/31925/hovercard"&gt;[NET10.0] Change all defaults of SafeAreaEdges so that they will return "None" as the default if the user hasn't set the value&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Android&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Implement SafeAreaEdges property and per-edge safe area control for Android by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/NirmalKumarYuvaraj/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/NirmalKumarYuvaraj"&gt;@NirmalKumarYuvaraj&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3293037384" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31022" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31022/hovercard" href="https://github.com/dotnet/maui/pull/31022"&gt;#31022&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Remove Android environment variable file handling for Aspire by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3538088461" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32122" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32122/hovercard" href="https://github.com/dotnet/maui/pull/32122"&gt;#32122&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/32121" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32121/hovercard"&gt;Remove Android environment variable file handling for Aspire&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;BlazorWebView&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Use the WebView2CompositionControl in Blazor WPF by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mattleibow/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mattleibow"&gt;@mattleibow&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3455307797" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31777" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31777/hovercard" href="https://github.com/dotnet/maui/pull/31777"&gt;#31777&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Collectionview&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;[net10.0] [Testing] Fix for flaky test(CollectionViewHeaderShouldNotScroll) in CI by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3497951028" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31933" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31933/hovercard" href="https://github.com/dotnet/maui/pull/31933"&gt;#31933&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/31914" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31914/hovercard"&gt;[Testing] Fix for flaky test(CollectionViewHeaderShouldNotScroll) in CI&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] [iOS, Catalyst] Fixed CollectionView items height appears larger in Developer Balance sample by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3526500325" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32046" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32046/hovercard" href="https://github.com/dotnet/maui/pull/32046"&gt;#32046&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/31902" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31902/hovercard"&gt;[iOS, Catalyst] Fixed CollectionView items height appears larger in Developer Balance sample&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Infrastructure&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Separate snapshot diffs artifacts in CI by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jfversluis/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jfversluis"&gt;@jfversluis&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3444182937" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31724" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31724/hovercard" href="https://github.com/dotnet/maui/pull/31724"&gt;#31724&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[ci] Add internal release trigger by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3463729849" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31809" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31809/hovercard" href="https://github.com/dotnet/maui/pull/31809"&gt;#31809&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[main] Update dependencies from dotnet/xharness by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-maestro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3446643156" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31741" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31741/hovercard" href="https://github.com/dotnet/maui/pull/31741"&gt;#31741&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Localized file check-in by OneLocBuild Task: Build definition ID 13330: Build ID 12504892 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-bot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-bot"&gt;@dotnet-bot&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3477345070" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31845" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31845/hovercard" href="https://github.com/dotnet/maui/pull/31845"&gt;#31845&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[ci] Update maui to 9.0.111 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3483477858" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31864" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31864/hovercard" href="https://github.com/dotnet/maui/pull/31864"&gt;#31864&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] [net10.0] Update dependencies from dotnet/dotnet by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3528802906" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32058" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32058/hovercard" href="https://github.com/dotnet/maui/pull/32058"&gt;#32058&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/31983" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31983/hovercard"&gt;[net10.0] Update dependencies from dotnet/dotnet&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Update dependencies from dotnet/android by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-maestro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3529062317" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32062" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32062/hovercard" href="https://github.com/dotnet/maui/pull/32062"&gt;#32062&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Update dependencies from dotnet/macios by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-maestro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3529062520" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32063" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32063/hovercard" href="https://github.com/dotnet/maui/pull/32063"&gt;#32063&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Update dependencies from dotnet/dotnet by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-maestro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3529943511" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32078" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32078/hovercard" href="https://github.com/dotnet/maui/pull/32078"&gt;#32078&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Update dependencies from dotnet/macios by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-maestro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3529446043" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32076" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32076/hovercard" href="https://github.com/dotnet/maui/pull/32076"&gt;#32076&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[ci] build stable packages by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3529306499" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32072" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32072/hovercard" href="https://github.com/dotnet/maui/pull/32072"&gt;#32072&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Update dependencies from dotnet/android by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-maestro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3541599684" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32157" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32157/hovercard" href="https://github.com/dotnet/maui/pull/32157"&gt;#32157&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Update dependencies from dotnet/macios by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-maestro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3543198179" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32165" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32165/hovercard" href="https://github.com/dotnet/maui/pull/32165"&gt;#32165&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Update dependencies from dotnet/macios by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-maestro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3545518867" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32177" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32177/hovercard" href="https://github.com/dotnet/maui/pull/32177"&gt;#32177&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Update dependencies from dotnet/macios by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-maestro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3547156263" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32190" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32190/hovercard" href="https://github.com/dotnet/maui/pull/32190"&gt;#32190&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[ci] Update release branch for internal builds by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3549445566" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32202" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32202/hovercard" href="https://github.com/dotnet/maui/pull/32202"&gt;#32202&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Update dependencies from dotnet/android by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-maestro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3551396066" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32206" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32206/hovercard" href="https://github.com/dotnet/maui/pull/32206"&gt;#32206&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Update dependencies from dotnet/macios by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-maestro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3558365701" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32231" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32231/hovercard" href="https://github.com/dotnet/maui/pull/32231"&gt;#32231&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Update dependencies from dotnet/macios by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-maestro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3558934218" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32234" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32234/hovercard" href="https://github.com/dotnet/maui/pull/32234"&gt;#32234&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Update dependencies from dotnet/android by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-maestro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3559228476" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32235" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32235/hovercard" href="https://github.com/dotnet/maui/pull/32235"&gt;#32235&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Update dependencies from dotnet/android by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-maestro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-maestro"&gt;@dotnet-maestro&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3562496820" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32250" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32250/hovercard" href="https://github.com/dotnet/maui/pull/32250"&gt;#32250&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Label&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[release/10.0.1xx] Update label for servicing  by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3533533492" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32098" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32098/hovercard" href="https://github.com/dotnet/maui/pull/32098"&gt;#32098&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Layout&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix appBarLayout so it extends correctly full screen by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/PureWeen/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/PureWeen"&gt;@PureWeen&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3529048867" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32060" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32060/hovercard" href="https://github.com/dotnet/maui/pull/32060"&gt;#32060&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Navigation&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;[net10.0] Invert NavigationPage UseMauiHandler flag by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3486279884" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31873" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31873/hovercard" href="https://github.com/dotnet/maui/pull/31873"&gt;#31873&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/31859" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31859/hovercard"&gt;Invert NavigationPage UseMauiHandler flag&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Other&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;LEGO: Pull request from lego/hb_aa4ddd3b-37ca-4d87-a058-1e95d9ca2d38_20251001194204838 to net10.0 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/csigs/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/csigs"&gt;@csigs&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3474881360" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31841" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31841/hovercard" href="https://github.com/dotnet/maui/pull/31841"&gt;#31841&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Sync .NET 9 SR12 with .NET 10 GA release by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/PureWeen/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/PureWeen"&gt;@PureWeen&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3519489767" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32012" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32012/hovercard" href="https://github.com/dotnet/maui/pull/32012"&gt;#32012&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Disable MAUI telemetry for Aspire ServiceDefaults by default by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3531752640" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32090" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32090/hovercard" href="https://github.com/dotnet/maui/pull/32090"&gt;#32090&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/32089" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32089/hovercard"&gt;Disable MAUI telemetry for Aspire ServiceDefaults by default&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] [XSG] trim color by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3529083262" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32066" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32066/hovercard" href="https://github.com/dotnet/maui/pull/32066"&gt;#32066&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/32035" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32035/hovercard"&gt;[XSG] trim color&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] [XSG] resolve xRefs through listnodes by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3540715186" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32154" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32154/hovercard" href="https://github.com/dotnet/maui/pull/32154"&gt;#32154&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/32028" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32028/hovercard"&gt;[XSG] resolve xRefs through listnodes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Sync DeveloperBalance sample changes from the MAUI Samples repo to the .NET MAUI repo by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3545467865" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32175" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32175/hovercard" href="https://github.com/dotnet/maui/pull/32175"&gt;#32175&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/32148" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32148/hovercard"&gt;Sync DeveloperBalance sample changes from the MAUI Samples repo to the .NET MAUI repo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] [XSG] enable diagnostis by default on Debug by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3529078581" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32065" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32065/hovercard" href="https://github.com/dotnet/maui/pull/32065"&gt;#32065&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/32052" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32052/hovercard"&gt;[XSG] enable diagnostics by default on Debug&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Update release ga by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3542678835" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32160" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32160/hovercard" href="https://github.com/dotnet/maui/pull/32160"&gt;#32160&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Duplicated the Empty option for backwards compat by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3558113451" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32228" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32228/hovercard" href="https://github.com/dotnet/maui/pull/32228"&gt;#32228&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/32227" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32227/hovercard"&gt;Duplicated the Empty option for backwards compat&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/32197" data-hovercard-type="issue" data-hovercard-url="/dotnet/maui/issues/32197/hovercard"&gt;[.NET 10] CLI - Creating new MAUI Blazor Sample App from CLI is .NET 9 by default&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;ProgressBar&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[Testing] Fix for the ProgressSpinnerWorksWhenReEnabled flaky test in CI by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TamilarasanSF4853/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TamilarasanSF4853"&gt;@TamilarasanSF4853&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3500119337" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31951" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31951/hovercard" href="https://github.com/dotnet/maui/pull/31951"&gt;#31951&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Shapes&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;[ci] Update with new pipelines by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3565488433" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32264" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32264/hovercard" href="https://github.com/dotnet/maui/pull/32264"&gt;#32264&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[ci] Update release pipelines by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3565597761" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32268" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32268/hovercard" href="https://github.com/dotnet/maui/pull/32268"&gt;#32268&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Switch&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Switch to using POST for .NET method invoke by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3562378920" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32246" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32246/hovercard" href="https://github.com/dotnet/maui/pull/32246"&gt;#32246&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/32104" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32104/hovercard"&gt;Switch to using POST for .NET method invoke&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Templates&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Update multi-project template to .NET 10 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jfversluis/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jfversluis"&gt;@jfversluis&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3453189046" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31774" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31774/hovercard" href="https://github.com/dotnet/maui/pull/31774"&gt;#31774&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Clean up Extensions.cs by removing TODO comments by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jfversluis/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jfversluis"&gt;@jfversluis&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3491451895" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31901" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31901/hovercard" href="https://github.com/dotnet/maui/pull/31901"&gt;#31901&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Enable OpenTelemetry metrics and tracing for MAUI in Service Defaults by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jfversluis/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jfversluis"&gt;@jfversluis&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3491446749" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31900" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31900/hovercard" href="https://github.com/dotnet/maui/pull/31900"&gt;#31900&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/31846" data-hovercard-type="issue" data-hovercard-url="/dotnet/maui/issues/31846/hovercard"&gt;Enable MAUI SDK diagnostics by default for Aspire&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Enhance maui-mobile developer sample with recent updates by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Vignesh-SF3580/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Vignesh-SF3580"&gt;@Vignesh-SF3580&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3425253684" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31646" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31646/hovercard" href="https://github.com/dotnet/maui/pull/31646"&gt;#31646&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[net10.0] Clean up template options for the CLI by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mattleibow/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mattleibow"&gt;@mattleibow&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3478451760" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31849" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31849/hovercard" href="https://github.com/dotnet/maui/pull/31849"&gt;#31849&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/23168" data-hovercard-type="issue" data-hovercard-url="/dotnet/maui/issues/23168/hovercard"&gt;Blazor Hybrid &amp;amp; Web Solution Template: Template options need updating &lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Remove DisableDevCertSecurityCheck method in Aspire Service Defaults template by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jfversluis/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jfversluis"&gt;@jfversluis&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3502556321" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31965" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31965/hovercard" href="https://github.com/dotnet/maui/pull/31965"&gt;#31965&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] fix warnings in templates by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3548345151" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32195" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32195/hovercard" href="https://github.com/dotnet/maui/pull/32195"&gt;#32195&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/32180" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32180/hovercard"&gt;fix warnings in templates&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Improve templates for GA by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mattleibow/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mattleibow"&gt;@mattleibow&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3563960099" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32255" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32255/hovercard" href="https://github.com/dotnet/maui/pull/32255"&gt;#32255&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;WebView&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;[net10.0] Temporarily disable flaky WebView tests using FlakyTest attribute by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3488065980" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31882" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31882/hovercard" href="https://github.com/dotnet/maui/pull/31882"&gt;#31882&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/31868" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31868/hovercard"&gt;Temporarily disable flaky WebView tests using FlakyTest attribute&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Windows&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Add longPathAware to Windows app manifest in templates by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3541786079" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32158" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32158/hovercard" href="https://github.com/dotnet/maui/pull/32158"&gt;#32158&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/32107" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32107/hovercard"&gt;Add longPathAware to Windows app manifest in templates&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Xaml&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[XSG] Simplify ColorConverter by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/simonrozsival/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/simonrozsival"&gt;@simonrozsival&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3426967061" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31660" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31660/hovercard" href="https://github.com/dotnet/maui/pull/31660"&gt;#31660&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;iOS&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;[iOS] Update net10 iOS to rc2 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3448409231" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31749" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31749/hovercard" href="https://github.com/dotnet/maui/pull/31749"&gt;#31749&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[ci] Try better fix for iOS simulator by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3536605074" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32108" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32108/hovercard" href="https://github.com/dotnet/maui/pull/32108"&gt;#32108&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;details&gt;
-&lt;summary&gt;🧪 Testing (5)&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;[ci]  Fix helix local by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3458121245" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31796" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31796/hovercard" href="https://github.com/dotnet/maui/pull/31796"&gt;#31796&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[tests] Try run device tests with CoreClr by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3239996440" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/30686" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/30686/hovercard" href="https://github.com/dotnet/maui/pull/30686"&gt;#30686&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/30277" data-hovercard-type="issue" data-hovercard-url="/dotnet/maui/issues/30277/hovercard"&gt;[Testing] Run Controls.DeviceTests with CoreCLR on Android&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[ci] Fix net10 UiTests by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3473337541" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31837" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31837/hovercard" href="https://github.com/dotnet/maui/pull/31837"&gt;#31837&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[testing] Update device testing by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3494417458" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31909" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31909/hovercard" href="https://github.com/dotnet/maui/pull/31909"&gt;#31909&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] [testing] Ignore sample tests for ga by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3540639704" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32152" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32152/hovercard" href="https://github.com/dotnet/maui/pull/32152"&gt;#32152&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/32150" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32150/hovercard"&gt;[testing] Ignore sample tests for ga&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;details&gt;
-&lt;summary&gt;🏠 Housekeeping (8)&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;[housekeeping] Automated PR to fix formatting errors on main by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3459485449" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31802" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31802/hovercard" href="https://github.com/dotnet/maui/pull/31802"&gt;#31802&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[ci] Fix branch classification by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3463934693" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31811" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31811/hovercard" href="https://github.com/dotnet/maui/pull/31811"&gt;#31811&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[net10.0] [ci] Fix branch classification by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3463941123" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31812" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31812/hovercard" href="https://github.com/dotnet/maui/pull/31812"&gt;#31812&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/31811" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31811/hovercard"&gt;[ci] Fix branch classification&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[ci] Fix branch classification by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3464537608" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31816" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31816/hovercard" href="https://github.com/dotnet/maui/pull/31816"&gt;#31816&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;LEGO: Pull request from lego/hb_aa4ddd3b-37ca-4d87-a058-1e95d9ca2d38_20251002185521508 to net10.0 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/csigs/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/csigs"&gt;@csigs&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3478577509" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31851" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31851/hovercard" href="https://github.com/dotnet/maui/pull/31851"&gt;#31851&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Localized file check-in by OneLocBuild Task: Build definition ID 13330: Build ID 12507670 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dotnet-bot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dotnet-bot"&gt;@dotnet-bot&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3478885917" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31854" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31854/hovercard" href="https://github.com/dotnet/maui/pull/31854"&gt;#31854&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[net10.0] [c] Run apiscan on release branches and main by @github-actions[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3491943677" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/31904" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31904/hovercard" href="https://github.com/dotnet/maui/pull/31904"&gt;#31904&lt;/a&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;🔧 Fixes&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/maui/issues/31903" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/31903/hovercard"&gt;[c] Run apiscan on release branches and main&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[release/10.0.1xx] Try cleanup feeds by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rmarinho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rmarinho"&gt;@rmarinho&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3539798246" data-permission-text="Title is private" data-url="https://github.com/dotnet/maui/issues/32142" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/maui/pull/32142/hovercard" href="https://github.com/dotnet/maui/pull/32142"&gt;#32142&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-**Full Changelog**: https://github.com/dotnet/maui/compare/release/10.0.1xx-rc2...10.0.0
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-11-12</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-11-12</id>
+    <title>aws/aws-sdk-net - Releases - 2025-11-13</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-11-13</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-11-13T00:07:20Z</updated>
+    <updated>2025-11-14T00:07:07Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1164.0"&gt;3.7.1164.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.133.0"&gt;4.0.133.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1164.0 (2025-11-12 19:42 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.133.0 (2025-11-13 21:18 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Connect (3.7.512.0)
+&lt;li&gt;CloudFormation (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;Updated Authentication Profile APIs to add support for automatic logout on user inactivity&lt;/li&gt;
+&lt;li&gt;CloudFormation now supports GetHookResult API with annotations to retrieve structured compliance check results and remediation guidance for each evaluated resource, replacing the previous single-message limitation with detailed validation outcomes.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DatabaseMigrationService (3.7.503.0)
+&lt;li&gt;ControlCatalog (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;Added support of SQL statements creation, metadata model discovery and selection rules transformation.&lt;/li&gt;
+&lt;li&gt;Added support for related control mappings with new RELATED_CONTROL mapping type in ListControlMappings API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (3.7.527.0)
+&lt;li&gt;EC2 (4.0.54.0)
 &lt;ul&gt;
-&lt;li&gt;Adds complete AMI ancestry tracing from immediate parent through each preceding generation back to the root AMI&lt;/li&gt;
+&lt;li&gt;Added support for new accelerator types ("media") and accelerator names ("L4", "L40s", "GAUDI_HL_205", "INFERENTIA2", "TRAINIUM", "TRAINIUM2", "U30") in Attributes Based Instance Type Selection for launched instance types.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticLoadBalancingV2 (3.7.503.0)
+&lt;li&gt;ECR (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;This release expands ALB Authentication to support JWT verification and adds support for a new JWT validation action in listener rule.&lt;/li&gt;
+&lt;li&gt;Add Amazon ECR FIPS PrivateLink endpoint support&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PrometheusService (3.7.506.0)
+&lt;li&gt;ElasticLoadBalancingV2 (4.0.5.0)
 &lt;ul&gt;
-&lt;li&gt;Add VPC source configuration support enabling Amazon Managed Service for Prometheus Collector to collect metrics from MSK clusters.&lt;/li&gt;
+&lt;li&gt;QUIC and TCP_QUIC protocol support for Network Load Balancer (NLB). This capability enables customers to forward QUIC traffic to their targets with ultra-low latency while maintaining session stickiness using QUIC Connection IDs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Redshift (3.7.504.0)
+&lt;li&gt;IoTWireless (4.0.5.0)
 &lt;ul&gt;
-&lt;li&gt;Added GetIdentityCenterAuthToken API to retrieve encrypted authentication tokens for Identity Center integrated applications. This API enables programmatic access to secure Identity Center tokens with proper error handling and parameter validation across supported SDK languages.&lt;/li&gt;
+&lt;li&gt;Integration of Device Location with Amazon Sidewalk network for Amazon Sidewalk enabled devices&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3Tables (3.7.504.0)
+&lt;li&gt;MediaConvert (4.0.11.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for request metrics metrics APIs for S3 Tables&lt;/li&gt;
+&lt;li&gt;Lowers minimum duration for black video generator. Adds support for embedding and signing C2PA content credentials in DASH and CMAF HLS outputs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMaker (3.7.518.0)
+&lt;li&gt;RDS (4.0.11.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for trn2.3xlarge instance type for SageMaker Hyperpod&lt;/li&gt;
+&lt;li&gt;Updated endpoint and service metadata&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3 (4.0.11.3)
+&lt;ul&gt;
+&lt;li&gt;Fix the service name sent as metrics for s3 from AmazonS3 to Amazon.S3 to be consistent with all other services.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SageMaker (4.0.33.0)
+&lt;ul&gt;
+&lt;li&gt;Added support for minor version upgrades and AWS Identity Center integration for SageMaker Hadron Partner Apps, enabling automated version management and IdC group-based access control.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkSpacesWeb (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;Support for managing web content filtering for defining, tracking and regulating type of content accessed with WorkSpaces Secure Browser as part of browser settings.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -501,62 +76,58 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.132.0"&gt;4.0.132.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1165.0"&gt;3.7.1165.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.132.0 (2025-11-12 19:39 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1165.0 (2025-11-13 19:40 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Connect (4.0.16.0)
+&lt;li&gt;CloudFormation (3.7.504.0)
 &lt;ul&gt;
-&lt;li&gt;Updated Authentication Profile APIs to add support for automatic logout on user inactivity&lt;/li&gt;
+&lt;li&gt;CloudFormation now supports GetHookResult API with annotations to retrieve structured compliance check results and remediation guidance for each evaluated resource, replacing the previous single-message limitation with detailed validation outcomes.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DatabaseMigrationService (4.0.5.0)
+&lt;li&gt;ControlCatalog (3.7.503.0)
 &lt;ul&gt;
-&lt;li&gt;Added support of SQL statements creation, metadata model discovery and selection rules transformation.&lt;/li&gt;
+&lt;li&gt;Added support for related control mappings with new RELATED_CONTROL mapping type in ListControlMappings API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.53.0)
+&lt;li&gt;EC2 (3.7.528.0)
 &lt;ul&gt;
-&lt;li&gt;Adds complete AMI ancestry tracing from immediate parent through each preceding generation back to the root AMI&lt;/li&gt;
+&lt;li&gt;Added support for new accelerator types ("media") and accelerator names ("L4", "L40s", "GAUDI_HL_205", "INFERENTIA2", "TRAINIUM", "TRAINIUM2", "U30") in Attributes Based Instance Type Selection for launched instance types.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticLoadBalancingV2 (4.0.4.0)
+&lt;li&gt;ECR (3.7.503.0)
 &lt;ul&gt;
-&lt;li&gt;This release expands ALB Authentication to support JWT verification and adds support for a new JWT validation action in listener rule.&lt;/li&gt;
+&lt;li&gt;Add Amazon ECR FIPS PrivateLink endpoint support&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PrometheusService (4.0.7.0)
+&lt;li&gt;ElasticLoadBalancingV2 (3.7.504.0)
 &lt;ul&gt;
-&lt;li&gt;Add VPC source configuration support enabling Amazon Managed Service for Prometheus Collector to collect metrics from MSK clusters.&lt;/li&gt;
+&lt;li&gt;QUIC and TCP_QUIC protocol support for Network Load Balancer (NLB). This capability enables customers to forward QUIC traffic to their targets with ultra-low latency while maintaining session stickiness using QUIC Connection IDs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Redshift (4.0.4.0)
+&lt;li&gt;IoTWireless (3.7.503.0)
 &lt;ul&gt;
-&lt;li&gt;Added GetIdentityCenterAuthToken API to retrieve encrypted authentication tokens for Identity Center integrated applications. This API enables programmatic access to secure Identity Center tokens with proper error handling and parameter validation across supported SDK languages.&lt;/li&gt;
+&lt;li&gt;Integration of Device Location with Amazon Sidewalk network for Amazon Sidewalk enabled devices&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (4.0.11.2)
+&lt;li&gt;MediaConvert (3.7.505.0)
 &lt;ul&gt;
-&lt;li&gt;Generate ListBucketMetricsConfigurations.&lt;/li&gt;
-&lt;li&gt;Generate DeleteBucketMetricsConfiguration.&lt;/li&gt;
-&lt;li&gt;Generate PutBucketMetricsConfiguration, and add check in marshallers for required query strings. If required members for query strings are not set, the SDK will throw the base service-level exception. This is not a breaking change.&lt;/li&gt;
-&lt;li&gt;Generate GetBucketMetricsConfiguration.&lt;/li&gt;
+&lt;li&gt;Lowers minimum duration for black video generator. Adds support for embedding and signing C2PA content credentials in DASH and CMAF HLS outputs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3Tables (4.0.7.0)
+&lt;li&gt;RDS (3.7.507.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for request metrics metrics APIs for S3 Tables&lt;/li&gt;
+&lt;li&gt;Updated endpoint and service metadata&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.32.0)
+&lt;li&gt;SageMaker (3.7.519.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for trn2.3xlarge instance type for SageMaker Hyperpod&lt;/li&gt;
+&lt;li&gt;Added support for minor version upgrades and AWS Identity Center integration for SageMaker Hadron Partner Apps, enabling automated version management and IdC group-based access control.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 4.0.3.1
+&lt;li&gt;WorkSpacesWeb (3.7.503.0)
 &lt;ul&gt;
-&lt;li&gt;Add check to see if required query string parameters are set. If not set, then the SDK will throw the generic service level exception.&lt;/li&gt;
-&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Support for managing web content filtering for defining, tracking and regulating type of content accessed with WorkSpaces Secure Browser as part of browser settings.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -567,25 +138,49 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-11-12</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-11-12</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-11-13</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-11-13</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-11-13T00:07:22Z</updated>
+    <updated>2025-11-14T00:07:08Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.RedisEnterprise_1.3.0"&gt;Azure.ResourceManager.RedisEnterprise_1.3.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Maintenance_1.1.3"&gt;Azure.ResourceManager.Maintenance_1.1.3&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.3.0 (2025-11-10)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h2&gt;1.1.3 (2025-11-13)&lt;/h2&gt;
+&lt;p&gt;This is a patch release for 1.1.2.&lt;/p&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated api-version to &lt;code&gt;2025-07-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;fix string format serialization of DateTimeOffset.&lt;/li&gt;
 &lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CognitiveServices_1.5.2"&gt;Azure.ResourceManager.CognitiveServices_1.5.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.5.2 (2025-11-11)&lt;/h2&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added a new required property: PublicNetworkAccess for Cluster.&lt;/li&gt;
-&lt;li&gt;Updated the default value of AccessKeysAuthentication property for Database to 'Disabled'.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CognitiveServicesAccountProperties.NetworkInjections&lt;/code&gt; is now a list of &lt;code&gt;AINetworkInjection&lt;/code&gt; instead of a single &lt;code&gt;AINetworkInjection&lt;/code&gt; instance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed mismatched property type for &lt;code&gt;CognitiveServicesAccountProperties.NetworkInjections&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.WebPubSubForSocketIO_1.0.0"&gt;Microsoft.Azure.WebJobs.Extensions.WebPubSubForSocketIO_1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0 (2025-11-15)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Library GA&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;System.IdentityModel.Tokens.Jwt&lt;/code&gt; dependency to 8.14.0&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Microsoft.IdentityModel.Tokens&lt;/code&gt; dependency to 8.14.0&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -594,140 +189,42 @@
             </content>
   </entry>
   <entry>
-    <title>CommunityToolkit/Maui - Releases - 2025-11-12</title>
-    <id>https://github.com/CommunityToolkit/Maui#2025-11-12</id>
-    <link href="https://github.com/CommunityToolkit/Maui" />
-    <updated>2025-11-13T00:07:24Z</updated>
+    <title>grpc/grpc-dotnet - Releases - 2025-11-13</title>
+    <id>https://github.com/grpc/grpc-dotnet#2025-11-13</id>
+    <link href="https://github.com/grpc/grpc-dotnet" />
+    <updated>2025-11-14T00:07:22Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/4.0.0-maps"&gt;4.0.0 Maps: .NET 10 support is here!&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;Breaking Changes&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;.NET 10 Required&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Add .NET 10 Support by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3492324558" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2902" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/2902/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/2902"&gt;#2902&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/3.0.3-maps...4.0.0-maps"&gt;&lt;tt&gt;3.0.3-maps...4.0.0-maps&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/5.0.0-camera"&gt;5.0.0 Camera: .NET 10 support is here!&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;Breaking Changes&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;.NET 10 Required&lt;/li&gt;
-&lt;li&gt;(CameraView) Developers must manually request &lt;code&gt;Permissions.Camera&lt;/code&gt; and &lt;code&gt;Permissions.Microphone&lt;/code&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="var cameraPermissionsRequest = await Permissions.RequestAsync&amp;lt;Permissions.Camera&amp;gt;();
-var microphonePermissionsRequest = await Permissions.RequestAsync&amp;lt;Permissions.Microphone&amp;gt;();"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;cameraPermissionsRequest&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;RequestAsync&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;Camera&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
-&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;microphonePermissionsRequest&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;RequestAsync&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;Microphone&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Add .NET 10 Support by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3492324558" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2902" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/2902/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/2902"&gt;#2902&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/4.0.0-camera...5.0.0-camera"&gt;&lt;tt&gt;4.0.0-camera...5.0.0-camera&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/7.0.0-mediaelement"&gt;7.0.0 MediaElement: .NET 10 support is here!&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;Breaking Changes&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;.NET 10 Required&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Add .NET 10 Support by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3492324558" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2902" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/2902/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/2902"&gt;#2902&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/6.1.3-mediaelement...7.0.0-mediaelement"&gt;&lt;tt&gt;6.1.3-mediaelement...7.0.0-mediaelement&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/13.0.0"&gt;13.0.0: .NET 10 Support is here!&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;Breaking Changes&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;.NET 10 Required&lt;/li&gt;
-&lt;li&gt;Removed Deprecated &lt;code&gt;IPopup&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Removed Deprecated &lt;code&gt;MauiPopup&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Removed Deprecated &lt;code&gt;PopupHandler&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Removed Deprecated &lt;code&gt;PopupExtensions&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;(CameraView) Developers must manually request &lt;code&gt;Permissions.Camera&lt;/code&gt; and &lt;code&gt;Permissions.Microphone&lt;/code&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="var cameraPermissionsRequest = await Permissions.RequestAsync&amp;lt;Permissions.Camera&amp;gt;();
-var microphonePermissionsRequest = await Permissions.RequestAsync&amp;lt;Permissions.Microphone&amp;gt;();"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;cameraPermissionsRequest&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;RequestAsync&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;Camera&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
-&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;microphonePermissionsRequest&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;RequestAsync&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;Microphone&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;(FileSaver) Developers must manually request &lt;code&gt;Permissions.StorageRead&lt;/code&gt; and &lt;code&gt;Permissions.StorageWrite&lt;/code&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="var readPermissionStatus = await Permissions.RequestAsync&amp;lt;Permissions.StorageRead&amp;gt;();
-var writePermissionStatus = await Permissions.RequestAsync&amp;lt;Permissions.StorageWrite&amp;gt;();"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;readPermissionStatus&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;RequestAsync&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;StorageRead&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
-&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;writePermissionStatus&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;RequestAsync&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;StorageWrite&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;(FolderPicker) Developers must manually request &lt;code&gt;Permissions.StorageRead&lt;/code&gt; and &lt;code&gt;Permissions.StorageWrite&lt;/code&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="var readPermissionStatus = await Permissions.RequestAsync&amp;lt;Permissions.StorageRead&amp;gt;();
-var writePermissionStatus = await Permissions.RequestAsync&amp;lt;Permissions.StorageWrite&amp;gt;();"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;readPermissionStatus&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;RequestAsync&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;StorageRead&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
-&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;writePermissionStatus&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;RequestAsync&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;StorageWrite&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;(SpeechToText) Developers must manually request permissions for &lt;code&gt;Permissions.Microphone&lt;/code&gt; and manually call &lt;code&gt;ISpeechToText.RequestPermissions()&lt;/code&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    static async Task&amp;lt;bool&amp;gt; ArePermissionsGranted(ISpeechToText speechToText)
-    {
-        var microphonePermissionStatus = await Permissions.RequestAsync&amp;lt;Permissions.Microphone&amp;gt;();
-        var isSpeechToTextRequestPermissionsGranted = await speechToText.RequestPermissions(CancellationToken.None);
-
-        return microphonePermissionStatus is PermissionStatus.Granted
-               &amp;amp;&amp;amp; isSpeechToTextRequestPermissionsGranted;
-    }"&gt;&lt;pre&gt;    &lt;span class="pl-k"&gt;&lt;span class="pl-k"&gt;static&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;async&lt;/span&gt; &lt;span class="pl-smi"&gt;Task&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-smi"&gt;bool&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-en"&gt;ArePermissionsGranted&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-smi"&gt;ISpeechToText&lt;/span&gt; &lt;span class="pl-s1"&gt;speechToText&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;
-    &lt;span class="pl-kos"&gt;{&lt;/span&gt;
-        &lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;microphonePermissionStatus&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;RequestAsync&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-s1"&gt;Permissions&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;Microphone&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
-        &lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;isSpeechToTextRequestPermissionsGranted&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;speechToText&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;RequestPermissions&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s1"&gt;CancellationToken&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;None&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
-
-        &lt;span class="pl-k"&gt;return&lt;/span&gt; &lt;span class="pl-s1"&gt;microphonePermissionStatus&lt;/span&gt; &lt;span class="pl-k"&gt;is&lt;/span&gt; &lt;span class="pl-s1"&gt;PermissionStatus&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;Granted&lt;/span&gt;
-               &lt;span class="pl-c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="pl-s1"&gt;isSpeechToTextRequestPermissionsGranted&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
-    &lt;span class="pl-kos"&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;CarouselViewHandler2 &lt;code&gt;InvalidCastException&lt;/code&gt; for &lt;code&gt;MauiMediaElement.macios.cs&lt;/code&gt; when using &lt;code&gt;CollectionViewHandler2&lt;/code&gt; and &lt;code&gt;CarouselViewHandler2&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3587891896" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2926" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/2926/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/2926"&gt;#2926&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;(Popup) Enable Popup v2 Inside Custom NavigationPage by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/pictos/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/pictos"&gt;@pictos&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3559592830" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2919" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/2919/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/2919"&gt;#2919&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Add .NET 10 Support by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3492324558" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2902" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/2902/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/2902"&gt;#2902&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Allow Developers to Manually Request Permissions when using &lt;code&gt;CameraView&lt;/code&gt;, &lt;code&gt;FileSaver&lt;/code&gt;, &lt;code&gt;FolderPicker&lt;/code&gt; and &lt;code&gt;SpeechToText&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/VladislavAntonyuk/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/VladislavAntonyuk"&gt;@VladislavAntonyuk&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3600546650" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2934" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/2934/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/2934"&gt;#2934&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/12.3.0...13.0.0"&gt;&lt;tt&gt;12.3.0...13.0.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>domaindrivendev/Swashbuckle.AspNetCore - Releases - 2025-11-12</title>
-    <id>https://github.com/domaindrivendev/Swashbuckle.AspNetCore#2025-11-12</id>
-    <link href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore" />
-    <updated>2025-11-13T00:07:27Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/releases/tag/v10.0.1"&gt;v10.0.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc-dotnet/releases/tag/v2.76.0-pre1"&gt;Release v2.76.0-pre1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;h2&gt;What's Changed&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Prepare for OpenAPI.NET 3.0 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/martincostello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/martincostello"&gt;@martincostello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3613326069" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/3647" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/3647/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/3647"&gt;#3647&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix exception sorting operation tags by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/martincostello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/martincostello"&gt;@martincostello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3616691835" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/3652" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/3652/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/3652"&gt;#3652&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Improve version table by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/martincostello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/martincostello"&gt;@martincostello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3616976984" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/3653" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/3653/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/3653"&gt;#3653&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Update migration guide by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/martincostello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/martincostello"&gt;@martincostello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3617062201" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/3654" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/3654/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/3654"&gt;#3654&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Remove reference to obsolete property from Readme and mention alternative by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/KnapSac/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/KnapSac"&gt;@KnapSac&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3029240192" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2631" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2631/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2631"&gt;#2631&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Migrate from sln to slnx by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3099080203" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2635" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2635/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2635"&gt;#2635&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump tar-fs from 3.0.8 to 3.0.9 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3112655852" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2636" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2636/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2636"&gt;#2636&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;MapGrpcService with service definition refactor by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3091502692" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2634" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2634/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2634"&gt;#2634&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump brace-expansion from 1.1.11 to 1.1.12 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3141929759" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2639" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2639/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2639"&gt;#2639&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix shared code by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3142095644" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2640" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2640/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2640"&gt;#2640&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump pbkdf2 from 3.1.2 to 3.1.3 in /examples/Spar/Server/ClientApp by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3170231516" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2642" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2642/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2642"&gt;#2642&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add protobuf-net code-first to README.md by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/weitzhandler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/weitzhandler"&gt;@weitzhandler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3175973937" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2644" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2644/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2644"&gt;#2644&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add more options to perf client by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3258243634" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2648" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2648/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2648"&gt;#2648&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update docs and starvs for slnx by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/MihaZupan/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/MihaZupan"&gt;@MihaZupan&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3261440864" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2649" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2649/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2649"&gt;#2649&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support reading compressed grpc-web trailing headers by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3287770018" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2650" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2650/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2650"&gt;#2650&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add .NET 10 target by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3291584284" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2653" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2653/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2653"&gt;#2653&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update project.json packages and examples by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3294885569" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2658" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2658/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2658"&gt;#2658&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump tar-fs from 3.1.0 to 3.1.1 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3450890559" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2668" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2668/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2668"&gt;#2668&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update Grpc.Tools dependency to latest version by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/apolcyn/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/apolcyn"&gt;@apolcyn&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3598854146" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2675" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2675/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2675"&gt;#2675&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update version on v2.76.x to 2.76.0-pre1 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/apolcyn/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/apolcyn"&gt;@apolcyn&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3599018817" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2676" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2676/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2676"&gt;#2676&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/compare/v10.0.0...v10.0.1"&gt;&lt;tt&gt;v10.0.0...v10.0.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/KnapSac/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/KnapSac"&gt;@KnapSac&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3029240192" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2631" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2631/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2631"&gt;#2631&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/weitzhandler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/weitzhandler"&gt;@weitzhandler&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3175973937" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2644" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2644/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2644"&gt;#2644&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/MihaZupan/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/MihaZupan"&gt;@MihaZupan&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3261440864" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2649" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2649/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2649"&gt;#2649&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/grpc/grpc-dotnet/compare/v2.71.0...v2.76.0-pre1"&gt;&lt;tt&gt;v2.71.0...v2.76.0-pre1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
@@ -735,383 +232,195 @@ var writePermissionStatus = await Permissions.RequestAsync&amp;lt;Permissions.St
             </content>
   </entry>
   <entry>
-    <title>dotnet/dotnet-monitor - Releases - 2025-11-12</title>
-    <id>https://github.com/dotnet/dotnet-monitor#2025-11-12</id>
-    <link href="https://github.com/dotnet/dotnet-monitor" />
-    <updated>2025-11-13T00:07:31Z</updated>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2025-11-13</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2025-11-13</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2025-11-14T00:07:29Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/dotnet-monitor/releases/tag/v10.0.0"&gt;Dotnet-Monitor Release - v10.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.AWS-1.14.0"&gt;Resources.AWS-1.14.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;Today we are releasing the 10.0.0 build of the &lt;code&gt;dotnet monitor&lt;/code&gt; tool. This release includes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated dependencies&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you would like to provide additional feedback to the team &lt;a href="https://aka.ms/dotnet-monitor-survey?src=rn" rel="nofollow"&gt;please fill out this survey&lt;/a&gt;.&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;Packages released to NuGet&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;dotnet-monitor.10.0.0.nupkg&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>mysql-net/MySqlConnector - Releases - 2025-11-12</title>
-    <id>https://github.com/mysql-net/MySqlConnector#2025-11-12</id>
-    <link href="https://github.com/mysql-net/MySqlConnector" />
-    <updated>2025-11-13T00:07:43Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/mysql-net/MySqlConnector/releases/tag/2.5.0"&gt;2.5.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h1&gt;2.5.0&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Support .NET 10: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3473268736" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1595" data-hovercard-type="pull_request" data-hovercard-url="/mysql-net/MySqlConnector/pull/1595/hovercard" href="https://github.com/mysql-net/MySqlConnector/pull/1595"&gt;#1595&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Possibly breaking&lt;/strong&gt; &lt;code&gt;MySqlConnection.State&lt;/code&gt; will be set to &lt;code&gt;ConnectionState.Broken&lt;/code&gt; when there is a network error: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3532828768" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1599" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1599/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1599"&gt;#1599&lt;/a&gt;.
-&lt;ul&gt;
-&lt;li&gt;Previously it would have been set to &lt;code&gt;ConnectionState.Closed&lt;/code&gt; but the connection wasn't truly closed.&lt;/li&gt;
-&lt;li&gt;Call &lt;code&gt;MySqlConnection.Close()&lt;/code&gt; to fully close the connection before calling &lt;code&gt;Open()&lt;/code&gt; again.&lt;/li&gt;
-&lt;li&gt;Better yet, call &lt;code&gt;.Dispose()&lt;/code&gt; (ideally with a &lt;code&gt;using&lt;/code&gt; declaration) and create a new &lt;code&gt;MySqlConnection&lt;/code&gt; instance to recover from failure.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Possibly breaking&lt;/strong&gt; &lt;code&gt;MySqlConnection.ResetConnectionAsync&lt;/code&gt; will consistently throw a &lt;code&gt;MySqlException&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3554661759" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1602" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1602/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1602"&gt;#1602&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Implement MariaDB &lt;code&gt;PARSEC&lt;/code&gt; authentication: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2780871276" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1540" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1540/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1540"&gt;#1540&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3613089539" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1606" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1606/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1606"&gt;#1606&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Support the &lt;code&gt;VECTOR&lt;/code&gt; data type: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2873403630" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1549" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1549/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1549"&gt;#1549&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Implement &lt;code&gt;COM_STMT_SEND_LONG_DATA&lt;/code&gt; to stream large parameter values: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="807694135" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/943" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/943/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/943"&gt;#943&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;MySqlConnectorTracingOptions&lt;/code&gt; and builder APIs to configure tracing output: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2682853042" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1524" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1524/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1524"&gt;#1524&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Read &lt;code&gt;Guid&lt;/code&gt; values from stored procedure out parameters: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2704967593" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1528" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1528/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1528"&gt;#1528&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Mark &lt;code&gt;MySqlDbType&lt;/code&gt; with &lt;code&gt;[DbProviderSpecificTypeProperty(true)]&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2954606789" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1557" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1557/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1557"&gt;#1557&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Allow loopback connections (e.g., Google Cloud SQL Proxy) to use clear-text password or public key retrieval: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2739479781" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1534" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1534/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1534"&gt;#1534&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2811321705" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1542" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1542/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1542"&gt;#1542&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Improve schema metadata with MariaDB by reading stored procedure metadata from &lt;code&gt;mysql.proc&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2834969143" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1547" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1547/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1547"&gt;#1547&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Improve XA transaction rollback handling: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3338624938" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1585" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1585/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1585"&gt;#1585&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3374820234" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1589" data-hovercard-type="pull_request" data-hovercard-url="/mysql-net/MySqlConnector/pull/1589/hovercard" href="https://github.com/mysql-net/MySqlConnector/pull/1589"&gt;#1589&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Free large cached payload buffers when returning sessions to the pool to reduce memory usage: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3342417228" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1587" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1587/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1587"&gt;#1587&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Suppress error-level logging when a command is canceled: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2818807353" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1544" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1544/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1544"&gt;#1544&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Fix &lt;code&gt;MySqlBulkCopy&lt;/code&gt; auto-detected column mappings: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3030101149" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1568" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1568/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1568"&gt;#1568&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Fix &lt;code&gt;Foreign Keys&lt;/code&gt; schema SQL syntax: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3537747701" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1601" data-hovercard-type="pull_request" data-hovercard-url="/mysql-net/MySqlConnector/pull/1601/hovercard" href="https://github.com/mysql-net/MySqlConnector/pull/1601"&gt;#1601&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Fix extra roundtrip for &lt;code&gt;caching_sha2_password&lt;/code&gt;: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2974297593" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1562" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1562/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1562"&gt;#1562&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Fix cancellation with AWS RDS Proxy: &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3273105023" data-permission-text="Title is private" data-url="https://github.com/mysql-net/MySqlConnector/issues/1581" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1581/hovercard" href="https://github.com/mysql-net/MySqlConnector/issues/1581"&gt;#1581&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Optimization: Use &lt;code&gt;System.Threading.Lock&lt;/code&gt; for .NET 9.0+.&lt;/li&gt;
-&lt;li&gt;Optimization: Use &lt;code&gt;PemEncoding&lt;/code&gt; in .NET 5.0+ and UTF-8 methods in .NET 10.0+.&lt;/li&gt;
-&lt;li&gt;Thanks to &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/djeman/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/djeman"&gt;@djeman&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jnoordsij/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jnoordsij"&gt;@jnoordsij&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/NETSphereSoft/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/NETSphereSoft"&gt;@NETSphereSoft&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/PatrickMNL/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/PatrickMNL"&gt;@PatrickMNL&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/petedishman/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/petedishman"&gt;@petedishman&lt;/a&gt;, and &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rusher/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rusher"&gt;@rusher&lt;/a&gt; for contributions to this release.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>open-telemetry/opentelemetry-dotnet - Releases - 2025-11-12</title>
-    <id>https://github.com/open-telemetry/opentelemetry-dotnet#2025-11-12</id>
-    <link href="https://github.com/open-telemetry/opentelemetry-dotnet" />
-    <updated>2025-11-13T00:07:44Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/coreunstable-1.14.0-beta.1"&gt;coreunstable-1.14.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;The following changes are from the previous release &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/coreunstable-1.13.1-beta.1"&gt;1.13.1-beta.1&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
+                                &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Prometheus.AspNetCore/1.14.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Prometheus.AspNetCore v1.14.0-beta.1&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt; When targeting &lt;code&gt;net8.0&lt;/code&gt;, the package now depends on version&lt;br&gt;
-&lt;code&gt;8.0.0&lt;/code&gt; of the &lt;code&gt;Microsoft.Extensions.DependencyInjection.Abstractions&lt;/code&gt;,&lt;br&gt;
-&lt;code&gt;Microsoft.Extensions.Diagnostics.Abstractions&lt;/code&gt; and&lt;br&gt;
-&lt;code&gt;Microsoft.Extensions.Logging.Configuration&lt;/code&gt; NuGet packages.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6327" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6327/hovercard"&gt;#6327&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add support for .NET 10.0.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6307" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6307/hovercard"&gt;#6307&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added the possibility to disable timestamps via the &lt;code&gt;PrometheusAspNetCoreOptions&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6600" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6600/hovercard"&gt;#6600&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt; NuGet packages now use the Sigstore bundle format&lt;br&gt;
-(&lt;code&gt;.sigstore.json&lt;/code&gt;) for digital signatures instead of separate signature&lt;br&gt;
-(&lt;code&gt;.sig&lt;/code&gt;) and certificate (&lt;code&gt;.pem&lt;/code&gt;) files. This requires cosign 3.0 or later&lt;br&gt;
-for verification. See the &lt;a href="/open-telemetry/opentelemetry-dotnet/README.md#digital-signing"&gt;Digital signing&lt;br&gt;
-section&lt;/a&gt; for updated verification instructions.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6623" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6623/hovercard"&gt;#6623&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.14.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6689" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6689/hovercard"&gt;#6689&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/coreunstable-1.14.0-beta.1/src/OpenTelemetry.Exporter.Prometheus.AspNetCore/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Prometheus.HttpListener/1.14.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Prometheus.HttpListener v1.14.0-beta.1&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt; When targeting &lt;code&gt;net8.0&lt;/code&gt;, the package now depends on version&lt;br&gt;
-&lt;code&gt;8.0.0&lt;/code&gt; of the &lt;code&gt;Microsoft.Extensions.DependencyInjection.Abstractions&lt;/code&gt;,&lt;br&gt;
-&lt;code&gt;Microsoft.Extensions.Diagnostics.Abstractions&lt;/code&gt; and&lt;br&gt;
-&lt;code&gt;Microsoft.Extensions.Logging.Configuration&lt;/code&gt; NuGet packages.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6327" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6327/hovercard"&gt;#6327&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add support for .NET 10.0.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6307" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6307/hovercard"&gt;#6307&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added the possibility to disable timestamps via the &lt;code&gt;PrometheusHttpListenerOptions&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6600" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6600/hovercard"&gt;#6600&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt; NuGet packages now use the Sigstore bundle format&lt;br&gt;
-(&lt;code&gt;.sigstore.json&lt;/code&gt;) for digital signatures instead of separate signature&lt;br&gt;
-(&lt;code&gt;.sig&lt;/code&gt;) and certificate (&lt;code&gt;.pem&lt;/code&gt;) files. This requires cosign 3.0 or later&lt;br&gt;
-for verification. See the &lt;a href="/open-telemetry/opentelemetry-dotnet/README.md#digital-signing"&gt;Digital signing&lt;br&gt;
-section&lt;/a&gt; for updated verification instructions.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6623" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6623/hovercard"&gt;#6623&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.14.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6689" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6689/hovercard"&gt;#6689&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/coreunstable-1.14.0-beta.1/src/OpenTelemetry.Exporter.Prometheus.HttpListener/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Shims.OpenTracing/1.14.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Shims.OpenTracing v1.14.0-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.AWS/1.14.0" rel="nofollow"&gt;OpenTelemetry.Resources.AWS v1.14.0&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Add support for .NET 10.0.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6307" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6307/hovercard"&gt;#6307&lt;/a&gt;)&lt;/p&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2822" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2822/hovercard"&gt;#2822&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt; NuGet packages now use the Sigstore bundle format&lt;br&gt;
-(&lt;code&gt;.sigstore.json&lt;/code&gt;) for digital signatures instead of separate signature&lt;br&gt;
-(&lt;code&gt;.sig&lt;/code&gt;) and certificate (&lt;code&gt;.pem&lt;/code&gt;) files. This requires cosign 3.0 or later&lt;br&gt;
-for verification. See the &lt;a href="/open-telemetry/opentelemetry-dotnet/README.md#digital-signing"&gt;Digital signing&lt;br&gt;
-section&lt;/a&gt; for updated verification instructions.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6623" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6623/hovercard"&gt;#6623&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Update .NET 10.0 NuGet package versions from &lt;code&gt;10.0.0-rc.2.25502.107&lt;/code&gt; to &lt;code&gt;10.0.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3403" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3403/hovercard"&gt;#3403&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.14.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6689" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6689/hovercard"&gt;#6689&lt;/a&gt;)&lt;/p&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3403" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3403/hovercard"&gt;#3403&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/coreunstable-1.14.0-beta.1/src/OpenTelemetry.Shims.OpenTracing/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.AWS-1.14.0/src/OpenTelemetry.Resources.AWS/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.14.0"&gt;core-1.14.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Sampler.AWS-0.1.0-alpha.6"&gt;Sampler.AWS-0.1.0-alpha.6&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;For highlights and announcements pertaining to this release see: &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/RELEASENOTES.md#1140"&gt;Release Notes &amp;gt; 1.14.0&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The following changes are from the previous release &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.14.0-rc.1"&gt;1.14.0-rc.1&lt;/a&gt;.&lt;/p&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Sampler.AWS/0.1.0-alpha.6" rel="nofollow"&gt;OpenTelemetry.Sampler.AWS v0.1.0-alpha.6&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry/1.14.0" rel="nofollow"&gt;OpenTelemetry v1.14.0&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt; NuGet packages now use the Sigstore bundle format&lt;br&gt;
-(&lt;code&gt;.sigstore.json&lt;/code&gt;) for digital signatures instead of separate signature&lt;br&gt;
-(&lt;code&gt;.sig&lt;/code&gt;) and certificate (&lt;code&gt;.pem&lt;/code&gt;) files. This requires cosign 3.0 or later&lt;br&gt;
-for verification. See the &lt;a href="/open-telemetry/opentelemetry-dotnet/README.md#digital-signing"&gt;Digital signing&lt;br&gt;
-section&lt;/a&gt; for updated verification instructions.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6623" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6623/hovercard"&gt;#6623&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Add support for .NET 10.0.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/2822" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/2822/hovercard"&gt;#2822&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Update to stable versions for .NET 10.0 NuGet packages.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6667" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6667/hovercard"&gt;#6667&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Update .NET 10.0 NuGet package versions from &lt;code&gt;10.0.0-rc.2.25502.107&lt;/code&gt; to &lt;code&gt;10.0.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3403" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3403/hovercard"&gt;#3403&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Update &lt;code&gt;Microsoft.Extensions.*&lt;/code&gt; dependencies to &lt;code&gt;10.0.0&lt;/code&gt; for .NET Framework&lt;br&gt;
-and .NET Standard.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6667" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6667/hovercard"&gt;#6667&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.14.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3403" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3403/hovercard"&gt;#3403&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.14.0/src/OpenTelemetry/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Api/1.14.0" rel="nofollow"&gt;OpenTelemetry.Api v1.14.0&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt; NuGet packages now use the Sigstore bundle format&lt;br&gt;
-(&lt;code&gt;.sigstore.json&lt;/code&gt;) for digital signatures instead of separate signature&lt;br&gt;
-(&lt;code&gt;.sig&lt;/code&gt;) and certificate (&lt;code&gt;.pem&lt;/code&gt;) files. This requires cosign 3.0 or later&lt;br&gt;
-for verification. See the &lt;a href="/open-telemetry/opentelemetry-dotnet/README.md#digital-signing"&gt;Digital signing&lt;br&gt;
-section&lt;/a&gt; for updated verification instructions.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6623" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6623/hovercard"&gt;#6623&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Update &lt;code&gt;System.Diagnostics.DiagnosticSource&lt;/code&gt; dependency to &lt;code&gt;10.0.0&lt;/code&gt;&lt;br&gt;
-for all target frameworks.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6667" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6667/hovercard"&gt;#6667&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.14.0/src/OpenTelemetry.Api/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Api.ProviderBuilderExtensions/1.14.0" rel="nofollow"&gt;OpenTelemetry.Api.ProviderBuilderExtensions v1.14.0&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt; NuGet packages now use the Sigstore bundle format&lt;br&gt;
-(&lt;code&gt;.sigstore.json&lt;/code&gt;) for digital signatures instead of separate signature&lt;br&gt;
-(&lt;code&gt;.sig&lt;/code&gt;) and certificate (&lt;code&gt;.pem&lt;/code&gt;) files. This requires cosign 3.0 or later&lt;br&gt;
-for verification. See the &lt;a href="/open-telemetry/opentelemetry-dotnet/README.md#digital-signing"&gt;Digital signing&lt;br&gt;
-section&lt;/a&gt; for updated verification instructions.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6623" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6623/hovercard"&gt;#6623&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Update to stable versions for .NET 10.0 NuGet packages.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6667" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6667/hovercard"&gt;#6667&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Update &lt;code&gt;Microsoft.Extensions.*&lt;/code&gt; dependencies to &lt;code&gt;10.0.0&lt;/code&gt; for .NET Framework&lt;br&gt;
-and .NET Standard.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6667" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6667/hovercard"&gt;#6667&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.14.0/src/OpenTelemetry.Api.ProviderBuilderExtensions/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Console/1.14.0" rel="nofollow"&gt;OpenTelemetry.Exporter.Console v1.14.0&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt; NuGet packages now use the Sigstore bundle format&lt;br&gt;
-(&lt;code&gt;.sigstore.json&lt;/code&gt;) for digital signatures instead of separate signature&lt;br&gt;
-(&lt;code&gt;.sig&lt;/code&gt;) and certificate (&lt;code&gt;.pem&lt;/code&gt;) files. This requires cosign 3.0 or later&lt;br&gt;
-for verification. See the &lt;a href="/open-telemetry/opentelemetry-dotnet/README.md#digital-signing"&gt;Digital signing&lt;br&gt;
-section&lt;/a&gt; for updated verification instructions.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6623" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6623/hovercard"&gt;#6623&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.14.0/src/OpenTelemetry.Exporter.Console/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.InMemory/1.14.0" rel="nofollow"&gt;OpenTelemetry.Exporter.InMemory v1.14.0&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt; NuGet packages now use the Sigstore bundle format&lt;br&gt;
-(&lt;code&gt;.sigstore.json&lt;/code&gt;) for digital signatures instead of separate signature&lt;br&gt;
-(&lt;code&gt;.sig&lt;/code&gt;) and certificate (&lt;code&gt;.pem&lt;/code&gt;) files. This requires cosign 3.0 or later&lt;br&gt;
-for verification. See the &lt;a href="/open-telemetry/opentelemetry-dotnet/README.md#digital-signing"&gt;Digital signing&lt;br&gt;
-section&lt;/a&gt; for updated verification instructions.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6623" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6623/hovercard"&gt;#6623&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.14.0/src/OpenTelemetry.Exporter.InMemory/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.OpenTelemetryProtocol/1.14.0" rel="nofollow"&gt;OpenTelemetry.Exporter.OpenTelemetryProtocol v1.14.0&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt; NuGet packages now use the Sigstore bundle format&lt;br&gt;
-(&lt;code&gt;.sigstore.json&lt;/code&gt;) for digital signatures instead of separate signature&lt;br&gt;
-(&lt;code&gt;.sig&lt;/code&gt;) and certificate (&lt;code&gt;.pem&lt;/code&gt;) files. This requires cosign 3.0 or later&lt;br&gt;
-for verification. See the &lt;a href="/open-telemetry/opentelemetry-dotnet/README.md#digital-signing"&gt;Digital signing&lt;br&gt;
-section&lt;/a&gt; for updated verification instructions.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6623" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6623/hovercard"&gt;#6623&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.14.0/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Zipkin/1.14.0" rel="nofollow"&gt;OpenTelemetry.Exporter.Zipkin v1.14.0&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt; NuGet packages now use the Sigstore bundle format&lt;br&gt;
-(&lt;code&gt;.sigstore.json&lt;/code&gt;) for digital signatures instead of separate signature&lt;br&gt;
-(&lt;code&gt;.sig&lt;/code&gt;) and certificate (&lt;code&gt;.pem&lt;/code&gt;) files. This requires cosign 3.0 or later&lt;br&gt;
-for verification. See the &lt;a href="/open-telemetry/opentelemetry-dotnet/README.md#digital-signing"&gt;Digital signing&lt;br&gt;
-section&lt;/a&gt; for updated verification instructions.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6623" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6623/hovercard"&gt;#6623&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.14.0/src/OpenTelemetry.Exporter.Zipkin/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Hosting/1.14.0" rel="nofollow"&gt;OpenTelemetry.Extensions.Hosting v1.14.0&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt; NuGet packages now use the Sigstore bundle format&lt;br&gt;
-(&lt;code&gt;.sigstore.json&lt;/code&gt;) for digital signatures instead of separate signature&lt;br&gt;
-(&lt;code&gt;.sig&lt;/code&gt;) and certificate (&lt;code&gt;.pem&lt;/code&gt;) files. This requires cosign 3.0 or later&lt;br&gt;
-for verification. See the &lt;a href="/open-telemetry/opentelemetry-dotnet/README.md#digital-signing"&gt;Digital signing&lt;br&gt;
-section&lt;/a&gt; for updated verification instructions.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6623" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6623/hovercard"&gt;#6623&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Update to stable versions for .NET 10.0 NuGet packages.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6667" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6667/hovercard"&gt;#6667&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Update &lt;code&gt;Microsoft.Extensions.*&lt;/code&gt; dependencies to &lt;code&gt;10.0.0&lt;/code&gt; for .NET Framework&lt;br&gt;
-and .NET Standard.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6667" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6667/hovercard"&gt;#6667&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.14.0/src/OpenTelemetry.Extensions.Hosting/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Propagators/1.14.0" rel="nofollow"&gt;OpenTelemetry.Extensions.Propagators v1.14.0&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt; NuGet packages now use the Sigstore bundle format&lt;br&gt;
-(&lt;code&gt;.sigstore.json&lt;/code&gt;) for digital signatures instead of separate signature&lt;br&gt;
-(&lt;code&gt;.sig&lt;/code&gt;) and certificate (&lt;code&gt;.pem&lt;/code&gt;) files. This requires cosign 3.0 or later&lt;br&gt;
-for verification. See the &lt;a href="/open-telemetry/opentelemetry-dotnet/README.md#digital-signing"&gt;Digital signing&lt;br&gt;
-section&lt;/a&gt; for updated verification instructions.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/6623" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/6623/hovercard"&gt;#6623&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.14.0/src/OpenTelemetry.Extensions.Propagators/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Sampler.AWS-0.1.0-alpha.6/src/OpenTelemetry.Sampler.AWS/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>spectreconsole/spectre.console - Releases - 2025-11-12</title>
-    <id>https://github.com/spectreconsole/spectre.console#2025-11-12</id>
-    <link href="https://github.com/spectreconsole/spectre.console" />
-    <updated>2025-11-13T00:07:45Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/spectreconsole/spectre.console/releases/tag/0.54.0"&gt;0.54.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/PersistentStorage-1.0.2"&gt;PersistentStorage-1.0.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;Version &lt;code&gt;0.54.0&lt;/code&gt; of Spectre.Console has been released!&lt;/p&gt;
-&lt;h2&gt;Spectre.Console.Cli has a new home!&lt;/h2&gt;
-&lt;p&gt;We've decided to move &lt;code&gt;Spectre.Console.Cli&lt;/code&gt; to its own repository, where we will prepare it for a &lt;em&gt;1.0&lt;/em&gt; release. This means that the &lt;em&gt;Spectre.Console.Cli&lt;/em&gt; NuGet packages will no longer be versioned together with &lt;em&gt;Spectre.Console&lt;/em&gt;. They will now have a preview version such as &lt;code&gt;1.0.0-alpha-0.x&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;There should be no issues staying on version &lt;em&gt;0.53.0&lt;/em&gt; of &lt;em&gt;Spectre.Console.Cli&lt;/em&gt; until we release a stable version if you prefer not to use a pre-release dependency.&lt;/p&gt;
-&lt;h2&gt;New unit testing package for Spectre.Console.Cli&lt;/h2&gt;
-&lt;p&gt;There is now a new testing package for &lt;em&gt;Spectre.Console.Cli&lt;/em&gt; called &lt;a href="https://www.nuget.org/packages/Spectre.Console.Cli.Testing" rel="nofollow"&gt;Spectre.Console.Cli.Testing&lt;/a&gt;. This is where you will find the &lt;code&gt;CommandAppTester&lt;/code&gt; from now on.&lt;/p&gt;
-&lt;p&gt;You can find more information about unit testing in the &lt;a href="https://spectreconsole.net/cli/unit-testing" rel="nofollow"&gt;documentation&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Normalizes paths when writing exceptions to the console for tests. by &lt;a href="https://github.com/phil-scott-78"&gt;@phil-scott-78&lt;/a&gt; in &lt;a href="https://github.com/spectreconsole/spectre.console/pull/1758" data-hovercard-type="pull_request" data-hovercard-url="/spectreconsole/spectre.console/pull/1758/hovercard"&gt;#1758&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fixes issue with Panel not applying overflow to children by &lt;a href="https://github.com/phil-scott-78"&gt;@phil-scott-78&lt;/a&gt; in &lt;a href="https://github.com/spectreconsole/spectre.console/pull/1942" data-hovercard-type="pull_request" data-hovercard-url="/spectreconsole/spectre.console/pull/1942/hovercard"&gt;#1942&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Remove Spectre.Console.Cli from repository by &lt;a href="https://github.com/patriksvensson"&gt;@patriksvensson&lt;/a&gt; in &lt;a href="https://github.com/spectreconsole/spectre.console/pull/1928" data-hovercard-type="pull_request" data-hovercard-url="/spectreconsole/spectre.console/pull/1928/hovercard"&gt;#1928&lt;/a&gt;&lt;/li&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.PersistentStorage.Abstractions/1.0.2" rel="nofollow"&gt;OpenTelemetry.PersistentStorage.Abstractions v1.0.2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/PersistentStorage-1.0.2/src/OpenTelemetry.PersistentStorage.Abstractions/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.PersistentStorage.FileSystem/1.0.2" rel="nofollow"&gt;OpenTelemetry.PersistentStorage.FileSystem v1.0.2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/PersistentStorage-1.0.2/src/OpenTelemetry.PersistentStorage.FileSystem/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/spectreconsole/spectre.console/compare/0.53.0...0.54.0"&gt;&lt;tt&gt;0.53.0...0.54.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/spectreconsole/spectre.console/releases/tag/0.53.0"&gt;0.53.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/OpAmp.Client-0.1.0-alpha.3"&gt;OpAmp.Client-0.1.0-alpha.3&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.OpAmp.Client/0.1.0-alpha.3" rel="nofollow"&gt;OpenTelemetry.OpAmp.Client v0.1.0-alpha.3&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Add top-level CancellationToken support to Spectre.Console.Cli by &lt;a href="https://github.com/0xced"&gt;@0xced&lt;/a&gt; in &lt;a href="https://github.com/spectreconsole/spectre.console/pull/1911" data-hovercard-type="pull_request" data-hovercard-url="/spectreconsole/spectre.console/pull/1911/hovercard"&gt;#1911&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Update the Spectre.Console.Cli documentation with CancellationToken by &lt;a href="https://github.com/0xced"&gt;@0xced&lt;/a&gt; in &lt;a href="https://github.com/spectreconsole/spectre.console/pull/1920" data-hovercard-type="pull_request" data-hovercard-url="/spectreconsole/spectre.console/pull/1920/hovercard"&gt;#1920&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update .NET 10.0 NuGet package versions from &lt;code&gt;10.0.0-rc.2.25502.107&lt;/code&gt; to &lt;code&gt;10.0.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3403" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3403/hovercard"&gt;#3403&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.14.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3403" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3403/hovercard"&gt;#3403&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/spectreconsole/spectre.console/compare/0.52.0...0.53.0"&gt;&lt;tt&gt;0.52.0...0.53.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/OpAmp.Client-0.1.0-alpha.3/src/OpenTelemetry.OpAmp.Client/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.ServiceFabricRemoting-1.14.0-beta.1"&gt;Instrumentation.ServiceFabricRemoting-1.14.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.ServiceFabricRemoting/1.14.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.ServiceFabricRemoting v1.14.0-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.ServiceFabricRemoting-1.14.0-beta.1/src/OpenTelemetry.Instrumentation.ServiceFabricRemoting/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Owin-1.14.0-beta.1"&gt;Instrumentation.Owin-1.14.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Owin/1.14.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Owin v1.14.0-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.14.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3403" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3403/hovercard"&gt;#3403&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Owin-1.14.0-beta.1/src/OpenTelemetry.Instrumentation.Owin/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Hangfire-1.14.0-beta.1"&gt;Instrumentation.Hangfire-1.14.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Hangfire/1.14.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Hangfire v1.14.0-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.14.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3403" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3403/hovercard"&gt;#3403&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Hangfire-1.14.0-beta.1/src/OpenTelemetry.Instrumentation.Hangfire/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.GrpcCore-1.0.0-beta.8"&gt;Instrumentation.GrpcCore-1.0.0-beta.8&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.GrpcCore/1.0.0-beta.8" rel="nofollow"&gt;OpenTelemetry.Instrumentation.GrpcCore v1.0.0-beta.8&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.14.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3403" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3403/hovercard"&gt;#3403&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.GrpcCore-1.0.0-beta.8/src/OpenTelemetry.Instrumentation.GrpcCore/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.ElasticsearchClient-1.14.0-beta.1"&gt;Instrumentation.ElasticsearchClient-1.14.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.ElasticsearchClient/1.14.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.ElasticsearchClient v1.14.0-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.14.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3403" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3403/hovercard"&gt;#3403&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.ElasticsearchClient-1.14.0-beta.1/src/OpenTelemetry.Instrumentation.ElasticsearchClient/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Cassandra-1.0.0-beta.4"&gt;Instrumentation.Cassandra-1.0.0-beta.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Cassandra/1.0.0-beta.4" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Cassandra v1.0.0-beta.4&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.14.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3403" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3403/hovercard"&gt;#3403&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Cassandra-1.0.0-beta.4/src/OpenTelemetry.Instrumentation.Cassandra/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
