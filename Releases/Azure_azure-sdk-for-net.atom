@@ -1,52 +1,163 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-11-14T00:07:08Z</updated>
+  <updated>2025-11-15T00:07:07Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-11-13</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-11-13</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-11-14</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-11-14</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-11-14T00:07:08Z</updated>
+    <updated>2025-11-15T00:07:07Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Maintenance_1.1.3"&gt;Azure.ResourceManager.Maintenance_1.1.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects_1.2.0-beta.2"&gt;Azure.AI.Projects_1.2.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.1.3 (2025-11-13)&lt;/h2&gt;
-&lt;p&gt;This is a patch release for 1.1.2.&lt;/p&gt;
+                                &lt;h2&gt;1.2.0-beta.2 (2025-11-14)&lt;/h2&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;fix string format serialization of DateTimeOffset.&lt;/li&gt;
+&lt;li&gt;Addressed an issue with memory store creation failing when not providing &lt;code&gt;metadata&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CognitiveServices_1.5.2"&gt;Azure.ResourceManager.CognitiveServices_1.5.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects.OpenAI_1.0.0-beta.2"&gt;Azure.AI.Projects.OpenAI_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.5.2 (2025-11-11)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.2 (2025-11-14)&lt;/h2&gt;
+&lt;h3&gt;Bugs fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Addressed a problem where not supplying an options instance to the &lt;code&gt;ProjectResponsesClient&lt;/code&gt; constructor resulted in fallback to the &lt;code&gt;https://api.openai.com/v1&lt;/code&gt; endpoint&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Monitor.OpenTelemetry.Exporter_1.5.0"&gt;Azure.Monitor.OpenTelemetry.Exporter_1.5.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.5.0 (2025-11-14)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Enabled resource metrics export by default.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/53432" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/53432/hovercard"&gt;#53432&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added &lt;code&gt;EnableTraceBasedLogSampler&lt;/code&gt; property to &lt;code&gt;AzureMonitorExporterOptions&lt;/code&gt;&lt;br&gt;
+to enable filtering logs based on trace sampling decisions, reducing log&lt;br&gt;
+volume while maintaining trace-log correlation.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/53441" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/53441/hovercard"&gt;#53441&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update OpenTelemetry dependencies&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/53910" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/53910/hovercard"&gt;#53910&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OpenTelemetry 1.14.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Search.Documents_11.8.0-beta.1"&gt;Azure.Search.Documents_11.8.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;11.8.0-beta.1 (2025-11-13)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for &lt;code&gt;2025-11-01-preview&lt;/code&gt; service version.&lt;/li&gt;
+&lt;li&gt;Added support for multiple facet aggregation types: &lt;code&gt;avg&lt;/code&gt;, &lt;code&gt;min&lt;/code&gt;, &lt;code&gt;max&lt;/code&gt;, &lt;code&gt;cardinality&lt;/code&gt; in &lt;code&gt;FacetResult&lt;/code&gt; for enhanced analytics capabilities.&lt;/li&gt;
+&lt;li&gt;Added support for new &lt;code&gt;KnowledgeSourceKind&lt;/code&gt; types: &lt;code&gt;web&lt;/code&gt;, &lt;code&gt;remoteSharePoint&lt;/code&gt;, &lt;code&gt;indexedSharePoint&lt;/code&gt;, &lt;code&gt;indexedOneLake&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added support for &lt;code&gt;sharepoint&lt;/code&gt; data source type in &lt;code&gt;SearchIndexerDataSourceType&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;product&lt;/code&gt; scoring function aggregation type in &lt;code&gt;ScoringFunctionAggregation&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added support for new Azure OpenAI models: &lt;code&gt;gpt-5&lt;/code&gt;, &lt;code&gt;gpt-5-mini&lt;/code&gt;, &lt;code&gt;gpt-5-nano&lt;/code&gt; in &lt;code&gt;AzureOpenAIModelName&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added enhanced runtime tracking with &lt;code&gt;runtime&lt;/code&gt; property in &lt;code&gt;SearchIndexerStatus&lt;/code&gt; and &lt;code&gt;indexersRuntime&lt;/code&gt; property in &lt;code&gt;ServiceStatistics&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added optional &lt;code&gt;purviewEnabled&lt;/code&gt; property in &lt;code&gt;SearchIndex&lt;/code&gt; for data governance integration.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;maxCumulativeIndexerRuntimeSeconds&lt;/code&gt; property in &lt;code&gt;ServiceLimits&lt;/code&gt; for runtime constraints.&lt;/li&gt;
+&lt;li&gt;Added enhanced knowledge source configuration options:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sourceDataFields&lt;/code&gt;, &lt;code&gt;searchFields&lt;/code&gt;, &lt;code&gt;semanticConfigurationName&lt;/code&gt; in &lt;code&gt;SearchIndexKnowledgeSourceParameters&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;isADLSGen2&lt;/code&gt;, &lt;code&gt;ingestionParameters&lt;/code&gt; in &lt;code&gt;AzureBlobKnowledgeSourceParameters&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Added optional parameter &lt;code&gt;x-ms-enable-elevated-read&lt;/code&gt; for document retrieval operations with elevated permissions.&lt;/li&gt;
+&lt;li&gt;Added support for partial content responses (HTTP 206) in knowledge base operations.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;error&lt;/code&gt; property in &lt;code&gt;KnowledgeBaseActivityRecord&lt;/code&gt; for improved error tracking.&lt;/li&gt;
+&lt;li&gt;Added enhanced knowledge source parameters: &lt;code&gt;includeReferences&lt;/code&gt;, &lt;code&gt;includeReferenceSourceData&lt;/code&gt;, &lt;code&gt;alwaysQuerySource&lt;/code&gt;, &lt;code&gt;rerankerThreshold&lt;/code&gt; in &lt;code&gt;SearchIndexKnowledgeSourceParams&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;CognitiveServicesAccountProperties.NetworkInjections&lt;/code&gt; is now a list of &lt;code&gt;AINetworkInjection&lt;/code&gt; instead of a single &lt;code&gt;AINetworkInjection&lt;/code&gt; instance.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;li&gt;Renamed Knowledge Agent to Knowledge Base across all APIs and models:
 &lt;ul&gt;
-&lt;li&gt;Fixed mismatched property type for &lt;code&gt;CognitiveServicesAccountProperties.NetworkInjections&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;All &lt;code&gt;KnowledgeAgent*&lt;/code&gt; classes renamed to &lt;code&gt;KnowledgeBase*&lt;/code&gt; equivalents&lt;/li&gt;
+&lt;li&gt;API paths changed from &lt;code&gt;/agents&lt;/code&gt; to &lt;code&gt;/knowledgebases&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Client parameter &lt;code&gt;AgentNameParameter&lt;/code&gt; replaced with &lt;code&gt;KnowledgeBaseNameParameter&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;All agent-related activity record types updated with new naming convention&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Removed deprecated Knowledge Agent configuration models:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;KnowledgeAgentOutputConfiguration&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;KnowledgeAgentRequestLimits&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;KnowledgeAgentModel&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;KnowledgeAgentModelKind&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;KnowledgeAgentAzureOpenAIModel&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Removed properties from &lt;code&gt;KnowledgeSourceReference&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;includeReferences&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;includeReferenceSourceData&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;alwaysQuerySource&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;maxSubQueries&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rerankerThreshold&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;sourceDataSelect&lt;/code&gt; property from &lt;code&gt;SearchIndexKnowledgeSourceParameters&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Removed properties from &lt;code&gt;AzureBlobKnowledgeSourceParameters&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;identity&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;embeddingModel&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;chatCompletionModel&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ingestionSchedule&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;disableImageVerbalization&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.WebPubSubForSocketIO_1.0.0"&gt;Microsoft.Azure.WebJobs.Extensions.WebPubSubForSocketIO_1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects_1.2.0-beta.1"&gt;Azure.AI.Projects_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0 (2025-11-15)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
+                                &lt;h2&gt;1.2.0-beta.1 (2025-11-14)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;p&gt;This major update brings feature support for Microsoft Foundry Agents Service, integration with the new &lt;code&gt;Azure.AI.Projects.OpenAI&lt;/code&gt; package, expanded evaluations capabilities, insights, red teaming, schedules, and more.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects.OpenAI_1.0.0-beta.1"&gt;Azure.AI.Projects.OpenAI_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2025-11-14)&lt;/h2&gt;
+&lt;p&gt;This is the first release of the &lt;code&gt;Azure.AI.Projects.OpenAI&lt;/code&gt; library, a new extension package for the official &lt;code&gt;OpenAI&lt;/code&gt; .NET library that facilitates and simplifies use of Microsoft Foundry extensions to OpenAI APIs.&lt;/p&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Library GA&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;System.IdentityModel.Tokens.Jwt&lt;/code&gt; dependency to 8.14.0&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Microsoft.IdentityModel.Tokens&lt;/code&gt; dependency to 8.14.0&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Responses&lt;/code&gt; support, including C# 14 extension properties to &lt;code&gt;OpenAIResponse&lt;/code&gt; and &lt;code&gt;ResponseCreationOptions&lt;/code&gt;, together with a &lt;code&gt;ProjectResponsesClient&lt;/code&gt; type (extends official &lt;code&gt;OpenAIResponseClient&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Files&lt;/code&gt; support, including a &lt;code&gt;ProjectFilesClient&lt;/code&gt; type (extends official &lt;code&gt;OpenAIFileClient&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Types and functionality in support of &lt;code&gt;Azure.AI.Projects&lt;/code&gt; OpenAI-based features, including new Microsoft Foundry Agents Service capabilities&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.PaloAltoNetworks.Ngfw_1.2.0"&gt;Azure.ResourceManager.PaloAltoNetworks.Ngfw_1.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0 (2025-11-13)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version tag to &lt;code&gt;package-2025-10-08&lt;/code&gt;, details please check &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/dbd27c2a6be4ecbd2a43833ab48e5046c3b8b03f/specification/paloaltonetworks/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/dbd27c2a6be4ecbd2a43833ab48e5046c3b8b03f/specification/paloaltonetworks/resource-manager/readme.md&lt;/a&gt; .&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
