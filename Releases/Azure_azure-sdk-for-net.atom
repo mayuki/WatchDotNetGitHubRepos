@@ -1,53 +1,34 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-11-16T00:07:25Z</updated>
+  <updated>2025-11-17T00:07:16Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-11-15</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-11-15</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-11-16</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-11-16</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-11-16T00:07:25Z</updated>
+    <updated>2025-11-17T00:07:16Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Monitor.OpenTelemetry.AspNetCore_1.4.0"&gt;Azure.Monitor.OpenTelemetry.AspNetCore_1.4.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects_1.2.0-beta.3"&gt;Azure.AI.Projects_1.2.0-beta.3&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.4.0 (2025-11-14)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h2&gt;1.2.0-beta.3 (2025-11-15)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Added &lt;code&gt;EnableTraceBasedLogSampler&lt;/code&gt; property to &lt;code&gt;AzureMonitorOptions&lt;/code&gt; to enable&lt;br&gt;
-filtering logs based on trace sampling decisions, reducing log volume while&lt;br&gt;
-maintaining trace-log correlation.&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/53441" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/53441/hovercard"&gt;#53441&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Update OpenTelemetry dependencies&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/53910" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/53910/hovercard"&gt;#53910&lt;/a&gt;)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;OpenTelemetry 1.14.0&lt;/li&gt;
-&lt;li&gt;OpenTelemetry.Extensions.Hosting 1.14.0&lt;/li&gt;
-&lt;li&gt;OpenTelemetry.Instrumentation.AspNetCore 1.14.0&lt;/li&gt;
-&lt;li&gt;OpenTelemetry.Instrumentation.Http 1.14.0&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;Addressed an issue that caused paginated responses like conversation items to never terminate when large numbers of items are fetched&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity_1.18.0-beta.1"&gt;Azure.Identity_1.18.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects.OpenAI_1.0.0-beta.3"&gt;Azure.AI.Projects.OpenAI_1.0.0-beta.3&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.18.0-beta.1 (2025-11-14)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h2&gt;1.0.0-beta.3 (2025-11-15)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added Kubernetes token proxy support (identity binding mode) to &lt;code&gt;WorkloadIdentityCredential&lt;/code&gt;. When enabled via the &lt;code&gt;IsAzureKubernetesTokenProxyEnabled&lt;/code&gt; option, the credential redirects token requests to an AKS-provided proxy to support scenarios exceeding the &lt;a href="https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview#use-managed-identity-as-a-federated-identity-credential-fic-on-an-entra-id-app" rel="nofollow"&gt;20 federated identity credential limit&lt;/a&gt; per Entra ID application. This feature is opt-in and only available when using &lt;code&gt;WorkloadIdentityCredential&lt;/code&gt; directly (not supported by &lt;code&gt;DefaultAzureCredential&lt;/code&gt; or &lt;code&gt;ManagedIdentityCredential&lt;/code&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Deprecated legacy &lt;code&gt;ManagedIdentityCredential&lt;/code&gt; constructors. Use &lt;code&gt;ManagedIdentityCredential(ManagedIdentityId id)&lt;/code&gt; or &lt;code&gt;ManagedIdentityCredential(ManagedIdentityCredentialOptions options)&lt;/code&gt; instead for clearer intent when specifying system-assigned or user-assigned managed identity. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/53800" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/53800/hovercard"&gt;#53800&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Addressed an issue that caused paginated responses like conversation items to never terminate when large numbers of items are fetched&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
