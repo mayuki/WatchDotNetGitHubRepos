@@ -1,99 +1,103 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-11-18T00:07:28Z</updated>
+  <updated>2025-11-19T00:07:21Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-11-17</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-11-17</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-11-18</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-11-18</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-11-18T00:07:28Z</updated>
+    <updated>2025-11-19T00:07:21Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.Batch_12.24.0-beta.1"&gt;Azure.Storage.Blobs.Batch_12.24.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects_1.2.0-beta.4"&gt;Azure.AI.Projects_1.2.0-beta.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.24.0-beta.1 (2025-11-17)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h2&gt;1.2.0-beta.4 (2025-11-17)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for service version 2026-02-06.&lt;/li&gt;
+&lt;li&gt;Fixed an issue preventing telemetry from being logged.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.DataLake_12.25.0-beta.1"&gt;Azure.Storage.Files.DataLake_12.25.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects.OpenAI_1.0.0-beta.4"&gt;Azure.AI.Projects.OpenAI_1.0.0-beta.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.25.0-beta.1 (2025-11-17)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h2&gt;1.0.0-beta.4 (2025-11-17)&lt;/h2&gt;
+&lt;h2&gt;Features Added&lt;/h2&gt;
+&lt;p&gt;This change updates the baseline &lt;code&gt;OpenAI&lt;/code&gt; dependency to the latest &lt;code&gt;2.7.0&lt;/code&gt; official version. For inherited details, please see the &lt;a href="https://github.com/openai/openai-dotnet/tree/main/CHANGELOG.md"&gt;OpenAI .NET changelog&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Transitive from upgrade to System.ClientModel 1.8.1&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for service version 2026-02-06.&lt;/li&gt;
-&lt;li&gt;Added support for Principal-Bound Identity User Delegation SAS&lt;/li&gt;
-&lt;li&gt;Added support for the StartFrom parameter on DataLakeFileSystemClient.GetPaths() and .GetPathsAsync().&lt;/li&gt;
+&lt;li&gt;The extension &lt;code&gt;StructuredInputs&lt;/code&gt; on &lt;code&gt;ResponseCreationOptions&lt;/code&gt; will now correctly return a &lt;code&gt;BinaryData&lt;/code&gt; instance with enclosing quotes included when retrieving an encoded string value&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.58"&gt;Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.58&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Elastic_1.1.0"&gt;Azure.ResourceManager.Elastic_1.1.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.0.0-preview.58 (2025-11-17)&lt;/h2&gt;
+                                &lt;h2&gt;1.1.0 (2025-11-14)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for service version 2026-02-06.&lt;/li&gt;
+&lt;li&gt;Upgraded api-version to '2025-06-01'.&lt;/li&gt;
+&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.Elastic&lt;/code&gt; AOT-compatible.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed serialization issue in &lt;code&gt;ElasticCloudDeployment&lt;/code&gt; where &lt;code&gt;ElasticsearchServiceUri&lt;/code&gt;, &lt;code&gt;KibanaServiceUri&lt;/code&gt;, and &lt;code&gt;KibanaSsoUri&lt;/code&gt; properties would throw &lt;code&gt;InvalidOperationException&lt;/code&gt; when containing relative URIs. Added custom serialization hooks to handle both absolute and relative URIs by using &lt;code&gt;OriginalString&lt;/code&gt; for relative URIs instead of &lt;code&gt;AbsoluteUri&lt;/code&gt;. This resolves issue &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3191180783" data-permission-text="Title is private" data-url="https://github.com/Azure/azure-sdk-for-net/issues/50974" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/50974/hovercard" href="https://github.com/Azure/azure-sdk-for-net/issues/50974"&gt;#50974&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Queues_12.25.0-beta.1"&gt;Azure.Storage.Queues_12.25.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Cdn_1.5.1"&gt;Azure.ResourceManager.Cdn_1.5.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.25.0-beta.1 (2025-11-17)&lt;/h2&gt;
+                                &lt;h2&gt;1.5.1 (2025-11-18)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for service version 2026-02-06.&lt;/li&gt;
-&lt;li&gt;Added support for User Delegation SAS.&lt;/li&gt;
-&lt;li&gt;Added support for Principal-Bound Identity User Delegation SAS.&lt;/li&gt;
+&lt;li&gt;Enabled &lt;code&gt;WirePath&lt;/code&gt; attributes for all properties in this library.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs_12.27.0-beta.1"&gt;Azure.Storage.Blobs_12.27.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Monitor_1.4.0-beta.4"&gt;Azure.ResourceManager.Monitor_1.4.0-beta.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.27.0-beta.1 (2025-11-17)&lt;/h2&gt;
+                                &lt;h2&gt;1.4.0-beta.4 (2025-11-18)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for service version 2026-02-06.&lt;/li&gt;
-&lt;li&gt;Added support for the StartFrom parameter on BlobContainerClient.GetBlobs(), .GetBlobsAsync(), .GetBlobsByHierarchy(), and .GetBlobsByHierarchyAsync().&lt;/li&gt;
-&lt;li&gt;Added support for Principal-Bound Identity User Delegation SAS&lt;/li&gt;
-&lt;li&gt;Added support for conditional headers on BlobBaseClient.GetTags(), .GetTagsAsync(), .SetTags(), and .SetTagsAsync().&lt;/li&gt;
+&lt;li&gt;Updated azure monitor metric alert APIs to version &lt;code&gt;2024-03-01-preview&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.Shares_12.25.0-beta.1"&gt;Azure.Storage.Files.Shares_12.25.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.VoiceLive_1.1.0-beta.1"&gt;Azure.AI.VoiceLive_1.1.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.25.0-beta.1 (2025-11-17)&lt;/h2&gt;
+                                &lt;h2&gt;1.1.0-beta.1 (2025-11-14)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for service version 2026-02-06.&lt;/li&gt;
-&lt;li&gt;Added support for User Delegation SAS.&lt;/li&gt;
-&lt;li&gt;Added support for Principal-Bound Identity User Delegation SAS.&lt;/li&gt;
-&lt;li&gt;Added support for the ShareServiceProperties.Protocol.SMB.EncryptionInTransit parameter on ShareServiceClient.SetProperties() and .SetPropertiesAsync().&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WebSocket Content Logging&lt;/strong&gt;: Added comprehensive content logging for WebSocket operations following Azure SDK diagnostic patterns
+&lt;ul&gt;
+&lt;li&gt;Introduced &lt;code&gt;AzureVoiceLiveEventSource&lt;/code&gt; for WebSocket event logging with consistent event IDs and levels&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;VoiceLiveWebSocketContentLogger&lt;/code&gt; that integrates with Azure SDK &lt;code&gt;DiagnosticsOptions&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;WebSocket connection lifecycle events (open/close) logged at &lt;code&gt;Informational&lt;/code&gt; level&lt;/li&gt;
+&lt;li&gt;Message operations (send/receive) logged at &lt;code&gt;Informational&lt;/code&gt; level with optional content at &lt;code&gt;Verbose&lt;/code&gt; level&lt;/li&gt;
+&lt;li&gt;Error events logged at &lt;code&gt;Warning&lt;/code&gt; level with error content at &lt;code&gt;Informational&lt;/code&gt; level&lt;/li&gt;
+&lt;li&gt;Content size truncation respects &lt;code&gt;DiagnosticsOptions.LoggedContentSizeLimit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Unified event listener experience works alongside Azure.Core HTTP logging&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Common_12.26.0-beta.1"&gt;Azure.Storage.Common_12.26.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.26.0-beta.1 (2025-11-17)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Enhanced Samples&lt;/strong&gt;: Added &lt;code&gt;ContentLoggingSample.cs&lt;/code&gt; and &lt;code&gt;UnifiedEventListener.cs&lt;/code&gt; demonstrating WebSocket content logging integration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;This release contains bug fixes to improve quality.&lt;/li&gt;
+&lt;li&gt;Updated test infrastructure with comprehensive content logging test coverage&lt;/li&gt;
+&lt;li&gt;Added test environment configuration for AI Services integration&lt;/li&gt;
+&lt;li&gt;Enhanced WebSocket helper classes to support diagnostic logging&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
