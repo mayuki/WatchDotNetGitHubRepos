@@ -1,103 +1,80 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-11-19T00:07:21Z</updated>
+  <updated>2025-11-20T00:06:59Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-11-18</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-11-18</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-11-19</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-11-19</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-11-19T00:07:21Z</updated>
+    <updated>2025-11-20T00:06:59Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects_1.2.0-beta.4"&gt;Azure.AI.Projects_1.2.0-beta.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity.Broker_1.3.1"&gt;Azure.Identity.Broker_1.3.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.4 (2025-11-17)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed an issue preventing telemetry from being logged.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects.OpenAI_1.0.0-beta.4"&gt;Azure.AI.Projects.OpenAI_1.0.0-beta.4&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.4 (2025-11-17)&lt;/h2&gt;
-&lt;h2&gt;Features Added&lt;/h2&gt;
-&lt;p&gt;This change updates the baseline &lt;code&gt;OpenAI&lt;/code&gt; dependency to the latest &lt;code&gt;2.7.0&lt;/code&gt; official version. For inherited details, please see the &lt;a href="https://github.com/openai/openai-dotnet/tree/main/CHANGELOG.md"&gt;OpenAI .NET changelog&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Transitive from upgrade to System.ClientModel 1.8.1&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The extension &lt;code&gt;StructuredInputs&lt;/code&gt; on &lt;code&gt;ResponseCreationOptions&lt;/code&gt; will now correctly return a &lt;code&gt;BinaryData&lt;/code&gt; instance with enclosing quotes included when retrieving an encoded string value&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Elastic_1.1.0"&gt;Azure.ResourceManager.Elastic_1.1.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.0 (2025-11-14)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version to '2025-06-01'.&lt;/li&gt;
-&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.Elastic&lt;/code&gt; AOT-compatible.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed serialization issue in &lt;code&gt;ElasticCloudDeployment&lt;/code&gt; where &lt;code&gt;ElasticsearchServiceUri&lt;/code&gt;, &lt;code&gt;KibanaServiceUri&lt;/code&gt;, and &lt;code&gt;KibanaSsoUri&lt;/code&gt; properties would throw &lt;code&gt;InvalidOperationException&lt;/code&gt; when containing relative URIs. Added custom serialization hooks to handle both absolute and relative URIs by using &lt;code&gt;OriginalString&lt;/code&gt; for relative URIs instead of &lt;code&gt;AbsoluteUri&lt;/code&gt;. This resolves issue &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3191180783" data-permission-text="Title is private" data-url="https://github.com/Azure/azure-sdk-for-net/issues/50974" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/50974/hovercard" href="https://github.com/Azure/azure-sdk-for-net/issues/50974"&gt;#50974&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Cdn_1.5.1"&gt;Azure.ResourceManager.Cdn_1.5.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.5.1 (2025-11-18)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enabled &lt;code&gt;WirePath&lt;/code&gt; attributes for all properties in this library.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Monitor_1.4.0-beta.4"&gt;Azure.ResourceManager.Monitor_1.4.0-beta.4&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.4.0-beta.4 (2025-11-18)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated azure monitor metric alert APIs to version &lt;code&gt;2024-03-01-preview&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.VoiceLive_1.1.0-beta.1"&gt;Azure.AI.VoiceLive_1.1.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.0-beta.1 (2025-11-14)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;WebSocket Content Logging&lt;/strong&gt;: Added comprehensive content logging for WebSocket operations following Azure SDK diagnostic patterns
-&lt;ul&gt;
-&lt;li&gt;Introduced &lt;code&gt;AzureVoiceLiveEventSource&lt;/code&gt; for WebSocket event logging with consistent event IDs and levels&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;VoiceLiveWebSocketContentLogger&lt;/code&gt; that integrates with Azure SDK &lt;code&gt;DiagnosticsOptions&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;WebSocket connection lifecycle events (open/close) logged at &lt;code&gt;Informational&lt;/code&gt; level&lt;/li&gt;
-&lt;li&gt;Message operations (send/receive) logged at &lt;code&gt;Informational&lt;/code&gt; level with optional content at &lt;code&gt;Verbose&lt;/code&gt; level&lt;/li&gt;
-&lt;li&gt;Error events logged at &lt;code&gt;Warning&lt;/code&gt; level with error content at &lt;code&gt;Informational&lt;/code&gt; level&lt;/li&gt;
-&lt;li&gt;Content size truncation respects &lt;code&gt;DiagnosticsOptions.LoggedContentSizeLimit&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Unified event listener experience works alongside Azure.Core HTTP logging&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Enhanced Samples&lt;/strong&gt;: Added &lt;code&gt;ContentLoggingSample.cs&lt;/code&gt; and &lt;code&gt;UnifiedEventListener.cs&lt;/code&gt; demonstrating WebSocket content logging integration&lt;/li&gt;
-&lt;/ul&gt;
+                                &lt;h2&gt;1.3.1 (2025-11-19)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated test infrastructure with comprehensive content logging test coverage&lt;/li&gt;
-&lt;li&gt;Added test environment configuration for AI Services integration&lt;/li&gt;
-&lt;li&gt;Enhanced WebSocket helper classes to support diagnostic logging&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Microsoft.Identity.Client.Broker&lt;/code&gt; dependency to version 4.78.0&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Azure.Identity&lt;/code&gt; dependency to version 1.17.1&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity_1.18.0-beta.2"&gt;Azure.Identity_1.18.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.18.0-beta.2 (2025-11-19)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated &lt;code&gt;Microsoft.Identity.Client&lt;/code&gt; and &lt;code&gt;Microsoft.Identity.Client.Extensions.Msal&lt;/code&gt; dependencies to version 4.78.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity_1.17.1"&gt;Azure.Identity_1.17.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.17.1 (2025-11-18)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated &lt;code&gt;Microsoft.Identity.Client&lt;/code&gt; and &lt;code&gt;Microsoft.Identity.Client.Extensions.Msal&lt;/code&gt; dependencies to version 4.78.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DeviceRegistry_1.1.0-beta.2"&gt;Azure.ResourceManager.DeviceRegistry_1.1.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.1.0-beta.2 (2025-11-19)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Aligned resource types to Microsoft.DeviceRegistry API version &lt;code&gt;2025-11-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;Credentials&lt;/code&gt; and &lt;code&gt;Policies&lt;/code&gt; resource types from Microsoft.DeviceRegistry OpenAPI spec version &lt;code&gt;2025-11-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ServiceFabricManagedClusters_1.3.0-beta.5"&gt;Azure.ResourceManager.ServiceFabricManagedClusters_1.3.0-beta.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.3.0-beta.5 (2025-11-19)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded to api-version 2025-10-01-preview.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetworkCloud_1.3.0-beta.1"&gt;Azure.ResourceManager.NetworkCloud_1.3.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.3.0-beta.1 (2025-11-18)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version tag from 'package-2025-02-01' to 'package-2025-07-01-preview'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/a83122b78a412ed2733042cb468a98484d99ecc2/specification/networkcloud/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/a83122b78a412ed2733042cb468a98484d99ecc2/specification/networkcloud/resource-manager/readme.md&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
