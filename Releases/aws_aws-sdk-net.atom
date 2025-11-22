@@ -1,562 +1,202 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-11-21T00:07:16Z</updated>
+  <updated>2025-11-22T00:06:58Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-11-20</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-11-20</id>
+    <title>aws/aws-sdk-net - Releases - 2025-11-21</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-11-21</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-11-21T00:07:16Z</updated>
+    <updated>2025-11-22T00:06:58Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.138.0"&gt;4.0.138.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.139.0"&gt;4.0.139.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.138.0 (2025-11-20 21:25 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.139.0 (2025-11-21 21:17 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;ApplicationSignals (4.0.5.0)
+&lt;li&gt;APIGateway (4.0.5.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon CloudWatch Application Signals now supports un-instrumented services discovery, cross-account views, and change history, helping SRE and DevOps teams monitor and troubleshoot their large-scale distributed applications.&lt;/li&gt;
+&lt;li&gt;API Gateway supports VPC link V2 for REST APIs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AutoScaling (4.0.6.0)
+&lt;li&gt;Athena (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for three new features: 1) Image ID overrides in mixed instances policy, 2) Replace Root Volume - a new strategy for Instance Refresh, and 3) Instance Lifecycle Policy for enhanced instance lifecycle management.&lt;/li&gt;
+&lt;li&gt;Introduces Spark workgroup features including log persistence, S3/CloudWatch delivery, UI and History Server APIs, and SparkConnect 3.5.6 support. Adds DPU usage limits at workgroup and query levels as well as DPU usage tracking for Capacity Reservation queries to optimize performance and costs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCore (4.0.7.0)
+&lt;li&gt;AWSMarketplaceMetering (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Bedrock AgentCore Memory release for redriving memory extraction jobs (StartMemoryExtractionJob and ListMemoryExtractionJob)&lt;/li&gt;
+&lt;li&gt;Endpoint update for new region&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockDataAutomation (4.0.6.0)
+&lt;li&gt;Bedrock (4.0.15.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for Synchronous project type and PII Detection and Redaction&lt;/li&gt;
+&lt;li&gt;Add support to automatically enforce safeguards across accounts within an AWS Organization.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockDataAutomationRuntime (4.0.3.0)
+&lt;li&gt;BedrockAgentCoreControl (4.0.11.0)
 &lt;ul&gt;
-&lt;li&gt;Bedrock Data Automation Runtime Sync API&lt;/li&gt;
+&lt;li&gt;Support for agentcore gateway interceptor configurations and NONE authorizer type&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Braket (4.0.4.0)
+&lt;li&gt;BedrockDataAutomationRuntime (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for Braket spending limits.&lt;/li&gt;
+&lt;li&gt;Adding new fields to GetDataAutomationStatus: jobSubmissionTime, jobCompletionTime, and jobDurationInSeconds&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Budgets (4.0.8.0)
+&lt;li&gt;BedrockRuntime (4.0.12.0)
 &lt;ul&gt;
-&lt;li&gt;Add BillingViewHealthStatusException to DescribeBudgetPerformanceHistory and ServiceQuotaExceededException to UpdateBudget for improved error handling with Billing Views.&lt;/li&gt;
+&lt;li&gt;Add support to automatically enforce safeguards across accounts within an AWS Organization.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudFront (4.0.9.0)
+&lt;li&gt;CloudFormation (4.0.8.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for bring your own IP (BYOIP) to CloudFront's CreateAnycastIpList API through an optional IpamCidrConfigs field.&lt;/li&gt;
+&lt;li&gt;Adds the DependsOn field to the AutoDeployment configuration parameter for CreateStackSet, UpdateStackSet, and DescribeStackSet APIs, allowing users to set and read auto-deployment dependencies between StackSets&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudTrail (4.0.5.0)
+&lt;li&gt;ComputeOptimizerAutomation (4.0.0.0)
 &lt;ul&gt;
-&lt;li&gt;AWS launches CloudTrail aggregated events to simplify monitoring of data events at scale. This feature delivers both granular and summarized data events for resources like S3/Lambda, helping security teams identify patterns without custom aggregation logic.&lt;/li&gt;
+&lt;li&gt;Initial release of AWS Compute Optimizer Automation. Create automation rules to implement recommended actions on a recurring schedule based on your specified criteria. Supported actions include: snapshot and delete unattached EBS volumes and upgrade volume types to the latest generation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.18.0)
+&lt;li&gt;Connect (4.0.19.0)
 &lt;ul&gt;
-&lt;li&gt;Add optional ability to exclude users from send notification actions for Contact Lens Rules.&lt;/li&gt;
+&lt;li&gt;New APIs to support aliases and versions for ContactFlowModule. Updated ContactFlowModule APIs to support custom blocks.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DatabaseMigrationService (4.0.7.0)
+&lt;li&gt;ControlTower (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for customer-managed KMS key (CMK) for encryption for import private key certificate. Additionally added Amazon SageMaker Lakehouse endpoint used for zero-ETL integrations with data warehouses.&lt;/li&gt;
+&lt;li&gt;The manifest field is now optional for the AWS Control Tower CreateLandingZone and UpdateLandingZone APIs for Landing Zone version 4.0&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DataSync (4.0.7.0)
+&lt;li&gt;EC2 (4.0.60.0)
 &lt;ul&gt;
-&lt;li&gt;The partition value "aws-eusc" is now permitted for ARN (Amazon Resource Name) fields.&lt;/li&gt;
+&lt;li&gt;This release adds a new capability to create and manage interruptible EC2 Capacity Reservations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DeviceFarm (4.0.4.0)
+&lt;li&gt;ECR (4.0.8.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for environment variables and an IAM execution role.&lt;/li&gt;
+&lt;li&gt;Add support for ECR managed signing&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DSQL (4.0.8.0)
+&lt;li&gt;EKS (4.0.8.0)
 &lt;ul&gt;
-&lt;li&gt;Added clusterVpcEndpoint field to GetVpcEndpointServiceName API response, returning the VPC connection endpoint for the cluster&lt;/li&gt;
+&lt;li&gt;Adds support for controlPlaneScalingConfig on EKS Clusters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.59.0)
+&lt;li&gt;ElasticLoadBalancingV2 (4.0.6.1)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for multiple features including: VPC Encryption Control for the status of traffic flow; S2S VPN BGP Logging; TGW Flexible Costs; IPAM allocation of static IPs from IPAM pools to CF Anycast IP lists used on CloudFront distribution; and EBS Volume Integration with Recycle Bin&lt;/li&gt;
+&lt;li&gt;This release adds the health check log feature in ALB, allowing customers to send detailed target health check log data directly to their designated Amazon S3 bucket.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ECS (4.0.10.0)
+&lt;li&gt;Invoicing (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;Launching Amazon ECS Express Mode - a new feature that enables developers to quickly launch highly available, scalable containerized applications with a single command.&lt;/li&gt;
+&lt;li&gt;Added the CreateProcurementPortalPreference, GetProcurementPortalPreference, PutProcurementPortalPreference, UpdateProcurementPortalPreferenceStatus, ListProcurementPortalPreferences and DeleteProcurementPortalPreference APIs for procurement portal preference management.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticLoadBalancingV2 (4.0.6.0)
+&lt;li&gt;KeyManagementService (4.0.8.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds the target optimizer feature in ALB, enabling strict concurrency enforcement on targets.&lt;/li&gt;
+&lt;li&gt;Support for on-demand rotation of AWS KMS Multi-Region keys with imported key material&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticMapReduce (4.0.7.0)
+&lt;li&gt;KinesisVideo (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for configuring S3 destination for step logs on a per-step basis.&lt;/li&gt;
+&lt;li&gt;This release adds support for Tiered Storage&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Glue (4.0.22.0)
+&lt;li&gt;Lambda (4.0.8.0)
 &lt;ul&gt;
-&lt;li&gt;Added FunctionType parameter to Glue GetuserDefinedFunctions.&lt;/li&gt;
+&lt;li&gt;Launching Enhanced Error Handling and ESM Grouping capabilities for Kafka ESMs&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Imagebuilder (4.0.6.0)
+&lt;li&gt;LexModelsV2 (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;EC2 Image Builder now enables the distribution of existing AMIs, retry distribution, and define distribution workflows. It also supports automatic versioning for recipes and components, allowing automatic version increments and dynamic referencing in pipelines.&lt;/li&gt;
+&lt;li&gt;Adds support for Intent Disambiguation, allowing resolution of ambiguous user inputs when multiple intents match by presenting clarifying questions to users. Also adds Speech Detection Sensitivity configuration for optimizing voice activity detection sensitivity levels in various noise environments.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Kinesis (4.0.7.5)
+&lt;li&gt;MailManager (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;Kinesis Data Streams now supports up to 50 Enhance Fan-out consumers for On-demand Advantage Streams. On-demand Standard and Provisioned streams will continue with the existing limit of 20 consumers for Enhanced Fan-out.&lt;/li&gt;
+&lt;li&gt;Add support for resources in the aws-eusc partition.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;LakeFormation (4.0.3.0)
+&lt;li&gt;MarketplaceEntitlementService (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Added ServiceIntegrations as a request parameter for CreateLakeFormationIdentityCenterConfigurationRequest and UpdateLakeFormationIdentityCenterConfigurationRequest and response parameter for DescribeLakeFormationIdentityCenterConfigurationResponse&lt;/li&gt;
+&lt;li&gt;Endpoint update for new region&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;LicenseManager (4.0.4.0)
+&lt;li&gt;MediaPackageV2 (4.0.9.0)
 &lt;ul&gt;
-&lt;li&gt;Added cross-account resource aggregation via license asset groups and expiry tracking for Self-Managed Licenses. Extended Org-Wide View to Self-Managed Licenses, added reporting for license asset groups, and removed Athena/Glue dependencies for cross-account resource discovery in commercial regions.&lt;/li&gt;
+&lt;li&gt;Adds support for excluding session key tags from HLS multivariant playlists&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;NetworkManager (4.0.4.0)
+&lt;li&gt;Odb (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for Cloud WAN Routing Policy providing customers sophisticated routing controls to better manage their global networks&lt;/li&gt;
+&lt;li&gt;Adds AssociateIamRoleToResource and DisassociateIamRoleFromResource APIs for managing IAM roles. Enhances CreateOdbNetwork and UpdateOdbNetwork APIs with KMS, STS, and cross-region S3 parameters. Adds OCI identity domain support to InitializeService API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Organizations (4.0.7.0)
+&lt;li&gt;Organizations (4.0.8.0)
 &lt;ul&gt;
-&lt;li&gt;Added new APIs for Billing Transfer, new policy type INSPECTOR_POLICY, and allow an account to transfer between organizations&lt;/li&gt;
+&lt;li&gt;Add support for policy operations on the UPGRADE_ROLLOUT_POLICY policy type.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;QuickSight (4.0.9.0)
+&lt;li&gt;QConnect (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;Introducing comprehensive theme styling controls. New features include border customization (radius, width, color), flexible padding controls, background styling for cards and sheets, centralized typography management, and visual-level override support across layouts.&lt;/li&gt;
+&lt;li&gt;This release introduces two new messaging channel subtypes: Push, WhatsApp, under MessageTemplate which is a resource in Amazon Q in Connect.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;RDS (4.0.12.0)
+&lt;li&gt;QuickSight (4.0.10.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for VPC Encryption Controls.&lt;/li&gt;
+&lt;li&gt;Amazon Quick Suite now supports QuickChat as an embedding type when calling the GenerateEmbedUrlForRegisteredUser API, enabling developers to embed conversational AI agents directly into their applications.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;RecycleBin (4.0.3.0)
+&lt;li&gt;RDS (4.0.13.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for EBS volume in Recycle Bin&lt;/li&gt;
+&lt;li&gt;Add support for Upgrade Rollout Order&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;RedshiftDataAPIService (4.0.3.0)
+&lt;li&gt;Redshift (4.0.5.0)
 &lt;ul&gt;
-&lt;li&gt;Increasing the length limit of Statement Name from 500 to 2048.&lt;/li&gt;
+&lt;li&gt;Added support for Amazon Redshift Federated Permissions and AWS IAM Identity Center trusted identity propagation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (4.0.13.0)
+&lt;li&gt;RedshiftServerless (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;Enable / Disable ABAC on a general purpose bucket.&lt;/li&gt;
-&lt;li&gt;Add unit tests for Transfer Utility ConvertToGetObjectRequest method in BaseCommand&lt;/li&gt;
-&lt;li&gt;Setting both ResponseExpires and ResponseHeadersOverrides.Expires on GetObjectRequest now gives priority to ResponseExpires. Previously, ResponseHeadersOverrides.Expires was not being used even if it was set.&lt;/li&gt;
+&lt;li&gt;Added UpdateLakehouseConfiguration API to manage Amazon Redshift Federated Permissions and AWS IAM Identity Center trusted identity propagation for namespaces.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.35.0)
+&lt;li&gt;S3 (4.0.13.1)
 &lt;ul&gt;
-&lt;li&gt;Added training plan support for inference endpoints. Added HyperPod task governance with accelerator partition-based quota allocation. Added BatchRebootClusterNodes and BatchReplaceClusterNodes APIs. Updated ListClusterNodes to include privateDnsHostName.&lt;/li&gt;
+&lt;li&gt;Generate 4 more S3 operations: PutBucketIntelligentTieringConfiguration, GetBucketIntelligentTieringConfiguration, ListBucketIntelligentTieringConfigurations, and DeleteBucketIntelligentTieringConfiguration.&lt;/li&gt;
+&lt;li&gt;Fix a bug where calling GetBucketIntelligentTiering with no IntelligentTieringId would call ListBucketIntelligentTieringConfigurations. Now, calling GetBucketIntelligentTiering with no IntelligentTieringId will throw an exception.&lt;/li&gt;
+&lt;li&gt;[Breaking Change] IsSetIntelligentTieringConfigurationList() on ListBucketIntelligentTieringConfigurationsResponse changed from public to internal to follow other IsSet methods.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SecurityHub (4.0.6.0)
+&lt;li&gt;SageMaker (4.0.36.0)
 &lt;ul&gt;
-&lt;li&gt;Release Findings and Resources Trends APIs- GetFindingsTrendsV2 and GetResourcesTrendsV2. This supports time-series aggregated counts with composite filtering for 1-year of historical data analysis of Findings and Resources.&lt;/li&gt;
+&lt;li&gt;Enhanced SageMaker HyperPod instance groups with support for MinInstanceCount, CapacityRequirements (Spot/On-Demand), and KubernetesConfig (labels and taints). Also Added speculative decoding and MaxInstanceCount for model optimization jobs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1170.0"&gt;3.7.1170.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;3.7.1170.0 (2025-11-20 20:03 UTC)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;ApplicationSignals (3.7.505.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon CloudWatch Application Signals now supports un-instrumented services discovery, cross-account views, and change history, helping SRE and DevOps teams monitor and troubleshoot their large-scale distributed applications.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;AutoScaling (3.7.504.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds support for three new features: 1) Image ID overrides in mixed instances policy, 2) Replace Root Volume - a new strategy for Instance Refresh, and 3) Instance Lifecycle Policy for enhanced instance lifecycle management.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BedrockAgentCore (3.7.507.0)
-&lt;ul&gt;
-&lt;li&gt;Bedrock AgentCore Memory release for redriving memory extraction jobs (StartMemoryExtractionJob and ListMemoryExtractionJob)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BedrockDataAutomation (3.7.504.0)
-&lt;ul&gt;
-&lt;li&gt;Added support for Synchronous project type and PII Detection and Redaction&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BedrockDataAutomationRuntime (3.7.502.0)
-&lt;ul&gt;
-&lt;li&gt;Bedrock Data Automation Runtime Sync API&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Braket (3.7.504.0)
-&lt;ul&gt;
-&lt;li&gt;Add support for Braket spending limits.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Budgets (3.7.507.0)
-&lt;ul&gt;
-&lt;li&gt;Add BillingViewHealthStatusException to DescribeBudgetPerformanceHistory and ServiceQuotaExceededException to UpdateBudget for improved error handling with Billing Views.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CloudFront (3.7.507.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds support for bring your own IP (BYOIP) to CloudFront's CreateAnycastIpList API through an optional IpamCidrConfigs field.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CloudTrail (3.7.504.0)
-&lt;ul&gt;
-&lt;li&gt;AWS launches CloudTrail aggregated events to simplify monitoring of data events at scale. This feature delivers both granular and summarized data events for resources like S3/Lambda, helping security teams identify patterns without custom aggregation logic.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Connect (3.7.514.0)
-&lt;ul&gt;
-&lt;li&gt;Add optional ability to exclude users from send notification actions for Contact Lens Rules.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DatabaseMigrationService (3.7.505.0)
-&lt;ul&gt;
-&lt;li&gt;Added support for customer-managed KMS key (CMK) for encryption for import private key certificate. Additionally added Amazon SageMaker Lakehouse endpoint used for zero-ETL integrations with data warehouses.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DataSync (3.7.504.0)
-&lt;ul&gt;
-&lt;li&gt;The partition value "aws-eusc" is now permitted for ARN (Amazon Resource Name) fields.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DeviceFarm (3.7.503.0)
-&lt;ul&gt;
-&lt;li&gt;Add support for environment variables and an IAM execution role.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DSQL (3.7.505.0)
-&lt;ul&gt;
-&lt;li&gt;Added clusterVpcEndpoint field to GetVpcEndpointServiceName API response, returning the VPC connection endpoint for the cluster&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;EC2 (3.7.533.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds support for multiple features including: VPC Encryption Control for the status of traffic flow; S2S VPN BGP Logging; TGW Flexible Costs; IPAM allocation of static IPs from IPAM pools to CF Anycast IP lists used on CloudFront distribution; and EBS Volume Integration with Recycle Bin&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ECS (3.7.506.0)
-&lt;ul&gt;
-&lt;li&gt;Launching Amazon ECS Express Mode - a new feature that enables developers to quickly launch highly available, scalable containerized applications with a single command.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ElasticLoadBalancingV2 (3.7.505.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds the target optimizer feature in ALB, enabling strict concurrency enforcement on targets.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ElasticMapReduce (3.7.505.0)
-&lt;ul&gt;
-&lt;li&gt;Add support for configuring S3 destination for step logs on a per-step basis.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Glue (3.7.511.0)
-&lt;ul&gt;
-&lt;li&gt;Added FunctionType parameter to Glue GetuserDefinedFunctions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Imagebuilder (3.7.506.0)
-&lt;ul&gt;
-&lt;li&gt;EC2 Image Builder now enables the distribution of existing AMIs, retry distribution, and define distribution workflows. It also supports automatic versioning for recipes and components, allowing automatic version increments and dynamic referencing in pipelines.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Kinesis (3.7.505.6)
-&lt;ul&gt;
-&lt;li&gt;Kinesis Data Streams now supports up to 50 Enhance Fan-out consumers for On-demand Advantage Streams. On-demand Standard and Provisioned streams will continue with the existing limit of 20 consumers for Enhanced Fan-out.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;LakeFormation (3.7.503.0)
-&lt;ul&gt;
-&lt;li&gt;Added ServiceIntegrations as a request parameter for CreateLakeFormationIdentityCenterConfigurationRequest and UpdateLakeFormationIdentityCenterConfigurationRequest and response parameter for DescribeLakeFormationIdentityCenterConfigurationResponse&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;LicenseManager (3.7.502.0)
-&lt;ul&gt;
-&lt;li&gt;Added cross-account resource aggregation via license asset groups and expiry tracking for Self-Managed Licenses. Extended Org-Wide View to Self-Managed Licenses, added reporting for license asset groups, and removed Athena/Glue dependencies for cross-account resource discovery in commercial regions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;NetworkManager (3.7.503.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds support for Cloud WAN Routing Policy providing customers sophisticated routing controls to better manage their global networks&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Organizations (3.7.506.0)
-&lt;ul&gt;
-&lt;li&gt;Added new APIs for Billing Transfer, new policy type INSPECTOR_POLICY, and allow an account to transfer between organizations&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;QuickSight (3.7.506.0)
-&lt;ul&gt;
-&lt;li&gt;Introducing comprehensive theme styling controls. New features include border customization (radius, width, color), flexible padding controls, background styling for cards and sheets, centralized typography management, and visual-level override support across layouts.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;RDS (3.7.508.0)
-&lt;ul&gt;
-&lt;li&gt;Add support for VPC Encryption Controls.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;RecycleBin (3.7.503.0)
-&lt;ul&gt;
-&lt;li&gt;Add support for EBS volume in Recycle Bin&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;RedshiftDataAPIService (3.7.503.0)
-&lt;ul&gt;
-&lt;li&gt;Increasing the length limit of Statement Name from 500 to 2048.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3 (3.7.506.0)
-&lt;ul&gt;
-&lt;li&gt;Enable / Disable ABAC on a general purpose bucket.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMaker (3.7.521.0)
-&lt;ul&gt;
-&lt;li&gt;Added training plan support for inference endpoints. Added HyperPod task governance with accelerator partition-based quota allocation. Added BatchRebootClusterNodes and BatchReplaceClusterNodes APIs. Updated ListClusterNodes to include privateDnsHostName.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SecurityHub (3.7.505.0)
-&lt;ul&gt;
-&lt;li&gt;Release Findings and Resources Trends APIs- GetFindingsTrendsV2 and GetResourcesTrendsV2. This supports time-series aggregated counts with composite filtering for 1-year of historical data analysis of Findings and Resources.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 3.7.500.47
-&lt;ul&gt;
-&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1169.0"&gt;3.7.1169.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;3.7.1169.0 (2025-11-19 22:54 UTC)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;APIGateway (3.7.503.0)
-&lt;ul&gt;
-&lt;li&gt;API Gateway now supports response streaming and new security policies for REST APIs and custom domain names.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ApiGatewayV2 (3.7.503.0)
-&lt;ul&gt;
-&lt;li&gt;Support for API Gateway portals and portal products.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;AWSHealth (3.7.502.0)
-&lt;ul&gt;
-&lt;li&gt;Adds actionability and personas properties to Health events exposed through DescribeEvents, DescribeEventsForOrganization, DescribeEventDetails, and DescribeEventTypes APIs. Adds filtering by actionabilities and personas in EventFilter, OrganizationEventFilter, EventTypeFilter.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Backup (3.7.508.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon GuardDuty Malware Protection now supports AWS Backup, extending malware detection capabilities to EC2, EBS, and S3 backups.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BCMPricingCalculator (3.7.503.0)
-&lt;ul&gt;
-&lt;li&gt;Add GroupSharingPreference, CostCategoryGroupSharingPreferenceArn, and CostCategoryGroupSharingPreferenceEffectiveDate to Bill Estimate. Add GroupSharingPreference and CostCategoryGroupSharingPreferenceArn to Bill Scenario.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BedrockRuntime (3.7.509.0)
-&lt;ul&gt;
-&lt;li&gt;This release includes support for Search Results.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Billing (3.7.505.0)
-&lt;ul&gt;
-&lt;li&gt;Added name filtering support to ListBillingViews API through the new names parameter to efficiently filter billing views by name.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BillingConductor (3.7.503.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds support for Billing Transfers, enabling management of billing transfers with billing groups on AWS Billing Conductor.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CloudTrail (3.7.503.0)
-&lt;ul&gt;
-&lt;li&gt;AWS CloudTrail now supports Insights for data events, expanding beyond management events to automatically detect unusual activity on data plane operations.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CloudWatchLogs (3.7.504.0)
-&lt;ul&gt;
-&lt;li&gt;Adding support for ocsf version 1.5, add optional parameter MappingVersion&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CloudWatchRUM (3.7.503.0)
-&lt;ul&gt;
-&lt;li&gt;CloudWatch RUM now supports mobile application monitoring for Android and iOS platforms&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ConnectCampaignsV2 (3.7.503.0)
-&lt;ul&gt;
-&lt;li&gt;This release added support for ring timer configuration for campaign calls.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CostExplorer (3.7.506.0)
-&lt;ul&gt;
-&lt;li&gt;Add support for COST_CATEGORY, TAG, and LINKED_ACCOUNT AWS managed cost anomaly detection monitors&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CostOptimizationHub (3.7.503.0)
-&lt;ul&gt;
-&lt;li&gt;Release ListEfficiencyMetrics API&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DataZone (3.7.512.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon DataZone now supports business metadata (readme and metadata forms) at the individual attribute (column) level, a new rule type for glossary terms, and the ability to update the owner of the root domain unit.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (3.7.509.0)
-&lt;ul&gt;
-&lt;li&gt;Extended Global Secondary Index (GSI) composite keys to support up to 8 attributes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;EC2 (3.7.532.0)
-&lt;ul&gt;
-&lt;li&gt;This launch adds support for two new features: Regional NAT Gateway and IPAM Policies. IPAM policies offers customers central control for public IPv4 assignments across AWS services. Regional NAT is a single NAT Gateway that automatically expands across AZs in a VPC to maintain high availability.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ECR (3.7.504.0)
-&lt;ul&gt;
-&lt;li&gt;Add support for ECR archival storage class and Inspector org policy for scanning&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ECS (3.7.505.0)
-&lt;ul&gt;
-&lt;li&gt;Added support for Amazon ECS Managed Instances infrastructure optimization configuration.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ElasticMapReduce (3.7.504.0)
-&lt;ul&gt;
-&lt;li&gt;Add CloudWatch Logs integration for Spark driver, executor and step logs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;FSx (3.7.506.0)
-&lt;ul&gt;
-&lt;li&gt;Adding File Server Resource Manager configuration to FSx Windows&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;GuardDuty (3.7.508.0)
-&lt;ul&gt;
-&lt;li&gt;Add support for scanning and viewing scan results for backup resource types&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IdentityManagement (3.7.506.0)
-&lt;ul&gt;
-&lt;li&gt;Added the EnableOutboundWebIdentityFederation, DisableOutboundWebIdentityFederation and GetOutboundWebIdentityFederationInfo APIs for the IAM outbound federation feature.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Inspector2 (3.7.504.0)
-&lt;ul&gt;
-&lt;li&gt;This release introduces BLOCKED_BY_ORGANIZATION_POLICY error code and IMAGE_ARCHIVED scanStatusReason. BLOCKED_BY_ORGANIZATION_POLICY error code is returned when an operation is blocked by an AWS Organizations policy. IMAGE_ARCHIVED scanStatusReason is returned when an Image is archived in ECR.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Invoicing (3.7.504.0)
-&lt;ul&gt;
-&lt;li&gt;Add support for adding Billing transfers in Invoice configuration&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Lambda (3.7.505.0)
-&lt;ul&gt;
-&lt;li&gt;Added support for creating and invoking Tenant Isolated functions in AWS Lambda APIs.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MediaConnect (3.7.504.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds support for global routing in AWS Elemental MediaConnect. You can now use router inputs and router outputs to manage global video and audio routing workflows both within the AWS-Cloud and over the public internet.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MediaLive (3.7.509.0)
-&lt;ul&gt;
-&lt;li&gt;MediaLive is adding support for MediaConnect Router by supporting a new input type called MEDIACONNECT_ROUTER. This new input type will provide seamless encrypted transport between MediaConnect Router and your MediaLive channel.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;NetworkFirewall (3.7.505.0)
-&lt;ul&gt;
-&lt;li&gt;Partner Managed Rulegroup feature support&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;NetworkFlowMonitor (3.7.504.0)
-&lt;ul&gt;
-&lt;li&gt;Added new enum value (AWS::EKS::Cluster) for type field under MonitorLocalResource&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;PartnerCentralChannel (3.7.500.0)
-&lt;ul&gt;
-&lt;li&gt;Initial GA launch of Partner Central Channel&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Route53 (3.7.504.0)
-&lt;ul&gt;
-&lt;li&gt;Add dual-stack endpoint support for Route53&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3 (3.7.505.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for blocking SSE-C writes to general purpose buckets.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMaker (3.7.520.0)
-&lt;ul&gt;
-&lt;li&gt;Added support for enhanced metrics for SageMaker AI Endpoints. This features provides Utilization Metrics at instance and container granularity and also provides easy configuration of metric publish frequency from 10 sec -&amp;gt; 5 mins&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SecretsManager (3.7.503.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support to create, update, retrieve, rotate, and delete managed external secrets.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SecurityToken (3.7.504.0)
+&lt;li&gt;SecurityIR (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;IAM now supports outbound identity federation via the STS GetWebIdentityToken API, enabling AWS workloads to securely authenticate with external services using short-lived JSON Web Tokens.&lt;/li&gt;
+&lt;li&gt;Add ListInvestigations and SendFeedback APIs to support SecurityIR AI agents&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Signin (3.7.500.0)
+&lt;li&gt;SimpleEmailV2 (4.0.7.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Sign-In manages authentication for AWS services. This service provides secure authentication flows for accessing AWS resources from the console and developer tools. This release adds the CreateOAuth2Token API, which can be used to fetch OAuth2 access tokens and refresh tokens from Sign-In.&lt;/li&gt;
+&lt;li&gt;Added support for new SES regions - Asia Pacific (Malaysia) and Canada (Calgary)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;StepFunctions (3.7.502.0)
+&lt;li&gt;Transfer (4.0.5.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support to TestState for mocked results and exceptions, along with additional inspection data.&lt;/li&gt;
+&lt;li&gt;Adds support for creating Webapps accessible from a VPC.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 3.7.500.46
+&lt;li&gt;Core 4.0.3.3
 &lt;ul&gt;
-&lt;li&gt;Added support for LoginAWSCredentials.&lt;/li&gt;
-&lt;li&gt;Updated generator to support TFM based conditions in ItemGroup while adding project package references defined for various targets in service model metadata.json.&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Update the SDK to throw an error when the resolved AWS region is not a valid host label&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
