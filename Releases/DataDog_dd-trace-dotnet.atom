@@ -1,6 +1,70 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>DataDog/dd-trace-dotnet - Releases</title>
   <link href="https://github.com/DataDog/dd-trace-dotnet" />
-  <updated>2025-11-25T00:06:16Z</updated>
+  <updated>2025-11-26T00:07:18Z</updated>
   <id>https://github.com/DataDog/dd-trace-dotnet</id>
+  <entry>
+    <title>DataDog/dd-trace-dotnet - Releases - 2025-11-25</title>
+    <id>https://github.com/DataDog/dd-trace-dotnet#2025-11-25</id>
+    <link href="https://github.com/DataDog/dd-trace-dotnet" />
+    <updated>2025-11-26T00:07:18Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/releases/tag/v3.32.0"&gt;3.32.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Summary&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Tracer] Fix orphaned spans in WCF traces&lt;/li&gt;
+&lt;li&gt;[AWS Lambda] Add request-id as header to Lambda start/end invocation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changes&lt;/h2&gt;
+&lt;h3&gt;Tracer&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add process tags to client-side stats (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3596658922" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7791" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7791/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7791"&gt;#7791&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;CI Visibility&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Avoid allocating and preparing CI Visibility stuff in startup hot path (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3626101287" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7821" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7821/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7821"&gt;#7821&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Debugger&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add process tags to dynamic instrumentation snapshots (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3638250531" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7839" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7839/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7839"&gt;#7839&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Serverless&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Respect baggage in Azure messaging integrations (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3625509312" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7818" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7818/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7818"&gt;#7818&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[AWS Lambda] Add request-id as header to Lambda start/end invocation (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3634797766" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7835" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7835/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7835"&gt;#7835&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;#nullable enable&lt;/code&gt; and fix &lt;code&gt;NullReferenceException&lt;/code&gt; in DynamoDB (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3647099195" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7849" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7849/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7849"&gt;#7849&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix orphaned spans in WCF traces (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3642987230" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7842" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7842/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7842"&gt;#7842&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Data Streams Monitoring&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add process tags to DSM (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3587339672" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7775" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7775/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7775"&gt;#7775&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Miscellaneous&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add process tags to telemetry (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3590587110" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7780" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7780/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7780"&gt;#7780&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Docs] fix CLI commands to download logs from AAS apps (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3613524976" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7802" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7802/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7802"&gt;#7802&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Build / Test&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix microbenchmark artifacts (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3625269426" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7816" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7816/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7816"&gt;#7816&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add testing for latest Microsoft.Extensions.Telemetry version (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3625433167" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7817" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7817/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7817"&gt;#7817&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix broken CI when running tests against a specific sample (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3625804389" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7819" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7819/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7819"&gt;#7819&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Publish native symbols in all DCs (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3633076038" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7828" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7828/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7828"&gt;#7828&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update .gitlab/one-pipeline.locked.yaml (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3635181212" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7836" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7836/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7836"&gt;#7836&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add support for VS 2026 to Nuke detection (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3643370620" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7843" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7843/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7843"&gt;#7843&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/compare/v3.31.0...v3.32.0"&gt;Changes since 3.31.0&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
