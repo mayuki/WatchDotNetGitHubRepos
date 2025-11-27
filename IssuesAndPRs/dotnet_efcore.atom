@@ -1,20 +1,26 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/efcore - Issues &amp; Pull Requests</title>
   <link href="https://github.com/dotnet/efcore" />
-  <updated>2025-11-26T00:06:56Z</updated>
+  <updated>2025-11-27T00:06:47Z</updated>
   <id>https://github.com/dotnet/efcore</id>
   <entry>
-    <title>dotnet/efcore - Issues &amp; Pull Requests - 2025-11-25</title>
-    <id>https://github.com/dotnet/efcore#2025-11-25</id>
+    <title>dotnet/efcore - Issues &amp; Pull Requests - 2025-11-26</title>
+    <id>https://github.com/dotnet/efcore#2025-11-26</id>
     <link href="https://github.com/dotnet/efcore" />
-    <updated>2025-11-26T00:06:56Z</updated>
+    <updated>2025-11-27T00:06:47Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/37236"&gt;The SQL logged by EF doesn't reflect changes made by interceptors #37236&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/37249"&gt;EF 10: Nullable complex property with PropertyValues.ToObject() creates instance instead of null #37249&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/37247"&gt;The linq expression 'ti' could not be translated (works in EF 9.0.11 and before) #37247&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -23,13 +29,25 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/37086"&gt;Test `Microsoft.EntityFrameworkCore.RelationalConnectionTest.HandleTransactionCompleted_with_concurrent_ClearTransactions_is_thread_safe` is flaky #37086&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/36599"&gt;Cosmos: bulk execution #36599&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;11.0.0&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/37178"&gt;Incorrect COALESCE when using DefaultIfEmpty over nullable value types #37178&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/37245"&gt;Contains with more than 5 items adds duplicate parameters at end #37245&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/37244"&gt;Add ExecuteInsertAsync to support INSERT ... SELECT without loading data #37244&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/37205"&gt;ComplexCollection (JSON) + QueryFilter on child entity → "Invalid column name '...'" when Parent.Include(Child) and FK nullable #37205&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;10.0.2&lt;/div&gt;
     &lt;/li&gt;
@@ -40,76 +58,25 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/37240"&gt;[automated] Merge branch 'release/10.0' =&amp;gt; 'main' #37240&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/37248"&gt;[release/10.0] Fix empty scalar collection support #37248&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/37239"&gt;[release/10.0] Fix complex collection within left join subquery #37239&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/37243"&gt;Fix NullReferenceException in SqlServerAnnotationCodeGenerator when scaffolding columns with named default constraints and CLR default values #37243&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Servicing-approved, 10.0.2&lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/37242"&gt;Fix #37143: Always generate HasDiscriminator with type argument and property name in snapshot #37242&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
   &lt;h3&gt;Merged&lt;/h3&gt;
   &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/37072"&gt;Added metadata for complextypes for AddViews / TVF in RelationalModel #36894 , execute update for complex types (view+table) #34706 #37072&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/37241"&gt;Add network isolation policy to pipeline settings #37241&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/37101"&gt;Fix flaky test by creating proper race condition between HandleTransactionCompleted and ClearTransactions #37101&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/37207"&gt;[release/10.0] Switch back to net8.0 for tools #37207&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Servicing-approved, 10.0.2&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/37237"&gt;[release/10.0] Correct COALESCE logic for DefaultIfEmpty (#37233) #37237&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Servicing-consider, Servicing-approved, 10.0.2&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/37238"&gt;Fix complex collection within left join subquery #37238&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/37233"&gt;Correct COALESCE logic for DefaultIfEmpty #37233&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/37225"&gt;[automated] Merge branch 'release/10.0' =&amp;gt; 'main' #37225&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Updated&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/37144"&gt;Add parameterless overloads for AddPooledDbContextFactory&amp;lt;TContext&amp;gt; #37144&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;community-contribution&lt;/div&gt;
-    &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/efcore/pull/37033"&gt;Add Cosmos bulk execution #37033&lt;/a&gt;
@@ -118,7 +85,22 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/37234"&gt;Fallback to OPENJSON with many parameters #37234&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/37239"&gt;[release/10.0] Fix complex collection within left join subquery #37239&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Servicing-approved, 10.0.2&lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;Updated&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/37235"&gt;[release/10.0] Make FromSql work on entity types containing complex JSON #37235&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/37240"&gt;[automated] Merge branch 'release/10.0' =&amp;gt; 'main' #37240&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
