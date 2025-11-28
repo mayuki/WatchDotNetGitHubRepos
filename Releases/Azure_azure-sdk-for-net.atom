@@ -1,81 +1,24 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-11-27T00:07:11Z</updated>
+  <updated>2025-11-28T00:07:14Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-11-26</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-11-26</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-11-27</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-11-27</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-11-27T00:07:11Z</updated>
+    <updated>2025-11-28T00:07:14Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Language.Conversations_2.0.0-beta.5"&gt;Azure.AI.Language.Conversations_2.0.0-beta.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Dynatrace_1.2.0"&gt;Azure.ResourceManager.Dynatrace_1.2.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;2.0.0-beta.5 (2025-11-25)&lt;/h2&gt;
-&lt;p&gt;This version of the client library defaults to the service API version &lt;code&gt;2025-11-15-preview&lt;/code&gt;.&lt;/p&gt;
+                                &lt;h2&gt;1.2.0 (2025-11-27)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added new PII categories: DriversLicenseNumber, PassportNumber, PersonType, Organization, ABARoutingNumber, BankAccountNumber, DateOfBirth, InternationalBankingAccountNumber, SWIFTCode, VehicleIdentificationNumber, Age, Date, ZipCode, GovernmentIssuedId, CVV, HealthCardNumber, CASocialInsuranceNumber, USMedicareBeneficiaryId, GithubAccount, Location, and GPE.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Language.Text_1.0.0-beta.4"&gt;Azure.AI.Language.Text_1.0.0-beta.4&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.4 (2025-11-20)&lt;/h2&gt;
-&lt;p&gt;This version of the client library defaults to the service API version &lt;code&gt;2025-11-15-preview&lt;/code&gt;.&lt;/p&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for &lt;strong&gt;multiple redaction policies&lt;/strong&gt; in a single request.&lt;/li&gt;
-&lt;li&gt;Added &lt;strong&gt;synthetic replacement redaction&lt;/strong&gt;, enabling selected PII types (e.g., Person, Email) to be replaced with realistic synthetic values rather than masked.&lt;/li&gt;
-&lt;li&gt;Added &lt;strong&gt;confidence score thresholding&lt;/strong&gt;, allowing customers to define minimum confidence levels�globally or per-entity�so that only entities meeting the required confidence are returned.&lt;/li&gt;
-&lt;li&gt;Added &lt;strong&gt;entity validation control&lt;/strong&gt; with the &lt;code&gt;disableEntityValidation&lt;/code&gt; parameter, allowing users to bypass entity validation when needed.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.OpenAI_2.7.0-beta.1"&gt;Azure.AI.OpenAI_2.7.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;2.7.0-beta.1 (2025-11-24)&lt;/h2&gt;
-&lt;p&gt;This update restores compatibility with the latest &lt;code&gt;2.7.0&lt;/code&gt; release of &lt;code&gt;OpenAI&lt;/code&gt; and enables access to the latest features. For details, please see &lt;a href="https://github.com/openai/openai-dotnet/blob/main/CHANGELOG.md#270-2025-11-13"&gt;the full OpenAI 2.7.0 release notes&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;A substantial number of new features are carried forward from the &lt;code&gt;OpenAI&lt;/code&gt; library. Please see &lt;a href="https://github.com/openai/openai-dotnet/blob/main/CHANGELOG.md#270-2025-11-13"&gt;the full OpenAI 2.5.0 release notes&lt;/a&gt; for details.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;[Experimental]&lt;/code&gt; Chat Extensions&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Explicitly assigning &lt;code&gt;null&lt;/code&gt; to the &lt;code&gt;MaxOutputTokens&lt;/code&gt; property of a &lt;code&gt;ChatCompletionOptions&lt;/code&gt; instance will now reset opt-in to&lt;br&gt;
-contemporary serialization of &lt;code&gt;max_output_tokens&lt;/code&gt; via &lt;code&gt;.SetNewMaxOutputTokensPropertyEnabled()&lt;/code&gt;. Please ensure the extension&lt;br&gt;
-method is invoked after non-null assignment of &lt;code&gt;MaxOutputTokens&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Resources_1.11.2"&gt;Azure.ResourceManager.Resources_1.11.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.11.2 (2025-10-16)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed an issue in &lt;code&gt;ArmDeploymentOperationProperties&lt;/code&gt; deserialization where &lt;code&gt;StatusCode&lt;/code&gt; could be either a string or a number in JSON, causing &lt;code&gt;InvalidOperationException&lt;/code&gt; when parsing an integer &lt;code&gt;StatusCode&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetApp_1.14.0"&gt;Azure.ResourceManager.NetApp_1.14.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.14.0 (2025-11-26)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version tag from 'package-2025-06-01' to 'package-2025-09-01'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/1da0ccefea2127820defac6496bf4710c0902d78/specification/netapp/resource-manager/Microsoft.NetApp/NetApp/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/1da0ccefea2127820defac6496bf4710c0902d78/specification/netapp/resource-manager/Microsoft.NetApp/NetApp/readme.md&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ExcludeReplicationsFilter&lt;/code&gt; to &lt;code&gt;GetReplicationsAsync&lt;/code&gt; to filter out replications&lt;/li&gt;
+&lt;li&gt;Upgraded api-version to '2024-04-24'.&lt;/li&gt;
+&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.Dynatrace&lt;/code&gt; AOT-compatible.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
