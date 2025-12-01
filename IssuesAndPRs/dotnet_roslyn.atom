@@ -1,20 +1,26 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/roslyn - Issues &amp; Pull Requests</title>
   <link href="https://github.com/dotnet/roslyn" />
-  <updated>2025-11-30T00:07:39Z</updated>
+  <updated>2025-12-01T00:08:37Z</updated>
   <id>https://github.com/dotnet/roslyn</id>
   <entry>
-    <title>dotnet/roslyn - Issues &amp; Pull Requests - 2025-11-29</title>
-    <id>https://github.com/dotnet/roslyn#2025-11-29</id>
+    <title>dotnet/roslyn - Issues &amp; Pull Requests - 2025-11-30</title>
+    <id>https://github.com/dotnet/roslyn#2025-11-30</id>
     <link href="https://github.com/dotnet/roslyn" />
-    <updated>2025-11-30T00:07:39Z</updated>
+    <updated>2025-12-01T00:08:37Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/81483"&gt;The new C# extension block syntax incorrectly triggers CA1515 #81483&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/81491"&gt;question for the roslyn development team #81491&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/81488"&gt;IDE0048 triggers for `is null` but not for `is not null` in null-coalescing expressions #81488&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -23,27 +29,21 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/38095"&gt;Feature request: refactoring for adding a using / simplifying a name #38095&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Backlog&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/51355"&gt;Offer to add usings for fully qualified names #51355&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Backlog&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/63892"&gt;IDE Usage Analysis Does Not Account for Lambda Default Parameters #63892&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Backlog&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/81481"&gt;[Automated] PRs inserted in VS build main-11228.26 #81481&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/81490"&gt;Compiler incorrectly allows implicit conversion from long to int #81490&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/78655"&gt;Avoid `virtual` implementations for `AddSynthesizedAttributes` #78655&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/81012"&gt;VS2026 11116.177 ignores fade out unused members settings #81012&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;18.3&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;&lt;section&gt;
@@ -52,9 +52,33 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/81489"&gt;Fix IDE0048 to trigger consistently for `is null` and `is not null` in coalesce expressions #81489&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;VSCode&lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;Merged&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/81289"&gt;Avoid `virtual` implementations for `AddSynthesizedAttributes` #81289&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Area-Compilers, Next&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
         &lt;a href="https://github.com/dotnet/roslyn/pull/81487"&gt;Do not offer to add a `using namespace` on an alias qualified name. #81487&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-IDE, VSCode&lt;/div&gt;
+      &lt;div&gt;Area-IDE, VSCode, Next&lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;Updated&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/80825"&gt;Simplifying internal structure and logic for the SyntaxNodeCache #80825&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Area-Compilers&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -64,39 +88,27 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/81485"&gt;Use single argument overload for `[start..]` of `string` or `Span` #81485&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/81283"&gt;Suppress CS0119 when CS0075 is reported for negative cast #81283&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-Compilers, Community&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Merged&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/80810"&gt;Fix RemoveUnusedMembers handling of default parameter reads #80810&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-IDE, Community, VSCode, Next&lt;/div&gt;
+      &lt;div&gt;Area-Compilers&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/81484"&gt;Add code refactoring to offer usings for fully qualified names #81484&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/81272"&gt;Add replacement property names to VB syntax obsolete attributes #81272&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;VSCode, Next&lt;/div&gt;
+      &lt;div&gt;Area-Compilers&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/81472"&gt;Reorder CI steps #81472&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/81287"&gt;Improve error message for misplaced variable designator in property patterns #81287&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-Infrastructure, Next&lt;/div&gt;
+      &lt;div&gt;Area-Compilers&lt;/div&gt;
     &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Updated&lt;/h3&gt;
-  &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/81314"&gt;Emit async-iterators with runtime-async when possible #81314&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/81285"&gt;Fix CS1003 error message when expression follows identifier without '=' #81285&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-Compilers, Feature - Runtime Async&lt;/div&gt;
+      &lt;div&gt;Area-Compilers, VSCode&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -106,21 +118,9 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/74643"&gt;Use single argument overload for `[start..]` of `string` or `(ReadOnly)Span` #74643&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/81485"&gt;Use single argument overload for `[start..]` of `string` or `Span` #81485&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Area-Compilers, Community, Code Gen Quality, untriaged, Backlog&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/81289"&gt;Avoid `virtual` implementations for `AddSynthesizedAttributes` #81289&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-Compilers&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/81478"&gt;[main] Source code updates from dotnet/dotnet #81478&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-Infrastructure&lt;/div&gt;
+      &lt;div&gt;Area-Compilers, Community&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;</content>
