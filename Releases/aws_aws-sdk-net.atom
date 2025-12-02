@@ -1,6 +1,255 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-12-01T00:08:51Z</updated>
+  <updated>2025-12-02T00:07:17Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
+  <entry>
+    <title>aws/aws-sdk-net - Releases - 2025-12-01</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-12-01</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2025-12-02T00:07:17Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1175.0"&gt;3.7.1175.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;3.7.1175.0 (2025-12-01 01:44 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;AppIntegrationsService (3.7.503.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for MCP servers via the ApplicationType field, allowing customers to register their Bedrock AgentCore gateways as third party applications.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BedrockAgent (3.7.503.0)
+&lt;ul&gt;
+&lt;li&gt;Support audio and video ingestion on Bedrock Knowledge Bases.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BedrockAgentRuntime (3.7.504.0)
+&lt;ul&gt;
+&lt;li&gt;Support audio and video content retrieval on Bedrock Knowledge Bases.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CleanRooms (3.7.509.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Clean Rooms now supports privacy-enhancing synthetic dataset generation for custom ML training.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CleanRoomsML (3.7.505.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Clean Rooms ML now supports privacy-enhancing synthetic dataset generation for custom ML training.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Connect (3.7.516.0)
+&lt;ul&gt;
+&lt;li&gt;This is a combined re:Invent release for Amazon Connect.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ConnectCampaignsV2 (3.7.504.0)
+&lt;ul&gt;
+&lt;li&gt;This release added support for new WhatsApp channel and Journey type outbound campaign&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ConnectParticipant (3.7.504.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon Connect now supports message processing that intercepts and processes chat messages before they reach any participant.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CustomerProfiles (3.7.504.0)
+&lt;ul&gt;
+&lt;li&gt;This release introduces, CRUD APIs for the DomainObjectType and Recommender resources, APIs to offer statistical insights on Object Type Attributes, Changes to SegmentDefinition APIs to support SQL queries to create Segments, and Changes to Domain APIs to support Data Store.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EKS (3.7.507.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for EKS Capabilities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Glue (3.7.512.0)
+&lt;ul&gt;
+&lt;li&gt;feature: Glue: Add support for Iceberg materialized view in Glue Data Catalog, including updated CreateTable API to support materialized views and new APIs for managing data refresh for materialized views.&lt;br&gt;
+feature: Glue: Add support for Iceberg table encryption keys and struct field defaults.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Lambda (3.7.507.0)
+&lt;ul&gt;
+&lt;li&gt;Launching Lambda Managed Instances - a new feature to run Lambda on EC2.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LexModelsV2 (3.7.504.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for speech-to-speech models for human-like, adaptive, and expressive voice interactions. Also adds support for speech model preference, allowing customers to select which speech model they want to use for speech-to-text requests.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MarketplaceAgreement (3.7.503.0)
+&lt;ul&gt;
+&lt;li&gt;This release supports 1/multi-product transactions via offer sets. DescribeAgreement and SearchAgreements APIs now return offer set IDs. SearchAgreements also supports filtering by offer set ID and 2/variable payment pricing terms will be returned through GetAgreementTerms.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MarketplaceCatalog (3.7.503.0)
+&lt;ul&gt;
+&lt;li&gt;This release introduces offer set entity in AWS Marketplace Catalog API to enable multi-product transaction. Offer set enables sellers to group multiple private offers into a single-click purchase experience, simplifying procurement for customers purchasing multi-product solutions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PartnerCentralAccount (3.7.500.0)
+&lt;ul&gt;
+&lt;li&gt;Initial GA launch of Partner Central Account&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PartnerCentralBenefits (3.7.500.0)
+&lt;ul&gt;
+&lt;li&gt;Initial GA launch of Partner Central Benefits&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PartnerCentralSelling (3.7.504.0)
+&lt;ul&gt;
+&lt;li&gt;New Features:&lt;br&gt;
+Lead Management APIs for capturing and nurturing leads&lt;br&gt;
+Lead invitation support for partner collaboration&lt;br&gt;
+Lead-to-opportunity conversion operations&lt;br&gt;
+AWS Marketplace OfferSets support for opportunities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Personalize (3.7.503.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for includedDatasetColumns and performIncrementalUpdate in solution APIs, and rankingInfluence in campaign and batch inference APIs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;QConnect (3.7.504.0)
+&lt;ul&gt;
+&lt;li&gt;New AIAgent types: Orchestration for ModelContextProtocol tool integration, CaseSummary for Amazon Connect Case summaries, NoteTaker for Agent Assistance notes. Added ListSpans and Retrieve APIs. Enhanced Q in Connect AssistantAssociationType to support Bring Your Own Bedrock Knowledge Bases.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Route53GlobalResolver (3.7.500.0)
+&lt;ul&gt;
+&lt;li&gt;Add SDK for Amazon Route 53 Global Resolver, a fully managed DNS resolver service that offers broad DNS-filtering security controls.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.143.0"&gt;4.0.143.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.143.0 (2025-12-01 01:44 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;AppIntegrationsService (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for MCP servers via the ApplicationType field, allowing customers to register their Bedrock AgentCore gateways as third party applications.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BedrockAgent (4.0.7.0)
+&lt;ul&gt;
+&lt;li&gt;Support audio and video ingestion on Bedrock Knowledge Bases.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BedrockAgentRuntime (4.0.8.0)
+&lt;ul&gt;
+&lt;li&gt;Support audio and video content retrieval on Bedrock Knowledge Bases.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CleanRooms (4.0.11.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Clean Rooms now supports privacy-enhancing synthetic dataset generation for custom ML training.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CleanRoomsML (4.0.7.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Clean Rooms ML now supports privacy-enhancing synthetic dataset generation for custom ML training.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Connect (4.0.20.0)
+&lt;ul&gt;
+&lt;li&gt;This is a combined re:Invent release for Amazon Connect.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ConnectCampaignsV2 (4.0.5.0)
+&lt;ul&gt;
+&lt;li&gt;This release added support for new WhatsApp channel and Journey type outbound campaign&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ConnectParticipant (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon Connect now supports message processing that intercepts and processes chat messages before they reach any participant.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CustomerProfiles (4.0.7.0)
+&lt;ul&gt;
+&lt;li&gt;This release introduces, CRUD APIs for the DomainObjectType and Recommender resources, APIs to offer statistical insights on Object Type Attributes, Changes to SegmentDefinition APIs to support SQL queries to create Segments, and Changes to Domain APIs to support Data Store.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EKS (4.0.9.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for EKS Capabilities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Glue (4.0.23.0)
+&lt;ul&gt;
+&lt;li&gt;feature: Glue: Add support for Iceberg materialized view in Glue Data Catalog, including updated CreateTable API to support materialized views and new APIs for managing data refresh for materialized views.&lt;br&gt;
+feature: Glue: Add support for Iceberg table encryption keys and struct field defaults.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Lambda (4.0.9.0)
+&lt;ul&gt;
+&lt;li&gt;Launching Lambda Managed Instances - a new feature to run Lambda on EC2.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LexModelsV2 (4.0.5.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for speech-to-speech models for human-like, adaptive, and expressive voice interactions. Also adds support for speech model preference, allowing customers to select which speech model they want to use for speech-to-text requests.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MarketplaceAgreement (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;This release supports 1/multi-product transactions via offer sets. DescribeAgreement and SearchAgreements APIs now return offer set IDs. SearchAgreements also supports filtering by offer set ID and 2/variable payment pricing terms will be returned through GetAgreementTerms.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MarketplaceCatalog (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;This release introduces offer set entity in AWS Marketplace Catalog API to enable multi-product transaction. Offer set enables sellers to group multiple private offers into a single-click purchase experience, simplifying procurement for customers purchasing multi-product solutions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PartnerCentralAccount (4.0.0.0)
+&lt;ul&gt;
+&lt;li&gt;Initial GA launch of Partner Central Account&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PartnerCentralBenefits (4.0.0.0)
+&lt;ul&gt;
+&lt;li&gt;Initial GA launch of Partner Central Benefits&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PartnerCentralSelling (4.0.5.0)
+&lt;ul&gt;
+&lt;li&gt;New Features:&lt;br&gt;
+Lead Management APIs for capturing and nurturing leads&lt;br&gt;
+Lead invitation support for partner collaboration&lt;br&gt;
+Lead-to-opportunity conversion operations&lt;br&gt;
+AWS Marketplace OfferSets support for opportunities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Personalize (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for includedDatasetColumns and performIncrementalUpdate in solution APIs, and rankingInfluence in campaign and batch inference APIs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;QConnect (4.0.5.0)
+&lt;ul&gt;
+&lt;li&gt;New AIAgent types: Orchestration for ModelContextProtocol tool integration, CaseSummary for Amazon Connect Case summaries, NoteTaker for Agent Assistance notes. Added ListSpans and Retrieve APIs. Enhanced Q in Connect AssistantAssociationType to support Bring Your Own Bedrock Knowledge Bases.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Route53GlobalResolver (4.0.0.0)
+&lt;ul&gt;
+&lt;li&gt;Add SDK for Amazon Route 53 Global Resolver, a fully managed DNS resolver service that offers broad DNS-filtering security controls.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
