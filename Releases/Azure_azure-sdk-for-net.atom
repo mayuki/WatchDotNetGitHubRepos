@@ -1,23 +1,59 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-12-02T00:07:17Z</updated>
+  <updated>2025-12-03T00:07:26Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-12-01</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-12-01</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-12-02</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-12-02</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-12-02T00:07:17Z</updated>
+    <updated>2025-12-03T00:07:26Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.OpenAI_2.7.0-beta.2"&gt;Azure.AI.OpenAI_2.7.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Dns_1.0.0-beta.2"&gt;Azure.Provisioning.Dns_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;2.7.0-beta.2 (2025-12-01)&lt;/h2&gt;
-&lt;h3&gt;Bugs fixed&lt;/h3&gt;
+                                &lt;h2&gt;1.0.0-beta.2 (2025-12-02)&lt;/h2&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Addressed a Thanksgiving mistake in the &lt;code&gt;beta.1&lt;/code&gt; release wherein the &lt;code&gt;SetNewMaxCompletionTokensPropertyEnabled()&lt;/code&gt; extension method was unintentionally removed from the public surface.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DnsAaaRecordInfo&lt;/code&gt;: &lt;code&gt;Ipv6Addresses&lt;/code&gt; renamed to &lt;code&gt;Ipv6Address&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DnsARecordInfo &lt;/code&gt;: &lt;code&gt;ipv4Addresses&lt;/code&gt; renamed to &lt;code&gt;Ipv4Address&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;DnsCnameRecord.Cname&lt;/code&gt;: property is now backed by the correct Bicep field ( &lt;code&gt;.properties.CNAMERecord.cname&lt;/code&gt; )&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Agents.Persistent_1.2.0-beta.8"&gt;Azure.AI.Agents.Persistent_1.2.0-beta.8&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0-beta.8 (2025-12-01)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for Computer usage.&lt;/li&gt;
+&lt;li&gt;Improved handling of errors by &lt;code&gt;PersistentAgentsChatClient&lt;/code&gt; in the streaming scenarios.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix the issue with &lt;code&gt;PersistentAgentsChatClient&lt;/code&gt; when the run in incomplete state is encountered &lt;a href="https://github.com/microsoft/agent-framework/issues/2298" data-hovercard-type="issue" data-hovercard-url="/microsoft/agent-framework/issues/2298/hovercard"&gt;issue&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Sample updates&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added sample for Computer usage.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning_1.4.0-beta.3"&gt;Azure.Provisioning_1.4.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.4.0-beta.3 (2025-11-26)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed bug when assigning property to a collection throwing exceptions. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/53862" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/53862/hovercard"&gt;#53862&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
