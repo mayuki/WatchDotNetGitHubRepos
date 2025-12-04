@@ -1,59 +1,76 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-12-03T00:07:26Z</updated>
+  <updated>2025-12-04T00:07:29Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-12-02</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-12-02</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-12-03</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-12-03</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-12-03T00:07:26Z</updated>
+    <updated>2025-12-04T00:07:29Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Dns_1.0.0-beta.2"&gt;Azure.Provisioning.Dns_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Monitor.OpenTelemetry.Exporter_1.6.0-beta.1"&gt;Azure.Monitor.OpenTelemetry.Exporter_1.6.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.2 (2025-12-02)&lt;/h2&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;DnsAaaRecordInfo&lt;/code&gt;: &lt;code&gt;Ipv6Addresses&lt;/code&gt; renamed to &lt;code&gt;Ipv6Address&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;DnsARecordInfo &lt;/code&gt;: &lt;code&gt;ipv4Addresses&lt;/code&gt; renamed to &lt;code&gt;Ipv4Address&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+                                &lt;h2&gt;1.6.0-beta.1 (2025-12-03)&lt;/h2&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;DnsCnameRecord.Cname&lt;/code&gt;: property is now backed by the correct Bicep field ( &lt;code&gt;.properties.CNAMERecord.cname&lt;/code&gt; )&lt;/li&gt;
+&lt;li&gt;Added Microsoft override attributes to preserve exact Application Insights&lt;br&gt;
+semantics when exporting telemetry data.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/54023" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/54023/hovercard"&gt;#54023&lt;/a&gt;)
+&lt;ul&gt;
+&lt;li&gt;Request: &lt;code&gt;microsoft.request.name&lt;/code&gt;, &lt;code&gt;microsoft.request.url&lt;/code&gt;,&lt;br&gt;
+&lt;code&gt;microsoft.request.source&lt;/code&gt;, &lt;code&gt;microsoft.request.resultCode&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Dependency: &lt;code&gt;microsoft.dependency.type&lt;/code&gt;, &lt;code&gt;microsoft.dependency.target&lt;/code&gt;,&lt;br&gt;
+&lt;code&gt;microsoft.dependency.name&lt;/code&gt;, &lt;code&gt;microsoft.dependency.data&lt;/code&gt;,&lt;br&gt;
+&lt;code&gt;microsoft.dependency.resultCode&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Operation: &lt;code&gt;microsoft.operation.name&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added distinct SDK version labels for all Application Insights shim packages&lt;br&gt;
+to enable accurate attribution and visibility of exporter, distro, and shim&lt;br&gt;
+telemetry during migration and analysis.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/54011" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/54011/hovercard"&gt;#54011&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Agents.Persistent_1.2.0-beta.8"&gt;Azure.AI.Agents.Persistent_1.2.0-beta.8&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Language.QuestionAnswering.Authoring_1.0.0-beta.1"&gt;Azure.AI.Language.QuestionAnswering.Authoring_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.8 (2025-12-01)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2025-12-03)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for Computer usage.&lt;/li&gt;
-&lt;li&gt;Improved handling of errors by &lt;code&gt;PersistentAgentsChatClient&lt;/code&gt; in the streaming scenarios.&lt;/li&gt;
+&lt;li&gt;Initial preview release of &lt;code&gt;Azure.AI.Language.QuestionAnswering.Authoring&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Enables authoring and management of Question Answering projects.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fix the issue with &lt;code&gt;PersistentAgentsChatClient&lt;/code&gt; when the run in incomplete state is encountered &lt;a href="https://github.com/microsoft/agent-framework/issues/2298" data-hovercard-type="issue" data-hovercard-url="/microsoft/agent-framework/issues/2298/hovercard"&gt;issue&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Sample updates&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added sample for Computer usage.&lt;/li&gt;
+&lt;li&gt;No additional changes.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning_1.4.0-beta.3"&gt;Azure.Provisioning_1.4.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Language.QuestionAnswering.Inference_1.0.0-beta.1"&gt;Azure.AI.Language.QuestionAnswering.Inference_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.4.0-beta.3 (2025-11-26)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2025-12-03)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed bug when assigning property to a collection throwing exceptions. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/53862" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/53862/hovercard"&gt;#53862&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Introduces standalone inference package for runtime Q&amp;amp;A.&lt;/li&gt;
+&lt;li&gt;Supports knowledge base and text queries using preview service version &lt;code&gt;2025-05-15-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Adds query tuning and ranking configuration:
+&lt;ul&gt;
+&lt;li&gt;Adds &lt;code&gt;AnswersOptions.QueryPreferences&lt;/code&gt; property.&lt;/li&gt;
+&lt;li&gt;Adds models: &lt;code&gt;QueryPreferences&lt;/code&gt;, &lt;code&gt;MatchingPolicy&lt;/code&gt;, &lt;code&gt;PrebuiltQueryMatchingPolicy&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Adds unions/enums: &lt;code&gt;Scorer&lt;/code&gt; (Classic, Transformer, Semantic), &lt;code&gt;MatchingPolicyKind&lt;/code&gt; (Prebuilt), MatchingPolicyFieldsType (Questions, Answer).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
