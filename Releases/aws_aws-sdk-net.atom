@@ -1,24 +1,44 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-12-05T00:07:27Z</updated>
+  <updated>2025-12-06T00:06:58Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-12-04</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-12-04</id>
+    <title>aws/aws-sdk-net - Releases - 2025-12-05</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-12-05</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-12-05T00:07:27Z</updated>
+    <updated>2025-12-06T00:06:58Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1178.0"&gt;3.7.1178.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1179.0"&gt;3.7.1179.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1178.0 (2025-12-04 17:02 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1179.0 (2025-12-05 19:25 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Lambda (3.7.509.0)
+&lt;li&gt;ECS (3.7.506.4)
 &lt;ul&gt;
-&lt;li&gt;Add DisallowedByVpcEncryptionControl to the LastUpdateStatusReasonCode and StateReasonCode enums to represent failures caused by VPC Encryption Controls.&lt;/li&gt;
+&lt;li&gt;Updating stop-task API to encapsulate containers with custom stop signal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IdentityManagement (3.7.507.0)
+&lt;ul&gt;
+&lt;li&gt;Adding the ExpirationTime attribute to the delegation request resource.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Inspector2 (3.7.505.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds a new ScanStatus called "Unsupported Code Artifacts". This ScanStatus will be returned when a Lambda function was not code scanned because it has unsupported code artifacts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PartnerCentralAccount (3.7.501.0)
+&lt;ul&gt;
+&lt;li&gt;Adding Verification API's to Partner Central Account SDK.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SimpleEmailV2 (3.7.505.0)
+&lt;ul&gt;
+&lt;li&gt;Updating the desired url for &lt;code&gt;PutEmailIdentityDkimSigningAttributes&lt;/code&gt; from v1 to v2&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -26,13 +46,54 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.146.0"&gt;4.0.146.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.147.0"&gt;4.0.147.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.146.0 (2025-12-04 17:01 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.147.0 (2025-12-05 19:23 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Lambda (4.0.11.0)
+&lt;li&gt;DynamoDBv2 (4.0.10.2)
 &lt;ul&gt;
-&lt;li&gt;Add DisallowedByVpcEncryptionControl to the LastUpdateStatusReasonCode and StateReasonCode enums to represent failures caused by VPC Encryption Controls.&lt;/li&gt;
+&lt;li&gt;Fix &lt;code&gt;UpdateItem&lt;/code&gt; not to throw an error when &lt;code&gt;ExpressionAttributeValues&lt;/code&gt; is empty (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3645874186" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/4144" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/4144/hovercard" href="https://github.com/aws/aws-sdk-net/issues/4144"&gt;#4144&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ECS (4.0.10.2)
+&lt;ul&gt;
+&lt;li&gt;Updating stop-task API to encapsulate containers with custom stop signal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IdentityManagement (4.0.9.0)
+&lt;ul&gt;
+&lt;li&gt;Adding the ExpirationTime attribute to the delegation request resource.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Inspector2 (4.0.8.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds a new ScanStatus called "Unsupported Code Artifacts". This ScanStatus will be returned when a Lambda function was not code scanned because it has unsupported code artifacts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PartnerCentralAccount (4.0.1.0)
+&lt;ul&gt;
+&lt;li&gt;Adding Verification API's to Partner Central Account SDK.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3 (4.0.14.1)
+&lt;ul&gt;
+&lt;li&gt;The following changes are a result of moving S3 from custom code to generated code based on the model provided by S3:&lt;/li&gt;
+&lt;li&gt;[Breaking Change] The method isSetS3BucketDestination() in Amazon.S3.Model.InventoryDestination has been changed from public to internal to be consistent with all other services.&lt;/li&gt;
+&lt;li&gt;[Breaking Change] The method isSetAccountId() in Amazon.S3.Model.InventoryS3BucketDestination has been changed from public to internal to be consistent with all other services.&lt;/li&gt;
+&lt;li&gt;[Breaking Change] The method IsSetInventoryConfigurationList() in Amazon.S3.Model.ListBucketInventoryConfigurationsResponse has been changed from public to internal to be consistent with all other services.&lt;/li&gt;
+&lt;li&gt;[Breaking Change] The setter for Days in Amazon.S3.Model.RecordExpiration has been changed from int to int? to be consistent with the nullability changes in V4.&lt;/li&gt;
+&lt;li&gt;Generates Put, Get, Delete, and ListBucketInventoryConfiguration. Generate PutBucketAccelerateConfiguration, PutBucketRequestPayment, CreateBucketMetadataTableConfiguration, GetBucketMetadataConfiguration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SimpleEmailV2 (4.0.8.0)
+&lt;ul&gt;
+&lt;li&gt;Updating the desired url for &lt;code&gt;PutEmailIdentityDkimSigningAttributes&lt;/code&gt; from v1 to v2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.3.4
+&lt;ul&gt;
+&lt;li&gt;Add user agent header to ResponseMetadata&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

@@ -1,24 +1,44 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2025-12-05T00:07:58Z</updated>
+  <updated>2025-12-06T00:07:14Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-12-04</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-12-04</id>
+    <title>aws/aws-sdk-net - Releases - 2025-12-05</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-12-05</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-12-05T00:07:27Z</updated>
+    <updated>2025-12-06T00:06:58Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1178.0"&gt;3.7.1178.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1179.0"&gt;3.7.1179.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1178.0 (2025-12-04 17:02 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1179.0 (2025-12-05 19:25 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Lambda (3.7.509.0)
+&lt;li&gt;ECS (3.7.506.4)
 &lt;ul&gt;
-&lt;li&gt;Add DisallowedByVpcEncryptionControl to the LastUpdateStatusReasonCode and StateReasonCode enums to represent failures caused by VPC Encryption Controls.&lt;/li&gt;
+&lt;li&gt;Updating stop-task API to encapsulate containers with custom stop signal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IdentityManagement (3.7.507.0)
+&lt;ul&gt;
+&lt;li&gt;Adding the ExpirationTime attribute to the delegation request resource.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Inspector2 (3.7.505.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds a new ScanStatus called "Unsupported Code Artifacts". This ScanStatus will be returned when a Lambda function was not code scanned because it has unsupported code artifacts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PartnerCentralAccount (3.7.501.0)
+&lt;ul&gt;
+&lt;li&gt;Adding Verification API's to Partner Central Account SDK.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SimpleEmailV2 (3.7.505.0)
+&lt;ul&gt;
+&lt;li&gt;Updating the desired url for &lt;code&gt;PutEmailIdentityDkimSigningAttributes&lt;/code&gt; from v1 to v2&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -26,13 +46,54 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.146.0"&gt;4.0.146.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.147.0"&gt;4.0.147.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.146.0 (2025-12-04 17:01 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.147.0 (2025-12-05 19:23 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Lambda (4.0.11.0)
+&lt;li&gt;DynamoDBv2 (4.0.10.2)
 &lt;ul&gt;
-&lt;li&gt;Add DisallowedByVpcEncryptionControl to the LastUpdateStatusReasonCode and StateReasonCode enums to represent failures caused by VPC Encryption Controls.&lt;/li&gt;
+&lt;li&gt;Fix &lt;code&gt;UpdateItem&lt;/code&gt; not to throw an error when &lt;code&gt;ExpressionAttributeValues&lt;/code&gt; is empty (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3645874186" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/4144" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/4144/hovercard" href="https://github.com/aws/aws-sdk-net/issues/4144"&gt;#4144&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ECS (4.0.10.2)
+&lt;ul&gt;
+&lt;li&gt;Updating stop-task API to encapsulate containers with custom stop signal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IdentityManagement (4.0.9.0)
+&lt;ul&gt;
+&lt;li&gt;Adding the ExpirationTime attribute to the delegation request resource.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Inspector2 (4.0.8.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds a new ScanStatus called "Unsupported Code Artifacts". This ScanStatus will be returned when a Lambda function was not code scanned because it has unsupported code artifacts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PartnerCentralAccount (4.0.1.0)
+&lt;ul&gt;
+&lt;li&gt;Adding Verification API's to Partner Central Account SDK.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3 (4.0.14.1)
+&lt;ul&gt;
+&lt;li&gt;The following changes are a result of moving S3 from custom code to generated code based on the model provided by S3:&lt;/li&gt;
+&lt;li&gt;[Breaking Change] The method isSetS3BucketDestination() in Amazon.S3.Model.InventoryDestination has been changed from public to internal to be consistent with all other services.&lt;/li&gt;
+&lt;li&gt;[Breaking Change] The method isSetAccountId() in Amazon.S3.Model.InventoryS3BucketDestination has been changed from public to internal to be consistent with all other services.&lt;/li&gt;
+&lt;li&gt;[Breaking Change] The method IsSetInventoryConfigurationList() in Amazon.S3.Model.ListBucketInventoryConfigurationsResponse has been changed from public to internal to be consistent with all other services.&lt;/li&gt;
+&lt;li&gt;[Breaking Change] The setter for Days in Amazon.S3.Model.RecordExpiration has been changed from int to int? to be consistent with the nullability changes in V4.&lt;/li&gt;
+&lt;li&gt;Generates Put, Get, Delete, and ListBucketInventoryConfiguration. Generate PutBucketAccelerateConfiguration, PutBucketRequestPayment, CreateBucketMetadataTableConfiguration, GetBucketMetadataConfiguration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SimpleEmailV2 (4.0.8.0)
+&lt;ul&gt;
+&lt;li&gt;Updating the desired url for &lt;code&gt;PutEmailIdentityDkimSigningAttributes&lt;/code&gt; from v1 to v2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.3.4
+&lt;ul&gt;
+&lt;li&gt;Add user agent header to ResponseMetadata&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -43,119 +104,59 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-12-04</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-12-04</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-12-05</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-12-05</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-12-05T00:07:28Z</updated>
+    <updated>2025-12-06T00:06:58Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Network_1.14.0"&gt;Azure.ResourceManager.Network_1.14.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.CognitiveServices_1.2.0"&gt;Azure.Provisioning.CognitiveServices_1.2.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.14.0 (2025-12-04)&lt;/h2&gt;
+                                &lt;h2&gt;1.2.0 (2025-12-09)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded api-version tag from 'package-2025-01-01' to 'package-2025-03-01'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/4db9e81042ec3ffd1eee8df1bf2b8489a1e7fa0a/specification/network/resource-manager/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/4db9e81042ec3ffd1eee8df1bf2b8489a1e7fa0a/specification/network/resource-manager/readme.md&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Updated to use latest API version.&lt;/li&gt;
+&lt;li&gt;Added new Cognitive Services resources.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetApp_1.15.0-beta.1"&gt;Azure.ResourceManager.NetApp_1.15.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ServiceBus_1.2.0-beta.1"&gt;Azure.ResourceManager.ServiceBus_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.15.0-beta.1 (2025-12-01)&lt;/h2&gt;
+                                &lt;h2&gt;1.2.0-beta.1 (2025-11-27)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;p&gt;Updated api version to '2025-05-01-preview'.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CosmosDB_1.4.0"&gt;Azure.ResourceManager.CosmosDB_1.4.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.4.0 (2025-12-05)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded api-version tag from 'package-2025-09-01' to 'package-2025-09-01-preview'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/1da0ccefea2127820defac6496bf4710c0902d78/specification/netapp/resource-manager/Microsoft.NetApp/NetApp/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/1da0ccefea2127820defac6496bf4710c0902d78/specification/netapp/resource-manager/Microsoft.NetApp/NetApp/readme.md&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;NetAppCache&lt;/code&gt; resource type&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ElasticAccount&lt;/code&gt; resource type&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ElasticPool&lt;/code&gt; resource type&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ElasticVolume&lt;/code&gt; resource type&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ElasticSnapshotPolicy&lt;/code&gt; resource type&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ElasticSnapshot&lt;/code&gt; resource type&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ElasticBackupVault&lt;/code&gt; resource type&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ElasticBackupPolicy&lt;/code&gt; resource type&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ElasticBackup&lt;/code&gt; resource type&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ActiveDirectory&lt;/code&gt; resource type&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;RansomwareReport&lt;/code&gt; resource type, Support for Advance AntiRansomware features&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;LdapConfiguration&lt;/code&gt; to &lt;code&gt;NetAppAccountResource&lt;/code&gt; to support LDAP configuration at account level&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;LargeVolumeType&lt;/code&gt; to &lt;code&gt;NetAppVolumeResource&lt;/code&gt; to support ExtraLargeVolumes&lt;/li&gt;
+&lt;li&gt;Upgraded api-version tag from 'package-preview-2024-12-01' to 'package-2025-10-15'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/60bcde388a845febb60fc2bda17983ca59af219a/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/DocumentDB/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/60bcde388a845febb60fc2bda17983ca59af219a/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/DocumentDB/readme.md&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.EventHubs_1.3.0-beta.1"&gt;Azure.ResourceManager.EventHubs_1.3.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.RedisEnterprise_1.1.0"&gt;Azure.Provisioning.RedisEnterprise_1.1.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.3.0-beta.1 (2025-11-27)&lt;/h2&gt;
+                                &lt;h2&gt;1.1.0 (2025-12-04)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated api version to '2025-05-01-preview'.&lt;/li&gt;
+&lt;li&gt;Update api-version to &lt;code&gt;2025-07-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;ExperimentalAttribute&lt;/code&gt; on the assembly.&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DataFactory_1.11.0"&gt;Azure.ResourceManager.DataFactory_1.11.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.11.0 (2025-12-01)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added Netezza V2 linked service and dataset definitions.&lt;/li&gt;
-&lt;li&gt;Added Jira V2 connector support in Azure Data Factory.&lt;/li&gt;
-&lt;li&gt;Added enable/disable Interactive Query management APIs.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;clusterResourceGroupAuthType&lt;/code&gt; to the HDInsight OnDemand linked service definition.&lt;/li&gt;
-&lt;li&gt;Expanded Snowflake V2 options to cover additional data types.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;partitionOption&lt;/code&gt; property for the Salesforce V2 connector.&lt;/li&gt;
+&lt;li&gt;Removed model &lt;code&gt;RedisEnterprisePrivateEndpointConnectionData&lt;/code&gt;. Please use &lt;code&gt;RedisEnterprisePrivateEndpointConnection&lt;/code&gt; instead.&lt;/li&gt;
+&lt;li&gt;Changed the type of property &lt;code&gt;RedisEnterpriseCluster.PrivateEndpointConnections&lt;/code&gt; from &lt;code&gt;BicepList&amp;lt;RedisEnterprisePrivateEndpointConnectionData&amp;gt;&lt;/code&gt; to &lt;code&gt;BicepList&amp;lt;RedisEnterprisePrivateEndpointConnection&amp;gt;&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>dotnet/aspire - Releases - 2025-12-04</title>
-    <id>https://github.com/dotnet/aspire#2025-12-04</id>
-    <link href="https://github.com/dotnet/aspire" />
-    <updated>2025-12-05T00:07:35Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/aspire/releases/tag/v13.0.2"&gt;Aspire 13.0.2 Release&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;This patch is updating our Project Templates for our Python starter app to ensure we depend on the latest version of React. This is out of an abundance of caution, as we don't depend on any of the react packages that were flagged as vulnerable in &lt;a title="GHSA-fv66-9v8q-g76r" data-hovercard-type="advisory" data-hovercard-url="/advisories/GHSA-fv66-9v8q-g76r/hovercard" href="https://github.com/advisories/GHSA-fv66-9v8q-g76r"&gt;GHSA-fv66-9v8q-g76r&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Bump patch version from 13.0.1 to 13.0.2 by @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3692631984" data-permission-text="Title is private" data-url="https://github.com/dotnet/aspire/issues/13324" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/aspire/pull/13324/hovercard" href="https://github.com/dotnet/aspire/pull/13324"&gt;#13324&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Update React and ReactDOM to version 19.2.1 across all projects by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/joperezr/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/joperezr"&gt;@joperezr&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3692712483" data-permission-text="Title is private" data-url="https://github.com/dotnet/aspire/issues/13325" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/aspire/pull/13325/hovercard" href="https://github.com/dotnet/aspire/pull/13325"&gt;#13325&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/dotnet/aspire/compare/v13.0.1...v13.0.2"&gt;&lt;tt&gt;v13.0.1...v13.0.2&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>microsoft/CsWin32 - Releases - 2025-12-04</title>
-    <id>https://github.com/microsoft/CsWin32#2025-12-04</id>
-    <link href="https://github.com/microsoft/CsWin32" />
-    <updated>2025-12-05T00:07:51Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/CsWin32/releases/tag/v0.3.259"&gt;v0.3.259&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;Changes:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3623024947" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1545" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1545/hovercard" href="https://github.com/microsoft/CsWin32/pull/1545"&gt;#1545&lt;/a&gt;: Generate struct wrapper around function pointer to make a native delegate typedef&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3665575944" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1578" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1578/hovercard" href="https://github.com/microsoft/CsWin32/pull/1578"&gt;#1578&lt;/a&gt;: Update win32metadata to latest (68.0.4-preview)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This list of changes was &lt;a href="https://devdiv.visualstudio.com/DevDiv/_build/results?buildId=12891452&amp;amp;view=logs" rel="nofollow"&gt;auto generated&lt;/a&gt;.&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
