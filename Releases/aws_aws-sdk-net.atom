@@ -1,62 +1,52 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-12-09T00:07:00Z</updated>
+  <updated>2025-12-10T00:07:39Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-12-08</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-12-08</id>
+    <title>aws/aws-sdk-net - Releases - 2025-12-09</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-12-09</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-12-09T00:07:00Z</updated>
+    <updated>2025-12-10T00:07:39Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1180.0"&gt;3.7.1180.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1181.0"&gt;3.7.1181.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1180.0 (2025-12-08 19:31 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1181.0 (2025-12-09 19:31 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;CostExplorer (3.7.508.0)
+&lt;li&gt;Account (3.7.503.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for Cost Category resource associations including filtering by resource type on ListCostCategoryDefinitions and new ListCostCategoryResourceAssociations API.&lt;/li&gt;
+&lt;li&gt;This release adds a new API (GetGovCloudAccountInformation) used to retrieve information about a linked GovCloud account from the standard AWS partition.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (3.7.536.0)
+&lt;li&gt;AppSync (3.7.502.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon EC2 P6-B300 instances provide 8x NVIDIA Blackwell Ultra GPUs with 2.1 TB high bandwidth GPU memory, 6.4 Tbps EFA networking, 300 Gbps dedicated ENA throughput, and 4 TB of system memory. Amazon EC2 C8a instances are powered by 5th Gen AMD EPYC processors with a maximum frequency of 4.5 GHz.&lt;/li&gt;
+&lt;li&gt;Update Event API to require EventConfig parameter in creation and update requests.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IAMRolesAnywhere (3.7.503.0)
+&lt;li&gt;GuardDuty (3.7.510.0)
 &lt;ul&gt;
-&lt;li&gt;Increases certificate string length for trust anchor source data to support ML-DSA certificates.&lt;/li&gt;
+&lt;li&gt;Adding support for Ec2LaunchTemplate Version field&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IdentityStore (3.7.504.0)
+&lt;li&gt;IVSRealTime (3.7.504.0)
 &lt;ul&gt;
-&lt;li&gt;Updating AWS Identity Store APIs to support Attribute Extensions capability, with the first release adding Enterprise Attributes. This launch aligns Identity Store APIs with SCIM for enterprise attributes, reducing cases when customers are forced to use SCIM due to lack of SigV4 API support.&lt;/li&gt;
+&lt;li&gt;Token Exchange introduces seamless token exchange capabilities for IVS RTX, enabling customers to upgrade or downgrade token capabilities and update token attributes within the IVS client SDK without forcing clients to disconnect and reconnect.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PartnerCentralSelling (3.7.505.0)
+&lt;li&gt;Mgn (3.7.503.0)
 &lt;ul&gt;
-&lt;li&gt;Deal Sizing Service for AI-based deal size estimation with AWS service-level breakdown, supporting Expansion and Migration deals across Technology, and Reseller partner cohorts, including Pricing Calculator AddOn for MAP deals and funding incentives.&lt;/li&gt;
+&lt;li&gt;Added parameters encryption, IPv4/IPv6 protocol configuration, and enhanced tagging support for replication operations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;RDS (3.7.511.0)
+&lt;li&gt;Route53 (3.7.506.0)
 &lt;ul&gt;
-&lt;li&gt;Adding support for tagging RDS Instance/Cluster Automated Backups&lt;/li&gt;
+&lt;li&gt;Amazon Route 53 now supports the EU (Germany) Region (eusc-de-east-1) for latency records, geoproximity records, and private DNS for Amazon VPCs in that region&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;RedshiftServerless (3.7.503.0)
-&lt;ul&gt;
-&lt;li&gt;Added GetIdentityCenterAuthToken API to retrieve encrypted authentication tokens for Identity Center integrated serverless workgroups. This API enables programmatic access to secure Identity Center tokens with proper error handling and parameter validation across supported SDK languages.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SimpleEmailV2 (3.7.506.0)
-&lt;ul&gt;
-&lt;li&gt;Update Mail Manager Archive ARN validation&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 3.7.500.51
+&lt;li&gt;Core 3.7.500.52
 &lt;ul&gt;
 &lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
 &lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
@@ -67,48 +57,38 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.148.0"&gt;4.0.148.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.149.0"&gt;4.0.149.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.148.0 (2025-12-08 19:39 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.149.0 (2025-12-09 19:28 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;CostExplorer (4.0.10.0)
+&lt;li&gt;Account (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for Cost Category resource associations including filtering by resource type on ListCostCategoryDefinitions and new ListCostCategoryResourceAssociations API.&lt;/li&gt;
+&lt;li&gt;This release adds a new API (GetGovCloudAccountInformation) used to retrieve information about a linked GovCloud account from the standard AWS partition.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.62.0)
+&lt;li&gt;AppSync (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon EC2 P6-B300 instances provide 8x NVIDIA Blackwell Ultra GPUs with 2.1 TB high bandwidth GPU memory, 6.4 Tbps EFA networking, 300 Gbps dedicated ENA throughput, and 4 TB of system memory. Amazon EC2 C8a instances are powered by 5th Gen AMD EPYC processors with a maximum frequency of 4.5 GHz.&lt;/li&gt;
+&lt;li&gt;Update Event API to require EventConfig parameter in creation and update requests.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IAMRolesAnywhere (4.0.3.0)
+&lt;li&gt;GuardDuty (4.0.13.0)
 &lt;ul&gt;
-&lt;li&gt;Increases certificate string length for trust anchor source data to support ML-DSA certificates.&lt;/li&gt;
+&lt;li&gt;Adding support for Ec2LaunchTemplate Version field&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IdentityStore (4.0.4.0)
+&lt;li&gt;IVSRealTime (4.0.5.0)
 &lt;ul&gt;
-&lt;li&gt;Updating AWS Identity Store APIs to support Attribute Extensions capability, with the first release adding Enterprise Attributes. This launch aligns Identity Store APIs with SCIM for enterprise attributes, reducing cases when customers are forced to use SCIM due to lack of SigV4 API support.&lt;/li&gt;
+&lt;li&gt;Token Exchange introduces seamless token exchange capabilities for IVS RTX, enabling customers to upgrade or downgrade token capabilities and update token attributes within the IVS client SDK without forcing clients to disconnect and reconnect.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PartnerCentralSelling (4.0.6.0)
+&lt;li&gt;Mgn (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Deal Sizing Service for AI-based deal size estimation with AWS service-level breakdown, supporting Expansion and Migration deals across Technology, and Reseller partner cohorts, including Pricing Calculator AddOn for MAP deals and funding incentives.&lt;/li&gt;
+&lt;li&gt;Added parameters encryption, IPv4/IPv6 protocol configuration, and enhanced tagging support for replication operations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;RDS (4.0.15.0)
+&lt;li&gt;Route53 (4.0.8.0)
 &lt;ul&gt;
-&lt;li&gt;Adding support for tagging RDS Instance/Cluster Automated Backups&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;RedshiftServerless (4.0.3.0)
-&lt;ul&gt;
-&lt;li&gt;Added GetIdentityCenterAuthToken API to retrieve encrypted authentication tokens for Identity Center integrated serverless workgroups. This API enables programmatic access to secure Identity Center tokens with proper error handling and parameter validation across supported SDK languages.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SimpleEmailV2 (4.0.9.0)
-&lt;ul&gt;
-&lt;li&gt;Update Mail Manager Archive ARN validation&lt;/li&gt;
+&lt;li&gt;Amazon Route 53 now supports the EU (Germany) Region (eusc-de-east-1) for latency records, geoproximity records, and private DNS for Amazon VPCs in that region&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
