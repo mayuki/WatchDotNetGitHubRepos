@@ -1,90 +1,24 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2025-12-17T00:06:25Z</updated>
+  <updated>2025-12-18T00:06:29Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2025-12-16</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2025-12-16</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2025-12-17</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2025-12-17</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2025-12-17T00:06:25Z</updated>
+    <updated>2025-12-18T00:06:29Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Language.Conversations.Authoring_1.0.0-beta.3"&gt;Azure.AI.Language.Conversations.Authoring_1.0.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.CodeTransparency_1.0.0-beta.6"&gt;Azure.Security.CodeTransparency_1.0.0-beta.6&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.3 (2025-12-05)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.6 (2025-12-17)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Added support for service version 2025-11-15-preview.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added support for service version 2025-11-01.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Changed parameter type from &lt;code&gt;ConversationAuthoringDeleteDeploymentDetails&lt;/code&gt; to &lt;code&gt;ConversationAuthoringProjectResourceIds&lt;/code&gt; when calling &lt;code&gt;DeleteDeploymentFromResources&lt;/code&gt;, with property name changed from &lt;code&gt;AssignedResourceIds&lt;/code&gt; to &lt;code&gt;AzureResourceIds&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Changed function name from &lt;code&gt;GetDeploymentResources&lt;/code&gt; to &lt;code&gt;GetProjectResources&lt;/code&gt;, change its return type from &lt;code&gt;ConversationAuthoringAssignedDeploymentResource&lt;/code&gt; to &lt;code&gt;ConversationAuthoringAssignedProjectResource&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Changed function name from &lt;code&gt;AssignDeploymentResources&lt;/code&gt; to &lt;code&gt;AssignProjectResources&lt;/code&gt;, and its parameter type from &lt;code&gt;ConversationAuthoringAssignDeploymentResourcesDetails&lt;/code&gt; to &lt;code&gt;ConversationAuthoringAssignProjectResourcesDetails&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Changed function name from &lt;code&gt;UnassignDeploymentResources&lt;/code&gt; to &lt;code&gt;UnassignProjectResources&lt;/code&gt;, changed its parameter type from &lt;code&gt;ConversationAuthoringUnassignDeploymentResourcesDetails&lt;/code&gt; to &lt;code&gt;ConversationAuthoringProjectResourceIds&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Changed function name from &lt;code&gt;GetAssignDeploymentResourcesStatus&lt;/code&gt; to &lt;code&gt;GetAssignProjectResourcesStatus&lt;/code&gt;, change its return type from &lt;code&gt;ConversationAuthoringDeploymentResourcesState&lt;/code&gt; to &lt;code&gt;ConversationAuthoringProjectResourcesState&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Changed function name from &lt;code&gt;GetUnassignDeploymentResourcesStatus&lt;/code&gt; to &lt;code&gt;GetUnassignProjectResourcesStatus&lt;/code&gt;, change its return type from &lt;code&gt;ConversationAuthoringDeploymentResourcesState&lt;/code&gt; to &lt;code&gt;ConversationAuthoringProjectResourcesState&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;For function &lt;code&gt;CreateProject&lt;/code&gt;, include &lt;code&gt;projectName&lt;/code&gt; when constructing &lt;code&gt;ConversationAuthoringCreateProjectDetails&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add samples for the following functions(sync and async):
-&lt;ul&gt;
-&lt;li&gt;ListAssignedResourceDeployments&lt;/li&gt;
-&lt;li&gt;ListProjectResources&lt;/li&gt;
-&lt;li&gt;DeleteDeploymentFromResources&lt;/li&gt;
-&lt;li&gt;GetDeploymentDeleteFromResourcesStatus&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed diagnostic scope names in &lt;code&gt;ConversationAuthoringProject&lt;/code&gt; methods.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Nginx_1.1.0-beta.4"&gt;Azure.ResourceManager.Nginx_1.1.0-beta.4&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.0-beta.4 (2025-12-16)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version 2025-03-01-preview.&lt;/li&gt;
-&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.Nginx&lt;/code&gt; AOT compatible.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.StorageSync_1.3.1"&gt;Azure.ResourceManager.StorageSync_1.3.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.3.1 (2025-12-16)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.StorageSync&lt;/code&gt; AOT compatible&lt;/li&gt;
+&lt;li&gt;A new option to pass transparent statement verification key sets mapped to domain names for offline verification using &lt;code&gt;CodeTransparencyVerificationOptions.OfflineKeys&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new option to restrict the use of a network resolution of the ledger keys when using &lt;code&gt;OfflineKeys&lt;/code&gt; with &lt;code&gt;CodeTransparencyVerificationOptions.OfflineKeysBehavior&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
