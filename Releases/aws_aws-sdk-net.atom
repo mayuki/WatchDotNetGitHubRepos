@@ -1,87 +1,57 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-12-19T00:07:48Z</updated>
+  <updated>2025-12-20T00:07:31Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-12-18</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-12-18</id>
+    <title>aws/aws-sdk-net - Releases - 2025-12-19</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-12-19</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-12-19T00:07:48Z</updated>
+    <updated>2025-12-20T00:07:31Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1188.0"&gt;3.7.1188.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1189.0"&gt;3.7.1189.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1188.0 (2025-12-18 19:18 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1189.0 (2025-12-19 19:20 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AppStream (3.7.505.0)
+&lt;li&gt;ARCRegionswitch (3.7.503.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for new operating systems (1) Ubuntu 24.04 Pro LTS on Elastic fleets, and (2) Microsoft Server 2025 on Always-On and On-Demand fleets&lt;/li&gt;
+&lt;li&gt;Automatic Plan Execution Reports allow customers to maintain a concise record of their Region switch Plan executions.  This enables customer SREs and leadership to have a clear view of their recovery posture based on the generated reports for their Plan executions.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ARCRegionswitch (3.7.502.0)
+&lt;li&gt;Connect (3.7.519.0)
 &lt;ul&gt;
-&lt;li&gt;New API to list Route 53 health checks created by ARC region switch for a plan in a specific AWS Region using the Region switch Regional data plane.&lt;/li&gt;
+&lt;li&gt;Adding support for Custom Metrics and Pre-Defined Attributes to GetCurrentMetricData API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Artifact (3.7.503.0)
+&lt;li&gt;EMRServerless (3.7.503.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for ListReportVersions API  for the calling AWS account.&lt;/li&gt;
+&lt;li&gt;Added JobLevelCostAllocationConfiguration field to enable cost allocation reporting at the job level, providing more granular visibility into EMR Serverless charges&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (3.7.513.0)
+&lt;li&gt;IoT (3.7.505.0)
 &lt;ul&gt;
-&lt;li&gt;Feature to support header exchanges between Bedrock AgentCore Gateway Targets and client, along with propagating query parameter to the configured targets.&lt;/li&gt;
+&lt;li&gt;This release adds event-based logging feature that enables granular event logging controls for AWS IoT logs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockDataAutomation (3.7.505.0)
+&lt;li&gt;QBusiness (3.7.504.0)
 &lt;ul&gt;
-&lt;li&gt;Blueprint Optimization (BPO) is a new Amazon Bedrock Data Automation (BDA) capability that improves blueprint inference accuracy using example content assets and ground truth data. BPO works by generating better instructions for fields in the Blueprint using provided data.&lt;/li&gt;
+&lt;li&gt;It is a internal bug fix for region expansion&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CleanRooms (3.7.510.0)
+&lt;li&gt;Wickr (3.7.500.0)
 &lt;ul&gt;
-&lt;li&gt;Adding support for collaboration change requests requiring an approval workflow. Adding support for change requests that grant or revoke results receiver ability and modifying auto approved change types in an existing collaboration.&lt;/li&gt;
+&lt;li&gt;AWS Wickr now provides a suite of admin APIs to allow you to programmatically manage secure communication for Wickr networks at scale. These APIs enable you to automate administrative workflows including user lifecycle management, network configuration, and security group administration.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (3.7.538.0)
+&lt;li&gt;WorkSpacesWeb (3.7.505.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds AvailabilityZoneId support for CreateFleet, ModifyFleet, DescribeFleets, RequestSpotFleet, ModifySpotFleetRequests and DescribeSpotFleetRequests APIs.&lt;/li&gt;
+&lt;li&gt;Add support for WebAuthn under user settings.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ECR (3.7.506.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for ECR Create On Push&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ECS (3.7.507.0)
-&lt;ul&gt;
-&lt;li&gt;Adding support for Event Windows via a new ECS account setting "fargateEventWindows". When enabled, ECS Fargate will use the configured event window for patching tasks. Introducing "CapacityOptionType" for CreateCapacityProvider API, allowing support for Spot capacity for ECS Managed Instances.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IoT (3.7.504.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds message batching for the IoT Rules Engine HTTP action.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;OpenSearchService (3.7.507.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon OpenSearch Service adds support for warm nodes, enabling new multi-tier architecture.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SimpleEmailV2 (3.7.508.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon SES introduces Email Validation feature which checks email addresses for syntax errors, domain validity, and risky addresses to help maintain deliverability and protect sender reputation. SES also adds resource tagging and ABAC support for EmailTemplates and CustomVerificationEmailTemplates.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SsmSap (3.7.504.0)
-&lt;ul&gt;
-&lt;li&gt;Added "Stopping" for the HANA Database Status.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 3.7.500.57
+&lt;li&gt;Core 3.7.500.58
 &lt;ul&gt;
 &lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
 &lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
@@ -92,73 +62,63 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.156.0"&gt;4.0.156.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.157.0"&gt;4.0.157.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.156.0 (2025-12-18 19:17 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.157.0 (2025-12-19 19:17 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AppStream (4.0.5.0)
+&lt;li&gt;ARCRegionswitch (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for new operating systems (1) Ubuntu 24.04 Pro LTS on Elastic fleets, and (2) Microsoft Server 2025 on Always-On and On-Demand fleets&lt;/li&gt;
+&lt;li&gt;Automatic Plan Execution Reports allow customers to maintain a concise record of their Region switch Plan executions.  This enables customer SREs and leadership to have a clear view of their recovery posture based on the generated reports for their Plan executions.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ARCRegionswitch (4.0.2.0)
+&lt;li&gt;CloudFront (4.0.10.4)
 &lt;ul&gt;
-&lt;li&gt;New API to list Route 53 health checks created by ARC region switch for a plan in a specific AWS Region using the Region switch Regional data plane.&lt;/li&gt;
+&lt;li&gt;Update request marshallers to use IsSet methods&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Artifact (4.0.3.0)
+&lt;li&gt;Connect (4.0.23.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for ListReportVersions API  for the calling AWS account.&lt;/li&gt;
+&lt;li&gt;Adding support for Custom Metrics and Pre-Defined Attributes to GetCurrentMetricData API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.13.0)
+&lt;li&gt;EMRServerless (4.0.7.0)
 &lt;ul&gt;
-&lt;li&gt;Feature to support header exchanges between Bedrock AgentCore Gateway Targets and client, along with propagating query parameter to the configured targets.&lt;/li&gt;
+&lt;li&gt;Added JobLevelCostAllocationConfiguration field to enable cost allocation reporting at the job level, providing more granular visibility into EMR Serverless charges&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockDataAutomation (4.0.7.0)
+&lt;li&gt;IoT (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;Blueprint Optimization (BPO) is a new Amazon Bedrock Data Automation (BDA) capability that improves blueprint inference accuracy using example content assets and ground truth data. BPO works by generating better instructions for fields in the Blueprint using provided data.&lt;/li&gt;
+&lt;li&gt;This release adds event-based logging feature that enables granular event logging controls for AWS IoT logs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CleanRooms (4.0.12.0)
+&lt;li&gt;QBusiness (4.0.7.0)
 &lt;ul&gt;
-&lt;li&gt;Adding support for collaboration change requests requiring an approval workflow. Adding support for change requests that grant or revoke results receiver ability and modifying auto approved change types in an existing collaboration.&lt;/li&gt;
+&lt;li&gt;It is a internal bug fix for region expansion&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.64.0)
+&lt;li&gt;Route53 (4.0.8.3)
 &lt;ul&gt;
-&lt;li&gt;This release adds AvailabilityZoneId support for CreateFleet, ModifyFleet, DescribeFleets, RequestSpotFleet, ModifySpotFleetRequests and DescribeSpotFleetRequests APIs.&lt;/li&gt;
+&lt;li&gt;Update request marshallers to use IsSet methods.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ECR (4.0.9.0)
+&lt;li&gt;S3 (4.0.15.2)
 &lt;ul&gt;
-&lt;li&gt;Adds support for ECR Create On Push&lt;/li&gt;
+&lt;li&gt;Update request marshallers to use IsSet methods.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ECS (4.0.11.0)
+&lt;li&gt;S3Control (4.0.8.4)
 &lt;ul&gt;
-&lt;li&gt;Adding support for Event Windows via a new ECS account setting "fargateEventWindows". When enabled, ECS Fargate will use the configured event window for patching tasks. Introducing "CapacityOptionType" for CreateCapacityProvider API, allowing support for Spot capacity for ECS Managed Instances.&lt;/li&gt;
+&lt;li&gt;Update request marshallers to use IsSet methods.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IoT (4.0.5.0)
+&lt;li&gt;Wickr (4.0.0.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds message batching for the IoT Rules Engine HTTP action.&lt;/li&gt;
+&lt;li&gt;AWS Wickr now provides a suite of admin APIs to allow you to programmatically manage secure communication for Wickr networks at scale. These APIs enable you to automate administrative workflows including user lifecycle management, network configuration, and security group administration.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;OpenSearchService (4.0.9.0)
+&lt;li&gt;WorkSpacesWeb (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon OpenSearch Service adds support for warm nodes, enabling new multi-tier architecture.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SimpleEmailV2 (4.0.11.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon SES introduces Email Validation feature which checks email addresses for syntax errors, domain validity, and risky addresses to help maintain deliverability and protect sender reputation. SES also adds resource tagging and ABAC support for EmailTemplates and CustomVerificationEmailTemplates.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SsmSap (4.0.4.0)
-&lt;ul&gt;
-&lt;li&gt;Added "Stopping" for the HANA Database Status.&lt;/li&gt;
+&lt;li&gt;Add support for WebAuthn under user settings.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

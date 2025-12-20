@@ -1,53 +1,38 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/efcore - Issues &amp; Pull Requests</title>
   <link href="https://github.com/dotnet/efcore" />
-  <updated>2025-12-19T00:07:27Z</updated>
+  <updated>2025-12-20T00:07:08Z</updated>
   <id>https://github.com/dotnet/efcore</id>
   <entry>
-    <title>dotnet/efcore - Issues &amp; Pull Requests - 2025-12-18</title>
-    <id>https://github.com/dotnet/efcore#2025-12-18</id>
+    <title>dotnet/efcore - Issues &amp; Pull Requests - 2025-12-19</title>
+    <id>https://github.com/dotnet/efcore#2025-12-19</id>
     <link href="https://github.com/dotnet/efcore" />
-    <updated>2025-12-19T00:07:27Z</updated>
+    <updated>2025-12-20T00:07:08Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/37399"&gt;Cosmos owned types expose separate __jObject shadow property #37399&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/37405"&gt;Support IReadOnlyList for Complex Collections #37405&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/37395"&gt;Assignment of complex type does not assign nested properties correctly #37395&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;10.0.3&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Closed&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/37398"&gt;ChangeTracker differences between Owned types and Complex Properties #37398&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/37404"&gt;Complex property stored as json will be marked non-nullable even in TPH class hierarchy #37404&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/35024"&gt;Query could not be translated when using a static ICollection/IList field #35024&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;11.0.0&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/37393"&gt;[dnceng-bot] Branch `efcore/release/8.0` can't be merged to Azdo internal branch #37393&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/37403"&gt;IQueryable associated with ToInMemoryQuery cannot be translated in EF Core version 10 #37403&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/37165"&gt;Insert/delete inside ISaveChangesInterceptor.SavedChanges #37165&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/37402"&gt;Failed translating LINQ to SQL when using "let" keyword after "group by". #37402&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -56,6 +41,36 @@
   &lt;h2&gt;PullRequests&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/37406"&gt;Fix Cosmos tests #37406&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;Merged&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/37401"&gt;Fix space. Solves failures in 1ES pipelines. #37401&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/37396"&gt;Optimize GetLength (not that it matters, but it is easy and I can :)). #37396&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;Updated&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/37394"&gt;[release/10.0] Fix ArgumentOutOfRangeException for entities with shadow properties and nullable complex types with discriminators #37394&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/efcore/pull/37400"&gt;Cosmos: Complex properties binding #37400&lt;/a&gt;
@@ -70,30 +85,6 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/37396"&gt;Optimize GetLength (not that it matters, but it is easy and I can :)). #37396&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Merged&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/37322"&gt;Cosmos: Update pipeline complex properties #37322&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;community-contribution&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/37371"&gt;Performance improvement of Uniquifier. #37371&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Updated&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
         &lt;a href="https://github.com/dotnet/efcore/pull/37380"&gt;Add support for ON DELETE SET DEFAULT #37380&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;community-contribution&lt;/div&gt;
@@ -106,19 +97,7 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/37390"&gt;Fix handling of Contains on IReadOnlySet and custom IReadOnlyCollection. #37390&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/37394"&gt;Fix ArgumentOutOfRangeException for entities with shadow properties and nullable complex types with discriminators #37394&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/37392"&gt;Partial Fix: Prevent marking primary key properties as modified during foreign key propagation #37392&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/37392"&gt;Prevent marking primary key properties as modified during foreign key propagation #37392&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
