@@ -1,29 +1,35 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2025-12-30T00:07:25Z</updated>
+  <updated>2025-12-31T00:07:34Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2025-12-29</title>
-    <id>https://github.com/aws/aws-sdk-net#2025-12-29</id>
+    <title>aws/aws-sdk-net - Releases - 2025-12-30</title>
+    <id>https://github.com/aws/aws-sdk-net#2025-12-30</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2025-12-30T00:07:25Z</updated>
+    <updated>2025-12-31T00:07:34Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1193.0"&gt;3.7.1193.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1194.0"&gt;3.7.1194.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1193.0 (2025-12-29 19:18 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1194.0 (2025-12-30 19:18 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Connect (3.7.520.0)
+&lt;li&gt;Connect (3.7.521.0)
 &lt;ul&gt;
-&lt;li&gt;Changes for Contact for Global Search&lt;/li&gt;
+&lt;li&gt;Adds support for searching global contacts using the ActiveRegions filter, and pagination support for ListSecurityProfileFlowModules and ListEntitySecurityProfiles.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;QuickSight (3.7.509.0)
+&lt;li&gt;KafkaConnect (3.7.504.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for quick users to be able to perform role upgrades on their own. Additionally it allows admins to make this feature admin or auto approval along with new self upgrade capability that can be restricted by Admins.&lt;/li&gt;
+&lt;li&gt;This change sets the KafkaConnect GovCloud FIPS and FIPS DualStack endpoints to use kafkaconnect instead of kafkaconnect-fips as the service name. This is done to match the Kafka endpoints.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.500.61
+&lt;ul&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -31,23 +37,34 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.161.0"&gt;4.0.161.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.162.0"&gt;4.0.162.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.161.0 (2025-12-29 19:16 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.162.0 (2025-12-30 19:16 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Connect (4.0.24.0)
+&lt;li&gt;CloudWatch (4.0.6.2)
 &lt;ul&gt;
-&lt;li&gt;Changes for Contact for Global Search&lt;/li&gt;
+&lt;li&gt;Improve AWS Query compatible error handling in unmarshallers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (4.0.10.5)
+&lt;li&gt;Connect (4.0.25.0)
 &lt;ul&gt;
-&lt;li&gt;Add missing &lt;code&gt;SkipVersionCheck&lt;/code&gt; property to the &lt;code&gt;TransactWriteConfig&lt;/code&gt; class (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3738093653" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/4243" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/4243/hovercard" href="https://github.com/aws/aws-sdk-net/issues/4243"&gt;#4243&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Adds support for searching global contacts using the ActiveRegions filter, and pagination support for ListSecurityProfileFlowModules and ListEntitySecurityProfiles.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;QuickSight (4.0.12.0)
+&lt;li&gt;KafkaConnect (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for quick users to be able to perform role upgrades on their own. Additionally it allows admins to make this feature admin or auto approval along with new self upgrade capability that can be restricted by Admins.&lt;/li&gt;
+&lt;li&gt;This change sets the KafkaConnect GovCloud FIPS and FIPS DualStack endpoints to use kafkaconnect instead of kafkaconnect-fips as the service name. This is done to match the Kafka endpoints.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3 (4.0.16.1)
+&lt;ul&gt;
+&lt;li&gt;Generate CompleteMultipartUpload and RestoreObject operations&lt;/li&gt;
+&lt;li&gt;[Breaking Change] MpuObjectSize in Amazon.S3.Model.CompleteMultipartUploadRequest has been changed to nullable to be consistent with the nullability changes in V4.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SQS (4.0.2.9)
+&lt;ul&gt;
+&lt;li&gt;Improve AWS Query compatible error handling in unmarshallers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
