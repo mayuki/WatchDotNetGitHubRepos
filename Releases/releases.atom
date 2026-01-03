@@ -1,44 +1,71 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-01-02T00:08:05Z</updated>
+  <updated>2026-01-03T00:07:50Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-01-01</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-01-01</id>
-    <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-01-02T00:07:40Z</updated>
+    <title>aws/aws-sdk-net - Releases - 2026-01-02</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-01-02</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2026-01-03T00:07:24Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.IotOperations_1.1.0-beta.1"&gt;Azure.ResourceManager.IotOperations_1.1.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.163.0"&gt;4.0.163.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.1.0-beta.1 (2025-09-09)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;p&gt;Upgrade to api-version 2025-07-01-preview:&lt;/p&gt;
+                                &lt;h3&gt;4.0.163.0 (2026-01-02 19:19 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Connector Templates: Create reusable templates to streamline connector configuration and deployment across Azure IoT Operations clusters.&lt;/li&gt;
-&lt;li&gt;ADR Namespaces: Enable logical isolation and security boundaries for managing assets and devices at scale.&lt;/li&gt;
-&lt;li&gt;Devices: Support for devices with inbound endpoints, including cross-connector capabilities.&lt;/li&gt;
-&lt;li&gt;ONVIF Connector: Integrate ONVIF-compliant cameras and devices for video and surveillance scenarios.&lt;/li&gt;
-&lt;li&gt;Media Connector: Ingest and process media streams from diverse sources with enhanced flexibility.&lt;/li&gt;
-&lt;li&gt;REST Connector: Connect to any RESTful endpoint, enabling seamless integration with external systems and APIs.&lt;/li&gt;
-&lt;li&gt;Enrich: Enhance incoming data with contextual metadata from REST endpoints to support advanced analytics.&lt;/li&gt;
-&lt;li&gt;Discovery of Devices and Assets: Automatically detect and onboard devices and assets, reducing manual configuration.&lt;/li&gt;
-&lt;li&gt;Regional Expansion: Azure IoT Operations is now deployable to Arc-connected clusters in the Germany West Central region. This support is available in the latest preview and backported to GA version 1.1.59&lt;/li&gt;
-&lt;li&gt;Advanced Dataflow Operations: Dataflow graphs allow for definitions of custom workflows and transformations. Custom operations can now be performed using WASMmodules provided by customers .&lt;/li&gt;
+&lt;li&gt;CleanRooms (4.0.13.0)
+&lt;ul&gt;
+&lt;li&gt;Added support for publishing detailed metrics to CloudWatch for operational monitoring of collaborations, including query performance and resource utilization.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;p&gt;ExtendedLocation is now optional in the following resources:&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;DSQL (4.0.8.5)
 &lt;ul&gt;
-&lt;li&gt;IotOperationsBroker&lt;/li&gt;
-&lt;li&gt;IotOperationsBrokerListener&lt;/li&gt;
-&lt;li&gt;IotOperationsBrokerAuthentication&lt;/li&gt;
-&lt;li&gt;IotOperationsBrokerAuthorization&lt;/li&gt;
-&lt;li&gt;IotOperationsDataflowEndpoint&lt;/li&gt;
-&lt;li&gt;IotOperationsDataflowProfile&lt;/li&gt;
-&lt;li&gt;IotOperationsDataflow&lt;/li&gt;
+&lt;li&gt;Add missing overloads to the async versions of the &lt;code&gt;GenerateDbConnect&lt;/code&gt; and &lt;code&gt;GenerateDbConnectAdmin&lt;/code&gt; methods (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2031303788" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/3123" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/3123/hovercard" href="https://github.com/aws/aws-sdk-net/issues/3123"&gt;#3123&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IdentityStore (4.0.5.0)
+&lt;ul&gt;
+&lt;li&gt;This change introduces "Roles" attribute for User entities supported by AWS Identity Store SDK.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RDS (4.0.15.3)
+&lt;ul&gt;
+&lt;li&gt;Add missing overloads to the async versions of the &lt;code&gt;GenerateAuthToken&lt;/code&gt; method (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2031303788" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/3123" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/3123/hovercard" href="https://github.com/aws/aws-sdk-net/issues/3123"&gt;#3123&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3 (4.0.16.2)
+&lt;ul&gt;
+&lt;li&gt;Generate DeleteObjects, DeleteObject and DeleteObjectTagging operations&lt;/li&gt;
+&lt;li&gt;[Breaking Change] IfMatchSize in Amazon.S3.Model.DeleteObjectRequest has been changed to nullable to be consistent with the nullability changes in V4.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SimpleNotificationService (4.0.2.11)
+&lt;ul&gt;
+&lt;li&gt;Update &lt;code&gt;Amazon.SimpleNotificationService.Util.Message.ParseMessage&lt;/code&gt; method not to throw an exception when handling FIFO topics (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1802953055" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/3000" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/3000/hovercard" href="https://github.com/aws/aws-sdk-net/issues/3000"&gt;#3000&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1195.0"&gt;3.7.1195.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;3.7.1195.0 (2026-01-02 19:27 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;CleanRooms (3.7.511.0)
+&lt;ul&gt;
+&lt;li&gt;Added support for publishing detailed metrics to CloudWatch for operational monitoring of collaborations, including query performance and resource utilization.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IdentityStore (3.7.505.0)
+&lt;ul&gt;
+&lt;li&gt;This change introduces "Roles" attribute for User entities supported by AWS Identity Store SDK.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
