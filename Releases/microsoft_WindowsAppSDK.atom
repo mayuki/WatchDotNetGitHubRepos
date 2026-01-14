@@ -1,6 +1,135 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>microsoft/WindowsAppSDK - Releases</title>
   <link href="https://github.com/microsoft/WindowsAppSDK" />
-  <updated>2026-01-13T00:06:14Z</updated>
+  <updated>2026-01-14T00:08:14Z</updated>
   <id>https://github.com/microsoft/WindowsAppSDK</id>
+  <entry>
+    <title>microsoft/WindowsAppSDK - Releases - 2026-01-13</title>
+    <id>https://github.com/microsoft/WindowsAppSDK#2026-01-13</id>
+    <link href="https://github.com/microsoft/WindowsAppSDK" />
+    <updated>2026-01-14T00:08:14Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.8.4"&gt;Windows App SDK 1.8.4 (1.8.260101001)&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Windows App SDK 1.8.4 (1.8.260101001)&lt;/h2&gt;
+&lt;p&gt;WinAppSDK 1.8.4 is the latest stable version of WinAppSDK 1.8 providing new features and improvements to the platform.&lt;/p&gt;
+&lt;h2&gt;Whats new in WinAppSDK 1.8.4:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;New TextRewriter tone added for "Rewrite as Shakespeare".&lt;/li&gt;
+&lt;li&gt;New TextRewriter tone added for "Rewrite in Sci-fi".&lt;/li&gt;
+&lt;li&gt;Decrease the size of Microsoft.Windows.AI.MachineLearning.dll by approximately 160 KB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Bug fixes:&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Bug Fix&lt;/th&gt;
+&lt;th&gt;&lt;a href="https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.applicationmodel.windowsappruntime.runtimecompatibilityoptions.disabledchanges?view=windows-app-sdk-1.8" rel="nofollow"&gt;Runtime Compatibility Change&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed "Class not registered" errors when using Windows ML in self-contained deployments. Developers using self-contained deployment no longer need to register all the Foundation package activatable classes that were used internally.&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Filter names display correctly when extensions are hidden. For more info, see GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/5837" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/5837/hovercard"&gt;#5837&lt;/a&gt;.&lt;/td&gt;
+&lt;td&gt;StoragePickers_DisplayFileTypeFilterNames&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Existing files are not truncated on save unless overwritten. For more info, see GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/5976" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/5976/hovercard"&gt;#5976&lt;/a&gt;.&lt;/td&gt;
+&lt;td&gt;StoragePickers_DoNotTruncateExistingFileOnSave&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;File type choices preserve insertion order. For more info, see GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/5827" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/5827/hovercard"&gt;#5827&lt;/a&gt;.&lt;/td&gt;
+&lt;td&gt;StoragePickers_PreserveFileTypeChoicesInsertionOrder&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed problem with apps not launching when using &lt;code&gt;PublishSingleFile&lt;/code&gt; support with component packages. For more info, see GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/5969#issuecomment-3551259519" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/5969/hovercard"&gt;#5969&lt;/a&gt;.&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an issue where IconElements created using IconSource.CreateIconElement were not rendered on the screen.&lt;/td&gt;
+&lt;td&gt;FixCreateIconElementRendering&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed issue with incremental builds rebuilding too much when using WinAppSDKSelfContained.&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed build failure when referencing DWrite component package with WinAppSDKSelfContained.&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.8.260101001" rel="nofollow"&gt;1.8.260101001 NuGet&lt;/a&gt; package to use WinAppSDK 1.8.4 in your app.&lt;/li&gt;
+&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Getting Started&lt;/h3&gt;
+&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools &lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.0-exp4"&gt;2.0 Experimental 4 (2.0.0-experimental4) 🧪&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Windows App SDK 2.0-Experimental4 (2.0.0-experimental4)&lt;/h2&gt;
+&lt;p&gt;WinAppSDK 2.0.0 Experimental 4 is the latest experimental version of WinAppSDK providing new features and improvements to the platform.&lt;/p&gt;
+&lt;h3&gt;What's new in WinAppSDK 2.0 Experimental 4:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Onnx Runtime updated to mainline version 1.24 for improved compatibility and stability.&lt;/li&gt;
+&lt;li&gt;Decreased the size of Microsoft.Windows.AI.MachineLearning.dll by approximately 160 KB&lt;/li&gt;
+&lt;li&gt;Introduced new APIs to lookup statistics of items being indexed.&lt;/li&gt;
+&lt;li&gt;New support for query cancellation to allow apps to run a query and update it if there is a new query.&lt;/li&gt;
+&lt;li&gt;Video Scaler is now disposable, improving resource management and lifecycle control.&lt;/li&gt;
+&lt;li&gt;The Video Super Resolution model is now compiled and cached to improve performance and reduce repeated initialization costs.&lt;/li&gt;
+&lt;li&gt;Removed the requirement for explicit WinML initialization when using Video Super Resolution.&lt;/li&gt;
+&lt;li&gt;The FlowLayout control now uses ItemSpacing and LineSpacing terminology.&lt;/li&gt;
+&lt;li&gt;The WrapPanel control now uses ItemSpacing and LineSpacing terminology.&lt;/li&gt;
+&lt;li&gt;Implemented the IXamlPredicate interface to define custom predicates that integrate seemlessly with XAML's conditional namespace syntax.&lt;/li&gt;
+&lt;li&gt;Added WinUI tools and scripts for use by external developers to build and test Windows.&lt;/li&gt;
+&lt;li&gt;Deprecated the DependencyObject.Dispatcher API in WinUI.&lt;/li&gt;
+&lt;li&gt;Deprecated the Window.Current API in WinUI.&lt;/li&gt;
+&lt;li&gt;Deprecated FocusManager.GetFocusedElement API in WinUI.&lt;/li&gt;
+&lt;li&gt;Renamed the SystemBackdropHost to SystemBackdropElement in WinUI.&lt;/li&gt;
+&lt;li&gt;Renamed the Microsoft.Windows.AI.Search.Experimental.AppContentIndex namespace to Microsoft.Windows.Search.AppContentIndex.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs fixed:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed “Class not registered” errors when using self-contained deployment with Windows ML. Developers using self-contained deployment no longer need to register all the Foundation package activatable classes that were used internally.&lt;/li&gt;
+&lt;li&gt;Fixed a potential crash occurring on process shutdown when using Windows ML.&lt;/li&gt;
+&lt;li&gt;Fixed the ImageForegroundExtractor API routing path so calls reach the correct endpoint.&lt;/li&gt;
+&lt;li&gt;Ensured execution provider install and download progress is correctly forwarded to apps during package deployment.&lt;/li&gt;
+&lt;li&gt;Fixed a crash in SystemBackdrop when the target disconnects by guarding invalid disconnection paths.&lt;/li&gt;
+&lt;li&gt;Fixed an issue that prevented Windows AI APIs from being available for some devices.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;To see everything that's new and changed, see the full &lt;a href="https://aka.ms/windowsappsdk/2.0/2.0.0-experimental4/release-notes" rel="nofollow"&gt;Windows App SDK 2.0 Experimental release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.0.0-experimental4" rel="nofollow"&gt;2.0.0-experimental4 NuGet&lt;/a&gt; package to use WinAppSDK 2.0 in your app.&lt;/li&gt;
+&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Getting Started&lt;/h3&gt;
+&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools &lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.   -&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

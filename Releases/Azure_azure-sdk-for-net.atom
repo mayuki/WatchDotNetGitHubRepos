@@ -1,6 +1,63 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-01-13T00:06:01Z</updated>
+  <updated>2026-01-14T00:07:56Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-01-13</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-01-13</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2026-01-14T00:07:56Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Monitor.OpenTelemetry.Exporter_1.6.0-beta.2"&gt;Azure.Monitor.OpenTelemetry.Exporter_1.6.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.6.0-beta.2 (2026-01-12)&lt;/h2&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Default Sampler Changed&lt;/strong&gt; (&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/54942" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/54942/hovercard"&gt;#54942&lt;/a&gt;): The default sampling behavior has been changed from&lt;br&gt;
+&lt;code&gt;ApplicationInsightsSampler&lt;/code&gt; with 100% sampling (all traces sampled) to&lt;br&gt;
+&lt;code&gt;RateLimitedSampler&lt;/code&gt; with 5.0 traces per second. This change significantly&lt;br&gt;
+reduces telemetry volume for high-traffic applications and provides better&lt;br&gt;
+cost optimization out of the box.&lt;br&gt;
+&lt;strong&gt;Impact&lt;/strong&gt;: Applications with more than 5 requests per second will see fewer&lt;br&gt;
+traces exported by default.&lt;br&gt;
+&lt;strong&gt;Migration&lt;/strong&gt;: To maintain the previous behavior (100% sampling), explicitly&lt;br&gt;
+configure the sampler:
+&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="// Option 1: Set SamplingRatio and clear TracesPerSecond
+builder.Services.AddOpenTelemetry()
+    .UseAzureMonitorExporter(options =&amp;gt;
+    {
+        options.SamplingRatio = 1.0f;
+        options.TracesPerSecond = null;
+    });
+// Option 2: Use environment variables
+// OTEL_TRACES_SAMPLER=microsoft.fixed_percentage
+// OTEL_TRACES_SAMPLER_ARG=1.0"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;// Option 1: Set SamplingRatio and clear TracesPerSecond&lt;/span&gt;
+&lt;span class="pl-s1"&gt;builder&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;Services&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;AddOpenTelemetry&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;
+    &lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;UseAzureMonitorExporter&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;options &lt;span class="pl-c1"&gt;=&amp;gt;&lt;/span&gt;
+    &lt;span class="pl-kos"&gt;{&lt;/span&gt;
+        &lt;span class="pl-s1"&gt;options&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;SamplingRatio&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;1.0f&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+        &lt;span class="pl-s1"&gt;options&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;TracesPerSecond&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;null&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+    &lt;span class="pl-kos"&gt;}&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+&lt;span class="pl-c"&gt;// Option 2: Use environment variables&lt;/span&gt;
+&lt;span class="pl-c"&gt;// OTEL_TRACES_SAMPLER=microsoft.fixed_percentage&lt;/span&gt;
+&lt;span class="pl-c"&gt;// OTEL_TRACES_SAMPLER_ARG=1.0&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed performance counter metrics not using configured resource attributes&lt;br&gt;
+(cloud_RoleName and cloud_RoleInstance), which previously showed&lt;br&gt;
+"unknown_service:appName" instead of the configured values.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/54944" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/54944/hovercard"&gt;#54944&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
