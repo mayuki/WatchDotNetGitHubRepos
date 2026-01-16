@@ -1,60 +1,72 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-01-15T00:07:45Z</updated>
+  <updated>2026-01-16T00:07:46Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-01-14</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-01-14</id>
+    <title>aws/aws-sdk-net - Releases - 2026-01-15</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-01-15</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-01-15T00:07:45Z</updated>
+    <updated>2026-01-16T00:07:46Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1202.0"&gt;3.7.1202.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.171.0"&gt;4.0.171.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1202.0 (2026-01-14 19:22 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.171.0 (2026-01-15 19:19 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Connect (3.7.522.0)
+&lt;li&gt;CleanRooms (4.0.14.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon Connect makes it easier to manage contact center operating hours by enabling automated scheduling for recurring events like holidays and maintenance windows. Set up recurring patterns (weekly, monthly, etc.) or link to another hours of operation to inherit overrides.&lt;/li&gt;
+&lt;li&gt;This release adds support for parameters in PySpark analysis templates.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CostExplorer (3.7.509.4)
+&lt;li&gt;Deadline (4.0.11.0)
 &lt;ul&gt;
-&lt;li&gt;Cost Categories added support to BillingView data filter expressions through the new costCategories parameter, enabling users to filter billing views by AWS Cost Categories for more granular cost management and allocation.&lt;/li&gt;
+&lt;li&gt;AWS Deadline Cloud now supports tagging Budget resources with ABAC for permissions management and selecting up to 16 filter values in the monitor and Search API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EKS (3.7.508.0)
+&lt;li&gt;EC2 (4.0.65.3)
 &lt;ul&gt;
-&lt;li&gt;Added support for BOTTLEROCKET NVIDIA FIPS AMIs to AMI types in US regions.&lt;/li&gt;
+&lt;li&gt;This release includes documentation updates to support up to four Elastic Volume modifications per Amazon EBS volume within a rolling 24-hour period.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;RDS (3.7.512.0)
+&lt;li&gt;ECS (4.0.12.0)
 &lt;ul&gt;
-&lt;li&gt;no feature changes. model migrated to Smithy&lt;/li&gt;
+&lt;li&gt;Adds support for configuring FIPS in AWS GovCloud (US) Regions via a new ECS Capacity Provider field fipsEnabled. When enabled, instances launched by the capacity provider will use a FIPS-140 enabled AMI. Instances will use FIPS-140 compliant cryptographic modules and AWS FIPS endpoints.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Redshift (3.7.506.0)
+&lt;li&gt;Evs (4.0.5.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for enabling extra compute resources for automatic optimization during create and modify operations in Amazon Redshift clusters.&lt;/li&gt;
+&lt;li&gt;A new GetVersions API has been added to retrieve VCF, ESX versions, and EC2 instances provided by Amazon EVS. The CreateEnvironment API now allows you to select a VCF version and the CreateEnvironmentHost API introduces a optional esxVersion parameter.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;RedshiftServerless (3.7.504.0)
+&lt;li&gt;LakeFormation (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for enabling extra compute resources for automatic optimization during create and update operations in Amazon Redshift Serverless workgroups.&lt;/li&gt;
+&lt;li&gt;API Changes for GTCForLocation feature. Includes a new API, GetTemporaryDataLocationCredentials and updates to the APIs RegisterResource and UpdateResource&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SocialMessaging (3.7.503.0)
+&lt;li&gt;OpenSearchServerless (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;This release clarifies WhatsApp template operations as a resource-authenticated operation via the parent WhatsApp Business Account. It also introduces new parameters for parameter format, CTA URL link tracking, and template body examples, and increases the phone number ID length.&lt;/li&gt;
+&lt;li&gt;Collection groups in Amazon OpenSearch Serverless enables to organize multiple collections and enable compute resource sharing across collections with different KMS keys. This shared compute model reduces costs by eliminating the need for separate OpenSearch Compute Units (OCUs) for each KMS key.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 3.7.500.66
+&lt;li&gt;QConnect (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Fix inference configuration shapes for the CreateAIPrompt and UpdateAIPrompt APIs, Modify Text Length Limit for SendMessage API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3 (4.0.17.2)
+&lt;ul&gt;
+&lt;li&gt;Generate paginators for S3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.3.9
+&lt;ul&gt;
+&lt;li&gt;Add default constructors for all generated service exceptions&lt;/li&gt;
+&lt;li&gt;For .NET 8+ targets use ExceptionDispatchInfo.Throw when rethrowing inner HTTP exceptions to preserve original exception context&lt;/li&gt;
+&lt;li&gt;Updating partitions.json file.&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -62,43 +74,55 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.170.0"&gt;4.0.170.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1203.0"&gt;3.7.1203.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.170.0 (2026-01-14 19:21 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1203.0 (2026-01-15 19:21 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Connect (4.0.26.0)
+&lt;li&gt;CleanRooms (3.7.512.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon Connect makes it easier to manage contact center operating hours by enabling automated scheduling for recurring events like holidays and maintenance windows. Set up recurring patterns (weekly, monthly, etc.) or link to another hours of operation to inherit overrides.&lt;/li&gt;
+&lt;li&gt;This release adds support for parameters in PySpark analysis templates.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CostExplorer (4.0.11.2)
+&lt;li&gt;Deadline (3.7.504.0)
 &lt;ul&gt;
-&lt;li&gt;Cost Categories added support to BillingView data filter expressions through the new costCategories parameter, enabling users to filter billing views by AWS Cost Categories for more granular cost management and allocation.&lt;/li&gt;
+&lt;li&gt;AWS Deadline Cloud now supports tagging Budget resources with ABAC for permissions management and selecting up to 16 filter values in the monitor and Search API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EKS (4.0.10.0)
+&lt;li&gt;EC2 (3.7.539.9)
 &lt;ul&gt;
-&lt;li&gt;Added support for BOTTLEROCKET NVIDIA FIPS AMIs to AMI types in US regions.&lt;/li&gt;
+&lt;li&gt;This release includes documentation updates to support up to four Elastic Volume modifications per Amazon EBS volume within a rolling 24-hour period.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;RDS (4.0.16.0)
+&lt;li&gt;ECS (3.7.508.0)
 &lt;ul&gt;
-&lt;li&gt;no feature changes. model migrated to Smithy&lt;/li&gt;
+&lt;li&gt;Adds support for configuring FIPS in AWS GovCloud (US) Regions via a new ECS Capacity Provider field fipsEnabled. When enabled, instances launched by the capacity provider will use a FIPS-140 enabled AMI. Instances will use FIPS-140 compliant cryptographic modules and AWS FIPS endpoints.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Redshift (4.0.6.0)
+&lt;li&gt;Evs (3.7.505.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for enabling extra compute resources for automatic optimization during create and modify operations in Amazon Redshift clusters.&lt;/li&gt;
+&lt;li&gt;A new GetVersions API has been added to retrieve VCF, ESX versions, and EC2 instances provided by Amazon EVS. The CreateEnvironment API now allows you to select a VCF version and the CreateEnvironmentHost API introduces a optional esxVersion parameter.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;RedshiftServerless (4.0.4.0)
+&lt;li&gt;LakeFormation (3.7.504.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for enabling extra compute resources for automatic optimization during create and update operations in Amazon Redshift Serverless workgroups.&lt;/li&gt;
+&lt;li&gt;API Changes for GTCForLocation feature. Includes a new API, GetTemporaryDataLocationCredentials and updates to the APIs RegisterResource and UpdateResource&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SocialMessaging (4.0.4.0)
+&lt;li&gt;OpenSearchServerless (3.7.505.0)
 &lt;ul&gt;
-&lt;li&gt;This release clarifies WhatsApp template operations as a resource-authenticated operation via the parent WhatsApp Business Account. It also introduces new parameters for parameter format, CTA URL link tracking, and template body examples, and increases the phone number ID length.&lt;/li&gt;
+&lt;li&gt;Collection groups in Amazon OpenSearch Serverless enables to organize multiple collections and enable compute resource sharing across collections with different KMS keys. This shared compute model reduces costs by eliminating the need for separate OpenSearch Compute Units (OCUs) for each KMS key.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;QConnect (3.7.505.0)
+&lt;ul&gt;
+&lt;li&gt;Fix inference configuration shapes for the CreateAIPrompt and UpdateAIPrompt APIs, Modify Text Length Limit for SendMessage API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.500.67
+&lt;ul&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;Updating partitions.json file.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

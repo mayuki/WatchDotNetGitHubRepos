@@ -1,6 +1,201 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/SqlClient - Releases</title>
   <link href="https://github.com/dotnet/SqlClient" />
-  <updated>2026-01-15T00:07:56Z</updated>
+  <updated>2026-01-16T00:07:56Z</updated>
   <id>https://github.com/dotnet/SqlClient</id>
+  <entry>
+    <title>dotnet/SqlClient - Releases - 2026-01-15</title>
+    <id>https://github.com/dotnet/SqlClient#2026-01-15</id>
+    <link href="https://github.com/dotnet/SqlClient" />
+    <updated>2026-01-16T00:07:56Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/SqlClient/releases/tag/v6.1.4"&gt;Stable Release v6.1.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This update brings the following changes since the &lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/6.1/6.1.4.md"&gt;6.1.3&lt;/a&gt; release:&lt;/p&gt;
+&lt;h3&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed NullReferenceException issue with &lt;code&gt;SqlDataAdapter&lt;/code&gt; when processing batch scenarios where certain SQL RPC calls may not include system parameters.&lt;br&gt;
+(&lt;a href="https://github.com/dotnet/SqlClient/pull/3877" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3877/hovercard"&gt;#3877&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed connection pooling issue where extra connection deactivation was causing active connection counts to go negative.&lt;br&gt;
+(&lt;a href="https://github.com/dotnet/SqlClient/pull/3776" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3776/hovercard"&gt;#3776&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Added&lt;/h3&gt;
+&lt;h4&gt;AppContext Switch for enabling MultiSubnetFailover&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;What Changed:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added new AppContext switch &lt;code&gt;Switch.Microsoft.Data.SqlClient.EnableMultiSubnetFailoverByDefault&lt;/code&gt; to set &lt;code&gt;MultiSubnetFailover=true&lt;/code&gt; by default in connection string.&lt;br&gt;
+(&lt;a href="https://github.com/dotnet/SqlClient/pull/3851" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3851/hovercard"&gt;#3851&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Who Benefits:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Applications that need MultiSubnetFailover enabled globally without modifying connection strings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Impact:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Applications can now enable MultiSubnetFailover globally using one of the following methods:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="// In application code
+AppContext.SetSwitch(&amp;quot;Switch.Microsoft.Data.SqlClient.EnableMultiSubnetFailoverByDefault&amp;quot;, true);"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;// In application code&lt;/span&gt;
+&lt;span class="pl-s1"&gt;AppContext&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;SetSwitch&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s"&gt;"Switch.Microsoft.Data.SqlClient.EnableMultiSubnetFailoverByDefault"&lt;/span&gt;&lt;span class="pl-kos"&gt;,&lt;/span&gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight highlight-source-json notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="// In runtimeconfig.json
+{
+  &amp;quot;configProperties&amp;quot;: {
+    &amp;quot;Switch.Microsoft.Data.SqlClient.EnableMultiSubnetFailoverByDefault&amp;quot;: true
+  }
+}"&gt;&lt;pre&gt;&lt;span class="pl-ii"&gt;// In runtimeconfig.json&lt;/span&gt;
+{
+  &lt;span class="pl-ent"&gt;"configProperties"&lt;/span&gt;: {
+    &lt;span class="pl-ent"&gt;"Switch.Microsoft.Data.SqlClient.EnableMultiSubnetFailoverByDefault"&lt;/span&gt;: &lt;span class="pl-c1"&gt;true&lt;/span&gt;
+  }
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight highlight-text-xml notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&amp;lt;!-- In App.Config --&amp;gt;
+&amp;lt;runtime&amp;gt;
+  &amp;lt;AppContextSwitchOverrides value=&amp;quot;Switch.Microsoft.Data.SqlClient.EnableMultiSubnetFailoverByDefault=true&amp;quot; /&amp;gt;
+&amp;lt;/runtime&amp;gt;"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;&amp;lt;!--&lt;/span&gt; In App.Config &lt;span class="pl-c"&gt;--&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&amp;lt;&lt;span class="pl-ent"&gt;runtime&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span class="pl-ent"&gt;AppContextSwitchOverrides&lt;/span&gt; &lt;span class="pl-e"&gt;value&lt;/span&gt;=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Switch.Microsoft.Data.SqlClient.EnableMultiSubnetFailoverByDefault=true&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; /&amp;gt;
+&amp;lt;/&lt;span class="pl-ent"&gt;runtime&lt;/span&gt;&amp;gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Optimized &lt;code&gt;SqlStatistics&lt;/code&gt; execution timing by using &lt;code&gt;Environment.TickCount&lt;/code&gt; instead of more expensive timing mechanisms.&lt;br&gt;
+(&lt;a href="https://github.com/dotnet/SqlClient/pull/3830" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3830/hovercard"&gt;#3830&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Updated dependencies (&lt;a href="https://github.com/dotnet/SqlClient/pull/3843" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3843/hovercard"&gt;#3843&lt;/a&gt;):
+&lt;ul&gt;
+&lt;li&gt;.NET Framework 4.6.2:
+&lt;ul&gt;
+&lt;li&gt;Azure.Core 1.47.1 -&amp;gt; 1.50.0&lt;/li&gt;
+&lt;li&gt;Azure.Identity 1.14.2 -&amp;gt; 1.17.1&lt;/li&gt;
+&lt;li&gt;Microsoft.Identity.Client 4.80.0 - Added&lt;/li&gt;
+&lt;li&gt;System.Buffers 4.5.1 -&amp;gt; 4.6.1&lt;/li&gt;
+&lt;li&gt;System.Diagnostics.DiagnosticSource 8.0.1 - Added&lt;/li&gt;
+&lt;li&gt;System.IdentityModel.Tokens.Jwt 7.7.1 - Added&lt;/li&gt;
+&lt;li&gt;System.Memory 4.6.3 - Added&lt;/li&gt;
+&lt;li&gt;System.Text.Json 8.0.5 -&amp;gt; 8.0.6&lt;/li&gt;
+&lt;li&gt;System.Text.RegularExpressions 4.3.1 - Added&lt;/li&gt;
+&lt;li&gt;Microsoft.Bcl.Cryptography - Removed&lt;/li&gt;
+&lt;li&gt;System.Text.Encodings.Web - Removed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;.NET 8.0:
+&lt;ul&gt;
+&lt;li&gt;Azure.Core 1.47.1 -&amp;gt; 1.50.0&lt;/li&gt;
+&lt;li&gt;Azure.Identity 1.14.2 -&amp;gt; 1.17.1&lt;/li&gt;
+&lt;li&gt;Microsoft.Identity.Client 4.80.0 - Added&lt;/li&gt;
+&lt;li&gt;System.Diagnostics.DiagnosticSource 8.0.1 - Added&lt;/li&gt;
+&lt;li&gt;System.IdentityModel.Tokens.Jwt 7.7.1 - Added&lt;/li&gt;
+&lt;li&gt;Microsoft.Bcl.Cryptography - Removed&lt;/li&gt;
+&lt;li&gt;System.Text.Json - Removed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;.NET 9.0:
+&lt;ul&gt;
+&lt;li&gt;Azure.Core 1.47.1 -&amp;gt; 1.50.0&lt;/li&gt;
+&lt;li&gt;Azure.Identity 1.14.2 -&amp;gt; 1.17.1&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 9.0.4 -&amp;gt; 9.0.11&lt;/li&gt;
+&lt;li&gt;Microsoft.Identity.Client 4.80.0 - Added&lt;/li&gt;
+&lt;li&gt;System.Configuration.ConfigurationManager 9.0.4 -&amp;gt; 9.0.11&lt;/li&gt;
+&lt;li&gt;System.Diagnostics.DiagnosticSource 9.0.11 - Added&lt;/li&gt;
+&lt;li&gt;System.IdentityModel.Tokens.Jwt 7.7.1 - Added&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 9.0.4 -&amp;gt; 9.0.11&lt;/li&gt;
+&lt;li&gt;Microsoft.Bcl.Cryptography - Removed&lt;/li&gt;
+&lt;li&gt;System.Text.Json - Removed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;.NET Standard 2.0:
+&lt;ul&gt;
+&lt;li&gt;Azure.Core 1.47.1 -&amp;gt; 1.50.0&lt;/li&gt;
+&lt;li&gt;Azure.Identity 1.14.2 -&amp;gt; 1.17.1&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 9.0.4 -&amp;gt; 8.0.1&lt;/li&gt;
+&lt;li&gt;Microsoft.Identity.Client 4.80.0 - Added&lt;/li&gt;
+&lt;li&gt;System.Configuration.ConfigurationManager 9.0.4 -&amp;gt; 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Diagnostics.DiagnosticSource 8.0.1 - Added&lt;/li&gt;
+&lt;li&gt;System.IdentityModel.Tokens.Jwt 7.7.1 - Added&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 9.0.4 -&amp;gt; 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Text.Json 9.0.5 -&amp;gt; 8.0.6&lt;/li&gt;
+&lt;li&gt;Microsoft.Bcl.Cryptography - Removed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Target Platform Support&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;.NET Framework 4.6.2+ (Windows x86, Windows x64, Windows ARM64)&lt;/li&gt;
+&lt;li&gt;.NET 8.0+ (Windows x86, Windows x64, Windows ARM64, Linux, macOS)&lt;/li&gt;
+&lt;li&gt;.NET Standard 2.0+ (Windows x86, Windows x64, Windows ARM64, Linux, macOS)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Dependencies&lt;/h3&gt;
+&lt;h4&gt;.NET Framework 4.6.2&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Azure.Core 1.50.0&lt;/li&gt;
+&lt;li&gt;Azure.Identity 1.17.1&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.SNI 6.0.2&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 8.0.1&lt;/li&gt;
+&lt;li&gt;Microsoft.Identity.Client 4.80.0&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 7.7.1&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 7.7.1&lt;/li&gt;
+&lt;li&gt;System.Buffers 4.6.1&lt;/li&gt;
+&lt;li&gt;System.Data.Common 4.3.0&lt;/li&gt;
+&lt;li&gt;System.Diagnostics.DiagnosticSource 8.0.1&lt;/li&gt;
+&lt;li&gt;System.IdentityModel.Tokens.Jwt 7.7.1&lt;/li&gt;
+&lt;li&gt;System.Memory 4.6.3&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Text.Json 8.0.6&lt;/li&gt;
+&lt;li&gt;System.Text.RegularExpressions 4.3.1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;.NET 8.0&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Azure.Core 1.50.0&lt;/li&gt;
+&lt;li&gt;Azure.Identity 1.17.1&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.SNI.runtime 6.0.2&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 8.0.1&lt;/li&gt;
+&lt;li&gt;Microsoft.Identity.Client 4.80.0&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 7.7.1&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 7.7.1&lt;/li&gt;
+&lt;li&gt;Microsoft.SqlServer.Server 1.0.0&lt;/li&gt;
+&lt;li&gt;System.Configuration.ConfigurationManager 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Diagnostics.DiagnosticSource 8.0.1&lt;/li&gt;
+&lt;li&gt;System.IdentityModel.Tokens.Jwt 7.7.1&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 8.0.1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;.NET 9.0&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Azure.Core 1.50.0&lt;/li&gt;
+&lt;li&gt;Azure.Identity 1.17.1&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.SNI.runtime 6.0.2&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 9.0.11&lt;/li&gt;
+&lt;li&gt;Microsoft.Identity.Client 4.80.0&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 7.7.1&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 7.7.1&lt;/li&gt;
+&lt;li&gt;Microsoft.SqlServer.Server 1.0.0&lt;/li&gt;
+&lt;li&gt;System.Configuration.ConfigurationManager 9.0.11&lt;/li&gt;
+&lt;li&gt;System.Diagnostics.DiagnosticSource 9.0.11&lt;/li&gt;
+&lt;li&gt;System.IdentityModel.Tokens.Jwt 7.7.1&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 9.0.11&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;.NET Standard 2.0&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Azure.Core 1.50.0&lt;/li&gt;
+&lt;li&gt;Azure.Identity 1.17.1&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.SNI.runtime 6.0.2&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 8.0.1&lt;/li&gt;
+&lt;li&gt;Microsoft.Identity.Client 4.80.0&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 7.7.1&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 7.7.1&lt;/li&gt;
+&lt;li&gt;Microsoft.SqlServer.Server 1.0.0&lt;/li&gt;
+&lt;li&gt;System.Configuration.ConfigurationManager 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Diagnostics.DiagnosticSource 8.0.1&lt;/li&gt;
+&lt;li&gt;System.IdentityModel.Tokens.Jwt 7.7.1&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Text.Json 8.0.6&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
