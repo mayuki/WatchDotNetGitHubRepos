@@ -1,65 +1,49 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-02-10T00:14:19Z</updated>
+  <updated>2026-02-11T00:14:40Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-02-09</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-02-09</id>
+    <title>aws/aws-sdk-net - Releases - 2026-02-10</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-02-10</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-02-10T00:14:19Z</updated>
+    <updated>2026-02-11T00:14:40Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1219.0"&gt;3.7.1219.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1220.0"&gt;3.7.1220.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1219.0 (2026-02-09 20:22 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1220.0 (2026-02-10 19:24 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;ConnectCampaignsV2 (3.7.505.0)
+&lt;li&gt;BedrockAgentCore (3.7.511.0)
 &lt;ul&gt;
-&lt;li&gt;Add the missing event type for WhatsApp&lt;/li&gt;
+&lt;li&gt;Added AgentCore browser proxy configuration support, allowing routing of browser traffic through HTTP and HTTPS proxy servers with authentication and bypass rules.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (3.7.546.0)
+&lt;li&gt;Connect (3.7.528.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon Secondary Networks is a networking feature that provides high-performance, low-latency connectivity for specialized workloads.&lt;/li&gt;
+&lt;li&gt;Amazon Connect now supports per-channel auto-accept and After Contact Work (ACW) timeouts. Configure agents with auto-accept and ACW timeout settings for chat, tasks, emails, and callbacks. Use the new UpdateUserConfig API to manage these settings.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EKS (3.7.509.0)
+&lt;li&gt;EKS (3.7.510.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon EKS adds a new DescribeUpdate update type, VendedLogsUpdate, to support an integration between EKS Auto Mode and Amazon CloudWatch Vended Logs.&lt;/li&gt;
+&lt;li&gt;Introducing an optional policy field, an IAM policy applied to pod identity associations in addition to IAM role policies. When specified, pod permissions are the intersection of IAM role policies and the policy field, ensuring the principle of least privilege.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Imagebuilder (3.7.507.0)
+&lt;li&gt;Kafka (3.7.505.0)
 &lt;ul&gt;
-&lt;li&gt;EC2 Image Builder now supports wildcard patterns in lifecycle policies with recipes and enhances the experience of tag-scoped policies.&lt;/li&gt;
+&lt;li&gt;Amazon MSK adds three new APIs, CreateTopic, UpdateTopic, and DeleteTopic for managing Kafka topics in your MSK clusters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;LakeFormation (3.7.504.10)
+&lt;li&gt;RDS (3.7.513.0)
 &lt;ul&gt;
-&lt;li&gt;Allow cross account v5 in put data lake settings&lt;/li&gt;
+&lt;li&gt;This release adds backup configuration for RDS and Aurora restores, letting customers set backup retention period and preferred backup window during restore. It also enables viewing backup settings when describing snapshots or automated backups for instances and clusters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Neptunedata (3.7.503.0)
+&lt;li&gt;Core 3.7.500.78
 &lt;ul&gt;
-&lt;li&gt;Added edgeOnlyLoad boolean parameter to Neptune bulk load request. When TRUE, files are loaded in order without scanning. When FALSE (default), the loader scans files first, then loads vertex files before edge files automatically.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;PCS (3.7.508.0)
-&lt;ul&gt;
-&lt;li&gt;Introduces RESUMING state for clusters, compute node groups, and queues.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Transfer (3.7.505.1)
-&lt;ul&gt;
-&lt;li&gt;This release adds a documentation update for MdnResponse of type "ASYNC"&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 3.7.500.77
-&lt;ul&gt;
-&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Add internal attribute to mark interfaces in &lt;code&gt;Core&lt;/code&gt; that can be updated without backwards incompatibility issues&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -67,48 +51,43 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.187.0"&gt;4.0.187.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.188.0"&gt;4.0.188.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.187.0 (2026-02-09 20:25 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.188.0 (2026-02-10 19:23 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;ConnectCampaignsV2 (4.0.6.0)
+&lt;li&gt;BedrockAgentCore (4.0.11.0)
 &lt;ul&gt;
-&lt;li&gt;Add the missing event type for WhatsApp&lt;/li&gt;
+&lt;li&gt;Added AgentCore browser proxy configuration support, allowing routing of browser traffic through HTTP and HTTPS proxy servers with authentication and bypass rules.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.72.0)
+&lt;li&gt;Connect (4.0.32.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon Secondary Networks is a networking feature that provides high-performance, low-latency connectivity for specialized workloads.&lt;/li&gt;
+&lt;li&gt;Amazon Connect now supports per-channel auto-accept and After Contact Work (ACW) timeouts. Configure agents with auto-accept and ACW timeout settings for chat, tasks, emails, and callbacks. Use the new UpdateUserConfig API to manage these settings.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EKS (4.0.11.0)
+&lt;li&gt;EKS (4.0.12.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon EKS adds a new DescribeUpdate update type, VendedLogsUpdate, to support an integration between EKS Auto Mode and Amazon CloudWatch Vended Logs.&lt;/li&gt;
+&lt;li&gt;Introducing an optional policy field, an IAM policy applied to pod identity associations in addition to IAM role policies. When specified, pod permissions are the intersection of IAM role policies and the policy field, ensuring the principle of least privilege.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Imagebuilder (4.0.7.0)
+&lt;li&gt;Kafka (4.0.5.0)
 &lt;ul&gt;
-&lt;li&gt;EC2 Image Builder now supports wildcard patterns in lifecycle policies with recipes and enhances the experience of tag-scoped policies.&lt;/li&gt;
+&lt;li&gt;Amazon MSK adds three new APIs, CreateTopic, UpdateTopic, and DeleteTopic for managing Kafka topics in your MSK clusters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;LakeFormation (4.0.4.3)
+&lt;li&gt;RDS (4.0.17.0)
 &lt;ul&gt;
-&lt;li&gt;Allow cross account v5 in put data lake settings&lt;/li&gt;
+&lt;li&gt;This release adds backup configuration for RDS and Aurora restores, letting customers set backup retention period and preferred backup window during restore. It also enables viewing backup settings when describing snapshots or automated backups for instances and clusters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Neptunedata (4.0.4.0)
+&lt;li&gt;S3 (4.0.18.4)
 &lt;ul&gt;
-&lt;li&gt;Added edgeOnlyLoad boolean parameter to Neptune bulk load request. When TRUE, files are loaded in order without scanning. When FALSE (default), the loader scans files first, then loads vertex files before edge files automatically.&lt;/li&gt;
+&lt;li&gt;Cleanup S3 code generation infrastructure after completing the S3 generation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PCS (4.0.12.0)
+&lt;li&gt;Core 4.0.3.13
 &lt;ul&gt;
-&lt;li&gt;Introduces RESUMING state for clusters, compute node groups, and queues.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Transfer (4.0.6.1)
-&lt;ul&gt;
-&lt;li&gt;This release adds a documentation update for MdnResponse of type "ASYNC"&lt;/li&gt;
+&lt;li&gt;Add internal attribute to mark interfaces in &lt;code&gt;Core&lt;/code&gt; that can be updated without backwards incompatibility issues&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
