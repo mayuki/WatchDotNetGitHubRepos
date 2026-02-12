@@ -1,46 +1,60 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-02-11T00:14:41Z</updated>
+  <updated>2026-02-12T00:09:42Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-02-10</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-02-10</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-02-11</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-02-11</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-02-11T00:14:41Z</updated>
+    <updated>2026-02-12T00:09:42Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Resources.DeploymentStacks_1.0.0"&gt;Azure.ResourceManager.Resources.DeploymentStacks_1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Speech.Transcription_1.0.0-beta.1"&gt;Azure.AI.Speech.Transcription_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0 (2026-02-06)&lt;/h2&gt;
-&lt;p&gt;This is first release of ARM deployment stacks library.&lt;/p&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-02-10)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;p&gt;This package follows the &lt;a href="https://azure.github.io/azure-sdk/general_introduction.html" rel="nofollow"&gt;new Azure SDK guidelines&lt;/a&gt;, and provides many core capabilities:&lt;/p&gt;
-&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
-- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
-- HTTP pipeline with custom policies.
-- Better error-handling.
-- Support uniform telemetry across all languages."&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
-- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
-- HTTP pipeline with custom policies.
-- Better error-handling.
-- Support uniform telemetry across all languages.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This package is a Public Preview version, so expect incompatible changes in subsequent releases as we improve the product. To provide feedback, submit an issue in our &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues"&gt;Azure SDK for .NET GitHub repo&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;NOTE: For more information about unified authentication, please refer to &lt;a href="https://docs.microsoft.com//dotnet/api/overview/azure/identity-readme?view=azure-dotnet" rel="nofollow"&gt;Microsoft Azure Identity documentation for .NET&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial release of the Azure.AI.Speech.Transcription client library.&lt;/li&gt;
+&lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.EdgeActions_1.0.0-beta.2"&gt;Azure.ResourceManager.EdgeActions_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.AgentFramework_1.0.0-beta.7"&gt;Azure.AI.AgentServer.AgentFramework_1.0.0-beta.7&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.2 (2026-02-10)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.7 (2026-02-10)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;p&gt;Upgraded to api-version 2025-12-01-preview.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added Foundry conversation history hydration via &lt;code&gt;FoundryConversationThreadRepository&lt;/code&gt; and Core conversation items API integration.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;RunAIAgentAsync&lt;/code&gt; and &lt;code&gt;RunWorkflowAgentAsync&lt;/code&gt; overloads accepting &lt;code&gt;TokenCredential&lt;/code&gt; and optional project endpoint for Foundry-backed thread hydration.&lt;/li&gt;
+&lt;li&gt;Enabled automatic Foundry-backed thread repository creation in existing run extension methods when &lt;code&gt;AZURE_AI_PROJECT_ENDPOINT&lt;/code&gt; is configured.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Core_1.0.0-beta.7"&gt;Azure.AI.AgentServer.Core_1.0.0-beta.7&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.7 (2026-02-10)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;FoundryProjectEndpointResolver&lt;/code&gt; for centralized &lt;code&gt;AZURE_AI_PROJECT_ENDPOINT&lt;/code&gt; resolution across hosting integrations.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ConversationItemsClient&lt;/code&gt; in &lt;code&gt;Responses.Conversations&lt;/code&gt; for retrieving Foundry conversation items used by hydration adapters.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Contracts_1.0.0-beta.7"&gt;Azure.AI.AgentServer.Contracts_1.0.0-beta.7&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.7 (2026-02-10)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Package version alignment only. No functional changes.&lt;/li&gt;
+&lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
