@@ -1,6 +1,39 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-02-17T00:10:55Z</updated>
+  <updated>2026-02-18T00:11:04Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-02-17</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-02-17</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2026-02-18T00:11:04Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.ConfidentialLedger_1.4.1-beta.3"&gt;Azure.Security.ConfidentialLedger_1.4.1-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.4.1-beta.3 (2026-02-17)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;ConfidentialLedgerRedirectPolicy&lt;/code&gt; to automatically follow HTTP 307/308 redirects while preserving the Authorization header. Previously, the SDK did not follow redirects by default, and even when redirects were enabled, the Authorization header was stripped on cross-domain redirects between ACL nodes, causing write operations to fail when routed to non-primary nodes.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.CodeTransparency_1.0.0-beta.7"&gt;Azure.Security.CodeTransparency_1.0.0-beta.7&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.7 (2026-02-17)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;CodeTransparencyRedirectPolicy&lt;/code&gt; to automatically follow HTTP 307/308 redirects while preserving the Authorization header. Previously, redirects between Confidential Ledger nodes could return HTTP 307/308 responses that were not automatically followed by the default pipeline, causing these requests to fail unless clients implemented redirect handling themselves.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
