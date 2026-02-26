@@ -1,59 +1,49 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-02-25T00:12:14Z</updated>
+  <updated>2026-02-26T00:09:21Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-02-24</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-02-24</id>
+    <title>aws/aws-sdk-net - Releases - 2026-02-25</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-02-25</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-02-25T00:12:14Z</updated>
+    <updated>2026-02-26T00:09:21Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.198.0"&gt;4.0.198.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.199.0"&gt;4.0.199.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.198.0 (2026-02-24 19:17 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.199.0 (2026-02-25 21:00 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;CloudWatch (4.0.8.0)
+&lt;li&gt;Batch (4.0.5.2)
 &lt;ul&gt;
-&lt;li&gt;This release adds the APIs (PutAlarmMuteRule, ListAlarmMuteRules, GetAlarmMuteRule and DeleteAlarmMuteRule) to manage a new Cloudwatch resource, AlarmMuteRules. AlarmMuteRules allow customers to temporarily mute alarm notifications during expected downtime periods.&lt;/li&gt;
+&lt;li&gt;AWS Batch documentation update for service job capacity units.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.77.0)
+&lt;li&gt;EC2 (4.0.78.0)
 &lt;ul&gt;
-&lt;li&gt;Adds httpTokensEnforced property to ModifyInstanceMetadataDefaults API. Set per account or manage organization-wide using declarative policies to prevent IMDSv1-enabled instance launch and block attempts to enable IMDSv1 on existing IMDSv2-only instances.&lt;/li&gt;
+&lt;li&gt;Add support for EC2 Capacity Blocks in Local Zones.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Elasticsearch (4.0.3.0)
+&lt;li&gt;ECR (4.0.11.0)
 &lt;ul&gt;
-&lt;li&gt;Fixed HTTP binding for DescribeDomainAutoTunes API to correctly pass request parameters as query parameters in the HTTP request.&lt;/li&gt;
+&lt;li&gt;Update repository name regex to comply with OCI Distribution Specification&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElementalInference (4.0.0.0)
+&lt;li&gt;Neptune (4.0.5.0)
 &lt;ul&gt;
-&lt;li&gt;Initial GA launch for AWS Elemental Inference including capabilities of Smart Crop and Live Event Clipping&lt;/li&gt;
+&lt;li&gt;Neptune global clusters now supports tags&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MediaLive (4.0.17.0)
+&lt;li&gt;WAFV2 (4.0.8.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Elemental MediaLive - Added support for Elemental Inference for Smart Cropping and Clipping features for MediaLive.&lt;/li&gt;
+&lt;li&gt;AWS WAF now supports GetTopPathStatisticsByTraffic that provides aggregated statistics on the top URI paths accessed by bot traffic. Use this operation to see which paths receive the most bot traffic, identify the specific bots accessing them, and filter by category, organization, or bot name.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ObservabilityAdmin (4.0.6.0)
+&lt;li&gt;Extensions.CloudFront.Signers (4.0.0.26)
 &lt;ul&gt;
-&lt;li&gt;Adding a new field in the CreateCentralizationRuleForOrganization, UpdateCentralizationRuleForOrganization API and updating the GetCentralizationRuleForOrganization API response to include the new field&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;OpenSearchService (4.0.10.0)
-&lt;ul&gt;
-&lt;li&gt;Fixed HTTP binding for DescribeDomainAutoTunes API to correctly pass request parameters as query parameters in the HTTP request.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;PartnerCentralSelling (4.0.9.0)
-&lt;ul&gt;
-&lt;li&gt;Added support for filtering opportunities by target close date in the ListOpportunities API. You can now filter results to return opportunities with a target close date before or after a specified date, enabling more precise opportunity searches based on expected closure timelines.&lt;/li&gt;
+&lt;li&gt;Fixed JSON injection vulnerability in Cloudfront signed URL and cookie policy generation&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -61,48 +51,44 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1230.0"&gt;3.7.1230.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1231.0"&gt;3.7.1231.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1230.0 (2026-02-24 19:19 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1231.0 (2026-02-25 19:16 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;CloudWatch (3.7.507.0)
+&lt;li&gt;Batch (3.7.503.6)
 &lt;ul&gt;
-&lt;li&gt;This release adds the APIs (PutAlarmMuteRule, ListAlarmMuteRules, GetAlarmMuteRule and DeleteAlarmMuteRule) to manage a new Cloudwatch resource, AlarmMuteRules. AlarmMuteRules allow customers to temporarily mute alarm notifications during expected downtime periods.&lt;/li&gt;
+&lt;li&gt;AWS Batch documentation update for service job capacity units.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (3.7.551.0)
+&lt;li&gt;CloudFront (3.7.510.8)
 &lt;ul&gt;
-&lt;li&gt;Adds httpTokensEnforced property to ModifyInstanceMetadataDefaults API. Set per account or manage organization-wide using declarative policies to prevent IMDSv1-enabled instance launch and block attempts to enable IMDSv1 on existing IMDSv2-only instances.&lt;/li&gt;
+&lt;li&gt;Fixed JSON injection vulnerability in CloudFront signed URL/cookie policy generation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Elasticsearch (3.7.503.0)
+&lt;li&gt;EC2 (3.7.552.0)
 &lt;ul&gt;
-&lt;li&gt;Fixed HTTP binding for DescribeDomainAutoTunes API to correctly pass request parameters as query parameters in the HTTP request.&lt;/li&gt;
+&lt;li&gt;Add support for EC2 Capacity Blocks in Local Zones.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElementalInference (3.7.500.0)
+&lt;li&gt;ECR (3.7.508.0)
 &lt;ul&gt;
-&lt;li&gt;Initial GA launch for AWS Elemental Inference including capabilities of Smart Crop and Live Event Clipping&lt;/li&gt;
+&lt;li&gt;Update repository name regex to comply with OCI Distribution Specification&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MediaLive (3.7.515.0)
+&lt;li&gt;Neptune (3.7.504.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Elemental MediaLive - Added support for Elemental Inference for Smart Cropping and Clipping features for MediaLive.&lt;/li&gt;
+&lt;li&gt;Neptune global clusters now supports tags&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ObservabilityAdmin (3.7.506.0)
+&lt;li&gt;WAFV2 (3.7.505.0)
 &lt;ul&gt;
-&lt;li&gt;Adding a new field in the CreateCentralizationRuleForOrganization, UpdateCentralizationRuleForOrganization API and updating the GetCentralizationRuleForOrganization API response to include the new field&lt;/li&gt;
+&lt;li&gt;AWS WAF now supports GetTopPathStatisticsByTraffic that provides aggregated statistics on the top URI paths accessed by bot traffic. Use this operation to see which paths receive the most bot traffic, identify the specific bots accessing them, and filter by category, organization, or bot name.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;OpenSearchService (3.7.508.0)
+&lt;li&gt;Core 3.7.500.85
 &lt;ul&gt;
-&lt;li&gt;Fixed HTTP binding for DescribeDomainAutoTunes API to correctly pass request parameters as query parameters in the HTTP request.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;PartnerCentralSelling (3.7.508.0)
-&lt;ul&gt;
-&lt;li&gt;Added support for filtering opportunities by target close date in the ListOpportunities API. You can now filter results to return opportunities with a target close date before or after a specified date, enabling more precise opportunity searches based on expected closure timelines.&lt;/li&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
