@@ -1,49 +1,49 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-02-26T00:09:43Z</updated>
+  <updated>2026-02-27T00:11:50Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-02-25</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-02-25</id>
+    <title>aws/aws-sdk-net - Releases - 2026-02-26</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-02-26</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-02-26T00:09:21Z</updated>
+    <updated>2026-02-27T00:11:28Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.199.0"&gt;4.0.199.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.200.0"&gt;4.0.200.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.199.0 (2026-02-25 21:00 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.200.0 (2026-02-26 19:15 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Batch (4.0.5.2)
+&lt;li&gt;AWSMarketplaceMetering (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Batch documentation update for service job capacity units.&lt;/li&gt;
+&lt;li&gt;Added LicenseArn to ResolveCustomer response and BatchMeterUsage usage records. BatchMeterUsage now accepts LicenseArn in each UsageRecord to report usage at the license level. Added InvalidLicenseException error response for invalid license parameters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.78.0)
+&lt;li&gt;BackupGateway (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for EC2 Capacity Blocks in Local Zones.&lt;/li&gt;
+&lt;li&gt;This release updates GetGateway API to include deprecationDate and softwareVersion in the response, enabling customers to track gateway software versions and upcoming deprecation dates.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ECR (4.0.11.0)
+&lt;li&gt;EC2 (4.0.79.0)
 &lt;ul&gt;
-&lt;li&gt;Update repository name regex to comply with OCI Distribution Specification&lt;/li&gt;
+&lt;li&gt;Add c8id, m8id and hpc8a instance types.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Neptune (4.0.5.0)
+&lt;li&gt;ECS (4.0.14.0)
 &lt;ul&gt;
-&lt;li&gt;Neptune global clusters now supports tags&lt;/li&gt;
+&lt;li&gt;Adding support for Capacity Reservations for ECS Managed Instances by introducing a new "capacityOptionType" value of "RESERVED" and new field "capacityReservations" for CreateCapacityProvider and UpdateCapacityProvider APIs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;WAFV2 (4.0.8.0)
+&lt;li&gt;MarketplaceEntitlementService (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;AWS WAF now supports GetTopPathStatisticsByTraffic that provides aggregated statistics on the top URI paths accessed by bot traffic. Use this operation to see which paths receive the most bot traffic, identify the specific bots accessing them, and filter by category, organization, or bot name.&lt;/li&gt;
+&lt;li&gt;Added License Arn as a new optional filter for GetEntitlements and LicenseArn field in each entitlement in the response.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Extensions.CloudFront.Signers (4.0.0.26)
+&lt;li&gt;SecurityHub (4.0.8.0)
 &lt;ul&gt;
-&lt;li&gt;Fixed JSON injection vulnerability in Cloudfront signed URL and cookie policy generation&lt;/li&gt;
+&lt;li&gt;Security Hub added EXTENDED PLAN integration type to DescribeProductsV2 and added metadata.product.vendor name GroupBy support to GetFindingStatisticsV2&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -51,44 +51,38 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1231.0"&gt;3.7.1231.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1232.0"&gt;3.7.1232.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1231.0 (2026-02-25 19:16 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1232.0 (2026-02-26 19:16 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Batch (3.7.503.6)
+&lt;li&gt;AWSMarketplaceMetering (3.7.504.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Batch documentation update for service job capacity units.&lt;/li&gt;
+&lt;li&gt;Added LicenseArn to ResolveCustomer response and BatchMeterUsage usage records. BatchMeterUsage now accepts LicenseArn in each UsageRecord to report usage at the license level. Added InvalidLicenseException error response for invalid license parameters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudFront (3.7.510.8)
+&lt;li&gt;BackupGateway (3.7.503.0)
 &lt;ul&gt;
-&lt;li&gt;Fixed JSON injection vulnerability in CloudFront signed URL/cookie policy generation.&lt;/li&gt;
+&lt;li&gt;This release updates GetGateway API to include deprecationDate and softwareVersion in the response, enabling customers to track gateway software versions and upcoming deprecation dates.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (3.7.552.0)
+&lt;li&gt;EC2 (3.7.553.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for EC2 Capacity Blocks in Local Zones.&lt;/li&gt;
+&lt;li&gt;Add c8id, m8id and hpc8a instance types.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ECR (3.7.508.0)
+&lt;li&gt;ECS (3.7.510.0)
 &lt;ul&gt;
-&lt;li&gt;Update repository name regex to comply with OCI Distribution Specification&lt;/li&gt;
+&lt;li&gt;Adding support for Capacity Reservations for ECS Managed Instances by introducing a new "capacityOptionType" value of "RESERVED" and new field "capacityReservations" for CreateCapacityProvider and UpdateCapacityProvider APIs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Neptune (3.7.504.0)
+&lt;li&gt;MarketplaceEntitlementService (3.7.504.0)
 &lt;ul&gt;
-&lt;li&gt;Neptune global clusters now supports tags&lt;/li&gt;
+&lt;li&gt;Added License Arn as a new optional filter for GetEntitlements and LicenseArn field in each entitlement in the response.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;WAFV2 (3.7.505.0)
+&lt;li&gt;SecurityHub (3.7.507.0)
 &lt;ul&gt;
-&lt;li&gt;AWS WAF now supports GetTopPathStatisticsByTraffic that provides aggregated statistics on the top URI paths accessed by bot traffic. Use this operation to see which paths receive the most bot traffic, identify the specific bots accessing them, and filter by category, organization, or bot name.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 3.7.500.85
-&lt;ul&gt;
-&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Security Hub added EXTENDED PLAN integration type to DescribeProductsV2 and added metadata.product.vendor name GroupBy support to GetFindingStatisticsV2&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -99,143 +93,53 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-02-25</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-02-25</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-02-26</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-02-26</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-02-26T00:09:22Z</updated>
+    <updated>2026-02-27T00:11:29Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CertificateRegistration_1.0.0-beta.1"&gt;Azure.ResourceManager.CertificateRegistration_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.ContentUnderstanding_1.0.0"&gt;Azure.AI.ContentUnderstanding_1.0.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-02-14)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;p&gt;This package follows the &lt;a href="https://azure.github.io/azure-sdk/general_introduction.html" rel="nofollow"&gt;new Azure SDK guidelines&lt;/a&gt;, and provides many core capabilities:&lt;/p&gt;
-&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
-- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
-- HTTP pipeline with custom policies.
-- Better error-handling.
-- Support uniform telemetry across all languages."&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
-- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
-- HTTP pipeline with custom policies.
-- Better error-handling.
-- Support uniform telemetry across all languages.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This package is a Public Preview version, so expect incompatible changes in subsequent releases as we improve the product. To provide feedback, submit an issue in our &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues"&gt;Azure SDK for .NET GitHub repo&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;NOTE: For more information about unified authentication, please refer to &lt;a href="https://learn.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet" rel="nofollow"&gt;Microsoft Azure Identity documentation for .NET&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ElasticSan_1.2.0"&gt;Azure.ResourceManager.ElasticSan_1.2.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0 (2026-02-27)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0 (2026-02-11)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded api-version tag from 'package-preview-2024-07' to 'package-2025-09'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/2daa450f8eaef939165415ce90178334568eacfd/specification/elasticsan/resource-manager/Microsoft.ElasticSan/ElasticSan/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/2daa450f8eaef939165415ce90178334568eacfd/specification/elasticsan/resource-manager/Microsoft.ElasticSan/ElasticSan/readme.md&lt;/a&gt;.
-&lt;ul&gt;
-&lt;li&gt;Supported prebackup and prerestore for ElasticSan.&lt;/li&gt;
-&lt;li&gt;Supported auto scale policy for ElasticSan.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects_2.0.0-beta.1"&gt;Azure.AI.Projects_2.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;2.0.0-beta.1 (2026-02-24)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated for full &lt;code&gt;net10&lt;/code&gt; framework compatibility, including removal of &lt;code&gt;&amp;lt;EnablePreviewFeatures&amp;gt;&lt;/code&gt; flagging.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Transitive from Azure.AI.Projects.OpenAI&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;ImageBasedHostedAgentDefinition&lt;/code&gt; has been merged into &lt;code&gt;HostedAgentDefinition&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Image&lt;/code&gt; is now an optional property on &lt;code&gt;HostedAgentDefinition&lt;/code&gt;; no other net change&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;Tracing: gen_ai.system.instructions event changed to gen_ai.system_instructions attribute.&lt;/li&gt;
-&lt;li&gt;Tracing: provider name change from "azure.ai.agents" to "microsoft.foundry".&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Sample Updates&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added Evaluation sample.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Known Issues&lt;/h3&gt;
-&lt;p&gt;At the time of release, the following operation areas do not yet support the latest API version and will fail. Please temporarily use the previous library version until the new v1 operations are available.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Computer use tool&lt;/li&gt;
-&lt;li&gt;Fine tuning&lt;/li&gt;
-&lt;li&gt;Red teams&lt;/li&gt;
-&lt;li&gt;Evaluation&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects.OpenAI_2.0.0-beta.1"&gt;Azure.AI.Projects.OpenAI_2.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;2.0.0-beta.1 (2026-02-24)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated for full &lt;code&gt;net10&lt;/code&gt; framework compatibility, including removal of &lt;code&gt;&amp;lt;EnablePreviewFeatures&amp;gt;&lt;/code&gt; flagging.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Sample Updates&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added Hosted Agent sample.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;To align with OpenAI naming conventions, use "Tool" suffix for class names describing Azure tools that are generally available (stable release):
-&lt;ul&gt;
-&lt;li&gt;Rename class &lt;code&gt;AzureAISearchAgentTool&lt;/code&gt; to &lt;code&gt;AzureAISearchTool&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Rename class &lt;code&gt;OpenApiAgentTool&lt;/code&gt; to &lt;code&gt;OpenAPITool&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Rename class &lt;code&gt;AzureFunctionAgentTool&lt;/code&gt; to &lt;code&gt;AzureFunctionTool&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Rename class &lt;code&gt;BingGroundingAgentTool&lt;/code&gt; to &lt;code&gt;BingGroundingTool&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;To align with OpenAI naming conventions, use "PreviewTool" suffix for class names descirbing Azure tools in preview:
-&lt;ul&gt;
-&lt;li&gt;Rename class &lt;code&gt;MicrosoftFabricAgentTool&lt;/code&gt; to &lt;code&gt;MicrosoftFabricPreviewTool&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Rename class &lt;code&gt;MemorySearchTool&lt;/code&gt; to &lt;code&gt;MemorySearchPreviewTool&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Rename class &lt;code&gt;SharepointAgentTool&lt;/code&gt; to &lt;code&gt;SharepointPreviewTool&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Rename class &lt;code&gt;BingCustomSearchAgentTool&lt;/code&gt; to &lt;code&gt;BingCustomSearchPreviewTool&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Rename class &lt;code&gt;BrowserAutomationAgentTool&lt;/code&gt; to &lt;code&gt;BrowserAutomationPreviewTool&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Rename class &lt;code&gt;A2ATool&lt;/code&gt; to &lt;code&gt;A2APreviewTool&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Removed class &lt;code&gt;LocalShellAgentTool&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ImageBasedHostedAgentDefinition&lt;/code&gt; has been merged into &lt;code&gt;HostedAgentDefinition&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Image&lt;/code&gt; is now an optional property on &lt;code&gt;HostedAgentDefinition&lt;/code&gt;; no other net change&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Secrets_4.9.0"&gt;Azure.Security.KeyVault.Secrets_4.9.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;4.9.0 (2026-02-25)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;SecretClientSettings&lt;/code&gt; to support creating a &lt;code&gt;SecretClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;outContentType&lt;/code&gt; query parameter to the &lt;code&gt;SecretClient.GetSecret&lt;/code&gt; and &lt;code&gt;SecretClient.GetSecretAsync&lt;/code&gt; to specify the format in which the certificate will be returned.&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;previousVersion&lt;/code&gt; property to &lt;code&gt;SecretProperties&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;GA release of Azure AI Content Understanding client library for .NET&lt;/li&gt;
+&lt;li&gt;Each &lt;code&gt;ContentField&lt;/code&gt; subclass now exposes a strongly-typed &lt;code&gt;Value&lt;/code&gt; property (e.g., &lt;code&gt;ContentStringField.Value&lt;/code&gt; returns &lt;code&gt;string?&lt;/code&gt;, &lt;code&gt;ContentNumberField.Value&lt;/code&gt; returns &lt;code&gt;double?&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ContentSource&lt;/code&gt; hierarchy (&lt;code&gt;DocumentSource&lt;/code&gt;, &lt;code&gt;AudioVisualSource&lt;/code&gt;) for strongly-typed parsing of grounding source strings on &lt;code&gt;ContentField&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ContentRange&lt;/code&gt; value type with static factory methods (&lt;code&gt;Page&lt;/code&gt;, &lt;code&gt;Pages&lt;/code&gt;, &lt;code&gt;TimeRange&lt;/code&gt;, etc.) for specifying content ranges on &lt;code&gt;AnalysisInput&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added convenience methods and indexers on &lt;code&gt;ContentArrayField&lt;/code&gt; and &lt;code&gt;ContentObjectField&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added support for &lt;code&gt;clientRequestId&lt;/code&gt; parameter in &lt;code&gt;Analyze&lt;/code&gt; and &lt;code&gt;AnalyzeBinary&lt;/code&gt; operations&lt;/li&gt;
+&lt;li&gt;Updated to service API version &lt;code&gt;2025-11-01&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;p&gt;The following API changes were made from the preview SDK (&lt;code&gt;1.0.0-beta.1&lt;/code&gt;) to the GA SDK to align with &lt;a href="https://azure.github.io/azure-sdk/dotnet_introduction.html" rel="nofollow"&gt;Azure SDK for .NET design guidelines&lt;/a&gt;:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The default service version is now &lt;code&gt;2025-07-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Type renames:&lt;/strong&gt; &lt;code&gt;AnalyzeInput&lt;/code&gt; → &lt;code&gt;AnalysisInput&lt;/code&gt;, &lt;code&gt;AnalyzeResult&lt;/code&gt; → &lt;code&gt;AnalysisResult&lt;/code&gt;, &lt;code&gt;MediaContent&lt;/code&gt; → &lt;code&gt;AnalysisContent&lt;/code&gt;, &lt;code&gt;DateField&lt;/code&gt; → &lt;code&gt;ContentDateTimeOffsetField&lt;/code&gt;, and all field subtypes prefixed with &lt;code&gt;Content&lt;/code&gt; (e.g., &lt;code&gt;StringField&lt;/code&gt; → &lt;code&gt;ContentStringField&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Property renames:&lt;/strong&gt; &lt;code&gt;AnalysisInput.Url&lt;/code&gt; → &lt;code&gt;Uri&lt;/code&gt;, &lt;code&gt;ContentAnalyzer.DynamicFieldSchema&lt;/code&gt; → &lt;code&gt;HasDynamicFieldSchema&lt;/code&gt;, &lt;code&gt;ContentAnalyzerConfig.ReturnDetails&lt;/code&gt; → &lt;code&gt;ShouldReturnDetails&lt;/code&gt;, &lt;code&gt;ContentAnalyzerConfig.OmitContent&lt;/code&gt; → &lt;code&gt;ShouldOmitContent&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Field value properties:&lt;/strong&gt; All &lt;code&gt;ContentField&lt;/code&gt; subclasses use a unified &lt;code&gt;Value&lt;/code&gt; property instead of type-specific properties (&lt;code&gt;ValueString&lt;/code&gt;, &lt;code&gt;ValueNumber&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Method signatures:&lt;/strong&gt; &lt;code&gt;Analyze&lt;/code&gt;/&lt;code&gt;AnalyzeAsync&lt;/code&gt; &lt;code&gt;inputs&lt;/code&gt; parameter is now required; &lt;code&gt;AnalyzeBinary&lt;/code&gt;/&lt;code&gt;AnalyzeBinaryAsync&lt;/code&gt; parameter order changed&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity_1.18.0"&gt;Azure.Identity_1.18.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.18.0 (2026-02-25)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Added experimental &lt;code&gt;Microsoft.Extensions.Configuration&lt;/code&gt; and &lt;code&gt;Microsoft.Extensions.DependencyInjection&lt;/code&gt; integration for Azure SDK clients. For details, see the &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/release/Azure.Identity_1.18.0/sdk/core/Azure.Core/src/docs/ConfigurationAndDependencyInjection.md"&gt;Configuration and Dependency Injection&lt;/a&gt; documentation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;WorkloadIdentityCredentialOptions.IsAzureProxyEnabled&lt;/code&gt; property, which enables Azure Kubernetes token proxy mode, is only available in beta releases of this package.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;AzureDeveloperCliCredential&lt;/code&gt; now parses JSON error output from &lt;code&gt;azd auth token&lt;/code&gt; to extract clean error messages instead of including raw JSON in exceptions. Error messages like &lt;code&gt;{"type":"consoleMessage","data":{"message":"ERROR: fetching token: ..."}}&lt;/code&gt; are now displayed as &lt;code&gt;ERROR: fetching token: ...&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -244,274 +148,23 @@
             </content>
   </entry>
   <entry>
-    <title>CommunityToolkit/Maui - Releases - 2026-02-25</title>
-    <id>https://github.com/CommunityToolkit/Maui#2026-02-25</id>
-    <link href="https://github.com/CommunityToolkit/Maui" />
-    <updated>2026-02-26T00:09:23Z</updated>
+    <title>dotnet/aspire - Releases - 2026-02-26</title>
+    <id>https://github.com/dotnet/aspire#2026-02-26</id>
+    <link href="https://github.com/dotnet/aspire" />
+    <updated>2026-02-27T00:11:33Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/8.0.1-mediaelement"&gt;MediaElement v8.0.0: Fix Android Foreground Service Bug&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;CommunityToolkit.Maui.MediaElement v8.0.1&lt;/h2&gt;
-&lt;p&gt;This release fixes a bug when opting-out of the Android Foreground Service.&lt;/p&gt;
-&lt;h2&gt;Initializing MediaElement&lt;/h2&gt;
-&lt;h3&gt;Opt-In to Android Foreground Service&lt;/h3&gt;
-&lt;p&gt;To use &lt;code&gt;MediaElement&lt;/code&gt; &lt;strong&gt;with&lt;/strong&gt; Background Playback and/or Rich Media Notifications, opt-in to the Android Foreground Service when initializing &lt;code&gt;CommunityToolkit.Maui.MediaElement&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content=".UseMauiCommunityToolkitMediaElement(isAndroidForegroundServiceEnabled: true, static options =&amp;gt;
-{
-    options.SetDefaultAndroidViewType(AndroidViewType.TextureView);
-})"&gt;&lt;pre&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;UseMauiCommunityToolkitMediaElement&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s1"&gt;isAndroidForegroundServiceEnabled&lt;/span&gt;&lt;span class="pl-c1"&gt;:&lt;/span&gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;&lt;span class="pl-kos"&gt;,&lt;/span&gt; &lt;span class="pl-k"&gt;static&lt;/span&gt; options &lt;span class="pl-c1"&gt;=&amp;gt;&lt;/span&gt;
-&lt;span class="pl-kos"&gt;{&lt;/span&gt;
-    &lt;span class="pl-s1"&gt;options&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;SetDefaultAndroidViewType&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s1"&gt;AndroidViewType&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;TextureView&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
-&lt;span class="pl-kos"&gt;}&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Opt-out of Android Foreground Service&lt;/h3&gt;
-&lt;p&gt;To use &lt;code&gt;MediaElement&lt;/code&gt; &lt;strong&gt;without&lt;/strong&gt; Background Playback and/or Rich Media Notifications, opt out of the Android Foreground Service when initializing &lt;code&gt;CommunityToolkit.Maui.MediaElement&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content=".UseMauiCommunityToolkitMediaElement(isAndroidForegroundServiceEnabled: false, static options =&amp;gt;
-{
-    options.SetDefaultAndroidViewType(AndroidViewType.TextureView);
-})"&gt;&lt;pre&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;UseMauiCommunityToolkitMediaElement&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s1"&gt;isAndroidForegroundServiceEnabled&lt;/span&gt;&lt;span class="pl-c1"&gt;:&lt;/span&gt; &lt;span class="pl-c1"&gt;false&lt;/span&gt;&lt;span class="pl-kos"&gt;,&lt;/span&gt; &lt;span class="pl-k"&gt;static&lt;/span&gt; options &lt;span class="pl-c1"&gt;=&amp;gt;&lt;/span&gt;
-&lt;span class="pl-kos"&gt;{&lt;/span&gt;
-    &lt;span class="pl-s1"&gt;options&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;SetDefaultAndroidViewType&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s1"&gt;AndroidViewType&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;TextureView&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
-&lt;span class="pl-kos"&gt;}&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix Android Services not being disabled when set by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ne0rrmatrix/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ne0rrmatrix"&gt;@ne0rrmatrix&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3957919508" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3104" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3104/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3104"&gt;#3104&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/6.0.0-camera...8.0.1-mediaelement"&gt;&lt;tt&gt;6.0.0-camera...8.0.1-mediaelement&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/14.0.1"&gt;14.0.1: Regression Bug Fixes&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;&lt;code&gt;CommunityToolkit.Maui v14.0.1&lt;/code&gt;&lt;/h2&gt;
-&lt;h3&gt;Bug Fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;NavigationBar&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;Add Support for &lt;code&gt;NavigationBar.SetColor(Color)&lt;/code&gt; on Android 35+&lt;/li&gt;
-&lt;li&gt;Fix duplicate values for &lt;code&gt;Color&lt;/code&gt; Attached Property&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Popup&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix duplicate instantiation of the ViewModel via &lt;code&gt;PopupService.ShowPopupAsync&amp;lt;T&amp;gt;&lt;/code&gt;'&lt;/li&gt;
-&lt;li&gt;Fix Padding regression introduced in v14.0.0&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;StateContainer&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix duplicate StateContainer ViewState bug&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BindableProperty Attribute
-&lt;ul&gt;
-&lt;li&gt;Resolve CS0436 Warning&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;DateTimeOffsetConverter&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;Use &lt;code&gt;TimeZoneInfo&lt;/code&gt; to calculate correct offset&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Microsoft.Maui.Controls Dependency
-&lt;ul&gt;
-&lt;li&gt;Increase dependency to &lt;code&gt;Microsoft.Maui.Controls v10.0.41&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Windows Apps
-&lt;ul&gt;
-&lt;li&gt;Downgrade &lt;code&gt;Microsoft.WindowsAppSDK&lt;/code&gt; to v1.8.260101001 from 2.0.0-experimental&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Add Support for &lt;code&gt;NavigationBar.SetColor(Color)&lt;/code&gt; on Android 35+ by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3874927165" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3057" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3057/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3057"&gt;#3057&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump Microsoft.Testing.Extensions.CodeCoverage from 18.3.2 to 18.4.1 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3894826370" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3062" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3062/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3062"&gt;#3062&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Reorder popup/view model instantiation by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/bijington/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/bijington"&gt;@bijington&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3907506133" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3071" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3071/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3071"&gt;#3071&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Resolve CS0436 Warning caused by &lt;code&gt;[BindableProperty]&lt;/code&gt; and &lt;code&gt;[AttachedBindableProperty&amp;lt;T&amp;gt;]&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3911477681" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3073" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3073/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3073"&gt;#3073&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Downgrade Windows SDK by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/VladislavAntonyuk/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/VladislavAntonyuk"&gt;@VladislavAntonyuk&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3912654205" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3076" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3076/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3076"&gt;#3076&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix Popup Padding Regression Introduced in v14.0.0 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3911693053" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3074" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3074/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3074"&gt;#3074&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix DateTimeOffset Converter &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2916661887" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/2582" data-hovercard-type="issue" data-hovercard-url="/CommunityToolkit/Maui/issues/2582/hovercard" href="https://github.com/CommunityToolkit/Maui/issues/2582"&gt;#2582&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/VladislavAntonyuk/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/VladislavAntonyuk"&gt;@VladislavAntonyuk&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3912718225" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3077" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3077/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3077"&gt;#3077&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump Microsoft.Extensions.Http.Resilience from 10.2.0 to 10.3.0 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3924864614" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3086" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3086/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3086"&gt;#3086&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump Microsoft.Extensions.Logging.Debug from 10.0.2 to 10.0.3 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3924867011" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3087" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3087/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3087"&gt;#3087&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump System.Formats.Asn1 from 10.0.2 to 10.0.3 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3924868947" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3088" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3088/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3088"&gt;#3088&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix duplicate state container view states by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3939582356" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3095" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3095/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3095"&gt;#3095&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Increase &lt;code&gt;Microsoft.Maui.Controls&lt;/code&gt; Dependency to v10.0.41 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3961131477" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3107" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3107/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3107"&gt;#3107&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/14.0.0...14.0.1"&gt;&lt;tt&gt;14.0.0...14.0.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>googleapis/google-cloud-dotnet - Releases - 2026-02-25</title>
-    <id>https://github.com/googleapis/google-cloud-dotnet#2026-02-25</id>
-    <link href="https://github.com/googleapis/google-cloud-dotnet" />
-    <updated>2026-02-26T00:09:32Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.HypercomputeCluster.V1-1.0.0-beta01"&gt;Google.Cloud.HypercomputeCluster.V1 version 1.0.0-beta01&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Initial generation for Google.Cloud.HypercomputeCluster.V1&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.AIPlatform.V1-3.66.0"&gt;Google.Cloud.AIPlatform.V1 version 3.66.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add transcription fields to Session Service&lt;/li&gt;
-&lt;li&gt;Add v1 API version for Session Service&lt;/li&gt;
-&lt;li&gt;Add image_spec to Reasoning Engine public protos&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;A comment for field &lt;code&gt;expire_time&lt;/code&gt; in message &lt;code&gt;.google.cloud.aiplatform.v1beta1.Session&lt;/code&gt; is changed&lt;/li&gt;
-&lt;li&gt;A comment for field &lt;code&gt;ttl&lt;/code&gt; in message &lt;code&gt;.google.cloud.aiplatform.v1beta1.Session&lt;/code&gt; is changed&lt;/li&gt;
-&lt;li&gt;A comment for field &lt;code&gt;filter&lt;/code&gt; in message &lt;code&gt;.google.cloud.aiplatform.v1beta1.ListSessionsRequest&lt;/code&gt; is changed&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.AIPlatform.V1Beta1-1.0.0-beta70"&gt;Google.Cloud.AIPlatform.V1Beta1 version 1.0.0-beta70&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add transcription fields to Session Service&lt;/li&gt;
-&lt;li&gt;Add v1 API version for Session Service&lt;/li&gt;
-&lt;li&gt;Add image_spec to Reasoning Engine public protos&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;A comment for field &lt;code&gt;expire_time&lt;/code&gt; in message &lt;code&gt;.google.cloud.aiplatform.v1beta1.Session&lt;/code&gt; is changed&lt;/li&gt;
-&lt;li&gt;A comment for field &lt;code&gt;ttl&lt;/code&gt; in message &lt;code&gt;.google.cloud.aiplatform.v1beta1.Session&lt;/code&gt; is changed&lt;/li&gt;
-&lt;li&gt;A comment for field &lt;code&gt;filter&lt;/code&gt; in message &lt;code&gt;.google.cloud.aiplatform.v1beta1.ListSessionsRequest&lt;/code&gt; is changed&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Ads.DataManager.V1-1.0.0-beta04"&gt;Google.Ads.DataManager.V1 version 1.0.0-beta04&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add &lt;code&gt;UserListService&lt;/code&gt; for creating and managing user lists&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;UserListDirectLicenseService&lt;/code&gt; for creating and managing direct user list licenses&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;UserListGlobalLicenseService&lt;/code&gt; for creating and managing global user list licenses&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;MarketingDataInsightsService&lt;/code&gt; for retrieving marketing data insights for a given user list&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;PartnerLinkService&lt;/code&gt; for creating and managing links between advertiser and data partner accounts&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;UserList&lt;/code&gt; resource&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;UserListDirectLicense&lt;/code&gt; resource&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;UserListGlobalLicense&lt;/code&gt; resource&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;UserListGlobalLicenseCustomerInfo&lt;/code&gt; resource&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;PartnerLink&lt;/code&gt; resource&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;UserIdData&lt;/code&gt; to &lt;code&gt;AudienceMember&lt;/code&gt; to support User ID in audience member ingestion&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;PpidData&lt;/code&gt; to &lt;code&gt;AudienceMember&lt;/code&gt; to support Publisher Provided ID (PPID) in audience member ingestion&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;IngestUserIdDataStatus&lt;/code&gt; to &lt;code&gt;IngestAudienceMembersStatus&lt;/code&gt; to report the status of user ID data ingestion&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;IngestPpidDataStatus&lt;/code&gt; to &lt;code&gt;IngestAudienceMembersStatus&lt;/code&gt; to report the status of PPID data ingestion&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;RemoveUserIdDataStatus&lt;/code&gt; to &lt;code&gt;RemoveAudienceMembersStatus&lt;/code&gt; to report the status of user ID data removal&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;RemovePpidDataStatus&lt;/code&gt; to &lt;code&gt;RemoveAudienceMembersStatus&lt;/code&gt; to report the status of PPID data removal&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;GOOGLE_AD_MANAGER_AUDIENCE_LINK&lt;/code&gt; to the &lt;code&gt;AccountType&lt;/code&gt; enum&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;AgeRange&lt;/code&gt; and &lt;code&gt;Gender&lt;/code&gt; enums to support demographic breakdown in marketing insights&lt;/li&gt;
-&lt;li&gt;Add new &lt;code&gt;ErrorReason&lt;/code&gt; values for licensing, user list operations, and permission checks&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bug fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Changed &lt;code&gt;conversion_value&lt;/code&gt; field to be optional in message &lt;code&gt;Event&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add comments to resources and methods to clarify which are available only to data partners&lt;/li&gt;
-&lt;li&gt;A comment for enum &lt;code&gt;ErrorReason&lt;/code&gt; is changed to clarify that it is subject to future additions&lt;/li&gt;
-&lt;li&gt;A comment for field &lt;code&gt;pair_data&lt;/code&gt; in message &lt;code&gt;AudienceMember&lt;/code&gt; is changed to clarify it is only available to data partners&lt;/li&gt;
-&lt;li&gt;A comment for message &lt;code&gt;PairData&lt;/code&gt; is changed to clarify it is only available to data partners&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.DeveloperConnect.V1-1.0.0-beta04"&gt;Google.Cloud.DeveloperConnect.V1 version 1.0.0-beta04&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add Secure Source Manager and Generic HTTP Endpoint connection types&lt;/li&gt;
-&lt;li&gt;Add OAuth flow RPCs (StartOAuth, FinishOAuth)&lt;/li&gt;
-&lt;li&gt;Add Gemini Code Assist GitHub App type&lt;/li&gt;
-&lt;li&gt;Add HTTP Proxy base URI field&lt;/li&gt;
-&lt;li&gt;Add Deployment Events to Insights API (GetDeploymentEvent, ListDeploymentEvents)&lt;/li&gt;
-&lt;li&gt;Add Cloud Run and App Hub Service runtimes to InsightsConfig&lt;/li&gt;
-&lt;li&gt;Add Projects field to InsightsConfig for project tracking&lt;/li&gt;
-&lt;li&gt;A new message &lt;code&gt;google.cloud.developerconnect.v1.GenericHTTPEndpointConfig&lt;/code&gt; is added&lt;/li&gt;
-&lt;li&gt;A new message &lt;code&gt;google.cloud.developerconnect.v1.SecureSourceManagerInstanceConfig&lt;/code&gt; is added&lt;/li&gt;
-&lt;li&gt;A new message &lt;code&gt;google.cloud.developerconnect.v1.StartOAuthRequest&lt;/code&gt; is added&lt;/li&gt;
-&lt;li&gt;A new message &lt;code&gt;google.cloud.developerconnect.v1.StartOAuthResponse&lt;/code&gt; is added&lt;/li&gt;
-&lt;li&gt;A new message &lt;code&gt;google.cloud.developerconnect.v1.FinishOAuthRequest&lt;/code&gt; is added&lt;/li&gt;
-&lt;li&gt;A new message &lt;code&gt;google.cloud.developerconnect.v1.FinishOAuthResponse&lt;/code&gt; is added&lt;/li&gt;
-&lt;li&gt;A new message &lt;code&gt;google.cloud.developerconnect.v1.insights.Projects&lt;/code&gt; is added&lt;/li&gt;
-&lt;li&gt;A new message &lt;code&gt;google.cloud.developerconnect.v1.insights.GoogleCloudRun&lt;/code&gt; is added&lt;/li&gt;
-&lt;li&gt;A new message &lt;code&gt;google.cloud.developerconnect.v1.insights.AppHubService&lt;/code&gt; is added&lt;/li&gt;
-&lt;li&gt;A new message &lt;code&gt;google.cloud.developerconnect.v1.insights.DeploymentEvent&lt;/code&gt; is added&lt;/li&gt;
-&lt;li&gt;A new message &lt;code&gt;google.cloud.developerconnect.v1.insights.GetDeploymentEventRequest&lt;/code&gt; is added&lt;/li&gt;
-&lt;li&gt;A new message &lt;code&gt;google.cloud.developerconnect.v1.insights.ListDeploymentEventsRequest&lt;/code&gt; is added&lt;/li&gt;
-&lt;li&gt;A new message &lt;code&gt;google.cloud.developerconnect.v1.insights.ListDeploymentEventsResponse&lt;/code&gt; is added&lt;/li&gt;
-&lt;li&gt;A new message &lt;code&gt;google.cloud.developerconnect.v1.insights.ArtifactDeployment&lt;/code&gt; is added&lt;/li&gt;
-&lt;li&gt;A new field &lt;code&gt;secure_source_manager_instance_config&lt;/code&gt; is added to message &lt;code&gt;google.cloud.developerconnect.v1.Connection&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;A new field &lt;code&gt;http_config&lt;/code&gt; is added to message &lt;code&gt;google.cloud.developerconnect.v1.Connection&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;A new field &lt;code&gt;http_proxy_base_uri&lt;/code&gt; is added to message &lt;code&gt;google.cloud.developerconnect.v1.HTTPProxyConfig&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;A new enum value &lt;code&gt;GEMINI_CODE_ASSIST&lt;/code&gt; is added to enum &lt;code&gt;google.cloud.developerconnect.v1.GitHubConfig.GitHubApp&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;A new field &lt;code&gt;organization&lt;/code&gt; is added to message &lt;code&gt;google.cloud.developerconnect.v1.GitHubEnterpriseConfig&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;A new field &lt;code&gt;projects&lt;/code&gt; is added to message &lt;code&gt;google.cloud.developerconnect.v1.insights.InsightsConfig&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;A new field &lt;code&gt;google_cloud_run&lt;/code&gt; is added to message &lt;code&gt;google.cloud.developerconnect.v1.insights.RuntimeConfig&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;A new field &lt;code&gt;app_hub_service&lt;/code&gt; is added to message &lt;code&gt;google.cloud.developerconnect.v1.insights.RuntimeConfig&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated comments to include regional secret patterns for SecretManager fields in &lt;code&gt;GitHubConfig&lt;/code&gt;, &lt;code&gt;OAuthCredential&lt;/code&gt;, &lt;code&gt;UserCredential&lt;/code&gt;, &lt;code&gt;GitLabConfig&lt;/code&gt;, &lt;code&gt;GitLabEnterpriseConfig&lt;/code&gt;, &lt;code&gt;BitbucketDataCenterConfig&lt;/code&gt;, and &lt;code&gt;BitbucketCloudConfig&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Updated comment for &lt;code&gt;CreateGitRepositoryLink&lt;/code&gt; RPC in &lt;code&gt;google.cloud.developerconnect.v1.DeveloperConnect&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Updated description for &lt;code&gt;google.cloud.location.Locations.ListLocations&lt;/code&gt; in YAML&lt;/li&gt;
-&lt;li&gt;Corrected typos in comments for &lt;code&gt;google.cloud.developerconnect.v1.insights.InsightsConfig&lt;/code&gt; and &lt;code&gt;google.cloud.developerconnect.v1.insights.ArtifactConfig&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>StackExchange/StackExchange.Redis - Releases - 2026-02-25</title>
-    <id>https://github.com/StackExchange/StackExchange.Redis#2026-02-25</id>
-    <link href="https://github.com/StackExchange/StackExchange.Redis" />
-    <updated>2026-02-26T00:09:42Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/2.11.8"&gt;2.11.8&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/aspire/releases/tag/v13.1.2"&gt;Aspire 13.1.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;h2&gt;What's Changed&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Handle &lt;code&gt;-MOVED&lt;/code&gt; error pointing to same endpoint. by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/barshaul/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/barshaul"&gt;@barshaul&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3891007707" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3003" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3003/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3003"&gt;#3003&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;fix time conversion error in &lt;code&gt;HOTKEYS&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3983946981" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3017" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3017/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3017"&gt;#3017&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;(engineering) stabilize &lt;code&gt;-MOVED&lt;/code&gt; test by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3988707257" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3020" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3020/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3020"&gt;#3020&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump patch version from 13.1.1 to 13.1.2 by @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3992240272" data-permission-text="Title is private" data-url="https://github.com/dotnet/aspire/issues/14699" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/aspire/pull/14699/hovercard" href="https://github.com/dotnet/aspire/pull/14699"&gt;#14699&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[release/13.1] Fix template version parsing for .NET 10.0 SDK separator change by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3992225467" data-permission-text="Title is private" data-url="https://github.com/dotnet/aspire/issues/14698" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/aspire/pull/14698/hovercard" href="https://github.com/dotnet/aspire/pull/14698"&gt;#14698&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update pipeline images to non-deprecated pools by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/joperezr/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/joperezr"&gt;@joperezr&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3992624816" data-permission-text="Title is private" data-url="https://github.com/dotnet/aspire/issues/14707" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/aspire/pull/14707/hovercard" href="https://github.com/dotnet/aspire/pull/14707"&gt;#14707&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;New Contributors&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/barshaul/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/barshaul"&gt;@barshaul&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3891007707" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3003" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3003/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3003"&gt;#3003&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/2.11.3...2.11.8"&gt;&lt;tt&gt;2.11.3...2.11.8&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/dotnet/aspire/compare/v13.1.1...v13.1.2"&gt;&lt;tt&gt;v13.1.1...v13.1.2&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
