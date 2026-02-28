@@ -1,56 +1,184 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-02-27T00:11:29Z</updated>
+  <updated>2026-02-28T00:08:25Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-02-26</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-02-26</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-02-27</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-02-27</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-02-27T00:11:29Z</updated>
+    <updated>2026-02-28T00:08:25Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.ContentUnderstanding_1.0.0"&gt;Azure.AI.ContentUnderstanding_1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Data.AppConfiguration_1.9.0"&gt;Azure.Data.AppConfiguration_1.9.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0 (2026-02-11)&lt;/h2&gt;
+                                &lt;h2&gt;1.9.0 (2026-02-27)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;GA release of Azure AI Content Understanding client library for .NET&lt;/li&gt;
-&lt;li&gt;Each &lt;code&gt;ContentField&lt;/code&gt; subclass now exposes a strongly-typed &lt;code&gt;Value&lt;/code&gt; property (e.g., &lt;code&gt;ContentStringField.Value&lt;/code&gt; returns &lt;code&gt;string?&lt;/code&gt;, &lt;code&gt;ContentNumberField.Value&lt;/code&gt; returns &lt;code&gt;double?&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ContentSource&lt;/code&gt; hierarchy (&lt;code&gt;DocumentSource&lt;/code&gt;, &lt;code&gt;AudioVisualSource&lt;/code&gt;) for strongly-typed parsing of grounding source strings on &lt;code&gt;ContentField&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ContentRange&lt;/code&gt; value type with static factory methods (&lt;code&gt;Page&lt;/code&gt;, &lt;code&gt;Pages&lt;/code&gt;, &lt;code&gt;TimeRange&lt;/code&gt;, etc.) for specifying content ranges on &lt;code&gt;AnalysisInput&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Added convenience methods and indexers on &lt;code&gt;ContentArrayField&lt;/code&gt; and &lt;code&gt;ContentObjectField&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Added support for &lt;code&gt;clientRequestId&lt;/code&gt; parameter in &lt;code&gt;Analyze&lt;/code&gt; and &lt;code&gt;AnalyzeBinary&lt;/code&gt; operations&lt;/li&gt;
-&lt;li&gt;Updated to service API version &lt;code&gt;2025-11-01&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;p&gt;The following API changes were made from the preview SDK (&lt;code&gt;1.0.0-beta.1&lt;/code&gt;) to the GA SDK to align with &lt;a href="https://azure.github.io/azure-sdk/dotnet_introduction.html" rel="nofollow"&gt;Azure SDK for .NET design guidelines&lt;/a&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Type renames:&lt;/strong&gt; &lt;code&gt;AnalyzeInput&lt;/code&gt; → &lt;code&gt;AnalysisInput&lt;/code&gt;, &lt;code&gt;AnalyzeResult&lt;/code&gt; → &lt;code&gt;AnalysisResult&lt;/code&gt;, &lt;code&gt;MediaContent&lt;/code&gt; → &lt;code&gt;AnalysisContent&lt;/code&gt;, &lt;code&gt;DateField&lt;/code&gt; → &lt;code&gt;ContentDateTimeOffsetField&lt;/code&gt;, and all field subtypes prefixed with &lt;code&gt;Content&lt;/code&gt; (e.g., &lt;code&gt;StringField&lt;/code&gt; → &lt;code&gt;ContentStringField&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Property renames:&lt;/strong&gt; &lt;code&gt;AnalysisInput.Url&lt;/code&gt; → &lt;code&gt;Uri&lt;/code&gt;, &lt;code&gt;ContentAnalyzer.DynamicFieldSchema&lt;/code&gt; → &lt;code&gt;HasDynamicFieldSchema&lt;/code&gt;, &lt;code&gt;ContentAnalyzerConfig.ReturnDetails&lt;/code&gt; → &lt;code&gt;ShouldReturnDetails&lt;/code&gt;, &lt;code&gt;ContentAnalyzerConfig.OmitContent&lt;/code&gt; → &lt;code&gt;ShouldOmitContent&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Field value properties:&lt;/strong&gt; All &lt;code&gt;ContentField&lt;/code&gt; subclasses use a unified &lt;code&gt;Value&lt;/code&gt; property instead of type-specific properties (&lt;code&gt;ValueString&lt;/code&gt;, &lt;code&gt;ValueNumber&lt;/code&gt;, etc.)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Method signatures:&lt;/strong&gt; &lt;code&gt;Analyze&lt;/code&gt;/&lt;code&gt;AnalyzeAsync&lt;/code&gt; &lt;code&gt;inputs&lt;/code&gt; parameter is now required; &lt;code&gt;AnalyzeBinary&lt;/code&gt;/&lt;code&gt;AnalyzeBinaryAsync&lt;/code&gt; parameter order changed&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ConfigurationClientSettings&lt;/code&gt; to support creating a &lt;code&gt;ConfigurationClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity_1.18.0"&gt;Azure.Identity_1.18.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.AppService_1.4.0-beta.1"&gt;Azure.Provisioning.AppService_1.4.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.18.0 (2026-02-25)&lt;/h2&gt;
+                                &lt;h2&gt;1.4.0-beta.1 (2026-02-27)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
+&lt;li&gt;Regenerated from the latest &lt;code&gt;Azure.ResourceManager.AppService&lt;/code&gt; package.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.PostgreSql_1.2.0-beta.1"&gt;Azure.Provisioning.PostgreSql_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0-beta.1 (2026-02-27)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Regenerated from updated &lt;code&gt;Azure.ResourceManager.PostgreSql&lt;/code&gt; 1.4.1 package, adding PostgreSQL versions 17 and 18 to &lt;code&gt;PostgreSqlFlexibleServerVersion&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.AppConfiguration_1.2.0-beta.1"&gt;Azure.Provisioning.AppConfiguration_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0-beta.1 (2026-02-27)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Regenerated from updated &lt;code&gt;Azure.ResourceManager.AppConfiguration&lt;/code&gt; 1.4.1 package.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.ApplicationInsights_1.2.0-beta.1"&gt;Azure.Provisioning.ApplicationInsights_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0-beta.1 (2026-02-27)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Regenerated from &lt;code&gt;Azure.ResourceManager.ApplicationInsights&lt;/code&gt; 1.0.1 package.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager_1.14.0"&gt;Azure.ResourceManager_1.14.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.14.0 (2026-02-26)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Bumped api-version of &lt;code&gt;ManagementGroup&lt;/code&gt; to &lt;code&gt;2023-04-01&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed &lt;code&gt;ArgumentNullException&lt;/code&gt; when deserializing &lt;code&gt;ManagedServiceIdentity&lt;/code&gt; with null or empty &lt;code&gt;type&lt;/code&gt; property value.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Batch_1.6.0"&gt;Azure.ResourceManager.Batch_1.6.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.6.0 (2026-02-26)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;p&gt;CMK support on Pools&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;BatchDiskCustomerManagedKey&lt;/code&gt; for customer-managed key (CMK) support on pools.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;CustomerManagedKey&lt;/code&gt; to &lt;code&gt;BatchDiskEncryptionConfiguration&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;DiskEncryptionSet&lt;/code&gt; to &lt;code&gt;ManagedDisk&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;DiskEncryptionSet&lt;/code&gt; to &lt;code&gt;BatchVmDiskSecurityProfile&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ManagedDisk&lt;/code&gt; to &lt;code&gt;BatchVmDataDisk&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;IPv6 support on Pools&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;BatchIPFamily&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;IPFamilies&lt;/code&gt; and &lt;code&gt;BatchIPTags&lt;/code&gt; to &lt;code&gt;BatchPublicIPAddressConfiguration&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Job level FIFO&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;BatchJobDefaultOrder&lt;/code&gt; model&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;BatchJobDefaultOrder&lt;/code&gt; to &lt;code&gt;BatchTaskSchedulingPolicy&lt;/code&gt; to support job-level FIFO scheduling.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;BatchTaskSchedulingPolicy&lt;/code&gt; to &lt;code&gt;BatchAccountPoolData&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Metadata Security Protocol Support on Pools&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;BatchHostEndpointSettings&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;BatchHostEndpointSettingsModeType&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;BatchProxyAgentSettings&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;BatchProxyAgentSettings&lt;/code&gt; to &lt;code&gt;BatchSecurityProfile&lt;/code&gt; for metadata security protocol support.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;p&gt;Removed Certificate Management APIs and Types:&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Added experimental &lt;code&gt;Microsoft.Extensions.Configuration&lt;/code&gt; and &lt;code&gt;Microsoft.Extensions.DependencyInjection&lt;/code&gt; integration for Azure SDK clients. For details, see the &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/release/Azure.Identity_1.18.0/sdk/core/Azure.Core/src/docs/ConfigurationAndDependencyInjection.md"&gt;Configuration and Dependency Injection&lt;/a&gt; documentation.&lt;/p&gt;
+&lt;p&gt;Removed Certificate API's:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed &lt;code&gt;batchAccount.GetBatchAccountCertificate&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;batchAccount.GetBatchAccountCertificateAsync&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;batchAccount.GetBatchAccountCertificates&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;batchAccount.GetBatchAccountCertificatesAsync&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;batchAccount.GetBatchAccountCertificateResource&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;batchAccount.GetBatchAccountCertificateResourceAsync&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;batchAccount.GetBatchAccountCertificates().CreateOrUpdate&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;batchAccount.GetBatchAccountCertificatesAsync().CreateOrUpdateAsync&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;batchAccountCertificate.Delete&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;batchAccountCertificate.DeleteAsync&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;batchAccountCertificate.CancelDeletion&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;batchAccountCertificate.CancelDeletionAsync&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;batchAccountCertificate.Update&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;batchAccountCertificate.UpdateAsync&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;The &lt;code&gt;WorkloadIdentityCredentialOptions.IsAzureProxyEnabled&lt;/code&gt; property, which enables Azure Kubernetes token proxy mode, is only available in beta releases of this package.&lt;/p&gt;
+&lt;p&gt;Removed Certificate Models:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed &lt;code&gt;BatchAccountCertificateData&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;BatchAccountCertificateCreateOrUpdateContent&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;BatchAccountCertificateCollection&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;BatchAccountCertificateData&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;BatchAccountCertificateResource&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;BatchAccountCertificateCreateOrUpdateContent&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;BatchAccountCertificateFormat&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;BatchAccountCertificateProvisioningState&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;BatchCertificateReference&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;BatchCertificateStoreLocation&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;BatchCertificateVisibility&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;AzureDeveloperCliCredential&lt;/code&gt; now parses JSON error output from &lt;code&gt;azd auth token&lt;/code&gt; to extract clean error messages instead of including raw JSON in exceptions. Error messages like &lt;code&gt;{"type":"consoleMessage","data":{"message":"ERROR: fetching token: ..."}}&lt;/code&gt; are now displayed as &lt;code&gt;ERROR: fetching token: ...&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Removed Certificate properties&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed &lt;code&gt;Certificates&lt;/code&gt; from &lt;code&gt;BatchAccountPoolData&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Removed/Changed Node Communication Mode:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed &lt;code&gt;NodeCommunicationMode&lt;/code&gt; and related types and fields from all models.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;CurrentNodeCommunicationMode&lt;/code&gt; from &lt;code&gt;BatchAccountPoolData&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;TargetNodeCommunicationMode&lt;/code&gt; from &lt;code&gt;BatchAccountPoolData&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Other Removals:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed &lt;code&gt;ApplicationLicenses&lt;/code&gt; from &lt;code&gt;BatchAccountPoolData&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;ResourceTags&lt;/code&gt; from &lt;code&gt;BatchAccountPoolData&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;StorageAccountType&lt;/code&gt; from &lt;code&gt;BatchVmDataDisk&lt;/code&gt;, use &lt;code&gt;ManagedDisk.StorageAccountType&lt;/code&gt; instead&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity.Broker_1.4.0"&gt;Azure.Identity.Broker_1.4.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.4.0 (2026-02-26)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added experimental &lt;code&gt;Microsoft.Extensions.Configuration&lt;/code&gt; and &lt;code&gt;Microsoft.Extensions.DependencyInjection&lt;/code&gt; integration for Azure SDK clients. For details, see the &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/src/docs/ConfigurationAndDependencyInjection.md"&gt;Configuration and Dependency Injection&lt;/a&gt; documentation.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
