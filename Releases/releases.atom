@@ -1,23 +1,195 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-03-02T00:09:55Z</updated>
+  <updated>2026-03-03T00:11:10Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-03-01</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-03-01</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-03-02</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-03-02</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-03-02T00:09:33Z</updated>
+    <updated>2026-03-03T00:10:52Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ManagedOps_1.0.0-beta.1"&gt;Azure.ResourceManager.ManagedOps_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.CodeTransparency_1.0.0-beta.8"&gt;Azure.Security.CodeTransparency_1.0.0-beta.8&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-03-02)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.8 (2026-03-02)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixes thread unsafe code in &lt;code&gt;VerifyTransparentStatement&lt;/code&gt;. The code reused sha256 instances across multiple threads, which caused exceptions to be thrown when multiple threads were verifying statements at the same time. The fix was to create new sha256 instances for each verification operation instead of reusing them.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.AppService_1.4.0-beta.2"&gt;Azure.Provisioning.AppService_1.4.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.4.0-beta.2 (2026-03-02)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added Microsoft.ManagedOps resource provider SDK&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;StaticSiteBasicAuthProperty.Name&lt;/code&gt; now defaults to &lt;code&gt;"default"&lt;/code&gt; and is read-only, matching the only accepted Bicep value.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SiteNetworkConfig.Name&lt;/code&gt; now defaults to &lt;code&gt;"virtualNetwork"&lt;/code&gt; and is read-only, matching the only accepted Bicep value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;StaticSiteBasicAuthProperty.Name&lt;/code&gt; is now read-only (setter removed). The property only accepts &lt;code&gt;"default"&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SiteNetworkConfig.Name&lt;/code&gt; is now read-only (setter removed). The property only accepts &lt;code&gt;"virtualNetwork"&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Removed generated enum &lt;code&gt;StaticSiteBasicAuthName&lt;/code&gt;. A backward-compatible version is preserved but hidden from IntelliSense.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed &lt;code&gt;SiteNetworkConfig.Name&lt;/code&gt; not having a default value (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/54629" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/54629/hovercard"&gt;#54629&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Kusto_1.0.0-beta.2"&gt;Azure.Provisioning.Kusto_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.2 (2026-03-02)&lt;/h2&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed generated enum &lt;code&gt;KustoDatabaseCallerRole&lt;/code&gt;. This type was not used by any public API.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.OperationalInsights_1.2.0-beta.1"&gt;Azure.Provisioning.OperationalInsights_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0-beta.1 (2026-03-02)&lt;/h2&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;OperationalInsightsLinkedStorageAccounts.DataSourceType&lt;/code&gt; is now read-only (output property).&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Sql_1.2.0-beta.1"&gt;Azure.Provisioning.Sql_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0-beta.1 (2026-03-02)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added new API version &lt;code&gt;2023-08-01&lt;/code&gt; to resource versions.&lt;/li&gt;
+&lt;li&gt;Enabled &lt;code&gt;ignorePropertiesWithoutPath&lt;/code&gt; to filter out properties without valid wire paths.&lt;/li&gt;
+&lt;li&gt;Made &lt;code&gt;SqlServerDatabaseReplicationLink.Name&lt;/code&gt; settable to match the Bicep resource schema.&lt;/li&gt;
+&lt;li&gt;36 singleton resources now have read-only &lt;code&gt;Name&lt;/code&gt; with correct default values matching Bicep requirements (e.g., &lt;code&gt;"default"&lt;/code&gt;, &lt;code&gt;"current"&lt;/code&gt;, &lt;code&gt;"Default"&lt;/code&gt;, &lt;code&gt;"ActiveDirectory"&lt;/code&gt;, &lt;code&gt;"allowPolybaseExport"&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;GeoBackupPolicy.State&lt;/code&gt; has been replaced by &lt;code&gt;GeoBackupPolicyState&lt;/code&gt;. The old property is preserved but hidden for backward compatibility.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SqlServerDatabaseReplicationLink.LinkId&lt;/code&gt; has been replaced by &lt;code&gt;Name&lt;/code&gt;. The old property is preserved but hidden for backward compatibility.&lt;/li&gt;
+&lt;li&gt;21 Name-related enum types (e.g., &lt;code&gt;BlobAuditingPolicyName&lt;/code&gt;, &lt;code&gt;TransparentDataEncryptionName&lt;/code&gt;, &lt;code&gt;EncryptionProtectorName&lt;/code&gt;) have been removed from the generated code. Backward-compatible versions are preserved but hidden from IntelliSense.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Name&lt;/code&gt; property on 36 singleton resources is now read-only (setter removed). These resources only accept a single fixed value for &lt;code&gt;Name&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.PostgreSql_1.2.0-beta.2"&gt;Azure.Provisioning.PostgreSql_1.2.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0-beta.2 (2026-03-02)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ServerThreatProtectionSettingsModel.Name&lt;/code&gt; now defaults to &lt;code&gt;"Default"&lt;/code&gt; and is read-only.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PostgreSqlServerSecurityAlertPolicy.Name&lt;/code&gt; now defaults to &lt;code&gt;"Default"&lt;/code&gt; and is read-only.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ServerThreatProtectionSettingsModel.Name&lt;/code&gt; is now read-only (setter removed). The property only accepts &lt;code&gt;"Default"&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PostgreSqlServerSecurityAlertPolicy.Name&lt;/code&gt; is now read-only (setter removed). The property only accepts &lt;code&gt;"Default"&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PostgreSqlFlexibleServerActiveDirectoryAdministrator.ObjectId&lt;/code&gt; type changed from &lt;code&gt;BicepValue&amp;lt;Guid&amp;gt;&lt;/code&gt; to &lt;code&gt;BicepValue&amp;lt;string&amp;gt;&lt;/code&gt; to match the service API.&lt;/li&gt;
+&lt;li&gt;Removed generated enums &lt;code&gt;PostgreSqlSecurityAlertPolicyName&lt;/code&gt; and &lt;code&gt;ThreatProtectionName&lt;/code&gt;. Backward-compatible versions are preserved but hidden from IntelliSense.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ServerThreatProtectionSettingsModel.ThreatProtectionName&lt;/code&gt; property is deprecated. Use &lt;code&gt;Name&lt;/code&gt; instead.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>googleapis/google-cloud-dotnet - Releases - 2026-03-02</title>
+    <id>https://github.com/googleapis/google-cloud-dotnet#2026-03-02</id>
+    <link href="https://github.com/googleapis/google-cloud-dotnet" />
+    <updated>2026-03-03T00:11:02Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Ces.V1Beta-1.0.0-beta01"&gt;Google.Cloud.Ces.V1Beta version 1.0.0-beta01&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial generation for Google.Cloud.Ces.V1Beta&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.VectorSearch.V1-1.0.0-beta02"&gt;Google.Cloud.VectorSearch.V1 version 1.0.0-beta02&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed obsolete field &lt;code&gt;vertex&lt;/code&gt; from message &lt;code&gt;.google.cloud.vectorsearch.v1.Ranker&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed obsolete message &lt;code&gt;VertexRanker&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.AuditManager.V1-1.0.0-beta03"&gt;Google.Cloud.AuditManager.V1 version 1.0.0-beta03&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update existing packaging option &lt;code&gt;cloud.google.com/go/auditmanager/apiv1/auditmanagerpb;auditmanagerpb&lt;/code&gt; for &lt;code&gt;go_package&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.VertexAI.Extensions-1.0.0-beta06"&gt;Google.Cloud.VertexAI.Extensions version 1.0.0-beta06&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix PredictionServiceChatClient to skip empty TextReasoningContent&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.StorageBatchOperations.V1-1.0.0-beta05"&gt;Google.Cloud.StorageBatchOperations.V1 version 1.0.0-beta05&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add new transformation &lt;code&gt;update_object_custom_context&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.NetworkManagement.V1-2.19.0"&gt;Google.Cloud.NetworkManagement.V1 version 2.19.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add API fields related to GKE Pods and Network Policies&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.AIPlatform.V1Beta1-1.0.0-beta71"&gt;Google.Cloud.AIPlatform.V1Beta1 version 1.0.0-beta71&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A new field &lt;code&gt;inference_generation_config&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.aiplatform.v1beta1.EvaluationConfig&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;evaluation_run&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.aiplatform.v1beta1.EvaluateDatasetRun&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Comment on &lt;code&gt;evaluate_dataset_response&lt;/code&gt; clarified&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
