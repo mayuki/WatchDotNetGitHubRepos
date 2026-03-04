@@ -1,108 +1,124 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-03-03T00:11:10Z</updated>
+  <updated>2026-03-04T00:10:22Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-03-02</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-03-02</id>
-    <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-03-03T00:10:52Z</updated>
+    <title>AutoMapper/AutoMapper - Releases - 2026-03-03</title>
+    <id>https://github.com/AutoMapper/AutoMapper#2026-03-03</id>
+    <link href="https://github.com/AutoMapper/AutoMapper" />
+    <updated>2026-03-04T00:09:54Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.CodeTransparency_1.0.0-beta.8"&gt;Azure.Security.CodeTransparency_1.0.0-beta.8&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/LuckyPennySoftware/AutoMapper/releases/tag/v16.1.0"&gt;v16.1.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.8 (2026-03-02)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixes thread unsafe code in &lt;code&gt;VerifyTransparentStatement&lt;/code&gt;. The code reused sha256 instances across multiple threads, which caused exceptions to be thrown when multiple threads were verifying statements at the same time. The fix was to create new sha256 instances for each verification operation instead of reusing them.&lt;/li&gt;
+&lt;li&gt;Add Debug and Release build configurations to slnx by @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3712388345" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4590" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4590/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4590"&gt;#4590&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Migrating to slnx by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3712358900" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4589" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4589/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4589"&gt;#4589&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Allow disabling of polymorphic LINQ mapping by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3819165442" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4596" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4596/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4596"&gt;#4596&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix duplicate BOM in ServiceCollectionExtensions.cs by @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3970103014" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4600" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4600/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4600"&gt;#4600&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix review feedback: double semicolon, DI condition integration test, docs example by @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3970183682" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4601" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4601/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4601"&gt;#4601&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Adding DI-enabled conditions and pre-conditions; updated docs accordi… by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3970018273" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4599" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4599/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4599"&gt;#4599&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Adding support for DI-enabled destination factories. by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3970739400" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4603" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4603/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4603"&gt;#4603&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Correctly converting nullables for MapAtRuntime; fixes &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3856075147" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4597" data-hovercard-type="issue" data-hovercard-url="/LuckyPennySoftware/AutoMapper/issues/4597/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/issues/4597"&gt;#4597&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3972358479" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4604" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4604/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4604"&gt;#4604&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Correctly handling consecutive uppercase characters; fixes &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3766272323" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4593" data-hovercard-type="issue" data-hovercard-url="/LuckyPennySoftware/AutoMapper/issues/4593/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/issues/4593"&gt;#4593&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3972517058" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4605" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4605/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4605"&gt;#4605&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Wrapping the exception to provide better feedback to the user; fixes … by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3972638931" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4606" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4606/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4606"&gt;#4606&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fixing bug around order of open generic registration by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3972991696" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4607" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4607/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4607"&gt;#4607&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Adding perpetual licensing by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3979121203" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4608" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4608/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4608"&gt;#4608&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;@Copilot made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3712388345" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4590" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4590/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4590"&gt;#4590&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/LuckyPennySoftware/AutoMapper/compare/v16.0.0...v16.1.0"&gt;&lt;tt&gt;v16.0.0...v16.1.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>aws/aws-sdk-net - Releases - 2026-03-03</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-03-03</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2026-03-04T00:09:55Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1234.0"&gt;3.7.1234.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;3.7.1234.0 (2026-03-03 19:53 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;BedrockAgentCoreControl (3.7.517.0)
+&lt;ul&gt;
+&lt;li&gt;Support for AgentCore Policy GA&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CloudWatchLogs (3.7.508.0)
+&lt;ul&gt;
+&lt;li&gt;CloudWatch Logs updates- Added support for the PutBearerTokenAuthentication API to enable or disable bearer token authentication on a log group. For more information, see CloudWatch Logs API documentation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DataZone (3.7.518.0)
+&lt;ul&gt;
+&lt;li&gt;Adding QueryGraph operation to DataZone SDK&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PartnerCentralChannel (3.7.501.0)
+&lt;ul&gt;
+&lt;li&gt;Adds the Resold Unified Operations support plan and removes the Resold Business support plan in the CreateRelationship and UpdateRelationship APIs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SageMaker (3.7.530.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds b300 and g7e instance types for SageMaker inference endpoints.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.500.86
+&lt;ul&gt;
+&lt;li&gt;Added maintenance mode notice to NuGet package descriptions for AWS SDK for .NET V3.&lt;/li&gt;
+&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
+&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.AppService_1.4.0-beta.2"&gt;Azure.Provisioning.AppService_1.4.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.202.0"&gt;4.0.202.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.4.0-beta.2 (2026-03-02)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h3&gt;4.0.202.0 (2026-03-03 20:07 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;StaticSiteBasicAuthProperty.Name&lt;/code&gt; now defaults to &lt;code&gt;"default"&lt;/code&gt; and is read-only, matching the only accepted Bicep value.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;SiteNetworkConfig.Name&lt;/code&gt; now defaults to &lt;code&gt;"virtualNetwork"&lt;/code&gt; and is read-only, matching the only accepted Bicep value.&lt;/li&gt;
+&lt;li&gt;BedrockAgentCoreControl (4.0.17.0)
+&lt;ul&gt;
+&lt;li&gt;Support for AgentCore Policy GA&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;/li&gt;
+&lt;li&gt;CloudWatchLogs (4.0.15.0)
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;StaticSiteBasicAuthProperty.Name&lt;/code&gt; is now read-only (setter removed). The property only accepts &lt;code&gt;"default"&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;SiteNetworkConfig.Name&lt;/code&gt; is now read-only (setter removed). The property only accepts &lt;code&gt;"virtualNetwork"&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Removed generated enum &lt;code&gt;StaticSiteBasicAuthName&lt;/code&gt;. A backward-compatible version is preserved but hidden from IntelliSense.&lt;/li&gt;
+&lt;li&gt;CloudWatch Logs updates- Added support for the PutBearerTokenAuthentication API to enable or disable bearer token authentication on a log group. For more information, see CloudWatch Logs API documentation.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;/li&gt;
+&lt;li&gt;DataZone (4.0.22.0)
 &lt;ul&gt;
-&lt;li&gt;Fixed &lt;code&gt;SiteNetworkConfig.Name&lt;/code&gt; not having a default value (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/54629" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/54629/hovercard"&gt;#54629&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Adding QueryGraph operation to DataZone SDK&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Kusto_1.0.0-beta.2"&gt;Azure.Provisioning.Kusto_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.2 (2026-03-02)&lt;/h2&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;/li&gt;
+&lt;li&gt;PartnerCentralChannel (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;Removed generated enum &lt;code&gt;KustoDatabaseCallerRole&lt;/code&gt;. This type was not used by any public API.&lt;/li&gt;
+&lt;li&gt;Adds the Resold Unified Operations support plan and removes the Resold Business support plan in the CreateRelationship and UpdateRelationship APIs&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.OperationalInsights_1.2.0-beta.1"&gt;Azure.Provisioning.OperationalInsights_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.1 (2026-03-02)&lt;/h2&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;/li&gt;
+&lt;li&gt;SageMaker (4.0.44.0)
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;OperationalInsightsLinkedStorageAccounts.DataSourceType&lt;/code&gt; is now read-only (output property).&lt;/li&gt;
+&lt;li&gt;This release adds b300 and g7e instance types for SageMaker inference endpoints.&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Sql_1.2.0-beta.1"&gt;Azure.Provisioning.Sql_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.1 (2026-03-02)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added new API version &lt;code&gt;2023-08-01&lt;/code&gt; to resource versions.&lt;/li&gt;
-&lt;li&gt;Enabled &lt;code&gt;ignorePropertiesWithoutPath&lt;/code&gt; to filter out properties without valid wire paths.&lt;/li&gt;
-&lt;li&gt;Made &lt;code&gt;SqlServerDatabaseReplicationLink.Name&lt;/code&gt; settable to match the Bicep resource schema.&lt;/li&gt;
-&lt;li&gt;36 singleton resources now have read-only &lt;code&gt;Name&lt;/code&gt; with correct default values matching Bicep requirements (e.g., &lt;code&gt;"default"&lt;/code&gt;, &lt;code&gt;"current"&lt;/code&gt;, &lt;code&gt;"Default"&lt;/code&gt;, &lt;code&gt;"ActiveDirectory"&lt;/code&gt;, &lt;code&gt;"allowPolybaseExport"&lt;/code&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;GeoBackupPolicy.State&lt;/code&gt; has been replaced by &lt;code&gt;GeoBackupPolicyState&lt;/code&gt;. The old property is preserved but hidden for backward compatibility.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;SqlServerDatabaseReplicationLink.LinkId&lt;/code&gt; has been replaced by &lt;code&gt;Name&lt;/code&gt;. The old property is preserved but hidden for backward compatibility.&lt;/li&gt;
-&lt;li&gt;21 Name-related enum types (e.g., &lt;code&gt;BlobAuditingPolicyName&lt;/code&gt;, &lt;code&gt;TransparentDataEncryptionName&lt;/code&gt;, &lt;code&gt;EncryptionProtectorName&lt;/code&gt;) have been removed from the generated code. Backward-compatible versions are preserved but hidden from IntelliSense.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Name&lt;/code&gt; property on 36 singleton resources is now read-only (setter removed). These resources only accept a single fixed value for &lt;code&gt;Name&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.PostgreSql_1.2.0-beta.2"&gt;Azure.Provisioning.PostgreSql_1.2.0-beta.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.2 (2026-03-02)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;ServerThreatProtectionSettingsModel.Name&lt;/code&gt; now defaults to &lt;code&gt;"Default"&lt;/code&gt; and is read-only.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PostgreSqlServerSecurityAlertPolicy.Name&lt;/code&gt; now defaults to &lt;code&gt;"Default"&lt;/code&gt; and is read-only.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;ServerThreatProtectionSettingsModel.Name&lt;/code&gt; is now read-only (setter removed). The property only accepts &lt;code&gt;"Default"&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PostgreSqlServerSecurityAlertPolicy.Name&lt;/code&gt; is now read-only (setter removed). The property only accepts &lt;code&gt;"Default"&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PostgreSqlFlexibleServerActiveDirectoryAdministrator.ObjectId&lt;/code&gt; type changed from &lt;code&gt;BicepValue&amp;lt;Guid&amp;gt;&lt;/code&gt; to &lt;code&gt;BicepValue&amp;lt;string&amp;gt;&lt;/code&gt; to match the service API.&lt;/li&gt;
-&lt;li&gt;Removed generated enums &lt;code&gt;PostgreSqlSecurityAlertPolicyName&lt;/code&gt; and &lt;code&gt;ThreatProtectionName&lt;/code&gt;. Backward-compatible versions are preserved but hidden from IntelliSense.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ServerThreatProtectionSettingsModel.ThreatProtectionName&lt;/code&gt; property is deprecated. Use &lt;code&gt;Name&lt;/code&gt; instead.&lt;/li&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -111,86 +127,99 @@
             </content>
   </entry>
   <entry>
-    <title>googleapis/google-cloud-dotnet - Releases - 2026-03-02</title>
-    <id>https://github.com/googleapis/google-cloud-dotnet#2026-03-02</id>
-    <link href="https://github.com/googleapis/google-cloud-dotnet" />
-    <updated>2026-03-03T00:11:02Z</updated>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-03-03</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-03-03</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2026-03-04T00:09:56Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Ces.V1Beta-1.0.0-beta01"&gt;Google.Cloud.Ces.V1Beta version 1.0.0-beta01&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.VoiceLive_1.1.0-beta.3"&gt;Azure.AI.VoiceLive_1.1.0-beta.3&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
+                                &lt;h2&gt;1.1.0-beta.3 (2026-02-26)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial generation for Google.Cloud.Ces.V1Beta&lt;/li&gt;
+&lt;li&gt;Added public &lt;code&gt;InterimResponseConfigBase InterimResponse&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.VectorSearch.V1-1.0.0-beta02"&gt;Google.Cloud.VectorSearch.V1 version 1.0.0-beta02&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Storage_1.2.0-beta.1"&gt;Azure.Provisioning.Storage_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;Bug fixes&lt;/h3&gt;
+                                &lt;h2&gt;1.2.0-beta.1 (2026-03-02)&lt;/h2&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Removed obsolete field &lt;code&gt;vertex&lt;/code&gt; from message &lt;code&gt;.google.cloud.vectorsearch.v1.Ranker&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Removed obsolete message &lt;code&gt;VertexRanker&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;StorageAccount.PrivateEndpointConnections&lt;/code&gt; has been renamed to &lt;code&gt;StorageAccount.PrivateEndpointConnectionResources&lt;/code&gt; and its type changed from &lt;code&gt;BicepList&amp;lt;StoragePrivateEndpointConnectionData&amp;gt;&lt;/code&gt; to &lt;code&gt;BicepList&amp;lt;StoragePrivateEndpointConnection&amp;gt;&lt;/code&gt;. The old property is preserved but marked as obsolete.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;StorageActiveDirectoryProperties.DomainGuid&lt;/code&gt; has been renamed to &lt;code&gt;StorageActiveDirectoryProperties.ActiveDirectoryDomainGuid&lt;/code&gt;. The old property is preserved but marked as obsolete.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ExecutionTrigger.TriggerType&lt;/code&gt; has been renamed to &lt;code&gt;ExecutionTrigger.TaskExecutionTriggerType&lt;/code&gt; with type changed from &lt;code&gt;ExecutionTriggerType&lt;/code&gt; to &lt;code&gt;TaskExecutionTriggerType&lt;/code&gt;. The old property is preserved but marked as obsolete.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Regenerated from &lt;code&gt;Azure.ResourceManager.Storage&lt;/code&gt; version 1.6.0 with new API version &lt;code&gt;2025-06-01&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.AuditManager.V1-1.0.0-beta03"&gt;Google.Cloud.AuditManager.V1 version 1.0.0-beta03&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.ContainerService_1.0.0-beta.5"&gt;Azure.Provisioning.ContainerService_1.0.0-beta.5&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;Bug fixes&lt;/h3&gt;
+                                &lt;h2&gt;1.0.0-beta.5 (2026-03-03)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Update existing packaging option &lt;code&gt;cloud.google.com/go/auditmanager/apiv1/auditmanagerpb;auditmanagerpb&lt;/code&gt; for &lt;code&gt;go_package&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Regenerated from &lt;code&gt;Azure.ResourceManager.ContainerService&lt;/code&gt; version 1.3.1.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.VertexAI.Extensions-1.0.0-beta06"&gt;Google.Cloud.VertexAI.Extensions version 1.0.0-beta06&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Communication_1.0.0-beta.4"&gt;Azure.Provisioning.Communication_1.0.0-beta.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;Bug fixes&lt;/h3&gt;
+                                &lt;h2&gt;1.0.0-beta.4 (2026-03-03)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fix PredictionServiceChatClient to skip empty TextReasoningContent&lt;/li&gt;
+&lt;li&gt;Regenerated from the latest &lt;code&gt;Azure.ResourceManager.Communication&lt;/code&gt; package.&lt;/li&gt;
+&lt;li&gt;Updated default API version from &lt;code&gt;2023-04-01&lt;/code&gt; to &lt;code&gt;2025-09-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added new resources: &lt;code&gt;CommunicationSmtpUsername&lt;/code&gt;, &lt;code&gt;EmailSuppressionList&lt;/code&gt;, &lt;code&gt;EmailSuppressionListAddress&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added new model: &lt;code&gt;CommunicationPublicNetworkAccess&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;IsLocalAuthDisabled&lt;/code&gt; and &lt;code&gt;PublicNetworkAccess&lt;/code&gt; properties to &lt;code&gt;CommunicationService&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ResourceVersions&lt;/code&gt; to all resources.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.StorageBatchOperations.V1-1.0.0-beta05"&gt;Google.Cloud.StorageBatchOperations.V1 version 1.0.0-beta05&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add new transformation &lt;code&gt;update_object_custom_context&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>jbogard/MediatR - Releases - 2026-03-03</title>
+    <id>https://github.com/jbogard/MediatR#2026-03-03</id>
+    <link href="https://github.com/jbogard/MediatR" />
+    <updated>2026-03-04T00:10:13Z</updated>
+    <content type="html">
+                &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.NetworkManagement.V1-2.19.0"&gt;Google.Cloud.NetworkManagement.V1 version 2.19.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/LuckyPennySoftware/MediatR/releases/tag/v14.1.0"&gt;v14.1.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Add API fields related to GKE Pods and Network Policies&lt;/li&gt;
+&lt;li&gt;Migrating to slnx by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3712466194" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/MediatR/issues/1147" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/MediatR/pull/1147/hovercard" href="https://github.com/LuckyPennySoftware/MediatR/pull/1147"&gt;#1147&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Remove Azure-dependent CI steps to fix forked PR builds by @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3974879284" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/MediatR/issues/1154" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/MediatR/pull/1154/hovercard" href="https://github.com/LuckyPennySoftware/MediatR/pull/1154"&gt;#1154&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Handling nested generic arguments by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3975094804" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/MediatR/issues/1155" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/MediatR/pull/1155/hovercard" href="https://github.com/LuckyPennySoftware/MediatR/pull/1155"&gt;#1155&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Handling F# assemblies correctly by catching reflection exceptions an… by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3975154000" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/MediatR/issues/1156" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/MediatR/pull/1156/hovercard" href="https://github.com/LuckyPennySoftware/MediatR/pull/1156"&gt;#1156&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Simplify CheckLicense to use GetRequiredService instead of fallback constructors by @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3975249937" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/MediatR/issues/1158" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/MediatR/pull/1158/hovercard" href="https://github.com/LuckyPennySoftware/MediatR/pull/1158"&gt;#1158&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix: Cryptic "No constructor" Error When ILoggerFactory Is Not Registered (Issue &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3864935910" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/MediatR/issues/1153" data-hovercard-type="issue" data-hovercard-url="/LuckyPennySoftware/MediatR/issues/1153/hovercard" href="https://github.com/LuckyPennySoftware/MediatR/issues/1153"&gt;#1153&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3975240490" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/MediatR/issues/1157" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/MediatR/pull/1157/hovercard" href="https://github.com/LuckyPennySoftware/MediatR/pull/1157"&gt;#1157&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;De-duping notification handlers before dispatching by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3978998231" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/MediatR/issues/1159" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/MediatR/pull/1159/hovercard" href="https://github.com/LuckyPennySoftware/MediatR/pull/1159"&gt;#1159&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Log warning when perpetual license cannot be applied due to missing build date by @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3984531203" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/MediatR/issues/1163" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/MediatR/pull/1163/hovercard" href="https://github.com/LuckyPennySoftware/MediatR/pull/1163"&gt;#1163&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Perpetual licensing by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3984404994" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/MediatR/issues/1162" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/MediatR/pull/1162/hovercard" href="https://github.com/LuckyPennySoftware/MediatR/pull/1162"&gt;#1162&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.AIPlatform.V1Beta1-1.0.0-beta71"&gt;Google.Cloud.AIPlatform.V1Beta1 version 1.0.0-beta71&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;A new field &lt;code&gt;inference_generation_config&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.aiplatform.v1beta1.EvaluationConfig&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;A new field &lt;code&gt;evaluation_run&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.aiplatform.v1beta1.EvaluateDatasetRun&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;@Copilot made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3974879284" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/MediatR/issues/1154" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/MediatR/pull/1154/hovercard" href="https://github.com/LuckyPennySoftware/MediatR/pull/1154"&gt;#1154&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Comment on &lt;code&gt;evaluate_dataset_response&lt;/code&gt; clarified&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/LuckyPennySoftware/MediatR/compare/v14.0.0...v14.1.0"&gt;&lt;tt&gt;v14.0.0...v14.1.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
