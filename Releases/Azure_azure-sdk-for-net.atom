@@ -1,67 +1,91 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-03-04T00:09:56Z</updated>
+  <updated>2026-03-05T00:10:30Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-03-03</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-03-03</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-03-04</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-03-04</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-03-04T00:09:56Z</updated>
+    <updated>2026-03-05T00:10:30Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.VoiceLive_1.1.0-beta.3"&gt;Azure.AI.VoiceLive_1.1.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Extensions.AspNetCore.Configuration.Secrets_1.5.0"&gt;Azure.Extensions.AspNetCore.Configuration.Secrets_1.5.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.1.0-beta.3 (2026-02-26)&lt;/h2&gt;
+                                &lt;h2&gt;1.5.0 (2026-03-04)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;AddKeyVaultSecrets&lt;/code&gt; extension methods on &lt;code&gt;IConfigurationBuilder&lt;/code&gt; that create a &lt;code&gt;SecretClient&lt;/code&gt; from configuration using the &lt;code&gt;Azure.Core&lt;/code&gt; configuration extensions (built on &lt;code&gt;System.ClientModel&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added public &lt;code&gt;InterimResponseConfigBase InterimResponse&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Handle &lt;code&gt;OperationCanceledException&lt;/code&gt; in &lt;code&gt;PollForSecretChangesAsync&lt;/code&gt; so the background polling loop exits cleanly when the provider is disposed.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Storage_1.2.0-beta.1"&gt;Azure.Provisioning.Storage_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Administration_4.7.0"&gt;Azure.Security.KeyVault.Administration_4.7.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.1 (2026-03-02)&lt;/h2&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+                                &lt;h2&gt;4.7.0 (2026-03-04)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;StorageAccount.PrivateEndpointConnections&lt;/code&gt; has been renamed to &lt;code&gt;StorageAccount.PrivateEndpointConnectionResources&lt;/code&gt; and its type changed from &lt;code&gt;BicepList&amp;lt;StoragePrivateEndpointConnectionData&amp;gt;&lt;/code&gt; to &lt;code&gt;BicepList&amp;lt;StoragePrivateEndpointConnection&amp;gt;&lt;/code&gt;. The old property is preserved but marked as obsolete.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;StorageActiveDirectoryProperties.DomainGuid&lt;/code&gt; has been renamed to &lt;code&gt;StorageActiveDirectoryProperties.ActiveDirectoryDomainGuid&lt;/code&gt;. The old property is preserved but marked as obsolete.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ExecutionTrigger.TriggerType&lt;/code&gt; has been renamed to &lt;code&gt;ExecutionTrigger.TaskExecutionTriggerType&lt;/code&gt; with type changed from &lt;code&gt;ExecutionTriggerType&lt;/code&gt; to &lt;code&gt;TaskExecutionTriggerType&lt;/code&gt;. The old property is preserved but marked as obsolete.&lt;/li&gt;
+&lt;li&gt;Fixed challenge-based authentication to correctly parse tenant ID from DSTSv2 authority URIs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Regenerated from &lt;code&gt;Azure.ResourceManager.Storage&lt;/code&gt; version 1.6.0 with new API version &lt;code&gt;2025-06-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The default service version is now &lt;code&gt;2025-07-01&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.ContainerService_1.0.0-beta.5"&gt;Azure.Provisioning.ContainerService_1.0.0-beta.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Keys_4.9.0"&gt;Azure.Security.KeyVault.Keys_4.9.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.5 (2026-03-03)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h2&gt;4.9.0 (2026-03-04)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Regenerated from &lt;code&gt;Azure.ResourceManager.ContainerService&lt;/code&gt; version 1.3.1.&lt;/li&gt;
+&lt;li&gt;Fixed challenge-based authentication to correctly parse tenant ID from DSTSv2 authority URIs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The default service version is now &lt;code&gt;2025-07-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;System.IdentityModel.Tokens.Jwt&lt;/code&gt; dependency to 8.14.0&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Communication_1.0.0-beta.4"&gt;Azure.Provisioning.Communication_1.0.0-beta.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.AgentFramework_1.0.0-beta.9"&gt;Azure.AI.AgentServer.AgentFramework_1.0.0-beta.9&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.4 (2026-03-03)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h2&gt;1.0.0-beta.9 (2026-03-03)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Regenerated from the latest &lt;code&gt;Azure.ResourceManager.Communication&lt;/code&gt; package.&lt;/li&gt;
-&lt;li&gt;Updated default API version from &lt;code&gt;2023-04-01&lt;/code&gt; to &lt;code&gt;2025-09-01&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added new resources: &lt;code&gt;CommunicationSmtpUsername&lt;/code&gt;, &lt;code&gt;EmailSuppressionList&lt;/code&gt;, &lt;code&gt;EmailSuppressionListAddress&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added new model: &lt;code&gt;CommunicationPublicNetworkAccess&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;IsLocalAuthDisabled&lt;/code&gt; and &lt;code&gt;PublicNetworkAccess&lt;/code&gt; properties to &lt;code&gt;CommunicationService&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ResourceVersions&lt;/code&gt; to all resources.&lt;/li&gt;
+&lt;li&gt;Update Microsoft.Agents.AI, Microsoft.Agents.AI.Workflows, Microsoft.Agents.AI.OpenAI packages to 1.0.0-rc1&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Core_1.0.0-beta.9"&gt;Azure.AI.AgentServer.Core_1.0.0-beta.9&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.9 (2026-03-03)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update Microsoft.Agents.AI, Microsoft.Agents.AI.Workflows, Microsoft.Agents.AI.OpenAI packages to 1.0.0-rc1&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Contracts_1.0.0-beta.9"&gt;Azure.AI.AgentServer.Contracts_1.0.0-beta.9&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.9 (2026-03-03)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Package version alignment only. No functional changes.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
