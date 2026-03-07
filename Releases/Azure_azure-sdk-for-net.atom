@@ -1,40 +1,38 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-03-06T00:15:15Z</updated>
+  <updated>2026-03-07T00:09:53Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-03-05</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-03-05</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-03-06</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-03-06</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-03-06T00:15:15Z</updated>
+    <updated>2026-03-07T00:09:53Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Network_1.0.0"&gt;Azure.Provisioning.Network_1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetApp_1.15.0"&gt;Azure.ResourceManager.NetApp_1.15.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0 (2026-03-04)&lt;/h2&gt;
+                                &lt;h2&gt;1.15.0 (2026-03-03)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Regenerated from &lt;code&gt;Azure.ResourceManager.Network&lt;/code&gt; version 1.15.0.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ServiceGatewayId&lt;/code&gt; property to &lt;code&gt;NatGateway&lt;/code&gt; and &lt;code&gt;SubnetResource&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added new &lt;code&gt;FirewallPolicyIntrusionDetectionProfileType&lt;/code&gt; values: &lt;code&gt;Off&lt;/code&gt;, &lt;code&gt;Emerging&lt;/code&gt;, &lt;code&gt;Core&lt;/code&gt;, and &lt;code&gt;Extended&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Upgraded api-version tag from 'package-2025-06-01' to 'package-2025-12-01'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/4b0af9ea3ddad4d6fc0c08572e00ee68679a213c/specification/netapp/resource-manager/Microsoft.NetApp/NetApp/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/4b0af9ea3ddad4d6fc0c08572e00ee68679a213c/specification/netapp/resource-manager/Microsoft.NetApp/NetApp/readme.md&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;RansomwareReport&lt;/code&gt; resource support on &lt;code&gt;NetAppVolumeResource&lt;/code&gt;, including &lt;code&gt;GetRansomwareReports&lt;/code&gt;, &lt;code&gt;GetRansomwareReport&lt;/code&gt;, and &lt;code&gt;ClearSuspects&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added quota report support on &lt;code&gt;NetAppVolumeResource&lt;/code&gt; with &lt;code&gt;GetQuotaReport&lt;/code&gt; and &lt;code&gt;GetQuotaReportAsync&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;RansomwareProtection&lt;/code&gt; to &lt;code&gt;VolumePropertiesDataProtection&lt;/code&gt; and &lt;code&gt;VolumePatchPropertiesDataProtection&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added models &lt;code&gt;ListQuotaReportResult&lt;/code&gt;, &lt;code&gt;NetAppVolumeQuotaReport&lt;/code&gt;, and &lt;code&gt;QuotaReportFilterContent&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added models &lt;code&gt;RansomwareProtectionPatchSettings&lt;/code&gt;, &lt;code&gt;RansomwareProtectionSettings&lt;/code&gt;, &lt;code&gt;RansomwareReportProperties&lt;/code&gt;, &lt;code&gt;RansomwareSuspects&lt;/code&gt;, &lt;code&gt;RansomwareSuspectsClearContent&lt;/code&gt;, and &lt;code&gt;SuspectFile&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added enums &lt;code&gt;ActualRansomwareProtectionState&lt;/code&gt;, &lt;code&gt;DesiredRansomwareProtectionState&lt;/code&gt;, &lt;code&gt;RansomwareReportSeverity&lt;/code&gt;, &lt;code&gt;RansomwareReportState&lt;/code&gt;, &lt;code&gt;RansomwareSuspectResolution&lt;/code&gt;, and &lt;code&gt;NetAppVolumeQuotaType&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning_1.5.0"&gt;Azure.Provisioning_1.5.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.5.0 (2026-03-04)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Regenerated from the latest &lt;code&gt;Azure.ResourceManager&lt;/code&gt; (1.14.0).&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;IsolationScope&lt;/code&gt; property to &lt;code&gt;UserAssignedIdentity&lt;/code&gt; resource to support regional restrictions on identity assignment.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ResourceVersions&lt;/code&gt; to &lt;code&gt;SubscriptionPolicyDefinition&lt;/code&gt; and &lt;code&gt;SubscriptionPolicySetDefinition&lt;/code&gt; resources.&lt;/li&gt;
-&lt;li&gt;Updated default API versions for &lt;code&gt;ArmDeployment&lt;/code&gt; (2023-07-01 → 2025-04-01), &lt;code&gt;Subscription&lt;/code&gt; (2019-10-01 → 2022-12-01), &lt;code&gt;SubscriptionPolicyDefinition&lt;/code&gt;, and &lt;code&gt;SubscriptionPolicySetDefinition&lt;/code&gt; resources.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ResourceBicepMetadata&lt;/code&gt; class (renamed from &lt;code&gt;BicepMetadata&lt;/code&gt; introduced in 1.5.0-beta.1) that provides a clean, type-safe way to set Bicep metadata on resources.&lt;/li&gt;
+&lt;li&gt;Updated generated quota APIs to add &lt;code&gt;QuotaItemResource&lt;/code&gt;-based overloads while retaining &lt;code&gt;NetAppSubscriptionQuotaItem&lt;/code&gt; APIs for compatibility.&lt;/li&gt;
+&lt;li&gt;Updated backup relationship status enum usage to &lt;code&gt;VolumeBackupRelationshipStatus&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed debug-time quota resource validation to accept both account-scoped and location-scoped quota resource IDs.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
