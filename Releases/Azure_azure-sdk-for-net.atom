@@ -1,38 +1,23 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-03-07T00:09:53Z</updated>
+  <updated>2026-03-08T00:09:14Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-03-06</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-03-06</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-03-07</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-03-07</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-03-07T00:09:53Z</updated>
+    <updated>2026-03-08T00:09:14Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetApp_1.15.0"&gt;Azure.ResourceManager.NetApp_1.15.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.ContentUnderstanding_1.0.1"&gt;Azure.AI.ContentUnderstanding_1.0.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.15.0 (2026-03-03)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h2&gt;1.0.1 (2026-03-06)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded api-version tag from 'package-2025-06-01' to 'package-2025-12-01'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/4b0af9ea3ddad4d6fc0c08572e00ee68679a213c/specification/netapp/resource-manager/Microsoft.NetApp/NetApp/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/4b0af9ea3ddad4d6fc0c08572e00ee68679a213c/specification/netapp/resource-manager/Microsoft.NetApp/NetApp/readme.md&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;RansomwareReport&lt;/code&gt; resource support on &lt;code&gt;NetAppVolumeResource&lt;/code&gt;, including &lt;code&gt;GetRansomwareReports&lt;/code&gt;, &lt;code&gt;GetRansomwareReport&lt;/code&gt;, and &lt;code&gt;ClearSuspects&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added quota report support on &lt;code&gt;NetAppVolumeResource&lt;/code&gt; with &lt;code&gt;GetQuotaReport&lt;/code&gt; and &lt;code&gt;GetQuotaReportAsync&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;RansomwareProtection&lt;/code&gt; to &lt;code&gt;VolumePropertiesDataProtection&lt;/code&gt; and &lt;code&gt;VolumePatchPropertiesDataProtection&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added models &lt;code&gt;ListQuotaReportResult&lt;/code&gt;, &lt;code&gt;NetAppVolumeQuotaReport&lt;/code&gt;, and &lt;code&gt;QuotaReportFilterContent&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added models &lt;code&gt;RansomwareProtectionPatchSettings&lt;/code&gt;, &lt;code&gt;RansomwareProtectionSettings&lt;/code&gt;, &lt;code&gt;RansomwareReportProperties&lt;/code&gt;, &lt;code&gt;RansomwareSuspects&lt;/code&gt;, &lt;code&gt;RansomwareSuspectsClearContent&lt;/code&gt;, and &lt;code&gt;SuspectFile&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added enums &lt;code&gt;ActualRansomwareProtectionState&lt;/code&gt;, &lt;code&gt;DesiredRansomwareProtectionState&lt;/code&gt;, &lt;code&gt;RansomwareReportSeverity&lt;/code&gt;, &lt;code&gt;RansomwareReportState&lt;/code&gt;, &lt;code&gt;RansomwareSuspectResolution&lt;/code&gt;, and &lt;code&gt;NetAppVolumeQuotaType&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated generated quota APIs to add &lt;code&gt;QuotaItemResource&lt;/code&gt;-based overloads while retaining &lt;code&gt;NetAppSubscriptionQuotaItem&lt;/code&gt; APIs for compatibility.&lt;/li&gt;
-&lt;li&gt;Updated backup relationship status enum usage to &lt;code&gt;VolumeBackupRelationshipStatus&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed debug-time quota resource validation to accept both account-scoped and location-scoped quota resource IDs.&lt;/li&gt;
+&lt;li&gt;Set the default initial polling interval to 3 seconds for &lt;code&gt;Analyze&lt;/code&gt;, &lt;code&gt;AnalyzeAsync&lt;/code&gt;, &lt;code&gt;AnalyzeBinary&lt;/code&gt;, and &lt;code&gt;AnalyzeBinaryAsync&lt;/code&gt; to optimize polling efficiency.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
