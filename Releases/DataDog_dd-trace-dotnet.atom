@@ -1,6 +1,78 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>DataDog/dd-trace-dotnet - Releases</title>
   <link href="https://github.com/DataDog/dd-trace-dotnet" />
-  <updated>2026-03-09T00:09:41Z</updated>
+  <updated>2026-03-10T00:08:23Z</updated>
   <id>https://github.com/DataDog/dd-trace-dotnet</id>
+  <entry>
+    <title>DataDog/dd-trace-dotnet - Releases - 2026-03-09</title>
+    <id>https://github.com/DataDog/dd-trace-dotnet#2026-03-09</id>
+    <link href="https://github.com/DataDog/dd-trace-dotnet" />
+    <updated>2026-03-10T00:08:23Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/releases/tag/v3.39.0"&gt;3.39.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Summary&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Serverless] Create and reparent span for Azure API Management (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3617973130" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7806" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7806/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7806"&gt;#7806&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[CI Visibility] Support NUnit v4.5.0&lt;/li&gt;
+&lt;li&gt;[Profiler] Support Windows pdb format (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3844150427" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8096" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8096/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8096"&gt;#8096&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Profiler] Measure memory consumption (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3890628375" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8134" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8134/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8134"&gt;#8134&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changes&lt;/h2&gt;
+&lt;h3&gt;Tracer&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Termination signals fix (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3906977407" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8168" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8168/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8168"&gt;#8168&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Code Origin] DEBUG-5199 Reduce per-span allocations and locks (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3931752373" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8197" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8197/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8197"&gt;#8197&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;Base64DecodingStream&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3968116524" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8226" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8226/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8226"&gt;#8226&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;CI Visibility&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add support for latest NUnit (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3996947887" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8246" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8246/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8246"&gt;#8246&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;ASM&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[ASM] Ruggerize waf GetKnownAddresses call to try to stop it crashing (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3988979532" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8239" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8239/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8239"&gt;#8239&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Continuous Profiler&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[Profiler] Support Windows pdb format (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3844150427" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8096" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8096/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8096"&gt;#8096&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Profiler] Measure memory consumption (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3890628375" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8134" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8134/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8134"&gt;#8134&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Serverless&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[tracing] Create and reparent span for Azure API Management (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3617973130" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7806" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7806/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7806"&gt;#7806&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Miscellaneous&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[Claude][Azure Functions] Add dev/test workflow skill and scripts (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3908729859" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8173" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8173/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8173"&gt;#8173&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Claude] Improve &lt;code&gt;troubleshoot-ci-build&lt;/code&gt; skill with scripts and heuristics (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3918298117" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8181" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8181/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8181"&gt;#8181&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[crashtracker] Improve crashtracker message (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3920771212" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8182" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8182/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8182"&gt;#8182&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Config registry] Add release step for v2 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3936689769" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8200" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8200/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8200"&gt;#8200&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Config registry] Only one yaml for all (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3947235128" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8206" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8206/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8206"&gt;#8206&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Implement &lt;code&gt;app-extended-heartbeat&lt;/code&gt; telemetry event (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3969596689" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8227" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8227/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8227"&gt;#8227&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Attempt to prevent crash when enumerating integration_definitions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3970235543" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8230" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8230/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8230"&gt;#8230&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Re-write /analyze-error Claude skill (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3989156196" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8240" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8240/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8240"&gt;#8240&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add support for ducktyping private fields and properties  from a base type (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4001459871" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8248" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8248/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8248"&gt;#8248&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add more Claude Code files to &lt;code&gt;.gitignore&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4002132534" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8249" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8249/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8249"&gt;#8249&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Build / Test&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Disable Ryuk images (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3948490857" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8208" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8208/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8208"&gt;#8208&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[CI] Upload system-tests results to Test Optimization (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3958083437" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8214" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8214/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8214"&gt;#8214&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Test Package Versions Bump] Updating package versions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3973153831" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8233" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8233/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8233"&gt;#8233&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Ensure we publish all nuget packages during release (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3977621826" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8234" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8234/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8234"&gt;#8234&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add additional TFMs to benchmarks project (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3990818240" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8243" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8243/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8243"&gt;#8243&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Ensure docker ready (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3994636203" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8245" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8245/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8245"&gt;#8245&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Bump the gh-actions-packages group across 3 directories with 3 updates (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4007678263" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8251" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8251/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8251"&gt;#8251&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/compare/v3.38.0...v3.39.0"&gt;Changes since 3.38.0&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
