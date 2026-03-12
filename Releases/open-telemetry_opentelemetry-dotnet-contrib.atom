@@ -1,6 +1,37 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>open-telemetry/opentelemetry-dotnet-contrib - Releases</title>
   <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-  <updated>2026-03-11T00:07:39Z</updated>
+  <updated>2026-03-12T00:09:28Z</updated>
   <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib</id>
+  <entry>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-03-11</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-03-11</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2026-03-12T00:09:28Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.AspNetCore-1.15.1"&gt;Instrumentation.AspNetCore-1.15.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.AspNetCore/1.15.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.AspNetCore v1.15.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt;: For gRPC server spans, span status is now follow the&lt;br&gt;
+OpenTelemetry Semantic Conventions. Only the following gRPC status codes&lt;br&gt;
+set span status to &lt;code&gt;Error&lt;/code&gt;: &lt;code&gt;UNKNOWN&lt;/code&gt;, &lt;code&gt;DEADLINE_EXCEEDED&lt;/code&gt;, &lt;code&gt;UNIMPLEMENTED&lt;/code&gt;, &lt;code&gt;INTERNAL&lt;/code&gt;,&lt;br&gt;
+&lt;code&gt;UNAVAILABLE&lt;/code&gt;, and &lt;code&gt;DATA_LOSS&lt;/code&gt;. Previously, all non-OK status codes were treated&lt;br&gt;
+as errors.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3902" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3902/hovercard"&gt;#3902&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AspNetCore-1.15.1/src/OpenTelemetry.Instrumentation.AspNetCore/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
