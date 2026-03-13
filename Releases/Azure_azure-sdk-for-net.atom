@@ -1,102 +1,83 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-03-12T00:09:12Z</updated>
+  <updated>2026-03-13T00:10:11Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-03-11</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-03-11</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-03-12</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-03-12</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-03-12T00:09:12Z</updated>
+    <updated>2026-03-13T00:10:11Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity_1.19.0"&gt;Azure.Identity_1.19.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DurableTask_1.1.0"&gt;Azure.ResourceManager.DurableTask_1.1.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.19.0 (2026-03-11)&lt;/h2&gt;
+                                &lt;h2&gt;1.1.0 (2026-03-12)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;p&gt;This release contains required changes for durable task scheduler private endpoint support. As part of this schedulers can be configured to disable public network access. Additionally, private endpoint connections can be managed and viewed.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;DurableTaskSchedulerProperties&lt;/code&gt; now includes &lt;code&gt;PublicNetworkAccess&lt;/code&gt; to enable or disable public network access.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DurableTaskSchedulerProperties&lt;/code&gt; now also contain a readonly &lt;code&gt;PrivateEndpointConnections&lt;/code&gt; collection for any private endpoint connections of this scheduler.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;DurableTaskPrivateEndpointConnectionCollection&lt;/code&gt; client allows managing of private endpoint connections, including approving / rejecting connections.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Now uses API version &lt;code&gt;2026-02-01&lt;/code&gt; for all resource management calls.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ServiceFabricManagedClusters_1.3.0"&gt;Azure.ResourceManager.ServiceFabricManagedClusters_1.3.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.3.0 (2026-03-13)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support in &lt;code&gt;ClientCertificateCredential&lt;/code&gt; to specify a path in the form of &lt;code&gt;cert:/StoreLocation/StoreName/Thumbprint&lt;/code&gt; to refer to a certificate in the platform certificate store - such as the Windows Certificate Store on Windows, and the KeyChain on MacOS - instead of a file on disk. For example to load a certificate from the "My" store in the "CurrentUser" location use the path &lt;code&gt;cert:/CurrentUser/My/E661583E8FABEF4C0BEF694CBC41C28FB81CD870&lt;/code&gt; (A community contribution, courtesy of &lt;em&gt;&lt;a href="https://github.com/fowl2"&gt;fowl2&lt;/a&gt;&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Upgraded to API version 2026-02-01 (stable).&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;SkipManagedNsgAssignment&lt;/code&gt; property to &lt;code&gt;ServiceFabricManagedClusterData&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;EnableResilientEphemeralOsDisk&lt;/code&gt; property to &lt;code&gt;ServiceFabricManagedNodeTypeData&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed preview-only fault simulation types (&lt;code&gt;NodeTypeFaultSimulation&lt;/code&gt;, &lt;code&gt;FaultSimulationStatus&lt;/code&gt;, &lt;code&gt;SfmcOperationStatus&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.5996861"&gt;Azure.Template_1.0.3-beta.5996861&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.3-beta.5996861 (2026-03-11)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated &lt;code&gt;Microsoft.Identity.Client&lt;/code&gt; and &lt;code&gt;Microsoft.Identity.Client.Extensions.Msal&lt;/code&gt; dependencies to version 4.83.1.&lt;/li&gt;
+&lt;li&gt;Release DPG library&lt;/li&gt;
+&lt;li&gt;Add Grow-up story&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.ContentUnderstanding_1.0.2"&gt;Azure.AI.ContentUnderstanding_1.0.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.5996720"&gt;Azure.Template_1.0.3-beta.5996720&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.2 (2026-03-11)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed &lt;code&gt;GetRehydrationToken()&lt;/code&gt; returning &lt;code&gt;null&lt;/code&gt; on operations started with &lt;code&gt;WaitUntil.Started&lt;/code&gt;, preventing cross-process operation handoff (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/56840" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/56840/hovercard"&gt;#56840&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.AgentFramework_1.0.0-beta.10"&gt;Azure.AI.AgentServer.AgentFramework_1.0.0-beta.10&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.10 (2026-03-11)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.3-beta.5996720 (2026-03-11)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Update Microsoft.Agents.AI, Microsoft.Agents.AI.Workflows, Microsoft.Agents.AI.OpenAI packages to 1.0.0-rc3&lt;/li&gt;
+&lt;li&gt;Release DPG library&lt;/li&gt;
+&lt;li&gt;Add Grow-up story&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Core_1.0.0-beta.10"&gt;Azure.AI.AgentServer.Core_1.0.0-beta.10&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.5995343"&gt;Azure.Template_1.0.3-beta.5995343&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.10 (2026-03-11)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.3-beta.5995343 (2026-03-11)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Update Microsoft.Agents.AI, Microsoft.Agents.AI.Workflows, Microsoft.Agents.AI.OpenAI packages to 1.0.0-rc3&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Contracts_1.0.0-beta.10"&gt;Azure.AI.AgentServer.Contracts_1.0.0-beta.10&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.10 (2026-03-11)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Package version alignment only. No functional changes.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Network_1.1.0-beta.1"&gt;Azure.Provisioning.Network_1.1.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.0-beta.1 (2026-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for &lt;code&gt;NetworkSecurityPerimeter&lt;/code&gt; resources:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;NetworkSecurityPerimeter&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;NetworkSecurityPerimeterAccessRule&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;NetworkSecurityPerimeterAssociation&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;NetworkSecurityPerimeterLink&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;NetworkSecurityPerimeterLoggingConfiguration&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;NetworkSecurityPerimeterProfile&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning_1.6.0-beta.1"&gt;Azure.Provisioning_1.6.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.6.0-beta.1 (2026-03-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;Condition&lt;/code&gt; property to &lt;code&gt;ResourceBicepMetadata&lt;/code&gt; to support conditional resource deployment. The condition generates Bicep &lt;code&gt;if (condition)&lt;/code&gt; syntax and accepts literal boolean values, parameter references, or complex expressions.&lt;/li&gt;
+&lt;li&gt;Release DPG library&lt;/li&gt;
+&lt;li&gt;Add Grow-up story&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;

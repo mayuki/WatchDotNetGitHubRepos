@@ -1,6 +1,71 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>autofac/Autofac - Releases</title>
   <link href="https://github.com/autofac/Autofac" />
-  <updated>2026-03-12T00:09:09Z</updated>
+  <updated>2026-03-13T00:10:09Z</updated>
   <id>https://github.com/autofac/Autofac</id>
+  <entry>
+    <title>autofac/Autofac - Releases - 2026-03-12</title>
+    <id>https://github.com/autofac/Autofac#2026-03-12</id>
+    <link href="https://github.com/autofac/Autofac" />
+    <updated>2026-03-13T00:10:09Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/autofac/Autofac/releases/tag/v9.1.0"&gt;v9.1.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is a pretty big release for Autofac with some major new functionality!&lt;/p&gt;
+&lt;h2&gt;AnyKey Support&lt;/h2&gt;
+&lt;p&gt;First, &lt;strong&gt;Autofac now &lt;a href="https://github.com/autofac/Autofac/pull/1475" data-hovercard-type="pull_request" data-hovercard-url="/autofac/Autofac/pull/1475/hovercard"&gt;natively supports the concept of &lt;code&gt;AnyKey&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;. It behaves the same way &lt;code&gt;AnyKey&lt;/code&gt; works in Microsoft.Extensions.DependencyInjection, but it is native to Autofac directly. &lt;a href="https://github.com/autofac/Autofac/blob/develop/test/Autofac.Specification.Test/Features/KeyedServiceTests.cs"&gt;The unit tests here&lt;/a&gt; show some very detailed examples of usage, but on a high level:&lt;/p&gt;
+&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="var builder = new ContainerBuilder();
+builder.RegisterType&amp;lt;Service&amp;gt;().Keyed&amp;lt;IService&amp;gt;(KeyedService.AnyKey);
+
+var container = builder.Build();
+
+// Registering as AnyKey allows it to respond to... any key!
+var service = container.ResolveKeyed&amp;lt;IService&amp;gt;(&amp;quot;service1&amp;quot;);"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;builder&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-smi"&gt;ContainerBuilder&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+&lt;span class="pl-s1"&gt;builder&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;RegisterType&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-smi"&gt;Service&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;Keyed&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-smi"&gt;IService&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s1"&gt;KeyedService&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;AnyKey&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+
+&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;container&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-s1"&gt;builder&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;Build&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;// Registering as AnyKey allows it to respond to... any key!&lt;/span&gt;
+&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;service&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-s1"&gt;container&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;ResolveKeyed&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-smi"&gt;IService&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s"&gt;"service1"&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Inject Service Key Into Constructors&lt;/h2&gt;
+&lt;p&gt;The new &lt;code&gt;[ServiceKey]&lt;/code&gt; attribute allows you to inject the service key provided during resolution. This is handy in conjunction with &lt;code&gt;AnyKey&lt;/code&gt;. Again, this is similar to the construct in Microsoft.Extensions.DependencyInjection, but with native Autofac.&lt;/p&gt;
+&lt;p&gt;First, mark up your class to take the constructor parameter.&lt;/p&gt;
+&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="public class Service : IService
+{
+  private readonly string _id;
+  public Service([ServiceKey] string id) =&amp;gt; _id = id;
+}"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;public&lt;/span&gt; &lt;span class="pl-k"&gt;class&lt;/span&gt; &lt;span class="pl-smi"&gt;Service&lt;/span&gt; &lt;span class="pl-c1"&gt;:&lt;/span&gt; &lt;span class="pl-smi"&gt;IService&lt;/span&gt;
+&lt;span class="pl-kos"&gt;{&lt;/span&gt;
+  &lt;span class="pl-k"&gt;private&lt;/span&gt; &lt;span class="pl-k"&gt;readonly&lt;/span&gt; &lt;span class="pl-smi"&gt;string&lt;/span&gt; &lt;span class="pl-s1"&gt;_id&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+  &lt;span class="pl-k"&gt;public&lt;/span&gt; &lt;span class="pl-v"&gt;Service&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;[&lt;/span&gt;&lt;span class="pl-c1"&gt;ServiceKey&lt;/span&gt;&lt;span class="pl-kos"&gt;]&lt;/span&gt; &lt;span class="pl-smi"&gt;string&lt;/span&gt; &lt;span class="pl-s1"&gt;id&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt; &lt;span class="pl-c1"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="pl-s1"&gt;_id&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-s1"&gt;id&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+&lt;span class="pl-kos"&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then when you resolve the class, the service key will automatically be injected.&lt;/p&gt;
+&lt;p&gt;You can also make use of this in a lambda registration.&lt;/p&gt;
+&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="var builder = new ContainerBuilder();
+builder.Register&amp;lt;Service&amp;gt;((ctx, p) =&amp;gt; {
+  var key = p.TryGetKeyedServiceKey(out string value) ? value : null;
+  return new Service(key);
+}).Keyed&amp;lt;Service&amp;gt;(KeyedService.AnyKey);"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;builder&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-smi"&gt;ContainerBuilder&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+&lt;span class="pl-s1"&gt;builder&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;Register&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-smi"&gt;Service&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s1"&gt;ctx&lt;/span&gt;&lt;span class="pl-kos"&gt;,&lt;/span&gt; &lt;span class="pl-s1"&gt;p&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt; &lt;span class="pl-c1"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="pl-kos"&gt;{&lt;/span&gt;
+  &lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;key&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-s1"&gt;p&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;TryGetKeyedServiceKey&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-k"&gt;out&lt;/span&gt; &lt;span class="pl-smi"&gt;string&lt;/span&gt; &lt;span class="pl-s1"&gt;value&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt; &lt;span class="pl-c1"&gt;?&lt;/span&gt; &lt;span class="pl-s1"&gt;value&lt;/span&gt; &lt;span class="pl-c1"&gt;:&lt;/span&gt; &lt;span class="pl-c1"&gt;null&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+  &lt;span class="pl-k"&gt;return&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-smi"&gt;Service&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s1"&gt;key&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+&lt;span class="pl-kos"&gt;}&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;Keyed&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-smi"&gt;Service&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s1"&gt;KeyedService&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;AnyKey&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Metrics&lt;/h2&gt;
+&lt;p&gt;Some metrics have &lt;a href="https://github.com/autofac/Autofac/pull/1477" data-hovercard-type="pull_request" data-hovercard-url="/autofac/Autofac/pull/1477/hovercard"&gt;been introduced&lt;/a&gt; that can allow you to capture counters on how long middleware is taking, how often lock contention occurs, and so on.&lt;/p&gt;
+&lt;p&gt;Set the &lt;code&gt;AUTOFAC_METRICS&lt;/code&gt; environment variable in your process to &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;1&lt;/code&gt; to enable this feature. You can &lt;a href="https://github.com/autofac/Autofac/blob/3ad51ab98a6ecc19f3dfaca3dc27a16c462b397f/src/Autofac/Diagnostics/AutofacMetrics.cs#L17"&gt;see the set of counters that will become available here&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;g-emoji class="g-emoji" alias="warning"&gt;⚠️&lt;/g-emoji&gt; &lt;strong&gt;This is NOT FREE.&lt;/strong&gt; Collecting counters and metrics will incur a performance hit, so it's not something you want to leave on in production.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;General Performance Improvements&lt;/h2&gt;
+&lt;p&gt;A pass over the whole system &lt;a href="https://github.com/autofac/Autofac/pull/1478" data-hovercard-type="pull_request" data-hovercard-url="/autofac/Autofac/pull/1478/hovercard"&gt;was made&lt;/a&gt; with an eye to trying to claw back some performance. Some additional caching was introduced to help reduce lookups and calculations of reflection data; and a few hot-path optimizations were made for the common situations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/autofac/Autofac/compare/v9.0.0...v9.1.0"&gt;&lt;tt&gt;v9.0.0...v9.1.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
