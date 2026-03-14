@@ -1,21 +1,32 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-03-13T00:10:28Z</updated>
+  <updated>2026-03-14T00:11:02Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>dotnet/aspnetcore - Releases - 2026-03-12</title>
-    <id>https://github.com/dotnet/aspnetcore#2026-03-12</id>
-    <link href="https://github.com/dotnet/aspnetcore" />
-    <updated>2026-03-13T00:10:05Z</updated>
+    <title>AutoMapper/AutoMapper - Releases - 2026-03-13</title>
+    <id>https://github.com/AutoMapper/AutoMapper#2026-03-13</id>
+    <link href="https://github.com/AutoMapper/AutoMapper" />
+    <updated>2026-03-14T00:10:39Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/aspnetcore/releases/tag/v10.0.5"&gt;.NET 10.0.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/LuckyPennySoftware/AutoMapper/releases/tag/v16.1.1"&gt;v16.1.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;&lt;a href="https://github.com/dotnet/core/releases/tag/v10.0.5"&gt;Release&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/dotnet/aspnetcore/compare/v10.0.4...v10.0.5"&gt;&lt;tt&gt;v10.0.4...v10.0.5&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Better async handling of license validation; fixes &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4028724238" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4612" data-hovercard-type="issue" data-hovercard-url="/LuckyPennySoftware/AutoMapper/issues/4612/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/issues/4612"&gt;#4612&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4029587258" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4613" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4613/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4613"&gt;#4613&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;More artifacts for builds (test results and SBOM) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4035963412" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4615" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4615/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4615"&gt;#4615&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update Microsoft.Sbom.DotNetTool to 4.1.5 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4071788422" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4616" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4616/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4616"&gt;#4616&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Security&lt;/h2&gt;
+&lt;p&gt;Fixed an issue where certain cyclic or self-referential object graphs could trigger uncontrolled recursion during mapping, potentially resulting in stack exhaustion and denial of service.&lt;/p&gt;
+&lt;p&gt;Applications that process untrusted or attacker-controlled object graphs through affected mapping paths may be impacted.&lt;/p&gt;
+&lt;p&gt;Users should upgrade to this release.&lt;/p&gt;
+&lt;p&gt;Security advisory: &lt;a title="GHSA-rvv3-g6hj-g44x" data-hovercard-type="advisory" data-hovercard-url="/advisories/GHSA-rvv3-g6hj-g44x/hovercard" href="https://github.com/advisories/GHSA-rvv3-g6hj-g44x"&gt;GHSA-rvv3-g6hj-g44x&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Thanks to &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/bluefossa/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/bluefossa"&gt;@bluefossa&lt;/a&gt; for responsibly disclosing this issue.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/LuckyPennySoftware/AutoMapper/compare/v16.1.0...v16.1.1"&gt;&lt;tt&gt;v16.1.0...v16.1.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
@@ -23,100 +34,71 @@
             </content>
   </entry>
   <entry>
-    <title>autofac/Autofac - Releases - 2026-03-12</title>
-    <id>https://github.com/autofac/Autofac#2026-03-12</id>
-    <link href="https://github.com/autofac/Autofac" />
-    <updated>2026-03-13T00:10:09Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/autofac/Autofac/releases/tag/v9.1.0"&gt;v9.1.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;This is a pretty big release for Autofac with some major new functionality!&lt;/p&gt;
-&lt;h2&gt;AnyKey Support&lt;/h2&gt;
-&lt;p&gt;First, &lt;strong&gt;Autofac now &lt;a href="https://github.com/autofac/Autofac/pull/1475" data-hovercard-type="pull_request" data-hovercard-url="/autofac/Autofac/pull/1475/hovercard"&gt;natively supports the concept of &lt;code&gt;AnyKey&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;. It behaves the same way &lt;code&gt;AnyKey&lt;/code&gt; works in Microsoft.Extensions.DependencyInjection, but it is native to Autofac directly. &lt;a href="https://github.com/autofac/Autofac/blob/develop/test/Autofac.Specification.Test/Features/KeyedServiceTests.cs"&gt;The unit tests here&lt;/a&gt; show some very detailed examples of usage, but on a high level:&lt;/p&gt;
-&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="var builder = new ContainerBuilder();
-builder.RegisterType&amp;lt;Service&amp;gt;().Keyed&amp;lt;IService&amp;gt;(KeyedService.AnyKey);
-
-var container = builder.Build();
-
-// Registering as AnyKey allows it to respond to... any key!
-var service = container.ResolveKeyed&amp;lt;IService&amp;gt;(&amp;quot;service1&amp;quot;);"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;builder&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-smi"&gt;ContainerBuilder&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
-&lt;span class="pl-s1"&gt;builder&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;RegisterType&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-smi"&gt;Service&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;Keyed&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-smi"&gt;IService&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s1"&gt;KeyedService&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;AnyKey&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
-
-&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;container&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-s1"&gt;builder&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;Build&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
-
-&lt;span class="pl-c"&gt;// Registering as AnyKey allows it to respond to... any key!&lt;/span&gt;
-&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;service&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-s1"&gt;container&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;ResolveKeyed&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-smi"&gt;IService&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s"&gt;"service1"&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Inject Service Key Into Constructors&lt;/h2&gt;
-&lt;p&gt;The new &lt;code&gt;[ServiceKey]&lt;/code&gt; attribute allows you to inject the service key provided during resolution. This is handy in conjunction with &lt;code&gt;AnyKey&lt;/code&gt;. Again, this is similar to the construct in Microsoft.Extensions.DependencyInjection, but with native Autofac.&lt;/p&gt;
-&lt;p&gt;First, mark up your class to take the constructor parameter.&lt;/p&gt;
-&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="public class Service : IService
-{
-  private readonly string _id;
-  public Service([ServiceKey] string id) =&amp;gt; _id = id;
-}"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;public&lt;/span&gt; &lt;span class="pl-k"&gt;class&lt;/span&gt; &lt;span class="pl-smi"&gt;Service&lt;/span&gt; &lt;span class="pl-c1"&gt;:&lt;/span&gt; &lt;span class="pl-smi"&gt;IService&lt;/span&gt;
-&lt;span class="pl-kos"&gt;{&lt;/span&gt;
-  &lt;span class="pl-k"&gt;private&lt;/span&gt; &lt;span class="pl-k"&gt;readonly&lt;/span&gt; &lt;span class="pl-smi"&gt;string&lt;/span&gt; &lt;span class="pl-s1"&gt;_id&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
-  &lt;span class="pl-k"&gt;public&lt;/span&gt; &lt;span class="pl-v"&gt;Service&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;[&lt;/span&gt;&lt;span class="pl-c1"&gt;ServiceKey&lt;/span&gt;&lt;span class="pl-kos"&gt;]&lt;/span&gt; &lt;span class="pl-smi"&gt;string&lt;/span&gt; &lt;span class="pl-s1"&gt;id&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt; &lt;span class="pl-c1"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="pl-s1"&gt;_id&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-s1"&gt;id&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
-&lt;span class="pl-kos"&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Then when you resolve the class, the service key will automatically be injected.&lt;/p&gt;
-&lt;p&gt;You can also make use of this in a lambda registration.&lt;/p&gt;
-&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="var builder = new ContainerBuilder();
-builder.Register&amp;lt;Service&amp;gt;((ctx, p) =&amp;gt; {
-  var key = p.TryGetKeyedServiceKey(out string value) ? value : null;
-  return new Service(key);
-}).Keyed&amp;lt;Service&amp;gt;(KeyedService.AnyKey);"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;builder&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-smi"&gt;ContainerBuilder&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
-&lt;span class="pl-s1"&gt;builder&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;Register&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-smi"&gt;Service&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s1"&gt;ctx&lt;/span&gt;&lt;span class="pl-kos"&gt;,&lt;/span&gt; &lt;span class="pl-s1"&gt;p&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt; &lt;span class="pl-c1"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="pl-kos"&gt;{&lt;/span&gt;
-  &lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;key&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-s1"&gt;p&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;TryGetKeyedServiceKey&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-k"&gt;out&lt;/span&gt; &lt;span class="pl-smi"&gt;string&lt;/span&gt; &lt;span class="pl-s1"&gt;value&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt; &lt;span class="pl-c1"&gt;?&lt;/span&gt; &lt;span class="pl-s1"&gt;value&lt;/span&gt; &lt;span class="pl-c1"&gt;:&lt;/span&gt; &lt;span class="pl-c1"&gt;null&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
-  &lt;span class="pl-k"&gt;return&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-smi"&gt;Service&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s1"&gt;key&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
-&lt;span class="pl-kos"&gt;}&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-smi"&gt;Keyed&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-smi"&gt;Service&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s1"&gt;KeyedService&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;AnyKey&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Metrics&lt;/h2&gt;
-&lt;p&gt;Some metrics have &lt;a href="https://github.com/autofac/Autofac/pull/1477" data-hovercard-type="pull_request" data-hovercard-url="/autofac/Autofac/pull/1477/hovercard"&gt;been introduced&lt;/a&gt; that can allow you to capture counters on how long middleware is taking, how often lock contention occurs, and so on.&lt;/p&gt;
-&lt;p&gt;Set the &lt;code&gt;AUTOFAC_METRICS&lt;/code&gt; environment variable in your process to &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;1&lt;/code&gt; to enable this feature. You can &lt;a href="https://github.com/autofac/Autofac/blob/3ad51ab98a6ecc19f3dfaca3dc27a16c462b397f/src/Autofac/Diagnostics/AutofacMetrics.cs#L17"&gt;see the set of counters that will become available here&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;g-emoji class="g-emoji" alias="warning"&gt;⚠️&lt;/g-emoji&gt; &lt;strong&gt;This is NOT FREE.&lt;/strong&gt; Collecting counters and metrics will incur a performance hit, so it's not something you want to leave on in production.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2&gt;General Performance Improvements&lt;/h2&gt;
-&lt;p&gt;A pass over the whole system &lt;a href="https://github.com/autofac/Autofac/pull/1478" data-hovercard-type="pull_request" data-hovercard-url="/autofac/Autofac/pull/1478/hovercard"&gt;was made&lt;/a&gt; with an eye to trying to claw back some performance. Some additional caching was introduced to help reduce lookups and calculations of reflection data; and a few hot-path optimizations were made for the common situations.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/autofac/Autofac/compare/v9.0.0...v9.1.0"&gt;&lt;tt&gt;v9.0.0...v9.1.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-03-12</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-03-12</id>
+    <title>aws/aws-sdk-net - Releases - 2026-03-13</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-03-13</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-03-13T00:10:11Z</updated>
+    <updated>2026-03-14T00:10:41Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1241.0"&gt;3.7.1241.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1242.0"&gt;3.7.1242.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1241.0 (2026-03-12 18:24 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1242.0 (2026-03-13 18:27 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;DataSync (3.7.506.0)
+&lt;li&gt;APIGateway (3.7.505.0)
 &lt;ul&gt;
-&lt;li&gt;DataSync's 3 location types, Hadoop Distributed File System (HDFS), FSx for Windows File Server (FSx Windows), and FSx for NetApp ONTAP (FSx ONTAP) now have credentials managed via Secrets Manager, which may be encrypted with service keys or be configured to use customer-managed keys or secret.&lt;/li&gt;
+&lt;li&gt;API Gateway now supports an additional security policy "SecurityPolicy-TLS13-1-2-FIPS-PFS-PQ-2025-09" for REST APIs and custom domain names. The new policy is compliant with TLS 1.3, Federal Information Processing Standards (FIPS), Perfect Forward Secrecy (PFS), and post-quantum (PQ) cryptography&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ECR (3.7.509.0)
+&lt;li&gt;ConfigService (3.7.506.0)
 &lt;ul&gt;
-&lt;li&gt;Add Chainguard to PTC upstreamRegistry enum&lt;/li&gt;
+&lt;li&gt;Fix pagination support for DescribeConformancePackCompliance, and update OrganizationConfigRule InputParameters max length to match ConfigRule.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (3.7.511.0)
+&lt;li&gt;Connect (3.7.533.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for account regional namespaces for general purpose buckets. The account regional namespace is a reserved subdivision of the global bucket namespace where only your account can create general purpose buckets.&lt;/li&gt;
+&lt;li&gt;Deprecating PredefinedNotificationID field&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 3.7.500.90
+&lt;li&gt;GameLiftStreams (3.7.507.0)
 &lt;ul&gt;
+&lt;li&gt;Feature launch that enables customers to connect streaming sessions to their own VPCs running in AWS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Glue (3.7.515.0)
+&lt;ul&gt;
+&lt;li&gt;Add QuerySessionContext to BatchGetPartitionRequest&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IVSRealTime (3.7.505.0)
+&lt;ul&gt;
+&lt;li&gt;Updates maximum reconnect window seconds from 60 to 300 for participant replication&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaConvert (3.7.508.0)
+&lt;ul&gt;
+&lt;li&gt;This update adds support for Dolby AC-4 audio output, frame rate conversion between non-Dolby Vision inputs to Dolby Vision outputs, and clear lead CMAF HLS output.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaLive (3.7.515.7)
+&lt;ul&gt;
+&lt;li&gt;Documents the VideoDescription.ScalingBehavior.SMART(underscore)CROP enum value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Mgn (3.7.505.0)
+&lt;ul&gt;
+&lt;li&gt;Network Migration APIs are now publicly available for direct programmatic access. Customers can now call Network Migration APIs directly without going through AWS Transform (ATX), enabling automation, integration with existing tools, and self-service migration workflows.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;QuickSight (3.7.514.0)
+&lt;ul&gt;
+&lt;li&gt;The change adds a new capability named ManageSharedFolders in Custom Permissions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 3.7.500.91
+&lt;ul&gt;
+&lt;li&gt;Fix XmlUnmarshallerContext to handle unexpected HTML response&lt;/li&gt;
 &lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
 &lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
@@ -126,29 +108,63 @@ builder.Register&amp;lt;Service&amp;gt;((ctx, p) =&amp;gt; {
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.209.0"&gt;4.0.209.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.210.0"&gt;4.0.210.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.209.0 (2026-03-12 18:24 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.210.0 (2026-03-13 18:18 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;DataSync (4.0.9.0)
+&lt;li&gt;APIGateway (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;DataSync's 3 location types, Hadoop Distributed File System (HDFS), FSx for Windows File Server (FSx Windows), and FSx for NetApp ONTAP (FSx ONTAP) now have credentials managed via Secrets Manager, which may be encrypted with service keys or be configured to use customer-managed keys or secret.&lt;/li&gt;
+&lt;li&gt;API Gateway now supports an additional security policy "SecurityPolicy-TLS13-1-2-FIPS-PFS-PQ-2025-09" for REST APIs and custom domain names. The new policy is compliant with TLS 1.3, Federal Information Processing Standards (FIPS), Perfect Forward Secrecy (PFS), and post-quantum (PQ) cryptography&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ECR (4.0.12.0)
+&lt;li&gt;ConfigService (4.0.7.0)
 &lt;ul&gt;
-&lt;li&gt;Add Chainguard to PTC upstreamRegistry enum&lt;/li&gt;
+&lt;li&gt;Fix pagination support for DescribeConformancePackCompliance, and update OrganizationConfigRule InputParameters max length to match ConfigRule.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (4.0.19.0)
+&lt;li&gt;Connect (4.0.37.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for account regional namespaces for general purpose buckets. The account regional namespace is a reserved subdivision of the global bucket namespace where only your account can create general purpose buckets.&lt;/li&gt;
+&lt;li&gt;Deprecating PredefinedNotificationID field&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 4.0.3.17
+&lt;li&gt;GameLiftStreams (4.0.7.0)
 &lt;ul&gt;
-&lt;li&gt;Fix XmlUnmarshallerContext to handle unexpected HTML response (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4060170365" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/4346" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/4346/hovercard" href="https://github.com/aws/aws-sdk-net/issues/4346"&gt;#4346&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Feature launch that enables customers to connect streaming sessions to their own VPCs running in AWS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Glue (4.0.26.0)
+&lt;ul&gt;
+&lt;li&gt;Add QuerySessionContext to BatchGetPartitionRequest&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IVSRealTime (4.0.6.0)
+&lt;ul&gt;
+&lt;li&gt;Updates maximum reconnect window seconds from 60 to 300 for participant replication&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaConvert (4.0.14.0)
+&lt;ul&gt;
+&lt;li&gt;This update adds support for Dolby AC-4 audio output, frame rate conversion between non-Dolby Vision inputs to Dolby Vision outputs, and clear lead CMAF HLS output.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaLive (4.0.17.3)
+&lt;ul&gt;
+&lt;li&gt;Documents the VideoDescription.ScalingBehavior.SMART(underscore)CROP enum value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Mgn (4.0.5.0)
+&lt;ul&gt;
+&lt;li&gt;Network Migration APIs are now publicly available for direct programmatic access. Customers can now call Network Migration APIs directly without going through AWS Transform (ATX), enabling automation, integration with existing tools, and self-service migration workflows.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;QuickSight (4.0.17.0)
+&lt;ul&gt;
+&lt;li&gt;The change adds a new capability named ManageSharedFolders in Custom Permissions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.3.18
+&lt;ul&gt;
+&lt;li&gt;Update InstanceProfileAWSCredentials to fix flaky test (no change in functionality for existing customers)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -159,80 +175,113 @@ builder.Register&amp;lt;Service&amp;gt;((ctx, p) =&amp;gt; {
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-03-12</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-03-12</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-03-13</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-03-13</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-03-13T00:10:11Z</updated>
+    <updated>2026-03-14T00:10:41Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DurableTask_1.1.0"&gt;Azure.ResourceManager.DurableTask_1.1.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.OpenAI_2.9.0-beta.1"&gt;Azure.AI.OpenAI_2.9.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.1.0 (2026-03-12)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;p&gt;This release contains required changes for durable task scheduler private endpoint support. As part of this schedulers can be configured to disable public network access. Additionally, private endpoint connections can be managed and viewed.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;DurableTaskSchedulerProperties&lt;/code&gt; now includes &lt;code&gt;PublicNetworkAccess&lt;/code&gt; to enable or disable public network access.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;DurableTaskSchedulerProperties&lt;/code&gt; now also contain a readonly &lt;code&gt;PrivateEndpointConnections&lt;/code&gt; collection for any private endpoint connections of this scheduler.&lt;/li&gt;
-&lt;li&gt;The &lt;code&gt;DurableTaskPrivateEndpointConnectionCollection&lt;/code&gt; client allows managing of private endpoint connections, including approving / rejecting connections.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Now uses API version &lt;code&gt;2026-02-01&lt;/code&gt; for all resource management calls.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ServiceFabricManagedClusters_1.3.0"&gt;Azure.ResourceManager.ServiceFabricManagedClusters_1.3.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.3.0 (2026-03-13)&lt;/h2&gt;
+                                &lt;h2&gt;2.9.0-beta.1 (2026-03-13)&lt;/h2&gt;
+&lt;p&gt;This update restores compatibility with the latest &lt;code&gt;2.9.*&lt;/code&gt; release of &lt;code&gt;OpenAI&lt;/code&gt; and enables access to the latest features. For details, please see the full &lt;a href="https://github.com/openai/openai-dotnet/blob/main/CHANGELOG.md#290-2026-02-27"&gt;OpenAI 2.9.0&lt;/a&gt; and &lt;a href="https://github.com/openai/openai-dotnet/blob/main/CHANGELOG.md#291-2026-03-02"&gt;OpenAI 2.9.1&lt;/a&gt; release notes.&lt;/p&gt;
+&lt;div class="markdown-alert markdown-alert-note"&gt;&lt;p class="markdown-alert-title"&gt;&lt;svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"&gt;&lt;/path&gt;&lt;/svg&gt;Note&lt;/p&gt;&lt;p&gt;Consider removing the Azure OpenAI SDK from your application in favor of using the OpenAI SDK only for broader models, unified APIs, latest features, and simpler authentication.&lt;/p&gt;
+&lt;/div&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded to API version 2026-02-01 (stable).&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;SkipManagedNsgAssignment&lt;/code&gt; property to &lt;code&gt;ServiceFabricManagedClusterData&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;EnableResilientEphemeralOsDisk&lt;/code&gt; property to &lt;code&gt;ServiceFabricManagedNodeTypeData&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A substantial number of new features are carried forward from the &lt;code&gt;OpenAI&lt;/code&gt; library. Please see the full release notes, linked above, for details.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;[Experimental]&lt;/code&gt; Realtime Migration&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Previous support in &lt;code&gt;Azure.AI.OpenAI&lt;/code&gt; for &lt;code&gt;RealtimeClient&lt;/code&gt; was based on the Realtime API Beta that has been &lt;a href="https://developers.openai.com/api/docs/deprecations" rel="nofollow"&gt;deprecated by OpenAI&lt;/a&gt; in favor of the newer Realtime surface. With this change, the additional logic in &lt;code&gt;Azure.AI.OpenAI&lt;/code&gt; is no longer applicable and incompatible with the general availability API. In deference to this, direct, experimental support from &lt;code&gt;Azure.AI.OpenAI&lt;/code&gt; for Realtime Beta is removed in favor of contemporary &lt;code&gt;OpenAI&lt;/code&gt; library use. Please migrate to the latest &lt;code&gt;OpenAI&lt;/code&gt; library for these new features and continuing API compatibility.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;[Experimental]&lt;/code&gt; Responses&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A number of breaking changes, including the removal of model-/deployment-based client constructor variants in favor of &lt;code&gt;CreateResponseOptions&lt;/code&gt; having a &lt;code&gt;Model&lt;/code&gt; property, are propagated from the &lt;code&gt;OpenAI&lt;/code&gt; release. Please see the &lt;code&gt;OpenAI&lt;/code&gt; release notes for full details.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.AgentFramework_1.0.0-beta.11"&gt;Azure.AI.AgentServer.AgentFramework_1.0.0-beta.11&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.11 (2026-03-13)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Removed preview-only fault simulation types (&lt;code&gt;NodeTypeFaultSimulation&lt;/code&gt;, &lt;code&gt;FaultSimulationStatus&lt;/code&gt;, &lt;code&gt;SfmcOperationStatus&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Support UseFoundryTools to accept optional TokenCredential parameter&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.5996861"&gt;Azure.Template_1.0.3-beta.5996861&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Core_1.0.0-beta.11"&gt;Azure.AI.AgentServer.Core_1.0.0-beta.11&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.3-beta.5996861 (2026-03-11)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
+                                &lt;h2&gt;1.0.0-beta.11 (2026-03-13)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Release DPG library&lt;/li&gt;
-&lt;li&gt;Add Grow-up story&lt;/li&gt;
+&lt;li&gt;Support UseFoundryTools to accept optional TokenCredential parameter&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.5996720"&gt;Azure.Template_1.0.3-beta.5996720&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Contracts_1.0.0-beta.11"&gt;Azure.AI.AgentServer.Contracts_1.0.0-beta.11&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.3-beta.5996720 (2026-03-11)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.11 (2026-03-13)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Release DPG library&lt;/li&gt;
-&lt;li&gt;Add Grow-up story&lt;/li&gt;
+&lt;li&gt;Package version alignment only. No functional changes.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.5995343"&gt;Azure.Template_1.0.3-beta.5995343&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerRegistry.Tasks_1.0.0-beta.1"&gt;Azure.ResourceManager.ContainerRegistry.Tasks_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.3-beta.5995343 (2026-03-11)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-03-13)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial release of &lt;code&gt;Azure.ResourceManager.ContainerRegistry.Tasks&lt;/code&gt; for managing Container Registry Tasks resources (Tasks, Runs, TaskRuns, and Agent Pools).&lt;/li&gt;
+&lt;li&gt;This package provides dedicated management of the &lt;code&gt;Microsoft.ContainerRegistry/RegistryTasks&lt;/code&gt; resource provider, separated from the &lt;code&gt;Azure.ResourceManager.ContainerRegistry&lt;/code&gt; package where these resources were previously included.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.AppContainers_1.2.0"&gt;Azure.Provisioning.AppContainers_1.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0 (2026-03-13)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Release DPG library&lt;/li&gt;
-&lt;li&gt;Add Grow-up story&lt;/li&gt;
+&lt;li&gt;Refreshed provisioning library with latest resource model updates.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Cdn_1.0.0-beta.1"&gt;Azure.Provisioning.Cdn_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-03-13)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial beta release of Azure.Provisioning.Cdn with support for declarative CDN resource provisioning.&lt;/li&gt;
+&lt;li&gt;Added support for CDN Profile, Endpoint, Origin, OriginGroup, CustomDomain, and WebApplicationFirewallPolicy resources.&lt;/li&gt;
+&lt;li&gt;Added support for Front Door Endpoint, Origin, OriginGroup, CustomDomain, Route, Rule, RuleSet, Secret, and SecurityPolicy resources.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerService_1.4.0-beta.1"&gt;Azure.ResourceManager.ContainerService_1.4.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.4.0-beta.1 (2026-03-12)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version to 2026-01-02-preview.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.51.1&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -241,49 +290,92 @@ builder.Register&amp;lt;Service&amp;gt;((ctx, p) =&amp;gt; {
             </content>
   </entry>
   <entry>
-    <title>dotnet/machinelearning - Releases - 2026-03-12</title>
-    <id>https://github.com/dotnet/machinelearning#2026-03-12</id>
-    <link href="https://github.com/dotnet/machinelearning" />
-    <updated>2026-03-13T00:10:18Z</updated>
+    <title>dotnet/dotnet-monitor - Releases - 2026-03-13</title>
+    <id>https://github.com/dotnet/dotnet-monitor#2026-03-13</id>
+    <link href="https://github.com/dotnet/dotnet-monitor" />
+    <updated>2026-03-14T00:10:49Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/machinelearning/releases/tag/v6.0.0-preview1"&gt;v6.0.0-preview1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/dotnet-monitor/releases/tag/v10.0.1"&gt;Dotnet-Monitor Release - v10.0.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h1&gt;&lt;a href="http://dot.net/ml" rel="nofollow"&gt;ML.NET&lt;/a&gt; 6.0.0-preview1&lt;/h1&gt;
-&lt;h2&gt;&lt;strong&gt;New Features&lt;/strong&gt;&lt;/h2&gt;
+                                &lt;p&gt;Today we are releasing the 10.0.1 build of the &lt;code&gt;dotnet monitor&lt;/code&gt; tool. This release includes:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Support gpt-5.1 model in Tiktoken tokenizer&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7556" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7556/hovercard"&gt;#7556&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Support Gpt-5.2 in Tokenizer library&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7571" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7571/hovercard"&gt;#7571&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Add gpt-5.3 model support to TiktokenTokenizer&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7579" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7579/hovercard"&gt;#7579&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Updated dependencies&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;strong&gt;Enhancements&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;If you would like to provide additional feedback to the team &lt;a href="https://aka.ms/dotnet-monitor-survey?src=rn" rel="nofollow"&gt;please fill out this survey&lt;/a&gt;.&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;Packages released to NuGet&lt;/summary&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Remove Google.Protobuf dependency from Microsoft.ML.Tokenizers&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7587" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7587/hovercard"&gt;#7587&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Add heap-based BPE merge path for large inputs (&amp;gt;128 bytes)&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7580" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7580/hovercard"&gt;#7580&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dotnet-monitor.10.0.1.nupkg&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;strong&gt;Bug Fixes&lt;/strong&gt;&lt;/h2&gt;
+&lt;/details&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>grpc/grpc - Releases - 2026-03-13</title>
+    <id>https://github.com/grpc/grpc#2026-03-13</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2026-03-14T00:10:53Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.80.0-pre1"&gt;Release v1.80.0-pre1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is a prerelease of gRPC Core 1.80.0 (glimmering).&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This prerelease contains refinements, improvements, and bug fixes.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>microsoft/WindowsAppSDK - Releases - 2026-03-13</title>
+    <id>https://github.com/microsoft/WindowsAppSDK#2026-03-13</id>
+    <link href="https://github.com/microsoft/WindowsAppSDK" />
+    <updated>2026-03-14T00:10:57Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.0-exp6"&gt;2.0 Experimental 6 (2.0.0-experimental6) 🧪&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Windows App SDK 2.0-Experimental6 (2.0.0-experimental6)&lt;/h2&gt;
+&lt;p&gt;WinAppSDK 2.0.0 Experimental 6 is the latest experimental version of WinAppSDK providing new features and improvements to the platform.&lt;/p&gt;
+&lt;h3&gt;What's new in WinAppSDK 2.0 Experimental 6:&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Fix bug that causes Merge to fail with empty DataFrames&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7573" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7573/hovercard"&gt;#7573&lt;/a&gt;) - Thanks &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/sevenzees/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/sevenzees"&gt;@sevenzees&lt;/a&gt;!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fix bug in PACKAGE.md examples&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7561" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7561/hovercard"&gt;#7561&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fix local build on linux that was omitting arch argument&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7549" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7549/hovercard"&gt;#7549&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;The version of ONNX Runtime has been updated to 1.24.2.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;NPUPowerMode&lt;/code&gt; has been deprecated in favor of newer power management APIs.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GetReadyState&lt;/code&gt; now gracefully returns &lt;code&gt;NotSupported&lt;/code&gt; when the session broker is unavailable, instead of throwing an exception.&lt;/li&gt;
+&lt;li&gt;Added NV12 output format support for Video Super Resolution.&lt;/li&gt;
+&lt;li&gt;Improved &lt;code&gt;DeleteIndex&lt;/code&gt; reliability.&lt;/li&gt;
+&lt;li&gt;App Content Search are part of a separate &lt;code&gt;Microsoft.Windows.Search&lt;/code&gt; package instead of being part of &lt;code&gt;Microsoft.Windows.AI package&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;strong&gt;Build / Test updates&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3&gt;Bugs fixed:&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Update MajorVersion to 6&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7543" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7543/hovercard"&gt;#7543&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Update mac build machines&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7558" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7558/hovercard"&gt;#7558&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Add .azuredevops/dependabot.yml&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7553" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7553/hovercard"&gt;#7553&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Add repo health check workflows (orchestrator, investigator, groomer) and known baseline&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7583" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7583/hovercard"&gt;#7583&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Add targets for repo health aw&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7588" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7588/hovercard"&gt;#7588&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[main] Update dependencies from dotnet/arcade&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7540" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7540/hovercard"&gt;#7540&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[main] Update dependencies from dotnet/arcade&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7559" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7559/hovercard"&gt;#7559&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[main] Update dependencies from dotnet/arcade&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7562" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7562/hovercard"&gt;#7562&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[main] Update dependencies from dotnet/arcade&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7563" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7563/hovercard"&gt;#7563&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;ImageDescription.DescribeAsync&lt;/code&gt; failing with &lt;code&gt;InternalError&lt;/code&gt; due to a race condition&lt;/li&gt;
+&lt;li&gt;Fix for OCR Bounding boxes returning negative values in some edge cases.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;strong&gt;Documentation Updates&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;To see everything that's new and changed, see the full &lt;a href="https://aka.ms/windowsappsdk/2.0/2.0.0-experimental6/release-notes" rel="nofollow"&gt;Windows App SDK 2.0 Experimental release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Add 5.0.0 release notes&lt;/strong&gt; (&lt;a href="https://github.com/dotnet/machinelearning/pull/7544" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/machinelearning/pull/7544/hovercard"&gt;#7544&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.0.0-experimental6" rel="nofollow"&gt;2.0.0-experimental6 NuGet&lt;/a&gt; package to use WinAppSDK 2.0 in your app.&lt;/li&gt;
+&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Getting Started&lt;/h3&gt;
+&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools &lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.   -&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -292,37 +384,25 @@ builder.Register&amp;lt;Service&amp;gt;((ctx, p) =&amp;gt; {
             </content>
   </entry>
   <entry>
-    <title>npgsql/npgsql - Releases - 2026-03-12</title>
-    <id>https://github.com/npgsql/npgsql#2026-03-12</id>
-    <link href="https://github.com/npgsql/npgsql" />
-    <updated>2026-03-13T00:10:26Z</updated>
+    <title>StackExchange/StackExchange.Redis - Releases - 2026-03-13</title>
+    <id>https://github.com/StackExchange/StackExchange.Redis#2026-03-13</id>
+    <link href="https://github.com/StackExchange/StackExchange.Redis" />
+    <updated>2026-03-14T00:11:01Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/npgsql/npgsql/releases/tag/v9.0.5"&gt;v9.0.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/2.12.1"&gt;2.12.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;v9.0.5 contains several minor bug fixes.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/npgsql/npgsql/milestone/131?closed=1"&gt;Milestone issues&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/npgsql/npgsql/compare/v9.0.4...v9.0.5"&gt;&lt;tt&gt;v9.0.4...v9.0.5&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/npgsql/npgsql/releases/tag/v10.0.2"&gt;v10.0.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;v10.0.2 contains several minor bug fixes.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/npgsql/npgsql/milestone/135?closed=1"&gt;Milestone issues&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/npgsql/npgsql/compare/v10.0.1...v10.0.2"&gt;&lt;tt&gt;v10.0.1...v10.0.2&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/npgsql/npgsql/releases/tag/v8.0.9"&gt;v8.0.9&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;v8.0.9 contains several minor bug fixes.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/npgsql/npgsql/milestone/133?closed=1"&gt;Milestone issues&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/npgsql/npgsql/compare/v8.0.8...v8.0.9"&gt;&lt;tt&gt;v8.0.8...v8.0.9&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Add missing &lt;code&gt;LCS&lt;/code&gt; outputs and missing &lt;code&gt;RedisType.VectorSet&lt;/code&gt; (&lt;a href="https://github.com/StackExchange/StackExchange.Redis/pull/3028" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3028/hovercard"&gt;#3028 by @mgravell&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Track and report multiplexer count (&lt;a href="https://github.com/StackExchange/StackExchange.Redis/pull/3030" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3030/hovercard"&gt;#3030 by @mgravell&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;(docs) Add Entra ID authentication docs (&lt;a href="https://github.com/StackExchange/StackExchange.Redis/pull/3023" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3023/hovercard"&gt;#3023 by @philon-msft&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;(eng) Improve test infrastructure (toy-server) (&lt;a href="https://github.com/StackExchange/StackExchange.Redis/pull/3021" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3021/hovercard"&gt;#3021 by @mgravell&lt;/a&gt;, &lt;a href="https://github.com/StackExchange/StackExchange.Redis/pull/3022" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3022/hovercard"&gt;#3022 by @mgravell&lt;/a&gt;, &lt;a href="https://github.com/StackExchange/StackExchange.Redis/pull/3027" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3027/hovercard"&gt;#3027 by @mgravell&lt;/a&gt;, &lt;a href="https://github.com/StackExchange/StackExchange.Redis/pull/3028" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3028/hovercard"&gt;#3028 by @mgravell&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;(eng) Pre-V2 work: bring RESPite down, toy-server, migrate to &lt;code&gt;AsciiHash&lt;/code&gt; (&lt;a href="https://github.com/StackExchange/StackExchange.Redis/pull/3028" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3028/hovercard"&gt;#3028 by @mgravell&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/2.11.8...2.12.1"&gt;&lt;tt&gt;2.11.8...2.12.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
