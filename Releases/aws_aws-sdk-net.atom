@@ -1,24 +1,34 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-03-17T00:11:26Z</updated>
+  <updated>2026-03-18T00:12:11Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-03-16</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-03-16</id>
+    <title>aws/aws-sdk-net - Releases - 2026-03-17</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-03-17</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-03-17T00:11:26Z</updated>
+    <updated>2026-03-18T00:12:11Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.211.1"&gt;4.0.211.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1244.0"&gt;3.7.1244.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.211.1 (2026-03-16 21:26 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1244.0 (2026-03-17 18:41 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Extensions.Bedrock.MEAI (4.0.6.1)
+&lt;li&gt;BedrockAgentCoreControl (3.7.521.0)
 &lt;ul&gt;
-&lt;li&gt;Revert: Update &lt;code&gt;IChatClient&lt;/code&gt; with latest &lt;code&gt;BedrockRuntime&lt;/code&gt; / M.E.AI (adding support for multi-modal tool returns and citations with URIs)&lt;/li&gt;
+&lt;li&gt;Deprecating namespaces field and adding namespaceTemplates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ElasticMapReduce (3.7.506.0)
+&lt;ul&gt;
+&lt;li&gt;Add S3LoggingConfiguration to Control LogUploads&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Glue (3.7.516.0)
+&lt;ul&gt;
+&lt;li&gt;Provide approval to overwrite existing Lake Formation permissions on all child resources with the default permissions specified in 'CreateTableDefaultPermissions' and 'CreateDatabaseDefaultPermissions' when updating catalog. Allowed values are ["Accept","Deny"] .&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -26,68 +36,23 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1243.0"&gt;3.7.1243.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.212.0"&gt;4.0.212.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1243.0 (2026-03-16 18:24 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.212.0 (2026-03-17 18:18 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Bedrock (3.7.515.0)
+&lt;li&gt;BedrockAgentCoreControl (4.0.21.0)
 &lt;ul&gt;
-&lt;li&gt;You can now generate policy scenarios on demand using the new GENERATE POLICY SCENARIOS build workflow type. Scenarios will no longer be automatically generated during INGEST CONTENT, REFINE POLICY, and IMPORT POLICY workflows, resulting in faster completion times for these operations.&lt;/li&gt;
+&lt;li&gt;Deprecating namespaces field and adding namespaceTemplates.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCore (3.7.512.0)
+&lt;li&gt;ElasticMapReduce (4.0.8.0)
 &lt;ul&gt;
-&lt;li&gt;Provide support to perform deterministic operations on agent runtime through shell command executions via the new InvokeAgentRuntimeCommand API&lt;/li&gt;
+&lt;li&gt;Add S3LoggingConfiguration to Control LogUploads&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (3.7.520.0)
+&lt;li&gt;Glue (4.0.27.0)
 &lt;ul&gt;
-&lt;li&gt;Supporting hosting of public ECR Container Images in AgentCore Runtime&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ECS (3.7.511.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon ECS now supports configuring whether tags are propagated to the EC2 Instance Metadata Service (IMDS) for instances launched by the Managed Instances capacity provider. This gives customers control over tag visibility in IMDS when using ECS Managed Instances.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 3.7.500.92
-&lt;ul&gt;
-&lt;li&gt;Updating endpoints.json file.&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.211.0"&gt;4.0.211.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;4.0.211.0 (2026-03-16 18:24 UTC)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Bedrock (4.0.23.0)
-&lt;ul&gt;
-&lt;li&gt;You can now generate policy scenarios on demand using the new GENERATE POLICY SCENARIOS build workflow type. Scenarios will no longer be automatically generated during INGEST CONTENT, REFINE POLICY, and IMPORT POLICY workflows, resulting in faster completion times for these operations.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BedrockAgentCore (4.0.12.0)
-&lt;ul&gt;
-&lt;li&gt;Provide support to perform deterministic operations on agent runtime through shell command executions via the new InvokeAgentRuntimeCommand API&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.20.0)
-&lt;ul&gt;
-&lt;li&gt;Supporting hosting of public ECR Container Images in AgentCore Runtime&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ECS (4.0.15.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon ECS now supports configuring whether tags are propagated to the EC2 Instance Metadata Service (IMDS) for instances launched by the Managed Instances capacity provider. This gives customers control over tag visibility in IMDS when using ECS Managed Instances.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Extensions.Bedrock.MEAI (4.0.6.0)
-&lt;ul&gt;
-&lt;li&gt;Update &lt;code&gt;IChatClient&lt;/code&gt; with latest &lt;code&gt;BedrockRuntime&lt;/code&gt; / M.E.AI (adding support for multi-modal tool returns and citations with URIs)&lt;/li&gt;
+&lt;li&gt;Provide approval to overwrite existing Lake Formation permissions on all child resources with the default permissions specified in 'CreateTableDefaultPermissions' and 'CreateDatabaseDefaultPermissions' when updating catalog. Allowed values are ["Accept","Deny"] .&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
