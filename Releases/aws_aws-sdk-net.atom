@@ -1,34 +1,46 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-03-18T00:12:11Z</updated>
+  <updated>2026-03-19T00:11:28Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-03-17</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-03-17</id>
+    <title>aws/aws-sdk-net - Releases - 2026-03-18</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-03-18</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-03-18T00:12:11Z</updated>
+    <updated>2026-03-19T00:11:28Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1244.0"&gt;3.7.1244.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.213.0"&gt;4.0.213.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;3.7.1244.0 (2026-03-17 18:41 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.213.0 (2026-03-18 18:57 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;BedrockAgentCoreControl (3.7.521.0)
+&lt;li&gt;DSQL (4.0.9.0)
 &lt;ul&gt;
-&lt;li&gt;Deprecating namespaces field and adding namespaceTemplates.&lt;/li&gt;
+&lt;li&gt;Add configurable token expiry duration to DSQLAuthTokenGenerator. New overloads accept a TimeSpan parameter to set token lifetime, with validation between 0 and 7 days. Default remains 15 minutes for backwards compatibility.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticMapReduce (3.7.506.0)
+&lt;li&gt;EC2 (4.0.81.0)
 &lt;ul&gt;
-&lt;li&gt;Add S3LoggingConfiguration to Control LogUploads&lt;/li&gt;
+&lt;li&gt;The DescribeInstanceTypes API now returns default connection tracking timeout values for TCP, UDP, and UDP stream via the new connectionTrackingConfiguration field on NetworkInfo.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Glue (3.7.516.0)
+&lt;li&gt;MediaConvert (4.0.15.0)
 &lt;ul&gt;
-&lt;li&gt;Provide approval to overwrite existing Lake Formation permissions on all child resources with the default permissions specified in 'CreateTableDefaultPermissions' and 'CreateDatabaseDefaultPermissions' when updating catalog. Allowed values are ["Accept","Deny"] .&lt;/li&gt;
+&lt;li&gt;This update adds additional bitrate options for Dolby AC-4 audio outputs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SageMakerRuntimeHTTP2 (4.0.0.1)
+&lt;ul&gt;
+&lt;li&gt;Add support for SageMakerRuntimeHTTP2 bidirectional streaming. This is only supported in .NET8&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.3.19
+&lt;ul&gt;
+&lt;li&gt;Add DocumentJsonConverter to fix System.Text.Json serialization of Document types. Document's IEnumerable interfaces caused STJ to treat it as a collection, throwing InvalidDocumentTypeConversionException.&lt;/li&gt;
+&lt;li&gt;Add support for event headers for event stream based APIs used in services like SageMakerRuntimeHttp2.&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -36,23 +48,18 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.212.0"&gt;4.0.212.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1245.0"&gt;3.7.1245.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.212.0 (2026-03-17 18:18 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;3.7.1245.0 (2026-03-18 18:24 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.21.0)
+&lt;li&gt;EC2 (3.7.555.0)
 &lt;ul&gt;
-&lt;li&gt;Deprecating namespaces field and adding namespaceTemplates.&lt;/li&gt;
+&lt;li&gt;The DescribeInstanceTypes API now returns default connection tracking timeout values for TCP, UDP, and UDP stream via the new connectionTrackingConfiguration field on NetworkInfo.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticMapReduce (4.0.8.0)
+&lt;li&gt;MediaConvert (3.7.509.0)
 &lt;ul&gt;
-&lt;li&gt;Add S3LoggingConfiguration to Control LogUploads&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Glue (4.0.27.0)
-&lt;ul&gt;
-&lt;li&gt;Provide approval to overwrite existing Lake Formation permissions on all child resources with the default permissions specified in 'CreateTableDefaultPermissions' and 'CreateDatabaseDefaultPermissions' when updating catalog. Allowed values are ["Accept","Deny"] .&lt;/li&gt;
+&lt;li&gt;This update adds additional bitrate options for Dolby AC-4 audio outputs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
