@@ -1,117 +1,111 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-03-25T00:11:30Z</updated>
+  <updated>2026-03-26T00:13:30Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-03-24</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-03-24</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-03-25</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-03-25</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-03-25T00:11:30Z</updated>
+    <updated>2026-03-26T00:13:30Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.Batch_12.26.0-beta.1"&gt;Azure.Storage.Blobs.Batch_12.26.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetApp_1.16.0-beta.2"&gt;Azure.ResourceManager.NetApp_1.16.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.26.0-beta.1 (2026-03-24)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h2&gt;1.16.0-beta.2 (2026-03-26)&lt;/h2&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for service version 2026-06-06.&lt;/li&gt;
+&lt;li&gt;Renaming of models to align with the Azure SDK naming convention:&lt;br&gt;
+Added NetApp prefix to models: CacheResource, BucketResource, NetAppBucketResource, ActiveDirectoryConfigResource, SecretPassword, NetAppSecretPassword, LdapConfiguration, DayOfWeek renamed to NetAppDayOfWeek,&lt;br&gt;
+FileSystemUser, NfsUser, SmbSettings, PeeringPassphrases, OriginClusterInformation, ChangeZoneContent&lt;/li&gt;
+&lt;li&gt;Added NetApp prefix to Enums: PolicyStatus, EncryptionState, CredentialsStatus, BreakthroughMode, VolumeSize, SnapshotUsage, KerberosState, GlobalFileLockingState, LargeVolumeType, SmbEncryptionState, CifsChangeNotifyState,&lt;br&gt;
+EnableWriteBackState, LdapServerType, LdapState, OnCertificateConflictAction, SnapshotDirectoryVisibility, ExternalReplicationSetupStatus&lt;/li&gt;
+&lt;li&gt;Standardized AKV abbreviation in models CertificateAkvDetails renamed to CertificateKeyVaultDetails, CredentialsAkvDetails renamed to CredentialsKeyVaultDetails, EntraIdAkvConfig renamed to EntraIdKeyVaultConfig, EntraIdAkvConfigPatch renamed to EntraIdKeyVaultConfigPatch&lt;/li&gt;
+&lt;li&gt;Renamed KeyPairExpiry to KeyPairExpiresOn in BucketGenerateCredentials&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.DataLake_12.27.0-beta.1"&gt;Azure.Storage.Files.DataLake_12.27.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Compute_1.0.0-beta.1"&gt;Azure.Provisioning.Compute_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.27.0-beta.1 (2026-03-24)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-03-25)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for service version 2026-06-06.&lt;/li&gt;
-&lt;li&gt;Added DataLakePathClient, DataLakeFileClient, and DataLakeDirectoryClient.GetSystemProperties() and .GetSystemPropertiesAsync().&lt;/li&gt;
-&lt;li&gt;Added DataLakePathClient, DataLakeFileClient, and DataLakeDirectoryClient.GetTags(), .GetTagsAsync(), .SetTags(), and .SetTagsAsync().&lt;/li&gt;
+&lt;li&gt;Initial release of &lt;code&gt;Azure.Provisioning.Compute&lt;/code&gt; with support for declarative provisioning of Azure Compute resources.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.61"&gt;Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.61&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DevTestLabs_1.1.2"&gt;Azure.ResourceManager.DevTestLabs_1.1.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.0.0-preview.61 (2026-03-24)&lt;/h2&gt;
+                                &lt;h2&gt;1.1.2 (2026-03-25)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for service version 2026-06-06.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Queues_12.27.0-beta.1"&gt;Azure.Storage.Queues_12.27.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.27.0-beta.1 (2026-03-24)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for service version 2026-06-06.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.Shares_12.27.0-beta.1"&gt;Azure.Storage.Files.Shares_12.27.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.27.0-beta.1 (2026-03-24)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for service version 2026-06-06.&lt;/li&gt;
-&lt;li&gt;Added support for uploading up to 4 MiB of data with ShareFileClient.Create() and .CreateAsync().&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs_12.29.0-beta.1"&gt;Azure.Storage.Blobs_12.29.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.29.0-beta.1 (2026-03-24)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for service version 2026-06-06.&lt;/li&gt;
-&lt;li&gt;Added support for Blob Smart Tier.&lt;/li&gt;
-&lt;li&gt;Added support for Directory-level SAS and User Delegation SAS.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Common_12.28.0-beta.1"&gt;Azure.Storage.Common_12.28.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.28.0-beta.1 (2026-03-24)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;This release contains bug fixes to improve quality.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.52.0"&gt;Azure.Core_1.52.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.52.0 (2026-03-23)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;IndonesiaCentral&lt;/code&gt;, &lt;code&gt;NewZealandNorth&lt;/code&gt;, and &lt;code&gt;MalaysiaWest&lt;/code&gt; locations to &lt;code&gt;AzureLocation&lt;/code&gt; struct.&lt;/li&gt;
-&lt;li&gt;Added a JSON schema segment to the NuGet package that provides IntelliSense and validation for &lt;code&gt;AzureClients&lt;/code&gt; configuration in &lt;code&gt;appsettings.json&lt;/code&gt;, including &lt;code&gt;Retry&lt;/code&gt; and &lt;code&gt;Diagnostics&lt;/code&gt; options.&lt;/li&gt;
+&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.DevTestLabs&lt;/code&gt; AOT-compatible.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed implicit conversion operators to not throw exceptions on null inputs per Framework Design Guidelines. Operators now return safe defaults: &lt;code&gt;null&lt;/code&gt; for reference types, &lt;code&gt;default&lt;/code&gt; for value types.&lt;/li&gt;
-&lt;li&gt;Fixed &lt;code&gt;RequestContent.Dispose()&lt;/code&gt; to be idempotent and thread-safe, preventing &lt;code&gt;ArrayPool&lt;/code&gt; buffers from being returned multiple times when disposed concurrently or repeatedly.&lt;/li&gt;
-&lt;li&gt;Fixed &lt;code&gt;HttpClientTransport&lt;/code&gt; to correctly set the &lt;code&gt;Host&lt;/code&gt; header on outgoing requests when explicitly specified, rather than falling through to &lt;code&gt;TryAddWithoutValidation&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Fixed &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4118453510" data-permission-text="Title is private" data-url="https://github.com/Azure/azure-sdk-for-net/issues/57342" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/57342/hovercard" href="https://github.com/Azure/azure-sdk-for-net/issues/57342"&gt;#57342&lt;/a&gt; by correctly handling empty string values for URI properties.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.51.1.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6059279"&gt;Azure.Template_1.0.3-beta.6059279&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.3-beta.6059279 (2026-03-25)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;WidgetAnalyticsClientSettings&lt;/code&gt; to support creating a &lt;code&gt;WidgetAnalyticsClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Analytics.Synapse.Artifacts_1.0.0-preview.23"&gt;Azure.Analytics.Synapse.Artifacts_1.0.0-preview.23&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-preview.23 (2026-03-23)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Model AzureDatabricksDeltaLakeLinkedService has a new parameter workspace_resource_id&lt;/li&gt;
+&lt;li&gt;Model HDInsightOnDemandLinkedService has a new parameter cluster_resource_group_auth_type&lt;/li&gt;
+&lt;li&gt;Added enum type HDInsightOndemandClusterResourceGroupAuthenticationType&lt;/li&gt;
+&lt;li&gt;Model JiraObjectDataset has a new parameter schema_type_properties_schema&lt;/li&gt;
+&lt;li&gt;Model JiraObjectDataset has a new parameter table&lt;/li&gt;
+&lt;li&gt;Model LookupActivity has a new parameter treat_decimal_as_string&lt;/li&gt;
+&lt;li&gt;Model NetezzaLinkedService has a new parameter database&lt;/li&gt;
+&lt;li&gt;Model NetezzaLinkedService has a new parameter port&lt;/li&gt;
+&lt;li&gt;Model NetezzaLinkedService has a new parameter security_level&lt;/li&gt;
+&lt;li&gt;Model NetezzaLinkedService has a new parameter server&lt;/li&gt;
+&lt;li&gt;Model NetezzaLinkedService has a new parameter uid&lt;/li&gt;
+&lt;li&gt;Added enum type NetezzaSecurityLevelType&lt;/li&gt;
+&lt;li&gt;Model SalesforceV2Source has a new parameter partition_option&lt;/li&gt;
+&lt;li&gt;Model ScriptActivity has a new parameter treat_decimal_as_string&lt;/li&gt;
+&lt;li&gt;Model SnowflakeV2LinkedService has a new parameter use_utc_timestamps&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added nullability annotations to implicit conversion operator parameters for &lt;code&gt;Response&amp;lt;T&amp;gt;&lt;/code&gt;, &lt;code&gt;AzureLocation&lt;/code&gt;, &lt;code&gt;ContentType&lt;/code&gt;, &lt;code&gt;ResourceType&lt;/code&gt;, &lt;code&gt;RequestContent&lt;/code&gt;, and &lt;code&gt;DynamicData&lt;/code&gt; to indicate that null is a valid input. This change was made because throwing exceptions from implicit conversions violates the &lt;a href="https://learn.microsoft.com/dotnet/standard/design-guidelines/operator-overloads" rel="nofollow"&gt;Framework Design Guidelines&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;RequestContent&lt;/code&gt; implicit conversion operators to return nullable &lt;code&gt;RequestContent?&lt;/code&gt; to accurately reflect that null inputs produce null outputs.&lt;/li&gt;
+&lt;li&gt;Model AzureDatabricksDeltaLakeLinkedService parameter access_token is no longer required in constructor&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6058783"&gt;Azure.Template_1.0.3-beta.6058783&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.3-beta.6058783 (2026-03-25)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;WidgetAnalyticsClientSettings&lt;/code&gt; to support creating a &lt;code&gt;WidgetAnalyticsClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
