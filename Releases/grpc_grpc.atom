@@ -1,6 +1,75 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2026-03-26T00:13:46Z</updated>
+  <updated>2026-03-27T00:13:01Z</updated>
   <id>https://github.com/grpc/grpc</id>
+  <entry>
+    <title>grpc/grpc - Releases - 2026-03-26</title>
+    <id>https://github.com/grpc/grpc#2026-03-26</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2026-03-27T00:13:01Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.80.0"&gt;Release v1.80.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release 1.80.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;glimmering&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ssl] Implement TLS private key signer in Python. (&lt;a href="https://github.com/grpc/grpc/pull/41701" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41701/hovercard"&gt;#41701&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[TLS Credentials]: Private Key Offload Implementation. (&lt;a href="https://github.com/grpc/grpc/pull/41606" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41606/hovercard"&gt;#41606&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix max sockaddr struct size on OpenBSD. (&lt;a href="https://github.com/grpc/grpc/pull/40454" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/40454/hovercard"&gt;#40454&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[core] Enable EventEngine for Python by default, and EventEngine fork support in Python and Ruby. (&lt;a href="https://github.com/grpc/grpc/pull/41432" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41432/hovercard"&gt;#41432&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[TLS Credentials]: Create InMemoryCertificateProvider to update certificates independently. (&lt;a href="https://github.com/grpc/grpc/pull/41484" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41484/hovercard"&gt;#41484&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Ruby] Build/test ruby 4.0 and build native gems with Ruby 4.0 support. (&lt;a href="https://github.com/grpc/grpc/pull/41324" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41324/hovercard"&gt;#41324&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[EventEngine] Remove an incorrect std::move in DNSServiceResolver constructor. (&lt;a href="https://github.com/grpc/grpc/pull/41502" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41502/hovercard"&gt;#41502&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[RR and WRR] enable change to connect from a random index. (&lt;a href="https://github.com/grpc/grpc/pull/41472" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41472/hovercard"&gt;#41472&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[xds] Implement gRFC A101. (&lt;a href="https://github.com/grpc/grpc/pull/41051" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41051/hovercard"&gt;#41051&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C++&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[C++] Add SNI override option to C++ channel credentials options API. (&lt;a href="https://github.com/grpc/grpc/pull/41460" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41460/hovercard"&gt;#41460&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C#&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[csharp tools] Option to append Async to server side method names &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2928448179" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/39010" data-hovercard-type="issue" data-hovercard-url="/grpc/grpc/issues/39010/hovercard" href="https://github.com/grpc/grpc/issues/39010"&gt;#39010&lt;/a&gt;. (&lt;a href="https://github.com/grpc/grpc/pull/39797" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39797/hovercard"&gt;#39797&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Grpc.Tools 2.69.0 stops working on ARM64. (&lt;a href="https://github.com/grpc/grpc/pull/41543" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41543/hovercard"&gt;#41543&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Objective-C&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Fix][Compiler] Plugins fall back to the edition 2023 for older protobuf. (&lt;a href="https://github.com/grpc/grpc/pull/41357" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41357/hovercard"&gt;#41357&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;PHP&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[PHP] Disable php infinite recursion check for callback from Core to PHP. (&lt;a href="https://github.com/grpc/grpc/pull/41835" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41835/hovercard"&gt;#41835&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[PHP] Fix runtime error with PHp8.5 alpha because zend_exception_get_defaul…. (&lt;a href="https://github.com/grpc/grpc/pull/40337" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/40337/hovercard"&gt;#40337&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Python] Fix &lt;code&gt;GRPC_TRACE&lt;/code&gt; not working when absl log initialized in cython. (&lt;a href="https://github.com/grpc/grpc/pull/41814" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41814/hovercard"&gt;#41814&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Revert "[Python] Align GRPC_ENABLE_FORK_SUPPORT env defaults in core and python (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3835782767" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/41455" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41455/hovercard" href="https://github.com/grpc/grpc/pull/41455"&gt;#41455&lt;/a&gt;)". (&lt;a href="https://github.com/grpc/grpc/pull/41769" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41769/hovercard"&gt;#41769&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Fix AsyncIO Server maximum_concurrent_rpcs enforcement preventing negative active_rpcs count. (&lt;a href="https://github.com/grpc/grpc/pull/41532" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41532/hovercard"&gt;#41532&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Docs: correct &lt;code&gt;grpc.Compression&lt;/code&gt; references. (&lt;a href="https://github.com/grpc/grpc/pull/41705" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41705/hovercard"&gt;#41705&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] [Typeguard] Part 4 - Add Typeguard to AIO stack in tests . (&lt;a href="https://github.com/grpc/grpc/pull/40226" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/40226/hovercard"&gt;#40226&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Fix multi-thread exception for Asyncio gRPC clients - Fixes &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="802376154" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/25364" data-hovercard-type="issue" data-hovercard-url="/grpc/grpc/issues/25364/hovercard" href="https://github.com/grpc/grpc/issues/25364"&gt;#25364&lt;/a&gt;. (&lt;a href="https://github.com/grpc/grpc/pull/41483" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41483/hovercard"&gt;#41483&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Resolve absl::InitializeLog warning. (&lt;a href="https://github.com/grpc/grpc/pull/39779" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39779/hovercard"&gt;#39779&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Remove IF usage in Cython. (&lt;a href="https://github.com/grpc/grpc/pull/41400" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41400/hovercard"&gt;#41400&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Add language features to exported proto files. (&lt;a href="https://github.com/grpc/grpc/pull/41501" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41501/hovercard"&gt;#41501&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Resolve absl::InitializeLog warning. (&lt;a href="https://github.com/grpc/grpc/pull/39779" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/39779/hovercard"&gt;#39779&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Fix crash when iterating on AIO Metadata keys(), values(), items() or list(metadata.values()) etc. . (&lt;a href="https://github.com/grpc/grpc/pull/41481" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41481/hovercard"&gt;#41481&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Modernize and revamp Public API Docs. (&lt;a href="https://github.com/grpc/grpc/pull/41287" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41287/hovercard"&gt;#41287&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ruby&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Ruby] Added support to push native-debug packages off rubygems to public gcs bucket. (&lt;a href="https://github.com/grpc/grpc/pull/41270" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41270/hovercard"&gt;#41270&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
