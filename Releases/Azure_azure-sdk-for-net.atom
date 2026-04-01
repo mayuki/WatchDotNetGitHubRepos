@@ -1,95 +1,28 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-03-31T00:13:32Z</updated>
+  <updated>2026-04-01T00:14:36Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-03-30</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-03-30</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-03-31</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-03-31</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-03-31T00:13:32Z</updated>
+    <updated>2026-04-01T00:14:36Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Monitor.OpenTelemetry.Exporter_1.7.0"&gt;Azure.Monitor.OpenTelemetry.Exporter_1.7.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity_1.20.0"&gt;Azure.Identity_1.20.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.7.0 (2026-03-27)&lt;/h2&gt;
+                                &lt;h2&gt;1.20.0 (2026-03-30)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;ApplicationInsightsRestClientSettings&lt;/code&gt; to support creating a &lt;code&gt;ApplicationInsightsRestClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/56891" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/56891/hovercard"&gt;#56891&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed AOT warning regression by using the source generator for &lt;code&gt;ConfigurationBinder&lt;/code&gt; calls.&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/56368" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/56368/hovercard"&gt;#56368&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update OpenTelemetry dependencies
-&lt;ul&gt;
-&lt;li&gt;OpenTelemetry 1.15.1&lt;/li&gt;
-&lt;li&gt;OpenTelemetry.Extensions.Hosting 1.15.1&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/57549" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/57549/hovercard"&gt;#57549&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Made &lt;code&gt;AzureMonitorLogExporter&lt;/code&gt;, &lt;code&gt;AzureMonitorMetricExporter&lt;/code&gt;, and &lt;code&gt;AzureMonitorTraceExporter&lt;/code&gt; public for direct use when configuring OpenTelemetry.&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/56344" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/56344/hovercard"&gt;#56344&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Made options &lt;code&gt;EnablePerformanceCounters&lt;/code&gt; and &lt;code&gt;EnableStandardMetrics&lt;/code&gt; public in &lt;code&gt;AzureMonitorExporterOptions&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/56344" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/56344/hovercard"&gt;#56344&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.StandbyPool_1.2.0"&gt;Azure.ResourceManager.StandbyPool_1.2.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0 (2026-04-01)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;DynamicSizingEnabled&lt;/code&gt; property to &lt;code&gt;StandbyVirtualMachinePoolElasticityProfile&lt;/code&gt; and &lt;code&gt;StandbyContainerGroupPoolElasticityProfile&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;PostProvisioningDelay&lt;/code&gt; property to &lt;code&gt;StandbyVirtualMachinePoolElasticityProfile&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added a JSON schema segment to the NuGet package that provides IntelliSense and validation for Azure.Identity credential configuration in &lt;code&gt;appsettings.json&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Removed upper limit of 2000 on &lt;code&gt;MaxReadyCapacity&lt;/code&gt; and &lt;code&gt;MinReadyCapacity&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AddAzureClient&lt;/code&gt;, &lt;code&gt;AddKeyedAzureClient&lt;/code&gt;, and &lt;code&gt;WithAzureCredential&lt;/code&gt; return type changed from &lt;code&gt;IHostApplicationBuilder&lt;/code&gt; to &lt;code&gt;IClientBuilder&lt;/code&gt; to align with the &lt;code&gt;IClientBuilder&lt;/code&gt; composition change in System.ClientModel.&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.StorageCache_1.5.0-beta.1"&gt;Azure.ResourceManager.StorageCache_1.5.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.5.0-beta.1 (2026-03-27)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version tag from 'package-2025-07-01' to 'package-2026-01-01'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/8b8076693baafd8d4ebeaca903bdaa0c191766b9/specification/storagecache/resource-manager/Microsoft.StorageCache/StorageCache/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/8b8076693baafd8d4ebeaca903bdaa0c191766b9/specification/storagecache/resource-manager/Microsoft.StorageCache/StorageCache/readme.md&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Added feature support for Expansion.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.AppNetwork_1.0.0-beta.1"&gt;Azure.ResourceManager.AppNetwork_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-03-26)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;p&gt;This package follows the &lt;a href="https://azure.github.io/azure-sdk/general_introduction.html" rel="nofollow"&gt;new Azure SDK guidelines&lt;/a&gt;, and provides many core capabilities:&lt;/p&gt;
-&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
-- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
-- HTTP pipeline with custom policies.
-- Better error-handling.
-- Support uniform telemetry across all languages."&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
-- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
-- HTTP pipeline with custom policies.
-- Better error-handling.
-- Support uniform telemetry across all languages.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This package is a Public Preview version, so expect incompatible changes in subsequent releases as we improve the product. To provide feedback, submit an issue in our &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues"&gt;Azure SDK for .NET GitHub repo&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;NOTE: For more information about unified authentication, please refer to &lt;a href="https://learn.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet" rel="nofollow"&gt;Microsoft Azure Identity documentation for .NET&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
