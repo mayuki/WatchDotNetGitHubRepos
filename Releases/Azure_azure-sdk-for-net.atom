@@ -1,27 +1,109 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-04-01T00:14:36Z</updated>
+  <updated>2026-04-02T00:12:12Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-03-31</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-03-31</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-04-01</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-04-01</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-04-01T00:14:36Z</updated>
+    <updated>2026-04-02T00:12:12Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity_1.20.0"&gt;Azure.Identity_1.20.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects_2.0.0"&gt;Azure.AI.Projects_2.0.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.20.0 (2026-03-30)&lt;/h2&gt;
+                                &lt;h2&gt;2.0.0 (2026-04-01)&lt;/h2&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Insights&lt;/code&gt; were renamed to &lt;code&gt;ProjectInsights&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Insight&lt;/code&gt; was renamed to &lt;code&gt;ProjectsInsight&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Schedules&lt;/code&gt; were renamed to &lt;code&gt;ProjectSchedules&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Schedule&lt;/code&gt; was renamed to &lt;code&gt;ProjectsSchedule&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Target&lt;/code&gt; was renamed to &lt;code&gt;EvaluationTarget&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Trigger&lt;/code&gt; was renamed to &lt;code&gt;ScheduleTrigger&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ScheduleTask&lt;/code&gt; was renamed to &lt;code&gt;ProjectsScheduleTask&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Evaluators&lt;/code&gt; client was renamed to &lt;code&gt;ProjectEvaluators&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DetailEnum&lt;/code&gt; was renamed to &lt;code&gt;InternalImageDetailLevel&lt;/code&gt; and made internal.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;InputImageContentParamAutoParam&lt;/code&gt; was renamed to &lt;code&gt;InternalInputImageContentParamAutoParam&lt;/code&gt; and made internal.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Azure.AI.Projects&lt;/code&gt; evaluations and memory operations were moved to &lt;code&gt;Azure.AI.Projects.Evaluation&lt;/code&gt; and &lt;code&gt;Azure.AI.Projects.Memory&lt;/code&gt; namespaces respectively.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AIProjectMemoryStoresOperations&lt;/code&gt; were renamed to &lt;code&gt;AIProjectMemoryStores&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AgentManifestOptions&lt;/code&gt; class was removed.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;EvalResult.Passed&lt;/code&gt; property was renamed to &lt;code&gt;EvalResult.IsPassed&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;EvalRunResultComparison.Evaluator&lt;/code&gt; property was renamed to &lt;code&gt;EvalRunResultComparison.EvaluatorName&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;EvalRunResultComparison.Metric&lt;/code&gt; property was renamed to &lt;code&gt;EvalRunResultComparison.MetricName&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;InsightSummary.Method&lt;/code&gt; property was renamed to &lt;code&gt;InsightSummary.MethodName&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RedTeam.NumTurns&lt;/code&gt; property was renamed to &lt;code&gt;RedTeam.TurnCount&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RedTeam.SimulationOnly&lt;/code&gt; property was renamed to &lt;code&gt;RedTeam.IsSimulationOnly&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TaxonomySubCategory.Enabled&lt;/code&gt; property was renamed to &lt;code&gt;TaxonomySubCategory.IsEnabled&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DeleteMemoryStoreResponse.Deleted&lt;/code&gt; property was renamed to &lt;code&gt;DeleteMemoryStoreResponse.IsDeleted&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MemoryStoreDefaultOptions.ChatSummaryEnabled&lt;/code&gt; property was renamed to &lt;code&gt;MemoryStoreDefaultOptions.IsChatSummaryEnabled&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MemoryStoreDefaultOptions.UserProfileEnabled&lt;/code&gt; property was renamed to &lt;code&gt;MemoryStoreDefaultOptions.IsUserProfileEnabled&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MemoryStoreDeleteScopeResponse.Deleted&lt;/code&gt; property was renamed to &lt;code&gt;MemoryStoreDeleteScopeResponse.IsDeleted&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AIProjectClient.OpenAI&lt;/code&gt; property was renamed to &lt;code&gt;AIProjectClient.ProjectOpenAIClient&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AIProjectClient.Agents&lt;/code&gt; property was renamed to &lt;code&gt;AIProjectClient.AgentAdministrationClient&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RecurrenceTrigger.StartTime&lt;/code&gt;, &lt;code&gt;RecurrenceTrigger.EndTime&lt;/code&gt;, &lt;code&gt;OneTimeTrigger.TriggerAt&lt;/code&gt;, &lt;code&gt;CronTrigger.StartTime&lt;/code&gt;, &lt;code&gt;CronTrigger.EndTime&lt;/code&gt; and &lt;code&gt;ScheduleRun.TriggerTime&lt;/code&gt; properties type was changed from &lt;code&gt;string&lt;/code&gt; to &lt;code&gt;DateTimeOffset&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Remove the &lt;code&gt;EvaluationScheduleTaskEvalRun&lt;/code&gt; class.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Extensions.OpenAI_2.0.0"&gt;Azure.AI.Extensions.OpenAI_2.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;2.0.0 (2026-03-31)&lt;/h2&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;StructuredInputs&lt;/code&gt; property was removed from &lt;code&gt;CreateResponseOptions&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Conversations&lt;/code&gt; property was replaced by &lt;code&gt;GetProjectConversationsClient()&lt;/code&gt; method.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Responses&lt;/code&gt; property was replaced by &lt;code&gt;GetProjectResponsesClient()&lt;/code&gt; method.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Files&lt;/code&gt; property was replaced by &lt;code&gt;GetProjectFilesClient()&lt;/code&gt; method.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;VectorStores&lt;/code&gt; property was replaced by &lt;code&gt;GetProjectVectorStoresClient()&lt;/code&gt; method.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects.Agents_2.0.0"&gt;Azure.AI.Projects.Agents_2.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;2.0.0 (2026-03-31)&lt;/h2&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;AgentVersion&lt;/code&gt; was renamed to &lt;code&gt;ProjectsAgentVersion&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AgentVersionCreationOptions&lt;/code&gt; was renamed to &lt;code&gt;ProjectsAgentVersionCreationOptions&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AgentDefinition&lt;/code&gt; was renamed to &lt;code&gt;ProjectsAgentDefinition&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AgentRecord&lt;/code&gt; was renamed to &lt;code&gt;ProjectsAgentRecord&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ProjectsAgentTool&lt;/code&gt; was renamed to &lt;code&gt;ProjectsAgentTool&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PromptAgentDefinition&lt;/code&gt; was renamed to &lt;code&gt;DeclarativeAgentDefinition&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AgentClient&lt;/code&gt; was renamed to &lt;code&gt;AgentAdministrationClient&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AgentClientOptions&lt;/code&gt; were renamed to &lt;code&gt;AgentAdministrationClientOptions&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DeviceRegistry_1.1.0-beta.3"&gt;Azure.ResourceManager.DeviceRegistry_1.1.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.1.0-beta.3 (2026-04-01)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added a JSON schema segment to the NuGet package that provides IntelliSense and validation for Azure.Identity credential configuration in &lt;code&gt;appsettings.json&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Aligned resource types to Microsoft.DeviceRegistry API version &lt;code&gt;2026-03-01-preview&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;AddAzureClient&lt;/code&gt;, &lt;code&gt;AddKeyedAzureClient&lt;/code&gt;, and &lt;code&gt;WithAzureCredential&lt;/code&gt; return type changed from &lt;code&gt;IHostApplicationBuilder&lt;/code&gt; to &lt;code&gt;IClientBuilder&lt;/code&gt; to align with the &lt;code&gt;IClientBuilder&lt;/code&gt; composition change in System.ClientModel.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PolicyData&lt;/code&gt; no longer extends &lt;code&gt;TrackedResourceData&lt;/code&gt;; it now extends &lt;code&gt;ResourceData&lt;/code&gt;. The &lt;code&gt;Location&lt;/code&gt; property is now of type &lt;code&gt;string&lt;/code&gt; instead of &lt;code&gt;AzureLocation&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.SecurityCenter_1.0.0-beta.1"&gt;Azure.Provisioning.SecurityCenter_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-03-31)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial beta release of new Azure.Provisioning.SecurityCenter.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;

@@ -1,134 +1,85 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-04-01T00:14:35Z</updated>
+  <updated>2026-04-02T00:12:11Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-03-31</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-03-31</id>
+    <title>aws/aws-sdk-net - Releases - 2026-04-01</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-04-01</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-04-01T00:14:35Z</updated>
+    <updated>2026-04-02T00:12:11Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.222.0"&gt;4.0.222.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.223.0"&gt;4.0.223.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.222.0 (2026-03-31 18:23 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.223.0 (2026-04-01 18:20 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;CertificateManager (4.0.3.0)
+&lt;li&gt;Bedrock (4.0.24.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for searching for ACM certificates using the new SearchCertificates API.&lt;/li&gt;
+&lt;li&gt;Adds support for Bedrock Batch Inference Job Progress Monitoring&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudFront (4.0.13.0)
+&lt;li&gt;BedrockAgentCore (4.0.16.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds bring your own IP (BYOIP) IPv6 support to CloudFront's CreateAnycastIpList and UpdateAnycastIpList API through the IpamCidrConfigs field.&lt;/li&gt;
+&lt;li&gt;Added the ability to filter out empty sessions when listing sessions. Customers can now retrieve only sessions that still contain events, eliminating the need to check each session individually. No changes required for existing integrations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DatabaseMigrationService (4.0.8.0)
+&lt;li&gt;BedrockAgentCoreControl (4.0.25.0)
 &lt;ul&gt;
-&lt;li&gt;To successfully connect to the IBM DB2 LUW database server, you may need to specify additional security parameters that are passed to the JDBC driver. These parameters are EncryptionAlgorithm and SecurityMechanism. Both parameters accept integer values.&lt;/li&gt;
+&lt;li&gt;Adds support for VPC egress private endpoints for Amazon Bedrock AgentCore gateway targets, enabling private connectivity through managed VPC Lattice resources. Also adds IAM credential provider for gateway targets, enabling IAM-based authentication to target endpoints&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DataExchange (4.0.5.0)
+&lt;li&gt;ECS (4.0.17.0)
 &lt;ul&gt;
-&lt;li&gt;Support Tags for AWS Data Exchange resource Assets&lt;/li&gt;
+&lt;li&gt;Amazon ECS now supports Managed Daemons with dedicated APIs for registering daemon task definitions, creating daemons, and managing daemon deployments.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DataZone (4.0.23.0)
+&lt;li&gt;ElastiCache (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Adds environmentConfigurationName field to CreateEnvironmentInput and UpdateEnvironmentInput, so that Domain Owners can now recover orphaned environments by recreating deleted configurations with the same name, and will auto-recover orphaned environments&lt;/li&gt;
+&lt;li&gt;Updated SnapshotRetentionLimit documentation for ServerlessCache to correctly describe the parameter as number of days (max 35) instead of number of snapshots.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DevOpsAgent (4.0.1.0)
+&lt;li&gt;Elasticsearch (4.0.5.0)
 &lt;ul&gt;
-&lt;li&gt;AWS DevOps Agent service General Availability release.&lt;/li&gt;
+&lt;li&gt;Adding Policy-Min-TLS-1-2-RFC9151-FIPS-2024-08 as TLS Policy in Supported Regions&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.82.3)
+&lt;li&gt;GeoRoutes (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;This release updates the examples in the documentation for DescribeRegions and DescribeAvailabilityZones.&lt;/li&gt;
+&lt;li&gt;This release makes RoutingBoundary optional in CalculateRouteMatrix, set StopDuration with a maximum value of 49999 for CalculateRoutes, set TrailerCount with a maximum value of 4, and introduces region restrictions for Grab Maps users.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GeoMaps (4.0.5.0)
+&lt;li&gt;MedicalImaging (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;This release expands map customization options with adjustable contour line density, dark mode support for Hybrid and Satellite views, enhanced traffic information across multiple map styles, and transit and truck travel modes for Monochrome and Hybrid map styles.&lt;/li&gt;
+&lt;li&gt;Added new boolean flag to persist metadata updates to all primary image sets in the same study as the requested image set.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;KinesisAnalyticsV2 (4.0.3.0)
+&lt;li&gt;OpenSearchService (4.0.16.0)
 &lt;ul&gt;
-&lt;li&gt;Support for Flink 2.2 in Managed Service for Apache Flink&lt;/li&gt;
+&lt;li&gt;Adding Policy-Min-TLS-1-2-RFC9151-FIPS-2024-08 as TLS Policy in Supported Regions&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MailManager (4.0.5.0)
+&lt;li&gt;Core 4.0.3.26
 &lt;ul&gt;
-&lt;li&gt;Amazon SES Mail Manager now supports optional TLS policy for accepting unencrypted connections and mTLS authentication for ingress endpoints with configurable trust stores. Two new rule actions are available, Bounce for sending non-delivery reports and Lambda invocation for custom email processing.&lt;/li&gt;
+&lt;li&gt;Fix issue with credentials incorrectly rotating during H2 request stream operations triggering a signature mismatch exception&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MarketplaceAgreement (4.0.5.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds 8 new APIs for AWS Marketplace sellers. 4 APIs for Cancellations (Send, List, Get, Cancel action on AgreementCancellationRequest), 3 APIs for Billing Adjustments (BatchCreate, List, Get action on BillingAdjustmentRequest), and 1 API to List Invoices (ListAgreementInvoiceLineItems)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ObservabilityAdmin (4.0.8.0)
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.222.1"&gt;4.0.222.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.222.1 (2026-03-31 22:21 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;This release adds the Bedrock and Security Hub resource types for Omnia Enablement launch for March 31.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Odb (4.0.6.0)
+&lt;li&gt;Core 4.0.3.25
 &lt;ul&gt;
-&lt;li&gt;Adds support for EC2 Placement Group integration with ODB Network. The GetOdbNetwork and ListOdbNetworks API responses now include the ec2PlacementGroupIds field.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;OpenSearchService (4.0.15.0)
-&lt;ul&gt;
-&lt;li&gt;Support RegisterCapability, GetCapability, DeregisterCapability API for AI Assistant feature management for OpenSearch UI Applications&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Organizations (4.0.11.0)
-&lt;ul&gt;
-&lt;li&gt;Added Path field to Account and OrganizationalUnit objects in AWS Organizations API responses.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;PartnerCentralSelling (4.0.10.0)
-&lt;ul&gt;
-&lt;li&gt;Adding EURO Currency for MRR Amount&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;PinpointSMSVoiceV2 (4.0.7.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds RCS for Business messaging and Notify support. RCS lets you create and manage agents, send and receive messages in the US and Canada via SendTextMessage API, and configure SMS fallback. Notify lets you send templated OTP messages globally in minutes with no phone number required.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;QuickSight (4.0.18.0)
-&lt;ul&gt;
-&lt;li&gt;Adds StartAutomationJob and DescribeAutomationJob APIs for automation jobs. Adds three custom permission capabilities that allow admins to control whether users can manage Spaces and chat agents. Adds an OAuthClientCredentials structure to provide OAuth 2.0 client credentials inline to data sources.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3 (4.0.20.0)
-&lt;ul&gt;
-&lt;li&gt;Add Bucket Metrics configuration support to directory buckets&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3Control (4.0.10.0)
-&lt;ul&gt;
-&lt;li&gt;Adding an optional auditContext parameter to S3 Access Grants credential vending API GetDataAccess to enable job-level audit correlation in S3 CloudTrail logs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3Tables (4.0.10.0)
-&lt;ul&gt;
-&lt;li&gt;S3 Tables now supports nested types when creating tables. Users can define complex column schemas using struct, list, and map types. These types can be composed together to model complex, hierarchical data structures within table schemas.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SecurityAgent (4.0.0.0)
-&lt;ul&gt;
-&lt;li&gt;AWS Security Agent is a service that proactively secures applications throughout the development lifecycle with automated security reviews and on-demand penetration testing.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Sustainability (4.0.0.0)
-&lt;ul&gt;
-&lt;li&gt;This is the first release of the AWS Sustainability SDK, which enables customers to access their sustainability impact data via API.&lt;/li&gt;
+&lt;li&gt;Fix signature mismatch issue with request events for bi-directional streaming operations due to signature timestamp rounding issue&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

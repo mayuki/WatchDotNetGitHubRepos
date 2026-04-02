@@ -1,42 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/aspire - Releases</title>
   <link href="https://github.com/dotnet/aspire" />
-  <updated>2026-04-01T00:14:42Z</updated>
+  <updated>2026-04-02T00:12:18Z</updated>
   <id>https://github.com/dotnet/aspire</id>
-  <entry>
-    <title>dotnet/aspire - Releases - 2026-03-31</title>
-    <id>https://github.com/dotnet/aspire#2026-03-31</id>
-    <link href="https://github.com/dotnet/aspire" />
-    <updated>2026-04-01T00:14:42Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.2.1"&gt;Aspire 13.2.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;🐛 Bug Fixes&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;🖥️ CLI bundles for ARM &amp;amp; musl — win-arm64, linux-arm64, and linux-musl-x64 bundles now correctly include DCP instead of silently producing broken installs (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4128229537" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15529" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15529/hovercard" href="https://github.com/microsoft/aspire/pull/15529"&gt;#15529&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;⚡ aspire new in VS Code — Fixed a race where the workspace switch severed the CLI terminal before the agent init prompt could complete (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4130975100" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15553" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15553/hovercard" href="https://github.com/microsoft/aspire/pull/15553"&gt;#15553&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;🔗 Dashboard resource URLs — The describe command no longer produces broken dashboard links with a stray /login?t=... in the path (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4118496087" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15495" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15495/hovercard" href="https://github.com/microsoft/aspire/pull/15495"&gt;#15495&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;🌍 Guest AppHost env vars — Launch profile environment variables are now correctly forwarded to guest AppHosts (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4148829874" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15637" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15637/hovercard" href="https://github.com/microsoft/aspire/pull/15637"&gt;#15637&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;📦 Legacy settings migration — .aspire/settings.json → aspire.config.json migration was silently skipped in some scenarios; now works reliably (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4127084246" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15526" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15526/hovercard" href="https://github.com/microsoft/aspire/pull/15526"&gt;#15526&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;🔧 TypeScript AppHost restore — Fixed config resolution during TS AppHost restore (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4145613699" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15625" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15625/hovercard" href="https://github.com/microsoft/aspire/pull/15625"&gt;#15625&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;🎭 Playwright CLI on Windows — aspire agent init now correctly installs playwright-cli on Windows (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4131589125" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15559" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15559/hovercard" href="https://github.com/microsoft/aspire/pull/15559"&gt;#15559&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;📌 Emulator stability — Pinned Kusto emulator image and improved Cosmos DB emulator reliability (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4123781043" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15504" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15504/hovercard" href="https://github.com/microsoft/aspire/pull/15504"&gt;#15504&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;✨ Improvements&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;🏗️ Brownfield TypeScript aspire init — Running aspire init in existing JS/TS projects now smartly merges package.json — scripts, dependencies, and engines — with semver-aware conflict handling (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4055240787" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15123" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15123/hovercard" href="https://github.com/microsoft/aspire/pull/15123"&gt;#15123&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;🎯 Endpoint filtering — New ExcludeReferenceEndpoint property lets you filter specific endpoints from WithReference (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4138466743" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15586" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15586/hovercard" href="https://github.com/microsoft/aspire/pull/15586"&gt;#15586&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;🌐 More polyglot ATS APIs — Exported additional hosting APIs for TypeScript and Go AppHost authoring (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4131237941" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15557" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15557/hovercard" href="https://github.com/microsoft/aspire/pull/15557"&gt;#15557&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;🔍 Short trace ID support — The dashboard now resolves short trace IDs in addition to full-length ones (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4141407890" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15613" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15613/hovercard" href="https://github.com/microsoft/aspire/pull/15613"&gt;#15613&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;g-emoji class="g-emoji" alias="warning"&gt;⚠️&lt;/g-emoji&gt; Aspire.Hosting.NodeJs deprecated — Use Aspire.Hosting.JavaScript instead; the old package no longer appears in aspire add (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4162061274" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15686" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15686/hovercard" href="https://github.com/microsoft/aspire/pull/15686"&gt;#15686&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
