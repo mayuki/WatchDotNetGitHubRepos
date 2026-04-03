@@ -1,85 +1,74 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-04-02T00:12:39Z</updated>
+  <updated>2026-04-03T00:14:25Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-04-01</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-04-01</id>
+    <title>aws/aws-sdk-net - Releases - 2026-04-02</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-04-02</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-04-02T00:12:11Z</updated>
+    <updated>2026-04-03T00:14:08Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.223.0"&gt;4.0.223.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.224.0"&gt;4.0.224.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.223.0 (2026-04-01 18:20 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.224.0 (2026-04-02 18:18 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Bedrock (4.0.24.0)
+&lt;li&gt;AppStream (4.0.8.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for Bedrock Batch Inference Job Progress Monitoring&lt;/li&gt;
+&lt;li&gt;Amazon WorkSpaces Applications now supports drain mode for instances in multi-session fleets. This capability allows administrators to instruct individual fleet instances to stop accepting new user sessions while allowing existing sessions to continue uninterrupted.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCore (4.0.16.0)
+&lt;li&gt;BedrockAgentCoreControl (4.0.26.0)
 &lt;ul&gt;
-&lt;li&gt;Added the ability to filter out empty sessions when listing sessions. Customers can now retrieve only sessions that still contain events, eliminating the need to check each session individually. No changes required for existing integrations.&lt;/li&gt;
+&lt;li&gt;Adds support for three-legged (Authorization Code grant type) OAuth along with predefined MCP tool schema configuration for Amazon Bedrock AgentCore gateway MCP server targets.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.25.0)
+&lt;li&gt;BedrockDataAutomation (4.0.8.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for VPC egress private endpoints for Amazon Bedrock AgentCore gateway targets, enabling private connectivity through managed VPC Lattice resources. Also adds IAM credential provider for gateway targets, enabling IAM-based authentication to target endpoints&lt;/li&gt;
+&lt;li&gt;Data Automation Library is a BDA capability that lets you create reusable entity resources to improve extraction accuracy. Libraries support Custom Vocabulary entities that enhance speech recognition for audio and video content with domain-specific terminology shared across projects&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ECS (4.0.17.0)
+&lt;li&gt;BedrockRuntime (4.0.17.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon ECS now supports Managed Daemons with dedicated APIs for registering daemon task definitions, creating daemons, and managing daemon deployments.&lt;/li&gt;
+&lt;li&gt;Relax ToolUseId pattern to allow dots and colons&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElastiCache (4.0.3.0)
+&lt;li&gt;CloudWatch (4.0.9.0)
 &lt;ul&gt;
-&lt;li&gt;Updated SnapshotRetentionLimit documentation for ServerlessCache to correctly describe the parameter as number of days (max 35) instead of number of snapshots.&lt;/li&gt;
+&lt;li&gt;CloudWatch now supports OTel enrichment to make vended metrics for supported AWS resources queryable via PromQL with resource ARN and tag labels, and PromQL alarms for metrics ingested via the OTLP endpoint with multi-contributor evaluation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Elasticsearch (4.0.5.0)
+&lt;li&gt;CloudWatchLogs (4.0.18.0)
 &lt;ul&gt;
-&lt;li&gt;Adding Policy-Min-TLS-1-2-RFC9151-FIPS-2024-08 as TLS Policy in Supported Regions&lt;/li&gt;
+&lt;li&gt;We are pleased to announce that our logs transformation csv processor now has a destination field, allowing you to specify under which parent node parsed columns be placed under.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GeoRoutes (4.0.3.0)
+&lt;li&gt;Connect (4.0.38.0)
 &lt;ul&gt;
-&lt;li&gt;This release makes RoutingBoundary optional in CalculateRouteMatrix, set StopDuration with a maximum value of 49999 for CalculateRoutes, set TrailerCount with a maximum value of 4, and introduces region restrictions for Grab Maps users.&lt;/li&gt;
+&lt;li&gt;Include CUSTOMER to evaluation target and participant role. Support Korean, Japanese and Simplified Chinese in evaluation forms.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MedicalImaging (4.0.6.0)
+&lt;li&gt;Deadline (4.0.16.0)
 &lt;ul&gt;
-&lt;li&gt;Added new boolean flag to persist metadata updates to all primary image sets in the same study as the requested image set.&lt;/li&gt;
+&lt;li&gt;AWS Deadline Cloud now supports configurable scheduling on each queue. The scheduling configuration controls how workers are distributed across jobs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;OpenSearchService (4.0.16.0)
+&lt;li&gt;GameLift (4.0.8.0)
 &lt;ul&gt;
-&lt;li&gt;Adding Policy-Min-TLS-1-2-RFC9151-FIPS-2024-08 as TLS Policy in Supported Regions&lt;/li&gt;
+&lt;li&gt;Amazon GameLift Servers now includes a ComputeName field in game session API responses, making it easier to identify which compute is hosting a game session without cross-referencing IP addresses.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 4.0.3.26
+&lt;li&gt;GeoPlaces (4.0.4.14)
 &lt;ul&gt;
-&lt;li&gt;Fix issue with credentials incorrectly rotating during H2 request stream operations triggering a signature mismatch exception&lt;/li&gt;
-&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;This release updates API reference documentation for Amazon Location Service Places APIs to reflect regional restrictions for Grab Maps users in ReverseGeocode, Suggest, SearchText, and GetPlace operations&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.222.1"&gt;4.0.222.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;4.0.222.1 (2026-03-31 22:21 UTC)&lt;/h3&gt;
+&lt;li&gt;Pricing (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;Core 4.0.3.25
-&lt;ul&gt;
-&lt;li&gt;Fix signature mismatch issue with request events for bi-directional streaming operations due to signature timestamp rounding issue&lt;/li&gt;
-&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;This release increases the MaxResults parameter of the GetAttributeValues API from 100 to 10000.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -90,106 +79,63 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-04-01</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-04-01</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-04-02</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-04-02</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-04-02T00:12:12Z</updated>
+    <updated>2026-04-03T00:14:09Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects_2.0.0"&gt;Azure.AI.Projects_2.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity.Broker_1.5.0"&gt;Azure.Identity.Broker_1.5.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;2.0.0 (2026-04-01)&lt;/h2&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Insights&lt;/code&gt; were renamed to &lt;code&gt;ProjectInsights&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Insight&lt;/code&gt; was renamed to &lt;code&gt;ProjectsInsight&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Schedules&lt;/code&gt; were renamed to &lt;code&gt;ProjectSchedules&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Schedule&lt;/code&gt; was renamed to &lt;code&gt;ProjectsSchedule&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Target&lt;/code&gt; was renamed to &lt;code&gt;EvaluationTarget&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Trigger&lt;/code&gt; was renamed to &lt;code&gt;ScheduleTrigger&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ScheduleTask&lt;/code&gt; was renamed to &lt;code&gt;ProjectsScheduleTask&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Evaluators&lt;/code&gt; client was renamed to &lt;code&gt;ProjectEvaluators&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;DetailEnum&lt;/code&gt; was renamed to &lt;code&gt;InternalImageDetailLevel&lt;/code&gt; and made internal.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;InputImageContentParamAutoParam&lt;/code&gt; was renamed to &lt;code&gt;InternalInputImageContentParamAutoParam&lt;/code&gt; and made internal.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Azure.AI.Projects&lt;/code&gt; evaluations and memory operations were moved to &lt;code&gt;Azure.AI.Projects.Evaluation&lt;/code&gt; and &lt;code&gt;Azure.AI.Projects.Memory&lt;/code&gt; namespaces respectively.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;AIProjectMemoryStoresOperations&lt;/code&gt; were renamed to &lt;code&gt;AIProjectMemoryStores&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;AgentManifestOptions&lt;/code&gt; class was removed.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;EvalResult.Passed&lt;/code&gt; property was renamed to &lt;code&gt;EvalResult.IsPassed&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;EvalRunResultComparison.Evaluator&lt;/code&gt; property was renamed to &lt;code&gt;EvalRunResultComparison.EvaluatorName&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;EvalRunResultComparison.Metric&lt;/code&gt; property was renamed to &lt;code&gt;EvalRunResultComparison.MetricName&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;InsightSummary.Method&lt;/code&gt; property was renamed to &lt;code&gt;InsightSummary.MethodName&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;RedTeam.NumTurns&lt;/code&gt; property was renamed to &lt;code&gt;RedTeam.TurnCount&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;RedTeam.SimulationOnly&lt;/code&gt; property was renamed to &lt;code&gt;RedTeam.IsSimulationOnly&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;TaxonomySubCategory.Enabled&lt;/code&gt; property was renamed to &lt;code&gt;TaxonomySubCategory.IsEnabled&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;DeleteMemoryStoreResponse.Deleted&lt;/code&gt; property was renamed to &lt;code&gt;DeleteMemoryStoreResponse.IsDeleted&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;MemoryStoreDefaultOptions.ChatSummaryEnabled&lt;/code&gt; property was renamed to &lt;code&gt;MemoryStoreDefaultOptions.IsChatSummaryEnabled&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;MemoryStoreDefaultOptions.UserProfileEnabled&lt;/code&gt; property was renamed to &lt;code&gt;MemoryStoreDefaultOptions.IsUserProfileEnabled&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;MemoryStoreDeleteScopeResponse.Deleted&lt;/code&gt; property was renamed to &lt;code&gt;MemoryStoreDeleteScopeResponse.IsDeleted&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;AIProjectClient.OpenAI&lt;/code&gt; property was renamed to &lt;code&gt;AIProjectClient.ProjectOpenAIClient&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;AIProjectClient.Agents&lt;/code&gt; property was renamed to &lt;code&gt;AIProjectClient.AgentAdministrationClient&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;RecurrenceTrigger.StartTime&lt;/code&gt;, &lt;code&gt;RecurrenceTrigger.EndTime&lt;/code&gt;, &lt;code&gt;OneTimeTrigger.TriggerAt&lt;/code&gt;, &lt;code&gt;CronTrigger.StartTime&lt;/code&gt;, &lt;code&gt;CronTrigger.EndTime&lt;/code&gt; and &lt;code&gt;ScheduleRun.TriggerTime&lt;/code&gt; properties type was changed from &lt;code&gt;string&lt;/code&gt; to &lt;code&gt;DateTimeOffset&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Remove the &lt;code&gt;EvaluationScheduleTaskEvalRun&lt;/code&gt; class.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Extensions.OpenAI_2.0.0"&gt;Azure.AI.Extensions.OpenAI_2.0.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;2.0.0 (2026-03-31)&lt;/h2&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The &lt;code&gt;StructuredInputs&lt;/code&gt; property was removed from &lt;code&gt;CreateResponseOptions&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Conversations&lt;/code&gt; property was replaced by &lt;code&gt;GetProjectConversationsClient()&lt;/code&gt; method.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Responses&lt;/code&gt; property was replaced by &lt;code&gt;GetProjectResponsesClient()&lt;/code&gt; method.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Files&lt;/code&gt; property was replaced by &lt;code&gt;GetProjectFilesClient()&lt;/code&gt; method.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VectorStores&lt;/code&gt; property was replaced by &lt;code&gt;GetProjectVectorStoresClient()&lt;/code&gt; method.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects.Agents_2.0.0"&gt;Azure.AI.Projects.Agents_2.0.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;2.0.0 (2026-03-31)&lt;/h2&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;AgentVersion&lt;/code&gt; was renamed to &lt;code&gt;ProjectsAgentVersion&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;AgentVersionCreationOptions&lt;/code&gt; was renamed to &lt;code&gt;ProjectsAgentVersionCreationOptions&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;AgentDefinition&lt;/code&gt; was renamed to &lt;code&gt;ProjectsAgentDefinition&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;AgentRecord&lt;/code&gt; was renamed to &lt;code&gt;ProjectsAgentRecord&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ProjectsAgentTool&lt;/code&gt; was renamed to &lt;code&gt;ProjectsAgentTool&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PromptAgentDefinition&lt;/code&gt; was renamed to &lt;code&gt;DeclarativeAgentDefinition&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;AgentClient&lt;/code&gt; was renamed to &lt;code&gt;AgentAdministrationClient&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;AgentClientOptions&lt;/code&gt; were renamed to &lt;code&gt;AgentAdministrationClientOptions&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DeviceRegistry_1.1.0-beta.3"&gt;Azure.ResourceManager.DeviceRegistry_1.1.0-beta.3&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.0-beta.3 (2026-04-01)&lt;/h2&gt;
+                                &lt;h2&gt;1.5.0 (2026-04-01)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Aligned resource types to Microsoft.DeviceRegistry API version &lt;code&gt;2026-03-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added a JSON schema segment to the NuGet package that provides IntelliSense and validation for Azure.Identity.Broker credential configuration in &lt;code&gt;appsettings.json&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;PolicyData&lt;/code&gt; no longer extends &lt;code&gt;TrackedResourceData&lt;/code&gt;; it now extends &lt;code&gt;ResourceData&lt;/code&gt;. The &lt;code&gt;Location&lt;/code&gt; property is now of type &lt;code&gt;string&lt;/code&gt; instead of &lt;code&gt;AzureLocation&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Microsoft.Identity.Client.Broker&lt;/code&gt; dependency to version 4.83.3.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.SecurityCenter_1.0.0-beta.1"&gt;Azure.Provisioning.SecurityCenter_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.ContainerService_1.0.0-beta.6"&gt;Azure.Provisioning.ContainerService_1.0.0-beta.6&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-03-31)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.6 (2026-04-02)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial beta release of new Azure.Provisioning.SecurityCenter.&lt;/li&gt;
+&lt;li&gt;Migrated from the reflection-based generator to the TypeSpec provisioning emitter.&lt;/li&gt;
+&lt;li&gt;Bumped API version from &lt;code&gt;2024-08-01&lt;/code&gt; to &lt;code&gt;2026-01-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added new resource types: &lt;code&gt;AgentPoolUpgradeProfile&lt;/code&gt;, &lt;code&gt;ContainerServiceMachine&lt;/code&gt;, &lt;code&gt;ManagedClusterUpgradeProfile&lt;/code&gt;, &lt;code&gt;MeshRevisionProfile&lt;/code&gt;, &lt;code&gt;MeshUpgradeProfile&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added new models: &lt;code&gt;ManagedClusterAdvancedNetworkingAccelerationMode&lt;/code&gt;, &lt;code&gt;ProxyRedirectionMechanism&lt;/code&gt;, &lt;code&gt;TransitEncryptionType&lt;/code&gt;, &lt;code&gt;ManagedClusterPodIdentityProvisioningErrorDetail&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added new properties: &lt;code&gt;PerformanceAccelerationMode&lt;/code&gt;, &lt;code&gt;TransitEncryptionType&lt;/code&gt;, &lt;code&gt;ProxyRedirectionMechanism&lt;/code&gt;, &lt;code&gt;IsHttpProxyEnabled&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Renamed &lt;code&gt;ResourceIdentityType&lt;/code&gt; to &lt;code&gt;IdentityType&lt;/code&gt; on &lt;code&gt;ManagedClusterIdentity&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Renamed boolean properties to follow &lt;code&gt;Is*Enabled&lt;/code&gt;/&lt;code&gt;Is*Disabled&lt;/code&gt; convention (e.g., &lt;code&gt;EnableAutoScaling&lt;/code&gt; → &lt;code&gt;IsAutoScalingEnabled&lt;/code&gt;, &lt;code&gt;EnablePrivateCluster&lt;/code&gt; → &lt;code&gt;IsPrivateClusterEnabled&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Renamed &lt;code&gt;FailStartWithSwapOn&lt;/code&gt; to &lt;code&gt;ShouldFailStartWithSwapOn&lt;/code&gt;, &lt;code&gt;ScaleManual&lt;/code&gt; to &lt;code&gt;VirtualMachinesScaleManual&lt;/code&gt;, &lt;code&gt;IsOutboundNatDisabled&lt;/code&gt; to &lt;code&gt;WindowsIsOutboundNatDisabled&lt;/code&gt;, &lt;code&gt;IsCostAnalysisEnabled&lt;/code&gt; to &lt;code&gt;MetricsIsCostAnalysisEnabled&lt;/code&gt;, &lt;code&gt;IsVpaEnabled&lt;/code&gt; to &lt;code&gt;VerticalPodAutoscalerIsVpaEnabled&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Removed duplicate properties &lt;code&gt;DisableLocalAccounts&lt;/code&gt;, &lt;code&gt;EnableRbac&lt;/code&gt;, &lt;code&gt;EnablePodSecurityPolicy&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;IPFamily&lt;/code&gt; enum (consolidated into &lt;code&gt;ContainerServiceIPFamily&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Changed &lt;code&gt;UserAssignedIdentities&lt;/code&gt; type from &lt;code&gt;BicepDictionary&amp;lt;UserAssignedIdentityDetails&amp;gt;&lt;/code&gt; to &lt;code&gt;BicepDictionary&amp;lt;ManagedServiceIdentityUserAssignedIdentitiesValue&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;EffectiveOutboundIPs&lt;/code&gt; on load balancer/NAT gateway profiles changed from read-write to read-only.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ResourceVersions&lt;/code&gt; trimmed from ~40 historical versions to &lt;code&gt;V2025_10_01&lt;/code&gt; and &lt;code&gt;V2026_01_01&lt;/code&gt; only.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Storage_1.6.2"&gt;Azure.ResourceManager.Storage_1.6.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.6.2 (2026-04-02)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.52.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
+&lt;li&gt;Migrated from AutoRest/Swagger to TypeSpec-based generation.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -198,45 +144,59 @@
             </content>
   </entry>
   <entry>
-    <title>grpc/grpc-dotnet - Releases - 2026-04-01</title>
-    <id>https://github.com/grpc/grpc-dotnet#2026-04-01</id>
-    <link href="https://github.com/grpc/grpc-dotnet" />
-    <updated>2026-04-02T00:12:28Z</updated>
+    <title>CommunityToolkit/Windows - Releases - 2026-04-02</title>
+    <id>https://github.com/CommunityToolkit/Windows#2026-04-02</id>
+    <link href="https://github.com/CommunityToolkit/Windows" />
+    <updated>2026-04-03T00:14:12Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc-dotnet/releases/tag/v2.80.0-pre1"&gt;Release v2.80.0-pre1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Windows/releases/tag/v8.3.260402-preview2"&gt;[Pre-release] v8.3.260402-preview2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;p&gt;First official build with WindowsAppSDK 1.8 support for the new package structure. The WCT now only depends on &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK.WinUI/" rel="nofollow"&gt;&lt;code&gt;Microsoft.WindowsAppSDK.WinUI&lt;/code&gt;&lt;/a&gt; for WinUI 3 projects instead of the full WindowsAppSDK. This required updates in our dependencies of both the XAML Behaviors and Win2D, this latest package references their latest releases as well. Projects using WCT and Windows App SDK, will also need to migrate to WinAppSDK 1.8, otherwise, please continue to use the 8.2 release.&lt;/p&gt;
+&lt;p&gt;Please let us know if you encounter any issues with these updates.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Update .NET 10, System.CommandLine 2.0.0, fix warnings by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3614784495" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2677" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2677/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2677"&gt;#2677&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix System.CommandLine 2.0.0 Uri parsing in GrpcClient benchmark app by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ilonatommy/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ilonatommy"&gt;@ilonatommy&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4035145854" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2695" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2695/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2695"&gt;#2695&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Implement GrpcServiceEndpointConventionBuilder.Finally by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/halter73/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/halter73"&gt;@halter73&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4030344641" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2693" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2693/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2693"&gt;#2693&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump axios from 1.11.0 to 1.12.2 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3471562093" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2669" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2669/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2669"&gt;#2669&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump webpack from 5.101.0 to 5.105.0 in /examples/Browser/Server/wwwroot by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3910648084" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2689" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2689/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2689"&gt;#2689&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump lodash from 4.17.21 to 4.17.23 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3840475192" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2687" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2687/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2687"&gt;#2687&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump glob from 10.4.5 to 10.5.0 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3640738093" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2679" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2679/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2679"&gt;#2679&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump basic-ftp from 5.0.5 to 5.2.0 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4085321369" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2698" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2698/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2698"&gt;#2698&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump serialize-javascript and terser-webpack-plugin in /examples/Browser/Server/wwwroot by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4085321425" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2699" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2699/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2699"&gt;#2699&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump minimatch in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4085321581" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2700" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2700/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2700"&gt;#2700&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump axios from 1.12.2 to 1.13.6 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4085321850" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2701" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2701/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2701"&gt;#2701&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump js-yaml in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4085322792" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2702" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2702/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2702"&gt;#2702&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Handle Trailers-Only OK responses in streaming calls without exception handling by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/michaelmccord/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/michaelmccord"&gt;@michaelmccord&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4067099652" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2697" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2697/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2697"&gt;#2697&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump picomatch in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4139083220" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2703" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2703/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2703"&gt;#2703&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Implement v1 reflection service and clean up integration by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4139464774" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2704" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2704/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2704"&gt;#2704&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump brace-expansion in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4164230602" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2706" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2706/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2706"&gt;#2706&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix flaky PickAsync_UpdateAddressesWhileRequestingConnection_DoesNotDeadlock test by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4148598598" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2705" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2705/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2705"&gt;#2705&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump Tools Version prep for release v2.80.0 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/asheshvidyut/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/asheshvidyut"&gt;@asheshvidyut&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4169613978" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2707" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2707/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2707"&gt;#2707&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[Release v2.80.x] Fix the version number - Step 3 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/asheshvidyut/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/asheshvidyut"&gt;@asheshvidyut&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4183657958" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2711" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2711/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2711"&gt;#2711&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Update Microsoft.WindowsAppSDK to 1.8 stable&lt;/strong&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Arlodotexe/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Arlodotexe"&gt;@Arlodotexe&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4174420183" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Windows/issues/837" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Windows/pull/837/hovercard" href="https://github.com/CommunityToolkit/Windows/pull/837"&gt;#837&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Narrow AdvancedCollectionView trimming warning so that it only triggers in unsafe usages, add SortDescription to preserve metadata by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/sylveon/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/sylveon"&gt;@sylveon&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3364828016" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Windows/issues/724" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Windows/pull/724/hovercard" href="https://github.com/CommunityToolkit/Windows/pull/724"&gt;#724&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;New Contributors&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ilonatommy/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ilonatommy"&gt;@ilonatommy&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4035145854" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2695" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2695/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2695"&gt;#2695&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/halter73/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/halter73"&gt;@halter73&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4030344641" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2693" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2693/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2693"&gt;#2693&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/michaelmccord/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/michaelmccord"&gt;@michaelmccord&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4067099652" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2697" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2697/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2697"&gt;#2697&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/sylveon/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/sylveon"&gt;@sylveon&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3364828016" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Windows/issues/724" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Windows/pull/724/hovercard" href="https://github.com/CommunityToolkit/Windows/pull/724"&gt;#724&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/grpc/grpc-dotnet/compare/v2.76.0...v2.80.0-pre1"&gt;&lt;tt&gt;v2.76.0...v2.80.0-pre1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Windows/compare/v8.3.260211-preview1...v8.3.260402-preview2"&gt;&lt;tt&gt;v8.3.260211-preview1...v8.3.260402-preview2&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See the &lt;a href="https://github.com/CommunityToolkit/Windows/releases/tag/v8.3.260211-preview1"&gt;last release notes&lt;/a&gt; for changes since the last 8.2 release.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>StackExchange/StackExchange.Redis - Releases - 2026-04-02</title>
+    <id>https://github.com/StackExchange/StackExchange.Redis#2026-04-02</id>
+    <link href="https://github.com/StackExchange/StackExchange.Redis" />
+    <updated>2026-04-03T00:14:24Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/2.12.14"&gt;2.12.14&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;p&gt;Impact: "high" if using &lt;em&gt;cluster&lt;/em&gt; and &lt;em&gt;high-integrity-mode&lt;/em&gt; together (resolves an issue that can mis-report &lt;code&gt;-MOVED&lt;/code&gt; responses as integrity failures)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Resolve critical failure in high-integrity-mode with -MOVED response by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4194456211" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3049" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3049/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3049"&gt;#3049&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Allow heartbeat to restart the pipe thread with only sync commands by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/frobion/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/frobion"&gt;@frobion&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3472796477" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2965" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2965/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2965"&gt;#2965&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GitHubActions logger; exclude passed/skipped by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4152721785" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3045" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3045/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3045"&gt;#3045&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://www.nuget.org/packages/StackExchange.Redis/2.12.14" rel="nofollow"&gt;NuGet link&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/frobion/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/frobion"&gt;@frobion&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3472796477" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2965" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/2965/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/2965"&gt;#2965&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/2.12.8...2.12.14"&gt;&lt;tt&gt;2.12.8...2.12.14&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
