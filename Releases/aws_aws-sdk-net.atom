@@ -1,74 +1,71 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-04-03T00:14:08Z</updated>
+  <updated>2026-04-04T00:12:28Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-04-02</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-04-02</id>
+    <title>aws/aws-sdk-net - Releases - 2026-04-03</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-04-03</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-04-03T00:14:08Z</updated>
+    <updated>2026-04-04T00:12:28Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.224.0"&gt;4.0.224.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.225.0"&gt;4.0.225.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.224.0 (2026-04-02 18:18 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.225.0 (2026-04-03 18:16 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AppStream (4.0.8.0)
+&lt;li&gt;Bedrock (4.0.25.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon WorkSpaces Applications now supports drain mode for instances in multi-session fleets. This capability allows administrators to instruct individual fleet instances to stop accepting new user sessions while allowing existing sessions to continue uninterrupted.&lt;/li&gt;
+&lt;li&gt;Amazon Bedrock Guardrails enforcement configuration APIs now support selective guarding controls for system prompts as well as user and assistant messages, along with SDK support for Amazon Bedrock resource policy APIs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.26.0)
+&lt;li&gt;BedrockAgent (4.0.8.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for three-legged (Authorization Code grant type) OAuth along with predefined MCP tool schema configuration for Amazon Bedrock AgentCore gateway MCP server targets.&lt;/li&gt;
+&lt;li&gt;Added strict parameter to ToolSpecification to allow users to enforce strict JSON schema adherence for tool input schemas.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockDataAutomation (4.0.8.0)
+&lt;li&gt;BedrockAgentCoreControl (4.0.26.1)
 &lt;ul&gt;
-&lt;li&gt;Data Automation Library is a BDA capability that lets you create reusable entity resources to improve extraction accuracy. Libraries support Custom Vocabulary entities that enhance speech recognition for audio and video content with domain-specific terminology shared across projects&lt;/li&gt;
+&lt;li&gt;Documentation Update for Adds support for three-legged (Authorization Code grant type) OAuth along with predefined MCP tool schema configuration for Amazon Bedrock AgentCore gateway MCP server targets.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockRuntime (4.0.17.0)
+&lt;li&gt;CloudWatchLogs (4.0.19.0)
 &lt;ul&gt;
-&lt;li&gt;Relax ToolUseId pattern to allow dots and colons&lt;/li&gt;
+&lt;li&gt;Added queryDuration, bytesScanned, and userIdentity fields to the QueryInfo response object returned by DescribeQueries. Customers can now view detailed query cost information including who ran the query, how long it took, and the volume of data scanned.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudWatch (4.0.9.0)
+&lt;li&gt;Imagebuilder (4.0.8.0)
 &lt;ul&gt;
-&lt;li&gt;CloudWatch now supports OTel enrichment to make vended metrics for supported AWS resources queryable via PromQL with resource ARN and tag labels, and PromQL alarms for metrics ingested via the OTLP endpoint with multi-contributor evaluation.&lt;/li&gt;
+&lt;li&gt;Updated pagination token validation for ListContainerRecipes API to support maximum size of 65K characters&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudWatchLogs (4.0.18.0)
+&lt;li&gt;Lightsail (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;We are pleased to announce that our logs transformation csv processor now has a destination field, allowing you to specify under which parent node parsed columns be placed under.&lt;/li&gt;
+&lt;li&gt;Add support for tagging of Alarm resource type&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.38.0)
+&lt;li&gt;MediaLive (4.0.18.0)
 &lt;ul&gt;
-&lt;li&gt;Include CUSTOMER to evaluation target and participant role. Support Korean, Japanese and Simplified Chinese in evaluation forms.&lt;/li&gt;
+&lt;li&gt;AWS Elemental MediaLive released a new features that allows customers to use HLG 2020 as a color space for AV1 video codec.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Deadline (4.0.16.0)
+&lt;li&gt;Organizations (4.0.11.3)
 &lt;ul&gt;
-&lt;li&gt;AWS Deadline Cloud now supports configurable scheduling on each queue. The scheduling configuration controls how workers are distributed across jobs.&lt;/li&gt;
+&lt;li&gt;Updates close Account quota for member accounts in an Organization.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GameLift (4.0.8.0)
+&lt;li&gt;PaymentCryptography (4.0.8.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon GameLift Servers now includes a ComputeName field in game session API responses, making it easier to identify which compute is hosting a game session without cross-referencing IP addresses.&lt;/li&gt;
+&lt;li&gt;Adds optional support to retrieve previously generated import and export tokens to simplify import and export functions&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GeoPlaces (4.0.4.14)
+&lt;li&gt;Core 4.0.3.27
 &lt;ul&gt;
-&lt;li&gt;This release updates API reference documentation for Amazon Location Service Places APIs to reflect regional restrictions for Grab Maps users in ReverseGeocode, Suggest, SearchText, and GetPlace operations&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Pricing (4.0.4.0)
-&lt;ul&gt;
-&lt;li&gt;This release increases the MaxResults parameter of the GetAttributeValues API from 100 to 10000.&lt;/li&gt;
+&lt;li&gt;Fix issue with unexpected exceptions when disposing event stream responses&lt;/li&gt;
+&lt;li&gt;Fix rendering of &lt;code&gt;&amp;lt;list&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;item&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;term&amp;gt;&lt;/code&gt;, and &lt;code&gt;&amp;lt;description&amp;gt;&lt;/code&gt; XML doc tags in generated API reference documentation.&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
