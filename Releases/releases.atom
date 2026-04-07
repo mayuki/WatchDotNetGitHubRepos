@@ -1,6 +1,501 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-04-06T00:14:10Z</updated>
+  <updated>2026-04-07T00:14:24Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
+  <entry>
+    <title>aws/aws-sdk-net - Releases - 2026-04-06</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-04-06</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2026-04-07T00:14:04Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.226.0"&gt;4.0.226.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.226.0 (2026-04-06 18:29 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;AccessAnalyzer (4.0.5.0)
+&lt;ul&gt;
+&lt;li&gt;Brookie helps customers preview the impact of SCPs before deployment using historical access activity. It evaluates attached policies and proposed policy updates using collected access activity through CloudTrail authorization events and reports where currently allowed access will be denied.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Deadline (4.0.17.0)
+&lt;ul&gt;
+&lt;li&gt;Added 8 batch APIs (BatchGetJob, BatchGetStep, BatchGetTask, BatchGetSession, BatchGetSessionAction, BatchGetWorker, BatchUpdateJob, BatchUpdateTask) for bulk operations. Monitors can now use an Identity Center instance in a different region via the identityCenterRegion parameter.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DLM (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for Fast Snapshot Restore AvailabilityZone Ids in Amazon Data Lifecycle Manager EBS snapshot lifecycle policies.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GeoMaps (4.0.5.4)
+&lt;ul&gt;
+&lt;li&gt;This release updates API reference documentation for Amazon Location Service Maps APIs to reflect regional restrictions for Grab Maps users&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GuardDuty (4.0.18.0)
+&lt;ul&gt;
+&lt;li&gt;Migrated to Smithy. No functional changes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Lightsail (4.0.7.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for the Asia Pacific (Malaysia) (ap-southeast-5) Region.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaTailor (4.0.7.0)
+&lt;ul&gt;
+&lt;li&gt;This change adds support for Tagging the resource types Programs and Prefetch Schedules&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;QConnect (4.0.9.0)
+&lt;ul&gt;
+&lt;li&gt;Added optional originRequestId parameter to SendMessageRequest and ListSpans response in Amazon Q in Connect to support request tracing across service boundaries.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Transfer (4.0.7.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Transfer Family Connectors now support IPv6 connectivity, enabling outbound connections to remote SFTP or AS2 servers using IPv4-only or dual-stack (IPv4 and IPv6) configurations based on network requirements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.3.28
+&lt;ul&gt;
+&lt;li&gt;Added unified platform map for cross-platform API documentation generation&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-04-06</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-04-06</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2026-04-07T00:14:04Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Playwright_1.1.0-beta.1"&gt;Azure.ResourceManager.Playwright_1.1.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.1.0-beta.1 (2026-04-06)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded API version to &lt;code&gt;2026-02-01-preview&lt;/code&gt;.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;PlaywrightWorkspaceData&lt;/code&gt; added property &lt;code&gt;Identity&lt;/code&gt; of type &lt;code&gt;ManagedServiceIdentity&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PlaywrightWorkspacePatch&lt;/code&gt; added property &lt;code&gt;Identity&lt;/code&gt; of type &lt;code&gt;ManagedServiceIdentity&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PlaywrightWorkspaceProperties&lt;/code&gt; added property &lt;code&gt;Reporting&lt;/code&gt; of type &lt;code&gt;PlaywrightEnablementStatus?&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PlaywrightWorkspaceProperties&lt;/code&gt; added property &lt;code&gt;StorageUri&lt;/code&gt; of type &lt;code&gt;Uri&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PlaywrightWorkspaceUpdateProperties&lt;/code&gt; added property &lt;code&gt;Reporting&lt;/code&gt; of type &lt;code&gt;PlaywrightEnablementStatus?&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PlaywrightWorkspaceUpdateProperties&lt;/code&gt; added property &lt;code&gt;StorageUri&lt;/code&gt; of type &lt;code&gt;Uri&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>CommunityToolkit/Maui - Releases - 2026-04-06</title>
+    <id>https://github.com/CommunityToolkit/Maui#2026-04-06</id>
+    <link href="https://github.com/CommunityToolkit/Maui" />
+    <updated>2026-04-07T00:14:06Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/6.0.1-camera"&gt;CameraView v6.0.1: Fix Photo + Video Orientation&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;&lt;code&gt;CommunityToolkit.Maui.Camera v6.0.1&lt;/code&gt;&lt;/h2&gt;
+&lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;CameraView fix for iOS: orientation and video recording by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/zhitaop/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/zhitaop"&gt;@zhitaop&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4106760309" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3167" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3167/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3167"&gt;#3167&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CameraView fix for Android: video recording and rotation by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/zhitaop/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/zhitaop"&gt;@zhitaop&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4106931903" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3168" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3168/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3168"&gt;#3168&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/14.0.1...6.0.1-camera"&gt;&lt;tt&gt;14.0.1...6.0.1-camera&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/9.0.0-mediaelement"&gt;MediaElement v9.0.0: UriMediaSource HttpHeaders&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;&lt;code&gt;CommunityToolkit.Maui.MediaElement v9.0.0&lt;/code&gt;&lt;/h2&gt;
+&lt;h2&gt;Introducing &lt;code&gt;UriMediaSource.HttpHeaders&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;We heard your feedback! You can now use Http Headers for &lt;code&gt;UriMediaSource&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="var headers = new Dictionary&amp;lt;string, string&amp;gt;
+{
+    [&amp;quot;Authorization&amp;quot;] = &amp;quot;Bearer my-token&amp;quot;
+};
+mediaElement.Source = MediaSource.FromUri(new Uri(&amp;quot;https://example.com/stream.m3u8&amp;quot;), headers);"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;headers&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-smi"&gt;Dictionary&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-smi"&gt;string&lt;/span&gt;&lt;span class="pl-kos"&gt;,&lt;/span&gt; &lt;span class="pl-smi"&gt;string&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="pl-kos"&gt;{&lt;/span&gt;
+    &lt;span class="pl-kos"&gt;[&lt;/span&gt;&lt;span class="pl-s"&gt;"Authorization"&lt;/span&gt;&lt;span class="pl-kos"&gt;]&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;"Bearer my-token"&lt;/span&gt;
+&lt;span class="pl-kos"&gt;}&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+&lt;span class="pl-s1"&gt;mediaElement&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;Source&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-s1"&gt;MediaSource&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;FromUri&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-smi"&gt;Uri&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s"&gt;"https://example.com/stream.m3u8"&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;,&lt;/span&gt; &lt;span class="pl-s1"&gt;headers&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Add DynamicDependency to MauiMediaElement constructors by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ne0rrmatrix/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ne0rrmatrix"&gt;@ne0rrmatrix&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3980658574" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3116" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3116/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3116"&gt;#3116&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;UriMediaSource HttpHeaders by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Kaaybi/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Kaaybi"&gt;@Kaaybi&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4109582861" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3169" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3169/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3169"&gt;#3169&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Kaaybi/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Kaaybi"&gt;@Kaaybi&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4109582861" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3169" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3169/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3169"&gt;#3169&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/14.0.1...9.0.0-mediaelement"&gt;&lt;tt&gt;14.0.1...9.0.0-mediaelement&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/14.1.0"&gt;14.1.0: SpeechToText `AutostopSilenceTimeout`, StatusBar Bug Fixes, Popup Bug Fixes, AvatarView Bug Fixes, and Public Exceptions&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;&lt;code&gt;CommunityToolkit.Maui v14.1.0&lt;/code&gt;&lt;/h2&gt;
+&lt;h3&gt;SpeechToText&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;We've added &lt;code&gt;SpeechToTextOptions.AutostopSilenceTimeout&lt;/code&gt; to allow you to auto-stop &lt;code&gt;ISpeechToText&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Public Custom Exceptions&lt;/h3&gt;
+&lt;p&gt;We heard your feedback! The following exceptions are now &lt;code&gt;public&lt;/code&gt; allowing you to properly catch them inside a try/catch block:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;SoftKeyboardException&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PopupNotFoundException&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PopupBlockedException&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;InvalidPopupOperationException&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;StatusBar Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;StatusBarBehavior&lt;/code&gt; now works when used inside a Modal Page on Android&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;StatusBarBehavior&lt;/code&gt; now uses the correct height for Android API 36+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Popup Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Popup&lt;/code&gt; now works when used in a Modal Page&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;AvatarView&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;AvatarView&lt;/code&gt; now correctly updates its size when &lt;code&gt;ImageSource&lt;/code&gt; changes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Make custom exceptions public by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/FabriBertani/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/FabriBertani"&gt;@FabriBertani&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4039029912" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3134" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3134/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3134"&gt;#3134&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Filter out non-public types in TextColorToGenerator assembly scanning by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jfversluis/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jfversluis"&gt;@jfversluis&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4094141750" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3161" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3161/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3161"&gt;#3161&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add Support for Popups inside a Modal &lt;code&gt;NavigationPage&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/StefanRailcube/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/StefanRailcube"&gt;@StefanRailcube&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4102169858" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3164" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3164/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3164"&gt;#3164&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix for Bug 2761 (AppThemeResource not finding keys) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/misterspeak/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/misterspeak"&gt;@misterspeak&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4088879397" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3159" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3159/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3159"&gt;#3159&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add Support for &lt;code&gt;StatusBarBehavior&lt;/code&gt; in Android Modal Page by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4002741560" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3123" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3123/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3123"&gt;#3123&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix: [BUG] StatusBar too large in landscape mode (in API 36+) &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4116024717" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3170" data-hovercard-type="issue" data-hovercard-url="/CommunityToolkit/Maui/issues/3170/hovercard" href="https://github.com/CommunityToolkit/Maui/issues/3170"&gt;#3170&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Pastajello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Pastajello"&gt;@Pastajello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4198525697" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3182" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3182/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3182"&gt;#3182&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix: [BUG] AvatarView changes size when setting its ImageSource &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4081688950" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3153" data-hovercard-type="issue" data-hovercard-url="/CommunityToolkit/Maui/issues/3153/hovercard" href="https://github.com/CommunityToolkit/Maui/issues/3153"&gt;#3153&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Pastajello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Pastajello"&gt;@Pastajello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4201508449" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3183" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3183/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3183"&gt;#3183&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;SpeechToText AutostopSilenceTimeout by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/VladislavAntonyuk/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/VladislavAntonyuk"&gt;@VladislavAntonyuk&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3977194491" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3111" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3111/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3111"&gt;#3111&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/StefanRailcube/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/StefanRailcube"&gt;@StefanRailcube&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4102169858" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3164" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3164/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3164"&gt;#3164&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/misterspeak/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/misterspeak"&gt;@misterspeak&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4088879397" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3159" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3159/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3159"&gt;#3159&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Pastajello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Pastajello"&gt;@Pastajello&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4198525697" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3182" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3182/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3182"&gt;#3182&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/14.0.1...14.1.0"&gt;&lt;tt&gt;14.0.1...14.1.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>googleapis/google-cloud-dotnet - Releases - 2026-04-06</title>
+    <id>https://github.com/googleapis/google-cloud-dotnet#2026-04-06</id>
+    <link href="https://github.com/googleapis/google-cloud-dotnet" />
+    <updated>2026-04-07T00:14:15Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Ces.V1Beta-1.0.0-beta04"&gt;Google.Cloud.Ces.V1Beta version 1.0.0-beta04&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update public libraries for CES v1beta&lt;/li&gt;
+&lt;li&gt;Add support for generating app resources with LLM&lt;/li&gt;
+&lt;li&gt;Deprecate &lt;code&gt;root_agent&lt;/code&gt; in message &lt;code&gt;.google.cloud.ces.v1beta.AgentTool&lt;/code&gt; in favor of new &lt;code&gt;agent&lt;/code&gt; field.&lt;/li&gt;
+&lt;li&gt;[Memorystore for Redis Cluster] Add support for Flexible CA feature&lt;/li&gt;
+&lt;li&gt;Update public libraries for CES v1beta&lt;/li&gt;
+&lt;li&gt;Add support for generating app resources with LLM&lt;/li&gt;
+&lt;li&gt;Deprecate &lt;code&gt;root_agent&lt;/code&gt; in message &lt;code&gt;.google.cloud.ces.v1beta.AgentTool&lt;/code&gt; in favor of new &lt;code&gt;agent&lt;/code&gt; field.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A comment for field &lt;code&gt;root_agent&lt;/code&gt; in message &lt;code&gt;.google.cloud.ces.v1beta.AgentTool&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;root_agent&lt;/code&gt; in message &lt;code&gt;.google.cloud.ces.v1beta.AgentTool&lt;/code&gt; is changed&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.TextToSpeech.V1Beta1-2.0.0-beta18"&gt;Google.Cloud.TextToSpeech.V1Beta1 version 2.0.0-beta18&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Support safety settings for Gemini voices and deprecate &lt;code&gt;relax_safety_filters&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Support &lt;code&gt;enable_textnorm&lt;/code&gt; for Gemini voices.&lt;/li&gt;
+&lt;li&gt;Mark &lt;code&gt;advanced_voice_options&lt;/code&gt; as optional.&lt;/li&gt;
+&lt;li&gt;[Memorystore for Redis Cluster] Add support for Flexible CA feature&lt;/li&gt;
+&lt;li&gt;Support safety settings for Gemini voices and deprecate &lt;code&gt;relax_safety_filters&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Support &lt;code&gt;enable_textnorm&lt;/code&gt; for Gemini voices.&lt;/li&gt;
+&lt;li&gt;Mark &lt;code&gt;advanced_voice_options&lt;/code&gt; as optional.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A comment for field &lt;code&gt;relax_safety_filters&lt;/code&gt; in message &lt;code&gt;.google.cloud.texttospeech.v1beta1.AdvancedVoiceOptions&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;advanced_voice_options&lt;/code&gt; in message &lt;code&gt;.google.cloud.texttospeech.v1beta1.SynthesizeSpeechRequest&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;markup&lt;/code&gt; in message &lt;code&gt;.google.cloud.texttospeech.v1beta1.SynthesisInput&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;markup&lt;/code&gt; in message &lt;code&gt;.google.cloud.texttospeech.v1beta1.StreamingSynthesisInput&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;relax_safety_filters&lt;/code&gt; in message &lt;code&gt;.google.cloud.texttospeech.v1beta1.AdvancedVoiceOptions&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;advanced_voice_options&lt;/code&gt; in message &lt;code&gt;.google.cloud.texttospeech.v1beta1.SynthesizeSpeechRequest&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;markup&lt;/code&gt; in message &lt;code&gt;.google.cloud.texttospeech.v1beta1.SynthesisInput&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;markup&lt;/code&gt; in message &lt;code&gt;.google.cloud.texttospeech.v1beta1.StreamingSynthesisInput&lt;/code&gt; is changed&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.TextToSpeech.V1-3.18.0"&gt;Google.Cloud.TextToSpeech.V1 version 3.18.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Support safety settings for Gemini voices and deprecate &lt;code&gt;relax_safety_filters&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Support &lt;code&gt;enable_textnorm&lt;/code&gt; for Gemini voices.&lt;/li&gt;
+&lt;li&gt;Mark &lt;code&gt;advanced_voice_options&lt;/code&gt; as optional.&lt;/li&gt;
+&lt;li&gt;[Memorystore for Redis Cluster] Add support for Flexible CA feature&lt;/li&gt;
+&lt;li&gt;Support safety settings for Gemini voices and deprecate &lt;code&gt;relax_safety_filters&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Support &lt;code&gt;enable_textnorm&lt;/code&gt; for Gemini voices.&lt;/li&gt;
+&lt;li&gt;Mark &lt;code&gt;advanced_voice_options&lt;/code&gt; as optional.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A comment for field &lt;code&gt;relax_safety_filters&lt;/code&gt; in message &lt;code&gt;.google.cloud.texttospeech.v1beta1.AdvancedVoiceOptions&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;advanced_voice_options&lt;/code&gt; in message &lt;code&gt;.google.cloud.texttospeech.v1beta1.SynthesizeSpeechRequest&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;markup&lt;/code&gt; in message &lt;code&gt;.google.cloud.texttospeech.v1beta1.SynthesisInput&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;markup&lt;/code&gt; in message &lt;code&gt;.google.cloud.texttospeech.v1beta1.StreamingSynthesisInput&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;relax_safety_filters&lt;/code&gt; in message &lt;code&gt;.google.cloud.texttospeech.v1beta1.AdvancedVoiceOptions&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;advanced_voice_options&lt;/code&gt; in message &lt;code&gt;.google.cloud.texttospeech.v1beta1.SynthesizeSpeechRequest&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;markup&lt;/code&gt; in message &lt;code&gt;.google.cloud.texttospeech.v1beta1.SynthesisInput&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;markup&lt;/code&gt; in message &lt;code&gt;.google.cloud.texttospeech.v1beta1.StreamingSynthesisInput&lt;/code&gt; is changed&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Redis.Cluster.V1-1.6.0"&gt;Google.Cloud.Redis.Cluster.V1 version 1.6.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[Memorystore for Redis Cluster] Add support for Flexible CA feature&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Memorystore.V1Beta-1.0.0-beta04"&gt;Google.Cloud.Memorystore.V1Beta version 1.0.0-beta04&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[Memorystore for Valkey] Add support for Flexible CA feature&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Memorystore.V1-1.0.0-beta06"&gt;Google.Cloud.Memorystore.V1 version 1.0.0-beta06&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[Memorystore for Valkey] Add support for Flexible CA feature&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.DocumentAI.V1-3.25.0"&gt;Google.Cloud.DocumentAI.V1 version 3.25.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added a fields for image and table annotation output&lt;/li&gt;
+&lt;li&gt;Update comments for proto fields&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Dlp.V2-4.24.0"&gt;Google.Cloud.Dlp.V2 version 4.24.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for detecting key-value pairs in client provided metadata&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Dataflow.V1Beta3-2.0.0-beta10"&gt;Google.Cloud.Dataflow.V1Beta3 version 2.0.0-beta10&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add Pausing/Yaml capabilities to public protos&lt;/li&gt;
+&lt;li&gt;Add sha256 field to Package proto&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.AIPlatform.V1-3.70.0"&gt;Google.Cloud.AIPlatform.V1 version 3.70.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add evaluation metrics and autorater configuration to the AI Platform v1 API&lt;/li&gt;
+&lt;li&gt;Add evaluation configuration and dataset runs to TuningJob&lt;/li&gt;
+&lt;li&gt;Add multimodal input support and custom output formats to evaluation metrics&lt;/li&gt;
+&lt;li&gt;Add container_spec to Reasoning Engine public protos&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>icsharpcode/ILSpy - Releases - 2026-04-06</title>
+    <id>https://github.com/icsharpcode/ILSpy#2026-04-06</id>
+    <link href="https://github.com/icsharpcode/ILSpy" />
+    <updated>2026-04-07T00:14:17Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/icsharpcode/ILSpy/releases/tag/v10.0"&gt;ILSpy 10.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;&lt;strong&gt;PSA We DO NOT own the domain ilspy dot org&lt;/strong&gt; See &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4211773802" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3709" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3709/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3709"&gt;#3709&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This release is based on &lt;a href="https://dotnet.microsoft.com/en-us/download/dotnet/10.0" rel="nofollow"&gt;.NET 10.0&lt;/a&gt;. Please make sure that you have it installed on your machine beforehand.&lt;/p&gt;
+&lt;h1&gt;New Language Features&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;C# 13: &lt;code&gt;allows ref struct&lt;/code&gt; constraint&lt;/li&gt;
+&lt;li&gt;C# 14: &lt;code&gt;extension&lt;/code&gt; members&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3037828023" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3467" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3467/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3467"&gt;#3467&lt;/a&gt;: C# 12 &lt;code&gt;InlineArray&lt;/code&gt;s&lt;/li&gt;
+&lt;li&gt;Update pattern detection to Roslyn 5.0 RTM&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3169301395" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3500" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3500/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3500"&gt;#3500&lt;/a&gt;: Added .NET 10 as test target&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;User Interface&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Dedicated UI and Decompiler APIs for C# 14 extensions &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4093005800" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3680" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3680/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3680"&gt;#3680&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Navigate visible history (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3505478001" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3591" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3591/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3591"&gt;#3591&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/miloush/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/miloush"&gt;@miloush&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Removed translations (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3767273716" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3648" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3648/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3648"&gt;#3648&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3246520670" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3521" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3521/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3521"&gt;#3521&lt;/a&gt;: Add API to set an initially highlighted entity after navigation&lt;/li&gt;
+&lt;li&gt;Improve WordBreak in CustomDialog (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3306447749" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3535" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3535/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3535"&gt;#3535&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/CreateAndInject/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/CreateAndInject"&gt;@CreateAndInject&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Use AssemblyWarning when AssemblyReference load faulted (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1761729549" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3013" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3013/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3013"&gt;#3013&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/workgroupengineering/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/workgroupengineering"&gt;@workgroupengineering&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Refactoring of EntityToString API (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3722471162" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3635" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3635/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3635"&gt;#3635&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Enhancements&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;CSharpConversions&lt;/code&gt;: General improvements, fixing various missing rules for C# up to version 9.&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2713725076" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3344" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3344/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3344"&gt;#3344&lt;/a&gt;: Support &lt;code&gt;ckfinite&lt;/code&gt; IL opcode in decompiler&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3424157593" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3563" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3563/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3563"&gt;#3563&lt;/a&gt;: Disassembler: Add support for ildasm /caverbal format&lt;/li&gt;
+&lt;li&gt;Detection of records and primary constructors: various bugfixes and improvements. (Special thanks to &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/sonyps5201314/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/sonyps5201314"&gt;@sonyps5201314&lt;/a&gt; and &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mmusu3/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mmusu3"&gt;@mmusu3&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3245266718" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3519" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3519/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3519"&gt;#3519&lt;/a&gt;: Add API diff feature. Please see the PR for how this feature works.&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3147281893" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3494" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3494/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3494"&gt;#3494&lt;/a&gt;: Add dynamic ILSpy settings options to ILSpyCmd&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3111607538" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3489" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3489/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3489"&gt;#3489&lt;/a&gt;: Make &lt;code&gt;WholeProjectDecompiler.CreateDecompiler&lt;/code&gt; protected virtual to make the decompilation pipeline extensible.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Contributions&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Allow extracting multiple package entries (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3208454281" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3508" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3508/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3508"&gt;#3508&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/CreateAndInject/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/CreateAndInject"&gt;@CreateAndInject&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Render operating system name as well as architecture if present (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3826097267" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3653" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3653/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3653"&gt;#3653&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/MatthewSteeples/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/MatthewSteeples"&gt;@MatthewSteeples&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Improve decompilation of unmanaged function pointers (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3653612222" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3620" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3620/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3620"&gt;#3620&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ds5678/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ds5678"&gt;@ds5678&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Improve decompilation of pre-increment operators (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3041543097" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3472" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3472/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3472"&gt;#3472&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ds5678/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ds5678"&gt;@ds5678&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Support batch PDB generation (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3647788733" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3619" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3619/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3619"&gt;#3619&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/sonyps5201314/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/sonyps5201314"&gt;@sonyps5201314&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TargetFramework&lt;/code&gt; and &lt;code&gt;TargetServices&lt;/code&gt; APIs are now public (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3169327348" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3501" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3501/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3501"&gt;#3501&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/nikitalita/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/nikitalita"&gt;@nikitalita&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Allow creating a MetadataFile with a MetadataReader / MetadataStringDecoder (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3106582836" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3487" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3487/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3487"&gt;#3487&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/lordmilko/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/lordmilko"&gt;@lordmilko&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add configuration option to check for overflow and underflow (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3101598579" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3484" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3484/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3484"&gt;#3484&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ds5678/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ds5678"&gt;@ds5678&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Support disassembling single file bundle for ILSpy (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2852265628" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3398" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3398/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3398"&gt;#3398&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/cshung/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/cshung"&gt;@cshung&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Refactor for cross platform port (see #3641by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/lextm/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/lextm"&gt;@lextm&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix &lt;code&gt;in&lt;/code&gt; erroneously being applied to &lt;code&gt;this&lt;/code&gt; (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4109227064" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3682" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3682/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3682"&gt;#3682&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/nikitalita/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/nikitalita"&gt;@nikitalita&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update TransformCollectionAndObjectInitializers to check for init-only properties  (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4079285995" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3678" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3678/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3678"&gt;#3678&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/nikitalita/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/nikitalita"&gt;@nikitalita&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix PowerShell PostBuild failing when solution path contains spaces (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4000338854" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3669" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3669/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3669"&gt;#3669&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Myself-Bloons/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Myself-Bloons"&gt;@Myself-Bloons&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Replace FileVersionInfo.GetVersionInfo with DecompilerVersionInfo.Version constant (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3973666321" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3667" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3667/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3667"&gt;#3667&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/MattParkerDev/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/MattParkerDev"&gt;@MattParkerDev&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Support &lt;code&gt;allows ref struct&lt;/code&gt; constraint (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3317473249" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3537" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3537/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3537"&gt;#3537&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jjonescz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jjonescz"&gt;@jjonescz&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Allow passing an &lt;code&gt;IDecompilerTypeSystem&lt;/code&gt; rather than a &lt;code&gt;DecompilerTypeSystem&lt;/code&gt; to &lt;code&gt;CSharpDecompiler&lt;/code&gt; (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3285770117" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3529" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3529/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3529"&gt;#3529&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/lordmilko/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/lordmilko"&gt;@lordmilko&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;DecompilerSettings.ExpandParamsArguments&lt;/code&gt; (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3297877519" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3534" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3534/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3534"&gt;#3534&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/MSchmoecker/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/MSchmoecker"&gt;@MSchmoecker&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;DecompilerSettings.AlwaysMoveInitializer&lt;/code&gt;: Always move initializer from static constructor to field initializer (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3328173202" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3540" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3540/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3540"&gt;#3540&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/miloush/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/miloush"&gt;@miloush&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3017985779" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3462" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3462/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3462"&gt;#3462&lt;/a&gt;: Scrolling with scroll wheel breaks after using file search (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3321361160" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3538" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3538/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3538"&gt;#3538&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/tom-englert/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/tom-englert"&gt;@tom-englert&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixes for primary constructors (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3644234452" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3614" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3614/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3614"&gt;#3614&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mmusu3/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mmusu3"&gt;@mmusu3&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Improve inlining of boxed values (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3498316914" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3587" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3587/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3587"&gt;#3587&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ds5678/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ds5678"&gt;@ds5678&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;List name first in ILSpy title for multiple instances (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3502434331" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3589" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3589/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3589"&gt;#3589&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/miloush/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/miloush"&gt;@miloush&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Improve Framework Id detection (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3485045862" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3581" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3581/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3581"&gt;#3581&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ds5678/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ds5678"&gt;@ds5678&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Enable detection of .NET version without TargetFrameworkAttribute (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3484512322" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3580" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3580/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3580"&gt;#3580&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ds5678/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ds5678"&gt;@ds5678&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Do not create object initializers for tuples (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3484505329" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3579" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3579/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3579"&gt;#3579&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ds5678/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ds5678"&gt;@ds5678&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix lower case type name conflicting with variable name (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3463639024" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3572" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3572/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3572"&gt;#3572&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ds5678/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ds5678"&gt;@ds5678&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix regression in decompiling local functions with default parameters (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3407307433" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3560" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3560/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3560"&gt;#3560&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ds5678/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ds5678"&gt;@ds5678&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Copy-propagate the stack slot for collection initializers (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3395604104" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3554" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3554/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3554"&gt;#3554&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ds5678/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ds5678"&gt;@ds5678&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Normalize UTF-8 BOM Marks and ps1 Indention (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3357882775" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3546" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3546/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3546"&gt;#3546&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/petercrabtree/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/petercrabtree"&gt;@petercrabtree&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Minor Dev Environment Fixes (.editorconfig cleanup, typo fix, .gitignore tweak) (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3349882083" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3544" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3544/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3544"&gt;#3544&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/petercrabtree/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/petercrabtree"&gt;@petercrabtree&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Replace GeneratePdbForAssembly with GeneratePdbForAssemblies to improve user experience and remove redundant code. (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3682699509" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3630" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3630/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3630"&gt;#3630&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/sonyps5201314/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/sonyps5201314"&gt;@sonyps5201314&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix the issue where PDBs generated by ILSpy do not match (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3682459937" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3629" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3629/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3629"&gt;#3629&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/sonyps5201314/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/sonyps5201314"&gt;@sonyps5201314&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Do not use ObservableObject when ObservableObjectBase is sufficient. (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3759845875" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3644" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3644/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3644"&gt;#3644&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/tom-englert/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/tom-englert"&gt;@tom-englert&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add an option to not transform &lt;code&gt;Activator.CreateInstance&amp;lt;T&amp;gt;()&lt;/code&gt; to &lt;code&gt;new T()&lt;/code&gt; (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3160921593" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3497" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3497/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3497"&gt;#3497&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/DoctorKrolic/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/DoctorKrolic"&gt;@DoctorKrolic&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix stack overflow exception in CSharpResolver (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3041105624" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3471" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3471/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3471"&gt;#3471&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ds5678/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ds5678"&gt;@ds5678&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Handle explicit optional parameter after default parameter (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3040673792" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3470" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3470/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3470"&gt;#3470&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ds5678/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ds5678"&gt;@ds5678&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix disassembler output, correcting &lt;code&gt;flag(NUM)&lt;/code&gt; to &lt;code&gt;flags(NUM)&lt;/code&gt; (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3042956034" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3473" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3473/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3473"&gt;#3473&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/hez2010/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/hez2010"&gt;@hez2010&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix null reference exception when writing resource files (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3043312247" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3474" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3474/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3474"&gt;#3474&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ds5678/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ds5678"&gt;@ds5678&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix SDK-style (modern) inter-project references (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3204331463" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3502" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3502/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3502"&gt;#3502&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/petercrabtree/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/petercrabtree"&gt;@petercrabtree&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix incorrect method match for static methods with instance signature (see &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3205073891" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3504" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3504/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3504"&gt;#3504&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/MSchmoecker/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/MSchmoecker"&gt;@MSchmoecker&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;API Clean-up&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed legacy &lt;code&gt;UnresolvedUsingScope&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Renamed &lt;code&gt;ResolvedUsingScope&lt;/code&gt;  to &lt;code&gt;UsingScope&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed legacy &lt;code&gt;ToTypeReference&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;ITypeReference&lt;/code&gt; and implementations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Performance&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3105890114" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3486" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3486/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3486"&gt;#3486&lt;/a&gt;: Remove XML serialization from DecompilerSettings in ILSpy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Bug fixes&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3852851995" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3655" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3655/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3655"&gt;#3655&lt;/a&gt;: ExtractPackageEntryContextMenuEntry&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4109603103" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3684" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3684/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3684"&gt;#3684&lt;/a&gt;: Hide compiler-generated base-class forwarding accessor methods&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4044051232" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3674" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3674/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3674"&gt;#3674&lt;/a&gt;: Incorrect derived types shown, when generic type inherit from non-generic type with the same name.&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4013329526" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3671" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3671/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3671"&gt;#3671&lt;/a&gt;: TransformCollectionAndObjectInitializers mistakenly included trailing variable initialization.&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3265050586" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3524" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3524/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3524"&gt;#3524&lt;/a&gt;: Property without backing field cannot have an initializer.&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3217030547" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3512" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3512/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3512"&gt;#3512&lt;/a&gt;: Local function name collides with local variable name&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="704992171" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2165" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2165/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2165"&gt;#2165&lt;/a&gt;: DeclareVariables step must update ResolveResult annotation when using out var.&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3240063852" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3518" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3518/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3518"&gt;#3518&lt;/a&gt; by replacing &lt;code&gt;FixLoneIsInst&lt;/code&gt; with an inlining restriction.&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3037236512" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3465" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3465/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3465"&gt;#3465&lt;/a&gt;: Operator '&amp;gt;' cannot be applied to operands of type 'X' and 'X'&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3038365464" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3468" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3468/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3468"&gt;#3468&lt;/a&gt;: Try harder to avoid ref locals if &lt;code&gt;UseRefLocalsForAccurateOrderOfEvaluation&lt;/code&gt; is not enabled.&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2635922110" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3323" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3323/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3323"&gt;#3323&lt;/a&gt;: Simplify cleanup in AwaitInFinallyTransform, ensuring that we do not miss any containers.&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="541996279" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/1873" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/1873/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/1873"&gt;#1873&lt;/a&gt;: Clear ILRange in CopyPropagation&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="517644539" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/1789" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/1789/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/1789"&gt;#1789&lt;/a&gt;: missing hyperlink for &lt;code&gt;MethodGroupResolveResult&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3054564279" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3476" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3476/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3476"&gt;#3476&lt;/a&gt;: Scroll position not restored when navigating back&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3349896079" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3545" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3545/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3545"&gt;#3545&lt;/a&gt;: Covariant return not detected for abstract override property&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3381595272" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3549" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3549/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3549"&gt;#3549&lt;/a&gt;: Do not crash on encountering nil tokens.&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3349456065" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3543" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3543/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3543"&gt;#3543&lt;/a&gt;: Missing parentheses around field assignment expression in list initializers&lt;/li&gt;
+&lt;li&gt;DebugDirectoryTreeNode: AddressOfRawData and PointerToRawData columns should use hex display.&lt;/li&gt;
+&lt;li&gt;DebugDirectoryTreeNode: PointerToRawData was always showing 0 and AddressOfRawData was showing the wrong value.&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3484228533" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3577" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3577/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3577"&gt;#3577&lt;/a&gt;: Properly infer the switch governing type and preserve conversions&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3677663072" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3626" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3626/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3626"&gt;#3626&lt;/a&gt;: Do not emit named arguments for bool constants, if it causes the call to become ambiguous.&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3634789646" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3612" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3612/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3612"&gt;#3612&lt;/a&gt;: WholeProjectDecompiler.CleanUpName does not count bytes on Unix.&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3025962045" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3464" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3464/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3464"&gt;#3464&lt;/a&gt;: Missing cast in interpolated string&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3083173198" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3482" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3482/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3482"&gt;#3482&lt;/a&gt;: Drag and Drop is no longer working in the Assemblies tree view.&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3143940865" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3492" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3492/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3492"&gt;#3492&lt;/a&gt;: Do not crash, if field used by &lt;code&gt;RuntimeHelpers.InitializeArray&lt;/code&gt; is malformed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And many other fixes, for a full list click &lt;a href="https://github.com/icsharpcode/ILSpy/compare/v9.1...v10.0"&gt;here&lt;/a&gt;.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

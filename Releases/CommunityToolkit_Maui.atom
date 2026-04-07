@@ -1,6 +1,108 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>CommunityToolkit/Maui - Releases</title>
   <link href="https://github.com/CommunityToolkit/Maui" />
-  <updated>2026-04-06T00:13:49Z</updated>
+  <updated>2026-04-07T00:14:06Z</updated>
   <id>https://github.com/CommunityToolkit/Maui</id>
+  <entry>
+    <title>CommunityToolkit/Maui - Releases - 2026-04-06</title>
+    <id>https://github.com/CommunityToolkit/Maui#2026-04-06</id>
+    <link href="https://github.com/CommunityToolkit/Maui" />
+    <updated>2026-04-07T00:14:06Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/6.0.1-camera"&gt;CameraView v6.0.1: Fix Photo + Video Orientation&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;&lt;code&gt;CommunityToolkit.Maui.Camera v6.0.1&lt;/code&gt;&lt;/h2&gt;
+&lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;CameraView fix for iOS: orientation and video recording by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/zhitaop/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/zhitaop"&gt;@zhitaop&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4106760309" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3167" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3167/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3167"&gt;#3167&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CameraView fix for Android: video recording and rotation by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/zhitaop/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/zhitaop"&gt;@zhitaop&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4106931903" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3168" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3168/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3168"&gt;#3168&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/14.0.1...6.0.1-camera"&gt;&lt;tt&gt;14.0.1...6.0.1-camera&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/9.0.0-mediaelement"&gt;MediaElement v9.0.0: UriMediaSource HttpHeaders&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;&lt;code&gt;CommunityToolkit.Maui.MediaElement v9.0.0&lt;/code&gt;&lt;/h2&gt;
+&lt;h2&gt;Introducing &lt;code&gt;UriMediaSource.HttpHeaders&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;We heard your feedback! You can now use Http Headers for &lt;code&gt;UriMediaSource&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="var headers = new Dictionary&amp;lt;string, string&amp;gt;
+{
+    [&amp;quot;Authorization&amp;quot;] = &amp;quot;Bearer my-token&amp;quot;
+};
+mediaElement.Source = MediaSource.FromUri(new Uri(&amp;quot;https://example.com/stream.m3u8&amp;quot;), headers);"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;headers&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-smi"&gt;Dictionary&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-smi"&gt;string&lt;/span&gt;&lt;span class="pl-kos"&gt;,&lt;/span&gt; &lt;span class="pl-smi"&gt;string&lt;/span&gt;&lt;span class="pl-c1"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="pl-kos"&gt;{&lt;/span&gt;
+    &lt;span class="pl-kos"&gt;[&lt;/span&gt;&lt;span class="pl-s"&gt;"Authorization"&lt;/span&gt;&lt;span class="pl-kos"&gt;]&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;"Bearer my-token"&lt;/span&gt;
+&lt;span class="pl-kos"&gt;}&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+&lt;span class="pl-s1"&gt;mediaElement&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;Source&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-s1"&gt;MediaSource&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;FromUri&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-smi"&gt;Uri&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s"&gt;"https://example.com/stream.m3u8"&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;,&lt;/span&gt; &lt;span class="pl-s1"&gt;headers&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Add DynamicDependency to MauiMediaElement constructors by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ne0rrmatrix/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ne0rrmatrix"&gt;@ne0rrmatrix&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3980658574" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3116" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3116/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3116"&gt;#3116&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;UriMediaSource HttpHeaders by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Kaaybi/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Kaaybi"&gt;@Kaaybi&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4109582861" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3169" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3169/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3169"&gt;#3169&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Kaaybi/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Kaaybi"&gt;@Kaaybi&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4109582861" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3169" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3169/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3169"&gt;#3169&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/14.0.1...9.0.0-mediaelement"&gt;&lt;tt&gt;14.0.1...9.0.0-mediaelement&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/14.1.0"&gt;14.1.0: SpeechToText `AutostopSilenceTimeout`, StatusBar Bug Fixes, Popup Bug Fixes, AvatarView Bug Fixes, and Public Exceptions&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;&lt;code&gt;CommunityToolkit.Maui v14.1.0&lt;/code&gt;&lt;/h2&gt;
+&lt;h3&gt;SpeechToText&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;We've added &lt;code&gt;SpeechToTextOptions.AutostopSilenceTimeout&lt;/code&gt; to allow you to auto-stop &lt;code&gt;ISpeechToText&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Public Custom Exceptions&lt;/h3&gt;
+&lt;p&gt;We heard your feedback! The following exceptions are now &lt;code&gt;public&lt;/code&gt; allowing you to properly catch them inside a try/catch block:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;SoftKeyboardException&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PopupNotFoundException&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PopupBlockedException&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;InvalidPopupOperationException&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;StatusBar Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;StatusBarBehavior&lt;/code&gt; now works when used inside a Modal Page on Android&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;StatusBarBehavior&lt;/code&gt; now uses the correct height for Android API 36+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Popup Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Popup&lt;/code&gt; now works when used in a Modal Page&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;AvatarView&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;AvatarView&lt;/code&gt; now correctly updates its size when &lt;code&gt;ImageSource&lt;/code&gt; changes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Make custom exceptions public by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/FabriBertani/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/FabriBertani"&gt;@FabriBertani&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4039029912" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3134" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3134/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3134"&gt;#3134&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Filter out non-public types in TextColorToGenerator assembly scanning by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jfversluis/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jfversluis"&gt;@jfversluis&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4094141750" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3161" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3161/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3161"&gt;#3161&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add Support for Popups inside a Modal &lt;code&gt;NavigationPage&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/StefanRailcube/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/StefanRailcube"&gt;@StefanRailcube&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4102169858" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3164" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3164/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3164"&gt;#3164&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix for Bug 2761 (AppThemeResource not finding keys) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/misterspeak/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/misterspeak"&gt;@misterspeak&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4088879397" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3159" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3159/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3159"&gt;#3159&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add Support for &lt;code&gt;StatusBarBehavior&lt;/code&gt; in Android Modal Page by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4002741560" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3123" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3123/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3123"&gt;#3123&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix: [BUG] StatusBar too large in landscape mode (in API 36+) &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4116024717" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3170" data-hovercard-type="issue" data-hovercard-url="/CommunityToolkit/Maui/issues/3170/hovercard" href="https://github.com/CommunityToolkit/Maui/issues/3170"&gt;#3170&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Pastajello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Pastajello"&gt;@Pastajello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4198525697" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3182" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3182/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3182"&gt;#3182&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix: [BUG] AvatarView changes size when setting its ImageSource &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4081688950" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3153" data-hovercard-type="issue" data-hovercard-url="/CommunityToolkit/Maui/issues/3153/hovercard" href="https://github.com/CommunityToolkit/Maui/issues/3153"&gt;#3153&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Pastajello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Pastajello"&gt;@Pastajello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4201508449" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3183" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3183/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3183"&gt;#3183&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;SpeechToText AutostopSilenceTimeout by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/VladislavAntonyuk/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/VladislavAntonyuk"&gt;@VladislavAntonyuk&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3977194491" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3111" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3111/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3111"&gt;#3111&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/StefanRailcube/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/StefanRailcube"&gt;@StefanRailcube&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4102169858" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3164" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3164/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3164"&gt;#3164&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/misterspeak/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/misterspeak"&gt;@misterspeak&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4088879397" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3159" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3159/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3159"&gt;#3159&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Pastajello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Pastajello"&gt;@Pastajello&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4198525697" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3182" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3182/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3182"&gt;#3182&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/14.0.1...14.1.0"&gt;&lt;tt&gt;14.0.1...14.1.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
