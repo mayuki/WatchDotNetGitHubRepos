@@ -1,89 +1,54 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-04-08T00:15:21Z</updated>
+  <updated>2026-04-09T00:11:40Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-04-07</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-04-07</id>
+    <title>aws/aws-sdk-net - Releases - 2026-04-08</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-04-08</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-04-08T00:15:21Z</updated>
+    <updated>2026-04-09T00:11:40Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.227.0"&gt;4.0.227.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.228.0"&gt;4.0.228.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.227.0 (2026-04-07 18:24 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.228.0 (2026-04-08 20:03 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AccessAnalyzer (4.0.6.0)
+&lt;li&gt;Backup (4.0.11.0)
 &lt;ul&gt;
-&lt;li&gt;Revert previous additions of API changes.&lt;/li&gt;
+&lt;li&gt;Adding EKS specific backup vault notification types for AWS Backup.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCore (4.0.17.0)
+&lt;li&gt;Drs (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;This release includes support for 1) InvokeBrowser API, enabling OS-level control of AgentCore Browser Tool sessions through mouse actions, keyboard input, and screenshots. 2) Added documentation noting that empty sessions are automatically deleted after one day in the ListSessions API.&lt;/li&gt;
+&lt;li&gt;This changes adds support for modifying the replication configuration to support data replication using IPv6.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Braket (4.0.5.0)
+&lt;li&gt;ECR (4.0.13.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for t3, g6, and g6e instance types for Hybrid Jobs.&lt;/li&gt;
+&lt;li&gt;Add UnableToListUpstreamImageReferrersException in ListImageReferrers&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.39.0)
+&lt;li&gt;IVSRealTime (4.0.7.0)
 &lt;ul&gt;
-&lt;li&gt;The voice enhancement mode used by the agent can now be viewed on the contact record via the DescribeContact api.&lt;/li&gt;
+&lt;li&gt;Adds support for Amazon IVS real-time streaming redundant ingest.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DataSync (4.0.10.0)
+&lt;li&gt;MarketplaceDiscovery (4.0.0.0)
 &lt;ul&gt;
-&lt;li&gt;Allow IAM role ARNs with IAM Paths for "SecretAccessRoleArn" field in "CustomSecretConfig"&lt;/li&gt;
+&lt;li&gt;AWS Marketplace Discovery API provides an interface that enables programmatic access to the AWS Marketplace catalog, including searching and browsing listings, retrieving product details and fulfillment options, and accessing public and private offer pricing and terms.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DataZone (4.0.24.0)
+&lt;li&gt;MediaLive (4.0.19.0)
 &lt;ul&gt;
-&lt;li&gt;Update Configurations and registerS3AccessGrantLocation as public attributes for cfn&lt;/li&gt;
+&lt;li&gt;MediaLive is adding support for MediaConnect Router by supporting a new output type called MEDIACONNECT ROUTER. This new output type will provide seamless encrypted transport between your MediaLive channel and MediaConnect Router.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.83.0)
+&lt;li&gt;Outposts (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;EC2 Capacity Manager adds new dimensions for grouping and filtering capacity metrics, including tag-based dimensions and Account Name.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ECS (4.0.18.0)
-&lt;ul&gt;
-&lt;li&gt;This release provides the functionality of mounting Amazon S3 Files to Amazon ECS tasks by adding support for the new S3FilesVolumeConfiguration parameter in ECS RegisterTaskDefinition API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;EKS (4.0.15.0)
-&lt;ul&gt;
-&lt;li&gt;EKS MNG WarmPool feature to support ASG WarmPool feature.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Lambda (4.0.14.0)
-&lt;ul&gt;
-&lt;li&gt;Launching Lambda integration with S3 Files as a new file system configuration.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Outposts (4.0.5.0)
-&lt;ul&gt;
-&lt;li&gt;This change allows listAssets to surface pending and non-compute asset information. Adds the INSTALLING asset state enum and the STORAGE, POWERSHELF, SWITCH, and NETWORKING AssetTypes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;RTBFabric (4.0.3.0)
-&lt;ul&gt;
-&lt;li&gt;AWS RTB Fabric External Responder gateways now support HTTP in addition to HTTPS for inbound external links. Gateways can accept bid requests on port 80 or serve both protocols simultaneously via listener configuration, giving customers flexible transport options for their bidding infrastructure&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3 (4.0.21.0)
-&lt;ul&gt;
-&lt;li&gt;Updated list of the valid AWS Region values for the LocationConstraint parameter for general purpose buckets.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3Files (4.0.0.0)
-&lt;ul&gt;
-&lt;li&gt;Support for S3 Files, a new shared file system that connects any AWS compute directly with your data in Amazon S3. It provides fast, direct access to all of your S3 data as files with full file system semantics and low-latency performance, without your data ever leaving S3.&lt;/li&gt;
+&lt;li&gt;Add AWS Outposts APIs to view renewal pricing options and submit renewal requests for Outpost contracts&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
