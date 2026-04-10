@@ -1,6 +1,47 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/aspire - Releases</title>
   <link href="https://github.com/dotnet/aspire" />
-  <updated>2026-04-09T00:11:45Z</updated>
+  <updated>2026-04-10T00:14:33Z</updated>
   <id>https://github.com/dotnet/aspire</id>
+  <entry>
+    <title>dotnet/aspire - Releases - 2026-04-09</title>
+    <id>https://github.com/dotnet/aspire#2026-04-09</id>
+    <link href="https://github.com/dotnet/aspire" />
+    <updated>2026-04-10T00:14:33Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.2.2"&gt;Aspire 13.2.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is a servicing release focused on bug fixes and platform improvements.&lt;/p&gt;
+&lt;p&gt;🐛 Bug Fixes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix SqlClient runtime asset layout on Unix — Resolved an issue where Microsoft.Data.SqlClient failed to load correctly on macOS and Linux due to incorrect NuGet asset layout (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4172478213" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15709" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15709/hovercard" href="https://github.com/microsoft/aspire/pull/15709"&gt;#15709&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix IDE execution regressions for Azure Functions and class library projects — Backported fixes for&lt;br&gt;
+13.2 regressions impacting IDE-based execution (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4173850133" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15714" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15714/hovercard" href="https://github.com/microsoft/aspire/pull/15714"&gt;#15714&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix NpmRunner multi-version output parsing — npm view returning multiple versions no longer breaks version resolution; also bumps @playwright/cli to &amp;gt;=0.1.3 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4184170150" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15746" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15746/hovercard" href="https://github.com/microsoft/aspire/pull/15746"&gt;#15746&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Skip name validation for internal resources — ProjectRebuilderResource, installer, and venv creator resources no longer fail the 64-char name limit since they're never deployed (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4175619240" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15726" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15726/hovercard" href="https://github.com/microsoft/aspire/pull/15726"&gt;#15726&lt;/a&gt;, fixes &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4164498434" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15693" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/15693/hovercard" href="https://github.com/microsoft/aspire/issues/15693"&gt;#15693&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;🔒 Security &amp;amp; Certificates&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use ASP.NET Core dev cert for DCP — Avoids ephemeral certificate trust issues by using the standard ASP.NET Core developer certificate (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4174250063" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15718" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15718/hovercard" href="https://github.com/microsoft/aspire/pull/15718"&gt;#15718&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Cache PFX dev certs on Windows and Linux — Prevents binary-level changes between runs for persistent container scenarios (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4190420212" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15774" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15774/hovercard" href="https://github.com/microsoft/aspire/pull/15774"&gt;#15774&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;🏗️ Infrastructure &amp;amp; Platform&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ARM64 CLI support — Added win-arm64 and linux-arm64 to the native CLI archive build matrix (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4140663706" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15599" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15599/hovercard" href="https://github.com/microsoft/aspire/pull/15599"&gt;#15599&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update DCP to&lt;br&gt;
+0.22.11 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4173522394" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15713" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15713/hovercard" href="https://github.com/microsoft/aspire/pull/15713"&gt;#15713&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;💻 CLI Improvements&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Show anonymous dashboard URLs in aspire ps — The dashboard URL is now displayed even when running without authentication (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4179814020" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/15731" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/15731/hovercard" href="https://github.com/microsoft/aspire/pull/15731"&gt;#15731&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
