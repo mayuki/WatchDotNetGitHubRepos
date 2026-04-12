@@ -1,40 +1,23 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-04-11T00:13:48Z</updated>
+  <updated>2026-04-12T00:14:34Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-04-10</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-04-10</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-04-11</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-04-11</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-04-11T00:13:48Z</updated>
+    <updated>2026-04-12T00:14:34Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.53.0"&gt;Azure.Core_1.53.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity_1.21.0"&gt;Azure.Identity_1.21.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.53.0 (2026-04-09)&lt;/h2&gt;
+                                &lt;h2&gt;1.21.0 (2026-04-10)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Azure.Identity&lt;/code&gt; credential types are now included in &lt;code&gt;Azure.Core&lt;/code&gt;, enabling SDK libraries to provide configuration-driven DI extensions (e.g., &lt;code&gt;AddAzureSecretClient&lt;/code&gt;) without requiring a direct dependency on &lt;code&gt;Azure.Identity&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DesktopVirtualization_1.4.0-beta.1"&gt;Azure.ResourceManager.DesktopVirtualization_1.4.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.4.0-beta.1 (2026-04-09)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded API version to &lt;code&gt;2026-01-01-preview&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;SessionHostConfigurationResource&lt;/code&gt; for managing session host configurations on a host pool.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;SessionHostManagementResource&lt;/code&gt; for managing session host lifecycle, including initiating updates and controlling provisioning and updates.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ActiveSessionHostConfigurationResource&lt;/code&gt; for retrieving the active session host configuration.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;GetRegistrationTokens&lt;/code&gt; and &lt;code&gt;GetSingleSessionHostRegistrationTokens&lt;/code&gt; operations on &lt;code&gt;HostPoolResource&lt;/code&gt; and &lt;code&gt;SessionHostCollection&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;RetryProvisioning&lt;/code&gt; operation on &lt;code&gt;SessionHostResource&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Migrated SDK from Swagger/AutoRest to TypeSpec-based code generation.&lt;/li&gt;
+&lt;li&gt;All &lt;code&gt;Azure.Identity&lt;/code&gt; types have been moved to &lt;code&gt;Azure.Core&lt;/code&gt; and are now available through &lt;code&gt;TypeForwardedTo&lt;/code&gt; attributes. This is a non-breaking change — existing code continues to work transparently. The library's version number now aligns with that of &lt;code&gt;Azure.Core&lt;/code&gt;. See the &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/b1dfb1ec786d4013cff05fd10436c069ecb37304/sdk/identity/Azure.Identity/MigrationGuide.md"&gt;Migration Guide&lt;/a&gt; for details.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
