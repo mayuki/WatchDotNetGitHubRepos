@@ -1,36 +1,131 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-04-15T00:19:20Z</updated>
+  <updated>2026-04-16T00:19:14Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-04-14</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-04-14</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-04-15</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-04-15</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-04-15T00:19:20Z</updated>
+    <updated>2026-04-16T00:19:14Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Secrets_4.10.0"&gt;Azure.Security.KeyVault.Secrets_4.10.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity_1.17.2"&gt;Azure.Identity_1.17.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;4.10.0 (2026-04-13)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h2&gt;1.17.2 (2026-04-15)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;AddSecretClient&lt;/code&gt; and &lt;code&gt;AddKeyedSecretClient&lt;/code&gt; extension methods on &lt;code&gt;IHostApplicationBuilder&lt;/code&gt; for registering &lt;code&gt;SecretClient&lt;/code&gt; via dependency injection using configuration-based setup.&lt;/li&gt;
-&lt;li&gt;Added a JSON schema segment to the NuGet package that provides IntelliSense and validation for &lt;code&gt;SecretClientSettings&lt;/code&gt; configuration in &lt;code&gt;appsettings.json&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Microsoft.Identity.Client&lt;/code&gt; and &lt;code&gt;Microsoft.Identity.Client.Extensions.Msal&lt;/code&gt; dependencies to version 4.83.1.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerServiceFleet_1.2.0-beta.3"&gt;Azure.ResourceManager.ContainerServiceFleet_1.2.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Invocations_1.0.0-beta.1"&gt;Azure.AI.AgentServer.Invocations_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.3 (2026-04-14)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-04-14)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded api-version to '2026-02-01-preview'.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;MaxConcurrency&lt;/code&gt; support for update groups and update stages.&lt;/li&gt;
+&lt;li&gt;Initial release of the Azure.AI.AgentServer.Invocations library.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;InvocationHandler&lt;/code&gt; abstract class for implementing invocation protocol endpoints.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;InvocationContext&lt;/code&gt; providing request metadata and session information to handlers.&lt;/li&gt;
+&lt;li&gt;Automatic session ID resolution from query parameters and environment variables for multi-turn invocation tracking.&lt;/li&gt;
+&lt;li&gt;Automatic forwarding of &lt;code&gt;x-client-*&lt;/code&gt; request headers to handlers.&lt;/li&gt;
+&lt;li&gt;Invocation lifecycle operations: &lt;code&gt;HandleAsync&lt;/code&gt;, &lt;code&gt;GetAsync&lt;/code&gt;, &lt;code&gt;CancelAsync&lt;/code&gt;, &lt;code&gt;GetOpenApiAsync&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;InvocationsActivitySource&lt;/code&gt; for OpenTelemetry distributed tracing integration.&lt;/li&gt;
+&lt;li&gt;ASP.NET Core hosting integration via &lt;code&gt;AddInvocations&amp;lt;THandler&amp;gt;()&lt;/code&gt; builder extension.&lt;/li&gt;
+&lt;li&gt;Protocol identity registration with &lt;code&gt;ServerUserAgentRegistry&lt;/code&gt; during route mapping.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Responses_1.0.0-beta.1"&gt;Azure.AI.AgentServer.Responses_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-04-14)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial release of the Azure.AI.AgentServer.Responses library.&lt;/li&gt;
+&lt;li&gt;ASP.NET Core server library implementing the Azure AI Responses API.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ResponseHandler&lt;/code&gt; abstract class for custom response handling with &lt;code&gt;CreateAsync&lt;/code&gt; returning &lt;code&gt;IAsyncEnumerable&amp;lt;ResponseStreamEvent&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TextResponse&lt;/code&gt; convenience class for simple text-only responses with a single delegate.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ResponseEventStream&lt;/code&gt; builder for full control over SSE event generation with automatic &lt;code&gt;sequenceNumber&lt;/code&gt;, &lt;code&gt;outputIndex&lt;/code&gt;, &lt;code&gt;contentIndex&lt;/code&gt;, and &lt;code&gt;itemId&lt;/code&gt; tracking.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ResponseEventStream&lt;/code&gt; convenience generators for emitting complete output items in one call:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;OutputItemMessage(string text)&lt;/code&gt; — emits a full text message output item (handles all inner SSE events automatically)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OutputItemMessage(string text, IEnumerable&amp;lt;Annotation&amp;gt; annotations)&lt;/code&gt; — emits a text message with file annotations&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OutputItemMessage(IAsyncEnumerable&amp;lt;string&amp;gt; tokens, CancellationToken)&lt;/code&gt; — streams tokens as &lt;code&gt;response.output_text.delta&lt;/code&gt; events&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OutputItemFunctionCall(name, callId, arguments)&lt;/code&gt; — emits a complete function call output item&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OutputItemFunctionCallOutput(callId, output)&lt;/code&gt; — emits a function call output (no deltas)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OutputItemReasoningItem(...)&lt;/code&gt; — emits a reasoning output item&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OutputItemImageGenCall(resultBase64)&lt;/code&gt; — emits an image generation result with status transitions&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OutputItemStructuredOutputs(output)&lt;/code&gt; — emits an arbitrary structured JSON output item&lt;/li&gt;
+&lt;li&gt;One-liner convenience generators for all remaining simple output item types: computer calls, local shell calls, function shell calls, apply-patch calls, custom tool call outputs, MCP approval requests/responses, and compaction&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ResponseContext&lt;/code&gt; with &lt;code&gt;GetInputItemsAsync()&lt;/code&gt; (returns &lt;code&gt;IReadOnlyList&amp;lt;Item&amp;gt;&lt;/code&gt;) and &lt;code&gt;GetInputTextAsync()&lt;/code&gt; convenience for accessing resolved input items and text content.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;IEnumerable&amp;lt;Item&amp;gt;.GetInputText()&lt;/code&gt; extension method for extracting text from any sequence of input items.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CreateResponse.GetInputExpanded()&lt;/code&gt; extension for advanced access to expanded input items as &lt;code&gt;OutputItem&lt;/code&gt; types.&lt;/li&gt;
+&lt;li&gt;Built-in in-memory response provider and execution tracking.&lt;/li&gt;
+&lt;li&gt;Support for default, streaming, background, and streaming+background response modes.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AgentHostBuilder&lt;/code&gt; convenience methods for zero-config server startup via &lt;code&gt;ResponsesServer.Run&amp;lt;T&amp;gt;()&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Protocol identity registration with &lt;code&gt;ServerUserAgentRegistry&lt;/code&gt; during route mapping.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;x-agent-response-id&lt;/code&gt; header validation matching the Responses API specification.&lt;/li&gt;
+&lt;li&gt;Conversation ID round-trip support in both synchronous and SSE streaming modes.&lt;/li&gt;
+&lt;li&gt;OpenTelemetry distributed tracing via &lt;code&gt;Azure.AI.AgentServer.Responses&lt;/code&gt; activity source.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Core_1.0.0-beta.21"&gt;Azure.AI.AgentServer.Core_1.0.0-beta.21&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.21 (2026-04-14)&lt;/h2&gt;
+&lt;p&gt;This is a major architectural rewrite. The package has been redesigned as a lightweight hosting&lt;br&gt;
+foundation. Protocol implementations that were previously bundled in this package have moved to&lt;br&gt;
+dedicated protocol packages (&lt;code&gt;Azure.AI.AgentServer.Responses&lt;/code&gt;, &lt;code&gt;Azure.AI.AgentServer.Invocations&lt;/code&gt;).&lt;br&gt;
+See the &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/agentserver/Azure.AI.AgentServer.Core/MigrationGuide.md"&gt;Migration Guide&lt;/a&gt;&lt;br&gt;
+for upgrading from earlier beta versions.&lt;/p&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Package split&lt;/strong&gt;: All Responses API protocol types (models, invocation handlers, SSE streaming) have moved to &lt;code&gt;Azure.AI.AgentServer.Responses&lt;/code&gt;. All Invocations protocol types have moved to &lt;code&gt;Azure.AI.AgentServer.Invocations&lt;/code&gt;. This package now contains only the shared hosting foundation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dependency removed&lt;/strong&gt;: &lt;code&gt;Azure.AI.AgentServer.Contracts&lt;/code&gt; is no longer required. The generated OpenAI Responses API models are now built into &lt;code&gt;Azure.AI.AgentServer.Responses&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dependencies removed&lt;/strong&gt;: &lt;code&gt;Azure.AI.Projects&lt;/code&gt;, &lt;code&gt;Microsoft.Agents.AI.*&lt;/code&gt;, and &lt;code&gt;ModelContextProtocol&lt;/code&gt; packages are no longer dependencies of this package.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;API redesigned&lt;/strong&gt;: The old &lt;code&gt;IAgentInvocation&lt;/code&gt; / &lt;code&gt;AgentInvocationContext&lt;/code&gt; / &lt;code&gt;CreateResponseRequest&lt;/code&gt; API surface has been replaced with &lt;code&gt;AgentHostBuilder&lt;/code&gt; and protocol-specific handler abstractions (&lt;code&gt;ResponseHandler&lt;/code&gt; in Responses, &lt;code&gt;InvocationHandler&lt;/code&gt; in Invocations).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Namespace changed&lt;/strong&gt;: Code that previously used &lt;code&gt;Azure.AI.AgentServer.Core.Responses.*&lt;/code&gt; or &lt;code&gt;Azure.AI.AgentServer.Contracts.*&lt;/code&gt; namespaces must switch to &lt;code&gt;Azure.AI.AgentServer.Responses&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Library-owned hosting foundation via &lt;code&gt;AgentHostBuilder&lt;/code&gt; (composable builder pattern).&lt;/li&gt;
+&lt;li&gt;OpenTelemetry integration with &lt;code&gt;Azure.Monitor.OpenTelemetry.AspNetCore&lt;/code&gt; and OTLP exporter support.&lt;/li&gt;
+&lt;li&gt;Health endpoint at &lt;code&gt;/readiness&lt;/code&gt; for liveness and readiness probes.&lt;/li&gt;
+&lt;li&gt;Multi-protocol composition via &lt;code&gt;AgentHostBuilder.RegisterProtocol()&lt;/code&gt;. Protocol packages provide extension methods (e.g., &lt;code&gt;AddResponses&amp;lt;T&amp;gt;()&lt;/code&gt;, &lt;code&gt;AddInvocations&amp;lt;T&amp;gt;()&lt;/code&gt;) built on top of this API.&lt;/li&gt;
+&lt;li&gt;Graceful shutdown with configurable drain period.&lt;/li&gt;
+&lt;li&gt;Server user-agent &lt;code&gt;x-platform-server&lt;/code&gt; header on every response with SDK version info.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ServerUserAgentRegistry&lt;/code&gt; for protocol packages to register user-agent identity segments.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AddAgentServerUserAgent()&lt;/code&gt; and &lt;code&gt;UseAgentServerUserAgent()&lt;/code&gt; extensions for standalone (Tier 3) setups.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FoundryEnvironment&lt;/code&gt; for Azure AI Foundry platform variable resolution.&lt;/li&gt;
+&lt;li&gt;Distributed tracing context propagation via request ID baggage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Previous versions (prior to 1.0.0-beta.21)&lt;/h2&gt;
+&lt;p&gt;Versions prior to &lt;code&gt;1.0.0-beta.21&lt;/code&gt; used a monolithic architecture where &lt;code&gt;Azure.AI.AgentServer.Core&lt;/code&gt;&lt;br&gt;
+bundled protocol logic and depended on &lt;code&gt;Azure.AI.AgentServer.Contracts&lt;/code&gt; for generated models.&lt;br&gt;
+These versions are superseded by the new 3-package architecture. See the&lt;br&gt;
+&lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/agentserver/Azure.AI.AgentServer.Core/MigrationGuide.md"&gt;Migration Guide&lt;/a&gt;&lt;br&gt;
+for details.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity.Broker_1.6.0"&gt;Azure.Identity.Broker_1.6.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.6.0 (2026-04-14)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated dependency from &lt;code&gt;Azure.Identity&lt;/code&gt; to &lt;code&gt;Azure.Core&lt;/code&gt; directly, as the &lt;code&gt;Azure.Identity&lt;/code&gt; types moved to &lt;code&gt;Azure.Core&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;This version is required when using &lt;code&gt;Azure.Identity&lt;/code&gt; 1.21.0 or later (or &lt;code&gt;Azure.Core&lt;/code&gt; 1.53.0 or later).&lt;/strong&gt; Older &lt;code&gt;Azure.Identity.Broker&lt;/code&gt; versions are not compatible with the type consolidation. See the &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/MigrationGuide.md#azureidentitybroker-compatibility"&gt;migration guide&lt;/a&gt; for details.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
