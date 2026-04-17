@@ -1,131 +1,111 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-04-16T00:19:33Z</updated>
+  <updated>2026-04-17T00:18:40Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-04-15</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-04-15</id>
-    <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-04-16T00:19:14Z</updated>
+    <title>aws/aws-sdk-net - Releases - 2026-04-16</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-04-16</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2026-04-17T00:18:13Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity_1.17.2"&gt;Azure.Identity_1.17.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.232.0"&gt;4.0.232.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.17.2 (2026-04-15)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
+                                &lt;h3&gt;4.0.232.0 (2026-04-16 18:15 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated &lt;code&gt;Microsoft.Identity.Client&lt;/code&gt; and &lt;code&gt;Microsoft.Identity.Client.Extensions.Msal&lt;/code&gt; dependencies to version 4.83.1.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Invocations_1.0.0-beta.1"&gt;Azure.AI.AgentServer.Invocations_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-04-14)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;li&gt;AppStream (4.0.9.0)
 &lt;ul&gt;
-&lt;li&gt;Initial release of the Azure.AI.AgentServer.Invocations library.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;InvocationHandler&lt;/code&gt; abstract class for implementing invocation protocol endpoints.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;InvocationContext&lt;/code&gt; providing request metadata and session information to handlers.&lt;/li&gt;
-&lt;li&gt;Automatic session ID resolution from query parameters and environment variables for multi-turn invocation tracking.&lt;/li&gt;
-&lt;li&gt;Automatic forwarding of &lt;code&gt;x-client-*&lt;/code&gt; request headers to handlers.&lt;/li&gt;
-&lt;li&gt;Invocation lifecycle operations: &lt;code&gt;HandleAsync&lt;/code&gt;, &lt;code&gt;GetAsync&lt;/code&gt;, &lt;code&gt;CancelAsync&lt;/code&gt;, &lt;code&gt;GetOpenApiAsync&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;InvocationsActivitySource&lt;/code&gt; for OpenTelemetry distributed tracing integration.&lt;/li&gt;
-&lt;li&gt;ASP.NET Core hosting integration via &lt;code&gt;AddInvocations&amp;lt;THandler&amp;gt;()&lt;/code&gt; builder extension.&lt;/li&gt;
-&lt;li&gt;Protocol identity registration with &lt;code&gt;ServerUserAgentRegistry&lt;/code&gt; during route mapping.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Responses_1.0.0-beta.1"&gt;Azure.AI.AgentServer.Responses_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-04-14)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Initial release of the Azure.AI.AgentServer.Responses library.&lt;/li&gt;
-&lt;li&gt;ASP.NET Core server library implementing the Azure AI Responses API.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ResponseHandler&lt;/code&gt; abstract class for custom response handling with &lt;code&gt;CreateAsync&lt;/code&gt; returning &lt;code&gt;IAsyncEnumerable&amp;lt;ResponseStreamEvent&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;TextResponse&lt;/code&gt; convenience class for simple text-only responses with a single delegate.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ResponseEventStream&lt;/code&gt; builder for full control over SSE event generation with automatic &lt;code&gt;sequenceNumber&lt;/code&gt;, &lt;code&gt;outputIndex&lt;/code&gt;, &lt;code&gt;contentIndex&lt;/code&gt;, and &lt;code&gt;itemId&lt;/code&gt; tracking.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ResponseEventStream&lt;/code&gt; convenience generators for emitting complete output items in one call:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;OutputItemMessage(string text)&lt;/code&gt; — emits a full text message output item (handles all inner SSE events automatically)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;OutputItemMessage(string text, IEnumerable&amp;lt;Annotation&amp;gt; annotations)&lt;/code&gt; — emits a text message with file annotations&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;OutputItemMessage(IAsyncEnumerable&amp;lt;string&amp;gt; tokens, CancellationToken)&lt;/code&gt; — streams tokens as &lt;code&gt;response.output_text.delta&lt;/code&gt; events&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;OutputItemFunctionCall(name, callId, arguments)&lt;/code&gt; — emits a complete function call output item&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;OutputItemFunctionCallOutput(callId, output)&lt;/code&gt; — emits a function call output (no deltas)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;OutputItemReasoningItem(...)&lt;/code&gt; — emits a reasoning output item&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;OutputItemImageGenCall(resultBase64)&lt;/code&gt; — emits an image generation result with status transitions&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;OutputItemStructuredOutputs(output)&lt;/code&gt; — emits an arbitrary structured JSON output item&lt;/li&gt;
-&lt;li&gt;One-liner convenience generators for all remaining simple output item types: computer calls, local shell calls, function shell calls, apply-patch calls, custom tool call outputs, MCP approval requests/responses, and compaction&lt;/li&gt;
+&lt;li&gt;Add content redirection to Update Stack&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ResponseContext&lt;/code&gt; with &lt;code&gt;GetInputItemsAsync()&lt;/code&gt; (returns &lt;code&gt;IReadOnlyList&amp;lt;Item&amp;gt;&lt;/code&gt;) and &lt;code&gt;GetInputTextAsync()&lt;/code&gt; convenience for accessing resolved input items and text content.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;IEnumerable&amp;lt;Item&amp;gt;.GetInputText()&lt;/code&gt; extension method for extracting text from any sequence of input items.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;CreateResponse.GetInputExpanded()&lt;/code&gt; extension for advanced access to expanded input items as &lt;code&gt;OutputItem&lt;/code&gt; types.&lt;/li&gt;
-&lt;li&gt;Built-in in-memory response provider and execution tracking.&lt;/li&gt;
-&lt;li&gt;Support for default, streaming, background, and streaming+background response modes.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;AgentHostBuilder&lt;/code&gt; convenience methods for zero-config server startup via &lt;code&gt;ResponsesServer.Run&amp;lt;T&amp;gt;()&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Protocol identity registration with &lt;code&gt;ServerUserAgentRegistry&lt;/code&gt; during route mapping.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;x-agent-response-id&lt;/code&gt; header validation matching the Responses API specification.&lt;/li&gt;
-&lt;li&gt;Conversation ID round-trip support in both synchronous and SSE streaming modes.&lt;/li&gt;
-&lt;li&gt;OpenTelemetry distributed tracing via &lt;code&gt;Azure.AI.AgentServer.Responses&lt;/code&gt; activity source.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Core_1.0.0-beta.21"&gt;Azure.AI.AgentServer.Core_1.0.0-beta.21&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.21 (2026-04-14)&lt;/h2&gt;
-&lt;p&gt;This is a major architectural rewrite. The package has been redesigned as a lightweight hosting&lt;br&gt;
-foundation. Protocol implementations that were previously bundled in this package have moved to&lt;br&gt;
-dedicated protocol packages (&lt;code&gt;Azure.AI.AgentServer.Responses&lt;/code&gt;, &lt;code&gt;Azure.AI.AgentServer.Invocations&lt;/code&gt;).&lt;br&gt;
-See the &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/agentserver/Azure.AI.AgentServer.Core/MigrationGuide.md"&gt;Migration Guide&lt;/a&gt;&lt;br&gt;
-for upgrading from earlier beta versions.&lt;/p&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;li&gt;AutoScaling (4.0.10.0)
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Package split&lt;/strong&gt;: All Responses API protocol types (models, invocation handlers, SSE streaming) have moved to &lt;code&gt;Azure.AI.AgentServer.Responses&lt;/code&gt;. All Invocations protocol types have moved to &lt;code&gt;Azure.AI.AgentServer.Invocations&lt;/code&gt;. This package now contains only the shared hosting foundation.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Dependency removed&lt;/strong&gt;: &lt;code&gt;Azure.AI.AgentServer.Contracts&lt;/code&gt; is no longer required. The generated OpenAI Responses API models are now built into &lt;code&gt;Azure.AI.AgentServer.Responses&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Dependencies removed&lt;/strong&gt;: &lt;code&gt;Azure.AI.Projects&lt;/code&gt;, &lt;code&gt;Microsoft.Agents.AI.*&lt;/code&gt;, and &lt;code&gt;ModelContextProtocol&lt;/code&gt; packages are no longer dependencies of this package.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;API redesigned&lt;/strong&gt;: The old &lt;code&gt;IAgentInvocation&lt;/code&gt; / &lt;code&gt;AgentInvocationContext&lt;/code&gt; / &lt;code&gt;CreateResponseRequest&lt;/code&gt; API surface has been replaced with &lt;code&gt;AgentHostBuilder&lt;/code&gt; and protocol-specific handler abstractions (&lt;code&gt;ResponseHandler&lt;/code&gt; in Responses, &lt;code&gt;InvocationHandler&lt;/code&gt; in Invocations).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Namespace changed&lt;/strong&gt;: Code that previously used &lt;code&gt;Azure.AI.AgentServer.Core.Responses.*&lt;/code&gt; or &lt;code&gt;Azure.AI.AgentServer.Contracts.*&lt;/code&gt; namespaces must switch to &lt;code&gt;Azure.AI.AgentServer.Responses&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;This release adds support for specifying Availability Zone IDs as an alternative to Availability Zone names when creating or updating Auto Scaling groups.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;/li&gt;
+&lt;li&gt;BedrockAgentCore (4.0.19.0)
 &lt;ul&gt;
-&lt;li&gt;Library-owned hosting foundation via &lt;code&gt;AgentHostBuilder&lt;/code&gt; (composable builder pattern).&lt;/li&gt;
-&lt;li&gt;OpenTelemetry integration with &lt;code&gt;Azure.Monitor.OpenTelemetry.AspNetCore&lt;/code&gt; and OTLP exporter support.&lt;/li&gt;
-&lt;li&gt;Health endpoint at &lt;code&gt;/readiness&lt;/code&gt; for liveness and readiness probes.&lt;/li&gt;
-&lt;li&gt;Multi-protocol composition via &lt;code&gt;AgentHostBuilder.RegisterProtocol()&lt;/code&gt;. Protocol packages provide extension methods (e.g., &lt;code&gt;AddResponses&amp;lt;T&amp;gt;()&lt;/code&gt;, &lt;code&gt;AddInvocations&amp;lt;T&amp;gt;()&lt;/code&gt;) built on top of this API.&lt;/li&gt;
-&lt;li&gt;Graceful shutdown with configurable drain period.&lt;/li&gt;
-&lt;li&gt;Server user-agent &lt;code&gt;x-platform-server&lt;/code&gt; header on every response with SDK version info.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ServerUserAgentRegistry&lt;/code&gt; for protocol packages to register user-agent identity segments.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;AddAgentServerUserAgent()&lt;/code&gt; and &lt;code&gt;UseAgentServerUserAgent()&lt;/code&gt; extensions for standalone (Tier 3) setups.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;FoundryEnvironment&lt;/code&gt; for Azure AI Foundry platform variable resolution.&lt;/li&gt;
-&lt;li&gt;Distributed tracing context propagation via request ID baggage.&lt;/li&gt;
+&lt;li&gt;Introducing NamespacePath in AgentCore Memory to support hierarchical prefix based memory record retrieval.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Previous versions (prior to 1.0.0-beta.21)&lt;/h2&gt;
-&lt;p&gt;Versions prior to &lt;code&gt;1.0.0-beta.21&lt;/code&gt; used a monolithic architecture where &lt;code&gt;Azure.AI.AgentServer.Core&lt;/code&gt;&lt;br&gt;
-bundled protocol logic and depended on &lt;code&gt;Azure.AI.AgentServer.Contracts&lt;/code&gt; for generated models.&lt;br&gt;
-These versions are superseded by the new 3-package architecture. See the&lt;br&gt;
-&lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/agentserver/Azure.AI.AgentServer.Core/MigrationGuide.md"&gt;Migration Guide&lt;/a&gt;&lt;br&gt;
-for details.&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity.Broker_1.6.0"&gt;Azure.Identity.Broker_1.6.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.6.0 (2026-04-14)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;/li&gt;
+&lt;li&gt;CloudWatch (4.0.9.4)
 &lt;ul&gt;
-&lt;li&gt;Updated dependency from &lt;code&gt;Azure.Identity&lt;/code&gt; to &lt;code&gt;Azure.Core&lt;/code&gt; directly, as the &lt;code&gt;Azure.Identity&lt;/code&gt; types moved to &lt;code&gt;Azure.Core&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;This version is required when using &lt;code&gt;Azure.Identity&lt;/code&gt; 1.21.0 or later (or &lt;code&gt;Azure.Core&lt;/code&gt; 1.53.0 or later).&lt;/strong&gt; Older &lt;code&gt;Azure.Identity.Broker&lt;/code&gt; versions are not compatible with the type consolidation. See the &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/MigrationGuide.md#azureidentitybroker-compatibility"&gt;migration guide&lt;/a&gt; for details.&lt;/li&gt;
+&lt;li&gt;Update documentation of alarm mute rules start and end date fields&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CloudWatchLogs (4.0.20.0)
+&lt;ul&gt;
+&lt;li&gt;Endpoint update for CloudWatch Logs Streaming APIs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CognitoIdentityProvider (4.0.7.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for passkey-based multi-factor authentication in Cognito User Pools. Users can authenticate securely using FIDO2-compliant passkeys with user verification, enabling passwordless MFA flows while maintaining backward compatibility with password-based authentication&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Connect (4.0.41.0)
+&lt;ul&gt;
+&lt;li&gt;This release updates the Amazon Connect Rules CRUD APIs to support a new EventSourceName - OnEmailAnalysisAvailable. Use this event source to trigger rules when conversational analytics results are available for email contacts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ConnectCases (4.0.13.0)
+&lt;ul&gt;
+&lt;li&gt;Added error handling for service quota limits&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CustomerProfiles (4.0.11.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon Connect Customer Profiles adds RecommenderSchema CRUD APIs for custom ML training columns. CreateRecommender and CreateRecommenderFilter now accept optional RecommenderSchemaName.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DataZone (4.0.25.0)
+&lt;ul&gt;
+&lt;li&gt;Launching SMUS IAM domain SDK support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DevOpsAgent (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Deprecate the userId from the Chat operations. This update also removes  support of AllowVendedLogDeliveryForResource API from AWS SDKs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Drs (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;Updating regex for identification of AWS Regions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DynamoDBv2 (4.0.17.9)
+&lt;ul&gt;
+&lt;li&gt;[BugFix] Fix DynamoDB AOT/trim issue on PropertyStorage Validate.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaConvert (4.0.17.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for Elemental Inference powered smart crop feature, enabling video verticalization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RDS (4.0.20.0)
+&lt;ul&gt;
+&lt;li&gt;Adds a new DescribeServerlessV2PlatformVersions API to describe platform version properties for Aurora Serverless v2. Also introduces a new valid maintenance action value for serverless platform version updates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3 (4.0.21.2)
+&lt;ul&gt;
+&lt;li&gt;Update customization hook used in GetLifecycleConfigurationOutput.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Extensions.Logging.Log4NetAdaptor (4.0.1.0)
+&lt;ul&gt;
+&lt;li&gt;Updated log4net dependency from 3.0.1 to 3.3.0 to resolve known moderate severity vulnerability (&lt;a title="GHSA-4f7c-pmjv-c25w" data-hovercard-type="advisory" data-hovercard-url="/advisories/GHSA-4f7c-pmjv-c25w/hovercard" href="https://github.com/advisories/GHSA-4f7c-pmjv-c25w"&gt;GHSA-4f7c-pmjv-c25w&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.3.30
+&lt;ul&gt;
+&lt;li&gt;Update docs on GetCredentials and GetCredentialsAsync to clarify background refresh behavior&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -134,26 +114,30 @@ for details.&lt;/p&gt;
             </content>
   </entry>
   <entry>
-    <title>microsoft/CsWin32 - Releases - 2026-04-15</title>
-    <id>https://github.com/microsoft/CsWin32#2026-04-15</id>
-    <link href="https://github.com/microsoft/CsWin32" />
-    <updated>2026-04-16T00:19:28Z</updated>
+    <title>spectreconsole/spectre.console - Releases - 2026-04-16</title>
+    <id>https://github.com/spectreconsole/spectre.console#2026-04-16</id>
+    <link href="https://github.com/spectreconsole/spectre.console" />
+    <updated>2026-04-17T00:18:38Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/CsWin32/releases/tag/v0.3.275"&gt;v0.3.275&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/spectreconsole/spectre.console/releases/tag/0.55.1"&gt;0.55.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;Changes:&lt;/h2&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4263863924" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1678" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1678/hovercard" href="https://github.com/microsoft/CsWin32/pull/1678"&gt;#1678&lt;/a&gt;: Fix cross-winmd STATUS_SUCCESS lookup&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4205079399" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1672" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1672/hovercard" href="https://github.com/microsoft/CsWin32/pull/1672"&gt;#1672&lt;/a&gt;: Promote handle pointer to an &lt;code&gt;out&lt;/code&gt; reference if handle cannot be trivially represented as a &lt;code&gt;SafeHandle&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4188580830" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1668" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1668/hovercard" href="https://github.com/microsoft/CsWin32/pull/1668"&gt;#1668&lt;/a&gt;: Bump metadata version&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3824974005" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1621" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1621/hovercard" href="https://github.com/microsoft/CsWin32/pull/1621"&gt;#1621&lt;/a&gt;: Fix AppLocalAllowedLibraries handling in CsWin32RunAsBuildTask mode&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3839613109" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1623" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1623/hovercard" href="https://github.com/microsoft/CsWin32/pull/1623"&gt;#1623&lt;/a&gt;: Cleanup codecov sample comment&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3823338585" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1620" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1620/hovercard" href="https://github.com/microsoft/CsWin32/pull/1620"&gt;#1620&lt;/a&gt;: Reduce allocations&lt;/li&gt;
+&lt;li&gt;Add tests to verify public API by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/patriksvensson/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/patriksvensson"&gt;@patriksvensson&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4205611211" data-permission-text="Title is private" data-url="https://github.com/spectreconsole/spectre.console/issues/2073" data-hovercard-type="pull_request" data-hovercard-url="/spectreconsole/spectre.console/pull/2073/hovercard" href="https://github.com/spectreconsole/spectre.console/pull/2073"&gt;#2073&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;use StringComparer.OrdinalIgnoreCase as default comparer for TextPrompt by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AntekOlszewski/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AntekOlszewski"&gt;@AntekOlszewski&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4218554580" data-permission-text="Title is private" data-url="https://github.com/spectreconsole/spectre.console/issues/2077" data-hovercard-type="pull_request" data-hovercard-url="/spectreconsole/spectre.console/pull/2077/hovercard" href="https://github.com/spectreconsole/spectre.console/pull/2077"&gt;#2077&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix markup link rendering regression by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/patriksvensson/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/patriksvensson"&gt;@patriksvensson&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4263342641" data-permission-text="Title is private" data-url="https://github.com/spectreconsole/spectre.console/issues/2084" data-hovercard-type="pull_request" data-hovercard-url="/spectreconsole/spectre.console/pull/2084/hovercard" href="https://github.com/spectreconsole/spectre.console/pull/2084"&gt;#2084&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add VS16 suffix to non-presentation emojis by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/patriksvensson/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/patriksvensson"&gt;@patriksvensson&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4265042155" data-permission-text="Title is private" data-url="https://github.com/spectreconsole/spectre.console/issues/2087" data-hovercard-type="pull_request" data-hovercard-url="/spectreconsole/spectre.console/pull/2087/hovercard" href="https://github.com/spectreconsole/spectre.console/pull/2087"&gt;#2087&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ensure rendered exceptions take up minimal space by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/patriksvensson/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/patriksvensson"&gt;@patriksvensson&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4272178455" data-permission-text="Title is private" data-url="https://github.com/spectreconsole/spectre.console/issues/2089" data-hovercard-type="pull_request" data-hovercard-url="/spectreconsole/spectre.console/pull/2089/hovercard" href="https://github.com/spectreconsole/spectre.console/pull/2089"&gt;#2089&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix link parsing to terminate properly by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/zhuman/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/zhuman"&gt;@zhuman&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4272718913" data-permission-text="Title is private" data-url="https://github.com/spectreconsole/spectre.console/issues/2091" data-hovercard-type="pull_request" data-hovercard-url="/spectreconsole/spectre.console/pull/2091/hovercard" href="https://github.com/spectreconsole/spectre.console/pull/2091"&gt;#2091&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;This list of changes was &lt;a href="https://devdiv.visualstudio.com/DevDiv/_build/results?buildId=13841260&amp;amp;view=logs" rel="nofollow"&gt;auto generated&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/zhuman/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/zhuman"&gt;@zhuman&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4272718913" data-permission-text="Title is private" data-url="https://github.com/spectreconsole/spectre.console/issues/2091" data-hovercard-type="pull_request" data-hovercard-url="/spectreconsole/spectre.console/pull/2091/hovercard" href="https://github.com/spectreconsole/spectre.console/pull/2091"&gt;#2091&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/spectreconsole/spectre.console/compare/0.55.0...0.55.1"&gt;&lt;tt&gt;0.55.0...0.55.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
