@@ -1,6 +1,94 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-04-17T00:18:14Z</updated>
+  <updated>2026-04-18T00:15:42Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-04-17</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-04-17</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2026-04-18T00:15:42Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Advisor_1.0.0-beta.6"&gt;Azure.ResourceManager.Advisor_1.0.0-beta.6&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.6 (2026-04-17)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;p&gt;Upgraded api-version to 2025-05-01-preview.&lt;/p&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to &lt;code&gt;1.53.0&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to &lt;code&gt;1.14.0&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CognitiveServices_1.6.0-beta.1"&gt;Azure.ResourceManager.CognitiveServices_1.6.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.6.0-beta.1 (2026-04-17)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version to 2026-01-15-preview.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.53.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Network_1.1.0"&gt;Azure.Provisioning.Network_1.1.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.1.0 (2026-04-16)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added remaining Network resource types, bringing the total from 37 to 120 resources.&lt;/li&gt;
+&lt;li&gt;Added polymorphic type support for &lt;code&gt;BaseAdminRule&lt;/code&gt; (&lt;code&gt;NetworkAdminRule&lt;/code&gt;, &lt;code&gt;NetworkDefaultAdminRule&lt;/code&gt;), &lt;code&gt;FirewallPolicyRuleCollectionInfo&lt;/code&gt;, and &lt;code&gt;FirewallPolicyRule&lt;/code&gt; subtypes.&lt;/li&gt;
+&lt;li&gt;Added support for &lt;code&gt;NetworkSecurityPerimeter&lt;/code&gt; resources.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed &lt;code&gt;Name&lt;/code&gt; property to be writable on &lt;code&gt;FirewallPolicyDraft&lt;/code&gt;, &lt;code&gt;FrontendIPConfiguration&lt;/code&gt;, &lt;code&gt;LoadBalancingRule&lt;/code&gt;, &lt;code&gt;NetworkInterfaceIPConfiguration&lt;/code&gt;, &lt;code&gt;OutboundRule&lt;/code&gt;, and &lt;code&gt;ProbeResource&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;ProvisioningState&lt;/code&gt; to be readonly on &lt;code&gt;IpamPool&lt;/code&gt;, &lt;code&gt;StaticCidr&lt;/code&gt;, &lt;code&gt;NetworkVerifierWorkspace&lt;/code&gt;, &lt;code&gt;ReachabilityAnalysisIntent&lt;/code&gt;, and &lt;code&gt;ReachabilityAnalysisRun&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Removed phantom &lt;code&gt;SubnetId&lt;/code&gt; and &lt;code&gt;VirtualNetworkId&lt;/code&gt; properties from &lt;code&gt;IPAllocation&lt;/code&gt; that do not exist in the Bicep reference.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Dns_1.2.0-beta.3"&gt;Azure.ResourceManager.Dns_1.2.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0-beta.3 (2026-04-16)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix &lt;code&gt;SystemData&lt;/code&gt; deserialize method in custom code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to &lt;code&gt;1.53.0&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to &lt;code&gt;1.14.0&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.ResourceGraph_1.0.0-beta.1"&gt;Azure.Provisioning.ResourceGraph_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-04-16)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial beta release of Azure.Provisioning.ResourceGraph with support for declarative Resource Graph resource provisioning.&lt;/li&gt;
+&lt;li&gt;Added support for Resource Graph Query resources.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
