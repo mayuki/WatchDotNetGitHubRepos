@@ -1,144 +1,145 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-04-20T00:16:26Z</updated>
+  <updated>2026-04-21T00:18:17Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-04-19</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-04-19</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-04-20</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-04-20</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-04-20T00:16:26Z</updated>
+    <updated>2026-04-21T00:18:17Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Invocations_1.0.0-beta.2"&gt;Azure.AI.AgentServer.Invocations_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Speech.Transcription_1.0.0-beta.2"&gt;Azure.AI.Speech.Transcription_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.2 (2026-04-17)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Added &lt;code&gt;x-agent-session-id&lt;/code&gt; response header on GET, Cancel, and OpenAPI endpoints. The POST&lt;br&gt;
-endpoint already set the header; all Invocations protocol endpoints now include it per spec §8.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added isolation key presence logging (&lt;code&gt;HasUserIsolationKey&lt;/code&gt;, &lt;code&gt;HasChatIsolationKey&lt;/code&gt;) to all&lt;br&gt;
-endpoint handler logs (POST, GET, Cancel). Key values are never logged.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added startup configuration logging: protocol registration is logged at &lt;code&gt;Information&lt;/code&gt; level&lt;br&gt;
-when the host starts.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added inbound request logging for Tier 1 and Tier 2 setups (via &lt;code&gt;InvocationsServer.Run()&lt;/code&gt; or&lt;br&gt;
-&lt;code&gt;AgentHost.CreateBuilder()&lt;/code&gt;). All incoming HTTP requests are logged with method, path, status&lt;br&gt;
-code, duration, and correlation headers (&lt;code&gt;x-request-id&lt;/code&gt;, &lt;code&gt;x-ms-client-request-id&lt;/code&gt;).&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Made &lt;code&gt;InvocationsActivitySource&lt;/code&gt; internal. The activity source is managed by&lt;br&gt;
-the framework; handlers do not need to create tracing activities directly.&lt;/li&gt;
-&lt;/ul&gt;
+                                &lt;h2&gt;1.0.0-beta.2 (2026-04-20)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated dependency on &lt;code&gt;Azure.AI.AgentServer.Core&lt;/code&gt; to 1.0.0-beta.22, which adds outbound&lt;br&gt;
-&lt;code&gt;HttpClient&lt;/code&gt; instrumentation for distributed trace correlation.&lt;/li&gt;
+&lt;li&gt;Fixed broken links and corrected sample code in the README.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Responses_1.0.0-beta.2"&gt;Azure.AI.AgentServer.Responses_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ApiManagement_1.3.1"&gt;Azure.ResourceManager.ApiManagement_1.3.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.2 (2026-04-17)&lt;/h2&gt;
+                                &lt;h2&gt;1.3.1 (2026-04-17)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to &lt;code&gt;1.53.0&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to &lt;code&gt;1.14.0&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.AppComplianceAutomation_1.0.2"&gt;Azure.ResourceManager.AppComplianceAutomation_1.0.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.2 (2026-04-17)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to &lt;code&gt;1.53.0&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to &lt;code&gt;1.14.0&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Analysis_1.1.2"&gt;Azure.ResourceManager.Analysis_1.1.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.1.2 (2026-04-17)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to &lt;code&gt;1.53.0&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to &lt;code&gt;1.14.0&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ArizeAIObservabilityEval_1.0.1"&gt;Azure.ResourceManager.ArizeAIObservabilityEval_1.0.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.1 (2026-04-17)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to &lt;code&gt;1.53.0&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to &lt;code&gt;1.14.0&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.AlertsManagement_1.1.2"&gt;Azure.ResourceManager.AlertsManagement_1.1.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.1.2 (2026-04-17)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to &lt;code&gt;1.53.0&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to &lt;code&gt;1.14.0&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Responses_1.0.0-beta.3"&gt;Azure.AI.AgentServer.Responses_1.0.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.3 (2026-05-05)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added chat isolation key enforcement across all endpoints. When a response is created with&lt;br&gt;
-&lt;code&gt;x-agent-chat-isolation-key&lt;/code&gt;, all subsequent GET, Cancel, DELETE, and InputItems calls must&lt;br&gt;
-include the same key. Mismatched or missing keys return 404 (indistinguishable from not-found)&lt;br&gt;
-to ensure tenant isolation.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;x-agent-session-id&lt;/code&gt; response header on all protocol endpoints (POST, GET, Cancel,&lt;br&gt;
-Delete, InputItems). The resolved session ID is echoed as a response header per spec §8,&lt;br&gt;
-with fallback to the &lt;code&gt;FOUNDRY_AGENT_SESSION_ID&lt;/code&gt; environment variable for error responses.&lt;/li&gt;
-&lt;li&gt;Added validation for malformed response IDs in both the &lt;code&gt;response_id&lt;/code&gt; path parameter and the&lt;br&gt;
-&lt;code&gt;previous_response_id&lt;/code&gt; request body field. IDs that do not match the expected format (prefix&lt;br&gt;
-and length) are rejected with 400 and a descriptive error message.&lt;/li&gt;
-&lt;li&gt;Added metadata constraint validation: metadata maps are limited to 16 keys with key length ≤ 64&lt;br&gt;
-and value length ≤ 512 characters, enforced via the validator pipeline.&lt;/li&gt;
-&lt;li&gt;Added deterministic &lt;code&gt;agent_session_id&lt;/code&gt; derivation: SHA-256 hash of&lt;br&gt;
-&lt;code&gt;"{agent_name}:{agent_version}:{partition_hint}"&lt;/code&gt; truncated to 63 lowercase hex chars.&lt;br&gt;
-Falls back to random hex when no conversational context is available.&lt;/li&gt;
-&lt;li&gt;Added eager eviction of completed &lt;code&gt;ResponseExecution&lt;/code&gt; entries from the in-flight tracker,&lt;br&gt;
-reducing memory pressure for long-running servers.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;FoundryStorageLoggingPolicy&lt;/code&gt; — an Azure.Core per-retry pipeline policy that logs every&lt;br&gt;
-outbound Foundry storage API call with HTTP method, URI, status code, duration, and correlation&lt;br&gt;
-headers (&lt;code&gt;x-ms-client-request-id&lt;/code&gt;, &lt;code&gt;x-ms-request-id&lt;/code&gt;, &lt;code&gt;x-request-id&lt;/code&gt;, &lt;code&gt;apim-request-id&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;Added structured &lt;code&gt;Information&lt;/code&gt;-level logging to all Responses API endpoints (GET, Cancel, Delete,&lt;br&gt;
-InputItems) with response ID context. The POST &lt;code&gt;/responses&lt;/code&gt; creation log now includes response ID,&lt;br&gt;
-conversation ID, previous response ID, and store flag for full request traceability.&lt;/li&gt;
-&lt;li&gt;Added isolation key presence logging (&lt;code&gt;HasUserIsolationKey&lt;/code&gt;, &lt;code&gt;HasChatIsolationKey&lt;/code&gt;) to all&lt;br&gt;
-endpoint handler logs and outbound Foundry storage request logs. Key values are never logged.&lt;/li&gt;
-&lt;li&gt;Added startup configuration logging: storage provider type, default model, fetch history count,&lt;br&gt;
-and event stream TTL are logged at &lt;code&gt;Information&lt;/code&gt; level when the host starts.&lt;/li&gt;
-&lt;li&gt;Added server version &lt;code&gt;User-Agent&lt;/code&gt; header on all outbound Foundry storage API requests. The&lt;br&gt;
-composed identity from &lt;code&gt;ServerVersionRegistry&lt;/code&gt; (including developer-registered segments) is&lt;br&gt;
-prepended to the standard Azure.Core user-agent, read lazily per-request.&lt;/li&gt;
-&lt;li&gt;Added Foundry storage URL masking in diagnostic logs: everything before &lt;code&gt;/storage&lt;/code&gt; is redacted&lt;br&gt;
-and query parameters are stripped (except &lt;code&gt;api-version&lt;/code&gt;) to prevent leaking account and project&lt;br&gt;
-information.&lt;/li&gt;
-&lt;li&gt;Added inbound request logging for Tier 1 and Tier 2 setups (via &lt;code&gt;ResponsesServer.Run()&lt;/code&gt; or&lt;br&gt;
-&lt;code&gt;AgentHost.CreateBuilder()&lt;/code&gt;). All incoming HTTP requests are logged with method, path, status&lt;br&gt;
-code, duration, and correlation headers (&lt;code&gt;x-request-id&lt;/code&gt;, &lt;code&gt;x-ms-client-request-id&lt;/code&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Made &lt;code&gt;ResponsesActivitySource&lt;/code&gt; internal. The activity source is managed by&lt;br&gt;
-the framework; handlers do not need to create tracing activities directly.&lt;/li&gt;
-&lt;li&gt;Made &lt;code&gt;ResponsesTracingConstants&lt;/code&gt; internal. The tracing tag, baggage, and log scope&lt;br&gt;
-constants are implementation details not needed by handler authors.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;previous_response_id&lt;/code&gt; and &lt;code&gt;conversation.id&lt;/code&gt; are now validated against the provider before&lt;br&gt;
+the handler is invoked. Invalid references return HTTP 404/400 immediately instead of being&lt;br&gt;
+silently ignored. The resolved history item IDs are cached — handlers calling&lt;br&gt;
+&lt;code&gt;GetHistoryAsync()&lt;/code&gt; reuse the prefetched result without a second storage lookup.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed error response shapes to match the container specification: &lt;code&gt;invalid_request_error&lt;/code&gt; type&lt;br&gt;
-for 400 errors and &lt;code&gt;not_found&lt;/code&gt; message format.&lt;/li&gt;
-&lt;li&gt;Fixed cancel-after-terminal to return &lt;code&gt;invalid_request_error&lt;/code&gt; type with the correct error shape&lt;br&gt;
-per the specification.&lt;/li&gt;
-&lt;li&gt;Fixed DELETE endpoint to return 404 (not 400) when the response ID does not exist, aligning&lt;br&gt;
-with the specification.&lt;/li&gt;
-&lt;li&gt;Fixed cancel-after-delete to return 404 (not-found) per the specification.&lt;/li&gt;
+&lt;li&gt;Foundry storage error responses now preserve the full error body (&lt;code&gt;code&lt;/code&gt;, &lt;code&gt;message&lt;/code&gt;, &lt;code&gt;param&lt;/code&gt;, &lt;code&gt;type&lt;/code&gt;)&lt;br&gt;
+when returned to the client. Previously only the &lt;code&gt;message&lt;/code&gt; field was forwarded; &lt;code&gt;param&lt;/code&gt; was lost.&lt;/li&gt;
+&lt;li&gt;Non-400/404/409 error status codes from Foundry storage are no longer proxied as-is; they are&lt;br&gt;
+normalized to HTTP 500 to avoid leaking upstream infrastructure details.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Core_1.0.0-beta.22"&gt;Azure.AI.AgentServer.Core_1.0.0-beta.22&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Astro_1.0.0-beta.3"&gt;Azure.ResourceManager.Astro_1.0.0-beta.3&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.22 (2026-04-17)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.3 (2026-04-17)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;HttpClient&lt;/code&gt; instrumentation (&lt;code&gt;AddHttpClientInstrumentation&lt;/code&gt;) for both tracing and metrics&lt;br&gt;
-in the OTLP-only telemetry path. This exports outbound HTTP client spans, enabling end-to-end&lt;br&gt;
-distributed trace correlation through Foundry storage and other downstream services.&lt;/li&gt;
-&lt;li&gt;Added inbound request logging middleware that logs all incoming HTTP requests with method, path,&lt;br&gt;
-status code, duration, correlation headers (&lt;code&gt;x-request-id&lt;/code&gt;, &lt;code&gt;x-ms-client-request-id&lt;/code&gt;), and&lt;br&gt;
-OpenTelemetry trace ID. Successful requests log at &lt;code&gt;Information&lt;/code&gt; level; 4xx/5xx responses log at&lt;br&gt;
-&lt;code&gt;Warning&lt;/code&gt; level. Request start is logged at &lt;code&gt;Information&lt;/code&gt; level.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;AddAgentServerLogging()&lt;/code&gt; and &lt;code&gt;UseAgentServerLogging()&lt;/code&gt; extensions for Tier 3 setups to&lt;br&gt;
-independently enable the inbound request logging middleware.&lt;/li&gt;
-&lt;li&gt;Added startup configuration logging: platform environment, connectivity, host options, and&lt;br&gt;
-registered protocols are logged at &lt;code&gt;Information&lt;/code&gt; level when the host starts.&lt;/li&gt;
+&lt;li&gt;Upgraded to api-version 2024-08-27.&lt;/li&gt;
+&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.Astro&lt;/code&gt; AOT-compatible.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Renamed &lt;code&gt;ServerUserAgentRegistry&lt;/code&gt; to &lt;code&gt;ServerVersionRegistry&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Renamed &lt;code&gt;AgentHostBuilder.UserAgentRegistry&lt;/code&gt; property to &lt;code&gt;VersionRegistry&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Renamed &lt;code&gt;AddAgentServerUserAgent()&lt;/code&gt; to &lt;code&gt;AddAgentServerVersion()&lt;/code&gt; and&lt;br&gt;
-&lt;code&gt;UseAgentServerUserAgent()&lt;/code&gt; to &lt;code&gt;UseAgentServerVersion()&lt;/code&gt;. The version middleware&lt;br&gt;
-no longer bundles the inbound request logging registration — use the new&lt;br&gt;
-&lt;code&gt;AddAgentServerLogging()&lt;/code&gt; / &lt;code&gt;UseAgentServerLogging()&lt;/code&gt; pair separately.&lt;/li&gt;
-&lt;li&gt;Made &lt;code&gt;AgentHostTelemetry&lt;/code&gt; internal. The telemetry source and meter name constants&lt;br&gt;
-are implementation details; use the string values directly if needed for OTel filtering.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to &lt;code&gt;1.53.0&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to &lt;code&gt;1.14.0&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Attestation_1.0.0-beta.6"&gt;Azure.ResourceManager.Attestation_1.0.0-beta.6&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.6 (2026-04-17)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to &lt;code&gt;1.53.0&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to &lt;code&gt;1.14.0&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.AgFoodPlatform_1.0.0-beta.6"&gt;Azure.ResourceManager.AgFoodPlatform_1.0.0-beta.6&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.6 (2026-04-17)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to &lt;code&gt;1.53.0&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to &lt;code&gt;1.14.0&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;

@@ -1,6 +1,86 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>DataDog/dd-trace-dotnet - Releases</title>
   <link href="https://github.com/DataDog/dd-trace-dotnet" />
-  <updated>2026-04-20T00:16:27Z</updated>
+  <updated>2026-04-21T00:18:18Z</updated>
   <id>https://github.com/DataDog/dd-trace-dotnet</id>
+  <entry>
+    <title>DataDog/dd-trace-dotnet - Releases - 2026-04-20</title>
+    <id>https://github.com/DataDog/dd-trace-dotnet#2026-04-20</id>
+    <link href="https://github.com/DataDog/dd-trace-dotnet" />
+    <updated>2026-04-21T00:18:18Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/releases/tag/v3.42.0"&gt;3.42.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Summary&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[CI Visibility] Add support for MSTest.Framework 4.2.1&lt;/li&gt;
+&lt;li&gt;[DSM] Add support for transaction tracking&lt;/li&gt;
+&lt;li&gt;[AAP] Add downstream request RASP analysis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changes&lt;/h2&gt;
+&lt;h3&gt;CI Visibility&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[SDTEST-2993] Switch to paginated endpoint for retrieving known tests (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4147673634" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8380" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8380/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8380"&gt;#8380&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fix(mstest): add 4.2.1 adapter signatures (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4282653138" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8475" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8475/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8475"&gt;#8475&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;ASM&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[AAP] API10 downstream request analysis (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3971881357" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8232" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8232/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8232"&gt;#8232&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Continuous Profiler&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[Profiler]  Bump to libunwind 1.8.3 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4156338297" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8387" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8387/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8387"&gt;#8387&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Profiler] Prevent profiler from interrupted thread while executing  handler &lt;code&gt;SIGSEGV&lt;/code&gt; handler (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4275222750" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8465" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8465/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8465"&gt;#8465&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Profiler] Fix bug in ManagedCodeCache (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4275316380" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8467" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8467/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8467"&gt;#8467&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Profiler] Fix UB in DebugInfoStore::Get(): re-acquire iterator after map insertion (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4275527660" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8468" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8468/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8468"&gt;#8468&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Debugger&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[Dynamic Instrumentation] clarify unbound line probe diagnostics (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4216882155" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8415" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8415/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8415"&gt;#8415&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Dynamic Instrumentation] Improve line probe source path resolution (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4220613815" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8422" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8422/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8422"&gt;#8422&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;fix user &amp;amp; host parsing in SQL connection string (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4231207497" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8431" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8431/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8431"&gt;#8431&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Set resource name after exception in OnEndRequest method (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4240054543" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8439" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8439/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8439"&gt;#8439&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix excessive allocation in vendored &lt;code&gt;SharedArrayPool&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4252503083" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8442" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8442/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8442"&gt;#8442&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix ServiceStack not calling EndRequest method (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4275273577" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8466" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8466/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8466"&gt;#8466&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Data Streams Monitoring&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[DSM] Initial transaction tracking implementation (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3724931771" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7949" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7949/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7949"&gt;#7949&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Build / Test&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update microbenchmark design to reduce flakiness (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4070156947" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8300" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8300/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8300"&gt;#8300&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Harden Linux Docker retries in CI (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4128199762" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8358" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8358/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8358"&gt;#8358&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Test Package Versions Bump] Updating package versions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4206107481" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8414" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8414/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8414"&gt;#8414&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add managed-by:bp-infra tag and skip PR comments on master on benchmarking jobs (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4217511166" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8416" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8416/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8416"&gt;#8416&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Enable performance quality gates on microbenchmarks and macrobenchmarks (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4223726899" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8424" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8424/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8424"&gt;#8424&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Parametrize gitlab org (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4225336869" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8426" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8426/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8426"&gt;#8426&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update base image used in download stages (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4237339512" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8437" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8437/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8437"&gt;#8437&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Test Package Versions Bump] Updating package versions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4246111565" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8441" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8441/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8441"&gt;#8441&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Coding Agents] Add HTTP REST API fallbacks for AzDO build analysis (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4257510032" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8448" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8448/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8448"&gt;#8448&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Make microbenchmark post-processing steps non-fatal (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4260420100" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8452" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8452/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8452"&gt;#8452&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix benchmark reporting (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4260817086" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8453" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8453/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8453"&gt;#8453&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Move microbench AMI provision file into this repo, stop cloning benchmarking-platform (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4266876075" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8458" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8458/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8458"&gt;#8458&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;add new set of benchmarks (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4274006561" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8464" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8464/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8464"&gt;#8464&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Miscellaneous&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add static &lt;code&gt;char&lt;/code&gt; helpers like &lt;code&gt;IsAsciiHexDigit&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4217568394" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8417" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8417/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8417"&gt;#8417&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix EH clause sort to handle try-in-handler nesting (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4225825810" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8428" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8428/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8428"&gt;#8428&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add srv_src field to client stats payload (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4101344371" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8339" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8339/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8339"&gt;#8339&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;IpAddressObfuscationUtil&lt;/code&gt; for use with client-side-stats (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4217629678" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8418" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8418/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8418"&gt;#8418&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/compare/v3.41.0...v3.42.0"&gt;Changes since 3.41.0&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
