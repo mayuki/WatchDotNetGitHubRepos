@@ -1,60 +1,66 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-04-24T00:19:58Z</updated>
+  <updated>2026-04-25T00:17:02Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-04-23</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-04-23</id>
+    <title>aws/aws-sdk-net - Releases - 2026-04-24</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-04-24</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-04-24T00:19:58Z</updated>
+    <updated>2026-04-25T00:17:02Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.237.0"&gt;4.0.237.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.238.0"&gt;4.0.238.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.237.0 (2026-04-23 18:19 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.238.0 (2026-04-24 18:27 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;DataZone (4.0.26.0)
+&lt;li&gt;BedrockAgentCoreControl (4.0.30.0)
 &lt;ul&gt;
-&lt;li&gt;Releasing For LakehouseProperties attributes in the Connections API's&lt;/li&gt;
+&lt;li&gt;Added support for configuring identity providers and inbound authorizers within a private VPC for AWS Bedrock AgentCore, enabling secure network connection without public internet access&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IoTManagedIntegrations (4.0.7.0)
+&lt;li&gt;CloudWatchLogs (4.0.21.0)
 &lt;ul&gt;
-&lt;li&gt;Adds "Status" field to provisioning profile operation response types, giving users visibility into the readiness of a provisioning profile to be used for device provisioning.&lt;/li&gt;
+&lt;li&gt;Adding nextToken and maxItems to the GetQueryResults API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;OpenSearchService (4.0.18.0)
+&lt;li&gt;Connect (4.0.43.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon OpenSearch UI applications now support cross-Region domain association, enabling you to connect OpenSearch Dashboards in one AWS Region to OpenSearch domains in other Regions within the same partition for centralized data visualization.&lt;/li&gt;
+&lt;li&gt;Amazon Connect is expanding attachment capabilities to give customers greater flexibility and control. Currently limited to predefined file types, the new feature will allow contact center administrators to customize which file extensions and sizes are supported across chat, email, tasks, and cases.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PCS (4.0.13.9)
+&lt;li&gt;ConnectHealth (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for Slurm 25.11 with expedited requeue enabled by default for jobs failing due to node issues, configurable requeue delay, health checks at node startup only, and unauthenticated HTTP endpoints disabled by default for improved security.&lt;/li&gt;
+&lt;li&gt;Corrected CreateWebAppConfiguration documentation. Adding slash as an allowed character for the Ambient documentation agent to allow pronoun specifications.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1251.1"&gt;3.7.1251.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;3.7.1251.1 (2026-04-23 17:01 UTC)&lt;/h3&gt;
+&lt;li&gt;DynamoDBStreams (4.0.4.27)
 &lt;ul&gt;
-&lt;li&gt;S3 (3.7.511.6)
-&lt;ul&gt;
-&lt;li&gt;This release adds support for five additional checksum algorithms for data integrity checking in Amazon S3 - MD5, SHA-512, XXHash3, XXHash64, and XXHash128.&lt;/li&gt;
-&lt;li&gt;Only SHA512 will be calculated by default if SHA512 is selected. For the XXHash algorithms, you must supply your own checksum&lt;/li&gt;
+&lt;li&gt;Remove max-retries from DynamoDB Streams service and depend on values applied in the &lt;code&gt;AWSSDK.Core&lt;/code&gt; package.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 3.7.500.96
+&lt;li&gt;DynamoDBv2 (4.0.17.11)
 &lt;ul&gt;
-&lt;li&gt;Add support for new Checksum Algorithms: SHA512, XXHASH3, XXHASH64, XXHASH128&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Remove max-retries from DynamoDB service and depend on values applied in the &lt;code&gt;AWSSDK.Core&lt;/code&gt; package.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Evs (4.0.7.0)
+&lt;ul&gt;
+&lt;li&gt;EVS now supports i7i.metal-24xl EC2 bare metal instance type, delivering high random IOPS performance with real-time latency, ideal for IO intensive and latency-sensitive workloads such as transactional databases, real-time analytics, and AI ML pre-processing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Transfer (4.0.8.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Transfer Family now support configurable IP address types for Web Apps of type VPC, enabling customers to select IPv4-only or dual-stack (IPv4 and IPv6) configurations based on their network requirements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.4.0
+&lt;ul&gt;
+&lt;li&gt;Cache compiled Regex instances in Partition and RegionEndpoint for endpoint resolution performance&lt;/li&gt;
+&lt;li&gt;Implements the updated Retry Behavior behind a feature flag (AWS_NEW_RETRIES_2026).&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

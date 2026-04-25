@@ -1,60 +1,66 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-04-24T00:20:21Z</updated>
+  <updated>2026-04-25T00:17:19Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-04-23</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-04-23</id>
+    <title>aws/aws-sdk-net - Releases - 2026-04-24</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-04-24</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-04-24T00:19:58Z</updated>
+    <updated>2026-04-25T00:17:02Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.237.0"&gt;4.0.237.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.238.0"&gt;4.0.238.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.237.0 (2026-04-23 18:19 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.238.0 (2026-04-24 18:27 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;DataZone (4.0.26.0)
+&lt;li&gt;BedrockAgentCoreControl (4.0.30.0)
 &lt;ul&gt;
-&lt;li&gt;Releasing For LakehouseProperties attributes in the Connections API's&lt;/li&gt;
+&lt;li&gt;Added support for configuring identity providers and inbound authorizers within a private VPC for AWS Bedrock AgentCore, enabling secure network connection without public internet access&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IoTManagedIntegrations (4.0.7.0)
+&lt;li&gt;CloudWatchLogs (4.0.21.0)
 &lt;ul&gt;
-&lt;li&gt;Adds "Status" field to provisioning profile operation response types, giving users visibility into the readiness of a provisioning profile to be used for device provisioning.&lt;/li&gt;
+&lt;li&gt;Adding nextToken and maxItems to the GetQueryResults API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;OpenSearchService (4.0.18.0)
+&lt;li&gt;Connect (4.0.43.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon OpenSearch UI applications now support cross-Region domain association, enabling you to connect OpenSearch Dashboards in one AWS Region to OpenSearch domains in other Regions within the same partition for centralized data visualization.&lt;/li&gt;
+&lt;li&gt;Amazon Connect is expanding attachment capabilities to give customers greater flexibility and control. Currently limited to predefined file types, the new feature will allow contact center administrators to customize which file extensions and sizes are supported across chat, email, tasks, and cases.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PCS (4.0.13.9)
+&lt;li&gt;ConnectHealth (4.0.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for Slurm 25.11 with expedited requeue enabled by default for jobs failing due to node issues, configurable requeue delay, health checks at node startup only, and unauthenticated HTTP endpoints disabled by default for improved security.&lt;/li&gt;
+&lt;li&gt;Corrected CreateWebAppConfiguration documentation. Adding slash as an allowed character for the Ambient documentation agent to allow pronoun specifications.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/3.7.1251.1"&gt;3.7.1251.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;3.7.1251.1 (2026-04-23 17:01 UTC)&lt;/h3&gt;
+&lt;li&gt;DynamoDBStreams (4.0.4.27)
 &lt;ul&gt;
-&lt;li&gt;S3 (3.7.511.6)
-&lt;ul&gt;
-&lt;li&gt;This release adds support for five additional checksum algorithms for data integrity checking in Amazon S3 - MD5, SHA-512, XXHash3, XXHash64, and XXHash128.&lt;/li&gt;
-&lt;li&gt;Only SHA512 will be calculated by default if SHA512 is selected. For the XXHash algorithms, you must supply your own checksum&lt;/li&gt;
+&lt;li&gt;Remove max-retries from DynamoDB Streams service and depend on values applied in the &lt;code&gt;AWSSDK.Core&lt;/code&gt; package.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 3.7.500.96
+&lt;li&gt;DynamoDBv2 (4.0.17.11)
 &lt;ul&gt;
-&lt;li&gt;Add support for new Checksum Algorithms: SHA512, XXHASH3, XXHASH64, XXHASH128&lt;/li&gt;
-&lt;li&gt;All services packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Remove max-retries from DynamoDB service and depend on values applied in the &lt;code&gt;AWSSDK.Core&lt;/code&gt; package.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Evs (4.0.7.0)
+&lt;ul&gt;
+&lt;li&gt;EVS now supports i7i.metal-24xl EC2 bare metal instance type, delivering high random IOPS performance with real-time latency, ideal for IO intensive and latency-sensitive workloads such as transactional databases, real-time analytics, and AI ML pre-processing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Transfer (4.0.8.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Transfer Family now support configurable IP address types for Web Apps of type VPC, enabling customers to select IPv4-only or dual-stack (IPv4 and IPv6) configurations based on their network requirements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.4.0
+&lt;ul&gt;
+&lt;li&gt;Cache compiled Regex instances in Partition and RegionEndpoint for endpoint resolution performance&lt;/li&gt;
+&lt;li&gt;Implements the updated Retry Behavior behind a feature flag (AWS_NEW_RETRIES_2026).&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -65,129 +71,131 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-04-23</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-04-23</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-04-24</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-04-24</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-04-24T00:19:59Z</updated>
+    <updated>2026-04-25T00:17:02Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Extensions.Azure_1.14.0"&gt;Microsoft.Extensions.Azure_1.14.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.54.0"&gt;Azure.Core_1.54.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.14.0 (2026-04-22)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
+                                &lt;h2&gt;1.54.0 (2026-04-23)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Adopted the new &lt;code&gt;Azure.Core&lt;/code&gt; version that includes the identity types moved from &lt;code&gt;Azure.Identity&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Removed duplicate top-level &lt;code&gt;required: ["CredentialSource"]&lt;/code&gt; from the &lt;code&gt;credential&lt;/code&gt; definition in &lt;code&gt;ConfigurationSchema.json&lt;/code&gt; to prevent duplicate entries when the schema is merged with &lt;code&gt;System.ClientModel&lt;/code&gt;'s schema.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects_2.0.1"&gt;Azure.AI.Projects_2.0.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;2.0.1 (2026-04-22)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Adopted &lt;code&gt;Azure.Core&lt;/code&gt; 1.53.0, which type-forwards the &lt;code&gt;Azure.Identity&lt;/code&gt; namespace. The explicit &lt;code&gt;Azure.Identity&lt;/code&gt; package dependency has been removed; the &lt;code&gt;Azure.Identity&lt;/code&gt; types remain available transitively through &lt;code&gt;Azure.Core&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DataLakeAnalytics_1.1.2"&gt;Azure.ResourceManager.DataLakeAnalytics_1.1.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.2 (2026-04-23)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to 1.53.0.&lt;/li&gt;
-&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to 1.14.0.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DevSpaces_1.0.0"&gt;Azure.ResourceManager.DevSpaces_1.0.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0 (2026-04-23)&lt;/h2&gt;
-&lt;p&gt;This is the first stable release of this library.&lt;/p&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to 1.53.0.&lt;/li&gt;
-&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to 1.14.0.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DigitalTwins_1.3.2"&gt;Azure.ResourceManager.DigitalTwins_1.3.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.3.2 (2026-04-23)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to 1.53.0.&lt;/li&gt;
-&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to 1.14.0.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DataShare_1.1.2"&gt;Azure.ResourceManager.DataShare_1.1.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.2 (2026-04-23)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to 1.53.0.&lt;/li&gt;
-&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to 1.14.0.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DevOpsInfrastructure_1.0.0"&gt;Azure.ResourceManager.DevOpsInfrastructure_1.0.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0 (2026-04-23)&lt;/h2&gt;
-&lt;p&gt;This is the first stable release of this library.&lt;/p&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to 1.53.0.&lt;/li&gt;
-&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to 1.14.0.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DeviceUpdate_1.0.2"&gt;Azure.ResourceManager.DeviceUpdate_1.0.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.2 (2026-04-23)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to 1.53.0.&lt;/li&gt;
-&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to 1.14.0.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DataLakeStore_1.1.2"&gt;Azure.ResourceManager.DataLakeStore_1.1.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.2 (2026-04-23)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to 1.53.0.&lt;/li&gt;
-&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to 1.14.0.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.ServiceNetworking_1.0.0-beta.1"&gt;Azure.Provisioning.ServiceNetworking_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.ContainerInstance_1.0.0-beta.1"&gt;Azure.Provisioning.ContainerInstance_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;h2&gt;1.0.0-beta.1 (2026-04-23)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial preview of &lt;code&gt;Azure.Provisioning.ServiceNetworking&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added support for the following &lt;code&gt;Microsoft.ServiceNetworking&lt;/code&gt; resources: &lt;code&gt;TrafficController&lt;/code&gt; (Application Gateway for Containers), &lt;code&gt;TrafficControllerFrontend&lt;/code&gt;, &lt;code&gt;TrafficControllerAssociation&lt;/code&gt;, and &lt;code&gt;ApplicationGatewayForContainersSecurityPolicy&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Initial beta release of new Azure.Provisioning.ContainerInstance.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.FluidRelay_1.1.2"&gt;Azure.ResourceManager.FluidRelay_1.1.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.1.2 (2026-04-24)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to 1.53.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ExtendedLocations_1.1.2"&gt;Azure.ResourceManager.ExtendedLocations_1.1.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.1.2 (2026-04-24)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to 1.53.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.GuestConfiguration_1.2.2"&gt;Azure.ResourceManager.GuestConfiguration_1.2.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.2 (2026-04-24)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to 1.53.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.GraphServices_1.1.3"&gt;Azure.ResourceManager.GraphServices_1.1.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.1.3 (2026-04-24)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to 1.53.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.HealthcareApis_1.3.2"&gt;Azure.ResourceManager.HealthcareApis_1.3.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.3.2 (2026-04-24)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to 1.53.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.EdgeOrder_1.1.2"&gt;Azure.ResourceManager.EdgeOrder_1.1.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.1.2 (2026-04-24)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version to 2024-02-01&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to 1.53.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.HardwareSecurityModules_1.0.1"&gt;Azure.ResourceManager.HardwareSecurityModules_1.0.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.1 (2026-04-24)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to 1.53.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.EdgeZones_1.0.0-beta.3"&gt;Azure.ResourceManager.EdgeZones_1.0.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.3 (2026-04-24)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to 1.53.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.ResourceManager&lt;/code&gt; to 1.14.0.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -196,35 +204,143 @@
             </content>
   </entry>
   <entry>
-    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-04-23</title>
-    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-04-23</id>
-    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-    <updated>2026-04-24T00:20:19Z</updated>
+    <title>dotnet/aspire - Releases - 2026-04-24</title>
+    <id>https://github.com/dotnet/aspire#2026-04-24</id>
+    <link href="https://github.com/dotnet/aspire" />
+    <updated>2026-04-25T00:17:06Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Extensions.Enrichment.Http-1.15.1-beta.2"&gt;Extensions.Enrichment.Http-1.15.1-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.2.4"&gt;Aspire 13.2.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Enrichment.Http/1.15.1-beta.2" rel="nofollow"&gt;OpenTelemetry.Extensions.Enrichment.Http v1.15.1-beta.2&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No notable changes.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Extensions.Enrichment.Http-1.15.1-beta.2/src/OpenTelemetry.Extensions.Enrichment.Http/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
+                                &lt;h1&gt;Aspire 13.2.4&lt;/h1&gt;
+&lt;h2&gt;What's New in Aspire 13.2.4&lt;/h2&gt;
+&lt;p&gt;Patch release addressing a security advisory in OpenTelemetry dependencies.&lt;/p&gt;
+&lt;h3&gt;🐛 Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🔒 Bumped OpenTelemetry dependencies to address &lt;a title="CVE-2026-40894" data-hovercard-type="advisory" data-hovercard-url="/advisories/GHSA-g94r-2vxg-569j/hovercard" href="https://github.com/advisories/GHSA-g94r-2vxg-569j"&gt;CVE-2026-40894&lt;/a&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4320181678" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/16420" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/16420/hovercard" href="https://github.com/microsoft/aspire/pull/16420"&gt;#16420&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;🏷️ Housekeeping&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🚀 Bumped branding to&lt;br&gt;
+13.2.4 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4324407673" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/16436" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/16436/hovercard" href="https://github.com/microsoft/aspire/pull/16436"&gt;#16436&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>dotnet/SqlClient - Releases - 2026-04-24</title>
+    <id>https://github.com/dotnet/SqlClient#2026-04-24</id>
+    <link href="https://github.com/dotnet/SqlClient" />
+    <updated>2026-04-25T00:17:10Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Extensions.Enrichment.AspNetCore-1.15.1-beta.2"&gt;Extensions.Enrichment.AspNetCore-1.15.1-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/SqlClient/releases/tag/v7.0.1"&gt;Stable Release - v7.0.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;ul&gt;
+                                &lt;p&gt;This update brings the following changes since the &lt;a href="https://github.com/dotnet/SqlClient/blob/release/7.0/release-notes/7.0/7.0.0.md"&gt;7.0.0&lt;/a&gt; release:&lt;/p&gt;
+&lt;h3&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Enrichment.AspNetCore/1.15.1-beta.2" rel="nofollow"&gt;OpenTelemetry.Extensions.Enrichment.AspNetCore v1.15.1-beta.2&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No notable changes.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Extensions.Enrichment.AspNetCore-1.15.1-beta.2/src/OpenTelemetry.Extensions.Enrichment.AspNetCore/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;Fixed &lt;code&gt;SqlBulkCopy&lt;/code&gt; failing on SQL Server 2016 with &lt;code&gt;Invalid column name 'graph_type'&lt;/code&gt; error. The column metadata query now uses dynamic SQL so that references to the &lt;code&gt;graph_type&lt;/code&gt; column (introduced in SQL Server 2017) are not compiled on older versions that lack the column. (&lt;a href="https://github.com/dotnet/SqlClient/issues/3714" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/3714/hovercard"&gt;#3714&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4092" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4092/hovercard"&gt;#4092&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4147" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4147/hovercard"&gt;#4147&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed &lt;code&gt;SqlBulkCopy&lt;/code&gt; failing on Azure Synapse Analytics dedicated SQL pools. The column-list query previously used a variable-assignment pattern that Synapse does not support; it now uses &lt;code&gt;STRING_AGG&lt;/code&gt; when targeting Synapse (engine edition 6) and falls back to the variable-assignment approach for SQL Server 2016 compatibility. (&lt;a href="https://github.com/dotnet/SqlClient/issues/4149" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4149/hovercard"&gt;#4149&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4176" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4176/hovercard"&gt;#4176&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4182" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4182/hovercard"&gt;#4182&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed &lt;code&gt;SqlDataReader.GetFieldType()&lt;/code&gt; and &lt;code&gt;GetProviderSpecificFieldType()&lt;/code&gt; returning &lt;code&gt;typeof(byte[])&lt;/code&gt; instead of &lt;code&gt;typeof(SqlVector&amp;lt;float&amp;gt;)&lt;/code&gt; for vector float32 columns. The methods now follow the same type-determination logic as &lt;code&gt;GetValue()&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/issues/4104" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4104/hovercard"&gt;#4104&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4105" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4105/hovercard"&gt;#4105&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4152" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4152/hovercard"&gt;#4152&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added missing &lt;code&gt;System.Data.Common&lt;/code&gt; (v4.3.0) NuGet package dependency for .NET Framework consumers. The inbox &lt;code&gt;System.Data.Common&lt;/code&gt; assembly on .NET Framework predates APIs such as &lt;code&gt;IDbColumnSchemaGenerator&lt;/code&gt;; without the explicit NuGet dependency, consumers encountered &lt;code&gt;CS0012&lt;/code&gt; compilation errors when using these types through &lt;code&gt;Microsoft.Data.SqlClient&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4063" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4063/hovercard"&gt;#4063&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4074" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4074/hovercard"&gt;#4074&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Enabled the User Agent TDS feature extension unconditionally. The &lt;code&gt;Switch.Microsoft.Data.SqlClient.EnableUserAgent&lt;/code&gt; AppContext switch has been removed; the driver now always sends User Agent information during login. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4124" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4124/hovercard"&gt;#4124&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4154" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4154/hovercard"&gt;#4154&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added type forwards from the core &lt;code&gt;Microsoft.Data.SqlClient&lt;/code&gt; assembly to public types that were moved to the &lt;code&gt;Microsoft.Data.SqlClient.Extensions.Abstractions&lt;/code&gt; package: &lt;code&gt;SqlAuthenticationMethod&lt;/code&gt;, &lt;code&gt;SqlAuthenticationParameters&lt;/code&gt;, &lt;code&gt;SqlAuthenticationProvider&lt;/code&gt;, &lt;code&gt;SqlAuthenticationProviderException&lt;/code&gt;, and &lt;code&gt;SqlAuthenticationToken&lt;/code&gt;. This ensures binary compatibility for assemblies compiled against earlier versions of &lt;code&gt;Microsoft.Data.SqlClient&lt;/code&gt; where these types lived in the core assembly. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4067" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4067/hovercard"&gt;#4067&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4117" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4117/hovercard"&gt;#4117&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed API documentation include paths and duplicate doc snippets. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4084" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4084/hovercard"&gt;#4084&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4086" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4086/hovercard"&gt;#4086&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4107" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4107/hovercard"&gt;#4107&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4161" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4161/hovercard"&gt;#4161&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;We thank the following public contributors. Their efforts toward this project are very much appreciated.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/edwardneal"&gt;edwardneal&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Target Platform Support&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;.NET Framework 4.6.2+ (Windows x86, Windows x64, Windows ARM64)&lt;/li&gt;
+&lt;li&gt;.NET 8.0+ (Windows x86, Windows x64, Windows ARM, Windows ARM64, Linux, macOS)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Dependencies&lt;/h3&gt;
+&lt;h4&gt;.NET 9.0&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft.Bcl.Cryptography 9.0.13&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Extensions.Abstractions 1.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Internal.Logging 1.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.SNI.runtime 6.0.2&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 9.0.13&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.SqlServer.Server 1.0.0&lt;/li&gt;
+&lt;li&gt;System.Configuration.ConfigurationManager 9.0.13&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 9.0.13&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;.NET 8.0&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft.Bcl.Cryptography 8.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Extensions.Abstractions 1.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Internal.Logging 1.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.SNI.runtime 6.0.2&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 8.0.1&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.SqlServer.Server 1.0.0&lt;/li&gt;
+&lt;li&gt;System.Configuration.ConfigurationManager 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 8.0.1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;.NET Standard 2.0&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft.Bcl.Cryptography 8.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Extensions.Abstractions 1.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Internal.Logging 1.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.SNI.runtime 6.0.2&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 8.0.1&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.SqlServer.Server 1.0.0&lt;/li&gt;
+&lt;li&gt;System.Configuration.ConfigurationManager 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Text.Json 10.0.3&lt;/li&gt;
+&lt;li&gt;System.Threading.Channels 10.0.3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;.NET Framework 4.6.2+&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft.Bcl.Cryptography 8.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Extensions.Abstractions 1.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Internal.Logging 1.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.SNI 6.0.2&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 8.0.1&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 8.16.0&lt;/li&gt;
+&lt;li&gt;System.Buffers 4.6.1&lt;/li&gt;
+&lt;li&gt;System.Data.Common 4.3.0&lt;/li&gt;
+&lt;li&gt;System.Diagnostics.DiagnosticSource 10.0.3&lt;/li&gt;
+&lt;li&gt;System.Memory 4.6.3&lt;/li&gt;
+&lt;li&gt;System.Runtime.InteropServices.RuntimeInformation 4.3.0&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Text.Json 10.0.3&lt;/li&gt;
+&lt;li&gt;System.Threading.Channels 10.0.3&lt;/li&gt;
+&lt;li&gt;System.ValueTuple 4.6.2&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
