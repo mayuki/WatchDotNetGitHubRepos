@@ -1,6 +1,51 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>open-telemetry/opentelemetry-dotnet-contrib - Releases</title>
   <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-  <updated>2026-04-27T00:18:42Z</updated>
+  <updated>2026-04-28T00:21:59Z</updated>
   <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib</id>
+  <entry>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-04-27</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-04-27</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2026-04-28T00:21:59Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Exporter.Instana-1.1.0"&gt;Exporter.Instana-1.1.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Instana/1.1.0" rel="nofollow"&gt;OpenTelemetry.Exporter.Instana v1.1.0&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Add &lt;code&gt;net8.0&lt;/code&gt; and &lt;code&gt;net10.0&lt;/code&gt; target frameworks.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4153" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4153/hovercard"&gt;#4153&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add support for configuring the Instana exporter using &lt;code&gt;InstanaExporterOptions&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4153" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4153/hovercard"&gt;#4153&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Breaking change&lt;/strong&gt;: TLS certificate validation is no longer unconditionally&lt;br&gt;
+disabled when a proxy is configured using the &lt;code&gt;INSTANA_ENDPOINT_PROXY&lt;/code&gt; environment&lt;br&gt;
+variable. To restore the previous behaviour and disable TLS certificate validation&lt;br&gt;
+use the &lt;code&gt;InstanaExporterOptions.HttpClientFactory&lt;/code&gt; property to configure a custom&lt;br&gt;
+&lt;code&gt;HttpClient&lt;/code&gt; for the exporter to use.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4153" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4153/hovercard"&gt;#4153&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use System.Text.Json for JSON serialization.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4293" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4293/hovercard"&gt;#4293&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Exporter.Instana-1.1.0/src/OpenTelemetry.Exporter.Instana/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
