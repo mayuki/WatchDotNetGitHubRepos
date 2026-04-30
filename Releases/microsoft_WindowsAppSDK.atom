@@ -1,6 +1,58 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>microsoft/WindowsAppSDK - Releases</title>
   <link href="https://github.com/microsoft/WindowsAppSDK" />
-  <updated>2026-04-29T00:23:21Z</updated>
+  <updated>2026-04-30T00:22:48Z</updated>
   <id>https://github.com/microsoft/WindowsAppSDK</id>
+  <entry>
+    <title>microsoft/WindowsAppSDK - Releases - 2026-04-29</title>
+    <id>https://github.com/microsoft/WindowsAppSDK#2026-04-29</id>
+    <link href="https://github.com/microsoft/WindowsAppSDK" />
+    <updated>2026-04-30T00:22:48Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.0.1"&gt;Windows App SDK 2.0 (2.0.1) 🎉&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;WinAppSDK 2.0 is the next major release of the Windows App SDK, the first major version update since 1.0 (November 2021) and the first release on the new &lt;a href="https://semver.org/" rel="nofollow"&gt;Semantic Versioning&lt;/a&gt; scheme. It ships new XAML capabilities, a modernized Storage Pickers surface, expanded popup and anchoring APIs in &lt;code&gt;Microsoft.UI.Content&lt;/code&gt;, a new package deployment and validation framework, a refactored Windows ML stack, and additions across the Windows AI surface.&lt;/p&gt;
+&lt;h3&gt;What's new in WinAppSDK 2.0:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Semantic Versioning.&lt;/strong&gt; Windows App SDK 2.0 standardizes on &lt;a href="https://semver.org/" rel="nofollow"&gt;SemVer 2.0.0&lt;/a&gt; and aligns the SDK version with the NuGet package version, so there's no separate date-based build number to track. The package family name now aligns with the major version, so the next side-by-side release will be 3.0.0.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WebView2 (WinUI 3) drag support.&lt;/strong&gt; Dragging text, HTML, images, and URLs out of WebView2 content hosted in WinUI 3 is now supported, along with drag cancellation, custom drag visuals, and customizable drag data. (Requires WebView2 Runtime 144.0.3719.11 or higher.)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Package deployment and validation.&lt;/strong&gt; The &lt;code&gt;Microsoft.Windows.Management.Deployment&lt;/code&gt; namespace adds a new &lt;code&gt;IPackageValidator&lt;/code&gt; framework with three built-in validators (&lt;code&gt;PackageCertificateEkuValidator&lt;/code&gt;, &lt;code&gt;PackageFamilyNameValidator&lt;/code&gt;, &lt;code&gt;PackageMinimumVersionValidator&lt;/code&gt;), plus a new &lt;code&gt;PackageVolume&lt;/code&gt; API for managing the storage volumes that packages are staged onto.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Windows ML refactor.&lt;/strong&gt; Core Windows ML features have been refactored into a new base package, &lt;code&gt;Microsoft.Windows.AI.MachineLearning&lt;/code&gt;, with a minimal set of dependencies that supports apps down to Windows 10 v1903. The existing &lt;code&gt;Microsoft.WindowsAppSDK.ML&lt;/code&gt; package continues to support Windows 10 v1809. The included &lt;strong&gt;ONNX Runtime&lt;/strong&gt; version has been updated to 1.24.5.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Windows AI additions.&lt;/strong&gt; New &lt;code&gt;AIFeatureReadyState&lt;/code&gt; values (&lt;code&gt;CapabilityMissing&lt;/code&gt;, &lt;code&gt;NotCompatibleWithSystemHardware&lt;/code&gt;, &lt;code&gt;OSUpdateNeeded&lt;/code&gt;) help apps explain transient and durable failures during AI model acquisition so users get actionable guidance instead of a generic "not ready" condition. Phi Silica APIs are now enforced as part of a Limited Access Feature (LAF); see &lt;a href="https://learn.microsoft.com/windows/ai/apis/phi-silica" rel="nofollow"&gt;Phi Silica&lt;/a&gt; for details.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Storage Pickers updates.&lt;/strong&gt; The &lt;code&gt;Microsoft.Windows.Storage.Pickers&lt;/code&gt; API (introduced in 1.8) is extended with file type choice grouping, persistent settings identifiers, suggested start folders, custom titles, multi-folder picking, and more, across &lt;code&gt;FileOpenPicker&lt;/code&gt;,&lt;br&gt;
+&lt;code&gt;FileSavePicker&lt;/code&gt;, and &lt;code&gt;FolderPicker&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;SystemBackdropElement&lt;/code&gt;&lt;/strong&gt; is a new lightweight &lt;code&gt;FrameworkElement&lt;/code&gt; that lets apps place a system backdrop such as Mica or Acrylic anywhere within the XAML layout, with a &lt;code&gt;CornerRadius&lt;/code&gt; property for rounded backdrop areas. It closes a long-standing WinUI 3 gap where in-app acrylic effects (previously straightforward in WinUI 2 via &lt;code&gt;AcrylicBrush.BackgroundSource&lt;/code&gt;) had no direct equivalent.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Custom XAML Conditionals (&lt;code&gt;IXamlCondition&lt;/code&gt;)&lt;/strong&gt; enable developers to define custom conditions that integrate with XAML's conditional namespace syntax and are evaluated at XAML parse time. This replaces the experimental &lt;code&gt;IXamlPredicate&lt;/code&gt; interface and unlocks conditional XAML based on feature flags, device capabilities, business logic, configuration settings, and other runtime conditions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Relative popup positioning&lt;/strong&gt; in &lt;code&gt;Microsoft.UI.Content&lt;/code&gt;. The new &lt;code&gt;PopupAnchor&lt;/code&gt; API allows &lt;code&gt;DesktopPopupSiteBridge&lt;/code&gt; to anchor to its owning window or island instead of being limited to absolute screen coordinates, with new &lt;code&gt;AnchoringBehavior&lt;/code&gt; and &lt;code&gt;AnchoringPixelAlignment&lt;/code&gt; properties to control the behavior.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Notable bug fixes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue where the WindowsAppSDK installer showed no progress during installation, making it appear stalled. The installer now provides clearer progress feedback.&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;MSB8027&lt;/code&gt; and &lt;code&gt;LNK4042&lt;/code&gt; build warnings caused by duplicate &lt;code&gt;ClCompile&lt;/code&gt; items in Windows App SDK NuGet &lt;code&gt;.targets&lt;/code&gt; files.&lt;/li&gt;
+&lt;li&gt;Fixed a ListView crash that could occur during keyboard navigation (Tab/Shift+Tab) after the items list was updated.&lt;/li&gt;
+&lt;li&gt;Fixed an issue where WinUI 3 could crash if focus was moved to the &lt;code&gt;CoreWebView2Controller&lt;/code&gt; while the controller was not visible.&lt;/li&gt;
+&lt;li&gt;Fixed a Windows ML bug where calling &lt;code&gt;RegisterCertifiedAsync&lt;/code&gt; again in the same process incorrectly returned 0 execution providers (EP).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;To see everything that's new and changed, including upgrade guidance and known issues, see the full &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-2-0?pivots=stable" rel="nofollow"&gt;Windows App SDK 2.0 release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.0.1" rel="nofollow"&gt;2.0.1 NuGet&lt;/a&gt; package to use WinAppSDK 2.0 in your app.&lt;/li&gt;
+&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Getting started&lt;/h3&gt;
+&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
