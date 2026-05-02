@@ -1,75 +1,69 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-05-01T00:23:40Z</updated>
+  <updated>2026-05-02T00:21:57Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-04-30</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-04-30</id>
+    <title>aws/aws-sdk-net - Releases - 2026-05-01</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-05-01</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-05-01T00:23:40Z</updated>
+    <updated>2026-05-02T00:21:57Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.241.0"&gt;4.0.241.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.242.0"&gt;4.0.242.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.241.0 (2026-04-30 18:16 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.242.0 (2026-05-01 18:26 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;BedrockAgentCore (4.0.22.0)
+&lt;li&gt;AppStream (4.0.10.0)
 &lt;ul&gt;
-&lt;li&gt;AgentCore Identity now supports on-behalf-of token exchange OAuth2. AgentCore Memory now supports metadata for LongTerm Memory Records.&lt;/li&gt;
+&lt;li&gt;Amazon WorkSpaces Applications now enables AI agents to securely operate desktop applications. Administrators configure stacks to provide agents access to WorkSpaces. Agents can click, type, and take screenshots. Agents authenticate with AWS IAM credentials with activity logged in AWS CloudTrail.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.32.0)
+&lt;li&gt;CloudWatch (4.0.10.0)
 &lt;ul&gt;
-&lt;li&gt;AgentCore Identity now supports on-behalf-of token exchange OAuth2. AgentCore Memory now supports metadata for LongTerm Memory Records.&lt;/li&gt;
+&lt;li&gt;This release adds tag support for CloudWatch Dashboards. The PutDashboard API now accepts a Tags parameter, allowing you to tag dashboards at creation time. Additionally, the TagResource, UntagResource, and ListTagsForResource APIs now support dashboard ARNs as resources.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DataZone (4.0.27.0)
+&lt;li&gt;CloudWatchLogs (4.0.23.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for asynchronous notebook runs&lt;/li&gt;
+&lt;li&gt;Adds support for filtering log groups by tags in the ListLogGroups API via the new logGroupTags parameter.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EKS (4.0.16.0)
+&lt;li&gt;DynamoDBv2 (4.0.18.0)
 &lt;ul&gt;
-&lt;li&gt;Vended logs update param for capability vended logs feature&lt;/li&gt;
+&lt;li&gt;Replace AttributesToGet usage with ProjectionExpression for batch get requests&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Kafka (4.0.9.0)
+&lt;li&gt;EntityResolution (4.0.7.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for ZookeeperAccess field to control the Client-Zookeeper connectivity.&lt;/li&gt;
+&lt;li&gt;Add support for transitive matching in AWS Entity Resolution rule-based matching workflows. When enabled, records that match through different rules are grouped together into the same match group, allowing related records to be connected across rule levels.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ObservabilityAdmin (4.0.11.0)
+&lt;li&gt;IdentityManagement (4.0.9.21)
 &lt;ul&gt;
-&lt;li&gt;Observability Admin enablement launch for AWS Kafka, Bedrock Agent Core Workload Identity and OTel metric enablement.&lt;/li&gt;
+&lt;li&gt;Added guidance for CreateOpenIDConnectProvider to include multiple thumbprints when OIDC discovery and JWKS endpoints use different hosts or certificates&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PaymentCryptography (4.0.9.0)
+&lt;li&gt;IoT (4.0.7.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for resource-based policies on AWS Payment Cryptography keys, enabling cross-account key sharing. Also adds Multi-Party Approval (MPA) team association APIs for protecting sensitive import root public key operations.&lt;/li&gt;
+&lt;li&gt;AWS IoT HTTP rule actions now support cross-topic batching, combining messages from different MQTT topics into single HTTP requests.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Route53GlobalResolver (4.0.2.0)
+&lt;li&gt;QConnect (4.0.10.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for regions in the UpdateGlobalResolver input.&lt;/li&gt;
+&lt;li&gt;Added reasoning details, statusDescription, and timeToFirstTokenMs fields to the ListSpans response in Amazon Q in Connect to provide visibility into model thinking, error diagnostics, and inference latency metrics.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.54.0)
+&lt;li&gt;QuickSight (4.0.20.0)
 &lt;ul&gt;
-&lt;li&gt;Add InstancePools support to Endpoint for flexible provisioning across a prioritized list of instance types. Add Specifications support to InferenceComponent for per-instance-type model configurations.&lt;/li&gt;
+&lt;li&gt;Add IdentityProviderCACertificatesBundleS3Uri for private CA certs with OAuth datasources. 256-char limit for FontFamily in themes. ControlTitleFormatText on all 13 filters. ControlTitleFontConfiguration. ContextRegion for cross-region identity context. Story,scenario in CreateCustomCapability API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SSOAdmin (4.0.6.0)
+&lt;li&gt;Extensions.Bedrock.MEAI (4.0.6.12)
 &lt;ul&gt;
-&lt;li&gt;Add InstanceArn and IdentityStoreArn in the response of CreateApplication API and IdentityStoreArn in the response of DescribeApplication API&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.0.6.0
-&lt;ul&gt;
-&lt;li&gt;[Breaking Change] The AWSSDK ZIP artifact now organizes extension assemblies into dedicated subfolders under &lt;code&gt;extensions/&lt;/code&gt; (for example, &lt;code&gt;extensions\CrtIntegration\AWSSDK.Extensions.CrtIntegration.dll&lt;/code&gt;). Each subfolder contains only the extension DLL and its third-party dependencies - transitive &lt;code&gt;AWSSDK&lt;/code&gt; service DLLs remain in the root directory and are not duplicated. There is no impact for customers installing the SDK via NuGet, which is the recommended installation method as described in our &lt;a href="https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-install-assemblies.html" rel="nofollow"&gt;developer guide&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Update &lt;code&gt;System.Text.Json&lt;/code&gt; dependency to &lt;code&gt;8.0.6&lt;/code&gt; (for &lt;code&gt;net472&lt;/code&gt; and &lt;code&gt;netstandard2.0&lt;/code&gt; frameworks)&lt;/li&gt;
+&lt;li&gt;Fixed TypeInitializationException crash in BedrockChatClient tool calling under NativeAOT caused by circular static initialization in BedrockJsonContext&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
