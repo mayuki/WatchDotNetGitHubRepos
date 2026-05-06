@@ -1,70 +1,59 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-05-05T00:22:58Z</updated>
+  <updated>2026-05-06T00:22:38Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-05-04</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-05-04</id>
+    <title>aws/aws-sdk-net - Releases - 2026-05-05</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-05-05</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-05-05T00:22:38Z</updated>
+    <updated>2026-05-06T00:22:12Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.243.0"&gt;4.0.243.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.244.0"&gt;4.0.244.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.243.0 (2026-05-04 18:24 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.244.0 (2026-05-05 18:16 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.33.0)
+&lt;li&gt;CleanRoomsML (4.0.9.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon Bedrock AgentCore gateways now support MCP Sessions and response streaming from MCP targets. Session timeouts can be set between 15 minutes and 8 hours, and response streaming enables forwarding stream events sent by MCP targets to gateway users.&lt;/li&gt;
+&lt;li&gt;Increase max configurable output limits in the Clean Rooms ML configured model algorithm association resource.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudWatchLogs (4.0.24.0)
+&lt;li&gt;CloudFront (4.0.15.0)
 &lt;ul&gt;
-&lt;li&gt;Adding an additional optional deliverySourceConfiguration field to PutDeliverySource API. This enables customers to pass service-specific configurations through IngestionHub such as tracing enablement or sampling rates that will be propagated to the source resource.&lt;/li&gt;
+&lt;li&gt;Adds support for tagging CloudFront Functions and KeyValueStores resources.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.86.0)
+&lt;li&gt;MarketplaceAgreement (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;This feature allows customers to change the tunnel bandwidth on existing VPN connections using the ModifyVpnConnectionOptions API&lt;/li&gt;
+&lt;li&gt;With this release, Agreements API provides a programmatic way to generate quotes, accept offers, track charges and entitlements, manage renewals and cancellations, and streamline operations entirely through APIs without navigating to the AWS Marketplace website or AWS Management Console.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GeoRoutes (4.0.4.0)
+&lt;li&gt;MediaTailor (4.0.8.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for TravelTimeExceedsDriverWorkHours, ViolatedBlockedRoad, and ViolatedVehicleRestriction notice codes to the CalculateRoutes API response.&lt;/li&gt;
+&lt;li&gt;Added support for Monetization Functions. Monetization Functions let you enrich ad requests with external data and transform session parameters using JSONata expressions, without deploying custom infrastructure.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;LexModelBuildingService (4.0.3.0)
+&lt;li&gt;MedicalImaging (4.0.7.0)
 &lt;ul&gt;
-&lt;li&gt;Lex V1 is deprecated, use Lex V2 instead&lt;/li&gt;
+&lt;li&gt;Add support for DICOM Json Metadata Override features in startDICOMImportJob API&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MediaLive (4.0.20.0)
+&lt;li&gt;OpenSearchService (4.0.20.0)
 &lt;ul&gt;
-&lt;li&gt;Updates the type of the MediaLiveRouterOutputConnectionMap.&lt;/li&gt;
+&lt;li&gt;Amazon OpenSearch Service now supports VPC egress, enabling outbound traffic from your OpenSearch domain to route privately through your VPC instead of the public internet.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SecurityAgent (4.0.1.0)
+&lt;li&gt;Route53Domains (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Security Agent is adding a new target domain verification method for private VPC penetration testing. Additionally, the target domain resource will now have a verification status reason field to surface additional details about domain verification&lt;/li&gt;
+&lt;li&gt;This release adds the TLDInMaintenance exception.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;VPCLattice (4.0.5.0)
+&lt;li&gt;SageMaker (4.0.55.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon VPC Lattice now supports privately resolvable DNS resources&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Extensions.Bedrock.MEAI (4.0.7.0)
-&lt;ul&gt;
-&lt;li&gt;Update &lt;code&gt;IChatClient&lt;/code&gt; with latest &lt;code&gt;BedrockRuntime&lt;/code&gt; / M.E.AI (adding support for multi-modal tool returns and citations with URIs)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.0.6.1
-&lt;ul&gt;
-&lt;li&gt;Add thread safety note to all generated service client classes (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1363561228" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/2098" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/2098/hovercard" href="https://github.com/aws/aws-sdk-net/issues/2098"&gt;#2098&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Adds support for ml.p5.4xlarge instance type for SageMaker Studio JupyterLab and CodeEditor apps for IAD (us-east-1), NRT (ap-northeast-1), BOM (ap-south-1), CGK (ap-southeast-3), GRU (sa-east-1), PDX (us-west-2), CMH (us-east-2).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -75,36 +64,20 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-05-04</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-05-04</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-05-05</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-05-05</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-05-05T00:22:39Z</updated>
+    <updated>2026-05-06T00:22:13Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Logic_1.0.0-beta.1"&gt;Azure.Provisioning.Logic_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Secrets_4.11.0"&gt;Azure.Security.KeyVault.Secrets_4.11.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-04-29)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h2&gt;4.11.0 (2026-05-05)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial beta release of Azure.Provisioning.Logic with support for declarative Azure Logic Apps resource provisioning.&lt;/li&gt;
-&lt;li&gt;Added support for the following resources: &lt;code&gt;IntegrationAccount&lt;/code&gt;, &lt;code&gt;IntegrationAccountAgreement&lt;/code&gt;, &lt;code&gt;IntegrationAccountAssemblyDefinition&lt;/code&gt;, &lt;code&gt;IntegrationAccountBatchConfiguration&lt;/code&gt;, &lt;code&gt;IntegrationAccountCertificate&lt;/code&gt;, &lt;code&gt;IntegrationAccountMap&lt;/code&gt;, &lt;code&gt;IntegrationAccountPartner&lt;/code&gt;, &lt;code&gt;IntegrationAccountSchema&lt;/code&gt;, &lt;code&gt;IntegrationAccountSession&lt;/code&gt;, &lt;code&gt;IntegrationServiceEnvironment&lt;/code&gt;, &lt;code&gt;IntegrationServiceEnvironmentManagedApi&lt;/code&gt;, &lt;code&gt;LogicWorkflow&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Cdn_1.0.0-beta.2"&gt;Azure.Provisioning.Cdn_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.2 (2026-04-30)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Implemented &lt;code&gt;GetResourceNameRequirements&lt;/code&gt; for &lt;code&gt;CdnProfile&lt;/code&gt;,&lt;br&gt;
-&lt;code&gt;FrontDoorEndpoint&lt;/code&gt;, &lt;code&gt;FrontDoorOriginGroup&lt;/code&gt;, &lt;code&gt;FrontDoorOrigin&lt;/code&gt;, and&lt;br&gt;
-&lt;code&gt;FrontDoorRoute&lt;/code&gt; so generated Bicep names use each resource's actual&lt;br&gt;
-Azure length limit instead of the default 24-character cap&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/58181" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/58181/hovercard"&gt;#58181&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Updated dependency on &lt;code&gt;Azure.Core&lt;/code&gt; to &lt;code&gt;1.54.0&lt;/code&gt;, which includes fixes for duplicate schema registration.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -113,111 +86,152 @@ Azure length limit instead of the default 24-character cap&lt;br&gt;
             </content>
   </entry>
   <entry>
-    <title>DataDog/dd-trace-dotnet - Releases - 2026-05-04</title>
-    <id>https://github.com/DataDog/dd-trace-dotnet#2026-05-04</id>
-    <link href="https://github.com/DataDog/dd-trace-dotnet" />
-    <updated>2026-05-05T00:22:40Z</updated>
+    <title>dotnet/SqlClient - Releases - 2026-05-05</title>
+    <id>https://github.com/dotnet/SqlClient#2026-05-05</id>
+    <link href="https://github.com/dotnet/SqlClient" />
+    <updated>2026-05-06T00:22:24Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/releases/tag/v3.43.0"&gt;3.43.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/SqlClient/releases/tag/v7.1.0-preview1"&gt;Preview Release v7.1.0-preview1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;Summary&lt;/h2&gt;
+                                &lt;p&gt;This update brings the following changes since the &lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/7.0/7.0.0.md"&gt;7.0.0&lt;/a&gt; release:&lt;/p&gt;
+&lt;h3&gt;Added&lt;/h3&gt;
+&lt;h4&gt;&lt;code&gt;SqlBatch&lt;/code&gt; Support on .NET Framework&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;What Changed:&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Implement Client-Side Stats (CSS) 1.2.0 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4219562369" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8420" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8420/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8420"&gt;#8420&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Azure Functions] Fix span parenting in ASP.NET Core integration (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3489283205" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7628" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7628/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7628"&gt;#7628&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Performance improvements and bug fixes.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;SqlBatch&lt;/code&gt; and related batch-command support for the .NET Framework target so the batching API is now available across the full supported platform matrix, including &lt;code&gt;net462&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3926" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3926/hovercard"&gt;#3926&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Changes&lt;/h2&gt;
-&lt;h3&gt;Tracer&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Who Benefits:&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Bump Fody from 6.8.1 to 6.9.3 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3583490800" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7764" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7764/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7764"&gt;#7764&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Implement Client-Side Stats (CSS) 1.2.0 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4219562369" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8420" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8420/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8420"&gt;#8420&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Extract &lt;code&gt;ContainsSpanId&lt;/code&gt; to &lt;code&gt;SpanCollection&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4235173880" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8435" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8435/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8435"&gt;#8435&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix processing pipeline for client-side-stats (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4235177086" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8436" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8436/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8436"&gt;#8436&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Improve peer-tag calculation fast-path performance (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4254647084" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8445" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8445/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8445"&gt;#8445&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix .NET Framework startup deadlock from configBuilder sync-over-async (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4309066848" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8498" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8498/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8498"&gt;#8498&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix race condition in Client Side Stats enablement (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4315740238" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8509" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8509/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8509"&gt;#8509&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Apply .cctor deadlock defense on .NET Core (follow-up to &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4309066848" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8498" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8498/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8498"&gt;#8498&lt;/a&gt;) (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4321811192" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8517" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8517/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8517"&gt;#8517&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Apply baggage limits on extract (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4376468436" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8555" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8555/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8555"&gt;#8555&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Applications that target .NET Framework but also want to use the newer batching APIs no longer need a separate implementation strategy from .NET 8/9 applications.&lt;/li&gt;
+&lt;li&gt;Libraries that multi-target .NET Framework and modern .NET can use a more consistent data-access surface area.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Continuous Profiler&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Impact:&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;fix(profiler): five native profiler bug fixes (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4343073425" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8533" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8533/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8533"&gt;#8533&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SqlBatch&lt;/code&gt;, &lt;code&gt;SqlBatchCommand&lt;/code&gt;, and the related execution methods are now usable on .NET Framework builds in addition to .NET.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Debugger&lt;/h3&gt;
+&lt;h4&gt;Cross-Driver Connection-String Synonym Alignment&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;What Changed:&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[Dynamic Instrumentation] DEBUG-4089 Support file-based debugger probes (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3633921779" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7833" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7833/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7833"&gt;#7833&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[SymDB] DEBUG-5086 SymDB upload enable when DI is disabled (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4315815846" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8510" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8510/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8510"&gt;#8510&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Dynamic instrumentation] DEBUG-3374 support &lt;code&gt;@key&lt;/code&gt; and &lt;code&gt;@value&lt;/code&gt; in EL hash iteration (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4316111289" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8511" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8511/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8511"&gt;#8511&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Dynamic Instrumentation] DEBUG-2387 Sample evaluation error snapshots (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4317903799" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8515" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8515/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8515"&gt;#8515&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Dynamic instrumentation] DEBUG-3321 Fix malformed local var sig parsing in PDB reader (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4342869279" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8532" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8532/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8532"&gt;#8532&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Dynamic Instrumentation] DEBUG-5104 support case-insensitive line probe source paths (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4354264325" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8542" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8542/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8542"&gt;#8542&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[SymDB] DEBUG-5382 Add injectable line ranges to method scopes (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4354578433" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8544" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8544/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8544"&gt;#8544&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Revert "[SymDB] DEBUG-5086 SymDB upload enable when DI is disabled" (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4365337276" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8550" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8550/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8550"&gt;#8550&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added additional accepted connection-string synonyms for better compatibility with other SQL Server drivers and existing connection-string conventions. Newly accepted synonyms include &lt;code&gt;ColumnEncryption&lt;/code&gt;, &lt;code&gt;ConnectTimeout&lt;/code&gt;, &lt;code&gt;FailoverPartner&lt;/code&gt;, &lt;code&gt;PacketSize&lt;/code&gt;, and &lt;code&gt;WorkstationId&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4192" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4192/hovercard"&gt;#4192&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Serverless&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Who Benefits:&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[Azure Functions] Fix span parenting in ASP.NET Core integration (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3489283205" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/7628" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/7628/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/7628"&gt;#7628&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Applications migrating connection strings from other SQL Server drivers or shared infrastructure can reuse more existing keywords without rewriting them first.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Fixes&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Impact:&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Fix broken parenting when Ocelot API Gateway is used (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3886387711" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8128" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8128/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8128"&gt;#8128&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix OTLP HTTP/protobuf export failures and improve OTLP integration test reliability (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4257589388" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8449" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8449/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8449"&gt;#8449&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Stop vendoring resx for vendored microsoft code (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4269662647" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8461" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8461/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8461"&gt;#8461&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix warnings native (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4343417072" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8534" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8534/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8534"&gt;#8534&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Do not send DD_GIT_COMMIT_SHA error to telemetry (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4345634038" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8537" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8537/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8537"&gt;#8537&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Normalize CosmosDB resource URI IDs to reduce resource cardinality (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4350918485" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8541" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8541/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8541"&gt;#8541&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Existing canonical keywords continue to work unchanged; this preview simply accepts more equivalent aliases during parsing.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Build / Test&lt;/h3&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;h4&gt;Type Forwards for Authentication Abstractions&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;What Changed:&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Extract Datadog.AutoInstrumentation.Generator.Core shared library (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4084269077" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8312" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8312/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8312"&gt;#8312&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Update vendored System.Collections.Immutable (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4186166819" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8391" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8391/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8391"&gt;#8391&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Docker run retry (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4256105124" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8447" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8447/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8447"&gt;#8447&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Use the built-in System.Reflection.Metadata types for .NET Core (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4261675903" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8454" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8454/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8454"&gt;#8454&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Update vendored System.Reflection.Metadata (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4262200507" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8455" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8455/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8455"&gt;#8455&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Update vendored System.Memory (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4268395889" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8459" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8459/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8459"&gt;#8459&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Update vendored System.Runtime.CompilerServices.Unsafe (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4275793749" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8469" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8469/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8469"&gt;#8469&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Move vendored &lt;code&gt;ReadOnlySpan&amp;lt;T&amp;gt;&lt;/code&gt;, &lt;code&gt;Span&amp;lt;T&amp;gt;&lt;/code&gt; et. al. to System namespace (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4283325206" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8476" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8476/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8476"&gt;#8476&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Cleanup and fix the GeneratePackageVersions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4283885183" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8478" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8478/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8478"&gt;#8478&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Test Package Versions Bump] Updating package versions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4289587927" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8481" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8481/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8481"&gt;#8481&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;fix(microbenchmarks): restore CI Visibility reporting to Datadog (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4295118828" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8483" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8483/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8483"&gt;#8483&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Skip &lt;code&gt;SubmitsOtlpLogs&lt;/code&gt; and &lt;code&gt;SubmitsOtlpMetrics&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4298367655" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8488" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8488/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8488"&gt;#8488&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Add .NET service names to macrobenchmarks (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4301969583" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8490" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8490/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8490"&gt;#8490&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Remove unused references to System.ServiceModelHttp (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4308939185" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8496" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8496/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8496"&gt;#8496&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Update System.Text.Json to latest in source generators project (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4308985893" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8497" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8497/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8497"&gt;#8497&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Test Package Versions Bump] Updating package versions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4310598847" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8502" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8502/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8502"&gt;#8502&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Run the docker-compose version tagging update manually instead of using Dependabot (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4314774842" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8506" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8506/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8506"&gt;#8506&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Try fix flake in OTLP logs tests (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4315353723" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8508" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8508/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8508"&gt;#8508&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;fix(ci): avoid branch-name command injection in image dispatch (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4317430831" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8513" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8513/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8513"&gt;#8513&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Bump softprops/action-gh-release from 2.6.1 to 2.6.2 in the gh-actions-packages group across 1 directory (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4318119580" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8516" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8516/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8516"&gt;#8516&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;List the versions that changed in package-version-bump PRs (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4322297572" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8518" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8518/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8518"&gt;#8518&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Test Package Versions Bump] Updating package versions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4329671684" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8520" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8520/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8520"&gt;#8520&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Smoke Test Docker Image Bump] Updating docker image tags (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4332448567" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8521" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8521/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8521"&gt;#8521&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Bump check-azure-pipeline benchmark job timeout from 1h to 2h (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4334770769" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8523" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8523/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8523"&gt;#8523&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;Environment.Version&lt;/code&gt; to the banned API list (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4334798026" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8524" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8524/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8524"&gt;#8524&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;chore(ci) update one-pipeline (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4337563763" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8527" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8527/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8527"&gt;#8527&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Update &lt;code&gt;UpdateVendors&lt;/code&gt; tool to allow vendoring non-C# code (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4342115876" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8529" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8529/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8529"&gt;#8529&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Update vendored &lt;code&gt;spdlog&lt;/code&gt; library to 1.17.0 (latest) (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4342189614" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8530" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8530/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8530"&gt;#8530&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;unify the target to build integration tests across platforms (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4344104015" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8535" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8535/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8535"&gt;#8535&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Test Package Versions Bump] Updating package versions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4347258409" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8540" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8540/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8540"&gt;#8540&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Manually bump macrobenchmark SLOs and disable notifications (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4357013565" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8545" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8545/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8545"&gt;#8545&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added type forwards from the core &lt;code&gt;Microsoft.Data.SqlClient&lt;/code&gt; assembly to public authentication-related types that were moved into &lt;code&gt;Microsoft.Data.SqlClient.Extensions.Abstractions&lt;/code&gt;, including &lt;code&gt;SqlAuthenticationMethod&lt;/code&gt;, &lt;code&gt;SqlAuthenticationParameters&lt;/code&gt;, &lt;code&gt;SqlAuthenticationProvider&lt;/code&gt;, &lt;code&gt;SqlAuthenticationProviderException&lt;/code&gt;, and &lt;code&gt;SqlAuthenticationToken&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4067" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4067/hovercard"&gt;#4067&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4117" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4117/hovercard"&gt;#4117&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Data Streams Monitoring&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Who Benefits:&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[DSM] Expose TrackTransaction as a public manual API (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4240718813" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8440" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8440/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8440"&gt;#8440&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;DSM overhead optimizations (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4257703329" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8450" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8450/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8450"&gt;#8450&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Applications and libraries compiled against earlier package layouts retain binary compatibility when those authentication types are resolved from the core assembly name.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Miscellaneous&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Impact:&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Take advantage of the &lt;code&gt;Span&amp;lt;T&amp;gt;&lt;/code&gt; namespace changes (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4283344764" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8477" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8477/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8477"&gt;#8477&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Update &lt;code&gt;TagListGenerator&lt;/code&gt; to always use&lt;code&gt;ReadOnlySpan&amp;lt;byte&amp;gt;&lt;/code&gt; properties (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4296632178" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8486" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8486/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8486"&gt;#8486&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Convert &lt;code&gt;Encoding.Utf8.GetBytes&lt;/code&gt; calls to static constants using UTF8 string literals (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4296649731" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8487" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8487/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8487"&gt;#8487&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Remove agent check in client-side-stats (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4310820716" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8503" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8503/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8503"&gt;#8503&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Remove dependabot for instrumentations (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4311034053" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8504" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8504/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8504"&gt;#8504&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;No application code changes are required; the type forwards preserve existing compiled references.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/compare/v3.42.0...v3.43.0"&gt;Changes since 3.42.0&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;User Agent Feature Extension Enabled by Default&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;What Changed:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Enabled the User Agent TDS feature extension by default and removed the opt-in requirement to toggle it through &lt;code&gt;Switch.Microsoft.Data.SqlClient.EnableUserAgent&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4124" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4124/hovercard"&gt;#4124&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4154" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4154/hovercard"&gt;#4154&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Who Benefits:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Operators and diagnostic tooling gain more consistent client-identification metadata during connection establishment without extra application configuration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Impact:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;User-agent metadata is now always sent during login. Applications that previously enabled the switch explicitly can remove that configuration with no functional loss.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Other changes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Reduced allocations when sending large string values to SQL Server. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4072" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4072/hovercard"&gt;#4072&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Internal source-build and packaging consolidation updates: (&lt;a href="https://github.com/dotnet/SqlClient/pull/4033" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4033/hovercard"&gt;#4033&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4068" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4068/hovercard"&gt;#4068&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4204" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4204/hovercard"&gt;#4204&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed &lt;code&gt;SqlBulkCopy&lt;/code&gt; failing on SQL Server 2016 with &lt;code&gt;Invalid column name 'graph_type'&lt;/code&gt; by extracting graph-column metadata with dynamic SQL instead of referencing the column directly. (&lt;a href="https://github.com/dotnet/SqlClient/issues/3714" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/3714/hovercard"&gt;#3714&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4092" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4092/hovercard"&gt;#4092&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4147" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4147/hovercard"&gt;#4147&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;SqlBulkCopy&lt;/code&gt; support for Azure Synapse Analytics dedicated SQL pools by using a Synapse-compatible column-list query path. (&lt;a href="https://github.com/dotnet/SqlClient/issues/4149" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4149/hovercard"&gt;#4149&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4176" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4176/hovercard"&gt;#4176&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4182" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4182/hovercard"&gt;#4182&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;SqlDataReader.GetFieldType()&lt;/code&gt; and &lt;code&gt;GetProviderSpecificFieldType()&lt;/code&gt; to return &lt;code&gt;SqlVector&amp;lt;float&amp;gt;&lt;/code&gt; metadata for vector float32 columns instead of &lt;code&gt;byte[]&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/issues/4104" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4104/hovercard"&gt;#4104&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4105" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4105/hovercard"&gt;#4105&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4152" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4152/hovercard"&gt;#4152&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added the missing &lt;code&gt;System.Data.Common&lt;/code&gt; NuGet dependency for .NET Framework consumers to avoid &lt;code&gt;CS0012&lt;/code&gt; compile failures against newer ADO.NET surface area. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4063" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4063/hovercard"&gt;#4063&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4074" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4074/hovercard"&gt;#4074&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed a &lt;code&gt;SqlDataReader&lt;/code&gt; streaming bug where calling &lt;code&gt;IsDBNull()&lt;/code&gt; before reading a streamed value could skip column data. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4082" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4082/hovercard"&gt;#4082&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed a &lt;code&gt;NullReferenceException&lt;/code&gt; in &lt;code&gt;SqlDataReader&lt;/code&gt; during specific reader state transitions. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4159" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4159/hovercard"&gt;#4159&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Target Platform Support&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;.NET Framework 4.6.2+ (Windows x86, Windows x64, Windows ARM64)&lt;/li&gt;
+&lt;li&gt;.NET 8.0+ (Windows x86, Windows x64, Windows ARM, Windows ARM64, Linux, macOS)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Dependencies&lt;/h3&gt;
+&lt;h4&gt;.NET 9.0&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft.Bcl.Cryptography 9.0.13&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Extensions.Abstractions 1.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Internal.Logging 1.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.SNI.runtime 6.0.2&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 9.0.13&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.SqlServer.Server 1.0.0&lt;/li&gt;
+&lt;li&gt;System.Configuration.ConfigurationManager 9.0.13&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 9.0.13&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;.NET 8.0&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft.Bcl.Cryptography 8.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Extensions.Abstractions 1.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Internal.Logging 1.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.SNI.runtime 6.0.2&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 8.0.1&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.SqlServer.Server 1.0.0&lt;/li&gt;
+&lt;li&gt;System.Configuration.ConfigurationManager 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 8.0.1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;.NET Standard 2.0&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft.Bcl.Cryptography 8.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Extensions.Abstractions 1.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Internal.Logging 1.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.SNI.runtime 6.0.2&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 8.0.1&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.SqlServer.Server 1.0.0&lt;/li&gt;
+&lt;li&gt;System.Configuration.ConfigurationManager 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Text.Json 10.0.3&lt;/li&gt;
+&lt;li&gt;System.Threading.Channels 10.0.3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;.NET Framework 4.6.2+&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft.Bcl.Cryptography 8.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Extensions.Abstractions 1.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Internal.Logging 1.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.SNI 6.0.2&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 8.0.1&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 8.16.0&lt;/li&gt;
+&lt;li&gt;System.Buffers 4.6.1&lt;/li&gt;
+&lt;li&gt;System.Data.Common 4.3.0&lt;/li&gt;
+&lt;li&gt;System.Diagnostics.DiagnosticSource 10.0.3&lt;/li&gt;
+&lt;li&gt;System.Memory 4.6.3&lt;/li&gt;
+&lt;li&gt;System.Runtime.InteropServices.RuntimeInformation 4.3.0&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Text.Json 10.0.3&lt;/li&gt;
+&lt;li&gt;System.Threading.Channels 10.0.3&lt;/li&gt;
+&lt;li&gt;System.ValueTuple 4.6.2&lt;/li&gt;
+&lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
@@ -225,46 +239,194 @@ Azure length limit instead of the default 24-character cap&lt;br&gt;
             </content>
   </entry>
   <entry>
-    <title>grpc/grpc-dotnet - Releases - 2026-05-04</title>
-    <id>https://github.com/grpc/grpc-dotnet#2026-05-04</id>
-    <link href="https://github.com/grpc/grpc-dotnet" />
-    <updated>2026-05-05T00:22:51Z</updated>
+    <title>googleapis/google-cloud-dotnet - Releases - 2026-05-05</title>
+    <id>https://github.com/googleapis/google-cloud-dotnet#2026-05-05</id>
+    <link href="https://github.com/googleapis/google-cloud-dotnet" />
+    <updated>2026-05-06T00:22:26Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc-dotnet/releases/tag/v2.80.0"&gt;Release v2.80.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Ces.V1Beta-1.0.0-beta05"&gt;Google.Cloud.Ces.V1Beta version 1.0.0-beta05&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Update .NET 10, System.CommandLine 2.0.0, fix warnings by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3614784495" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2677" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2677/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2677"&gt;#2677&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix System.CommandLine 2.0.0 Uri parsing in GrpcClient benchmark app by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ilonatommy/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ilonatommy"&gt;@ilonatommy&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4035145854" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2695" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2695/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2695"&gt;#2695&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Implement GrpcServiceEndpointConventionBuilder.Finally by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/halter73/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/halter73"&gt;@halter73&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4030344641" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2693" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2693/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2693"&gt;#2693&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump axios from 1.11.0 to 1.12.2 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3471562093" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2669" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2669/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2669"&gt;#2669&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump webpack from 5.101.0 to 5.105.0 in /examples/Browser/Server/wwwroot by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3910648084" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2689" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2689/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2689"&gt;#2689&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump lodash from 4.17.21 to 4.17.23 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3840475192" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2687" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2687/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2687"&gt;#2687&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump glob from 10.4.5 to 10.5.0 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3640738093" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2679" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2679/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2679"&gt;#2679&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump basic-ftp from 5.0.5 to 5.2.0 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4085321369" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2698" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2698/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2698"&gt;#2698&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump serialize-javascript and terser-webpack-plugin in /examples/Browser/Server/wwwroot by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4085321425" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2699" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2699/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2699"&gt;#2699&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump minimatch in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4085321581" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2700" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2700/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2700"&gt;#2700&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump axios from 1.12.2 to 1.13.6 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4085321850" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2701" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2701/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2701"&gt;#2701&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump js-yaml in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4085322792" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2702" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2702/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2702"&gt;#2702&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Handle Trailers-Only OK responses in streaming calls without exception handling by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/michaelmccord/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/michaelmccord"&gt;@michaelmccord&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4067099652" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2697" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2697/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2697"&gt;#2697&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump picomatch in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4139083220" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2703" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2703/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2703"&gt;#2703&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Implement v1 reflection service and clean up integration by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4139464774" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2704" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2704/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2704"&gt;#2704&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump brace-expansion in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4164230602" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2706" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2706/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2706"&gt;#2706&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix flaky PickAsync_UpdateAddressesWhileRequestingConnection_DoesNotDeadlock test by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4148598598" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2705" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2705/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2705"&gt;#2705&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump Tools Version prep for release v2.80.0 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/asheshvidyut/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/asheshvidyut"&gt;@asheshvidyut&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4169613978" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2707" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2707/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2707"&gt;#2707&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[Release v2.80.x] Fix the version number - Step 3 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/asheshvidyut/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/asheshvidyut"&gt;@asheshvidyut&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4183657958" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2711" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2711/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2711"&gt;#2711&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Rel (v1.80.0) Prep for stable release by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/asheshvidyut/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/asheshvidyut"&gt;@asheshvidyut&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4314013963" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2723" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2723/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2723"&gt;#2723&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add ability to specify mocked tool responses in ExecuteTool&lt;/li&gt;
+&lt;li&gt;Add ExportEvaluation RPC&lt;/li&gt;
+&lt;li&gt;Add support for app level fallback config&lt;/li&gt;
+&lt;li&gt;Add evaluation run and result information to ImportEvaluationsResponse&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;New Contributors&lt;/h2&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.CloudSecurityCompliance.V1-1.0.0-beta05"&gt;Google.Cloud.CloudSecurityCompliance.V1 version 1.0.0-beta05&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ilonatommy/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ilonatommy"&gt;@ilonatommy&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4035145854" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2695" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2695/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2695"&gt;#2695&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/halter73/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/halter73"&gt;@halter73&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4030344641" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2693" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2693/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2693"&gt;#2693&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/michaelmccord/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/michaelmccord"&gt;@michaelmccord&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4067099652" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2697" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2697/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2697"&gt;#2697&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Adding client libraries for Deployment API Compliance Manager Service&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/grpc/grpc-dotnet/compare/v2.76.0...v2.80.0"&gt;&lt;tt&gt;v2.76.0...v2.80.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated docs for the APIs&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Shopping.Merchant.Reports.V1-1.2.0"&gt;Google.Shopping.Merchant.Reports.V1 version 1.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add &lt;code&gt;store_type&lt;/code&gt; to &lt;code&gt;product_performance_view&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;status_per_reporting_context&lt;/code&gt; to &lt;code&gt;product_view&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update comments for &lt;code&gt;SearchRequest&lt;/code&gt;, &lt;code&gt;ProductView&lt;/code&gt;, and &lt;code&gt;AggregatedReportingContextStatus&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Shopping.Merchant.Products.V1-1.6.0"&gt;Google.Shopping.Merchant.Products.V1 version 1.6.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A new optional field &lt;code&gt;video_links&lt;/code&gt; is added to the &lt;code&gt;.google.shopping.merchant.products.v1.ProductAttributes&lt;/code&gt; message&lt;/li&gt;
+&lt;li&gt;A new optional field &lt;code&gt;annual_percentage_rate&lt;/code&gt; is added to the &lt;code&gt;.google.shopping.merchant.products.v1.ProductInstallment&lt;/code&gt; message&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A comment for field &lt;code&gt;gtins&lt;/code&gt; in message &lt;code&gt;.google.shopping.merchant.products.v1.ProductAttributes&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;mpn&lt;/code&gt; in message &lt;code&gt;.google.shopping.merchant.products.v1.ProductAttributes&lt;/code&gt; is changed&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.ModelArmor.V1Beta-1.0.0-beta06"&gt;Google.Cloud.ModelArmor.V1Beta version 1.0.0-beta06&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add streaming methods StreamSanitizeUserPrompt and StreamSanitizeModelResponse&lt;/li&gt;
+&lt;li&gt;Add GOOGLE_MCP_SERVER enforcement point and McpServerFloorSetting&lt;/li&gt;
+&lt;li&gt;Add ZIP type and file_label to ByteData&lt;/li&gt;
+&lt;li&gt;Add StreamingMode enum and field to sanitize requests&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update description for ListLocations and various proto comments&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Chronicle.V1-1.0.0-beta05"&gt;Google.Cloud.Chronicle.V1 version 1.0.0-beta05&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Adding Client Libraries for BigQueryExportService&lt;/li&gt;
+&lt;li&gt;Support NativeDashboardService, DashboardChartService, DashboardQueryService, FeaturedContentNativeDashboardService, FeaturedContentMetadata for v1&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Iam.V3Beta-1.0.0-beta03"&gt;Google.Cloud.Iam.V3Beta version 1.0.0-beta03&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;New iam v3beta client for AccessPolicies, this is step 4&amp;amp;5 for go/client-user-guide?API_NAME=iam.googleapis.com%09&amp;amp;API_SHORTNAME=iam&amp;amp;API_PATH=google%2Fiam&amp;amp;API_VERSION=v3&amp;amp;PROTO_SERVICE=AccessPolicies#run-api-publish-changelist&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated comments across various messages, fields, enums, and methods in the IAM v3beta API, including PolicyBinding, PolicyKind, ListPolicyBindingsRequest, and SearchTargetPolicyBindingsRequest to improve clarity&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.StorageBatchOperations.V1-1.0.0-beta06"&gt;Google.Cloud.StorageBatchOperations.V1 version 1.0.0-beta06&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add object custom contexts counters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A comment for field &lt;code&gt;failed_object_count&lt;/code&gt; in message &lt;code&gt;.google.cloud.storagebatchoperations.v1.Counters&lt;/code&gt; is changed&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Spanner-5.13.0-beta05"&gt;Google.Cloud.Spanner version 5.13.0-beta05&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add ClientContext to commands (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4137494205" data-permission-text="Title is private" data-url="https://github.com/googleapis/google-cloud-dotnet/issues/15534" data-hovercard-type="pull_request" data-hovercard-url="/googleapis/google-cloud-dotnet/pull/15534/hovercard" href="https://github.com/googleapis/google-cloud-dotnet/pull/15534"&gt;#15534&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;isolation_level&lt;/code&gt; and &lt;code&gt;read_lock_mode&lt;/code&gt; are added to message &lt;code&gt;.google.spanner.v1.CommitResponse&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Redis.Cluster.V1-1.7.0"&gt;Google.Cloud.Redis.Cluster.V1 version 1.7.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[Memorystore for Redis Cluster] Updating new node types added&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-05-05</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-05-05</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2026-05-06T00:22:35Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/PersistentStorage-1.1.0"&gt;PersistentStorage-1.1.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.PersistentStorage.Abstractions/1.1.0" rel="nofollow"&gt;OpenTelemetry.PersistentStorage.Abstractions v1.1.0&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Add &lt;code&gt;net8.0&lt;/code&gt; and &lt;code&gt;net10.0&lt;/code&gt; target frameworks.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4128" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4128/hovercard"&gt;#4128&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add support for &lt;code&gt;ReadOnlySpan&amp;lt;byte&amp;gt;&lt;/code&gt; as buffers.&lt;br&gt;
+Obsoletes &lt;code&gt;byte[]&lt;/code&gt; buffers in the API.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4128" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4128/hovercard"&gt;#4128&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/PersistentStorage-1.1.0/src/OpenTelemetry.PersistentStorage.Abstractions/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.PersistentStorage.FileSystem/1.1.0" rel="nofollow"&gt;OpenTelemetry.PersistentStorage.FileSystem v1.1.0&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Add &lt;code&gt;net8.0&lt;/code&gt; and &lt;code&gt;net10.0&lt;/code&gt; target frameworks.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4128" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4128/hovercard"&gt;#4128&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add support for &lt;code&gt;ReadOnlySpan&amp;lt;byte&amp;gt;&lt;/code&gt; as buffers.&lt;br&gt;
+Obsoletes &lt;code&gt;byte[]&lt;/code&gt; buffers in the API.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4128" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4128/hovercard"&gt;#4128&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/PersistentStorage-1.1.0/src/OpenTelemetry.PersistentStorage.FileSystem/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
