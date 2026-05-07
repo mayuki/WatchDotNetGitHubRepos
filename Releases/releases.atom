@@ -1,59 +1,64 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-05-06T00:22:38Z</updated>
+  <updated>2026-05-07T00:22:19Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-05-05</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-05-05</id>
+    <title>aws/aws-sdk-net - Releases - 2026-05-06</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-05-06</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-05-06T00:22:12Z</updated>
+    <updated>2026-05-07T00:22:02Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.244.0"&gt;4.0.244.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.245.0"&gt;4.0.245.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.244.0 (2026-05-05 18:16 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.245.0 (2026-05-06 18:38 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;CleanRoomsML (4.0.9.0)
+&lt;li&gt;BedrockAgentCoreControl (4.0.34.0)
 &lt;ul&gt;
-&lt;li&gt;Increase max configurable output limits in the Clean Rooms ML configured model algorithm association resource.&lt;/li&gt;
+&lt;li&gt;Adds support for bring-your-own file system in AgentCore Runtime. Developers can mount Amazon S3 Files and Amazon EFS access points directly into agent sessions using filesystemConfigurations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudFront (4.0.15.0)
+&lt;li&gt;Glue (4.0.29.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for tagging CloudFront Functions and KeyValueStores resources.&lt;/li&gt;
+&lt;li&gt;Adds support for a CustomLogGroupPrefix parameter in StartDataQualityRulesetEvaluationRun to specify custom CloudWatch log group paths, and a RulesetName filter in ListDataQualityRulesetEvaluationRuns to filter evaluation runs by ruleset name.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MarketplaceAgreement (4.0.6.0)
+&lt;li&gt;Imagebuilder (4.0.11.0)
 &lt;ul&gt;
-&lt;li&gt;With this release, Agreements API provides a programmatic way to generate quotes, accept offers, track charges and entitlements, manage renewals and cancellations, and streamline operations entirely through APIs without navigating to the AWS Marketplace website or AWS Management Console.&lt;/li&gt;
+&lt;li&gt;The ImportDiskImage API now enforces a maximum character limit of 128 characters on the image name field.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MediaTailor (4.0.8.0)
+&lt;li&gt;LexModelsV2 (4.0.7.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for Monetization Functions. Monetization Functions let you enrich ad requests with external data and transform session parameters using JSONata expressions, without deploying custom infrastructure.&lt;/li&gt;
+&lt;li&gt;Amazon Lex V2 introduces audio filler support for speech-to-speech bots. Configure melody or typing sounds that play during backend processing to reduce perceived latency and maintain a natural conversational experience for callers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MedicalImaging (4.0.7.0)
+&lt;li&gt;MWAA (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for DICOM Json Metadata Override features in startDICOMImportJob API&lt;/li&gt;
+&lt;li&gt;Amazon MWAA now supports a PublicAndPrivate webserver access mode. The Airflow web server is accessible over both public and private endpoints, enabling workers in VPCs without internet access to reach the Task API privately while retaining public access to the Airflow UI.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;OpenSearchService (4.0.20.0)
+&lt;li&gt;S3 (4.0.23.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon OpenSearch Service now supports VPC egress, enabling outbound traffic from your OpenSearch domain to route privately through your VPC instead of the public internet.&lt;/li&gt;
+&lt;li&gt;Validate outpost access point resource name&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Route53Domains (4.0.4.0)
+&lt;li&gt;SageMaker (4.0.56.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds the TLDInMaintenance exception.&lt;/li&gt;
+&lt;li&gt;Amazon SageMaker HyperPod now returns ImageVersionStatus in DescribeCluster, DescribeClusterNode, and ListClusterNodes responses, indicating whether cluster instances are running the latest available image version.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.55.0)
+&lt;li&gt;SecurityHub (4.0.10.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for ml.p5.4xlarge instance type for SageMaker Studio JupyterLab and CodeEditor apps for IAD (us-east-1), NRT (ap-northeast-1), BOM (ap-south-1), CGK (ap-southeast-3), GRU (sa-east-1), PDX (us-west-2), CMH (us-east-2).&lt;/li&gt;
+&lt;li&gt;Release GenerateRecommendedPolicyV2 and GetRecommendedPolicyV2 APIs. This supports generating and retrieving policy recommendations to remediate unused permissions findings that are now being supported on Security Hub.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Extensions.Bedrock.MEAI (4.0.8.0)
+&lt;ul&gt;
+&lt;li&gt;(Preview) Add Bedrock Nova Sonic realtime provider implementing &lt;code&gt;IRealtimeClient&lt;/code&gt; / &lt;code&gt;IRealtimeClientSession&lt;/code&gt; for real-time bidirectional audio conversations with tool calling support.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -64,20 +69,92 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-05-05</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-05-05</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-05-06</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-05-06</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-05-06T00:22:13Z</updated>
+    <updated>2026-05-07T00:22:03Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Secrets_4.11.0"&gt;Azure.Security.KeyVault.Secrets_4.11.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.55.0"&gt;Azure.Core_1.55.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;4.11.0 (2026-05-05)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
+                                &lt;h2&gt;1.55.0 (2026-05-05)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated dependency on &lt;code&gt;Azure.Core&lt;/code&gt; to &lt;code&gt;1.54.0&lt;/code&gt;, which includes fixes for duplicate schema registration.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;AzureLocation.DenmarkEast&lt;/code&gt; for the Denmark East Azure region.&lt;/li&gt;
+&lt;li&gt;Added experimental &lt;code&gt;AdditionalQueryParameters&lt;/code&gt; property to &lt;code&gt;TokenCredentialOptions&lt;/code&gt; to enable forwarding extra query string parameters to MSAL during authentication.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed &lt;code&gt;AzureDeveloperCliCredential&lt;/code&gt; to correctly parse error messages from Azure Developer CLI v1.23.7 and later, which previously caused raw JSON to surface in &lt;code&gt;AuthenticationFailedException&lt;/code&gt; instead of the underlying error text.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6258655"&gt;Azure.Template_1.0.3-beta.6258655&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.3-beta.6258655 (2026-05-06)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;WidgetAnalyticsClientSettings&lt;/code&gt; to support creating a &lt;code&gt;WidgetAnalyticsClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/System.ClientModel_1.11.0"&gt;System.ClientModel_1.11.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.11.0 (2026-05-05)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;CredentialResolver&lt;/code&gt; abstract class — an extensibility hook that lets credential providers participate in the configuration-driven credential resolution pipeline. Resolvers are invoked in registration order until one produces an &lt;code&gt;AuthenticationTokenProvider&lt;/code&gt; for a given configuration section.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;IConfiguration.GetCredential(...)&lt;/code&gt; extension overloads on &lt;code&gt;ConfigurationExtensions&lt;/code&gt; that walk a chain of &lt;code&gt;CredentialResolver&lt;/code&gt; instances against a named credential section, with optional &lt;code&gt;configureOverrides&lt;/code&gt; to mutate the section in-flight.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;IConfiguration.GetClientSettings&amp;lt;T&amp;gt;(...)&lt;/code&gt; extension overloads that bind a &lt;code&gt;ClientSettings&lt;/code&gt;-derived type and resolve its &lt;code&gt;Credential&lt;/code&gt; via the resolver chain.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;AddCredentialResolver&amp;lt;T&amp;gt;&lt;/code&gt; extension methods on &lt;code&gt;IServiceCollection&lt;/code&gt; and &lt;code&gt;IHostApplicationBuilder&lt;/code&gt; that register a &lt;code&gt;CredentialResolver&lt;/code&gt; once per implementation type (idempotent).&lt;/li&gt;
+&lt;li&gt;The DI &lt;code&gt;AddClient&amp;lt;TClient, TSettings&amp;gt;&lt;/code&gt; / &lt;code&gt;AddKeyedClient&amp;lt;TClient, TSettings&amp;gt;&lt;/code&gt; paths now auto-resolve credentials from the registered resolver chain, so callers no longer need to wire up provider-specific helpers like &lt;code&gt;WithAzureCredential&lt;/code&gt; explicitly when a resolver is registered.&lt;/li&gt;
+&lt;li&gt;Resolving the same credential section more than once returns the same &lt;code&gt;AuthenticationTokenProvider&lt;/code&gt; instance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;IClientBuilder&lt;/code&gt; no longer inherits from &lt;code&gt;IHostApplicationBuilder&lt;/code&gt;. The internal &lt;code&gt;ClientBuilder&lt;/code&gt; implementation now uses composition instead of inheritance. &lt;code&gt;PostConfigure&lt;/code&gt; return type changed from &lt;code&gt;IHostApplicationBuilder&lt;/code&gt; to &lt;code&gt;IClientBuilder&lt;/code&gt;. &lt;code&gt;AddClient&lt;/code&gt; and &lt;code&gt;AddKeyedClient&lt;/code&gt; continue to return &lt;code&gt;IClientBuilder&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Keys_4.10.0"&gt;Azure.Security.KeyVault.Keys_4.10.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;4.10.0 (2026-05-05)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;KeyProperties.KeySize&lt;/code&gt; to expose the key size in bits.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Administration_4.8.0"&gt;Azure.Security.KeyVault.Administration_4.8.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;4.8.0 (2026-05-05)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;KeyVaultAccessControlClientSettings&lt;/code&gt; to support creating a &lt;code&gt;KeyVaultAccessControlClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;KeyVaultRestClientSettings&lt;/code&gt; to support creating a &lt;code&gt;KeyVaultRestClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ComputeSchedule_1.2.0-beta.3"&gt;Azure.ResourceManager.ComputeSchedule_1.2.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0-beta.3 (2026-05-01)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the ComputeSchedule RP api-version from &lt;code&gt;2026-03-01-preview&lt;/code&gt; to &lt;code&gt;2026-04-15-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Updated the property type &lt;code&gt;baseProfile&lt;/code&gt; -&amp;gt; &lt;code&gt;virtualMachineBaseProfile&lt;/code&gt; with strongly-typed model for validation&lt;/li&gt;
+&lt;li&gt;Updated the property type &lt;code&gt;resourceOverrides&lt;/code&gt; -&amp;gt; &lt;code&gt;virtualMachineOverrides&lt;/code&gt; with strongly-typed model for validation&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -86,347 +163,63 @@
             </content>
   </entry>
   <entry>
-    <title>dotnet/SqlClient - Releases - 2026-05-05</title>
-    <id>https://github.com/dotnet/SqlClient#2026-05-05</id>
-    <link href="https://github.com/dotnet/SqlClient" />
-    <updated>2026-05-06T00:22:24Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/SqlClient/releases/tag/v7.1.0-preview1"&gt;Preview Release v7.1.0-preview1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;This update brings the following changes since the &lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/7.0/7.0.0.md"&gt;7.0.0&lt;/a&gt; release:&lt;/p&gt;
-&lt;h3&gt;Added&lt;/h3&gt;
-&lt;h4&gt;&lt;code&gt;SqlBatch&lt;/code&gt; Support on .NET Framework&lt;/h4&gt;
-&lt;p&gt;&lt;em&gt;What Changed:&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;SqlBatch&lt;/code&gt; and related batch-command support for the .NET Framework target so the batching API is now available across the full supported platform matrix, including &lt;code&gt;net462&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3926" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3926/hovercard"&gt;#3926&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;Who Benefits:&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Applications that target .NET Framework but also want to use the newer batching APIs no longer need a separate implementation strategy from .NET 8/9 applications.&lt;/li&gt;
-&lt;li&gt;Libraries that multi-target .NET Framework and modern .NET can use a more consistent data-access surface area.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;Impact:&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;SqlBatch&lt;/code&gt;, &lt;code&gt;SqlBatchCommand&lt;/code&gt;, and the related execution methods are now usable on .NET Framework builds in addition to .NET.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Cross-Driver Connection-String Synonym Alignment&lt;/h4&gt;
-&lt;p&gt;&lt;em&gt;What Changed:&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Added additional accepted connection-string synonyms for better compatibility with other SQL Server drivers and existing connection-string conventions. Newly accepted synonyms include &lt;code&gt;ColumnEncryption&lt;/code&gt;, &lt;code&gt;ConnectTimeout&lt;/code&gt;, &lt;code&gt;FailoverPartner&lt;/code&gt;, &lt;code&gt;PacketSize&lt;/code&gt;, and &lt;code&gt;WorkstationId&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4192" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4192/hovercard"&gt;#4192&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;Who Benefits:&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Applications migrating connection strings from other SQL Server drivers or shared infrastructure can reuse more existing keywords without rewriting them first.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;Impact:&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Existing canonical keywords continue to work unchanged; this preview simply accepts more equivalent aliases during parsing.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Changed&lt;/h3&gt;
-&lt;h4&gt;Type Forwards for Authentication Abstractions&lt;/h4&gt;
-&lt;p&gt;&lt;em&gt;What Changed:&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Added type forwards from the core &lt;code&gt;Microsoft.Data.SqlClient&lt;/code&gt; assembly to public authentication-related types that were moved into &lt;code&gt;Microsoft.Data.SqlClient.Extensions.Abstractions&lt;/code&gt;, including &lt;code&gt;SqlAuthenticationMethod&lt;/code&gt;, &lt;code&gt;SqlAuthenticationParameters&lt;/code&gt;, &lt;code&gt;SqlAuthenticationProvider&lt;/code&gt;, &lt;code&gt;SqlAuthenticationProviderException&lt;/code&gt;, and &lt;code&gt;SqlAuthenticationToken&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4067" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4067/hovercard"&gt;#4067&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4117" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4117/hovercard"&gt;#4117&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;Who Benefits:&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Applications and libraries compiled against earlier package layouts retain binary compatibility when those authentication types are resolved from the core assembly name.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;Impact:&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;No application code changes are required; the type forwards preserve existing compiled references.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;User Agent Feature Extension Enabled by Default&lt;/h4&gt;
-&lt;p&gt;&lt;em&gt;What Changed:&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Enabled the User Agent TDS feature extension by default and removed the opt-in requirement to toggle it through &lt;code&gt;Switch.Microsoft.Data.SqlClient.EnableUserAgent&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4124" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4124/hovercard"&gt;#4124&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4154" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4154/hovercard"&gt;#4154&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;Who Benefits:&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Operators and diagnostic tooling gain more consistent client-identification metadata during connection establishment without extra application configuration.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;Impact:&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;User-agent metadata is now always sent during login. Applications that previously enabled the switch explicitly can remove that configuration with no functional loss.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Other changes&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Reduced allocations when sending large string values to SQL Server. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4072" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4072/hovercard"&gt;#4072&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Internal source-build and packaging consolidation updates: (&lt;a href="https://github.com/dotnet/SqlClient/pull/4033" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4033/hovercard"&gt;#4033&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4068" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4068/hovercard"&gt;#4068&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4204" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4204/hovercard"&gt;#4204&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed &lt;code&gt;SqlBulkCopy&lt;/code&gt; failing on SQL Server 2016 with &lt;code&gt;Invalid column name 'graph_type'&lt;/code&gt; by extracting graph-column metadata with dynamic SQL instead of referencing the column directly. (&lt;a href="https://github.com/dotnet/SqlClient/issues/3714" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/3714/hovercard"&gt;#3714&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4092" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4092/hovercard"&gt;#4092&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4147" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4147/hovercard"&gt;#4147&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fixed &lt;code&gt;SqlBulkCopy&lt;/code&gt; support for Azure Synapse Analytics dedicated SQL pools by using a Synapse-compatible column-list query path. (&lt;a href="https://github.com/dotnet/SqlClient/issues/4149" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4149/hovercard"&gt;#4149&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4176" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4176/hovercard"&gt;#4176&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4182" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4182/hovercard"&gt;#4182&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fixed &lt;code&gt;SqlDataReader.GetFieldType()&lt;/code&gt; and &lt;code&gt;GetProviderSpecificFieldType()&lt;/code&gt; to return &lt;code&gt;SqlVector&amp;lt;float&amp;gt;&lt;/code&gt; metadata for vector float32 columns instead of &lt;code&gt;byte[]&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/issues/4104" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4104/hovercard"&gt;#4104&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4105" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4105/hovercard"&gt;#4105&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4152" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4152/hovercard"&gt;#4152&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Added the missing &lt;code&gt;System.Data.Common&lt;/code&gt; NuGet dependency for .NET Framework consumers to avoid &lt;code&gt;CS0012&lt;/code&gt; compile failures against newer ADO.NET surface area. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4063" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4063/hovercard"&gt;#4063&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4074" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4074/hovercard"&gt;#4074&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fixed a &lt;code&gt;SqlDataReader&lt;/code&gt; streaming bug where calling &lt;code&gt;IsDBNull()&lt;/code&gt; before reading a streamed value could skip column data. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4082" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4082/hovercard"&gt;#4082&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fixed a &lt;code&gt;NullReferenceException&lt;/code&gt; in &lt;code&gt;SqlDataReader&lt;/code&gt; during specific reader state transitions. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4159" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4159/hovercard"&gt;#4159&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Target Platform Support&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;.NET Framework 4.6.2+ (Windows x86, Windows x64, Windows ARM64)&lt;/li&gt;
-&lt;li&gt;.NET 8.0+ (Windows x86, Windows x64, Windows ARM, Windows ARM64, Linux, macOS)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Dependencies&lt;/h3&gt;
-&lt;h4&gt;.NET 9.0&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Microsoft.Bcl.Cryptography 9.0.13&lt;/li&gt;
-&lt;li&gt;Microsoft.Data.SqlClient.Extensions.Abstractions 1.0.0&lt;/li&gt;
-&lt;li&gt;Microsoft.Data.SqlClient.Internal.Logging 1.0.0&lt;/li&gt;
-&lt;li&gt;Microsoft.Data.SqlClient.SNI.runtime 6.0.2&lt;/li&gt;
-&lt;li&gt;Microsoft.Extensions.Caching.Memory 9.0.13&lt;/li&gt;
-&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 8.16.0&lt;/li&gt;
-&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 8.16.0&lt;/li&gt;
-&lt;li&gt;Microsoft.SqlServer.Server 1.0.0&lt;/li&gt;
-&lt;li&gt;System.Configuration.ConfigurationManager 9.0.13&lt;/li&gt;
-&lt;li&gt;System.Security.Cryptography.Pkcs 9.0.13&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;.NET 8.0&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Microsoft.Bcl.Cryptography 8.0.0&lt;/li&gt;
-&lt;li&gt;Microsoft.Data.SqlClient.Extensions.Abstractions 1.0.0&lt;/li&gt;
-&lt;li&gt;Microsoft.Data.SqlClient.Internal.Logging 1.0.0&lt;/li&gt;
-&lt;li&gt;Microsoft.Data.SqlClient.SNI.runtime 6.0.2&lt;/li&gt;
-&lt;li&gt;Microsoft.Extensions.Caching.Memory 8.0.1&lt;/li&gt;
-&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 8.16.0&lt;/li&gt;
-&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 8.16.0&lt;/li&gt;
-&lt;li&gt;Microsoft.SqlServer.Server 1.0.0&lt;/li&gt;
-&lt;li&gt;System.Configuration.ConfigurationManager 8.0.1&lt;/li&gt;
-&lt;li&gt;System.Security.Cryptography.Pkcs 8.0.1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;.NET Standard 2.0&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Microsoft.Bcl.Cryptography 8.0.0&lt;/li&gt;
-&lt;li&gt;Microsoft.Data.SqlClient.Extensions.Abstractions 1.0.0&lt;/li&gt;
-&lt;li&gt;Microsoft.Data.SqlClient.Internal.Logging 1.0.0&lt;/li&gt;
-&lt;li&gt;Microsoft.Data.SqlClient.SNI.runtime 6.0.2&lt;/li&gt;
-&lt;li&gt;Microsoft.Extensions.Caching.Memory 8.0.1&lt;/li&gt;
-&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 8.16.0&lt;/li&gt;
-&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 8.16.0&lt;/li&gt;
-&lt;li&gt;Microsoft.SqlServer.Server 1.0.0&lt;/li&gt;
-&lt;li&gt;System.Configuration.ConfigurationManager 8.0.1&lt;/li&gt;
-&lt;li&gt;System.Security.Cryptography.Pkcs 8.0.1&lt;/li&gt;
-&lt;li&gt;System.Text.Json 10.0.3&lt;/li&gt;
-&lt;li&gt;System.Threading.Channels 10.0.3&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;.NET Framework 4.6.2+&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Microsoft.Bcl.Cryptography 8.0.0&lt;/li&gt;
-&lt;li&gt;Microsoft.Data.SqlClient.Extensions.Abstractions 1.0.0&lt;/li&gt;
-&lt;li&gt;Microsoft.Data.SqlClient.Internal.Logging 1.0.0&lt;/li&gt;
-&lt;li&gt;Microsoft.Data.SqlClient.SNI 6.0.2&lt;/li&gt;
-&lt;li&gt;Microsoft.Extensions.Caching.Memory 8.0.1&lt;/li&gt;
-&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 8.16.0&lt;/li&gt;
-&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 8.16.0&lt;/li&gt;
-&lt;li&gt;System.Buffers 4.6.1&lt;/li&gt;
-&lt;li&gt;System.Data.Common 4.3.0&lt;/li&gt;
-&lt;li&gt;System.Diagnostics.DiagnosticSource 10.0.3&lt;/li&gt;
-&lt;li&gt;System.Memory 4.6.3&lt;/li&gt;
-&lt;li&gt;System.Runtime.InteropServices.RuntimeInformation 4.3.0&lt;/li&gt;
-&lt;li&gt;System.Security.Cryptography.Pkcs 8.0.1&lt;/li&gt;
-&lt;li&gt;System.Text.Json 10.0.3&lt;/li&gt;
-&lt;li&gt;System.Threading.Channels 10.0.3&lt;/li&gt;
-&lt;li&gt;System.ValueTuple 4.6.2&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>googleapis/google-cloud-dotnet - Releases - 2026-05-05</title>
-    <id>https://github.com/googleapis/google-cloud-dotnet#2026-05-05</id>
-    <link href="https://github.com/googleapis/google-cloud-dotnet" />
-    <updated>2026-05-06T00:22:26Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Ces.V1Beta-1.0.0-beta05"&gt;Google.Cloud.Ces.V1Beta version 1.0.0-beta05&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add ability to specify mocked tool responses in ExecuteTool&lt;/li&gt;
-&lt;li&gt;Add ExportEvaluation RPC&lt;/li&gt;
-&lt;li&gt;Add support for app level fallback config&lt;/li&gt;
-&lt;li&gt;Add evaluation run and result information to ImportEvaluationsResponse&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.CloudSecurityCompliance.V1-1.0.0-beta05"&gt;Google.Cloud.CloudSecurityCompliance.V1 version 1.0.0-beta05&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Adding client libraries for Deployment API Compliance Manager Service&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated docs for the APIs&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Shopping.Merchant.Reports.V1-1.2.0"&gt;Google.Shopping.Merchant.Reports.V1 version 1.2.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add &lt;code&gt;store_type&lt;/code&gt; to &lt;code&gt;product_performance_view&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;status_per_reporting_context&lt;/code&gt; to &lt;code&gt;product_view&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update comments for &lt;code&gt;SearchRequest&lt;/code&gt;, &lt;code&gt;ProductView&lt;/code&gt;, and &lt;code&gt;AggregatedReportingContextStatus&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Shopping.Merchant.Products.V1-1.6.0"&gt;Google.Shopping.Merchant.Products.V1 version 1.6.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;A new optional field &lt;code&gt;video_links&lt;/code&gt; is added to the &lt;code&gt;.google.shopping.merchant.products.v1.ProductAttributes&lt;/code&gt; message&lt;/li&gt;
-&lt;li&gt;A new optional field &lt;code&gt;annual_percentage_rate&lt;/code&gt; is added to the &lt;code&gt;.google.shopping.merchant.products.v1.ProductInstallment&lt;/code&gt; message&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;A comment for field &lt;code&gt;gtins&lt;/code&gt; in message &lt;code&gt;.google.shopping.merchant.products.v1.ProductAttributes&lt;/code&gt; is changed&lt;/li&gt;
-&lt;li&gt;A comment for field &lt;code&gt;mpn&lt;/code&gt; in message &lt;code&gt;.google.shopping.merchant.products.v1.ProductAttributes&lt;/code&gt; is changed&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.ModelArmor.V1Beta-1.0.0-beta06"&gt;Google.Cloud.ModelArmor.V1Beta version 1.0.0-beta06&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add streaming methods StreamSanitizeUserPrompt and StreamSanitizeModelResponse&lt;/li&gt;
-&lt;li&gt;Add GOOGLE_MCP_SERVER enforcement point and McpServerFloorSetting&lt;/li&gt;
-&lt;li&gt;Add ZIP type and file_label to ByteData&lt;/li&gt;
-&lt;li&gt;Add StreamingMode enum and field to sanitize requests&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update description for ListLocations and various proto comments&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Chronicle.V1-1.0.0-beta05"&gt;Google.Cloud.Chronicle.V1 version 1.0.0-beta05&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Adding Client Libraries for BigQueryExportService&lt;/li&gt;
-&lt;li&gt;Support NativeDashboardService, DashboardChartService, DashboardQueryService, FeaturedContentNativeDashboardService, FeaturedContentMetadata for v1&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Iam.V3Beta-1.0.0-beta03"&gt;Google.Cloud.Iam.V3Beta version 1.0.0-beta03&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;New iam v3beta client for AccessPolicies, this is step 4&amp;amp;5 for go/client-user-guide?API_NAME=iam.googleapis.com%09&amp;amp;API_SHORTNAME=iam&amp;amp;API_PATH=google%2Fiam&amp;amp;API_VERSION=v3&amp;amp;PROTO_SERVICE=AccessPolicies#run-api-publish-changelist&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated comments across various messages, fields, enums, and methods in the IAM v3beta API, including PolicyBinding, PolicyKind, ListPolicyBindingsRequest, and SearchTargetPolicyBindingsRequest to improve clarity&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.StorageBatchOperations.V1-1.0.0-beta06"&gt;Google.Cloud.StorageBatchOperations.V1 version 1.0.0-beta06&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add object custom contexts counters&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;A comment for field &lt;code&gt;failed_object_count&lt;/code&gt; in message &lt;code&gt;.google.cloud.storagebatchoperations.v1.Counters&lt;/code&gt; is changed&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Spanner-5.13.0-beta05"&gt;Google.Cloud.Spanner version 5.13.0-beta05&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add ClientContext to commands (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4137494205" data-permission-text="Title is private" data-url="https://github.com/googleapis/google-cloud-dotnet/issues/15534" data-hovercard-type="pull_request" data-hovercard-url="/googleapis/google-cloud-dotnet/pull/15534/hovercard" href="https://github.com/googleapis/google-cloud-dotnet/pull/15534"&gt;#15534&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;isolation_level&lt;/code&gt; and &lt;code&gt;read_lock_mode&lt;/code&gt; are added to message &lt;code&gt;.google.spanner.v1.CommitResponse&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Redis.Cluster.V1-1.7.0"&gt;Google.Cloud.Redis.Cluster.V1 version 1.7.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[Memorystore for Redis Cluster] Updating new node types added&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-05-05</title>
-    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-05-05</id>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-05-06</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-05-06</id>
     <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-    <updated>2026-05-06T00:22:35Z</updated>
+    <updated>2026-05-07T00:22:17Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/PersistentStorage-1.1.0"&gt;PersistentStorage-1.1.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.Process-1.15.1-beta.2"&gt;Resources.Process-1.15.1-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.PersistentStorage.Abstractions/1.1.0" rel="nofollow"&gt;OpenTelemetry.PersistentStorage.Abstractions v1.1.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.Process/1.15.1-beta.2" rel="nofollow"&gt;OpenTelemetry.Resources.Process v1.15.1-beta.2&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Add &lt;code&gt;net8.0&lt;/code&gt; and &lt;code&gt;net10.0&lt;/code&gt; target frameworks.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4128" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4128/hovercard"&gt;#4128&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add support for &lt;code&gt;ReadOnlySpan&amp;lt;byte&amp;gt;&lt;/code&gt; as buffers.&lt;br&gt;
-Obsoletes &lt;code&gt;byte[]&lt;/code&gt; buffers in the API.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4128" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4128/hovercard"&gt;#4128&lt;/a&gt;)&lt;/p&gt;
+&lt;li&gt;Add new process resource attribute &lt;code&gt;process.creation.time&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4036" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4036/hovercard"&gt;#4036&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.Process-1.15.1-beta.2/src/OpenTelemetry.Resources.Process/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/PersistentStorage-1.1.0/src/OpenTelemetry.PersistentStorage.Abstractions/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.PersistentStorage.FileSystem/1.1.0" rel="nofollow"&gt;OpenTelemetry.PersistentStorage.FileSystem v1.1.0&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>unoplatform/uno - Releases - 2026-05-06</title>
+    <id>https://github.com/unoplatform/uno#2026-05-06</id>
+    <link href="https://github.com/unoplatform/uno" />
+    <updated>2026-05-07T00:22:19Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/unoplatform/uno/releases/tag/6.5.229"&gt;6.5.229&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This new release is a service update part of Uno Platform 6.5 — &lt;a href="https://aka.platform.uno/blog-6-5" rel="nofollow"&gt;read our blog on the previous 6.5 release&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;What's Changed&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Add &lt;code&gt;net8.0&lt;/code&gt; and &lt;code&gt;net10.0&lt;/code&gt; target frameworks.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4128" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4128/hovercard"&gt;#4128&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add support for &lt;code&gt;ReadOnlySpan&amp;lt;byte&amp;gt;&lt;/code&gt; as buffers.&lt;br&gt;
-Obsoletes &lt;code&gt;byte[]&lt;/code&gt; buffers in the API.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4128" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4128/hovercard"&gt;#4128&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;docs: Update hd-docs reference to latest commit for 6.5 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/agneszitte/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/agneszitte"&gt;@agneszitte&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3908216376" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22599" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22599/hovercard" href="https://github.com/unoplatform/uno/pull/22599"&gt;#22599&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;docs: Add warning and troubleshooting for Antigravity (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3908395643" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22601" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22601/hovercard" href="https://github.com/unoplatform/uno/pull/22601"&gt;#22601&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mergify/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mergify"&gt;@mergify&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3908418704" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22602" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22602/hovercard" href="https://github.com/unoplatform/uno/pull/22602"&gt;#22602&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;docs: Update hd-docs reference to latest commit for 6.5 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/agneszitte/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/agneszitte"&gt;@agneszitte&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3917425500" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22609" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22609/hovercard" href="https://github.com/unoplatform/uno/pull/22609"&gt;#22609&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;docs: Adjustments for create-an-app-ai documentation (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3909158101" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22606" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22606/hovercard" href="https://github.com/unoplatform/uno/pull/22606"&gt;#22606&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rajamatt/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rajamatt"&gt;@rajamatt&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3917766274" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22612" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22612/hovercard" href="https://github.com/unoplatform/uno/pull/22612"&gt;#22612&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;docs: Update hd-docs reference to latest commit for 6.5 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/agneszitte/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/agneszitte"&gt;@agneszitte&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3918074303" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22614" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22614/hovercard" href="https://github.com/unoplatform/uno/pull/22614"&gt;#22614&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;docs: Update instructions for starting Claude Code (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3909116618" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22605" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22605/hovercard" href="https://github.com/unoplatform/uno/pull/22605"&gt;#22605&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mergify/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mergify"&gt;@mergify&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3927202265" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22631" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22631/hovercard" href="https://github.com/unoplatform/uno/pull/22631"&gt;#22631&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;docs: Revise FAQ content for clarity and updates (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3939367029" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22653" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22653/hovercard" href="https://github.com/unoplatform/uno/pull/22653"&gt;#22653&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/agneszitte/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/agneszitte"&gt;@agneszitte&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3997307072" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22741" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22741/hovercard" href="https://github.com/unoplatform/uno/pull/22741"&gt;#22741&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(deps): backport System.Security.Cryptography.Xml 8.0.3 bump to 6.5 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/agneszitte/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/agneszitte"&gt;@agneszitte&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4305418680" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23106" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23106/hovercard" href="https://github.com/unoplatform/uno/pull/23106"&gt;#23106&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(ci): backport .NET SDK 10.0.105 pin (PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4237583058" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23006" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23006/hovercard" href="https://github.com/unoplatform/uno/pull/23006"&gt;#23006&lt;/a&gt;) and Tmds.DBus.Protocol vulnerability fix to 6.5 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/agneszitte/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/agneszitte"&gt;@agneszitte&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4305591796" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23109" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23109/hovercard" href="https://github.com/unoplatform/uno/pull/23109"&gt;#23109&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(wasm): make sure the splash screen is removed only after fonts preloading is done and a new frame is generated (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3991970031" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22734" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22734/hovercard" href="https://github.com/unoplatform/uno/pull/22734"&gt;#22734&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mergify/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mergify"&gt;@mergify&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4303589394" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23096" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23096/hovercard" href="https://github.com/unoplatform/uno/pull/23096"&gt;#23096&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore: expand range of ICU versions probed (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3897636075" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22571" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22571/hovercard" href="https://github.com/unoplatform/uno/pull/22571"&gt;#22571&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mergify/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mergify"&gt;@mergify&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4318917176" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23128" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23128/hovercard" href="https://github.com/unoplatform/uno/pull/23128"&gt;#23128&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;docs: Add WPF to WinUI XAML equivalents reference (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4181783288" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22934" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22934/hovercard" href="https://github.com/unoplatform/uno/pull/22934"&gt;#22934&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mergify/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mergify"&gt;@mergify&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4338059737" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23145" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23145/hovercard" href="https://github.com/unoplatform/uno/pull/23145"&gt;#23145&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: android icuu (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4316733763" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23125" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23125/hovercard" href="https://github.com/unoplatform/uno/pull/23125"&gt;#23125&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mergify/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mergify"&gt;@mergify&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4326077326" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23136" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23136/hovercard" href="https://github.com/unoplatform/uno/pull/23136"&gt;#23136&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(android): suppress soft keyboard for read-only TextBox on Skia (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4350964334" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23158" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23158/hovercard" href="https://github.com/unoplatform/uno/pull/23158"&gt;#23158&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mergify/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mergify"&gt;@mergify&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4361300410" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23169" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23169/hovercard" href="https://github.com/unoplatform/uno/pull/23169"&gt;#23169&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/PersistentStorage-1.1.0/src/OpenTelemetry.PersistentStorage.FileSystem/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/unoplatform/uno/compare/6.5.153...6.5.229"&gt;&lt;tt&gt;6.5.153...6.5.229&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     

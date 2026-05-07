@@ -1,23 +1,95 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-05-06T00:22:13Z</updated>
+  <updated>2026-05-07T00:22:03Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-05-05</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-05-05</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-05-06</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-05-06</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-05-06T00:22:13Z</updated>
+    <updated>2026-05-07T00:22:03Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Secrets_4.11.0"&gt;Azure.Security.KeyVault.Secrets_4.11.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.55.0"&gt;Azure.Core_1.55.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;4.11.0 (2026-05-05)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
+                                &lt;h2&gt;1.55.0 (2026-05-05)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated dependency on &lt;code&gt;Azure.Core&lt;/code&gt; to &lt;code&gt;1.54.0&lt;/code&gt;, which includes fixes for duplicate schema registration.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;AzureLocation.DenmarkEast&lt;/code&gt; for the Denmark East Azure region.&lt;/li&gt;
+&lt;li&gt;Added experimental &lt;code&gt;AdditionalQueryParameters&lt;/code&gt; property to &lt;code&gt;TokenCredentialOptions&lt;/code&gt; to enable forwarding extra query string parameters to MSAL during authentication.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed &lt;code&gt;AzureDeveloperCliCredential&lt;/code&gt; to correctly parse error messages from Azure Developer CLI v1.23.7 and later, which previously caused raw JSON to surface in &lt;code&gt;AuthenticationFailedException&lt;/code&gt; instead of the underlying error text.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6258655"&gt;Azure.Template_1.0.3-beta.6258655&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.3-beta.6258655 (2026-05-06)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;WidgetAnalyticsClientSettings&lt;/code&gt; to support creating a &lt;code&gt;WidgetAnalyticsClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/System.ClientModel_1.11.0"&gt;System.ClientModel_1.11.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.11.0 (2026-05-05)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;CredentialResolver&lt;/code&gt; abstract class — an extensibility hook that lets credential providers participate in the configuration-driven credential resolution pipeline. Resolvers are invoked in registration order until one produces an &lt;code&gt;AuthenticationTokenProvider&lt;/code&gt; for a given configuration section.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;IConfiguration.GetCredential(...)&lt;/code&gt; extension overloads on &lt;code&gt;ConfigurationExtensions&lt;/code&gt; that walk a chain of &lt;code&gt;CredentialResolver&lt;/code&gt; instances against a named credential section, with optional &lt;code&gt;configureOverrides&lt;/code&gt; to mutate the section in-flight.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;IConfiguration.GetClientSettings&amp;lt;T&amp;gt;(...)&lt;/code&gt; extension overloads that bind a &lt;code&gt;ClientSettings&lt;/code&gt;-derived type and resolve its &lt;code&gt;Credential&lt;/code&gt; via the resolver chain.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;AddCredentialResolver&amp;lt;T&amp;gt;&lt;/code&gt; extension methods on &lt;code&gt;IServiceCollection&lt;/code&gt; and &lt;code&gt;IHostApplicationBuilder&lt;/code&gt; that register a &lt;code&gt;CredentialResolver&lt;/code&gt; once per implementation type (idempotent).&lt;/li&gt;
+&lt;li&gt;The DI &lt;code&gt;AddClient&amp;lt;TClient, TSettings&amp;gt;&lt;/code&gt; / &lt;code&gt;AddKeyedClient&amp;lt;TClient, TSettings&amp;gt;&lt;/code&gt; paths now auto-resolve credentials from the registered resolver chain, so callers no longer need to wire up provider-specific helpers like &lt;code&gt;WithAzureCredential&lt;/code&gt; explicitly when a resolver is registered.&lt;/li&gt;
+&lt;li&gt;Resolving the same credential section more than once returns the same &lt;code&gt;AuthenticationTokenProvider&lt;/code&gt; instance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;IClientBuilder&lt;/code&gt; no longer inherits from &lt;code&gt;IHostApplicationBuilder&lt;/code&gt;. The internal &lt;code&gt;ClientBuilder&lt;/code&gt; implementation now uses composition instead of inheritance. &lt;code&gt;PostConfigure&lt;/code&gt; return type changed from &lt;code&gt;IHostApplicationBuilder&lt;/code&gt; to &lt;code&gt;IClientBuilder&lt;/code&gt;. &lt;code&gt;AddClient&lt;/code&gt; and &lt;code&gt;AddKeyedClient&lt;/code&gt; continue to return &lt;code&gt;IClientBuilder&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Keys_4.10.0"&gt;Azure.Security.KeyVault.Keys_4.10.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;4.10.0 (2026-05-05)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;KeyProperties.KeySize&lt;/code&gt; to expose the key size in bits.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Administration_4.8.0"&gt;Azure.Security.KeyVault.Administration_4.8.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;4.8.0 (2026-05-05)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;KeyVaultAccessControlClientSettings&lt;/code&gt; to support creating a &lt;code&gt;KeyVaultAccessControlClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;KeyVaultRestClientSettings&lt;/code&gt; to support creating a &lt;code&gt;KeyVaultRestClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ComputeSchedule_1.2.0-beta.3"&gt;Azure.ResourceManager.ComputeSchedule_1.2.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0-beta.3 (2026-05-01)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the ComputeSchedule RP api-version from &lt;code&gt;2026-03-01-preview&lt;/code&gt; to &lt;code&gt;2026-04-15-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Updated the property type &lt;code&gt;baseProfile&lt;/code&gt; -&amp;gt; &lt;code&gt;virtualMachineBaseProfile&lt;/code&gt; with strongly-typed model for validation&lt;/li&gt;
+&lt;li&gt;Updated the property type &lt;code&gt;resourceOverrides&lt;/code&gt; -&amp;gt; &lt;code&gt;virtualMachineOverrides&lt;/code&gt; with strongly-typed model for validation&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
