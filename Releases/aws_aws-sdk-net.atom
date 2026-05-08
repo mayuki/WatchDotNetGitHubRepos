@@ -1,64 +1,59 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-05-07T00:22:02Z</updated>
+  <updated>2026-05-08T00:23:27Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-05-06</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-05-06</id>
+    <title>aws/aws-sdk-net - Releases - 2026-05-07</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-05-07</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-05-07T00:22:02Z</updated>
+    <updated>2026-05-08T00:23:27Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.245.0"&gt;4.0.245.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.246.0"&gt;4.0.246.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.245.0 (2026-05-06 18:38 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.246.0 (2026-05-07 18:38 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.34.0)
+&lt;li&gt;BCMDataExports (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for bring-your-own file system in AgentCore Runtime. Developers can mount Amazon S3 Files and Amazon EFS access points directly into agent sessions using filesystemConfigurations.&lt;/li&gt;
+&lt;li&gt;With this release, customers can configure their data exports to generate additional integration artifacts for Athena and Redshift.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Glue (4.0.29.0)
+&lt;li&gt;BedrockAgentCore (4.0.23.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for a CustomLogGroupPrefix parameter in StartDataQualityRulesetEvaluationRun to specify custom CloudWatch log group paths, and a RulesetName filter in ListDataQualityRulesetEvaluationRuns to filter evaluation runs by ruleset name.&lt;/li&gt;
+&lt;li&gt;Launching AgentCore payments - a capability that provides secure, instant microtransaction payments for AI agents to access paid APIs, MCP servers, and content. It handles payment processing for x402 protocol, payment limits, and 3P wallet integrations with Coinbase CDP and Stripe (Privy).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Imagebuilder (4.0.11.0)
+&lt;li&gt;BedrockAgentCoreControl (4.0.35.0)
 &lt;ul&gt;
-&lt;li&gt;The ImportDiskImage API now enforces a maximum character limit of 128 characters on the image name field.&lt;/li&gt;
+&lt;li&gt;Launching AgentCore payments - a capability that provides secure, instant microtransaction payments for AI agents to access paid APIs, MCP servers, and content. It handles payment processing for x402 protocol, payment limits, and 3P wallet integrations with Coinbase CDP and Stripe (Privy).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;LexModelsV2 (4.0.7.0)
+&lt;li&gt;EC2 (4.0.87.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon Lex V2 introduces audio filler support for speech-to-speech bots. Configure melody or typing sounds that play during backend processing to reduce perceived latency and maintain a natural conversational experience for callers.&lt;/li&gt;
+&lt;li&gt;DescribeInstanceTypes now accepts an IncludeUnsupportedInRegion parameter. When set, the response also lists instance types that are not available in the current Region. Each instance type includes a SupportedInRegion field indicating its regional availability.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MWAA (4.0.4.0)
+&lt;li&gt;GuardDuty (4.0.18.6)
 &lt;ul&gt;
-&lt;li&gt;Amazon MWAA now supports a PublicAndPrivate webserver access mode. The Airflow web server is accessible over both public and private endpoints, enabling workers in VPCs without internet access to reach the Task API privately while retaining public access to the Airflow UI.&lt;/li&gt;
+&lt;li&gt;This is a documentation update&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (4.0.23.0)
+&lt;li&gt;Invoicing (4.0.7.0)
 &lt;ul&gt;
-&lt;li&gt;Validate outpost access point resource name&lt;/li&gt;
+&lt;li&gt;Updated ListInvoiceSummaries API to add new ReceiverRole filter in Request and Response&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.56.0)
+&lt;li&gt;Route53Resolver (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon SageMaker HyperPod now returns ImageVersionStatus in DescribeCluster, DescribeClusterNode, and ListClusterNodes responses, indicating whether cluster instances are running the latest available image version.&lt;/li&gt;
+&lt;li&gt;Adds supports for DNS64 on inbound endpoints and IPv6 forwarding through the internet gateway (IGW) on outbound endpoints, making it easier to manage hybrid DNS across IPv4 and IPv6 networks.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SecurityHub (4.0.10.0)
+&lt;li&gt;Extensions.NETCore.Setup (4.0.3.37)
 &lt;ul&gt;
-&lt;li&gt;Release GenerateRecommendedPolicyV2 and GetRecommendedPolicyV2 APIs. This supports generating and retrieving policy recommendations to remediate unused permissions findings that are now being supported on Security Hub.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Extensions.Bedrock.MEAI (4.0.8.0)
-&lt;ul&gt;
-&lt;li&gt;(Preview) Add Bedrock Nova Sonic realtime provider implementing &lt;code&gt;IRealtimeClient&lt;/code&gt; / &lt;code&gt;IRealtimeClientSession&lt;/code&gt; for real-time bidirectional audio conversations with tool calling support.&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2628856930" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/3538" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/3538/hovercard" href="https://github.com/aws/aws-sdk-net/issues/3538"&gt;#3538&lt;/a&gt;. Allow service specific endpoints to work with SSO profiles.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

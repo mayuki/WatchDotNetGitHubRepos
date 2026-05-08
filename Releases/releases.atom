@@ -1,64 +1,59 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-05-07T00:22:19Z</updated>
+  <updated>2026-05-08T00:23:47Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-05-06</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-05-06</id>
+    <title>aws/aws-sdk-net - Releases - 2026-05-07</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-05-07</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-05-07T00:22:02Z</updated>
+    <updated>2026-05-08T00:23:27Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.245.0"&gt;4.0.245.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.246.0"&gt;4.0.246.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.245.0 (2026-05-06 18:38 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.246.0 (2026-05-07 18:38 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.34.0)
+&lt;li&gt;BCMDataExports (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for bring-your-own file system in AgentCore Runtime. Developers can mount Amazon S3 Files and Amazon EFS access points directly into agent sessions using filesystemConfigurations.&lt;/li&gt;
+&lt;li&gt;With this release, customers can configure their data exports to generate additional integration artifacts for Athena and Redshift.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Glue (4.0.29.0)
+&lt;li&gt;BedrockAgentCore (4.0.23.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for a CustomLogGroupPrefix parameter in StartDataQualityRulesetEvaluationRun to specify custom CloudWatch log group paths, and a RulesetName filter in ListDataQualityRulesetEvaluationRuns to filter evaluation runs by ruleset name.&lt;/li&gt;
+&lt;li&gt;Launching AgentCore payments - a capability that provides secure, instant microtransaction payments for AI agents to access paid APIs, MCP servers, and content. It handles payment processing for x402 protocol, payment limits, and 3P wallet integrations with Coinbase CDP and Stripe (Privy).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Imagebuilder (4.0.11.0)
+&lt;li&gt;BedrockAgentCoreControl (4.0.35.0)
 &lt;ul&gt;
-&lt;li&gt;The ImportDiskImage API now enforces a maximum character limit of 128 characters on the image name field.&lt;/li&gt;
+&lt;li&gt;Launching AgentCore payments - a capability that provides secure, instant microtransaction payments for AI agents to access paid APIs, MCP servers, and content. It handles payment processing for x402 protocol, payment limits, and 3P wallet integrations with Coinbase CDP and Stripe (Privy).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;LexModelsV2 (4.0.7.0)
+&lt;li&gt;EC2 (4.0.87.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon Lex V2 introduces audio filler support for speech-to-speech bots. Configure melody or typing sounds that play during backend processing to reduce perceived latency and maintain a natural conversational experience for callers.&lt;/li&gt;
+&lt;li&gt;DescribeInstanceTypes now accepts an IncludeUnsupportedInRegion parameter. When set, the response also lists instance types that are not available in the current Region. Each instance type includes a SupportedInRegion field indicating its regional availability.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MWAA (4.0.4.0)
+&lt;li&gt;GuardDuty (4.0.18.6)
 &lt;ul&gt;
-&lt;li&gt;Amazon MWAA now supports a PublicAndPrivate webserver access mode. The Airflow web server is accessible over both public and private endpoints, enabling workers in VPCs without internet access to reach the Task API privately while retaining public access to the Airflow UI.&lt;/li&gt;
+&lt;li&gt;This is a documentation update&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (4.0.23.0)
+&lt;li&gt;Invoicing (4.0.7.0)
 &lt;ul&gt;
-&lt;li&gt;Validate outpost access point resource name&lt;/li&gt;
+&lt;li&gt;Updated ListInvoiceSummaries API to add new ReceiverRole filter in Request and Response&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.56.0)
+&lt;li&gt;Route53Resolver (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon SageMaker HyperPod now returns ImageVersionStatus in DescribeCluster, DescribeClusterNode, and ListClusterNodes responses, indicating whether cluster instances are running the latest available image version.&lt;/li&gt;
+&lt;li&gt;Adds supports for DNS64 on inbound endpoints and IPv6 forwarding through the internet gateway (IGW) on outbound endpoints, making it easier to manage hybrid DNS across IPv4 and IPv6 networks.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SecurityHub (4.0.10.0)
+&lt;li&gt;Extensions.NETCore.Setup (4.0.3.37)
 &lt;ul&gt;
-&lt;li&gt;Release GenerateRecommendedPolicyV2 and GetRecommendedPolicyV2 APIs. This supports generating and retrieving policy recommendations to remediate unused permissions findings that are now being supported on Security Hub.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Extensions.Bedrock.MEAI (4.0.8.0)
-&lt;ul&gt;
-&lt;li&gt;(Preview) Add Bedrock Nova Sonic realtime provider implementing &lt;code&gt;IRealtimeClient&lt;/code&gt; / &lt;code&gt;IRealtimeClientSession&lt;/code&gt; for real-time bidirectional audio conversations with tool calling support.&lt;/li&gt;
+&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2628856930" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/3538" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/3538/hovercard" href="https://github.com/aws/aws-sdk-net/issues/3538"&gt;#3538&lt;/a&gt;. Allow service specific endpoints to work with SSO profiles.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -69,92 +64,70 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-05-06</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-05-06</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-05-07</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-05-07</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-05-07T00:22:03Z</updated>
+    <updated>2026-05-08T00:23:27Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.55.0"&gt;Azure.Core_1.55.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.FileShares_1.0.0"&gt;Azure.ResourceManager.FileShares_1.0.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.55.0 (2026-05-05)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0 (2026-04-30)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;AzureLocation.DenmarkEast&lt;/code&gt; for the Denmark East Azure region.&lt;/li&gt;
-&lt;li&gt;Added experimental &lt;code&gt;AdditionalQueryParameters&lt;/code&gt; property to &lt;code&gt;TokenCredentialOptions&lt;/code&gt; to enable forwarding extra query string parameters to MSAL during authentication.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed &lt;code&gt;AzureDeveloperCliCredential&lt;/code&gt; to correctly parse error messages from Azure Developer CLI v1.23.7 and later, which previously caused raw JSON to surface in &lt;code&gt;AuthenticationFailedException&lt;/code&gt; instead of the underlying error text.&lt;/li&gt;
+&lt;li&gt;Upgraded API version to &lt;code&gt;2026-06-01&lt;/code&gt; (GA)&lt;/li&gt;
+&lt;li&gt;General availability of the Azure.ResourceManager.FileShares package&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6258655"&gt;Azure.Template_1.0.3-beta.6258655&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.RecoveryServicesBackup_1.4.0-beta.1"&gt;Azure.ResourceManager.RecoveryServicesBackup_1.4.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.3-beta.6258655 (2026-05-06)&lt;/h2&gt;
+                                &lt;h2&gt;1.4.0-beta.1 (2026-05-07)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;WidgetAnalyticsClientSettings&lt;/code&gt; to support creating a &lt;code&gt;WidgetAnalyticsClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
+&lt;li&gt;Upgraded api-version to 2026-01-31-preview.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/System.ClientModel_1.11.0"&gt;System.ClientModel_1.11.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Monitor.PipelineGroups_1.0.0-beta.1"&gt;Azure.ResourceManager.Monitor.PipelineGroups_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.11.0 (2026-05-05)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-05-06)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;CredentialResolver&lt;/code&gt; abstract class — an extensibility hook that lets credential providers participate in the configuration-driven credential resolution pipeline. Resolvers are invoked in registration order until one produces an &lt;code&gt;AuthenticationTokenProvider&lt;/code&gt; for a given configuration section.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;IConfiguration.GetCredential(...)&lt;/code&gt; extension overloads on &lt;code&gt;ConfigurationExtensions&lt;/code&gt; that walk a chain of &lt;code&gt;CredentialResolver&lt;/code&gt; instances against a named credential section, with optional &lt;code&gt;configureOverrides&lt;/code&gt; to mutate the section in-flight.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;IConfiguration.GetClientSettings&amp;lt;T&amp;gt;(...)&lt;/code&gt; extension overloads that bind a &lt;code&gt;ClientSettings&lt;/code&gt;-derived type and resolve its &lt;code&gt;Credential&lt;/code&gt; via the resolver chain.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;AddCredentialResolver&amp;lt;T&amp;gt;&lt;/code&gt; extension methods on &lt;code&gt;IServiceCollection&lt;/code&gt; and &lt;code&gt;IHostApplicationBuilder&lt;/code&gt; that register a &lt;code&gt;CredentialResolver&lt;/code&gt; once per implementation type (idempotent).&lt;/li&gt;
-&lt;li&gt;The DI &lt;code&gt;AddClient&amp;lt;TClient, TSettings&amp;gt;&lt;/code&gt; / &lt;code&gt;AddKeyedClient&amp;lt;TClient, TSettings&amp;gt;&lt;/code&gt; paths now auto-resolve credentials from the registered resolver chain, so callers no longer need to wire up provider-specific helpers like &lt;code&gt;WithAzureCredential&lt;/code&gt; explicitly when a resolver is registered.&lt;/li&gt;
-&lt;li&gt;Resolving the same credential section more than once returns the same &lt;code&gt;AuthenticationTokenProvider&lt;/code&gt; instance.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;IClientBuilder&lt;/code&gt; no longer inherits from &lt;code&gt;IHostApplicationBuilder&lt;/code&gt;. The internal &lt;code&gt;ClientBuilder&lt;/code&gt; implementation now uses composition instead of inheritance. &lt;code&gt;PostConfigure&lt;/code&gt; return type changed from &lt;code&gt;IHostApplicationBuilder&lt;/code&gt; to &lt;code&gt;IClientBuilder&lt;/code&gt;. &lt;code&gt;AddClient&lt;/code&gt; and &lt;code&gt;AddKeyedClient&lt;/code&gt; continue to return &lt;code&gt;IClientBuilder&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;This package follows the &lt;a href="https://azure.github.io/azure-sdk/general_introduction.html" rel="nofollow"&gt;new Azure SDK guidelines&lt;/a&gt;, and provides many core capabilities:&lt;/p&gt;
+&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
+- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
+- HTTP pipeline with custom policies.
+- Better error-handling.
+- Support uniform telemetry across all languages."&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
+- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
+- HTTP pipeline with custom policies.
+- Better error-handling.
+- Support uniform telemetry across all languages.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This package is a Public Preview version, so expect incompatible changes in subsequent releases as we improve the product. To provide feedback, submit an issue in our &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues"&gt;Azure SDK for .NET GitHub repo&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: For more information about unified authentication, please refer to &lt;a href="https://docs.microsoft.com//dotnet/api/overview/azure/identity-readme?view=azure-dotnet" rel="nofollow"&gt;Microsoft Azure Identity documentation for .NET&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Keys_4.10.0"&gt;Azure.Security.KeyVault.Keys_4.10.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetApp_1.16.0"&gt;Azure.ResourceManager.NetApp_1.16.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;4.10.0 (2026-05-05)&lt;/h2&gt;
+                                &lt;h2&gt;1.16.0 (2026-05-01)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;KeyProperties.KeySize&lt;/code&gt; to expose the key size in bits.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Administration_4.8.0"&gt;Azure.Security.KeyVault.Administration_4.8.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;4.8.0 (2026-05-05)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;KeyVaultAccessControlClientSettings&lt;/code&gt; to support creating a &lt;code&gt;KeyVaultAccessControlClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;KeyVaultRestClientSettings&lt;/code&gt; to support creating a &lt;code&gt;KeyVaultRestClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ComputeSchedule_1.2.0-beta.3"&gt;Azure.ResourceManager.ComputeSchedule_1.2.0-beta.3&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.3 (2026-05-01)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated the ComputeSchedule RP api-version from &lt;code&gt;2026-03-01-preview&lt;/code&gt; to &lt;code&gt;2026-04-15-preview&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Updated the property type &lt;code&gt;baseProfile&lt;/code&gt; -&amp;gt; &lt;code&gt;virtualMachineBaseProfile&lt;/code&gt; with strongly-typed model for validation&lt;/li&gt;
-&lt;li&gt;Updated the property type &lt;code&gt;resourceOverrides&lt;/code&gt; -&amp;gt; &lt;code&gt;virtualMachineOverrides&lt;/code&gt; with strongly-typed model for validation&lt;/li&gt;
+&lt;li&gt;Upgraded api-version tag from 'package-2025-12-01' to 'package-2026-01-01'. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/c5044e9d381c2bf1b3119011b4696e777f819f76/specification/netapp/resource-manager/Microsoft.NetApp/NetApp/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/c5044e9d381c2bf1b3119011b4696e777f819f76/specification/netapp/resource-manager/Microsoft.NetApp/NetApp/readme.md&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;NetAppBucketResource&lt;/code&gt; and related bucket models, including credential generation and Key Vault integration support.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;NetAppCacheResource&lt;/code&gt; for NetApp cache scenarios.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;NetAppSecretPassword&lt;/code&gt; model and Key Vault-backed credential models (e.g., &lt;code&gt;CertificateKeyVaultDetails&lt;/code&gt;, &lt;code&gt;CredentialsKeyVaultDetails&lt;/code&gt;, &lt;code&gt;EntraIdKeyVaultConfig&lt;/code&gt;, &lt;code&gt;EntraIdKeyVaultConfigPatch&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;NetAppDayOfWeek&lt;/code&gt; enum and additional supporting models and enums (e.g., file system user, NFS user, SMB settings, peering passphrases, origin cluster information, change-zone content; policy/encryption/credential/breakthrough/volume-size/snapshot/Kerberos/global-file-locking/large-volume/SMB-encryption/CIFS-change-notify/write-back/LDAP/certificate-conflict/snapshot-directory-visibility/external-replication enums).&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -163,63 +136,104 @@
             </content>
   </entry>
   <entry>
-    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-05-06</title>
-    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-05-06</id>
-    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-    <updated>2026-05-07T00:22:17Z</updated>
+    <title>CommunityToolkit/Maui - Releases - 2026-05-07</title>
+    <id>https://github.com/CommunityToolkit/Maui#2026-05-07</id>
+    <link href="https://github.com/CommunityToolkit/Maui" />
+    <updated>2026-05-08T00:23:29Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.Process-1.15.1-beta.2"&gt;Resources.Process-1.15.1-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/14.1.1"&gt;14.2.0: Add `bool NavigatingFromEventArgs.IsDestinationPageACommunityToolkitPopupPage()` Extension Method, Fix `StatusBar` + `SpeechToText` Auto-timeout bugs&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.Process/1.15.1-beta.2" rel="nofollow"&gt;OpenTelemetry.Resources.Process v1.15.1-beta.2&lt;/a&gt;&lt;/p&gt;
+                                &lt;h2&gt;&lt;code&gt;CommunityToolkit.Maui v14.2.0&lt;/code&gt;&lt;/h2&gt;
+&lt;h3&gt;New Popup Extension&lt;/h3&gt;
+&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="public static bool IsDestinationPageACommunityToolkitPopupPage(this NavigatingFromEventArgs args);"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;public&lt;/span&gt; &lt;span class="pl-k"&gt;&lt;span class="pl-k"&gt;static&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-smi"&gt;bool&lt;/span&gt; &lt;span class="pl-en"&gt;IsDestinationPageACommunityToolkitPopupPage&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-k"&gt;this&lt;/span&gt; &lt;span class="pl-smi"&gt;NavigatingFromEventArgs&lt;/span&gt; &lt;span class="pl-s1"&gt;args&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can now use &lt;code&gt;NavigatingFromEventArgs&lt;/code&gt; to determine if the previous page was a &lt;code&gt;Popup&lt;/code&gt;: &lt;a href="https://learn.microsoft.com/en-us/dotnet/communitytoolkit/maui/views/popup#lifecycle-behavior" rel="nofollow"&gt;https://learn.microsoft.com/en-us/dotnet/communitytoolkit/maui/views/popup#lifecycle-behavior&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="protected override void OnNavigatingFrom(NavigatingFromEventArgs args)
+{
+    base.OnNavigatingFrom(args);
+    if (args.IsDestinationPageACommunityToolkitPopupPage())
+    {
+        // If true, `OnNavigatingFrom` was called by starting a Popup
+    }
+}"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;protected&lt;/span&gt; &lt;span class="pl-k"&gt;override&lt;/span&gt; &lt;span class="pl-smi"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;OnNavigatingFrom&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-smi"&gt;NavigatingFromEventArgs&lt;/span&gt; &lt;span class="pl-s1"&gt;args&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;
+&lt;span class="pl-kos"&gt;{&lt;/span&gt;
+    &lt;span class="pl-k"&gt;base&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;OnNavigatingFrom&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s1"&gt;args&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+    &lt;span class="pl-k"&gt;if&lt;/span&gt; &lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s1"&gt;args&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;IsDestinationPageACommunityToolkitPopupPage&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;
+    &lt;span class="pl-kos"&gt;{&lt;/span&gt;
+        &lt;span class="pl-c"&gt;// If true, `OnNavigatingFrom` was called by starting a Popup&lt;/span&gt;
+    &lt;span class="pl-kos"&gt;}&lt;/span&gt;
+&lt;span class="pl-kos"&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;SpeechToText Bug Fix&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Add new process resource attribute &lt;code&gt;process.creation.time&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4036" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4036/hovercard"&gt;#4036&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix AutoStopSilenceTimeout for SpeechToTextOptions doesn't work on iOS&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.Process-1.15.1-beta.2/src/OpenTelemetry.Resources.Process/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
+&lt;h3&gt;StatusBar Bug Fix&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix &lt;code&gt;StatusBar.SetColor()&lt;/code&gt; when using &lt;code&gt;StatusBarBehavior&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Update StatusBar Size On Device Orientation Change&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>unoplatform/uno - Releases - 2026-05-06</title>
-    <id>https://github.com/unoplatform/uno#2026-05-06</id>
-    <link href="https://github.com/unoplatform/uno" />
-    <updated>2026-05-07T00:22:19Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/unoplatform/uno/releases/tag/6.5.229"&gt;6.5.229&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;This new release is a service update part of Uno Platform 6.5 — &lt;a href="https://aka.platform.uno/blog-6-5" rel="nofollow"&gt;read our blog on the previous 6.5 release&lt;/a&gt; for more details.&lt;/p&gt;
-&lt;hr&gt;
 &lt;h2&gt;What's Changed&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;docs: Update hd-docs reference to latest commit for 6.5 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/agneszitte/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/agneszitte"&gt;@agneszitte&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3908216376" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22599" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22599/hovercard" href="https://github.com/unoplatform/uno/pull/22599"&gt;#22599&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;docs: Add warning and troubleshooting for Antigravity (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3908395643" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22601" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22601/hovercard" href="https://github.com/unoplatform/uno/pull/22601"&gt;#22601&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mergify/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mergify"&gt;@mergify&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3908418704" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22602" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22602/hovercard" href="https://github.com/unoplatform/uno/pull/22602"&gt;#22602&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;docs: Update hd-docs reference to latest commit for 6.5 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/agneszitte/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/agneszitte"&gt;@agneszitte&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3917425500" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22609" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22609/hovercard" href="https://github.com/unoplatform/uno/pull/22609"&gt;#22609&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;docs: Adjustments for create-an-app-ai documentation (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3909158101" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22606" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22606/hovercard" href="https://github.com/unoplatform/uno/pull/22606"&gt;#22606&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rajamatt/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rajamatt"&gt;@rajamatt&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3917766274" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22612" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22612/hovercard" href="https://github.com/unoplatform/uno/pull/22612"&gt;#22612&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;docs: Update hd-docs reference to latest commit for 6.5 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/agneszitte/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/agneszitte"&gt;@agneszitte&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3918074303" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22614" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22614/hovercard" href="https://github.com/unoplatform/uno/pull/22614"&gt;#22614&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;docs: Update instructions for starting Claude Code (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3909116618" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22605" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22605/hovercard" href="https://github.com/unoplatform/uno/pull/22605"&gt;#22605&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mergify/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mergify"&gt;@mergify&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3927202265" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22631" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22631/hovercard" href="https://github.com/unoplatform/uno/pull/22631"&gt;#22631&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;docs: Revise FAQ content for clarity and updates (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3939367029" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22653" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22653/hovercard" href="https://github.com/unoplatform/uno/pull/22653"&gt;#22653&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/agneszitte/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/agneszitte"&gt;@agneszitte&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3997307072" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22741" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22741/hovercard" href="https://github.com/unoplatform/uno/pull/22741"&gt;#22741&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;fix(deps): backport System.Security.Cryptography.Xml 8.0.3 bump to 6.5 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/agneszitte/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/agneszitte"&gt;@agneszitte&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4305418680" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23106" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23106/hovercard" href="https://github.com/unoplatform/uno/pull/23106"&gt;#23106&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;chore(ci): backport .NET SDK 10.0.105 pin (PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4237583058" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23006" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23006/hovercard" href="https://github.com/unoplatform/uno/pull/23006"&gt;#23006&lt;/a&gt;) and Tmds.DBus.Protocol vulnerability fix to 6.5 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/agneszitte/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/agneszitte"&gt;@agneszitte&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4305591796" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23109" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23109/hovercard" href="https://github.com/unoplatform/uno/pull/23109"&gt;#23109&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;fix(wasm): make sure the splash screen is removed only after fonts preloading is done and a new frame is generated (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3991970031" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22734" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22734/hovercard" href="https://github.com/unoplatform/uno/pull/22734"&gt;#22734&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mergify/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mergify"&gt;@mergify&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4303589394" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23096" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23096/hovercard" href="https://github.com/unoplatform/uno/pull/23096"&gt;#23096&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;chore: expand range of ICU versions probed (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3897636075" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22571" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22571/hovercard" href="https://github.com/unoplatform/uno/pull/22571"&gt;#22571&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mergify/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mergify"&gt;@mergify&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4318917176" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23128" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23128/hovercard" href="https://github.com/unoplatform/uno/pull/23128"&gt;#23128&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;docs: Add WPF to WinUI XAML equivalents reference (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4181783288" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/22934" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/22934/hovercard" href="https://github.com/unoplatform/uno/pull/22934"&gt;#22934&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mergify/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mergify"&gt;@mergify&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4338059737" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23145" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23145/hovercard" href="https://github.com/unoplatform/uno/pull/23145"&gt;#23145&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;fix: android icuu (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4316733763" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23125" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23125/hovercard" href="https://github.com/unoplatform/uno/pull/23125"&gt;#23125&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mergify/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mergify"&gt;@mergify&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4326077326" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23136" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23136/hovercard" href="https://github.com/unoplatform/uno/pull/23136"&gt;#23136&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;fix(android): suppress soft keyboard for read-only TextBox on Skia (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4350964334" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23158" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23158/hovercard" href="https://github.com/unoplatform/uno/pull/23158"&gt;#23158&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mergify/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mergify"&gt;@mergify&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4361300410" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23169" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23169/hovercard" href="https://github.com/unoplatform/uno/pull/23169"&gt;#23169&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added OnNavigatingFrom extension for popup related navigation  by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dartasen/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dartasen"&gt;@dartasen&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3947179221" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3099" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3099/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3099"&gt;#3099&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Remove &lt;code&gt;RestartTimer()&lt;/code&gt; from &lt;code&gt;AvAudioNode&lt;/code&gt; Callback by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4240674014" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3196" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3196/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3196"&gt;#3196&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;FIX: [BUG] Using StatusBarBehavior Breaks StatusBar.SetColor() &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4246511985" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3197" data-hovercard-type="issue" data-hovercard-url="/CommunityToolkit/Maui/issues/3197/hovercard" href="https://github.com/CommunityToolkit/Maui/issues/3197"&gt;#3197&lt;/a&gt; API36 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Pastajello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Pastajello"&gt;@Pastajello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4266861665" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3202" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3202/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3202"&gt;#3202&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add compile-time property initializer for default values in BindableProperty source generator by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/matt-goldman/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/matt-goldman"&gt;@matt-goldman&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4289057094" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3204" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3204/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3204"&gt;#3204&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update StatusBar Size On Device Orientation Change by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4304329642" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3208" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3208/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3208"&gt;#3208&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/unoplatform/uno/compare/6.5.153...6.5.229"&gt;&lt;tt&gt;6.5.153...6.5.229&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Housekeeping&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Explicitly target iOS and macOS to osx and Windows platforms (only) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/matt-goldman/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/matt-goldman"&gt;@matt-goldman&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4208671981" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3186" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3186/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3186"&gt;#3186&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump Microsoft.Testing.Extensions.CodeCoverage from 18.5.2 to 18.6.2 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4222435195" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3193" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3193/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3193"&gt;#3193&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump System.Formats.Asn1 from 10.0.6 to 10.0.7 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4307000159" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3209" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3209/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3209"&gt;#3209&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump Microsoft.Extensions.Http.Resilience from 10.4.0 to 10.5.0 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4266597668" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3199" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3199/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3199"&gt;#3199&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump System.Formats.Asn1 from 10.0.5 to 10.0.6 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4266605405" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3201" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3201/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3201"&gt;#3201&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump Microsoft.Extensions.Logging.Debug from 10.0.5 to 10.0.6 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4266601773" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3200" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3200/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3200"&gt;#3200&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dartasen/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dartasen"&gt;@dartasen&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3947179221" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3099" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3099/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3099"&gt;#3099&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/14.1.0...14.1.1"&gt;&lt;tt&gt;14.1.0...14.1.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>dotnet/aspire - Releases - 2026-05-07</title>
+    <id>https://github.com/dotnet/aspire#2026-05-07</id>
+    <link href="https://github.com/dotnet/aspire" />
+    <updated>2026-05-08T00:23:32Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.3.0"&gt;Aspire 13.3.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h1&gt;Aspire 13.3.0&lt;/h1&gt;
+&lt;p&gt;Aspire 13.3 is here! 🚀 This release is packed with new ways to deploy, debug, and build distributed apps — including &lt;code&gt;aspire destroy&lt;/code&gt;, browser telemetry in the dashboard, Kubernetes deployment, first-class JavaScript publishing, and major TypeScript AppHost parity&lt;br&gt;
+improvements.&lt;/p&gt;
+&lt;h2&gt;Highlights&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;🧹 &lt;strong&gt;Clean teardown&lt;/strong&gt; — New &lt;strong&gt;&lt;code&gt;aspire destroy&lt;/code&gt;&lt;/strong&gt; tears down Azure, Kubernetes, and Docker Compose deployments, and pipeline summaries make deploy/publish/destroy runs easier to follow.&lt;/li&gt;
+&lt;li&gt;🔍 &lt;strong&gt;Frontend telemetry&lt;/strong&gt; — &lt;strong&gt;Aspire.Hosting.Browsers&lt;/strong&gt; captures browser console logs, network requests, and screenshots right in the Aspire dashboard.&lt;/li&gt;
+&lt;li&gt;☸️ &lt;strong&gt;Kubernetes deploy preview&lt;/strong&gt; — &lt;strong&gt;&lt;code&gt;aspire deploy&lt;/code&gt;&lt;/strong&gt; can now generate Helm-based Kubernetes deployments, with first-class Ingress and Gateway API routing.&lt;/li&gt;
+&lt;li&gt;🟨 &lt;strong&gt;JavaScript publishing&lt;/strong&gt; — New &lt;strong&gt;&lt;code&gt;PublishAs*&lt;/code&gt;&lt;/strong&gt; methods support static sites, Node servers, npm-script apps, Next.js, Vite, Bun, Yarn, and pnpm.&lt;/li&gt;
+&lt;li&gt;🌐 &lt;strong&gt;TypeScript AppHost parity&lt;/strong&gt; — Unified &lt;code&gt;withEnvironment&lt;/code&gt;, Docker Compose hooks, endpoint expressions, Azure Container Apps domains, and more close the gap with C# AppHosts.&lt;/li&gt;
+&lt;li&gt;🛠️ &lt;strong&gt;CLI upgrades&lt;/strong&gt; — Run the standalone dashboard with &lt;strong&gt;&lt;code&gt;aspire dashboard run&lt;/code&gt;&lt;/strong&gt;, install the CLI as a NativeAOT &lt;code&gt;dotnet tool&lt;/code&gt;, and search API docs from the terminal.&lt;/li&gt;
+&lt;li&gt;☁️ &lt;strong&gt;Azure goodness&lt;/strong&gt; — New Azure Front Door, Network Security Perimeter, AKS, private endpoint, and Foundry Prompt Agent support.&lt;/li&gt;
+&lt;li&gt;🐳 &lt;strong&gt;Better containers&lt;/strong&gt; — The Aspire container tunnel is now enabled by default for consistent host connectivity across Docker Desktop, Docker Engine, and Podman.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;g-emoji class="g-emoji" alias="warning"&gt;⚠️&lt;/g-emoji&gt; Breaking changes&lt;/h2&gt;
+&lt;p&gt;Notable breaking changes include &lt;code&gt;--log-level&lt;/code&gt; becoming &lt;code&gt;--pipeline-log-level&lt;/code&gt;, the dashboard MCP server being replaced by &lt;code&gt;aspire agent init&lt;/code&gt;, &lt;code&gt;dotnet new aspire-py-starter&lt;/code&gt; moving to &lt;code&gt;aspire new aspire-py-starter&lt;/code&gt;, and several API shape updates across AKS,&lt;br&gt;
+Foundry, JavaScript diagnostics, and TypeScript AppHost helpers.&lt;/p&gt;
+&lt;p&gt;See the full list in the &lt;a href="https://aspire.dev/whats-new/aspire-13-3/#%EF%B8%8F-breaking-changes" rel="nofollow"&gt;Aspire 13.3 breaking changes&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;📖 Learn more&lt;/h2&gt;
+&lt;p&gt;For the full details, examples, migration guidance, and everything new in this release, check out &lt;a href="https://aspire.dev/whats-new/aspire-13-3/" rel="nofollow"&gt;What's new in Aspire 13.3&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thank you to all the community contributors who helped make Aspire 13.3 possible! 💜&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
