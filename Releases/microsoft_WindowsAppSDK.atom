@@ -1,6 +1,83 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>microsoft/WindowsAppSDK - Releases</title>
   <link href="https://github.com/microsoft/WindowsAppSDK" />
-  <updated>2026-05-12T00:24:55Z</updated>
+  <updated>2026-05-13T00:27:05Z</updated>
   <id>https://github.com/microsoft/WindowsAppSDK</id>
+  <entry>
+    <title>microsoft/WindowsAppSDK - Releases - 2026-05-12</title>
+    <id>https://github.com/microsoft/WindowsAppSDK#2026-05-12</id>
+    <link href="https://github.com/microsoft/WindowsAppSDK" />
+    <updated>2026-05-13T00:27:05Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.8.8"&gt;Windows App SDK 1.8.8 (1.8.260508005)&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;WinAppSDK 1.8.8 is the latest stable servicing release for 1.8, focused on reliability and developer-experience fixes across XAML, package management, Windows AI, and the build-time NuGet tooling.&lt;/p&gt;
+&lt;h3&gt;Bug fixes:&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Bug Fix&lt;/th&gt;
+&lt;th&gt;&lt;a href="https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.applicationmodel.windowsappruntime.runtimecompatibilityoptions.disabledchanges?view=windows-app-sdk-1.8" rel="nofollow"&gt;Runtime Compatibility Change&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an issue where windowed popup content opened in a XAML Island did not respect &lt;code&gt;OverrideScale&lt;/code&gt;, causing content to appear oversized and clipped (&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/11000" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/11000/hovercard"&gt;microsoft/microsoft-ui-xaml#11000&lt;/a&gt;).&lt;/td&gt;
+&lt;td&gt;Popup_WindowedPopupOverrideScale&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an &lt;code&gt;ACCESS_VIOLATION&lt;/code&gt; crash in &lt;code&gt;RenderTargetBitmap.RenderAsync&lt;/code&gt; that occurred when the target element left the visual tree (for example, a popup closing) before the capture completed.&lt;/td&gt;
+&lt;td&gt;RTB_CancelRenderOnTreeLeave&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a potential crash in package management when a package was uninstalled prior to being processed.&lt;/td&gt;
+&lt;td&gt;PackageManager_FixCrash&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an issue where &lt;code&gt;GetReadyState&lt;/code&gt; could return incorrect error codes when required Windows AI packages were not yet deployed. The API now correctly reports &lt;code&gt;NotReady&lt;/code&gt;, improving diagnostic clarity and reducing false-positive failure signals in telemetry.&lt;/td&gt;
+&lt;td&gt;ModelInitialization_GetReadyStateAvailabilityGuard&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Improved internal performance diagnostics for &lt;code&gt;LanguageModel.GenerateResponseAsync&lt;/code&gt; to better identify sources of latency before the first token is returned.&lt;/td&gt;
+&lt;td&gt;LanguageModelInsights_GetPartialResultLatency&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a fail-fast crash caused by re-entrant dispatch during cross-apartment COM release operations in &lt;code&gt;UIAffinityReleaseQueue::DoCleanup&lt;/code&gt;.&lt;/td&gt;
+&lt;td&gt;UIAffinityReleaseQueue_PauseDispatchDuringCleanup&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an issue where &lt;code&gt;Microsoft.Windows.Workloads.dll&lt;/code&gt; failed to load on Windows builds prior to 22000 due to static imports of Dynamic Dependencies APIs unavailable on those OS versions. The functions are now resolved dynamically; failures on unsupported OS versions surface as a normal &lt;code&gt;HRESULT&lt;/code&gt; instead of a loader error dialog.&lt;/td&gt;
+&lt;td&gt;PackageDependency_ResolveDynamically&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an issue where XAML compiler errors were silently lost when using &lt;code&gt;dotnet build&lt;/code&gt;, showing only &lt;code&gt;MSB3073: exited with code 1&lt;/code&gt; instead of the actual error messages (&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/9813" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/9813/hovercard"&gt;microsoft/microsoft-ui-xaml#9813&lt;/a&gt;).&lt;/td&gt;
+&lt;td&gt;N/A (build-time tooling change)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a design issue in the WinAppSDK NuGet &lt;code&gt;.targets&lt;/code&gt; files where &lt;code&gt;%(PreprocessorDefinitions)&lt;/code&gt; references inside MSBuild &lt;code&gt;&amp;lt;Target&amp;gt;&lt;/code&gt; blocks triggered task batching, causing the same auto-initializer source file to be added to &lt;code&gt;ClCompile&lt;/code&gt; multiple times and producing duplicate &lt;code&gt;.obj&lt;/code&gt; outputs (MSB8027 / LNK4042 warnings). Definitions are now set via &lt;code&gt;&amp;lt;ItemDefinitionGroup&amp;gt;&lt;/code&gt;. An opt-out property (&lt;code&gt;WindowsAppSDK_Arm64EcCompilerWorkaround&lt;/code&gt;) is included for ARM64EC+LTCG builds (&lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/5395" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/5395/hovercard"&gt;microsoft/WindowsAppSDK#5395&lt;/a&gt;).&lt;/td&gt;
+&lt;td&gt;N/A (build &lt;code&gt;.targets&lt;/code&gt; change)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;To see everything that's new and changed, see the full &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-1-8?pivots=stable" rel="nofollow"&gt;Windows App SDK 1.8.8 release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.8.260508005" rel="nofollow"&gt;1.8.260508005 NuGet&lt;/a&gt; package to use WinAppSDK 1.8 in your app.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Getting started&lt;/h3&gt;
+&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
