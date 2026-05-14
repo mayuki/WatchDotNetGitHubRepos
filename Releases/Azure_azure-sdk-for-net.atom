@@ -1,43 +1,142 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-05-13T00:26:43Z</updated>
+  <updated>2026-05-14T00:27:35Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-05-12</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-05-12</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-05-13</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-05-13</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-05-13T00:26:43Z</updated>
+    <updated>2026-05-14T00:27:35Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Monitor.Slis_1.0.0-beta.1"&gt;Azure.ResourceManager.Monitor.Slis_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/System.ClientModel_1.12.0"&gt;System.ClientModel_1.12.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-04-22)&lt;/h2&gt;
+                                &lt;h2&gt;1.12.0 (2026-05-12)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial preview release of &lt;code&gt;Azure.ResourceManager.Monitor.Slis&lt;/code&gt; for managing Service Level Indicator (SLI) resources under the &lt;code&gt;Microsoft.Monitor&lt;/code&gt; namespace.&lt;/li&gt;
-&lt;li&gt;Support for SLI resource CRUD operations: create or update, get, delete, and list.&lt;/li&gt;
-&lt;li&gt;SLI evaluation with Availability and Latency categories, supporting both window-based and request-based evaluation types with configurable signal sources, aggregation, and SLO baselines.&lt;/li&gt;
-&lt;li&gt;Integration with Azure Monitor Workspace (AMW) accounts for metric emission, with managed identity and alert support.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;CredentialSettings.this[string key]&lt;/code&gt; indexer for reading custom properties from the credential configuration section.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;General New Features&lt;/h3&gt;
-&lt;p&gt;This package follows the &lt;a href="https://azure.github.io/azure-sdk/general_introduction.html" rel="nofollow"&gt;new Azure SDK guidelines&lt;/a&gt;, and provides many core capabilities:&lt;/p&gt;
-&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
-- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
-- HTTP pipeline with custom policies.
-- Better error-handling.
-- Support uniform telemetry across all languages."&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
-- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
-- HTTP pipeline with custom policies.
-- Better error-handling.
-- Support uniform telemetry across all languages.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This package is a Public Preview version, so expect incompatible changes in subsequent releases as we improve the product. To provide feedback, submit an issue in our &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues"&gt;Azure SDK for .NET GitHub repo&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;NOTE: For more information about unified authentication, please refer to &lt;a href="https://learn.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet" rel="nofollow"&gt;Microsoft Azure Identity documentation for .NET&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;AuthenticationPolicy.Create&lt;/code&gt; no longer throws when an ApiKey credential section carries a &lt;code&gt;Scope&lt;/code&gt; value; &lt;code&gt;Scope&lt;/code&gt; is ignored for ApiKey auth.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.VoiceLive_1.1.0-beta.4"&gt;Azure.AI.VoiceLive_1.1.0-beta.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.1.0-beta.4 (2026-05-13)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Replaced &lt;code&gt;BinaryData&lt;/code&gt; with new &lt;code&gt;RequireApprovalOption&lt;/code&gt; typed property on &lt;code&gt;VoiceLiveMcpServerDefinition.RequireApproval&lt;/code&gt;. Customers can now set approval directly (&lt;code&gt;server.RequireApproval = MCPApprovalType.Never&lt;/code&gt;) instead of using &lt;code&gt;BinaryData.FromObjectAsJson()&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added OpenTelemetry distributed tracing support. The SDK now emits spans via &lt;code&gt;System.Diagnostics.ActivitySource&lt;/code&gt; named &lt;code&gt;"Azure.AI.VoiceLive"&lt;/code&gt; — no extra instrumentation package required. Spans include standard &lt;a href="https://opentelemetry.io/docs/specs/semconv/gen-ai/" rel="nofollow"&gt;GenAI semantic convention&lt;/a&gt; attributes such as token usage, first-token latency, turn count, and interruption count.&lt;/li&gt;
+&lt;li&gt;Added OpenTelemetry metrics support. The SDK now emits &lt;code&gt;gen_ai.client.operation.duration&lt;/code&gt; and &lt;code&gt;gen_ai.client.token.usage&lt;/code&gt; metrics via a &lt;code&gt;System.Diagnostics.Metrics.Meter&lt;/code&gt; named &lt;code&gt;"Azure.AI.VoiceLive"&lt;/code&gt; in compliance with GenAI semantic conventions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;VoiceLiveMcpServerDefinition.RequireApproval&lt;/code&gt; property type changed from &lt;code&gt;BinaryData&lt;/code&gt; to &lt;code&gt;RequireApprovalOption&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed &lt;code&gt;MCPApprovalType&lt;/code&gt; serialization so that &lt;code&gt;require_approval&lt;/code&gt; correctly serializes to &lt;code&gt;"never"&lt;/code&gt; on the wire. Previously, using &lt;code&gt;BinaryData.FromObjectAsJson(MCPApprovalType.Never)&lt;/code&gt; silently produced an empty object &lt;code&gt;{}&lt;/code&gt;, causing the service to treat it as &lt;code&gt;"always"&lt;/code&gt; and send unexpected approval requests.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.DataLake_12.26.0"&gt;Azure.Storage.Files.DataLake_12.26.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.26.0 (2026-05-12)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Includes all features from 12.26.0-beta.1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed issue where the &lt;code&gt;TokenRequestContext.Scopes&lt;/code&gt; contained a double slash (e.g. &lt;code&gt;https://storage.azure.com//.default&lt;/code&gt;) when using &lt;code&gt;TokenCredential&lt;/code&gt; authentication. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4283736411" data-permission-text="Title is private" data-url="https://github.com/Azure/azure-sdk-for-net/issues/58295" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/58295/hovercard" href="https://github.com/Azure/azure-sdk-for-net/issues/58295"&gt;#58295&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.62"&gt;Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.62&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.0.0-preview.62 (2026-05-12)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;This release contains bug fixes to improve quality.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.Batch_12.25.0"&gt;Azure.Storage.Blobs.Batch_12.25.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.25.0 (2026-05-12)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Includes all features from 12.25.0-beta.1&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.Shares_12.26.0"&gt;Azure.Storage.Files.Shares_12.26.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.26.0 (2026-05-12)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Includes all features from 12.26.0-beta.1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed issue where the &lt;code&gt;TokenRequestContext.Scopes&lt;/code&gt; contained a double slash (e.g. &lt;code&gt;https://storage.azure.com//.default&lt;/code&gt;) when using &lt;code&gt;TokenCredential&lt;/code&gt; authentication. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4283736411" data-permission-text="Title is private" data-url="https://github.com/Azure/azure-sdk-for-net/issues/58295" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/58295/hovercard" href="https://github.com/Azure/azure-sdk-for-net/issues/58295"&gt;#58295&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Queues_12.26.0"&gt;Azure.Storage.Queues_12.26.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.26.0 (2026-05-12)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Includes all features from 12.26.0-beta.1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed issue where the &lt;code&gt;TokenRequestContext.Scopes&lt;/code&gt; contained a double slash (e.g. &lt;code&gt;https://storage.azure.com//.default&lt;/code&gt;) when using &lt;code&gt;TokenCredential&lt;/code&gt; authentication. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4283736411" data-permission-text="Title is private" data-url="https://github.com/Azure/azure-sdk-for-net/issues/58295" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/58295/hovercard" href="https://github.com/Azure/azure-sdk-for-net/issues/58295"&gt;#58295&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs_12.28.0"&gt;Azure.Storage.Blobs_12.28.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.28.0 (2026-05-12)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Includes all features from 12.28.0-beta.1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed issue where the &lt;code&gt;TokenRequestContext.Scopes&lt;/code&gt; contained a double slash (e.g. &lt;code&gt;https://storage.azure.com//.default&lt;/code&gt;) when using &lt;code&gt;TokenCredential&lt;/code&gt; authentication. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4283736411" data-permission-text="Title is private" data-url="https://github.com/Azure/azure-sdk-for-net/issues/58295" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/58295/hovercard" href="https://github.com/Azure/azure-sdk-for-net/issues/58295"&gt;#58295&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Common_12.27.0"&gt;Azure.Storage.Common_12.27.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.27.0 (2026-05-12)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed issue where the &lt;code&gt;TokenRequestContext.Scopes&lt;/code&gt; contained a double slash (e.g. &lt;code&gt;https://storage.azure.com//.default&lt;/code&gt;) when using &lt;code&gt;TokenCredential&lt;/code&gt; authentication. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4283736411" data-permission-text="Title is private" data-url="https://github.com/Azure/azure-sdk-for-net/issues/58295" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/58295/hovercard" href="https://github.com/Azure/azure-sdk-for-net/issues/58295"&gt;#58295&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
