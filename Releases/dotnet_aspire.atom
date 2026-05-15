@@ -1,6 +1,33 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/aspire - Releases</title>
   <link href="https://github.com/dotnet/aspire" />
-  <updated>2026-05-14T00:27:41Z</updated>
+  <updated>2026-05-15T00:25:10Z</updated>
   <id>https://github.com/dotnet/aspire</id>
+  <entry>
+    <title>dotnet/aspire - Releases - 2026-05-14</title>
+    <id>https://github.com/dotnet/aspire#2026-05-14</id>
+    <link href="https://github.com/dotnet/aspire" />
+    <updated>2026-05-15T00:25:10Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.3.2"&gt;Aspire 13.3.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's New in Aspire 13.3.2&lt;/h2&gt;
+&lt;p&gt;Patch release for Aspire 13.3 with a fix for container tunnel startup when tunnel-dependent containers use &lt;code&gt;WaitFor()&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;🐛 Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🚇 Fix &lt;code&gt;WaitFor()&lt;/code&gt; for tunnel-dependent containers — The container tunnel implementation that shipped in Aspire 13.3 deadlocked at startup when tunnel-using containers waited on other resources, because resource waits blocked &lt;code&gt;ResourceStarting&lt;/code&gt; before the tunnel initialization could complete. Container and tunnel startup have been refactored to cooperate correctly, and additional tunnel-dependent containers can now be started at any point during the application lifecycle. Also improves error reporting for container tunnel failures. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4433022711" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/16988" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/16988/hovercard" href="https://github.com/microsoft/aspire/pull/16988"&gt;#16988&lt;/a&gt;, backported via &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4433548622" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/16993" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/16993/hovercard" href="https://github.com/microsoft/aspire/pull/16993"&gt;#16993&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;🏷️ Housekeeping&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🚀 Bumped branding to 13.3.2 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4441113462" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17053" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17053/hovercard" href="https://github.com/microsoft/aspire/pull/17053"&gt;#17053&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
