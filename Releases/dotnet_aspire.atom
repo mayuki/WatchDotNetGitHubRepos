@@ -1,29 +1,34 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/aspire - Releases</title>
   <link href="https://github.com/dotnet/aspire" />
-  <updated>2026-05-15T00:25:10Z</updated>
+  <updated>2026-05-16T00:23:22Z</updated>
   <id>https://github.com/dotnet/aspire</id>
   <entry>
-    <title>dotnet/aspire - Releases - 2026-05-14</title>
-    <id>https://github.com/dotnet/aspire#2026-05-14</id>
+    <title>dotnet/aspire - Releases - 2026-05-15</title>
+    <id>https://github.com/dotnet/aspire#2026-05-15</id>
     <link href="https://github.com/dotnet/aspire" />
-    <updated>2026-05-15T00:25:10Z</updated>
+    <updated>2026-05-16T00:23:22Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.3.2"&gt;Aspire 13.3.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.3.3"&gt;Aspire 13.3.3&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;What's New in Aspire 13.3.2&lt;/h2&gt;
-&lt;p&gt;Patch release for Aspire 13.3 with a fix for container tunnel startup when tunnel-dependent containers use &lt;code&gt;WaitFor()&lt;/code&gt;.&lt;/p&gt;
+                                &lt;h2&gt;What's New in Aspire 13.3.3&lt;/h2&gt;
+&lt;p&gt;Patch release for Aspire 13.3 with fixes for debug log level leaking into user resources, Keycloak HTTPS endpoint token invalidation, and endpoint materialization in &lt;code&gt;HostResourceWithEndpoints&lt;/code&gt;.&lt;/p&gt;
 &lt;h3&gt;🐛 Fixes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;🚇 Fix &lt;code&gt;WaitFor()&lt;/code&gt; for tunnel-dependent containers — The container tunnel implementation that shipped in Aspire 13.3 deadlocked at startup when tunnel-using containers waited on other resources, because resource waits blocked &lt;code&gt;ResourceStarting&lt;/code&gt; before the tunnel initialization could complete. Container and tunnel startup have been refactored to cooperate correctly, and additional tunnel-dependent containers can now be started at any point during the application lifecycle. Also improves error reporting for container tunnel failures. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4433022711" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/16988" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/16988/hovercard" href="https://github.com/microsoft/aspire/pull/16988"&gt;#16988&lt;/a&gt;, backported via &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4433548622" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/16993" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/16993/hovercard" href="https://github.com/microsoft/aspire/pull/16993"&gt;#16993&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;🔇 &lt;strong&gt;Debug log level leaking into user resources&lt;/strong&gt; — &lt;code&gt;Logging__LogLevel__Default=Debug&lt;/code&gt; set by the app host was being inherited by all user resources, silently changing their logging verbosity. The app host now uses &lt;code&gt;ASPIRE_APPHOST_LOGLEVEL&lt;/code&gt; instead, which is scoped to Aspire processes only. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4442756824" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17071" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17071/hovercard" href="https://github.com/microsoft/aspire/pull/17071"&gt;#17071&lt;/a&gt;, backported via &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4446648068" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17078" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17078/hovercard" href="https://github.com/microsoft/aspire/pull/17078"&gt;#17078&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;🔑 &lt;strong&gt;Keycloak HTTPS primary endpoint&lt;/strong&gt; — Fixed a regression where Keycloak tokens became invalid after an app host restart because the HTTPS endpoint port was dynamic. When developer certificates are enabled, Keycloak's primary endpoint is now upgraded to HTTPS directly, and the endpoint name is set to &lt;code&gt;http&lt;/code&gt; to enable standard &lt;code&gt;http+https://&lt;/code&gt; service discovery URLs. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4441449157" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17058" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17058/hovercard" href="https://github.com/microsoft/aspire/pull/17058"&gt;#17058&lt;/a&gt;, backported via &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4441884316" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17063" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17063/hovercard" href="https://github.com/microsoft/aspire/pull/17063"&gt;#17063&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;🔌 &lt;strong&gt;Endpoint materialization in &lt;code&gt;HostResourceWithEndpoints&lt;/code&gt;&lt;/strong&gt; — Endpoints configured via &lt;code&gt;HostResourceWithEndpoints&lt;/code&gt; are now correctly materialized, ensuring endpoint resolution and service discovery work as expected. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4448474449" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17091" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17091/hovercard" href="https://github.com/microsoft/aspire/pull/17091"&gt;#17091&lt;/a&gt;, backported via &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4448570205" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17092" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17092/hovercard" href="https://github.com/microsoft/aspire/pull/17092"&gt;#17092&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;🏷️ Housekeeping&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;🚀 Bumped branding to 13.3.2 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4441113462" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17053" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17053/hovercard" href="https://github.com/microsoft/aspire/pull/17053"&gt;#17053&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;⬆️ Bumped DCP (Microsoft.DeveloperControlPlane) from 0.23.5 → 0.23.6 — includes fixes for Kubernetes OpenAPI generator types that caused &lt;code&gt;[SHOULD NOT HAPPEN] failed to update managedFields&lt;/code&gt; errors. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4442405294" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17070" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17070/hovercard" href="https://github.com/microsoft/aspire/pull/17070"&gt;#17070&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;🚀 Bumped branding to 13.3.3 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4448182249" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17088" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17088/hovercard" href="https://github.com/microsoft/aspire/pull/17088"&gt;#17088&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/a4615e7c6def6cba4703cdbd84009cd3da9a261b"&gt;a4615e7c6def6cba4703cdbd84009cd3da9a261b&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
