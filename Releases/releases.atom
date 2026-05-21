@@ -1,71 +1,55 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-05-20T00:29:57Z</updated>
+  <updated>2026-05-21T00:29:25Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>AvaloniaUI/Avalonia - Releases - 2026-05-19</title>
-    <id>https://github.com/AvaloniaUI/Avalonia#2026-05-19</id>
-    <link href="https://github.com/AvaloniaUI/Avalonia" />
-    <updated>2026-05-20T00:29:28Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/AvaloniaUI/Avalonia/releases/tag/11.3.16"&gt;11.3.16&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Core – Align Touch/Pen capture semantics with Mouse by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/miloush/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/miloush"&gt;@miloush&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4439333608" data-permission-text="Title is private" data-url="https://github.com/AvaloniaUI/Avalonia/issues/21363" data-hovercard-type="pull_request" data-hovercard-url="/AvaloniaUI/Avalonia/pull/21363/hovercard" href="https://github.com/AvaloniaUI/Avalonia/pull/21363"&gt;#21363&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/AvaloniaUI/Avalonia/compare/11.3.15...11.3.16"&gt;&lt;tt&gt;11.3.15...11.3.16&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-05-19</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-05-19</id>
+    <title>aws/aws-sdk-net - Releases - 2026-05-20</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-05-20</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-05-20T00:29:28Z</updated>
+    <updated>2026-05-21T00:29:08Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.251.0"&gt;4.0.251.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.252.0"&gt;4.0.252.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.251.0 (2026-05-19 18:24 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.252.0 (2026-05-20 18:24 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;BedrockAgentCore (4.0.24.0)
+&lt;li&gt;BedrockRuntime (4.0.18.0)
 &lt;ul&gt;
-&lt;li&gt;Add RetryableConflictException (HTTP 409) to InvokeAgentRuntime and StopRuntimeSession to prevent orphaned VMs during concurrent session access. The SDK automatically retries this exception with backoff. Enforcement is not yet active and will be enabled in a future service update.&lt;/li&gt;
+&lt;li&gt;Supporting Request Metadata for Invoke Model and Invoke Model with Response Stream&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DevOpsAgent (4.0.4.0)
+&lt;li&gt;CustomerProfiles (4.0.12.0)
 &lt;ul&gt;
-&lt;li&gt;Added a new serviceType mcpserversigv4 service and association. This provides feature to register MCP sigv4 authorization based MCPs&lt;/li&gt;
+&lt;li&gt;Amazon Connect Customer Profiles adds support for item catalog columns in RecommenderSchema, ExcludedColumns in Create and Update Recommender to specify columns to exclude from training, and the ability to disable automatic retraining by setting TrainingFrequency to 0.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GuardDuty (4.0.19.0)
+&lt;li&gt;KeyManagementService (4.0.11.0)
 &lt;ul&gt;
-&lt;li&gt;Adding support for exposure and vulnerability context from AWS Security Hub in GuardDuty Extended Threat Detection attack sequence findings.&lt;/li&gt;
+&lt;li&gt;AWS KMS now supports creating grants for AWS service principals using new GranteeServicePrincipal and RetiringServicePrincipal parameters. This release adds SourceArn grant constraint and three condition keys for controlling CreateGrant access. For more information, see Grants in AWS KMS.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ManagedGrafana (4.0.5.0)
+&lt;li&gt;MWAA (4.0.4.4)
 &lt;ul&gt;
-&lt;li&gt;Introduce degraded workspace status as a possible Amazon Managed Grafana workspace status, and a new field named degraded workspace reason which informs customers why the workspace is degraded in the DescribeWorkspace API response.&lt;/li&gt;
+&lt;li&gt;Updated API documentation to describe the PublicAndPrivate webserver access mode.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;RTBFabric (4.0.6.0)
+&lt;li&gt;PaymentCryptographyData (4.0.7.0)
 &lt;ul&gt;
-&lt;li&gt;This release is to deprecate 'inboundLinksCount' field in GetResponderGateway response and introduce the new field 'linksRequestedCount' to replace it.&lt;/li&gt;
+&lt;li&gt;GenerateAuthRequestCryptogram API launch.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.58.0)
+&lt;li&gt;Extensions.NETCore.Setup (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for ml.p5.4xlarge and ml.p5en.48xlarge instances on SageMaker Notebook Instances Platform.&lt;/li&gt;
+&lt;li&gt;Added new callback for the &lt;code&gt;AddAWSService&lt;/code&gt; and similar methods allowing customization of the service client config before being used to create the service client. For example the callback can be used to configure the &lt;code&gt;HttpClientFactory&lt;/code&gt; with an implementation coming from the DI using the &lt;code&gt;IHttpClientFactory&lt;/code&gt; provided by Microsoft.&lt;/li&gt;
+&lt;li&gt;Note: Callers passing a literal null as the second argument to AddAWSService or AddKeyedAWSService may need to cast (e.g., (AWSOptions)null) to resolve overload ambiguity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.7.2
+&lt;ul&gt;
+&lt;li&gt;Remove outdated xamarin links on httpClientFactory docs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -76,81 +60,25 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-cosmos-dotnet-v3 - Releases - 2026-05-19</title>
-    <id>https://github.com/Azure/azure-cosmos-dotnet-v3#2026-05-19</id>
-    <link href="https://github.com/Azure/azure-cosmos-dotnet-v3" />
-    <updated>2026-05-20T00:29:29Z</updated>
+    <title>unoplatform/uno - Releases - 2026-05-20</title>
+    <id>https://github.com/unoplatform/uno#2026-05-20</id>
+    <link href="https://github.com/unoplatform/uno" />
+    <updated>2026-05-21T00:29:25Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-cosmos-dotnet-v3/releases/tag/3.60.0"&gt;3.60.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/unoplatform/uno/releases/tag/6.5.237"&gt;6.5.237&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;See &lt;a href="https://github.com/Azure/azure-cosmos-dotnet-v3/blob/main/changelog.md#360"&gt;changelog&lt;/a&gt; for details.&lt;/p&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.60.0" rel="nofollow"&gt;https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.60.0&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-05-19</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-05-19</id>
-    <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-05-20T00:29:29Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/System.ClientModel_1.13.0"&gt;System.ClientModel_1.13.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.13.0 (2026-05-18)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;CredentialSettings.TokenProvider&lt;/code&gt; to hold the resolved &lt;code&gt;AuthenticationTokenProvider&lt;/code&gt; for the credential.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;IConfiguration.GetCredential(...)&lt;/code&gt; renamed to &lt;code&gt;IConfiguration.GetCredentialSettings(...)&lt;/code&gt; and its return type changed from &lt;code&gt;AuthenticationTokenProvider?&lt;/code&gt; to &lt;code&gt;CredentialSettings?&lt;/code&gt; (experimental &lt;code&gt;SCME0002&lt;/code&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;ClientSettings.CredentialProvider&lt;/code&gt; will be removed in a future release; migrate to &lt;code&gt;settings.Credential.TokenProvider&lt;/code&gt; (experimental &lt;code&gt;SCME0002&lt;/code&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>dotnet/aspire - Releases - 2026-05-19</title>
-    <id>https://github.com/dotnet/aspire#2026-05-19</id>
-    <link href="https://github.com/dotnet/aspire" />
-    <updated>2026-05-20T00:29:35Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.3.4"&gt;Aspire 13.3.4&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;What's New in Aspire 13.3.4&lt;/h2&gt;
-&lt;p&gt;Patch release for Aspire 13.3 with a fix for the Aspire skill description exceeding agent host limits.&lt;/p&gt;
-&lt;h3&gt;🐛 Fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;📝 &lt;strong&gt;Aspire skill description too long for agent hosts&lt;/strong&gt; — The &lt;code&gt;SKILL.md&lt;/code&gt; generated by &lt;code&gt;aspire agent init&lt;/code&gt; included a frontmatter description that exceeded the 1024-character limit enforced by agent hosts such as Codex and Copilot CLI, causing the Aspire skill to fail to load. The bundled skill description has been shortened to stay within the limit. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4461938271" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17183" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17183/hovercard" href="https://github.com/microsoft/aspire/pull/17183"&gt;#17183&lt;/a&gt;, backported via &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4462671379" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17188" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17188/hovercard" href="https://github.com/microsoft/aspire/pull/17188"&gt;#17188&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;🏷️ Housekeeping&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;🚀 Bumped branding to 13.3.4 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4471168857" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17215" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17215/hovercard" href="https://github.com/microsoft/aspire/pull/17215"&gt;#17215&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
+                                &lt;p&gt;This new release is a service update part of Uno Platform 6.5 — &lt;a href="https://aka.platform.uno/blog-6-5" rel="nofollow"&gt;read our blog on the previous 6.5 release&lt;/a&gt; for more details.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/75080796af797483231a9da2d1642b5130617565"&gt;75080796af797483231a9da2d1642b5130617565&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Generated by &lt;a href="https://github.com/microsoft/aspire/actions/runs/26123829267/agentic_workflow"&gt;Generate release notes for a new stable Aspire release&lt;/a&gt; · ● 3.6M&lt;/p&gt;
-&lt;/blockquote&gt;
-
+&lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;docs: Revise .NET version support for latest Uno Platform bits (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4430333075" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23254" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23254/hovercard" href="https://github.com/unoplatform/uno/pull/23254"&gt;#23254&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mergify/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mergify"&gt;@mergify&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4451102469" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23273" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23273/hovercard" href="https://github.com/unoplatform/uno/pull/23273"&gt;#23273&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(deps): bump Microsoft.Kiota.Abstractions to 1.22.2 (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4404661084" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23228" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23228/hovercard" href="https://github.com/unoplatform/uno/pull/23228"&gt;#23228&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mergify/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mergify"&gt;@mergify&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4471097953" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23286" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23286/hovercard" href="https://github.com/unoplatform/uno/pull/23286"&gt;#23286&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(android): JNI-based setChecked to span AndroidX.Core 1.16/1.17 (backport &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4437763787" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23262" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23262/hovercard" href="https://github.com/unoplatform/uno/pull/23262"&gt;#23262&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mergify/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mergify"&gt;@mergify&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4470947736" data-permission-text="Title is private" data-url="https://github.com/unoplatform/uno/issues/23284" data-hovercard-type="pull_request" data-hovercard-url="/unoplatform/uno/pull/23284/hovercard" href="https://github.com/unoplatform/uno/pull/23284"&gt;#23284&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/unoplatform/uno/compare/6.5.229...6.5.237"&gt;&lt;tt&gt;6.5.229...6.5.237&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
