@@ -1,6 +1,150 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-05-21T00:29:09Z</updated>
+  <updated>2026-05-22T00:27:36Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-05-21</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-05-21</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2026-05-22T00:27:36Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Invocations_1.0.0-beta.4"&gt;Azure.AI.AgentServer.Invocations_1.0.0-beta.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.4 (2026-05-21)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Replaced &lt;code&gt;invoke_agent&lt;/code&gt; SERVER span with baggage-only propagation. W3C trace context propagation is now handled automatically by ASP.NET Core, so handler spans are parented directly under the caller's span.&lt;/li&gt;
+&lt;li&gt;Invocation and session IDs are propagated as Activity baggage for downstream correlation.&lt;/li&gt;
+&lt;li&gt;Unhandled exceptions now include the &lt;code&gt;x-platform-error-source&lt;/code&gt; header classifying error&lt;br&gt;
+origin as &lt;code&gt;user&lt;/code&gt; (invalid request), &lt;code&gt;platform&lt;/code&gt; (SDK/infrastructure failure), or &lt;code&gt;upstream&lt;/code&gt;&lt;br&gt;
+(developer handler failure) per container-image-spec §8. Platform errors include&lt;br&gt;
+&lt;code&gt;x-platform-error-detail&lt;/code&gt; with diagnostic context.&lt;/li&gt;
+&lt;li&gt;WebSocket protocol support — new public abstract &lt;code&gt;InvocationWebSocketHandler&lt;/code&gt;&lt;br&gt;
+base class (derived from &lt;code&gt;InvocationHandler&lt;/code&gt;) declares abstract&lt;br&gt;
+&lt;code&gt;HandleWebSocketAsync(WebSocket, InvocationContext, CancellationToken)&lt;/code&gt;&lt;br&gt;
+and defaults the inherited &lt;code&gt;HandleAsync&lt;/code&gt; to HTTP &lt;code&gt;404 Not Found&lt;/code&gt;. A&lt;br&gt;
+WebSocket-only agent therefore implements only &lt;code&gt;HandleWebSocketAsync&lt;/code&gt;;&lt;br&gt;
+multi-protocol agents override both methods. Handlers that derive from&lt;br&gt;
+plain &lt;code&gt;InvocationHandler&lt;/code&gt; continue to short-circuit &lt;code&gt;/invocations_ws&lt;/code&gt;&lt;br&gt;
+to HTTP &lt;code&gt;404 Not Found&lt;/code&gt;. The SDK accepts the upgrade&lt;br&gt;
+(&lt;code&gt;AcceptWebSocketAsync&lt;/code&gt;), maps clean handler returns to RFC 6455 close&lt;br&gt;
+code &lt;code&gt;1000&lt;/code&gt; (&lt;code&gt;NormalClosure&lt;/code&gt;) and uncaught handler exceptions to &lt;code&gt;1011&lt;/code&gt;&lt;br&gt;
+(&lt;code&gt;InternalServerError&lt;/code&gt;), and preserves handler-initiated close codes&lt;br&gt;
+unchanged.&lt;/li&gt;
+&lt;li&gt;WebSocket Ping/Pong keep-alive — disabled by default; enable via the&lt;br&gt;
+&lt;code&gt;WS_KEEPALIVE_INTERVAL&lt;/code&gt; environment variable (see&lt;br&gt;
+&lt;code&gt;Azure.AI.AgentServer.Core&lt;/code&gt; 1.0.0-beta.24), which is wired through to&lt;br&gt;
+Kestrel's &lt;code&gt;WebSocketOptions.KeepAliveInterval&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;WebSocket telemetry — structured close-event log line carrying&lt;br&gt;
+&lt;code&gt;azure.ai.agentserver.invocations_ws.session_id&lt;/code&gt;,&lt;br&gt;
+&lt;code&gt;azure.ai.agentserver.invocations_ws.close_code&lt;/code&gt;, and&lt;br&gt;
+&lt;code&gt;azure.ai.agentserver.invocations_ws.duration_ms&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Responses_1.0.0-beta.5"&gt;Azure.AI.AgentServer.Responses_1.0.0-beta.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.5 (2026-05-21)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Replaced &lt;code&gt;invoke_agent&lt;/code&gt; SERVER span with baggage-only propagation. W3C trace context propagation is now handled automatically by ASP.NET Core, so handler spans are parented directly under the caller's span.&lt;/li&gt;
+&lt;li&gt;Response ID, conversation ID, and streaming mode are propagated as Activity baggage for downstream correlation.&lt;/li&gt;
+&lt;li&gt;Simplified &lt;code&gt;ResponsesActivitySource&lt;/code&gt; to focus on baggage propagation rather than span creation.&lt;/li&gt;
+&lt;li&gt;All error responses (4xx/5xx) now include the &lt;code&gt;x-platform-error-source&lt;/code&gt; header classifying&lt;br&gt;
+error origin as &lt;code&gt;user&lt;/code&gt; (invalid request), &lt;code&gt;platform&lt;/code&gt; (SDK/infrastructure failure), or&lt;br&gt;
+&lt;code&gt;upstream&lt;/code&gt; (developer handler failure) per container-image-spec §8.&lt;/li&gt;
+&lt;li&gt;Platform errors include the &lt;code&gt;x-platform-error-detail&lt;/code&gt; header with full exception context&lt;br&gt;
+(type, message, stack trace) for diagnostic telemetry. &lt;code&gt;AggregateException&lt;/code&gt; wrappers are&lt;br&gt;
+unwrapped and the detail is truncated to 2048 characters.&lt;/li&gt;
+&lt;li&gt;Foundry storage pipeline exceptions are now tagged as platform errors at the source, enabling&lt;br&gt;
+accurate classification of storage transport, authentication, and service failures regardless&lt;br&gt;
+of exception type.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Enabled automatic gzip/deflate/brotli decompression on the Foundry storage HTTP pipeline.&lt;br&gt;
+Intermediary gateways or load-balancers that return compressed responses are now handled&lt;br&gt;
+transparently, preventing JSON parse failures on raw gzip bytes. The pipeline also&lt;br&gt;
+advertises &lt;code&gt;Accept-Encoding&lt;/code&gt; support so servers can compress responses proactively.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Core_1.0.0-beta.24"&gt;Azure.AI.AgentServer.Core_1.0.0-beta.24&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.24 (2026-05-21)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added Agent365 tracing export support with managed identity token acquisition when &lt;code&gt;FOUNDRY_AGENT365_TRACING_ENABLED&lt;/code&gt; is set.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;AgentInstanceClientId&lt;/code&gt;, &lt;code&gt;AgentBlueprintClientId&lt;/code&gt;, &lt;code&gt;AgentTenantId&lt;/code&gt;, and &lt;code&gt;IsAgent365TracingEnabled&lt;/code&gt; properties to &lt;code&gt;FoundryEnvironment&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;FoundryEnrichmentProcessor&lt;/code&gt; attributes: &lt;code&gt;gen_ai.agent.blueprint.id&lt;/code&gt;, &lt;code&gt;microsoft.tenant.id&lt;/code&gt;, and &lt;code&gt;microsoft.foundry.agent.type&lt;/code&gt; on telemetry spans.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;W3CBaggagePropagator&lt;/code&gt; middleware that parses the W3C &lt;code&gt;baggage&lt;/code&gt; header into &lt;code&gt;Activity.Baggage&lt;/code&gt; on all target frameworks (net8.0, net9.0, net10.0).&lt;/li&gt;
+&lt;li&gt;Configured W3C Trace Context and Baggage propagators via &lt;code&gt;Sdk.SetDefaultTextMapPropagator&lt;/code&gt; for outgoing request propagation.&lt;/li&gt;
+&lt;li&gt;Added conditional exporter registration: Azure Monitor, OTLP, and Agent365 exporters activate only when their respective environment variables are set.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;PlatformHeaders.ErrorSource&lt;/code&gt; (&lt;code&gt;x-platform-error-source&lt;/code&gt;), &lt;code&gt;PlatformHeaders.ErrorDetail&lt;/code&gt;&lt;br&gt;
+(&lt;code&gt;x-platform-error-detail&lt;/code&gt;), and error source value constants (&lt;code&gt;ErrorSourceUser&lt;/code&gt;,&lt;br&gt;
+&lt;code&gt;ErrorSourcePlatform&lt;/code&gt;, &lt;code&gt;ErrorSourceUpstream&lt;/code&gt;) for error classification per container-image-spec §8.&lt;/li&gt;
+&lt;li&gt;Replaced &lt;code&gt;Azure.Monitor.OpenTelemetry.AspNetCore&lt;/code&gt; with the unified &lt;code&gt;Microsoft.OpenTelemetry&lt;/code&gt; distro for telemetry. The new distro auto-detects Azure Monitor and OTLP exporters from environment variables and eliminates the need for duplicate-instrumentation guards.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;FoundryEnvironment.WebSocketKeepAliveInterval&lt;/code&gt; (sourced from the&lt;br&gt;
+&lt;code&gt;WS_KEEPALIVE_INTERVAL&lt;/code&gt; environment variable) for the new&lt;br&gt;
+&lt;code&gt;invocations_ws&lt;/code&gt; (WebSocket) protocol. Wired through&lt;br&gt;
+&lt;code&gt;AgentHostMiddlewareExtensions.UseAgentServerCore&lt;/code&gt; into Kestrel's&lt;br&gt;
+&lt;code&gt;WebSocketOptions.KeepAliveInterval&lt;/code&gt;, so a positive value emits RFC 6455&lt;br&gt;
+protocol-level Ping frames (opcode &lt;code&gt;0x9&lt;/code&gt;) that keep idle WebSocket&lt;br&gt;
+connections alive across upstream proxy / load-balancer idle timeouts.&lt;br&gt;
+Disabled by default (&lt;code&gt;Timeout.InfiniteTimeSpan&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;UseAgentServerCore&lt;/code&gt; now also calls &lt;code&gt;IApplicationBuilder.UseWebSockets&lt;/code&gt;,&lt;br&gt;
+so any protocol library that hosts WebSocket endpoints (e.g., the&lt;br&gt;
+Invocations &lt;code&gt;/invocations_ws&lt;/code&gt; endpoint) works out of the box without&lt;br&gt;
+the consumer having to wire &lt;code&gt;UseWebSockets&lt;/code&gt; themselves.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.57.0"&gt;Azure.Core_1.57.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.57.0 (2026-05-21)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;RequestContent.Create(BinaryContent)&lt;/code&gt; overload that adapts a &lt;code&gt;System.ClientModel.BinaryContent&lt;/code&gt; instance into a &lt;code&gt;Azure.Core.RequestContent&lt;/code&gt; instance.&lt;/li&gt;
+&lt;li&gt;Added experimental (&lt;code&gt;SCME0002&lt;/code&gt;) &lt;code&gt;AzureCredentialResolver&lt;/code&gt; that resolves Azure token credential sections (e.g. &lt;code&gt;AzureCliCredential&lt;/code&gt;, &lt;code&gt;ManagedIdentityCredential&lt;/code&gt;, &lt;code&gt;ChainedTokenCredential&lt;/code&gt;) into &lt;code&gt;TokenCredential&lt;/code&gt; instances. &lt;code&gt;ApiKeyCredential&lt;/code&gt; sections are not claimed — clients dispatch on &lt;code&gt;Credential.CredentialSource&lt;/code&gt; themselves.&lt;/li&gt;
+&lt;li&gt;Added experimental (&lt;code&gt;SCME0002&lt;/code&gt;) extensions on &lt;code&gt;Azure.Identity.ConfigurationExtensions&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;AddAzureCredentialResolver()&lt;/code&gt; on &lt;code&gt;IServiceCollection&lt;/code&gt; and &lt;code&gt;IHostApplicationBuilder&lt;/code&gt; — idempotent DI registration.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;IConfiguration.GetAzureCredentialSettings(sectionName, ...)&lt;/code&gt; — returns &lt;code&gt;CredentialSettings?&lt;/code&gt; with &lt;code&gt;TokenProvider&lt;/code&gt; populated for token sources and &lt;code&gt;Key&lt;/code&gt; populated for inline ApiKey sources, so a single call site can dispatch on either shape without binding a &lt;code&gt;ClientSettings&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;IConfiguration.GetAzureClientSettings&amp;lt;T&amp;gt;(sectionName, params CredentialResolver[] resolvers)&lt;/code&gt; — resolver-aware overload.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The Azure OpenAI default-scope quirk now writes &lt;code&gt;Credential:Scope&lt;/code&gt; at the credential-section root (the canonical SCM 1.12.0+ location) instead of &lt;code&gt;Credential:AdditionalProperties:Scope&lt;/code&gt;. SCM 1.12.0 reads both locations so existing configs continue to work.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed experimental (&lt;code&gt;SCME0002&lt;/code&gt;) &lt;code&gt;WithAzureCredential&lt;/code&gt; extension methods on &lt;code&gt;ClientSettings&lt;/code&gt; and &lt;code&gt;IClientBuilder&lt;/code&gt;. For DI, use &lt;code&gt;AddAzureClient&amp;lt;TClient, TSettings&amp;gt;&lt;/code&gt; / &lt;code&gt;AddKeyedAzureClient&amp;lt;TClient, TSettings&amp;gt;&lt;/code&gt; (which register &lt;code&gt;AzureCredentialResolver&lt;/code&gt; automatically), or call &lt;code&gt;AddAzureCredentialResolver()&lt;/code&gt; followed by &lt;code&gt;AddClient&amp;lt;TClient, TSettings&amp;gt;&lt;/code&gt; / &lt;code&gt;AddKeyedClient&amp;lt;TClient, TSettings&amp;gt;&lt;/code&gt;. For standalone scenarios, use &lt;code&gt;IConfiguration.GetAzureClientSettings&amp;lt;T&amp;gt;(...)&lt;/code&gt; or &lt;code&gt;IConfiguration.GetAzureCredentialSettings(...)&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Monitor.OpenTelemetry.Exporter_1.8.1"&gt;Azure.Monitor.OpenTelemetry.Exporter_1.8.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.8.1 (2026-05-20)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added GenAI main agent attribution support. Automatically propagates &lt;code&gt;microsoft.gen_ai.main_agent.*&lt;/code&gt; attributes from parent spans to child spans and log records, enabling end-to-end tracing of AI agent orchestration.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/59368" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/59368/hovercard"&gt;#59368&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

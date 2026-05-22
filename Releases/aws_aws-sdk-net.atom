@@ -1,55 +1,284 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-05-21T00:29:08Z</updated>
+  <updated>2026-05-22T00:27:35Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-05-20</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-05-20</id>
+    <title>aws/aws-sdk-net - Releases - 2026-05-21</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-05-21</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-05-21T00:29:08Z</updated>
+    <updated>2026-05-22T00:27:35Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.252.0"&gt;4.0.252.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.253.0"&gt;4.0.253.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.252.0 (2026-05-20 18:24 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.253.0 (2026-05-21 20:23 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;BedrockRuntime (4.0.18.0)
+&lt;li&gt;ACMPCA (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;Supporting Request Metadata for Invoke Model and Invoke Model with Response Stream&lt;/li&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CustomerProfiles (4.0.12.0)
+&lt;li&gt;APIGateway (4.0.7.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon Connect Customer Profiles adds support for item catalog columns in RecommenderSchema, ExcludedColumns in Create and Update Recommender to specify columns to exclude from training, and the ability to disable automatic retraining by setting TrainingFrequency to 0.&lt;/li&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;KeyManagementService (4.0.11.0)
+&lt;li&gt;ApiGatewayV2 (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;AWS KMS now supports creating grants for AWS service principals using new GranteeServicePrincipal and RetiringServicePrincipal parameters. This release adds SourceArn grant constraint and three condition keys for controlling CreateGrant access. For more information, see Grants in AWS KMS.&lt;/li&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MWAA (4.0.4.4)
+&lt;li&gt;AppRegistry (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Updated API documentation to describe the PublicAndPrivate webserver access mode.&lt;/li&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PaymentCryptographyData (4.0.7.0)
+&lt;li&gt;AppStream (4.0.11.0)
 &lt;ul&gt;
-&lt;li&gt;GenerateAuthRequestCryptogram API launch.&lt;/li&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Extensions.NETCore.Setup (4.0.4.0)
+&lt;li&gt;Backup (4.0.12.0)
 &lt;ul&gt;
-&lt;li&gt;Added new callback for the &lt;code&gt;AddAWSService&lt;/code&gt; and similar methods allowing customization of the service client config before being used to create the service client. For example the callback can be used to configure the &lt;code&gt;HttpClientFactory&lt;/code&gt; with an implementation coming from the DI using the &lt;code&gt;IHttpClientFactory&lt;/code&gt; provided by Microsoft.&lt;/li&gt;
-&lt;li&gt;Note: Callers passing a literal null as the second argument to AddAWSService or AddKeyedAWSService may need to cast (e.g., (AWSOptions)null) to resolve overload ambiguity.&lt;/li&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 4.0.7.2
+&lt;li&gt;Batch (4.0.9.6)
 &lt;ul&gt;
-&lt;li&gt;Remove outdated xamarin links on httpClientFactory docs.&lt;/li&gt;
+&lt;li&gt;Clarified CreateComputeEnvironment parameter requirements - serviceRole is required for UNMANAGED compute environments, allocationStrategy is required for EKS compute environments, and compute environments must be created in the ENABLED state.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BedrockAgent (4.0.9.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BedrockAgentCoreControl (4.0.37.0)
+&lt;ul&gt;
+&lt;li&gt;Adds dataset management APIs for creating, versioning, and managing evaluation datasets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BedrockRuntime (4.0.19.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CertificateManager (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CleanRooms (4.0.17.0)
+&lt;ul&gt;
+&lt;li&gt;Collaboration creators can update payment configurations without recreating the collaboration. When multiple payer candidates are configured for a cost type, analysis runners can specify the actual payer at submission time, providing granular control over billing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CleanRoomsML (4.0.10.0)
+&lt;ul&gt;
+&lt;li&gt;Collaboration creators can update payment configurations without recreating the collaboration. When multiple payer candidates are configured for a cost type, analysis runners can specify the actual payer at submission time, providing granular control over billing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Cloud9 (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CodeArtifact (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CodeGuruProfiler (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Comprehend (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ComprehendMedical (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Connect (4.0.46.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DataSync (4.0.11.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DLM (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EKS (4.0.17.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Evs (4.0.8.0)
+&lt;ul&gt;
+&lt;li&gt;A new GetDepotUrl API has been added to retrieve a URL for accessing Amazon EVS custom addon packages. Customers can use this URL to configure vSphere Lifecycle Manager (vLCM) as an online depot source, enabling upgrades of addon components across ESXi hosts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;FMS (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;FSx (4.0.10.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GlobalAccelerator (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GuardDuty (4.0.20.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;HealthLake (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IoTJobsDataPlane (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Kafka (4.0.10.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;KendraRanking (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;KinesisVideoArchivedMedia (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MarketplaceEntitlementService (4.0.6.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaConnect (4.0.8.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for controlling the timecode source of NDI flow outputs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaTailor (4.0.9.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MigrationHubConfig (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MigrationHubOrchestrator (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;NetworkManager (4.0.5.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Pricing (4.0.5.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;QApps (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;QuickSight (4.0.23.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Route53Resolver (4.0.7.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SageMaker (4.0.59.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for disabling home EFS file system creation on SageMaker domains.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SageMakerMetrics (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SecurityHub (4.0.11.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ServerlessApplicationRepository (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Signer (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SSOAdmin (4.0.7.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Textract (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;TranscribeService (4.0.6.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Translate (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;VerifiedPermissions (4.0.8.0)
+&lt;ul&gt;
+&lt;li&gt;Support hard deleting policy store aliases. Users can now delete an alias and immediately reassign it to a different policy store without waiting for the soft-delete retention period.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkMail (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
