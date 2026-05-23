@@ -1,42 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/aspire - Releases</title>
   <link href="https://github.com/dotnet/aspire" />
-  <updated>2026-05-22T00:27:41Z</updated>
+  <updated>2026-05-23T00:26:35Z</updated>
   <id>https://github.com/dotnet/aspire</id>
-  <entry>
-    <title>dotnet/aspire - Releases - 2026-05-21</title>
-    <id>https://github.com/dotnet/aspire#2026-05-21</id>
-    <link href="https://github.com/dotnet/aspire" />
-    <updated>2026-05-22T00:27:41Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.3.5"&gt;Aspire 13.3.5&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;What's New in Aspire 13.3.5&lt;/h2&gt;
-&lt;p&gt;Patch release for Aspire 13.3 with fixes for the Azure provisioning location prompt and an Aspire CLI named-pipe timeout on Linux with .NET SDK 10.0.300.&lt;/p&gt;
-&lt;h3&gt;🐛 Fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;📍 &lt;strong&gt;Azure provisioning location prompt not populated&lt;/strong&gt; — Selecting an existing resource group during &lt;code&gt;aspire publish&lt;/code&gt; now correctly populates dependent server-controlled fields (such as Location). Previously, server-provided values for disabled inputs were discarded, leaving those fields blank. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4481249349" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17278" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17278/hovercard" href="https://github.com/microsoft/aspire/pull/17278"&gt;#17278&lt;/a&gt;, backported via &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4482512368" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17291" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17291/hovercard" href="https://github.com/microsoft/aspire/pull/17291"&gt;#17291&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;🔧 &lt;strong&gt;Aspire CLI named-pipe timeout on Linux with .NET SDK 10.0.300&lt;/strong&gt; — The Aspire CLI was forcing &lt;code&gt;DOTNET_CLI_USE_MSBUILD_SERVER=1&lt;/code&gt; for all &lt;code&gt;dotnet run&lt;/code&gt;/&lt;code&gt;dotnet build&lt;/code&gt; invocations. On Linux with SDK 10.0.300 this caused a named-pipe timeout that prevented &lt;code&gt;aspire run&lt;/code&gt; from building the AppHost. The forced override has been removed so the SDK chooses MSBuild server behavior. Fixes &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4397329964" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/16849" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/16849/hovercard" href="https://github.com/microsoft/aspire/issues/16849"&gt;#16849&lt;/a&gt;. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4487459959" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17313" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17313/hovercard" href="https://github.com/microsoft/aspire/pull/17313"&gt;#17313&lt;/a&gt;, backported via &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4488047947" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17314" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17314/hovercard" href="https://github.com/microsoft/aspire/pull/17314"&gt;#17314&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;🏷️ Housekeeping&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;⬆️ Skipped log publish for WinGet/Homebrew installer pipeline jobs to fix Prepare Installers stage failures (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4456132714" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17134" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17134/hovercard" href="https://github.com/microsoft/aspire/pull/17134"&gt;#17134&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;🚀 Bumped branding to 13.3.5 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4488842900" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17315" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17315/hovercard" href="https://github.com/microsoft/aspire/pull/17315"&gt;#17315&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a class="commit-link" href="https://github.com/microsoft/aspire/compare/v13.3.4...v13.3.5"&gt;&lt;tt&gt;v13.3.4...v13.3.5&lt;/tt&gt;&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/70b33bcb5f64c75e3ab6f57616545f35bd43dc81"&gt;70b33bcb5f64c75e3ab6f57616545f35bd43dc81&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Generated by &lt;a href="https://github.com/microsoft/aspire/actions/runs/26241645258/agentic_workflow"&gt;Generate release notes for a new stable Aspire release&lt;/a&gt; · ● 4.3M&lt;/p&gt;
-&lt;/blockquote&gt;
-
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>

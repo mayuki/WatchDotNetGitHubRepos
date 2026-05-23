@@ -1,60 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>microsoft/microsoft-ui-xaml - Releases</title>
   <link href="https://github.com/microsoft/microsoft-ui-xaml" />
-  <updated>2026-05-22T00:27:53Z</updated>
+  <updated>2026-05-23T00:26:44Z</updated>
   <id>https://github.com/microsoft/microsoft-ui-xaml</id>
-  <entry>
-    <title>microsoft/microsoft-ui-xaml - Releases - 2026-05-21</title>
-    <id>https://github.com/microsoft/microsoft-ui-xaml#2026-05-21</id>
-    <link href="https://github.com/microsoft/microsoft-ui-xaml" />
-    <updated>2026-05-22T00:27:53Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/releases/tag/winui3/release/2.1.4-experimental8"&gt;WinUI 3 in WinAppSDK 2.1.4-experimental8 🧪&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;WinUI 3 in Windows App SDK 2.1.4-Experimental8 🧪&lt;/h2&gt;
-&lt;p&gt;This experimental release of WinUI 3 ships as part of &lt;a href="https://github.com/microsoft/WindowsAppSDK/releases"&gt;Windows App SDK 2.1.4-experimental8&lt;/a&gt;. To use it in your app, install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.1.4-experimental8" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.1.4-experimental8 NuGet package&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This release ships alongside Windows App SDK 2.1.3 stable and brings forward the WinUI changes from that release, including the new TitleBar custom drag region APIs (&lt;code&gt;TitleBar.IsDragRegion&lt;/code&gt;, &lt;code&gt;TitleBar.AutoRefreshDragRegions&lt;/code&gt;, &lt;code&gt;TitleBar.RecomputeDragRegions()&lt;/code&gt;) and the 2.1.3 WinUI bug fix batch.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;For the full set of changes, see the &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-2-0?pivots=experimental#version-21-experimental-8-214-experimental8" rel="nofollow"&gt;Windows App SDK 2.1 Experimental 8 release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
-&lt;h3&gt;Try it out&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.1.4-experimental8" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.1.4-experimental8 NuGet package&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/releases/tag/winui3/release/2.1.3"&gt;WinUI 3 in WinAppSDK 2.1.3&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;WinUI 3 in Windows App SDK 2.1.3&lt;/h2&gt;
-&lt;p&gt;This release of WinUI 3 ships as part of &lt;a href="https://github.com/microsoft/WindowsAppSDK/releases"&gt;Windows App SDK 2.1.3&lt;/a&gt;. To use it in your app, install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.1.3" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.1.3 NuGet package&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;What's new in WinUI 3:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;TitleBar custom drag regions.&lt;/strong&gt; &lt;code&gt;TitleBar&lt;/code&gt; now recursively walks &lt;code&gt;TitleBar.Content&lt;/code&gt; and automatically excludes interactive controls from the drag region while keeping empty gaps draggable by default. Three new APIs (&lt;code&gt;TitleBar.IsDragRegion&lt;/code&gt; attached property, &lt;code&gt;TitleBar.AutoRefreshDragRegions&lt;/code&gt;, and &lt;code&gt;TitleBar.RecomputeDragRegions()&lt;/code&gt;) give developers explicit control when the default behavior isn't sufficient. See PR &lt;a href="https://github.com/microsoft/microsoft-ui-xaml/pull/10936" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/microsoft-ui-xaml/pull/10936/hovercard"&gt;microsoft/microsoft-ui-xaml#10936&lt;/a&gt; and tracking issue &lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/10421" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/10421/hovercard"&gt;microsoft/microsoft-ui-xaml#10421&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bug fixes:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed a memory leak in &lt;code&gt;ItemsRepeater&lt;/code&gt; where recycled elements were never garbage collected due to a reference cycle through the &lt;code&gt;RecyclePool&lt;/code&gt;, which could also cause crashes in &lt;code&gt;InvalidateChildrenMeasure&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Fixed a crash where an implicit Show/Hide animation completion callback could access a destroyed &lt;code&gt;CUIElement&lt;/code&gt;, causing an access violation.&lt;/li&gt;
-&lt;li&gt;Fixed an issue where windowed popup content opened in a XAML Island did not respect &lt;code&gt;OverrideScale&lt;/code&gt;, causing content to appear oversized and clipped. See GitHub issue &lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/11000" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/11000/hovercard"&gt;microsoft/microsoft-ui-xaml#11000&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Fixed an integer divide-by-zero crash in &lt;code&gt;UniformGridLayout::GetMajorSize&lt;/code&gt; when an &lt;code&gt;ItemsRepeater&lt;/code&gt; is laid out in an available width narrower than one item's minor stride.&lt;/li&gt;
-&lt;li&gt;Fixed a fail-fast crash caused by re-entrant dispatch during cross-apartment COM release operations in &lt;code&gt;UIAffinityReleaseQueue::DoCleanup&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Fixed ambiguous module lookup when multiple modules with the same name are loaded in the same process. &lt;code&gt;GetModuleHandleW&lt;/code&gt; has been replaced with &lt;code&gt;GetModuleHandleExW&lt;/code&gt; so the correct module is resolved by address.&lt;/li&gt;
-&lt;li&gt;Fixed an issue where XAML compiler errors were silently lost when using &lt;code&gt;dotnet build&lt;/code&gt;, showing only &lt;code&gt;MSB3073: exited with code 1&lt;/code&gt; instead of the actual error messages. See GitHub issue &lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/9813" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/9813/hovercard"&gt;microsoft/microsoft-ui-xaml#9813&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;For the full set of changes across Windows App SDK 2.1.3, see the &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-2-0?pivots=stable#version-213-213" rel="nofollow"&gt;Windows App SDK 2.1.3 release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
-&lt;h3&gt;Try it out&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.1.3" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.1.3 NuGet package&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
