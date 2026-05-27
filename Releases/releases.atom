@@ -1,45 +1,284 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-05-26T00:27:25Z</updated>
+  <updated>2026-05-27T00:29:00Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-05-25</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-05-25</id>
-    <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-05-26T00:27:06Z</updated>
+    <title>aws/aws-sdk-net - Releases - 2026-05-26</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-05-26</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2026-05-27T00:28:35Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Core_1.0.0-beta.25"&gt;Azure.AI.AgentServer.Core_1.0.0-beta.25&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.255.0"&gt;4.0.255.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.25 (2026-05-25)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+                                &lt;h3&gt;4.0.255.0 (2026-05-26 18:33 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Corrected &lt;code&gt;FoundryEnrichmentProcessor&lt;/code&gt; to emit the Agent365 blueprint telemetry key as &lt;code&gt;microsoft.a365.agent.blueprint.id&lt;/code&gt; (previously emitted as &lt;code&gt;gen_ai.agent.blueprint.id&lt;/code&gt; in this code path).&lt;/li&gt;
+&lt;li&gt;AIOps (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Storage_1.7.0"&gt;Azure.ResourceManager.Storage_1.7.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.7.0 (2026-05-22)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;/li&gt;
+&lt;li&gt;ApplicationCostProfiler (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Upgraded api-version from &lt;code&gt;2025-06-01&lt;/code&gt; to &lt;code&gt;2025-08-01&lt;/code&gt;. Tag details available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/tree/dddcb1f2f0131aa15cc761624959063f2e197b57/specification/storage/Storage.Management"&gt;https://github.com/Azure/azure-rest-api-specs/tree/dddcb1f2f0131aa15cc761624959063f2e197b57/specification/storage/Storage.Management&lt;/a&gt;.
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;AppRunner (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Supported new &lt;code&gt;StorageAccountAccessTier.Smart&lt;/code&gt; access tier (requires zone-redundant storage).&lt;/li&gt;
-&lt;li&gt;Supported new &lt;code&gt;AllowedCopyScope.All&lt;/code&gt; value.&lt;/li&gt;
-&lt;li&gt;Supported new property &lt;code&gt;TagsReplicationEnabled&lt;/code&gt; on &lt;code&gt;ObjectReplicationPolicyData&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Supported new &lt;code&gt;StaticWebsite&lt;/code&gt; property on &lt;code&gt;BlobServiceData&lt;/code&gt; with &lt;code&gt;DefaultIndexDocumentPath&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Supported new &lt;code&gt;StorageConnectorResource&lt;/code&gt; for managing storage connectors.&lt;/li&gt;
-&lt;li&gt;Supported new &lt;code&gt;StorageDataShareResource&lt;/code&gt; for managing storage data shares.&lt;/li&gt;
-&lt;li&gt;Supported new &lt;code&gt;StopAssignment&lt;/code&gt; operation on &lt;code&gt;StorageTaskAssignmentResource&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Supported new &lt;code&gt;AllowSharedKeyAccessForServices&lt;/code&gt; property on storage account create/update.&lt;/li&gt;
-&lt;li&gt;Supported new &lt;code&gt;DataCollaborationPolicyProperties&lt;/code&gt; property on storage account create/update.&lt;/li&gt;
-&lt;li&gt;Supported new &lt;code&gt;TaskExecutionTriggerType.MockRun&lt;/code&gt; trigger type.&lt;/li&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Backup (4.0.13.0)
+&lt;ul&gt;
+&lt;li&gt;Launching S3 PITR malware scanning support for AWS Backup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Batch (4.0.10.0)
+&lt;ul&gt;
+&lt;li&gt;Increase the maximum value of jobExecutionTimeoutMinutes to support longer job timeouts during compute environment infrastructure updates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BCMDataExports (4.0.5.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BedrockAgentCore (4.0.25.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BedrockAgentCoreControl (4.0.38.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BedrockDataAutomation (4.0.9.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Billing (4.0.7.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Budgets (4.0.9.20)
+&lt;ul&gt;
+&lt;li&gt;AWS Budget Name Validation Documentation Updates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ChimeSDKIdentity (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ChimeSDKMediaPipelines (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CleanRooms (4.0.18.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CleanRoomsML (4.0.11.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CodeConnections (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ConnectHealth (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ControlCatalog (4.0.5.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DataZone (4.0.30.0)
+&lt;ul&gt;
+&lt;li&gt;Added resourceConfigurations and allowUserProvidedConfigurations fields to environment blueprint configuration APIs, enabling customers who migrated from V1 to V2 domains to update resource configurations (such as lineage schedules) programmatically via the SDK.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DevOpsGuru (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EMRServerless (4.0.10.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Evs (4.0.9.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GreengrassV2 (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GuardDuty (4.0.21.0)
+&lt;ul&gt;
+&lt;li&gt;Add malware scan support for Continuous Backups, also known as Point-In-Time Recovery Points (PITR).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IAMRolesAnywhere (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IdentityStore (4.0.6.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IoTManagedIntegrations (4.0.8.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Ivschat (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;KeyspacesStreams (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;KinesisVideoWebRTCStorage (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ManagedBlockchainQuery (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MarketplaceAgreement (4.0.7.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaPackageV2 (4.0.14.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MedicalImaging (4.0.8.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Notifications (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ObservabilityAdmin (4.0.12.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Odb (4.0.7.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;OSIS (4.0.6.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PartnerCentralChannel (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PcaConnectorScep (4.0.4.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Pipes (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RedshiftServerless (4.0.5.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ResilienceHub (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ResourceGroupsTaggingAPI (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;The GetResources API now returns MissingTagKeys in ComplianceDetails, listing tag keys defined as required in the ReportRequiredTagBlock block of the effective tag policy that are absent from the resource.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Route53GlobalResolver (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3Tables (4.0.11.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SagemakerEdgeManager (4.0.2.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SageMakerGeospatial (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Scheduler (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ServiceDiscovery (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ServiceQuotas (4.0.5.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SSMQuickSetup (4.0.3.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkSpacesThinClient (4.0.5.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -50,35 +289,21 @@
             </content>
   </entry>
   <entry>
-    <title>icsharpcode/ILSpy - Releases - 2026-05-25</title>
-    <id>https://github.com/icsharpcode/ILSpy#2026-05-25</id>
-    <link href="https://github.com/icsharpcode/ILSpy" />
-    <updated>2026-05-26T00:27:18Z</updated>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-05-26</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-05-26</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2026-05-27T00:28:36Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/icsharpcode/ILSpy/releases/tag/v10.1"&gt;ILSpy 10.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity.Broker_1.7.0"&gt;Azure.Identity.Broker_1.7.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;div class="markdown-alert markdown-alert-warning"&gt;&lt;p class="markdown-alert-title"&gt;&lt;svg data-component="Octicon" class="octicon octicon-alert mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"&gt;&lt;/path&gt;&lt;/svg&gt;Warning&lt;/p&gt;&lt;p&gt;&lt;strong&gt;We DO NOT own the domain ilspy[.]org&lt;/strong&gt; See &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4211773802" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3709" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3709/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3709"&gt;#3709&lt;/a&gt;&lt;br&gt;
-Download ILSpy only from GitHub Releases!&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;This release is based on &lt;a href="https://dotnet.microsoft.com/en-us/download/dotnet/10.0" rel="nofollow"&gt;.NET 10.0&lt;/a&gt;. Please make sure that you have it installed on your machine beforehand.&lt;/p&gt;
-&lt;h1&gt;New Language Features&lt;/h1&gt;
+                                &lt;h2&gt;1.7.0 (2026-05-26)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;.NET 11: &lt;a href="https://github.com/dotnet/runtime/blob/main/docs/design/specs/runtime-async.md"&gt;runtime-async&lt;/a&gt; support. See also &lt;a href="https://github.com/dotnet/core/blob/main/release-notes/11.0/preview/preview4/runtime.md#runtime-libraries-are-now-compiled-with-runtime-async"&gt;Runtime libraries are now compiled with runtime-async&lt;/a&gt;. Implemented via &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4401821484" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3731" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3731/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3731"&gt;#3731&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;BrokerCredentialResolver&lt;/code&gt; and &lt;code&gt;AddBrokerCredentialResolver()&lt;/code&gt; extensions for config- and DI-based resolution of &lt;code&gt;BrokerCredential&lt;/code&gt; and &lt;code&gt;VisualStudioCodeCredential&lt;/code&gt; sources. (Experimental, &lt;code&gt;SCME0002&lt;/code&gt;.)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;Enhancements&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4392448005" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3730" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3730/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3730"&gt;#3730&lt;/a&gt;: List/extract embedded resources, decompile BAML to XAML in ilspycmd. This was added to address existing workarounds for decompilation skills.&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4408733897" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3732" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3732/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3732"&gt;#3732&lt;/a&gt;: Reduce build warnings: lift IDisposable, fix CS9336 precedence bug, dispose evicted assemblies&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Bug fixes&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4437655731" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3734" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3734/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3734"&gt;#3734&lt;/a&gt;: Search pane flickers when navigating to search result in large assembly&lt;/li&gt;
-&lt;li&gt;Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4189393404" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3705" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3705/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3705"&gt;#3705&lt;/a&gt;: Code window is empty when select a .baml and refresh&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For a full list of changes click &lt;a href="https://github.com/icsharpcode/ILSpy/compare/v10.0.1...v10.1"&gt;here&lt;/a&gt;.&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
