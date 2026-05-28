@@ -1,6 +1,53 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>open-telemetry/opentelemetry-dotnet-contrib - Releases</title>
   <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-  <updated>2026-05-27T00:28:57Z</updated>
+  <updated>2026-05-28T00:26:21Z</updated>
   <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib</id>
+  <entry>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-05-27</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-05-27</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2026-05-28T00:26:21Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.StackExchangeRedis-1.15.1-beta.2"&gt;Instrumentation.StackExchangeRedis-1.15.1-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.StackExchangeRedis/1.15.1-beta.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.StackExchangeRedis v1.15.1-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed &lt;code&gt;db.query.text&lt;/code&gt; not respecting &lt;code&gt;SetVerboseDatabaseStatements&lt;/code&gt; when&lt;br&gt;
+the new database semantic conventions are enabled.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4245" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4245/hovercard"&gt;#4245&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add instrumentation scope version and schema URL to traces.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4095" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4095/hovercard"&gt;#4095&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add optimized path to flush commands on every &lt;code&gt;FlushInterval&lt;/code&gt; tick&lt;br&gt;
+regardless whether the parent &lt;code&gt;Activity&lt;/code&gt; completes. Whether the new behavior&lt;br&gt;
+is used depends on instrumentation configuration:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If both &lt;code&gt;Enrich&lt;/code&gt; and &lt;code&gt;Filter&lt;/code&gt; are not set, commands are flushed&lt;br&gt;
+eagerly each tick without waiting for the parent &lt;code&gt;Activity&lt;/code&gt; to complete, reducing&lt;br&gt;
+memory pressure for long-lived or high-volume parent spans.&lt;/li&gt;
+&lt;li&gt;If &lt;code&gt;Enrich&lt;/code&gt; or &lt;code&gt;Filter&lt;/code&gt; is set, commands are buffered until the&lt;br&gt;
+parent &lt;code&gt;Activity&lt;/code&gt; completes, maintaining the previous behavior.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4398" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4398/hovercard"&gt;#4398&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.StackExchangeRedis-1.15.1-beta.2/src/OpenTelemetry.Instrumentation.StackExchangeRedis/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
