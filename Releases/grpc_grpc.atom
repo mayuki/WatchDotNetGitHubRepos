@@ -1,6 +1,54 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2026-05-29T00:30:30Z</updated>
+  <updated>2026-05-30T00:28:33Z</updated>
   <id>https://github.com/grpc/grpc</id>
+  <entry>
+    <title>grpc/grpc - Releases - 2026-05-29</title>
+    <id>https://github.com/grpc/grpc#2026-05-29</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2026-05-30T00:28:33Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.81.0"&gt;Release v1.81.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release 1.81.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;graphic&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[EventEngine] Fix a potential use-after-free error on Windows. (&lt;a href="https://github.com/grpc/grpc/pull/42078" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42078/hovercard"&gt;#42078&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[ssl] Server side handshaker factory stores a map of key signers. (&lt;a href="https://github.com/grpc/grpc/pull/42002" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42002/hovercard"&gt;#42002&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Core] Fix completion queue shutdown race on weak memory models (ARM). (&lt;a href="https://github.com/grpc/grpc/pull/41510" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41510/hovercard"&gt;#41510&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[EventEngine] Fix a Windows race that causes an assertion error. (&lt;a href="https://github.com/grpc/grpc/pull/41563" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41563/hovercard"&gt;#41563&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[grpc_error] enable error_flatten experiment in OSS. (&lt;a href="https://github.com/grpc/grpc/pull/41471" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41471/hovercard"&gt;#41471&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Trim Python2 backward compatiblity syntax - removed (object) inheritance. (&lt;a href="https://github.com/grpc/grpc/pull/41708" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41708/hovercard"&gt;#41708&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Objective-C&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ObjC] Add receiveNextMessage to GRPCUnaryProtoCall. (&lt;a href="https://github.com/grpc/grpc/pull/42260" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42260/hovercard"&gt;#42260&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Python] Add typing_extensions dep to aio Bazel target. (&lt;a href="https://github.com/grpc/grpc/pull/42001" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42001/hovercard"&gt;#42001&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] [Pyright] Part 1 - Pyright for src/python/grpcio/grpc/aio/_base_server.py. (&lt;a href="https://github.com/grpc/grpc/pull/42240" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42240/hovercard"&gt;#42240&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Drop 3.9. (&lt;a href="https://github.com/grpc/grpc/pull/42145" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42145/hovercard"&gt;#42145&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] grpc-status: Relax protobuf dependency upper bound to allow 7.x. (&lt;a href="https://github.com/grpc/grpc/pull/41948" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41948/hovercard"&gt;#41948&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] [Typeguard] Part 5 - Add Typeguard SYNC Stack in tests. (&lt;a href="https://github.com/grpc/grpc/pull/40278" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/40278/hovercard"&gt;#40278&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Remove GIL from ReceiveMessageOperation.un_c method. (&lt;a href="https://github.com/grpc/grpc/pull/41812" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41812/hovercard"&gt;#41812&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Support observability in AsyncIO stack. (&lt;a href="https://github.com/grpc/grpc/pull/41573" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41573/hovercard"&gt;#41573&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ruby&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Ruby] Drop support for EOL Ruby 3.1 and clean up. (&lt;a href="https://github.com/grpc/grpc/pull/41435" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41435/hovercard"&gt;#41435&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Ruby] Composed CallCredentials keep a reference to their source. (&lt;a href="https://github.com/grpc/grpc/pull/41782" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41782/hovercard"&gt;#41782&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
