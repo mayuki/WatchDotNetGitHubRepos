@@ -1,70 +1,59 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-05-30T00:28:24Z</updated>
+  <updated>2026-05-31T00:28:48Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-05-29</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-05-29</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-05-30</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-05-30</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-05-30T00:28:24Z</updated>
+    <updated>2026-05-31T00:28:48Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ManagedNetworkFabric_1.2.0"&gt;Azure.ResourceManager.ManagedNetworkFabric_1.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects_2.1.0-beta.3"&gt;Azure.AI.Projects_2.1.0-beta.3&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0 (2026-05-26)&lt;/h2&gt;
+                                &lt;h2&gt;2.1.0-beta.3 (2026-05-29)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded the Managed Network Fabric management plane API version to &lt;code&gt;2025-07-15&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added support for newly introduced service capabilities and operation result models from the &lt;code&gt;2025-07-15&lt;/code&gt; API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated model and operation signatures to align with the &lt;code&gt;2025-07-15&lt;/code&gt; service contract.&lt;/li&gt;
-&lt;li&gt;Some operation result types changed from shared/common post-action result shapes to operation-specific result models.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed type naming inconsistencies and acronym casing issues in the generated public surface.&lt;/li&gt;
-&lt;li&gt;Corrected operation naming regressions to preserve previously shipped method names where applicable.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added compatibility customizations and regenerated code/api listings to mitigate breaking changes introduced by the API version upgrade.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;AIProjectModels&lt;/code&gt; client for model weights management, accessible via &lt;code&gt;AIProjectClient&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added memory store item CRUD operations for management of memories inside the &lt;code&gt;MemoryStore&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Translation.Text_2.0.0"&gt;Azure.AI.Translation.Text_2.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects.Agents_2.1.0-beta.3"&gt;Azure.AI.Projects.Agents_2.1.0-beta.3&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;2.0.0 (2026-06-06)&lt;/h2&gt;
+                                &lt;h2&gt;2.1.0-beta.3 (2026-05-29)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;GA release of the Azure AI Translator Text Translation SDK targeting the 2026-06-06 API version.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;TextTranslationClientSettings&lt;/code&gt; to support creating a &lt;code&gt;TextTranslationClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;TranslationTarget.Tone&lt;/code&gt; property is now strongly typed as &lt;code&gt;TranslationTone?&lt;/code&gt; instead of &lt;code&gt;string&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;TranslationTarget.Gender&lt;/code&gt; property is now strongly typed as &lt;code&gt;TranslationGender?&lt;/code&gt; instead of &lt;code&gt;string&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added client for Agent optimization Jobs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Removed &lt;code&gt;TranslationTarget.Grade&lt;/code&gt; property.&lt;/li&gt;
-&lt;li&gt;Changed &lt;code&gt;TranslationTarget.Tone&lt;/code&gt; type from &lt;code&gt;string&lt;/code&gt; to &lt;code&gt;TranslationTone?&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Changed &lt;code&gt;TranslationTarget.Gender&lt;/code&gt; type from &lt;code&gt;string&lt;/code&gt; to &lt;code&gt;TranslationGender?&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CreateSkillFromPackage&lt;/code&gt; and &lt;code&gt;CreateSkillFromPackageAsync&lt;/code&gt; methods of &lt;code&gt;ProjectAgentSkills&lt;/code&gt; client were replaced by &lt;code&gt;CreateSkillVersionFromFiles&lt;/code&gt; and &lt;code&gt;CreateSkillVersionFromFilesAsync&lt;/code&gt; respectively.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DownloadSkill&lt;/code&gt; and &lt;code&gt;DownloadSkillAsync&lt;/code&gt;  methods of &lt;code&gt;ProjectAgentSkills&lt;/code&gt; client were replaced by &lt;code&gt;GetSkillContent&lt;/code&gt; and &lt;code&gt;GetSkillContentAsync&lt;/code&gt; respectively.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;UpdateSkill&lt;/code&gt; and &lt;code&gt;UpdateSkillAsync&lt;/code&gt;  methods of &lt;code&gt;ProjectAgentSkills&lt;/code&gt; now can only set the default version of &lt;code&gt;AgentsSkill&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OptimizationTaskResult.Tokens&lt;/code&gt; was changed from &lt;code&gt;int&lt;/code&gt; to &lt;code&gt;long&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ManagedServiceIdentities_1.5.0-beta.1"&gt;Azure.ResourceManager.ManagedServiceIdentities_1.5.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Extensions.OpenAI_2.1.0-beta.3"&gt;Azure.AI.Extensions.OpenAI_2.1.0-beta.3&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.5.0-beta.1 (2026-05-27)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h2&gt;2.1.0-beta.3 (2026-05-29)&lt;/h2&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded api-version from '2024-11-30' to '2025-05-31-preview'.&lt;/li&gt;
-&lt;li&gt;Exposed User-Assigned Identity &lt;code&gt;AssignmentRestrictions&lt;/code&gt; property.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Breaking changes since version 2.0.0&lt;/strong&gt; &lt;code&gt;MemorySearchToolCallResponseItem&lt;/code&gt; was replaced by &lt;code&gt;MemorySearchToolCall&lt;/code&gt;, &lt;code&gt;MemoryCommandToolCall&lt;/code&gt; and &lt;code&gt;MemoryCommandToolCallOutput&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Breaking changes since version 2.0.0&lt;/strong&gt; &lt;code&gt;MemoryToolSearchItem&lt;/code&gt; was removed, because it is not used anymore.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Sample Updates&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added a sample for Fabric IQ Tool (preview).&lt;/li&gt;
+&lt;li&gt;Added a sample for Work IQ Tool (preview).&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;

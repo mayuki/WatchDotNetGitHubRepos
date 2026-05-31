@@ -1,6 +1,267 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>googleapis/google-cloud-dotnet - Releases</title>
   <link href="https://github.com/googleapis/google-cloud-dotnet" />
-  <updated>2026-05-30T00:28:32Z</updated>
+  <updated>2026-05-31T00:29:01Z</updated>
   <id>https://github.com/googleapis/google-cloud-dotnet</id>
+  <entry>
+    <title>googleapis/google-cloud-dotnet - Releases - 2026-05-30</title>
+    <id>https://github.com/googleapis/google-cloud-dotnet#2026-05-30</id>
+    <link href="https://github.com/googleapis/google-cloud-dotnet" />
+    <updated>2026-05-31T00:29:01Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Backstory-1.0.0-beta01"&gt;Google.Backstory version 1.0.0-beta01&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial generation for Google.Backstory&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.GeminiDataAnalytics.V1-1.0.0-beta02"&gt;Google.Cloud.GeminiDataAnalytics.V1 version 1.0.0-beta02&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added model and looker settings in proto&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;An existing field &lt;code&gt;boundary_location_id&lt;/code&gt; is removed from message &lt;code&gt;.google.cloud.geminidataanalytics.v1.BigQueryRoutineReference&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;An existing field &lt;code&gt;location_boundary&lt;/code&gt; is removed from message &lt;code&gt;.google.cloud.geminidataanalytics.v1.BigQueryTableReference&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;An existing field &lt;code&gt;location_boundary&lt;/code&gt; is removed from message &lt;code&gt;.google.cloud.geminidataanalytics.v1.BigQueryPropertyGraphReference&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.DevicesAndServices.Health.V4-1.0.0-beta02"&gt;Google.DevicesAndServices.Health.V4 version 1.0.0-beta02&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduce MedicalDeviceInfo message for Software as Medical Device (SaMD) metadata tracking&lt;/li&gt;
+&lt;li&gt;Add core health data types and rollups for nutrition, core body temperature, ECG, irregular rhythm notifications (IRN), blood glucose, and active energy burned&lt;/li&gt;
+&lt;li&gt;Expand DataPoint and DataPoint.Value messages with optional fields and rollups for new health metrics&lt;/li&gt;
+&lt;li&gt;Add CreateSubscription, ListSubscriptions, UpdateSubscription, and DeleteSubscription RPCs alongside the Subscription resource definition&lt;/li&gt;
+&lt;li&gt;Add GetIrnProfile, GetPairedDevice, and ListPairedDevices RPCs alongside PairedDevice and IrnProfile messages&lt;/li&gt;
+&lt;li&gt;Introduce OAuth scopes for ECG, IRN readonly access&lt;/li&gt;
+&lt;li&gt;Add User root resource message&lt;/li&gt;
+&lt;li&gt;Introduce Data Subscription Service for managing webhook notifications&lt;/li&gt;
+&lt;li&gt;Add GetDataPoint and GetIdentity methods to DataPointsService&lt;/li&gt;
+&lt;li&gt;Enable filtering Electrocardiogram data by start time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;active_zone_minutes&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.ActiveZoneMinutes&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;sum_in_cardio_heart_zone&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.ActiveZoneMinutesRollupValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;sum_in_peak_heart_zone&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.ActiveZoneMinutesRollupValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;sum_in_fat_burn_heart_zone&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.ActiveZoneMinutesRollupValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;active_minutes&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.ActiveMinutes&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;active_minutes_sum&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.ActiveMinutesRollupValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;gain_millimeters&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.Altitude&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;kcal&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.BasalEnergyBurned&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;percentage&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.BodyFat&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;body_fat_percentage_avg&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.BodyFatRollupValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;kcal&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.CaloriesInHeartRateZoneRollupValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;min_beats_per_minute&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.DailyHeartRateZones&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;max_beats_per_minute&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.DailyHeartRateZones&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;breaths_per_minute&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.DailyRespiratoryRate&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;average_percentage&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.DailyOxygenSaturation&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;lower_bound_percentage&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.DailyOxygenSaturation&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;upper_bound_percentage&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.DailyOxygenSaturation&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;standard_deviation_percentage&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.DailyOxygenSaturation&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;beats_per_minute&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.DailyRestingHeartRate&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;nightly_temperature_celsius&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.DailySleepTemperatureDerivations&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;baseline_temperature_celsius&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.DailySleepTemperatureDerivations&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;relative_nightly_stddev_30d_celsius&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.DailySleepTemperatureDerivations&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;vo2_max&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.DailyVO2Max&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;vo2_max_covariance&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.DailyVO2Max&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;millimeters&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.Distance&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;millimeters_sum&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.DistanceRollupValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;pool_length_millimeters&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.Exercise&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;count&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.Floors&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;count_sum&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.FloorsRollupValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;gain_millimeters_sum&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.AltitudeRollupValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;beats_per_minute&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.HeartRate&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;rate_min&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.RunVO2MaxRollupValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;rate_max&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.RunVO2MaxRollupValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;rate_avg&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.RunVO2MaxRollupValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;run_vo2_max&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.RunVO2Max&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;height_millimeters&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.Height&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;root_mean_square_of_successive_differences_milliseconds&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.HeartRateVariability&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;standard_deviation_milliseconds&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.HeartRateVariability&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;milliliters&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.VolumeQuantity&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;milliliters_sum&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.HydrationLogRollupValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;percentage&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.OxygenSaturation&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;breaths_per_minute&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.RespiratoryRateSleepSummary&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;standard_deviation&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.RespiratoryRateSleepSummary&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;signal_to_noise&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.RespiratoryRateSleepSummary&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;minutes&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.Sleep&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;count&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.Sleep&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;count&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.Steps&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;count_sum&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.StepsRollupValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;stroke_count&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.SwimLengthsData&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;stroke_count_sum&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.SwimLengthsDataRollupValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;kcal_sum&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.TotalCaloriesRollupValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;vo2_max&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.VO2Max&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;weight_grams&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.Weight&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;weight_grams_avg&lt;/code&gt; in message &lt;code&gt;.google.devicesandservices.health.v4.WeightRollupValue&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update ListDataPointsRequest filter documentation clarifying session start time comparison rules for ECG and Sleep&lt;/li&gt;
+&lt;li&gt;Update ExportExerciseTcx documentation for direct download via HTTP&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.DatabaseCenter.V1Beta-1.0.0-beta08"&gt;Google.Cloud.DatabaseCenter.V1Beta version 1.0.0-beta08&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add a AggregateQueryStats  API&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Ads.DataManager.V1-1.0.0-beta07"&gt;Google.Ads.DataManager.V1 version 1.0.0-beta07&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add encrypted_user_id.proto and the EncryptedUserId resource&lt;/li&gt;
+&lt;li&gt;Add composite_data to AudienceMember to support multiple identifier types&lt;/li&gt;
+&lt;li&gt;Add FLOODLIGHT_CONFIG to the list of destination types&lt;/li&gt;
+&lt;li&gt;Add conversion_count, dclid, impression_id, match_id, and encrypted_user_ids to the Event resource&lt;/li&gt;
+&lt;li&gt;Add new error reasons to ErrorReason for field length, element counts, location detection, and missing insights&lt;/li&gt;
+&lt;li&gt;Add new processing error reasons for ID lookup failures and click attribution&lt;/li&gt;
+&lt;li&gt;Add composite data ingestion and removal statuses to RequestStatusPerDestination&lt;/li&gt;
+&lt;li&gt;Add the coupon_codes field to CartData to track coupon redemptions for Google Ads and Google Analytics&lt;/li&gt;
+&lt;li&gt;Add the ItemCustomVariable resource to track per-item custom variables&lt;/li&gt;
+&lt;li&gt;Add merchant_id, merchant_feed_label, merchant_feed_language_code, conversion_value, and custom_variables fields to Item&lt;/li&gt;
+&lt;li&gt;Add the &lt;a href="https://www.googleapis.com/auth/datamanager.partnerlink" rel="nofollow"&gt;https://www.googleapis.com/auth/datamanager.partnerlink&lt;/a&gt; OAuth scope to PartnerLinkService&lt;/li&gt;
+&lt;li&gt;Add metadata fields to DeviceInfo to provide details about the user’s device&lt;/li&gt;
+&lt;li&gt;Add several new values to the ErrorReason enum to support store sales and Google Analytics validation&lt;/li&gt;
+&lt;li&gt;Add third_party_user_data, event_location, and app_instance_id to Event&lt;/li&gt;
+&lt;li&gt;Add the MESSAGE value to the EventSource enum&lt;/li&gt;
+&lt;li&gt;Add mobile_device_id to AdIdentifiers for Google Analytics&lt;/li&gt;
+&lt;li&gt;Add a processing error reason related to BRAIDs and one-per-click conversions&lt;/li&gt;
+&lt;li&gt;Add youtube_members_count and gmail_members_count fields to the SizeInfo resource&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update the comment for value FIELD_VALUE_TOO_LONG in enum ErrorReason&lt;/li&gt;
+&lt;li&gt;Update the comment for the &lt;code&gt;ProcessingErrorReason&lt;/code&gt; enum&lt;/li&gt;
+&lt;li&gt;Update the description of transaction_id in Event to clarify its use for tag and SDK conversions&lt;/li&gt;
+&lt;li&gt;Update the description of enum value for PROCESSING_WARNING_REASON_USER_IDENTIFIER_DECRYPTION_ERROR to resolve typo&lt;/li&gt;
+&lt;li&gt;Update RequestStatus enum value descriptions to include details on error and warning information&lt;/li&gt;
+&lt;li&gt;Clarify population behavior for error_info and warning_info fields in RequestStatusPerDestination&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.SaasPlatform.SaasServiceMgmt.V1Beta1-1.0.0-beta04"&gt;Google.Cloud.SaasPlatform.SaasServiceMgmt.V1Beta1 version 1.0.0-beta04&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A new value &lt;code&gt;STRUCT&lt;/code&gt; is added to enum &lt;code&gt;Type&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new value &lt;code&gt;LIST&lt;/code&gt; is added to enum &lt;code&gt;Type&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new value &lt;code&gt;TYPE_WORKLOAD_SUCCEEDED&lt;/code&gt; is added to enum &lt;code&gt;Type&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;SaasCondition&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new enum &lt;code&gt;State&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;application_template&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.Saas&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;blueprint_repo&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.Saas&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;state&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.Saas&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;conditions&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.Saas&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;error&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.Saas&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;application_template_component&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.UnitKind&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;app_params&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.UnitKind&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;application&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.Unit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;satisfies_pzs&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.Unit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;satisfies_pzi&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.Unit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;delete_time&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.UnitOperation&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;application_template_component&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.Release&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;CompositeRef&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;ComponentRef&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new message &lt;code&gt;AppParams&lt;/code&gt; is added&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;effective_unit_filter&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.Rollout&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;delete_time&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.Rollout&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A new field &lt;code&gt;estimated_total_unit_count&lt;/code&gt; is added to message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.RolloutStats&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Changed field behavior for an existing field &lt;code&gt;rollout_kind&lt;/code&gt; in message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.Rollout&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;allowed_count&lt;/code&gt; in message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.ErrorBudget&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changed proto3 optional flag of an existing field &lt;code&gt;allowed_percentage&lt;/code&gt; in message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.ErrorBudget&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A comment for enum &lt;code&gt;Type&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for message &lt;code&gt;UnitOperation&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;rollout_orchestration_strategy&lt;/code&gt; in message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.Rollout&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;unit_filter&lt;/code&gt; in message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.Rollout&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;rollout_kind&lt;/code&gt; in message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.Rollout&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;operations_by_state&lt;/code&gt; in message &lt;code&gt;.google.cloud.saasplatform.saasservicemgmt.v1beta1.RolloutStats&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;Rebrand from "SaaS Runtime" to "App Lifecycle Manager"&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Maps.Places.V1-1.0.0-beta21"&gt;Google.Maps.Places.V1 version 1.0.0-beta21&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add transit_station data to Places API (New)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Storage.Control.V2-1.8.0"&gt;Google.Cloud.Storage.Control.V2 version 1.8.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add support for GCS Storage Control Intelligence Finding APIs&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Security.PrivateCA.V1-3.12.0"&gt;Google.Cloud.Security.PrivateCA.V1 version 3.12.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add allow_requester_specified_not_before_time and requested_not_before_time fields to PrivateCA v1 API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update comments for backdate_duration field in CaPool&lt;/li&gt;
+&lt;li&gt;Update comments for parent field in ListCertificatesRequest&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Recommender.V1-3.9.0"&gt;Google.Cloud.Recommender.V1 version 3.9.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Support utilization insights and cloud hub&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add identifier annotation for field name&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
