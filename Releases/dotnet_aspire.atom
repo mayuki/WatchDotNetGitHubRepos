@@ -1,6 +1,52 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/aspire - Releases</title>
   <link href="https://github.com/dotnet/aspire" />
-  <updated>2026-06-01T00:29:33Z</updated>
+  <updated>2026-06-02T00:33:40Z</updated>
   <id>https://github.com/dotnet/aspire</id>
+  <entry>
+    <title>dotnet/aspire - Releases - 2026-06-01</title>
+    <id>https://github.com/dotnet/aspire#2026-06-01</id>
+    <link href="https://github.com/dotnet/aspire" />
+    <updated>2026-06-02T00:33:40Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.4.0"&gt;Aspire 13.4.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h1&gt;Aspire 13.4.0&lt;/h1&gt;
+&lt;p&gt;Aspire 13.4 brings major improvements to Foundry hosted agents, the Aspire skills system, CLI reliability, and TypeScript AppHost stability — with cross-compute-environment deployment now working end-to-end and &lt;strong&gt;TypeScript AppHost support — Aspire's polyglot story — reaching general availability (GA)&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Highlights&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;🎉 &lt;strong&gt;TypeScript AppHost is now GA&lt;/strong&gt; — First introduced as a preview in an earlier version of Aspire, the TypeScript AppHost — Aspire's polyglot story — has reached the quality bar for general availability and is now officially supported for production use alongside C#. As part of GA, the experimental markers on the Azure TypeScript AppHost (ATS) APIs have been removed and the ATS surface area is stable for 13.4.&lt;/li&gt;
+&lt;li&gt;🤖 &lt;strong&gt;Foundry hosted agents&lt;/strong&gt; — Protocol selection (&lt;code&gt;responses&lt;/code&gt; / &lt;code&gt;invocations&lt;/code&gt;) is now configurable from both C# and TypeScript AppHosts. Cross-compute-environment deployments (e.g., a Foundry hosted agent + an AKS consumer) now wire up correctly: endpoint resolution and the required &lt;strong&gt;Azure AI User&lt;/strong&gt; RBAC role assignment on the Foundry account are generated automatically — no manual &lt;code&gt;az role assignment create&lt;/code&gt; steps needed.&lt;/li&gt;
+&lt;li&gt;🛠️ &lt;strong&gt;Aspire skills catalog from bundle&lt;/strong&gt; — &lt;code&gt;aspire agent init&lt;/code&gt; now drives its installable skill catalog from the bundle manifest, surfacing all six bundled skills (previously only three were visible). An embedded snapshot means the full catalog is available even in airgapped / disconnected environments.&lt;/li&gt;
+&lt;li&gt;🔧 &lt;strong&gt;CLI reliability&lt;/strong&gt; — Multiple CLI fixes: implicit-channel discovery restored, &lt;code&gt;aspire stop&lt;/code&gt; no longer falsely reports failure on Unix, &lt;code&gt;aspire ps&lt;/code&gt; no longer includes raw resource data (use &lt;code&gt;aspire describe&lt;/code&gt; for detailed state), &lt;code&gt;aspire new&lt;/code&gt; prefers the current CLI template version, friendly error for &lt;code&gt;aspire do --list-steps&lt;/code&gt; without a step argument, and improved &lt;code&gt;--search&lt;/code&gt; option description with documentation link.&lt;/li&gt;
+&lt;li&gt;⌨️ &lt;strong&gt;TypeScript AppHost&lt;/strong&gt; — Fixed a deadlock that occurred when lazy options callbacks invoked async methods; dev-localhost resource service URLs are now accepted for local development without extra configuration.&lt;/li&gt;
+&lt;li&gt;📊 &lt;strong&gt;Dashboard&lt;/strong&gt; — Summary log formatting improved for readability, &lt;code&gt;dotnet watch&lt;/code&gt; dashboard auto-launch signal restored, and dynamic-port handling fixed for &lt;code&gt;DistributedApplicationTestingBuilder&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;☸️ &lt;strong&gt;Kubernetes&lt;/strong&gt; — The Helm CLI minimum version (≥ 4.2.0) is now validated before a Kubernetes deploy, giving a clear error instead of a cryptic failure.&lt;/li&gt;
+&lt;li&gt;&lt;g-emoji class="g-emoji" alias="warning"&gt;⚠️&lt;/g-emoji&gt; &lt;strong&gt;&lt;code&gt;Aspire.Hosting.Blazor&lt;/code&gt; ships as preview in 13.4&lt;/strong&gt; — A packaging issue with the Blazor gateway scripts means the package is intentionally marked preview for this release. Full stable support is targeted for 13.5.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;g-emoji class="g-emoji" alias="warning"&gt;⚠️&lt;/g-emoji&gt; Notable changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;aspire ps&lt;/code&gt; no longer includes raw resource data in its output. Use &lt;code&gt;aspire describe &amp;lt;resource&amp;gt;&lt;/code&gt; to inspect detailed resource state.&lt;/li&gt;
+&lt;li&gt;Foundry hosted agent builder API shape updated — see &lt;a href="https://github.com/microsoft/aspire/pull/17545" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17545/hovercard"&gt;#17545&lt;/a&gt; and &lt;a href="https://github.com/microsoft/aspire/pull/17669" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/17669/hovercard"&gt;#17669&lt;/a&gt; for the updated C# and TypeScript signatures.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Aspire.Hosting.Blazor&lt;/code&gt; is preview-versioned in 13.4 (&lt;code&gt;SuppressFinalPackageVersion=true&lt;/code&gt;). A fix for the &lt;code&gt;addBlazorGateway&lt;/code&gt; gateway script resolution error in TypeScript AppHosts is tracked in &lt;a href="https://github.com/microsoft/aspire/issues/17685" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/17685/hovercard"&gt;#17685&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;📖 Learn more&lt;/h2&gt;
+&lt;p&gt;For the full details on everything in this release, check out the &lt;a href="https://aspire.dev/whats-new/aspire-13-4/" rel="nofollow"&gt;What's new in Aspire 13.4&lt;/a&gt; documentation.&lt;/p&gt;
+&lt;p&gt;Thank you to all the community contributors who helped make Aspire 13.4 possible! 💜&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a class="commit-link" href="https://github.com/microsoft/aspire/compare/v13.3.5...v13.4.0"&gt;&lt;tt&gt;v13.3.5...v13.4.0&lt;/tt&gt;&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/becb48e2d61099e35ae336d527d3875e928d6594"&gt;becb48e2d61099e35ae336d527d3875e928d6594&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Generated by &lt;a href="https://github.com/microsoft/aspire/actions/runs/26779980139/agentic_workflow"&gt;Generate release notes for a new stable Aspire release&lt;/a&gt; · ● 6.5M&lt;/p&gt;
+&lt;/blockquote&gt;
+
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
