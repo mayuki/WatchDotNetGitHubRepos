@@ -1,6 +1,57 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>mysql-net/MySqlConnector - Releases</title>
   <link href="https://github.com/mysql-net/MySqlConnector" />
-  <updated>2026-06-02T00:33:53Z</updated>
+  <updated>2026-06-03T00:38:25Z</updated>
   <id>https://github.com/mysql-net/MySqlConnector</id>
+  <entry>
+    <title>mysql-net/MySqlConnector - Releases - 2026-06-02</title>
+    <id>https://github.com/mysql-net/MySqlConnector#2026-06-02</id>
+    <link href="https://github.com/mysql-net/MySqlConnector" />
+    <updated>2026-06-03T00:38:25Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/mysql-net/MySqlConnector/releases/tag/2.6.0"&gt;2.6.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;Add opt-in stable OpenTelemetry semantic conventions: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1435" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1435/hovercard"&gt;#1435&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;In MySqlConnector 3.0, the experimental conventions will be removed.&lt;/li&gt;
+&lt;li&gt;Applications should set &lt;code&gt;OTEL_SEMCONV_STABILITY_OPT_IN&lt;/code&gt; to &lt;code&gt;database&lt;/code&gt; or &lt;code&gt;database/dup&lt;/code&gt; (or use &lt;code&gt;WithSemanticConventionsKinds&lt;/code&gt;) to test the new semantic conventions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Support distributed tracing by sending &lt;code&gt;traceparent&lt;/code&gt; to MySQL Server: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1635" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1635/hovercard"&gt;#1635&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;EnableResultSetHeaderEvent&lt;/code&gt; is now opt-in: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1633" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1633/hovercard"&gt;#1633&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Move &lt;code&gt;AddMySqlDataSource&lt;/code&gt; and related APIs from &lt;code&gt;MySqlConnector.DependencyInjection&lt;/code&gt; to &lt;code&gt;MySqlConnector&lt;/code&gt;: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1649" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1649/hovercard"&gt;#1649&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Improve reliability and correctness of parameter parsing and rewriting:
+&lt;ul&gt;
+&lt;li&gt;Fix termination of quoted parameters: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1627" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1627/hovercard"&gt;#1627&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Handle all comment-start characters during SQL parsing: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1624" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1624/hovercard"&gt;#1624&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Add stricter argument validation and checks: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1632" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1632/hovercard"&gt;#1632&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Improve XA and transaction handling:
+&lt;ul&gt;
+&lt;li&gt;Handle more XA error codes: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1631" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1631/hovercard"&gt;#1631&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Clear transaction when closing a database: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1623" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1623/hovercard"&gt;#1623&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Handle missing transaction in &lt;code&gt;DoCloseAsync&lt;/code&gt;: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/729" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/729/hovercard"&gt;#729&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Improve data type handling:
+&lt;ul&gt;
+&lt;li&gt;Reject negative &lt;code&gt;DATETIME&lt;/code&gt; ticks: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1630" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1630/hovercard"&gt;#1630&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Don't detect &lt;code&gt;BINARY&lt;/code&gt; columns as &lt;code&gt;Guid&lt;/code&gt;: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1625" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1625/hovercard"&gt;#1625&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Improve exception safety: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1628" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1628/hovercard"&gt;#1628&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Suppress trimming warnings and update AOT test coverage: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1607" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1607/hovercard"&gt;#1607&lt;/a&gt;, &lt;a href="https://github.com/mysql-net/MySqlConnector/pull/1608" data-hovercard-type="pull_request" data-hovercard-url="/mysql-net/MySqlConnector/pull/1608/hovercard"&gt;#1608&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Thanks to &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/markus456/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/markus456"&gt;@markus456&lt;/a&gt; and &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/sbomer/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/sbomer"&gt;@sbomer&lt;/a&gt; for contributions to this release.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

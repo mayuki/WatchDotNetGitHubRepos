@@ -1,34 +1,42 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-06-02T00:33:35Z</updated>
+  <updated>2026-06-03T00:38:12Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-06-01</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-01</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-06-02</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-02</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-06-02T00:33:35Z</updated>
+    <updated>2026-06-03T00:38:12Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.WebPubSub_1.10.2"&gt;Microsoft.Azure.WebJobs.Extensions.WebPubSub_1.10.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Monitor.Slis_1.0.0-beta.2"&gt;Azure.ResourceManager.Monitor.Slis_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.10.2 (2026-06-01)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.2 (2026-06-01)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Support singular &lt;code&gt;connection&lt;/code&gt; property in Web PubSub trigger and context bindings for backward-compatibility.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;SliSamplingType.Average&lt;/code&gt; for average sampling.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;SliSamplingType.Count&lt;/code&gt; for count sampling.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Renamed &lt;code&gt;SliSamplingType.Avg&lt;/code&gt; to &lt;code&gt;SliSamplingType.Average&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Changed &lt;code&gt;SliSamplingType&lt;/code&gt; wire values for &lt;code&gt;Max&lt;/code&gt;, &lt;code&gt;Min&lt;/code&gt;, and &lt;code&gt;Sum&lt;/code&gt; from &lt;code&gt;max&lt;/code&gt;, &lt;code&gt;min&lt;/code&gt;, and &lt;code&gt;sum&lt;/code&gt; to &lt;code&gt;Max&lt;/code&gt;, &lt;code&gt;Min&lt;/code&gt;, and &lt;code&gt;Sum&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Changed &lt;code&gt;SliConditionOperator&lt;/code&gt; wire values from symbolic operators to named operators: &lt;code&gt;==&lt;/code&gt; to &lt;code&gt;eq&lt;/code&gt;, &lt;code&gt;!=&lt;/code&gt; to &lt;code&gt;ne&lt;/code&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt; to &lt;code&gt;gt&lt;/code&gt;, &lt;code&gt;&amp;gt;=&lt;/code&gt; to &lt;code&gt;gte&lt;/code&gt;, &lt;code&gt;&amp;lt;&lt;/code&gt; to &lt;code&gt;lt&lt;/code&gt;, &lt;code&gt;&amp;lt;=&lt;/code&gt; to &lt;code&gt;lte&lt;/code&gt;, &lt;code&gt;@in&lt;/code&gt; to &lt;code&gt;in&lt;/code&gt;, &lt;code&gt;!in&lt;/code&gt; to &lt;code&gt;notin&lt;/code&gt;, &lt;code&gt;!contains&lt;/code&gt; to &lt;code&gt;notcontains&lt;/code&gt;, and &lt;code&gt;!startswith&lt;/code&gt; to &lt;code&gt;notstartswith&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Changed &lt;code&gt;WindowUptimeCriteriaComparator&lt;/code&gt; wire values from symbolic operators to named operators: &lt;code&gt;&amp;gt;&lt;/code&gt; to &lt;code&gt;gt&lt;/code&gt;, &lt;code&gt;&amp;gt;=&lt;/code&gt; to &lt;code&gt;gte&lt;/code&gt;, &lt;code&gt;&amp;lt;&lt;/code&gt; to &lt;code&gt;lt&lt;/code&gt;, and &lt;code&gt;&amp;lt;=&lt;/code&gt; to &lt;code&gt;lte&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Chaos_1.2.0-beta.1"&gt;Azure.ResourceManager.Chaos_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.ConfidentialLedger_1.4.1-beta.5"&gt;Azure.Security.ConfidentialLedger_1.4.1-beta.5&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.1 (2026-05-29)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h2&gt;1.4.1-beta.5 (2026-05-26)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated the api-version to 2026-05-01-preview.&lt;/li&gt;
+&lt;li&gt;Improved redirect performance for write operations by caching the latest primary node URL from redirect responses and reusing it for subsequent non-GET requests. The cache is lazily populated and refreshed whenever the service redirects to a different primary node.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
