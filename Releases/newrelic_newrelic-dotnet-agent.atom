@@ -1,48 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>newrelic/newrelic-dotnet-agent - Releases</title>
   <link href="https://github.com/newrelic/newrelic-dotnet-agent" />
-  <updated>2026-06-04T00:38:49Z</updated>
+  <updated>2026-06-05T00:31:38Z</updated>
   <id>https://github.com/newrelic/newrelic-dotnet-agent</id>
-  <entry>
-    <title>newrelic/newrelic-dotnet-agent - Releases - 2026-06-03</title>
-    <id>https://github.com/newrelic/newrelic-dotnet-agent#2026-06-03</id>
-    <link href="https://github.com/newrelic/newrelic-dotnet-agent" />
-    <updated>2026-06-04T00:38:49Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/releases/tag/v10.51.1"&gt;v10.51.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/compare/v10.51.0...v10.51.1"&gt;10.51.1&lt;/a&gt; (2026-06-03)&lt;/h2&gt;
-&lt;h3&gt;Notice&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Customers using &lt;code&gt;RecordDatastoreSegment()&lt;/code&gt; with a custom vendor name will see metric names change from &lt;code&gt;Datastore/*/Other/*&lt;/code&gt; to &lt;code&gt;Datastore/*//*&lt;/code&gt;. Update any dashboards, alerts, or queries that reference the old Other-based metric names. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/f6c0e483e00bbaa17a5b44aa3c8b9d07c5c41e91"&gt;f6c0e48&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;RecordDatastoreSegment()&lt;/code&gt; API will correctly use the caller-supplied vendor name instead of ignoring it. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/f6c0e483e00bbaa17a5b44aa3c8b9d07c5c41e91"&gt;f6c0e48&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Ensure all StackExchange.Redis segments are created and added to transaction before it is harvested (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3574" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3574/hovercard"&gt;#3574&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/4152ea25b23318c68d372447c905c622ac5ac868"&gt;4152ea2&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Update MySql.Data instrumentation to support 9.7.0 signature changes (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3562" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3562/hovercard"&gt;#3562&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/1e40e44e89ab3f5c1af540a9aa30c6e1fa6a30e3"&gt;1e40e44&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;config-schema: 1.1.0&lt;/p&gt;
-&lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/compare/config-schema-1.0.0...config-schema-1.1.0"&gt;1.1.0&lt;/a&gt; (2026-06-03)&lt;/h2&gt;
-&lt;h3&gt;Features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add .NET 8+ support for System.Data.Odbc (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/2948" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/2948/hovercard"&gt;#2948&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/7ee9825b21fbd442c066ccfe9040a0bd129840dd"&gt;7ee9825&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Add a new Distributed Tracing sampler, the TraceId Ratio-Based Sampler, which is based on the &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry/Trace/Sampler/TraceIdRatioBasedSampler.cs"&gt;OpenTelemetry implementation&lt;/a&gt;. This sampler makes its sampling decision using the TraceId (a random GUID) and a configured sampling ratio (a target percentage of traces to be sampled).  For more information, see the &lt;a href="https://opentelemetry.io/docs/specs/otel/trace/tracestate-probability-sampling/" rel="nofollow"&gt;OpenTelemetry specification&lt;/a&gt;. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3211" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3211/hovercard"&gt;#3211&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/63ca603ca6cb86110431413c03afbf8a8c8e9367"&gt;63ca603&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Allow incoming W3C traceparent &lt;code&gt;sampled&lt;/code&gt; flag to influence .NET agent sampling decision. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3100" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3100/hovercard"&gt;#3100&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/6047bda423e7d6a8c0d639142584c3651618f4a5"&gt;6047bda&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Allow users to configure process names that should not be instrumented (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3387" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3387/hovercard"&gt;#3387&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/8dedf324fed3559c5de8697a9728b31cf8dacf96"&gt;8dedf32&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;The .NET Hybrid Agent provides a future-proof observability solution with integrated support for OpenTelemetry Tracing and Metrics APIs. OpenTelemetry Logs will continue to be supported through the existing Microsoft.Extensions.Logging integration. This release delivers critical OpenTelemetry features including Span Links, Events on Spans, and unified sampling algorithms. It is designed to bridge the gap for .NET teams looking to adopt OpenTelemetry standards while maintaining backwards compatibility with their existing New Relic dashboards. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/72a0414d49273d412cddc11dcb329b30680aa8f0"&gt;72a0414&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bug Fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Restore min/max occurs properties on &lt;code&gt;distributedTracing&lt;/code&gt; config element. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3381" data-hovercard-type="issue" data-hovercard-url="/newrelic/newrelic-dotnet-agent/issues/3381/hovercard"&gt;#3381&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3388" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3388/hovercard"&gt;#3388&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/2d0b89fb0561ad85bfe9a7909be7f83a88dc1067"&gt;2d0b89f&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
