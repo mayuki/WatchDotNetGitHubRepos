@@ -1,125 +1,20 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-06-05T00:31:14Z</updated>
+  <updated>2026-06-06T00:29:23Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-06-04</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-04</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-06-05</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-05</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-06-05T00:31:14Z</updated>
+    <updated>2026-06-06T00:29:23Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.58.0"&gt;Azure.Core_1.58.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerInstance_1.3.1"&gt;Azure.ResourceManager.ContainerInstance_1.3.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.58.0 (2026-06-04)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Adopt System.ClientModel 1.14.0&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed &lt;code&gt;NullReferenceException&lt;/code&gt; thrown by &lt;code&gt;Operation.RehydrateAsync&lt;/code&gt; / &lt;code&gt;ArmOperation.RehydrateAsync&lt;/code&gt; (and the resulting operation's &lt;code&gt;UpdateStatusAsync&lt;/code&gt; / &lt;code&gt;Value&lt;/code&gt;) when the rehydrated long-running operation has completed with a failure. &lt;code&gt;OperationState.Failure&lt;/code&gt; and &lt;code&gt;OperationState&amp;lt;T&amp;gt;.Failure&lt;/code&gt; now honor their documented contract and materialize a default &lt;code&gt;RequestFailedException&lt;/code&gt; from the raw response when the caller passes &lt;code&gt;null&lt;/code&gt;, matching the behavior of the non-rehydration polling path.&lt;/li&gt;
-&lt;li&gt;Fixed &lt;code&gt;DiagnosticScope&lt;/code&gt; to mark the parent &lt;code&gt;ActivityContext&lt;/code&gt; as remote (&lt;code&gt;IsRemote = true&lt;/code&gt;) when a traceparent is provided via &lt;code&gt;SetTraceContext&lt;/code&gt; or &lt;code&gt;AddLink&lt;/code&gt;. The traceparent in these paths is always extracted from an external source (e.g. a messaging broker's application properties), so samplers that distinguish local vs. remote parents — such as the &lt;code&gt;RateLimitedSampler&lt;/code&gt; used by the Azure Monitor OpenTelemetry exporter — can now make correct decisions for activities started from incoming messages.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.Batch_12.26.0"&gt;Azure.Storage.Blobs.Batch_12.26.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.26.0 (2026-06-04)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Includes all features from 12.26.0-beta.1&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.63"&gt;Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.63&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.0.0-preview.63 (2026-06-04)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;This release contains bug fixes to improve quality.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added validation for length-prefixed fields when parsing Avro responses to prevent excessive memory allocation from malformed or untrusted payloads.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.DataLake_12.27.0"&gt;Azure.Storage.Files.DataLake_12.27.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.27.0 (2026-06-04)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Includes all features from 12.27.0-beta.1&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Queues_12.27.0"&gt;Azure.Storage.Queues_12.27.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.27.0 (2026-06-04)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Includes all features from 12.27.0-beta.1&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.Shares_12.27.0"&gt;Azure.Storage.Files.Shares_12.27.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.27.0 (2026-06-04)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Includes all features from 12.27.0-beta.1&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs_12.29.0"&gt;Azure.Storage.Blobs_12.29.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.29.0 (2026-06-04)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Includes all features from 12.29.0-beta.1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added validation for length-prefixed fields when parsing Blob Query responses to prevent excessive memory allocation from malformed or untrusted payloads.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Common_12.28.0"&gt;Azure.Storage.Common_12.28.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.28.0 (2026-06-04)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;This release contains bug fixes to improve quality.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.TrafficManager_1.2.0-beta.2"&gt;Azure.ResourceManager.TrafficManager_1.2.0-beta.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.2 (2026-06-04)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated the api-version to 2024-04-01-preview.&lt;/li&gt;
-&lt;/ul&gt;
+                                &lt;h2&gt;1.3.1 (2026-06-03)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Upgraded dependent Azure.Core to 1.57.0.&lt;/li&gt;
@@ -129,16 +24,25 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Administration_4.9.0-beta.1"&gt;Azure.Security.KeyVault.Administration_4.9.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Dell.Storage_1.0.1"&gt;Azure.ResourceManager.Dell.Storage_1.0.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;4.9.0-beta.1 (2026-06-04)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;KeyVaultEkmClient&lt;/code&gt; to support External Key Management operations.&lt;/li&gt;
-&lt;/ul&gt;
+                                &lt;h2&gt;1.0.1 (2026-06-03)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;The default service version is now &lt;code&gt;2026-01-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.57.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DataBoxEdge_1.1.2"&gt;Azure.ResourceManager.DataBoxEdge_1.1.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.1.2 (2026-06-03)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.57.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
