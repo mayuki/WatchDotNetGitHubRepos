@@ -1,6 +1,266 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>microsoft/WindowsAppSDK - Releases</title>
   <link href="https://github.com/microsoft/WindowsAppSDK" />
-  <updated>2026-06-09T00:26:30Z</updated>
+  <updated>2026-06-10T00:33:15Z</updated>
   <id>https://github.com/microsoft/WindowsAppSDK</id>
+  <entry>
+    <title>microsoft/WindowsAppSDK - Releases - 2026-06-09</title>
+    <id>https://github.com/microsoft/WindowsAppSDK#2026-06-09</id>
+    <link href="https://github.com/microsoft/WindowsAppSDK" />
+    <updated>2026-06-10T00:33:15Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.2.2-exp9"&gt;2.2 Experimental 9 (2.2.2-experimental9) 🧪&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Windows App SDK 2.2 Experimental 9 (2.2.2-experimental9) 🧪&lt;/h2&gt;
+&lt;p&gt;Windows App SDK 2.2 Experimental 9 is the latest experimental release. It ships alongside &lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.2.0"&gt;Windows App SDK 2.2.0 stable&lt;/a&gt; and generally brings over the changes from that release; the highlights below describe the experimental-only additions.&lt;/p&gt;
+&lt;h3&gt;What's new in WinAppSDK 2.2 Experimental 9:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Language Model APIs on GPU [Experimental].&lt;/strong&gt; The Language Model APIs now run on non-Copilot+ PCs equipped with a supported GPU, bringing local language model capabilities to a broader range of Windows 11 devices. Supported hardware includes NVIDIA GeForce RTX 30 series and newer with 6+ GB vRAM. GPU inference requires Developer Mode to be enabled and a Windows Insider Experimental Channel build. The GPU model is not pre-installed; it is downloaded on demand via &lt;code&gt;EnsureReadyAsync&lt;/code&gt; through Windows Update. Apps should check &lt;code&gt;GetReadyState&lt;/code&gt; and display a consent dialog before triggering the download. Users can manage the model at Settings &amp;gt; System &amp;gt; AI Components. For responsible AI guidance, see the new Transparency Note: Language Model APIs on Non-Copilot+ PCs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Speech Recognition APIs [Experimental].&lt;/strong&gt; New on-device speech recognition APIs in &lt;code&gt;Microsoft.Windows.AI.Speech&lt;/code&gt; enable both batch and streaming speech-to-text. &lt;code&gt;BatchRecognition&lt;/code&gt; recognizes a complete audio source in a single call, and &lt;code&gt;StreamingRecognition&lt;/code&gt; raises &lt;code&gt;Recognizing&lt;/code&gt; and &lt;code&gt;Recognized&lt;/code&gt; events. Audio can be sourced from a device (&lt;code&gt;AudioConfiguration.FromAudioDevice&lt;/code&gt;), file (&lt;code&gt;FromFile&lt;/code&gt;), input stream (&lt;code&gt;FromStream&lt;/code&gt;), or pushed by the caller via &lt;code&gt;SpeechAudioProvider&lt;/code&gt; (16 kHz, 16-bit, single-channel PCM). The on-device model is managed via &lt;code&gt;SpeechRecognitionModel.EnsureReadyAsync&lt;/code&gt; / &lt;code&gt;TryCreateAsync&lt;/code&gt;, with download and load progress reported through &lt;code&gt;SpeechRecognitionModelProgress&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;New &lt;code&gt;NpuType&lt;/code&gt; API.&lt;/strong&gt; A new &lt;code&gt;Microsoft.Windows.Workloads.NpuType&lt;/code&gt; enum surfaces the NPU class on the current device (for example, &lt;code&gt;Qnn&lt;/code&gt;, &lt;code&gt;Lnl&lt;/code&gt;, &lt;code&gt;Stx&lt;/code&gt;, &lt;code&gt;Win365&lt;/code&gt;, &lt;code&gt;Unknown&lt;/code&gt;, &lt;code&gt;None&lt;/code&gt;), so apps and Workloads infrastructure can route AI workloads to the appropriate execution path.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This release also rolls forward all changes from the &lt;strong&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.2.0"&gt;2.2.0 stable&lt;/a&gt;&lt;/strong&gt; release: the new &lt;code&gt;Microsoft.Windows.AI.Video.VideoScaler&lt;/code&gt; Video Super Resolution API, the new &lt;code&gt;Microsoft.Windows.Storage.ApplicationData.GetForUnpackaged()&lt;/code&gt; entry point for unpackaged apps, the new &lt;code&gt;XamlBindingHelper&lt;/code&gt; boxing-free setter overloads, and the WinUI / Windows ML reliability fixes shipped in 2.2.0.&lt;/p&gt;
+&lt;h3&gt;New or updated APIs (since 2.1 Experimental 8):&lt;/h3&gt;
+&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Microsoft.UI.Xaml
+
+    Setter
+        ValueProperty"&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;Microsoft.UI.Xaml
+
+    Setter
+        ValueProperty
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Microsoft.UI.Xaml.Markup
+
+    XamlBindingHelper
+        SetPropertyFromColor
+        SetPropertyFromCornerRadius
+        SetPropertyFromThickness"&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;Microsoft.UI.Xaml.Markup
+
+    XamlBindingHelper
+        SetPropertyFromColor
+        SetPropertyFromCornerRadius
+        SetPropertyFromThickness
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Microsoft.Windows.AI.Speech
+
+    AudioConfiguration
+    BatchRecognition
+    SpeechAudioProvider
+    SpeechContract
+    SpeechRecognitionModel
+    SpeechRecognitionModelProgress
+    SpeechRecognitionModelProgressStatus
+    SpeechRecognitionModelResult
+    StreamingRecognition
+    StreamingRecognizedEventArgs
+    StreamingRecognizingEventArgs"&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;Microsoft.Windows.AI.Speech
+
+    AudioConfiguration
+    BatchRecognition
+    SpeechAudioProvider
+    SpeechContract
+    SpeechRecognitionModel
+    SpeechRecognitionModelProgress
+    SpeechRecognitionModelProgressStatus
+    SpeechRecognitionModelResult
+    StreamingRecognition
+    StreamingRecognizedEventArgs
+    StreamingRecognizingEventArgs
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Microsoft.Windows.AI.Text.Experimental
+
+    LanguageModelExperimental
+        CompressPromptAsync
+        GenerateResponseAsync
+        GenerateResponseFromEmbeddingsAsync
+
+    LanguageModelOptionsExperimental
+        PreferredRetentionRatio"&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;Microsoft.Windows.AI.Text.Experimental
+
+    LanguageModelExperimental
+        CompressPromptAsync
+        GenerateResponseAsync
+        GenerateResponseFromEmbeddingsAsync
+
+    LanguageModelOptionsExperimental
+        PreferredRetentionRatio
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Microsoft.Windows.Workloads
+
+    NpuType"&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;Microsoft.Windows.Workloads
+
+    NpuType
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.2.2-experimental9" rel="nofollow"&gt;2.2.2-experimental9 NuGet&lt;/a&gt; package to use WinAppSDK 2.2 Experimental 9 in your app.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Getting started&lt;/h3&gt;
+&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.2.0"&gt;Windows App SDK 2.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Windows App SDK 2.2.0&lt;/h2&gt;
+&lt;p&gt;WinAppSDK 2.2.0 is the latest stable servicing release for 2.0, with a new Windows AI video upscaling API, a first-class &lt;code&gt;ApplicationData&lt;/code&gt; entry point for unpackaged apps, additions to &lt;code&gt;XamlBindingHelper&lt;/code&gt;, and a batch of WinUI and Windows ML reliability fixes.&lt;/p&gt;
+&lt;h3&gt;What's new in WinAppSDK 2.2.0:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Video Super Resolution AI API.&lt;/strong&gt; The new &lt;code&gt;Microsoft.Windows.AI.Video.VideoScaler&lt;/code&gt; API delivers real-time video enhancement through advanced AI upscaling, optimized for streams featuring people in conversation. It enables developers to provide sharper, clearer visuals across conferencing, streaming, and editing platforms, even under poor network conditions. The API supports customization of output resolution, frame rate, and regions of interest, with compatibility for multiple video formats including BGR, RGB, and NV12. &lt;code&gt;VideoScaler&lt;/code&gt; is disposable, and includes a capability check so apps can validate VSR support at runtime. Explicit Windows ML initialization is not required.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;New &lt;code&gt;ApplicationData&lt;/code&gt; API for unpackaged apps.&lt;/strong&gt; &lt;code&gt;Microsoft.Windows.Storage.ApplicationData.GetForUnpackaged()&lt;/code&gt; gives unpackaged apps a first-class WinRT entry point to per-user / per-machine application data, matching the surface previously available only to packaged apps. This simplifies future packaged ↔ unpackaged migration and removes the need for Registry-API workarounds.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;New &lt;code&gt;XamlBindingHelper&lt;/code&gt; APIs.&lt;/strong&gt; Added boxing-free value setter overloads to &lt;code&gt;XamlBindingHelper&lt;/code&gt; (&lt;code&gt;SetPropertyFromThickness&lt;/code&gt;, &lt;code&gt;SetPropertyFromCornerRadius&lt;/code&gt;, &lt;code&gt;SetPropertyFromColor&lt;/code&gt;) and exposed the &lt;code&gt;Setter.ValueProperty&lt;/code&gt; dependency property.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug fixes:&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Bug fix&lt;/th&gt;
+&lt;th&gt;&lt;a href="https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.applicationmodel.windowsappruntime.runtimecompatibilityoptions.disabledchanges?view=windows-app-sdk-2.0" rel="nofollow"&gt;Runtime Compatibility Change&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a crash in &lt;code&gt;RenderTargetBitmap&lt;/code&gt; when the target element leaves the visual tree (for example, a popup closes) before &lt;code&gt;PreCommit&lt;/code&gt; completes. &lt;code&gt;RenderAsync&lt;/code&gt; now returns &lt;code&gt;E_ABORT&lt;/code&gt; instead of crashing.&lt;/td&gt;
+&lt;td&gt;RenderTargetBitmap_PreCommitCrashOnTreeLeave&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a use-after-free crash in &lt;code&gt;ScrollView&lt;/code&gt; when the control is destroyed while its hide-indicators timer tick is still pending. See &lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/10514" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/10514/hovercard"&gt;microsoft/microsoft-ui-xaml#10514&lt;/a&gt;.&lt;/td&gt;
+&lt;td&gt;ScrollView_HideIndicatorsTimerUseAfterFree&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a potential crash in &lt;code&gt;Microsoft.UI.Xaml.dll!DirectUI::DXamlCore::GetPeerPrivate&lt;/code&gt; caused by attempting to access an object scheduled to be freed.&lt;/td&gt;
+&lt;td&gt;GetPeerPrivate_UseAfterFree&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an issue where &lt;code&gt;Microsoft.UI.System.ThemeSettings&lt;/code&gt; could crash an app if it was destroyed on a background thread (for example, when destroyed by the .NET garbage collector).&lt;/td&gt;
+&lt;td&gt;ThemeSettings_OffThreadDestructorFix&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a crash that could occur on certain devices when active touch contacts were canceled by input hardware, such as when pen input overrides them.&lt;/td&gt;
+&lt;td&gt;InputPointerSource_PointerCancelCrashFix&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an issue where sparse-packaged apps were unable to discover module-specific PRI files. See &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/6375" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/6375/hovercard"&gt;microsoft/WindowsAppSDK#6375&lt;/a&gt;.&lt;/td&gt;
+&lt;td&gt;MRTCore_SparsePackagedPriFallback&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a string ownership bug when using the Flat-C Windows ML Catalog API.&lt;/td&gt;
+&lt;td&gt;WindowsMLFlatCCatalog_CallbackStringOwnership&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a potential issue in Windows ML during process shutdown.&lt;/td&gt;
+&lt;td&gt;WindowsML_ComRundownFix&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed potential COM initialization and teardown issues in Windows ML.&lt;/td&gt;
+&lt;td&gt;WindowsML_ComInitializationFix&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;New or updated APIs (since 2.1.3):&lt;/h3&gt;
+&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Microsoft.UI.Xaml
+
+    Setter
+        ValueProperty"&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;Microsoft.UI.Xaml
+
+    Setter
+        ValueProperty
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Microsoft.UI.Xaml.Markup
+
+    XamlBindingHelper
+        SetPropertyFromColor
+        SetPropertyFromCornerRadius
+        SetPropertyFromThickness"&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;Microsoft.UI.Xaml.Markup
+
+    XamlBindingHelper
+        SetPropertyFromColor
+        SetPropertyFromCornerRadius
+        SetPropertyFromThickness
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Microsoft.Windows.AI.Video
+
+    VideoScaler
+    VideoScalerOptions
+    VideoScalerResult
+    VideoScalerStatus"&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;Microsoft.Windows.AI.Video
+
+    VideoScaler
+    VideoScalerOptions
+    VideoScalerResult
+    VideoScalerStatus
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Microsoft.Windows.Storage
+
+    ApplicationData
+        GetForUnpackaged"&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;Microsoft.Windows.Storage
+
+    ApplicationData
+        GetForUnpackaged
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.2.0" rel="nofollow"&gt;2.2.0 NuGet&lt;/a&gt; package to use WinAppSDK 2.0 in your app.&lt;/li&gt;
+&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Getting started&lt;/h3&gt;
+&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.8.9"&gt;Windows App SDK 1.8.9 (1.8.260529003)&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Windows App SDK 1.8.9 (1.8.260529003)&lt;/h2&gt;
+&lt;p&gt;WinAppSDK 1.8.9 is the latest stable servicing release for 1.8, with two reliability fixes in WinUI input and items controls.&lt;/p&gt;
+&lt;h3&gt;Bug fixes:&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Bug fix&lt;/th&gt;
+&lt;th&gt;&lt;a href="https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.applicationmodel.windowsappruntime.runtimecompatibilityoptions.disabledchanges?view=windows-app-sdk-1.8" rel="nofollow"&gt;Runtime Compatibility Change&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a memory leak in &lt;code&gt;ItemsRepeater&lt;/code&gt; where recycled elements were never garbage collected due to a reference cycle through the &lt;code&gt;RecyclePool&lt;/code&gt;, which could also cause crashes in &lt;code&gt;InvalidateChildrenMeasure&lt;/code&gt;.&lt;/td&gt;
+&lt;td&gt;ItemTemplateWrapper_RecyclePoolLeak&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a potential crash when releasing touch contacts in a &lt;code&gt;ScrollViewer&lt;/code&gt; before scrolling.&lt;/td&gt;
+&lt;td&gt;InputPointerSource_TouchUpScrollCrashFix&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.8.260529003" rel="nofollow"&gt;1.8.260529003 NuGet&lt;/a&gt; package to use WinAppSDK 1.8 in your app.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Getting started&lt;/h3&gt;
+&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
