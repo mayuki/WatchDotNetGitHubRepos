@@ -1,79 +1,65 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-06-10T00:33:03Z</updated>
+  <updated>2026-06-11T00:34:06Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-06-09</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-06-09</id>
+    <title>aws/aws-sdk-net - Releases - 2026-06-10</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-06-10</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-06-10T00:33:03Z</updated>
+    <updated>2026-06-11T00:34:06Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.266.0"&gt;4.0.266.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.267.0"&gt;4.0.267.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.266.0 (2026-06-09 18:18 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.267.0 (2026-06-10 18:18 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AWSMarketplaceCommerceAnalytics (4.0.3.0)
+&lt;li&gt;ConnectHealth (4.0.3.0)
 &lt;ul&gt;
-&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;li&gt;Add support for MedicalScribeBinaryAudioEvent in the Medical Scribe streaming input. This new event type lets you send audio as a raw binary payload instead of a base64-encoded value&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Bedrock (4.0.30.0)
+&lt;li&gt;EC2 (4.0.93.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for the Amazon Bedrock account-level data retention APIs PutAccountDataRetention and GetAccountDataRetention.&lt;/li&gt;
+&lt;li&gt;This release adds support for AMI Watermark which a structured identifier that helps in tracking AMI provenance&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCore (4.0.27.0)
+&lt;li&gt;ECS (4.0.24.0)
 &lt;ul&gt;
-&lt;li&gt;Add RetryableConflictException (HTTP 409) to InvokeAgentRuntimeCommand and GetAgentCard to prevent orphaned VMs during concurrent session access. The SDK automatically retries this exception with backoff. Enforcement is not yet active and will be enabled in a future service update.&lt;/li&gt;
+&lt;li&gt;Amazon ECS Managed Daemon task definitions now support pidMode and ipcMode parameters. Set shared to allow daemons to share PID or IPC namespaces with co-located tasks on Managed Instances, enabling process tracing and shared memory communication.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudWatch (4.0.12.0)
+&lt;li&gt;Lightsail (4.0.10.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds the APIs (AssociateDatasetKmsKey, DisassociateDatasetKmsKey, GetDataset) to manage encryption at rest for OpenTelemetry metrics in CloudWatch using AWS KMS customer managed keys.&lt;/li&gt;
+&lt;li&gt;This release adds support for Asia Pacific (Hong Kong) (ap-east-1), Europe (Spain) (eu-south-2) and South America (Sao Paulo) (sa-east-1) Regions.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DynamoDBStreams (4.0.5.0)
+&lt;li&gt;MediaLive (4.0.23.0)
 &lt;ul&gt;
-&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;li&gt;Adding premixer settings to pid and track audio inputs in MediaLIve to allow greater control over mixing audio from multiple source streams including support for AudioPidSelectors made up of multiple audio PIDs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (4.0.21.0)
+&lt;li&gt;PrometheusService (4.0.9.0)
 &lt;ul&gt;
-&lt;li&gt;Replace legacy parameter Expected with ConditionExpression in DeleteItem and DeleteItemAsync flow&lt;/li&gt;
+&lt;li&gt;Adds supports for out-of-order sample ingestion (default 1-minute window) and a configurable rule query offset to reduce data loss and improve alerting accuracy.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.92.0)
+&lt;li&gt;SageMaker (4.0.64.0)
 &lt;ul&gt;
-&lt;li&gt;Added TagFieldSpecifications to CreateFlowLogs and DescribeFlowLogs APIs. Customers can now specify tag keys in their Flow Logs subscriptions to capture associated EC2 resource tag values in their logs, enabling tag-based visibility.&lt;/li&gt;
+&lt;li&gt;Add support for G6e instances (ml.g6e.xlarge through ml.g6e.48xlarge) on Amazon SageMaker Notebook Instances.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IoTSiteWise (4.0.5.0)
+&lt;li&gt;Signin (4.0.2.0)
 &lt;ul&gt;
-&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;li&gt;AWS Sign-In now allows customers to control access to the AWS Management Console using resource-based policies. With this release customers can restrict console access based on network perimeters such as VPC IDs, VPC endpoints, and IP addresses.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Odb (4.0.8.0)
+&lt;li&gt;Core 4.0.9.0
 &lt;ul&gt;
-&lt;li&gt;Releases Autonomous Database Serverless APIs, autonomousDatabaseOciIntegrationIamRoles, linkedOciTenancyId, linkedOciCompartmentId, and subscriptionErrors fields in GetOciOnboardingStatus API response.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Outposts (4.0.8.0)
-&lt;ul&gt;
-&lt;li&gt;Added AWS Outposts APIs for self-service Outposts quoting and ordering. New operations include CreateQuote, GetQuote, UpdateQuote, DeleteQuote, ListQuotes, and ListOrderableInstanceTypes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;TimestreamQuery (4.0.4.0)
-&lt;ul&gt;
-&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;TimestreamWrite (4.0.4.0)
-&lt;ul&gt;
-&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
+&lt;li&gt;Reduced allocations when unmarshalling JSON responses by matching property names directly against the Utf8JsonReader instead of building a path string per property.&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

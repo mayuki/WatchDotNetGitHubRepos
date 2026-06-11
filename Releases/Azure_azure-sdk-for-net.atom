@@ -1,65 +1,38 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-06-10T00:33:04Z</updated>
+  <updated>2026-06-11T00:34:07Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-06-09</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-09</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-06-10</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-10</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-06-10T00:33:04Z</updated>
+    <updated>2026-06-11T00:34:07Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.59.0"&gt;Azure.Core_1.59.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Identity.Broker_1.8.0-beta.1"&gt;Azure.Identity.Broker_1.8.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.59.0 (2026-06-09)&lt;/h2&gt;
+                                &lt;h2&gt;1.8.0-beta.1 (2026-06-09)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added experimental (&lt;code&gt;AZID0004&lt;/code&gt;) mTLS Proof-of-Possession token binding support for managed identity scenarios, including dynamic host capability detection via MSAL and transport certificate rotation APIs on &lt;code&gt;BearerTokenAuthenticationPolicy&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed &lt;code&gt;BearerTokenAuthenticationPolicy&lt;/code&gt; so that the &lt;code&gt;Authorization&lt;/code&gt; header is no longer re-attached to a request that has been redirected to a different host. Previously, &lt;code&gt;RedirectPolicy&lt;/code&gt; would strip the &lt;code&gt;Authorization&lt;/code&gt; header before following a redirect, but the per-retry &lt;code&gt;BearerTokenAuthenticationPolicy&lt;/code&gt; would re-add the cached bearer token to the redirected request — including when the redirect target was a different host. The policy now detects when the request URI authority has changed since it last authorized the message, defensively strips any &lt;code&gt;Authorization&lt;/code&gt; header, and skips both re-authorization and the &lt;code&gt;WWW-Authenticate&lt;/code&gt; (CAE) &lt;code&gt;401&lt;/code&gt; handler so that no bearer token is sent to — or fetched in response to a challenge from — the redirect target. Same-host redirects, normal (non-redirected) requests, and CAE handling against the original host are unchanged. Callers who explicitly enabled auto-redirect (via &lt;code&gt;HttpPipelineTransportOptions.IsClientRedirectEnabled = true&lt;/code&gt; or &lt;code&gt;RedirectPolicy.SetAllowAutoRedirect(message, true)&lt;/code&gt;) and depended on the bearer token being re-attached on cross-host redirects should construct a separate client targeting the redirect-target host with a credential bound to that host's resource.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ManagedIdentityCredentialAttestationOptions&lt;/code&gt; to enable Credential Guard key attestation support for managed identity mTLS Proof-of-Possession flows.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated &lt;code&gt;Microsoft.Identity.Client&lt;/code&gt; dependency to &lt;code&gt;4.84.2&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Azure.Core&lt;/code&gt; dependency to version 1.59.0.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.VoiceLive_1.2.0-beta.1"&gt;Azure.AI.VoiceLive_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Monitor.Workspaces_1.0.0-beta.1"&gt;Azure.ResourceManager.Monitor.Workspaces_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.1 (2026-06-09)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-06-08)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;AzureRealtimeNativeVoice&lt;/code&gt; and &lt;code&gt;AzureRealtimeNativeVoiceName&lt;/code&gt; with 12 new voice options (Aarti, Andrew, Ava, Denise, Diya, Elsa, Florian, Francisca, Meera, Xiaoxiao, Ximena, Yunxi).&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;SmartEndOfTurnDetection&lt;/code&gt; (end-of-utterance detection with &lt;code&gt;ThresholdLevel&lt;/code&gt; and &lt;code&gt;TimeoutMs&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ParallelToolCalls&lt;/code&gt; property on &lt;code&gt;VoiceLiveSessionOptions&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;Channels&lt;/code&gt; and &lt;code&gt;ReferenceSource&lt;/code&gt; (&lt;code&gt;EchoCancellationReferenceSource&lt;/code&gt;) properties on &lt;code&gt;AudioEchoCancellation&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added RTC call support: &lt;code&gt;ClientEventRtcCallSdpCreate&lt;/code&gt;, &lt;code&gt;ServerEventRtcCallSdpCreated&lt;/code&gt;, &lt;code&gt;ServerEventRtcCallError&lt;/code&gt;, &lt;code&gt;RtcCallErrorDetails&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added output audio buffer events: &lt;code&gt;ServerEventOutputAudioBufferStarted&lt;/code&gt;, &lt;code&gt;ServerEventOutputAudioBufferStopped&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added streaming text input events: &lt;code&gt;ClientEventInputTextDelta&lt;/code&gt;, &lt;code&gt;ClientEventInputTextDone&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ServerEventResponseInvocationDelta&lt;/code&gt; for streaming invocation deltas.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.HorizonDB_1.0.0-beta.1"&gt;Azure.ResourceManager.HorizonDB_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-06-15)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Initial release of the Azure HorizonDB management library for .NET.&lt;/li&gt;
-&lt;li&gt;Support for managing HorizonDb clusters.&lt;/li&gt;
-&lt;li&gt;Support for managing HorizonDb pools.&lt;/li&gt;
-&lt;li&gt;Support for managing HorizonDb pool replicas.&lt;/li&gt;
-&lt;li&gt;Support for managing HorizonDb pool firewall rules.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;The package is now split from Azure.ResourceManager.Monitor.&lt;/p&gt;
+&lt;h3&gt;General New Features&lt;/h3&gt;
 &lt;p&gt;This package follows the &lt;a href="https://azure.github.io/azure-sdk/general_introduction.html" rel="nofollow"&gt;new Azure SDK guidelines&lt;/a&gt;, and provides many core capabilities:&lt;/p&gt;
 &lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
 - Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
@@ -75,6 +48,15 @@
 &lt;blockquote&gt;
 &lt;p&gt;NOTE: For more information about unified authentication, please refer to &lt;a href="https://learn.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet" rel="nofollow"&gt;Microsoft Azure Identity documentation for .NET&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CloudHealth_1.0.0-beta.3"&gt;Azure.ResourceManager.CloudHealth_1.0.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.3 (2026-06-08)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;p&gt;Upgraded api-version to 2026-05-01-preview.&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     

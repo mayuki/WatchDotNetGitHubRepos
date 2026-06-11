@@ -1,6 +1,77 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>microsoft/microsoft-ui-xaml - Releases</title>
   <link href="https://github.com/microsoft/microsoft-ui-xaml" />
-  <updated>2026-06-10T00:33:15Z</updated>
+  <updated>2026-06-11T00:34:27Z</updated>
   <id>https://github.com/microsoft/microsoft-ui-xaml</id>
+  <entry>
+    <title>microsoft/microsoft-ui-xaml - Releases - 2026-06-10</title>
+    <id>https://github.com/microsoft/microsoft-ui-xaml#2026-06-10</id>
+    <link href="https://github.com/microsoft/microsoft-ui-xaml" />
+    <updated>2026-06-11T00:34:27Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/releases/tag/winui3/release/2.2.0"&gt;WinUI 3 in WinAppSDK 2.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;WinUI 3 in Windows App SDK 2.2.0&lt;/h2&gt;
+&lt;p&gt;This release of WinUI 3 ships as part of &lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.2.0"&gt;Windows App SDK 2.2.0&lt;/a&gt;. To use it in your app, install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.2.0" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.2.0 NuGet package&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;What's new in WinUI 3:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;New &lt;code&gt;XamlBindingHelper&lt;/code&gt; boxing-free setter overloads.&lt;/strong&gt; New &lt;code&gt;SetPropertyFromThickness&lt;/code&gt;, &lt;code&gt;SetPropertyFromCornerRadius&lt;/code&gt;, and &lt;code&gt;SetPropertyFromColor&lt;/code&gt; overloads on &lt;code&gt;XamlBindingHelper&lt;/code&gt; let &lt;code&gt;{x:Bind}&lt;/code&gt; set value-type properties without boxing. The &lt;code&gt;Setter.ValueProperty&lt;/code&gt; dependency property is also now exposed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug fixes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed a crash in &lt;code&gt;RenderTargetBitmap&lt;/code&gt; when the target element leaves the visual tree (for example, a popup closes) before &lt;code&gt;PreCommit&lt;/code&gt; completes. &lt;code&gt;RenderAsync&lt;/code&gt; now returns &lt;code&gt;E_ABORT&lt;/code&gt; instead of crashing.&lt;/li&gt;
+&lt;li&gt;Fixed a use-after-free crash in &lt;code&gt;ScrollView&lt;/code&gt; when the control is destroyed while its hide-indicators timer tick is still pending. See &lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/10514" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/10514/hovercard"&gt;microsoft/microsoft-ui-xaml#10514&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Fixed a potential crash in &lt;code&gt;Microsoft.UI.Xaml.dll!DirectUI::DXamlCore::GetPeerPrivate&lt;/code&gt; caused by attempting to access an object scheduled to be freed.&lt;/li&gt;
+&lt;li&gt;Fixed an issue where &lt;code&gt;Microsoft.UI.System.ThemeSettings&lt;/code&gt; could crash an app if it was destroyed on a background thread (for example, when destroyed by the .NET garbage collector).&lt;/li&gt;
+&lt;li&gt;Fixed a crash that could occur on certain devices when active touch contacts were canceled by input hardware, such as when pen input overrides them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the full set of changes across Windows App SDK 2.2.0, see the &lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.2.0"&gt;Windows App SDK 2.2.0 release notes&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.2.0" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.2.0 NuGet package&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/releases/tag/winui3/release/1.8.9"&gt;WinUI 3 in WinAppSDK 1.8.9&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;WinUI 3 in Windows App SDK 1.8.9&lt;/h2&gt;
+&lt;p&gt;This release of WinUI 3 ships as part of &lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.8.9"&gt;Windows App SDK 1.8.9&lt;/a&gt;. To use it in your app, install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.8.260529003" rel="nofollow"&gt;Microsoft.WindowsAppSDK 1.8.260529003 NuGet package&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;1.8.9 is a stable servicing release for 1.8. The WinUI changes in this release are two reliability fixes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed a memory leak in &lt;code&gt;ItemsRepeater&lt;/code&gt; where recycled elements were never garbage collected due to a reference cycle through the &lt;code&gt;RecyclePool&lt;/code&gt;, which could also cause crashes in &lt;code&gt;InvalidateChildrenMeasure&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Fixed a potential crash when releasing touch contacts in a &lt;code&gt;ScrollViewer&lt;/code&gt; before scrolling.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the full set of changes, see the &lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.8.9"&gt;Windows App SDK 1.8.9 release notes&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.8.260529003" rel="nofollow"&gt;Microsoft.WindowsAppSDK 1.8.260529003 NuGet package&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/releases/tag/winui3/release/2.2.2-experimental9"&gt;WinUI 3 in WinAppSDK 2.2.2-experimental9&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;WinUI 3 in Windows App SDK 2.2.2-Experimental9 🧪&lt;/h2&gt;
+&lt;p&gt;This experimental release of WinUI 3 ships as part of &lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.2.2-exp9"&gt;Windows App SDK 2.2 Experimental 9&lt;/a&gt;. To use it in your app, install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.2.2-experimental9" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.2.2-experimental9 NuGet package&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release ships alongside Windows App SDK 2.2.0 stable and brings forward the WinUI changes from that release, including the new &lt;code&gt;XamlBindingHelper&lt;/code&gt; boxing-free setter overloads (&lt;code&gt;SetPropertyFromThickness&lt;/code&gt;, &lt;code&gt;SetPropertyFromCornerRadius&lt;/code&gt;, &lt;code&gt;SetPropertyFromColor&lt;/code&gt;), the newly exposed &lt;code&gt;Setter.ValueProperty&lt;/code&gt; dependency property, and the 2.2.0 WinUI bug fix batch.&lt;/p&gt;
+&lt;p&gt;For the full set of changes, see the &lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.2.2-exp9"&gt;Windows App SDK 2.2 Experimental 9 release notes&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.2.2-experimental9" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.2.2-experimental9 NuGet package&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
