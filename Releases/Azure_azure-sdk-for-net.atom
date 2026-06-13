@@ -1,86 +1,56 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-06-12T00:34:28Z</updated>
+  <updated>2026-06-13T00:34:39Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-06-11</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-11</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-06-12</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-12</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-06-12T00:34:28Z</updated>
+    <updated>2026-06-13T00:34:39Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6425531"&gt;Azure.Template_1.0.3-beta.6425531&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ResilienceManagement_1.0.0-beta.1"&gt;Azure.ResourceManager.ResilienceManagement_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.3-beta.6425531 (2026-06-11)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-06-11)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;p&gt;This is the initial release of the &lt;code&gt;Azure.ResourceManager.ResilienceManagement&lt;/code&gt; client library. It provides management plane support for the Microsoft.AzureResilienceManagement resource provider.&lt;/p&gt;
+&lt;p&gt;For more information, please refer to the &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/azureresiliencemanagement/Azure.ResourceManager.ResilienceManagement/README.md"&gt;README&lt;/a&gt;.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.ContentUnderstanding_1.2.0-beta.2"&gt;Azure.AI.ContentUnderstanding_1.2.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0-beta.2 (2026-06-11)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;WidgetAnalyticsClientSettings&lt;/code&gt; to support creating a &lt;code&gt;WidgetAnalyticsClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
+&lt;li&gt;Filtered service-emitted &lt;code&gt;LLMStats:&lt;/code&gt; telemetry entries from the rendered &lt;code&gt;rai_warnings&lt;/code&gt; front matter in &lt;code&gt;ToLlmInput&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated &lt;code&gt;ToLlmInput&lt;/code&gt; page markers from &lt;code&gt;&amp;lt;!-- page N --&amp;gt;&lt;/code&gt; to &lt;code&gt;&amp;lt;!-- InputPageNumber: N --&amp;gt;&lt;/code&gt; and avoided duplicate marker injection when the service markdown already includes &lt;code&gt;InputPageNumber&lt;/code&gt; markers.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6424804"&gt;Azure.Template_1.0.3-beta.6424804&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetApp_1.16.1"&gt;Azure.ResourceManager.NetApp_1.16.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.3-beta.6424804 (2026-06-11)&lt;/h2&gt;
+                                &lt;h2&gt;1.16.1 (2026-06-09)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;WidgetAnalyticsClientSettings&lt;/code&gt; to support creating a &lt;code&gt;WidgetAnalyticsClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
+&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.NetApp&lt;/code&gt; AOT-compatible.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Administration_4.9.0-beta.2"&gt;Azure.Security.KeyVault.Administration_4.9.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.FrontDoor_1.4.2"&gt;Azure.ResourceManager.FrontDoor_1.4.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;4.9.0-beta.2 (2026-06-10)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for Proof-of-Possession (PoP) token binding in the Key Vault authentication policy.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Certificates_4.10.0-beta.2"&gt;Azure.Security.KeyVault.Certificates_4.10.0-beta.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;4.10.0-beta.2 (2026-06-10)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for Proof-of-Possession (PoP) token binding in the Key Vault authentication policy.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Secrets_4.12.0-beta.1"&gt;Azure.Security.KeyVault.Secrets_4.12.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;4.12.0-beta.1 (2026-06-10)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for Proof-of-Possession (PoP) token binding in the Key Vault authentication policy.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Keys_4.11.0-beta.2"&gt;Azure.Security.KeyVault.Keys_4.11.0-beta.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;4.11.0-beta.2 (2026-06-10)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for Proof-of-Possession (PoP) token binding in the Key Vault authentication policy.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Fabric_1.1.0-beta.1"&gt;Azure.ResourceManager.Fabric_1.1.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.0-beta.1 (2026-06-06)&lt;/h2&gt;
+                                &lt;h2&gt;1.4.2 (2026-06-06)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Upgraded dependent Azure.Core to 1.58.0.&lt;/li&gt;
@@ -90,34 +60,52 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.SelfHelp_1.1.0-beta.7"&gt;Azure.ResourceManager.SelfHelp_1.1.0-beta.7&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DataBox_1.1.2"&gt;Azure.ResourceManager.DataBox_1.1.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.1.0-beta.7 (2026-06-09)&lt;/h2&gt;
+                                &lt;h2&gt;1.1.2 (2026-06-09)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.SelfHelp&lt;/code&gt; AOT-compatible.&lt;/li&gt;
+&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.DataBox&lt;/code&gt; AOT-compatible.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ServiceNetworking_1.2.0-beta.2"&gt;Azure.ResourceManager.ServiceNetworking_1.2.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Elastic_1.1.1"&gt;Azure.ResourceManager.Elastic_1.1.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.2 (2026-06-09)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h2&gt;1.1.1 (2026-06-06)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.ServiceNetworking&lt;/code&gt; AOT-compatible.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.58.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ResourceMover_1.1.2-beta.4"&gt;Azure.ResourceManager.ResourceMover_1.1.2-beta.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ElasticSan_1.2.1"&gt;Azure.ResourceManager.ElasticSan_1.2.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.1.2-beta.4 (2026-06-09)&lt;/h2&gt;
+                                &lt;h2&gt;1.2.1 (2026-06-06)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.58.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Dynatrace_1.2.1"&gt;Azure.ResourceManager.Dynatrace_1.2.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.1 (2026-06-06)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.ResourceMover&lt;/code&gt; AOT-compatible.&lt;/li&gt;
+&lt;li&gt;Make &lt;code&gt;Azure.ResourceManager.Dynatrace&lt;/code&gt; AOT-compatible.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.58.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
