@@ -1,64 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>StackExchange/StackExchange.Redis - Releases</title>
   <link href="https://github.com/StackExchange/StackExchange.Redis" />
-  <updated>2026-06-13T00:35:01Z</updated>
+  <updated>2026-06-14T00:31:52Z</updated>
   <id>https://github.com/StackExchange/StackExchange.Redis</id>
-  <entry>
-    <title>StackExchange/StackExchange.Redis - Releases - 2026-06-12</title>
-    <id>https://github.com/StackExchange/StackExchange.Redis#2026-06-12</id>
-    <link href="https://github.com/StackExchange/StackExchange.Redis" />
-    <updated>2026-06-13T00:35:01Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/3.0.0"&gt;3.0.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;3.0.0 represents an overhaul of the internal IO logic, for both performance and stability reasons.&lt;/p&gt;
-&lt;p&gt;Intentionally, there are no API changes in this release; it is a direct mirror of &lt;a href="https://www.nuget.org/packages/StackExchange.Redis/2.13.17" rel="nofollow"&gt;2.13.17&lt;/a&gt;, but with the new IO core.&lt;/p&gt;
-&lt;h1&gt;What is the aim of the internals rewrite?&lt;/h1&gt;
-&lt;p&gt;SE.Redis v2 made use of a few concepts internally:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;the "pipelines" IO layer from System.IO.Pipelines, via Pipelines.Sockets.Unoficial&lt;/li&gt;
-&lt;li&gt;a DOM-based parser built on top of a custom &lt;em&gt;arena allocator&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;v3 fundamentally revises these engineering decisions:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;IO and buffer control is taken back directly into the library, allowing for greater control of IO boundaries and the threading model&lt;/li&gt;
-&lt;li&gt;the parser is re-written as a reader-based implementation&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This allows for significant performance improvement, especially when processing large / complex results - for example, if we use the &lt;code&gt;LRANGE_600&lt;/code&gt; test from &lt;code&gt;redis-benchmark&lt;/code&gt; (or &lt;code&gt;resp-benchmark&lt;/code&gt;):&lt;/p&gt;
-&lt;div class="highlight highlight-source-shell notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="### classic SE.Redis 2.13.17.28173 ###
-LRANGE_600:     7,579 requests per second
-LRANGE_600:     7,554 requests per second
-LRANGE_600:     7,284 requests per second
-LRANGE_600:     7,158 requests per second
-LRANGE_600:     7,174 requests per second"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;## classic SE.Redis 2.13.17.28173 ###&lt;/span&gt;
-LRANGE_600:     7,579 requests per second
-LRANGE_600:     7,554 requests per second
-LRANGE_600:     7,284 requests per second
-LRANGE_600:     7,158 requests per second
-LRANGE_600:     7,174 requests per second&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;vs&lt;/p&gt;
-&lt;div class="highlight highlight-source-shell notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="### classic SE.Redis 3.0.0.11234 ###
-LRANGE_600:     16,408 requests per second
-LRANGE_600:     17,681 requests per second
-LRANGE_600:     17,331 requests per second
-LRANGE_600:     17,317 requests per second
-LRANGE_600:     16,665 requests per second"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;## classic SE.Redis 3.0.0.11234 ###&lt;/span&gt;
-LRANGE_600:     16,408 requests per second
-LRANGE_600:     17,681 requests per second
-LRANGE_600:     17,331 requests per second
-LRANGE_600:     17,317 requests per second
-LRANGE_600:     16,665 requests per second&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;(for tests with simpler results, like &lt;code&gt;INCR&lt;/code&gt;, results of over 1M requests per second are achievable)&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;3.0 is the first part of a wave of planned IO work; 3.1 will revise the "write" part of the write loop, moving message serialization out of the critical serialized core of the multiplexer. All of this work is based on extensive prototyping and benchmarking, demonstrating that these approaches, when combined, provide &lt;em&gt;significant&lt;/em&gt; throughput and stability improvements.&lt;/p&gt;
-&lt;p&gt;This release has undergone extensive testing. If you experience problems, please let us know!&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
