@@ -1,6 +1,366 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-06-15T00:33:45Z</updated>
+  <updated>2026-06-16T00:39:44Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
+  <entry>
+    <title>aws/aws-sdk-net - Releases - 2026-06-15</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-06-15</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2026-06-16T00:39:23Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.270.0"&gt;4.0.270.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.270.0 (2026-06-15 19:16 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;BedrockRuntime (4.0.21.0)
+&lt;ul&gt;
+&lt;li&gt;InvokeGuardrailChecks API evaluates prompts and responses against safety checks (content filters, prompt attacks, sensitive info) without creating guardrail resources. It's a detect-only API, returning numeric scores so you can build adaptive logic as per your application.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CloudWatchLogs (4.0.27.0)
+&lt;ul&gt;
+&lt;li&gt;Added endTimeOffset parameter to Scheduled Queries APIs (Create, Update, Get) enabling bounded time window configuration. Introduced scheduleType filter (CUSTOMER MANAGED, AWS MANAGED) for ListScheduledQueries and exposed it in Get and Update responses.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DataZone (4.0.31.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for deleting lineage events in Amazon DataZone.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Mgn (4.0.10.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Transform for VMware now supports Amazon FSx for NetApp ONTAP as a target storage. Customers can migrate source server disks directly to FSx for NetApp ONTAP iSCSI LUNs. Target storage is configurable per source server, and compute, network, and storage migrate together in coordinated waves.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RDS (4.0.21.5)
+&lt;ul&gt;
+&lt;li&gt;Adding support for RDS SQL Server BYOM and DB2 Community Edition&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SQS (4.0.3.5)
+&lt;ul&gt;
+&lt;li&gt;Reduce memory allocations in SQS MD5 validation pipeline.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WAFV2 (4.0.10.0)
+&lt;ul&gt;
+&lt;li&gt;AWS WAF now supports AI traffic monetization for CloudFront. Configure payment networks and pricing on your web ACL, use the new Monetize rule action to charge AI agents via x402, and monitor revenue with new GetRevenueStatisticsSummary, GetRevenueStatistics, and ListSettlementRecords APIs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkSpaces (4.0.13.0)
+&lt;ul&gt;
+&lt;li&gt;Added a validation for null check for ImageIds in DescribeWorkspaceImages API request parameters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.9.3
+&lt;ul&gt;
+&lt;li&gt;Added ComputeMD5Hash(byte[], int, int) overload to ICryptoUtil to support hashing from offset/count ranges without copying.&lt;/li&gt;
+&lt;li&gt;Fix regression where AmazonUnmarshallingException.LastKnownLocation did not display the correct path.&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-06-15</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-15</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2026-06-16T00:39:24Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Monitor_1.4.0-beta.5"&gt;Azure.ResourceManager.Monitor_1.4.0-beta.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.4.0-beta.5 (2026-06-13)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.59.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.IotFirmwareDefense_1.1.1"&gt;Azure.ResourceManager.IotFirmwareDefense_1.1.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.1.1 (2026-06-13)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.59.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.MachineLearning_1.2.4"&gt;Azure.ResourceManager.MachineLearning_1.2.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.4 (2026-06-13)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.59.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ImpactReporting_1.0.0-beta.2"&gt;Azure.ResourceManager.ImpactReporting_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.2 (2026-06-13)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.59.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.IotHub_1.2.0-beta.3"&gt;Azure.ResourceManager.IotHub_1.2.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0-beta.3 (2026-06-13)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.59.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.LoadTesting_1.2.0-beta.1"&gt;Azure.ResourceManager.LoadTesting_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0-beta.1 (2026-06-13)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded API version to &lt;code&gt;2024-12-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.59.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.HDInsight_1.2.0-beta.6"&gt;Azure.ResourceManager.HDInsight_1.2.0-beta.6&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0-beta.6 (2026-06-13)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.59.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Kusto_1.6.3"&gt;Azure.ResourceManager.Kusto_1.6.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.6.3 (2026-06-13)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.59.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>dotnet/aspire - Releases - 2026-06-15</title>
+    <id>https://github.com/dotnet/aspire#2026-06-15</id>
+    <link href="https://github.com/dotnet/aspire" />
+    <updated>2026-06-16T00:39:28Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.4.4-release"&gt;Aspire 13.4.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's New in Aspire 13.4.4&lt;/h2&gt;
+&lt;p&gt;Patch release for Aspire 13.4 with improved DCP connection reliability during request execution and consistent &lt;code&gt;ExcludeFromMcp()&lt;/code&gt; filtering across all CLI MCP tools.&lt;/p&gt;
+&lt;h3&gt;🐛 Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🔌 &lt;strong&gt;DCP requests could fail permanently when the connection dropped mid-request&lt;/strong&gt; — If the underlying DCP channel closed while a request was in flight, the error was surfaced directly instead of being retried. Reconnection is now attempted as part of the DCP request retry path so transient disconnections recover automatically without surfacing errors. (&lt;a href="https://github.com/microsoft/aspire/pull/18096" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/18096/hovercard"&gt;#18096&lt;/a&gt;, &lt;code&gt;@karolz-ms&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;🔍 &lt;strong&gt;Resources marked with &lt;code&gt;ExcludeFromMcp()&lt;/code&gt; were not consistently filtered from CLI MCP tools&lt;/strong&gt; — Resources with the &lt;code&gt;resource.excludeFromMcp&lt;/code&gt; property were not excluded uniformly from all CLI MCP tool results. &lt;code&gt;list_resources&lt;/code&gt;, &lt;code&gt;list_console_logs&lt;/code&gt;, &lt;code&gt;execute_resource_command&lt;/code&gt;, &lt;code&gt;list_structured_logs&lt;/code&gt;, &lt;code&gt;list_traces&lt;/code&gt;, and &lt;code&gt;list_trace_structured_logs&lt;/code&gt; all now honor the exclusion, preventing excluded resources and their telemetry from appearing in agent context. (&lt;a href="https://github.com/microsoft/aspire/pull/18150" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/18150/hovercard"&gt;#18150&lt;/a&gt;, &lt;code&gt;@JamesNK&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;🏷️ Housekeeping&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;📦 Improved npm CLI package metadata and hardened npm publish validation in the release pipeline. (&lt;a href="https://github.com/microsoft/aspire/pull/18093" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/18093/hovercard"&gt;#18093&lt;/a&gt;, &lt;code&gt;@adamratzman&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a href="https://github.com/microsoft/aspire/compare/v13.4.3...v13.4.4"&gt;v13.4.3...v13.4.4&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/ccc566c5ab3285c9beb8f38ede34734bb477c029"&gt;ccc566c5ab3285c9beb8f38ede34734bb477c029&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>googleapis/google-cloud-dotnet - Releases - 2026-06-15</title>
+    <id>https://github.com/googleapis/google-cloud-dotnet#2026-06-15</id>
+    <link href="https://github.com/googleapis/google-cloud-dotnet" />
+    <updated>2026-06-16T00:39:35Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Ces.V1Beta-1.0.0-beta06"&gt;Google.Cloud.Ces.V1Beta version 1.0.0-beta06&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update cloud ml ces v1beta client libraries&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update comments for &lt;code&gt;audio_recording_config&lt;/code&gt; and &lt;code&gt;bigquery_export_settings&lt;/code&gt; in &lt;code&gt;LoggingSettings&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Update comments for various &lt;code&gt;InputType&lt;/code&gt; enum values.&lt;/li&gt;
+&lt;li&gt;Update comments for &lt;code&gt;root_span&lt;/code&gt;, &lt;code&gt;turns&lt;/code&gt;, and &lt;code&gt;max_turns&lt;/code&gt; in &lt;code&gt;Evaluation&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.ModelArmor.V1-1.0.0-beta06"&gt;Google.Cloud.ModelArmor.V1 version 1.0.0-beta06&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add streaming methods StreamSanitizeUserPrompt and StreamSanitizeModelResponse&lt;/li&gt;
+&lt;li&gt;Add StreamingMode enum and field to sanitize requests&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Firestore-4.3.0"&gt;Google.Cloud.Firestore version 4.3.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Expose the 'auto_commit_transaction' option for the ExecutePipeline API&lt;/li&gt;
+&lt;li&gt;Expose the 'concurrency_mode' option for the Cloud Firestore API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A comment for message &lt;code&gt;TransactionOptions&lt;/code&gt; is changed to better detail the new 'concurrency_mode' option.&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;parent&lt;/code&gt; in message &lt;code&gt;.google.firestore.v1.ListCollectionIdsRequest&lt;/code&gt; is changed to describe how to list top-level collections.&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;order_by&lt;/code&gt; in message &lt;code&gt;.google.firestore.v1.StructuredQuery&lt;/code&gt; is updated to describe default behavior for ENTERPRISE edition databases&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.PubSub.V1-3.36.0"&gt;Google.Cloud.PubSub.V1 version 3.36.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Streaming pull keepalive&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.OracleDatabase.V1-1.6.0"&gt;Google.Cloud.OracleDatabase.V1 version 1.6.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add v1 client libraries for Oracle Database Goldengate&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.ConfidentialComputing.V1-1.12.0"&gt;Google.Cloud.ConfidentialComputing.V1 version 1.12.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add instance field to VerifyAttestationRequest&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Bigtable.V2-3.29.0"&gt;Google.Cloud.Bigtable.V2 version 3.29.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add support for filtering SampleRowKeys to a specific row_range&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Comments in SampleRowKeys updated to reflect the new row_range field&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.AlloyDb.V1-1.15.0"&gt;Google.Cloud.AlloyDb.V1 version 1.15.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add POSTGRES_18 to supported database versions&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>microsoft/CsWin32 - Releases - 2026-06-15</title>
+    <id>https://github.com/microsoft/CsWin32#2026-06-15</id>
+    <link href="https://github.com/microsoft/CsWin32" />
+    <updated>2026-06-16T00:39:39Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/CsWin32/releases/tag/v0.3.296"&gt;v0.3.296&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Changes:&lt;/h2&gt;
+&lt;h3&gt;Fixes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4534403008" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1703" data-hovercard-type="issue" data-hovercard-url="/microsoft/CsWin32/issues/1703/hovercard" href="https://github.com/microsoft/CsWin32/issues/1703"&gt;#1703&lt;/a&gt;: CsWin32-generated COM structs trip &lt;code&gt;CS3016&lt;/code&gt; under &lt;code&gt;[assembly: CLSCompliant(true)]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Enhancements:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="999897925" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/408" data-hovercard-type="issue" data-hovercard-url="/microsoft/CsWin32/issues/408/hovercard" href="https://github.com/microsoft/CsWin32/issues/408"&gt;#408&lt;/a&gt;: Fields in Anonymous nested structs should be exposed with property getters on the nesting struct&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4635594393" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1720" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1720/hovercard" href="https://github.com/microsoft/CsWin32/pull/1720"&gt;#1720&lt;/a&gt;: Generate generic  overloads for IID_PPV_ARGS pattern on COM methods&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Others:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3593839013" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1531" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1531/hovercard" href="https://github.com/microsoft/CsWin32/pull/1531"&gt;#1531&lt;/a&gt;: Update nbgv and nerdbank.gitversioning updates to 3.9.50&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4651784509" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1727" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1727/hovercard" href="https://github.com/microsoft/CsWin32/pull/1727"&gt;#1727&lt;/a&gt;: Flatten anonymous bitfield sub-properties (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="999897925" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/408" data-hovercard-type="issue" data-hovercard-url="/microsoft/CsWin32/issues/408/hovercard" href="https://github.com/microsoft/CsWin32/issues/408"&gt;#408&lt;/a&gt; phase 2)&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4636990607" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1721" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1721/hovercard" href="https://github.com/microsoft/CsWin32/pull/1721"&gt;#1721&lt;/a&gt;: Flatten anonymous nested struct/union fields (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="999897925" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/408" data-hovercard-type="issue" data-hovercard-url="/microsoft/CsWin32/issues/408/hovercard" href="https://github.com/microsoft/CsWin32/issues/408"&gt;#408&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4604251397" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1715" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1715/hovercard" href="https://github.com/microsoft/CsWin32/pull/1715"&gt;#1715&lt;/a&gt;: fix: document inherited COM interface methods&lt;/li&gt;
+&lt;/ul&gt;
+&lt;details&gt;&lt;summary&gt;&lt;b&gt;See More&lt;/b&gt;&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4651808733" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1728" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1728/hovercard" href="https://github.com/microsoft/CsWin32/pull/1728"&gt;#1728&lt;/a&gt;: Serialize Linux test runs and capture crash dumps as a dedicated artifact&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4637471861" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1722" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1722/hovercard" href="https://github.com/microsoft/CsWin32/pull/1722"&gt;#1722&lt;/a&gt;: Limit test parallelism on Linux to avoid OOM kills&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4574167669" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1709" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1709/hovercard" href="https://github.com/microsoft/CsWin32/pull/1709"&gt;#1709&lt;/a&gt;: Update actions/checkout action to v5.0.1&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4645708196" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1723" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1723/hovercard" href="https://github.com/microsoft/CsWin32/pull/1723"&gt;#1723&lt;/a&gt;: Suppress CS3016 on internal COM wrappers without [CLSCompliant(false)] (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4534403008" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1703" data-hovercard-type="issue" data-hovercard-url="/microsoft/CsWin32/issues/1703/hovercard" href="https://github.com/microsoft/CsWin32/issues/1703"&gt;#1703&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This list of changes was &lt;a href="https://devdiv.visualstudio.com/DevDiv/_build/results?buildId=14374592&amp;amp;view=logs" rel="nofollow"&gt;auto generated&lt;/a&gt;.&lt;/p&gt;&lt;/details&gt;&lt;p&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

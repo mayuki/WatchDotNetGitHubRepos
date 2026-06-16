@@ -1,6 +1,37 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/aspire - Releases</title>
   <link href="https://github.com/dotnet/aspire" />
-  <updated>2026-06-15T00:33:30Z</updated>
+  <updated>2026-06-16T00:39:28Z</updated>
   <id>https://github.com/dotnet/aspire</id>
+  <entry>
+    <title>dotnet/aspire - Releases - 2026-06-15</title>
+    <id>https://github.com/dotnet/aspire#2026-06-15</id>
+    <link href="https://github.com/dotnet/aspire" />
+    <updated>2026-06-16T00:39:28Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.4.4-release"&gt;Aspire 13.4.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's New in Aspire 13.4.4&lt;/h2&gt;
+&lt;p&gt;Patch release for Aspire 13.4 with improved DCP connection reliability during request execution and consistent &lt;code&gt;ExcludeFromMcp()&lt;/code&gt; filtering across all CLI MCP tools.&lt;/p&gt;
+&lt;h3&gt;🐛 Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🔌 &lt;strong&gt;DCP requests could fail permanently when the connection dropped mid-request&lt;/strong&gt; — If the underlying DCP channel closed while a request was in flight, the error was surfaced directly instead of being retried. Reconnection is now attempted as part of the DCP request retry path so transient disconnections recover automatically without surfacing errors. (&lt;a href="https://github.com/microsoft/aspire/pull/18096" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/18096/hovercard"&gt;#18096&lt;/a&gt;, &lt;code&gt;@karolz-ms&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;🔍 &lt;strong&gt;Resources marked with &lt;code&gt;ExcludeFromMcp()&lt;/code&gt; were not consistently filtered from CLI MCP tools&lt;/strong&gt; — Resources with the &lt;code&gt;resource.excludeFromMcp&lt;/code&gt; property were not excluded uniformly from all CLI MCP tool results. &lt;code&gt;list_resources&lt;/code&gt;, &lt;code&gt;list_console_logs&lt;/code&gt;, &lt;code&gt;execute_resource_command&lt;/code&gt;, &lt;code&gt;list_structured_logs&lt;/code&gt;, &lt;code&gt;list_traces&lt;/code&gt;, and &lt;code&gt;list_trace_structured_logs&lt;/code&gt; all now honor the exclusion, preventing excluded resources and their telemetry from appearing in agent context. (&lt;a href="https://github.com/microsoft/aspire/pull/18150" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/18150/hovercard"&gt;#18150&lt;/a&gt;, &lt;code&gt;@JamesNK&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;🏷️ Housekeeping&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;📦 Improved npm CLI package metadata and hardened npm publish validation in the release pipeline. (&lt;a href="https://github.com/microsoft/aspire/pull/18093" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/18093/hovercard"&gt;#18093&lt;/a&gt;, &lt;code&gt;@adamratzman&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a href="https://github.com/microsoft/aspire/compare/v13.4.3...v13.4.4"&gt;v13.4.3...v13.4.4&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/ccc566c5ab3285c9beb8f38ede34734bb477c029"&gt;ccc566c5ab3285c9beb8f38ede34734bb477c029&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
