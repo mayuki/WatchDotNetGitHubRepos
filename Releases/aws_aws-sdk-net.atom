@@ -1,65 +1,80 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-06-16T00:39:23Z</updated>
+  <updated>2026-06-17T00:34:25Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-06-15</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-06-15</id>
+    <title>aws/aws-sdk-net - Releases - 2026-06-16</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-06-16</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-06-16T00:39:23Z</updated>
+    <updated>2026-06-17T00:34:25Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.270.0"&gt;4.0.270.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.271.0"&gt;4.0.271.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.270.0 (2026-06-15 19:16 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.271.0 (2026-06-16 18:28 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;BedrockRuntime (4.0.21.0)
+&lt;li&gt;DirectConnect (4.0.5.0)
 &lt;ul&gt;
-&lt;li&gt;InvokeGuardrailChecks API evaluates prompts and responses against safety checks (content filters, prompt attacks, sensitive info) without creating guardrail resources. It's a detect-only API, returning numeric scores so you can build adaptive logic as per your application.&lt;/li&gt;
+&lt;li&gt;Added VIF rate limiting support for AWS Direct Connect, allowing customers to set bandwidth allocations on virtual interfaces to manage traffic on dedicated connections.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudWatchLogs (4.0.27.0)
+&lt;li&gt;IoTEvents (Removed)
 &lt;ul&gt;
-&lt;li&gt;Added endTimeOffset parameter to Scheduled Queries APIs (Create, Update, Get) enabling bounded time window configuration. Introduced scheduleType filter (CUSTOMER MANAGED, AWS MANAGED) for ListScheduledQueries and exposed it in Get and Update responses.&lt;/li&gt;
+&lt;li&gt;AWS IoT Events has been removed from the SDK because it has been discontinued.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DataZone (4.0.31.0)
+&lt;li&gt;IoTEventsData (Removed)
 &lt;ul&gt;
-&lt;li&gt;Adds support for deleting lineage events in Amazon DataZone.&lt;/li&gt;
+&lt;li&gt;AWS IoT Events Data has been removed from the SDK because it has been discontinued.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Mgn (4.0.10.0)
+&lt;li&gt;Outposts (4.0.9.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Transform for VMware now supports Amazon FSx for NetApp ONTAP as a target storage. Customers can migrate source server disks directly to FSx for NetApp ONTAP iSCSI LUNs. Target storage is configurable per source server, and compute, network, and storage migrate together in coordinated waves.&lt;/li&gt;
+&lt;li&gt;Adds support for creating an order from quotes.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;RDS (4.0.21.5)
+&lt;li&gt;Panorama (Removed)
 &lt;ul&gt;
-&lt;li&gt;Adding support for RDS SQL Server BYOM and DB2 Community Edition&lt;/li&gt;
+&lt;li&gt;AWS Panorama has been removed from the SDK because it has been discontinued.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SQS (4.0.3.5)
+&lt;li&gt;PartnerCentralSelling (4.0.13.0)
 &lt;ul&gt;
-&lt;li&gt;Reduce memory allocations in SQS MD5 validation pipeline.&lt;/li&gt;
+&lt;li&gt;Added Prospecting APIs to convert engagements into AI-enriched leads with scoring insights. Extended Engagement APIs with ProspectingResult and Lead contexts. Added CoSell Scoring to GetAwsOpportunitySummary- quality score, trend, agent-driven recommendations, and engagement classification.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;WAFV2 (4.0.10.0)
+&lt;li&gt;Route53Resolver (4.0.9.0)
 &lt;ul&gt;
-&lt;li&gt;AWS WAF now supports AI traffic monetization for CloudFront. Configure payment networks and pricing on your web ACL, use the new Monetize rule action to charge AI agents via x402, and monitor revenue with new GetRevenueStatisticsSummary, GetRevenueStatistics, and ListSettlementRecords APIs.&lt;/li&gt;
+&lt;li&gt;Adds supports for PartnerManagedRules&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;WorkSpaces (4.0.13.0)
+&lt;li&gt;S3 (4.0.25.0)
 &lt;ul&gt;
-&lt;li&gt;Added a validation for null check for ImageIds in DescribeWorkspaceImages API request parameters.&lt;/li&gt;
+&lt;li&gt;Added support for annotations. You can now attach up to 1000 annotations (up to 1 MB each) directly to objects and create, retrieve, list, and delete them using new annotation APIs. Also added support for configuring an annotation table in S3 Metadata.&lt;/li&gt;
+&lt;li&gt;Apply PooledContentStream optimization to S3 custom XML marshallers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 4.0.9.3
+&lt;li&gt;S3Vectors (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;Added ComputeMD5Hash(byte[], int, int) overload to ICryptoUtil to support hashing from offset/count ranges without copying.&lt;/li&gt;
-&lt;li&gt;Fix regression where AmazonUnmarshallingException.LastKnownLocation did not display the correct path.&lt;/li&gt;
+&lt;li&gt;Amazon S3 Vectors now supports paginated QueryVectors requests, returning up to 10,000 results per query.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SageMaker (4.0.65.0)
+&lt;ul&gt;
+&lt;li&gt;Add EnableDetailedObservability to Endpoint MetricsConfig. Publishes GPU, host, and framework-native inference metrics to CloudWatch with per-inference-component, availability-zone, and instance dimensions. Adds Inference Component provisioning lifecycle and multi-AZ placement metrics.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SimSpaceWeaver (Removed)
+&lt;ul&gt;
+&lt;li&gt;AWS SimSpace Weaver has been removed from the SDK because it has been discontinued.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.9.4
+&lt;ul&gt;
+&lt;li&gt;[Breaking Change] When service clients are configured with a service URL and the signing region can not be determined from the host name the SDK would incorrectly default to us-east-1. Now the SDK will detect the default region configured for the environment and use that for signing region. If there is no default region the SDK falls back to the previous behavior and defaults to us-east-1.&lt;/li&gt;
 &lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
