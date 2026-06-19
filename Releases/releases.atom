@@ -1,89 +1,96 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-06-18T00:35:41Z</updated>
+  <updated>2026-06-19T00:39:33Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-06-17</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-06-17</id>
+    <title>aws/aws-sdk-net - Releases - 2026-06-18</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-06-18</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-06-18T00:35:19Z</updated>
+    <updated>2026-06-19T00:39:06Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.272.0"&gt;4.0.272.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.273.0"&gt;4.0.273.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.272.0 (2026-06-17 18:16 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.273.0 (2026-06-18 18:17 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;BedrockAgent (4.0.10.0)
+&lt;li&gt;ApplicationAutoScaling (4.0.4.0)
 &lt;ul&gt;
-&lt;li&gt;Launching Bedrock Managed Knowledge Bases. Added support for resource-based policies on Knowledge Base resources, enabling cross-account access for Managed Knowledge Bases.&lt;/li&gt;
+&lt;li&gt;Adds support for ECS high-resolution predefined scaling metrics (ECSServiceAverageCPUUtilizationHighResolution, ECSServiceAverageMemoryUtilizationHighResolution) enabling 20-second metric periods for faster scaling&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCore (4.0.30.0)
+&lt;li&gt;Batch (4.0.11.0)
 &lt;ul&gt;
-&lt;li&gt;AgentCore Harness service will be Generally Available at NYS 2026 with this Treb release. Harness will support invoking specific endpoints via the qualifier parameter, AWS Skills for pre-built agent capabilities, and improved validation for skill git source URLs.&lt;/li&gt;
+&lt;li&gt;Adds Support for ordered allocation strategies- BEST-FIT-PROGRESSIVE-ORDERED or SPOT-CAPACITY-OPTIMIZED-PRIORITIZED&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.43.0)
+&lt;li&gt;CloudWatchLogs (4.0.28.0)
 &lt;ul&gt;
-&lt;li&gt;AgentCore Gateway now supports inference targets to LLM providers (direct config or built-in connectors), HTTP passthrough targets with session stickiness, runtime target API schemas, AWS WAF web ACL association with configurable fail-open or fail-close modes, and interceptor payload filtering.&lt;/li&gt;
+&lt;li&gt;Added optional startFromHead parameter to FilterLogEvents enabling descending timestamp order (newest first) when set to false. Default true preserves existing ascending order. Reverse sorting requires a startTime on or after Jan 1, 2024.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentRuntime (4.0.10.0)
+&lt;li&gt;CognitoIdentityProvider (4.0.10.0)
 &lt;ul&gt;
-&lt;li&gt;Adds new AgenticRetrieveStream API for managed knowledge bases to use conversation history and autonomously plan for multi-hop multi-KB reasoning with built-in evaluation and access-control. Updates Retrieve API for access-control-based filtering for managed knowledge bases.&lt;/li&gt;
+&lt;li&gt;In order to support the new TLS Self-Service feature, this change adds SecurityPolicyType to CustomDomainConfigType. During CreateUserPoolDomain and UpdateUserPoolDomain this is used to select a custom domain's TLS enforcement, and for DescribeUserPoolDomain it informs users about the current TLS.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ComputeOptimizerAutomation (4.0.3.0)
+&lt;li&gt;ComputeOptimizer (4.0.9.0)
 &lt;ul&gt;
-&lt;li&gt;This launch adds IfExists comparison operators to Compute Optimizer Automation rule criteria, so a rule can include recommended actions whose specified attribute isn't present.&lt;/li&gt;
+&lt;li&gt;This release surfaces two new metrics Volume IOPS Exceeded and Volume Throughput Exceeded into EBS volume rightsizing recommendations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DevOpsAgent (4.0.8.0)
+&lt;li&gt;DynamoDBv2 (4.0.21.6)
 &lt;ul&gt;
-&lt;li&gt;Adds support for Remote A2A (Agent-to-Agent) agent registration and management. Adds new Release Readiness Review and Release Testing capabilities. Adds support for Git managed skills in AWS DevOps Agent.&lt;/li&gt;
+&lt;li&gt;Fix regression where null properties cannot be used in a Save operation (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4691888721" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/4438" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/4438/hovercard" href="https://github.com/aws/aws-sdk-net/issues/4438"&gt;#4438&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix empty ExpressionAttributeNames being sent for batch get ProjectionExpression&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ECS (4.0.25.0)
+&lt;li&gt;EC2 (4.0.93.4)
 &lt;ul&gt;
-&lt;li&gt;Releasing the ability to bring-your-own task-definition for CreateExpressGatewayService and UpdateGatewayExpressService&lt;/li&gt;
+&lt;li&gt;Documentation updates clarifying CancelCapacityReservation cancellable states&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Glue (4.0.33.0)
+&lt;li&gt;ECS (4.0.26.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for Search and Discovery in AWS Glue, letting you and your applications search Data Catalog assets such as table and enrich them with business context and glossary terms.&lt;/li&gt;
+&lt;li&gt;Amazon ECS services now support high resolution (20 second) CloudWatch metrics for CPUUtilization and MemoryUtilization. Use these metrics for faster service auto scaling.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MQ (4.0.5.0)
+&lt;li&gt;EKS (4.0.20.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds private networking support for Amazon MQ for RabbitMQ. You can now associate AWS RAM resource shares with your broker and retrieve shared resource details using the new DescribeSharedResources API.&lt;/li&gt;
+&lt;li&gt;Adds support for configurable control plane egress routing in Amazon EKS, allowing you to route control plane egress traffic through your VPC and control how the control plane reaches resources in your network such as webhook servers and OIDC providers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;OpenSearchService (4.0.23.0)
+&lt;li&gt;GameLift (4.0.12.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for configuring IAM Identity Center options on existing OpenSearch applications via the UpdateApplication API.&lt;/li&gt;
+&lt;li&gt;Amazon GameLift Servers has launched support for customizing Linux capabilities in container fleets. You can now specify additional Linux capabilities for containers in a container group definition, giving you finer control over the default Docker capabilities available to your containers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PartnerCentralSelling (4.0.14.0)
+&lt;li&gt;HealthLake (4.0.6.0)
 &lt;ul&gt;
-&lt;li&gt;Cosell Resonate AND Prospecing API Launch with ARN correction&lt;/li&gt;
+&lt;li&gt;Adding New Configurations to the FHIR Create Datastore. The new configurations include NLP Configuration, AnalyticsConfiguration, ProfileConfiguration&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (4.0.25.1)
+&lt;li&gt;Lambda (4.0.18.0)
 &lt;ul&gt;
-&lt;li&gt;Fix &lt;code&gt;PutObject&lt;/code&gt; failing with &lt;code&gt;ArgumentException&lt;/code&gt; when given a non-seekable zero-length stream that reports its length (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4649174568" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/4432" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/4432/hovercard" href="https://github.com/aws/aws-sdk-net/issues/4432"&gt;#4432&lt;/a&gt;). The SDK now forces chunked transfer encoding for non-seekable streams so the checksum is sent as a trailing header, instead of requiring seekability for upfront calculation. Seekable streams are unaffected. Note: non-seekable streams that do not report their length still require &lt;code&gt;ContentLength&lt;/code&gt; to be set on the request.&lt;/li&gt;
+&lt;li&gt;Converging and fixing existing documentation gaps in Lambda SDK&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SecurityAgent (4.0.5.0)
+&lt;li&gt;SageMaker (4.0.66.0)
 &lt;ul&gt;
-&lt;li&gt;Updated AWS Security Agent SDK model with new APIs for threat modeling, code review, security requirements, and additional integration providers.&lt;/li&gt;
+&lt;li&gt;Adds support for automatic AMI patching on HyperPod clusters. Customers can configure patching strategies to automatically apply security patch with zero job termination. Customers can also specify an AMI version at instance group level and update cluster software to a certain AMI version.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 4.0.9.5
+&lt;li&gt;Synthetics (4.0.10.0)
 &lt;ul&gt;
-&lt;li&gt;Add fallback in the &lt;code&gt;ChecksumUtils&lt;/code&gt; class for future services that won't support chunk encoding.&lt;/li&gt;
+&lt;li&gt;CloudWatch Synthetics adds support for multi-location canaries. Customers can now monitor their endpoints from multiple locations with centralized management from a primary location. The SDK includes new parameters for configuring multiple locations and tracking their state.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.9.6
+&lt;ul&gt;
+&lt;li&gt;Invalidate the DefaultAWSCredentialsIdentityResolver default-chain credential cache when the shared credentials file is modified, so credentials rotated by an external tool are picked up mid-process without requiring a restart.&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -94,121 +101,45 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-06-17</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-17</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-06-18</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-18</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-06-18T00:35:19Z</updated>
+    <updated>2026-06-19T00:39:06Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.MySql_1.2.1"&gt;Azure.ResourceManager.MySql_1.2.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Communication.CallAutomation_1.6.0"&gt;Azure.Communication.CallAutomation_1.6.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.1 (2026-06-16)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded dependent Azure.Core to 1.59.0.&lt;/li&gt;
-&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Monitor.Workspaces_1.0.0"&gt;Azure.ResourceManager.Monitor.Workspaces_1.0.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0 (2026-06-16)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;p&gt;This is the first stable release of this library.&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Monitor.PipelineGroups_1.0.0"&gt;Azure.ResourceManager.Monitor.PipelineGroups_1.0.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0 (2026-06-16)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;p&gt;This is the first stable release of this library.&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Monitor.Slis_1.0.0-beta.3"&gt;Azure.ResourceManager.Monitor.Slis_1.0.0-beta.3&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.3 (2026-06-16)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded dependent Azure.Core to 1.59.0.&lt;/li&gt;
-&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NewRelicObservability_1.2.0-beta.2"&gt;Azure.ResourceManager.NewRelicObservability_1.2.0-beta.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.2 (2026-06-16)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded dependent Azure.Core to 1.59.0.&lt;/li&gt;
-&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetworkCloud_1.4.0-beta.1"&gt;Azure.ResourceManager.NetworkCloud_1.4.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.4.0-beta.1 (2026-06-16)&lt;/h2&gt;
+                                &lt;h2&gt;1.6.0 (2026-06-18)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for API version &lt;code&gt;2026-01-01-preview&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded dependent Azure.Core to 1.59.0.&lt;/li&gt;
-&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
+&lt;li&gt;Added support for moving a participant from one call to another, enabling seamless participant transfer between active calls.&lt;/li&gt;
+&lt;li&gt;Added support for retrieving Teams phone call details, including the ability to specify a custom calling context for enhanced integration scenarios.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.StorageMover_1.4.1"&gt;Azure.ResourceManager.StorageMover_1.4.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Data.AppConfiguration_1.10.0"&gt;Azure.Data.AppConfiguration_1.10.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.4.1 (2026-06-15)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed &lt;code&gt;JobRunProperties&lt;/code&gt; deserialization to handle empty-string &lt;code&gt;AgentResourceId&lt;/code&gt;, &lt;code&gt;SourceResourceId&lt;/code&gt;, and &lt;code&gt;TargetResourceId&lt;/code&gt; values returned by the service (for example, for cloud-to-cloud jobs that have no agent, or resources in transient states). These previously threw an &lt;code&gt;ArgumentException&lt;/code&gt; while polling job runs.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added model factory methods in &lt;code&gt;ArmStorageMoverModelFactory&lt;/code&gt; for existing models (for example, &lt;code&gt;JobDefinitionPatch&lt;/code&gt;, &lt;code&gt;ScheduleRecurrence&lt;/code&gt;, &lt;code&gt;StorageMoverCredentials&lt;/code&gt;, and the endpoint update-property models) to support mocking.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerService_1.6.0-beta.1"&gt;Azure.ResourceManager.ContainerService_1.6.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.6.0-beta.1 (2026-06-17)&lt;/h2&gt;
+                                &lt;h2&gt;1.10.0 (2026-06-18)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded api-version to 2026-04-02-preview.&lt;/li&gt;
+&lt;li&gt;Added a &lt;code&gt;Description&lt;/code&gt; property on &lt;code&gt;ConfigurationSetting&lt;/code&gt; and &lt;code&gt;ConfigurationSnapshot&lt;/code&gt; to associate descriptive text with settings and snapshots.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;SettingFields.Description&lt;/code&gt; so &lt;code&gt;Description&lt;/code&gt; can be requested when retrieving configuration settings.&lt;/li&gt;
+&lt;li&gt;Added support for &lt;code&gt;2024-09-01&lt;/code&gt; and &lt;code&gt;2026-04-01&lt;/code&gt; (default) service API versions.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.PostgreSql_1.5.0-beta.1"&gt;Azure.ResourceManager.PostgreSql_1.5.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CognitiveServices_1.6.0-beta.2"&gt;Azure.ResourceManager.CognitiveServices_1.6.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.5.0-beta.1 (2026-06-15)&lt;/h2&gt;
+                                &lt;h2&gt;1.6.0-beta.2 (2026-06-12)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded API version to &lt;code&gt;2026-04-01-preview&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Add operations for MaintenanceEvent: Get, List by Server, Reschedule, and ApplyNow.&lt;/li&gt;
-&lt;li&gt;Add operations for MajorVersionUpgradePrecheck: Get and List by Server.&lt;/li&gt;
-&lt;li&gt;Add operations for Server: StartMajorVersionUpgradePrecheck.&lt;/li&gt;
-&lt;li&gt;Add new properties for multi-tenant Microsoft Entra application for Server.&lt;/li&gt;
-&lt;li&gt;Migrated from AutoRest to TypeSpec-based generation while preserving compatibility with the previously shipped public API surface.&lt;/li&gt;
+&lt;li&gt;Upgraded api-version to 2026-03-15-preview.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -217,35 +148,148 @@
             </content>
   </entry>
   <entry>
-    <title>dotnet/aspire - Releases - 2026-06-17</title>
-    <id>https://github.com/dotnet/aspire#2026-06-17</id>
-    <link href="https://github.com/dotnet/aspire" />
-    <updated>2026-06-18T00:35:24Z</updated>
+    <title>googleapis/google-cloud-dotnet - Releases - 2026-06-18</title>
+    <id>https://github.com/googleapis/google-cloud-dotnet#2026-06-18</id>
+    <link href="https://github.com/googleapis/google-cloud-dotnet" />
+    <updated>2026-06-19T00:39:21Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.4.5"&gt;Aspire 13.4.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Tools.SecretManagerHelper-0.1.0"&gt;Google.Cloud.Tools.SecretManagerHelper version 0.1.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;What's New in Aspire 13.4.5&lt;/h2&gt;
-&lt;p&gt;Patch release for Aspire 13.4 clearing a transitive MessagePack security advisory, tightening CLI validation for Playwright configuration, and adding coding-agent detection to CLI telemetry.&lt;/p&gt;
-&lt;h3&gt;🐛 Fixes&lt;/h3&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;🛡️ &lt;strong&gt;Bumped StreamJsonRpc to 2.25.29 to clear the MessagePack &lt;a title="GHSA-hv8m-jj95-wg3x" data-hovercard-type="advisory" data-hovercard-url="/advisories/GHSA-hv8m-jj95-wg3x/hovercard" href="https://github.com/advisories/GHSA-hv8m-jj95-wg3x"&gt;GHSA-hv8m-jj95-wg3x&lt;/a&gt; (&lt;a title="CVE-2026-48109" data-hovercard-type="advisory" data-hovercard-url="/advisories/GHSA-hv8m-jj95-wg3x/hovercard" href="https://github.com/advisories/GHSA-hv8m-jj95-wg3x"&gt;CVE-2026-48109&lt;/a&gt;) NU1903 advisory&lt;/strong&gt; — The transitive MessagePack 2.5.192 dependency pulled in via StreamJsonRpc 2.22.23 fell within the advisory's vulnerable LZ4 decompression range. Aspire does not use &lt;code&gt;MessagePackFormatter&lt;/code&gt; or LZ4 — all StreamJsonRpc calls use &lt;code&gt;SystemTextJsonFormatter&lt;/code&gt; over local Unix sockets — so the vulnerability was not reachable in practice. The bump clears the NU1903 warning for consumers of the &lt;code&gt;Aspire.Hosting&lt;/code&gt; package. (&lt;a href="https://github.com/microsoft/aspire/pull/18204" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/18204/hovercard"&gt;#18204&lt;/a&gt;, &lt;code&gt;@mitchdenny&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;🎭 &lt;strong&gt;&lt;code&gt;playwrightCliVersion&lt;/code&gt; values that are not valid SemVer 2.0 now fail fast with a clear diagnostic&lt;/strong&gt; — Previously an invalid override (range expression, dist-tag like &lt;code&gt;latest&lt;/code&gt;, or a &lt;code&gt;v&lt;/code&gt;-prefixed string) would surface as a generic npm resolution failure. The value is now validated with strict SemVer parsing at startup; an error naming the configuration key and the offending value is emitted immediately. (&lt;a href="https://github.com/microsoft/aspire/pull/18205" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/18205/hovercard"&gt;#18205&lt;/a&gt;, &lt;code&gt;@mitchdenny&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;🤖 &lt;strong&gt;CLI telemetry now detects and reports the calling coding agent&lt;/strong&gt; — When the Aspire CLI is invoked from inside a known coding agent environment (GitHub Copilot CLI, VS Code Copilot agent, etc.) the agent name is included in the main CLI telemetry event. GitHub Copilot CLI is specifically identified as &lt;code&gt;copilot-cli&lt;/code&gt;. (&lt;a href="https://github.com/microsoft/aspire/pull/18240" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/18240/hovercard"&gt;#18240&lt;/a&gt;, &lt;code&gt;@damianedwards&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Improve XML docs format&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;🏷️ Housekeeping&lt;/h3&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Ads.DataManager.V1-1.0.0-beta08"&gt;Google.Ads.DataManager.V1 version 1.0.0-beta08&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;📄 Refreshed the &lt;code&gt;@microsoft/aspire-cli&lt;/code&gt; npm package README to be TypeScript-only — updated examples to the current &lt;code&gt;ts-starter&lt;/code&gt; template (&lt;code&gt;apphost.mts&lt;/code&gt; / &lt;code&gt;aspire.mjs&lt;/code&gt;), added a backing-services snippet showing &lt;code&gt;aspire add&lt;/code&gt; for PostgreSQL and Redis, and documented &lt;code&gt;aspire dashboard run&lt;/code&gt; as a standalone dashboard option. (&lt;a href="https://github.com/microsoft/aspire/pull/18221" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/18221/hovercard"&gt;#18221&lt;/a&gt;, &lt;code&gt;@adamint&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Add AdEvent message and related enums for ingesting ad event data&lt;/li&gt;
+&lt;li&gt;Add IPV4/IPV6 format annotation to DeviceInfo.ip_address&lt;/li&gt;
+&lt;li&gt;Add CoordinatorKeyInfo for specifying coordinator keys&lt;/li&gt;
+&lt;li&gt;Add IngestAdEvents resource for uploading ad events to Google Analytics&lt;/li&gt;
+&lt;li&gt;Add FeatureSet, PartnerCustomerAccount, PartnerLinkMetadata and related fields for partner link configuration&lt;/li&gt;
+&lt;li&gt;Add ViewabilityInfo resource and related enums for ad viewability details&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a href="https://github.com/microsoft/aspire/compare/v13.4.4...v13.4.5"&gt;v13.4.4...v13.4.5&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/73114e86c64aeb9f3f3c7da8e37df1ae4281b27e"&gt;73114e86c64aeb9f3f3c7da8e37df1ae4281b27e&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Generated by &lt;a href="https://github.com/microsoft/aspire/actions/runs/27667814104/agentic_workflow"&gt;Generate release notes for a new stable Aspire release&lt;/a&gt; · ● 4.4M&lt;/p&gt;
-&lt;/blockquote&gt;
-
+&lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update account_type in message ProductAccount to be required&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Clarify NO_IDENTIFIERS_PROVIDED error for Floodlight Event ingestion&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.NetworkServices.V1-1.6.0"&gt;Google.Cloud.NetworkServices.V1 version 1.6.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add AgentGateway resource and associated RPCs&lt;/li&gt;
+&lt;li&gt;Support regional EndpointPolicy, GrpcRoute, HttpRoute, Mesh, TcpRoute, and TlsRoute resources&lt;/li&gt;
+&lt;li&gt;Add EXT_AUTHZ_GRPC wire format and BodySendMode enum in dep.proto&lt;/li&gt;
+&lt;li&gt;Add forward_attributes, request_body_send_mode, and response_body_send_mode to Extension&lt;/li&gt;
+&lt;li&gt;Support generic artifacts for Wasm plugin images and configuration&lt;/li&gt;
+&lt;li&gt;Add all_ports and allow_global_access fields to Gateway&lt;/li&gt;
+&lt;li&gt;Add filter to ListHttpRoutesRequest and request_id to CreateHttpRouteRequest&lt;/li&gt;
+&lt;li&gt;Add target_proxies and labels to TlsRoute&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update Gateway port limits for SECURE_WEB_GATEWAY&lt;/li&gt;
+&lt;li&gt;Update RouteView resource patterns to use project numbers&lt;/li&gt;
+&lt;li&gt;Update TlsRoute sni_host limit documentation&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-06-18</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-06-18</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2026-06-19T00:39:30Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.AWS-1.16.0"&gt;Instrumentation.AWS-1.16.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.AWS/1.16.0" rel="nofollow"&gt;OpenTelemetry.Extensions.AWS v1.16.0&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fix sampling behaviour to be compatible with .NET 11.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4396" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4396/hovercard"&gt;#4396&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.16.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4487" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4487/hovercard"&gt;#4487&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AWS-1.16.0/src/OpenTelemetry.Extensions.AWS/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.AWS/1.16.0" rel="nofollow"&gt;OpenTelemetry.Instrumentation.AWS v1.16.0&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Add instrumentation scope version and schema URL to metrics and traces.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4063" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4063/hovercard"&gt;#4063&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pass AWS attribute values to created meters as tags.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4063" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4063/hovercard"&gt;#4063&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Capture SNS &lt;code&gt;TopicArn&lt;/code&gt; as the &lt;code&gt;aws.sns.topic.arn&lt;/code&gt; span attribute.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4043" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4043/hovercard"&gt;#4043&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add &lt;code&gt;cloud.region&lt;/code&gt; attribute to all AWS SDK client spans.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4043" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4043/hovercard"&gt;#4043&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add messaging attributes for AWS SNS and SQS.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4043" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4043/hovercard"&gt;#4043&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;BREAKING: Update latest AWS Semantic Conventions to 1.40.0.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4043" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4043/hovercard"&gt;#4043&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fix suppression scope leakage when &lt;code&gt;SuppressDownstreamInstrumentation&lt;/code&gt; is&lt;br&gt;
+enabled.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4304" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4304/hovercard"&gt;#4304&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AWS-1.16.0/src/OpenTelemetry.Instrumentation.AWS/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.AWSLambda/1.16.0" rel="nofollow"&gt;OpenTelemetry.Instrumentation.AWSLambda v1.16.0&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Update &lt;code&gt;System.Text.Json&lt;/code&gt; for &lt;code&gt;netstandard2.0&lt;/code&gt; to &lt;code&gt;8.0.5&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4154" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4154/hovercard"&gt;#4154&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add instrumentation scope version and schema URL to traces.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4063" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4063/hovercard"&gt;#4063&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AWS-1.16.0/src/OpenTelemetry.Instrumentation.AWSLambda/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
