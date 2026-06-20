@@ -1,48 +1,31 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-06-19T00:39:06Z</updated>
+  <updated>2026-06-20T00:30:39Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-06-18</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-18</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-06-19</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-19</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-06-19T00:39:06Z</updated>
+    <updated>2026-06-20T00:30:39Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Communication.CallAutomation_1.6.0"&gt;Azure.Communication.CallAutomation_1.6.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ComputeFleet_1.1.0-beta.2"&gt;Azure.ResourceManager.ComputeFleet_1.1.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.6.0 (2026-06-18)&lt;/h2&gt;
+                                &lt;h2&gt;1.1.0-beta.2 (2026-06-18)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for moving a participant from one call to another, enabling seamless participant transfer between active calls.&lt;/li&gt;
-&lt;li&gt;Added support for retrieving Teams phone call details, including the ability to specify a custom calling context for enhanced integration scenarios.&lt;/li&gt;
+&lt;li&gt;Upgraded api-version to 2026-04-01-preview.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;VmNamePrefix&lt;/code&gt; property to &lt;code&gt;ComputeFleetProperties&lt;/code&gt; for specifying a virtual machine name prefix; only valid when &lt;code&gt;Mode&lt;/code&gt; is &lt;code&gt;Launch&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ComputeFleetVmOperationStatus.Launching&lt;/code&gt; enum value.&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Data.AppConfiguration_1.10.0"&gt;Azure.Data.AppConfiguration_1.10.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.10.0 (2026-06-18)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added a &lt;code&gt;Description&lt;/code&gt; property on &lt;code&gt;ConfigurationSetting&lt;/code&gt; and &lt;code&gt;ConfigurationSnapshot&lt;/code&gt; to associate descriptive text with settings and snapshots.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;SettingFields.Description&lt;/code&gt; so &lt;code&gt;Description&lt;/code&gt; can be requested when retrieving configuration settings.&lt;/li&gt;
-&lt;li&gt;Added support for &lt;code&gt;2024-09-01&lt;/code&gt; and &lt;code&gt;2026-04-01&lt;/code&gt; (default) service API versions.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CognitiveServices_1.6.0-beta.2"&gt;Azure.ResourceManager.CognitiveServices_1.6.0-beta.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.6.0-beta.2 (2026-06-12)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version to 2026-03-15-preview.&lt;/li&gt;
+&lt;li&gt;Renamed &lt;code&gt;ComputeFleetMode.Instance&lt;/code&gt; to &lt;code&gt;ComputeFleetMode.Launch&lt;/code&gt; to align with the updated service terminology.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;ComputeFleetVmOperationStatus.Canceled&lt;/code&gt; and &lt;code&gt;ComputeFleetVmOperationStatus.CancelFailedStatusUnknown&lt;/code&gt; enum values.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;Cancel&lt;/code&gt; and &lt;code&gt;CancelAsync&lt;/code&gt; operations from &lt;code&gt;ComputeFleetResource&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;

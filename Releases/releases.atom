@@ -1,96 +1,44 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-06-19T00:39:33Z</updated>
+  <updated>2026-06-20T00:30:55Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-06-18</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-06-18</id>
+    <title>aws/aws-sdk-net - Releases - 2026-06-19</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-06-19</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-06-19T00:39:06Z</updated>
+    <updated>2026-06-20T00:30:39Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.273.0"&gt;4.0.273.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.274.0"&gt;4.0.274.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.273.0 (2026-06-18 18:17 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.274.0 (2026-06-19 18:16 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;ApplicationAutoScaling (4.0.4.0)
+&lt;li&gt;AppStream (4.0.13.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for ECS high-resolution predefined scaling metrics (ECSServiceAverageCPUUtilizationHighResolution, ECSServiceAverageMemoryUtilizationHighResolution) enabling 20-second metric periods for faster scaling&lt;/li&gt;
+&lt;li&gt;Amazon WorkSpaces Agent Access now supports domain-joined fleets for enterprise identity integration, real-time agent observation with instant stop controls, and MCP tool forwarding for lower-latency, cost-effective desktop tool access.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Batch (4.0.11.0)
+&lt;li&gt;BedrockAgent (4.0.11.0)
 &lt;ul&gt;
-&lt;li&gt;Adds Support for ordered allocation strategies- BEST-FIT-PROGRESSIVE-ORDERED or SPOT-CAPACITY-OPTIMIZED-PRIORITIZED&lt;/li&gt;
+&lt;li&gt;Add support for metadata-only retrieval on GetFlow, GetFlowVersion, and GetPrompt APIs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudWatchLogs (4.0.28.0)
+&lt;li&gt;Connect (4.0.48.0)
 &lt;ul&gt;
-&lt;li&gt;Added optional startFromHead parameter to FilterLogEvents enabling descending timestamp order (newest first) when set to false. Default true preserves existing ascending order. Reverse sorting requires a startTime on or after Jan 1, 2024.&lt;/li&gt;
+&lt;li&gt;This is the release for point based scoring system and the evaluation form validation project&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CognitoIdentityProvider (4.0.10.0)
+&lt;li&gt;Glue (4.0.34.0)
 &lt;ul&gt;
-&lt;li&gt;In order to support the new TLS Self-Service feature, this change adds SecurityPolicyType to CustomDomainConfigType. During CreateUserPoolDomain and UpdateUserPoolDomain this is used to select a custom domain's TLS enforcement, and for DescribeUserPoolDomain it informs users about the current TLS.&lt;/li&gt;
+&lt;li&gt;Adds the SearchAssets operation for discovering assets in the AWS Glue Data Catalog using full-text search and filters. Minor naming refinements across the Glossary Terms and Attachment APIs for consistency.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ComputeOptimizer (4.0.9.0)
+&lt;li&gt;OpenSearchService (4.0.24.0)
 &lt;ul&gt;
-&lt;li&gt;This release surfaces two new metrics Volume IOPS Exceeded and Volume Throughput Exceeded into EBS volume rightsizing recommendations.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (4.0.21.6)
-&lt;ul&gt;
-&lt;li&gt;Fix regression where null properties cannot be used in a Save operation (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4691888721" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/4438" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/4438/hovercard" href="https://github.com/aws/aws-sdk-net/issues/4438"&gt;#4438&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix empty ExpressionAttributeNames being sent for batch get ProjectionExpression&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;EC2 (4.0.93.4)
-&lt;ul&gt;
-&lt;li&gt;Documentation updates clarifying CancelCapacityReservation cancellable states&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ECS (4.0.26.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon ECS services now support high resolution (20 second) CloudWatch metrics for CPUUtilization and MemoryUtilization. Use these metrics for faster service auto scaling.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;EKS (4.0.20.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for configurable control plane egress routing in Amazon EKS, allowing you to route control plane egress traffic through your VPC and control how the control plane reaches resources in your network such as webhook servers and OIDC providers.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;GameLift (4.0.12.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon GameLift Servers has launched support for customizing Linux capabilities in container fleets. You can now specify additional Linux capabilities for containers in a container group definition, giving you finer control over the default Docker capabilities available to your containers.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;HealthLake (4.0.6.0)
-&lt;ul&gt;
-&lt;li&gt;Adding New Configurations to the FHIR Create Datastore. The new configurations include NLP Configuration, AnalyticsConfiguration, ProfileConfiguration&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Lambda (4.0.18.0)
-&lt;ul&gt;
-&lt;li&gt;Converging and fixing existing documentation gaps in Lambda SDK&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.66.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for automatic AMI patching on HyperPod clusters. Customers can configure patching strategies to automatically apply security patch with zero job termination. Customers can also specify an AMI version at instance group level and update cluster software to a certain AMI version.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Synthetics (4.0.10.0)
-&lt;ul&gt;
-&lt;li&gt;CloudWatch Synthetics adds support for multi-location canaries. Customers can now monitor their endpoints from multiple locations with centralized management from a primary location. The SDK includes new parameters for configuring multiple locations and tracking their state.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.0.9.6
-&lt;ul&gt;
-&lt;li&gt;Invalidate the DefaultAWSCredentialsIdentityResolver default-chain credential cache when the shared credentials file is modified, so credentials rotated by an external tool are picked up mid-process without requiring a restart.&lt;/li&gt;
-&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;This release introduces data source attachment APIs, enabling users to attach and detach Amazon OpenSearch Service domains and Amazon OpenSearch Serverless collections to an OpenSearch application.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -101,45 +49,28 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-06-18</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-18</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-06-19</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-19</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-06-19T00:39:06Z</updated>
+    <updated>2026-06-20T00:30:39Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Communication.CallAutomation_1.6.0"&gt;Azure.Communication.CallAutomation_1.6.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ComputeFleet_1.1.0-beta.2"&gt;Azure.ResourceManager.ComputeFleet_1.1.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.6.0 (2026-06-18)&lt;/h2&gt;
+                                &lt;h2&gt;1.1.0-beta.2 (2026-06-18)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for moving a participant from one call to another, enabling seamless participant transfer between active calls.&lt;/li&gt;
-&lt;li&gt;Added support for retrieving Teams phone call details, including the ability to specify a custom calling context for enhanced integration scenarios.&lt;/li&gt;
+&lt;li&gt;Upgraded api-version to 2026-04-01-preview.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;VmNamePrefix&lt;/code&gt; property to &lt;code&gt;ComputeFleetProperties&lt;/code&gt; for specifying a virtual machine name prefix; only valid when &lt;code&gt;Mode&lt;/code&gt; is &lt;code&gt;Launch&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ComputeFleetVmOperationStatus.Launching&lt;/code&gt; enum value.&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Data.AppConfiguration_1.10.0"&gt;Azure.Data.AppConfiguration_1.10.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.10.0 (2026-06-18)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added a &lt;code&gt;Description&lt;/code&gt; property on &lt;code&gt;ConfigurationSetting&lt;/code&gt; and &lt;code&gt;ConfigurationSnapshot&lt;/code&gt; to associate descriptive text with settings and snapshots.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;SettingFields.Description&lt;/code&gt; so &lt;code&gt;Description&lt;/code&gt; can be requested when retrieving configuration settings.&lt;/li&gt;
-&lt;li&gt;Added support for &lt;code&gt;2024-09-01&lt;/code&gt; and &lt;code&gt;2026-04-01&lt;/code&gt; (default) service API versions.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CognitiveServices_1.6.0-beta.2"&gt;Azure.ResourceManager.CognitiveServices_1.6.0-beta.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.6.0-beta.2 (2026-06-12)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version to 2026-03-15-preview.&lt;/li&gt;
+&lt;li&gt;Renamed &lt;code&gt;ComputeFleetMode.Instance&lt;/code&gt; to &lt;code&gt;ComputeFleetMode.Launch&lt;/code&gt; to align with the updated service terminology.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;ComputeFleetVmOperationStatus.Canceled&lt;/code&gt; and &lt;code&gt;ComputeFleetVmOperationStatus.CancelFailedStatusUnknown&lt;/code&gt; enum values.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;Cancel&lt;/code&gt; and &lt;code&gt;CancelAsync&lt;/code&gt; operations from &lt;code&gt;ComputeFleetResource&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -148,148 +79,32 @@
             </content>
   </entry>
   <entry>
-    <title>googleapis/google-cloud-dotnet - Releases - 2026-06-18</title>
-    <id>https://github.com/googleapis/google-cloud-dotnet#2026-06-18</id>
-    <link href="https://github.com/googleapis/google-cloud-dotnet" />
-    <updated>2026-06-19T00:39:21Z</updated>
+    <title>domaindrivendev/Swashbuckle.AspNetCore - Releases - 2026-06-19</title>
+    <id>https://github.com/domaindrivendev/Swashbuckle.AspNetCore#2026-06-19</id>
+    <link href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore" />
+    <updated>2026-06-20T00:30:42Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Tools.SecretManagerHelper-0.1.0"&gt;Google.Cloud.Tools.SecretManagerHelper version 0.1.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/releases/tag/v10.2.2"&gt;v10.2.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Improve XML docs format&lt;/li&gt;
+&lt;li&gt;Update NuGet packages by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/martincostello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/martincostello"&gt;@martincostello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4626008817" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/3990" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/3990/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/3990"&gt;#3990&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;SOURCE_DATE_EPOCH&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/martincostello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/martincostello"&gt;@martincostello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4659262643" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/3997" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/3997/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/3997"&gt;#3997&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix &lt;code&gt;InvalidOperationException&lt;/code&gt; if no route matches by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/martincostello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/martincostello"&gt;@martincostello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4674648960" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/3999" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/3999/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/3999"&gt;#3999&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix empty parameter example not generated by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/dldl-cmd/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dldl-cmd"&gt;@dldl-cmd&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4344691248" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/3932" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/3932/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/3932"&gt;#3932&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Map &lt;code&gt;[MinLength]&lt;/code&gt;/&lt;code&gt;[MaxLength]&lt;/code&gt; on dictionary properties to &lt;code&gt;minProperties&lt;/code&gt;/&lt;code&gt;maxProperties&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/KitKeen/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/KitKeen"&gt;@KitKeen&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4320997274" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/3922" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/3922/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/3922"&gt;#3922&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix conflicting required+nullable schema when only NonNullableReferen… by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/KitKeen/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/KitKeen"&gt;@KitKeen&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4288449594" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/3912" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/3912/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/3912"&gt;#3912&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix &lt;code&gt;ExposeSwaggerDocumentUrlsRoute&lt;/code&gt; behaviour by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/martincostello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/martincostello"&gt;@martincostello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4674719936" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4000" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4000/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4000"&gt;#4000&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;NUGET_API_KEY&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/martincostello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/martincostello"&gt;@martincostello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4685758828" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4006" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4006/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4006"&gt;#4006&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Ads.DataManager.V1-1.0.0-beta08"&gt;Google.Ads.DataManager.V1 version 1.0.0-beta08&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Add AdEvent message and related enums for ingesting ad event data&lt;/li&gt;
-&lt;li&gt;Add IPV4/IPV6 format annotation to DeviceInfo.ip_address&lt;/li&gt;
-&lt;li&gt;Add CoordinatorKeyInfo for specifying coordinator keys&lt;/li&gt;
-&lt;li&gt;Add IngestAdEvents resource for uploading ad events to Google Analytics&lt;/li&gt;
-&lt;li&gt;Add FeatureSet, PartnerCustomerAccount, PartnerLinkMetadata and related fields for partner link configuration&lt;/li&gt;
-&lt;li&gt;Add ViewabilityInfo resource and related enums for ad viewability details&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/KitKeen/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/KitKeen"&gt;@KitKeen&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4320997274" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/3922" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/3922/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/3922"&gt;#3922&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Bug fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update account_type in message ProductAccount to be required&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Clarify NO_IDENTIFIERS_PROVIDED error for Floodlight Event ingestion&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.NetworkServices.V1-1.6.0"&gt;Google.Cloud.NetworkServices.V1 version 1.6.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add AgentGateway resource and associated RPCs&lt;/li&gt;
-&lt;li&gt;Support regional EndpointPolicy, GrpcRoute, HttpRoute, Mesh, TcpRoute, and TlsRoute resources&lt;/li&gt;
-&lt;li&gt;Add EXT_AUTHZ_GRPC wire format and BodySendMode enum in dep.proto&lt;/li&gt;
-&lt;li&gt;Add forward_attributes, request_body_send_mode, and response_body_send_mode to Extension&lt;/li&gt;
-&lt;li&gt;Support generic artifacts for Wasm plugin images and configuration&lt;/li&gt;
-&lt;li&gt;Add all_ports and allow_global_access fields to Gateway&lt;/li&gt;
-&lt;li&gt;Add filter to ListHttpRoutesRequest and request_id to CreateHttpRouteRequest&lt;/li&gt;
-&lt;li&gt;Add target_proxies and labels to TlsRoute&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update Gateway port limits for SECURE_WEB_GATEWAY&lt;/li&gt;
-&lt;li&gt;Update RouteView resource patterns to use project numbers&lt;/li&gt;
-&lt;li&gt;Update TlsRoute sni_host limit documentation&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-06-18</title>
-    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-06-18</id>
-    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-    <updated>2026-06-19T00:39:30Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.AWS-1.16.0"&gt;Instrumentation.AWS-1.16.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.AWS/1.16.0" rel="nofollow"&gt;OpenTelemetry.Extensions.AWS v1.16.0&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Fix sampling behaviour to be compatible with .NET 11.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4396" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4396/hovercard"&gt;#4396&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.16.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4487" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4487/hovercard"&gt;#4487&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AWS-1.16.0/src/OpenTelemetry.Extensions.AWS/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.AWS/1.16.0" rel="nofollow"&gt;OpenTelemetry.Instrumentation.AWS v1.16.0&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Add instrumentation scope version and schema URL to metrics and traces.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4063" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4063/hovercard"&gt;#4063&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Pass AWS attribute values to created meters as tags.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4063" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4063/hovercard"&gt;#4063&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Capture SNS &lt;code&gt;TopicArn&lt;/code&gt; as the &lt;code&gt;aws.sns.topic.arn&lt;/code&gt; span attribute.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4043" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4043/hovercard"&gt;#4043&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add &lt;code&gt;cloud.region&lt;/code&gt; attribute to all AWS SDK client spans.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4043" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4043/hovercard"&gt;#4043&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add messaging attributes for AWS SNS and SQS.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4043" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4043/hovercard"&gt;#4043&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;BREAKING: Update latest AWS Semantic Conventions to 1.40.0.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4043" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4043/hovercard"&gt;#4043&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fix suppression scope leakage when &lt;code&gt;SuppressDownstreamInstrumentation&lt;/code&gt; is&lt;br&gt;
-enabled.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4304" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4304/hovercard"&gt;#4304&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AWS-1.16.0/src/OpenTelemetry.Instrumentation.AWS/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.AWSLambda/1.16.0" rel="nofollow"&gt;OpenTelemetry.Instrumentation.AWSLambda v1.16.0&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Update &lt;code&gt;System.Text.Json&lt;/code&gt; for &lt;code&gt;netstandard2.0&lt;/code&gt; to &lt;code&gt;8.0.5&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4154" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4154/hovercard"&gt;#4154&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add instrumentation scope version and schema URL to traces.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4063" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4063/hovercard"&gt;#4063&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AWS-1.16.0/src/OpenTelemetry.Instrumentation.AWSLambda/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/compare/v10.2.1...v10.2.2"&gt;&lt;tt&gt;v10.2.1...v10.2.2&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
