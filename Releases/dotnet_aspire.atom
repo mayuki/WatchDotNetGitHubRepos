@@ -1,6 +1,48 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/aspire - Releases</title>
   <link href="https://github.com/dotnet/aspire" />
-  <updated>2026-06-20T00:30:43Z</updated>
+  <updated>2026-06-21T00:33:00Z</updated>
   <id>https://github.com/dotnet/aspire</id>
+  <entry>
+    <title>dotnet/aspire - Releases - 2026-06-20</title>
+    <id>https://github.com/dotnet/aspire#2026-06-20</id>
+    <link href="https://github.com/dotnet/aspire" />
+    <updated>2026-06-21T00:33:00Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.4.6"&gt;Aspire 13.4.6&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's New in Aspire 13.4.6&lt;/h2&gt;
+&lt;p&gt;Patch release for Aspire 13.4 fixing polyglot AppHost code generation binding when CLI and SDK versions diverge, resource service port collision in &lt;code&gt;--isolated&lt;/code&gt; mode, and a MongoDB.Driver dependency update.&lt;/p&gt;
+&lt;h3&gt;🐛 Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;🔗 &lt;strong&gt;Polyglot AppHost code generation silently failed when CLI and SDK versions diverged&lt;/strong&gt; — &lt;code&gt;Aspire.TypeSystem&lt;/code&gt; used a floating strong-name &lt;code&gt;AssemblyVersion&lt;/code&gt; that changed with every build. When the installed Aspire CLI was built at a different version than the AppHost's SDK, the CLR couldn't satisfy the strong-name bind and every code generator (TypeScript, Python, Java, Go, Rust) was silently dropped, surfacing as &lt;code&gt;No code generator found for language: &amp;lt;lang&amp;gt;&lt;/code&gt;. The &lt;code&gt;AssemblyVersion&lt;/code&gt; is now frozen at a stable constant so any compatible CLI/SDK pair on 13.4 binds successfully. Relates to &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4638095097" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/18110" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/18110/hovercard" href="https://github.com/microsoft/aspire/issues/18110"&gt;#18110&lt;/a&gt; and &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4591533803" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17910" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/17910/hovercard" href="https://github.com/microsoft/aspire/issues/17910"&gt;#17910&lt;/a&gt;. (&lt;a href="https://github.com/microsoft/aspire/pull/18160" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/18160/hovercard"&gt;#18160&lt;/a&gt;, &lt;code&gt;@sebastienros&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🔌 &lt;strong&gt;Multiple AppHosts started with &lt;code&gt;--isolated&lt;/code&gt; collided on the resource service port&lt;/strong&gt; — Both instances tried to bind to the same fixed port from &lt;code&gt;ASPIRE_RESOURCE_SERVICE_ENDPOINT_URL&lt;/code&gt;, causing an "address already in use" error on the second instance. &lt;code&gt;DashboardServiceHost&lt;/code&gt; now binds to port 0 on loopback when &lt;code&gt;RandomizePorts&lt;/code&gt; is true (set by &lt;code&gt;--isolated&lt;/code&gt;), letting the OS assign a unique port per instance. (&lt;a href="https://github.com/microsoft/aspire/pull/18341" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/18341/hovercard"&gt;#18341&lt;/a&gt;, &lt;code&gt;@JamesNK&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🍃 &lt;strong&gt;MongoDB.Driver updated to 3.9.0&lt;/strong&gt; — Removes a wrongly pinned &lt;code&gt;SharpCompress&lt;/code&gt; transitive dependency and uses the corrected &lt;code&gt;Snappier&lt;/code&gt; transitive. Fixes &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4605707027" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/17981" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/17981/hovercard" href="https://github.com/microsoft/aspire/issues/17981"&gt;#17981&lt;/a&gt;. (&lt;a href="https://github.com/microsoft/aspire/pull/18279" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/18279/hovercard"&gt;#18279&lt;/a&gt;, &lt;code&gt;@Falco20019&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;🏷️ Housekeeping&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🚀 Bumped branding to 13.4.6 (&lt;a href="https://github.com/microsoft/aspire/pull/18343" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/18343/hovercard"&gt;#18343&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a href="https://github.com/microsoft/aspire/compare/v13.4.5...v13.4.6"&gt;v13.4.5...v13.4.6&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/87fe259e4fc244c599019a7b1304c85a1488f248"&gt;87fe259e4fc244c599019a7b1304c85a1488f248&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Generated by &lt;a href="https://github.com/microsoft/aspire/actions/runs/27855270514"&gt;Generate release notes for a new stable Aspire release&lt;/a&gt; · 131 AIC · ⌖ 13.5 AIC · ⊞ 37.4K&lt;/p&gt;
+&lt;/blockquote&gt;
+
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
