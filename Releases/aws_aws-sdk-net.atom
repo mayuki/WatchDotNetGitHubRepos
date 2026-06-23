@@ -1,6 +1,106 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-06-22T00:32:56Z</updated>
+  <updated>2026-06-23T00:30:52Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
+  <entry>
+    <title>aws/aws-sdk-net - Releases - 2026-06-22</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-06-22</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2026-06-23T00:30:52Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.275.1"&gt;4.0.275.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.275.1 (2026-06-22 21:15 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Core 4.0.9.7
+&lt;ul&gt;
+&lt;li&gt;Revert change in Core 4.0.9.4 due to multiple regressions&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.275.0"&gt;4.0.275.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.275.0 (2026-06-22 19:05 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ApplicationSignals (4.0.10.0)
+&lt;ul&gt;
+&lt;li&gt;Application Signals now supports dynamic instrumentation and Service Events telemetry. Add instrumentation at runtime without restarts, and use fine-grained profiling data to quickly pinpoint latency and error root causes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BedrockAgentCore (4.0.31.0)
+&lt;ul&gt;
+&lt;li&gt;Adds an optional extractionMode field to CreateEvent. SKIP retains the event in short-term memory but excludes it from long-term memory extraction.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CloudWatchLogs (4.0.29.0)
+&lt;ul&gt;
+&lt;li&gt;CloudWatch Logs Updates - New APIs introduced to support syslog ingestion to a log group. For more information, see CloudWatch Logs API documentation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DirectConnect (4.0.6.0)
+&lt;ul&gt;
+&lt;li&gt;Added VIF rate limiting support for AWS Direct Connect, allowing customers to set bandwidth allocations on virtual interfaces to manage traffic on dedicated connections.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EC2 (4.0.94.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for AMI Watermark and Allowed AMIs integration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GuardDuty (4.0.23.0)
+&lt;ul&gt;
+&lt;li&gt;Added AI-powered investigations that automatically analyze security findings, correlate related activity, and produce structured summaries with risk assessment, confidence scoring, MITRE technique classification, and actionable next steps.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Kafka (4.0.11.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon MSK Replicator now supports mTLS authentication when connecting to external Apache Kafka clusters, enabling customers to replicate data from clusters that require mutual TLS for client authentication. This capability is supported when replicating to Amazon MSK Express brokers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Lambda (4.0.19.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for tagging Network Connector resources in AWS Lambda.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LambdaCore (4.0.0.0)
+&lt;ul&gt;
+&lt;li&gt;Initial release of the AWS Lambda Core SDK with APIs to create, manage, and tag network connectors that enable Lambda compute resources to access private resources in your Amazon VPC.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LambdaMicrovms (4.0.0.0)
+&lt;ul&gt;
+&lt;li&gt;Lambda MicroVMs GA launch. Lambda MicroVMs enable isolated and highly responsive execution of user-supplied or LLM-generated code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaConnect (4.0.10.0)
+&lt;ul&gt;
+&lt;li&gt;AWS MediaConnect now supports Content Quality Analysis for Router Inputs, enabling detection of black frames, frozen frames, and silent audio with configurable thresholds.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Omics (4.0.13.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for scratch ephemeral storage mounted at tmp&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;QuickSight (4.0.27.0)
+&lt;ul&gt;
+&lt;li&gt;Updated the Amazon Quick Spaces API to remove unsupported SPACE and ARTIFACT values from the SpaceQuickSightResourceType enum.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
