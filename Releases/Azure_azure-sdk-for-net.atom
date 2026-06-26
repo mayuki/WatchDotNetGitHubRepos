@@ -1,70 +1,48 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-06-25T00:30:55Z</updated>
+  <updated>2026-06-26T00:31:48Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-06-24</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-24</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-06-25</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-25</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-06-25T00:30:55Z</updated>
+    <updated>2026-06-26T00:31:48Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Qumulo_1.3.0"&gt;Azure.ResourceManager.Qumulo_1.3.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Compute.BulkActions_1.0.0"&gt;Azure.ResourceManager.Compute.BulkActions_1.0.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.3.0 (2026-06-22)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0 (2026-06-23)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgrade to API version 2026-04-16.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;PerformanceTier&lt;/code&gt; property to &lt;code&gt;QumuloFileSystemResourceData&lt;/code&gt; and &lt;code&gt;FileSystemResourceUpdateProperties&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.DataLake_12.27.1"&gt;Azure.Storage.Files.DataLake_12.27.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.27.1 (2026-06-23)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;li&gt;Initial GA release of the Azure.ResourceManager.Compute.BulkActions client library, targeting the &lt;code&gt;Microsoft.Compute&lt;/code&gt; &lt;code&gt;2026-06-06&lt;/code&gt; stable API version.&lt;/li&gt;
+&lt;li&gt;New endpoints were added for the following bulk operations on virtual machines:
 &lt;ul&gt;
-&lt;li&gt;Fixed an issue where the &lt;code&gt;GenerateSasUri&lt;/code&gt; and &lt;code&gt;GenerateUserDelegationSasUri&lt;/code&gt; convenience methods on Data Lake clients did not honor the &lt;code&gt;RequestHeaders&lt;/code&gt; and &lt;code&gt;RequestQueryParameters&lt;/code&gt; properties, and where &lt;code&gt;GenerateUserDelegationSasUri&lt;/code&gt; did not honor &lt;code&gt;DelegatedUserObjectId&lt;/code&gt;, set on the supplied &lt;code&gt;DataLakeSasBuilder&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BulkStartOperation&lt;/code&gt; / &lt;code&gt;BulkStartOperationAsync&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BulkDeallocateOperation&lt;/code&gt; / &lt;code&gt;BulkDeallocateOperationAsync&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BulkHibernateOperation&lt;/code&gt; / &lt;code&gt;BulkHibernateOperationAsync&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BulkDeleteOperation&lt;/code&gt; / &lt;code&gt;BulkDeleteOperationAsync&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BulkGetOperationsStatus&lt;/code&gt; / &lt;code&gt;BulkGetOperationsStatusAsync&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BulkCancelOperations&lt;/code&gt; / &lt;code&gt;BulkCancelOperationsAsync&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.Shares_12.27.1"&gt;Azure.Storage.Files.Shares_12.27.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.27.1 (2026-06-23)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed an issue where the &lt;code&gt;GenerateUserDelegationSasUri&lt;/code&gt; convenience methods on Share clients did not honor the &lt;code&gt;DelegatedUserObjectId&lt;/code&gt; property set on the supplied &lt;code&gt;ShareSasBuilder&lt;/code&gt;.&lt;/li&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Queues_12.27.1"&gt;Azure.Storage.Queues_12.27.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.27.1 (2026-06-23)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed an issue where the &lt;code&gt;GenerateUserDelegationSasUri&lt;/code&gt; convenience methods on the &lt;code&gt;QueueClient&lt;/code&gt; did not honor the &lt;code&gt;DelegatedUserObjectId&lt;/code&gt; property set on the supplied &lt;code&gt;QueueSasBuilder&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs_12.29.1"&gt;Azure.Storage.Blobs_12.29.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.29.1 (2026-06-23)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed an issue where the &lt;code&gt;GenerateSasUri&lt;/code&gt; and &lt;code&gt;GenerateUserDelegationSasUri&lt;/code&gt; convenience methods on blob clients did not honor the &lt;code&gt;RequestHeaders&lt;/code&gt; and &lt;code&gt;RequestQueryParameters&lt;/code&gt; properties, and where &lt;code&gt;GenerateUserDelegationSasUri&lt;/code&gt; did not honor &lt;code&gt;DelegatedUserObjectId&lt;/code&gt;, set on the supplied &lt;code&gt;BlobSasBuilder&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Fixed an issue where structured-message Uploads with checksum validation could fail with a &lt;code&gt;ArgumentOutOfRangeException&lt;/code&gt; for empty content&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;This package follows the &lt;a href="https://azure.github.io/azure-sdk/general_introduction.html" rel="nofollow"&gt;new Azure SDK guidelines&lt;/a&gt;, and provides many core capabilities:&lt;/p&gt;
+&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
+- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
+- HTTP pipeline with custom policies.
+- Better error-handling.
+- Support uniform telemetry across all languages."&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
+- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
+- HTTP pipeline with custom policies.
+- Better error-handling.
+- Support uniform telemetry across all languages.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: For more information about unified authentication, please refer to &lt;a href="https://learn.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet" rel="nofollow"&gt;Microsoft Azure Identity documentation for .NET&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
