@@ -1,6 +1,67 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-06-28T00:28:43Z</updated>
+  <updated>2026-06-29T00:30:19Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-06-28</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-28</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2026-06-29T00:30:19Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Invocations_1.0.0-beta.5"&gt;Azure.AI.AgentServer.Invocations_1.0.0-beta.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.5 (2026-06-28)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Container protocol version &lt;code&gt;2.0.0&lt;/code&gt; support: reads &lt;code&gt;x-agent-user-id&lt;/code&gt; and &lt;code&gt;x-agent-foundry-call-id&lt;/code&gt; from inbound requests and exposes them via &lt;code&gt;InvocationContext.PlatformContext&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;InvocationContext.Isolation&lt;/code&gt; is now &lt;code&gt;InvocationContext.PlatformContext&lt;/code&gt; (type &lt;code&gt;PlatformContext&lt;/code&gt; with &lt;code&gt;UserIdKey&lt;/code&gt; / &lt;code&gt;CallId&lt;/code&gt;), replacing the &lt;code&gt;IsolationContext&lt;/code&gt; user/chat isolation keys.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Responses_1.0.0-beta.6"&gt;Azure.AI.AgentServer.Responses_1.0.0-beta.6&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.6 (2026-06-28)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Container protocol version &lt;code&gt;2.0.0&lt;/code&gt; support: the per-request call ID (&lt;code&gt;x-agent-foundry-call-id&lt;/code&gt;) and global user ID (&lt;code&gt;x-agent-user-id&lt;/code&gt;) are read from inbound requests and exposed on &lt;code&gt;ResponseContext.PlatformContext&lt;/code&gt;. The per-request call ID is forwarded on all outbound Foundry Storage calls; &lt;code&gt;x-agent-user-id&lt;/code&gt; is used only for container-side partitioning and is not forwarded to 1P services.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ResponseContext.Isolation&lt;/code&gt; is now &lt;code&gt;ResponseContext.PlatformContext&lt;/code&gt; (type &lt;code&gt;PlatformContext&lt;/code&gt; with &lt;code&gt;UserIdKey&lt;/code&gt; / &lt;code&gt;CallId&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ResponsesProvider&lt;/code&gt; methods now take a &lt;code&gt;PlatformContext context&lt;/code&gt; parameter (previously &lt;code&gt;IsolationContext isolation&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;In-process partition enforcement is now keyed on the user ID (&lt;code&gt;x-agent-user-id&lt;/code&gt;) instead of the chat isolation key.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Core_1.0.0-beta.26"&gt;Azure.AI.AgentServer.Core_1.0.0-beta.26&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.26 (2026-06-28)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Container protocol version &lt;code&gt;2.0.0&lt;/code&gt; support: added the platform identity header constants &lt;code&gt;PlatformHeaders.UserId&lt;/code&gt; (&lt;code&gt;x-agent-user-id&lt;/code&gt;) and &lt;code&gt;PlatformHeaders.FoundryCallId&lt;/code&gt; (&lt;code&gt;x-agent-foundry-call-id&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;FoundryEnvironment.AgentId&lt;/code&gt; exposing the agent's stable GUID from the &lt;code&gt;FOUNDRY_AGENT_ID&lt;/code&gt; environment variable.&lt;/li&gt;
+&lt;li&gt;Added the request-scoped &lt;code&gt;FoundryAgentRequestContext&lt;/code&gt; (&lt;code&gt;AsyncLocal&lt;/code&gt;-backed, never-null &lt;code&gt;Current&lt;/code&gt;) that captures the inbound &lt;code&gt;x-agent-foundry-call-id&lt;/code&gt; / &lt;code&gt;x-agent-user-id&lt;/code&gt; via an SDK middleware, and &lt;code&gt;FoundryCallIdHandler&lt;/code&gt; (a &lt;code&gt;DelegatingHandler&lt;/code&gt;) that echoes &lt;strong&gt;only&lt;/strong&gt; the call ID on outbound Foundry-bound &lt;code&gt;HttpClient&lt;/code&gt; calls (&lt;code&gt;x-agent-user-id&lt;/code&gt; is never echoed). The .NET analogue of the Python SDK's &lt;code&gt;get_request_context()&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Renamed &lt;code&gt;IsolationContext&lt;/code&gt; to &lt;code&gt;PlatformContext&lt;/code&gt;. Its members are now &lt;code&gt;UserIdKey&lt;/code&gt; (from &lt;code&gt;x-agent-user-id&lt;/code&gt;) and &lt;code&gt;CallId&lt;/code&gt; (from &lt;code&gt;x-agent-foundry-call-id&lt;/code&gt;), replacing &lt;code&gt;UserIsolationKey&lt;/code&gt; / &lt;code&gt;ChatIsolationKey&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Replaced the &lt;code&gt;PlatformHeaders.UserIsolationKey&lt;/code&gt; / &lt;code&gt;PlatformHeaders.ChatIsolationKey&lt;/code&gt; constants with &lt;code&gt;PlatformHeaders.UserId&lt;/code&gt; and &lt;code&gt;PlatformHeaders.FoundryCallId&lt;/code&gt; per container protocol version &lt;code&gt;2.0.0&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
