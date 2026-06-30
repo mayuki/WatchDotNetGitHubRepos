@@ -1,63 +1,372 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-06-29T00:30:43Z</updated>
+  <updated>2026-06-30T00:30:11Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-06-28</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-28</id>
-    <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-06-29T00:30:19Z</updated>
+    <title>aws/aws-sdk-net - Releases - 2026-06-29</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-06-29</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2026-06-30T00:29:44Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Invocations_1.0.0-beta.5"&gt;Azure.AI.AgentServer.Invocations_1.0.0-beta.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.277.0"&gt;4.0.277.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.5 (2026-06-28)&lt;/h2&gt;
+                                &lt;h3&gt;4.0.277.0 (2026-06-29 18:17 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;AppConfig (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;AWS AppConfig introduces Experimentation tools - enhanced capabilities within AWS AppConfig that enable you to run AB tests, multivariate tests, and gradual feature rollouts across your application stack.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CloudWatch (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds the API (PutLogAlarm) to manage a new CloudWatch resource, Log Based Alarms. Log Based Alarms allows customers to alarm directly on CloudWatch Logs query results.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ConnectCampaignsV2 (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;Adding new attributes to PutProfileOutboundRequest API that will create an outbound request call for the customer's Web Notification outbound campaign.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ConnectHealth (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;Expand input validation to support Unicode characters and markdown table syntax.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DynamoDBv2 (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;ReturnConsumedCapacity Support for DynamoDB Transactions in DynamoDBContext and Table APIs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EC2 (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for the precision time strategy and a parentGroupId parameter on CreatePlacementGroup and DescribePlacementGroups. Precision time placement groups and cluster placement groups with a parent precision time placement group ensure instances launch on precision time capable hardware.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ECS (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon ECS now supports customizable deployment circuit breaker configurations. Customers can now define the failure threshold or control the failure counting mechanism.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ElastiCache (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;Updated documentation for the ApplyImmediately parameter in ModifyCacheCluster and ModifyReplicationGroup to clarify modification behavior.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Evs (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon EVS introduces a VMware Cloud Foundation (VCF) self-deployed mode, along with new connectors to VCF components such as the Operations and SDDC managers to monitor coverage and usage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Glue (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;Added the UpdateAsset operation to set the business name and description for an existing AWS Glue Data Catalog asset.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Imagebuilder (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for AMI watermarks in Image Builder.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Lambda (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;Lambda now supports self-managed S3 buckets for Lambda code storage giving you the option for Lambda to reference a copy of your source code from your own S3 buckets. This allows you to maintain a single copy of your source code and manage your own code storage limits.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PCS (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for in-place Slurm version upgrades on existing clusters by accepting scheduler.version in UpdateCluster.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PinpointSMSVoiceV2 (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;This launch is an expansion of our Q1 RCS for business launch where we will release an API that supports rich media and interactive messaging elements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RDSDataService (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;Updated documentation to remove Aurora Serverless V1 references.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ResourceExplorer2 (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;Added CFN resource type fields for Search and ListSupportedResourceTypes responses. Added SLRec field for ServiceView&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SageMakerFeatureStoreRuntime (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for ListRecords and BatchWriteRecord APIs to Feature Store.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;VPCLattice (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon VPC Lattice now supports mutable idle timeout configuration on VPC Lattice Services&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WAFV2 (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;AWS WAF added support for associating AWS WAF web ACLs with Amazon Bedrock AgentCore Gateway resources. You can now use AssociateWebACL, DisassociateWebACL, GetWebACLForResource, and ListResourcesForWebACL to protect your AgentCore Gateways with AWS WAF.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Extensions.CborProtocol (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;Use Lax CBOR conformance mode in the writer pool to avoid per-request map-key sorting, reducing marshal CPU for key-heavy payloads.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Extensions.Logging.ILoggerAdaptor (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;ILoggerAdapter ConfigureAWSSDKLogging now throws when called with null ILoggerFactory&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.100.0
+&lt;ul&gt;
+&lt;li&gt;One time synchronized package versions to mark build system changes.&lt;/li&gt;
+&lt;li&gt;Reduce memory allocations in CBOR request marshalling by encoding directly into a pooled buffer.&lt;/li&gt;
+&lt;li&gt;Remove unnecessary allocation for unused exceptions in &lt;code&gt;FallbackRegionFactory.GetRegionEndpoint&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4724174302" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/4448" data-hovercard-type="pull_request" data-hovercard-url="/aws/aws-sdk-net/pull/4448/hovercard" href="https://github.com/aws/aws-sdk-net/pull/4448"&gt;#4448&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Small performance improvements in &lt;code&gt;AWSSDKUtils&lt;/code&gt; class (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4720817668" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/4447" data-hovercard-type="pull_request" data-hovercard-url="/aws/aws-sdk-net/pull/4447/hovercard" href="https://github.com/aws/aws-sdk-net/pull/4447"&gt;#4447&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-06-29</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-29</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2026-06-30T00:29:45Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.CostManagement_1.0.0-beta.1"&gt;Azure.Provisioning.CostManagement_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-06-26)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Container protocol version &lt;code&gt;2.0.0&lt;/code&gt; support: reads &lt;code&gt;x-agent-user-id&lt;/code&gt; and &lt;code&gt;x-agent-foundry-call-id&lt;/code&gt; from inbound requests and exposes them via &lt;code&gt;InvocationContext.PlatformContext&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Initial beta release of Azure.Provisioning.CostManagement with support for declarative Cost Management resource provisioning.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added support for Cost Management Export, View, and Scheduled Action resources.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Generated with the new TypeSpec-based provisioning generator&lt;br&gt;
+(&lt;code&gt;@azure-typespec/http-client-csharp-provisioning&lt;/code&gt;).&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>DataDog/dd-trace-dotnet - Releases - 2026-06-29</title>
+    <id>https://github.com/DataDog/dd-trace-dotnet#2026-06-29</id>
+    <link href="https://github.com/DataDog/dd-trace-dotnet" />
+    <updated>2026-06-30T00:29:46Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/releases/tag/v3.48.0"&gt;3.48.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Summary&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;InvocationContext.Isolation&lt;/code&gt; is now &lt;code&gt;InvocationContext.PlatformContext&lt;/code&gt; (type &lt;code&gt;PlatformContext&lt;/code&gt; with &lt;code&gt;UserIdKey&lt;/code&gt; / &lt;code&gt;CallId&lt;/code&gt;), replacing the &lt;code&gt;IsolationContext&lt;/code&gt; user/chat isolation keys.&lt;/li&gt;
+&lt;li&gt;[Tracing] Add support for IBMMQ 10.x.x&lt;/li&gt;
+&lt;li&gt;[Client side stats] Fix incorrect statistic generation introduced in 3.43.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changes&lt;/h2&gt;
+&lt;h3&gt;Tracer&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add support for IBM MQ 10.x.x (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4751874617" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8835" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8835/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8835"&gt;#8835&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix ObjectDisposedException race in DataStreamsWriter disposal (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4597051328" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8758" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8758/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8758"&gt;#8758&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;CI Visibility&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[CI Visibility] Avoid oversized coverage IPC messages (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4745068665" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8832" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8832/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8832"&gt;#8832&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Debugger&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[Debugger] Guard static member capture (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4717816621" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8814" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8814/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8814"&gt;#8814&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Debugger] Avoid resolving call tokens in exception replay IL scan (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4718360192" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8815" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8815/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8815"&gt;#8815&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Remove sampling-based weighting in Client Side Stats (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4741867638" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8828" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8828/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8828"&gt;#8828&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Build / Test&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update to use dd-sts instead of long-lived credentials (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4702304741" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8809" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8809/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8809"&gt;#8809&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Test Package Versions Bump] Updating package versions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4708892121" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8810" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8810/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8810"&gt;#8810&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix GitHub Actions bugs and update documentation (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4715967585" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8812" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8812/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8812"&gt;#8812&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[CI] Add net10.0 to AWS Lambda test runtimes (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4728092445" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8819" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8819/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8819"&gt;#8819&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/compare/v3.47.0...v3.48.0"&gt;Changes since 3.47.0&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>googleapis/google-cloud-dotnet - Releases - 2026-06-29</title>
+    <id>https://github.com/googleapis/google-cloud-dotnet#2026-06-29</id>
+    <link href="https://github.com/googleapis/google-cloud-dotnet" />
+    <updated>2026-06-30T00:29:59Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.AgentRegistry.V1-1.0.0-beta01"&gt;Google.Cloud.AgentRegistry.V1 version 1.0.0-beta01&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial generation for Google.Cloud.AgentRegistry.V1&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Responses_1.0.0-beta.6"&gt;Azure.AI.AgentServer.Responses_1.0.0-beta.6&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.VectorSearch.V1-1.0.0-beta06"&gt;Google.Cloud.VectorSearch.V1 version 1.0.0-beta06&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.6 (2026-06-28)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Container protocol version &lt;code&gt;2.0.0&lt;/code&gt; support: the per-request call ID (&lt;code&gt;x-agent-foundry-call-id&lt;/code&gt;) and global user ID (&lt;code&gt;x-agent-user-id&lt;/code&gt;) are read from inbound requests and exposed on &lt;code&gt;ResponseContext.PlatformContext&lt;/code&gt;. The per-request call ID is forwarded on all outbound Foundry Storage calls; &lt;code&gt;x-agent-user-id&lt;/code&gt; is used only for container-side partitioning and is not forwarded to 1P services.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;force&lt;/code&gt; field to DeleteCollectionRequest to allow deleting a Collection together with its Indexes and DataObjects&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;FieldFilter&lt;/code&gt; message and &lt;code&gt;field_filter&lt;/code&gt; field to ExportDataObjects to restrict which top-level Data Object fields are emitted&lt;/li&gt;
+&lt;li&gt;Relaxed &lt;code&gt;search_text&lt;/code&gt; and &lt;code&gt;data_field_names&lt;/code&gt; on data object search from REQUIRED to OPTIONAL (required only for the default text search mode)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;ResponseContext.Isolation&lt;/code&gt; is now &lt;code&gt;ResponseContext.PlatformContext&lt;/code&gt; (type &lt;code&gt;PlatformContext&lt;/code&gt; with &lt;code&gt;UserIdKey&lt;/code&gt; / &lt;code&gt;CallId&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ResponsesProvider&lt;/code&gt; methods now take a &lt;code&gt;PlatformContext context&lt;/code&gt; parameter (previously &lt;code&gt;IsolationContext isolation&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;In-process partition enforcement is now keyed on the user ID (&lt;code&gt;x-agent-user-id&lt;/code&gt;) instead of the chat isolation key.&lt;/li&gt;
+&lt;li&gt;Updated documentation for listing locations&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Core_1.0.0-beta.26"&gt;Azure.AI.AgentServer.Core_1.0.0-beta.26&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.SaasPlatform.SaasServiceMgmt.V1Beta1-1.0.0-beta06"&gt;Google.Cloud.SaasPlatform.SaasServiceMgmt.V1Beta1 version 1.0.0-beta06&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.26 (2026-06-28)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h3&gt;Bug fixes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Container protocol version &lt;code&gt;2.0.0&lt;/code&gt; support: added the platform identity header constants &lt;code&gt;PlatformHeaders.UserId&lt;/code&gt; (&lt;code&gt;x-agent-user-id&lt;/code&gt;) and &lt;code&gt;PlatformHeaders.FoundryCallId&lt;/code&gt; (&lt;code&gt;x-agent-foundry-call-id&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;FoundryEnvironment.AgentId&lt;/code&gt; exposing the agent's stable GUID from the &lt;code&gt;FOUNDRY_AGENT_ID&lt;/code&gt; environment variable.&lt;/li&gt;
-&lt;li&gt;Added the request-scoped &lt;code&gt;FoundryAgentRequestContext&lt;/code&gt; (&lt;code&gt;AsyncLocal&lt;/code&gt;-backed, never-null &lt;code&gt;Current&lt;/code&gt;) that captures the inbound &lt;code&gt;x-agent-foundry-call-id&lt;/code&gt; / &lt;code&gt;x-agent-user-id&lt;/code&gt; via an SDK middleware, and &lt;code&gt;FoundryCallIdHandler&lt;/code&gt; (a &lt;code&gt;DelegatingHandler&lt;/code&gt;) that echoes &lt;strong&gt;only&lt;/strong&gt; the call ID on outbound Foundry-bound &lt;code&gt;HttpClient&lt;/code&gt; calls (&lt;code&gt;x-agent-user-id&lt;/code&gt; is never echoed). The .NET analogue of the Python SDK's &lt;code&gt;get_request_context()&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Existing value &lt;code&gt;TYPE_APP_CREATED_OR_ALREADY_EXISTS = 5&lt;/code&gt; is changed to &lt;code&gt;TYPE_APP_CREATED_OR_ALREADY_EXISTS = 6&lt;/code&gt; in enum &lt;code&gt;Type&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Existing value &lt;code&gt;TYPE_APP_COMPONENTS_REGISTERED = 6&lt;/code&gt; is changed to &lt;code&gt;TYPE_APP_COMPONENTS_REGISTERED = 7&lt;/code&gt; in enum &lt;code&gt;Type&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Tools.SecretManagerHelper-1.0.0"&gt;Google.Cloud.Tools.SecretManagerHelper version 1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;Bug fixes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Renamed &lt;code&gt;IsolationContext&lt;/code&gt; to &lt;code&gt;PlatformContext&lt;/code&gt;. Its members are now &lt;code&gt;UserIdKey&lt;/code&gt; (from &lt;code&gt;x-agent-user-id&lt;/code&gt;) and &lt;code&gt;CallId&lt;/code&gt; (from &lt;code&gt;x-agent-foundry-call-id&lt;/code&gt;), replacing &lt;code&gt;UserIsolationKey&lt;/code&gt; / &lt;code&gt;ChatIsolationKey&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Replaced the &lt;code&gt;PlatformHeaders.UserIsolationKey&lt;/code&gt; / &lt;code&gt;PlatformHeaders.ChatIsolationKey&lt;/code&gt; constants with &lt;code&gt;PlatformHeaders.UserId&lt;/code&gt; and &lt;code&gt;PlatformHeaders.FoundryCallId&lt;/code&gt; per container protocol version &lt;code&gt;2.0.0&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Add missing PackAsTool property in csproj&lt;/li&gt;
 &lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Dataform.V1-1.0.0-beta04"&gt;Google.Cloud.Dataform.V1 version 1.0.0-beta04&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add Developer Connect integration for Git repository authentication&lt;/li&gt;
+&lt;li&gt;Add effective default branch field for repositories&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Clarify field usage guidelines and default values in API reference documentation&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.NetworkManagement.V1-2.21.0"&gt;Google.Cloud.NetworkManagement.V1 version 2.21.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add DMS Private Connection&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.DiscoveryEngine.V1Beta-1.0.0-beta24"&gt;Google.Cloud.DiscoveryEngine.V1Beta version 1.0.0-beta24&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Regenerate v1beta proto snapshot for feature parity with v1&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Dialogflow.V2Beta1-1.0.0-beta31"&gt;Google.Cloud.Dialogflow.V2Beta1 version 1.0.0-beta31&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Speech activity event is configurable through InputAudioConfig.enable_voice_activity_events&lt;/li&gt;
+&lt;li&gt;StreamingRecognitionResult has two new MessageType: SPEECH_ACTIVITY_BEGIN and SPEECH_ACTIVITY_END&lt;/li&gt;
+&lt;li&gt;SearchKnowledgeDebugInfo contains ces_debug_info&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Dialogflow.V2-4.31.0"&gt;Google.Cloud.Dialogflow.V2 version 4.31.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Speech activity event is configurable through InputAudioConfig.enable_voice_activity_events&lt;/li&gt;
+&lt;li&gt;StreamingRecognitionResult now has new MessageType: DTMF_DIGITS, PARTIAL_DTMF_DIGITS, SPEECH_ACTIVITY_BEGIN, SPEECH_ACTIVITY_END&lt;/li&gt;
+&lt;li&gt;Ces_debug_info is available in SearchKnowledgeDebugInfo&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Datastore.V1-5.2.0"&gt;Google.Cloud.Datastore.V1 version 5.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduce RequestOptions message and request_options field on Datastore v1 request messages to enable request tagging&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A comment for field &lt;code&gt;batch&lt;/code&gt; in message &lt;code&gt;.google.datastore.v1.RunQueryResponse&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;distance_threshold&lt;/code&gt; in message &lt;code&gt;.google.datastore.v1.FindNearest&lt;/code&gt; is changed&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>StackExchange/StackExchange.Redis - Releases - 2026-06-29</title>
+    <id>https://github.com/StackExchange/StackExchange.Redis#2026-06-29</id>
+    <link href="https://github.com/StackExchange/StackExchange.Redis" />
+    <updated>2026-06-30T00:30:10Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/3.0.11"&gt;3.0.11&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Support &lt;code&gt;ReadOnlySequence&amp;lt;byte&amp;gt;&lt;/code&gt; with &lt;code&gt;RedisValue&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/pairbit/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/pairbit"&gt;@pairbit&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4733602866" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3112" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3112/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3112"&gt;#3112&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;add package logo by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4752824354" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3115" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3115/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3115"&gt;#3115&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Optimize &lt;code&gt;RedisValue&lt;/code&gt; / reader logic by using canonical parser and new ShortBlob storage kind by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4751991015" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3114" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3114/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3114"&gt;#3114&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/3.0.7...3.0.11"&gt;&lt;tt&gt;3.0.7...3.0.11&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
