@@ -1,133 +1,104 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-06-30T00:30:11Z</updated>
+  <updated>2026-07-01T00:31:25Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-06-29</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-06-29</id>
+    <title>aws/aws-sdk-net - Releases - 2026-06-30</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-06-30</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-06-30T00:29:44Z</updated>
+    <updated>2026-07-01T00:31:08Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.277.0"&gt;4.0.277.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.278.0"&gt;4.0.278.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.277.0 (2026-06-29 18:17 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.278.0 (2026-06-30 18:41 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AppConfig (4.0.100.0)
+&lt;li&gt;AutoScaling (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;AWS AppConfig introduces Experimentation tools - enhanced capabilities within AWS AppConfig that enable you to run AB tests, multivariate tests, and gradual feature rollouts across your application stack.&lt;/li&gt;
+&lt;li&gt;This release adds support for a new reservations-then-balanced capacity distribution strategy, which first attempts to launch instances into your Capacity Reservations and then balances remaining capacity across healthy Availability Zones.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudWatch (4.0.100.0)
+&lt;li&gt;CertificateManager (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds the API (PutLogAlarm) to manage a new CloudWatch resource, Log Based Alarms. Log Based Alarms allows customers to alarm directly on CloudWatch Logs query results.&lt;/li&gt;
+&lt;li&gt;AWS Certificate Manager now supports the Automatic Certificate Management Environment (ACME) protocol to issue public certificates. ACME is an industry-standard protocol for automating certificate lifecycle on customer-managed infrastructure such as on-premises servers and Kubernetes clusters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ConnectCampaignsV2 (4.0.100.0)
+&lt;li&gt;CleanRooms (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Adding new attributes to PutProfileOutboundRequest API that will create an outbound request call for the customer's Web Notification outbound campaign.&lt;/li&gt;
+&lt;li&gt;Adds support for intermediate tables in AWS Clean Rooms collaborations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ConnectHealth (4.0.100.0)
+&lt;li&gt;CloudFormation (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Expand input validation to support Unicode characters and markdown table syntax.&lt;/li&gt;
+&lt;li&gt;AWS CloudFormation adds a DeploymentConfig parameter to enable Express mode, which completes stack operations as soon as resource configuration is applied. Also adds a DisableValidation parameter to skip pre-deployment validation, which now runs automatically on CreateStack and UpdateStak.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (4.0.100.0)
+&lt;li&gt;CloudWatch (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;ReturnConsumedCapacity Support for DynamoDB Transactions in DynamoDBContext and Table APIs&lt;/li&gt;
+&lt;li&gt;Customers can configure alarms with wall-clock-aligned evaluation windows instead of sliding windows, with optional timezone support for daily or weekly periods&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.100.0)
+&lt;li&gt;CodeBuild (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for the precision time strategy and a parentGroupId parameter on CreatePlacementGroup and DescribePlacementGroups. Precision time placement groups and cluster placement groups with a parent precision time placement group ensure instances launch on precision time capable hardware.&lt;/li&gt;
+&lt;li&gt;Adds support for host kernel selection for on-demand builds.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ECS (4.0.100.0)
+&lt;li&gt;Connect (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon ECS now supports customizable deployment circuit breaker configurations. Customers can now define the failure threshold or control the failure counting mechanism.&lt;/li&gt;
+&lt;li&gt;Amazon Connect - Added CreateAttachedFile and StartContactConversationalAnalyticsJob APIs to import call recordings and run conversational analytics.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElastiCache (4.0.100.0)
+&lt;li&gt;DataZone (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Updated documentation for the ApplyImmediately parameter in ModifyCacheCluster and ModifyReplicationGroup to clarify modification behavior.&lt;/li&gt;
+&lt;li&gt;Amazon DataZone now supports SNOWFLAKE as a connection type in the CreateConnection API, enabling metadata and lineage retrieval from Snowflake databases. Specify snowflakeProperties with connection details, a Secrets Manager secret, an Athena spill bucket, and an identity mapping for Snowflake.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Evs (4.0.100.0)
+&lt;li&gt;EC2 (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon EVS introduces a VMware Cloud Foundation (VCF) self-deployed mode, along with new connectors to VCF components such as the Operations and SDDC managers to monitor coverage and usage.&lt;/li&gt;
+&lt;li&gt;Adds ModifyVpcEndpointPayerResponsibility API, which enables VPC endpoint service owners to modify the billing account for VPC endpoint usage charges at the individual endpoint level&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Glue (4.0.100.0)
+&lt;li&gt;ECS (4.0.100.1)
 &lt;ul&gt;
-&lt;li&gt;Added the UpdateAsset operation to set the business name and description for an existing AWS Glue Data Catalog asset.&lt;/li&gt;
+&lt;li&gt;Updated threshold configuration documentation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Imagebuilder (4.0.100.0)
+&lt;li&gt;EKS (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for AMI watermarks in Image Builder.&lt;/li&gt;
+&lt;li&gt;Adds Kubernetes version rollback support, including the CancelUpdate operation to cancel an in-progress VersionRollback update, the RollbackConfig structure with a timeoutMinutes field, and the Cancellation structure surfaced via the new cancellation field on the Update object.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Lambda (4.0.100.0)
+&lt;li&gt;NetworkFirewall (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Lambda now supports self-managed S3 buckets for Lambda code storage giving you the option for Lambda to reference a copy of your source code from your own S3 buckets. This allows you to maintain a single copy of your source code and manage your own code storage limits.&lt;/li&gt;
+&lt;li&gt;AWS Network Firewall now supports container associations for monitoring ECS and EKS workloads. You can create container associations to dynamically track the IP addresses of running containers in your Amazon ECS and Amazon EKS clusters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PCS (4.0.100.0)
+&lt;li&gt;ObservabilityAdmin (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for in-place Slurm version upgrades on existing clusters by accepting scheduler.version in UpdateCluster.&lt;/li&gt;
+&lt;li&gt;Organization and account level telemetry rule via Observability Admin and CloudWatch pipelines for metrics&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PinpointSMSVoiceV2 (4.0.100.0)
+&lt;li&gt;PartnerCentralSelling (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;This launch is an expansion of our Q1 RCS for business launch where we will release an API that supports rich media and interactive messaging elements.&lt;/li&gt;
+&lt;li&gt;This release adds AwsMarketplaceSolutions and AwsMarketplaceProducts entity types to the Associate and Disassociate APIs, returns them in GetOpportunity, and adds AwsMarketplaceSolutionArn to ListSolutions ,letting partners link Marketplace listings directly to opportunities.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;RDSDataService (4.0.100.0)
+&lt;li&gt;SSOAdmin (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Updated documentation to remove Aurora Serverless V1 references.&lt;/li&gt;
+&lt;li&gt;AWS IAM Identity Center now returns PrimaryRegion and Regions in the ListInstances response, providing information about replicated instances.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ResourceExplorer2 (4.0.100.0)
+&lt;li&gt;SupportAuthZ (4.0.100.0)
 &lt;ul&gt;
-&lt;li&gt;Added CFN resource type fields for Search and ListSupportedResourceTypes responses. Added SLRec field for ServiceView&lt;/li&gt;
+&lt;li&gt;New SDK release for SupportAuthZ.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMakerFeatureStoreRuntime (4.0.100.0)
+&lt;li&gt;Extensions.Bedrock.MEAI (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for ListRecords and BatchWriteRecord APIs to Feature Store.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;VPCLattice (4.0.100.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon VPC Lattice now supports mutable idle timeout configuration on VPC Lattice Services&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WAFV2 (4.0.100.0)
-&lt;ul&gt;
-&lt;li&gt;AWS WAF added support for associating AWS WAF web ACLs with Amazon Bedrock AgentCore Gateway resources. You can now use AssociateWebACL, DisassociateWebACL, GetWebACLForResource, and ListResourcesForWebACL to protect your AgentCore Gateways with AWS WAF.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Extensions.CborProtocol (4.0.100.0)
-&lt;ul&gt;
-&lt;li&gt;Use Lax CBOR conformance mode in the writer pool to avoid per-request map-key sorting, reducing marshal CPU for key-heavy payloads.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Extensions.Logging.ILoggerAdaptor (4.0.100.0)
-&lt;ul&gt;
-&lt;li&gt;ILoggerAdapter ConfigureAWSSDKLogging now throws when called with null ILoggerFactory&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.0.100.0
-&lt;ul&gt;
-&lt;li&gt;One time synchronized package versions to mark build system changes.&lt;/li&gt;
-&lt;li&gt;Reduce memory allocations in CBOR request marshalling by encoding directly into a pooled buffer.&lt;/li&gt;
-&lt;li&gt;Remove unnecessary allocation for unused exceptions in &lt;code&gt;FallbackRegionFactory.GetRegionEndpoint&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4724174302" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/4448" data-hovercard-type="pull_request" data-hovercard-url="/aws/aws-sdk-net/pull/4448/hovercard" href="https://github.com/aws/aws-sdk-net/pull/4448"&gt;#4448&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Small performance improvements in &lt;code&gt;AWSSDKUtils&lt;/code&gt; class (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4720817668" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/4447" data-hovercard-type="pull_request" data-hovercard-url="/aws/aws-sdk-net/pull/4447/hovercard" href="https://github.com/aws/aws-sdk-net/pull/4447"&gt;#4447&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Add support for native structured outputs (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4618722099" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/4425" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/4425/hovercard" href="https://github.com/aws/aws-sdk-net/issues/4425"&gt;#4425&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -138,210 +109,164 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-06-29</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-29</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-06-30</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-06-30</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-06-30T00:29:45Z</updated>
+    <updated>2026-07-01T00:31:09Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.CostManagement_1.0.0-beta.1"&gt;Azure.Provisioning.CostManagement_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.60.0"&gt;Azure.Core_1.60.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-06-26)&lt;/h2&gt;
+                                &lt;h2&gt;1.60.0 (2026-06-30)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added experimental (&lt;code&gt;AZID0004&lt;/code&gt;) &lt;code&gt;DisableMtlsProofOfPossession&lt;/code&gt; property to &lt;code&gt;ManagedIdentityCredentialOptions&lt;/code&gt; to allow explicit opt-out of mTLS proof-of-possession token acquisition when the underlying requirements are met.&lt;/li&gt;
+&lt;li&gt;Simplified mTLS token binding integration for Managed Identity by moving to an optional, runtime-resolved attestation model using lazy reflection-based resolution of the &lt;code&gt;Microsoft.Identity.Client.KeyAttestation&lt;/code&gt; extension package.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed a regression (introduced with managed identity host capability detection) where &lt;code&gt;DefaultAzureCredential&lt;/code&gt; could throw an &lt;code&gt;AuthenticationFailedException&lt;/code&gt; and stop evaluating the credential chain on hosts without a managed identity — for example, a developer machine running in Visual Studio where the IMDS endpoint (169.254.169.254) is unreachable. When &lt;code&gt;ManagedIdentityCredential&lt;/code&gt; is part of a chain, a failure to detect the managed identity source/capabilities is now surfaced as a &lt;code&gt;CredentialUnavailableException&lt;/code&gt;, allowing the chain to continue to the next credential.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Monitor.OpenTelemetry.Exporter_1.8.2"&gt;Azure.Monitor.OpenTelemetry.Exporter_1.8.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.8.2 (2026-06-30)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Initial beta release of Azure.Provisioning.CostManagement with support for declarative Cost Management resource provisioning.&lt;/p&gt;
+&lt;p&gt;Added support for the Microsoft OpenTelemetry distro's SDK statistics: a new internal meter subscription and an AppContext switch (&lt;code&gt;Azure.Monitor.OpenTelemetry.Exporter.RouteSdkStatsToDistroEndpoint&lt;/code&gt;) that lets the distro redirect SDK statistics to its own ingestion path. The ingestion destination and an on/off signal are resolved at startup by fetching a remote configuration; on success the configured destination is used, an explicit remote disable signal turns SDK statistics off, and any other outcome falls back to the existing region-derived ingestion endpoint so SDK statistics keep flowing. The AppContext switch has no effect on Statsbeat for callers that do not opt in.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/59811" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/59811/hovercard"&gt;#59811&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Added support for Cost Management Export, View, and Scheduled Action resources.&lt;/p&gt;
+&lt;p&gt;Subscribed the Statsbeat &lt;code&gt;MeterProvider&lt;/code&gt; to the Microsoft OpenTelemetry distro's Network SDKStats meter (&lt;code&gt;MicrosoftOpenTelemetryNetworkSdkStatsMeter&lt;/code&gt;) so distro-emitted Network statistics flow through the existing Statsbeat cadence when the distro runs with a non-Azure-Monitor exporter.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/60209" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/60209/hovercard"&gt;#60209&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Generated with the new TypeSpec-based provisioning generator&lt;br&gt;
-(&lt;code&gt;@azure-typespec/http-client-csharp-provisioning&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Subscribed the Statsbeat &lt;code&gt;MeterProvider&lt;/code&gt; to the Microsoft OpenTelemetry distro's Feature SDKStats meter (&lt;code&gt;MicrosoftOpenTelemetryFeatureSdkStatsMeter&lt;/code&gt;) so distro-emitted Feature statistics reach the Statsbeat ingestion path. The distro uses an independent, spec-aligned bit map to avoid collisions with the classic Application Insights SDK's &lt;code&gt;FeatureStatsbeatMeter&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/59529" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/59529/hovercard"&gt;#59529&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added Network SDKStats reporting, emitting the short-interval Network statistics defined in the Application Insights SDKStats spec on a 15-minute cadence: &lt;code&gt;Request_Success_Count&lt;/code&gt;, &lt;code&gt;Request_Failure_Count&lt;/code&gt;, &lt;code&gt;Request_Duration&lt;/code&gt;, &lt;code&gt;Retry_Count&lt;/code&gt;, &lt;code&gt;Throttle_Count&lt;/code&gt;, and &lt;code&gt;Exception_Count&lt;/code&gt;, each with the spec-defined dimensions (including &lt;code&gt;host&lt;/code&gt;, &lt;code&gt;statusCode&lt;/code&gt;, and &lt;code&gt;exceptionType&lt;/code&gt;).&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/59909" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/59909/hovercard"&gt;#59909&lt;/a&gt;, &lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/60018" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/60018/hovercard"&gt;#60018&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>DataDog/dd-trace-dotnet - Releases - 2026-06-29</title>
-    <id>https://github.com/DataDog/dd-trace-dotnet#2026-06-29</id>
-    <link href="https://github.com/DataDog/dd-trace-dotnet" />
-    <updated>2026-06-30T00:29:46Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/releases/tag/v3.48.0"&gt;3.48.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;Summary&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;[Tracing] Add support for IBMMQ 10.x.x&lt;/li&gt;
-&lt;li&gt;[Client side stats] Fix incorrect statistic generation introduced in 3.43.0&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Changes&lt;/h2&gt;
-&lt;h3&gt;Tracer&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add support for IBM MQ 10.x.x (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4751874617" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8835" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8835/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8835"&gt;#8835&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix ObjectDisposedException race in DataStreamsWriter disposal (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4597051328" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8758" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8758/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8758"&gt;#8758&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;CI Visibility&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[CI Visibility] Avoid oversized coverage IPC messages (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4745068665" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8832" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8832/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8832"&gt;#8832&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Debugger&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[Debugger] Guard static member capture (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4717816621" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8814" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8814/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8814"&gt;#8814&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Debugger] Avoid resolving call tokens in exception replay IL scan (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4718360192" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8815" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8815/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8815"&gt;#8815&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Remove sampling-based weighting in Client Side Stats (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4741867638" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8828" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8828/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8828"&gt;#8828&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Build / Test&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update to use dd-sts instead of long-lived credentials (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4702304741" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8809" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8809/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8809"&gt;#8809&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Test Package Versions Bump] Updating package versions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4708892121" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8810" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8810/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8810"&gt;#8810&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix GitHub Actions bugs and update documentation (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4715967585" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8812" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8812/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8812"&gt;#8812&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[CI] Add net10.0 to AWS Lambda test runtimes (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4728092445" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8819" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8819/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8819"&gt;#8819&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/compare/v3.47.0...v3.48.0"&gt;Changes since 3.47.0&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>googleapis/google-cloud-dotnet - Releases - 2026-06-29</title>
-    <id>https://github.com/googleapis/google-cloud-dotnet#2026-06-29</id>
-    <link href="https://github.com/googleapis/google-cloud-dotnet" />
-    <updated>2026-06-30T00:29:59Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.AgentRegistry.V1-1.0.0-beta01"&gt;Google.Cloud.AgentRegistry.V1 version 1.0.0-beta01&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Initial generation for Google.Cloud.AgentRegistry.V1&lt;/li&gt;
+&lt;li&gt;Updated customer SDK stats dimension key names to use camelCase (&lt;code&gt;computeType&lt;/code&gt;, &lt;code&gt;telemetryType&lt;/code&gt;, &lt;code&gt;dropCode&lt;/code&gt;, &lt;code&gt;dropReason&lt;/code&gt;, &lt;code&gt;retryCode&lt;/code&gt;, &lt;code&gt;retryReason&lt;/code&gt;).&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/59902" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/59902/hovercard"&gt;#59902&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.VectorSearch.V1-1.0.0-beta06"&gt;Google.Cloud.VectorSearch.V1 version 1.0.0-beta06&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ResourceHealth_1.1.0"&gt;Azure.ResourceManager.ResourceHealth_1.1.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
+                                &lt;h2&gt;1.1.0 (2026-06-28)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;force&lt;/code&gt; field to DeleteCollectionRequest to allow deleting a Collection together with its Indexes and DataObjects&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;FieldFilter&lt;/code&gt; message and &lt;code&gt;field_filter&lt;/code&gt; field to ExportDataObjects to restrict which top-level Data Object fields are emitted&lt;/li&gt;
-&lt;li&gt;Relaxed &lt;code&gt;search_text&lt;/code&gt; and &lt;code&gt;data_field_names&lt;/code&gt; on data object search from REQUIRED to OPTIONAL (required only for the default text search mode)&lt;/li&gt;
+&lt;li&gt;Upgraded API version to 2025-05-01.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated documentation for listing locations&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.59.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.SaasPlatform.SaasServiceMgmt.V1Beta1-1.0.0-beta06"&gt;Google.Cloud.SaasPlatform.SaasServiceMgmt.V1Beta1 version 1.0.0-beta06&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ResourceGraph_1.1.1"&gt;Azure.ResourceManager.ResourceGraph_1.1.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;Bug fixes&lt;/h3&gt;
+                                &lt;h2&gt;1.1.1 (2026-06-28)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Existing value &lt;code&gt;TYPE_APP_CREATED_OR_ALREADY_EXISTS = 5&lt;/code&gt; is changed to &lt;code&gt;TYPE_APP_CREATED_OR_ALREADY_EXISTS = 6&lt;/code&gt; in enum &lt;code&gt;Type&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Existing value &lt;code&gt;TYPE_APP_COMPONENTS_REGISTERED = 6&lt;/code&gt; is changed to &lt;code&gt;TYPE_APP_COMPONENTS_REGISTERED = 7&lt;/code&gt; in enum &lt;code&gt;Type&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.59.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Tools.SecretManagerHelper-1.0.0"&gt;Google.Cloud.Tools.SecretManagerHelper version 1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ProviderHub_1.2.1"&gt;Azure.ResourceManager.ProviderHub_1.2.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;Bug fixes&lt;/h3&gt;
+                                &lt;h2&gt;1.2.1 (2026-06-28)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Add missing PackAsTool property in csproj&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.59.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Dataform.V1-1.0.0-beta04"&gt;Google.Cloud.Dataform.V1 version 1.0.0-beta04&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Quota_1.2.1"&gt;Azure.ResourceManager.Quota_1.2.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
+                                &lt;h2&gt;1.2.1 (2026-06-28)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Add Developer Connect integration for Git repository authentication&lt;/li&gt;
-&lt;li&gt;Add effective default branch field for repositories&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Clarify field usage guidelines and default values in API reference documentation&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.59.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.NetworkManagement.V1-2.21.0"&gt;Google.Cloud.NetworkManagement.V1 version 2.21.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ResourceConnector_1.0.0-beta.5"&gt;Azure.ResourceManager.ResourceConnector_1.0.0-beta.5&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
+                                &lt;h2&gt;1.0.0-beta.5 (2026-06-28)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Add DMS Private Connection&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.59.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.DiscoveryEngine.V1Beta-1.0.0-beta24"&gt;Google.Cloud.DiscoveryEngine.V1Beta version 1.0.0-beta24&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.RedisEnterprise_1.4.0-beta.1"&gt;Azure.ResourceManager.RedisEnterprise_1.4.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
+                                &lt;h2&gt;1.4.0-beta.1 (2026-06-28)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Regenerate v1beta proto snapshot for feature parity with v1&lt;/li&gt;
+&lt;li&gt;Upgraded API version to &lt;code&gt;2025-08-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.59.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Dialogflow.V2Beta1-1.0.0-beta31"&gt;Google.Cloud.Dialogflow.V2Beta1 version 1.0.0-beta31&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Purview_1.2.0-beta.4"&gt;Azure.ResourceManager.Purview_1.2.0-beta.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
+                                &lt;h2&gt;1.2.0-beta.4 (2026-06-28)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Speech activity event is configurable through InputAudioConfig.enable_voice_activity_events&lt;/li&gt;
-&lt;li&gt;StreamingRecognitionResult has two new MessageType: SPEECH_ACTIVITY_BEGIN and SPEECH_ACTIVITY_END&lt;/li&gt;
-&lt;li&gt;SearchKnowledgeDebugInfo contains ces_debug_info&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.59.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Dialogflow.V2-4.31.0"&gt;Google.Cloud.Dialogflow.V2 version 4.31.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Redis_1.6.0-beta.1"&gt;Azure.ResourceManager.Redis_1.6.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
+                                &lt;h2&gt;1.6.0-beta.1 (2026-06-28)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Speech activity event is configurable through InputAudioConfig.enable_voice_activity_events&lt;/li&gt;
-&lt;li&gt;StreamingRecognitionResult now has new MessageType: DTMF_DIGITS, PARTIAL_DTMF_DIGITS, SPEECH_ACTIVITY_BEGIN, SPEECH_ACTIVITY_END&lt;/li&gt;
-&lt;li&gt;Ces_debug_info is available in SearchKnowledgeDebugInfo&lt;/li&gt;
+&lt;li&gt;Upgraded api-version to 2025-08-01-preview.&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Datastore.V1-5.2.0"&gt;Google.Cloud.Datastore.V1 version 5.2.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Introduce RequestOptions message and request_options field on Datastore v1 request messages to enable request tagging&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;A comment for field &lt;code&gt;batch&lt;/code&gt; in message &lt;code&gt;.google.datastore.v1.RunQueryResponse&lt;/code&gt; is changed&lt;/li&gt;
-&lt;li&gt;A comment for field &lt;code&gt;distance_threshold&lt;/code&gt; in message &lt;code&gt;.google.datastore.v1.FindNearest&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.59.0.&lt;/li&gt;
+&lt;li&gt;Upgraded dependent Azure.ResourceManager to 1.14.0.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -350,23 +275,452 @@
             </content>
   </entry>
   <entry>
-    <title>StackExchange/StackExchange.Redis - Releases - 2026-06-29</title>
-    <id>https://github.com/StackExchange/StackExchange.Redis#2026-06-29</id>
-    <link href="https://github.com/StackExchange/StackExchange.Redis" />
-    <updated>2026-06-30T00:30:10Z</updated>
+    <title>dotnet/diagnostics - Releases - 2026-06-30</title>
+    <id>https://github.com/dotnet/diagnostics#2026-06-30</id>
+    <link href="https://github.com/dotnet/diagnostics" />
+    <updated>2026-07-01T00:31:14Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/3.0.11"&gt;3.0.11&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/diagnostics/releases/tag/v10.0.731102"&gt;Diagnostics Release - v10.0.731102&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+                                &lt;h3&gt;General announcements&lt;/h3&gt;
+&lt;p&gt;General fixes and improvements across SOS debugger commands, macOS dump analysis, and the diagnostic tools since v10.0.721401.&lt;/p&gt;
+&lt;h3&gt;dotnet-trace&lt;/h3&gt;
+&lt;p&gt;-&lt;code&gt;collect-linux&lt;/code&gt; contains several bug fixes impacting symbolication and completeness of data collected.&lt;/p&gt;
+&lt;h3&gt;dotnet-dump / SOS&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Support &lt;code&gt;ReadOnlySequence&amp;lt;byte&amp;gt;&lt;/code&gt; with &lt;code&gt;RedisValue&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/pairbit/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/pairbit"&gt;@pairbit&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4733602866" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3112" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3112/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3112"&gt;#3112&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;add package logo by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4752824354" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3115" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3115/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3115"&gt;#3115&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Optimize &lt;code&gt;RedisValue&lt;/code&gt; / reader logic by using canonical parser and new ShortBlob storage kind by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4751991015" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3114" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3114/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3114"&gt;#3114&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;!threadpool&lt;/code&gt; now properly enumerates assignable work item queues&lt;/li&gt;
+&lt;li&gt;Adds support for 11.0 preview 4 runtimes.&lt;/li&gt;
+&lt;li&gt;Much faster SOS-in-lldb memory reads for macOS.&lt;/li&gt;
+&lt;li&gt;Fixes in crash dump special buffer detection on Apple Silicon cores.&lt;/li&gt;
+&lt;li&gt;Modules that live in the macOS 11+ dyld shared cache are now identified and skipped during version-string extraction, avoiding unnecessary symbol-server downloads and timeouts.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/3.0.7...3.0.11"&gt;&lt;tt&gt;3.0.7...3.0.11&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;dotnet-gcdump&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Clearer &lt;code&gt;convert&lt;/code&gt; errors&lt;/strong&gt;: &lt;code&gt;dotnet-gcdump convert&lt;/code&gt; now emits actionable messages when the input is not a valid nettrace file, contains no GC heap events, or holds an incomplete heap dump, instead of failing opaquely. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4307590912" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5814" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5814/hovercard" href="https://github.com/dotnet/diagnostics/pull/5814"&gt;#5814&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other notable changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Source Link for SOS native libraries&lt;/strong&gt;: Added Source Link support for the SOS native libraries, enabling source-level debugging into the native SOS binaries. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3888194294" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5703" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5703/hovercard" href="https://github.com/dotnet/diagnostics/pull/5703"&gt;#5703&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;details&gt;
+&lt;summary&gt;Packages released to NuGet&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;dotnet-counters.10.0.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dotnet-dsrouter.10.0.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dotnet-dump.10.0.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dotnet-gcdump.10.0.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dotnet-sos.10.0.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dotnet-stack.10.0.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dotnet-symbol.10.0.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dotnet-trace.10.0.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.10.0.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.linux-arm.10.0.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.linux-arm64.10.0.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.linux-musl-arm.10.0.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.linux-musl-arm64.10.0.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.linux-musl-x64.10.0.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.linux-x64.10.0.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.osx-arm64.10.0.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.osx-x64.10.0.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.win-arm64.10.0.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.win-x64.10.0.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.win-x86.10.0.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.NETCore.Client.0.2.731102.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;details&gt;
+&lt;summary&gt;Global Tools - Single File Links&lt;/summary&gt;
+&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: All Windows assets are signed with a trusted Microsoft Authenticode Certificate. To verify&lt;br&gt;
+integrity for Linux and macOS assets check the CSV in the assets section of the release for their SHA512 hashes.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="center"&gt;Tool&lt;/th&gt;
+&lt;th align="center"&gt;Platform&lt;/th&gt;
+&lt;th align="center"&gt;Download Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-counters&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/87CBCC9CEDE30EDEDA27A1201349C6819FCD58A8F930D939BA59AAC7463B9BE5/dotnet-counters" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-dump&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/465B1E8691CD3D557D921BD4ABE3E54B25DE0DE339025DFEC9623EEE5FAE779A/dotnet-dump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-gcdump&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/ED1880E47584BFD309872141AC864F325844B08321CADCBEC631D2C58B0D3DED/dotnet-gcdump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-sos&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/D03173C6AD0F1965F8E6202809373AC669EE8721D417FA933FE98A7DECDC824E/dotnet-sos" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-stack&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/EDE8A9E2BF7911B14EB686E1C6033D1810295605EB8A02A0453B49E2679DC0E3/dotnet-stack" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-symbol&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/7759D4CC2B1F1087FB512D381A11D4F2677B4EDFA889EFECE5C78EFD0CA1EDF6/dotnet-symbol" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-trace&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/958D2EBEC702174CA94829D60D1562817301B6676CDCCADEA0041CDE068FF0F1/dotnet-trace" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-counters&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/58E390A7B28187B9FFFBE222D6264D1F2D085D56DCB49C5F1C75F73CCCF98BB0/dotnet-counters" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-dump&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/DED4BA55D112C1AC63984B2179A93E1CA9EC415E60E2255E8D4990036C0E3F81/dotnet-dump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-gcdump&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/A60C953B335054EAFB0D3AC82C2EE97D37474C696EB2B021518CE66BF659A484/dotnet-gcdump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-sos&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/21A91EE2AE7AC7DAB168DE1C6A22442F27776914564D2D5B7668AE7B49AEEC6D/dotnet-sos" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-stack&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/80C00246F31237DA0B80D0A32EFF6ED79861B072A9D757AAA050FDC2DA4DDABF/dotnet-stack" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-symbol&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/48598F8AFF66968ABF4DA54732DD33FEE0A0B1059FB648D429E2BC940267D1EE/dotnet-symbol" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-trace&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/4362A506A076616A1D9C05804B4DFC3646B5D57A9518204F1C5CC03238BB41D8/dotnet-trace" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-counters&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/51E78D990254F2EB4BF5844325DE24D41677E9F10A55A1325A88FCE8F6DC8794/dotnet-counters" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-dump&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/AD9CBFBF3A4772436839E6948AAB314CDD632C2C4D8C4FA878CD34237B0E85E9/dotnet-dump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-gcdump&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/176DF9B10B5749B1A72A3559EF6D0D2334BDE5E7F32D379252D86A1D2D85A97F/dotnet-gcdump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-sos&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/BBED288EE249211A23C983325E394CAC2D1B3C9579B7FF05E98165C55A429F5D/dotnet-sos" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-stack&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/65CF5C099C6BCF3007F50C140F99B734A3400D796877518312E606A74B0F58E5/dotnet-stack" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-symbol&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/220A68935931AD46C9C925A772943CCAC2282B0587002D5D80D61E3638F9B548/dotnet-symbol" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-trace&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/3788382A917609B407C28B15B9D99DD40852833531DC35E3428EC8ECF052EB61/dotnet-trace" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-counters&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/CCFF99D251F92203C41ACBD08112240BD9FF1DA4C354D2632CBA6D40F55617E5/dotnet-counters" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-dump&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/D3466A5CDA27346FE92A846BE5734643C32DD2C620B20293B9A5E4728CC8865E/dotnet-dump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-gcdump&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/4E3CBCF7D93393ADC27E67B966728BE2C44E2B39895C94A2840E0E7818F3B959/dotnet-gcdump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-sos&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/0A8FEC8A48F3468E462FB9598FE4E53284B779CFB636243E1ED439F23D82FB7D/dotnet-sos" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-stack&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/C319D9DDB067401027AD1BCB23BA0FAFFB46B4DB8DEB834A66469F52551DA2C8/dotnet-stack" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-symbol&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/2DF6D2CB6D08EF975361C73F4B870FCB82C2D7B20CF56BD186FDFDBA31E809D6/dotnet-symbol" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-trace&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/E644492543E2B6887AD6361DB544E610D34313297DB9A515A0313D18435B165D/dotnet-trace" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-counters&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/3BD09685234DBAADC0371BE0B424CCBF47878735CCF47525EB207992F82BEF99/dotnet-counters" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-dump&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/6F48DE50F1DC9BD8A6AAF5353177A8BCBA84770294496966E34BC41D93C55C9F/dotnet-dump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-gcdump&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/3CD563AF8EDECF3BEA323DD6D001B3B40547A82AC3A2833662C89051242F013D/dotnet-gcdump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-sos&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/7AE0F1F9825D4B63507CBFDEF4BCDBA62D10DE0794F7C9BA6F93CCD455358026/dotnet-sos" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-stack&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/A669D2802D2524AEA7CFC736ECA43C3C08FD75D4304F31894FD046FD72391A0B/dotnet-stack" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-symbol&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/14F892A651E810552D456B4A1EEAD0D5650DC9D92B2F113A6412CDF2DC1D4C2F/dotnet-symbol" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-trace&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/A88783DC0EE9DCD82E2E3492FBB9CAD28BA8F6D6B7F337AA970C3D1344CBC676/dotnet-trace" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-counters&lt;/td&gt;
+&lt;td align="center"&gt;linux-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/E71238BF2ACD521D7A16828A648B3A182100B5E4942BFE7332EFFE86AD459EE8/dotnet-counters" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-dump&lt;/td&gt;
+&lt;td align="center"&gt;linux-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/390423FFAC2E83313BCA324D67EE598D74E62E1592026CA511CDE24F1ADD5330/dotnet-dump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-gcdump&lt;/td&gt;
+&lt;td align="center"&gt;linux-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/DC08BD07E116A29B73555284D00C9E8C42AFBFA37A37E3795D6BC8F6FEEDE15B/dotnet-gcdump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-sos&lt;/td&gt;
+&lt;td align="center"&gt;linux-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/2BCF2326CF8EA7BA504CD6888A149F99DFC0D636BF2EF2830FC460ECE1EC4259/dotnet-sos" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-stack&lt;/td&gt;
+&lt;td align="center"&gt;linux-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/A38864F56554FBBDB44E4B9DFD332F216486D53D756877B679FCF2833C40032A/dotnet-stack" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-symbol&lt;/td&gt;
+&lt;td align="center"&gt;linux-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/498FB8E8AFF023235F40EC5B668D834FA10D3C4555FDAA84C9F09B614B50C665/dotnet-symbol" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-trace&lt;/td&gt;
+&lt;td align="center"&gt;linux-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/2243FF7AD095CE742D70C2276FF3317E2C9CC3E881FF171D0D89C2FBA8B76ABB/dotnet-trace" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-counters&lt;/td&gt;
+&lt;td align="center"&gt;win-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/FE5D73677EE8EAD4C6C453ADE0E0469BC104ECE4FE3C2776366ECB3DCBA23E0F/dotnet-counters.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-dump&lt;/td&gt;
+&lt;td align="center"&gt;win-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/45769EEEC4C93E523EAA291C358CD16CDC0039577EB865F1CB22135F25E335CC/dotnet-dump.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-gcdump&lt;/td&gt;
+&lt;td align="center"&gt;win-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/58250DE00438400C97B014D8166DC9051163954AF0A1367955F4DC9A76897F93/dotnet-gcdump.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-sos&lt;/td&gt;
+&lt;td align="center"&gt;win-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/53A6DD7E9CAE39ABC20848D2C8F8C5267A367F6DD1D09120FF8D0AC0F565051D/dotnet-sos.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-stack&lt;/td&gt;
+&lt;td align="center"&gt;win-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/2ECBA00786ED414C41FAA4AF2C43D126F6D8346A4C7C9AFD4B946C69501A2818/dotnet-stack.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-symbol&lt;/td&gt;
+&lt;td align="center"&gt;win-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/2274985FEFA2187C0CE79A73F174FA42179150000274554A127BAF261B72D384/dotnet-symbol.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-trace&lt;/td&gt;
+&lt;td align="center"&gt;win-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/463C4CAAB8614A66073D2321F24E312B42B5ABC53769BC744C4A61C1DA6AF71B/dotnet-trace.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-counters&lt;/td&gt;
+&lt;td align="center"&gt;win-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/0BB42DC227237CE2B5F4B1A5E76494F1CE9FA30E32B5FAE72ADA2F2C5D261DFE/dotnet-counters.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-dump&lt;/td&gt;
+&lt;td align="center"&gt;win-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/FF10121EF04826883B1CB991A8FC9E547B55E37AE07B7948DDE64881F34A31DC/dotnet-dump.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-gcdump&lt;/td&gt;
+&lt;td align="center"&gt;win-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/BB6C9D63477CAD33110C3C8800E1DE2D1475E84E52E8D7F6D4F8708B2A1CE51F/dotnet-gcdump.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-sos&lt;/td&gt;
+&lt;td align="center"&gt;win-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/959CD6F64BA8E0D7C11E6ED82AF3167A989B553D8A3CA67D7AA53BE73F1937DD/dotnet-sos.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-stack&lt;/td&gt;
+&lt;td align="center"&gt;win-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/89BA87BAA9BA908A911F0D34EC9FB1B238438935EB34580D01438263515D3F90/dotnet-stack.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-symbol&lt;/td&gt;
+&lt;td align="center"&gt;win-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/F0229DB6BC0B7537572DC1E46B398C01322E426592C13BDFFAEDA6DB2979A1EE/dotnet-symbol.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-trace&lt;/td&gt;
+&lt;td align="center"&gt;win-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/292221861D5B3052E819B715947662E179183E6570F757C79AAE43F31641FF47/dotnet-trace.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-counters&lt;/td&gt;
+&lt;td align="center"&gt;win-x86&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/76B450D73C1D1EF8769BF514A8DA9387AF77F58AF892C0D541D31CF8A949579F/dotnet-counters.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-dump&lt;/td&gt;
+&lt;td align="center"&gt;win-x86&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/ED254523DC4622A57559A35A63AAF244959B6A3A638DE5D770C93C3959F9F2B0/dotnet-dump.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-gcdump&lt;/td&gt;
+&lt;td align="center"&gt;win-x86&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/3939A966FB03F76D0652668164D08B2DAA3A9C929DB2461CB331FD90DC15E35A/dotnet-gcdump.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-sos&lt;/td&gt;
+&lt;td align="center"&gt;win-x86&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/CF519C33BF5988C2D19BCB0D4C501EB2A25F239EAFB100CBD407B87B1B502099/dotnet-sos.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-stack&lt;/td&gt;
+&lt;td align="center"&gt;win-x86&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/34C306C3FEAAFD977F285AF19D14FB8C3288827AEC3528ED499C402F108A7D46/dotnet-stack.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-symbol&lt;/td&gt;
+&lt;td align="center"&gt;win-x86&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/1BEAF72491F4166E88BC12EDD4C0473D86DE60F2363995B5888F52B13C9E4898/dotnet-symbol.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-trace&lt;/td&gt;
+&lt;td align="center"&gt;win-x86&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20260611.2/2824D0D2A8C68E66146B93D8950FD490F8B2BE58978F72BA24F06852597B9A13/dotnet-trace.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/details&gt;
+&lt;h2&gt;Changes:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/f09edf7ea9a17a86b236b91eb4c458d0469546b6/hovercard" href="https://github.com/dotnet/diagnostics/commit/f09edf7ea9a17a86b236b91eb4c458d0469546b6"&gt;&lt;tt&gt;f09edf7&lt;/tt&gt;&lt;/a&gt; Merge main into release (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4625442086" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5868" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5868/hovercard" href="https://github.com/dotnet/diagnostics/pull/5868"&gt;#5868&lt;/a&gt;) [ &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4547206799" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5862" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5862/hovercard" href="https://github.com/dotnet/diagnostics/pull/5862"&gt;#5862&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4307590912" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5814" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5814/hovercard" href="https://github.com/dotnet/diagnostics/pull/5814"&gt;#5814&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3888194294" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5703" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5703/hovercard" href="https://github.com/dotnet/diagnostics/pull/5703"&gt;#5703&lt;/a&gt; ]&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/dc969625d7f13409391ce5a2e2f9571d3c5a94a3/hovercard" href="https://github.com/dotnet/diagnostics/commit/dc969625d7f13409391ce5a2e2f9571d3c5a94a3"&gt;&lt;tt&gt;dc96962&lt;/tt&gt;&lt;/a&gt; Merge remote-tracking branch 'origin/main' into juhoyosa/release-merge&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/552743991336488559363f7e307d227172699c9d/hovercard" href="https://github.com/dotnet/diagnostics/commit/552743991336488559363f7e307d227172699c9d"&gt;&lt;tt&gt;5527439&lt;/tt&gt;&lt;/a&gt; Synchronize GC info decoder sources (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4547206799" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5862" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5862/hovercard" href="https://github.com/dotnet/diagnostics/pull/5862"&gt;#5862&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/d9243b88de42bee86fe59278dbd5ae55a8ceac58/hovercard" href="https://github.com/dotnet/diagnostics/commit/d9243b88de42bee86fe59278dbd5ae55a8ceac58"&gt;&lt;tt&gt;d9243b8&lt;/tt&gt;&lt;/a&gt; Enumerate assignable ThreadPool work queues (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4617790135" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5867" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5867/hovercard" href="https://github.com/dotnet/diagnostics/pull/5867"&gt;#5867&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/f224119385259cc2338cd668111b04766e0bf6d0/hovercard" href="https://github.com/dotnet/diagnostics/commit/f224119385259cc2338cd668111b04766e0bf6d0"&gt;&lt;tt&gt;f224119&lt;/tt&gt;&lt;/a&gt; Avoid duplicate definition of CONTEXT_UNWOUND_TO_CALL with SDK v10.0.28000.0 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4613967613" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5866" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5866/hovercard" href="https://github.com/dotnet/diagnostics/pull/5866"&gt;#5866&lt;/a&gt;) [ &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4296502402" data-permission-text="Title is private" data-url="https://github.com/dotnet/runtime/issues/127161" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/runtime/pull/127161/hovercard" href="https://github.com/dotnet/runtime/pull/127161"&gt;dotnet/runtime#127161&lt;/a&gt; ]&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/620755d039861ec5a80eb197130320284611cc2c/hovercard" href="https://github.com/dotnet/diagnostics/commit/620755d039861ec5a80eb197130320284611cc2c"&gt;&lt;tt&gt;620755d&lt;/tt&gt;&lt;/a&gt; [main] Source code updates from dotnet/dotnet (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4545112911" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5861" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5861/hovercard" href="https://github.com/dotnet/diagnostics/pull/5861"&gt;#5861&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/21fb10ff7389dfd42a36e735518960514e72b93f/hovercard" href="https://github.com/dotnet/diagnostics/commit/21fb10ff7389dfd42a36e735518960514e72b93f"&gt;&lt;tt&gt;21fb10f&lt;/tt&gt;&lt;/a&gt; Enable dotnet-arcade-skills Copilot plugin (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4555058298" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5863" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5863/hovercard" href="https://github.com/dotnet/diagnostics/pull/5863"&gt;#5863&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/7b2a66dd4c0a631492f3026e2d20bb0834717244/hovercard" href="https://github.com/dotnet/diagnostics/commit/7b2a66dd4c0a631492f3026e2d20bb0834717244"&gt;&lt;tt&gt;7b2a66d&lt;/tt&gt;&lt;/a&gt; Produce better error messages in gcdump convert command (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4307590912" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5814" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5814/hovercard" href="https://github.com/dotnet/diagnostics/pull/5814"&gt;#5814&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/aee7d8223fb5cd15bc9a595c27aaa3a7e08449b2/hovercard" href="https://github.com/dotnet/diagnostics/commit/aee7d8223fb5cd15bc9a595c27aaa3a7e08449b2"&gt;&lt;tt&gt;aee7d82&lt;/tt&gt;&lt;/a&gt; [main] Source code updates from dotnet/dotnet (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4528897012" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5859" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5859/hovercard" href="https://github.com/dotnet/diagnostics/pull/5859"&gt;#5859&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/f28745ad11454877d95706f4c4edaba0f36d52d5/hovercard" href="https://github.com/dotnet/diagnostics/commit/f28745ad11454877d95706f4c4edaba0f36d52d5"&gt;&lt;tt&gt;f28745a&lt;/tt&gt;&lt;/a&gt; Only label SOS tests .interpreter when they actually use the interpreter (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4525301184" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5857" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5857/hovercard" href="https://github.com/dotnet/diagnostics/pull/5857"&gt;#5857&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;details&gt;&lt;summary&gt;&lt;b&gt;See More&lt;/b&gt;&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/b1b001091f00bd9090db49e9edc98fef685cb1e2/hovercard" href="https://github.com/dotnet/diagnostics/commit/b1b001091f00bd9090db49e9edc98fef685cb1e2"&gt;&lt;tt&gt;b1b0010&lt;/tt&gt;&lt;/a&gt; Cleanup unused &lt;code&gt;used&lt;/code&gt; attribute (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4523671737" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5856" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5856/hovercard" href="https://github.com/dotnet/diagnostics/pull/5856"&gt;#5856&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/0c0dba7d6ba7e003ffb06701a2e716e0f9ba1ebb/hovercard" href="https://github.com/dotnet/diagnostics/commit/0c0dba7d6ba7e003ffb06701a2e716e0f9ba1ebb"&gt;&lt;tt&gt;0c0dba7&lt;/tt&gt;&lt;/a&gt; [main] Update dependencies from dotnet/arcade (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4506488716" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5854" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5854/hovercard" href="https://github.com/dotnet/diagnostics/pull/5854"&gt;#5854&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/edf66fc88f26651024498cb7443eded5fa805439/hovercard" href="https://github.com/dotnet/diagnostics/commit/edf66fc88f26651024498cb7443eded5fa805439"&gt;&lt;tt&gt;edf66fc&lt;/tt&gt;&lt;/a&gt; Update Microsoft.OneCollect.RecordTrace to 0.1.34271 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4506992334" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5855" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5855/hovercard" href="https://github.com/dotnet/diagnostics/pull/5855"&gt;#5855&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/657cedd9cef7561402c0977e17bb2376023fba47/hovercard" href="https://github.com/dotnet/diagnostics/commit/657cedd9cef7561402c0977e17bb2376023fba47"&gt;&lt;tt&gt;657cedd&lt;/tt&gt;&lt;/a&gt; [main] Source code updates from dotnet/dotnet (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4473880336" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5848" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5848/hovercard" href="https://github.com/dotnet/diagnostics/pull/5848"&gt;#5848&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/6bae6023807985450ece535ee0d42a36be8007a9/hovercard" href="https://github.com/dotnet/diagnostics/commit/6bae6023807985450ece535ee0d42a36be8007a9"&gt;&lt;tt&gt;6bae602&lt;/tt&gt;&lt;/a&gt; [main] Update dependencies from microsoft/clrmd (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4499194773" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5852" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5852/hovercard" href="https://github.com/dotnet/diagnostics/pull/5852"&gt;#5852&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/e39ebc86d07f75bc032c7c32868cf2cbabaf17e6/hovercard" href="https://github.com/dotnet/diagnostics/commit/e39ebc86d07f75bc032c7c32868cf2cbabaf17e6"&gt;&lt;tt&gt;e39ebc8&lt;/tt&gt;&lt;/a&gt; [main] Update dependencies from microsoft/clrmd (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4442504488" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5844" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5844/hovercard" href="https://github.com/dotnet/diagnostics/pull/5844"&gt;#5844&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/a819d6c1e518f50420d41ea651be8640aed66a1a/hovercard" href="https://github.com/dotnet/diagnostics/commit/a819d6c1e518f50420d41ea651be8640aed66a1a"&gt;&lt;tt&gt;a819d6c&lt;/tt&gt;&lt;/a&gt; [main] Update dependencies from dotnet/arcade (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4482516553" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5849" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5849/hovercard" href="https://github.com/dotnet/diagnostics/pull/5849"&gt;#5849&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/8e5b9c338fe218d8f5638becb2a3887eae372639/hovercard" href="https://github.com/dotnet/diagnostics/commit/8e5b9c338fe218d8f5638becb2a3887eae372639"&gt;&lt;tt&gt;8e5b9c3&lt;/tt&gt;&lt;/a&gt; [main] Source code updates from dotnet/dotnet (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4450668328" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5847" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5847/hovercard" href="https://github.com/dotnet/diagnostics/pull/5847"&gt;#5847&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/d3b8f49a4132a0afdcae3a84c30bcad399ebb89f/hovercard" href="https://github.com/dotnet/diagnostics/commit/d3b8f49a4132a0afdcae3a84c30bcad399ebb89f"&gt;&lt;tt&gt;d3b8f49&lt;/tt&gt;&lt;/a&gt; Update Microsoft.OneCollect.RecordTrace to 0.1.34191 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4447817696" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5846" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5846/hovercard" href="https://github.com/dotnet/diagnostics/pull/5846"&gt;#5846&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/b9b2283340aebb8801d569333b6ef6aa892a0bb9/hovercard" href="https://github.com/dotnet/diagnostics/commit/b9b2283340aebb8801d569333b6ef6aa892a0bb9"&gt;&lt;tt&gt;b9b2283&lt;/tt&gt;&lt;/a&gt; Add sourcelink support for SOS native libraries (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3888194294" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5703" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5703/hovercard" href="https://github.com/dotnet/diagnostics/pull/5703"&gt;#5703&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/2584db8cb7f4d8153089db97f249a3e900a0b3bd/hovercard" href="https://github.com/dotnet/diagnostics/commit/2584db8cb7f4d8153089db97f249a3e900a0b3bd"&gt;&lt;tt&gt;2584db8&lt;/tt&gt;&lt;/a&gt; Pin riscv64 to march=rv64gc baseline (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4437607571" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5842" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5842/hovercard" href="https://github.com/dotnet/diagnostics/pull/5842"&gt;#5842&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/702100699f622cf49e6fd0611a8423b0cc2cca53/hovercard" href="https://github.com/dotnet/diagnostics/commit/702100699f622cf49e6fd0611a8423b0cc2cca53"&gt;&lt;tt&gt;7021006&lt;/tt&gt;&lt;/a&gt; [main] Source code updates from dotnet/dotnet (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4442616130" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5845" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5845/hovercard" href="https://github.com/dotnet/diagnostics/pull/5845"&gt;#5845&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/753fc3c3633c42785805d9d3bfc816ba5138cdfc/hovercard" href="https://github.com/dotnet/diagnostics/commit/753fc3c3633c42785805d9d3bfc816ba5138cdfc"&gt;&lt;tt&gt;753fc3c&lt;/tt&gt;&lt;/a&gt; Upgrade one-collect libraries to 0.1.34131 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4433691601" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5841" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5841/hovercard" href="https://github.com/dotnet/diagnostics/pull/5841"&gt;#5841&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/bdf7ed0ec9d4ff925f87826eed4bba1521833aae/hovercard" href="https://github.com/dotnet/diagnostics/commit/bdf7ed0ec9d4ff925f87826eed4bba1521833aae"&gt;&lt;tt&gt;bdf7ed0&lt;/tt&gt;&lt;/a&gt; Separate debuggee/tracee build from product build (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4093662587" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5767" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5767/hovercard" href="https://github.com/dotnet/diagnostics/pull/5767"&gt;#5767&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/11411fac577e014f6cb65545a4a3a678e4b04d08/hovercard" href="https://github.com/dotnet/diagnostics/commit/11411fac577e014f6cb65545a4a3a678e4b04d08"&gt;&lt;tt&gt;11411fa&lt;/tt&gt;&lt;/a&gt; [main] Update dependencies from microsoft/clrmd (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4395638268" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5833" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5833/hovercard" href="https://github.com/dotnet/diagnostics/pull/5833"&gt;#5833&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/9c4050656740498f9f585d98d3839d10af222394/hovercard" href="https://github.com/dotnet/diagnostics/commit/9c4050656740498f9f585d98d3839d10af222394"&gt;&lt;tt&gt;9c40506&lt;/tt&gt;&lt;/a&gt; macOS SOS-in-lldb: speed up ReadVirtual and fix arm64 SpecialDiagInfo (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4369413745" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5823" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5823/hovercard" href="https://github.com/dotnet/diagnostics/pull/5823"&gt;#5823&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/db04688c99efadc619ef6765025b9b26d69ac580/hovercard" href="https://github.com/dotnet/diagnostics/commit/db04688c99efadc619ef6765025b9b26d69ac580"&gt;&lt;tt&gt;db04688&lt;/tt&gt;&lt;/a&gt; Fix native to IL line number mappings in SOS test scripts (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3990934315" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5740" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5740/hovercard" href="https://github.com/dotnet/diagnostics/pull/5740"&gt;#5740&lt;/a&gt;) [ &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="558418912" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/794" data-hovercard-type="issue" data-hovercard-url="/dotnet/diagnostics/issues/794/hovercard" href="https://github.com/dotnet/diagnostics/issues/794"&gt;#794&lt;/a&gt; ]&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/47b4530f0247aad51c9f1164f05bc785bb929ab4/hovercard" href="https://github.com/dotnet/diagnostics/commit/47b4530f0247aad51c9f1164f05bc785bb929ab4"&gt;&lt;tt&gt;47b4530&lt;/tt&gt;&lt;/a&gt; [main] Update dependencies from dotnet/arcade (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4388229025" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5830" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5830/hovercard" href="https://github.com/dotnet/diagnostics/pull/5830"&gt;#5830&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/771c124e85be587931260570d6a88942339464e8/hovercard" href="https://github.com/dotnet/diagnostics/commit/771c124e85be587931260570d6a88942339464e8"&gt;&lt;tt&gt;771c124&lt;/tt&gt;&lt;/a&gt; Disable Fedora test leg (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4408319736" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5836" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5836/hovercard" href="https://github.com/dotnet/diagnostics/pull/5836"&gt;#5836&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/ddb7e28dc130e361a579c0260d5a389464a3442c/hovercard" href="https://github.com/dotnet/diagnostics/commit/ddb7e28dc130e361a579c0260d5a389464a3442c"&gt;&lt;tt&gt;ddb7e28&lt;/tt&gt;&lt;/a&gt; Elide version string extraction from dyld cache (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4369847434" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5824" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5824/hovercard" href="https://github.com/dotnet/diagnostics/pull/5824"&gt;#5824&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/0ae47e0fd85230e07f366b39a1e2d806511d52b7/hovercard" href="https://github.com/dotnet/diagnostics/commit/0ae47e0fd85230e07f366b39a1e2d806511d52b7"&gt;&lt;tt&gt;0ae47e0&lt;/tt&gt;&lt;/a&gt; Add SOS interpreter-frame test infrastructure (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4387353751" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5829" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5829/hovercard" href="https://github.com/dotnet/diagnostics/pull/5829"&gt;#5829&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/809367739429664dcf5417407e4a954cabc7e046/hovercard" href="https://github.com/dotnet/diagnostics/commit/809367739429664dcf5417407e4a954cabc7e046"&gt;&lt;tt&gt;8093677&lt;/tt&gt;&lt;/a&gt; Replace dn-bot-all-drop-rw-code-rw-release-all PAT with WIF token (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4393548376" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5832" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5832/hovercard" href="https://github.com/dotnet/diagnostics/pull/5832"&gt;#5832&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/96222e82b3fabb65b127238df148a87808e00089/hovercard" href="https://github.com/dotnet/diagnostics/commit/96222e82b3fabb65b127238df148a87808e00089"&gt;&lt;tt&gt;96222e8&lt;/tt&gt;&lt;/a&gt; Restore correct Version.Details.xml Source Sha (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4349677854" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5818" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5818/hovercard" href="https://github.com/dotnet/diagnostics/pull/5818"&gt;#5818&lt;/a&gt;) [ &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4195996625" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5789" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5789/hovercard" href="https://github.com/dotnet/diagnostics/pull/5789"&gt;#5789&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3487743267" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5589" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5589/hovercard" href="https://github.com/dotnet/diagnostics/pull/5589"&gt;#5589&lt;/a&gt; ]&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/32043f8356fa3d7a34614fa7ffa1354986052d43/hovercard" href="https://github.com/dotnet/diagnostics/commit/32043f8356fa3d7a34614fa7ffa1354986052d43"&gt;&lt;tt&gt;32043f8&lt;/tt&gt;&lt;/a&gt; [main] Update dependencies from microsoft/clrmd (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4380957976" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5826" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5826/hovercard" href="https://github.com/dotnet/diagnostics/pull/5826"&gt;#5826&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/c24ca60115bf13926a758697c641b074e72fd1d1/hovercard" href="https://github.com/dotnet/diagnostics/commit/c24ca60115bf13926a758697c641b074e72fd1d1"&gt;&lt;tt&gt;c24ca60&lt;/tt&gt;&lt;/a&gt; [main] Update dependencies from microsoft/clrmd (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4362383746" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5820" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5820/hovercard" href="https://github.com/dotnet/diagnostics/pull/5820"&gt;#5820&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/7bc1e192905187a6977ed673773f6e57be0e6336/hovercard" href="https://github.com/dotnet/diagnostics/commit/7bc1e192905187a6977ed673773f6e57be0e6336"&gt;&lt;tt&gt;7bc1e19&lt;/tt&gt;&lt;/a&gt; Changes to improve SOS test perf (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4364048532" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5821" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5821/hovercard" href="https://github.com/dotnet/diagnostics/pull/5821"&gt;#5821&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/6a7a3dbef2ab57f0ddcd2fb2429c9f960e659f75/hovercard" href="https://github.com/dotnet/diagnostics/commit/6a7a3dbef2ab57f0ddcd2fb2429c9f960e659f75"&gt;&lt;tt&gt;6a7a3db&lt;/tt&gt;&lt;/a&gt; [main] Update dependencies from dotnet/arcade (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4299809032" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5810" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5810/hovercard" href="https://github.com/dotnet/diagnostics/pull/5810"&gt;#5810&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/f0759bc38b3dde29e2cc117d4d01488cdb39b45c/hovercard" href="https://github.com/dotnet/diagnostics/commit/f0759bc38b3dde29e2cc117d4d01488cdb39b45c"&gt;&lt;tt&gt;f0759bc&lt;/tt&gt;&lt;/a&gt; [main] Update dependencies from microsoft/clrmd (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4347371517" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5817" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5817/hovercard" href="https://github.com/dotnet/diagnostics/pull/5817"&gt;#5817&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/32fdb4e0a852d9bbabe70dcf55d4da40eb2df5dc/hovercard" href="https://github.com/dotnet/diagnostics/commit/32fdb4e0a852d9bbabe70dcf55d4da40eb2df5dc"&gt;&lt;tt&gt;32fdb4e&lt;/tt&gt;&lt;/a&gt; Add simple release note creation skill (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4307516214" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5813" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5813/hovercard" href="https://github.com/dotnet/diagnostics/pull/5813"&gt;#5813&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/96bb196e4b2df50e4398e3d5b3b97f97a21728e1/hovercard" href="https://github.com/dotnet/diagnostics/commit/96bb196e4b2df50e4398e3d5b3b97f97a21728e1"&gt;&lt;tt&gt;96bb196&lt;/tt&gt;&lt;/a&gt; Remove gcdesc copy from source (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4338539314" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5815" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5815/hovercard" href="https://github.com/dotnet/diagnostics/pull/5815"&gt;#5815&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/598140e1d6e694d88daebd194652b6faeda643f4/hovercard" href="https://github.com/dotnet/diagnostics/commit/598140e1d6e694d88daebd194652b6faeda643f4"&gt;&lt;tt&gt;598140e&lt;/tt&gt;&lt;/a&gt; [main] Update dependencies from microsoft/clrmd (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4286328660" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5809" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5809/hovercard" href="https://github.com/dotnet/diagnostics/pull/5809"&gt;#5809&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/adc8458fac6ae16d148782f23cc1384d92f6c5c3/hovercard" href="https://github.com/dotnet/diagnostics/commit/adc8458fac6ae16d148782f23cc1384d92f6c5c3"&gt;&lt;tt&gt;adc8458&lt;/tt&gt;&lt;/a&gt; [main] Update dependencies from microsoft/clrmd (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4279649629" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5807" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5807/hovercard" href="https://github.com/dotnet/diagnostics/pull/5807"&gt;#5807&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/aeb2371a4f7646c7e6537398fc25fa9523c7fa0a/hovercard" href="https://github.com/dotnet/diagnostics/commit/aeb2371a4f7646c7e6537398fc25fa9523c7fa0a"&gt;&lt;tt&gt;aeb2371&lt;/tt&gt;&lt;/a&gt; Change path lookup algorithm in PAL (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4260911902" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5803" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5803/hovercard" href="https://github.com/dotnet/diagnostics/pull/5803"&gt;#5803&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/e82b80e23de128b57501a83a3b675ae6a7b986e2/hovercard" href="https://github.com/dotnet/diagnostics/commit/e82b80e23de128b57501a83a3b675ae6a7b986e2"&gt;&lt;tt&gt;e82b80e&lt;/tt&gt;&lt;/a&gt; Add TestCDACNoFallback flag for cDAC-only testing (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4277941952" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5806" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5806/hovercard" href="https://github.com/dotnet/diagnostics/pull/5806"&gt;#5806&lt;/a&gt;) [ &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4240382176" data-permission-text="Title is private" data-url="https://github.com/dotnet/runtime/issues/126752" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/runtime/pull/126752/hovercard" href="https://github.com/dotnet/runtime/pull/126752"&gt;dotnet/runtime#126752&lt;/a&gt; ]&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/9695c1700e780b26b58a3829d39f04c22d171453/hovercard" href="https://github.com/dotnet/diagnostics/commit/9695c1700e780b26b58a3829d39f04c22d171453"&gt;&lt;tt&gt;9695c17&lt;/tt&gt;&lt;/a&gt; Look up TEB from OS thread ID instead of DacpThreadData.teb (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4264301195" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5804" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5804/hovercard" href="https://github.com/dotnet/diagnostics/pull/5804"&gt;#5804&lt;/a&gt;) [ &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4264270465" data-permission-text="Title is private" data-url="https://github.com/dotnet/runtime/issues/126902" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/runtime/pull/126902/hovercard" href="https://github.com/dotnet/runtime/pull/126902"&gt;dotnet/runtime#126902&lt;/a&gt; ]&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/1ee245920af6b21e6150808a92038c40e9a74bb6/hovercard" href="https://github.com/dotnet/diagnostics/commit/1ee245920af6b21e6150808a92038c40e9a74bb6"&gt;&lt;tt&gt;1ee2459&lt;/tt&gt;&lt;/a&gt; [main] Update dependencies from microsoft/clrmd (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4272745519" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5805" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5805/hovercard" href="https://github.com/dotnet/diagnostics/pull/5805"&gt;#5805&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/45da16bba3a181a9df2518b6623e9e0c20c5bbbf/hovercard" href="https://github.com/dotnet/diagnostics/commit/45da16bba3a181a9df2518b6623e9e0c20c5bbbf"&gt;&lt;tt&gt;45da16b&lt;/tt&gt;&lt;/a&gt; Change image for fedora and remove debian leg (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4258365575" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5800" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5800/hovercard" href="https://github.com/dotnet/diagnostics/pull/5800"&gt;#5800&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/5ee6390b3d48fab183fb61c8966e1bbaee7c3c84/hovercard" href="https://github.com/dotnet/diagnostics/commit/5ee6390b3d48fab183fb61c8966e1bbaee7c3c84"&gt;&lt;tt&gt;5ee6390&lt;/tt&gt;&lt;/a&gt; Bump clrmd to 4.0.0-beta.26210.1 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4195996625" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5789" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5789/hovercard" href="https://github.com/dotnet/diagnostics/pull/5789"&gt;#5789&lt;/a&gt;) [ &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1920295944" data-permission-text="Title is private" data-url="https://github.com/microsoft/clrmd/issues/1191" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/clrmd/pull/1191/hovercard" href="https://github.com/microsoft/clrmd/pull/1191"&gt;microsoft/clrmd#1191&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4029770276" data-permission-text="Title is private" data-url="https://github.com/dotnet/runtime/issues/125231" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/runtime/pull/125231/hovercard" href="https://github.com/dotnet/runtime/pull/125231"&gt;dotnet/runtime#125231&lt;/a&gt; ]&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/e461e8ec200c05946c397e66dc9d127038cdc935/hovercard" href="https://github.com/dotnet/diagnostics/commit/e461e8ec200c05946c397e66dc9d127038cdc935"&gt;&lt;tt&gt;e461e8e&lt;/tt&gt;&lt;/a&gt; [main] Update dependencies from dotnet/arcade (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4228878595" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5796" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5796/hovercard" href="https://github.com/dotnet/diagnostics/pull/5796"&gt;#5796&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/70560c5016c4c0a4176c26af4b01accdd499854c/hovercard" href="https://github.com/dotnet/diagnostics/commit/70560c5016c4c0a4176c26af4b01accdd499854c"&gt;&lt;tt&gt;70560c5&lt;/tt&gt;&lt;/a&gt; Remove duplicate @ prefix from issueAuthor in GitOps (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4213350675" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5792" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5792/hovercard" href="https://github.com/dotnet/diagnostics/pull/5792"&gt;#5792&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/7512518d14ff312c0f2e70b3190bfa32a775fc4c/hovercard" href="https://github.com/dotnet/diagnostics/commit/7512518d14ff312c0f2e70b3190bfa32a775fc4c"&gt;&lt;tt&gt;7512518&lt;/tt&gt;&lt;/a&gt; Update MicrosoftOneCollectRecordTraceVersions to 0.1.33841 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4228114514" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5794" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5794/hovercard" href="https://github.com/dotnet/diagnostics/pull/5794"&gt;#5794&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/a26daf46e8f9d8417edd285b846cb0b7406fb791/hovercard" href="https://github.com/dotnet/diagnostics/commit/a26daf46e8f9d8417edd285b846cb0b7406fb791"&gt;&lt;tt&gt;a26daf4&lt;/tt&gt;&lt;/a&gt; [main] Update dependencies from dotnet/arcade (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4190937602" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5783" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5783/hovercard" href="https://github.com/dotnet/diagnostics/pull/5783"&gt;#5783&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This list of changes was &lt;a href="https://dev.azure.com/dnceng/internal/_build/results?buildId=3004491&amp;amp;view=logs" rel="nofollow"&gt;auto generated&lt;/a&gt;.&lt;/p&gt;&lt;/details&gt;&lt;p&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
