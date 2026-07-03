@@ -1,75 +1,60 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-07-02T00:30:41Z</updated>
+  <updated>2026-07-03T00:25:58Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-07-01</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-07-01</id>
+    <title>aws/aws-sdk-net - Releases - 2026-07-02</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-07-02</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-07-02T00:30:41Z</updated>
+    <updated>2026-07-03T00:25:58Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.279.0"&gt;4.0.279.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.280.0"&gt;4.0.280.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.279.0 (2026-07-01 18:16 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.280.0 (2026-07-02 20:08 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Artifact (4.0.101.0)
+&lt;li&gt;CognitoIdentityProvider (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for Assurance Assistant APIs for managing compliance inquiries along with tagging features.&lt;/li&gt;
+&lt;li&gt;Add support for provisioned limit management, enabling customers to view and update their provisioned API rate limits for Amazon Cognito User Pools programmatically through the new GetProvisionedLimit and UpdateProvisionedLimit APIs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AWSMarketplaceMetering (4.0.100.1)
+&lt;li&gt;ConfigService (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;The usage reporting window for the BatchMeterUsage API has been extended from 6 hours to 24 hours. Sellers can now submit usage records for up to 24 hours after a metered event occurs.&lt;/li&gt;
+&lt;li&gt;AWS Config now supports tag-on-create for organization-managed Config rules and conformance packs through the PutOrganizationConfigRule and PutOrganizationConformancePack APIs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Cloud9 (4.0.100.1)
+&lt;li&gt;CustomerProfiles (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Since Amazon Linux 2 (AL2) will reach its end-of-life (EOL) and stop receiving security updates on June 30, 2026, Cloud9 will remove AL2 from AMI options in public API create-environment-ec2.&lt;/li&gt;
+&lt;li&gt;Amazon Connect Customer Profiles adds support for diversityConfig to recommenderConfig which can be used for diversifying the recommendations. This release also includes model versioning support which helps customer to rollback trained models.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.102.0)
+&lt;li&gt;ElementalInference (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Adds a new Amazon Connect Service API, SendOutboundWebNotification, that delivers web notifications to end-customer chat widget sessions. Callable only by the Amazon Connect Outbound Campaigns service principal.&lt;/li&gt;
+&lt;li&gt;Adding new BDD representation of endpoint ruleset&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.102.0)
+&lt;li&gt;MediaTailor (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Use declarative policies to enable VPC Encryption Controls across your organization or select accounts. Added AMD SEV-SNP support for EC2 Dedicated Hosts. Managed resource visibility settings control whether AWS-provisioned resources in your account appear in console views and API list operations.&lt;/li&gt;
+&lt;li&gt;Added dual-stack (IPv4 and IPv6) endpoint fields to SSAI and Channel Assembly API responses.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GameLiftStreams (4.0.101.0)
+&lt;li&gt;Outposts (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Added CreateStreamSessionAdminShell API operation to enable customers to establish secure terminal connections to the live runtime environment of streaming sessions for troubleshooting purposes.&lt;/li&gt;
+&lt;li&gt;Tighten Outpost site ContactPhoneNumber regex to perform phone number validation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MediaConvert (4.0.101.0)
+&lt;li&gt;Extensions.NETCore.Setup (4.0.100.2)
 &lt;ul&gt;
-&lt;li&gt;Adds support for integer-second duration normalization and the option to disable explicit weighted prediction.&lt;/li&gt;
+&lt;li&gt;Add JsonMaxDepth to DefaultClientConfig to mirror ClientConfig in Core.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;OpenSearchService (4.0.101.0)
+&lt;li&gt;Core 4.0.100.2
 &lt;ul&gt;
-&lt;li&gt;To create a Mustang domain via the AWS CLI, you must pass EngineMode OPTIMIZED (along with UseCase OBSERVABILITY or MIXED)  without it, the domain defaults to a regular (GENERAL) domain. Also this release includes Insights Feedback API which user can use to provide feedback for Insight API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;QuickSight (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Adding support for FileSource PhysicalTables.  This adds support for datasets with file sources.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SSOOIDC (4.0.100.1)
-&lt;ul&gt;
-&lt;li&gt;Add SSO_LOGIN_VANITY_URL feature ID on SSO-OIDC requests when login resolves a vanity URL.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.0.100.1
-&lt;ul&gt;
-&lt;li&gt;Add vanity URL resolution support for SSO login flow.&lt;/li&gt;
-&lt;li&gt;Optimize Fn.Interpolate&lt;/li&gt;
+&lt;li&gt;Add JsonMaxDepth option to ClientConfig for reading deeply nested JSON documents.&lt;/li&gt;
+&lt;li&gt;AWSSDKUtils.EncodeTraceIdHeaderValue now uses rented buffers and O(1) lookup&lt;/li&gt;
 &lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;

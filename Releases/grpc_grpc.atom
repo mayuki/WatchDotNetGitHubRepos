@@ -1,6 +1,55 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2026-07-02T00:30:54Z</updated>
+  <updated>2026-07-03T00:26:06Z</updated>
   <id>https://github.com/grpc/grpc</id>
+  <entry>
+    <title>grpc/grpc - Releases - 2026-07-02</title>
+    <id>https://github.com/grpc/grpc#2026-07-02</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2026-07-03T00:26:06Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.82.0"&gt;Release v1.82.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release gRPC Core 1.82.0 (glacier).&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes.&lt;br&gt;
+This is release 1.82.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;glacier&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[call creds] Add support for looking up and attaching regional access boundary policy metadata. (&lt;a href="https://github.com/grpc/grpc/pull/41594" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41594/hovercard"&gt;#41594&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Unregister CFStream callbacks during endpoint shutdown. (&lt;a href="https://github.com/grpc/grpc/pull/42211" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42211/hovercard"&gt;#42211&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix fd 0 incorrectly treated as invalid across POSIX socket code. (&lt;a href="https://github.com/grpc/grpc/pull/41764" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41764/hovercard"&gt;#41764&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[xDS] enable new ORCA-to-LRS propagation behavior (gRFC A85). (&lt;a href="https://github.com/grpc/grpc/pull/42411" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42411/hovercard"&gt;#42411&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[RetryFilter::LegacyCallData]: avoid tripping abseil nullopt assertion. (&lt;a href="https://github.com/grpc/grpc/pull/42405" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42405/hovercard"&gt;#42405&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[xds] Implement A114: WRR support for custom backend metrics. (&lt;a href="https://github.com/grpc/grpc/pull/41750" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41750/hovercard"&gt;#41750&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;PHP&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Backport][v1.82.x][PHP] Add PIE support for PHP extention. (&lt;a href="https://github.com/grpc/grpc/pull/42873" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42873/hovercard"&gt;#42873&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Python] [Pyright] Part 2 - Pyright for src/python/grpcio/grpc/aio/_call.py. (&lt;a href="https://github.com/grpc/grpc/pull/42272" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42272/hovercard"&gt;#42272&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python][aio] Fix issue &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4442737130" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/42393" data-hovercard-type="issue" data-hovercard-url="/grpc/grpc/issues/42393/hovercard" href="https://github.com/grpc/grpc/issues/42393"&gt;#42393&lt;/a&gt;: 100% CPU when Python run with -O flag. (&lt;a href="https://github.com/grpc/grpc/pull/42470" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42470/hovercard"&gt;#42470&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] [Typeguard] Part 6 - Add Typeguard SYNC Stack in tests. (&lt;a href="https://github.com/grpc/grpc/pull/40353" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/40353/hovercard"&gt;#40353&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] [Pyright] Part 3 - Pyright for src/python/grpcio/grpc/aio/_metadata.py. (&lt;a href="https://github.com/grpc/grpc/pull/42273" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42273/hovercard"&gt;#42273&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Cancel calls without closing channels in fork child. (&lt;a href="https://github.com/grpc/grpc/pull/41784" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41784/hovercard"&gt;#41784&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ruby&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Ruby] Implemented Pure Ruby Call Credentials. (&lt;a href="https://github.com/grpc/grpc/pull/41946" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41946/hovercard"&gt;#41946&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Ruby] Fix Ruby interceptors not running in FIFO order. (&lt;a href="https://github.com/grpc/grpc/pull/42346" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42346/hovercard"&gt;#42346&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

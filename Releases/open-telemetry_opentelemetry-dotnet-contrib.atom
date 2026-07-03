@@ -1,42 +1,35 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>open-telemetry/opentelemetry-dotnet-contrib - Releases</title>
   <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-  <updated>2026-07-02T00:31:01Z</updated>
+  <updated>2026-07-03T00:26:10Z</updated>
   <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib</id>
   <entry>
-    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-07-01</title>
-    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-07-01</id>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-07-02</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-07-02</id>
     <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-    <updated>2026-07-02T00:31:01Z</updated>
+    <updated>2026-07-03T00:26:10Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/OpAmp.Client-0.5.0-alpha.1"&gt;OpAmp.Client-0.5.0-alpha.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Kusto-0.1.0-alpha.1"&gt;Instrumentation.Kusto-0.1.0-alpha.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.OpAmp.Client/0.5.0-alpha.1" rel="nofollow"&gt;OpenTelemetry.OpAmp.Client v0.5.0-alpha.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Kusto/0.1.0-alpha.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Kusto v0.1.0-alpha.1&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Add support for reporting remote configuration status.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4509" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4509/hovercard"&gt;#4509&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Initial implementation.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/3591" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/3591/hovercard"&gt;#3591&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Expose public &lt;code&gt;ServerCapabilitiesMessage&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4485" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4485/hovercard"&gt;#4485&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Serialize WebSocket writes so an outbound message no longer races the&lt;br&gt;
-receiver's oversized-message close to avoid faulting the receive loop.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4532" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4532/hovercard"&gt;#4532&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Expose public &lt;code&gt;FlagsMessage&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4478" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4478/hovercard"&gt;#4478&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Recognized the &lt;code&gt;EXC_CTOR.&amp;lt;ExceptionType&amp;gt;&lt;/code&gt; exception source id introduced in&lt;br&gt;
+&lt;code&gt;Microsoft.Azure.Kusto.Data&lt;/code&gt; 14.1.2 so &lt;code&gt;error.type&lt;/code&gt; continues to be recorded&lt;br&gt;
+for failed queries.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4630" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4630/hovercard"&gt;#4630&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/OpAmp.Client-0.5.0-alpha.1/src/OpenTelemetry.OpAmp.Client/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Kusto-0.1.0-alpha.1/src/OpenTelemetry.Instrumentation.Kusto/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
