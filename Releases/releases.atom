@@ -1,39 +1,80 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-07-07T00:27:54Z</updated>
+  <updated>2026-07-08T00:22:40Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-07-06</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-07-06</id>
+    <title>aws/aws-sdk-net - Releases - 2026-07-07</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-07-07</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-07-07T00:27:35Z</updated>
+    <updated>2026-07-08T00:22:25Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.281.0"&gt;4.0.281.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.282.0"&gt;4.0.282.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.281.0 (2026-07-06 18:18 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.282.0 (2026-07-07 18:19 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Billing (4.0.101.0)
+&lt;li&gt;AWSMarketplaceMetering (4.0.100.3)
 &lt;ul&gt;
-&lt;li&gt;Adds support for managing AWS account credits and billing preferences, including retrieving credit details, viewing per-month credit allocation history, redeeming promotional codes, and configuring credit sharing and billing preferences.&lt;/li&gt;
+&lt;li&gt;The usage reporting window for the BatchMeterUsage API has been extended from 6 hours to 24 hours. Sellers can now submit usage records for up to 24 hours after a metered event occurs. The existing 6-hour grace period at the end of a billing cycle still applies.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudWatchLogs (4.0.101.0)
+&lt;li&gt;ConfigService (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Added PutStorageTierPolicy and GetStorageTierPolicy APIs to Amazon CloudWatch Logs. Customers can now configure account-level Intelligent Tiering to automatically optimize log storage costs by moving infrequently accessed data to lower-cost storage tiers.&lt;/li&gt;
+&lt;li&gt;Added support for connecting AWS Config to third-party cloud service providers. New APIs include PutConnector, GetConnector, DeleteConnector, and ListConnectors for managing connectors, and PutThirdPartyServiceLinkedConfigurationRecorder for creating third-party service-linked recorders.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MailManager (4.0.101.0)
+&lt;li&gt;Connect (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.0. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;li&gt;Adds support for CreateAuthCode and DeleteSession APIs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;OpenSearchService (4.0.102.0)
+&lt;li&gt;DynamoDBv2 (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;This release introduces Saved Object Migration APIs, enabling users to migrate dashboards, visualizations, index patterns, and other saved objects from a data source into an Amazon OpenSearch Service application workspace with configurable export filters and conflict resolution strategies.&lt;/li&gt;
+&lt;li&gt;Fix &lt;code&gt;BatchGet&lt;/code&gt; to honor &lt;code&gt;ConsistentRead&lt;/code&gt; from &lt;code&gt;BatchGetConfig&lt;/code&gt; (previously the config value was silently dropped, causing all batch gets to use eventually-consistent reads)&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;SaveConfig.ConditionalExpression&lt;/code&gt; to support conditional expressions on &lt;code&gt;DynamoDBContext.SaveAsync&lt;/code&gt; and fixed expression evaluation for nullable-typed constants (e.g. comparisons against int?) in &lt;code&gt;DynamoDBContext&lt;/code&gt; filter/condition expressions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EC2 (4.0.103.0)
+&lt;ul&gt;
+&lt;li&gt;This launch surfaces the public SSM parameter associated with public AMIs in the AMI metadata.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Inspector2 (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;This release extends vulnerability management to Azure VM, container registries and function apps. Adds support for per-member-account scan configuration settings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Lambda (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Lambda Durable Functions now supports customer managed KMS keys. This allows customers to configure a KMS key in Durable Config to have all their durable execution data encrypted.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MarketplaceCatalog (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;This release enhances the ListEntities API to support ResellerRole filter for ResaleAuthorization entity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PartnerCentralRevenueMeasurement (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for AWS Partner Central Revenue Measurement API for creating, managing, and tracking revenue attributions and marketplace revenue share allocations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Route53GlobalResolver (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Adds ListSharedDNSViews operation to list all DNS Views shared with caller using AWS Resource Access Manager. Also updates ListHostedZoneAssociations operation so that resource ARN param is optional, allowing caller to list all HostedZoneAssociations in account.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SecurityHub (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;release SecurityHub MultiCloud integration with Azure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SimpleSystemsManagement (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Adding SSM Cloud Connector to support Azure Virtual Machines onboarding to AWS Systems Manager&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -44,132 +85,77 @@
             </content>
   </entry>
   <entry>
-    <title>googleapis/google-cloud-dotnet - Releases - 2026-07-06</title>
-    <id>https://github.com/googleapis/google-cloud-dotnet#2026-07-06</id>
-    <link href="https://github.com/googleapis/google-cloud-dotnet" />
-    <updated>2026-07-07T00:27:46Z</updated>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-07-07</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-07-07</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2026-07-08T00:22:26Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Maps.Isochrones.V1-1.0.0-beta01"&gt;Google.Maps.Isochrones.V1 version 1.0.0-beta01&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6531448"&gt;Azure.Template_1.0.3-beta.6531448&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
+                                &lt;h2&gt;1.0.3-beta.6531448 (2026-07-07)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial generation for Google.Maps.Isochrones.V1&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;WidgetAnalyticsClientSettings&lt;/code&gt; to support creating a &lt;code&gt;WidgetAnalyticsClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Ces.V1Beta-1.0.0-beta08"&gt;Google.Cloud.Ces.V1Beta version 1.0.0-beta08&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Compute.BulkActions_1.1.0"&gt;Azure.ResourceManager.Compute.BulkActions_1.1.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;Bug fixes&lt;/h3&gt;
+                                &lt;h2&gt;1.1.0 (2026-07-07)&lt;/h2&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Add routing annotations to BidiRunSession in v1 and v1beta&lt;/li&gt;
+&lt;li&gt;The bulk operation methods now require an explicit &lt;code&gt;AzureLocation&lt;/code&gt; parameter instead of inferring the location from the &lt;code&gt;ResourceGroupResource&lt;/code&gt;. A resource group's location can differ from the location of the resources it contains, so the location must be supplied by the caller. The following overloads that inferred the location were removed:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;BulkStartOperation&lt;/code&gt; / &lt;code&gt;BulkStartOperationAsync&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BulkDeallocateOperation&lt;/code&gt; / &lt;code&gt;BulkDeallocateOperationAsync&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BulkHibernateOperation&lt;/code&gt; / &lt;code&gt;BulkHibernateOperationAsync&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BulkDeleteOperation&lt;/code&gt; / &lt;code&gt;BulkDeleteOperationAsync&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BulkGetOperationsStatus&lt;/code&gt; / &lt;code&gt;BulkGetOperationsStatusAsync&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BulkCancelOperations&lt;/code&gt; / &lt;code&gt;BulkCancelOperationsAsync&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Ces.V1-1.0.0-beta03"&gt;Google.Cloud.Ces.V1 version 1.0.0-beta03&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;Bug fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add routing annotations to BidiRunSession in v1 and v1beta&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-07-07</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-07-07</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2026-07-08T00:22:38Z</updated>
+    <content type="html">
+                &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Tools.SecretManagerHelper-1.1.0"&gt;Google.Cloud.Tools.SecretManagerHelper version 1.1.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/OpAmp.Client-0.6.0-alpha.1"&gt;OpAmp.Client-0.6.0-alpha.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;Bug fixes&lt;/h3&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.OpAmp.Client/0.6.0-alpha.1" rel="nofollow"&gt;OpenTelemetry.OpAmp.Client v0.6.0-alpha.1&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Change tool command to a verb for SecretManagerHelper&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Assemblies are now digitally signed using cosign.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4637" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4637/hovercard"&gt;#4637&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add support for reporting full state.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4633" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4633/hovercard"&gt;#4633&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add heartbeat support to full state report.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4653" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4653/hovercard"&gt;#4653&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Support.V2Beta-1.0.0-beta04"&gt;Google.Cloud.Support.V2Beta version 1.0.0-beta04&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;A new service &lt;code&gt;SupportEventSubscription&lt;/code&gt; is added&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;A comment for field &lt;code&gt;query&lt;/code&gt; in message &lt;code&gt;.google.cloud.support.v2.SearchCasesRequest&lt;/code&gt; is changed&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.ModelArmor.V1-1.0.0-beta07"&gt;Google.Cloud.ModelArmor.V1 version 1.0.0-beta07&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add image sanitization support&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;A comment for enum value &lt;code&gt;DISABLED&lt;/code&gt; in enum &lt;code&gt;PiAndJailbreakFilterEnforcement&lt;/code&gt; is changed&lt;/li&gt;
-&lt;li&gt;A comment for field &lt;code&gt;rai_filter_type_results&lt;/code&gt; in message &lt;code&gt;.google.cloud.modelarmor.v1.RaiFilterResult&lt;/code&gt; is changed&lt;/li&gt;
-&lt;li&gt;A comment for field &lt;code&gt;byte_range&lt;/code&gt; in message &lt;code&gt;.google.cloud.modelarmor.v1.SdpFinding&lt;/code&gt; is changed&lt;/li&gt;
-&lt;li&gt;A comment for field &lt;code&gt;codepoint_range&lt;/code&gt; in message &lt;code&gt;.google.cloud.modelarmor.v1.SdpFinding&lt;/code&gt; is changed&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Chronicle.V1-1.0.0-beta07"&gt;Google.Cloud.Chronicle.V1 version 1.0.0-beta07&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;GA FindingsRefinementService Client libraries&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Support.V2-1.7.0"&gt;Google.Cloud.Support.V2 version 1.7.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;A new service &lt;code&gt;SupportEventSubscription&lt;/code&gt; is added&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;A comment for field &lt;code&gt;query&lt;/code&gt; in message &lt;code&gt;.google.cloud.support.v2.SearchCasesRequest&lt;/code&gt; is changed&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Kms.V1-3.25.0"&gt;Google.Cloud.Kms.V1 version 3.25.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add support for post-quantum (PQ) import methods&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update the comment for duration value &lt;code&gt;unrefreshed_duration_until_disable&lt;/code&gt; to accurately reflect the system-defined duration&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Dataproc.V1-5.28.0"&gt;Google.Cloud.Dataproc.V1 version 5.28.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add &lt;code&gt;DiskConfig&lt;/code&gt; to instance selection to support disk config overrides for flexible VMs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update comments for disk configs and related fields&lt;/li&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/OpAmp.Client-0.6.0-alpha.1/src/OpenTelemetry.OpAmp.Client/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;

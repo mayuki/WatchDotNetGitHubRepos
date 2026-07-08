@@ -1,39 +1,80 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-07-07T00:27:35Z</updated>
+  <updated>2026-07-08T00:22:25Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-07-06</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-07-06</id>
+    <title>aws/aws-sdk-net - Releases - 2026-07-07</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-07-07</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-07-07T00:27:35Z</updated>
+    <updated>2026-07-08T00:22:25Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.281.0"&gt;4.0.281.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.282.0"&gt;4.0.282.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.281.0 (2026-07-06 18:18 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.282.0 (2026-07-07 18:19 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Billing (4.0.101.0)
+&lt;li&gt;AWSMarketplaceMetering (4.0.100.3)
 &lt;ul&gt;
-&lt;li&gt;Adds support for managing AWS account credits and billing preferences, including retrieving credit details, viewing per-month credit allocation history, redeeming promotional codes, and configuring credit sharing and billing preferences.&lt;/li&gt;
+&lt;li&gt;The usage reporting window for the BatchMeterUsage API has been extended from 6 hours to 24 hours. Sellers can now submit usage records for up to 24 hours after a metered event occurs. The existing 6-hour grace period at the end of a billing cycle still applies.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudWatchLogs (4.0.101.0)
+&lt;li&gt;ConfigService (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Added PutStorageTierPolicy and GetStorageTierPolicy APIs to Amazon CloudWatch Logs. Customers can now configure account-level Intelligent Tiering to automatically optimize log storage costs by moving infrequently accessed data to lower-cost storage tiers.&lt;/li&gt;
+&lt;li&gt;Added support for connecting AWS Config to third-party cloud service providers. New APIs include PutConnector, GetConnector, DeleteConnector, and ListConnectors for managing connectors, and PutThirdPartyServiceLinkedConfigurationRecorder for creating third-party service-linked recorders.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MailManager (4.0.101.0)
+&lt;li&gt;Connect (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.0. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;li&gt;Adds support for CreateAuthCode and DeleteSession APIs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;OpenSearchService (4.0.102.0)
+&lt;li&gt;DynamoDBv2 (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;This release introduces Saved Object Migration APIs, enabling users to migrate dashboards, visualizations, index patterns, and other saved objects from a data source into an Amazon OpenSearch Service application workspace with configurable export filters and conflict resolution strategies.&lt;/li&gt;
+&lt;li&gt;Fix &lt;code&gt;BatchGet&lt;/code&gt; to honor &lt;code&gt;ConsistentRead&lt;/code&gt; from &lt;code&gt;BatchGetConfig&lt;/code&gt; (previously the config value was silently dropped, causing all batch gets to use eventually-consistent reads)&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;SaveConfig.ConditionalExpression&lt;/code&gt; to support conditional expressions on &lt;code&gt;DynamoDBContext.SaveAsync&lt;/code&gt; and fixed expression evaluation for nullable-typed constants (e.g. comparisons against int?) in &lt;code&gt;DynamoDBContext&lt;/code&gt; filter/condition expressions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EC2 (4.0.103.0)
+&lt;ul&gt;
+&lt;li&gt;This launch surfaces the public SSM parameter associated with public AMIs in the AMI metadata.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Inspector2 (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;This release extends vulnerability management to Azure VM, container registries and function apps. Adds support for per-member-account scan configuration settings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Lambda (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Lambda Durable Functions now supports customer managed KMS keys. This allows customers to configure a KMS key in Durable Config to have all their durable execution data encrypted.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MarketplaceCatalog (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;This release enhances the ListEntities API to support ResellerRole filter for ResaleAuthorization entity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PartnerCentralRevenueMeasurement (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for AWS Partner Central Revenue Measurement API for creating, managing, and tracking revenue attributions and marketplace revenue share allocations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Route53GlobalResolver (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Adds ListSharedDNSViews operation to list all DNS Views shared with caller using AWS Resource Access Manager. Also updates ListHostedZoneAssociations operation so that resource ARN param is optional, allowing caller to list all HostedZoneAssociations in account.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SecurityHub (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;release SecurityHub MultiCloud integration with Azure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SimpleSystemsManagement (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Adding SSM Cloud Connector to support Azure Virtual Machines onboarding to AWS Systems Manager&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
