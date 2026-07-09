@@ -1,80 +1,76 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-07-08T00:22:40Z</updated>
+  <updated>2026-07-09T00:26:05Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-07-07</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-07-07</id>
+    <title>aws/aws-sdk-net - Releases - 2026-07-08</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-07-08</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-07-08T00:22:25Z</updated>
+    <updated>2026-07-09T00:25:46Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.282.0"&gt;4.0.282.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.283.0"&gt;4.0.283.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.282.0 (2026-07-07 18:19 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.283.0 (2026-07-08 18:19 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AWSMarketplaceMetering (4.0.100.3)
+&lt;li&gt;AppConfig (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;The usage reporting window for the BatchMeterUsage API has been extended from 6 hours to 24 hours. Sellers can now submit usage records for up to 24 hours after a metered event occurs. The existing 6-hour grace period at the end of a billing cycle still applies.&lt;/li&gt;
+&lt;li&gt;Update ExperimentRun APIs to support ConflictExceptions.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ConfigService (4.0.102.0)
+&lt;li&gt;BedrockAgentCoreControl (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for connecting AWS Config to third-party cloud service providers. New APIs include PutConnector, GetConnector, DeleteConnector, and ListConnectors for managing connectors, and PutThirdPartyServiceLinkedConfigurationRecorder for creating third-party service-linked recorders.&lt;/li&gt;
+&lt;li&gt;AgentCore Gateway now supports mapping allowed scopes to separate advertised scopes on the inbound authorizer.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.103.0)
+&lt;li&gt;DSQL (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for CreateAuthCode and DeleteSession APIs.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DSQLAuthTokenGenerator&lt;/code&gt; now forces a refresh when the credentials would expire before the generated token, so the token remains valid for its full lifetime (or as close to it as the credentials session duration allows). This applies to credential providers deriving from &lt;code&gt;RefreshingAWSCredentials&lt;/code&gt; (such as &lt;code&gt;AssumeRoleAWSCredentials&lt;/code&gt; and &lt;code&gt;AssumeRoleWithWebIdentityCredentials&lt;/code&gt;); EC2 instance profile credentials and static credentials are unaffected. Token generation may now throw if the credentials refresh fails; previously a token could be returned signed with credentials nearing expiration, which the database could reject.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (4.0.101.0)
+&lt;li&gt;EC2 (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;Fix &lt;code&gt;BatchGet&lt;/code&gt; to honor &lt;code&gt;ConsistentRead&lt;/code&gt; from &lt;code&gt;BatchGetConfig&lt;/code&gt; (previously the config value was silently dropped, causing all batch gets to use eventually-consistent reads)&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;SaveConfig.ConditionalExpression&lt;/code&gt; to support conditional expressions on &lt;code&gt;DynamoDBContext.SaveAsync&lt;/code&gt; and fixed expression evaluation for nullable-typed constants (e.g. comparisons against int?) in &lt;code&gt;DynamoDBContext&lt;/code&gt; filter/condition expressions&lt;/li&gt;
+&lt;li&gt;Replace Root Volume now supports a VolumeId parameter. This allows the customer to pass in a pre-prepared volume as the target root volume for an RRV workflow.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.103.0)
+&lt;li&gt;ECS (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;This launch surfaces the public SSM parameter associated with public AMIs in the AMI metadata.&lt;/li&gt;
+&lt;li&gt;Amazon ECS now automatically detects the correct CPU architecture for Express Mode services.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Inspector2 (4.0.101.0)
+&lt;li&gt;GeoPlaces (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;This release extends vulnerability management to Azure VM, container registries and function apps. Adds support for per-member-account scan configuration settings.&lt;/li&gt;
+&lt;li&gt;Added AddressNamesMode, AddressNameTranslations, MobilityMode, PostalCodeMode, SecondaryAddresses, and DriveThrough features across Places V2 APIs to support address name formatting,  multilingual translations, travel-aware search, multi-city postal codes, and unit-level address resolution.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Lambda (4.0.101.0)
+&lt;li&gt;IoTWireless (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Lambda Durable Functions now supports customer managed KMS keys. This allows customers to configure a KMS key in Durable Config to have all their durable execution data encrypted.&lt;/li&gt;
+&lt;li&gt;Default session downlink transmission parameters have been added to the existing Multicast Group APIs. Explicit transmission parameters are no longer required when starting a multicast session during the FUOTA procedure.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MarketplaceCatalog (4.0.101.0)
+&lt;li&gt;RDS (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;This release enhances the ListEntities API to support ResellerRole filter for ResaleAuthorization entity.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RDSAuthTokenGenerator&lt;/code&gt; now forces a refresh when the credentials would expire before the generated token, so the token remains valid for its full lifetime. This applies to credential providers deriving from &lt;code&gt;RefreshingAWSCredentials&lt;/code&gt; (such as &lt;code&gt;AssumeRoleAWSCredentials&lt;/code&gt; and &lt;code&gt;AssumeRoleWithWebIdentityCredentials&lt;/code&gt;); EC2 instance profile credentials and static credentials are unaffected. &lt;code&gt;GenerateAuthToken&lt;/code&gt; may now throw if the credentials refresh fails; previously a token could be returned signed with credentials nearing expiration, which the database could reject.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PartnerCentralRevenueMeasurement (4.0.100.0)
+&lt;li&gt;Resiliencehubv2 (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for AWS Partner Central Revenue Measurement API for creating, managing, and tracking revenue attributions and marketplace revenue share allocations.&lt;/li&gt;
+&lt;li&gt;Next Generation Resilience Hub now supports filtering and sorting failure mode assessments, resource type filtering in ListResources, cross-region and cross-account topology edges, data recovery achievability status, and more granular dependency discovery progress tracking.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Route53GlobalResolver (4.0.101.0)
+&lt;li&gt;Extensions.Bedrock.MEAI (4.0.101.3)
 &lt;ul&gt;
-&lt;li&gt;Adds ListSharedDNSViews operation to list all DNS Views shared with caller using AWS Resource Access Manager. Also updates ListHostedZoneAssociations operation so that resource ARN param is optional, allowing caller to list all HostedZoneAssociations in account.&lt;/li&gt;
+&lt;li&gt;Surface strict tool use (ToolSpecification.Strict) through BedrockChatClient&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SecurityHub (4.0.101.0)
+&lt;li&gt;Core 4.0.100.3
 &lt;ul&gt;
-&lt;li&gt;release SecurityHub MultiCloud integration with Azure&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SimpleSystemsManagement (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Adding SSM Cloud Connector to support Azure Virtual Machines onboarding to AWS Systems Manager&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;RefreshingAWSCredentials.GetCredentials(TimeSpan)&lt;/code&gt; and &lt;code&gt;GetCredentialsAsync(TimeSpan)&lt;/code&gt; methods that regenerate credentials when the current credentials would expire within the requested minimum lifetime, and return the existing credentials otherwise.&lt;/li&gt;
+&lt;li&gt;Eliminates the intermediate string allocations in the AWS Query request marshalling&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -85,17 +81,17 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-07-07</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-07-07</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-07-08</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-07-08</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-07-08T00:22:26Z</updated>
+    <updated>2026-07-09T00:25:47Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6531448"&gt;Azure.Template_1.0.3-beta.6531448&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6536434"&gt;Azure.Template_1.0.3-beta.6536434&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.3-beta.6531448 (2026-07-07)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.3-beta.6536434 (2026-07-08)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Added &lt;code&gt;WidgetAnalyticsClientSettings&lt;/code&gt; to support creating a &lt;code&gt;WidgetAnalyticsClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
@@ -104,21 +100,12 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Compute.BulkActions_1.1.0"&gt;Azure.ResourceManager.Compute.BulkActions_1.1.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CognitiveServices_1.6.0-beta.3"&gt;Azure.ResourceManager.CognitiveServices_1.6.0-beta.3&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.1.0 (2026-07-07)&lt;/h2&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+                                &lt;h2&gt;1.6.0-beta.3 (2026-07-07)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;The bulk operation methods now require an explicit &lt;code&gt;AzureLocation&lt;/code&gt; parameter instead of inferring the location from the &lt;code&gt;ResourceGroupResource&lt;/code&gt;. A resource group's location can differ from the location of the resources it contains, so the location must be supplied by the caller. The following overloads that inferred the location were removed:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;BulkStartOperation&lt;/code&gt; / &lt;code&gt;BulkStartOperationAsync&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;BulkDeallocateOperation&lt;/code&gt; / &lt;code&gt;BulkDeallocateOperationAsync&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;BulkHibernateOperation&lt;/code&gt; / &lt;code&gt;BulkHibernateOperationAsync&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;BulkDeleteOperation&lt;/code&gt; / &lt;code&gt;BulkDeleteOperationAsync&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;BulkGetOperationsStatus&lt;/code&gt; / &lt;code&gt;BulkGetOperationsStatusAsync&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;BulkCancelOperations&lt;/code&gt; / &lt;code&gt;BulkCancelOperationsAsync&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;Upgraded api-version to 2026-05-15-preview.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -127,34 +114,122 @@
             </content>
   </entry>
   <entry>
-    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-07-07</title>
-    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-07-07</id>
-    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-    <updated>2026-07-08T00:22:38Z</updated>
+    <title>grpc/grpc - Releases - 2026-07-08</title>
+    <id>https://github.com/grpc/grpc#2026-07-08</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2026-07-09T00:25:57Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/OpAmp.Client-0.6.0-alpha.1"&gt;OpAmp.Client-0.6.0-alpha.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.82.1"&gt;Release v1.82.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release gRPC Core 1.82.1 (glacier).&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes.&lt;/p&gt;
+&lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;h3&gt;Python&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[Backport][v1.82.x][Python] Update lower bound for protobuf from 6.33.5 to 7.35.1 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/asheshvidyut/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/asheshvidyut"&gt;@asheshvidyut&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4833707266" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/42920" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42920/hovercard" href="https://github.com/grpc/grpc/pull/42920"&gt;#42920&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/grpc/grpc/compare/v1.82.0...v1.82.1"&gt;&lt;tt&gt;v1.82.0...v1.82.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-07-08</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-07-08</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2026-07-09T00:26:03Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.ConfluentKafka-0.2.0-alpha.1"&gt;Instrumentation.ConfluentKafka-0.2.0-alpha.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.OpAmp.Client/0.6.0-alpha.1" rel="nofollow"&gt;OpenTelemetry.OpAmp.Client v0.6.0-alpha.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.ConfluentKafka/0.2.0-alpha.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.ConfluentKafka v0.2.0-alpha.1&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.16.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4487" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4487/hovercard"&gt;#4487&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Supported manual configuration of traces and metrics for Kafka consumers&lt;br&gt;
+and producers created outside a DI container.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4545" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4545/hovercard"&gt;#4545&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Assemblies are now digitally signed using cosign.&lt;br&gt;
 (&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4637" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4637/hovercard"&gt;#4637&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Add support for reporting full state.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4633" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4633/hovercard"&gt;#4633&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Breaking change&lt;/strong&gt;: Updated the traces and metrics emitted by the Kafka&lt;br&gt;
+producer and consumer to follow the&lt;br&gt;
+&lt;a href="https://github.com/open-telemetry/semantic-conventions/tree/v1.43.0/docs/messaging"&gt;v1.43.0 messaging semantic conventions&lt;/a&gt;.&lt;br&gt;
+The producer &lt;code&gt;send&lt;/code&gt; span (previously &lt;code&gt;publish&lt;/code&gt;) and the consumer &lt;code&gt;poll&lt;/code&gt;&lt;br&gt;
+span (previously &lt;code&gt;receive&lt;/code&gt;, and now emitted with &lt;code&gt;ActivityKind.Client&lt;/code&gt;) now&lt;br&gt;
+set:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;messaging.operation.name&lt;/code&gt; and &lt;code&gt;messaging.operation.type&lt;/code&gt;&lt;br&gt;
+(replacing &lt;code&gt;messaging.operation&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;messaging.client.id&lt;/code&gt; (replacing &lt;code&gt;messaging.client_id&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;messaging.consumer.group.name&lt;/code&gt; (replacing&lt;br&gt;
+&lt;code&gt;messaging.kafka.consumer.group&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;messaging.destination.partition.id&lt;/code&gt; (a string) (replacing&lt;br&gt;
+&lt;code&gt;messaging.kafka.destination.partition&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;messaging.kafka.offset&lt;/code&gt; (replacing &lt;code&gt;messaging.kafka.message.offset&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;messaging.kafka.message.key&lt;/code&gt; is now emitted as a string when the key has an&lt;br&gt;
+unambiguous canonical representation; otherwise, the attribute is omitted.&lt;/p&gt;
+&lt;p&gt;The metrics were renamed to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;messaging.client.operation.duration&lt;/code&gt;&lt;br&gt;
+(replacing &lt;code&gt;messaging.publish.duration&lt;/code&gt; and &lt;code&gt;messaging.receive.duration&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;messaging.client.sent.messages&lt;/code&gt; (replacing &lt;code&gt;messaging.publish.messages&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;messaging.client.consumed.messages&lt;/code&gt;&lt;br&gt;
+(replacing &lt;code&gt;messaging.receive.messages&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;error.type&lt;/code&gt; is now reported as the language-agnostic Kafka error code for&lt;br&gt;
+Kafka errors (&lt;code&gt;ProduceException&lt;/code&gt;/&lt;code&gt;ConsumeException&lt;/code&gt;), or the exception type&lt;br&gt;
+name for other failures (such as an &lt;code&gt;ArgumentException&lt;/code&gt; from the producer or&lt;br&gt;
+an exception thrown by a message handler).&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4636" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4636/hovercard"&gt;#4636&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Add heartbeat support to full state report.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4653" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4653/hovercard"&gt;#4653&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Metrics and traces now include a telemetry schema URL.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4636" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4636/hovercard"&gt;#4636&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/OpAmp.Client-0.6.0-alpha.1/src/OpenTelemetry.OpAmp.Client/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.ConfluentKafka-0.2.0-alpha.1/src/OpenTelemetry.Instrumentation.ConfluentKafka/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Sampler.AWS-0.1.0-alpha.11"&gt;Sampler.AWS-0.1.0-alpha.11&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Sampler.AWS/0.1.0-alpha.11" rel="nofollow"&gt;OpenTelemetry.Sampler.AWS v0.1.0-alpha.11&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed a race condition where a concurrent rule poll could discard the sampling&lt;br&gt;
+targets applied by a target poll (and vice versa), causing the sampler to&lt;br&gt;
+briefly revert to stale sampling decisions.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4638" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4638/hovercard"&gt;#4638&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Assemblies are now digitally signed using cosign.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4637" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4637/hovercard"&gt;#4637&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Sampler.AWS-0.1.0-alpha.11/src/OpenTelemetry.Sampler.AWS/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
