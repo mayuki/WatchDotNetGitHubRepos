@@ -1,47 +1,383 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-07-13T00:22:39Z</updated>
+  <updated>2026-07-14T00:20:04Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-07-12</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-07-12</id>
-    <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-07-13T00:22:19Z</updated>
+    <title>aws/aws-sdk-net - Releases - 2026-07-13</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-07-13</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2026-07-14T00:19:42Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.MongoDBAtlas_1.1.0-beta.1"&gt;Azure.ResourceManager.MongoDBAtlas_1.1.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.287.0"&gt;4.0.287.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.1.0-beta.1 (2026-07-12)&lt;/h2&gt;
+                                &lt;h3&gt;4.0.287.0 (2026-07-13 18:15 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Elasticsearch (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for the EngineMode and UseCase parameters on Amazon Elasticsearch Service domains, enabling GENERAL or OPTIMIZED engine modes and SEARCH, VECTOR, OBSERVABILITY, or MIXED usecases when creating and updating domain configurations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GameLift (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon GameLift Servers now includes fleet expiration for managed fleets. A managed fleet expires one year after creation, transitioning to EXPIRED status, emitting a FLEET EXPIRED event, and scaling to zero instances. Expired fleets cannot host new game sessions or increase capacity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GuardDuty (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;GuardDuty AI Protection is now publicly available. Findings include Bedrock guardrail details, model details, observation numbers, and continuous scan details. GuardrailArn and GuardrailVersion are deprecated in favor of the guardrails list.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Lambda (4.0.103.0)
+&lt;ul&gt;
+&lt;li&gt;Add Java 8, 11 and 17 on AL2023 (java8.al2023, java11.al2023, java17.al2023) support to AWS Lambda.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RedshiftServerless (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for preserving datasharing, zero-ETL and S3 event integrations on snapshot restore to serverless namespace.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3 (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;TransferUtilityDownloadDirectoryRequest.DownloadDirectoryFileRequestEvent&lt;/code&gt;, which is raised for each file before it is downloaded and allows subscribers to inspect and modify the individual &lt;code&gt;TransferUtilityDownloadRequest&lt;/code&gt;. This mirrors the existing &lt;code&gt;TransferUtilityUploadDirectoryRequest.UploadDirectoryFileRequestEvent&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-07-13</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-07-13</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2026-07-14T00:19:43Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6555573"&gt;Azure.Template_1.0.3-beta.6555573&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.3-beta.6555573 (2026-07-13)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for API version &lt;code&gt;2026-03-01-preview&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;MongoDBAtlasProjectResource&lt;/code&gt;, &lt;code&gt;MongoDBAtlasProjectCollection&lt;/code&gt;, and related models for managing MongoDB Atlas projects.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;MongoDBAtlasClusterResource&lt;/code&gt;, &lt;code&gt;MongoDBAtlasClusterCollection&lt;/code&gt;, and related models for managing MongoDB Atlas clusters.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;GetClusterTierRegions&lt;/code&gt; and &lt;code&gt;TierLimitReached&lt;/code&gt; operations on &lt;code&gt;MongoDBAtlasProjectResource&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Renamed model &lt;code&gt;ProjectLimitStatus&lt;/code&gt; to &lt;code&gt;MongoDBAtlasProjectLimitStatus&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Renamed model &lt;code&gt;RegionsByTierResponse&lt;/code&gt; to &lt;code&gt;MongoDBAtlasRegionsByTierResult&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Renamed model &lt;code&gt;TierLimitReachedResponse&lt;/code&gt; to &lt;code&gt;MongoDBAtlasTierLimitReachedResult&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Renamed model &lt;code&gt;TierRegions&lt;/code&gt; to &lt;code&gt;MongoDBAtlasTierRegions&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Renamed property &lt;code&gt;Backups&lt;/code&gt; to &lt;code&gt;IsBackupsEnabled&lt;/code&gt; in &lt;code&gt;MongoDBAtlasClusterProperties&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Renamed property &lt;code&gt;FREE&lt;/code&gt; to &lt;code&gt;Free&lt;/code&gt; in &lt;code&gt;MongoDBAtlasClusterTier&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Renamed property &lt;code&gt;FLEX&lt;/code&gt; to &lt;code&gt;Flex&lt;/code&gt; in &lt;code&gt;MongoDBAtlasClusterTier&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;WidgetAnalyticsClientSettings&lt;/code&gt; to support creating a &lt;code&gt;WidgetAnalyticsClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Communication.Common_1.4.1"&gt;Azure.Communication.Common_1.4.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.RecoveryServices_1.3.0"&gt;Azure.ResourceManager.RecoveryServices_1.3.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.4.1 (2026-07-10)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+                                &lt;h2&gt;1.3.0 (2026-07-10)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for Teams Extension sovereign (GCCH) Entra scopes using &lt;code&gt;https://auth.msft.communication.azure.us/&lt;/code&gt; in &lt;code&gt;EntraCommunicationTokenCredentialOptions&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Upgraded api-version to 2026-05-01.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ImmutabilitySettings&lt;/code&gt; property to &lt;code&gt;RecoveryServicesSecuritySettings&lt;/code&gt; for full immutability configuration access.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ImmutabilityConfiguration&lt;/code&gt; and &lt;code&gt;ImmutabilityType&lt;/code&gt; models for vault immutability settings.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;RecoveryServicesCostGranularityLevel&lt;/code&gt; enum for cost management granularity settings.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;CostManagementGranularityLevel&lt;/code&gt; property to &lt;code&gt;RecoveryServicesVaultProperties&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.ServiceFabric_1.0.0-beta.1"&gt;Azure.Provisioning.ServiceFabric_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-07-10)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial preview of &lt;code&gt;Azure.Provisioning.ServiceFabric&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>DataDog/dd-trace-dotnet - Releases - 2026-07-13</title>
+    <id>https://github.com/DataDog/dd-trace-dotnet#2026-07-13</id>
+    <link href="https://github.com/DataDog/dd-trace-dotnet" />
+    <updated>2026-07-14T00:19:43Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/releases/tag/v3.49.0"&gt;3.49.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Summary&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[OTLP] Add trace metrics via OTLP span metrics export (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4738388075" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8826" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8826/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8826"&gt;#8826&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Implement span-derived primary tags (AKA Additional tags) on Client-Side-Stats computation (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4614049835" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8766" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8766/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8766"&gt;#8766&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Implement support for &lt;code&gt;DD_TAGS&lt;/code&gt; in Client-Side stats (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4736600578" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8823" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8823/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8823"&gt;#8823&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add EventBridge DSM producer injection (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4447653010" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8639" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8639/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8639"&gt;#8639&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changes&lt;/h2&gt;
+&lt;h3&gt;Tracer&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Refactor GraphQL error response building and add pre-emptive truncation (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4453521938" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8647" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8647/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8647"&gt;#8647&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Implement span-derived primary tags (AKA Additional tags) on Client-Side-Stats computation (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4614049835" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8766" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8766/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8766"&gt;#8766&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Minor and performance updates for client-side-stats (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4736327369" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8822" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8822/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8822"&gt;#8822&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Implement support for &lt;code&gt;DD_TAGS&lt;/code&gt; in Client-Side stats (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4736600578" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8823" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8823/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8823"&gt;#8823&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Apply cardinality limits to Client-Side stats implementation (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4736651714" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8824" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8824/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8824"&gt;#8824&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[OTLP] Add trace metrics via OTLP span metrics export (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4738388075" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8826" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8826/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8826"&gt;#8826&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Optimise OTEL metrics collection to reduce allocations (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4751302614" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8834" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8834/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8834"&gt;#8834&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update &lt;code&gt;TruncateUTF8&lt;/code&gt; to never split a code point and improve perf (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4753371875" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8836" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8836/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8836"&gt;#8836&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Debugger] Log over-length identifier redaction at Warning instead of Error (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4776561423" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8853" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8853/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8853"&gt;#8853&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Attempt to prevent crash on module unload (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4776938543" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8854" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8854/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8854"&gt;#8854&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;ASM&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[AAP] Add response headers even if no appsec event is present (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4648735232" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8784" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8784/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8784"&gt;#8784&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Appsec] Add comments and refs to help out codex reviews when libddwaf is involved (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4744811400" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8831" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8831/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8831"&gt;#8831&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[BUG] Fix query obfuscation culture invariant (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4771034538" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8850" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8850/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8850"&gt;#8850&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Continuous Profiler&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[Profiler] Fix live objects age (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4767338961" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8842" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8842/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8842"&gt;#8842&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Avoid excessive BuggyBits exceptions in endpoint tests (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4840972435" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8881" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8881/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8881"&gt;#8881&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Debugger&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[Debugger] Define debugger safety guidance (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4718482013" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8817" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8817/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8817"&gt;#8817&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Debugger] Prevent expression member access from invoking getters (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4838497487" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8878" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8878/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8878"&gt;#8878&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Remove config_norm_rules.json tests (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4767490663" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8844" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8844/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8844"&gt;#8844&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Miscellaneous&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add dd-autoinstrumentation CLI with LLM-native structured output (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4084327130" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8313" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8313/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8313"&gt;#8313&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Tests] Add Azure Functions Trigger tests for messaging SDKs (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4533354809" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8698" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8698/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8698"&gt;#8698&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Bump libdatadog to 2.0.0 (~v36.0.0) (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4741736112" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8827" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8827/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8827"&gt;#8827&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add bounded cardinality limits for OTEL metrics collection (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4768465432" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8846" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8846/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8846"&gt;#8846&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;update AAS setup guide (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4770537292" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8848" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8848/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8848"&gt;#8848&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Data Streams Monitoring&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add EventBridge DSM producer injection (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4447653010" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8639" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8639/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8639"&gt;#8639&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Build / Test&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[Test] Handle &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4407129449" data-permission-text="Title is private" data-url="https://github.com/dotnet/runtime/issues/127957" data-hovercard-type="issue" data-hovercard-url="/dotnet/runtime/issues/127957/hovercard" href="https://github.com/dotnet/runtime/issues/127957"&gt;dotnet/runtime#127957&lt;/a&gt; BadImageFormatException fingerprint (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4571797575" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8729" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8729/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8729"&gt;#8729&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[CI] Add commit-only fallback when resolving serverless/single-step Azure build artifacts (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4640485371" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8782" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8782/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8782"&gt;#8782&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Flag new major versions of NuGets we don't support (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4693346671" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8800" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8800/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8800"&gt;#8800&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Test Package Versions Bump] Updating package versions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4760583898" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8837" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8837/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8837"&gt;#8837&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Smoke Test Docker Image Bump] Updating docker image tags (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4764255439" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8838" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8838/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8838"&gt;#8838&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Remove legacy create_draft_release workflow (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4766447281" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8839" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8839/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8839"&gt;#8839&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Bump the gh-actions-packages group across 2 directories with 6 updates (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4774708283" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8851" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8851/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8851"&gt;#8851&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update CI VMs to use latest images (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4776485464" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8852" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8852/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8852"&gt;#8852&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Remove unused kafka services from docker-compose.ym (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4778519499" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8855" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8855/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8855"&gt;#8855&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Test Package Versions Bump] Updating package versions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4781606555" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8857" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8857/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8857"&gt;#8857&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Move webhook url to protected environment (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4796108693" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8863" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8863/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8863"&gt;#8863&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Test Package Versions Bump] Updating package versions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4802128486" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8864" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8864/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8864"&gt;#8864&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update &lt;code&gt;CODEOWNERS&lt;/code&gt; to remove IDM from DSM and expand DSM ownership (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4829113697" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8870" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8870/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8870"&gt;#8870&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix ADO.NET dropped trace test flakes (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4830020519" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8871" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8871/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8871"&gt;#8871&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Make transaction early-flush writer test deterministic (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4830183258" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8872" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8872/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8872"&gt;#8872&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Tests] Handle UTF-16 output from ProcDump v12.01 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4855852274" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8890" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8890/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8890"&gt;#8890&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/compare/v3.48.0...v3.49.0"&gt;Changes since 3.48.0&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>googleapis/google-cloud-dotnet - Releases - 2026-07-13</title>
+    <id>https://github.com/googleapis/google-cloud-dotnet#2026-07-13</id>
+    <link href="https://github.com/googleapis/google-cloud-dotnet" />
+    <updated>2026-07-14T00:19:54Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.ProductRegistry.V1-1.0.0-beta01"&gt;Google.Cloud.ProductRegistry.V1 version 1.0.0-beta01&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial generation for Google.Cloud.ProductRegistry.V1&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Ces.V1Beta-1.0.0-beta09"&gt;Google.Cloud.Ces.V1Beta version 1.0.0-beta09&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update public libraries for CES v1beta&lt;/li&gt;
+&lt;li&gt;Add WhatsApp, Instagram, and CCaaS Chat deployment channels&lt;/li&gt;
+&lt;li&gt;Add evaluation run caching settings&lt;/li&gt;
+&lt;li&gt;Add evaluation type (GOLDEN, SCENARIO) to evaluation service&lt;/li&gt;
+&lt;li&gt;Add context messages for external supervision guardrails&lt;/li&gt;
+&lt;li&gt;Add timeout configuration for toolsets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A comment for field &lt;code&gt;disable_barge_in&lt;/code&gt; in message &lt;code&gt;.google.cloud.ces.v1beta.BargeInConfig&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for enum value &lt;code&gt;PENDING&lt;/code&gt; in enum &lt;code&gt;State&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for enum value &lt;code&gt;DONE&lt;/code&gt; in enum &lt;code&gt;State&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for enum value &lt;code&gt;EXPIRED&lt;/code&gt; in enum &lt;code&gt;State&lt;/code&gt; is changed&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Ces.V1-1.0.0-beta04"&gt;Google.Cloud.Ces.V1 version 1.0.0-beta04&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update public libraries for CES v1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A comment for field &lt;code&gt;disable_barge_in&lt;/code&gt; in message &lt;code&gt;.google.cloud.ces.v1.BargeInConfig&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;audio_recording_config&lt;/code&gt; in message &lt;code&gt;.google.cloud.ces.v1.LoggingSettings&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;bigquery_export_settings&lt;/code&gt; in message &lt;code&gt;.google.cloud.ces.v1.LoggingSettings&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for enum value &lt;code&gt;INPUT_TYPE_TEXT&lt;/code&gt; in enum &lt;code&gt;InputType&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for enum value &lt;code&gt;INPUT_TYPE_AUDIO&lt;/code&gt; in enum &lt;code&gt;InputType&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for enum value &lt;code&gt;INPUT_TYPE_IMAGE&lt;/code&gt; in enum &lt;code&gt;InputType&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for enum value &lt;code&gt;INPUT_TYPE_BLOB&lt;/code&gt; in enum &lt;code&gt;InputType&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for enum value &lt;code&gt;INPUT_TYPE_TOOL_RESPONSE&lt;/code&gt; in enum &lt;code&gt;InputType&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for enum value &lt;code&gt;INPUT_TYPE_VARIABLES&lt;/code&gt; in enum &lt;code&gt;InputType&lt;/code&gt; is changed&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.SecretManager.V1-2.8.0"&gt;Google.Cloud.SecretManager.V1 version 2.8.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add support for Managed Rotation&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Memorystore.V1-1.0.0-beta08"&gt;Google.Cloud.Memorystore.V1 version 1.0.0-beta08&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add support for self managed migrations feature to Memorystore for Valkey&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.DiscoveryEngine.V1-1.14.0"&gt;Google.Cloud.DiscoveryEngine.V1 version 1.14.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add RelevanceFilterSpec to SearchRequest in v1&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.BinaryAuthorization.V1Beta1-2.0.0-beta10"&gt;Google.Cloud.BinaryAuthorization.V1Beta1 version 2.0.0-beta10&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add support for new signature algorithm in PkixPublicKey SignatureAlgorithm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update documentation comments across Binary Authorization v1beta1 messages&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.BinaryAuthorization.V1-2.7.0"&gt;Google.Cloud.BinaryAuthorization.V1 version 2.7.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add support for new signature algorithm in PkixPublicKey SignatureAlgorithm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update documentation comments across Binary Authorization v1 messages&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Batch.V1Alpha-1.0.0-alpha34"&gt;Google.Cloud.Batch.V1Alpha version 1.0.0-alpha34&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added new NicType field to job&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.AIPlatform.V1-3.73.0"&gt;Google.Cloud.AIPlatform.V1 version 3.73.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Expose retrieval_queries in GroundingMetadata for the v1 API&lt;/li&gt;
+&lt;li&gt;Add identity_type to Reasoning Engine public protos&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-07-13</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-07-13</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2026-07-14T00:20:02Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Hangfire-1.16.0-beta.2"&gt;Instrumentation.Hangfire-1.16.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Hangfire/1.16.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Hangfire v1.16.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Assemblies are now digitally signed using cosign.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4637" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4637/hovercard"&gt;#4637&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed &lt;code&gt;NullReferenceException&lt;/code&gt; in the metrics filter when a job's definition&lt;br&gt;
+cannot be resolved.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4731" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4731/hovercard"&gt;#4731&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Hangfire-1.16.0-beta.2/src/OpenTelemetry.Instrumentation.Hangfire/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.GrpcCore-1.0.0-beta.13"&gt;Instrumentation.GrpcCore-1.0.0-beta.13&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.GrpcCore/1.0.0-beta.13" rel="nofollow"&gt;OpenTelemetry.Instrumentation.GrpcCore v1.0.0-beta.13&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Assemblies are now digitally signed using cosign.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4637" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4637/hovercard"&gt;#4637&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.GrpcCore-1.0.0-beta.13/src/OpenTelemetry.Instrumentation.GrpcCore/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
