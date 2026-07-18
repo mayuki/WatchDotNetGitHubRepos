@@ -1,54 +1,52 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-07-17T00:22:35Z</updated>
+  <updated>2026-07-18T00:20:28Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-07-16</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-07-16</id>
+    <title>aws/aws-sdk-net - Releases - 2026-07-17</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-07-17</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-07-17T00:22:35Z</updated>
+    <updated>2026-07-18T00:20:28Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.290.0"&gt;4.0.290.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.291.0"&gt;4.0.291.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.290.0 (2026-07-16 18:14 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.291.0 (2026-07-17 18:18 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;ChimeSDKVoice (4.0.101.0)
+&lt;li&gt;CognitoIdentityProvider (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Marked CreateProxySession, DeleteProxySession, GetProxySession, ListProxySessions, UpdateProxySession, PutVoiceConnectorProxy, DeleteVoiceConnectorProxy, and GetVoiceConnectorProxy as deprecated.&lt;/li&gt;
+&lt;li&gt;Amazon Cognito user pools now support sending SMS via AWS End User Messaging. A new EumsSms object in SmsConfigurationType lets you deliver MFA and verification texts through AWS End User Messaging, alongside the existing Amazon SNS option.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticMapReduce (4.0.101.0)
+&lt;li&gt;GameLiftStreams (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon EMR updates the Session object returned by GetSession API&lt;/li&gt;
+&lt;li&gt;Amazon GameLift Streams now supports assigning an IAM role to a stream session, enabling your application to securely access resources in your AWS account, such as Amazon S3 buckets and DynamoDB tables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Omics (4.0.101.0)
+&lt;li&gt;KinesisAnalyticsV2 (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for returning the task UUID (universally unique identifier) in GetRunTask and ListRunTasks responses&lt;/li&gt;
+&lt;li&gt;Support for Flink 2.3 in Managed Service for Apache Flink&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Redshift (4.0.100.5)
+&lt;li&gt;Odb (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon Redshift - Added support for rg.large and rg.12xlarge node types in CreateCluster, ModifyCluster, and ResizeCluster API operations.&lt;/li&gt;
+&lt;li&gt;Adds support for sourcing Autonomous Database admin and wallet passwords from customer-managed AWS Secrets Manager secrets, including password source configuration and summaries, and enabling or disabling the OCI IAM service role for Secrets Manager integration via InitializeService.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (4.0.101.2)
+&lt;li&gt;RDS (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Documentation update for removing the 30 day minimum restriction for transition to Standard-IA or OneZone-IA storage classes&lt;/li&gt;
+&lt;li&gt;Adds the AssociatedRoles parameter to CreateDBCluster, RestoreDBClusterFromSnapshot, RestoreDBClusterToPointInTime, and RestoreDBClusterFromS3, letting customers associate IAM roles with an Aurora DB cluster at create or restore time instead of calling AddRoleToDBCluster afterward.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.102.0)
+&lt;li&gt;Core 4.0.100.6
 &lt;ul&gt;
-&lt;li&gt;Release support for g7 instance type for SageMaker inference endpoints.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Sustainability (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for retrieving estimated water allocation data.&lt;/li&gt;
+&lt;li&gt;Eliminates per node path allocation in XML and AWSQuery response unmarshalling.&lt;/li&gt;
+&lt;li&gt;Fixed SSO login failure in the European Sovereign Cloud (aws-eusc) partition by adding the issuer domain identitycenter.amazonaws.eu to the SSOEndpointResolver AWS-owned allowlist, so it is no longer misclassified as a vanity URL. The derived issuer URL now uses the EUSC issuer host.&lt;/li&gt;
+&lt;li&gt;Reduce memory allocations in XML primitive unmarshalling.&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

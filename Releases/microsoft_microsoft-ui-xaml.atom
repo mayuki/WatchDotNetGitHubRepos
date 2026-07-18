@@ -1,6 +1,45 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>microsoft/microsoft-ui-xaml - Releases</title>
   <link href="https://github.com/microsoft/microsoft-ui-xaml" />
-  <updated>2026-07-17T00:22:54Z</updated>
+  <updated>2026-07-18T00:20:42Z</updated>
   <id>https://github.com/microsoft/microsoft-ui-xaml</id>
+  <entry>
+    <title>microsoft/microsoft-ui-xaml - Releases - 2026-07-17</title>
+    <id>https://github.com/microsoft/microsoft-ui-xaml#2026-07-17</id>
+    <link href="https://github.com/microsoft/microsoft-ui-xaml" />
+    <updated>2026-07-18T00:20:42Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/releases/tag/winui3/release/2.3.1"&gt;WinUI 3 in WinAppSDK 2.3.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;WinUI 3 in Windows App SDK 2.3.1&lt;/h2&gt;
+&lt;p&gt;This release of WinUI 3 ships as part of &lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.3.1"&gt;Windows App SDK 2.3.1&lt;/a&gt;. To use it in your app, install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.3.1" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.3.1 NuGet package&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;What's new in WinUI 3:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;XamlOptionalChanges&lt;/code&gt;.&lt;/strong&gt; A new API that lets apps opt into optional breaking changes before XAML initialization. In the same release, the &lt;code&gt;DISABLE_XAML_GENERATED_MAIN&lt;/code&gt; preprocessor constant now renames the generated &lt;code&gt;main()&lt;/code&gt; method (C#: &lt;code&gt;XamlGeneratedProgram.XamlGeneratedMain()&lt;/code&gt;; C++/WinRT: &lt;code&gt;wXamlGeneratedMain()&lt;/code&gt;) instead of removing it, so a custom &lt;code&gt;main()&lt;/code&gt; can invoke the default implementation. See PR &lt;a href="https://github.com/microsoft/microsoft-ui-xaml/pull/11110" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/microsoft-ui-xaml/pull/11110/hovercard"&gt;microsoft/microsoft-ui-xaml#11110&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;XAML performance optimizations.&lt;/strong&gt; A broad set of startup, styling, and resource-lookup optimizations. Several are opt-in through the &lt;code&gt;DefaultStyleOptimizations&lt;/code&gt; and &lt;code&gt;OptimizeApplyStyles&lt;/code&gt; XamlChangeIds, including optimized &lt;code&gt;XamlControlsResources&lt;/code&gt; styles, a lighter &lt;code&gt;FontIcon&lt;/code&gt;/&lt;code&gt;BitmapIcon&lt;/code&gt; visual tree, and faster &lt;code&gt;ThemeResource&lt;/code&gt; and &lt;code&gt;ResourceDictionary&lt;/code&gt; lookups.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug fixes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed a use-after-free crash in &lt;code&gt;CPopupRoot::ReplayPointerUpdate&lt;/code&gt; when a popup is closed synchronously during pointer-event replay.&lt;/li&gt;
+&lt;li&gt;Fixed a crash in &lt;code&gt;MediaPlayerPresenter&lt;/code&gt; when the GPU device is lost during media playback event handling.&lt;/li&gt;
+&lt;li&gt;Fixed a crash (null &lt;code&gt;LayoutState&lt;/code&gt; dereference) in &lt;code&gt;UniformGridLayout&lt;/code&gt; and &lt;code&gt;FlowLayout&lt;/code&gt; that could occur when a collection change was raised on an &lt;code&gt;ItemsRepeater&lt;/code&gt; that was no longer loaded.&lt;/li&gt;
+&lt;li&gt;Fixed windowed and non-windowed flyouts appearing misaligned (about one item-height above the parent item) for side placements when they open upward near the bottom of the screen.&lt;/li&gt;
+&lt;li&gt;Fixed an access violation in &lt;code&gt;CXamlIslandRoot::GetScreenOffset&lt;/code&gt; triggered by re-entrant UI Automation queries during XAML island teardown.&lt;/li&gt;
+&lt;li&gt;Fixed a fail-fast in &lt;code&gt;CPopup::RemoveChild&lt;/code&gt; when a &lt;code&gt;ToolTip&lt;/code&gt; close pumped messages and re-entered the close path.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the full set of changes across Windows App SDK 2.3.1, see the &lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.3.1"&gt;Windows App SDK 2.3.1 release notes&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.3.1" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.3.1 NuGet package&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

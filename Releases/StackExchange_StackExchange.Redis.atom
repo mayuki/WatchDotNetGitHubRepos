@@ -1,6 +1,43 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>StackExchange/StackExchange.Redis - Releases</title>
   <link href="https://github.com/StackExchange/StackExchange.Redis" />
-  <updated>2026-07-17T00:23:00Z</updated>
+  <updated>2026-07-18T00:20:45Z</updated>
   <id>https://github.com/StackExchange/StackExchange.Redis</id>
+  <entry>
+    <title>StackExchange/StackExchange.Redis - Releases - 2026-07-17</title>
+    <id>https://github.com/StackExchange/StackExchange.Redis#2026-07-17</id>
+    <link href="https://github.com/StackExchange/StackExchange.Redis" />
+    <updated>2026-07-18T00:20:45Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/3.1.1-g7441909d06"&gt;3.1.1-g7441909d06&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/StackExchange.Redis/3.1.1-g7441909d06" rel="nofollow"&gt;https://www.nuget.org/packages/StackExchange.Redis/3.1.1-g7441909d06&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a &lt;strong&gt;preview&lt;/strong&gt; release of the Active:Active functionality in SE.Redis, built from the &lt;a href="https://github.com/StackExchange/StackExchange.Redis/pull/3025" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3025/hovercard"&gt;Active:Active&lt;/a&gt; PR branch.&lt;/p&gt;
+&lt;p&gt;These features are fully documented, but the main docs content builds from &lt;code&gt;main&lt;/code&gt; only; you can &lt;a href="https://github.com/StackExchange/StackExchange.Redis/blob/marc/aa2/docs/ActiveActive.md"&gt;preview&lt;br&gt;
+the proposed documentation here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;connection-groups (think "multi-geo", "active-active", etc)
+&lt;ul&gt;
+&lt;li&gt;health-checks (active) and circuit-breaker (passive) support for stability monitoring&lt;/li&gt;
+&lt;li&gt;weight and latency prioritization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;automatic retry including over failovers - works with "regular" connections or connection-groups&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Known limitations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;when using automatic retries (&lt;code&gt;WithRetry(...)&lt;/code&gt;), transactions (&lt;code&gt;CreateTransaction&lt;/code&gt;) are not available; this should be available soon; there is no plan to support batches (&lt;code&gt;CreateBatch&lt;/code&gt;), due to ordering/correctness concerns&lt;/li&gt;
+&lt;li&gt;when using connection-groups, individual (i.e. single-channel) pub/sub unsubscribe operations are not supported&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note that the feature is marked &lt;code&gt;[Experimental]&lt;/code&gt;; the suppress build warnings, see &lt;a href="https://github.com/StackExchange/StackExchange.Redis/blob/marc/aa2/docs/exp/SER007.md"&gt;SER007&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

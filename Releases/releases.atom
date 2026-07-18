@@ -1,54 +1,52 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-07-17T00:23:01Z</updated>
+  <updated>2026-07-18T00:20:46Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-07-16</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-07-16</id>
+    <title>aws/aws-sdk-net - Releases - 2026-07-17</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-07-17</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-07-17T00:22:35Z</updated>
+    <updated>2026-07-18T00:20:28Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.290.0"&gt;4.0.290.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.291.0"&gt;4.0.291.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.290.0 (2026-07-16 18:14 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.291.0 (2026-07-17 18:18 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;ChimeSDKVoice (4.0.101.0)
+&lt;li&gt;CognitoIdentityProvider (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Marked CreateProxySession, DeleteProxySession, GetProxySession, ListProxySessions, UpdateProxySession, PutVoiceConnectorProxy, DeleteVoiceConnectorProxy, and GetVoiceConnectorProxy as deprecated.&lt;/li&gt;
+&lt;li&gt;Amazon Cognito user pools now support sending SMS via AWS End User Messaging. A new EumsSms object in SmsConfigurationType lets you deliver MFA and verification texts through AWS End User Messaging, alongside the existing Amazon SNS option.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticMapReduce (4.0.101.0)
+&lt;li&gt;GameLiftStreams (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon EMR updates the Session object returned by GetSession API&lt;/li&gt;
+&lt;li&gt;Amazon GameLift Streams now supports assigning an IAM role to a stream session, enabling your application to securely access resources in your AWS account, such as Amazon S3 buckets and DynamoDB tables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Omics (4.0.101.0)
+&lt;li&gt;KinesisAnalyticsV2 (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for returning the task UUID (universally unique identifier) in GetRunTask and ListRunTasks responses&lt;/li&gt;
+&lt;li&gt;Support for Flink 2.3 in Managed Service for Apache Flink&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Redshift (4.0.100.5)
+&lt;li&gt;Odb (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon Redshift - Added support for rg.large and rg.12xlarge node types in CreateCluster, ModifyCluster, and ResizeCluster API operations.&lt;/li&gt;
+&lt;li&gt;Adds support for sourcing Autonomous Database admin and wallet passwords from customer-managed AWS Secrets Manager secrets, including password source configuration and summaries, and enabling or disabling the OCI IAM service role for Secrets Manager integration via InitializeService.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (4.0.101.2)
+&lt;li&gt;RDS (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Documentation update for removing the 30 day minimum restriction for transition to Standard-IA or OneZone-IA storage classes&lt;/li&gt;
+&lt;li&gt;Adds the AssociatedRoles parameter to CreateDBCluster, RestoreDBClusterFromSnapshot, RestoreDBClusterToPointInTime, and RestoreDBClusterFromS3, letting customers associate IAM roles with an Aurora DB cluster at create or restore time instead of calling AddRoleToDBCluster afterward.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.102.0)
+&lt;li&gt;Core 4.0.100.6
 &lt;ul&gt;
-&lt;li&gt;Release support for g7 instance type for SageMaker inference endpoints.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Sustainability (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for retrieving estimated water allocation data.&lt;/li&gt;
+&lt;li&gt;Eliminates per node path allocation in XML and AWSQuery response unmarshalling.&lt;/li&gt;
+&lt;li&gt;Fixed SSO login failure in the European Sovereign Cloud (aws-eusc) partition by adding the issuer domain identitycenter.amazonaws.eu to the SSOEndpointResolver AWS-owned allowlist, so it is no longer misclassified as a vanity URL. The derived issuer URL now uses the EUSC issuer host.&lt;/li&gt;
+&lt;li&gt;Reduce memory allocations in XML primitive unmarshalling.&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -59,23 +57,65 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-07-16</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-07-16</id>
-    <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-07-17T00:22:36Z</updated>
+    <title>dotnet/dotnet-monitor - Releases - 2026-07-17</title>
+    <id>https://github.com/dotnet/dotnet-monitor#2026-07-17</id>
+    <link href="https://github.com/dotnet/dotnet-monitor" />
+    <updated>2026-07-18T00:20:34Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Keys_4.11.0-beta.3"&gt;Azure.Security.KeyVault.Keys_4.11.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/dotnet-monitor/releases/tag/v10.0.3"&gt;Dotnet-Monitor Release - v10.0.3&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;4.11.0-beta.3 (2026-07-16)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;p&gt;Today we are releasing the 10.0.3 build of the &lt;code&gt;dotnet monitor&lt;/code&gt; tool. This release includes:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Added the &lt;code&gt;SecureWrapKey&lt;/code&gt; and &lt;code&gt;SecureUnwrapKey&lt;/code&gt; methods (and their async counterparts) to &lt;code&gt;CryptographyClient&lt;/code&gt; for secure wrap/unwrap operations on Managed HSM keys (&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/60933" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/60933/hovercard"&gt;#60933&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;SecureKeyWrapAlgorithm&lt;/code&gt; type, listing the algorithms supported by the secure wrap/unwrap operations.&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;SecureWrapResult&lt;/code&gt; and &lt;code&gt;SecureUnwrapResult&lt;/code&gt; model classes wrapping the results of &lt;code&gt;SecureWrapKey&lt;/code&gt; and &lt;code&gt;SecureUnwrapKey&lt;/code&gt;, respectively.&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;SecureWrapKey&lt;/code&gt; and &lt;code&gt;SecureUnwrapKey&lt;/code&gt; values to &lt;code&gt;KeyOperation&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Updated dependencies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you would like to provide additional feedback to the team &lt;a href="https://aka.ms/dotnet-monitor-survey?src=rn" rel="nofollow"&gt;please fill out this survey&lt;/a&gt;.&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;Packages released to NuGet&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;dotnet-monitor.10.0.3.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>microsoft/microsoft-ui-xaml - Releases - 2026-07-17</title>
+    <id>https://github.com/microsoft/microsoft-ui-xaml#2026-07-17</id>
+    <link href="https://github.com/microsoft/microsoft-ui-xaml" />
+    <updated>2026-07-18T00:20:42Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/releases/tag/winui3/release/2.3.1"&gt;WinUI 3 in WinAppSDK 2.3.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;WinUI 3 in Windows App SDK 2.3.1&lt;/h2&gt;
+&lt;p&gt;This release of WinUI 3 ships as part of &lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.3.1"&gt;Windows App SDK 2.3.1&lt;/a&gt;. To use it in your app, install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.3.1" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.3.1 NuGet package&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;What's new in WinUI 3:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;XamlOptionalChanges&lt;/code&gt;.&lt;/strong&gt; A new API that lets apps opt into optional breaking changes before XAML initialization. In the same release, the &lt;code&gt;DISABLE_XAML_GENERATED_MAIN&lt;/code&gt; preprocessor constant now renames the generated &lt;code&gt;main()&lt;/code&gt; method (C#: &lt;code&gt;XamlGeneratedProgram.XamlGeneratedMain()&lt;/code&gt;; C++/WinRT: &lt;code&gt;wXamlGeneratedMain()&lt;/code&gt;) instead of removing it, so a custom &lt;code&gt;main()&lt;/code&gt; can invoke the default implementation. See PR &lt;a href="https://github.com/microsoft/microsoft-ui-xaml/pull/11110" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/microsoft-ui-xaml/pull/11110/hovercard"&gt;microsoft/microsoft-ui-xaml#11110&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;XAML performance optimizations.&lt;/strong&gt; A broad set of startup, styling, and resource-lookup optimizations. Several are opt-in through the &lt;code&gt;DefaultStyleOptimizations&lt;/code&gt; and &lt;code&gt;OptimizeApplyStyles&lt;/code&gt; XamlChangeIds, including optimized &lt;code&gt;XamlControlsResources&lt;/code&gt; styles, a lighter &lt;code&gt;FontIcon&lt;/code&gt;/&lt;code&gt;BitmapIcon&lt;/code&gt; visual tree, and faster &lt;code&gt;ThemeResource&lt;/code&gt; and &lt;code&gt;ResourceDictionary&lt;/code&gt; lookups.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug fixes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed a use-after-free crash in &lt;code&gt;CPopupRoot::ReplayPointerUpdate&lt;/code&gt; when a popup is closed synchronously during pointer-event replay.&lt;/li&gt;
+&lt;li&gt;Fixed a crash in &lt;code&gt;MediaPlayerPresenter&lt;/code&gt; when the GPU device is lost during media playback event handling.&lt;/li&gt;
+&lt;li&gt;Fixed a crash (null &lt;code&gt;LayoutState&lt;/code&gt; dereference) in &lt;code&gt;UniformGridLayout&lt;/code&gt; and &lt;code&gt;FlowLayout&lt;/code&gt; that could occur when a collection change was raised on an &lt;code&gt;ItemsRepeater&lt;/code&gt; that was no longer loaded.&lt;/li&gt;
+&lt;li&gt;Fixed windowed and non-windowed flyouts appearing misaligned (about one item-height above the parent item) for side placements when they open upward near the bottom of the screen.&lt;/li&gt;
+&lt;li&gt;Fixed an access violation in &lt;code&gt;CXamlIslandRoot::GetScreenOffset&lt;/code&gt; triggered by re-entrant UI Automation queries during XAML island teardown.&lt;/li&gt;
+&lt;li&gt;Fixed a fail-fast in &lt;code&gt;CPopup::RemoveChild&lt;/code&gt; when a &lt;code&gt;ToolTip&lt;/code&gt; close pumped messages and re-entered the close path.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the full set of changes across Windows App SDK 2.3.1, see the &lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.3.1"&gt;Windows App SDK 2.3.1 release notes&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.3.1" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.3.1 NuGet package&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -84,70 +124,76 @@
             </content>
   </entry>
   <entry>
-    <title>CommunityToolkit/Maui - Releases - 2026-07-16</title>
-    <id>https://github.com/CommunityToolkit/Maui#2026-07-16</id>
-    <link href="https://github.com/CommunityToolkit/Maui" />
-    <updated>2026-07-17T00:22:38Z</updated>
+    <title>microsoft/WindowsAppSDK - Releases - 2026-07-17</title>
+    <id>https://github.com/microsoft/WindowsAppSDK#2026-07-17</id>
+    <link href="https://github.com/microsoft/WindowsAppSDK" />
+    <updated>2026-07-18T00:20:42Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/14.2.2"&gt;14.2.2: Prevent Popup Race Conditions, (Windows) Folder Picker Initial Path&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.3.1"&gt;Windows App SDK 2.3.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; 14.2.2 supersedes 14.2.1, which was not published to NuGet.org due to an expired publishing credential.&lt;/p&gt;
-&lt;p&gt;Just a couple bug fixes in this one!&lt;/p&gt;
+                                &lt;h2&gt;Windows App SDK 2.3.1&lt;/h2&gt;
+&lt;p&gt;Windows App SDK 2.3.1 is the latest stable release on the 2.x line, with a new structured JSON output API for Phi Silica, the &lt;code&gt;XamlOptionalChanges&lt;/code&gt; API for opting into XAML breaking changes, an unstable &lt;code&gt;CompositionEngine&lt;/code&gt; Limited Access Feature, Video Super Resolution improvements, ARM64EC support for Windows ML, a broad set of XAML performance optimizations, and a batch of reliability fixes.&lt;/p&gt;
+&lt;h3&gt;What's new in WinAppSDK 2.3.1:&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Prevent Race Conditions when closing a Popup&lt;/li&gt;
-&lt;li&gt;Set initial folder for FilePicker and FolderPicker on Windows&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Structured JSON output for Phi Silica.&lt;/strong&gt; The new &lt;code&gt;LanguageModel.GenerateStructuredJsonResponseAsync&lt;/code&gt; API generates language-model responses constrained to a caller-supplied JSON Schema, so apps get well-formed, schema-conformant output instead of free-form text they have to parse themselves.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;XamlOptionalChanges&lt;/code&gt;.&lt;/strong&gt; A new API that lets apps opt into optional breaking changes before XAML initialization. In the same release, the &lt;code&gt;DISABLE_XAML_GENERATED_MAIN&lt;/code&gt; preprocessor constant now renames the generated &lt;code&gt;main()&lt;/code&gt; method (C#: &lt;code&gt;XamlGeneratedProgram.XamlGeneratedMain()&lt;/code&gt;; C++/WinRT: &lt;code&gt;wXamlGeneratedMain()&lt;/code&gt;) instead of removing it, so a custom &lt;code&gt;main()&lt;/code&gt; can invoke the default implementation. See PR &lt;a href="https://github.com/microsoft/microsoft-ui-xaml/pull/11110" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/microsoft-ui-xaml/pull/11110/hovercard"&gt;microsoft/microsoft-ui-xaml#11110&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;CompositionEngine&lt;/code&gt; (Limited Access Feature).&lt;/strong&gt; A new, unstable &lt;a href="https://learn.microsoft.com/uwp/api/windows.applicationmodel.limitedaccessfeatures" rel="nofollow"&gt;Limited Access Feature&lt;/a&gt; that lets apps opt into using the OS as the engine for the Composition APIs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Video Super Resolution improvements.&lt;/strong&gt; Fixed NPU detection, added CPU support, and improved performance for Video Super Resolution.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Windows ML: ARM64EC support.&lt;/strong&gt; Windows ML now supports ARM64EC, alongside a fix to execution-provider enumeration in certain scenarios.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;XAML performance optimizations.&lt;/strong&gt; This release adds a broad set of startup, styling, and resource-lookup optimizations. Several are opt-in through the &lt;code&gt;DefaultStyleOptimizations&lt;/code&gt; and &lt;code&gt;OptimizeApplyStyles&lt;/code&gt; XamlChangeIds, including optimized &lt;code&gt;XamlControlsResources&lt;/code&gt; styles, a lighter &lt;code&gt;FontIcon&lt;/code&gt;/&lt;code&gt;BitmapIcon&lt;/code&gt; visual tree, and faster &lt;code&gt;ThemeResource&lt;/code&gt; and &lt;code&gt;ResourceDictionary&lt;/code&gt; lookups.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI IntelliSense documentation.&lt;/strong&gt; Added IntelliSense documentation for the stable APIs in the &lt;code&gt;Microsoft.WindowsAppSDK.AI&lt;/code&gt; NuGet package.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;h3&gt;Bug fixes:&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Bug Fix&lt;/th&gt;
+&lt;th&gt;&lt;a href="https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.applicationmodel.windowsappruntime.runtimecompatibilityoptions.disabledchanges?view=windows-app-sdk-2.3" rel="nofollow"&gt;Runtime Compatibility Change&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed &lt;code&gt;ApplicationData.GetForUnpackaged().LocalSettings()&lt;/code&gt; opening a registry key at a roaming path (&lt;code&gt;HKCU\SOFTWARE\publisher\product&lt;/code&gt;) instead of a machine-local one, so unpackaged app settings now persist in the correct location. See GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/6559" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/6559/hovercard"&gt;microsoft/WindowsAppSDK#6559&lt;/a&gt;.&lt;/td&gt;
+&lt;td&gt;ApplicationData_GetForUnpackaged_LocalSettings&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a crash that could repeatedly bring down &lt;code&gt;backgroundTaskHost.exe&lt;/code&gt; when a background task had no stored CLSID, and added graceful handling when &lt;code&gt;CoCreateInstance&lt;/code&gt; fails. See GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/5870" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/5870/hovercard"&gt;microsoft/WindowsAppSDK#5870&lt;/a&gt;.&lt;/td&gt;
+&lt;td&gt;UniversalBGTask_RunCrash&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed windowed and non-windowed flyouts appearing misaligned (about one item-height above the parent item) for side placements when they open upward near the bottom of the screen.&lt;/td&gt;
+&lt;td&gt;Flyout_SidePlacementFlipUpAlignmentFix&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a crash in &lt;code&gt;MediaPlayerPresenter&lt;/code&gt; when the GPU device is lost during media playback event handling.&lt;/td&gt;
+&lt;td&gt;MediaPlayerPresenter_DeviceLostCrash&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a use-after-free crash in &lt;code&gt;CPopupRoot::ReplayPointerUpdate&lt;/code&gt; when a popup is closed synchronously during pointer-event replay.&lt;/td&gt;
+&lt;td&gt;CPopupRoot_ReplayPointerUpdateCrash&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a crash (null &lt;code&gt;LayoutState&lt;/code&gt; dereference) in &lt;code&gt;UniformGridLayout&lt;/code&gt; and &lt;code&gt;FlowLayout&lt;/code&gt; that could occur when a collection change was raised on an &lt;code&gt;ItemsRepeater&lt;/code&gt; that was no longer loaded.&lt;/td&gt;
+&lt;td&gt;UniformGridLayoutFlowLayout_OnItemsChangedNullLayoutStateCrash&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;To see everything that's new and changed, see the full &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-2-0?pivots=stable#version-231" rel="nofollow"&gt;Windows App SDK 2.3.1 release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Prevent Race Condition Allowing Simultaneous Calling of &lt;code&gt;Navigation.PushModalAsync()&lt;/code&gt; / &lt;code&gt;Shell.GotoAsync()&lt;/code&gt; in &lt;code&gt;PopupExtensions&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4600616393" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3234" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3234/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3234"&gt;#3234&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;SemaphoreSlim&lt;/code&gt; Support for &lt;code&gt;Popup&lt;/code&gt; &lt;code&gt;CloseAsync&lt;/code&gt; to Avoid Race Conditions by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4604729863" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3235" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3235/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3235"&gt;#3235&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Set Windows Folder Picker Initial Path by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3913282430" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3078" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3078/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3078"&gt;#3078&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.3.1" rel="nofollow"&gt;2.3.1 NuGet&lt;/a&gt; package to use WinAppSDK 2.3 in your app.&lt;/li&gt;
+&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Housekeeping&lt;/h2&gt;
+&lt;h3&gt;Getting started&lt;/h3&gt;
+&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Bump actions/checkout from 6.0.2 to 6.0.3 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4610356033" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3236" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3236/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3236"&gt;#3236&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump Microsoft.Testing.Extensions.CodeCoverage from 18.7.0 to 18.8.0 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4619277247" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3237" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3237/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3237"&gt;#3237&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump System.Formats.Asn1 from 10.0.8 to 10.0.9 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4628480378" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3238" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3238/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3238"&gt;#3238&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump actions/checkout from 6.0.3 to 7.0.0 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4694487992" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3245" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3245/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3245"&gt;#3245&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump actions/setup-java from 5.2.0 to 5.3.0 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4694488339" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3246" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3246/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3246"&gt;#3246&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump actions/setup-java from 5.3.0 to 5.4.0 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4765407858" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3256" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3256/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3256"&gt;#3256&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump actions/setup-dotnet from 5.3.0 to 5.4.0 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4765408430" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3257" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3257/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3257"&gt;#3257&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump actions/setup-java from 5.4.0 to 5.5.0 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4870798887" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3264" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3264/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3264"&gt;#3264&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Use trusted publishing for NuGet release by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jfversluis/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jfversluis"&gt;@jfversluis&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4801413804" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3261" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3261/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3261"&gt;#3261&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/14.2.0...14.2.2"&gt;&lt;tt&gt;14.2.0...14.2.2&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/CommunityToolkit/Maui/releases/tag/14.2.1"&gt;14.2.1: Prevent Popup Race Conditions, (Windows) Folder Picker Initial Path&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;Just a couple bug fixes in this one!&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Prevent Race Conditions when closing a Popup&lt;/li&gt;
-&lt;li&gt;Set initial folder for FilePicker and FolderPicker on Windows&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Prevent Race Condition Allowing Simultaneous Calling of &lt;code&gt;Navigation.PushModalAsync()&lt;/code&gt; / &lt;code&gt;Shell.GotoAsync()&lt;/code&gt; in &lt;code&gt;PopupExtensions&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4600616393" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3234" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3234/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3234"&gt;#3234&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;SemaphoreSlim&lt;/code&gt; Support for &lt;code&gt;Popup&lt;/code&gt; &lt;code&gt;CloseAsync&lt;/code&gt; to Avoid Race Conditions by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4604729863" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3235" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3235/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3235"&gt;#3235&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Set Windows Folder Picker Initial Path by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/TheCodeTraveler/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheCodeTraveler"&gt;@TheCodeTraveler&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3913282430" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3078" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3078/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3078"&gt;#3078&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Housekeeping&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Bump actions/checkout from 6.0.2 to 6.0.3 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4610356033" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3236" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3236/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3236"&gt;#3236&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump Microsoft.Testing.Extensions.CodeCoverage from 18.7.0 to 18.8.0 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4619277247" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3237" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3237/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3237"&gt;#3237&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump System.Formats.Asn1 from 10.0.8 to 10.0.9 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4628480378" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3238" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3238/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3238"&gt;#3238&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump actions/checkout from 6.0.3 to 7.0.0 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4694487992" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3245" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3245/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3245"&gt;#3245&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump actions/setup-java from 5.2.0 to 5.3.0 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4694488339" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3246" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3246/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3246"&gt;#3246&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump actions/setup-java from 5.3.0 to 5.4.0 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4765407858" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3256" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3256/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3256"&gt;#3256&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump actions/setup-dotnet from 5.3.0 to 5.4.0 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4765408430" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3257" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3257/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3257"&gt;#3257&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump actions/setup-java from 5.4.0 to 5.5.0 by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4870798887" data-permission-text="Title is private" data-url="https://github.com/CommunityToolkit/Maui/issues/3264" data-hovercard-type="pull_request" data-hovercard-url="/CommunityToolkit/Maui/pull/3264/hovercard" href="https://github.com/CommunityToolkit/Maui/pull/3264"&gt;#3264&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/CommunityToolkit/Maui/compare/14.2.0...14.2.1"&gt;&lt;tt&gt;14.2.0...14.2.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
@@ -155,461 +201,221 @@
             </content>
   </entry>
   <entry>
-    <title>open-telemetry/opentelemetry-dotnet - Releases - 2026-07-16</title>
-    <id>https://github.com/open-telemetry/opentelemetry-dotnet#2026-07-16</id>
-    <link href="https://github.com/open-telemetry/opentelemetry-dotnet" />
-    <updated>2026-07-17T00:22:58Z</updated>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-07-17</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-07-17</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2026-07-18T00:20:44Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/coreunstable-1.17.0-beta.1"&gt;coreunstable-1.17.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Extensions.Enrichment.AspNetCore-1.17.0-beta.1"&gt;Extensions.Enrichment.AspNetCore-1.17.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;The following changes are from the previous release &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/coreunstable-1.16.0-beta.1"&gt;1.16.0-beta.1&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
+                                &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Prometheus.AspNetCore/1.17.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Prometheus.AspNetCore v1.17.0-beta.1&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Added a verbose-level diagnostic event for ignored metrics.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7429" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7429/hovercard"&gt;#7429&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The library is now marked as trim and AOT compatible.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7441" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7441/hovercard"&gt;#7441&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fix double unit suffixes in metric names when using OpenMetrics.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7454" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7454/hovercard"&gt;#7454&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fix incorrect handling of leading digits in metric names for OpenMetrics.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7454" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7454/hovercard"&gt;#7454&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add &lt;code&gt;PrometheusAspNetCoreOptions.ScopeInfoEnabled&lt;/code&gt; property to enable or&lt;br&gt;
-disable scope labels in Prometheus metrics. Defaults to &lt;code&gt;true&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7436" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7436/hovercard"&gt;#7436&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added support for the &lt;code&gt;dots&lt;/code&gt; and &lt;code&gt;values&lt;/code&gt; Prometheus UTF-8 name escaping&lt;br&gt;
-schemes when negotiated via the &lt;code&gt;Accept&lt;/code&gt; header.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7439" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7439/hovercard"&gt;#7439&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add &lt;code&gt;PrometheusAspNetCoreOptions.TargetInfoEnabled&lt;/code&gt; property to enable or&lt;br&gt;
-disable the &lt;code&gt;target_info&lt;/code&gt; metric in Prometheus metrics. Defaults to &lt;code&gt;true&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7438" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7438/hovercard"&gt;#7438&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added support for the &lt;code&gt;allow-utf-8&lt;/code&gt; Prometheus UTF-8 name escaping scheme&lt;br&gt;
-when negotiated via the &lt;code&gt;Accept&lt;/code&gt; header.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7440" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7440/hovercard"&gt;#7440&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add &lt;code&gt;PrometheusAspNetCoreOptions.ResourceConstantLabels&lt;/code&gt; property to select&lt;br&gt;
-resource attributes to add to each metric as constant labels. Defaults to&lt;br&gt;
-&lt;code&gt;null&lt;/code&gt; (no resource attributes are added as metric labels).&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7471" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7471/hovercard"&gt;#7471&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add &lt;code&gt;PrometheusAspNetCoreOptions.MaxScrapeResponseSizeBytes&lt;/code&gt; to configure&lt;br&gt;
-the maximum size of a scrape response. The default is now ~166 MiB.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7487" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7487/hovercard"&gt;#7487&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;A scrape whose serialized output exceeds the maximum scrape response size&lt;br&gt;
-limit now responds with HTTP 500.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7487" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7487/hovercard"&gt;#7487&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed the Prometheus text exposition format emitting redundant comments.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7491" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7491/hovercard"&gt;#7491&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Made &lt;code&gt;Accept&lt;/code&gt; header content negotiation consistent with the&lt;br&gt;
-&lt;code&gt;PrometheusHttpListener&lt;/code&gt; endpoint.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7491" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7491/hovercard"&gt;#7491&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed &lt;code&gt;# HELP&lt;/code&gt; metadata not escaping double-quote characters for the&lt;br&gt;
-OpenMetrics text format.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7491" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7491/hovercard"&gt;#7491&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed content negotiation defaulting to OpenMetrics 0.0.1 instead of 1.0.0&lt;br&gt;
-when an &lt;code&gt;application/openmetrics-text&lt;/code&gt; &lt;code&gt;Accept&lt;/code&gt; header entry does not&lt;br&gt;
-specify a &lt;code&gt;version&lt;/code&gt; parameter.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7491" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7491/hovercard"&gt;#7491&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added &lt;code&gt;PrometheusAspNetCoreOptions.TranslationStrategy&lt;/code&gt; to control how&lt;br&gt;
-OpenTelemetry metric and label names are translated into Prometheus names.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7507" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7507/hovercard"&gt;#7507&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fix stack overflow during metric collection when under load.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7524" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7524/hovercard"&gt;#7524&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.17.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7530" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7530/hovercard"&gt;#7530&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/coreunstable-1.17.0-beta.1/src/OpenTelemetry.Exporter.Prometheus.AspNetCore/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Prometheus.HttpListener/1.17.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Prometheus.HttpListener v1.17.0-beta.1&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Added a verbose-level diagnostic event for ignored metrics.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7429" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7429/hovercard"&gt;#7429&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The library is now marked as trim and AOT compatible.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7441" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7441/hovercard"&gt;#7441&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Removed the &lt;code&gt;PrometheusHttpListenerOptions.UriPrefixes&lt;/code&gt; option.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7435" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7435/hovercard"&gt;#7435&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fix double unit suffixes in metric names when using OpenMetrics.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7454" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7454/hovercard"&gt;#7454&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fix incorrect handling of leading digits in metric names for OpenMetrics.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7454" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7454/hovercard"&gt;#7454&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add &lt;code&gt;PrometheusHttpListenerOptions.ScopeInfoEnabled&lt;/code&gt; property to enable or&lt;br&gt;
-disable scope labels in Prometheus metrics. Defaults to &lt;code&gt;true&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7436" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7436/hovercard"&gt;#7436&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added support for the &lt;code&gt;dots&lt;/code&gt; and &lt;code&gt;values&lt;/code&gt; Prometheus UTF-8 name escaping&lt;br&gt;
-schemes when negotiated via the &lt;code&gt;Accept&lt;/code&gt; header.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7439" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7439/hovercard"&gt;#7439&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add &lt;code&gt;PrometheusHttpListenerOptions.TargetInfoEnabled&lt;/code&gt; property to enable or&lt;br&gt;
-disable the &lt;code&gt;target_info&lt;/code&gt; metric in Prometheus metrics. Defaults to &lt;code&gt;true&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7438" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7438/hovercard"&gt;#7438&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added the &lt;code&gt;PrometheusHttpListenerOptions.ConfigureHttpListener&lt;/code&gt; option.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7448" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7448/hovercard"&gt;#7448&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added support for the &lt;code&gt;allow-utf-8&lt;/code&gt; Prometheus UTF-8 name escaping scheme&lt;br&gt;
-when negotiated via the &lt;code&gt;Accept&lt;/code&gt; header.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7440" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7440/hovercard"&gt;#7440&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add &lt;code&gt;PrometheusHttpListenerOptions.ResourceConstantLabels&lt;/code&gt; property to select&lt;br&gt;
-resource attributes to add to each metric as constant labels. Defaults to&lt;br&gt;
-&lt;code&gt;null&lt;/code&gt; (no resource attributes are added as metric labels).&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7471" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7471/hovercard"&gt;#7471&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add &lt;code&gt;PrometheusHttpListenerOptions.MaxScrapeResponseSizeBytes&lt;/code&gt; to configure&lt;br&gt;
-the maximum size of a scrape response. The default is now ~166 MiB.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7487" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7487/hovercard"&gt;#7487&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;A scrape whose serialized output exceeds the maximum scrape response size&lt;br&gt;
-limit now responds with HTTP 500.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7487" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7487/hovercard"&gt;#7487&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed the Prometheus text exposition format emitting redundant comments.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7491" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7491/hovercard"&gt;#7491&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed &lt;code&gt;# HELP&lt;/code&gt; metadata not escaping double-quote characters for the&lt;br&gt;
-OpenMetrics text format.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7491" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7491/hovercard"&gt;#7491&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed content negotiation defaulting to OpenMetrics 0.0.1 instead of 1.0.0&lt;br&gt;
-when an &lt;code&gt;application/openmetrics-text&lt;/code&gt; &lt;code&gt;Accept&lt;/code&gt; header entry does not&lt;br&gt;
-specify a &lt;code&gt;version&lt;/code&gt; parameter.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7491" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7491/hovercard"&gt;#7491&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added &lt;code&gt;PrometheusHttpListenerOptions.TranslationStrategy&lt;/code&gt; to control how&lt;br&gt;
-OpenTelemetry metric and label names are translated into Prometheus names.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7507" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7507/hovercard"&gt;#7507&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fix stack overflow during metric collection when under load.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7524" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7524/hovercard"&gt;#7524&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.17.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7530" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7530/hovercard"&gt;#7530&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/coreunstable-1.17.0-beta.1/src/OpenTelemetry.Exporter.Prometheus.HttpListener/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Shims.OpenTracing/1.17.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Shims.OpenTracing v1.17.0-beta.1&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;The library is now marked as trim and AOT compatible.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7441" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7441/hovercard"&gt;#7441&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.17.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7530" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7530/hovercard"&gt;#7530&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/coreunstable-1.17.0-beta.1/src/OpenTelemetry.Shims.OpenTracing/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Enrichment.AspNetCore/1.17.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Extensions.Enrichment.AspNetCore v1.17.0-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Extensions.Enrichment.AspNetCore-1.17.0-beta.1/src/OpenTelemetry.Extensions.Enrichment.AspNetCore/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.17.0"&gt;core-1.17.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Extensions.Enrichment.Http-1.17.0-beta.1"&gt;Extensions.Enrichment.Http-1.17.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;For highlights and announcements pertaining to this release see: &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/RELEASENOTES.md#1170"&gt;Release Notes &amp;gt; 1.17.0&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The following changes are from the previous release &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.17.0-rc.1"&gt;1.17.0-rc.1&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
+                                &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry/1.17.0" rel="nofollow"&gt;OpenTelemetry v1.17.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Enrichment.Http/1.17.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Extensions.Enrichment.Http v1.17.0-beta.1&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;No notable changes.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.17.0/src/OpenTelemetry/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Api/1.17.0" rel="nofollow"&gt;OpenTelemetry.Api v1.17.0&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No notable changes.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.17.0/src/OpenTelemetry.Api/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Api.ProviderBuilderExtensions/1.17.0" rel="nofollow"&gt;OpenTelemetry.Api.ProviderBuilderExtensions v1.17.0&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No notable changes.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.17.0/src/OpenTelemetry.Api.ProviderBuilderExtensions/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Console/1.17.0" rel="nofollow"&gt;OpenTelemetry.Exporter.Console v1.17.0&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No notable changes.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.17.0/src/OpenTelemetry.Exporter.Console/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.InMemory/1.17.0" rel="nofollow"&gt;OpenTelemetry.Exporter.InMemory v1.17.0&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No notable changes.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.17.0/src/OpenTelemetry.Exporter.InMemory/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.OpenTelemetryProtocol/1.17.0" rel="nofollow"&gt;OpenTelemetry.Exporter.OpenTelemetryProtocol v1.17.0&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No notable changes.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.17.0/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Zipkin/1.17.0" rel="nofollow"&gt;OpenTelemetry.Exporter.Zipkin v1.17.0&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No notable changes.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.17.0/src/OpenTelemetry.Exporter.Zipkin/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Hosting/1.17.0" rel="nofollow"&gt;OpenTelemetry.Extensions.Hosting v1.17.0&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No notable changes.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.17.0/src/OpenTelemetry.Extensions.Hosting/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Propagators/1.17.0" rel="nofollow"&gt;OpenTelemetry.Extensions.Propagators v1.17.0&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No notable changes.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.17.0/src/OpenTelemetry.Extensions.Propagators/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Extensions.Enrichment.Http-1.17.0-beta.1/src/OpenTelemetry.Extensions.Enrichment.Http/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.17.0-rc.1"&gt;core-1.17.0-rc.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Sampler.AWS-0.1.0-alpha.12"&gt;Sampler.AWS-0.1.0-alpha.12&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;The following changes are from the previous release &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.16.0"&gt;1.16.0&lt;/a&gt;.&lt;/p&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Sampler.AWS/0.1.0-alpha.12" rel="nofollow"&gt;OpenTelemetry.Sampler.AWS v0.1.0-alpha.12&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry/1.17.0-rc.1" rel="nofollow"&gt;OpenTelemetry v1.17.0-rc.1&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed a metric point reclaim data race on CPU ARM architectures.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7401" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7401/hovercard"&gt;#7401&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The library is now marked as trim and AOT compatible.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7441" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7441/hovercard"&gt;#7441&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Replaced the vendored copy of&lt;br&gt;
-&lt;code&gt;EnvironmentVariablesConfigurationProvider&lt;/code&gt; with a direct&lt;br&gt;
-&lt;code&gt;Microsoft.Extensions.Configuration.EnvironmentVariables&lt;/code&gt; package dependency.&lt;br&gt;
-Consumers gain automatic pickup of upstream bug fixes and security patches;&lt;br&gt;
-no public API or behavioural change.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7146" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7146/hovercard"&gt;#7146&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added a verbose &lt;code&gt;OpenTelemetry-Sdk&lt;/code&gt; self-diagnostics event that is emitted&lt;br&gt;
-when an activity is dropped because its local (in-process) parent is not&lt;br&gt;
-recorded.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7427" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7427/hovercard"&gt;#7427&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added support for a Schema URL on &lt;code&gt;Resource&lt;/code&gt; instances.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7472" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7472/hovercard"&gt;#7472&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed a metric storage leak that occurred when meters and instruments were&lt;br&gt;
-repeatedly created and disposed.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7466" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7466/hovercard"&gt;#7466&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added &lt;code&gt;ExcludedTagKeys&lt;/code&gt; property to &lt;code&gt;MetricStreamConfiguration&lt;/code&gt; to support&lt;br&gt;
-excluding specific tag keys from metric streams.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7373" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7373/hovercard"&gt;#7373&lt;/a&gt;)&lt;/p&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.17.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4773" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4773/hovercard"&gt;#4773&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Sampler.AWS-0.1.0-alpha.12/src/OpenTelemetry.Sampler.AWS/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.17.0-rc.1/src/OpenTelemetry/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/PersistentStorage-1.1.1"&gt;PersistentStorage-1.1.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.PersistentStorage.Abstractions/1.1.1" rel="nofollow"&gt;OpenTelemetry.PersistentStorage.Abstractions v1.1.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Assemblies are now digitally signed using cosign.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4637" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4637/hovercard"&gt;#4637&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/PersistentStorage-1.1.1/src/OpenTelemetry.PersistentStorage.Abstractions/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Api/1.17.0-rc.1" rel="nofollow"&gt;OpenTelemetry.Api v1.17.0-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.PersistentStorage.FileSystem/1.1.1" rel="nofollow"&gt;OpenTelemetry.PersistentStorage.FileSystem v1.1.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Assemblies are now digitally signed using cosign.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4637" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4637/hovercard"&gt;#4637&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/PersistentStorage-1.1.1/src/OpenTelemetry.PersistentStorage.FileSystem/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.ServiceFabricRemoting-1.17.0-beta.1"&gt;Instrumentation.ServiceFabricRemoting-1.17.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.ServiceFabricRemoting/1.17.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.ServiceFabricRemoting v1.17.0-beta.1&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Fixed &lt;code&gt;TraceContextPropagator&lt;/code&gt; to normalize empty &lt;code&gt;tracestate&lt;/code&gt; header values&lt;br&gt;
-to &lt;code&gt;null&lt;/code&gt; when extracting trace context.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7407" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7407/hovercard"&gt;#7407&lt;/a&gt;,&lt;br&gt;
-&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7433" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7433/hovercard"&gt;#7433&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Assemblies are now digitally signed using cosign.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4637" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4637/hovercard"&gt;#4637&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;The library is now marked as trim and AOT compatible.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7441" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7441/hovercard"&gt;#7441&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Experimental (pre-release builds only):&lt;/strong&gt; Updated &lt;code&gt;EnvironmentVariableCarrier.Get&lt;/code&gt;&lt;br&gt;
-to read only the normalized environment variable name, following the updated&lt;br&gt;
-&lt;a href="https://github.com/open-telemetry/opentelemetry-specification/pull/5144" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-specification/pull/5144/hovercard"&gt;environment variable carrier specification&lt;/a&gt;.&lt;br&gt;
-Non-normalized carrier keys are no longer matched, even when they would&lt;br&gt;
-normalize to the requested key.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7410" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7410/hovercard"&gt;#7410&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Experimental (pre-release builds only):&lt;/strong&gt; Updated &lt;code&gt;EnvironmentVariableCarrier&lt;/code&gt;&lt;br&gt;
-key normalization to replace an empty key with a single underscore (&lt;code&gt;_&lt;/code&gt;).&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7424" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7424/hovercard"&gt;#7424&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Updated &lt;code&gt;tracestate&lt;/code&gt; key validation to comply with the W3C Trace Context&lt;br&gt;
-Level 2 grammar.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7469" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7469/hovercard"&gt;#7469&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.17.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4773" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4773/hovercard"&gt;#4773&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.17.0-rc.1/src/OpenTelemetry.Api/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.ServiceFabricRemoting-1.17.0-beta.1/src/OpenTelemetry.Instrumentation.ServiceFabricRemoting/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Remoting-0.1.0-alpha.3"&gt;Instrumentation.Remoting-0.1.0-alpha.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Api.ProviderBuilderExtensions/1.17.0-rc.1" rel="nofollow"&gt;OpenTelemetry.Api.ProviderBuilderExtensions v1.17.0-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Remoting/0.1.0-alpha.3" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Remoting v0.1.0-alpha.3&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The library is now marked as trim and AOT compatible.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7441" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7441/hovercard"&gt;#7441&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.17.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4773" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4773/hovercard"&gt;#4773&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.17.0-rc.1/src/OpenTelemetry.Api.ProviderBuilderExtensions/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Remoting-0.1.0-alpha.3/src/OpenTelemetry.Instrumentation.Remoting/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Kusto-0.1.0-alpha.3"&gt;Instrumentation.Kusto-0.1.0-alpha.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Console/1.17.0-rc.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Console v1.17.0-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Kusto/0.1.0-alpha.3" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Kusto v0.1.0-alpha.3&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;The library is now marked as trim and AOT compatible.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7441" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7441/hovercard"&gt;#7441&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The &lt;code&gt;Resource&lt;/code&gt; Schema URL is now printed alongside the resource attributes.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7472" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7472/hovercard"&gt;#7472&lt;/a&gt;)&lt;/p&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.17.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4773" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4773/hovercard"&gt;#4773&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Kusto-0.1.0-alpha.3/src/OpenTelemetry.Instrumentation.Kusto/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.17.0-rc.1/src/OpenTelemetry.Exporter.Console/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.GrpcCore-1.0.0-beta.14"&gt;Instrumentation.GrpcCore-1.0.0-beta.14&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.InMemory/1.17.0-rc.1" rel="nofollow"&gt;OpenTelemetry.Exporter.InMemory v1.17.0-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.GrpcCore/1.0.0-beta.14" rel="nofollow"&gt;OpenTelemetry.Instrumentation.GrpcCore v1.0.0-beta.14&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The library is now marked as trim and AOT compatible.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7441" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7441/hovercard"&gt;#7441&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.17.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4773" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4773/hovercard"&gt;#4773&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.17.0-rc.1/src/OpenTelemetry.Exporter.InMemory/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.OpenTelemetryProtocol/1.17.0-rc.1" rel="nofollow"&gt;OpenTelemetry.Exporter.OpenTelemetryProtocol v1.17.0-rc.1&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed &lt;code&gt;OtlpLogExporter&lt;/code&gt; so &lt;code&gt;OtlpExporterOptions.ExportProcessorType&lt;/code&gt; and&lt;br&gt;
-&lt;code&gt;OtlpExporterOptions.BatchExportProcessorOptions&lt;/code&gt; are respected when&lt;br&gt;
-&lt;code&gt;LogRecordExportProcessorOptions&lt;/code&gt; are not configured.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7399" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7399/hovercard"&gt;#7399&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The library is now marked as trim and AOT compatible.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7441" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7441/hovercard"&gt;#7441&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed the OTLP exporter dropping retryable data instead of saving it to disk&lt;br&gt;
-when persistent storage retry is enabled and an export exceeds the configured&lt;br&gt;
-timeout.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7447" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7447/hovercard"&gt;#7447&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Cached pre-serialized metric metadata (&lt;code&gt;Name&lt;/code&gt; / &lt;code&gt;Description&lt;/code&gt; / &lt;code&gt;Unit&lt;/code&gt;) to avoid&lt;br&gt;
-re-encoding on every OTLP metric export.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7307" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7307/hovercard"&gt;#7307&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed the OTLP/HTTP exporter silently dropping data when an export timed out.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7455" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7455/hovercard"&gt;#7455&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed the OTLP/gRPC exporter logging incorrectly when an export timed out.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7455" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7455/hovercard"&gt;#7455&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The &lt;code&gt;Resource&lt;/code&gt; Schema URL is now exported on the OTLP &lt;code&gt;ResourceSpans&lt;/code&gt;,&lt;br&gt;
-&lt;code&gt;ResourceMetrics&lt;/code&gt;, and &lt;code&gt;ResourceLogs&lt;/code&gt; messages.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7472" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7472/hovercard"&gt;#7472&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.GrpcCore-1.0.0-beta.14/src/OpenTelemetry.Instrumentation.GrpcCore/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.17.0-rc.1/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.EventCounters-1.17.0-alpha.1"&gt;Instrumentation.EventCounters-1.17.0-alpha.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Zipkin/1.17.0-rc.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Zipkin v1.17.0-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.EventCounters/1.17.0-alpha.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.EventCounters v1.17.0-alpha.1&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;The library is now marked as trim and AOT compatible.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7441" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7441/hovercard"&gt;#7441&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Assemblies are now digitally signed using cosign.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4637" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4637/hovercard"&gt;#4637&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Dropped the vendored &lt;code&gt;EnvironmentVariablesConfigurationProvider&lt;/code&gt; copy; the&lt;br&gt;
-provider is now sourced transitively from the&lt;br&gt;
-&lt;code&gt;Microsoft.Extensions.Configuration.EnvironmentVariables&lt;/code&gt; package referenced&lt;br&gt;
-by &lt;code&gt;OpenTelemetry&lt;/code&gt;. No public API or behavioural change.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7146" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7146/hovercard"&gt;#7146&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.17.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4773" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4773/hovercard"&gt;#4773&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.17.0-rc.1/src/OpenTelemetry.Exporter.Zipkin/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.EventCounters-1.17.0-alpha.1/src/OpenTelemetry.Instrumentation.EventCounters/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.ConfluentKafka-0.2.0-alpha.2"&gt;Instrumentation.ConfluentKafka-0.2.0-alpha.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Hosting/1.17.0-rc.1" rel="nofollow"&gt;OpenTelemetry.Extensions.Hosting v1.17.0-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.ConfluentKafka/0.2.0-alpha.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.ConfluentKafka v0.2.0-alpha.2&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The library is now marked as trim and AOT compatible.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7441" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7441/hovercard"&gt;#7441&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.17.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4773" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4773/hovercard"&gt;#4773&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.17.0-rc.1/src/OpenTelemetry.Extensions.Hosting/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.ConfluentKafka-0.2.0-alpha.2/src/OpenTelemetry.Instrumentation.ConfluentKafka/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Propagators/1.17.0-rc.1" rel="nofollow"&gt;OpenTelemetry.Extensions.Propagators v1.17.0-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>StackExchange/StackExchange.Redis - Releases - 2026-07-17</title>
+    <id>https://github.com/StackExchange/StackExchange.Redis#2026-07-17</id>
+    <link href="https://github.com/StackExchange/StackExchange.Redis" />
+    <updated>2026-07-18T00:20:45Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/3.1.1-g7441909d06"&gt;3.1.1-g7441909d06&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/StackExchange.Redis/3.1.1-g7441909d06" rel="nofollow"&gt;https://www.nuget.org/packages/StackExchange.Redis/3.1.1-g7441909d06&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a &lt;strong&gt;preview&lt;/strong&gt; release of the Active:Active functionality in SE.Redis, built from the &lt;a href="https://github.com/StackExchange/StackExchange.Redis/pull/3025" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3025/hovercard"&gt;Active:Active&lt;/a&gt; PR branch.&lt;/p&gt;
+&lt;p&gt;These features are fully documented, but the main docs content builds from &lt;code&gt;main&lt;/code&gt; only; you can &lt;a href="https://github.com/StackExchange/StackExchange.Redis/blob/marc/aa2/docs/ActiveActive.md"&gt;preview&lt;br&gt;
+the proposed documentation here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Included:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The library is now marked as trim and AOT compatible.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7441" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7441/hovercard"&gt;#7441&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;connection-groups (think "multi-geo", "active-active", etc)
+&lt;ul&gt;
+&lt;li&gt;health-checks (active) and circuit-breaker (passive) support for stability monitoring&lt;/li&gt;
+&lt;li&gt;weight and latency prioritization&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.17.0-rc.1/src/OpenTelemetry.Extensions.Propagators/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;automatic retry including over failovers - works with "regular" connections or connection-groups&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;Known limitations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;when using automatic retries (&lt;code&gt;WithRetry(...)&lt;/code&gt;), transactions (&lt;code&gt;CreateTransaction&lt;/code&gt;) are not available; this should be available soon; there is no plan to support batches (&lt;code&gt;CreateBatch&lt;/code&gt;), due to ordering/correctness concerns&lt;/li&gt;
+&lt;li&gt;when using connection-groups, individual (i.e. single-channel) pub/sub unsubscribe operations are not supported&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note that the feature is marked &lt;code&gt;[Experimental]&lt;/code&gt;; the suppress build warnings, see &lt;a href="https://github.com/StackExchange/StackExchange.Redis/blob/marc/aa2/docs/exp/SER007.md"&gt;SER007&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
