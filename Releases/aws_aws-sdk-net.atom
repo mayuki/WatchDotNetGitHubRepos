@@ -1,76 +1,89 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-07-23T00:23:24Z</updated>
+  <updated>2026-07-24T00:20:45Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-07-22</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-07-22</id>
+    <title>aws/aws-sdk-net - Releases - 2026-07-23</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-07-23</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-07-23T00:23:24Z</updated>
+    <updated>2026-07-24T00:20:45Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.294.0"&gt;4.0.294.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.295.0"&gt;4.0.295.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.294.0 (2026-07-22 18:11 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.295.0 (2026-07-23 18:11 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;ARCRegionswitch (4.0.101.0)
+&lt;li&gt;AppStream (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for a client token in StartPlanExecution to make plan execution requests idempotent for safe retries.&lt;/li&gt;
+&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudWatch (4.0.103.0)
+&lt;li&gt;BackupGateway (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Adds documented value constraints for CloudWatch Log Alarm scheduled query configuration fields, and makes LogGroupIdentifiers optional for log alarms.&lt;/li&gt;
+&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.0. The SDK will prioritize its most performant protocol.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticLoadBalancingV2 (4.0.101.2)
+&lt;li&gt;BCMPricingCalculator (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;This adds CLI examples for the IpAddressType field on SourceIpConfig, enabling Network Load Balancer listener rules to match traffic based on whether the source IP is IPv4 or IPv6.&lt;/li&gt;
+&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.0. The SDK will prioritize its most performant protocol.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GuardDuty (4.0.103.0)
+&lt;li&gt;BCMRecommendedActions (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon GuardDuty now returns filter lifecycle metadata in GetFilter responses. The response includes createdAt and updatedAt timestamps and a version number that increments on each update, giving you visibility into when a filter was created and last modified.&lt;/li&gt;
+&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.0. The SDK will prioritize its most performant protocol.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ObservabilityAdmin (4.0.102.0)
+&lt;li&gt;BedrockAgentCore (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Enablement for ALB and Bedrock Knowledge Base logs via Observability Admin Telemetry Rule for account and organization level&lt;/li&gt;
+&lt;li&gt;Adds support for the Bring Your Own Storage(BYOS) feature in AgentCore Browser and Code Interpreter. Enables mounting S3Files and EFS File Systems via Access points.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PartnerCentralAccount (4.0.101.0)
+&lt;li&gt;BedrockAgentCoreControl (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;Adds Qualifications Association APIs that enable partners to associate a subsidiary account's qualifications with a primary account. Once associated, qualifications are shared across all connected accounts and scorecards are consolidated. Partners can start and track association and disassociation.&lt;/li&gt;
+&lt;li&gt;Adds support for the Bring Your Own Storage(BYOS) feature in AgentCore Browser and Code Interpreter. Enables mounting S3Files and EFS File Systems via Access points.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PCS (4.0.101.0)
+&lt;li&gt;DataZone (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;AWS PCS Node Lifecycle Actions provides a structured way to run custom scripts at defined points in a compute node's lifecycle directly through the AWS PCS compute node group API.&lt;/li&gt;
+&lt;li&gt;Adds support for notebook sync with S3 ipynb files&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PrometheusService (4.0.101.0)
+&lt;li&gt;GameLiftStreams (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Add CloudWatch dataset destinations for Amazon Managed Service for Prometheus collectors.&lt;/li&gt;
+&lt;li&gt;GameLift Streams now supports configuring a custom aspect ratio per stream session to accommodate different player devices. Supported aspect ratios include landscape, portrait, and square - delivering a full-screen experience without letterboxing or cropping.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (4.0.101.4)
+&lt;li&gt;KendraRanking (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;AmazonS3Client.GetPreSignedURL&lt;/code&gt; now throws &lt;code&gt;InvalidOperationException&lt;/code&gt; when custom &lt;code&gt;Parameters&lt;/code&gt; are set and the expiration is more than 7 days out, instead of silently falling back to SigV2. SigV2 does not sign custom parameters, so those URLs could be tampered with.&lt;/li&gt;
+&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.0. The SDK will prioritize its most performant protocol.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SimpleEmailV2 (4.0.102.0)
+&lt;li&gt;MediaPackageV2 (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Launching DEED and MREP in US GOV&lt;/li&gt;
+&lt;li&gt;This release adds support for non-epoch-locked CMAF ingest in MediaPackageV2 channels.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 4.0.100.8
+&lt;li&gt;QuickSight (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;Consolidate .NET build target configuration to a single Directory.Build.props file&lt;/li&gt;
-&lt;li&gt;Fixed the directory containment check in &lt;code&gt;InternalSDKUtils.IsFilePathRootedWithDirectoryPath&lt;/code&gt; to use an ordinal string comparison. The previous culture-sensitive comparison could let certain crafted paths pass as being inside the target directory, affecting &lt;code&gt;S3 TransferUtility.DownloadDirectory&lt;/code&gt; and &lt;code&gt;S3DirectoryInfo.CopyToLocal/MoveToLocal&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Added new capabilities to custom permissions profiles to control access to Amazon Quick through the browser extension and Microsoft Word, Outlook, Excel, and PowerPoint add-ins.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RedshiftDataAPIService (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;This release include long polling provids a new parameter wait-time-seconds to 5 API operations, new API ListSessions, and a new parameter execution-mode to BatchExecuteStatement&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SageMaker (4.0.103.0)
+&lt;ul&gt;
+&lt;li&gt;Release support for c6a, m6a, m6g, m7g, m8g instance types for SageMaker HyperPod&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkspacesInstances (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.0. The SDK will prioritize its most performant protocol.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
