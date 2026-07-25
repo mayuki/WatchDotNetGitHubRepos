@@ -1,34 +1,103 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-07-24T00:20:46Z</updated>
+  <updated>2026-07-25T00:24:02Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-07-23</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-07-23</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-07-24</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-07-24</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-07-24T00:20:46Z</updated>
+    <updated>2026-07-25T00:24:02Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Messaging.EventGrid.SystemEvents_1.1.0"&gt;Azure.Messaging.EventGrid.SystemEvents_1.1.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Monitor.OpenTelemetry.Exporter_1.8.3"&gt;Azure.Monitor.OpenTelemetry.Exporter_1.8.3&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.1.0 (2026-07-16)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h2&gt;1.8.3 (2026-07-24)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Implemented &lt;code&gt;IJsonModel&lt;/code&gt; and &lt;code&gt;IPersistableModel&lt;/code&gt; deserialization methods for events.&lt;/li&gt;
+&lt;li&gt;Hardened ingestion and Live Metrics redirect handling to reject untrusted destinations before replaying telemetry or caching the redirect. Redirect targets must now use HTTPS and match an approved Azure Monitor trust boundary, preventing credentials and telemetry from being forwarded to attacker-controlled endpoints.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/61244" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/61244/hovercard"&gt;#61244&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Customer SDK stats are now on by default; opt out with &lt;code&gt;APPLICATIONINSIGHTS_SDKSTATS_DISABLED=true&lt;/code&gt;. &lt;code&gt;dropCode&lt;/code&gt;/&lt;code&gt;retryCode&lt;/code&gt; dimension values now use the spec's SCREAMING_SNAKE_CASE (e.g. &lt;code&gt;CLIENT_EXCEPTION&lt;/code&gt;).&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6604756"&gt;Azure.Template_1.0.3-beta.6604756&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Datadog_1.1.0-beta.2"&gt;Azure.ResourceManager.Datadog_1.1.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.3-beta.6604756 (2026-07-22)&lt;/h2&gt;
+                                &lt;h2&gt;1.1.0-beta.2 (2026-07-27)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Replaced &lt;code&gt;DatadogActivateSaaSContent.SaaSGuid&lt;/code&gt; (of type &lt;code&gt;Guid&lt;/code&gt;) with &lt;code&gt;SaaSResourceId&lt;/code&gt; (of type &lt;code&gt;ResourceIdentifier&lt;/code&gt;). The &lt;code&gt;DatadogActivateSaaSContent&lt;/code&gt; constructor parameter changed accordingly from &lt;code&gt;Guid saaSGuid&lt;/code&gt; to &lt;code&gt;ResourceIdentifier saaSResourceId&lt;/code&gt;, and the corresponding &lt;code&gt;ArmDatadogModelFactory.DatadogActivateSaaSContent&lt;/code&gt; factory parameter was updated as well.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CosmosDB_1.5.0"&gt;Azure.ResourceManager.CosmosDB_1.5.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.5.0 (2026-07-20)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;WidgetAnalyticsClientSettings&lt;/code&gt; to support creating a &lt;code&gt;WidgetAnalyticsClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
+&lt;li&gt;Upgraded api-version to &lt;code&gt;2026-03-15&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Migrated from Swagger to TypeSpec-based generation.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetApp_1.18.0"&gt;Azure.ResourceManager.NetApp_1.18.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.18.0 (2026-07-15)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version to &lt;code&gt;2026-05-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;BreakThroughMode&lt;/code&gt; property to &lt;code&gt;VolumeProperties&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Enclave_1.0.0-beta.1"&gt;Azure.ResourceManager.Enclave_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-07-22)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial beta release of the Azure Enclave (&lt;code&gt;Microsoft.Mission&lt;/code&gt;) management library for .NET, targeting API version &lt;code&gt;2026-03-01-preview&lt;/code&gt;. Provides management-plane support for communities, enclaves, community/enclave endpoints and connections, dedicated and transit hubs, workloads, approvals, and monitoring settings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This package follows the &lt;a href="https://azure.github.io/azure-sdk/general_introduction.html" rel="nofollow"&gt;new Azure SDK guidelines&lt;/a&gt;, and provides many core capabilities:&lt;/p&gt;
+&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
+- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
+- HTTP pipeline with custom policies.
+- Better error-handling.
+- Support uniform telemetry across all languages."&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
+- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
+- HTTP pipeline with custom policies.
+- Better error-handling.
+- Support uniform telemetry across all languages.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This package is a Public Preview version, so expect incompatible changes in subsequent releases as we improve the product. To provide feedback, submit an issue in our &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues"&gt;Azure SDK for .NET GitHub repo&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: For more information about unified authentication, please refer to &lt;a href="https://docs.microsoft.com//dotnet/api/overview/azure/identity-readme?view=azure-dotnet" rel="nofollow"&gt;Microsoft Azure Identity documentation for .NET&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Data.AppConfiguration_1.11.0"&gt;Azure.Data.AppConfiguration_1.11.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.11.0 (2026-07-23)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved authentication in sovereign clouds (such as Bleu) when using a &lt;code&gt;TokenCredential&lt;/code&gt;. Previously, if you did not set &lt;code&gt;ConfigurationClientOptions.Audience&lt;/code&gt;, the client fell back to the Azure Public Cloud audience and authentication could fail. The client now infers the correct Microsoft Entra audience from your App Configuration endpoint, so no additional configuration is required. Public, Azure China, and Azure US Government endpoints continue to work as before, and you can still set &lt;code&gt;Audience&lt;/code&gt; explicitly to override the inferred value.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
