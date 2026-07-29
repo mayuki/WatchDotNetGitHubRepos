@@ -1,85 +1,49 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-07-28T00:22:11Z</updated>
+  <updated>2026-07-29T00:20:27Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-07-27</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-07-27</id>
+    <title>aws/aws-sdk-net - Releases - 2026-07-28</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-07-28</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-07-28T00:21:45Z</updated>
+    <updated>2026-07-29T00:20:11Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.297.0"&gt;4.0.297.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.298.0"&gt;4.0.298.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.297.0 (2026-07-27 18:16 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.298.0 (2026-07-28 18:18 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Account (4.0.101.0)
+&lt;li&gt;BedrockAgentCoreControl (4.0.105.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for the GetPrimaryEmailUpdateStatus API operation, which allows customers to retrieve the current status of a primary email address update request for an AWS account. The operation returns status information including whether the update is pending, completed, or failed.&lt;/li&gt;
+&lt;li&gt;AgentCore Identity now supports Private Key JWT client authentication for OAuth 2.0 credential providers. Agents can authenticate to identity provider token endpoints with a JWT client assertion signed by a customer-managed AWS KMS asymmetric key, eliminating the need for client secrets.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BCMDataExports (4.0.101.0)
+&lt;li&gt;Connect (4.0.105.4)
 &lt;ul&gt;
-&lt;li&gt;With this release, customers can configure their data exports to deliver CSV reports in ZIP compressed format.&lt;/li&gt;
+&lt;li&gt;Documentation updates for SearchRules, AssociateRoutingProfileQueues, CreateRoutingProfile, AssociateContactWithUser CreateTaskTemplate, and UpdateTaskTemplate&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CleanRooms (4.0.102.0)
+&lt;li&gt;DataSync (4.0.100.8)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for the CR.8X worker type for SQL (32 vCPU)&lt;/li&gt;
+&lt;li&gt;Adds Enhanced mode support for EFS and FSx Lustre locations without an agent, and for HDFS (TDE), Azure Blob, and object storage locations with an agent. HDFS Enhanced mode supports multiple NameNodes for High Availability. Enhanced mode agents can now be deployed on Microsoft Hyper-V.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CleanRoomsML (4.0.101.0)
+&lt;li&gt;IAMRolesAnywhere (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for the CR.8X worker type for SQL (32 vCPU)&lt;/li&gt;
+&lt;li&gt;Increases certificate string length for trust anchor source data to support new adjustable trust anchor limits.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EMRContainers (4.0.103.0)
+&lt;li&gt;TrustedAdvisor (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;With this launch, you can now set concurrent job limits on a virtual cluster, giving you fine-grained control over how many job runs execute at once and how many can wait in queue.&lt;/li&gt;
+&lt;li&gt;Adds ListRecommendationsForResource API and four CheckSummary fields (resourceArnQueryable, awsResourceTypes, checkGranularity, recommendationId) to retrieve recommendations for a given resource ARN.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Glue (4.0.101.0)
+&lt;li&gt;Extensions.Numerics (4.0.0.2)
 &lt;ul&gt;
-&lt;li&gt;Adds BatchGetDataQualityRulesetEvaluationRun API to retrieve multiple runs in one call, ObservationScope and ObservationMode parameters for anomaly detection, writing evaluation results to Data Catalog tables, and custom log group paths for recommendation runs.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;PartnerCentralAccount (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;Adds optional headquarters location to StartProfileUpdateTask, letting partners record their headquarters as an ISO 3166 country and subdivision code on their profile. When headquarters is provided, both the country and subdivision codes are required.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;QuickSight (4.0.105.0)
-&lt;ul&gt;
-&lt;li&gt;Added new Governance fields to Custom Permissions API to support Deny By Default functionality.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.104.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds LoRA adapters, training plans, and new instance types to SageMaker inference optimization. CreateAIRecommendationJob accepts optional AdapterSource and CreateOptimizationJob accepts optional TrainingPlanArns and the ml.g7e and ml.p6-b200 families.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SecurityAgent (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;AWS Security Agent adds a new task hours field that reflects the active work done for a task.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SecurityToken (4.0.100.7)
-&lt;ul&gt;
-&lt;li&gt;Classify IDPCommunicationError as retryable for all STS operations.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Extensions.Numerics (4.0.0.1)
-&lt;ul&gt;
-&lt;li&gt;Add new Numerics package to provide BigDecimal support similar to Java's BigDecimal type&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.0.100.9
-&lt;ul&gt;
-&lt;li&gt;Refill adaptive token bucket per ObtainCapacity when using NewRetries2026.&lt;/li&gt;
-&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Publish/pack the AWSSDK.Extensions.Numerics NuGet package (BigDecimal support)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -90,90 +54,66 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-07-27</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-07-27</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-07-28</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-07-28</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-07-28T00:21:46Z</updated>
+    <updated>2026-07-29T00:20:11Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Monitor.OpenTelemetry.AspNetCore_1.6.0"&gt;Azure.Monitor.OpenTelemetry.AspNetCore_1.6.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ComputeFleet_1.1.0-beta.3"&gt;Azure.ResourceManager.ComputeFleet_1.1.0-beta.3&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.6.0 (2026-07-27)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+                                &lt;h2&gt;1.1.0-beta.3 (2026-08-01)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Hardened Azure Monitor ingestion and Live Metrics redirect handling to prevent credentials and telemetry from being forwarded to untrusted destinations.&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/61244" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/61244/hovercard"&gt;#61244&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;VmSize&lt;/code&gt;, &lt;code&gt;Zone&lt;/code&gt;, and &lt;code&gt;Priority&lt;/code&gt; properties to &lt;code&gt;ComputeFleetVirtualMachine&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6629937"&gt;Azure.Template_1.0.3-beta.6629937&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.3-beta.6629937 (2026-07-28)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;WidgetAnalyticsClientSettings&lt;/code&gt; to support creating a &lt;code&gt;WidgetAnalyticsClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ComputeLimit_1.4.0"&gt;Azure.ResourceManager.ComputeLimit_1.4.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.4.0 (2026-07-26)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded API version to &lt;code&gt;2026-07-31&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;TrustedHostSubscriptionResource&lt;/code&gt;, &lt;code&gt;TrustedHostSubscriptionCollection&lt;/code&gt;, and &lt;code&gt;TrustedHostSubscriptionData&lt;/code&gt; for managing trusted host subscriptions per region (&lt;code&gt;/locations/{location}/trustedHostSubscriptions/{hostSubscriptionId}&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Authorization_1.2.0-beta.1"&gt;Azure.ResourceManager.Authorization_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0-beta.1 (2026-07-27)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for creating, updating, and deleting deny assignments. &lt;code&gt;DenyAssignmentCollection&lt;/code&gt; now exposes &lt;code&gt;CreateOrUpdate&lt;/code&gt;/&lt;code&gt;CreateOrUpdateAsync&lt;/code&gt; and &lt;code&gt;DenyAssignmentResource&lt;/code&gt; now exposes &lt;code&gt;Update&lt;/code&gt;/&lt;code&gt;UpdateAsync&lt;/code&gt; and &lt;code&gt;Delete&lt;/code&gt;/&lt;code&gt;DeleteAsync&lt;/code&gt;, generated from the &lt;code&gt;2024-07-01-preview&lt;/code&gt; deny assignment API.&lt;/li&gt;
+&lt;li&gt;Added the writable &lt;code&gt;DenyAssignmentEffect&lt;/code&gt; (&lt;code&gt;Enforced&lt;/code&gt;/&lt;code&gt;Audit&lt;/code&gt;), &lt;code&gt;Condition&lt;/code&gt;, and &lt;code&gt;ConditionVersion&lt;/code&gt; properties, and the read-only &lt;code&gt;CreatedOn&lt;/code&gt;, &lt;code&gt;UpdatedOn&lt;/code&gt;, &lt;code&gt;CreatedBy&lt;/code&gt;, and &lt;code&gt;UpdatedBy&lt;/code&gt; properties to &lt;code&gt;DenyAssignmentData&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;DenyAssignmentData&lt;/code&gt; is now a writable model to support create/update. Its &lt;code&gt;Principals&lt;/code&gt;, &lt;code&gt;ExcludePrincipals&lt;/code&gt;, and &lt;code&gt;Permissions&lt;/code&gt; collection properties changed from &lt;code&gt;IReadOnlyList&amp;lt;T&amp;gt;&lt;/code&gt; to &lt;code&gt;IList&amp;lt;T&amp;gt;&lt;/code&gt;, and the type now has a public constructor.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DenyAssignmentPermission&lt;/code&gt; is now a writable model. Its &lt;code&gt;Actions&lt;/code&gt;, &lt;code&gt;NotActions&lt;/code&gt;, &lt;code&gt;DataActions&lt;/code&gt;, and &lt;code&gt;NotDataActions&lt;/code&gt; collection properties changed from &lt;code&gt;IReadOnlyList&amp;lt;string&amp;gt;&lt;/code&gt; to &lt;code&gt;IList&amp;lt;string&amp;gt;&lt;/code&gt;, and the type now has a public constructor. The &lt;code&gt;ArmAuthorizationModelFactory.DenyAssignmentPermission(...)&lt;/code&gt; helper is retained for backward compatibility but hidden (&lt;code&gt;EditorBrowsable(Never)&lt;/code&gt;); prefer constructing the model directly via its public constructor.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RoleManagementPrincipal&lt;/code&gt; now has a public constructor. The &lt;code&gt;ArmAuthorizationModelFactory.RoleManagementPrincipal(...)&lt;/code&gt; helper is retained for backward compatibility but hidden (&lt;code&gt;EditorBrowsable(Never)&lt;/code&gt;); prefer constructing the model directly via its public constructor.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated &lt;code&gt;Azure.Monitor.OpenTelemetry.Exporter&lt;/code&gt; dependency to &lt;code&gt;1.8.3&lt;/code&gt;, which brings: customer SDK stats enabled by default (opt out with &lt;code&gt;APPLICATIONINSIGHTS_SDKSTATS_DISABLED=true&lt;/code&gt;), internal Network SDK statistics signals, GenAI agent attribution processors for spans and logs, and &lt;code&gt;CategoryName&lt;/code&gt; added to custom event custom dimensions.&lt;/li&gt;
+&lt;li&gt;Migrated code generation from Swagger/AutoRest to TypeSpec.&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>DataDog/dd-trace-dotnet - Releases - 2026-07-27</title>
-    <id>https://github.com/DataDog/dd-trace-dotnet#2026-07-27</id>
-    <link href="https://github.com/DataDog/dd-trace-dotnet" />
-    <updated>2026-07-28T00:21:47Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/releases/tag/v3.50.0"&gt;3.50.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;Summary&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[Tracing] Add support for Serilog 4.4.0&lt;/li&gt;
-&lt;li&gt;[Test Optimization] Add support for MSTest 4.3.0&lt;/li&gt;
-&lt;li&gt;[ASM] Handle billing issues for standonly mode&lt;/li&gt;
-&lt;li&gt;[Dynamic Instrumentation] Redact sensitive values in expression dumps&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Changes&lt;/h2&gt;
-&lt;h3&gt;Tracer&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[OTLP] Removing the path with OtelTracesSpanMetricsEnabled (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4940328001" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8921" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8921/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8921"&gt;#8921&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Add support for Serilog 4.4.0 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4937508592" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8917" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8917/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8917"&gt;#8917&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;CI Visibility&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;fix(mstest): support ExecuteTestAsync in 4.3 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4960815413" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8934" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8934/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8934"&gt;#8934&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;ASM&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[ASM] Set _dd.apm.enabled:0 on all spans (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4941101063" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8923" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8923/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8923"&gt;#8923&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[IAST] Exclude FSharp.* assemblies from dataflow (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4924398730" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8905" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8905/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8905"&gt;#8905&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[AppSec] Report agentic onboarding marker in configuration telemetry (RFC-1113) (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4939800079" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8920" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8920/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8920"&gt;#8920&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Continuous Profiler&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[Profiler] Fix possible namepipe-related issues (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4736300153" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8821" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8821/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8821"&gt;#8821&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Debugger&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[Debugger] Redact sensitive values in expression dumps (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4839071105" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8879" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8879/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8879"&gt;#8879&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Build / Test&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Move TestOptimizationFeatureTests to TracerInstanceTestCollection (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4840696460" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8880" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8880/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8880"&gt;#8880&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Debugger] Deflake instanceof assembly lookup tests (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4847642840" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8885" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8885/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8885"&gt;#8885&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;chore(benchmarks): migrate benchmarking base image to :newest tag (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4947257096" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8924" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8924/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8924"&gt;#8924&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Mark CheckProfilesSentThroughNamedPipe Flaky (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4959182041" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8932" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8932/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8932"&gt;#8932&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Forward BP_EXTERNAL_S3_URL through benchmark CI triggers (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4843411064" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8882" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8882/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8882"&gt;#8882&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;make sure parent env variables are not polluting the test env (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4845823822" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8883" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8883/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8883"&gt;#8883&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Attempt to fix more flake in System.Data.SqlClient (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4874522691" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8899" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8899/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8899"&gt;#8899&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Forward BP_EXTERNAL_S3_URL explicitly on benchmark triggers (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4928889225" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8908" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8908/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8908"&gt;#8908&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;clean env variables in the correct place (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4937800198" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8918" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8918/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8918"&gt;#8918&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Tests] Skip MySQL and Npgsql tests on database timeouts (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4940452255" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8922" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8922/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8922"&gt;#8922&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Exclude EndServerAsyncAdd from WCF legacy snapshots (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4949767200" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8927" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8927/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8927"&gt;#8927&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix Azure Service Bus sample restore (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4959404964" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8933" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8933/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8933"&gt;#8933&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/compare/v3.49.0...v3.50.0"&gt;Changes since 3.49.0&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
