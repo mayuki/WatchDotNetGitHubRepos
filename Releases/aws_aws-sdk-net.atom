@@ -1,65 +1,113 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-07-31T00:23:54Z</updated>
+  <updated>2026-08-01T00:22:19Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-07-30</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-07-30</id>
+    <title>aws/aws-sdk-net - Releases - 2026-07-31</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-07-31</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-07-31T00:23:54Z</updated>
+    <updated>2026-08-01T00:22:19Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.300.0"&gt;4.0.300.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.302.0"&gt;4.0.302.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.300.0 (2026-07-30 18:14 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.302.0 (2026-07-31 18:13 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.106.0)
+&lt;li&gt;BedrockRuntime (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for configuring models through the OpenResponses API for custom evaluators. CreateEvaluator and UpdateEvaluator now accept an OpenResponses model configuration for LLM-as-a-Judge evaluations.&lt;/li&gt;
+&lt;li&gt;Added support for mid-conversation tool changes in the Amazon Bedrock Converse and ConverseStream APIs&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IdentityManagement (4.0.101.0)
+&lt;li&gt;Billing (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Improved IAM Policy Simulator accuracy. Simulator now evaluates SCP conditions and resource scoping, returns explicitDeny for explicit SCP denials, and reports accurate cross-account decisions.&lt;/li&gt;
+&lt;li&gt;Adds GetEnterpriseSupportChargeSummary, GetEnterpriseSupportContractDetails, and ListEnterpriseSupportLinkedAccountCharges. These APIs provide first-time programmatic access to billing data for Enterprise Support usage previously only available upon request through AWS Concierge or Support.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Kafka (4.0.101.0)
+&lt;li&gt;CloudFormation (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon MSK Express brokers now support streaming tables for Apache Iceberg, continuously materializing Apache Kafka topics as Iceberg tables in Amazon S3 Tables. Express brokers also now support data delivery to Amazon S3 general purpose buckets.&lt;/li&gt;
+&lt;li&gt;Adding enum for sensitive property to DriftIgnoredReason&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Lambda (4.0.105.0)
+&lt;li&gt;CloudWatchLogs (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Add Python3.15 (python3.15) and NodeJs 26 (nodejs26.x) support to AWS Lambda&lt;/li&gt;
+&lt;li&gt;Amazon CloudWatch Logs now lets you create and update lookup tables directly from CloudWatch Logs query results by passing a queryId, and configure a lookup table as a scheduled query destination so it refreshes automatically with the latest query results on each run.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;NetworkFirewall (4.0.102.0)
+&lt;li&gt;ConnectCampaignsV2 (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Adds UPDATING field to Container Association Status&lt;/li&gt;
+&lt;li&gt;Launching feature for abandonment rate pacing control for outbound campaigns.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PricingPlanManager (4.0.100.0)
+&lt;li&gt;DataZone (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for Public PricingPlanManager SDK&lt;/li&gt;
+&lt;li&gt;Adding support for enhanced Git experience in Sagemaker Unified Studio.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (4.0.101.6)
+&lt;li&gt;ElementalInference (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;S3EventNotification.ToJson&lt;/code&gt; to serialize an event notification into the documented S3 wire format that &lt;code&gt;ParseJson&lt;/code&gt; can round-trip (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1399777597" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/2124" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/2124/hovercard" href="https://github.com/aws/aws-sdk-net/issues/2124"&gt;#2124&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fixed &lt;code&gt;TransferUtility&lt;/code&gt; multipart download in RANGE mode failing on zero-byte objects. The initial ranged GET (&lt;code&gt;bytes=0-{partSize-1}&lt;/code&gt;) returns &lt;code&gt;416 Range Not Satisfiable&lt;/code&gt; for an empty object; the RANGE strategy now detects the 416, probes with a &lt;code&gt;partNumber=1&lt;/code&gt; GET, and completes as an empty file, matching the PART strategy's behavior.&lt;/li&gt;
+&lt;li&gt;AWS Elemental Inference now supports graphic composition on cropped video outputs, enabling branded graphics and other visual elements to be overlaid as part of the inference workflow.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.105.0)
+&lt;li&gt;MarketplaceCatalog (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for g7 family instance types for SageMaker Studio JupyterLab and CodeEditor apps for IAD (us-east-1), PDX (us-west-2), CMH (us-east-2).&lt;/li&gt;
+&lt;li&gt;This release enhances the ListEntities API to support TargetAgreementId, TargetAgreementIntent, and CreatedBySource filters for the Offer entity type.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SecurityAgent (4.0.102.0)
+&lt;li&gt;NetworkFirewall (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for providing a branch override when configured integrated repositories&lt;/li&gt;
+&lt;li&gt;Doc Updates for Container Attributes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Outposts (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;Adds the "EKS" value to the AWSServiceName enum and marks the Address field as sensitive.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PrometheusService (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon Managed Service for Prometheus adds support for an Amazon OpenSearch Service exporter for managed collectors.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;QuickSight (4.0.106.0)
+&lt;ul&gt;
+&lt;li&gt;Adding TopicV2 management APIs, adding possibility to use Topics in Analysis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RDS (4.0.104.0)
+&lt;ul&gt;
+&lt;li&gt;Adds StorageOperationStatus and StorageOperationPercentProgress to DescribeDBInstances, letting you monitor RDS storage initialization and optimization progress.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Resiliencehubv2 (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;Adding support for new testing capability in AWS Resilience Hub.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;TranscribeStreaming (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds a new optional TranscriptFormat parameter to the Amazon Transcribe streaming API, letting customers select spoken or written form for numeric and formatted output.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.301.0"&gt;4.0.301.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.301.0 (2026-07-31 02:59 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;BCMPricingCalculator (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;Removing Smithy RPC v2 CBOR support that was added in previous SDK release.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BCMRecommendedActions (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;Removing Smithy RPC v2 CBOR support that was added in previous SDK release.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
