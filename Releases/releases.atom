@@ -1,74 +1,44 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-08-05T00:23:57Z</updated>
+  <updated>2026-08-06T00:20:18Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-08-04</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-08-04</id>
+    <title>aws/aws-sdk-net - Releases - 2026-08-05</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-08-05</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-08-05T00:23:36Z</updated>
+    <updated>2026-08-06T00:19:56Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.304.0"&gt;4.0.304.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.305.0"&gt;4.0.305.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.304.0 (2026-08-04 21:04 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.305.0 (2026-08-05 18:19 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Connect (4.0.106.0)
+&lt;li&gt;ACMPCA (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon Connect Customer now supports up to 50 attachments per email, increased from the previous limit of 10. The individual maximum attachment size limit of 20 MB and the total email size limit of 25 MB still hold true.&lt;/li&gt;
+&lt;li&gt;Private Certificate Authority service now supports RSASSA-PSS signing algorithm.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DSQL (4.0.101.5)
+&lt;li&gt;BedrockAgentCoreControl (4.0.107.0)
 &lt;ul&gt;
-&lt;li&gt;UpdateCluster now checks the RemovePeerCluster permission on the specific cluster being removed, not a wildcard and docs now clarify how to set kmsEncryptionKey so the cluster uses the AWS-owned key.&lt;/li&gt;
+&lt;li&gt;Adding support for fine-grained access control for AgentCore Memory through managed AgentCore Gateway HTTP Connectors.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (4.0.103.0)
+&lt;li&gt;Deadline (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Vector indexes are a type of index in Amazon DynamoDB that enable similarity search on vector embedding stored in your table items. Vector indexes use approximate nearest neighbor search to find items whose vectors are most similar to a query vector that you provide.&lt;/li&gt;
+&lt;li&gt;AWS Deadline Cloud now reports persistent volume costs alongside compute and license costs. Customers can view per-fleet storage costs in Usage Explorer by selecting the Usage Type grouping, helping them better understand the costs of their infrastructure.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.108.0)
+&lt;li&gt;ECS (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon EC2 now supports Application Status Checks, a new status check that monitors your application's health through configurable HTTP(S) paths and ports, so you can detect and automatically respond to application-level impairments.&lt;/li&gt;
+&lt;li&gt;New enum values added for Agent Connectivity issues&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IdentityManagement (4.0.102.0)
+&lt;li&gt;Glue (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Updating endpoint generation logic&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Inspector2 (4.0.105.0)
-&lt;ul&gt;
-&lt;li&gt;Adding Azure SBOM export capability.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Organizations (4.0.100.9)
-&lt;ul&gt;
-&lt;li&gt;Improved accuracy of CloudTrail event documentation for AWS Organizations membership operations.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;PartnerCentralSelling (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;Partners can now create leads with only 5 required fields and free-text values for all other fields, reducing import friction. Engagement invitations now include enrichment data (propensity scores, lead readiness) directly in the response.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3 (4.0.101.7)
-&lt;ul&gt;
-&lt;li&gt;Fix round-trip of empty filters for lifecycle configurations (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5061044438" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/4480" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/4480/hovercard" href="https://github.com/aws/aws-sdk-net/issues/4480"&gt;#4480&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SSOAdmin (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;AWS IAM Identity Center now lets you create organization-level instances without enabling multi-account permissions. You can enable multi-account permissions during instance creation or later via console or API, which then provisions the necessary service-linked roles.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WorkSpaces (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Added ClientExperiencePolicy to ClientProperties object for ModifyClientProperties and DescribeClientProperties APIs.&lt;/li&gt;
+&lt;li&gt;Added the PutDataCatalogExportConfiguration to export Glue Data Catalog metadata to systems tables stored in S3 Tables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -79,100 +49,109 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-08-04</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-08-04</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-08-05</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-08-05</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-08-05T00:23:37Z</updated>
+    <updated>2026-08-06T00:19:57Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/System.ClientModel_1.15.0"&gt;System.ClientModel_1.15.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Translation.Document_3.0.0"&gt;Azure.AI.Translation.Document_3.0.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.15.0 (2026-07-30)&lt;/h2&gt;
+                                &lt;h2&gt;3.0.0 (2026-08-01)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added sealed, one-shot experimental &lt;code&gt;AsyncStreamingClientResult&amp;lt;T&amp;gt;&lt;/code&gt; (and the &lt;code&gt;AsyncStreamingClientResult&lt;/code&gt; factory class) for asynchronous streaming responses, with factories for custom producers, server-sent events, and newline-delimited JSON. These types are marked experimental (&lt;code&gt;SCME0005&lt;/code&gt;) and are subject to change or removal in future updates.&lt;/li&gt;
+&lt;li&gt;Added support for the &lt;code&gt;2026-03-01&lt;/code&gt; service API version, which is now the default.&lt;/li&gt;
+&lt;li&gt;Added image translation support: the &lt;code&gt;TranslateTextWithinImage&lt;/code&gt; property on &lt;code&gt;BatchOptions&lt;/code&gt; for batch requests, and a &lt;code&gt;translateTextWithinImage&lt;/code&gt; parameter on &lt;code&gt;SingleDocumentTranslationClient.Translate&lt;/code&gt; and &lt;code&gt;TranslateAsync&lt;/code&gt; for single document requests.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;StartTranslation&lt;/code&gt; and &lt;code&gt;StartTranslationAsync&lt;/code&gt; convenience overloads on &lt;code&gt;DocumentTranslationClient&lt;/code&gt; that take an &lt;code&gt;IEnumerable&amp;lt;DocumentTranslationInput&amp;gt;&lt;/code&gt; plus a &lt;code&gt;translateTextWithinImage&lt;/code&gt; flag, so batch image translation can be enabled without constructing a &lt;code&gt;TranslationBatch&lt;/code&gt;/&lt;code&gt;BatchOptions&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added image scan reporting to &lt;code&gt;DocumentStatusResult&lt;/code&gt;: &lt;code&gt;ImageCharactersDetected&lt;/code&gt;, &lt;code&gt;ImagesCharged&lt;/code&gt;, &lt;code&gt;TotalImageScansSucceeded&lt;/code&gt;, and &lt;code&gt;TotalImageScansFailed&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added the &lt;code&gt;DeploymentName&lt;/code&gt; property to &lt;code&gt;TranslationTarget&lt;/code&gt; to specify the deployment name of the custom translation model for a batch translation request.&lt;/li&gt;
+&lt;li&gt;Added the &lt;code&gt;DeploymentName&lt;/code&gt; property to &lt;code&gt;DocumentStatusResult&lt;/code&gt;, exposing the deployment name of the custom translation model used for the translation.&lt;/li&gt;
+&lt;li&gt;Added the &lt;code&gt;deploymentName&lt;/code&gt; parameter to &lt;code&gt;SingleDocumentTranslationClient.Translate&lt;/code&gt; and &lt;code&gt;TranslateAsync&lt;/code&gt; for single document translation requests.&lt;/li&gt;
+&lt;li&gt;Added dependency-injection and hosting support via &lt;code&gt;DocumentTranslationClientHostExtensions&lt;/code&gt;, &lt;code&gt;SingleDocumentTranslationClientHostExtensions&lt;/code&gt;, the &lt;code&gt;DocumentTranslationClientSettings&lt;/code&gt; and &lt;code&gt;SingleDocumentTranslationClientSettings&lt;/code&gt; types, and new constructors that accept these settings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Changed the default &lt;code&gt;DocumentTranslationClientOptions.ServiceVersion&lt;/code&gt; from &lt;code&gt;V2024_05_01&lt;/code&gt; to &lt;code&gt;V2026_03_01&lt;/code&gt;, and removed the interim &lt;code&gt;V2024_11_01_Preview&lt;/code&gt; and &lt;code&gt;V2025_12_01_Preview&lt;/code&gt; preview service versions. Use the stable &lt;code&gt;V2026_03_01&lt;/code&gt; version instead.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;deploymentName&lt;/code&gt; and &lt;code&gt;translateTextWithinImage&lt;/code&gt; parameters (positioned after &lt;code&gt;category&lt;/code&gt;) to the &lt;code&gt;SingleDocumentTranslationClient.Translate&lt;/code&gt; and &lt;code&gt;TranslateAsync&lt;/code&gt; overloads. This is a binary-breaking change for existing callers.&lt;/li&gt;
+&lt;li&gt;Made the format type parameter required (&lt;code&gt;FileFormatType fileFormatType&lt;/code&gt; instead of &lt;code&gt;FileFormatType? type&lt;/code&gt;) on &lt;code&gt;DocumentTranslationClient.GetSupportedFormats&lt;/code&gt; and &lt;code&gt;GetSupportedFormatsAsync&lt;/code&gt;, since the &lt;code&gt;2026-03-01&lt;/code&gt; service version requires it. Specify &lt;code&gt;FileFormatType.Document&lt;/code&gt; or &lt;code&gt;FileFormatType.Glossary&lt;/code&gt;. The previous nullable overload is retained for binary compatibility but now throws &lt;code&gt;NotSupportedException&lt;/code&gt; when called without a type.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Regenerated the library with the latest Azure code generator, adding the &lt;code&gt;AzureAITranslationDocumentContext&lt;/code&gt; model-reader-writer context and additional serialization conversion operators on model types.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.VoiceLive_1.2.0"&gt;Azure.AI.VoiceLive_1.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0 (2026-08-03)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;AzureRealtimeNativeVoice&lt;/code&gt; and &lt;code&gt;AzureRealtimeNativeVoiceName&lt;/code&gt; with 12 new voice options (Aarti, Andrew, Ava, Denise, Diya, Elsa, Florian, Francisca, Meera, Xiaoxiao, Ximena, Yunxi).&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;AllowParallelToolCalls&lt;/code&gt; property on &lt;code&gt;VoiceLiveSessionOptions&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;Channels&lt;/code&gt; and &lt;code&gt;ReferenceSource&lt;/code&gt; (&lt;code&gt;EchoCancellationReferenceSource&lt;/code&gt;) properties on &lt;code&gt;AudioEchoCancellation&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added streaming text input events: &lt;code&gt;ClientEventInputTextDelta&lt;/code&gt;, &lt;code&gt;ClientEventInputTextDone&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ServerEventResponseInvocationDelta&lt;/code&gt; for streaming invocation deltas.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ExpiresOn&lt;/code&gt; property on &lt;code&gt;VoiceLiveSessionResponse&lt;/code&gt; (server-set session expiration time).&lt;/li&gt;
+&lt;li&gt;Added the &lt;code&gt;2026-07-15&lt;/code&gt; GA service version (&lt;code&gt;VoiceLiveClientOptions.ServiceVersion.V2026_07_15&lt;/code&gt;), which is now the default.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed the following preview-only types that were added in &lt;code&gt;1.2.0-beta.1&lt;/code&gt; and never shipped in a stable release: &lt;code&gt;SmartEndOfTurnDetection&lt;/code&gt; (end-of-utterance detection with &lt;code&gt;ThresholdLevel&lt;/code&gt; and &lt;code&gt;TimeoutMs&lt;/code&gt;); RTC call support (&lt;code&gt;ClientEventRtcCallSdpCreate&lt;/code&gt;, &lt;code&gt;ServerEventRtcCallSdpCreated&lt;/code&gt;, &lt;code&gt;ServerEventRtcCallError&lt;/code&gt;, &lt;code&gt;RtcCallErrorDetails&lt;/code&gt;); and output audio buffer lifecycle events (&lt;code&gt;ServerEventOutputAudioBufferStarted&lt;/code&gt;, &lt;code&gt;ServerEventOutputAudioBufferStopped&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Updated samples to use &lt;code&gt;MCPApprovalKind&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.ConfidentialLedger_2.0.0-beta.1"&gt;Azure.Security.ConfidentialLedger_2.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;2.0.0-beta.1 (2026-08-05)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for stable API version 2026-02-23.&lt;/li&gt;
+&lt;li&gt;Added opt-in support for the Azure Confidential Ledger Gateway via &lt;code&gt;ConfidentialLedgerClientOptions.UseLedgerGateway&lt;/code&gt;. When enabled:
+&lt;ul&gt;
+&lt;li&gt;The SDK skips the per-ledger CCF identity-service TLS bootstrap. The gateway uses publicly-rooted certificates, so the OS trust store is sufficient.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ConfidentialLedgerClient.PostLedgerEntry&lt;/code&gt; accepts an HTTP 202 response and returns an operation whose &lt;code&gt;Id&lt;/code&gt; is the gateway-assigned &lt;code&gt;operationId&lt;/code&gt; (read from the &lt;code&gt;x-ms-webfe-operation-id&lt;/code&gt; response header, with a fallback to the response body). The operation transparently polls &lt;code&gt;GET /app/operations/{operationId}&lt;/code&gt; and surfaces the underlying CCF transaction once committed.&lt;/li&gt;
+&lt;li&gt;Client-certificate (mTLS) authentication is rejected at construction time — only &lt;code&gt;TokenCredential&lt;/code&gt; is supported by the gateway.&lt;/li&gt;
+&lt;li&gt;Primary-node redirect caching (added in 1.4.1-beta.5) is automatically disabled, since the gateway brokers node routing on the server side.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ConfidentialLedgerClient.GetOperationStatus&lt;/code&gt; / &lt;code&gt;GetOperationStatusAsync&lt;/code&gt; for direct polling of the gateway operation queue.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ConfidentialLedgerClient.RehydratePostLedgerEntryOperation(string operationId)&lt;/code&gt; for resuming a previously-started write submission across process restarts (no I/O is performed until polling begins). Operation IDs remain valid on the server for the gateway's operation-record retention period.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed an issue where response content logging could emit more bytes than were actually read when a non-buffered (streaming) response was read into a buffer larger than the response body. Previously, when the read began at offset 0, &lt;code&gt;MessageLoggingPolicy&lt;/code&gt; logged the entire caller-supplied buffer — including the bytes past the response payload, which for a pooled buffer contain unrelated in-process content — and the configured &lt;code&gt;MessageContentSizeLimit&lt;/code&gt; was not applied. Only the bytes that were read are now logged. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/61399" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/61399/hovercard"&gt;#61399&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PostLedgerEntryOperation.GetRawResponse()&lt;/code&gt; now returns the initial submit response before the first poll. Previously, callers using &lt;code&gt;WaitUntil.Started&lt;/code&gt; who inspected response headers (for example &lt;code&gt;x-ms-ccf-transaction-id&lt;/code&gt; or &lt;code&gt;x-ms-webfe-operation-id&lt;/code&gt;) on the returned operation observed a &lt;code&gt;NullReferenceException&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Renamed several generated model and enum types in the .NET client to follow Azure SDK for .NET naming guidelines (C# only; the REST contract and other language SDKs are unchanged): &lt;code&gt;Bundle&lt;/code&gt; → &lt;code&gt;LedgerBundle&lt;/code&gt;, &lt;code&gt;Constitution&lt;/code&gt; → &lt;code&gt;LedgerConstitution&lt;/code&gt;, &lt;code&gt;Metadata&lt;/code&gt; → &lt;code&gt;LedgerEndpointMetadata&lt;/code&gt;, &lt;code&gt;Mode&lt;/code&gt; → &lt;code&gt;LedgerEndpointMode&lt;/code&gt;, &lt;code&gt;Role&lt;/code&gt; → &lt;code&gt;LedgerRole&lt;/code&gt;, &lt;code&gt;Collection&lt;/code&gt; → &lt;code&gt;LedgerCollectionInfo&lt;/code&gt;, and &lt;code&gt;UserDefinedFunctionExecutionResponse&lt;/code&gt; → &lt;code&gt;UserDefinedFunctionExecution&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>icsharpcode/ILSpy - Releases - 2026-08-04</title>
-    <id>https://github.com/icsharpcode/ILSpy#2026-08-04</id>
-    <link href="https://github.com/icsharpcode/ILSpy" />
-    <updated>2026-08-05T00:23:49Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/icsharpcode/ILSpy/releases/tag/v11.0-rc"&gt;ILSpy 11.0 Release Candidate&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.61.0"&gt;Azure.Core_1.61.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;This release is based on &lt;a href="https://dotnet.microsoft.com/en-us/download/dotnet/10.0" rel="nofollow"&gt;.NET 10.0&lt;/a&gt;. Please make sure that you have it installed on your machine beforehand.&lt;/p&gt;
-&lt;p&gt;Note for Mac users: see &lt;a href="https://github.com/icsharpcode/ILSpy/wiki/Build-Artifacts#running-the-macos-artifact"&gt;https://github.com/icsharpcode/ILSpy/wiki/Build-Artifacts#running-the-macos-artifact&lt;/a&gt; because the ILSpy.app is neither signed nor notarized.&lt;/p&gt;
-&lt;h1&gt;New Features&lt;/h1&gt;
+                                &lt;h2&gt;1.61.0 (2026-07-30)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5012279248" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3936" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3936/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3936"&gt;#3936&lt;/a&gt;: Add "Open from running process" dialog&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5038825063" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3951" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3951/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3951"&gt;#3951&lt;/a&gt;: Add --dump-table metadata dump mode to ilspycmd&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4991777552" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3924" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3924/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3924"&gt;#3924&lt;/a&gt;: ilspycmd: add --member for single-member decompilation&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;AzureAuthorityHosts.AzureBleuCloud&lt;/code&gt; (&lt;code&gt;https://login.sovcloud-identity.fr/&lt;/code&gt;), the Microsoft Entra authority host for Bleu Cloud, the national partner cloud for France. Interactive credentials' &lt;code&gt;Authenticate&lt;/code&gt; methods now also resolve the default Azure Resource Manager scope for Bleu Cloud.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;User Interface&lt;/h1&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5006053953" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3932" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3932/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3932"&gt;#3932&lt;/a&gt;: Metadata row details: full-width layout and a decompiler-styled editor for text blobs&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5000713560" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3927" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3927/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3927"&gt;#3927&lt;/a&gt;: Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1515878641" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2879" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2879/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2879"&gt;#2879&lt;/a&gt;: show stored FieldList/MethodList values for memberless types&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4990800383" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3922" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3922/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3922"&gt;#3922&lt;/a&gt;: Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="171057961" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/749" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/749/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/749"&gt;#749&lt;/a&gt;: toggle a member's fold together with its documentation&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4991152361" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3923" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3923/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3923"&gt;#3923&lt;/a&gt;: Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="193312081" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/781" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/781/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/781"&gt;#781&lt;/a&gt;: click highlights member references, Ctrl+Click navigates&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4985199796" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3918" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3918/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3918"&gt;#3918&lt;/a&gt;: Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="98623017" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/633" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/633/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/633"&gt;#633&lt;/a&gt;: Overrides analysis and this/base keyword navigation&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4953112153" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3906" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3906/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3906"&gt;#3906&lt;/a&gt;: Show hover tooltips for dynamic member accesses&lt;/li&gt;
+&lt;li&gt;Fixed an issue where response content logging could emit more bytes than were actually read when a non-buffered (streaming) response was read into a buffer larger than the response body. Previously, when the read began at offset 0, the entire caller-supplied buffer was logged — including the bytes past the response payload, which for a pooled buffer contain unrelated in-process content — and the configured &lt;code&gt;LoggedContentSizeLimit&lt;/code&gt; was not applied. The logging policy now logs only the bytes that were read. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/61399" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/61399/hovercard"&gt;#61399&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed an issue where &lt;code&gt;RequestFailedException&lt;/code&gt; could throw a secondary &lt;code&gt;ArgumentNullException&lt;/code&gt; while formatting a failed response that had a text content-type header but an empty body, masking the actual service failure. The exception now preserves the original HTTP status, reason phrase, and headers, and no longer formats empty response content.&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;AzureCliCredential&lt;/code&gt; to not pass both &lt;code&gt;--tenant&lt;/code&gt; and &lt;code&gt;--subscription&lt;/code&gt; flags to the Azure CLI, as the CLI rejects this combination. When a tenant is requested (for example, via challenge-based authentication) it now takes precedence and &lt;code&gt;--subscription&lt;/code&gt; is omitted; &lt;code&gt;--subscription&lt;/code&gt; is used only when no tenant is requested. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/58949" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/58949/hovercard"&gt;#58949&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;Enhancements&lt;/h1&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5006370686" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3933" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3933/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3933"&gt;#3933&lt;/a&gt;: Convert float/double += 1 into increment and decrement expressions&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4999684856" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3926" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3926/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3926"&gt;#3926&lt;/a&gt;: Generate and resolve xml doc ID strings at the metadata level&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4984554679" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3917" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3917/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3917"&gt;#3917&lt;/a&gt;: Represent VB.NET parameterized properties as accessor methods in C# output&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4932748351" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3899" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3899/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3899"&gt;#3899&lt;/a&gt;: Don't undo the compiler's &amp;amp;&amp;amp;-to-&amp;amp; optimization&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4922716424" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3889" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3889/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3889"&gt;#3889&lt;/a&gt;: Reimplement cross-platform single-instance handling&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4950020913" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3904" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3904/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3904"&gt;#3904&lt;/a&gt;: Proper event tracing for ICSharpCode.Decompiler and ICSharpCode.ILSpyX&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4942502892" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3902" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3902/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3902"&gt;#3902&lt;/a&gt;: Beautify enum declarations by referencing previously declared members&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Testing / Infrastructure&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5030638524" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3943" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3943/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3943"&gt;#3943&lt;/a&gt;: Do not pass /shared to compilers that cannot reach a compiler server&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5026770430" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3941" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3941/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3941"&gt;#3941&lt;/a&gt;: Skip redundant push builds for branches with an open PR&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5002423776" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3928" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3928/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3928"&gt;#3928&lt;/a&gt;: Add pretty test for C# 13 ref struct interfaces / allows ref struct&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4989878077" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3919" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3919/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3919"&gt;#3919&lt;/a&gt;: Preserve Debug Steps tree state across filter sessions&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4982063521" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3914" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3914/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3914"&gt;#3914&lt;/a&gt;: Support Roslyn 1.x/2.x compiler configurations in tests on non-Windows&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4984142498" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3915" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3915/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3915"&gt;#3915&lt;/a&gt;: Revive TypeInferenceTests from NRefactory and cover the C# standard inference rules&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4971162704" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3912" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3912/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3912"&gt;#3912&lt;/a&gt;: Revive NRefactory conversion tests and cover all of C# standard chapter 10&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4957938461" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3907" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3907/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3907"&gt;#3907&lt;/a&gt;: Generate version-info files with CRLF on all platforms&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Contributions&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4944923918" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3903" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3903/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3903"&gt;#3903&lt;/a&gt;: Provide a WholeProjectDecompiler constructor with no default parameter values — &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ds5678/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ds5678"&gt;@ds5678&lt;/a&gt;, thank you!&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5006396303" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3934" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3934/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3934"&gt;#3934&lt;/a&gt;: Publicize &lt;code&gt;IProjectFileWriter&lt;/code&gt; implementations — &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ds5678/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ds5678"&gt;@ds5678&lt;/a&gt;, thank you!&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4970150798" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3910" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3910/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3910"&gt;#3910&lt;/a&gt;: Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4969775920" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3909" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3909/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3909"&gt;#3909&lt;/a&gt;: emit nullable override disambiguators — &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/sailro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/sailro"&gt;@sailro&lt;/a&gt;, thank you!&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4970150846" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3911" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3911/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3911"&gt;#3911&lt;/a&gt;: Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4969773623" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3908" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3908/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3908"&gt;#3908&lt;/a&gt;: use the async iterator element type for yield — &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/sailro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/sailro"&gt;@sailro&lt;/a&gt;, thank you!&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4924721449" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3896" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3896/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3896"&gt;#3896&lt;/a&gt;: Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4924666937" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3895" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3895/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3895"&gt;#3895&lt;/a&gt;: keep byref-like ToString in string concatenation — &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/sailro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/sailro"&gt;@sailro&lt;/a&gt;, thank you!&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4924633755" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3893" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3893/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3893"&gt;#3893&lt;/a&gt;: Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4924593383" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3892" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3892/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3892"&gt;#3892&lt;/a&gt;: preserve unsafe for pointer constructors — &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/sailro/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/sailro"&gt;@sailro&lt;/a&gt;, thank you!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Bug Fixes&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5038125834" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3949" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3949/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3949"&gt;#3949&lt;/a&gt;: Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4720235395" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3803" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3803/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3803"&gt;#3803&lt;/a&gt;: Crash on nested deconstruction of custom structs&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5036543914" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3947" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3947/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3947"&gt;#3947&lt;/a&gt;: Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2396281426" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3230" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3230/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3230"&gt;#3230&lt;/a&gt;: do not emit base-list interfaces the base list cannot name&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5037241858" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3948" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3948/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3948"&gt;#3948&lt;/a&gt;: Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3824367572" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3652" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3652/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3652"&gt;#3652&lt;/a&gt;: Apostrophe in identifiers must not start a char literal&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5002619477" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3929" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3929/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3929"&gt;#3929&lt;/a&gt;: Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="637198999" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/2032" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/2032/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/2032"&gt;#2032&lt;/a&gt;: avoid propagating mutated SROA fields&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5027364071" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3942" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3942/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3942"&gt;#3942&lt;/a&gt;: Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5017039915" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3938" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3938/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3938"&gt;#3938&lt;/a&gt;: nested-type members must not inherit ExtensionInfo&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4984363976" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3916" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3916/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3916"&gt;#3916&lt;/a&gt;: Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="474181134" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/1603" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/1603/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/1603"&gt;#1603&lt;/a&gt;: recognize foreach over enumerators that cannot be disposable&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4952202858" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3905" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3905/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3905"&gt;#3905&lt;/a&gt;: Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="480400674" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/1638" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/1638/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/1638"&gt;#1638&lt;/a&gt;: identify renamed yield state machine members via method impls&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4931204199" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3898" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3898/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3898"&gt;#3898&lt;/a&gt;: Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4923745726" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3891" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3891/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3891"&gt;#3891&lt;/a&gt;: don't reduce nesting when there is no else block&lt;/li&gt;
-&lt;li&gt;PR &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4919252161" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3886" data-hovercard-type="pull_request" data-hovercard-url="/icsharpcode/ILSpy/pull/3886/hovercard" href="https://github.com/icsharpcode/ILSpy/pull/3886"&gt;#3886&lt;/a&gt;: Fix &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4808185508" data-permission-text="Title is private" data-url="https://github.com/icsharpcode/ILSpy/issues/3858" data-hovercard-type="issue" data-hovercard-url="/icsharpcode/ILSpy/issues/3858/hovercard" href="https://github.com/icsharpcode/ILSpy/issues/3858"&gt;#3858&lt;/a&gt;: Detect automatic events on the ILAst instead of the C# AST&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;azure-deprecating&lt;/code&gt; to the default list of allowed (non-redacted) headers in &lt;code&gt;DiagnosticsOptions&lt;/code&gt; to support &lt;a href="https://github.com/microsoft/api-guidelines/blob/vNext/azure/Guidelines.md#deprecating-behavior-notification"&gt;deprecating behavior notification&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
