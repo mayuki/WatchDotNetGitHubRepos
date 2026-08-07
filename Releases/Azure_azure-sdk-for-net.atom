@@ -1,112 +1,79 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-08-06T00:19:57Z</updated>
+  <updated>2026-08-07T01:08:04Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-08-05</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-08-05</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-08-06</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-08-06</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-08-06T00:19:57Z</updated>
+    <updated>2026-08-07T01:08:04Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Translation.Document_3.0.0"&gt;Azure.AI.Translation.Document_3.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Compute.Recommender_1.1.0-beta.1"&gt;Azure.ResourceManager.Compute.Recommender_1.1.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;3.0.0 (2026-08-01)&lt;/h2&gt;
+                                &lt;h2&gt;1.1.0-beta.1 (2026-08-07)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for the &lt;code&gt;2026-03-01&lt;/code&gt; service API version, which is now the default.&lt;/li&gt;
-&lt;li&gt;Added image translation support: the &lt;code&gt;TranslateTextWithinImage&lt;/code&gt; property on &lt;code&gt;BatchOptions&lt;/code&gt; for batch requests, and a &lt;code&gt;translateTextWithinImage&lt;/code&gt; parameter on &lt;code&gt;SingleDocumentTranslationClient.Translate&lt;/code&gt; and &lt;code&gt;TranslateAsync&lt;/code&gt; for single document requests.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;StartTranslation&lt;/code&gt; and &lt;code&gt;StartTranslationAsync&lt;/code&gt; convenience overloads on &lt;code&gt;DocumentTranslationClient&lt;/code&gt; that take an &lt;code&gt;IEnumerable&amp;lt;DocumentTranslationInput&amp;gt;&lt;/code&gt; plus a &lt;code&gt;translateTextWithinImage&lt;/code&gt; flag, so batch image translation can be enabled without constructing a &lt;code&gt;TranslationBatch&lt;/code&gt;/&lt;code&gt;BatchOptions&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added image scan reporting to &lt;code&gt;DocumentStatusResult&lt;/code&gt;: &lt;code&gt;ImageCharactersDetected&lt;/code&gt;, &lt;code&gt;ImagesCharged&lt;/code&gt;, &lt;code&gt;TotalImageScansSucceeded&lt;/code&gt;, and &lt;code&gt;TotalImageScansFailed&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;DeploymentName&lt;/code&gt; property to &lt;code&gt;TranslationTarget&lt;/code&gt; to specify the deployment name of the custom translation model for a batch translation request.&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;DeploymentName&lt;/code&gt; property to &lt;code&gt;DocumentStatusResult&lt;/code&gt;, exposing the deployment name of the custom translation model used for the translation.&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;deploymentName&lt;/code&gt; parameter to &lt;code&gt;SingleDocumentTranslationClient.Translate&lt;/code&gt; and &lt;code&gt;TranslateAsync&lt;/code&gt; for single document translation requests.&lt;/li&gt;
-&lt;li&gt;Added dependency-injection and hosting support via &lt;code&gt;DocumentTranslationClientHostExtensions&lt;/code&gt;, &lt;code&gt;SingleDocumentTranslationClientHostExtensions&lt;/code&gt;, the &lt;code&gt;DocumentTranslationClientSettings&lt;/code&gt; and &lt;code&gt;SingleDocumentTranslationClientSettings&lt;/code&gt; types, and new constructors that accept these settings.&lt;/li&gt;
+&lt;li&gt;Upgraded API version to &lt;code&gt;2026-05-05-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;SkuMixPlacement&lt;/code&gt; scoring support via &lt;code&gt;GetComputeSkuMixPlacement&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ComputeSchedule_1.2.0-beta.5"&gt;Azure.ResourceManager.ComputeSchedule_1.2.0-beta.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0-beta.5 (2026-08-06)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The spec change in &lt;a href="https://github.com/Azure/azure-rest-api-specs/pull/42886" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-rest-api-specs/pull/42886/hovercard"&gt;PR #42886&lt;/a&gt; made the rank property optional.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ServiceBus_1.2.0"&gt;Azure.ResourceManager.ServiceBus_1.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0 (2026-07-28)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for the &lt;code&gt;2026-01-01&lt;/code&gt; API version.&lt;/li&gt;
+&lt;li&gt;Added the &lt;code&gt;IPAddressType&lt;/code&gt; property using &lt;code&gt;ServiceBusIPAddressType&lt;/code&gt; (&lt;code&gt;IPv4&lt;/code&gt; / &lt;code&gt;DualStack&lt;/code&gt;) to &lt;code&gt;ServiceBusNamespaceData&lt;/code&gt;, enabling IPv4-only or dual-stack (IPv4 and IPv6) namespaces.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Changed the default &lt;code&gt;DocumentTranslationClientOptions.ServiceVersion&lt;/code&gt; from &lt;code&gt;V2024_05_01&lt;/code&gt; to &lt;code&gt;V2026_03_01&lt;/code&gt;, and removed the interim &lt;code&gt;V2024_11_01_Preview&lt;/code&gt; and &lt;code&gt;V2025_12_01_Preview&lt;/code&gt; preview service versions. Use the stable &lt;code&gt;V2026_03_01&lt;/code&gt; version instead.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;deploymentName&lt;/code&gt; and &lt;code&gt;translateTextWithinImage&lt;/code&gt; parameters (positioned after &lt;code&gt;category&lt;/code&gt;) to the &lt;code&gt;SingleDocumentTranslationClient.Translate&lt;/code&gt; and &lt;code&gt;TranslateAsync&lt;/code&gt; overloads. This is a binary-breaking change for existing callers.&lt;/li&gt;
-&lt;li&gt;Made the format type parameter required (&lt;code&gt;FileFormatType fileFormatType&lt;/code&gt; instead of &lt;code&gt;FileFormatType? type&lt;/code&gt;) on &lt;code&gt;DocumentTranslationClient.GetSupportedFormats&lt;/code&gt; and &lt;code&gt;GetSupportedFormatsAsync&lt;/code&gt;, since the &lt;code&gt;2026-03-01&lt;/code&gt; service version requires it. Specify &lt;code&gt;FileFormatType.Document&lt;/code&gt; or &lt;code&gt;FileFormatType.Glossary&lt;/code&gt;. The previous nullable overload is retained for binary compatibility but now throws &lt;code&gt;NotSupportedException&lt;/code&gt; when called without a type.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Regenerated the library with the latest Azure code generator, adding the &lt;code&gt;AzureAITranslationDocumentContext&lt;/code&gt; model-reader-writer context and additional serialization conversion operators on model types.&lt;/li&gt;
+&lt;li&gt;Removed the &lt;code&gt;ClusterArmId&lt;/code&gt; property from &lt;code&gt;ServiceBusNamespaceReplicaLocation&lt;/code&gt;. This property had no effect for Service Bus namespaces.&lt;/li&gt;
+&lt;li&gt;The namespace update (PATCH) operation is now synchronous in API version &lt;code&gt;2026-01-01&lt;/code&gt;. The long-running &lt;code&gt;Update(WaitUntil, ServiceBusNamespacePatch, CancellationToken)&lt;/code&gt; and &lt;code&gt;UpdateAsync(WaitUntil, ServiceBusNamespacePatch, CancellationToken)&lt;/code&gt; overloads on &lt;code&gt;ServiceBusNamespaceResource&lt;/code&gt; have been removed; use &lt;code&gt;Update(ServiceBusNamespacePatch, CancellationToken)&lt;/code&gt; / &lt;code&gt;UpdateAsync(ServiceBusNamespacePatch, CancellationToken)&lt;/code&gt; instead.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.VoiceLive_1.2.0"&gt;Azure.AI.VoiceLive_1.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerService_1.7.0-beta.1"&gt;Azure.ResourceManager.ContainerService_1.7.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0 (2026-08-03)&lt;/h2&gt;
+                                &lt;h2&gt;1.7.0-beta.1 (2026-07-30)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;AzureRealtimeNativeVoice&lt;/code&gt; and &lt;code&gt;AzureRealtimeNativeVoiceName&lt;/code&gt; with 12 new voice options (Aarti, Andrew, Ava, Denise, Diya, Elsa, Florian, Francisca, Meera, Xiaoxiao, Ximena, Yunxi).&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;AllowParallelToolCalls&lt;/code&gt; property on &lt;code&gt;VoiceLiveSessionOptions&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;Channels&lt;/code&gt; and &lt;code&gt;ReferenceSource&lt;/code&gt; (&lt;code&gt;EchoCancellationReferenceSource&lt;/code&gt;) properties on &lt;code&gt;AudioEchoCancellation&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added streaming text input events: &lt;code&gt;ClientEventInputTextDelta&lt;/code&gt;, &lt;code&gt;ClientEventInputTextDone&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ServerEventResponseInvocationDelta&lt;/code&gt; for streaming invocation deltas.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ExpiresOn&lt;/code&gt; property on &lt;code&gt;VoiceLiveSessionResponse&lt;/code&gt; (server-set session expiration time).&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;2026-07-15&lt;/code&gt; GA service version (&lt;code&gt;VoiceLiveClientOptions.ServiceVersion.V2026_07_15&lt;/code&gt;), which is now the default.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Removed the following preview-only types that were added in &lt;code&gt;1.2.0-beta.1&lt;/code&gt; and never shipped in a stable release: &lt;code&gt;SmartEndOfTurnDetection&lt;/code&gt; (end-of-utterance detection with &lt;code&gt;ThresholdLevel&lt;/code&gt; and &lt;code&gt;TimeoutMs&lt;/code&gt;); RTC call support (&lt;code&gt;ClientEventRtcCallSdpCreate&lt;/code&gt;, &lt;code&gt;ServerEventRtcCallSdpCreated&lt;/code&gt;, &lt;code&gt;ServerEventRtcCallError&lt;/code&gt;, &lt;code&gt;RtcCallErrorDetails&lt;/code&gt;); and output audio buffer lifecycle events (&lt;code&gt;ServerEventOutputAudioBufferStarted&lt;/code&gt;, &lt;code&gt;ServerEventOutputAudioBufferStopped&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;Updated samples to use &lt;code&gt;MCPApprovalKind&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Upgraded api-version to 2026-05-02-preview.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.ConfidentialLedger_2.0.0-beta.1"&gt;Azure.Security.ConfidentialLedger_2.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.HybridCompute_1.1.0"&gt;Azure.ResourceManager.HybridCompute_1.1.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;2.0.0-beta.1 (2026-08-05)&lt;/h2&gt;
+                                &lt;h2&gt;1.1.0 (2026-07-31)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for stable API version 2026-02-23.&lt;/li&gt;
-&lt;li&gt;Added opt-in support for the Azure Confidential Ledger Gateway via &lt;code&gt;ConfidentialLedgerClientOptions.UseLedgerGateway&lt;/code&gt;. When enabled:
-&lt;ul&gt;
-&lt;li&gt;The SDK skips the per-ledger CCF identity-service TLS bootstrap. The gateway uses publicly-rooted certificates, so the OS trust store is sufficient.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ConfidentialLedgerClient.PostLedgerEntry&lt;/code&gt; accepts an HTTP 202 response and returns an operation whose &lt;code&gt;Id&lt;/code&gt; is the gateway-assigned &lt;code&gt;operationId&lt;/code&gt; (read from the &lt;code&gt;x-ms-webfe-operation-id&lt;/code&gt; response header, with a fallback to the response body). The operation transparently polls &lt;code&gt;GET /app/operations/{operationId}&lt;/code&gt; and surfaces the underlying CCF transaction once committed.&lt;/li&gt;
-&lt;li&gt;Client-certificate (mTLS) authentication is rejected at construction time — only &lt;code&gt;TokenCredential&lt;/code&gt; is supported by the gateway.&lt;/li&gt;
-&lt;li&gt;Primary-node redirect caching (added in 1.4.1-beta.5) is automatically disabled, since the gateway brokers node routing on the server side.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ConfidentialLedgerClient.GetOperationStatus&lt;/code&gt; / &lt;code&gt;GetOperationStatusAsync&lt;/code&gt; for direct polling of the gateway operation queue.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ConfidentialLedgerClient.RehydratePostLedgerEntryOperation(string operationId)&lt;/code&gt; for resuming a previously-started write submission across process restarts (no I/O is performed until polling begins). Operation IDs remain valid on the server for the gateway's operation-record retention period.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;PostLedgerEntryOperation.GetRawResponse()&lt;/code&gt; now returns the initial submit response before the first poll. Previously, callers using &lt;code&gt;WaitUntil.Started&lt;/code&gt; who inspected response headers (for example &lt;code&gt;x-ms-ccf-transaction-id&lt;/code&gt; or &lt;code&gt;x-ms-webfe-operation-id&lt;/code&gt;) on the returned operation observed a &lt;code&gt;NullReferenceException&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;StatusReason&lt;/code&gt; property to &lt;code&gt;HybridComputeMachineData&lt;/code&gt; (via &lt;code&gt;MachineProperties&lt;/code&gt;) and the new &lt;code&gt;MachineStatusReason&lt;/code&gt; enum, indicating the reason for the machine's status.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;GatewayBypass&lt;/code&gt; property to &lt;code&gt;ArcGatewayData&lt;/code&gt; and &lt;code&gt;ArcGatewayPatch&lt;/code&gt; for configuring domain bypass on the Arc gateway.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Renamed several generated model and enum types in the .NET client to follow Azure SDK for .NET naming guidelines (C# only; the REST contract and other language SDKs are unchanged): &lt;code&gt;Bundle&lt;/code&gt; → &lt;code&gt;LedgerBundle&lt;/code&gt;, &lt;code&gt;Constitution&lt;/code&gt; → &lt;code&gt;LedgerConstitution&lt;/code&gt;, &lt;code&gt;Metadata&lt;/code&gt; → &lt;code&gt;LedgerEndpointMetadata&lt;/code&gt;, &lt;code&gt;Mode&lt;/code&gt; → &lt;code&gt;LedgerEndpointMode&lt;/code&gt;, &lt;code&gt;Role&lt;/code&gt; → &lt;code&gt;LedgerRole&lt;/code&gt;, &lt;code&gt;Collection&lt;/code&gt; → &lt;code&gt;LedgerCollectionInfo&lt;/code&gt;, and &lt;code&gt;UserDefinedFunctionExecutionResponse&lt;/code&gt; → &lt;code&gt;UserDefinedFunctionExecution&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.61.0"&gt;Azure.Core_1.61.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.61.0 (2026-07-30)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;AzureAuthorityHosts.AzureBleuCloud&lt;/code&gt; (&lt;code&gt;https://login.sovcloud-identity.fr/&lt;/code&gt;), the Microsoft Entra authority host for Bleu Cloud, the national partner cloud for France. Interactive credentials' &lt;code&gt;Authenticate&lt;/code&gt; methods now also resolve the default Azure Resource Manager scope for Bleu Cloud.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed an issue where response content logging could emit more bytes than were actually read when a non-buffered (streaming) response was read into a buffer larger than the response body. Previously, when the read began at offset 0, the entire caller-supplied buffer was logged — including the bytes past the response payload, which for a pooled buffer contain unrelated in-process content — and the configured &lt;code&gt;LoggedContentSizeLimit&lt;/code&gt; was not applied. The logging policy now logs only the bytes that were read. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/61399" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/61399/hovercard"&gt;#61399&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fixed an issue where &lt;code&gt;RequestFailedException&lt;/code&gt; could throw a secondary &lt;code&gt;ArgumentNullException&lt;/code&gt; while formatting a failed response that had a text content-type header but an empty body, masking the actual service failure. The exception now preserves the original HTTP status, reason phrase, and headers, and no longer formats empty response content.&lt;/li&gt;
-&lt;li&gt;Fixed &lt;code&gt;AzureCliCredential&lt;/code&gt; to not pass both &lt;code&gt;--tenant&lt;/code&gt; and &lt;code&gt;--subscription&lt;/code&gt; flags to the Azure CLI, as the CLI rejects this combination. When a tenant is requested (for example, via challenge-based authentication) it now takes precedence and &lt;code&gt;--subscription&lt;/code&gt; is omitted; &lt;code&gt;--subscription&lt;/code&gt; is used only when no tenant is requested. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/58949" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/58949/hovercard"&gt;#58949&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;azure-deprecating&lt;/code&gt; to the default list of allowed (non-redacted) headers in &lt;code&gt;DiagnosticsOptions&lt;/code&gt; to support &lt;a href="https://github.com/microsoft/api-guidelines/blob/vNext/azure/Guidelines.md#deprecating-behavior-notification"&gt;deprecating behavior notification&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Migrated SDK code generation from AutoRest to TypeSpec.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
