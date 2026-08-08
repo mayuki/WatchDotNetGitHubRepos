@@ -1,109 +1,64 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-08-07T01:08:03Z</updated>
+  <updated>2026-08-08T00:10:04Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-08-06</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-08-06</id>
+    <title>aws/aws-sdk-net - Releases - 2026-08-07</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-08-07</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-08-07T01:08:03Z</updated>
+    <updated>2026-08-08T00:10:04Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.306.0"&gt;4.0.306.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.307.0"&gt;4.0.307.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.306.0 (2026-08-06 18:33 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.307.0 (2026-08-07 18:19 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AgentRegistry (4.0.100.0)
+&lt;li&gt;Amplify (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Agent Registry's Public Preview release&lt;/li&gt;
+&lt;li&gt;Increased the maximum allowed length of the oauthToken parameter in the CreateApp and UpdateApp APIs to support longer OAuth tokens issued by third-party Git providers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AgentRegistryControl (4.0.100.0)
+&lt;li&gt;CloudTrailData (4.0.100.8)
 &lt;ul&gt;
-&lt;li&gt;Agent Registry's Public Preview release&lt;/li&gt;
+&lt;li&gt;CloudTrailData is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AutoScaling (4.0.102.0)
+&lt;li&gt;Connect (4.0.107.0)
 &lt;ul&gt;
-&lt;li&gt;EC2 Auto Scaling now supports being managed by other AWS services via the operator field.&lt;/li&gt;
+&lt;li&gt;Supports updating the task template associated with in-progress task contacts using the new UpdateContactTaskTemplate API. This enables supervisors and developers to dynamically reassign task templates without creating a new task.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Backup (4.0.101.0)
+&lt;li&gt;EC2 (4.0.110.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Backup now lets you create read-only access points for Amazon S3 recovery points, enabling you to access backup data using S3 APIs without initiating a restore.&lt;/li&gt;
+&lt;li&gt;This release adds support for BGP route protection in Amazon VPC IP Address Manager (IPAM), including route discovery, RPKI route protection findings, and delegated RPKI (Internet Registry Associations, routing policy registrations, and ROA management) for BYOIP prefixes.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCore (4.0.103.0)
+&lt;li&gt;HealthLake (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for capacity provider sessions in Amazon Bedrock AgentCore. Customers can now delete an active session running on a runtime instance launched through their capacity provider.&lt;/li&gt;
+&lt;li&gt;Adds provenanceEnabled to StartFHIRImportJob&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.108.0)
+&lt;li&gt;MediaPackageV2 (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for Gateway rate limits and Runtime instances in Amazon Bedrock AgentCore. Customers can now configure rate limits scoped to control request rates, token consumption rates, and active connection rates. Customers can now create capacity providers to launch runtimes on their EC2 instances.&lt;/li&gt;
+&lt;li&gt;StreamNameOutputMode - a new optional field on MediaPackageV2 OriginEndpoints that lets customers choose whether egress manifests use numeric stream indices (default) or encoder-assigned stream names from the input&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudWatchLogs (4.0.103.0)
+&lt;li&gt;MediaTailor (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds index category support to the CloudWatch Logs DescribeFieldIndexes API. Customers can filter and identify DEFAULT, CUSTOM, AUTO, and INACTIVE field indexes.&lt;/li&gt;
+&lt;li&gt;Added support for inserting ads via the VAST Ad Buffet standard. You can now configure MediaTailor to insert ads in sequence order using the AdSequencingMode setting in your playback configuration. Standalone ads are used as fallbacks when a sequenced ad is unavailable.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DeviceFarm (4.0.101.0)
+&lt;li&gt;SageMaker (4.0.107.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for service generated insights across runs, jobs, and tests.&lt;/li&gt;
+&lt;li&gt;Amazon SageMaker adds maintenance lifecycle statuses for Notebook Instances&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.109.0)
+&lt;li&gt;SecurityAgent (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Adds a new optional IncludeLocalZones parameter to the Spot Placement Score API that defaults to false. When set to true, the Spot Placement Score API will consider the relevant Local Zones with Spot capacity when computing the Spot Placement Score.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;GameLift (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for C8a, C8i, C9g, M8a, M8i, and M9g EC2 instance type families for managed EC2 and container fleets. Also adds explicit anchors on most string regexes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Kafka (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;MSK Clusters can now deliver authorizer logs alongside broker logs to the destinations defined by you&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MarketplaceAgreement (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;GetAgreementTerms now returns a new term variant in AcceptedTerm, netPaymentTerm, with a paymentDuePeriod field (example "P30D").&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MarketplaceDiscovery (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;GetOfferTerms now returns netPaymentTerm in offerTerms, specifying payment due period after invoice date. The paymentDuePeriod field uses ISO 8601 duration format (e.g., "P30D" for net 30 days). This is a backward-compatible addition. See API documentation for full structure and examples.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MediaTailor (4.0.103.0)
-&lt;ul&gt;
-&lt;li&gt;AWS Elemental MediaTailor now supports concurrent function execution. The new Concurrent Executor function type runs multiple independent child functions in parallel within a single lifecycle hook, reducing pipeline latency to the duration of the slowest call instead of the sum of all calls.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3 (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;AWS Backup now lets you create read-only access points for Amazon S3 recovery points, enabling you to access backup data using S3 APIs without initiating a restore.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.106.0)
-&lt;ul&gt;
-&lt;li&gt;Releases new Model Customization SequenceLength parameter for Training and g7 instance types for Training and Processing.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SecurityHub (4.0.103.0)
-&lt;ul&gt;
-&lt;li&gt;Security Hub is adding a new public API, ListFreeTrialStatusesV2 to describe the free trial statuses of the Security Hub service and its opt-in features.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SocialMessaging (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Add support for WhatsApp Conversions APIs.&lt;/li&gt;
+&lt;li&gt;Added enableEmailMfa input field on Actor to enable email-based MFA during penetration tests. When enabled, a server-generated mfaForwardingAddress is returned. Set up a forwarding rule in your email provider to forward MFA emails to this address so the agent can complete email-based MFA login flows&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
