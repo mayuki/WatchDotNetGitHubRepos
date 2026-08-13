@@ -1,84 +1,92 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-08-12T00:14:24Z</updated>
+  <updated>2026-08-13T00:15:12Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-08-11</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-08-11</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-08-12</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-08-12</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-08-12T00:14:24Z</updated>
+    <updated>2026-08-13T00:15:12Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Analytics.PlanetaryComputer_1.0.0"&gt;Azure.Analytics.PlanetaryComputer_1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetApp_1.19.0-beta.1"&gt;Azure.ResourceManager.NetApp_1.19.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0 (2026-08-10)&lt;/h2&gt;
+                                &lt;h2&gt;1.19.0-beta.1 (2026-08-12)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;General availability release of the Azure Planetary Computer client library for .NET.&lt;/li&gt;
-&lt;li&gt;Full support for STAC API (v1.0.0) operations: collections, items, search, and tiles endpoints.&lt;/li&gt;
-&lt;li&gt;Data client with support for rendering data (GetTile, GetPreview, GetStatistics, GetBounds, GetWmtsCapabilities).&lt;/li&gt;
-&lt;li&gt;Ingestion client for managing data ingestion workflows.&lt;/li&gt;
-&lt;li&gt;Managed Storage Shared Access Signature (SAS) client for secure token generation.&lt;/li&gt;
-&lt;li&gt;Full async/await support throughout the SDK.&lt;/li&gt;
-&lt;li&gt;Support for .NET 8.0, .NET 10.0, and .NET Standard 2.0.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;PlanetaryComputerProClientSettings&lt;/code&gt; to support creating a &lt;code&gt;PlanetaryComputerProClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
-&lt;li&gt;Data client methods with many parameters use options bag pattern for improved usability (e.g., &lt;code&gt;GetItemPointAsync(GetItemPointOptions)&lt;/code&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Removed Features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Static image rendering endpoints (no longer part of GA API specification).&lt;/li&gt;
+&lt;li&gt;Upgraded api-version to &lt;code&gt;2026-05-15-preview&lt;/code&gt;. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/main/specification/netapp/resource-manager/Microsoft.NetApp/NetApp/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/main/specification/netapp/resource-manager/Microsoft.NetApp/NetApp/readme.md&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Added LDAP bind password refresh support to &lt;code&gt;NetAppAccountResource&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Expanded &lt;code&gt;LdapConfiguration&lt;/code&gt; and &lt;code&gt;LdapConfigurationPatch&lt;/code&gt; with bind authentication, Key Vault-backed bind password, DNS server, distinguished name, and LDAP port settings.&lt;/li&gt;
+&lt;li&gt;Added user-assigned managed identity support to certificate and credential Key Vault configurations for Bucket resources.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Attestation_1.0.0-beta.1"&gt;Azure.Provisioning.Attestation_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.RecoveryServicesBackup_1.0.0-beta.1"&gt;Azure.Provisioning.RecoveryServicesBackup_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-08-12)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial preview of &lt;code&gt;Azure.Provisioning.RecoveryServicesBackup&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.OperationalInsights_1.2.0-beta.2"&gt;Azure.Provisioning.OperationalInsights_1.2.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0-beta.2 (2026-08-11)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Migrated generation to the TypeSpec-based provisioning generator.&lt;/li&gt;
+&lt;li&gt;Updated the default API version from &lt;code&gt;2025-02-01&lt;/code&gt; to &lt;code&gt;2025-07-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Corrected Summary Logs enum names that incorrectly referenced Network Security Perimeter.&lt;/li&gt;
+&lt;li&gt;Restored the setter for &lt;code&gt;OperationalInsightsLinkedStorageAccounts.DataSourceType&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Compute_1.0.0-beta.2"&gt;Azure.Provisioning.Compute_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.2 (2026-08-11)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Migrated &lt;code&gt;Azure.Provisioning.Compute&lt;/code&gt; to the TypeSpec-based provisioning generator.&lt;/li&gt;
+&lt;li&gt;Added support for newer Compute resource API versions, including Compute &lt;code&gt;2026-03-01&lt;/code&gt;, ComputeDisk &lt;code&gt;2026-03-02&lt;/code&gt;, and ComputeGallery &lt;code&gt;2025-12-03&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added generated support for additional Compute resources and models, including disk restore points, interconnect blocks, virtual machine scale set lifecycle hooks, virtual machine scale set rolling upgrades, and virtual machine extension images.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Renamed &lt;code&gt;ComputeGallery&lt;/code&gt; to &lt;code&gt;GalleryResource&lt;/code&gt; and &lt;code&gt;ComputeSnapshot&lt;/code&gt; to &lt;code&gt;SnapshotResource&lt;/code&gt; to avoid generic single-word resource type names.&lt;/li&gt;
+&lt;li&gt;Removed beta-only generated types that are no longer emitted by the TypeSpec generator, including &lt;code&gt;GalleryArtifactVersionSource&lt;/code&gt; and &lt;code&gt;LoadBalancerFrontendIPConfiguration&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Updated several generated model/property shapes to match the TypeSpec-generated API surface.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.RecoveryServices_1.0.0-beta.1"&gt;Azure.Provisioning.RecoveryServices_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;h2&gt;1.0.0-beta.1 (2026-08-11)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial beta release of &lt;code&gt;Azure.Provisioning.Attestation&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Initial beta release of new Azure.Provisioning.RecoveryServices.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.ContentUnderstanding_1.2.0-beta.3"&gt;Azure.AI.ContentUnderstanding_1.2.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.IotHub_1.0.0-beta.1"&gt;Azure.Provisioning.IotHub_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.3 (2026-08-11)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-08-11)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for service API version &lt;code&gt;2026-06-01-preview&lt;/code&gt;, which is the default service API version for this beta package.&lt;/li&gt;
-&lt;li&gt;Added inline analysis convenience APIs &lt;code&gt;AnalyzeInline&lt;/code&gt; / &lt;code&gt;AnalyzeInlineAsync&lt;/code&gt; and &lt;code&gt;AnalyzeBinaryInline&lt;/code&gt; / &lt;code&gt;AnalyzeBinaryInlineAsync&lt;/code&gt;, available only with service API version &lt;code&gt;2026-06-01-preview&lt;/code&gt;. These return &lt;code&gt;AnalysisResult&lt;/code&gt; in a single HTTP 200 response (no LRO polling) and throw &lt;code&gt;RequestFailedException&lt;/code&gt; when the inline operation status is not Succeeded. &lt;code&gt;AnalyzeBinaryInline*&lt;/code&gt; includes a &lt;code&gt;ContentRange?&lt;/code&gt; convenience overload matching &lt;code&gt;AnalyzeBinary*&lt;/code&gt;. See &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/contentunderstanding/Azure.AI.ContentUnderstanding/samples/Sample18_AnalyzeInline.md"&gt;Sample 18&lt;/a&gt; and &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/contentunderstanding/Azure.AI.ContentUnderstanding/samples/Sample19_AnalyzeBinaryInline.md"&gt;Sample 19&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;AnalyzeBinaryOptions&lt;/code&gt; and corresponding &lt;code&gt;AnalyzeBinary*&lt;/code&gt; / &lt;code&gt;AnalyzeBinaryInline*&lt;/code&gt; overloads for binary analyze request settings (&lt;code&gt;ContentRange&lt;/code&gt;, &lt;code&gt;ContentType&lt;/code&gt;, &lt;code&gt;ProcessingLocation&lt;/code&gt;, and future options). Required analyzer ID and binary input live on the options bag. See &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/contentunderstanding/Azure.AI.ContentUnderstanding/samples/Sample01_AnalyzeBinary.md"&gt;Sample 01&lt;/a&gt; and &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/contentunderstanding/Azure.AI.ContentUnderstanding/samples/Sample19_AnalyzeBinaryInline.md"&gt;Sample 19&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;AnalyzeOptions&lt;/code&gt; and corresponding &lt;code&gt;Analyze*&lt;/code&gt; / &lt;code&gt;AnalyzeInline*&lt;/code&gt; overloads for JSON analyze request settings (&lt;code&gt;ModelDeployments&lt;/code&gt;, &lt;code&gt;ProcessingLocation&lt;/code&gt;, and future options). Required analyzer ID and inputs live on the options bag.&lt;/li&gt;
-&lt;li&gt;Added semantic chunking for custom analyzers in &lt;code&gt;2026-06-01-preview&lt;/code&gt;: configure &lt;code&gt;ContentAnalyzerConfig.ChunkingStrategy&lt;/code&gt; with &lt;code&gt;SemanticChunkingStrategy&lt;/code&gt; (for example &lt;code&gt;MaxTokens&lt;/code&gt;) when creating an analyzer, then read &lt;code&gt;DocumentContent.Chunks&lt;/code&gt; (&lt;code&gt;DocumentChunk&lt;/code&gt; spans into markdown) from the analysis result. See &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/contentunderstanding/Azure.AI.ContentUnderstanding/samples/Sample17_AnalyzeChunking.md"&gt;Sample 17&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Added analyzer workflow selection via &lt;code&gt;ContentAnalyzerConfig.Workflow&lt;/code&gt; / &lt;code&gt;ContentAnalyzerWorkflow&lt;/code&gt; for &lt;code&gt;2026-06-01-preview&lt;/code&gt;. Omit &lt;code&gt;Workflow&lt;/code&gt; for standard extraction, or set &lt;code&gt;ContentAnalyzerWorkflow.Agentic&lt;/code&gt; when an answer must be built from evidence. See &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/contentunderstanding/Azure.AI.ContentUnderstanding/samples/Sample16_CreateAnalyzerWorkflow.md"&gt;Sample 16&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Added signature detection via &lt;code&gt;DocumentSignature&lt;/code&gt; / &lt;code&gt;DocumentContent.Signatures&lt;/code&gt; for &lt;code&gt;2026-06-01-preview&lt;/code&gt; when layout extraction is enabled (&lt;code&gt;EnableLayout&lt;/code&gt;, including &lt;code&gt;prebuilt-layout&lt;/code&gt;). See &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/contentunderstanding/Azure.AI.ContentUnderstanding/samples/Sample_Advanced_DetectSignatures.md"&gt;Detect signatures&lt;/a&gt; and &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/contentunderstanding/Azure.AI.ContentUnderstanding/samples/Sample10_AnalyzeConfigs.md"&gt;Sample 10&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Added in-page segmentation opt-in via &lt;code&gt;ContentAnalyzerConfig.AllowInPageSegments&lt;/code&gt; for &lt;code&gt;2026-06-01-preview&lt;/code&gt;. Used with &lt;code&gt;EnableSegment&lt;/code&gt;, this allows classification segments to split within a page (for example supplemental statements appended after a K-1 tax form) instead of only at page boundaries. See &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/contentunderstanding/Azure.AI.ContentUnderstanding/samples/Sample_Advanced_ClassifyInPageSegments.md"&gt;Classify in-page segments&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Added embedded document metadata via &lt;code&gt;AnalysisContent.Metadata&lt;/code&gt; for &lt;code&gt;2026-06-01-preview&lt;/code&gt;. See &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/contentunderstanding/Azure.AI.ContentUnderstanding/samples/Sample_Advanced_ExtractDocumentMetadata.md"&gt;Extract document metadata&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Added analysis diagnostics via &lt;code&gt;AnalysisResult.Infos&lt;/code&gt; for &lt;code&gt;2026-06-01-preview&lt;/code&gt;. The collection exposes service information as &lt;code&gt;ResponseError&lt;/code&gt; values for troubleshooting. See &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/contentunderstanding/Azure.AI.ContentUnderstanding/samples/Sample_Advanced_AnalysisDiagnostics.md"&gt;Analysis diagnostics&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;ToLlmInput&lt;/code&gt; (preview) to emit analysis-result metadata (&lt;code&gt;AnalysisContent.Metadata&lt;/code&gt;) under a &lt;code&gt;metadata:&lt;/code&gt; front-matter block. See &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/contentunderstanding/Azure.AI.ContentUnderstanding/samples/Sample_Advanced_ToLlmInput.md"&gt;ToLlmInput&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;AnalyzeOperationExtensions.GetUsageDetails()&lt;/code&gt; to return generated &lt;code&gt;UsageDetails&lt;/code&gt; from a completed analyze LRO (&lt;code&gt;Operation&amp;lt;AnalysisResult&amp;gt;&lt;/code&gt;) or inline analyze response (&lt;code&gt;Response&amp;lt;AnalysisResult&amp;gt;&lt;/code&gt;). See &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/contentunderstanding/Azure.AI.ContentUnderstanding/samples/Sample03_AnalyzeInvoice.md"&gt;Sample 03&lt;/a&gt;, &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/contentunderstanding/Azure.AI.ContentUnderstanding/samples/Sample18_AnalyzeInline.md"&gt;Sample 18&lt;/a&gt;, and &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/contentunderstanding/Azure.AI.ContentUnderstanding/samples/Sample19_AnalyzeBinaryInline.md"&gt;Sample 19&lt;/a&gt;. &lt;code&gt;GetUsage()&lt;/code&gt; / &lt;code&gt;AnalyzeUsageDetails&lt;/code&gt; are obsolete and retained for 1.1.0 compatibility.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;ToLlmInput&lt;/code&gt; (preview): renamed the optional caller dictionary from &lt;code&gt;metadata&lt;/code&gt; to &lt;code&gt;customMetadata&lt;/code&gt; and emit it under a nested &lt;code&gt;customMetadata:&lt;/code&gt; front-matter block (service metadata stays under &lt;code&gt;metadata:&lt;/code&gt;). Changes the preview API from &lt;code&gt;1.2.0-beta.1&lt;/code&gt;; not a stable-breaking change.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.IoT.DeviceUpdate_1.1.0"&gt;Azure.IoT.DeviceUpdate_1.1.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.0 (2026-08-05)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Regenerated the client library from the TypeSpec specification for the Device Update for IoT Hub &lt;code&gt;2026-06-01&lt;/code&gt; GA API version.&lt;/li&gt;
-&lt;li&gt;Added support for TLS-secured update payload downloads.&lt;/li&gt;
+&lt;li&gt;Initial preview of &lt;code&gt;Azure.Provisioning.IotHub&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;

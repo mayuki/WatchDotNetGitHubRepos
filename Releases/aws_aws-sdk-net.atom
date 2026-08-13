@@ -1,73 +1,54 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-08-12T00:14:24Z</updated>
+  <updated>2026-08-13T00:15:11Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-08-11</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-08-11</id>
+    <title>aws/aws-sdk-net - Releases - 2026-08-12</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-08-12</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-08-12T00:14:24Z</updated>
+    <updated>2026-08-13T00:15:11Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.309.0"&gt;4.0.309.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.310.0"&gt;4.0.310.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.309.0 (2026-08-11 18:18 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.310.0 (2026-08-12 18:15 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AccountAccess (4.0.100.0)
+&lt;li&gt;DSQL (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Adds SDK support for AWS IAM account access manager, a feature that enables mapping of IAM roles to the users and groups in AWS IAM Identity Center.&lt;/li&gt;
+&lt;li&gt;Improved validation of Kinesis stream ARN format to ensure only valid ARN characters are accepted&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCore (4.0.104.0)
+&lt;li&gt;Glue (4.0.103.2)
 &lt;ul&gt;
-&lt;li&gt;Adding online eval arn as input for recommendation API&lt;/li&gt;
+&lt;li&gt;Documentation updates for materialized views APIs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CleanRooms (4.0.103.0)
+&lt;li&gt;IdentityManagement (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for exporting redacted query execution logs in AWS Clean Rooms&lt;/li&gt;
+&lt;li&gt;Introduced role manager, an IAM capability that automatically sets up the IAM roles your AWS services need. When you set up a supported service in the console, role manager creates a role for you or reuses an existing one from an AWS-managed template.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudDirectory (4.0.100.8)
+&lt;li&gt;MediaConnect (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Added an end-of-support notice to Amazon Cloud Directory public CLI reference documentation.&lt;/li&gt;
+&lt;li&gt;AWS MediaConnect now supports tuning the internal recovery latency between Router Inputs and Outputs to prioritize stream quality versus end-to-end latency.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.109.0)
+&lt;li&gt;Odb (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Seven new APIs for managing custom metrics, including create, describe, update, and delete. Using Custom Metrics, customers of Amazon Connect Customer can tailor analytics dashboards to their needs by applying custom thresholds, filters, and calculations to one or more out of the box measurements.&lt;/li&gt;
+&lt;li&gt;Adds support for Oracle Exadata on Exascale Infrastructure (ExaDB-XS) resources including storage vaults and VM clusters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DataZone (4.0.104.0)
+&lt;li&gt;QuickSight (4.0.107.0)
 &lt;ul&gt;
-&lt;li&gt;GetSubscriptionGrant now returns materialized asset scope name for mapping Lake Formation data cell filters or Redshift views to subscription grants.&lt;/li&gt;
+&lt;li&gt;Added APIs for DLP with Microsoft Purview (manage configs with label enforcement across Spaces, Chat, Knowledge Bases), Approval Workflows (CRUD for policies on asset sharing for Agents, Knowledge Bases, Spaces), and Limits Management (limit profiles for index storage and agent hours per user).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EKS (4.0.102.0)
+&lt;li&gt;WellArchitected (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;This feature would give customers the ability to selectively tune certain configurations of Kubernetes control plane components in an Amazon EKS cluster.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Organizations (4.0.100.10)
-&lt;ul&gt;
-&lt;li&gt;Documentation update for AWS Organizations that clarifies valid input values for the HandshakePartyType parameter in the InviteAccountToOrganization. API ORGANIZATION is valid in responses only. valid input values are ACCOUNT and EMAIL&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Textract (4.0.100.8)
-&lt;ul&gt;
-&lt;li&gt;Amazon A2I entered maintenance mode in July 2026 and now rejects StartHumanLoop requests from accounts that it does not recognize as existing customers. This update adds a corresponding note to the HumanLoopConfig parameter documentation so that the API Reference and SDK docs explain this behavior.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.0.101.0
-&lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;IRequest.PrecomputedContentSha256&lt;/code&gt;, a caller-supplied body hash that &lt;code&gt;AWS4Signer&lt;/code&gt; uses verbatim (when payload signing is enabled) in place of reading the request body.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;SigV4SigningHandler&lt;/code&gt;, a &lt;code&gt;System.Net.Http.DelegatingHandler&lt;/code&gt; in the &lt;code&gt;Amazon.Runtime.Signing&lt;/code&gt; namespace that SigV4-signs each outbound request. Install it on an &lt;code&gt;HttpClient&lt;/code&gt; (directly or via &lt;code&gt;IHttpClientFactory&lt;/code&gt;) to sign requests transparently. It is a thin layer over the standalone &lt;code&gt;AWSSigV4Signer&lt;/code&gt; facade, resolves credentials on every send, and supports per-request region/service/payload-signing overrides via &lt;code&gt;HttpRequestMessage.Options&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added a public standalone SigV4 request signing API in the &lt;code&gt;Amazon.Runtime.Signing&lt;/code&gt; namespace (&lt;code&gt;AWSSigV4Signer&lt;/code&gt; with &lt;code&gt;Sign&lt;/code&gt;/&lt;code&gt;SignAsync&lt;/code&gt; for header signing and &lt;code&gt;Presign&lt;/code&gt;/&lt;code&gt;PresignAsync&lt;/code&gt; for presigned URLs, plus the &lt;code&gt;AWSSigningRequest&lt;/code&gt;, &lt;code&gt;AWSSigV4Parameters&lt;/code&gt;, &lt;code&gt;AWSSigningResult&lt;/code&gt;, and &lt;code&gt;PresignResult&lt;/code&gt; types). This lets callers sign an arbitrary HTTP request with SigV4 without constructing internal signer types.&lt;/li&gt;
-&lt;li&gt;Added time-accepting overloads of &lt;code&gt;AWS4Signer.SignRequest&lt;/code&gt; and &lt;code&gt;AWS4PreSignedUrlSigner.SignRequest&lt;/code&gt; that take an explicit &lt;code&gt;signedAt&lt;/code&gt;, enabling deterministic signing. Existing overloads are unchanged and delegate to these with the previously computed default time.&lt;/li&gt;
-&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;This change releases the Well-Architected Agent, a generative AI service that analyzes a customer's AWS environment and delivers personalized, prioritized recommendations across cost, security, performance, and resilience.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
