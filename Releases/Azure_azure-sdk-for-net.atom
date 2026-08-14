@@ -1,92 +1,88 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-08-13T00:15:12Z</updated>
+  <updated>2026-08-14T00:15:04Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-08-12</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-08-12</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-08-13</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-08-13</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-08-13T00:15:12Z</updated>
+    <updated>2026-08-14T00:15:04Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetApp_1.19.0-beta.1"&gt;Azure.ResourceManager.NetApp_1.19.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Data.AppConfiguration_1.12.0-beta.1"&gt;Azure.Data.AppConfiguration_1.12.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.19.0-beta.1 (2026-08-12)&lt;/h2&gt;
+                                &lt;h2&gt;1.12.0-beta.1 (2026-08-13)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded api-version to &lt;code&gt;2026-05-15-preview&lt;/code&gt;. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/main/specification/netapp/resource-manager/Microsoft.NetApp/NetApp/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/main/specification/netapp/resource-manager/Microsoft.NetApp/NetApp/readme.md&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Added LDAP bind password refresh support to &lt;code&gt;NetAppAccountResource&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Expanded &lt;code&gt;LdapConfiguration&lt;/code&gt; and &lt;code&gt;LdapConfigurationPatch&lt;/code&gt; with bind authentication, Key Vault-backed bind password, DNS server, distinguished name, and LDAP port settings.&lt;/li&gt;
-&lt;li&gt;Added user-assigned managed identity support to certificate and credential Key Vault configurations for Bucket resources.&lt;/li&gt;
+&lt;li&gt;Added a &lt;code&gt;Description&lt;/code&gt; property on &lt;code&gt;ConfigurationSetting&lt;/code&gt; and &lt;code&gt;ConfigurationSnapshot&lt;/code&gt; to associate descriptive text with settings and snapshots.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;SettingFields.Description&lt;/code&gt; so &lt;code&gt;Description&lt;/code&gt; can be requested when retrieving configuration settings.&lt;/li&gt;
+&lt;li&gt;Added support for &lt;code&gt;2024-09-01&lt;/code&gt;, &lt;code&gt;2026-04-01&lt;/code&gt;, and &lt;code&gt;2026-05-01-preview&lt;/code&gt; (default) service API versions.&lt;/li&gt;
+&lt;li&gt;Added support for the new feature flag endpoint via a dedicated &lt;code&gt;FeatureFlagClient&lt;/code&gt;, which exposes &lt;code&gt;GetFeatureFlag&lt;/code&gt;, &lt;code&gt;GetFeatureFlags&lt;/code&gt;, &lt;code&gt;AddFeatureFlag&lt;/code&gt;, &lt;code&gt;SetFeatureFlag&lt;/code&gt;, and &lt;code&gt;DeleteFeatureFlag&lt;/code&gt; operations (and their async counterparts), along with the &lt;code&gt;FeatureFlag&lt;/code&gt; model and related types (&lt;code&gt;FeatureFlagConditions&lt;/code&gt;, &lt;code&gt;FeatureFlagAllocation&lt;/code&gt;, &lt;code&gt;FeatureFlagTelemetryConfiguration&lt;/code&gt;, &lt;code&gt;FeatureFlagVariantDefinition&lt;/code&gt;, etc.). Requires the &lt;code&gt;2026-05-01-preview&lt;/code&gt; service API version.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.RecoveryServicesBackup_1.0.0-beta.1"&gt;Azure.Provisioning.RecoveryServicesBackup_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.IotHub_1.2.0-beta.4"&gt;Azure.ResourceManager.IotHub_1.2.0-beta.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-08-12)&lt;/h2&gt;
+                                &lt;h2&gt;1.2.0-beta.4 (2026-08-12)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial preview of &lt;code&gt;Azure.Provisioning.RecoveryServicesBackup&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.OperationalInsights_1.2.0-beta.2"&gt;Azure.Provisioning.OperationalInsights_1.2.0-beta.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.2 (2026-08-11)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Migrated generation to the TypeSpec-based provisioning generator.&lt;/li&gt;
-&lt;li&gt;Updated the default API version from &lt;code&gt;2025-02-01&lt;/code&gt; to &lt;code&gt;2025-07-01&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Corrected Summary Logs enum names that incorrectly referenced Network Security Perimeter.&lt;/li&gt;
-&lt;li&gt;Restored the setter for &lt;code&gt;OperationalInsightsLinkedStorageAccounts.DataSourceType&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Compute_1.0.0-beta.2"&gt;Azure.Provisioning.Compute_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.2 (2026-08-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Migrated &lt;code&gt;Azure.Provisioning.Compute&lt;/code&gt; to the TypeSpec-based provisioning generator.&lt;/li&gt;
-&lt;li&gt;Added support for newer Compute resource API versions, including Compute &lt;code&gt;2026-03-01&lt;/code&gt;, ComputeDisk &lt;code&gt;2026-03-02&lt;/code&gt;, and ComputeGallery &lt;code&gt;2025-12-03&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added generated support for additional Compute resources and models, including disk restore points, interconnect blocks, virtual machine scale set lifecycle hooks, virtual machine scale set rolling upgrades, and virtual machine extension images.&lt;/li&gt;
+&lt;li&gt;Upgraded API version from &lt;code&gt;2026-03-01-preview&lt;/code&gt; to &lt;code&gt;2026-05-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;RoutingEventStreamProperties&lt;/code&gt; model and &lt;code&gt;EventStreamAuthenticationType&lt;/code&gt; enum for routing event stream endpoints.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;RoutingEndpoints.EventStreams&lt;/code&gt; collection property.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Renamed &lt;code&gt;ComputeGallery&lt;/code&gt; to &lt;code&gt;GalleryResource&lt;/code&gt; and &lt;code&gt;ComputeSnapshot&lt;/code&gt; to &lt;code&gt;SnapshotResource&lt;/code&gt; to avoid generic single-word resource type names.&lt;/li&gt;
-&lt;li&gt;Removed beta-only generated types that are no longer emitted by the TypeSpec generator, including &lt;code&gt;GalleryArtifactVersionSource&lt;/code&gt; and &lt;code&gt;LoadBalancerFrontendIPConfiguration&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Updated several generated model/property shapes to match the TypeSpec-generated API surface.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;IotHubSku.Gen2&lt;/code&gt; static property and &lt;code&gt;IotHubSkuTier.Generation2&lt;/code&gt; enum member — the GEN2 IoT Hub SKU is no longer present in the &lt;code&gt;2026-05-01-preview&lt;/code&gt; API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Migrated SDK code generation from AutoRest to TypeSpec.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.RecoveryServices_1.0.0-beta.1"&gt;Azure.Provisioning.RecoveryServices_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.ConfidentialLedger_2.0.0-beta.2"&gt;Azure.Security.ConfidentialLedger_2.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-08-11)&lt;/h2&gt;
+                                &lt;h2&gt;2.0.0-beta.2 (2026-08-13)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial beta release of new Azure.Provisioning.RecoveryServices.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added support to route retryable HTTP responses and retryable transport failures to failover ledgers for &lt;code&gt;GetLedgerEntry&lt;/code&gt;, &lt;code&gt;GetLedgerEntryAsync&lt;/code&gt;, &lt;code&gt;GetCurrentLedgerEntry&lt;/code&gt;, and &lt;code&gt;GetCurrentLedgerEntryAsync&lt;/code&gt;. No other reads or writes fail over. The primary and every failover endpoint receive independent normal retry budgets; caller cancellation never initiates failover, and the original primary failure is preserved if discovery or all failovers fail.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added &lt;code&gt;ConfidentialLedgerClientOptions.Failover&lt;/code&gt; to control the order in which failover endpoints are attempted: &lt;code&gt;Ordered&lt;/code&gt; (default, preserves the order reported by the identity service) or &lt;code&gt;Random&lt;/code&gt; (shuffles the candidates to spread load across failover ledgers).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added &lt;code&gt;ConfidentialLedgerClientOptions.FailoverNetworkTimeout&lt;/code&gt;. When set, this network timeout applies independently to requests against each failover endpoint. When unset, the configured retry network timeout applies.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The client now treats a &lt;code&gt;GetLedgerEntry&lt;/code&gt;/&lt;code&gt;GetLedgerEntryAsync&lt;/code&gt; response that is still in the &lt;code&gt;Loading&lt;/code&gt; state as transient and automatically polls until the entry is committed, bounded by the client's configured retry settings (&lt;code&gt;ClientOptions.Retry.MaxRetries&lt;/code&gt; attempts with &lt;code&gt;ClientOptions.Retry.Delay&lt;/code&gt; between attempts). Callers no longer need to write a manual polling loop.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added &lt;code&gt;ConfidentialLedgerClientOptions.EnableArchivedCollectionFallback&lt;/code&gt;. It defaults to &lt;code&gt;true&lt;/code&gt;, so &lt;code&gt;GetCurrentLedgerEntry&lt;/code&gt; and &lt;code&gt;GetCurrentLedgerEntryAsync&lt;/code&gt; transparently fall back to a historical query for a collection whose latest entry has been archived (pruned), without additional caller logic or configuration. Set it to &lt;code&gt;false&lt;/code&gt; to retain the legacy &lt;code&gt;404 Not Found&lt;/code&gt; behavior.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added strongly typed convenience overloads for service operations. The existing protocol methods remain available for advanced scenarios.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added experimental configuration and host-builder integration through &lt;code&gt;ConfidentialLedgerClientSettings&lt;/code&gt; and &lt;code&gt;ConfidentialLedgerClientHostExtensions&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.IotHub_1.0.0-beta.1"&gt;Azure.Provisioning.IotHub_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-08-11)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial preview of &lt;code&gt;Azure.Provisioning.IotHub&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Renamed and moved &lt;code&gt;Azure.Security.ConfidentialLedger.Models.SecurityConfidentialLedgerModelFactory&lt;/code&gt; to &lt;code&gt;Azure.Security.ConfidentialLedger.ConfidentialLedgerModelFactory&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Failover requests are now validated by endpoint-specific transports against that ledger's own identity TLS certificate, fetched from the independently validated Identity Service. A certificate trusted for one ledger cannot authenticate another ledger. Custom transports remain supported.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PostLedgerEntryOperation&lt;/code&gt; now treats transient &lt;code&gt;406 NotAcceptable&lt;/code&gt; responses from the status endpoint as &lt;code&gt;Pending&lt;/code&gt; and tolerates exactly 3 consecutive &lt;code&gt;404 NotFound&lt;/code&gt; HTTP responses while a transaction is replicated. The operation-specific 404 tolerance no longer multiplies with pipeline retries; normal 404 retry behavior remains unchanged for other operations.&lt;/li&gt;
+&lt;li&gt;Archived-collection fallback responses now preserve the complete historical ledger entry payload, including optional tags.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;

@@ -1,54 +1,64 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-08-13T00:15:11Z</updated>
+  <updated>2026-08-14T00:15:03Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-08-12</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-08-12</id>
+    <title>aws/aws-sdk-net - Releases - 2026-08-13</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-08-13</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-08-13T00:15:11Z</updated>
+    <updated>2026-08-14T00:15:03Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.310.0"&gt;4.0.310.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.311.0"&gt;4.0.311.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.310.0 (2026-08-12 18:15 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.311.0 (2026-08-13 18:13 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;DSQL (4.0.102.0)
+&lt;li&gt;AutoScaling (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Improved validation of Kinesis stream ARN format to ensure only valid ARN characters are accepted&lt;/li&gt;
+&lt;li&gt;Amazon EC2 Auto Scaling now supports terminating multiple instances in a single TerminateInstanceInAutoScalingGroup call via the new InstanceIds parameter, returning an Activities list. LaunchInstances now returns IdempotentCallInProgressFault for duplicate client tokens.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Glue (4.0.103.2)
+&lt;li&gt;CertificateManager (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Documentation updates for materialized views APIs.&lt;/li&gt;
+&lt;li&gt;This change allows customers to update their existing email-validated certificates to use the DNS validation method.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IdentityManagement (4.0.103.0)
+&lt;li&gt;CleanRooms (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;Introduced role manager, an IAM capability that automatically sets up the IAM roles your AWS services need. When you set up a supported service in the console, role manager creates a role for you or reuses an existing one from an AWS-managed template.&lt;/li&gt;
+&lt;li&gt;This release adds support for minimum aggregation thresholds and comparison controls to the Custom analysis rule type.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MediaConnect (4.0.101.0)
+&lt;li&gt;CloudTrailData (4.0.100.10)
 &lt;ul&gt;
-&lt;li&gt;AWS MediaConnect now supports tuning the internal recovery latency between Router Inputs and Outputs to prioritize stream quality versus end-to-end latency.&lt;/li&gt;
+&lt;li&gt;Add missing trait to service Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Odb (4.0.102.0)
+&lt;li&gt;CodeCommit (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for Oracle Exadata on Exascale Infrastructure (ExaDB-XS) resources including storage vaults and VM clusters.&lt;/li&gt;
+&lt;li&gt;Added the GetBlobDifferences API operation, which returns line-level diffs between two blob versions without requiring a local clone. Returns structured hunks with context, additions, and deletions. Supports pagination for large diffs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;QuickSight (4.0.107.0)
+&lt;li&gt;Connect (4.0.110.0)
 &lt;ul&gt;
-&lt;li&gt;Added APIs for DLP with Microsoft Purview (manage configs with label enforcement across Spaces, Chat, Knowledge Bases), Approval Workflows (CRUD for policies on asset sharing for Agents, Knowledge Bases, Spaces), and Limits Management (limit profiles for index storage and agent hours per user).&lt;/li&gt;
+&lt;li&gt;Adds the StartAssistantContact API to start chat contacts handled by an AI agent. Adds SegmentAttributes to StartWebRTCContact, and corrects its error response to now receive AccessDeniedException (previously returned as an internal server error due to a missing error declaration).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;WellArchitected (4.0.101.0)
+&lt;li&gt;EKSAuth (4.0.101.2)
 &lt;ul&gt;
-&lt;li&gt;This change releases the Well-Architected Agent, a generative AI service that analyzes a customer's AWS environment and delivers personalized, prioritized recommendations across cost, security, performance, and resilience.&lt;/li&gt;
+&lt;li&gt;EKSAuth is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;KinesisVideoWebRTCStorage (4.0.100.9)
+&lt;ul&gt;
+&lt;li&gt;KinesisVideoWebRTCStorage is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SecurityAgent (4.0.104.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for setting a maximum task-hour budget cap on penetration tests and code reviews, and for revalidating previously reported findings via a new REVALIDATION job type.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

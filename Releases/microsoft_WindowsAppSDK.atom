@@ -1,6 +1,121 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>microsoft/WindowsAppSDK - Releases</title>
   <link href="https://github.com/microsoft/WindowsAppSDK" />
-  <updated>2026-08-13T00:15:30Z</updated>
+  <updated>2026-08-14T00:15:20Z</updated>
   <id>https://github.com/microsoft/WindowsAppSDK</id>
+  <entry>
+    <title>microsoft/WindowsAppSDK - Releases - 2026-08-13</title>
+    <id>https://github.com/microsoft/WindowsAppSDK#2026-08-13</id>
+    <link href="https://github.com/microsoft/WindowsAppSDK" />
+    <updated>2026-08-14T00:15:20Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.8.11"&gt;Windows App SDK 1.8.11 (1.8.260804001)&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Windows App SDK 1.8.11 (1.8.260804001)&lt;/h2&gt;
+&lt;p&gt;WinAppSDK 1.8.11 is the latest stable servicing release for 1.8, with fixes for Storage Picker focus restoration, MRT Core fallback paths, and Windows App Runtime base-directory isolation.&lt;/p&gt;
+&lt;h3&gt;Bug fixes:&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Bug Fix&lt;/th&gt;
+&lt;th&gt;&lt;a href="https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.applicationmodel.windowsappruntime.runtimecompatibilityoptions.disabledchanges?view=windows-app-sdk-1.8" rel="nofollow"&gt;Runtime Compatibility Change&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an issue where the Storage Pickers (&lt;code&gt;FileOpenPicker&lt;/code&gt;, &lt;code&gt;FileSavePicker&lt;/code&gt;, and &lt;code&gt;FolderPicker&lt;/code&gt;) left the calling WinUI app window without keyboard focus after the file dialog closed. The app now restores its previous focus. See GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/6505" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/6505/hovercard"&gt;microsoft/WindowsAppSDK#6505&lt;/a&gt;.&lt;/td&gt;
+&lt;td&gt;StoragePickers_RestoreFocusAfterDialogCloses&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a regression where &lt;code&gt;MrmGetFilePathFromName&lt;/code&gt; returned &lt;code&gt;ERROR_FILE_NOT_FOUND&lt;/code&gt; when the PRI file didn't exist instead of returning the documented fallback path. See GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/5940" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/5940/hovercard"&gt;microsoft/WindowsAppSDK#5940&lt;/a&gt;.&lt;/td&gt;
+&lt;td&gt;ResourceManager_RestoreDefaultFallbackPath&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an issue where &lt;code&gt;MICROSOFT_WINDOWSAPPRUNTIME_BASE_DIRECTORY&lt;/code&gt; could be inherited by child processes, disrupting MRT Core and catalog lookups. See GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/5987" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/5987/hovercard"&gt;microsoft/WindowsAppSDK#5987&lt;/a&gt;.&lt;/td&gt;
+&lt;td&gt;WindowsAppRuntime_BaseDirectoryIsolation&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;To see everything that's new and changed, see the full &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-1-8?pivots=stable#version-1811-18260804001" rel="nofollow"&gt;Windows App SDK 1.8.11 release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.8.260804001" rel="nofollow"&gt;1.8.260804001 NuGet&lt;/a&gt; package to use WinAppSDK 1.8 in your app.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Getting started&lt;/h3&gt;
+&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.4.0"&gt;Windows App SDK 2.4.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Windows App SDK 2.4.0&lt;/h2&gt;
+&lt;p&gt;Windows App SDK 2.4.0 is the latest stable release on the 2.x line, adding expanded input support, more precise &lt;code&gt;LanguageModel&lt;/code&gt; response statuses, and targeted reliability fixes across input, Storage Pickers, MRT Core, app runtime isolation, composition, and XAML tooling.&lt;/p&gt;
+&lt;h3&gt;What's new in WinAppSDK 2.4.0:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Expanded input support.&lt;/strong&gt; WinUI 3 apps can now use operating system touchpad and mouse haptics through &lt;code&gt;Windows.Devices.Haptics&lt;/code&gt;, along with touchpad single-finger panning, when supported by the operating system and hardware.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;More precise &lt;code&gt;LanguageModel&lt;/code&gt; response statuses.&lt;/strong&gt; The new &lt;code&gt;LanguageModelResponseStatus.UnsupportedLanguage&lt;/code&gt; and &lt;code&gt;LanguageModelResponseStatus.LanguageMismatch&lt;/code&gt; values let apps distinguish unsupported-language and input/output-language mismatch conditions from generic errors.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug fixes:&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Bug Fix&lt;/th&gt;
+&lt;th&gt;&lt;a href="https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.applicationmodel.windowsappruntime.runtimecompatibilityoptions.disabledchanges?view=windows-app-sdk-2.4" rel="nofollow"&gt;Runtime Compatibility Change&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a crash that could occur when a touch or pen contact left a scrollable area with precise timing.&lt;/td&gt;
+&lt;td&gt;InputPointerSource_DepartingScrollInputCrashFix&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an issue where the Storage Pickers left the calling WinUI app window without keyboard focus after the file dialog closed. The app now restores its previous focus. See GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/6505" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/6505/hovercard"&gt;microsoft/WindowsAppSDK#6505&lt;/a&gt;.&lt;/td&gt;
+&lt;td&gt;StoragePickers_RestoreFocusAfterDialogCloses&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a regression where &lt;code&gt;MrmGetFilePathFromName&lt;/code&gt; returned &lt;code&gt;ERROR_FILE_NOT_FOUND&lt;/code&gt; when the PRI file didn't exist instead of returning the documented fallback path. See GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/5940" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/5940/hovercard"&gt;microsoft/WindowsAppSDK#5940&lt;/a&gt;.&lt;/td&gt;
+&lt;td&gt;ResourceManager_RestoreDefaultFallbackPath&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an issue where &lt;code&gt;MICROSOFT_WINDOWSAPPRUNTIME_BASE_DIRECTORY&lt;/code&gt; could be inherited by child processes, disrupting MRT Core and catalog lookups. See GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/5987" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/5987/hovercard"&gt;microsoft/WindowsAppSDK#5987&lt;/a&gt;.&lt;/td&gt;
+&lt;td&gt;WindowsAppRuntime_BaseDirectoryIsolation&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a crash when apps using the System Composition Engine called &lt;code&gt;VisualInteractionSource.TryRedirectForManipulation&lt;/code&gt;.&lt;/td&gt;
+&lt;td&gt;N/A, operating system composition bridge fix&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed the access modifier on the generated C# entry point helper when &lt;code&gt;DISABLE_XAML_GENERATED_MAIN&lt;/code&gt; is defined. See GitHub issue &lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/11245" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/11245/hovercard"&gt;microsoft/microsoft-ui-xaml#11245&lt;/a&gt;.&lt;/td&gt;
+&lt;td&gt;N/A, build-time tooling change&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;To see everything that's new and changed, see the full &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-2-0?pivots=stable#version-240" rel="nofollow"&gt;Windows App SDK 2.4.0 release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.4.0" rel="nofollow"&gt;2.4.0 NuGet&lt;/a&gt; package to use WinAppSDK 2.4 in your app.&lt;/li&gt;
+&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Getting started&lt;/h3&gt;
+&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
