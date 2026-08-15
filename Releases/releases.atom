@@ -1,64 +1,69 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-08-14T00:15:24Z</updated>
+  <updated>2026-08-15T00:06:08Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-08-13</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-08-13</id>
+    <title>aws/aws-sdk-net - Releases - 2026-08-14</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-08-14</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-08-14T00:15:03Z</updated>
+    <updated>2026-08-15T00:05:52Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.311.0"&gt;4.0.311.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.312.0"&gt;4.0.312.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.311.0 (2026-08-13 18:13 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.312.0 (2026-08-14 18:17 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AutoScaling (4.0.103.0)
+&lt;li&gt;BedrockAgentCore (4.0.105.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon EC2 Auto Scaling now supports terminating multiple instances in a single TerminateInstanceInAutoScalingGroup call via the new InstanceIds parameter, returning an Activities list. LaunchInstances now returns IdempotentCallInProgressFault for duplicate client tokens.&lt;/li&gt;
+&lt;li&gt;Add support for the Machine Payments Protocol (MPP) and x402 upto scheme payments protocol in Amazon Bedrock AgentCore Payments. Customers can now pay for MPP-gated resources and also pay services which requires upto scheme in x402&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CertificateManager (4.0.102.0)
+&lt;li&gt;BedrockAgentCoreControl (4.0.109.0)
 &lt;ul&gt;
-&lt;li&gt;This change allows customers to update their existing email-validated certificates to use the DNS validation method.&lt;/li&gt;
+&lt;li&gt;Adds AgentCore Payments support for CMK, Marketplace Subscriptions and QuickCreate&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CleanRooms (4.0.104.0)
+&lt;li&gt;BedrockAgentRuntime (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for minimum aggregation thresholds and comparison controls to the Custom analysis rule type.&lt;/li&gt;
+&lt;li&gt;Adds CheckIngestedDocumentAcl and GetIngestedDocumentAcl APIs to Amazon Bedrock Knowledge Bases. Customers can verify user access to documents based on ingested ACLs and retrieve full ACL details including allow and deny entries, enabling validation of ACL ingestion without test retrievals.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudTrailData (4.0.100.10)
+&lt;li&gt;Glue (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;Add missing trait to service Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Added support for associating glossary terms with iterable form items, such as table columns.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CodeCommit (4.0.101.0)
+&lt;li&gt;MWAAServerless (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Added the GetBlobDifferences API operation, which returns line-level diffs between two blob versions without requiring a local clone. Returns structured hunks with context, additions, and deletions. Supports pagination for large diffs.&lt;/li&gt;
+&lt;li&gt;Adds support for Consuming code for MWAA Serverless&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.110.0)
+&lt;li&gt;ObservabilityAdmin (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;Adds the StartAssistantContact API to start chat contacts handled by an AI agent. Adds SegmentAttributes to StartWebRTCContact, and corrects its error response to now receive AccessDeniedException (previously returned as an internal server error due to a missing error declaration).&lt;/li&gt;
+&lt;li&gt;CloudWatch Logs centralization rules now support tag propagation. You can configure a TagPropagationConfiguration on your centralization rule to automatically sync resource tags from source to destination log groups, with configurable conflict resolution strategies.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EKSAuth (4.0.101.2)
+&lt;li&gt;Redshift (4.0.101.4)
 &lt;ul&gt;
-&lt;li&gt;EKSAuth is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Amazon Redshift now unlocks a locked admin user account and resets the failed-login counter when you update the admin password using the ModifyCluster API. This option is available only when account lockout security is enabled.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;KinesisVideoWebRTCStorage (4.0.100.9)
+&lt;li&gt;RedshiftServerless (4.0.101.6)
 &lt;ul&gt;
-&lt;li&gt;KinesisVideoWebRTCStorage is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Amazon Redshift now unlocks a locked admin user account and resets the failed-login counter when you update the admin password using the UpdateNamespace API. This option is available only when account lockout security is enabled.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SecurityAgent (4.0.104.0)
+&lt;li&gt;SageMaker (4.0.109.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for setting a maximum task-hour budget cap on penetration tests and code reviews, and for revalidating previously reported findings via a new REVALIDATION job type.&lt;/li&gt;
+&lt;li&gt;Release support for g7.2xlarge, g7.4xlarge, g7.8xlarge, g7.12xlarge, g7.24xlarge, and g7.48xlarge instance types for SageMaker HyperPod&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Extensions.Bedrock.MEAI (Removed)
+&lt;ul&gt;
+&lt;li&gt;The AWSSDK.Extensions.Bedrock.MEAI extension has been renamed to &lt;code&gt;AWS.Bedrock.MEAI&lt;/code&gt; and moved to the &lt;a href="https://github.com/aws/aws-dotnet-ai"&gt;AI Integrations on AWS for .NET&lt;/a&gt; repository.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -69,284 +74,139 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-08-13</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-08-13</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-08-14</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-08-14</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-08-14T00:15:04Z</updated>
+    <updated>2026-08-15T00:05:53Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Data.AppConfiguration_1.12.0-beta.1"&gt;Azure.Data.AppConfiguration_1.12.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Invocations_1.0.0-beta.6"&gt;Azure.AI.AgentServer.Invocations_1.0.0-beta.6&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.12.0-beta.1 (2026-08-13)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.6 (2026-08-12)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added a &lt;code&gt;Description&lt;/code&gt; property on &lt;code&gt;ConfigurationSetting&lt;/code&gt; and &lt;code&gt;ConfigurationSnapshot&lt;/code&gt; to associate descriptive text with settings and snapshots.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;SettingFields.Description&lt;/code&gt; so &lt;code&gt;Description&lt;/code&gt; can be requested when retrieving configuration settings.&lt;/li&gt;
-&lt;li&gt;Added support for &lt;code&gt;2024-09-01&lt;/code&gt;, &lt;code&gt;2026-04-01&lt;/code&gt;, and &lt;code&gt;2026-05-01-preview&lt;/code&gt; (default) service API versions.&lt;/li&gt;
-&lt;li&gt;Added support for the new feature flag endpoint via a dedicated &lt;code&gt;FeatureFlagClient&lt;/code&gt;, which exposes &lt;code&gt;GetFeatureFlag&lt;/code&gt;, &lt;code&gt;GetFeatureFlags&lt;/code&gt;, &lt;code&gt;AddFeatureFlag&lt;/code&gt;, &lt;code&gt;SetFeatureFlag&lt;/code&gt;, and &lt;code&gt;DeleteFeatureFlag&lt;/code&gt; operations (and their async counterparts), along with the &lt;code&gt;FeatureFlag&lt;/code&gt; model and related types (&lt;code&gt;FeatureFlagConditions&lt;/code&gt;, &lt;code&gt;FeatureFlagAllocation&lt;/code&gt;, &lt;code&gt;FeatureFlagTelemetryConfiguration&lt;/code&gt;, &lt;code&gt;FeatureFlagVariantDefinition&lt;/code&gt;, etc.). Requires the &lt;code&gt;2026-05-01-preview&lt;/code&gt; service API version.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.IotHub_1.2.0-beta.4"&gt;Azure.ResourceManager.IotHub_1.2.0-beta.4&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.4 (2026-08-12)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded API version from &lt;code&gt;2026-03-01-preview&lt;/code&gt; to &lt;code&gt;2026-05-01-preview&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;RoutingEventStreamProperties&lt;/code&gt; model and &lt;code&gt;EventStreamAuthenticationType&lt;/code&gt; enum for routing event stream endpoints.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;RoutingEndpoints.EventStreams&lt;/code&gt; collection property.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Removed &lt;code&gt;IotHubSku.Gen2&lt;/code&gt; static property and &lt;code&gt;IotHubSkuTier.Generation2&lt;/code&gt; enum member — the GEN2 IoT Hub SKU is no longer present in the &lt;code&gt;2026-05-01-preview&lt;/code&gt; API.&lt;/li&gt;
+&lt;li&gt;AsyncAPI discovery endpoints — &lt;code&gt;InvocationHandler&lt;/code&gt; now exposes two new&lt;br&gt;
+virtual methods, &lt;code&gt;GetAsyncApiJsonAsync&lt;/code&gt; and &lt;code&gt;GetAsyncApiYamlAsync&lt;/code&gt;, served&lt;br&gt;
+at &lt;code&gt;GET /invocations/docs/asyncapi.json&lt;/code&gt; and &lt;code&gt;GET /invocations/docs/asyncapi.yaml&lt;/code&gt;&lt;br&gt;
+respectively. Both default to &lt;code&gt;404&lt;/code&gt;; override either or both to publish the&lt;br&gt;
+AsyncAPI companion to the existing &lt;code&gt;openapi.json&lt;/code&gt; endpoint for&lt;br&gt;
+streaming/bidirectional surfaces (e.g. the &lt;code&gt;invocations_ws&lt;/code&gt; WebSocket protocol)&lt;br&gt;
+that OpenAPI cannot express. The path extension is authoritative for the&lt;br&gt;
+returned content type — no &lt;code&gt;Accept&lt;/code&gt; negotiation and no format conversion.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Migrated SDK code generation from AutoRest to TypeSpec.&lt;/li&gt;
+&lt;li&gt;Updated the resilient research and multi-turn samples to use &lt;code&gt;FoundryStateStore&lt;/code&gt;&lt;br&gt;
+directly for application state with session-scoped store names and invocation tags,&lt;br&gt;
+without user isolation or per-item call IDs.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.ConfidentialLedger_2.0.0-beta.2"&gt;Azure.Security.ConfidentialLedger_2.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Responses_1.0.0-beta.8"&gt;Azure.AI.AgentServer.Responses_1.0.0-beta.8&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;2.0.0-beta.2 (2026-08-13)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.8 (2026-08-12)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Added support to route retryable HTTP responses and retryable transport failures to failover ledgers for &lt;code&gt;GetLedgerEntry&lt;/code&gt;, &lt;code&gt;GetLedgerEntryAsync&lt;/code&gt;, &lt;code&gt;GetCurrentLedgerEntry&lt;/code&gt;, and &lt;code&gt;GetCurrentLedgerEntryAsync&lt;/code&gt;. No other reads or writes fail over. The primary and every failover endpoint receive independent normal retry budgets; caller cancellation never initiates failover, and the original primary failure is preserved if discovery or all failovers fail.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added &lt;code&gt;ConfidentialLedgerClientOptions.Failover&lt;/code&gt; to control the order in which failover endpoints are attempted: &lt;code&gt;Ordered&lt;/code&gt; (default, preserves the order reported by the identity service) or &lt;code&gt;Random&lt;/code&gt; (shuffles the candidates to spread load across failover ledgers).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added &lt;code&gt;ConfidentialLedgerClientOptions.FailoverNetworkTimeout&lt;/code&gt;. When set, this network timeout applies independently to requests against each failover endpoint. When unset, the configured retry network timeout applies.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The client now treats a &lt;code&gt;GetLedgerEntry&lt;/code&gt;/&lt;code&gt;GetLedgerEntryAsync&lt;/code&gt; response that is still in the &lt;code&gt;Loading&lt;/code&gt; state as transient and automatically polls until the entry is committed, bounded by the client's configured retry settings (&lt;code&gt;ClientOptions.Retry.MaxRetries&lt;/code&gt; attempts with &lt;code&gt;ClientOptions.Retry.Delay&lt;/code&gt; between attempts). Callers no longer need to write a manual polling loop.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added &lt;code&gt;ConfidentialLedgerClientOptions.EnableArchivedCollectionFallback&lt;/code&gt;. It defaults to &lt;code&gt;true&lt;/code&gt;, so &lt;code&gt;GetCurrentLedgerEntry&lt;/code&gt; and &lt;code&gt;GetCurrentLedgerEntryAsync&lt;/code&gt; transparently fall back to a historical query for a collection whose latest entry has been archived (pruned), without additional caller logic or configuration. Set it to &lt;code&gt;false&lt;/code&gt; to retain the legacy &lt;code&gt;404 Not Found&lt;/code&gt; behavior.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added strongly typed convenience overloads for service operations. The existing protocol methods remain available for advanced scenarios.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added experimental configuration and host-builder integration through &lt;code&gt;ConfidentialLedgerClientSettings&lt;/code&gt; and &lt;code&gt;ConfidentialLedgerClientHostExtensions&lt;/code&gt;.&lt;/p&gt;
+&lt;li&gt;Resilient responses. Resilient background responses (&lt;code&gt;ResponsesServerOptions.ResilientBackground&lt;/code&gt;)&lt;br&gt;
+are composed directly on the &lt;code&gt;Azure.AI.AgentServer.Core&lt;/code&gt; durable-task and event-stream primitives&lt;br&gt;
+rather than a bespoke Responses-owned recovery stack, matching the Python implementation.&lt;br&gt;
+Interrupted background responses are automatically recovered and re-invoked in the next process&lt;br&gt;
+lifetime.
+&lt;ul&gt;
+&lt;li&gt;Resilient streaming with checkpoint/resumption: handlers persist durable snapshots at safe&lt;br&gt;
+boundaries via &lt;code&gt;ResponseEventStream.Checkpoint()&lt;/code&gt; and, on a recovered entry, reconstruct the&lt;br&gt;
+resumption response from &lt;code&gt;ResponseContext.IsRecovery&lt;/code&gt; / &lt;code&gt;ResponseContext.PersistedResponse&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Steerable conversations (&lt;code&gt;ResponsesServerOptions.SteerableConversations&lt;/code&gt;) with in-turn steering:&lt;br&gt;
+a superseding turn enqueues and drains against the active turn, observable through&lt;br&gt;
+&lt;code&gt;ResponseContext.IsSteeredTurn&lt;/code&gt; and &lt;code&gt;ResponseContext.PendingInputCount&lt;/code&gt;; fork, lock, and&lt;br&gt;
+queue-full conflicts map to &lt;code&gt;409 Conflict&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Internal metadata is persisted for recovery and stripped on egress so it never leaks to clients.&lt;/li&gt;
+&lt;li&gt;Fail-loud composition validation: misconfigured resilient setups fail at startup with actionable&lt;br&gt;
+errors instead of silently degrading.&lt;/li&gt;
+&lt;li&gt;The local default response provider is now file-based (durable) when resilient background is&lt;br&gt;
+enabled outside a hosted environment.&lt;/li&gt;
+&lt;li&gt;Every stored (&lt;code&gt;store=true&lt;/code&gt;) request now runs its handler inside a Core resilient task —&lt;br&gt;
+foreground or background, streaming or non-streaming — so a crashed turn is task-tracked and&lt;br&gt;
+recovered/marked-failed by the next-lifetime recovery scan (matching the Python resilience&lt;br&gt;
+contract; only &lt;code&gt;store=false&lt;/code&gt; runs inline). Streaming relays the per-response event stream&lt;br&gt;
+immediately, preserving standalone SSE &lt;code&gt;error&lt;/code&gt; semantics for pre-creation failures and&lt;br&gt;
+&lt;code&gt;response.failed&lt;/code&gt; (not &lt;code&gt;response.completed&lt;/code&gt;) for terminal persistence failures.&lt;/li&gt;
+&lt;li&gt;A streaming turn superseded by steering that reaches its terminal via the framework&lt;br&gt;
+completion fallback (a non-cooperative handler that lets its token trip without emitting its&lt;br&gt;
+own terminal) is now durably persisted as &lt;code&gt;completed&lt;/code&gt;, so the client-visible&lt;br&gt;
+&lt;code&gt;response.completed&lt;/code&gt; matches the stored record and the turn is valid conversation context for&lt;br&gt;
+the draining steered turn (FR-053).&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Renamed and moved &lt;code&gt;Azure.Security.ConfidentialLedger.Models.SecurityConfidentialLedgerModelFactory&lt;/code&gt; to &lt;code&gt;Azure.Security.ConfidentialLedger.ConfidentialLedgerModelFactory&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;ConversationChainMetadata&lt;/code&gt;, &lt;code&gt;ConversationChainMetadataNamespace&lt;/code&gt;,&lt;br&gt;
+&lt;code&gt;ResponseContext.ConversationChainMetadata&lt;/code&gt;, and &lt;code&gt;ResponseContextExtensions.MetadataNamespace&lt;/code&gt;.&lt;br&gt;
+Durable application state now belongs in an explicit&lt;br&gt;
+&lt;code&gt;Azure.AI.AgentServer.Core.Storage.FoundryStateStore&lt;/code&gt; scoped with&lt;br&gt;
+&lt;code&gt;ResponseContext.ConversationChainId&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Removed the public &lt;code&gt;ResponsesStreamProvider&lt;/code&gt; abstract class and the public &lt;code&gt;IAsyncObserver&amp;lt;T&amp;gt;&lt;/code&gt;&lt;br&gt;
+interface. SSE streaming is now composed on the &lt;code&gt;Azure.AI.AgentServer.Core&lt;/code&gt; event-stream&lt;br&gt;
+primitive (&lt;code&gt;IEventStreamRegistry&lt;/code&gt; / &lt;code&gt;IEventStream&lt;/code&gt;) rather than a Responses-owned stream&lt;br&gt;
+provider, matching the Python implementation. The local default event-stream backing is&lt;br&gt;
+in-memory replay, upgraded automatically to durable file-backed replay when resilient&lt;br&gt;
+background is enabled outside a hosted environment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Retired the interim .NET ↔ Python resilience parity reports now that the port has&lt;br&gt;
+converged.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Core_1.0.0-beta.28"&gt;Azure.AI.AgentServer.Core_1.0.0-beta.28&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.28 (2026-08-12)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;FoundryStateStore&lt;/code&gt; item operations now accept an explicit &lt;code&gt;callId&lt;/code&gt; and forward&lt;br&gt;
+the ambient &lt;code&gt;FoundryAgentRequestContext.Current.CallId&lt;/code&gt; by default. Resilient&lt;br&gt;
+task handlers restore a top-level persisted &lt;code&gt;call_id&lt;/code&gt; for every execution attempt.&lt;/li&gt;
+&lt;li&gt;Added resilient &lt;strong&gt;task&lt;/strong&gt; and &lt;strong&gt;streaming&lt;/strong&gt; primitives for building durable, long-running agents (&lt;code&gt;Azure.AI.AgentServer.Core.Tasks&lt;/code&gt; and &lt;code&gt;Azure.AI.AgentServer.Core.Streaming&lt;/code&gt;):
+&lt;ul&gt;
+&lt;li&gt;Register one-shot and multi-turn tasks with &lt;code&gt;IServiceCollection.AddResilientTasks()&lt;/code&gt; and the &lt;code&gt;ResilientTaskBuilder&lt;/code&gt; (&lt;code&gt;AddTask&lt;/code&gt; / &lt;code&gt;AddMultiTurnTask&lt;/code&gt;), including overloads that accept a source-generated &lt;code&gt;JsonTypeInfo&amp;lt;TInput&amp;gt;&lt;/code&gt; for Native-AOT / trimming-safe input serialization. The reflection-based overloads carry &lt;code&gt;[RequiresUnreferencedCode]&lt;/code&gt; / &lt;code&gt;[RequiresDynamicCode]&lt;/code&gt; so trimming/AOT builds get a compile-time warning steering them to the &lt;code&gt;JsonTypeInfo&amp;lt;TInput&amp;gt;&lt;/code&gt; overloads.&lt;/li&gt;
+&lt;li&gt;Run and resume tasks through &lt;code&gt;ITaskInvoker&lt;/code&gt; (&lt;code&gt;RunAsync&lt;/code&gt;, &lt;code&gt;StartAsync&lt;/code&gt;, &lt;code&gt;GetActiveRunAsync&lt;/code&gt;) with the &lt;code&gt;TaskRun&amp;lt;TOutput&amp;gt;&lt;/code&gt; handle (await its &lt;code&gt;Completion&lt;/code&gt; task, or &lt;code&gt;Completion.WaitAsync(token)&lt;/code&gt; to cancel only your wait) and the &lt;code&gt;TaskContext&amp;lt;TInput&amp;gt;&lt;/code&gt; handler surface (entry mode, retry attempt, cooperative cancellation, shutdown, and steering signals).&lt;/li&gt;
+&lt;li&gt;Configure per-task durability with &lt;code&gt;TaskRegistrationOptions&lt;/code&gt; (title, timeout, retry) and &lt;code&gt;TaskRetryPolicy&lt;/code&gt; (attempt count + an &lt;code&gt;Azure.Core.DelayStrategy&lt;/code&gt; for the backoff).&lt;/li&gt;
+&lt;li&gt;Resumable event streaming with &lt;code&gt;AgentEventStreamRegistry&lt;/code&gt; / &lt;code&gt;AgentEventStream&lt;/code&gt; and &lt;code&gt;AddAgentEventStreams()&lt;/code&gt;, supporting in-memory live, in-memory replay, and file-backed replay backings via &lt;code&gt;AgentEventStreamOptions&lt;/code&gt;. The event representation is &lt;code&gt;System.Net.ServerSentEvents.SseItem&amp;lt;string&amp;gt;&lt;/code&gt;: the caller places the serialized event text in &lt;code&gt;SseItem&amp;lt;string&amp;gt;.Data&lt;/code&gt; and an opaque &lt;code&gt;SseItem&amp;lt;string&amp;gt;.EventId&lt;/code&gt; is the resume/reconnect token (&lt;code&gt;Subscribe(afterEventId)&lt;/code&gt;, &lt;code&gt;GetLastEventIdAsync()&lt;/code&gt;). Because the data is already a string, there is no payload codec — &lt;code&gt;SseFormatter&lt;/code&gt; can frame a &lt;code&gt;Subscribe(...)&lt;/code&gt; stream directly onto an HTTP response.&lt;/li&gt;
+&lt;li&gt;A single &lt;code&gt;ResilientTaskException&lt;/code&gt; carrying an extensible &lt;code&gt;ResilientTaskErrorCode&lt;/code&gt; (&lt;code&gt;HandlerError&lt;/code&gt;, &lt;code&gt;ExhaustedRetries&lt;/code&gt;, &lt;code&gt;Conflict&lt;/code&gt;, &lt;code&gt;PreconditionFailed&lt;/code&gt;, &lt;code&gt;QueueFull&lt;/code&gt;) with code-specific data exposed as nullable properties (&lt;code&gt;CurrentStatus&lt;/code&gt;, &lt;code&gt;ActualLastInputId&lt;/code&gt;, &lt;code&gt;Failure&lt;/code&gt;). Argument validation surfaces as &lt;code&gt;ArgumentException&lt;/code&gt; and cancellation as &lt;code&gt;OperationCanceledException&lt;/code&gt;; recovery deferral (&lt;code&gt;ExitForRecoveryAsync&lt;/code&gt;) is an internal lifecycle handoff and never surfaces as an exception. The streaming layer keeps its &lt;code&gt;AgentEventStreamException&lt;/code&gt; hierarchy.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Failover requests are now validated by endpoint-specific transports against that ledger's own identity TLS certificate, fetched from the independently validated Identity Service. A certificate trusted for one ledger cannot authenticate another ledger. Custom transports remain supported.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PostLedgerEntryOperation&lt;/code&gt; now treats transient &lt;code&gt;406 NotAcceptable&lt;/code&gt; responses from the status endpoint as &lt;code&gt;Pending&lt;/code&gt; and tolerates exactly 3 consecutive &lt;code&gt;404 NotFound&lt;/code&gt; HTTP responses while a transaction is replicated. The operation-specific 404 tolerance no longer multiplies with pipeline retries; normal 404 retry behavior remains unchanged for other operations.&lt;/li&gt;
-&lt;li&gt;Archived-collection fallback responses now preserve the complete historical ledger entry payload, including optional tags.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>microsoft/microsoft-ui-xaml - Releases - 2026-08-13</title>
-    <id>https://github.com/microsoft/microsoft-ui-xaml#2026-08-13</id>
-    <link href="https://github.com/microsoft/microsoft-ui-xaml" />
-    <updated>2026-08-14T00:15:19Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/releases/tag/winui3/release/2.4.0"&gt;WinUI 3 in WinAppSDK 2.4.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;WinUI 3 in Windows App SDK 2.4.0&lt;/h2&gt;
-&lt;p&gt;This release of WinUI 3 ships as part of &lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.4.0"&gt;Windows App SDK 2.4.0&lt;/a&gt;. To use it in your app, install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.4.0" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.4.0 NuGet package&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;What's new in WinUI 3:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Expanded input support.&lt;/strong&gt; WinUI 3 apps can now use operating system touchpad and mouse haptics through &lt;code&gt;Windows.Devices.Haptics&lt;/code&gt;, along with touchpad single-finger panning, when supported by the operating system and hardware.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bug fixes:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed a crash that could occur when a touch or pen contact left a scrollable area with precise timing.&lt;/li&gt;
-&lt;li&gt;Fixed an issue where the Storage Pickers left the calling WinUI app window without keyboard focus after the file dialog closed. The app now restores its previous focus. See GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/6505" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/6505/hovercard"&gt;microsoft/WindowsAppSDK#6505&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Fixed a crash when apps using the System Composition Engine called &lt;code&gt;VisualInteractionSource.TryRedirectForManipulation&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Fixed the access modifier on the generated C# entry point helper when &lt;code&gt;DISABLE_XAML_GENERATED_MAIN&lt;/code&gt; is defined. See GitHub issue &lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/11245" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/11245/hovercard"&gt;microsoft/microsoft-ui-xaml#11245&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For the full set of changes across Windows App SDK 2.4.0, see the &lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.4.0"&gt;Windows App SDK 2.4.0 release notes&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Try it out&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.4.0" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.4.0 NuGet package&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
+&lt;li&gt;Kept the task lease renewed across retry backoff delays so a long inter-attempt backoff cannot let the lease lapse and allow a concurrent re-invocation of the same task turn.&lt;/li&gt;
+&lt;li&gt;Hardened the resilient-task engine shutdown signalling against a benign race between a completing turn and host disposal.&lt;/li&gt;
+&lt;li&gt;A one-shot task whose durable completion write fails, and a multi-turn task whose durable suspend write fails, now surface the failure to the caller instead of reporting success while the record remains &lt;code&gt;in_progress&lt;/code&gt; (which a later recovery scan could re-run).&lt;/li&gt;
+&lt;li&gt;The local file-backed task store now serializes its existence check and record write under the same lock as patch/delete, so two concurrent creates for the same id can no longer both succeed with the later write silently overwriting the earlier record.&lt;/li&gt;
+&lt;li&gt;The file-backed event-stream custom serializer/deserializer are now &lt;code&gt;Func&amp;lt;object, string&amp;gt;&lt;/code&gt; / &lt;code&gt;Func&amp;lt;string, object&amp;gt;&lt;/code&gt; (previously &lt;code&gt;byte[]&lt;/code&gt;), matching the UTF-8 JSON-string on-disk format so a custom codec cannot silently corrupt non-UTF-8 payloads.&lt;/li&gt;
+&lt;li&gt;The local file-backed task store now writes each record through a temporary file and an atomic replace, so a crash mid-write can no longer leave a truncated record that reads back as a parse error and renders the task id permanently unusable.&lt;/li&gt;
+&lt;li&gt;The per-task write gate is no longer disposed when its bookkeeping entry is removed, closing a race where a concurrent write could observe &lt;code&gt;ObjectDisposedException&lt;/code&gt; on a gate that was torn down while still in use.&lt;/li&gt;
+&lt;li&gt;A turn transition that replaces and disposes a handler's cancellation source concurrently with a cancel/steering signal no longer surfaces &lt;code&gt;ObjectDisposedException&lt;/code&gt; from the cancel path.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AddResilientTasks&lt;/code&gt; and &lt;code&gt;AddAgentEventStreams&lt;/code&gt; are now safe against repeated registration: &lt;code&gt;AddResilientTasks&lt;/code&gt; no longer registers the durability hosted service more than once (and rejects a conflicting second credential), and &lt;code&gt;AddAgentEventStreams&lt;/code&gt; rejects a second configuring call instead of silently discarding its configuration.&lt;/li&gt;
+&lt;li&gt;Steering inputs that were queued but not yet drained when a process crashed are no longer stranded: on recovery the persisted &lt;code&gt;pending_inputs&lt;/code&gt; queue is rehydrated into the in-process steering FIFO, so a recovered chain drains them instead of silently dropping them. Each queued input's per-turn &lt;code&gt;InputId&lt;/code&gt; is persisted alongside it so a recovered turn keeps its own identity and advances the chain head (&lt;code&gt;last_input_id&lt;/code&gt;) exactly as it would without a crash.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/releases/tag/winui3/release/1.8.11"&gt;WinUI 3 in WinAppSDK 1.8.11&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerServiceFleet_1.2.0"&gt;Azure.ResourceManager.ContainerServiceFleet_1.2.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;WinUI 3 in Windows App SDK 1.8.11&lt;/h2&gt;
-&lt;p&gt;This release of WinUI 3 ships as part of &lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.8.11"&gt;Windows App SDK 1.8.11&lt;/a&gt;. To use it in your app, install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.8.260804001" rel="nofollow"&gt;Microsoft.WindowsAppSDK 1.8.260804001 NuGet package&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;1.8.11 is a stable servicing release for 1.8. The WinUI-facing change in this release is a focus-restoration fix:&lt;/p&gt;
+                                &lt;h2&gt;1.2.0 (2026-08-07)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed an issue where the Storage Pickers (&lt;code&gt;FileOpenPicker&lt;/code&gt;, &lt;code&gt;FileSavePicker&lt;/code&gt;, and &lt;code&gt;FolderPicker&lt;/code&gt;) left the calling WinUI app window without keyboard focus after the file dialog closed. The app now restores its previous focus. See GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/6505" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/6505/hovercard"&gt;microsoft/WindowsAppSDK#6505&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For the full set of changes, see the &lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.8.11"&gt;Windows App SDK 1.8.11 release notes&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Try it out&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.8.260804001" rel="nofollow"&gt;Microsoft.WindowsAppSDK 1.8.260804001 NuGet package&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>microsoft/WindowsAppSDK - Releases - 2026-08-13</title>
-    <id>https://github.com/microsoft/WindowsAppSDK#2026-08-13</id>
-    <link href="https://github.com/microsoft/WindowsAppSDK" />
-    <updated>2026-08-14T00:15:20Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.8.11"&gt;Windows App SDK 1.8.11 (1.8.260804001)&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;Windows App SDK 1.8.11 (1.8.260804001)&lt;/h2&gt;
-&lt;p&gt;WinAppSDK 1.8.11 is the latest stable servicing release for 1.8, with fixes for Storage Picker focus restoration, MRT Core fallback paths, and Windows App Runtime base-directory isolation.&lt;/p&gt;
-&lt;h3&gt;Bug fixes:&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Bug Fix&lt;/th&gt;
-&lt;th&gt;&lt;a href="https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.applicationmodel.windowsappruntime.runtimecompatibilityoptions.disabledchanges?view=windows-app-sdk-1.8" rel="nofollow"&gt;Runtime Compatibility Change&lt;/a&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed an issue where the Storage Pickers (&lt;code&gt;FileOpenPicker&lt;/code&gt;, &lt;code&gt;FileSavePicker&lt;/code&gt;, and &lt;code&gt;FolderPicker&lt;/code&gt;) left the calling WinUI app window without keyboard focus after the file dialog closed. The app now restores its previous focus. See GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/6505" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/6505/hovercard"&gt;microsoft/WindowsAppSDK#6505&lt;/a&gt;.&lt;/td&gt;
-&lt;td&gt;StoragePickers_RestoreFocusAfterDialogCloses&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed a regression where &lt;code&gt;MrmGetFilePathFromName&lt;/code&gt; returned &lt;code&gt;ERROR_FILE_NOT_FOUND&lt;/code&gt; when the PRI file didn't exist instead of returning the documented fallback path. See GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/5940" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/5940/hovercard"&gt;microsoft/WindowsAppSDK#5940&lt;/a&gt;.&lt;/td&gt;
-&lt;td&gt;ResourceManager_RestoreDefaultFallbackPath&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed an issue where &lt;code&gt;MICROSOFT_WINDOWSAPPRUNTIME_BASE_DIRECTORY&lt;/code&gt; could be inherited by child processes, disrupting MRT Core and catalog lookups. See GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/5987" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/5987/hovercard"&gt;microsoft/WindowsAppSDK#5987&lt;/a&gt;.&lt;/td&gt;
-&lt;td&gt;WindowsAppRuntime_BaseDirectoryIsolation&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;To see everything that's new and changed, see the full &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-1-8?pivots=stable#version-1811-18260804001" rel="nofollow"&gt;Windows App SDK 1.8.11 release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
-&lt;h3&gt;Try it out&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.8.260804001" rel="nofollow"&gt;1.8.260804001 NuGet&lt;/a&gt; package to use WinAppSDK 1.8 in your app.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Getting started&lt;/h3&gt;
-&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.4.0"&gt;Windows App SDK 2.4.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;Windows App SDK 2.4.0&lt;/h2&gt;
-&lt;p&gt;Windows App SDK 2.4.0 is the latest stable release on the 2.x line, adding expanded input support, more precise &lt;code&gt;LanguageModel&lt;/code&gt; response statuses, and targeted reliability fixes across input, Storage Pickers, MRT Core, app runtime isolation, composition, and XAML tooling.&lt;/p&gt;
-&lt;h3&gt;What's new in WinAppSDK 2.4.0:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Expanded input support.&lt;/strong&gt; WinUI 3 apps can now use operating system touchpad and mouse haptics through &lt;code&gt;Windows.Devices.Haptics&lt;/code&gt;, along with touchpad single-finger panning, when supported by the operating system and hardware.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;More precise &lt;code&gt;LanguageModel&lt;/code&gt; response statuses.&lt;/strong&gt; The new &lt;code&gt;LanguageModelResponseStatus.UnsupportedLanguage&lt;/code&gt; and &lt;code&gt;LanguageModelResponseStatus.LanguageMismatch&lt;/code&gt; values let apps distinguish unsupported-language and input/output-language mismatch conditions from generic errors.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bug fixes:&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Bug Fix&lt;/th&gt;
-&lt;th&gt;&lt;a href="https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.applicationmodel.windowsappruntime.runtimecompatibilityoptions.disabledchanges?view=windows-app-sdk-2.4" rel="nofollow"&gt;Runtime Compatibility Change&lt;/a&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed a crash that could occur when a touch or pen contact left a scrollable area with precise timing.&lt;/td&gt;
-&lt;td&gt;InputPointerSource_DepartingScrollInputCrashFix&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed an issue where the Storage Pickers left the calling WinUI app window without keyboard focus after the file dialog closed. The app now restores its previous focus. See GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/6505" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/6505/hovercard"&gt;microsoft/WindowsAppSDK#6505&lt;/a&gt;.&lt;/td&gt;
-&lt;td&gt;StoragePickers_RestoreFocusAfterDialogCloses&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed a regression where &lt;code&gt;MrmGetFilePathFromName&lt;/code&gt; returned &lt;code&gt;ERROR_FILE_NOT_FOUND&lt;/code&gt; when the PRI file didn't exist instead of returning the documented fallback path. See GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/5940" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/5940/hovercard"&gt;microsoft/WindowsAppSDK#5940&lt;/a&gt;.&lt;/td&gt;
-&lt;td&gt;ResourceManager_RestoreDefaultFallbackPath&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed an issue where &lt;code&gt;MICROSOFT_WINDOWSAPPRUNTIME_BASE_DIRECTORY&lt;/code&gt; could be inherited by child processes, disrupting MRT Core and catalog lookups. See GitHub issue &lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/5987" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/5987/hovercard"&gt;microsoft/WindowsAppSDK#5987&lt;/a&gt;.&lt;/td&gt;
-&lt;td&gt;WindowsAppRuntime_BaseDirectoryIsolation&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed a crash when apps using the System Composition Engine called &lt;code&gt;VisualInteractionSource.TryRedirectForManipulation&lt;/code&gt;.&lt;/td&gt;
-&lt;td&gt;N/A, operating system composition bridge fix&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed the access modifier on the generated C# entry point helper when &lt;code&gt;DISABLE_XAML_GENERATED_MAIN&lt;/code&gt; is defined. See GitHub issue &lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/11245" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/11245/hovercard"&gt;microsoft/microsoft-ui-xaml#11245&lt;/a&gt;.&lt;/td&gt;
-&lt;td&gt;N/A, build-time tooling change&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;To see everything that's new and changed, see the full &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-2-0?pivots=stable#version-240" rel="nofollow"&gt;Windows App SDK 2.4.0 release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
-&lt;h3&gt;Try it out&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.4.0" rel="nofollow"&gt;2.4.0 NuGet&lt;/a&gt; package to use WinAppSDK 2.4 in your app.&lt;/li&gt;
-&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Getting started&lt;/h3&gt;
-&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-08-13</title>
-    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-08-13</id>
-    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-    <updated>2026-08-14T00:15:22Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Extensions-1.17.0-beta.2"&gt;Extensions-1.17.0-beta.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions/1.17.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Extensions v1.17.0-beta.2&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;ConsistentProbabilitySampler&lt;/code&gt;, a consistent probability based sampler&lt;br&gt;
-implementing the OpenTelemetry&lt;br&gt;
-&lt;a href="https://opentelemetry.io/docs/specs/otel/trace/tracestate-probability-sampling/" rel="nofollow"&gt;probability sampling&lt;/a&gt;&lt;br&gt;
-specification.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4629" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4629/hovercard"&gt;#4629&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Extensions-1.17.0-beta.2/src/OpenTelemetry.Extensions/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Upgraded api-version to &lt;code&gt;2026-06-01&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
