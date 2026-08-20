@@ -1,60 +1,79 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-08-19T00:05:33Z</updated>
+  <updated>2026-08-20T00:06:14Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-08-18</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-08-18</id>
+    <title>aws/aws-sdk-net - Releases - 2026-08-19</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-08-19</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-08-19T00:05:33Z</updated>
+    <updated>2026-08-20T00:06:14Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.314.0"&gt;4.0.314.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.315.0"&gt;4.0.315.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.314.0 (2026-08-18 18:21 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.315.0 (2026-08-19 18:47 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Batch (4.0.100.9)
+&lt;li&gt;AccountAccess (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Update AWS Batch documentation with newer Fargate Supported configurations, notes, and fix broken Docker link re-directs.&lt;/li&gt;
+&lt;li&gt;Adds throttling exceptions to operation outputs that were previously inconsistent with other operations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.110.2)
+&lt;li&gt;Batch (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Doc release for CreateImage support for instances with local snapshots in Outpost&lt;/li&gt;
+&lt;li&gt;AWS Batch now supports managing CloudWatch Container Insights on compute environments via CreateComputeEnvironment and UpdateComputeEnvironment.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EntityResolution (4.0.102.0)
+&lt;li&gt;BedrockAgentCore (4.0.106.0)
 &lt;ul&gt;
-&lt;li&gt;Added ResourceNotFoundException to DeleteSchemaMapping, DeleteMatchingWorkflow, DeleteIdMappingWorkflow, and DeleteIdNamespace. These operations now return a 404 ResourceNotFoundException (previously a 200 Success) when the target resource does not exist.&lt;/li&gt;
+&lt;li&gt;AgentCore Memory now supports Flexible Namespaces and Non-Conversational Payloads in CreateEvent API&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MarketplaceCatalog (4.0.103.0)
+&lt;li&gt;BedrockAgentCoreControl (4.0.111.0)
 &lt;ul&gt;
-&lt;li&gt;Introducing two new APIs, DescribeAssessment and ListAssessments. These APIs expose validation issues on Marketplace resources. The validation issues are exposed via a newly created resource called Assessment.&lt;/li&gt;
+&lt;li&gt;AgentCore Memory now supports Flexible Namespaces&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MediaLive (4.0.102.0)
+&lt;li&gt;EKS (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Elemental MediaLive now supports SCTE-35 marker passthrough without IDR frame insertion for CMAF Ingest, MediaPackage V2, and transport stream outputs.&lt;/li&gt;
+&lt;li&gt;Adds support for EKS cluster certificate authorities (CA)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Outposts (4.0.103.0)
+&lt;li&gt;MediaLive (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Outposts now supports VPC Endpoint configuration in CreatePrivateConnectivityConfig, enabling scoped private connectivity with provisioning role creation for secure outpost installations&lt;/li&gt;
+&lt;li&gt;AWS Elemental MediaLive now supports video cropping and output positioning. Use cropRectangle and outputPositionRectangle to position the encoded video within the output frame, with the surrounding area filled with black.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;WorkSpaces (4.0.102.0)
+&lt;li&gt;Redshift (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon WorkSpaces now supports nested virtualization, allowing you to run hypervisors and virtualization-based workloads within your WorkSpaces. You can enable or disable nested virtualization when creating a WorkSpace or by modifying an existing WorkSpace's properties.&lt;/li&gt;
+&lt;li&gt;Amazon Redshift enhanced System Table retention that allows customers to store their system table data directly in S3 Tables in customer's account instead of Redshift Managed Storage&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 4.0.101.1
+&lt;li&gt;RedshiftServerless (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Update &lt;code&gt;RegionEndpoint.GetBySystemName&lt;/code&gt; to validate the provided region system name is a valid host label&lt;/li&gt;
-&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Amazon Redshift Enhanced System Table Retention that allows customers to store their system table data directly in S3 Tables in customer's account instead of Redshift Managed Storage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SimpleDBv2 (4.0.100.10)
+&lt;ul&gt;
+&lt;li&gt;SimpleDBv2 is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SSO (4.0.100.10)
+&lt;ul&gt;
+&lt;li&gt;SSO is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SupportApp (4.0.100.10)
+&lt;ul&gt;
+&lt;li&gt;SupportApp is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;VPCLattice (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon VPC Lattice now supports modification of private DNS options on Service Network VPC Associations&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
