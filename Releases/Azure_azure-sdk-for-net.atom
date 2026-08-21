@@ -1,46 +1,41 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-08-20T00:06:15Z</updated>
+  <updated>2026-08-21T00:06:36Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-08-19</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-08-19</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-08-20</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-08-20</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-08-20T00:06:15Z</updated>
+    <updated>2026-08-21T00:06:36Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.ConfidentialLedger_2.0.0-beta.3"&gt;Azure.Security.ConfidentialLedger_2.0.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.62.0"&gt;Azure.Core_1.62.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;2.0.0-beta.3 (2026-08-17)&lt;/h2&gt;
+                                &lt;h2&gt;1.62.0 (2026-08-20)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added experimental (&lt;code&gt;SCME0002&lt;/code&gt;) &lt;code&gt;AzureCredentialResolver.Default&lt;/code&gt; public static property so standalone callers can share the process-wide credential cache used by DI-resolved paths.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AzureCredentialResolver&lt;/code&gt; now resolves every &lt;code&gt;ChainedTokenCredential&lt;/code&gt; &lt;code&gt;Sources[]&lt;/code&gt; entry through the active resolver chain, so any registered &lt;code&gt;CredentialResolver&lt;/code&gt; (built-in, broker, or third-party) can claim or override an entry. Entries are constructed as chained, so transient failures surface as &lt;code&gt;CredentialUnavailableException&lt;/code&gt; and the chain falls through.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Changed &lt;code&gt;ConfidentialLedgerClientOptions.EnableArchivedCollectionFallback&lt;/code&gt; to default to &lt;code&gt;false&lt;/code&gt;. Callers that require &lt;code&gt;GetCurrentLedgerEntry&lt;/code&gt; and &lt;code&gt;GetCurrentLedgerEntryAsync&lt;/code&gt; to search ledger history after a collection-specific 404 must now explicitly opt in by setting the option to &lt;code&gt;true&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AzureCredentialResolver&lt;/code&gt; now resolves a top-level single source (e.g. &lt;code&gt;CredentialSource: AzureCliCredential&lt;/code&gt;) to the concrete credential type (&lt;code&gt;AzureCliCredential&lt;/code&gt;) rather than a &lt;code&gt;DefaultAzureCredential&lt;/code&gt; wrapper. Construction is unchanged (it uses the same &lt;code&gt;DefaultAzureCredentialFactory&lt;/code&gt; helpers) — only the returned type differs; callers using &lt;code&gt;CredentialSettings.TokenProvider&lt;/code&gt; as a &lt;code&gt;TokenCredential&lt;/code&gt; are unaffected.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AzureCredentialResolver&lt;/code&gt; no longer claims top-level &lt;code&gt;BrokerCredential&lt;/code&gt; sections (canonical name or &lt;code&gt;broker&lt;/code&gt; alias); they now require &lt;code&gt;BrokerCredentialResolver&lt;/code&gt; from &lt;code&gt;Azure.Identity.Broker&lt;/code&gt; 1.7.0+ (e.g. via &lt;code&gt;AddBrokerCredentialResolver()&lt;/code&gt;). &lt;code&gt;BrokerCredential&lt;/code&gt; entries nested inside a &lt;code&gt;ChainedTokenCredential&lt;/code&gt; continue to resolve. Note: if &lt;code&gt;BrokerCredentialResolver&lt;/code&gt; from &lt;code&gt;Azure.Identity.Broker&lt;/code&gt; 1.7.0 is registered ahead of &lt;code&gt;AzureCredentialResolver&lt;/code&gt;, a nested &lt;code&gt;BrokerCredential&lt;/code&gt; entry is currently built as non-chained, so it may surface &lt;code&gt;AuthenticationFailedException&lt;/code&gt; and abort the chain instead of falling through to the next entry. Without a broker resolver registered, the built-in chain path builds the broker entry as chained (correct fall-through). A future &lt;code&gt;Azure.Identity.Broker&lt;/code&gt; release will make its resolver honor chained semantics for nested entries.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.ServiceBus_1.2.0-beta.1"&gt;Azure.Provisioning.ServiceBus_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning_1.6.0"&gt;Azure.Provisioning_1.6.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.1 (2026-08-19)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h2&gt;1.6.0 (2026-08-20)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Migrated the library to TypeSpec generation and updated the Service Bus API version to &lt;code&gt;2026-01-01&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.CognitiveServices_1.3.0-beta.1"&gt;Azure.Provisioning.CognitiveServices_1.3.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.3.0-beta.1 (2026-08-18)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Regenerated with the TypeSpec-based provisioning generator.&lt;/li&gt;
-&lt;li&gt;Updated default API version to &lt;code&gt;2026-05-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Fixed Bicep serialization formats for &lt;code&gt;BicepList&amp;lt;T&amp;gt;&lt;/code&gt; and &lt;code&gt;BicepDictionary&amp;lt;T&amp;gt;&lt;/code&gt; elements, including nested collection elements.&lt;/li&gt;
+&lt;li&gt;Fixed Bicep literal serialization for formatted &lt;code&gt;DateTimeOffset&lt;/code&gt;, &lt;code&gt;TimeSpan&lt;/code&gt;, and string-encoded integer values. &lt;code&gt;DateTimeOffset&lt;/code&gt; values using the &lt;code&gt;"O"&lt;/code&gt; or &lt;code&gt;"o"&lt;/code&gt; format now emit UTC &lt;code&gt;Z&lt;/code&gt; literals (for example, &lt;code&gt;2026-01-01T00:00:00.0000000Z&lt;/code&gt;) instead of &lt;code&gt;+00:00&lt;/code&gt; offsets.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
