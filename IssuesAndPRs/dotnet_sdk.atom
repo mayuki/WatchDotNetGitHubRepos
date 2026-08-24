@@ -1,20 +1,26 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/sdk - Issues &amp; Pull Requests</title>
   <link href="https://github.com/dotnet/sdk" />
-  <updated>2026-08-23T00:04:58Z</updated>
+  <updated>2026-08-24T00:05:23Z</updated>
   <id>https://github.com/dotnet/sdk</id>
   <entry>
-    <title>dotnet/sdk - Issues &amp; Pull Requests - 2026-08-22</title>
-    <id>https://github.com/dotnet/sdk#2026-08-22</id>
+    <title>dotnet/sdk - Issues &amp; Pull Requests - 2026-08-23</title>
+    <id>https://github.com/dotnet/sdk#2026-08-23</id>
     <link href="https://github.com/dotnet/sdk" />
-    <updated>2026-08-23T00:04:58Z</updated>
+    <updated>2026-08-24T00:05:23Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Closed&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/issues/4062"&gt;CLI command `dotnet nuget push` doesn't recognize forward slashes in path on Windows #4062&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/55174"&gt;[Known Build Error] DotnetNewTestTemplatesTests.MSTestAndPlaywrightProjectTemplate_...CanBeInstalledAndTestsArePassing fails with UnauthorizedAccessException: Access to the path 'testhost.exe' is denied #55174&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/10592"&gt;Global tool update messages are not accurate #10592&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -42,12 +48,6 @@
     &lt;li&gt;
       &lt;div&gt;
         &lt;a href="https://github.com/dotnet/sdk/issues/55495"&gt;Microsoft.NET.Build.Containers.IntegrationTests RegistryTests.CanReadManifestFromRegistry: flaky failure - CONTAINER1014 Manifest pull failed (external registry BadRequest) #55495&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/issues/55174"&gt;[Known Build Error] DotnetNewTestTemplatesTests.MSTestAndPlaywrightProjectTemplate_...CanBeInstalledAndTestsArePassing fails with UnauthorizedAccessException: Access to the path 'testhost.exe' is denied #55174&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -99,6 +99,42 @@
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/52654"&gt;False positive for CA2263 with codefix changing code functionality. #52654&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;11.0.1xx&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/51644"&gt;CA1822 suggests making user-defined compound operators static #51644&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;11.0.1xx&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/54046"&gt;rulesets subdirectory missing from published NetAnalyzers nupkg #54046&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;11.0.1xx&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/53388"&gt;[11.0-preview.2] CA1517 false positive #53388&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;11.0.1xx&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/53125"&gt;CA1416 doesn't work when Microsoft.CodeAnalysis.NetAnalyzers is referenced directly with EnableNETAnalyzers=false #53125&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;11.0.1xx&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/27249"&gt;UseWindowsForms not work on .net framework 2.0 #27249&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Backlog&lt;/div&gt;
+    &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;&lt;section&gt;
   &lt;h2&gt;PullRequests&lt;/h2&gt;
@@ -106,7 +142,31 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/55895"&gt;[release/11.0.1xx-rc1] Source code updates from dotnet/dotnet #55895&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/55900"&gt;Prevent CA2263 from changing generic System.Type values #55900&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/55899"&gt;Restore generated assets in Microsoft.CodeAnalysis.NetAnalyzers packages #55899&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/55898"&gt;Fix CA1517 false positive for tuple assignments #55898&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Area-Microsoft.CodeAnalysis.NetAnalyzers&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/55897"&gt;Support local daemon base images #55897&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/55896"&gt;Use ORAS.NET for container registry operations #55896&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -115,21 +175,27 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/54517"&gt;fix(analyzers): exclude operators from CA1822 false positive #54517&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
         &lt;a href="https://github.com/dotnet/sdk/pull/52622"&gt;Added fixer for CA1848: Use the LoggerMessage delegates #52622&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;Area-Infrastructure&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/53475"&gt;CA1826: use index-from-end expression for Last() code fix in C# 8+ #53475&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/39801"&gt;Add --format to dotnet sln list #39801&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
+      &lt;div&gt;needs team triage, Area-CLI&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/55540"&gt;Fix platform guard analysis with call-site support #55540&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/54138"&gt;add missing CLI projects to cli slnf file #54138&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
+      &lt;div&gt;Area-Infrastructure, stale&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
@@ -139,31 +205,13 @@
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/55894"&gt;Validate rewritten Helix Job Monitor #55894&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/54932"&gt;[StaticWebAssets] Add MAUI Blazor Hybrid + BlazorWebView regression test (dotnet/sdk#54779) #54932&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/54941"&gt;Static Web Assets: apply deferred asset group resolution during publish #54941&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;stale&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/54811"&gt;Clarify dotnet format include file filters #54811&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;stale&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/55754"&gt;[release/10.0.4xx] Source code updates from dotnet/dotnet #55754&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/54934"&gt;[StaticWebAssets] Replace opaque endpoint-manifest collision throw with a targeted BLAZOR107 diagnostic #54934&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/54933"&gt;[Experiment] Combine CI Build and Queue Tests into a single invocation #54933&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;stale&lt;/div&gt;
     &lt;/li&gt;
