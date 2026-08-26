@@ -1,132 +1,59 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-08-25T00:06:28Z</updated>
+  <updated>2026-08-26T00:06:20Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-08-24</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-08-24</id>
+    <title>aws/aws-sdk-net - Releases - 2026-08-25</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-08-25</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-08-25T00:06:28Z</updated>
+    <updated>2026-08-26T00:06:20Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.318.0"&gt;4.0.318.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.319.0"&gt;4.0.319.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.318.0 (2026-08-24 18:25 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.319.0 (2026-08-25 19:29 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Batch (4.0.102.1)
+&lt;li&gt;AutoScaling (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;Doc Update, Add note that UpdatePolicy applies only to EC2 managed compute environments&lt;/li&gt;
+&lt;li&gt;Adds support for Distribution Segments in mixed instances policies, providing ordered prioritization across On-Demand Capacity Reservations, Capacity Blocks, interruptible Capacity Reservations, and On-Demand capacity.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Bedrock (4.0.101.0)
+&lt;li&gt;AWSMarketplaceMetering (4.0.100.14)
 &lt;ul&gt;
-&lt;li&gt;Adds support for specifying an inference profile ID or ARN, or an application inference profile ARN as the target model in CreateAdvancedPromptOptimizationJob.&lt;/li&gt;
+&lt;li&gt;Updated documentation to clarify duplicate-billing prevention and BatchMeterUsage retry guidance&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudTrailData (4.0.100.13)
+&lt;li&gt;DevOpsAgent (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Minor update to the generated code. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Adds the UpdateApprovalAction API for resolving agent action approvals in AWS DevOps Agent agent spaces.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.112.0)
+&lt;li&gt;EC2 (4.0.112.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds the ExtractedInformation segment to the ListRealtimeContactAnalysisSegmentsV2 API, enabling customers to retrieve information extracted from real-time contact analysis.&lt;/li&gt;
+&lt;li&gt;Fleet feature to support Capacity Reservation Resource Groups with Amazon EC2 Capacity Blocks and interruptible Capacity Reservations&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ConnectContactLens (4.0.101.0)
+&lt;li&gt;EKS (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds the ExtractedInformation segment to the ListRealtimeContactAnalysisSegments API, enabling customers to retrieve information extracted from real-time contact analysis.&lt;/li&gt;
+&lt;li&gt;This feature would give customers the ability to tune TerminatedPodGcThreshold configuration in an Amazon EKS cluster.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DSQL (4.0.103.0)
+&lt;li&gt;Evs (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Corrected the validation pattern on the ServiceName response field in the GetVpcEndpointServiceName API to match the values Amazon Aurora DSQL actually returns.&lt;/li&gt;
-&lt;li&gt;Internal refactor of the DSQL auth token generator to build its presigned token via the public &lt;code&gt;Amazon.Runtime.Signing.AWSSigV4Signer&lt;/code&gt; facade. Token output is unchanged. The .NET Framework target now references &lt;code&gt;System.Net.Http&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;EVS now supports i7i.metal-48xl EC2 bare metal instance type, delivering high random IOPS performance with real-time latency, ideal for IO intensive and latency-sensitive workloads such as transactional databases, real-time analytics, and AI ML pre-processing.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EKSAuth (4.0.101.5)
+&lt;li&gt;IAMToolbox (4.0.100.0)
 &lt;ul&gt;
-&lt;li&gt;Minor update to the generated code. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;AWS Identity and Access Management (IAM) announces access troubleshooter, helping you debug access denied errors faster. Supported error messages now include an identifier you can use to retrieve detailed evaluations of the policies considered and their results. Preview in US East (N. Virginia).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElementalInference (4.0.104.0)
+&lt;li&gt;IoT (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for the GetFixture API, enabling customers to retrieve the details of a fixture from its fixture ID, and added the access role ARN to the CreateFeed, GetFeed, and UpdateFeed responses.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Kafka (4.0.103.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon MSK Replicator now supports OAuth authentication when connecting to external Apache Kafka clusters, enabling customers to replicate data from clusters that require OAuth for client authentication. This new capability is supported in all AWS Regions where MSK Express brokers are available.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;KinesisVideoWebRTCStorage (4.0.100.12)
-&lt;ul&gt;
-&lt;li&gt;Minor update to the generated code. There are no changes to the public API.&lt;/li&gt;
-&lt;li&gt;Fix &lt;code&gt;seealso&lt;/code&gt; links to API reference docs in generated service client&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;LaunchWizard (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Added accountConstraints and patternType to GetWorkload, ListWorkloads, GetWorkloadDeploymentPattern and ListWorkloadDeploymentPatterns for Launch Wizard&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MarketplaceReporting (4.0.100.12)
-&lt;ul&gt;
-&lt;li&gt;Minor update to the generated code. There are no changes to the public API.&lt;/li&gt;
-&lt;li&gt;Fix &lt;code&gt;seealso&lt;/code&gt; links to API reference docs in generated service client&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;RDS (4.0.104.4)
-&lt;ul&gt;
-&lt;li&gt;Internal refactor of the RDS IAM auth token generator to build its presigned token via the public &lt;code&gt;Amazon.Runtime.Signing.AWSSigV4Signer&lt;/code&gt; facade. Token output is unchanged. The .NET Framework target now references &lt;code&gt;System.Net.Http&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SecurityAgent (4.0.105.0)
-&lt;ul&gt;
-&lt;li&gt;Adding private and self-signed certificate configuration support for penetration tests&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SimpleDBv2 (4.0.100.12)
-&lt;ul&gt;
-&lt;li&gt;Minor update to the generated code. There are no changes to the public API.&lt;/li&gt;
-&lt;li&gt;Fix &lt;code&gt;seealso&lt;/code&gt; links to API reference docs in generated service client&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SSO (4.0.100.13)
-&lt;ul&gt;
-&lt;li&gt;Minor update to the generated code. There are no changes to the public API.&lt;/li&gt;
-&lt;li&gt;Fix &lt;code&gt;seealso&lt;/code&gt; links to API reference docs in generated service client&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SSOOIDC (4.0.100.12)
-&lt;ul&gt;
-&lt;li&gt;Minor update to the generated code. There are no changes to the public API.&lt;/li&gt;
-&lt;li&gt;Fix &lt;code&gt;seealso&lt;/code&gt; links to API reference docs in generated service client&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SupportApp (4.0.100.13)
-&lt;ul&gt;
-&lt;li&gt;Minor update to the generated code. There are no changes to the public API.&lt;/li&gt;
-&lt;li&gt;Fix &lt;code&gt;seealso&lt;/code&gt; links to API reference docs in generated service client&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;TimestreamInfluxDB (4.0.103.0)
-&lt;ul&gt;
-&lt;li&gt;Service-managed parameter groups now only apply optimized defaults to DB Clusters automatically. New field effectiveDbParameterGroupIdentifier surfaces the parameter group actually applied.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Uxc (4.0.100.12)
-&lt;ul&gt;
-&lt;li&gt;Minor update to the generated code. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.0.102.1
-&lt;ul&gt;
-&lt;li&gt;Centralize &lt;code&gt;AwsQueryCompatible&lt;/code&gt; error-header parsing into a shared helper (&lt;code&gt;AwsQueryCompatibleErrorHandler&lt;/code&gt;) used by generated service unmarshallers&lt;/li&gt;
-&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;As part of this release, we are extending capability of AWS IoT Rules Engine to support IoT InfluxDB Action. The IoT InfluxDB action lets customers send messages from IoT sensors and applications to InfluxDB.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

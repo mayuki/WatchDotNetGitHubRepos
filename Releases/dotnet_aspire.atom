@@ -1,6 +1,41 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/aspire - Releases</title>
   <link href="https://github.com/dotnet/aspire" />
-  <updated>2026-08-25T00:06:32Z</updated>
+  <updated>2026-08-26T00:06:25Z</updated>
   <id>https://github.com/dotnet/aspire</id>
+  <entry>
+    <title>dotnet/aspire - Releases - 2026-08-25</title>
+    <id>https://github.com/dotnet/aspire#2026-08-25</id>
+    <link href="https://github.com/dotnet/aspire" />
+    <updated>2026-08-26T00:06:25Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.5.3"&gt;Aspire 13.5.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's New in Aspire 13.5.3&lt;/h2&gt;
+&lt;p&gt;Patch release for Aspire 13.5 that fixes Dashboard Graph view crashes for resources with multi-path icons and restores missing public URLs for DevTunnel resources.&lt;/p&gt;
+&lt;h3&gt;🐛 Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;📊 &lt;strong&gt;Dashboard Graph view could crash for Azure Blob resources&lt;/strong&gt; — Resources such as those created with &lt;code&gt;AddBlobs&lt;/code&gt; use icons containing multiple SVG paths, which caused an XML parsing exception and broke the dashboard circuit. The graph now combines multi-path icons correctly. Regression introduced in 13.5. Fixes &lt;a href="https://github.com/microsoft/aspire/issues/19489" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/19489/hovercard"&gt;#19489&lt;/a&gt;. (&lt;a href="https://github.com/microsoft/aspire/pull/19585" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/19585/hovercard"&gt;#19585&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/19579" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/19579/hovercard"&gt;#19579&lt;/a&gt;, &lt;code&gt;@sebastienros&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🌐 &lt;strong&gt;DevTunnel public URLs were missing from the Dashboard and MCP snapshots&lt;/strong&gt; — DevTunnel port resources could report &lt;code&gt;Running&lt;/code&gt; and &lt;code&gt;Healthy&lt;/code&gt; while showing no public URLs. Proxyless port allocation is now limited to compute and container resources, allowing DevTunnels to publish their actual public endpoints. Regression introduced in 13.5. Fixes &lt;a href="https://github.com/microsoft/aspire/issues/19496" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/19496/hovercard"&gt;#19496&lt;/a&gt;. (&lt;a href="https://github.com/microsoft/aspire/pull/19625" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/19625/hovercard"&gt;#19625&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/19590" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/19590/hovercard"&gt;#19590&lt;/a&gt;, &lt;code&gt;@karolz-ms&lt;/code&gt;, &lt;code&gt;@danegsta&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;🏷️ Housekeeping&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🚀 Bumped branding to 13.5.3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a href="https://github.com/microsoft/aspire/compare/v13.5.2...v13.5.3"&gt;v13.5.2...v13.5.3&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/b5f143315ffb6968ea939a9978797a5b20e4c688"&gt;b5f143315ffb6968ea939a9978797a5b20e4c688&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
