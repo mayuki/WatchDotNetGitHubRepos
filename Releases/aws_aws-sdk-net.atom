@@ -1,44 +1,64 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-08-27T01:14:42Z</updated>
+  <updated>2026-08-28T02:37:22Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-08-26</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-08-26</id>
+    <title>aws/aws-sdk-net - Releases - 2026-08-27</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-08-27</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-08-27T01:14:42Z</updated>
+    <updated>2026-08-28T02:37:22Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.320.0"&gt;4.0.320.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.321.0"&gt;4.0.321.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.320.0 (2026-08-26 18:37 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.321.0 (2026-08-27 19:01 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;DevOpsAgent (4.0.102.0)
+&lt;li&gt;ApiGatewayManagementApi (4.0.100.12)
 &lt;ul&gt;
-&lt;li&gt;AWS DevOps Agent now supports trigger filter groups for Release Readiness Review, letting you control when the capability auto-triggers based on webhook events and target branches.&lt;/li&gt;
+&lt;li&gt;ApiGatewayManagementApi is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.113.0)
+&lt;li&gt;CloudWatchLogs (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;Adds deleting state to possible VPC States.&lt;/li&gt;
+&lt;li&gt;Added resultCount to QueryStatistics in GetQueryResults. This field returns the total number of output rows in the final result set, helping customers programmatically determine whether a query produced results after all operations including post-aggregation filters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;LicenseManagerUserSubscriptions (4.0.101.0)
+&lt;li&gt;CodeDeploy (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Released support for License Expiry field in ListProductSubscriptions API&lt;/li&gt;
+&lt;li&gt;Added a deploymentMode parameter to CreateDeployment. Set it to RESTART to restart an EC2 and on-premises fleet, using the last successful revision, honoring Deployment Configuration.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;NetworkFirewall (4.0.105.0)
+&lt;li&gt;CognitoIdentityProvider (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;Adding new status enum for Firewalls.&lt;/li&gt;
+&lt;li&gt;Adds the AdminDeleteSoftwareToken API operation, enabling administrators to remove a user's registered TOTP (software token) MFA configuration from a user pool.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.111.0)
+&lt;li&gt;DataZone (4.0.105.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon SageMaker AI now supports ml.g7 instances for model optimization. You can now run model optimization jobs on ml.g7 instances, in supported AWS Regions.&lt;/li&gt;
+&lt;li&gt;Add cascadeDelete to DeleteDomain. When specified, DataZone recursively deletes all projects, environments, subscriptions, and their underlying AWS resources before removing the domain. Deletion progress is reported via deleteProgress and resource failures via failureReasons on GetDomain.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EC2 (4.0.114.0)
+&lt;ul&gt;
+&lt;li&gt;EC2 allows AMI owners to define compatible instance types on their AMIs, blocking RunInstances calls automatically for launches on non-permitted instance types.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LambdaMicrovms (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Added InsufficientCapacityException to RunMicrovm for capacity-related failures. Added lifecycle status field (AVAILABLE, DEPRECATED) to ListManagedMicrovmImageVersions. Added ConflictException to CreateMicrovmAuthToken and CreateMicrovmShellAuthToken for unregistered MicroVMs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;OpenSearchService (4.0.102.10)
+&lt;ul&gt;
+&lt;li&gt;Updating SDK and CLI documentation for AttachDataSource API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RDS (4.0.105.0)
+&lt;ul&gt;
+&lt;li&gt;Adding support for the full snapshot size, in bytes, of DB instance snapshots.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

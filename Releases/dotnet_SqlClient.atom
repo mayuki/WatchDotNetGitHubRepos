@@ -1,6 +1,120 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/SqlClient - Releases</title>
   <link href="https://github.com/dotnet/SqlClient" />
-  <updated>2026-08-27T01:14:53Z</updated>
+  <updated>2026-08-28T02:37:31Z</updated>
   <id>https://github.com/dotnet/SqlClient</id>
+  <entry>
+    <title>dotnet/SqlClient - Releases - 2026-08-27</title>
+    <id>https://github.com/dotnet/SqlClient#2026-08-27</id>
+    <link href="https://github.com/dotnet/SqlClient" />
+    <updated>2026-08-28T02:37:31Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/SqlClient/releases/tag/v7.1.0-preview3"&gt;Preview Release v7.1.0-preview3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This update brings the following changes since the &lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/7.1/7.1.0-preview2.md"&gt;7.1.0-preview2&lt;/a&gt; release.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Package version alignment:&lt;/strong&gt; The &lt;code&gt;Microsoft.Data.SqlClient&lt;/code&gt; driver and its companion packages continue the aligned versioning introduced in &lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/7.0/7.0.2.md"&gt;7.0.2&lt;/a&gt;. All five packages listed below ship together as &lt;code&gt;7.1.0-preview3&lt;/code&gt;. (&lt;code&gt;Microsoft.SqlServer.Server&lt;/code&gt; continues to version independently and remains at &lt;code&gt;1.0.0&lt;/code&gt;.) Applications that reference &lt;code&gt;Microsoft.Data.SqlClient.Extensions.Azure&lt;/code&gt; must upgrade it to &lt;code&gt;7.1.0-preview3&lt;/code&gt; when upgrading &lt;code&gt;Microsoft.Data.SqlClient&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Compatibility guarantee:&lt;/strong&gt; All aligned assemblies ship with &lt;code&gt;FileVersion 7.1.0.x&lt;/code&gt; and &lt;code&gt;AssemblyVersion 7.0.0.0&lt;/code&gt; — unchanged from 7.0.2 — so upgrading from &lt;code&gt;7.0.2&lt;/code&gt; to &lt;code&gt;7.1.0-preview3&lt;/code&gt; does &lt;strong&gt;not&lt;/strong&gt; require any new .NET Framework strong-name binding redirects.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Packages in this release&lt;/h2&gt;
+&lt;h3&gt;&lt;code&gt;Microsoft.Data.SqlClient&lt;/code&gt; 7.1.0-preview3&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Added&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Asynchronous key store provider APIs for Always Encrypted — four &lt;code&gt;virtual&lt;/code&gt; methods on &lt;code&gt;SqlColumnEncryptionKeyStoreProvider&lt;/code&gt; with &lt;code&gt;CancellationToken&lt;/code&gt; support. Purely additive; defaults delegate to the synchronous methods, so existing providers are unaffected (&lt;a href="https://github.com/dotnet/SqlClient/issues/3672" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/3672/hovercard"&gt;#3672&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3673" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3673/hovercard"&gt;#3673&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Connection Pool V2 nears parity with the default pool (opt-in via &lt;code&gt;Switch.Microsoft.Data.SqlClient.UseConnectionPoolV2&lt;/code&gt;):
+&lt;ul&gt;
+&lt;li&gt;Transaction support (&lt;a href="https://github.com/dotnet/SqlClient/pull/4487" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4487/hovercard"&gt;#4487&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Broken-connection replacement during command execution (&lt;a href="https://github.com/dotnet/SqlClient/pull/4429" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4429/hovercard"&gt;#4429&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Background warmup to &lt;code&gt;Min Pool Size&lt;/code&gt; and automatic replenishment (&lt;a href="https://github.com/dotnet/SqlClient/pull/4452" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4452/hovercard"&gt;#4452&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Idle pruning driven by &lt;code&gt;Connection Idle Timeout&lt;/code&gt; (&lt;a href="https://github.com/dotnet/SqlClient/pull/4463" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4463/hovercard"&gt;#4463&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Optional &lt;code&gt;ConcurrencyLimiter&lt;/code&gt; rate limiting for new physical connections (&lt;a href="https://github.com/dotnet/SqlClient/pull/4395" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4395/hovercard"&gt;#4395&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4396" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4396/hovercard"&gt;#4396&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Leaked connection reclamation, including the previously always-zero &lt;code&gt;number-of-reclaimed-connections&lt;/code&gt; counter (&lt;a href="https://github.com/dotnet/SqlClient/pull/4529" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4529/hovercard"&gt;#4529&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Metrics and tracing parity with the default pool (&lt;a href="https://github.com/dotnet/SqlClient/pull/4504" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4504/hovercard"&gt;#4504&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Changed&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Single cross-platform build — Windows-only native SNI types now trim cleanly on Linux and macOS. Package structure and contents unchanged (&lt;a href="https://github.com/dotnet/SqlClient/pull/4207" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4207/hovercard"&gt;#4207&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/issues/4239" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4239/hovercard"&gt;#4239&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4465" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4465/hovercard"&gt;#4465&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4474" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4474/hovercard"&gt;#4474&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Async read-path allocations restored to baseline via &lt;code&gt;PacketData&lt;/code&gt; node reuse — &lt;code&gt;ExecuteReaderAsync&lt;/code&gt; goes from +120.9% to +0.1% against 6.1.6 (&lt;a href="https://github.com/dotnet/SqlClient/pull/4536" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4536/hovercard"&gt;#4536&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SqlBulkCopy&lt;/code&gt; skips graph alias mapping when no graph pseudo-columns are present, recovering a regression from &lt;a href="https://github.com/dotnet/SqlClient/pull/3677" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3677/hovercard"&gt;#3677&lt;/a&gt; (&lt;a href="https://github.com/dotnet/SqlClient/pull/4535" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4535/hovercard"&gt;#4535&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;No formatted trace string is allocated when &lt;code&gt;SqlClientEventSource&lt;/code&gt; tracing is disabled, recovering a memory regression against 6.1.6. Trace output unchanged (&lt;a href="https://github.com/dotnet/SqlClient/pull/4528" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4528/hovercard"&gt;#4528&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;net9.0&lt;/code&gt; dependencies moved to &lt;code&gt;9.0.18&lt;/code&gt;; &lt;code&gt;System.Threading.RateLimiting&lt;/code&gt; added to packaged metadata. Other targets keep their &lt;code&gt;8.0.x&lt;/code&gt; pins (&lt;a href="https://github.com/dotnet/SqlClient/pull/4507" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4507/hovercard"&gt;#4507&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Data.SqlClient.SNI&lt;/code&gt; and &lt;code&gt;.SNI.runtime&lt;/code&gt; updated to &lt;code&gt;7.1.0-preview3.26226.3&lt;/code&gt; (&lt;a href="https://github.com/dotnet/SqlClient/pull/4564" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4564/hovercard"&gt;#4564&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Fixed&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Always Encrypted VSM/HGS attestation now verifies the enclave public key is bound to the signed report, using a fixed-time &lt;code&gt;SHA-256&lt;/code&gt; comparison against &lt;code&gt;EnclaveData&lt;/code&gt; (&lt;a href="https://github.com/dotnet/SqlClient/pull/4532" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4532/hovercard"&gt;#4532&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SqlConnectionFactory&lt;/code&gt; no longer wakes the process every 30 seconds when no pools exist — including with &lt;code&gt;Pooling=False&lt;/code&gt; and after &lt;code&gt;ClearAllPools()&lt;/code&gt; (&lt;a href="https://github.com/dotnet/SqlClient/issues/1881" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/1881/hovercard"&gt;#1881&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4479" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4479/hovercard"&gt;#4479&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Connection pool performance counters affecting the &lt;strong&gt;default&lt;/strong&gt; pool as well as pool V2 — &lt;code&gt;active-soft-connects&lt;/code&gt; and &lt;code&gt;number-of-active-connections&lt;/code&gt; could go negative after a failed activation, and several gauges drifted upward permanently after a broken connection was replaced (&lt;a href="https://github.com/dotnet/SqlClient/pull/4504" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4504/hovercard"&gt;#4504&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OverflowException&lt;/code&gt; when sending large &lt;code&gt;decimal&lt;/code&gt; values with explicit &lt;code&gt;Precision&lt;/code&gt; and &lt;code&gt;Scale&lt;/code&gt;, which primarily affected Always Encrypted (&lt;a href="https://github.com/dotnet/SqlClient/issues/1655" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/1655/hovercard"&gt;#1655&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4443" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4443/hovercard"&gt;#4443&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;TDS stream error when passing a &lt;code&gt;DateOnly&lt;/code&gt; value with &lt;code&gt;SqlDbType.Variant&lt;/code&gt; (net8.0/net9.0) (&lt;a href="https://github.com/dotnet/SqlClient/issues/3953" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/3953/hovercard"&gt;#3953&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4294" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4294/hovercard"&gt;#4294&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DateOnly&lt;/code&gt; in table-valued parameter &lt;code&gt;sql_variant&lt;/code&gt; columns sent as &lt;code&gt;datetime&lt;/code&gt; instead of &lt;code&gt;date&lt;/code&gt;, which overflowed for values valid as &lt;code&gt;date&lt;/code&gt; (net8.0/net9.0) (&lt;a href="https://github.com/dotnet/SqlClient/issues/3934" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/3934/hovercard"&gt;#3934&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4439" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4439/hovercard"&gt;#4439&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ServerCertificate&lt;/code&gt; keyword ignored when the platform reported no TLS policy errors. It is now always compared, and an unloadable certificate fails closed with &lt;code&gt;SSLCertificateAuthenticationException&lt;/code&gt; instead of silently falling back to host-name validation (&lt;a href="https://github.com/dotnet/SqlClient/pull/4445" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4445/hovercard"&gt;#4445&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SqlConnection.AccessTokenCallback&lt;/code&gt; not disabling TNIR by default, plus pool-key construction and &lt;code&gt;SspiContextProvider&lt;/code&gt; exclusivity with token auth (net462 for the TNIR behavior) (&lt;a href="https://github.com/dotnet/SqlClient/pull/4520" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4520/hovercard"&gt;#4520&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fatal exceptions such as &lt;code&gt;OutOfMemoryException&lt;/code&gt; captured into faulted &lt;code&gt;Task&lt;/code&gt;s across several &lt;code&gt;SqlBulkCopy&lt;/code&gt;, &lt;code&gt;SqlDataReader&lt;/code&gt;, and &lt;code&gt;SqlCommand&lt;/code&gt; async entry points (&lt;a href="https://github.com/dotnet/SqlClient/pull/4437" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4437/hovercard"&gt;#4437&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Entra ID authentication failing against multi-segment authorities such as the Dataverse / Dynamics 365 TDS endpoint. Ships in &lt;code&gt;Microsoft.Data.SqlClient.Extensions.Azure&lt;/code&gt; (&lt;a href="https://github.com/dotnet/SqlClient/issues/4496" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4496/hovercard"&gt;#4496&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4521" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4521/hovercard"&gt;#4521&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Full details: &lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/7.1/7.1.0-preview3.md"&gt;release-notes/7.1/7.1.0-preview3.md&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;&lt;code&gt;Microsoft.Data.SqlClient.AlwaysEncrypted.AzureKeyVaultProvider&lt;/code&gt; 7.1.0-preview3&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Added&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;SqlColumnEncryptionAzureKeyVaultProvider&lt;/code&gt; overrides the four asynchronous key store provider methods introduced in &lt;a href="https://github.com/dotnet/SqlClient/pull/3673" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3673/hovercard"&gt;#3673&lt;/a&gt;, calling the Azure SDK's own async APIs and flowing the supplied &lt;code&gt;CancellationToken&lt;/code&gt; (&lt;a href="https://github.com/dotnet/SqlClient/pull/4540" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4540/hovercard"&gt;#4540&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Concurrent cache misses for the same key collapse into a single Key Vault request. The gate is only awaited, so no thread blocks, and misses for different keys still proceed in parallel (&lt;a href="https://github.com/dotnet/SqlClient/pull/4540" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4540/hovercard"&gt;#4540&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Fixed&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The 2000-entry column master key signature cache could stop compacting and grow unbounded — &lt;code&gt;LocalCache.GetOrCreate&lt;/code&gt; compacted only on &lt;code&gt;Count == maxSize&lt;/code&gt;, an equality test that concurrency could step past. It now compacts on &lt;code&gt;Count &amp;gt;= maxSize&lt;/code&gt; (&lt;a href="https://github.com/dotnet/SqlClient/pull/4540" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4540/hovercard"&gt;#4540&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Concurrent callers no longer create duplicate &lt;code&gt;CryptographyClient&lt;/code&gt; instances for the same key (&lt;a href="https://github.com/dotnet/SqlClient/pull/4540" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4540/hovercard"&gt;#4540&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Behavior change:&lt;/strong&gt; &lt;code&gt;VerifyColumnMasterKeyMetadata&lt;/code&gt; and &lt;code&gt;VerifyColumnMasterKeyMetadataAsync&lt;/code&gt; now reject a null or empty &lt;code&gt;signature&lt;/code&gt; with &lt;code&gt;ArgumentNullException&lt;/code&gt; / &lt;code&gt;ArgumentException&lt;/code&gt; instead of passing it through to the Azure SDK. In-product callers are unaffected.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Runtime requirement:&lt;/strong&gt; this version requires &lt;code&gt;Microsoft.Data.SqlClient&lt;/code&gt; 7.1.0-preview3 or later at runtime, because the overridden methods only exist on the 7.1 base class. The NuGet dependency floor covers restore, but downgrading the driver below 7.1 at runtime produces a &lt;code&gt;TypeLoadException&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Full details: &lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/add-ons/AzureKeyVaultProvider/7.1/7.1.0-preview3.md"&gt;release-notes/add-ons/AzureKeyVaultProvider/7.1/7.1.0-preview3.md&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;&lt;code&gt;Microsoft.Data.SqlClient.Extensions.Azure&lt;/code&gt; 7.1.0-preview3&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Fixed&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Entra ID tenant parsing for multi-segment authorities — the tenant is now taken from the &lt;strong&gt;first&lt;/strong&gt; path segment rather than the last, so an OAuth v1 style authority such as &lt;code&gt;.../{tenantId}/oauth2/authorize&lt;/code&gt; no longer yields the literal tenant id &lt;code&gt;"authorize"&lt;/code&gt;. Unparseable authorities raise a clear &lt;code&gt;AuthenticationException&lt;/code&gt;, and provider errors are no longer re-wrapped as "Unexpected error". Bare authorities from Azure SQL, Fabric, and Synapse are unaffected (&lt;a href="https://github.com/dotnet/SqlClient/issues/4496" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4496/hovercard"&gt;#4496&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4521" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4521/hovercard"&gt;#4521&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Full details: &lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/Extensions/Azure/7.1/7.1.0-preview3.md"&gt;release-notes/Extensions/Azure/7.1/7.1.0-preview3.md&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;&lt;code&gt;Microsoft.Data.SqlClient.Extensions.Abstractions&lt;/code&gt; 7.1.0-preview3&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;No functional or API changes; aligned version bump only.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Full details: &lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/Extensions/Abstractions/7.1/7.1.0-preview3.md"&gt;release-notes/Extensions/Abstractions/7.1/7.1.0-preview3.md&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;&lt;code&gt;Microsoft.Data.SqlClient.Internal.Logging&lt;/code&gt; 7.1.0-preview3&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Internal-use-only package. No functional or API changes; aligned version bump only.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Full details: &lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/Internal/Logging/7.1/7.1.0-preview3.md"&gt;release-notes/Internal/Logging/7.1/7.1.0-preview3.md&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Target Platforms&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;.NET Framework 4.6.2+ (Windows x86, x64, ARM64)&lt;/li&gt;
+&lt;li&gt;.NET 8.0+ (Windows x86, x64, ARM, ARM64; Linux; macOS)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Per-TFM dependency lists are in the linked release-notes files above.&lt;/p&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;A huge thank you to our community contributors for this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/edwardneal"&gt;@edwardneal&lt;/a&gt; — OS-independent build of non-SNI types (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4288332443" data-permission-text="Title is private" data-url="https://github.com/dotnet/SqlClient/issues/4207" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4207/hovercard" href="https://github.com/dotnet/SqlClient/pull/4207"&gt;#4207&lt;/a&gt;) and removal of platform-specific builds (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4941083756" data-permission-text="Title is private" data-url="https://github.com/dotnet/SqlClient/issues/4465" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4465/hovercard" href="https://github.com/dotnet/SqlClient/pull/4465"&gt;#4465&lt;/a&gt;), large &lt;code&gt;decimal&lt;/code&gt; transport with explicit &lt;code&gt;Precision&lt;/code&gt;/&lt;code&gt;Scale&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4876113994" data-permission-text="Title is private" data-url="https://github.com/dotnet/SqlClient/issues/4443" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4443/hovercard" href="https://github.com/dotnet/SqlClient/pull/4443"&gt;#4443&lt;/a&gt;), &lt;code&gt;DateOnly&lt;/code&gt; as a &lt;code&gt;Variant&lt;/code&gt; parameter (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4464545869" data-permission-text="Title is private" data-url="https://github.com/dotnet/SqlClient/issues/4294" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4294/hovercard" href="https://github.com/dotnet/SqlClient/pull/4294"&gt;#4294&lt;/a&gt;) and in table-valued parameter &lt;code&gt;sql_variant&lt;/code&gt; columns (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4863742271" data-permission-text="Title is private" data-url="https://github.com/dotnet/SqlClient/issues/4439" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4439/hovercard" href="https://github.com/dotnet/SqlClient/pull/4439"&gt;#4439&lt;/a&gt;), connection capability metadata consolidation (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3766101872" data-permission-text="Title is private" data-url="https://github.com/dotnet/SqlClient/issues/3862" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3862/hovercard" href="https://github.com/dotnet/SqlClient/pull/3862"&gt;#3862&lt;/a&gt;), SSRP response parsing scaffolding (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3578449849" data-permission-text="Title is private" data-url="https://github.com/dotnet/SqlClient/issues/3741" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3741/hovercard" href="https://github.com/dotnet/SqlClient/pull/3741"&gt;#3741&lt;/a&gt;), Always Encrypted performance benchmarks (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5064246192" data-permission-text="Title is private" data-url="https://github.com/dotnet/SqlClient/issues/4502" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4502/hovercard" href="https://github.com/dotnet/SqlClient/pull/4502"&gt;#4502&lt;/a&gt;), and &lt;code&gt;NativeVectorFloat32Tests&lt;/code&gt; refactoring (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4607933181" data-permission-text="Title is private" data-url="https://github.com/dotnet/SqlClient/issues/4347" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4347/hovercard" href="https://github.com/dotnet/SqlClient/pull/4347"&gt;#4347&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
