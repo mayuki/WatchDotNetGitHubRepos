@@ -1,48 +1,92 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-08-28T02:37:23Z</updated>
+  <updated>2026-08-29T00:09:55Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-08-27</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-08-27</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-08-28</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-08-28</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-08-28T02:37:23Z</updated>
+    <updated>2026-08-29T00:09:55Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.HorizonDB_1.0.0-beta.2"&gt;Azure.ResourceManager.HorizonDB_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Search.Documents_12.1.0-beta.2"&gt;Azure.Search.Documents_12.1.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.2 (2026-08-27)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;p&gt;Upgraded api-verion to 2026-05-01-preview.&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.HardwareSecurityModules_1.1.0-beta.1"&gt;Azure.ResourceManager.HardwareSecurityModules_1.1.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.1.0-beta.1 (2026-08-19)&lt;/h2&gt;
+                                &lt;h2&gt;12.1.0-beta.2 (2026-08-27)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded API version to &lt;code&gt;2025-12-01-preview&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added support for Payment HSM Cluster resources: &lt;code&gt;PaymentHsmClusterResource&lt;/code&gt;, &lt;code&gt;PaymentHsmClusterCollection&lt;/code&gt;, &lt;code&gt;PaymentHsmClusterData&lt;/code&gt;, and related models.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;PaymentHsmClusterPrivateEndpointConnectionResource&lt;/code&gt; and &lt;code&gt;PaymentHsmClusterPrivateEndpointConnectionCollection&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;PaymentHsmProperties&lt;/code&gt;, &lt;code&gt;PaymentHsmClusterSku&lt;/code&gt;, &lt;code&gt;PaymentHsmClusterSkuName&lt;/code&gt;, &lt;code&gt;PaymentHsmClusterSkuFamily&lt;/code&gt;, and &lt;code&gt;PaymentHsmClusterProperties&lt;/code&gt; models.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;HardwareSecurityModuleState&lt;/code&gt; model.&lt;/li&gt;
-&lt;li&gt;Added additional values to &lt;code&gt;CloudHsmClusterSkuName&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added support for the &lt;code&gt;2026-08-01-preview&lt;/code&gt; service version (now the default/latest version).&lt;/li&gt;
+&lt;li&gt;Added typed server-sent event streaming for knowledge base retrieval through &lt;code&gt;KnowledgeBaseRetrievalClient.RetrieveStreamAsync&lt;/code&gt;, including typed retrieval, activity, answer, reference, completion, error, and unknown event models.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ListingSearchType&lt;/code&gt; along with &lt;code&gt;search&lt;/code&gt;, &lt;code&gt;pageSize&lt;/code&gt;, and &lt;code&gt;searchType&lt;/code&gt; parameters on the resource listing methods (&lt;code&gt;GetIndexes&lt;/code&gt;, &lt;code&gt;GetAliases&lt;/code&gt;, &lt;code&gt;GetKnowledgeBases&lt;/code&gt;, &lt;code&gt;GetKnowledgeSources&lt;/code&gt;, &lt;code&gt;GetSynonymMaps&lt;/code&gt;, &lt;code&gt;GetIndexers&lt;/code&gt;, &lt;code&gt;GetDataSourceConnections&lt;/code&gt;, &lt;code&gt;GetSkillsets&lt;/code&gt;, and &lt;code&gt;GetIndexStatsSummary&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Added Microsoft Entra application authentication for Work IQ knowledge sources via &lt;code&gt;WorkIQKnowledgeSourceParameters&lt;/code&gt; and &lt;code&gt;EntraAppAuthentication&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;SearchIndexKnowledgeSource&lt;/code&gt; query-hint and boost configuration types: &lt;code&gt;SearchIndexKnowledgeSourceQueryHints&lt;/code&gt;, &lt;code&gt;SearchIndexKnowledgeSourceFilterHint&lt;/code&gt;, &lt;code&gt;SearchIndexKnowledgeSourceFieldValueBoost&lt;/code&gt;, and &lt;code&gt;SearchIndexKnowledgeSourceMultiWordExpressionBoost&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;KnowledgeSourceResultsProcessing&lt;/code&gt; for controlling results processing on knowledge sources, retrieval requests, and &lt;code&gt;McpServerTool&lt;/code&gt;, and added &lt;code&gt;NeverQuerySource&lt;/code&gt; for request-local source exclusion.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;KnowledgeBaseRetrieveDefaults&lt;/code&gt;, &lt;code&gt;KnowledgeBaseQueryHintProcessing&lt;/code&gt;, &lt;code&gt;KnowledgeRetrievalAutoReasoningEffort&lt;/code&gt;, and &lt;code&gt;ServedImage&lt;/code&gt; for knowledge base retrieval.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;KnowledgeBaseActivityRecordModel&lt;/code&gt;, exposing the model name and deployment id for model activity records, along with activity start/completion timestamps and logical reasoning effort details.&lt;/li&gt;
+&lt;li&gt;Added citation URLs and served-image metadata to supported knowledge base references, and added &lt;code&gt;SearchSensitivityLabelInfo&lt;/code&gt; to Work IQ references.&lt;/li&gt;
+&lt;li&gt;Added knowledge source file multipart upload and update operations, with &lt;code&gt;FileUploadMetadata&lt;/code&gt;, &lt;code&gt;UploadKnowledgeSourceFileMultipartRequest&lt;/code&gt;, and &lt;code&gt;UpdateKnowledgeSourceFileRequest&lt;/code&gt;, plus file prefix, metadata, parsing mode, and extraction mode properties.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;KnowledgeSourceNetworkAccessMode&lt;/code&gt; and &lt;code&gt;FileKnowledgeSourceExtractionMode&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added tags and retrieval defaults to &lt;code&gt;KnowledgeBase&lt;/code&gt;, &lt;code&gt;MaxVectorIndexSizePerIndexInBytes&lt;/code&gt; to &lt;code&gt;SearchServiceLimits&lt;/code&gt;, and &lt;code&gt;Gpt56Sol&lt;/code&gt;, &lt;code&gt;Gpt56Terra&lt;/code&gt;, and &lt;code&gt;Gpt56Luna&lt;/code&gt; to &lt;code&gt;AzureOpenAIModelName&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;queryWorkIQSourceAuthorization&lt;/code&gt; to knowledge base retrieval methods for Work IQ on-behalf-of authentication.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;These changes are relative to the previous preview release, &lt;code&gt;12.1.0-beta.1&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed &lt;code&gt;SearchClientOptions.ServiceVersion.V2026_05_01_Preview&lt;/code&gt;; use &lt;code&gt;V2026_08_01_Preview&lt;/code&gt; instead.&lt;/li&gt;
+&lt;li&gt;The resource listing methods (&lt;code&gt;GetIndexes&lt;/code&gt;, &lt;code&gt;GetAliases&lt;/code&gt;, &lt;code&gt;GetKnowledgeBases&lt;/code&gt;, &lt;code&gt;GetKnowledgeSources&lt;/code&gt;, &lt;code&gt;GetSynonymMaps&lt;/code&gt;, &lt;code&gt;GetIndexers&lt;/code&gt;, &lt;code&gt;GetDataSourceConnections&lt;/code&gt;, &lt;code&gt;GetSkillsets&lt;/code&gt;, and &lt;code&gt;GetIndexStatsSummary&lt;/code&gt;) replaced the &lt;code&gt;top&lt;/code&gt;, &lt;code&gt;skip&lt;/code&gt;, and &lt;code&gt;count&lt;/code&gt; parameters with &lt;code&gt;search&lt;/code&gt;, &lt;code&gt;pageSize&lt;/code&gt;, and &lt;code&gt;searchType&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;WorkIQKnowledgeSource&lt;/code&gt; now requires a &lt;code&gt;WorkIQKnowledgeSourceParameters&lt;/code&gt; argument (Entra application authentication) in its constructor.&lt;/li&gt;
+&lt;li&gt;The model activity records (&lt;code&gt;KnowledgeBaseModelQueryPlanningActivityRecord&lt;/code&gt;, &lt;code&gt;KnowledgeBaseModelAnswerSynthesisActivityRecord&lt;/code&gt;, and &lt;code&gt;KnowledgeBaseModelWebSummarizationActivityRecord&lt;/code&gt;) now expose model information through the &lt;code&gt;Model&lt;/code&gt; property (&lt;code&gt;KnowledgeBaseActivityRecordModel&lt;/code&gt;) instead of the &lt;code&gt;ModelName&lt;/code&gt; string.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;McpServerToolInclusionMode&lt;/code&gt; and the &lt;code&gt;McpServerTool.InclusionMode&lt;/code&gt; property; MCP tool behavior is now configured through &lt;code&gt;ResultsProcessing&lt;/code&gt; and &lt;code&gt;OutputParsing&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;WorkIQAttribution&lt;/code&gt; and the &lt;code&gt;KnowledgeBaseWorkIQReference.Attributions&lt;/code&gt; property; use &lt;code&gt;SearchSensitivityLabelInfo&lt;/code&gt; for the current Work IQ reference metadata.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed &lt;code&gt;System.Text.Json.JsonException&lt;/code&gt; / &lt;code&gt;InvalidOperationException: Cannot skip tokens on partial JSON&lt;/code&gt; thrown when asynchronously deserializing a &lt;code&gt;SearchDocument&lt;/code&gt; (for example &lt;code&gt;SearchAsync&amp;lt;SearchDocument&amp;gt;&lt;/code&gt;) whose result elements are large and contain OData (&lt;code&gt;@search.*&lt;/code&gt;) properties. The internal converter now uses &lt;code&gt;Utf8JsonReader.TrySkip()&lt;/code&gt; instead of &lt;code&gt;Skip()&lt;/code&gt; so these properties can be skipped even when the converter is invoked over a non-final JSON block. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/40768" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/40768/hovercard"&gt;#40768&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.SignalR_1.2.0-beta.1"&gt;Azure.Provisioning.SignalR_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Resources_1.12.0"&gt;Azure.ResourceManager.Resources_1.12.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.1 (2025-08-26)&lt;/h2&gt;
+                                &lt;h2&gt;1.12.0 (2026-08-27)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;p&gt;The Deployments, DeploymentStacks, and Bicep APIs, along with their associated models, have been moved to separate SDKs. Existing APIs in this package are now obsolete and will generate deprecation warnings. Please update your code to use the corresponding APIs in the following packages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Azure.ResourceManager.Resources.Deployments&lt;/li&gt;
+&lt;li&gt;Azure.ResourceManager.Resources.DeploymentStacks&lt;/li&gt;
+&lt;li&gt;Azure.ResourceManager.Resources.Bicep&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These SDKs provide the same functionality and should be used as direct replacements.&lt;/p&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.62.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerService_1.7.0"&gt;Azure.ResourceManager.ContainerService_1.7.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.7.0 (2026-08-27)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Migrated the library to TypeSpec generation and updated the SignalR API version to &lt;code&gt;2025-01-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Upgraded api-version to 2026-06-01.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.ResourceHealth_1.0.0-beta.1"&gt;Azure.Provisioning.ResourceHealth_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-08-26)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial preview release of &lt;code&gt;Azure.Provisioning.ResourceHealth&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
