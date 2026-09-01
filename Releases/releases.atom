@@ -1,6 +1,205 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-08-31T00:11:35Z</updated>
+  <updated>2026-09-01T00:12:32Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
+  <entry>
+    <title>aws/aws-sdk-net - Releases - 2026-08-31</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-08-31</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2026-09-01T00:12:13Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.324.0"&gt;4.0.324.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.324.0 (2026-08-31 22:16 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;AgentRegistry (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;Release HTTP and AGUI descriptors to the dataplane model&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.323.0"&gt;4.0.323.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.323.0 (2026-08-31 18:20 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;AgentRegistry (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Agent Registry becomes Generally Available&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;AgentRegistryControl (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Agent Registry becomes Generally Available&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;AWSSupport (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Support now allows up to 10 attachments (150 MB each) per case correspondence, up from 3 at 5 MB. Customers can share large diagnostic logs, heap dumps, and packet captures directly in cases to reduce back-and-forth and speed up resolution. Available in US East, US West, and Europe (Ireland).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Batch (4.0.102.2)
+&lt;ul&gt;
+&lt;li&gt;Batch is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Connect (4.0.113.0)
+&lt;ul&gt;
+&lt;li&gt;Added support for global routing on Amazon Connect Global Resiliency instances. New APIs GetCrossRegionRouting and UpdateCrossRegionRouting allow you to view and control cross-region contact routing between linked instances, so both Regions are active at all times.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ControlTower (4.0.100.12)
+&lt;ul&gt;
+&lt;li&gt;Updated the descriptions for the AWS Control Tower ListEnabledControls API parameters to make them more accurate and intuitive.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CustomerProfiles (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;This release introduces new APIs for segment membership events allowing segment definition membership events to be exported to a kinesis stream for downstream processing. Additionally, includes new calculated attribute statistic and 2 new segment dimension types.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DevOpsAgent (4.0.103.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for Slack bidirectional communication configuration in AWS DevOps Agent agent spaces.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;KafkaConnect (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon MSK Connect now supports restarting newly created connectors via the asynchronous RestartConnector API. Restart all tasks or only failed tasks, while preserving configuration and committed offsets. This returns a connector operation ARN that you can track with DescribeConnectorOperation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Kinesis (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for data delivery to Amazon S3 Tables (Apache Iceberg) and general purpose Amazon S3 buckets with new CreateChannel, UpdateChannel, DeleteChannel, DescribeChannel, and ListChannels APIs for Amazon Kinesis Data Streams.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaConnect (4.0.101.4)
+&lt;ul&gt;
+&lt;li&gt;MediaConnect is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PinpointSMSVoiceV2 (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;AWS End User Messaging SMS now returns ConditionalBehavior on DescribeRegistrationFieldDefinitions, allowing you to programmatically discover which registration fields are required, optional, or disallowed based on the values of other fields in the same form.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;QuickSight (4.0.108.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for managing apps in Amazon QuickSight with ListApps, SearchApps, DescribeApp, DescribeAppPermissions, UpdateAppPermissions, and DeleteApp&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SageMaker (4.0.112.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon SageMaker Batch Transform now supports G6e instances, powered by NVIDIA L40S Tensor Core GPUs. G6e instances are the most cost-efficient GPU instances for deploying generative AI models and the highest-performance GPU instances for spatial computing workloads.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkspacesInstances (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon WorkSpaces Core managed instances now support nested virtualization. Customers can enable nested virtualization with supported instance types at launch via CpuOptions.NestedVirtualization in CreateWorkspaceInstance to run hypervisors and virtual machines inside their WorkSpaces Instance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-08-31</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-08-31</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2026-09-01T00:12:14Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetApp_1.19.0-beta.2"&gt;Azure.ResourceManager.NetApp_1.19.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.19.0-beta.2 (2026-08-27)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version to &lt;code&gt;2026-06-15-preview&lt;/code&gt;. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/main/specification/netapp/resource-manager/Microsoft.NetApp/NetApp/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/main/specification/netapp/resource-manager/Microsoft.NetApp/NetApp/readme.md&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;SecureLdapType&lt;/code&gt; support to &lt;code&gt;LdapConfiguration&lt;/code&gt; and &lt;code&gt;LdapConfigurationPatch&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Changed the &lt;code&gt;ArmNetAppModelFactory.LdapConfiguration&lt;/code&gt; and &lt;code&gt;ArmNetAppModelFactory.LdapConfigurationPatch&lt;/code&gt; factory methods to accept &lt;code&gt;SecureLdapType&lt;/code&gt; instead of &lt;code&gt;bool&lt;/code&gt; for the LDAP security setting.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Enclave_1.0.0"&gt;Azure.ResourceManager.Enclave_1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0 (2026-08-27)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;First stable (GA) release of the Azure Enclave (&lt;code&gt;Microsoft.Mission&lt;/code&gt;) management library for .NET, targeting API version &lt;code&gt;2026-04-01&lt;/code&gt;. The API surface is unchanged from &lt;code&gt;1.0.0-beta.1&lt;/code&gt;; this release promotes the library to a stable, generally available version.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.EdgeZones_1.0.0"&gt;Azure.ResourceManager.EdgeZones_1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0 (2026-08-25)&lt;/h2&gt;
+&lt;p&gt;This release is the first stable release of the Edge Zones Management client library.&lt;/p&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for API version &lt;code&gt;2026-10-01&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Maps_1.0.0-beta.1"&gt;Azure.Provisioning.Maps_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-08-31)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial preview release of &lt;code&gt;Azure.Provisioning.Maps&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>Tyrrrz/CliFx - Releases - 2026-08-31</title>
+    <id>https://github.com/Tyrrrz/CliFx#2026-08-31</id>
+    <link href="https://github.com/Tyrrrz/CliFx" />
+    <updated>2026-09-01T00:12:31Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Tyrrrz/CliFx/releases/tag/3.0.1"&gt;3.0.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                
+&lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;h3&gt;Enhancements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add PowerKit, update PolyShim to 2.10.1, remove hand-written utility equivalents by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Tyrrrz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Tyrrrz"&gt;@Tyrrrz&lt;/a&gt; with @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4280611526" data-permission-text="Title is private" data-url="https://github.com/Tyrrrz/CliFx/issues/185" data-hovercard-type="pull_request" data-hovercard-url="/Tyrrrz/CliFx/pull/185/hovercard" href="https://github.com/Tyrrrz/CliFx/pull/185"&gt;#185&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Deduplicate repeated XML docs on overloads via explicit &lt;code&gt;inheritdoc&lt;/code&gt; cref by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Tyrrrz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Tyrrrz"&gt;@Tyrrrz&lt;/a&gt; with @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4990771806" data-permission-text="Title is private" data-url="https://github.com/Tyrrrz/CliFx/issues/190" data-hovercard-type="pull_request" data-hovercard-url="/Tyrrrz/CliFx/pull/190/hovercard" href="https://github.com/Tyrrrz/CliFx/pull/190"&gt;#190&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix generated code compilation errors when any description contains newlines by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Tyrrrz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Tyrrrz"&gt;@Tyrrrz&lt;/a&gt; with @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5301414522" data-permission-text="Title is private" data-url="https://github.com/Tyrrrz/CliFx/issues/193" data-hovercard-type="pull_request" data-hovercard-url="/Tyrrrz/CliFx/pull/193/hovercard" href="https://github.com/Tyrrrz/CliFx/pull/193"&gt;#193&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/Tyrrrz/CliFx/compare/3.0...3.0.1"&gt;&lt;tt&gt;3.0...3.0.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
