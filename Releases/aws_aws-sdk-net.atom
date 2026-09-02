@@ -1,108 +1,79 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-09-01T00:12:13Z</updated>
+  <updated>2026-09-02T00:10:53Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-08-31</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-08-31</id>
+    <title>aws/aws-sdk-net - Releases - 2026-09-01</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-09-01</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-09-01T00:12:13Z</updated>
+    <updated>2026-09-02T00:10:53Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.324.0"&gt;4.0.324.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.325.0"&gt;4.0.325.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.324.0 (2026-08-31 22:16 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.325.0 (2026-09-01 18:18 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AgentRegistry (4.0.102.0)
+&lt;li&gt;BedrockAgentCoreControl (4.0.113.0)
 &lt;ul&gt;
-&lt;li&gt;Release HTTP and AGUI descriptors to the dataplane model&lt;/li&gt;
+&lt;li&gt;Online evaluation configurations now support up to 25 evaluators. CloudWatch Logs data sources for online evaluation now support up to 10 log groups.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.323.0"&gt;4.0.323.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;4.0.323.0 (2026-08-31 18:20 UTC)&lt;/h3&gt;
+&lt;li&gt;EC2 (4.0.115.0)
 &lt;ul&gt;
-&lt;li&gt;AgentRegistry (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;AWS Agent Registry becomes Generally Available&lt;/li&gt;
+&lt;li&gt;Update UserData and UploadPolicy shapes to use SecureBlob&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AgentRegistryControl (4.0.101.0)
+&lt;li&gt;GuardDuty (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Agent Registry becomes Generally Available&lt;/li&gt;
+&lt;li&gt;Amazon GuardDuty now supports custom detection rules, including APIs to manage rule associations and organization-level configurations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AWSSupport (4.0.101.0)
+&lt;li&gt;IoTSiteWise (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Support now allows up to 10 attachments (150 MB each) per case correspondence, up from 3 at 5 MB. Customers can share large diagnostic logs, heap dumps, and packet captures directly in cases to reduce back-and-forth and speed up resolution. Available in US East, US West, and Europe (Ireland).&lt;/li&gt;
+&lt;li&gt;AWS IoT SiteWise Scenario Discovery now supports mounting Amazon S3 data directly into pipeline task containers via S3 Access Points, and configuring additional ephemeral storage per task. Mount configurations can be overridden at execution time. See the API guide for details.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Batch (4.0.102.2)
+&lt;li&gt;Kinesis (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Batch is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Amazon Kinesis Data Streams now supports a dry run feature for data-plane APIs to validate the permissions and request parameters. If all checks complete successfully, the API returns a 'DryRunOperationException', confirming the request would have succeeded without the 'DryRun' parameter.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.113.0)
+&lt;li&gt;Lambda (4.0.107.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for global routing on Amazon Connect Global Resiliency instances. New APIs GetCrossRegionRouting and UpdateCrossRegionRouting allow you to view and control cross-region contact routing between linked instances, so both Regions are active at all times.&lt;/li&gt;
+&lt;li&gt;AWS Lambda now provides configurable control over S3 direct access, allowing you to explicitly enable or disable how functions stream file reads directly from S3 buckets. This gives you flexibility to tune data access behavior based on your workload requirements, independent of memory size.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ControlTower (4.0.100.12)
+&lt;li&gt;Lightsail (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Updated the descriptions for the AWS Control Tower ListEnabledControls API parameters to make them more accurate and intuitive.&lt;/li&gt;
+&lt;li&gt;This release adds support for the Amazon Lightsail GetProfile API, which returns the profile for the specified account.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CustomerProfiles (4.0.102.0)
+&lt;li&gt;MarketplaceAgreement (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;This release introduces new APIs for segment membership events allowing segment definition membership events to be exported to a kinesis stream for downstream processing. Additionally, includes new calculated attribute statistic and 2 new segment dimension types.&lt;/li&gt;
+&lt;li&gt;This release adds renewal support for AWS Marketplace private offers. Agreements report whether they renew and, if not, why. Renewal terms add price increases, renewal limits, renewal decision deadlines, and payment schedule templates. SearchAgreements adds filters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DevOpsAgent (4.0.103.0)
+&lt;li&gt;MarketplaceDiscovery (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for Slack bidirectional communication configuration in AWS DevOps Agent agent spaces.&lt;/li&gt;
+&lt;li&gt;GetOfferTerms now returns renewalTerm for offers with pre-authorized renewals, exposing maxRenewals, lockoutPeriod, adjustmentDeadline, priceIncrease (fixed percentage or percentage range), and termTemplates (renewal payment schedules). Enables buyers to view renewal pricing and terms.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;KafkaConnect (4.0.101.0)
+&lt;li&gt;MediaConvert (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon MSK Connect now supports restarting newly created connectors via the asynchronous RestartConnector API. Restart all tasks or only failed tasks, while preserving configuration and committed offsets. This returns a connector operation ARN that you can track with DescribeConnectorOperation.&lt;/li&gt;
+&lt;li&gt;Adds support for AAC passthrough. Adds ManifestCues option to support HLS manifest Cue marker passthrough. Adds playback device compatibility mode for DASH H.265 outputs. Adds TTML caption styling options. Adds interlace mode support for XAVC HD Intra CBG profile.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Kinesis (4.0.102.0)
+&lt;li&gt;SimpleEmailV2 (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for data delivery to Amazon S3 Tables (Apache Iceberg) and general purpose Amazon S3 buckets with new CreateChannel, UpdateChannel, DeleteChannel, DescribeChannel, and ListChannels APIs for Amazon Kinesis Data Streams.&lt;/li&gt;
+&lt;li&gt;Added support for managing SMIME signing certificates for email identities, including associating, listing, and disassociating certificates. Added the UpdateConfigurationSet operation to configure message security options such as signing scheme.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MediaConnect (4.0.101.4)
+&lt;li&gt;TaxSettings (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;MediaConnect is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;PinpointSMSVoiceV2 (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;AWS End User Messaging SMS now returns ConditionalBehavior on DescribeRegistrationFieldDefinitions, allowing you to programmatically discover which registration fields are required, optional, or disallowed based on the values of other fields in the same form.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;QuickSight (4.0.108.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds support for managing apps in Amazon QuickSight with ListApps, SearchApps, DescribeApp, DescribeAppPermissions, UpdateAppPermissions, and DeleteApp&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.112.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon SageMaker Batch Transform now supports G6e instances, powered by NVIDIA L40S Tensor Core GPUs. G6e instances are the most cost-efficient GPU instances for deploying generative AI models and the highest-performance GPU instances for spatial computing workloads.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WorkspacesInstances (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon WorkSpaces Core managed instances now support nested virtualization. Customers can enable nested virtualization with supported instance types at launch via CpuOptions.NestedVirtualization in CreateWorkspaceInstance to run hypervisors and virtual machines inside their WorkSpaces Instance.&lt;/li&gt;
+&lt;li&gt;France and Monaco Additional Info changes&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

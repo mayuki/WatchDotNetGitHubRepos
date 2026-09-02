@@ -1,108 +1,79 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-09-01T00:12:32Z</updated>
+  <updated>2026-09-02T00:11:18Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-08-31</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-08-31</id>
+    <title>aws/aws-sdk-net - Releases - 2026-09-01</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-09-01</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-09-01T00:12:13Z</updated>
+    <updated>2026-09-02T00:10:53Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.324.0"&gt;4.0.324.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.325.0"&gt;4.0.325.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.324.0 (2026-08-31 22:16 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.325.0 (2026-09-01 18:18 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AgentRegistry (4.0.102.0)
+&lt;li&gt;BedrockAgentCoreControl (4.0.113.0)
 &lt;ul&gt;
-&lt;li&gt;Release HTTP and AGUI descriptors to the dataplane model&lt;/li&gt;
+&lt;li&gt;Online evaluation configurations now support up to 25 evaluators. CloudWatch Logs data sources for online evaluation now support up to 10 log groups.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.323.0"&gt;4.0.323.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;4.0.323.0 (2026-08-31 18:20 UTC)&lt;/h3&gt;
+&lt;li&gt;EC2 (4.0.115.0)
 &lt;ul&gt;
-&lt;li&gt;AgentRegistry (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;AWS Agent Registry becomes Generally Available&lt;/li&gt;
+&lt;li&gt;Update UserData and UploadPolicy shapes to use SecureBlob&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AgentRegistryControl (4.0.101.0)
+&lt;li&gt;GuardDuty (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Agent Registry becomes Generally Available&lt;/li&gt;
+&lt;li&gt;Amazon GuardDuty now supports custom detection rules, including APIs to manage rule associations and organization-level configurations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AWSSupport (4.0.101.0)
+&lt;li&gt;IoTSiteWise (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Support now allows up to 10 attachments (150 MB each) per case correspondence, up from 3 at 5 MB. Customers can share large diagnostic logs, heap dumps, and packet captures directly in cases to reduce back-and-forth and speed up resolution. Available in US East, US West, and Europe (Ireland).&lt;/li&gt;
+&lt;li&gt;AWS IoT SiteWise Scenario Discovery now supports mounting Amazon S3 data directly into pipeline task containers via S3 Access Points, and configuring additional ephemeral storage per task. Mount configurations can be overridden at execution time. See the API guide for details.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Batch (4.0.102.2)
+&lt;li&gt;Kinesis (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Batch is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Amazon Kinesis Data Streams now supports a dry run feature for data-plane APIs to validate the permissions and request parameters. If all checks complete successfully, the API returns a 'DryRunOperationException', confirming the request would have succeeded without the 'DryRun' parameter.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.113.0)
+&lt;li&gt;Lambda (4.0.107.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for global routing on Amazon Connect Global Resiliency instances. New APIs GetCrossRegionRouting and UpdateCrossRegionRouting allow you to view and control cross-region contact routing between linked instances, so both Regions are active at all times.&lt;/li&gt;
+&lt;li&gt;AWS Lambda now provides configurable control over S3 direct access, allowing you to explicitly enable or disable how functions stream file reads directly from S3 buckets. This gives you flexibility to tune data access behavior based on your workload requirements, independent of memory size.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ControlTower (4.0.100.12)
+&lt;li&gt;Lightsail (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Updated the descriptions for the AWS Control Tower ListEnabledControls API parameters to make them more accurate and intuitive.&lt;/li&gt;
+&lt;li&gt;This release adds support for the Amazon Lightsail GetProfile API, which returns the profile for the specified account.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CustomerProfiles (4.0.102.0)
+&lt;li&gt;MarketplaceAgreement (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;This release introduces new APIs for segment membership events allowing segment definition membership events to be exported to a kinesis stream for downstream processing. Additionally, includes new calculated attribute statistic and 2 new segment dimension types.&lt;/li&gt;
+&lt;li&gt;This release adds renewal support for AWS Marketplace private offers. Agreements report whether they renew and, if not, why. Renewal terms add price increases, renewal limits, renewal decision deadlines, and payment schedule templates. SearchAgreements adds filters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DevOpsAgent (4.0.103.0)
+&lt;li&gt;MarketplaceDiscovery (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for Slack bidirectional communication configuration in AWS DevOps Agent agent spaces.&lt;/li&gt;
+&lt;li&gt;GetOfferTerms now returns renewalTerm for offers with pre-authorized renewals, exposing maxRenewals, lockoutPeriod, adjustmentDeadline, priceIncrease (fixed percentage or percentage range), and termTemplates (renewal payment schedules). Enables buyers to view renewal pricing and terms.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;KafkaConnect (4.0.101.0)
+&lt;li&gt;MediaConvert (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon MSK Connect now supports restarting newly created connectors via the asynchronous RestartConnector API. Restart all tasks or only failed tasks, while preserving configuration and committed offsets. This returns a connector operation ARN that you can track with DescribeConnectorOperation.&lt;/li&gt;
+&lt;li&gt;Adds support for AAC passthrough. Adds ManifestCues option to support HLS manifest Cue marker passthrough. Adds playback device compatibility mode for DASH H.265 outputs. Adds TTML caption styling options. Adds interlace mode support for XAVC HD Intra CBG profile.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Kinesis (4.0.102.0)
+&lt;li&gt;SimpleEmailV2 (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for data delivery to Amazon S3 Tables (Apache Iceberg) and general purpose Amazon S3 buckets with new CreateChannel, UpdateChannel, DeleteChannel, DescribeChannel, and ListChannels APIs for Amazon Kinesis Data Streams.&lt;/li&gt;
+&lt;li&gt;Added support for managing SMIME signing certificates for email identities, including associating, listing, and disassociating certificates. Added the UpdateConfigurationSet operation to configure message security options such as signing scheme.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MediaConnect (4.0.101.4)
+&lt;li&gt;TaxSettings (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;MediaConnect is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;PinpointSMSVoiceV2 (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;AWS End User Messaging SMS now returns ConditionalBehavior on DescribeRegistrationFieldDefinitions, allowing you to programmatically discover which registration fields are required, optional, or disallowed based on the values of other fields in the same form.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;QuickSight (4.0.108.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds support for managing apps in Amazon QuickSight with ListApps, SearchApps, DescribeApp, DescribeAppPermissions, UpdateAppPermissions, and DeleteApp&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.112.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon SageMaker Batch Transform now supports G6e instances, powered by NVIDIA L40S Tensor Core GPUs. G6e instances are the most cost-efficient GPU instances for deploying generative AI models and the highest-performance GPU instances for spatial computing workloads.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WorkspacesInstances (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon WorkSpaces Core managed instances now support nested virtualization. Customers can enable nested virtualization with supported instance types at launch via CpuOptions.NestedVirtualization in CreateWorkspaceInstance to run hypervisors and virtual machines inside their WorkSpaces Instance.&lt;/li&gt;
+&lt;li&gt;France and Monaco Additional Info changes&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -113,59 +84,87 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-08-31</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-08-31</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-09-01</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-09-01</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-09-01T00:12:14Z</updated>
+    <updated>2026-09-02T00:10:54Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetApp_1.19.0-beta.2"&gt;Azure.ResourceManager.NetApp_1.19.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.Storage_5.3.9"&gt;Microsoft.Azure.WebJobs.Extensions.Storage_5.3.9&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.19.0-beta.2 (2026-08-27)&lt;/h2&gt;
+                                &lt;h2&gt;5.3.9 (2026-09-08)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;p&gt;Please refer to &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs/CHANGELOG.md"&gt;&lt;code&gt;Microsoft.Azure.WebJobs.Extension.Storage.Blobs&lt;/code&gt;&lt;/a&gt; and &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage.Queues/CHANGELOG.md"&gt;&lt;code&gt;Microsoft.Azure.WebJobs.Extension.Storage.Queues&lt;/code&gt;&lt;/a&gt; for detailed list of changes.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs_5.3.9"&gt;Microsoft.Azure.WebJobs.Extensions.Storage.Blobs_5.3.9&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;5.3.9 (2026-09-08)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;This release contains bug fixes to improve quality.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.Storage.Queues_5.3.9"&gt;Microsoft.Azure.WebJobs.Extensions.Storage.Queues_5.3.9&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;5.3.9 (2026-09-08)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed queue scale metrics reporting &lt;code&gt;QueueLength=0&lt;/code&gt; when messages were present but could not be decoded with the configured &lt;code&gt;MessageEncoding&lt;/code&gt;, which prevented affected functions from scaling out. Scale metrics now read the queue using &lt;code&gt;QueueMessageEncoding.None&lt;/code&gt;, so peek results are never filtered by decode failures. Message processing is unaffected and continues to use the configured encoding.&lt;/li&gt;
+&lt;li&gt;Fixed a bug where a failed &lt;code&gt;PeekMessages&lt;/code&gt; call reset the reported queue length to zero instead of preserving &lt;code&gt;ApproximateMessagesCount&lt;/code&gt;, which could cause premature scale-in while the queue still had messages.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Replaced scaling warning/error log calls with standardized &lt;code&gt;LogFunctionScaleWarning&lt;/code&gt; extension method to enable Scale Controller App Insights diagnostics.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CognitiveServices_1.6.0-beta.4"&gt;Azure.ResourceManager.CognitiveServices_1.6.0-beta.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.6.0-beta.4 (2026-08-31)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded api-version to &lt;code&gt;2026-06-15-preview&lt;/code&gt;. Tag detail available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/blob/main/specification/netapp/resource-manager/Microsoft.NetApp/NetApp/readme.md"&gt;https://github.com/Azure/azure-rest-api-specs/blob/main/specification/netapp/resource-manager/Microsoft.NetApp/NetApp/readme.md&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;SecureLdapType&lt;/code&gt; support to &lt;code&gt;LdapConfiguration&lt;/code&gt; and &lt;code&gt;LdapConfigurationPatch&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Upgraded api-version to 2026-07-15-preview.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Changed the &lt;code&gt;ArmNetAppModelFactory.LdapConfiguration&lt;/code&gt; and &lt;code&gt;ArmNetAppModelFactory.LdapConfigurationPatch&lt;/code&gt; factory methods to accept &lt;code&gt;SecureLdapType&lt;/code&gt; instead of &lt;code&gt;bool&lt;/code&gt; for the LDAP security setting.&lt;/li&gt;
+&lt;li&gt;Compared to &lt;code&gt;1.6.0-beta.3&lt;/code&gt;, moved &lt;code&gt;CognitiveServicesComputeData.Location&lt;/code&gt; to &lt;code&gt;CognitiveServicesComputeProperties.Location&lt;/code&gt;. The &lt;code&gt;CognitiveServicesClusterComputeProperties&lt;/code&gt; and &lt;code&gt;ContainerInstanceComputeProperties&lt;/code&gt; constructors now require an &lt;code&gt;AzureLocation&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Compared to &lt;code&gt;1.6.0-beta.3&lt;/code&gt;, removed the &lt;code&gt;vmPriority&lt;/code&gt; parameter from the &lt;code&gt;CognitiveServicesComputePool&lt;/code&gt; constructor and made the &lt;code&gt;VmPriority&lt;/code&gt; property optional.&lt;/li&gt;
+&lt;li&gt;Compared to &lt;code&gt;1.6.0-beta.3&lt;/code&gt;, replaced &lt;code&gt;CognitiveServicesVmPriority.LowPriority&lt;/code&gt; with &lt;code&gt;CognitiveServicesVmPriority.Spot&lt;/code&gt; to match the service contract.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Enclave_1.0.0"&gt;Azure.ResourceManager.Enclave_1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.StorageSync_1.4.0"&gt;Azure.ResourceManager.StorageSync_1.4.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0 (2026-08-27)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;First stable (GA) release of the Azure Enclave (&lt;code&gt;Microsoft.Mission&lt;/code&gt;) management library for .NET, targeting API version &lt;code&gt;2026-04-01&lt;/code&gt;. The API surface is unchanged from &lt;code&gt;1.0.0-beta.1&lt;/code&gt;; this release promotes the library to a stable, generally available version.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.EdgeZones_1.0.0"&gt;Azure.ResourceManager.EdgeZones_1.0.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0 (2026-08-25)&lt;/h2&gt;
-&lt;p&gt;This release is the first stable release of the Edge Zones Management client library.&lt;/p&gt;
+                                &lt;h2&gt;1.4.0 (2026-08-16)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for API version &lt;code&gt;2026-10-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ChangeEnumerationIntervalDays&lt;/code&gt; to cloud endpoint data and create-or-update content.&lt;/li&gt;
+&lt;li&gt;Added PATCH-based cloud endpoint update operation to support updating the new &lt;code&gt;ChangeEnumerationIntervalDays&lt;/code&gt; parameter&lt;/li&gt;
+&lt;li&gt;Added sync-session progress, throughput, large-file, and warning details to &lt;code&gt;ServerEndpointSyncActivityStatus&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Updated the default service API version to &lt;code&gt;2025-12-01&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Maps_1.0.0-beta.1"&gt;Azure.Provisioning.Maps_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.PostgreSQL.Auth_1.0.0"&gt;Microsoft.Azure.PostgreSQL.Auth_1.0.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-08-31)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0 (2026-08-26)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial preview release of &lt;code&gt;Azure.Provisioning.Maps&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;First stable release of the Entra ID authentication extension for the Npgsql PostgreSQL driver.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -174,28 +173,172 @@
             </content>
   </entry>
   <entry>
-    <title>Tyrrrz/CliFx - Releases - 2026-08-31</title>
-    <id>https://github.com/Tyrrrz/CliFx#2026-08-31</id>
-    <link href="https://github.com/Tyrrrz/CliFx" />
-    <updated>2026-09-01T00:12:31Z</updated>
+    <title>googleapis/google-cloud-dotnet - Releases - 2026-09-01</title>
+    <id>https://github.com/googleapis/google-cloud-dotnet#2026-09-01</id>
+    <link href="https://github.com/googleapis/google-cloud-dotnet" />
+    <updated>2026-09-02T00:11:08Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Tyrrrz/CliFx/releases/tag/3.0.1"&gt;3.0.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.AppTopology.V1-1.0.0-beta01"&gt;Google.Cloud.AppTopology.V1 version 1.0.0-beta01&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                
-&lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;h3&gt;Enhancements&lt;/h3&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Add PowerKit, update PolyShim to 2.10.1, remove hand-written utility equivalents by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Tyrrrz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Tyrrrz"&gt;@Tyrrrz&lt;/a&gt; with @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4280611526" data-permission-text="Title is private" data-url="https://github.com/Tyrrrz/CliFx/issues/185" data-hovercard-type="pull_request" data-hovercard-url="/Tyrrrz/CliFx/pull/185/hovercard" href="https://github.com/Tyrrrz/CliFx/pull/185"&gt;#185&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Deduplicate repeated XML docs on overloads via explicit &lt;code&gt;inheritdoc&lt;/code&gt; cref by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Tyrrrz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Tyrrrz"&gt;@Tyrrrz&lt;/a&gt; with @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4990771806" data-permission-text="Title is private" data-url="https://github.com/Tyrrrz/CliFx/issues/190" data-hovercard-type="pull_request" data-hovercard-url="/Tyrrrz/CliFx/pull/190/hovercard" href="https://github.com/Tyrrrz/CliFx/pull/190"&gt;#190&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Initial generation for Google.Cloud.AppTopology.V1&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Bugs&lt;/h3&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.GeminiDataAnalytics.V1-1.1.0"&gt;Google.Cloud.GeminiDataAnalytics.V1 version 1.1.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fix generated code compilation errors when any description contains newlines by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Tyrrrz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Tyrrrz"&gt;@Tyrrrz&lt;/a&gt; with @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5301414522" data-permission-text="Title is private" data-url="https://github.com/Tyrrrz/CliFx/issues/193" data-hovercard-type="pull_request" data-hovercard-url="/Tyrrrz/CliFx/pull/193/hovercard" href="https://github.com/Tyrrrz/CliFx/pull/193"&gt;#193&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add a new field &lt;code&gt;property_graph_references&lt;/code&gt; to support BigQuery graphs in the Gemini Data Analytics API&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/Tyrrrz/CliFx/compare/3.0...3.0.1"&gt;&lt;tt&gt;3.0...3.0.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.GeminiDataAnalytics.V1Beta-1.0.0-beta11"&gt;Google.Cloud.GeminiDataAnalytics.V1Beta version 1.0.0-beta11&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update v1beta protos for datasources and query data response&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update comment for total_row_count in ExecutedQueryResult&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Spanner-5.13.0-beta10"&gt;Google.Cloud.Spanner version 5.13.0-beta10&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Standardize Protobuf Message and Enum naming conventions&lt;/li&gt;
+&lt;li&gt;Refactor SpannerDbType to use ForX methods for protobuf initialization&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Maps.Routing.V2-1.3.0"&gt;Google.Maps.Routing.V2 version 1.3.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Publish tunnel, bridge, and skyway fields in Routes API v2&lt;/li&gt;
+&lt;li&gt;Add US_MI_BREAKAWAY toll pass to Routes API v2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A comment for enum &lt;code&gt;ExtraComputation&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for enum value &lt;code&gt;HTML_FORMATTED_NAVIGATION_INSTRUCTIONS&lt;/code&gt; in enum &lt;code&gt;ExtraComputation&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for enum value &lt;code&gt;FLYOVER_INFO_ON_POLYLINE&lt;/code&gt; in enum &lt;code&gt;ExtraComputation&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for enum value &lt;code&gt;NARROW_ROAD_INFO_ON_POLYLINE&lt;/code&gt; in enum &lt;code&gt;ExtraComputation&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;optimize_waypoint_order&lt;/code&gt; in message &lt;code&gt;.google.maps.routing.v2.ComputeRoutesRequest&lt;/code&gt; is changed&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;navigation_point_token&lt;/code&gt; in message &lt;code&gt;.google.maps.routing.v2.Waypoint&lt;/code&gt; is changed&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Dlp.V2-4.27.0"&gt;Google.Cloud.Dlp.V2 version 4.27.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add ContentPolicy configuration and management APIs&lt;/li&gt;
+&lt;li&gt;Add FileLabelInfoType to CustomInfoType for detecting Microsoft Sensitivity Labels and Google Drive Labels&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update documentation links&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Compute.V1-3.31.0"&gt;Google.Cloud.Compute.V1 version 3.31.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update Compute Engine v1 API artifacts to revision 20260807&lt;/li&gt;
+&lt;li&gt;Add FutureReservationStoragePoolProvisionedCapacity message definition&lt;/li&gt;
+&lt;li&gt;Add requested_storage_pool_provisioned_capacity and storage_pool_type fields to FutureReservation&lt;/li&gt;
+&lt;li&gt;Add min_cpu_platform field to InstanceSelection&lt;/li&gt;
+&lt;li&gt;Add RegexRewrite message definition&lt;/li&gt;
+&lt;li&gt;Add regex_rewrite field to UrlRewrite&lt;/li&gt;
+&lt;li&gt;Add ResourceMetadata message definition&lt;/li&gt;
+&lt;li&gt;Add resource_metadata field to Allocation&lt;/li&gt;
+&lt;li&gt;Add ASN key type to security policy fingerprint&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update documentation in proto definitions&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.BigQuery.Reservation.V1-2.14.0"&gt;Google.Cloud.BigQuery.Reservation.V1 version 2.14.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add new &lt;code&gt;AUTOMATIC_MATERIALIZED_VIEW_REFRESH&lt;/code&gt; reservation assignment job type&lt;/li&gt;
+&lt;li&gt;Allow for reservation groups to be updated and expose new &lt;code&gt;parent_group&lt;/code&gt;, &lt;code&gt;creation_time&lt;/code&gt;, and &lt;code&gt;update_time&lt;/code&gt; fields on the group resource&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Mark &lt;code&gt;FLEX&lt;/code&gt; commitment plan for capacity commitments as deprecated&lt;/li&gt;
+&lt;li&gt;A comment for field &lt;code&gt;principal&lt;/code&gt; in message &lt;code&gt;.google.cloud.bigquery.reservation.v1.Assignment&lt;/code&gt; is changed&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.BigQuery.Migration.V2-1.8.0"&gt;Google.Cloud.BigQuery.Migration.V2 version 1.8.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Promote lineage outputs to v2&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Batch.V1-2.16.0"&gt;Google.Cloud.Batch.V1 version 2.16.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added new NicType field to job&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Restrict &lt;code&gt;allowed_locations&lt;/code&gt; region or zone values to the same region where the job is created&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>grpc/grpc - Releases - 2026-09-01</title>
+    <id>https://github.com/grpc/grpc#2026-09-01</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2026-09-02T00:11:08Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.84.0-pre1"&gt;Release v1.84.0-pre1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is a prerelease of gRPC Core 1.84.0 (gimbal).&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This prerelease contains refinements, improvements, and bug fixes.&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
