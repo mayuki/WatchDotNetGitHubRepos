@@ -1,89 +1,45 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-09-04T00:09:53Z</updated>
+  <updated>2026-09-05T00:10:06Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-09-03</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-09-03</id>
+    <title>aws/aws-sdk-net - Releases - 2026-09-04</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-09-04</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-09-04T00:09:53Z</updated>
+    <updated>2026-09-05T00:10:06Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.327.0"&gt;4.0.327.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.328.0"&gt;4.0.328.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.327.0 (2026-09-03 18:16 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.328.0 (2026-09-04 18:15 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;BedrockAgentCore (4.0.110.0)
+&lt;li&gt;Bedrock (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Adds log group name prefix trace source selection, custom or source log group result destinations, and metrics namespace customization&lt;/li&gt;
+&lt;li&gt;New AWS REVIEW mode as supported data retention mode for Bedrock models&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.114.0)
+&lt;li&gt;EC2 (4.0.117.0)
 &lt;ul&gt;
-&lt;li&gt;AgentCore Identity adds Consent Portal APIs to manage portals that let end users grant OAuth authorization for agents to access resources. AgentCore Evaluation adds trace source selection by log group prefix, custom or source log group result destinations, and metrics namespace customization.&lt;/li&gt;
+&lt;li&gt;Adds support for ValidateSecurityGroupQuotasForInterface, an API that specifically authorized AWS services use to validate security group rule quotas before creating an elastic network interface.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.114.0)
+&lt;li&gt;MediaTailor (4.0.105.0)
 &lt;ul&gt;
-&lt;li&gt;This release enables TagOnCreate for Rule resource on CreateRule API. It also introduces a new field called PreEvaluationFilters to Rule resource, thereby impacting all Create, Update, Describe and Search APIs for Rules&lt;/li&gt;
+&lt;li&gt;Elemental MediaTailor now supports two new Monetization Functions lifecycle hooks, Post Ads Response and Pre Manifest Insertion, and a VAST Request function type that calls a VAST or VMAP ad server. This release also adds Yield Optimization with demand from Amazon Publisher Services.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Drs (4.0.103.0)
+&lt;li&gt;ServiceQuotas (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Elastic Disaster Recovery now includes source server architecture in SourceProperties to identify x86 and ARM64 systems.&lt;/li&gt;
+&lt;li&gt;Service Quotas adds the AdjustableAtLevel property to QuotaContext, indicating whether a quota is adjustable at the account or resource level.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ECS (4.0.104.0)
+&lt;li&gt;Core 4.0.102.3
 &lt;ul&gt;
-&lt;li&gt;Adds a critical parameter to the Amazon ECS managed daemon APIs that controls whether a daemon task failure drains the container instance. Non-critical daemon failures no longer drain the instance or block instance registration.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;EKS (4.0.105.0)
-&lt;ul&gt;
-&lt;li&gt;Deprecate EncryptionConfig resources field. Amazon EKS encrypts all Kubernetes API data with envelope encryption by default for clusters running Kubernetes version 1.28 or higher, so this field no longer affects which resources are encrypted.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ElasticLoadBalancingV2 (4.0.101.8)
-&lt;ul&gt;
-&lt;li&gt;This release adds support for sending TCP resets for Gateway Load Balancer when a flow's idle timeout expires, or when a target becomes unhealthy or is deregistered. This adds updates the CLI documentation.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Evs (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon EVS now allows users to set, update, and retrieve values for parameters that apply across all EVS Environments in their account at a regional level, such as the VCF License portability core count.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;GuardDuty (4.0.105.0)
-&lt;ul&gt;
-&lt;li&gt;Adding support for Sequence Activities in GuardDuty Findings&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SocialMessaging (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;Adding support for WhatsApp Flows with endpoints.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;StepFunctions (4.0.100.12)
-&lt;ul&gt;
-&lt;li&gt;Updates Step Functions API documentation around CloudTrail, Execution name reuse and sort order of ListExecutions API&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;TranscribeService (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon Transcribe now supports specifying up to 29 PII entity types in the ContentRedaction configuration of a StartTranscriptionJob request, allowing all supported entity types to be redacted in a single batch transcription job.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Transfer (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;AWS Transfer Family SFTP Connectors now support specifying an ordered list of AWS Secrets Manager version stages for secret retrieval. This enables seamless credential rotation workflows where external partners may take time to update their systems with new credentials.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.0.102.2
-&lt;ul&gt;
-&lt;li&gt;Fixed &lt;code&gt;SigV4SigningHandler&lt;/code&gt; producing an invalid signature for requests carrying a multi-value header. The values were joined with &lt;code&gt;,&lt;/code&gt; when building the string-to-sign, but &lt;code&gt;HttpClient&lt;/code&gt; sends them on the wire joined with &lt;code&gt;, &lt;/code&gt; (comma + space); they are now joined with &lt;code&gt;, &lt;/code&gt; to match, so the service-computed signature matches. Fixes &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5329748319" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/4493" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/4493/hovercard" href="https://github.com/aws/aws-sdk-net/issues/4493"&gt;#4493&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Timestamps serialized as numeric epoch-seconds in JSON request bodies now preserve millisecond precision (e.g. &lt;code&gt;1756149554.123&lt;/code&gt; instead of &lt;code&gt;1756149554&lt;/code&gt;) rather than truncating to whole seconds.&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

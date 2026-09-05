@@ -1,136 +1,156 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-09-04T00:09:54Z</updated>
+  <updated>2026-09-05T00:10:07Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-09-03</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-09-03</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-09-04</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-09-04</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-09-04T00:09:54Z</updated>
+    <updated>2026-09-05T00:10:07Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Compute.Recommender_1.1.0-beta.2"&gt;Azure.ResourceManager.Compute.Recommender_1.1.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Monitor.OpenTelemetry.Exporter_1.9.0"&gt;Azure.Monitor.OpenTelemetry.Exporter_1.9.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.1.0-beta.2 (2026-09-02)&lt;/h2&gt;
+                                &lt;h2&gt;1.9.0 (2026-09-04)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded API version to &lt;code&gt;2026-09-05-preview&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ComputeSkuMixPlacementGenerateResult.Id&lt;/code&gt; so the recommendation identifier is returned once per response.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ComputeSkuMixPlacementGenerateResult.CapacityLimits&lt;/code&gt; and the &lt;code&gt;ComputeSkuMixPlacementCapacityLimit&lt;/code&gt; model, which report the capacity ceiling that constrained a recommendation.&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;SkuMixPlacementCapacityLimitReason&lt;/code&gt; enum with values &lt;code&gt;None&lt;/code&gt;, &lt;code&gt;InsufficientCapacity&lt;/code&gt;, &lt;code&gt;InsufficientQuota&lt;/code&gt;, and &lt;code&gt;SkuNotAvailable&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add support for project id attributes propagation&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/62052" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/62052/hovercard"&gt;#62052&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Shutting down a provider (including &lt;code&gt;Dispose()&lt;/code&gt;) now writes pending telemetry to offline storage and uploads it in the background instead of blocking on ingestion. Short-lived applications such as CLI tools previously lost this telemetry, because they exit before a transmission completes; the telemetry is now durable before exit, and delivery is completed by a background drain in this or a subsequent run. &lt;code&gt;ForceFlush&lt;/code&gt; is unchanged by default and can be opted in with the &lt;code&gt;Azure.Monitor.OpenTelemetry.Exporter.PersistOnForceFlush&lt;/code&gt; AppContext switch, which applies to traces and logs only: a metric reader cannot distinguish a caller's flush from its periodic collection, so metric &lt;code&gt;ForceFlush&lt;/code&gt; always transmits. The previous behavior can be restored with the &lt;code&gt;Azure.Monitor.OpenTelemetry.Exporter.DisablePersistOnShutdown&lt;/code&gt; AppContext switch.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/61818" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/61818/hovercard"&gt;#61818&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How long shutdown waits for that background drain can now be set through the &lt;code&gt;Azure.Monitor.OpenTelemetry.Exporter.ShutdownDrainBudgetMilliseconds&lt;/code&gt; AppContext data value, using either &lt;code&gt;AppContext.SetData&lt;/code&gt; or a &lt;code&gt;runtimeconfig.json&lt;/code&gt; configProperty. &lt;code&gt;Dispose()&lt;/code&gt; passes a finite timeout, so by default part of that window is spent delivering telemetry and process exit tracks ingestion latency. Short-lived applications should set this to &lt;code&gt;0&lt;/code&gt;, which makes exit cost only the file write: measured at 2.7 ms regardless of ingestion latency, against 2011 ms with a two second ingestion delay. The default is unchanged, so long-running services keep delivering their final batch within the window &lt;code&gt;Dispose()&lt;/code&gt; allows. A single-run CI job, where no later run exists to drain storage, should not raise this value but set the &lt;code&gt;Azure.Monitor.OpenTelemetry.Exporter.DisablePersistOnShutdown&lt;/code&gt; switch with a bounded &lt;code&gt;Retry.NetworkTimeout&lt;/code&gt;: raising the budget cannot guarantee delivery, because &lt;code&gt;Shutdown()&lt;/code&gt; waits on the drain for no time at all and &lt;code&gt;Dispose()&lt;/code&gt; is capped by the five second grace period OpenTelemetry allows it.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/62340" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/62340/hovercard"&gt;#62340&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Removed &lt;code&gt;ComputeSkuMixPlacementDeploymentChoice.Id&lt;/code&gt;. Use &lt;code&gt;ComputeSkuMixPlacementGenerateResult.Id&lt;/code&gt; instead; the identifier now applies to the whole response rather than to each individual placement choice.&lt;/li&gt;
-&lt;li&gt;Removed &lt;code&gt;ComputeSkuMixPlacementItem.CapacityMax&lt;/code&gt;. Use &lt;code&gt;ComputeSkuMixPlacementGenerateResult.CapacityLimits&lt;/code&gt; instead, which reports the same ceiling along with the &lt;code&gt;Reason&lt;/code&gt; it was applied.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Subscription_1.0.0-beta.1"&gt;Azure.Provisioning.Subscription_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-09-03)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Initial beta release of Azure.Provisioning.Subscription with support for declarative Subscription resource provisioning.&lt;/li&gt;
-&lt;li&gt;Added support for subscription alias, billing account policy, target directory result, and tenant policy resources.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Support_1.2.0"&gt;Azure.ResourceManager.Support_1.2.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0 (2026-09-03)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded API version to &lt;code&gt;2026-07-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Telemetry left in offline storage by a process that exited during a transmission is no longer stranded permanently. A leased blob is renamed so that it matches neither the storage provider's blob enumeration nor its retention sweep, and the provider only reclaims those leases on a two minute maintenance timer that a short-lived process never reaches. Expired leases are now reclaimed when storage is drained.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/61818" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/61818/hovercard"&gt;#61818&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Offline storage is now drained shortly after startup rather than only after the process has been running for two minutes, so telemetry persisted by a previous run is uploaded even when no single run is long-lived.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/61818" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/61818/hovercard"&gt;#61818&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Telemetry is no longer dropped when the offline storage directory reaches its size cap. The oldest stored telemetry is evicted to make room.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/61818" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/61818/hovercard"&gt;#61818&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Statsbeat no longer holds up process exit. It exports once more as its meter provider is disposed, which put an ingestion round trip on the exit path; that final export now runs in the background, and its network timeout is bounded at five seconds rather than the pipeline default of 100 seconds. The customer SDK stats meter provider is instead left to live for the process lifetime, so it never exports on the exit path at all; its stats are delivered by its own periodic reader.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/62340" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/62340/hovercard"&gt;#62340&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Log fields are now culture-invariant. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/61996" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/61996/hovercard"&gt;#61996&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added the &lt;code&gt;telemetrySuccess&lt;/code&gt; dimension to &lt;code&gt;Item_Dropped_Count&lt;/code&gt; for request and dependency telemetry.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/62081" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/62081/hovercard"&gt;#62081&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded dependent Azure.Core to 1.61.0.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated OpenTelemetry dependencies to 1.18.0 and &lt;code&gt;OpenTelemetry.PersistentStorage.FileSystem&lt;/code&gt; to 1.1.1.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/62698" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/62698/hovercard"&gt;#62698&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Improved activity conversion performance by reading recognized attributes from a fixed index instead of scanning the tag list for each one. Every span shape converts faster, by about a third for spans carrying Application Insights override attributes, and each conversion rents fewer pooled buffers. Standard metrics no longer collect the tags they never read.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/62614" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/62614/hovercard"&gt;#62614&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed pooled tag buffers being leaked whenever converting an activity failed, and retaining tag keys and values after being returned to the pool.&lt;/li&gt;
+&lt;li&gt;Fixed the buffer rent size being process-wide mutable state written without synchronization.&lt;/li&gt;
+&lt;li&gt;Fixed an activity tag with a null key dropping the remaining tags from custom properties.&lt;/li&gt;
+&lt;li&gt;Removed two attribute lookups that could never match. &lt;code&gt;http.server_name&lt;/code&gt; and &lt;code&gt;server.socket.address&lt;/code&gt; are still exported as custom properties, unchanged.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerService_1.8.0-beta.1"&gt;Azure.ResourceManager.ContainerService_1.8.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ServiceFabricManagedClusters_1.4.0-beta.1"&gt;Azure.ResourceManager.ServiceFabricManagedClusters_1.4.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.8.0-beta.1 (2026-09-02)&lt;/h2&gt;
+                                &lt;h2&gt;1.4.0-beta.1 (2026-09-03)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded api-version to 2026-06-02-preview.&lt;/li&gt;
+&lt;li&gt;Upgraded to API version &lt;code&gt;2026-05-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added cluster-level and node-type fault simulation operations.&lt;/li&gt;
+&lt;li&gt;Added zone fault simulation models and constraints.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ScaleInMode&lt;/code&gt; and &lt;code&gt;ProxyAgentSettings&lt;/code&gt; to &lt;code&gt;ServiceFabricManagedNodeTypeData&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Renamed &lt;code&gt;ServiceFabricManagedDataDiskType&lt;/code&gt; values to match .NET naming guidelines and their wire values: &lt;code&gt;PremiumV2LRS&lt;/code&gt; to &lt;code&gt;PremiumV2Lrs&lt;/code&gt;, &lt;code&gt;PremiumZRS&lt;/code&gt; to &lt;code&gt;PremiumZrs&lt;/code&gt;, and the previous &lt;code&gt;PremiumZrs&lt;/code&gt; value to &lt;code&gt;StandardSsdZrs&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ServiceGroups_1.0.0"&gt;Azure.ResourceManager.ServiceGroups_1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects_3.0.0-beta.2"&gt;Azure.AI.Projects_3.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0 (2026-09-03)&lt;/h2&gt;
-&lt;p&gt;This is the first stable release of Service Groups management client library.&lt;/p&gt;
+                                &lt;h2&gt;3.0.0-beta.2 (2026-09-03)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated the service API version to &lt;code&gt;2026-08-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;AgentInsightMonitors&lt;/code&gt; sub-client.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.StorageCache_1.6.0"&gt;Azure.ResourceManager.StorageCache_1.6.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects.Agents_3.0.0-beta.2"&gt;Azure.AI.Projects.Agents_3.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.6.0 (2026-09-02)&lt;/h2&gt;
+                                &lt;h2&gt;3.0.0-beta.2 (2026-09-03)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;No user-facing changes&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Extensions.OpenAI_3.0.0-beta.2"&gt;Azure.AI.Extensions.OpenAI_3.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;3.0.0-beta.2 (2026-09-03)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;No user-facing changes&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ServiceBus_1.3.0-beta.1"&gt;Azure.ResourceManager.ServiceBus_1.3.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.3.0-beta.1 (2026-09-01)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded the API version to 2026-08-01.&lt;/li&gt;
+&lt;li&gt;Updated the default API version to &lt;code&gt;2026-07-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added the string-valued &lt;code&gt;ServiceBusCorrelationFilter.Properties&lt;/code&gt; property.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Correlation filter application-property values now serialize as JSON strings. The previous &lt;code&gt;ApplicationProperties&lt;/code&gt; property remains available as a hidden obsolete compatibility shim and converts non-string values to invariant strings.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Keys_4.10.1"&gt;Azure.Security.KeyVault.Keys_4.10.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.EventHubs_1.4.0-beta.1"&gt;Azure.ResourceManager.EventHubs_1.4.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;4.10.1 (2026-09-02)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+                                &lt;h2&gt;1.4.0-beta.1 (2026-09-01)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed an issue in the challenge-based authentication policy where a cached authentication challenge, and the access token acquired for it, could be reused for a request to a different Key Vault or Managed HSM endpoint. The policy now resolves the challenge per request endpoint, ensuring a token acquired for one vault is never attached to a request to another.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Secrets_4.11.1"&gt;Azure.Security.KeyVault.Secrets_4.11.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;4.11.1 (2026-09-02)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed an issue in the challenge-based authentication policy where a cached authentication challenge, and the access token acquired for it, could be reused for a request to a different Key Vault or Managed HSM endpoint. The policy now resolves the challenge per request endpoint, ensuring a token acquired for one vault is never attached to a request to another.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Administration_4.8.1"&gt;Azure.Security.KeyVault.Administration_4.8.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;4.8.1 (2026-09-02)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed an issue in the challenge-based authentication policy where a cached authentication challenge, and the access token acquired for it, could be reused for a request to a different Key Vault or Managed HSM endpoint. The policy now resolves the challenge per request endpoint, ensuring a token acquired for one vault is never attached to a request to another.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Certificates_4.9.1"&gt;Azure.Security.KeyVault.Certificates_4.9.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;4.9.1 (2026-09-02)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed an issue in the challenge-based authentication policy where a cached authentication challenge, and the access token acquired for it, could be reused for a request to a different Key Vault or Managed HSM endpoint. The policy now resolves the challenge per request endpoint, ensuring a token acquired for one vault is never attached to a request to another.&lt;/li&gt;
+&lt;li&gt;Added support for the &lt;code&gt;2026-07-01-preview&lt;/code&gt; API version.&lt;/li&gt;
+&lt;li&gt;Added APIs for managing Fabric shortcuts and Event Hubs upgrade preferences, including maintenance and exception windows.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
