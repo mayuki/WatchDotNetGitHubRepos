@@ -1,6 +1,71 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-09-08T00:10:06Z</updated>
+  <updated>2026-09-09T00:10:46Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-09-08</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-09-08</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2026-09-09T00:10:46Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ServiceNetworking_1.2.0"&gt;Azure.ResourceManager.ServiceNetworking_1.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0 (2026-09-04)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded API version to &lt;code&gt;2026-03-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added support for private frontends on Application Gateway for Containers, including the &lt;code&gt;PrivateEndpointConnectionResource&lt;/code&gt; and &lt;code&gt;PrivateLinkResource&lt;/code&gt; resources and the &lt;code&gt;PublicNetworkAccess&lt;/code&gt; property (of type &lt;code&gt;TrafficControllerPublicNetworkAccess&lt;/code&gt;) on &lt;code&gt;TrafficControllerFrontendData&lt;/code&gt; and &lt;code&gt;FrontendUpdateProperties&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CloudHealth_1.0.0-beta.5"&gt;Azure.ResourceManager.CloudHealth_1.0.0-beta.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.5 (2026-09-04)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded API version to 2026-09-01-preview&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Invocations_1.0.0-beta.7"&gt;Azure.AI.AgentServer.Invocations_1.0.0-beta.7&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.7 (2026-09-03)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added application-owned target-turn tracing for Voice handlers.&lt;br&gt;
+&lt;code&gt;VoiceSession.StartTurn&lt;/code&gt; creates a mockable &lt;code&gt;VoiceTurnTrace&lt;/code&gt; parented to the&lt;br&gt;
+physical Voice connection; applications activate it around model/tool work and&lt;br&gt;
+complete it once with an immutable, content-free &lt;code&gt;VoiceTurnResult&lt;/code&gt;. The relay&lt;br&gt;
+does not infer target outcomes from sent messages or connection termination.&lt;/li&gt;
+&lt;li&gt;Added the experimental typed Voice Live Bridge Protocol 1.0 relay. &lt;code&gt;VoiceHandler&lt;/code&gt; dispatches&lt;br&gt;
+immutable inbound events, &lt;code&gt;VoiceSession.SendAsync&lt;/code&gt; serializes explicit outbound&lt;br&gt;
+messages, and &lt;code&gt;AddVoice&amp;lt;THandler&amp;gt;()&lt;/code&gt; / &lt;code&gt;VoiceServer.Run&amp;lt;THandler&amp;gt;()&lt;/code&gt; reuse the&lt;br&gt;
+existing &lt;code&gt;/invocations_ws&lt;/code&gt; transport without owning application lifecycle state.&lt;br&gt;
+Consumers acknowledge this preview surface with the &lt;code&gt;AAAS001&lt;/code&gt; diagnostic.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Core_1.0.0-beta.29"&gt;Azure.AI.AgentServer.Core_1.0.0-beta.29&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.29 (2026-09-08)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Released to provide the public &lt;code&gt;Azure.AI.AgentServer.Core&lt;/code&gt; dependency required by &lt;code&gt;Azure.AI.AgentServer.Invocations&lt;/code&gt; 1.0.0-beta.7.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
