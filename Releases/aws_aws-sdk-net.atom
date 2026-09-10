@@ -1,69 +1,65 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-09-09T00:10:45Z</updated>
+  <updated>2026-09-10T00:10:22Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-09-08</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-09-08</id>
+    <title>aws/aws-sdk-net - Releases - 2026-09-09</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-09-09</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-09-09T00:10:45Z</updated>
+    <updated>2026-09-10T00:10:22Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.329.0"&gt;4.0.329.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.330.0"&gt;4.0.330.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.329.0 (2026-09-08 18:15 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.330.0 (2026-09-09 18:14 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Appflow (4.0.101.0)
+&lt;li&gt;Connect (4.0.116.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon AppFlow now supports key pair (RSA private key) authentication for the Snowflake connector. You can provide a privateKey in SnowflakeConnectorProfileCredentials, and password is no longer required. This is a non-breaking, additive change available via the AWS SDK and CLI.&lt;/li&gt;
+&lt;li&gt;Add metric configuration field to evaluation forms and ListEvaluationFormAIVersions API for retrieving AI-generated evaluation form versions&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudTrail (4.0.101.0)
+&lt;li&gt;EC2 (4.0.119.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for the RecursiveLogging trail setting, which suppresses recursive events generated when CloudTrail delivers logs to a trail's destinations.&lt;/li&gt;
+&lt;li&gt;This release adds support for sharing Amazon EBS volumes across AWS accounts using AWS Resource Access Manager (RAM). Consuming accounts can view shared volume metadata and create copies of shared volumes within the same Availability Zone, with optional re-encryption using their own KMS key.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.115.0)
+&lt;li&gt;ElementalInference (4.0.105.0)
 &lt;ul&gt;
-&lt;li&gt;Releasing workload types feature. A proper launch announcement or details will follow up.&lt;/li&gt;
+&lt;li&gt;This release adds contextual metadata, a feed output type that generates a descriptive summary of your media content along with IAB taxonomy and GARM suitability classifications. It also adds feed resource policies for granting cross-account access to a feed.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.118.0)
+&lt;li&gt;Lambda (4.0.108.0)
 &lt;ul&gt;
-&lt;li&gt;Adds the InterfaceTypes field to NetworkCardInfo in the DescribeInstanceTypes response. This field identifies the network interface types supported by each network card.&lt;/li&gt;
+&lt;li&gt;Updates documentation for lambda function timeout.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Mgn (4.0.102.0)
+&lt;li&gt;MediaLive (4.0.105.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for configuring the EBS volume initialization rate and delete on termination behavior in launch configuration template&lt;/li&gt;
+&lt;li&gt;MediaLive now supports Manual Style Control for vertical caption positioning in TTML, WebVTT, and Embedded captions, Contextual Metadata Enrichment via Elemental Inference, and an Output Usage field on MediaPackage v2 for Dynamic Multiview validation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Omics (4.0.102.0)
+&lt;li&gt;MediaPackageV2 (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for session policies in AWS HealthOmics Workflows, allowing customers to scope down IAM permissions for individual workflow runs without modifying the service role.&lt;/li&gt;
+&lt;li&gt;Dynamic Multiview enables viewers to watch multiple live video streams in a single combined output. Viewers can select from 6 preset tiled layouts. Create MediaPackage channels with Input Type MULTIVIEW and configure Available Layouts and Available Sources. See the API Documentation for details.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PinpointSMSVoiceV2 (4.0.102.0)
+&lt;li&gt;MediaTailor (4.0.106.0)
 &lt;ul&gt;
-&lt;li&gt;This feature will allow customers to specify an area-code when requesting a 10DLC number. Why it matters- Customers can now select a number that matches where their business is located.&lt;/li&gt;
+&lt;li&gt;Added the AWS Service Request function type for MediaTailor Functions, enabling authenticated requests to AWS Elemental Inference for contextual ad targeting during ad insertion.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (4.0.103.0)
+&lt;li&gt;PCS (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for Amazon S3 Object Lock variable retention.  Existing S3 APIs that support S3 Object Lock parameters now support two new parameters EventHold and EventHoldDuration at the object level, and DefaultEventHoldDuration at the bucket level.&lt;/li&gt;
+&lt;li&gt;This release adds support for custom Gres.conf configuration and Slurm version 26.05 in AWS PCS. Customers can now specify generic resource (GRES) settings to control how GPUs and other resources are configured and shared on their compute node groups.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3Control (4.0.101.0)
+&lt;li&gt;Core 4.0.102.4
 &lt;ul&gt;
-&lt;li&gt;Adds support for Amazon S3 Object Lock variable retention.  Existing S3 APIs that support S3 Object Lock parameters now support two new parameters EventHold and EventHoldDuration at the object level, and DefaultEventHoldDuration at the bucket level.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.114.0)
-&lt;ul&gt;
-&lt;li&gt;Add support for InstancePreferences list for multiple instance type input support on SageMaker Training and Processing&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;StringUtils.FromMemoryStream&lt;/code&gt; to always encode the entire stream contents regardless of the stream's current &lt;code&gt;Position&lt;/code&gt;, making it consistent with streams whose buffers are exposable&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

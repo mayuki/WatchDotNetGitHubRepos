@@ -1,66 +1,172 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-09-09T00:10:46Z</updated>
+  <updated>2026-09-10T00:10:23Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-09-08</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-09-08</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-09-09</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-09-09</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-09-09T00:10:46Z</updated>
+    <updated>2026-09-10T00:10:23Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ServiceNetworking_1.2.0"&gt;Azure.ResourceManager.ServiceNetworking_1.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.EventHubs_6.5.4"&gt;Microsoft.Azure.WebJobs.Extensions.EventHubs_6.5.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0 (2026-09-04)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h2&gt;6.5.4 (2026-09-09)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded API version to &lt;code&gt;2026-03-01&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added support for private frontends on Application Gateway for Containers, including the &lt;code&gt;PrivateEndpointConnectionResource&lt;/code&gt; and &lt;code&gt;PrivateLinkResource&lt;/code&gt; resources and the &lt;code&gt;PublicNetworkAccess&lt;/code&gt; property (of type &lt;code&gt;TrafficControllerPublicNetworkAccess&lt;/code&gt;) on &lt;code&gt;TrafficControllerFrontendData&lt;/code&gt; and &lt;code&gt;FrontendUpdateProperties&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Fixed an issue where the checkpoint store's &lt;code&gt;BlobServiceClient&lt;/code&gt; was constructed using the hard-coded &lt;code&gt;core.windows.net&lt;/code&gt; suffix when &lt;code&gt;AzureWebJobsStorage__accountName&lt;/code&gt; was set, even if an explicit &lt;code&gt;AzureWebJobsStorage__blobServiceUri&lt;/code&gt; was also present. The explicit &lt;code&gt;__blobServiceUri&lt;/code&gt; is now preferred over &lt;code&gt;__accountName&lt;/code&gt;, and an optional &lt;code&gt;__endpointSuffix&lt;/code&gt; setting is honored when constructing the URI from &lt;code&gt;__accountName&lt;/code&gt;. This unblocks Event Hub triggers that use managed-identity storage in sovereign clouds (e.g. Azure US Government, Azure China). (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/57543" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/57543/hovercard"&gt;#57543&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CloudHealth_1.0.0-beta.5"&gt;Azure.ResourceManager.CloudHealth_1.0.0-beta.5&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.5 (2026-09-04)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded API version to 2026-09-01-preview&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Invocations_1.0.0-beta.7"&gt;Azure.AI.AgentServer.Invocations_1.0.0-beta.7&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.7 (2026-09-03)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added application-owned target-turn tracing for Voice handlers.&lt;br&gt;
-&lt;code&gt;VoiceSession.StartTurn&lt;/code&gt; creates a mockable &lt;code&gt;VoiceTurnTrace&lt;/code&gt; parented to the&lt;br&gt;
-physical Voice connection; applications activate it around model/tool work and&lt;br&gt;
-complete it once with an immutable, content-free &lt;code&gt;VoiceTurnResult&lt;/code&gt;. The relay&lt;br&gt;
-does not infer target outcomes from sent messages or connection termination.&lt;/li&gt;
-&lt;li&gt;Added the experimental typed Voice Live Bridge Protocol 1.0 relay. &lt;code&gt;VoiceHandler&lt;/code&gt; dispatches&lt;br&gt;
-immutable inbound events, &lt;code&gt;VoiceSession.SendAsync&lt;/code&gt; serializes explicit outbound&lt;br&gt;
-messages, and &lt;code&gt;AddVoice&amp;lt;THandler&amp;gt;()&lt;/code&gt; / &lt;code&gt;VoiceServer.Run&amp;lt;THandler&amp;gt;()&lt;/code&gt; reuse the&lt;br&gt;
-existing &lt;code&gt;/invocations_ws&lt;/code&gt; transport without owning application lifecycle state.&lt;br&gt;
-Consumers acknowledge this preview surface with the &lt;code&gt;AAAS001&lt;/code&gt; diagnostic.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Core_1.0.0-beta.29"&gt;Azure.AI.AgentServer.Core_1.0.0-beta.29&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.29 (2026-09-08)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Released to provide the public &lt;code&gt;Azure.AI.AgentServer.Core&lt;/code&gt; dependency required by &lt;code&gt;Azure.AI.AgentServer.Invocations&lt;/code&gt; 1.0.0-beta.7.&lt;/li&gt;
+&lt;li&gt;Replaced scaling warning/error log calls with standardized &lt;code&gt;LogFunctionScaleWarning&lt;/code&gt; extension method to enable Scale Controller App Insights diagnostics.&lt;/li&gt;
+&lt;li&gt;Added a &lt;code&gt;net10.0&lt;/code&gt; target and updated .NET runtime dependencies to the 10.x line. The package now targets &lt;code&gt;net10.0&lt;/code&gt;, &lt;code&gt;net8.0&lt;/code&gt;, and &lt;code&gt;netstandard2.0&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Removed the direct &lt;code&gt;Microsoft.Extensions.Hosting&lt;/code&gt; package reference.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NewRelicObservability_1.2.0"&gt;Azure.ResourceManager.NewRelicObservability_1.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0 (2026-09-01)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded the service API version to &lt;code&gt;2026-06-01&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Monitor_1.0.0-beta.2"&gt;Azure.Provisioning.Monitor_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.2 (2026-09-09)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for diagnostic setting categories, service diagnostic settings, tenant action groups, VM Insights onboarding status, and additional private link resources.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed Monitor workspace and pipeline group resources because they are not part of the Microsoft.Insights TypeSpec project.&lt;/li&gt;
+&lt;li&gt;Removed beta-only compatibility aliases, legacy API-version constants, and the classic Alert Rule API that are not generated by the current TypeSpec specification.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Migrated the library from the reflection-based provisioning generator to the TypeSpec provisioning emitter.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.RedHatOpenShiftHcp_1.0.0-beta.1"&gt;Azure.ResourceManager.RedHatOpenShiftHcp_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-09-10)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;First beta release for API version 2026-09-01-preview.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Confluent_1.3.0-beta.2"&gt;Azure.ResourceManager.Confluent_1.3.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.3.0-beta.2 (2026-09-04)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded API version to v2026_06_02_preview.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded Azure.Core to 1.61.0.&lt;/li&gt;
+&lt;li&gt;Upgraded Azure.ResourceManager to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.MachineLearning_1.3.0"&gt;Azure.ResourceManager.MachineLearning_1.3.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.3.0 (2026-09-04)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded API version to 2026-07-01.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Corrected the &lt;code&gt;MachineLearnin*&lt;/code&gt; typo in registry component container and version resource and collection type names. The misspelled types remain available as hidden, obsolete compatibility shims.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.61.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerInstance_1.4.0"&gt;Azure.ResourceManager.ContainerInstance_1.4.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.4.0 (2026-09-04)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded API version to &lt;code&gt;2026-07-01&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.61.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DevOpsInfrastructure_1.1.0-beta.1"&gt;Azure.ResourceManager.DevOpsInfrastructure_1.1.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.1.0-beta.1 (2026-09-09)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded the API version to 2026-07-03-preview.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to 1.61.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.IotOperations_1.2.0"&gt;Azure.ResourceManager.IotOperations_1.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0 (2026-07-01)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;p&gt;Upgraded to api-version 2026-07-01:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;AkriServiceResource&lt;/code&gt; and its collection/operations for managing Akri services under an instance.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;AkriConnectorTemplateReadinessProbe&lt;/code&gt; support for connector template readiness probes.&lt;/li&gt;
+&lt;li&gt;Added high priority messages backpressure handling for broker configuration.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ResourceHealthStatus&lt;/code&gt; and status health state projections for resource health reporting.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.ServiceBus_5.18.0"&gt;Microsoft.Azure.WebJobs.Extensions.ServiceBus_5.18.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;5.18.0 (2026-09-09)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed a memory leak on the scale-only host path where &lt;code&gt;MessagingProvider&lt;/code&gt; and its cached &lt;code&gt;ServiceBusClient&lt;/code&gt;s were never disposed on host teardown. &lt;code&gt;AddServiceBusScaleForTrigger&lt;/code&gt; now forces construction of &lt;code&gt;CleanupService&lt;/code&gt;, which the DI container then disposes automatically, tearing down the cached clients and releasing their AMQP connections, CBS-refresh timers, and heartbeat timers. Previously these stayed registered on the process-wide static &lt;code&gt;TimerQueue&lt;/code&gt; for the life of the process, because a scale-only host (&lt;code&gt;ConfigureWebJobsScale&lt;/code&gt;) does not initialize &lt;code&gt;IExtensionConfigProvider&lt;/code&gt;s — the binding path's normal route into &lt;code&gt;CleanupService&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Fixed overly aggressive scale-out in &lt;code&gt;ServiceBusScaleMonitor&lt;/code&gt;. When queue time is increasing, the monitor now votes to scale out only once the most recent sample's queue latency reaches 2 seconds, matching Scale Controller V2 behavior. - AB#32302750&lt;/li&gt;
+&lt;li&gt;Fixed AMQP map key deserialization in the settlement path so that &lt;code&gt;AmqpSymbol&lt;/code&gt; keys use their underlying value rather than &lt;code&gt;ToString()&lt;/code&gt;. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4808145859" data-permission-text="Title is private" data-url="https://github.com/Azure/azure-sdk-for-net/issues/60653" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/60653/hovercard" href="https://github.com/Azure/azure-sdk-for-net/pull/60653"&gt;#60653&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed a log message in &lt;code&gt;ServiceBusMetricsProvider&lt;/code&gt; that was missing string interpolation and emitted literal placeholder text instead of the entity type and path. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4846766704" data-permission-text="Title is private" data-url="https://github.com/Azure/azure-sdk-for-net/issues/60818" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/60818/hovercard" href="https://github.com/Azure/azure-sdk-for-net/pull/60818"&gt;#60818&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Replaced scaling warning/error log calls with standardized &lt;code&gt;LogFunctionScaleWarning&lt;/code&gt; extension method to enable Scale Controller App Insights diagnostics.&lt;/li&gt;
+&lt;li&gt;Added diagnostic logging for the two paths where &lt;code&gt;ServiceBusScaleMonitor&lt;/code&gt; votes to not scale without explanation — no metrics available, and fewer metric samples than required for a scale decision — along with metric value logging in &lt;code&gt;ServiceBusMetricsProvider&lt;/code&gt;. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4846766704" data-permission-text="Title is private" data-url="https://github.com/Azure/azure-sdk-for-net/issues/60818" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/60818/hovercard" href="https://github.com/Azure/azure-sdk-for-net/pull/60818"&gt;#60818&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added a &lt;code&gt;net10.0&lt;/code&gt; target and updated .NET runtime dependencies to the 10.x line. The package now targets &lt;code&gt;net10.0&lt;/code&gt;, &lt;code&gt;net8.0&lt;/code&gt;, and &lt;code&gt;netstandard2.0&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Removed the direct &lt;code&gt;Microsoft.Extensions.Hosting&lt;/code&gt; package reference.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
