@@ -1,6 +1,111 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>open-telemetry/opentelemetry-dotnet-contrib - Releases</title>
   <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-  <updated>2026-09-10T00:10:43Z</updated>
+  <updated>2026-09-11T00:11:18Z</updated>
   <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib</id>
+  <entry>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-09-10</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-09-10</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2026-09-11T00:11:18Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.ServiceFabricRemoting-1.18.0-beta.2"&gt;Instrumentation.ServiceFabricRemoting-1.18.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.ServiceFabricRemoting/1.18.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.ServiceFabricRemoting v1.18.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for registering custom Service Fabric exception convertors, so&lt;br&gt;
+that applications can propagate their own exception types across remoting&lt;br&gt;
+calls while still being instrumented. Service Fabric SDK 8 (runtime 11) no&lt;br&gt;
+longer enables the &lt;code&gt;BinaryFormatter&lt;/code&gt; fallback for exception serialization by&lt;br&gt;
+default, and SDK 9 removes it altogether, so an exception without a&lt;br&gt;
+registered convertor reaches the client as a &lt;code&gt;ServiceException&lt;/code&gt;.&lt;br&gt;
+&lt;code&gt;TraceContextEnrichedServiceRemotingProviderAttribute&lt;/code&gt; and&lt;br&gt;
+&lt;code&gt;TraceContextEnrichedActorRemotingProviderAttribute&lt;/code&gt; are no longer sealed and&lt;br&gt;
+expose &lt;code&gt;GetServiceExceptionConvertors()&lt;/code&gt; / &lt;code&gt;GetClientExceptionConvertors()&lt;/code&gt;&lt;br&gt;
+for this purpose. A &lt;code&gt;RemotingExceptionDepth&lt;/code&gt; property was also added to&lt;br&gt;
+control how many levels of inner exceptions are serialized.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5166" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5166/hovercard"&gt;#5166&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.ServiceFabricRemoting-1.18.0-beta.2/src/OpenTelemetry.Instrumentation.ServiceFabricRemoting/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.Azure-1.18.0-beta.2"&gt;Resources.Azure-1.18.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.Azure/1.18.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Resources.Azure v1.18.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Add &lt;code&gt;cloud.account.id&lt;/code&gt; and &lt;code&gt;azure.resource_group.name&lt;/code&gt; attributes to the Azure App Service resource detector.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5138" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5138/hovercard"&gt;#5138&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated the following values for the &lt;code&gt;cloud.platform&lt;/code&gt; attribute to comply with v1.43.0 of the OpenTelemetry Semantic Conventions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;azure_app_service&lt;/code&gt; to &lt;code&gt;azure.app_service&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;azure_container_apps&lt;/code&gt; to &lt;code&gt;azure.container_apps&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;azure_vm&lt;/code&gt; to &lt;code&gt;azure.vm&lt;/code&gt;&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5143" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5143/hovercard"&gt;#5143&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Log an event when a resource detector does not detect any attributes because none of the environment variables that identify the platform are set.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5169" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5169/hovercard"&gt;#5169&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Skip Azure VM resource detection on Azure App Service to prevent unnecessary requests to the Azure Instance Metadata Service.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5167" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5167/hovercard"&gt;#5167&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.Azure-1.18.0-beta.2/src/OpenTelemetry.Resources.Azure/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.AWS-1.18.1"&gt;Resources.AWS-1.18.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.AWS/1.18.1" rel="nofollow"&gt;OpenTelemetry.Resources.AWS v1.18.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;host.image.id&lt;/code&gt; resource attribute to &lt;code&gt;AWSEC2Detector&lt;/code&gt;, populated from the EC2 instance identity document's &lt;code&gt;imageId&lt;/code&gt; (AMI ID).&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5110" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5110/hovercard"&gt;#5110&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.AWS-1.18.1/src/OpenTelemetry.Resources.AWS/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.StackExchangeRedis-1.18.0-beta.2"&gt;Instrumentation.StackExchangeRedis-1.18.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.StackExchangeRedis/1.18.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.StackExchangeRedis v1.18.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed race condition that could orphan &lt;code&gt;ProfilingSession&lt;/code&gt; when instantiated&lt;br&gt;
+for the same trace concurrently.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5117" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5117/hovercard"&gt;#5117&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.StackExchangeRedis-1.18.0-beta.2/src/OpenTelemetry.Instrumentation.StackExchangeRedis/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

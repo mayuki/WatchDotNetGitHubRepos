@@ -1,6 +1,121 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/SqlClient - Releases</title>
   <link href="https://github.com/dotnet/SqlClient" />
-  <updated>2026-09-10T00:10:33Z</updated>
+  <updated>2026-09-11T00:11:04Z</updated>
   <id>https://github.com/dotnet/SqlClient</id>
+  <entry>
+    <title>dotnet/SqlClient - Releases - 2026-09-10</title>
+    <id>https://github.com/dotnet/SqlClient#2026-09-10</id>
+    <link href="https://github.com/dotnet/SqlClient" />
+    <updated>2026-09-11T00:11:04Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/SqlClient/releases/tag/v6.1.7"&gt;Stable Release v6.1.7&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This update brings the following changes since the &lt;a href="/dotnet/SqlClient/blob/v6.1.7/6.1.6.md"&gt;6.1.6&lt;/a&gt; release:&lt;/p&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the &lt;code&gt;Microsoft.Data.SqlClient.SNI&lt;/code&gt; and &lt;code&gt;Microsoft.Data.SqlClient.SNI.runtime&lt;/code&gt; dependencies to 6.0.3 (was 6.0.2).&lt;br&gt;
+(&lt;a href="https://github.com/dotnet/SqlClient/pull/4598" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4598/hovercard"&gt;#4598&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed &lt;code&gt;ServerCertificate&lt;/code&gt; validation on the managed SNI path so the configured certificate is compared against the server certificate even when the server certificate passes chain and host-name validation. When certificate validation is enabled, a missing, unreadable, or invalid certificate file, a certificate mismatch, or a missing server certificate now causes the TLS handshake to fail instead of bypassing the configured certificate check. (net8.0/net9.0 only)&lt;br&gt;
+(&lt;a href="https://github.com/dotnet/SqlClient/pull/4445" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4445/hovercard"&gt;#4445&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4584" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4584/hovercard"&gt;#4584&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed Always Encrypted VSM/HGS enclave attestation to verify that the enclave public key used to establish a session matches the key committed to by the signed attestation report. Missing, malformed, or mismatched key-binding data now causes attestation to fail before the session secret is derived.&lt;br&gt;
+(&lt;a href="https://github.com/dotnet/SqlClient/pull/4532" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4532/hovercard"&gt;#4532&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4552" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4552/hovercard"&gt;#4552&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed &lt;code&gt;SqlConnection.AccessTokenCallback&lt;/code&gt; not disabling Transparent Network IP Resolution by default, making it consistent with &lt;code&gt;SqlConnection.AccessToken&lt;/code&gt;. An explicitly configured &lt;code&gt;TransparentNetworkIPResolution&lt;/code&gt; connection-string value still takes precedence. (net462 only)&lt;br&gt;
+(&lt;a href="https://github.com/dotnet/SqlClient/pull/4520" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4520/hovercard"&gt;#4520&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4560" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4560/hovercard"&gt;#4560&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed token authentication state handling so clearing &lt;code&gt;SqlConnection.AccessToken&lt;/code&gt; preserves an existing &lt;code&gt;AccessTokenCallback&lt;/code&gt; in the connection pool key, and clearing &lt;code&gt;AccessTokenCallback&lt;/code&gt; preserves an existing &lt;code&gt;AccessToken&lt;/code&gt;. Callback-based authentication now also follows the same prelogin server-certificate validation rules as an explicitly supplied access token.&lt;br&gt;
+(&lt;a href="https://github.com/dotnet/SqlClient/pull/4520" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4520/hovercard"&gt;#4520&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4560" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4560/hovercard"&gt;#4560&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed configurable retry logic installing a permanent, process-wide assembly-resolution handler that could interfere with unrelated assembly loading. The handler is now active only while an explicitly configured custom retry provider is resolved and constructed, and probes &lt;code&gt;AppContext.BaseDirectory&lt;/code&gt; instead of the current working directory. Place custom retry assemblies in the application base directory; dependencies loaded after provider construction must be resolvable through normal application dependency resolution or an application-provided handler. (net8.0/net9.0 only)&lt;br&gt;
+(&lt;a href="https://github.com/dotnet/SqlClient/issues/2214" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/2214/hovercard"&gt;#2214&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4547" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4547/hovercard"&gt;#4547&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4664" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4664/hovercard"&gt;#4664&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Target Platform Support&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;.NET Framework 4.6.2+ (Windows x86, Windows x64, Windows ARM64)&lt;/li&gt;
+&lt;li&gt;.NET 8.0+ (Windows x86, Windows x64, Windows ARM64, Linux, macOS)&lt;/li&gt;
+&lt;li&gt;.NET Standard 2.0+ (Windows x86, Windows x64, Windows ARM64, Linux, macOS)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Full details: &lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/6.1/6.1.7.md"&gt;release-notes/6.1/6.1.7.md&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/SqlClient/releases/tag/v7.0.3"&gt;Stable Release v7.0.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This update brings the following changes since the &lt;a href="/dotnet/SqlClient/blob/v7.0.3/7.0.2.md"&gt;7.0.2&lt;/a&gt; release:&lt;/p&gt;
+&lt;p&gt;The core driver and its companion packages ship together as version &lt;code&gt;7.0.3&lt;/code&gt;. Update the companion packages you use alongside the driver to &lt;code&gt;7.0.3&lt;/code&gt;. Assembly versions remain &lt;code&gt;7.0.0.0&lt;/code&gt;, unchanged from &lt;code&gt;7.0.2&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;Companion package release notes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/dotnet/SqlClient/blob/add-ons/AzureKeyVaultProvider/7.0/7.0.3.md"&gt;Microsoft.Data.SqlClient.AlwaysEncrypted.AzureKeyVaultProvider 7.0.3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/dotnet/SqlClient/blob/Extensions/Azure/7.0/7.0.3.md"&gt;Microsoft.Data.SqlClient.Extensions.Azure 7.0.3&lt;/a&gt; — includes the Entra ID authority parsing fix for Dataverse/Dynamics 365 connections.&lt;/li&gt;
+&lt;li&gt;&lt;a href="/dotnet/SqlClient/blob/Extensions/Abstractions/7.0/7.0.3.md"&gt;Microsoft.Data.SqlClient.Extensions.Abstractions 7.0.3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/dotnet/SqlClient/blob/Internal/Logging/7.0/7.0.3.md"&gt;Microsoft.Data.SqlClient.Internal.Logging 7.0.3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the &lt;code&gt;Microsoft.Data.SqlClient.SNI&lt;/code&gt; and &lt;code&gt;Microsoft.Data.SqlClient.SNI.runtime&lt;/code&gt; dependencies to 6.0.3 (was 6.0.2).&lt;br&gt;
+(&lt;a href="https://github.com/dotnet/SqlClient/pull/4599" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4599/hovercard"&gt;#4599&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed a &lt;code&gt;SqlBulkCopy&lt;/code&gt; regression in environments where the application login cannot read &lt;code&gt;sys.all_columns&lt;/code&gt;. Bulk copy now falls back to the earlier column-discovery behavior when that permission is unavailable. Support for hidden columns and SQL Graph column aliases still requires access to the metadata view.&lt;br&gt;
+(&lt;a href="https://github.com/dotnet/SqlClient/issues/4370" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4370/hovercard"&gt;#4370&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4306" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4306/hovercard"&gt;#4306&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4402" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4402/hovercard"&gt;#4402&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed a memory-allocation regression in connection and command operations caused by formatting diagnostic strings even when tracing was disabled. Also corrected trace messages that reported an incorrect object ID or could throw &lt;code&gt;FormatException&lt;/code&gt; when traced values contained braces.&lt;br&gt;
+(&lt;a href="https://github.com/dotnet/SqlClient/pull/4528" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4528/hovercard"&gt;#4528&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4533" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4533/hovercard"&gt;#4533&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed &lt;code&gt;ServerCertificate&lt;/code&gt; validation on the managed SNI path so the configured certificate is compared against the server certificate even when the server certificate passes chain and host-name validation. When certificate validation is enabled, a missing, unreadable, or invalid certificate file, a certificate mismatch, or a missing server certificate now causes the TLS handshake to fail instead of bypassing the configured certificate check. (net8.0/net9.0 only)&lt;br&gt;
+(&lt;a href="https://github.com/dotnet/SqlClient/pull/4445" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4445/hovercard"&gt;#4445&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4583" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4583/hovercard"&gt;#4583&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed Always Encrypted VSM/HGS enclave attestation to verify that the enclave public key used to establish a session matches the key committed to by the signed attestation report. Missing, malformed, or mismatched key-binding data now causes attestation to fail before the session secret is derived.&lt;br&gt;
+(&lt;a href="https://github.com/dotnet/SqlClient/pull/4532" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4532/hovercard"&gt;#4532&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4553" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4553/hovercard"&gt;#4553&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed &lt;code&gt;SqlConnection.AccessTokenCallback&lt;/code&gt; not disabling Transparent Network IP Resolution by default, making it consistent with &lt;code&gt;SqlConnection.AccessToken&lt;/code&gt;. An explicitly configured &lt;code&gt;TransparentNetworkIPResolution&lt;/code&gt; connection-string value still takes precedence. (net462 only)&lt;br&gt;
+(&lt;a href="https://github.com/dotnet/SqlClient/pull/4520" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4520/hovercard"&gt;#4520&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4561" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4561/hovercard"&gt;#4561&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed authentication state handling so clearing &lt;code&gt;SqlConnection.AccessToken&lt;/code&gt;, &lt;code&gt;AccessTokenCallback&lt;/code&gt;, or &lt;code&gt;SspiContextProvider&lt;/code&gt; preserves the other authentication values in the connection pool key. Cloning a connection or updating its credential also preserves its &lt;code&gt;SspiContextProvider&lt;/code&gt;. Combining a non-null &lt;code&gt;SspiContextProvider&lt;/code&gt; with &lt;code&gt;AccessToken&lt;/code&gt; or &lt;code&gt;AccessTokenCallback&lt;/code&gt; now throws &lt;code&gt;InvalidOperationException&lt;/code&gt; instead of silently discarding authentication state; applications must use one authentication mechanism at a time.&lt;br&gt;
+(&lt;a href="https://github.com/dotnet/SqlClient/pull/4520" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4520/hovercard"&gt;#4520&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4561" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4561/hovercard"&gt;#4561&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4644" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4644/hovercard"&gt;#4644&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed configurable retry logic installing a permanent, process-wide assembly-resolution handler that could interfere with unrelated assembly loading. The handler is now active only while an explicitly configured custom retry provider is resolved and constructed, and probes &lt;code&gt;AppContext.BaseDirectory&lt;/code&gt; instead of the current working directory. Place custom retry assemblies in the application base directory; dependencies loaded after provider construction must be resolvable through normal application dependency resolution or an application-provided handler. (net8.0/net9.0 only)&lt;br&gt;
+(&lt;a href="https://github.com/dotnet/SqlClient/issues/2214" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/2214/hovercard"&gt;#2214&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4547" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4547/hovercard"&gt;#4547&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4663" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4663/hovercard"&gt;#4663&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;We thank the following public contributors. Their efforts toward this project are very much appreciated.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/edwardneal"&gt;edwardneal&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Target Platform Support&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;.NET Framework 4.6.2+ (Windows x86, Windows x64, Windows ARM64)&lt;/li&gt;
+&lt;li&gt;.NET 8.0+ (Windows x86, Windows x64, Windows ARM, Windows ARM64, Linux, macOS)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Full details: &lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/7.0/7.0.3.md"&gt;release-notes/7.0/7.0.3.md&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
