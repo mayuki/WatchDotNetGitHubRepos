@@ -1,6 +1,58 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2026-09-11T00:11:07Z</updated>
+  <updated>2026-09-12T00:10:13Z</updated>
   <id>https://github.com/grpc/grpc</id>
+  <entry>
+    <title>grpc/grpc - Releases - 2026-09-11</title>
+    <id>https://github.com/grpc/grpc#2026-09-11</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2026-09-12T00:10:13Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.84.0"&gt;Release v1.84.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release 1.84.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;gimbal&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[promise_based_filter] enable v2_non_owning_waker_implementation experiment. (&lt;a href="https://github.com/grpc/grpc/pull/43253" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43253/hovercard"&gt;#43253&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[xDS] allow server listener address to match wildcard port. (&lt;a href="https://github.com/grpc/grpc/pull/43247" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43247/hovercard"&gt;#43247&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[WRR] remove env var guard for custom backend metrics. (&lt;a href="https://github.com/grpc/grpc/pull/43198" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43198/hovercard"&gt;#43198&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[subchannel] enable connection scaling service config fields. (&lt;a href="https://github.com/grpc/grpc/pull/43116" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43116/hovercard"&gt;#43116&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[subchannel] add metrics as per A94. (&lt;a href="https://github.com/grpc/grpc/pull/43140" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43140/hovercard"&gt;#43140&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix incorrect hostname suffix matching in no_proxy handling (prevents proxy bypass). (&lt;a href="https://github.com/grpc/grpc/pull/41915" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41915/hovercard"&gt;#41915&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C#&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[C# Grpc.Tools] Add native macOS ARM64 support via universal binaries. (&lt;a href="https://github.com/grpc/grpc/pull/41222" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41222/hovercard"&gt;#41222&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Python] Fix -Werror=unused-result error triggered by Cythonized code. (&lt;a href="https://github.com/grpc/grpc/pull/43313" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43313/hovercard"&gt;#43313&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Release Python 3.15 wheels publicly. (&lt;a href="https://github.com/grpc/grpc/pull/43259" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43259/hovercard"&gt;#43259&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python][AsyncIO] Fixed reference cycles. (&lt;a href="https://github.com/grpc/grpc/pull/43121" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43121/hovercard"&gt;#43121&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] fix: remove ghost key in grpc.aio.Metadata.&lt;strong&gt;delitem&lt;/strong&gt; when last value is deleted. (&lt;a href="https://github.com/grpc/grpc/pull/42974" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42974/hovercard"&gt;#42974&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Fix the StatusCode Enums to be int. (&lt;a href="https://github.com/grpc/grpc/pull/43167" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43167/hovercard"&gt;#43167&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Fixed the parenthesis placement. (&lt;a href="https://github.com/grpc/grpc/pull/43111" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43111/hovercard"&gt;#43111&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Removed &lt;code&gt;UsageError&lt;/code&gt; exception from registered method. (&lt;a href="https://github.com/grpc/grpc/pull/43086" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43086/hovercard"&gt;#43086&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Added registered methods support in AsyncIO stack . (&lt;a href="https://github.com/grpc/grpc/pull/41796" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41796/hovercard"&gt;#41796&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] AIO Part 4 - Typehints fixes and add Pyright for aio/_channel.py. (&lt;a href="https://github.com/grpc/grpc/pull/42736" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42736/hovercard"&gt;#42736&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] grpc-status: Relax protobuf dependency lower bound to allow 6.x. (&lt;a href="https://github.com/grpc/grpc/pull/43000" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43000/hovercard"&gt;#43000&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Observability plugin fixes. (&lt;a href="https://github.com/grpc/grpc/pull/42785" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42785/hovercard"&gt;#42785&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Pyright strict mode. (&lt;a href="https://github.com/grpc/grpc/pull/42845" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42845/hovercard"&gt;#42845&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ruby&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Ruby] Fix: Addressed Array of strings passed as metadata. (&lt;a href="https://github.com/grpc/grpc/pull/42827" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42827/hovercard"&gt;#42827&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

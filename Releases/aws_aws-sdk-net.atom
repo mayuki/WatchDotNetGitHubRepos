@@ -1,79 +1,49 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-09-11T00:10:50Z</updated>
+  <updated>2026-09-12T00:09:58Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-09-10</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-09-10</id>
+    <title>aws/aws-sdk-net - Releases - 2026-09-11</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-09-11</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-09-11T00:10:50Z</updated>
+    <updated>2026-09-12T00:09:58Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.331.0"&gt;4.0.331.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.332.0"&gt;4.0.332.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.331.0 (2026-09-10 18:14 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.332.0 (2026-09-11 18:15 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;BedrockAgent (4.0.102.0)
+&lt;li&gt;Batch (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;TwelveLabs Marengo 3.0 is now an embedding model option in Amazon Bedrock Managed Knowledge Base. Create multimodal embeddings for video, audio, and image content that capture visual scenes, speech, and video cues, not just transcribed text.&lt;/li&gt;
+&lt;li&gt;Added new bulk job APIs (CancelJobs, TerminateJobs, TerminateServiceJobs) and new fields on ListJobs and ListServiceJobs responses. This allows customers to cancel or terminate multiple jobs in a single request. ListJobs and ListServiceJobs responses now include isCancelled and isTerminated fields.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ConnectContactLens (4.0.101.3)
+&lt;li&gt;ECS (4.0.105.0)
 &lt;ul&gt;
-&lt;li&gt;ConnectContactLens is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;This feature adds support for setting the cpu architecture type that should be used to launch tasks for an Express Gateway Service.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.120.0)
+&lt;li&gt;Invoicing (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;The CreateImage API now supports a BootModeOverride parameter to explicitly set UEFI boot mode on a new AMI, overriding the source instance's inherited boot mode.&lt;/li&gt;
+&lt;li&gt;Add ListProcurementPortals and ListProcurementPortalSuppliers APIs to retrieve AWS-supported 3rd party procurement portals and their suppliers for e-invoice delivery and purchase order retrieval.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GeoMaps (4.0.101.6)
+&lt;li&gt;Lightsail (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;GeoMaps is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Amazon Lightsail now lets you serve website content from a private Lightsail bucket through a Lightsail distribution. This release adds enablePrivateOriginAccess to the CreateDistribution and UpdateDistribution actions, plus new defaultRootObject and customErrorResponses options.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IAMToolbox (4.0.100.3)
+&lt;li&gt;MediaConvert (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;IAMToolbox is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Adds Dolby Vision metadata to Probe results, including profile, level, and presence of the RPU, base layer, and enhancement layer. Adds video sample and display aspect ratios. Adds the UnprocessableEntityException (HTTP 422) error to Probe for recognized but malformed or corrupt inputs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Outposts (4.0.104.0)
+&lt;li&gt;S3 (4.0.103.2)
 &lt;ul&gt;
-&lt;li&gt;Added fields to identify Outpost generation and rack scaling configuration on Outpost and CatalogItem resources.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;PricingPlanManager (4.0.100.7)
-&lt;ul&gt;
-&lt;li&gt;PricingPlanManager is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Resiliencehubv2 (4.0.103.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds the ListTestRunSourceEvents and ListTestRunDependencies APIs, which return the alarm state changes during a test run and the dependencies the run blocked.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;RTBFabric (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;AWS RTB Fabric now lets you control how traffic is routed to your responder gateway across Availability Zones. Set the new clientRoutingPolicy parameter  to keep traffic within the same Availability Zone or distribute traffic across all Availability Zones.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.115.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds the ability for customers to attach customer owned Elastic Network Interfaces (ENIs) to HyperPod cluster nodes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMakerFeatureStoreRuntime (4.0.101.3)
-&lt;ul&gt;
-&lt;li&gt;SageMakerFeatureStoreRuntime is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.0.102.5
-&lt;ul&gt;
-&lt;li&gt;Reduced allocations in the clock skew correction pipeline by avoiding boxing of TimeSpan values and repeated Uri.ToString() calls for the request endpoint.&lt;/li&gt;
+&lt;li&gt;Updated S3 Object Lock Default Retention documentation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
