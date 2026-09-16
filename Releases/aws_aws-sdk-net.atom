@@ -1,108 +1,39 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-09-15T00:10:36Z</updated>
+  <updated>2026-09-16T00:09:46Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-09-14</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-09-14</id>
+    <title>aws/aws-sdk-net - Releases - 2026-09-15</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-09-15</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-09-15T00:10:36Z</updated>
+    <updated>2026-09-16T00:09:46Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.333.0"&gt;4.0.333.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.334.0"&gt;4.0.334.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.333.0 (2026-09-14 19:02 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.334.0 (2026-09-15 18:15 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AgentRegistry (4.0.102.3)
+&lt;li&gt;BedrockAgentCoreControl (4.0.115.0)
 &lt;ul&gt;
-&lt;li&gt;AgentRegistry is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Amazon Bedrock AgentCore Runtime now supports specifying the platform version of an agent runtime through the new platformVersion field on CreateAgentRuntime, UpdateAgentRuntime, and GetAgentRuntime.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AgentRegistryControl (4.0.101.3)
+&lt;li&gt;DirectConnect (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;AgentRegistryControl is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;AWS Direct Connect is introducing flat-rate pricing, a simplified billing model that gives you a fixed monthly price for dedicated connectivity with no per-gigabyte data transfer out charges within the selected pricing tier.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Billing (4.0.103.0)
+&lt;li&gt;Transfer (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Increased the maximum number of services returned in the supportEligibleSpendByService field of ListEnterpriseSupportLinkedAccountCharges&lt;/li&gt;
+&lt;li&gt;AWS Transfer Family now preserves the original source IP address using Proxy Protocol v2 when you place a Network Load Balancer in front of your server for SFTP connections.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BillingConductor (4.0.101.0)
+&lt;li&gt;WorkSpaces (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for custom volume tiering. You can now define custom tiers on a pricing rule's tiering configuration, where each tier specifies a usage range and the rate applied to usage in that range.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CodeDeploy (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;AWS CodeDeploy now returns the deployment mode on GetDeployment and BatchGetDeployments. The new deploymentMode field on DeploymentInfo indicates whether a deployment used the standard deployment process or restarted the application using a previously installed revision (RESTART mode).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DSQL (4.0.103.3)
-&lt;ul&gt;
-&lt;li&gt;DSQL is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;li&gt;Exception properties bound to HTTP response headers (such as &lt;code&gt;ThrottlingException.RetryAfterSeconds&lt;/code&gt;) are now populated. Previously they were always null because the value was read from the response body instead of the header.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ElementalInference (4.0.105.1)
-&lt;ul&gt;
-&lt;li&gt;ElementalInference is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Glue (4.0.105.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon Glue releasing the new API ListIntegrationTableProperties and adding IntegrationArn to TargetTableConfig&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Imagebuilder (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds a dryRun option to Image Builder create APIs (except CreateImage), structured failure context on failed images including component and distribution failure details, and step retry attempt tracking.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Kafka (4.0.103.3)
-&lt;ul&gt;
-&lt;li&gt;Kafka is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;LaunchWizard (4.0.101.3)
-&lt;ul&gt;
-&lt;li&gt;LaunchWizard is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MediaConvert (4.0.104.1)
-&lt;ul&gt;
-&lt;li&gt;MediaConvert is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MWAA (4.0.101.3)
-&lt;ul&gt;
-&lt;li&gt;MWAA is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ObservabilityAdmin (4.0.104.6)
-&lt;ul&gt;
-&lt;li&gt;ObservabilityAdmin is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;li&gt;Exception properties bound to HTTP response headers (such as &lt;code&gt;ThrottlingException.RetryAfterSeconds&lt;/code&gt;) are now populated. Previously they were always null because the value was read from the response body instead of the header.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SecurityToken (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Increases the maximum session token size to 4,096 bytes and removes the packed policy size limit. Adds SessionTokenSize and SessionTokenUtilization fields and a new MinimumSessionTokenSize parameter. PackedPolicySize is deprecated.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;VPCLattice (4.0.101.5)
-&lt;ul&gt;
-&lt;li&gt;VPCLattice is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;li&gt;Exception properties bound to HTTP response headers (such as &lt;code&gt;ThrottlingException.RetryAfterSeconds&lt;/code&gt;) are now populated. Previously they were always null because the value was read from the response body instead of the header.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.0.102.6
-&lt;ul&gt;
-&lt;li&gt;Added MinimumSessionTokenSize to AssumeRoleAWSCredentialsOptions for AssumeRole credential requests.&lt;/li&gt;
-&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Added support for 4 new graphics-optimized compute types - Graphics.g7 (2xlarge, 4xlarge, 8xlarge, 12xlarge).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

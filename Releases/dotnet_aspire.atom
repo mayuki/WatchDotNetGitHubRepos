@@ -1,6 +1,49 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/aspire - Releases</title>
   <link href="https://github.com/dotnet/aspire" />
-  <updated>2026-09-15T00:10:43Z</updated>
+  <updated>2026-09-16T00:09:49Z</updated>
   <id>https://github.com/dotnet/aspire</id>
+  <entry>
+    <title>dotnet/aspire - Releases - 2026-09-15</title>
+    <id>https://github.com/dotnet/aspire#2026-09-15</id>
+    <link href="https://github.com/dotnet/aspire" />
+    <updated>2026-09-16T00:09:49Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.5.4"&gt;Aspire 13.5.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's New in Aspire 13.5.4&lt;/h2&gt;
+&lt;p&gt;Patch release for Aspire 13.5 that fixes Kafka health-check resource leaks, DevTunnel errors with automatically selected regions, misleading Azure emulator dashboard entries, and unintended changes to generated starter apps, plus Homebrew compatibility and Radius API diagnostic updates.&lt;/p&gt;
+&lt;h3&gt;🐛 Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;📨 &lt;strong&gt;Kafka health checks leaked producers and polling threads&lt;/strong&gt; — Each AppHost health-check execution created a new Kafka producer without disposing it, accumulating background threads over time. Health checks now reuse a producer per Kafka resource and dispose it with the AppHost, while keeping multiple Kafka resources independently configured. Fixes &lt;a href="https://github.com/microsoft/aspire/issues/20091" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/20091/hovercard"&gt;#20091&lt;/a&gt;. (&lt;a href="https://github.com/microsoft/aspire/pull/20094" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20094/hovercard"&gt;#20094&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20092" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20092/hovercard"&gt;#20092&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/davidfowl/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/davidfowl"&gt;David Fowler (@davidfowl)&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🌐 &lt;strong&gt;DevTunnels could fail when the region was selected automatically&lt;/strong&gt; — Tunnel setup and health checks now use the cluster-qualified tunnel ID returned by the DevTunnel CLI for port operations and access queries. This fixes failures when a bare tunnel ID cannot be resolved for those operations. Regression introduced in 13.3. Fixes &lt;a href="https://github.com/microsoft/aspire/issues/18790" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/18790/hovercard"&gt;#18790&lt;/a&gt;. (&lt;a href="https://github.com/microsoft/aspire/pull/19853" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/19853/hovercard"&gt;#19853&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/19230" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/19230/hovercard"&gt;#19230&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Vladipz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Vladipz"&gt;Vladyslav Danilchuk (@Vladipz)&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;☁️ &lt;strong&gt;Emulator-only AppHosts showed an unused Azure environment&lt;/strong&gt; — The dashboard now hides the &lt;code&gt;azure-environment&lt;/code&gt; resource when no Azure resources require cloud provisioning, instead of leaving it visible in &lt;strong&gt;Not started&lt;/strong&gt;. It remains visible for apps that combine local emulators with resources requiring Azure provisioning. No AppHost changes are needed. Fixes &lt;a href="https://github.com/microsoft/aspire/issues/19617" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/19617/hovercard"&gt;#19617&lt;/a&gt;. (&lt;a href="https://github.com/microsoft/aspire/pull/19998" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/19998/hovercard"&gt;#19998&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/19843" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/19843/hovercard"&gt;#19843&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/eerhardt/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/eerhardt"&gt;Eric Erhardt (@eerhardt)&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🧩 &lt;strong&gt;Starter app generation could alter unrelated JavaScript values&lt;/strong&gt; — Dynamic port replacement could also replace matching numeric literals in bundled JavaScript, including Bootstrap timing values. Port substitutions are now restricted to &lt;code&gt;localhost:&lt;/code&gt; URLs, preserving the original library files while still configuring the requested ports. Fixes &lt;a href="https://github.com/microsoft/aspire/issues/20030" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/20030/hovercard"&gt;#20030&lt;/a&gt;. (&lt;a href="https://github.com/microsoft/aspire/pull/20110" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20110/hovercard"&gt;#20110&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20031" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20031/hovercard"&gt;#20031&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/bart-vmware/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/bart-vmware"&gt;Bart Koelman (@bart-vmware)&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;James Newton-King (@JamesNK)&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🍎 &lt;strong&gt;Updated the Aspire Homebrew cask for Homebrew 6.x&lt;/strong&gt; — Replaced deprecated cask URL and post-install syntax with the supported equivalents, resolving compatibility issues with current Homebrew while preserving install-channel metadata. (&lt;a href="https://github.com/microsoft/aspire/pull/20119" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20119/hovercard"&gt;#20119&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/19965" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/19965/hovercard"&gt;#19965&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/askpt/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/askpt"&gt;André Silva (@askpt)&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/joperezr/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/joperezr"&gt;Jose Perez Rodriguez (@joperezr)&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🧪 &lt;strong&gt;Radius cloud-provider callback interfaces now carry the experimental diagnostic&lt;/strong&gt; — &lt;code&gt;IAwsRadiusProviderBuilder&lt;/code&gt; and &lt;code&gt;IAzureRadiusProviderBuilder&lt;/code&gt; are now marked with &lt;code&gt;ASPIRERADIUS003&lt;/code&gt;, matching the existing &lt;code&gt;WithAwsProvider&lt;/code&gt; and &lt;code&gt;WithAzureProvider&lt;/code&gt; methods. Code referencing these interfaces directly must now acknowledge the same experimental API diagnostic. (&lt;a href="https://github.com/microsoft/aspire/pull/19874" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/19874/hovercard"&gt;#19874&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/sebastienros/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/sebastienros"&gt;Sébastien Ros (@sebastienros)&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a href="https://github.com/microsoft/aspire/compare/v13.5.3...v13.5.4"&gt;v13.5.3...v13.5.4&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/9c1b401dd67746739044f68959cbf4d3d7af93a6"&gt;9c1b401dd67746739044f68959cbf4d3d7af93a6&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
