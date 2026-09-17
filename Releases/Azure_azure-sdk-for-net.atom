@@ -1,67 +1,154 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-09-16T00:09:46Z</updated>
+  <updated>2026-09-17T00:09:33Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-09-15</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-09-15</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-09-16</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-09-16</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-09-16T00:09:46Z</updated>
+    <updated>2026-09-17T00:09:33Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Compute.BulkActions_1.2.0-beta.3"&gt;Azure.ResourceManager.Compute.BulkActions_1.2.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Monitor.OpenTelemetry.Exporter_1.10.0-beta.1"&gt;Azure.Monitor.OpenTelemetry.Exporter_1.10.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.3 (2026-09-15)&lt;/h2&gt;
+                                &lt;h2&gt;1.10.0-beta.1 (2026-09-16)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;LocationBasedBulkCreateResource&lt;/code&gt;, &lt;code&gt;LocationBasedBulkCreateData&lt;/code&gt;, and &lt;code&gt;LocationBasedBulkCreateCollection&lt;/code&gt;, along with the &lt;code&gt;GetLocationBasedBulkCreate&lt;/code&gt;, &lt;code&gt;GetLocationBasedBulkCreates&lt;/code&gt;, and &lt;code&gt;GetLocationBasedBulkCreateResource&lt;/code&gt; accessors.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;BulkCreateProperties&lt;/code&gt; and &lt;code&gt;BulkCreateVmSizeProfile&lt;/code&gt; models.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;GetBulkCreateAsyncOperationStatus&lt;/code&gt; for polling the status of a bulk create operation.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enable AOT compatibility validation for Azure Monitor OpenTelemetry Exporter&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/62850" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/62850/hovercard"&gt;#62850&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Multi-endpoint routing now maps the &lt;code&gt;microsoft.multi_endpoint_cloud_role&lt;/code&gt; attribute to &lt;code&gt;ai.cloud.role&lt;/code&gt; for traces and logs. Missing or invalid values use &lt;code&gt;unknown_service&lt;/code&gt;, while &lt;code&gt;ai.cloud.roleInstance&lt;/code&gt; remains host-derived. The attribute is read from Activity tags for traces and &lt;code&gt;LogRecord.Attributes&lt;/code&gt; for logs, and only affects cloud role when multi-endpoint routing is enabled.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/62909" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/62909/hovercard"&gt;#62909&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added multi-endpoint routing for traces, off by default and enabled with the &lt;code&gt;Azure.Monitor.OpenTelemetry.EnableMultiEndpointRouting&lt;/code&gt; AppContext switch. When enabled, an Activity carrying the &lt;code&gt;microsoft.instrumentation_key&lt;/code&gt; and &lt;code&gt;microsoft.ingestion_endpoint&lt;/code&gt; attributes is sent to that endpoint instead of the exporter's own; Activities without both attributes are dropped. Live Metrics is disabled while the switch is on, and sampling defaults to fixed-rate rather than rate-limited because a per-process rate limit would be shared across every destination the process carries. The switch cannot be combined with Microsoft Entra ID authentication, because the credential is scoped to the exporter's own audience and would be sent to endpoints supplied by telemetry.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/62707" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/62707/hovercard"&gt;#62707&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Extended multi-endpoint routing to logs, off by default and enabled with the same &lt;code&gt;Azure.Monitor.OpenTelemetry.EnableMultiEndpointRouting&lt;/code&gt; AppContext switch used for traces. When enabled, a &lt;code&gt;LogRecord&lt;/code&gt; carrying the &lt;code&gt;microsoft.instrumentation_key&lt;/code&gt; and &lt;code&gt;microsoft.ingestion_endpoint&lt;/code&gt; attributes is sent to that endpoint instead of the exporter's own; log records without both attributes are dropped. The two routing attributes are consumed for routing and are not emitted as custom properties. Routing reads only &lt;code&gt;LogRecord.Attributes&lt;/code&gt;, not logging scopes. Live Metrics disablement and the Microsoft Entra ID restriction that apply to multi-endpoint traces apply to logs as well, since both are enforced on the shared transmitter.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/62885" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/62885/hovercard"&gt;#62885&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Extended multi-endpoint routing to metrics, off by default and enabled with the same &lt;code&gt;Azure.Monitor.OpenTelemetry.EnableMultiEndpointRouting&lt;/code&gt; AppContext switch used for traces and logs. A measurement carrying the &lt;code&gt;microsoft.instrumentation_key&lt;/code&gt; and &lt;code&gt;microsoft.ingestion_endpoint&lt;/code&gt; dimensions is sent to that endpoint instead of the exporter's own; measurements without both are dropped. Unlike traces and logs, the routing values are supplied as dimensions at measurement time rather than stamped afterwards, because a metric's dimensions are part of its aggregation key: each destination becomes its own time series, and one instrument can feed several endpoints. Routing is applied per &lt;code&gt;MetricPoint&lt;/code&gt;, the three routing dimensions are consumed rather than emitted as custom properties, and &lt;code&gt;microsoft.multi_endpoint_cloud_role&lt;/code&gt; sets &lt;code&gt;ai.cloud.role&lt;/code&gt; as it does for traces and logs. Standard metrics and performance counters are not collected while the switch is on: routed destinations are not sent standard metrics, and a process-scoped performance counter has no single owner among the destinations a routed process carries.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/62957" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/62957/hovercard"&gt;#62957&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A connection string is no longer required when multi-endpoint routing is enabled. Routing takes every destination from the telemetry itself, so a process that only routes has no component of its own to name, and previously had to nominate one that received nothing. Telemetry carrying valid routing attributes is still sent to the endpoint it names; telemetry without them is dropped, as it already was. SDK statistics are not collected in this configuration, because they identify a component by instrumentation key and select their region from its ingestion endpoint, neither of which exists without a connection string. Behaviour is unchanged when a connection string is configured, and unchanged when the switch is off: a missing connection string is still an error.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/63004" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/63004/hovercard"&gt;#63004&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated the client to target API version &lt;code&gt;2026-09-06-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added self-diagnostics for multi-endpoint routing, including rejected telemetry, endpoint delivery, partition limits, and storage eviction.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/62925" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/62925/hovercard"&gt;#62925&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerServiceAIManager_1.0.0-beta.1"&gt;Azure.ResourceManager.ContainerServiceAIManager_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.RedisEnterprise_1.4.0-beta.2"&gt;Azure.ResourceManager.RedisEnterprise_1.4.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-09-16)&lt;/h2&gt;
+                                &lt;h2&gt;1.4.0-beta.2 (2026-09-14)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;First beta release for API version 2026-05-02-preview.&lt;/li&gt;
+&lt;li&gt;Updated the default service API version from &lt;code&gt;2025-08-01-preview&lt;/code&gt; to &lt;code&gt;2026-06-01-preview&lt;/code&gt;, incorporating the &lt;code&gt;2026-02-01-preview&lt;/code&gt; and &lt;code&gt;2026-05-01-preview&lt;/code&gt; API updates.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;NotifyKeyspaceEvents&lt;/code&gt; to database create, update, and response models for configuring Redis keyspace event notifications, introduced in &lt;code&gt;2026-02-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;AccessString&lt;/code&gt; to access policy assignments for configuring custom Redis ACL permissions, introduced in &lt;code&gt;2026-05-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;AccessPolicyAssignmentProvisioningError&lt;/code&gt; and the &lt;code&gt;ProvisioningError&lt;/code&gt; response property to expose access-string provisioning failure details, introduced in &lt;code&gt;2026-05-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Made &lt;code&gt;AccessPolicyName&lt;/code&gt; optional and deprecated it in favor of &lt;code&gt;AccessString&lt;/code&gt;, as introduced in &lt;code&gt;2026-05-01-preview&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;General New Features&lt;/h3&gt;
-&lt;p&gt;This package follows the &lt;a href="https://azure.github.io/azure-sdk/general_introduction.html" rel="nofollow"&gt;new Azure SDK guidelines&lt;/a&gt;, and provides many core capabilities:&lt;/p&gt;
-&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
-- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
-- HTTP pipeline with custom policies.
-- Better error-handling.
-- Support uniform telemetry across all languages."&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
-- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
-- HTTP pipeline with custom policies.
-- Better error-handling.
-- Support uniform telemetry across all languages.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This package is a Public Preview version, so expect incompatible changes in subsequent releases as we improve the product. To provide feedback, submit an issue in our &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues"&gt;Azure SDK for .NET GitHub repo&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;NOTE: For more information about unified authentication, please refer to &lt;a href="https://learn.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet" rel="nofollow"&gt;Microsoft Azure Identity documentation for .NET&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed the service no-op &lt;code&gt;IsForceMigrate&lt;/code&gt; property from &lt;code&gt;RedisEnterpriseMigrationValidationRequestContent&lt;/code&gt;. &lt;code&gt;IsForceMigrate&lt;/code&gt; remains available when starting a migration.&lt;/li&gt;
+&lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DataProtectionBackup_1.9.0"&gt;Azure.ResourceManager.DataProtectionBackup_1.9.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.CodeTransparency_1.0.0"&gt;Azure.Security.CodeTransparency_1.0.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.9.0 (2026-09-10)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0 (2026-09-11)&lt;/h2&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Replaced the optional &lt;code&gt;CodeTransparencyClientOptions&lt;/code&gt; constructor parameter with separate endpoint-only and endpoint-plus-options constructors.&lt;/li&gt;
+&lt;li&gt;Removed the obsolete &lt;code&gt;CreateEntry(WaitUntil, BinaryData, CancellationToken)&lt;/code&gt; overloads and &lt;code&gt;CreateEntryOperation&lt;/code&gt;; use the &lt;code&gt;CreateEntry&lt;/code&gt; overloads with the optional &lt;code&gt;waitForCommit&lt;/code&gt; parameter instead. Leaving it unset omits the query parameter for compatibility with older ledger deployments.&lt;/li&gt;
+&lt;li&gt;Removed the obsolete single-argument &lt;code&gt;RunTransparentStatementVerification&lt;/code&gt; overload; use the static &lt;code&gt;VerifyTransparentStatement&lt;/code&gt; method with verification options instead.&lt;/li&gt;
+&lt;li&gt;Removed the obsolete &lt;code&gt;GetOperation&lt;/code&gt; and &lt;code&gt;GetOperationAsync&lt;/code&gt; aliases for the operation-status endpoint removed from the latest SCITT draft.&lt;/li&gt;
+&lt;li&gt;Renamed the preview-generated &lt;code&gt;CreateEntryV09&lt;/code&gt;, &lt;code&gt;GetEntryV09&lt;/code&gt;, and &lt;code&gt;GetEntryStatementV09&lt;/code&gt; method families to &lt;code&gt;CreateEntry&lt;/code&gt;, &lt;code&gt;GetEntry&lt;/code&gt;, and &lt;code&gt;GetEntryStatement&lt;/code&gt;, respectively. &lt;code&gt;GetOperationV09&lt;/code&gt; and &lt;code&gt;GetOperationV09Async&lt;/code&gt; are no longer public because the operation-status endpoint is deprecated; clients should poll &lt;code&gt;GetEntry&lt;/code&gt; instead.&lt;/li&gt;
+&lt;li&gt;Replaced &lt;code&gt;CodeTransparencyClientOptions.CacheTTLSeconds&lt;/code&gt; with the &lt;code&gt;TimeSpan&lt;/code&gt;-valued &lt;code&gt;CacheTimeToLive&lt;/code&gt; property and changed &lt;code&gt;IdentityClientEndpoint&lt;/code&gt; from &lt;code&gt;string&lt;/code&gt; to &lt;code&gt;Uri&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Renamed &lt;code&gt;ServiceIdentityResult.CreatedAt&lt;/code&gt; to &lt;code&gt;CreatedOn&lt;/code&gt; and changed its type from &lt;code&gt;DateTime&lt;/code&gt; to &lt;code&gt;DateTimeOffset&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Made &lt;code&gt;CodeTransparencyVerificationOptions.AuthorizedDomains&lt;/code&gt; get-only, changed &lt;code&gt;CcfReceipt&lt;/code&gt; to a static class with get-only properties for its protocol values, and removed the unused &lt;code&gt;CodeTransparencyOperationStatus&lt;/code&gt; enum and &lt;code&gt;CodeTransparencyClient.UnknownIssuerPrefix&lt;/code&gt; field.&lt;/li&gt;
+&lt;li&gt;Removed the public &lt;code&gt;CborUtils&lt;/code&gt; wire-format parsing helper; service-specific CBOR parsing is now handled internally.&lt;/li&gt;
+&lt;li&gt;Replaced the generated JWK/JWKS wire models with normalized, verification-oriented public types &lt;code&gt;CodeTransparencyVerificationKey&lt;/code&gt; and &lt;code&gt;CodeTransparencyVerificationKeySet&lt;/code&gt;, which store only public asymmetric key material. The &lt;code&gt;/jwks&lt;/code&gt; (&lt;code&gt;GetPublicKeys&lt;/code&gt;), COSE_Key_Set (&lt;code&gt;GetScittKeys&lt;/code&gt;), and single-key (&lt;code&gt;GetScittKey&lt;/code&gt;) operations now expose &lt;code&gt;CancellationToken&lt;/code&gt; convenience overloads returning these normalized types, alongside the exact-wire &lt;code&gt;RequestContext&lt;/code&gt; protocol overloads.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;CcfReceiptVerifier.Verify&lt;/code&gt; overloads that accept a &lt;code&gt;CodeTransparencyVerificationKey&lt;/code&gt;, a &lt;code&gt;string&lt;/code&gt; key ID plus a caller-owned &lt;code&gt;ECDsa&lt;/code&gt;, or a &lt;code&gt;CodeTransparencyVerificationKeySet&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Replaced &lt;code&gt;CodeTransparencyOfflineKeys&lt;/code&gt; and &lt;code&gt;OfflineKeysBehavior&lt;/code&gt; with &lt;code&gt;CodeTransparencyTrustStore&lt;/code&gt; and &lt;code&gt;CodeTransparencyKeyResolutionMode&lt;/code&gt;, using an SDK-owned, versioned, public-only serialization format. &lt;code&gt;CodeTransparencyVerificationOptions.OfflineKeys&lt;/code&gt;/&lt;code&gt;OfflineKeysBehavior&lt;/code&gt; are now &lt;code&gt;TrustStore&lt;/code&gt;/&lt;code&gt;KeyResolutionMode&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Corrected P-521 receipt verification to use the standard JOSE curve name and COSE ES512 algorithm identifier.&lt;/li&gt;
+&lt;li&gt;Fixed public-key retrieval and &lt;code&gt;ToECDsa&lt;/code&gt; on .NET Framework 4.6.2.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed the unnecessary dependency on &lt;code&gt;Azure.Security.KeyVault.Keys&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6840534"&gt;Azure.Template_1.0.3-beta.6840534&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.3-beta.6840534 (2026-09-15)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded the api-version to 2026-06-01.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;WidgetAnalyticsClientSettings&lt;/code&gt; to support creating a &lt;code&gt;WidgetAnalyticsClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Compute_1.17.0"&gt;Azure.ResourceManager.Compute_1.17.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.17.0 (2026-09-14)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded Compute API version to &lt;code&gt;2026-04-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added the &lt;code&gt;ComputeCapacityReservationType&lt;/code&gt; model for virtual machine capacity reservation status.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.AppContainers_1.6.0"&gt;Azure.ResourceManager.AppContainers_1.6.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.6.0 (2026-09-15)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version to 2026-07-01.&lt;/li&gt;
+&lt;li&gt;Added support for Container App private endpoint connections, Azure Functions, Dapr component resiliency policies, .NET components, label history, sandbox groups, and sandbox group virtual network connections.&lt;/li&gt;
+&lt;li&gt;Added support for managed environment migration eligibility checks and OpenTelemetry configuration.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.AppContainers_1.3.0-beta.1"&gt;Azure.Provisioning.AppContainers_1.3.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.3.0-beta.1 (2026-09-15)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version to 2026-07-01.&lt;/li&gt;
+&lt;li&gt;Added support for Container App private endpoint connections, Azure Functions, Dapr component resiliency policies, .NET components, label history, sandbox groups, and sandbox group virtual network connections.&lt;/li&gt;
+&lt;li&gt;Added support for managed environment migration eligibility checks and OpenTelemetry configuration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Migrated library generation to the TypeSpec provisioning emitter.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;

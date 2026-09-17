@@ -1,6 +1,121 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>microsoft/WindowsAppSDK - Releases</title>
   <link href="https://github.com/microsoft/WindowsAppSDK" />
-  <updated>2026-09-16T00:09:59Z</updated>
+  <updated>2026-09-17T00:09:48Z</updated>
   <id>https://github.com/microsoft/WindowsAppSDK</id>
+  <entry>
+    <title>microsoft/WindowsAppSDK - Releases - 2026-09-16</title>
+    <id>https://github.com/microsoft/WindowsAppSDK#2026-09-16</id>
+    <link href="https://github.com/microsoft/WindowsAppSDK" />
+    <updated>2026-09-17T00:09:48Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.5.1"&gt;Windows App SDK 2.5.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;Windows App SDK 2.5.1 adds Windows Error Reporting support for self-contained .NET MSIX apps, introduces limited-access app content search APIs, and includes reliability fixes across WinUI 3, input, composition, deployment, and Windows AI.&lt;/p&gt;
+&lt;h3&gt;What's new in WinAppSDK 2.5.1:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Windows Error Reporting support.&lt;/strong&gt; Self-contained .NET MSIX apps can now use the &lt;code&gt;windows.diagnosticServiceModule&lt;/code&gt; package-manifest extension to declare diagnostic modules, allowing Windows Error Reporting to load them and collect actionable crash dumps.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Limited-access AppContentSearch APIs.&lt;/strong&gt; Apps with a limited-access feature token can use the new &lt;code&gt;AppContentIndex&lt;/code&gt; APIs to index text and images, perform lexical queries, and use semantic matching on supported NPU-enabled devices. The APIs support semantic search and retrieval-augmented generation scenarios.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug fixes:&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Bug Fix&lt;/th&gt;
+&lt;th&gt;&lt;a href="https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.applicationmodel.windowsappruntime.runtimecompatibilityoptions.disabledchanges?view=windows-app-sdk-2.5" rel="nofollow"&gt;Runtime Compatibility Change&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a crash in windowed-popup input handling when a focus or pointer event was processed after the popup's island had been disposed.&lt;/td&gt;
+&lt;td&gt;PointerInputProcessor_ReleaseCaptureOnDisposedIsland&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a crash in &lt;code&gt;NavigationView&lt;/code&gt; when resizing the control could produce a negative pane &lt;code&gt;MaxHeight&lt;/code&gt;.&lt;/td&gt;
+&lt;td&gt;NavigationView_UpdatePaneLayoutNegativeMaxHeight&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an issue where the property set returned by &lt;code&gt;ElementCompositionPreview.GetPointerPositionPropertySet&lt;/code&gt; stopped updating while a pointer was pressed.&lt;/td&gt;
+&lt;td&gt;PointerPositionPropertySet_UpdateWhilePressed&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a crash in &lt;code&gt;NavigationView&lt;/code&gt; when an expanded item's flyout was shown after the item had been collapsed or recycled.&lt;/td&gt;
+&lt;td&gt;NavigationViewItem_DeferredFlyoutShowStaleState&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a fail-fast when a &lt;code&gt;KeyboardAccelerator&lt;/code&gt; used an OEM or punctuation key and displayed the accelerator shortcut label.&lt;/td&gt;
+&lt;td&gt;KeyboardAccelerator_OemKeyNoFailFast&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a fatal process exit during XAML shutdown in apps hosting WinUI 3 on more than one UI thread.&lt;/td&gt;
+&lt;td&gt;WindowsXamlManager_ActivationFactoryCacheResetRace&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an issue where a &lt;code&gt;CommandBar&lt;/code&gt; with no secondary commands could show an empty overflow button at fractional display scales such as 175%.&lt;/td&gt;
+&lt;td&gt;CommandBar_SpuriousOverflowButtonAtFractionalScale&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an issue that prevented apps using the System Composition Engine from calling &lt;code&gt;VisualInteractionSource.CreateFromIVisualElement&lt;/code&gt;.&lt;/td&gt;
+&lt;td&gt;CompositionEngine_SwitcherSeptemberFixes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed effect graphs and &lt;code&gt;SceneLighting&lt;/code&gt; rendering for apps using the System Composition Engine.&lt;/td&gt;
+&lt;td&gt;CompositionEngine_SwitcherSeptemberFixes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed &lt;code&gt;InputPointerSource.ActivationBehavior&lt;/code&gt; not honoring &lt;code&gt;NoActivate&lt;/code&gt; when using the System Composition Engine.&lt;/td&gt;
+&lt;td&gt;CompositionEngine_SwitcherSeptemberFixes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed &lt;code&gt;CompositionEngine&lt;/code&gt; selection behavior for null inputs and no-op selections.&lt;/td&gt;
+&lt;td&gt;CompositionEngine_SwitcherSeptemberFixes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed cursor customization for lifted input when using the System Composition Engine.&lt;/td&gt;
+&lt;td&gt;CompositionEngine_SwitcherSeptemberFixes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed &lt;code&gt;ICompositionObject&lt;/code&gt; queries on gradient stop collections when using the System Composition Engine.&lt;/td&gt;
+&lt;td&gt;N/A, operating system composition fix&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed &lt;code&gt;ContentExternalOutputLink&lt;/code&gt; border and background behavior when using the System Composition Engine.&lt;/td&gt;
+&lt;td&gt;N/A, operating system composition fix&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed access to &lt;code&gt;VisualReferenceController&lt;/code&gt; when using the System Composition Engine.&lt;/td&gt;
+&lt;td&gt;N/A, operating system composition fix&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a registration issue that could occur when installing the Windows App SDK.&lt;/td&gt;
+&lt;td&gt;N/A, deployment registration fix&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an issue where Video Super Resolution could fail during initialization or inference with the updated ONNX Runtime dependency.&lt;/td&gt;
+&lt;td&gt;N/A, dependency compatibility update&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;To see everything that's new and changed, see the full &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-2-0?pivots=stable#version-251" rel="nofollow"&gt;Windows App SDK 2.5.1 release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.5.1" rel="nofollow"&gt;2.5.1 NuGet&lt;/a&gt; package to use WinAppSDK 2.5 in your app.&lt;/li&gt;
+&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Getting started&lt;/h3&gt;
+&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
