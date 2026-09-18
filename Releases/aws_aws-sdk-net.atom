@@ -1,64 +1,69 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-09-17T00:09:32Z</updated>
+  <updated>2026-09-18T00:09:34Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-09-16</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-09-16</id>
+    <title>aws/aws-sdk-net - Releases - 2026-09-17</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-09-17</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-09-17T00:09:32Z</updated>
+    <updated>2026-09-18T00:09:34Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.335.0"&gt;4.0.335.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.336.0"&gt;4.0.336.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.335.0 (2026-09-16 18:46 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.336.0 (2026-09-17 18:23 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Batch (4.0.103.2)
+&lt;li&gt;BedrockAgentCore (4.0.111.0)
 &lt;ul&gt;
-&lt;li&gt;Fixed broken XML documentation comments where an unescaped placeholder like &lt;code&gt;&amp;lt;aws_account_id&amp;gt;&lt;/code&gt; was read as an unclosed tag instead of literal text.&lt;/li&gt;
+&lt;li&gt;Batch evaluation now supports evaluating specific traces within a session. Each session can specify up to 100 trace IDs to evaluate.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.116.0)
+&lt;li&gt;Connect (4.0.118.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for a new DELETE FAILED status for Bedrock AgentCore Runtimes and Bedrock AgentCore Runtime Endpoints.&lt;/li&gt;
+&lt;li&gt;Made the replicaAlias attribute optional in the ReplicateInstance API to support Global routing for Amazon Connect Global Resiliency (ACGR) instances. This change maintains backward compatibility. When onboarding to ACGR without Global routing, you must specify a custom replicaAlias in your API call&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.117.0)
+&lt;li&gt;EC2 (4.0.122.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for ContactAnalysis via ListContactReferences.&lt;/li&gt;
+&lt;li&gt;Adding support for "Tunnel" VPC Endpoint&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CustomerProfiles (4.0.103.0)
+&lt;li&gt;GuardDuty (4.0.106.0)
 &lt;ul&gt;
-&lt;li&gt;This release introduces the SearchRecommendations API, which retrieves recommendations for a profile identified by a search key.&lt;/li&gt;
+&lt;li&gt;This change surfaces AI Protection resources on existing public IAM attack sequences. Customers will now see which model was accessed and whether a guardrail intervened as part of the credential-compromise sequence.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.121.0)
+&lt;li&gt;IoTWireless (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Releasing new EC2 R9g and R9gd memory-optimized instances powered by AWS Graviton5 processors, with up to 25 percent better compute performance than R8g instances, faster DDR5 memory, and up to 100 Gbps network and 72 Gbps EBS bandwidth. R9gd instances additionally provide local NVMe SSD storage.&lt;/li&gt;
+&lt;li&gt;Adds Multi-frame GNSS support to the AWS IoT Core Device Location GetPositionEstimate API. The new GnssMultiFrame measurement type improves location accuracy by combining multiple GNSS signal captures (2, 4, 8, 16, or 32) from the same device to estimate its position.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticBeanstalk (4.0.101.0)
+&lt;li&gt;Notifications (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support to create and manage Elastic Beanstalk Cluster Environments.&lt;/li&gt;
+&lt;li&gt;Added support for attachments on managed notification events. Added support to access and subscribe sensitive managed notification events.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MarketplaceCatalog (4.0.104.0)
+&lt;li&gt;SimpleEmailV2 (4.0.105.0)
 &lt;ul&gt;
-&lt;li&gt;This release enhances the ListEntities API to support issuerAccountId and SourceAuthorization filter for ResaleAuthorization entity.&lt;/li&gt;
+&lt;li&gt;Added support to query the tenant name for BatchGetMetricData and CreateExportJob APIs to filter metrics and messages at the tenant level.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MediaConvert (4.0.104.2)
+&lt;li&gt;SimpleNotificationService (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;Fixed broken XML documentation comments where an unescaped placeholder like &lt;code&gt;&amp;lt;Accessibility&amp;gt;&lt;/code&gt; was read as an unclosed tag instead of literal text.&lt;/li&gt;
+&lt;li&gt;SNS API reference documentation update&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Resiliencehubv2 (4.0.104.0)
+&lt;li&gt;SocialMessaging (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Next Gen Resilience Hub now supports dependency insights (LLM-based insights about customer's service dependencies) and organization-level policy sharing (provision to share policy with member accounts for an organization)&lt;/li&gt;
+&lt;li&gt;Add support for WhatsApp Calling APIs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;VPCLattice (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;Adding support for CIDR Resource Configuration&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

@@ -1,64 +1,93 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-09-17T00:09:53Z</updated>
+  <updated>2026-09-18T00:09:58Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-09-16</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-09-16</id>
+    <title>autofac/Autofac - Releases - 2026-09-17</title>
+    <id>https://github.com/autofac/Autofac#2026-09-17</id>
+    <link href="https://github.com/autofac/Autofac" />
+    <updated>2026-09-18T00:09:33Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/autofac/Autofac/releases/tag/v9.3.3"&gt;v9.3.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Create AnyKey adapter registrations per registry by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/tillig/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/tillig"&gt;@tillig&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5464075629" data-permission-text="Title is private" data-url="https://github.com/autofac/Autofac/issues/1498" data-hovercard-type="pull_request" data-hovercard-url="/autofac/Autofac/pull/1498/hovercard" href="https://github.com/autofac/Autofac/pull/1498"&gt;#1498&lt;/a&gt; (fixes &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5460353032" data-permission-text="Title is private" data-url="https://github.com/autofac/Autofac/issues/1497" data-hovercard-type="issue" data-hovercard-url="/autofac/Autofac/issues/1497/hovercard" href="https://github.com/autofac/Autofac/issues/1497"&gt;#1497&lt;/a&gt;) - the &lt;code&gt;KeyedService.AnyKey&lt;/code&gt; fallback adapter was cached and handed to every registry that asked for it, so the first scope to receive it built and disposed its pipeline out from under the rest. Other scopes then failed to add middleware, resolved through a disposed activator, or adapted another scope's registration. Multitenant containers hit this most often.&lt;/li&gt;
+&lt;li&gt;Fix open generic multi-service registrations overriding later defaults by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/tillig/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/tillig"&gt;@tillig&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5466195764" data-permission-text="Title is private" data-url="https://github.com/autofac/Autofac/issues/1499" data-hovercard-type="pull_request" data-hovercard-url="/autofac/Autofac/pull/1499/hovercard" href="https://github.com/autofac/Autofac/pull/1499"&gt;#1499&lt;/a&gt; (fixes &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3332299681" data-permission-text="Title is private" data-url="https://github.com/autofac/Autofac/issues/1465" data-hovercard-type="issue" data-hovercard-url="/autofac/Autofac/issues/1465/hovercard" href="https://github.com/autofac/Autofac/issues/1465"&gt;#1465&lt;/a&gt;) - a registration source exposing one component for several open generic services applied it to all of them at once, landing it ahead of higher-priority sources those services had yet to query. Whichever service was resolved second got the shared component instead of its own overriding registration. Source priority rather than resolution order now decides the default; closed generic types were never affected.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;System.Diagnostics.DiagnosticSource&lt;/code&gt; and &lt;code&gt;Microsoft.Bcl.AsyncInterfaces&lt;/code&gt; (netstandard2.0 only) move to 10.0.12.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/autofac/Autofac/compare/v9.3.2...v9.3.3"&gt;&lt;tt&gt;v9.3.2...v9.3.3&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>aws/aws-sdk-net - Releases - 2026-09-17</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-09-17</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-09-17T00:09:32Z</updated>
+    <updated>2026-09-18T00:09:34Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.335.0"&gt;4.0.335.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.336.0"&gt;4.0.336.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.335.0 (2026-09-16 18:46 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.336.0 (2026-09-17 18:23 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Batch (4.0.103.2)
+&lt;li&gt;BedrockAgentCore (4.0.111.0)
 &lt;ul&gt;
-&lt;li&gt;Fixed broken XML documentation comments where an unescaped placeholder like &lt;code&gt;&amp;lt;aws_account_id&amp;gt;&lt;/code&gt; was read as an unclosed tag instead of literal text.&lt;/li&gt;
+&lt;li&gt;Batch evaluation now supports evaluating specific traces within a session. Each session can specify up to 100 trace IDs to evaluate.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.116.0)
+&lt;li&gt;Connect (4.0.118.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for a new DELETE FAILED status for Bedrock AgentCore Runtimes and Bedrock AgentCore Runtime Endpoints.&lt;/li&gt;
+&lt;li&gt;Made the replicaAlias attribute optional in the ReplicateInstance API to support Global routing for Amazon Connect Global Resiliency (ACGR) instances. This change maintains backward compatibility. When onboarding to ACGR without Global routing, you must specify a custom replicaAlias in your API call&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.117.0)
+&lt;li&gt;EC2 (4.0.122.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for ContactAnalysis via ListContactReferences.&lt;/li&gt;
+&lt;li&gt;Adding support for "Tunnel" VPC Endpoint&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CustomerProfiles (4.0.103.0)
+&lt;li&gt;GuardDuty (4.0.106.0)
 &lt;ul&gt;
-&lt;li&gt;This release introduces the SearchRecommendations API, which retrieves recommendations for a profile identified by a search key.&lt;/li&gt;
+&lt;li&gt;This change surfaces AI Protection resources on existing public IAM attack sequences. Customers will now see which model was accessed and whether a guardrail intervened as part of the credential-compromise sequence.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.121.0)
+&lt;li&gt;IoTWireless (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Releasing new EC2 R9g and R9gd memory-optimized instances powered by AWS Graviton5 processors, with up to 25 percent better compute performance than R8g instances, faster DDR5 memory, and up to 100 Gbps network and 72 Gbps EBS bandwidth. R9gd instances additionally provide local NVMe SSD storage.&lt;/li&gt;
+&lt;li&gt;Adds Multi-frame GNSS support to the AWS IoT Core Device Location GetPositionEstimate API. The new GnssMultiFrame measurement type improves location accuracy by combining multiple GNSS signal captures (2, 4, 8, 16, or 32) from the same device to estimate its position.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticBeanstalk (4.0.101.0)
+&lt;li&gt;Notifications (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support to create and manage Elastic Beanstalk Cluster Environments.&lt;/li&gt;
+&lt;li&gt;Added support for attachments on managed notification events. Added support to access and subscribe sensitive managed notification events.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MarketplaceCatalog (4.0.104.0)
+&lt;li&gt;SimpleEmailV2 (4.0.105.0)
 &lt;ul&gt;
-&lt;li&gt;This release enhances the ListEntities API to support issuerAccountId and SourceAuthorization filter for ResaleAuthorization entity.&lt;/li&gt;
+&lt;li&gt;Added support to query the tenant name for BatchGetMetricData and CreateExportJob APIs to filter metrics and messages at the tenant level.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MediaConvert (4.0.104.2)
+&lt;li&gt;SimpleNotificationService (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;Fixed broken XML documentation comments where an unescaped placeholder like &lt;code&gt;&amp;lt;Accessibility&amp;gt;&lt;/code&gt; was read as an unclosed tag instead of literal text.&lt;/li&gt;
+&lt;li&gt;SNS API reference documentation update&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Resiliencehubv2 (4.0.104.0)
+&lt;li&gt;SocialMessaging (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Next Gen Resilience Hub now supports dependency insights (LLM-based insights about customer's service dependencies) and organization-level policy sharing (provision to share policy with member accounts for an organization)&lt;/li&gt;
+&lt;li&gt;Add support for WhatsApp Calling APIs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;VPCLattice (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;Adding support for CIDR Resource Configuration&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -69,151 +98,115 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-09-16</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-09-16</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-09-17</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-09-17</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-09-17T00:09:33Z</updated>
+    <updated>2026-09-18T00:09:35Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Monitor.OpenTelemetry.Exporter_1.10.0-beta.1"&gt;Azure.Monitor.OpenTelemetry.Exporter_1.10.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/System.ClientModel_1.16.0"&gt;System.ClientModel_1.16.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.10.0-beta.1 (2026-09-16)&lt;/h2&gt;
+                                &lt;h2&gt;1.16.0 (2026-09-16)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Enable AOT compatibility validation for Azure Monitor OpenTelemetry Exporter&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/62850" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/62850/hovercard"&gt;#62850&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Multi-endpoint routing now maps the &lt;code&gt;microsoft.multi_endpoint_cloud_role&lt;/code&gt; attribute to &lt;code&gt;ai.cloud.role&lt;/code&gt; for traces and logs. Missing or invalid values use &lt;code&gt;unknown_service&lt;/code&gt;, while &lt;code&gt;ai.cloud.roleInstance&lt;/code&gt; remains host-derived. The attribute is read from Activity tags for traces and &lt;code&gt;LogRecord.Attributes&lt;/code&gt; for logs, and only affects cloud role when multi-endpoint routing is enabled.&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/62909" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/62909/hovercard"&gt;#62909&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added multi-endpoint routing for traces, off by default and enabled with the &lt;code&gt;Azure.Monitor.OpenTelemetry.EnableMultiEndpointRouting&lt;/code&gt; AppContext switch. When enabled, an Activity carrying the &lt;code&gt;microsoft.instrumentation_key&lt;/code&gt; and &lt;code&gt;microsoft.ingestion_endpoint&lt;/code&gt; attributes is sent to that endpoint instead of the exporter's own; Activities without both attributes are dropped. Live Metrics is disabled while the switch is on, and sampling defaults to fixed-rate rather than rate-limited because a per-process rate limit would be shared across every destination the process carries. The switch cannot be combined with Microsoft Entra ID authentication, because the credential is scoped to the exporter's own audience and would be sent to endpoints supplied by telemetry.&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/62707" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/62707/hovercard"&gt;#62707&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Extended multi-endpoint routing to logs, off by default and enabled with the same &lt;code&gt;Azure.Monitor.OpenTelemetry.EnableMultiEndpointRouting&lt;/code&gt; AppContext switch used for traces. When enabled, a &lt;code&gt;LogRecord&lt;/code&gt; carrying the &lt;code&gt;microsoft.instrumentation_key&lt;/code&gt; and &lt;code&gt;microsoft.ingestion_endpoint&lt;/code&gt; attributes is sent to that endpoint instead of the exporter's own; log records without both attributes are dropped. The two routing attributes are consumed for routing and are not emitted as custom properties. Routing reads only &lt;code&gt;LogRecord.Attributes&lt;/code&gt;, not logging scopes. Live Metrics disablement and the Microsoft Entra ID restriction that apply to multi-endpoint traces apply to logs as well, since both are enforced on the shared transmitter.&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/62885" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/62885/hovercard"&gt;#62885&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Extended multi-endpoint routing to metrics, off by default and enabled with the same &lt;code&gt;Azure.Monitor.OpenTelemetry.EnableMultiEndpointRouting&lt;/code&gt; AppContext switch used for traces and logs. A measurement carrying the &lt;code&gt;microsoft.instrumentation_key&lt;/code&gt; and &lt;code&gt;microsoft.ingestion_endpoint&lt;/code&gt; dimensions is sent to that endpoint instead of the exporter's own; measurements without both are dropped. Unlike traces and logs, the routing values are supplied as dimensions at measurement time rather than stamped afterwards, because a metric's dimensions are part of its aggregation key: each destination becomes its own time series, and one instrument can feed several endpoints. Routing is applied per &lt;code&gt;MetricPoint&lt;/code&gt;, the three routing dimensions are consumed rather than emitted as custom properties, and &lt;code&gt;microsoft.multi_endpoint_cloud_role&lt;/code&gt; sets &lt;code&gt;ai.cloud.role&lt;/code&gt; as it does for traces and logs. Standard metrics and performance counters are not collected while the switch is on: routed destinations are not sent standard metrics, and a process-scoped performance counter has no single owner among the destinations a routed process carries.&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/62957" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/62957/hovercard"&gt;#62957&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;A connection string is no longer required when multi-endpoint routing is enabled. Routing takes every destination from the telemetry itself, so a process that only routes has no component of its own to name, and previously had to nominate one that received nothing. Telemetry carrying valid routing attributes is still sent to the endpoint it names; telemetry without them is dropped, as it already was. SDK statistics are not collected in this configuration, because they identify a component by instrumentation key and select their region from its ingestion endpoint, neither of which exists without a connection string. Behaviour is unchanged when a connection string is configured, and unchanged when the switch is off: a missing connection string is still an error.&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/63004" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/63004/hovercard"&gt;#63004&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added self-diagnostics for multi-endpoint routing, including rejected telemetry, endpoint delivery, partition limits, and storage eviction.&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/62925" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/62925/hovercard"&gt;#62925&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.RedisEnterprise_1.4.0-beta.2"&gt;Azure.ResourceManager.RedisEnterprise_1.4.0-beta.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.4.0-beta.2 (2026-09-14)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated the default service API version from &lt;code&gt;2025-08-01-preview&lt;/code&gt; to &lt;code&gt;2026-06-01-preview&lt;/code&gt;, incorporating the &lt;code&gt;2026-02-01-preview&lt;/code&gt; and &lt;code&gt;2026-05-01-preview&lt;/code&gt; API updates.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;NotifyKeyspaceEvents&lt;/code&gt; to database create, update, and response models for configuring Redis keyspace event notifications, introduced in &lt;code&gt;2026-02-01-preview&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;AccessString&lt;/code&gt; to access policy assignments for configuring custom Redis ACL permissions, introduced in &lt;code&gt;2026-05-01-preview&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;AccessPolicyAssignmentProvisioningError&lt;/code&gt; and the &lt;code&gt;ProvisioningError&lt;/code&gt; response property to expose access-string provisioning failure details, introduced in &lt;code&gt;2026-05-01-preview&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Made &lt;code&gt;AccessPolicyName&lt;/code&gt; optional and deprecated it in favor of &lt;code&gt;AccessString&lt;/code&gt;, as introduced in &lt;code&gt;2026-05-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AsyncStreamingResult&lt;/code&gt; and &lt;code&gt;AsyncStreamingResult&amp;lt;T&amp;gt;&lt;/code&gt; are now generally available and no longer require suppressing the &lt;code&gt;SCME0005&lt;/code&gt; experimental diagnostic.&lt;/li&gt;
+&lt;li&gt;Added automatic reconnection for eligible non-buffered server-sent event responses after abrupt connection loss, honoring server-provided retry intervals and &lt;code&gt;Last-Event-ID&lt;/code&gt; when available.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Removed the service no-op &lt;code&gt;IsForceMigrate&lt;/code&gt; property from &lt;code&gt;RedisEnterpriseMigrationValidationRequestContent&lt;/code&gt;. &lt;code&gt;IsForceMigrate&lt;/code&gt; remains available when starting a migration.&lt;/li&gt;
+&lt;li&gt;Renamed the experimental &lt;code&gt;AsyncStreamingClientResult&lt;/code&gt; and &lt;code&gt;AsyncStreamingClientResult&amp;lt;T&amp;gt;&lt;/code&gt; types to &lt;code&gt;AsyncStreamingResult&lt;/code&gt; and &lt;code&gt;AsyncStreamingResult&amp;lt;T&amp;gt;&lt;/code&gt;, respectively.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.CodeTransparency_1.0.0"&gt;Azure.Security.CodeTransparency_1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.StorageMover_1.5.0"&gt;Azure.ResourceManager.StorageMover_1.5.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0 (2026-09-11)&lt;/h2&gt;
+                                &lt;h2&gt;1.5.0 (2026-09-10)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded the API version to 2026-05-01.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded Azure.Core to 1.62.0.&lt;/li&gt;
+&lt;li&gt;Upgraded Azure.ResourceManager to 1.14.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CognitiveServices_1.6.0"&gt;Azure.ResourceManager.CognitiveServices_1.6.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.6.0 (2026-09-10)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded API version to 2026-07-01.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent Azure.Core to 1.62.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Relay_1.3.0"&gt;Azure.ResourceManager.Relay_1.3.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.3.0 (2026-09-16)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded API version to 2026-01-01.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to &lt;code&gt;1.62.0&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Avs_1.7.0"&gt;Azure.ResourceManager.Avs_1.7.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.7.0 (2026-09-17)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded the service API version to &lt;code&gt;2026-03-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added host licensing and maintenance scheduling support.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.MongoCluster_1.2.0-beta.1"&gt;Azure.ResourceManager.MongoCluster_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0-beta.1 (2026-09-20)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded API version to &lt;code&gt;2026-06-15-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added member &lt;code&gt;Planned&lt;/code&gt; to enum &lt;code&gt;MongoClusterPromoteOption&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerRegistry_1.5.0-beta.4"&gt;Azure.ResourceManager.ContainerRegistry_1.5.0-beta.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.5.0-beta.4 (2026-09-17)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated API version to 2026-09-01-preview.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;Identity&lt;/code&gt; to &lt;code&gt;ConnectedRegistryData&lt;/code&gt; and &lt;code&gt;ConnectedRegistryPatch&lt;/code&gt; for user-assigned managed identity synchronization using &lt;code&gt;AuthType.ManagedIdentity&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;AuthType&lt;/code&gt; to &lt;code&gt;ConnectedRegistrySyncProperties&lt;/code&gt; and &lt;code&gt;ConnectedRegistrySyncUpdateProperties&lt;/code&gt;, supporting &lt;code&gt;SyncToken&lt;/code&gt; and &lt;code&gt;ManagedIdentity&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added read-only &lt;code&gt;TotalGib&lt;/code&gt; and &lt;code&gt;AvailableGib&lt;/code&gt; properties to &lt;code&gt;ConnectedRegistryStatusDetail&lt;/code&gt; for disk space in gibibytes.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ArmContainerRegistryModelFactory&lt;/code&gt; parameters for mocking the new properties.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Replaced the optional &lt;code&gt;CodeTransparencyClientOptions&lt;/code&gt; constructor parameter with separate endpoint-only and endpoint-plus-options constructors.&lt;/li&gt;
-&lt;li&gt;Removed the obsolete &lt;code&gt;CreateEntry(WaitUntil, BinaryData, CancellationToken)&lt;/code&gt; overloads and &lt;code&gt;CreateEntryOperation&lt;/code&gt;; use the &lt;code&gt;CreateEntry&lt;/code&gt; overloads with the optional &lt;code&gt;waitForCommit&lt;/code&gt; parameter instead. Leaving it unset omits the query parameter for compatibility with older ledger deployments.&lt;/li&gt;
-&lt;li&gt;Removed the obsolete single-argument &lt;code&gt;RunTransparentStatementVerification&lt;/code&gt; overload; use the static &lt;code&gt;VerifyTransparentStatement&lt;/code&gt; method with verification options instead.&lt;/li&gt;
-&lt;li&gt;Removed the obsolete &lt;code&gt;GetOperation&lt;/code&gt; and &lt;code&gt;GetOperationAsync&lt;/code&gt; aliases for the operation-status endpoint removed from the latest SCITT draft.&lt;/li&gt;
-&lt;li&gt;Renamed the preview-generated &lt;code&gt;CreateEntryV09&lt;/code&gt;, &lt;code&gt;GetEntryV09&lt;/code&gt;, and &lt;code&gt;GetEntryStatementV09&lt;/code&gt; method families to &lt;code&gt;CreateEntry&lt;/code&gt;, &lt;code&gt;GetEntry&lt;/code&gt;, and &lt;code&gt;GetEntryStatement&lt;/code&gt;, respectively. &lt;code&gt;GetOperationV09&lt;/code&gt; and &lt;code&gt;GetOperationV09Async&lt;/code&gt; are no longer public because the operation-status endpoint is deprecated; clients should poll &lt;code&gt;GetEntry&lt;/code&gt; instead.&lt;/li&gt;
-&lt;li&gt;Replaced &lt;code&gt;CodeTransparencyClientOptions.CacheTTLSeconds&lt;/code&gt; with the &lt;code&gt;TimeSpan&lt;/code&gt;-valued &lt;code&gt;CacheTimeToLive&lt;/code&gt; property and changed &lt;code&gt;IdentityClientEndpoint&lt;/code&gt; from &lt;code&gt;string&lt;/code&gt; to &lt;code&gt;Uri&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Renamed &lt;code&gt;ServiceIdentityResult.CreatedAt&lt;/code&gt; to &lt;code&gt;CreatedOn&lt;/code&gt; and changed its type from &lt;code&gt;DateTime&lt;/code&gt; to &lt;code&gt;DateTimeOffset&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Made &lt;code&gt;CodeTransparencyVerificationOptions.AuthorizedDomains&lt;/code&gt; get-only, changed &lt;code&gt;CcfReceipt&lt;/code&gt; to a static class with get-only properties for its protocol values, and removed the unused &lt;code&gt;CodeTransparencyOperationStatus&lt;/code&gt; enum and &lt;code&gt;CodeTransparencyClient.UnknownIssuerPrefix&lt;/code&gt; field.&lt;/li&gt;
-&lt;li&gt;Removed the public &lt;code&gt;CborUtils&lt;/code&gt; wire-format parsing helper; service-specific CBOR parsing is now handled internally.&lt;/li&gt;
-&lt;li&gt;Replaced the generated JWK/JWKS wire models with normalized, verification-oriented public types &lt;code&gt;CodeTransparencyVerificationKey&lt;/code&gt; and &lt;code&gt;CodeTransparencyVerificationKeySet&lt;/code&gt;, which store only public asymmetric key material. The &lt;code&gt;/jwks&lt;/code&gt; (&lt;code&gt;GetPublicKeys&lt;/code&gt;), COSE_Key_Set (&lt;code&gt;GetScittKeys&lt;/code&gt;), and single-key (&lt;code&gt;GetScittKey&lt;/code&gt;) operations now expose &lt;code&gt;CancellationToken&lt;/code&gt; convenience overloads returning these normalized types, alongside the exact-wire &lt;code&gt;RequestContext&lt;/code&gt; protocol overloads.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;CcfReceiptVerifier.Verify&lt;/code&gt; overloads that accept a &lt;code&gt;CodeTransparencyVerificationKey&lt;/code&gt;, a &lt;code&gt;string&lt;/code&gt; key ID plus a caller-owned &lt;code&gt;ECDsa&lt;/code&gt;, or a &lt;code&gt;CodeTransparencyVerificationKeySet&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Replaced &lt;code&gt;CodeTransparencyOfflineKeys&lt;/code&gt; and &lt;code&gt;OfflineKeysBehavior&lt;/code&gt; with &lt;code&gt;CodeTransparencyTrustStore&lt;/code&gt; and &lt;code&gt;CodeTransparencyKeyResolutionMode&lt;/code&gt;, using an SDK-owned, versioned, public-only serialization format. &lt;code&gt;CodeTransparencyVerificationOptions.OfflineKeys&lt;/code&gt;/&lt;code&gt;OfflineKeysBehavior&lt;/code&gt; are now &lt;code&gt;TrustStore&lt;/code&gt;/&lt;code&gt;KeyResolutionMode&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Corrected P-521 receipt verification to use the standard JOSE curve name and COSE ES512 algorithm identifier.&lt;/li&gt;
-&lt;li&gt;Fixed public-key retrieval and &lt;code&gt;ToECDsa&lt;/code&gt; on .NET Framework 4.6.2.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Removed the unnecessary dependency on &lt;code&gt;Azure.Security.KeyVault.Keys&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6840534"&gt;Azure.Template_1.0.3-beta.6840534&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.3-beta.6840534 (2026-09-15)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;WidgetAnalyticsClientSettings&lt;/code&gt; to support creating a &lt;code&gt;WidgetAnalyticsClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Compute_1.17.0"&gt;Azure.ResourceManager.Compute_1.17.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.17.0 (2026-09-14)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded Compute API version to &lt;code&gt;2026-04-01&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;ComputeCapacityReservationType&lt;/code&gt; model for virtual machine capacity reservation status.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.AppContainers_1.6.0"&gt;Azure.ResourceManager.AppContainers_1.6.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.6.0 (2026-09-15)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version to 2026-07-01.&lt;/li&gt;
-&lt;li&gt;Added support for Container App private endpoint connections, Azure Functions, Dapr component resiliency policies, .NET components, label history, sandbox groups, and sandbox group virtual network connections.&lt;/li&gt;
-&lt;li&gt;Added support for managed environment migration eligibility checks and OpenTelemetry configuration.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.AppContainers_1.3.0-beta.1"&gt;Azure.Provisioning.AppContainers_1.3.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.3.0-beta.1 (2026-09-15)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version to 2026-07-01.&lt;/li&gt;
-&lt;li&gt;Added support for Container App private endpoint connections, Azure Functions, Dapr component resiliency policies, .NET components, label history, sandbox groups, and sandbox group virtual network connections.&lt;/li&gt;
-&lt;li&gt;Added support for managed environment migration eligibility checks and OpenTelemetry configuration.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Migrated library generation to the TypeSpec provisioning emitter.&lt;/li&gt;
+&lt;li&gt;Made &lt;code&gt;ConnectedRegistrySyncProperties.TokenId&lt;/code&gt; optional and added a constructor accepting only &lt;code&gt;messageTtl&lt;/code&gt;. Existing constructor calls remain compatible, but null &lt;code&gt;tokenId&lt;/code&gt; values no longer throw &lt;code&gt;ArgumentNullException&lt;/code&gt;, and unset &lt;code&gt;TokenId&lt;/code&gt; values are omitted from requests.&lt;/li&gt;
+&lt;li&gt;Changed &lt;code&gt;ArmContainerRegistryModelFactory&lt;/code&gt; signatures for &lt;code&gt;ConnectedRegistryData&lt;/code&gt; (the &lt;code&gt;registrySyncResult&lt;/code&gt; overload), &lt;code&gt;ConnectedRegistryPatch&lt;/code&gt;, and &lt;code&gt;ConnectedRegistrySyncUpdateProperties&lt;/code&gt;. Recompile callers and update method-group delegates matching the previous signatures.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -222,32 +215,86 @@
             </content>
   </entry>
   <entry>
-    <title>microsoft/microsoft-ui-xaml - Releases - 2026-09-16</title>
-    <id>https://github.com/microsoft/microsoft-ui-xaml#2026-09-16</id>
-    <link href="https://github.com/microsoft/microsoft-ui-xaml" />
-    <updated>2026-09-17T00:09:47Z</updated>
+    <title>googleapis/google-cloud-dotnet - Releases - 2026-09-17</title>
+    <id>https://github.com/googleapis/google-cloud-dotnet#2026-09-17</id>
+    <link href="https://github.com/googleapis/google-cloud-dotnet" />
+    <updated>2026-09-18T00:09:46Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/releases/tag/winui3/release/2.5.1"&gt;WinUI 3 in WinAppSDK 2.5.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Shopping.Merchant.LoyaltyCustomers.V1-1.0.0-beta01"&gt;Google.Shopping.Merchant.LoyaltyCustomers.V1 version 1.0.0-beta01&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;WinUI 3 in Windows App SDK 2.5.1 includes reliability fixes across &lt;code&gt;NavigationView&lt;/code&gt;, input, keyboard accelerators, multi-threaded XAML hosting, &lt;code&gt;CommandBar&lt;/code&gt;, and the System Composition Engine. It is available through the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.5.1" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.5.1 NuGet package&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Bug fixes:&lt;/h3&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed a crash in windowed-popup input handling when a focus or pointer event was processed after the popup's island had been disposed.&lt;/li&gt;
-&lt;li&gt;Fixed two &lt;code&gt;NavigationView&lt;/code&gt; crashes involving a negative pane &lt;code&gt;MaxHeight&lt;/code&gt; during resize and a stale flyout after an expanded item was collapsed or recycled.&lt;/li&gt;
-&lt;li&gt;Fixed an issue where the property set returned by &lt;code&gt;ElementCompositionPreview.GetPointerPositionPropertySet&lt;/code&gt; stopped updating while a pointer was pressed.&lt;/li&gt;
-&lt;li&gt;Fixed a fail-fast when a &lt;code&gt;KeyboardAccelerator&lt;/code&gt; used an OEM or punctuation key and displayed the accelerator shortcut label.&lt;/li&gt;
-&lt;li&gt;Fixed a fatal process exit during XAML shutdown in apps hosting WinUI 3 on more than one UI thread.&lt;/li&gt;
-&lt;li&gt;Fixed an issue where a &lt;code&gt;CommandBar&lt;/code&gt; with no secondary commands could show an empty overflow button at fractional display scales such as 175%.&lt;/li&gt;
-&lt;li&gt;Fixed multiple issues for apps using the System Composition Engine, including effect and &lt;code&gt;SceneLighting&lt;/code&gt; rendering, input activation, cursor customization, and composition object access.&lt;/li&gt;
+&lt;li&gt;Initial generation for Google.Shopping.Merchant.LoyaltyCustomers.V1&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;For the full set of changes across Windows App SDK 2.5.1, see the &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-2-0?pivots=stable#version-251" rel="nofollow"&gt;Windows App SDK 2.5.1 release notes&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Try it out&lt;/h3&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.DeviceStreaming.V1-1.1.0"&gt;Google.Cloud.DeviceStreaming.V1 version 1.1.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.5.1" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.5.1 NuGet package&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
+&lt;li&gt;Add ClientInfo message to DeviceSession message&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Storage.V1-4.16.0"&gt;Google.Cloud.Storage.V1 version 4.16.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add idempotency header (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4957453242" data-permission-text="Title is private" data-url="https://github.com/googleapis/google-cloud-dotnet/issues/15778" data-hovercard-type="pull_request" data-hovercard-url="/googleapis/google-cloud-dotnet/pull/15778/hovercard" href="https://github.com/googleapis/google-cloud-dotnet/pull/15778"&gt;#15778&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.ParameterManager.V1-1.1.0"&gt;Google.Cloud.ParameterManager.V1 version 1.1.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add Templates functionality to parametermanager API&lt;/li&gt;
+&lt;li&gt;Add Tagging support on Parameters&lt;/li&gt;
+&lt;li&gt;Add checksum support on Parameters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update documentation for ListLocations and View enum&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.ApiGateway.V1-2.6.0"&gt;Google.Cloud.ApiGateway.V1 version 2.6.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add streaming_mode and effective_streaming_mode to the Gateway resource&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Describe defaultHostname by what it serves rather than by a fixed hostname template&lt;/li&gt;
+&lt;li&gt;Rewrap field comments to the publishing tool's line width, with no change of meaning&lt;/li&gt;
+&lt;li&gt;Reference google.longrunning.Operation.error explicitly in OperationMetadata so the link resolves&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Ads.AdManager.V1-1.0.0-beta12"&gt;Google.Ads.AdManager.V1 version 1.0.0-beta12&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;DaiSessionService&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;startTime&lt;/code&gt;, &lt;code&gt;archived&lt;/code&gt;, and &lt;code&gt;publisherFloorExempt&lt;/code&gt; fields to &lt;code&gt;PrivateAuctionDeal&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix for some documentation cross-references&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -256,113 +303,151 @@
             </content>
   </entry>
   <entry>
-    <title>microsoft/WindowsAppSDK - Releases - 2026-09-16</title>
-    <id>https://github.com/microsoft/WindowsAppSDK#2026-09-16</id>
-    <link href="https://github.com/microsoft/WindowsAppSDK" />
-    <updated>2026-09-17T00:09:48Z</updated>
+    <title>grpc/grpc-dotnet - Releases - 2026-09-17</title>
+    <id>https://github.com/grpc/grpc-dotnet#2026-09-17</id>
+    <link href="https://github.com/grpc/grpc-dotnet" />
+    <updated>2026-09-18T00:09:47Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.5.1"&gt;Windows App SDK 2.5.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc-dotnet/releases/tag/v2.84.0-pre1"&gt;Release v2.84.0-pre1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;Windows App SDK 2.5.1 adds Windows Error Reporting support for self-contained .NET MSIX apps, introduces limited-access app content search APIs, and includes reliability fixes across WinUI 3, input, composition, deployment, and Windows AI.&lt;/p&gt;
-&lt;h3&gt;What's new in WinAppSDK 2.5.1:&lt;/h3&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Windows Error Reporting support.&lt;/strong&gt; Self-contained .NET MSIX apps can now use the &lt;code&gt;windows.diagnosticServiceModule&lt;/code&gt; package-manifest extension to declare diagnostic modules, allowing Windows Error Reporting to load them and collect actionable crash dumps.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Limited-access AppContentSearch APIs.&lt;/strong&gt; Apps with a limited-access feature token can use the new &lt;code&gt;AppContentIndex&lt;/code&gt; APIs to index text and images, perform lexical queries, and use semantic matching on supported NPU-enabled devices. The APIs support semantic search and retrieval-augmented generation scenarios.&lt;/li&gt;
+&lt;li&gt;Document complete release version updates by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4946352221" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2748" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2748/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2748"&gt;#2748&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump axios from 1.16.0 to 1.18.1 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4931825428" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2745" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2745/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2745"&gt;#2745&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump fast-uri from 3.1.2 to 3.1.4 in /examples/Browser/Server/wwwroot by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4947269634" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2749" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2749/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2749"&gt;#2749&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Avoid blocking SemaphoreSlim.Wait(0) on single-threaded browser WASM by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/pavelsavara/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/pavelsavara"&gt;@pavelsavara&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5111976543" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2756" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2756/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2756"&gt;#2756&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update package dependencies and examples by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5156816890" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2759" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2759/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2759"&gt;#2759&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump fast-uri from 3.1.4 to 3.1.5 in /examples/Browser/Server/wwwroot by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5072982070" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2754" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2754/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2754"&gt;#2754&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump brace-expansion in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5104424600" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2755" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2755/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2755"&gt;#2755&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump ip-address from 10.2.0 to 10.5.0 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5115166382" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2757" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2757/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2757"&gt;#2757&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Stabilize unobserved exception retry test by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5116324096" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2758" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2758/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2758"&gt;#2758&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix corrupted bytes sent after GOAWAY by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/DeagleGross/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/DeagleGross"&gt;@DeagleGross&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5460854478" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2766" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2766/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2766"&gt;#2766&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump fast-uri from 3.1.5 to 3.1.7 in /examples/Browser/Server/wwwroot by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5330136820" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2761" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2761/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2761"&gt;#2761&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump js-yaml in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5413397844" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2765" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2765/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2765"&gt;#2765&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump joi from 17.13.4 to 17.13.7 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5413390840" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2764" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2764/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2764"&gt;#2764&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump baseline-browser-mapping from 2.9.19 to 2.11.21 in /examples/Browser/Server/wwwroot by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5410003527" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2763" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2763/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2763"&gt;#2763&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump browserslist from 4.25.1 to 4.28.8 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5330826652" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2762" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2762/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2762"&gt;#2762&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump @babel/core from 7.28.0 to 7.29.7 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5468477880" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2767" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2767/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2767"&gt;#2767&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update the versions for pre release. by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/asheshvidyut/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/asheshvidyut"&gt;@asheshvidyut&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5483373954" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2768" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2768/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2768"&gt;#2768&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update version for 2.84.x-pre1 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/asheshvidyut/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/asheshvidyut"&gt;@asheshvidyut&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5486797226" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2769" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2769/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2769"&gt;#2769&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Bug fixes:&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Bug Fix&lt;/th&gt;
-&lt;th&gt;&lt;a href="https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.applicationmodel.windowsappruntime.runtimecompatibilityoptions.disabledchanges?view=windows-app-sdk-2.5" rel="nofollow"&gt;Runtime Compatibility Change&lt;/a&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed a crash in windowed-popup input handling when a focus or pointer event was processed after the popup's island had been disposed.&lt;/td&gt;
-&lt;td&gt;PointerInputProcessor_ReleaseCaptureOnDisposedIsland&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed a crash in &lt;code&gt;NavigationView&lt;/code&gt; when resizing the control could produce a negative pane &lt;code&gt;MaxHeight&lt;/code&gt;.&lt;/td&gt;
-&lt;td&gt;NavigationView_UpdatePaneLayoutNegativeMaxHeight&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed an issue where the property set returned by &lt;code&gt;ElementCompositionPreview.GetPointerPositionPropertySet&lt;/code&gt; stopped updating while a pointer was pressed.&lt;/td&gt;
-&lt;td&gt;PointerPositionPropertySet_UpdateWhilePressed&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed a crash in &lt;code&gt;NavigationView&lt;/code&gt; when an expanded item's flyout was shown after the item had been collapsed or recycled.&lt;/td&gt;
-&lt;td&gt;NavigationViewItem_DeferredFlyoutShowStaleState&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed a fail-fast when a &lt;code&gt;KeyboardAccelerator&lt;/code&gt; used an OEM or punctuation key and displayed the accelerator shortcut label.&lt;/td&gt;
-&lt;td&gt;KeyboardAccelerator_OemKeyNoFailFast&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed a fatal process exit during XAML shutdown in apps hosting WinUI 3 on more than one UI thread.&lt;/td&gt;
-&lt;td&gt;WindowsXamlManager_ActivationFactoryCacheResetRace&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed an issue where a &lt;code&gt;CommandBar&lt;/code&gt; with no secondary commands could show an empty overflow button at fractional display scales such as 175%.&lt;/td&gt;
-&lt;td&gt;CommandBar_SpuriousOverflowButtonAtFractionalScale&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed an issue that prevented apps using the System Composition Engine from calling &lt;code&gt;VisualInteractionSource.CreateFromIVisualElement&lt;/code&gt;.&lt;/td&gt;
-&lt;td&gt;CompositionEngine_SwitcherSeptemberFixes&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed effect graphs and &lt;code&gt;SceneLighting&lt;/code&gt; rendering for apps using the System Composition Engine.&lt;/td&gt;
-&lt;td&gt;CompositionEngine_SwitcherSeptemberFixes&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed &lt;code&gt;InputPointerSource.ActivationBehavior&lt;/code&gt; not honoring &lt;code&gt;NoActivate&lt;/code&gt; when using the System Composition Engine.&lt;/td&gt;
-&lt;td&gt;CompositionEngine_SwitcherSeptemberFixes&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed &lt;code&gt;CompositionEngine&lt;/code&gt; selection behavior for null inputs and no-op selections.&lt;/td&gt;
-&lt;td&gt;CompositionEngine_SwitcherSeptemberFixes&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed cursor customization for lifted input when using the System Composition Engine.&lt;/td&gt;
-&lt;td&gt;CompositionEngine_SwitcherSeptemberFixes&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed &lt;code&gt;ICompositionObject&lt;/code&gt; queries on gradient stop collections when using the System Composition Engine.&lt;/td&gt;
-&lt;td&gt;N/A, operating system composition fix&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed &lt;code&gt;ContentExternalOutputLink&lt;/code&gt; border and background behavior when using the System Composition Engine.&lt;/td&gt;
-&lt;td&gt;N/A, operating system composition fix&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed access to &lt;code&gt;VisualReferenceController&lt;/code&gt; when using the System Composition Engine.&lt;/td&gt;
-&lt;td&gt;N/A, operating system composition fix&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed a registration issue that could occur when installing the Windows App SDK.&lt;/td&gt;
-&lt;td&gt;N/A, deployment registration fix&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed an issue where Video Super Resolution could fail during initialization or inference with the updated ONNX Runtime dependency.&lt;/td&gt;
-&lt;td&gt;N/A, dependency compatibility update&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;To see everything that's new and changed, see the full &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-2-0?pivots=stable#version-251" rel="nofollow"&gt;Windows App SDK 2.5.1 release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
-&lt;h3&gt;Try it out&lt;/h3&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.5.1" rel="nofollow"&gt;2.5.1 NuGet&lt;/a&gt; package to use WinAppSDK 2.5 in your app.&lt;/li&gt;
-&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/pavelsavara/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/pavelsavara"&gt;@pavelsavara&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5111976543" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2756" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2756/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2756"&gt;#2756&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/DeagleGross/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/DeagleGross"&gt;@DeagleGross&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5460854478" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2766" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2766/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2766"&gt;#2766&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Getting started&lt;/h3&gt;
-&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/grpc/grpc-dotnet/compare/v2.83.0...v2.84.0-pre1"&gt;&lt;tt&gt;v2.83.0...v2.84.0-pre1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>MessagePack-CSharp/MessagePack-CSharp - Releases - 2026-09-17</title>
+    <id>https://github.com/MessagePack-CSharp/MessagePack-CSharp#2026-09-17</id>
+    <link href="https://github.com/MessagePack-CSharp/MessagePack-CSharp" />
+    <updated>2026-09-18T00:09:50Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/releases/tag/v3.1.9"&gt;v3.1.9&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;h3&gt;Security fix&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Fix &lt;a href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/security/advisories/GHSA-qhrr-8q5h-9q3h"&gt;Nested arrays can blow past buffer length limits&lt;/a&gt; via &lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/commit/7fd78bbf3476e03beae8b0f7a521125525a8a64a/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/commit/7fd78bbf3476e03beae8b0f7a521125525a8a64a"&gt;&lt;tt&gt;7fd78bb&lt;/tt&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update DynamicAssembly usage to honor different AssemblyLoadContext's by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/BertanAygun/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/BertanAygun"&gt;@BertanAygun&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2983990698" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2183" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2183/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2183"&gt;#2183&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update v2.x to build again by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4450317245" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2264" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2264/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2264"&gt;#2264&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add more types to the default disallow list of named types to be deserialized by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4450179775" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2263" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2263/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2263"&gt;#2263&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add several known unsafe 'gadgets' to the disallow list by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4497687076" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2269" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2269/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2269"&gt;#2269&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Revise end-of-life date for version 2.x by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4942773526" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2282" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2282/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2282"&gt;#2282&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix OldSpec byte[] encoding emitting unsupported str8 headers by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; with @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5025487061" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2287" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2287/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2287"&gt;#2287&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;v2 to master by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5331694941" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2295" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2295/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2295"&gt;#2295&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix build warning and Windows build break by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5489771091" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2300" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2300/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2300"&gt;#2300&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix source generator snapshot ordering by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5490743180" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2303" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2303/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2303"&gt;#2303&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Test before versioned release build by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5491093993" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2304" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2304/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2304"&gt;#2304&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/compare/v3.1.8...v3.1.9"&gt;&lt;tt&gt;v3.1.8...v3.1.9&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/releases/tag/v2.5.303"&gt;v2.5.303&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Security Fix&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix &lt;a href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/security/advisories/GHSA-qhrr-8q5h-9q3h"&gt;Nested arrays can blow past buffer length limits&lt;/a&gt; via &lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/commit/7fd78bbf3476e03beae8b0f7a521125525a8a64a/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/commit/7fd78bbf3476e03beae8b0f7a521125525a8a64a"&gt;&lt;tt&gt;7fd78bb&lt;/tt&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/compare/v2.5.302...v2.5.303"&gt;&lt;tt&gt;v2.5.302...v2.5.303&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/releases/tag/v3.1.8"&gt;v3.1.8&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Update README built-in supported types list with missing types by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; with @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4833554039" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2278" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2278/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2278"&gt;#2278&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;perf: drop redundant char* fixed in MessagePackWriter.Write(string) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/unsafePtr/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/unsafePtr"&gt;@unsafePtr&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4380377926" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2258" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2258/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2258"&gt;#2258&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix CS8669 warning in generated MessagePack.GeneratedMessagePackResolver.g.cs by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; with @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4833566100" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2279" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2279/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2279"&gt;#2279&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; with @Copilot made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4833554039" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2278" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2278/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2278"&gt;#2278&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/unsafePtr/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/unsafePtr"&gt;@unsafePtr&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4380377926" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2258" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2258/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2258"&gt;#2258&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/compare/v3.1.7...v3.1.8"&gt;&lt;tt&gt;v3.1.7...v3.1.8&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-09-17</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-09-17</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2026-09-18T00:09:54Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/OpAmp.Client-0.7.0-alpha.2"&gt;OpAmp.Client-0.7.0-alpha.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.OpAmp.Client/0.7.0-alpha.2" rel="nofollow"&gt;OpenTelemetry.OpAmp.Client v0.7.0-alpha.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dispatch server capabilities before flags received in the same frame.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5231" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5231/hovercard"&gt;#5231&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/OpAmp.Client-0.7.0-alpha.2/src/OpenTelemetry.OpAmp.Client/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.StackExchangeRedis-1.18.0-beta.3"&gt;Instrumentation.StackExchangeRedis-1.18.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.StackExchangeRedis/1.18.0-beta.3" rel="nofollow"&gt;OpenTelemetry.Instrumentation.StackExchangeRedis v1.18.0-beta.3&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed &lt;code&gt;SetVerboseDatabaseStatements&lt;/code&gt; losing the script text for &lt;code&gt;EVAL&lt;/code&gt;/&lt;code&gt;EVALSHA&lt;/code&gt;&lt;br&gt;
+commands with StackExchange.Redis 3.2.0+.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5223" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5223/hovercard"&gt;#5223&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.StackExchangeRedis-1.18.0-beta.3/src/OpenTelemetry.Instrumentation.StackExchangeRedis/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -371,27 +456,45 @@
             </content>
   </entry>
   <entry>
-    <title>newrelic/newrelic-dotnet-agent - Releases - 2026-09-16</title>
-    <id>https://github.com/newrelic/newrelic-dotnet-agent#2026-09-16</id>
-    <link href="https://github.com/newrelic/newrelic-dotnet-agent" />
-    <updated>2026-09-17T00:09:48Z</updated>
+    <title>StackExchange/StackExchange.Redis - Releases - 2026-09-17</title>
+    <id>https://github.com/StackExchange/StackExchange.Redis#2026-09-17</id>
+    <link href="https://github.com/StackExchange/StackExchange.Redis" />
+    <updated>2026-09-18T00:09:56Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/releases/tag/v10.55.0"&gt;v10.55.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/3.2.15"&gt;3.2.15&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/compare/v10.54.0...v10.55.0"&gt;10.55.0&lt;/a&gt; (2026-09-15)&lt;/h2&gt;
-&lt;h3&gt;New features&lt;/h3&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;h1&gt;connection stability&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;Add Kafka cluster metrics (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3803" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3803/hovercard"&gt;#3803&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/803dc9a5e4b0efee424e19813576122133c43fe3"&gt;803dc9a&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Allow setting the application name per IIS application pool in &lt;code&gt;newrelic.config&lt;/code&gt; (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3794" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3794/hovercard"&gt;#3794&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/f1e2dcf6ed79cf69e77913c797e511e42cca793c"&gt;f1e2dcf&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Instrument runtime-async methods (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3804" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3804/hovercard"&gt;#3804&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/420485a7b23e93b1035600306b445a9c915f7e57"&gt;420485a&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;A fully-down connection group throws RedisConnectionException (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5466746870" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3223" data-hovercard-type="issue" data-hovercard-url="/StackExchange/StackExchange.Redis/issues/3223/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/issues/3223"&gt;#3223&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5466970943" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3224" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3224/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3224"&gt;#3224&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;SwitchPrimary retires the servers its rebuild drops by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5473441715" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3225" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3225/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3225"&gt;#3225&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Make fallback discovery and keep-alive probes cluster-slot aware by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/HarnageaGabriel/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/HarnageaGabriel"&gt;@HarnageaGabriel&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5185834743" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3185" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3185/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3185"&gt;#3185&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix Sentinel connection leak and AbortOnConnectFail=false handling by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/HarnageaGabriel/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/HarnageaGabriel"&gt;@HarnageaGabriel&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5185912409" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3187" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3187/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3187"&gt;#3187&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix a vacuous cluster-probe assertion, and pin the first-handshake residue by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5474675457" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3226" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3226/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3226"&gt;#3226&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A tracer redirect proves liveness, so it completes the handshake by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5475445901" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3227" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3227/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3227"&gt;#3227&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Dial a cluster node before waiting for it to connect by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5486434731" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3238" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3238/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3238"&gt;#3238&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Fixes&lt;/h3&gt;
+&lt;h1&gt;fixes&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;Correct cloud.region and ARN partition determination for AWS SDK segments (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3787" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3787/hovercard"&gt;#3787&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/fc279c52d0923313d79ddb0ff7bb175dfbaee13c"&gt;fc279c5&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Compare strings against blobs without decoding them into a string by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5478749817" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3228" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3228/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3228"&gt;#3228&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;Add RedisValue.EqualityComparer, with an opt-in binary reading by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5480436530" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3230" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3230/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3230"&gt;#3230&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IServer.Execute supplies the default database rather than refusing the command by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5486080593" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3237" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3237/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3237"&gt;#3237&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;background / engineering&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;CI: resolve the NuGet cache key once, so the post step never walks the tree by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5483375452" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3231" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3231/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3231"&gt;#3231&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Close the test-suite gaps from &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5485485277" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3234" data-hovercard-type="issue" data-hovercard-url="/StackExchange/StackExchange.Redis/issues/3234/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/issues/3234"&gt;#3234&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5485789636" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3235" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3235/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3235"&gt;#3235&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Point the obsolete messages at 4.0, since 3.2 has shipped without them by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5488666688" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3244" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3244/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3244"&gt;#3244&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Drop explicit Microsoft.SourceLink.GitHub reference by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5462769691" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3222" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3222/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3222"&gt;#3222&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/3.2.1...3.2.15"&gt;&lt;tt&gt;3.2.1...3.2.15&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
