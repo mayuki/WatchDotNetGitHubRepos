@@ -1,26 +1,23 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-09-18T00:09:58Z</updated>
+  <updated>2026-09-19T00:10:41Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>autofac/Autofac - Releases - 2026-09-17</title>
-    <id>https://github.com/autofac/Autofac#2026-09-17</id>
+    <title>autofac/Autofac - Releases - 2026-09-18</title>
+    <id>https://github.com/autofac/Autofac#2026-09-18</id>
     <link href="https://github.com/autofac/Autofac" />
-    <updated>2026-09-18T00:09:33Z</updated>
+    <updated>2026-09-19T00:10:14Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/autofac/Autofac/releases/tag/v9.3.3"&gt;v9.3.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/autofac/Autofac/releases/tag/v9.3.4"&gt;v9.3.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Create AnyKey adapter registrations per registry by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/tillig/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/tillig"&gt;@tillig&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5464075629" data-permission-text="Title is private" data-url="https://github.com/autofac/Autofac/issues/1498" data-hovercard-type="pull_request" data-hovercard-url="/autofac/Autofac/pull/1498/hovercard" href="https://github.com/autofac/Autofac/pull/1498"&gt;#1498&lt;/a&gt; (fixes &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5460353032" data-permission-text="Title is private" data-url="https://github.com/autofac/Autofac/issues/1497" data-hovercard-type="issue" data-hovercard-url="/autofac/Autofac/issues/1497/hovercard" href="https://github.com/autofac/Autofac/issues/1497"&gt;#1497&lt;/a&gt;) - the &lt;code&gt;KeyedService.AnyKey&lt;/code&gt; fallback adapter was cached and handed to every registry that asked for it, so the first scope to receive it built and disposed its pipeline out from under the rest. Other scopes then failed to add middleware, resolved through a disposed activator, or adapted another scope's registration. Multitenant containers hit this most often.&lt;/li&gt;
-&lt;li&gt;Fix open generic multi-service registrations overriding later defaults by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/tillig/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/tillig"&gt;@tillig&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5466195764" data-permission-text="Title is private" data-url="https://github.com/autofac/Autofac/issues/1499" data-hovercard-type="pull_request" data-hovercard-url="/autofac/Autofac/pull/1499/hovercard" href="https://github.com/autofac/Autofac/pull/1499"&gt;#1499&lt;/a&gt; (fixes &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3332299681" data-permission-text="Title is private" data-url="https://github.com/autofac/Autofac/issues/1465" data-hovercard-type="issue" data-hovercard-url="/autofac/Autofac/issues/1465/hovercard" href="https://github.com/autofac/Autofac/issues/1465"&gt;#1465&lt;/a&gt;) - a registration source exposing one component for several open generic services applied it to all of them at once, landing it ahead of higher-priority sources those services had yet to query. Whichever service was resolved second got the shared component instead of its own overriding registration. Source priority rather than resolution order now decides the default; closed generic types were never affected.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;System.Diagnostics.DiagnosticSource&lt;/code&gt; and &lt;code&gt;Microsoft.Bcl.AsyncInterfaces&lt;/code&gt; (netstandard2.0 only) move to 10.0.12.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/autofac/Autofac/compare/v9.3.2...v9.3.3"&gt;&lt;tt&gt;v9.3.2...v9.3.3&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Do not build a held registration's pipeline early by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/tillig/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/tillig"&gt;@tillig&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5501144451" data-permission-text="Title is private" data-url="https://github.com/autofac/Autofac/issues/1504" data-hovercard-type="pull_request" data-hovercard-url="/autofac/Autofac/pull/1504/hovercard" href="https://github.com/autofac/Autofac/pull/1504"&gt;#1504&lt;/a&gt; (fixes &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5496384269" data-permission-text="Title is private" data-url="https://github.com/autofac/Autofac/issues/1503" data-hovercard-type="issue" data-hovercard-url="/autofac/Autofac/issues/1503/hovercard" href="https://github.com/autofac/Autofac/issues/1503"&gt;#1503&lt;/a&gt;) - a regression introduced in 9.3.3. Registering an open generic for several services (&lt;code&gt;.As(typeof(IFirstService&amp;lt;&amp;gt;)).As(typeof(ISecondService&amp;lt;&amp;gt;))&lt;/code&gt;) threw &lt;code&gt;InvalidOperationException: Component pipeline has already been built, and cannot be modified.&lt;/code&gt; on first resolve whenever anything attached to &lt;code&gt;PipelineBuilding&lt;/code&gt; from the component registry's &lt;code&gt;Registered&lt;/code&gt; event. &lt;code&gt;Autofac.Extensions.DependencyInjection&lt;/code&gt; attaches exactly that way on every registration, so ASP.NET Core applications using a multi-service open generic registration hit it deterministically. The fix restores the ordering 9.3.2 had, where the pipeline is built only after &lt;code&gt;Registered&lt;/code&gt; has been raised.&lt;/p&gt;
+&lt;p&gt;If you are on 9.3.3 and register an open generic against more than one service, upgrade. Thanks to &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/hjalle/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/hjalle"&gt;@hjalle&lt;/a&gt; for the report and for pinning it to the exact line.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/autofac/Autofac/compare/v9.3.3...v9.3.4"&gt;&lt;tt&gt;v9.3.3...v9.3.4&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
@@ -28,66 +25,144 @@
             </content>
   </entry>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-09-17</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-09-17</id>
+    <title>aws/aws-sdk-net - Releases - 2026-09-18</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-09-18</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-09-18T00:09:34Z</updated>
+    <updated>2026-09-19T00:10:16Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.336.0"&gt;4.0.336.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.337.0"&gt;4.0.337.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.336.0 (2026-09-17 18:23 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.337.0 (2026-09-18 19:03 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;BedrockAgentCore (4.0.111.0)
+&lt;li&gt;AppIntegrationsService (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Batch evaluation now supports evaluating specific traces within a session. Each session can specify up to 100 trace IDs to evaluate.&lt;/li&gt;
+&lt;li&gt;This release adds support for A2A servers via the ApplicationType and AuthConfig fields, allowing customers to register their agent-to-agent servers with API key authentication.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.118.0)
+&lt;li&gt;Bedrock (4.0.102.3)
 &lt;ul&gt;
-&lt;li&gt;Made the replicaAlias attribute optional in the ReplicateInstance API to support Global routing for Amazon Connect Global Resiliency (ACGR) instances. This change maintains backward compatibility. When onboarding to ACGR without Global routing, you must specify a custom replicaAlias in your API call&lt;/li&gt;
+&lt;li&gt;Bedrock is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.122.0)
+&lt;li&gt;BedrockAgent (4.0.102.2)
 &lt;ul&gt;
-&lt;li&gt;Adding support for "Tunnel" VPC Endpoint&lt;/li&gt;
+&lt;li&gt;BedrockAgent is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GuardDuty (4.0.106.0)
+&lt;li&gt;Connect (4.0.119.0)
 &lt;ul&gt;
-&lt;li&gt;This change surfaces AI Protection resources on existing public IAM attack sequences. Customers will now see which model was accessed and whether a guardrail intervened as part of the credential-compromise sequence.&lt;/li&gt;
+&lt;li&gt;This release adds the ListSecurityProfileAIAgents API and updates the CreateSecurityProfile and UpdateSecurityProfile APIs to support the AllowedAIAgents field on security profiles, allowing customers to manage the 3P AI agents associated with a security profile for Agent-to-Agent interactions.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IoTWireless (4.0.102.0)
+&lt;li&gt;DataZone (4.0.106.0)
 &lt;ul&gt;
-&lt;li&gt;Adds Multi-frame GNSS support to the AWS IoT Core Device Location GetPositionEstimate API. The new GnssMultiFrame measurement type improves location accuracy by combining multiple GNSS signal captures (2, 4, 8, 16, or 32) from the same device to estimate its position.&lt;/li&gt;
+&lt;li&gt;Adds support for specifying Notebook type&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Notifications (4.0.101.0)
+&lt;li&gt;DynamoDBv2 (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;Added support for attachments on managed notification events. Added support to access and subscribe sensitive managed notification events.&lt;/li&gt;
+&lt;li&gt;Added IDynamoDBContextBuilder.AddDefaultConverter to register an IPropertyConverter that is applied by default to every property of a given .NET type, so a custom converter no longer needs to be declared per-property via DynamoDBPropertyAttribute or a per-property mapping. A converter set explicitly on an individual property still takes precedence.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SimpleEmailV2 (4.0.105.0)
+&lt;li&gt;EC2 (4.0.123.0)
 &lt;ul&gt;
-&lt;li&gt;Added support to query the tenant name for BatchGetMetricData and CreateExportJob APIs to filter metrics and messages at the tenant level.&lt;/li&gt;
+&lt;li&gt;This release adds documentation for the T8i instance family to the EC2 ModifyDefaultCreditSpecification and GetDefaultCreditSpecification APIs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SimpleNotificationService (4.0.100.15)
+&lt;li&gt;EntityResolution (4.0.102.6)
 &lt;ul&gt;
-&lt;li&gt;SNS API reference documentation update&lt;/li&gt;
+&lt;li&gt;EntityResolution is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SocialMessaging (4.0.103.0)
+&lt;li&gt;GeoPlaces (4.0.101.12)
 &lt;ul&gt;
-&lt;li&gt;Add support for WhatsApp Calling APIs.&lt;/li&gt;
+&lt;li&gt;GeoPlaces is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;VPCLattice (4.0.102.0)
+&lt;li&gt;GeoRoutes (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;Adding support for CIDR Resource Configuration&lt;/li&gt;
+&lt;li&gt;GeoRoutes is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Glue (4.0.106.0)
+&lt;ul&gt;
+&lt;li&gt;Introducing AWS Glue Data Quality advanced rule recommendations for faster recommendations. This capability uses Amazon Athena to analyze a sample of table data and Amazon Bedrock to recommend DQDL rules.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IVSRealTime (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;GetParticipant, ListParticipantEvents, ListParticipantReplicas, StartParticipantReplication, and StopParticipantReplication now accept participant IDs containing underscores.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;KafkaConnect (4.0.101.4)
+&lt;ul&gt;
+&lt;li&gt;KafkaConnect is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LambdaMicrovms (4.0.101.4)
+&lt;ul&gt;
+&lt;li&gt;LambdaMicrovms is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;The RetryAfterSeconds property on InternalServerException and ThrottlingException is now populated from the Retry-After response header.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LicenseManagerUserSubscriptions (4.0.101.4)
+&lt;ul&gt;
+&lt;li&gt;LicenseManagerUserSubscriptions is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaPackageV2 (4.0.103.2)
+&lt;ul&gt;
+&lt;li&gt;MediaPackageV2 is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaTailor (4.0.106.2)
+&lt;ul&gt;
+&lt;li&gt;MediaTailor is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Mgn (4.0.102.3)
+&lt;ul&gt;
+&lt;li&gt;Mgn is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;The RetryAfterSeconds property on InternalServerException and ThrottlingException is now populated from the Retry-After response header.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;QConnect (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon Connect AI Agents now support multi-agent orchestration and structured JSON input and output messaging for orchestration agents.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SageMaker (4.0.116.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for the hub content resource in SageMaker Search.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SecurityAgent (4.0.105.4)
+&lt;ul&gt;
+&lt;li&gt;SecurityAgent is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SecurityHub (4.0.103.8)
+&lt;ul&gt;
+&lt;li&gt;SecurityHub is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SimpleEmailV2 (4.0.105.1)
+&lt;ul&gt;
+&lt;li&gt;SimpleEmailV2 is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;TranscribeService (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon Transcribe now lets you encrypt your custom vocabularies, custom vocabulary filters, and custom language models with a customer managed AWS KMS key instead of an AWS owned key, and adds a new UpdateLanguageModel operation to transition CLM encryption to a different KMS key.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WellArchitected (4.0.101.7)
+&lt;ul&gt;
+&lt;li&gt;WellArchitected is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Delete operations no longer throw when ClientRequestToken is not set; an idempotency token is generated automatically.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -98,52 +173,39 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-09-17</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-09-17</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-09-18</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-09-18</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-09-18T00:09:35Z</updated>
+    <updated>2026-09-19T00:10:17Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/System.ClientModel_1.16.0"&gt;System.ClientModel_1.16.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.ConfidentialLedger_2.0.0-beta.4"&gt;Azure.Security.ConfidentialLedger_2.0.0-beta.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.16.0 (2026-09-16)&lt;/h2&gt;
+                                &lt;h2&gt;2.0.0-beta.4 (2026-09-18)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;AsyncStreamingResult&lt;/code&gt; and &lt;code&gt;AsyncStreamingResult&amp;lt;T&amp;gt;&lt;/code&gt; are now generally available and no longer require suppressing the &lt;code&gt;SCME0005&lt;/code&gt; experimental diagnostic.&lt;/li&gt;
-&lt;li&gt;Added automatic reconnection for eligible non-buffered server-sent event responses after abrupt connection loss, honoring server-provided retry intervals and &lt;code&gt;Last-Event-ID&lt;/code&gt; when available.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Renamed the experimental &lt;code&gt;AsyncStreamingClientResult&lt;/code&gt; and &lt;code&gt;AsyncStreamingClientResult&amp;lt;T&amp;gt;&lt;/code&gt; types to &lt;code&gt;AsyncStreamingResult&lt;/code&gt; and &lt;code&gt;AsyncStreamingResult&amp;lt;T&amp;gt;&lt;/code&gt;, respectively.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ConfidentialLedgerClientOptions.ServiceVersion.V2026_02_23&lt;/code&gt; for the "2026-02-23" API version. This is now the default service version used by &lt;code&gt;ConfidentialLedgerClientOptions()&lt;/code&gt; and by configuration-based (&lt;code&gt;ConfidentialLedgerClientSettings&lt;/code&gt;) construction, replacing &lt;code&gt;V2024_12_09_Preview&lt;/code&gt;. Transaction writes (&lt;code&gt;PostLedgerEntry&lt;/code&gt;/&lt;code&gt;PostLedgerEntryAsync&lt;/code&gt;, &lt;code&gt;CreateLedgerEntry&lt;/code&gt;/&lt;code&gt;CreateLedgerEntryAsync&lt;/code&gt;) and &lt;code&gt;GetReceipt&lt;/code&gt;/&lt;code&gt;GetReceiptAsync&lt;/code&gt; now send &lt;code&gt;api-version=2026-02-23&lt;/code&gt; unless an earlier &lt;code&gt;ServiceVersion&lt;/code&gt; is explicitly selected.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.StorageMover_1.5.0"&gt;Azure.ResourceManager.StorageMover_1.5.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.PaloAltoNetworks.Ngfw_1.3.0-alpha.20260917.2"&gt;Azure.ResourceManager.PaloAltoNetworks.Ngfw_1.3.0-alpha.20260917.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.5.0 (2026-09-10)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded the API version to 2026-05-01.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded Azure.Core to 1.62.0.&lt;/li&gt;
-&lt;li&gt;Upgraded Azure.ResourceManager to 1.14.0.&lt;/li&gt;
-&lt;/ul&gt;
+                                &lt;p&gt;[Missing change log entry]&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CognitiveServices_1.6.0"&gt;Azure.ResourceManager.CognitiveServices_1.6.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.PaloAltoNetworks.Ngfw_1.3.0-beta.1"&gt;Azure.ResourceManager.PaloAltoNetworks.Ngfw_1.3.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.6.0 (2026-09-10)&lt;/h2&gt;
+                                &lt;h2&gt;1.3.0-beta.1 (2026-09-17)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded API version to 2026-07-01.&lt;/li&gt;
+&lt;li&gt;Upgraded API version to &lt;code&gt;2026-07-29-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added custom packet capture and Azure Monitor Data Collection Rule-based log ingestion resources.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
@@ -153,60 +215,12 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Relay_1.3.0"&gt;Azure.ResourceManager.Relay_1.3.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Relay_1.4.0-beta.1"&gt;Azure.ResourceManager.Relay_1.4.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.3.0 (2026-09-16)&lt;/h2&gt;
+                                &lt;h2&gt;1.4.0-beta.1 (2026-09-18)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded API version to 2026-01-01.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded dependent &lt;code&gt;Azure.Core&lt;/code&gt; to &lt;code&gt;1.62.0&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Avs_1.7.0"&gt;Azure.ResourceManager.Avs_1.7.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.7.0 (2026-09-17)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded the service API version to &lt;code&gt;2026-03-01&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added host licensing and maintenance scheduling support.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.MongoCluster_1.2.0-beta.1"&gt;Azure.ResourceManager.MongoCluster_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.1 (2026-09-20)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded API version to &lt;code&gt;2026-06-15-preview&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added member &lt;code&gt;Planned&lt;/code&gt; to enum &lt;code&gt;MongoClusterPromoteOption&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerRegistry_1.5.0-beta.4"&gt;Azure.ResourceManager.ContainerRegistry_1.5.0-beta.4&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.5.0-beta.4 (2026-09-17)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated API version to 2026-09-01-preview.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;Identity&lt;/code&gt; to &lt;code&gt;ConnectedRegistryData&lt;/code&gt; and &lt;code&gt;ConnectedRegistryPatch&lt;/code&gt; for user-assigned managed identity synchronization using &lt;code&gt;AuthType.ManagedIdentity&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;AuthType&lt;/code&gt; to &lt;code&gt;ConnectedRegistrySyncProperties&lt;/code&gt; and &lt;code&gt;ConnectedRegistrySyncUpdateProperties&lt;/code&gt;, supporting &lt;code&gt;SyncToken&lt;/code&gt; and &lt;code&gt;ManagedIdentity&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added read-only &lt;code&gt;TotalGib&lt;/code&gt; and &lt;code&gt;AvailableGib&lt;/code&gt; properties to &lt;code&gt;ConnectedRegistryStatusDetail&lt;/code&gt; for disk space in gibibytes.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ArmContainerRegistryModelFactory&lt;/code&gt; parameters for mocking the new properties.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Made &lt;code&gt;ConnectedRegistrySyncProperties.TokenId&lt;/code&gt; optional and added a constructor accepting only &lt;code&gt;messageTtl&lt;/code&gt;. Existing constructor calls remain compatible, but null &lt;code&gt;tokenId&lt;/code&gt; values no longer throw &lt;code&gt;ArgumentNullException&lt;/code&gt;, and unset &lt;code&gt;TokenId&lt;/code&gt; values are omitted from requests.&lt;/li&gt;
-&lt;li&gt;Changed &lt;code&gt;ArmContainerRegistryModelFactory&lt;/code&gt; signatures for &lt;code&gt;ConnectedRegistryData&lt;/code&gt; (the &lt;code&gt;registrySyncResult&lt;/code&gt; overload), &lt;code&gt;ConnectedRegistryPatch&lt;/code&gt;, and &lt;code&gt;ConnectedRegistrySyncUpdateProperties&lt;/code&gt;. Recompile callers and update method-group delegates matching the previous signatures.&lt;/li&gt;
+&lt;li&gt;Upgraded API version to 2026-07-01-preview.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -215,86 +229,332 @@
             </content>
   </entry>
   <entry>
-    <title>googleapis/google-cloud-dotnet - Releases - 2026-09-17</title>
-    <id>https://github.com/googleapis/google-cloud-dotnet#2026-09-17</id>
-    <link href="https://github.com/googleapis/google-cloud-dotnet" />
-    <updated>2026-09-18T00:09:46Z</updated>
+    <title>dotnet/SqlClient - Releases - 2026-09-18</title>
+    <id>https://github.com/dotnet/SqlClient#2026-09-18</id>
+    <link href="https://github.com/dotnet/SqlClient" />
+    <updated>2026-09-19T00:10:27Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Shopping.Merchant.LoyaltyCustomers.V1-1.0.0-beta01"&gt;Google.Shopping.Merchant.LoyaltyCustomers.V1 version 1.0.0-beta01&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/SqlClient/releases/tag/v7.1.0"&gt;Stable Release v7.1.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
+                                &lt;p&gt;This is the general availability release of &lt;strong&gt;Microsoft.Data.SqlClient 7.1&lt;/strong&gt;. It closes out the &lt;code&gt;7.1&lt;/code&gt; preview cycle with application identity reporting for telemetry, the deprecation of &lt;code&gt;TransparentNetworkIPResolution&lt;/code&gt;, and a set of connection, transaction, and Named Pipes fixes.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Important — package version alignment:&lt;/strong&gt; Starting with the &lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/7.0/7.0.2.md"&gt;7.0.2&lt;/a&gt; release, the &lt;code&gt;Microsoft.Data.SqlClient&lt;/code&gt; driver and its companion packages share a single aligned version. The &lt;code&gt;7.1.0&lt;/code&gt; GA release continues this alignment; the following packages ship together as &lt;code&gt;7.1.0&lt;/code&gt;:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial generation for Google.Shopping.Merchant.LoyaltyCustomers.V1&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Data.SqlClient&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Data.SqlClient.AlwaysEncrypted.AzureKeyVaultProvider&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Data.SqlClient.Extensions.Azure&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Data.SqlClient.Extensions.Abstractions&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Data.SqlClient.Internal.Logging&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.DeviceStreaming.V1-1.1.0"&gt;Google.Cloud.DeviceStreaming.V1 version 1.1.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;p&gt;(&lt;code&gt;Microsoft.SqlServer.Server&lt;/code&gt; continues to version independently and remains at &lt;code&gt;1.0.0&lt;/code&gt;.)&lt;/p&gt;
+&lt;p&gt;Applications must reference the same versions of &lt;code&gt;Microsoft.Data.SqlClient&lt;/code&gt; and its extensions for best compatibility. In particular, applications that reference &lt;code&gt;Microsoft.Data.SqlClient.Extensions.Azure&lt;/code&gt; must upgrade it to &lt;code&gt;7.1.0&lt;/code&gt; when upgrading &lt;code&gt;Microsoft.Data.SqlClient&lt;/code&gt; to &lt;code&gt;7.1.0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Compatibility guarantee:&lt;/strong&gt; All aligned assemblies ship with &lt;code&gt;FileVersion 7.1.0.x&lt;/code&gt; and &lt;code&gt;AssemblyVersion 7.0.0.0&lt;/code&gt;. The &lt;code&gt;AssemblyVersion&lt;/code&gt; is unchanged from &lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/7.0/7.0.2.md"&gt;7.0.2&lt;/a&gt;, so upgrading from &lt;code&gt;7.0.2&lt;/code&gt;, &lt;code&gt;7.0.3&lt;/code&gt;, or any &lt;code&gt;7.1&lt;/code&gt; preview to &lt;code&gt;7.1.0&lt;/code&gt; does &lt;strong&gt;not&lt;/strong&gt; require any new .NET Framework strong-name binding redirects. Applications upgrading from &lt;code&gt;7.0.0&lt;/code&gt; or &lt;code&gt;7.0.1&lt;/code&gt; should note that &lt;code&gt;Extensions.Azure&lt;/code&gt;, &lt;code&gt;Extensions.Abstractions&lt;/code&gt;, and &lt;code&gt;Internal.Logging&lt;/code&gt; raised their &lt;code&gt;AssemblyVersion&lt;/code&gt; from &lt;code&gt;1.0.0.0&lt;/code&gt; to &lt;code&gt;7.0.0.0&lt;/code&gt; in &lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/7.0/7.0.2.md"&gt;7.0.2&lt;/a&gt;; see those release notes for the one-time .NET Framework impact.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Companion package release notes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Add ClientInfo message to DeviceSession message&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/add-ons/AzureKeyVaultProvider/7.1/7.1.0.md"&gt;Microsoft.Data.SqlClient.AlwaysEncrypted.AzureKeyVaultProvider 7.1.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/Extensions/Azure/7.1/7.1.0.md"&gt;Microsoft.Data.SqlClient.Extensions.Azure 7.1.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/Extensions/Abstractions/7.1/7.1.0.md"&gt;Microsoft.Data.SqlClient.Extensions.Abstractions 7.1.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/Internal/Logging/7.1/7.1.0.md"&gt;Microsoft.Data.SqlClient.Internal.Logging 7.1.0&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Storage.V1-4.16.0"&gt;Google.Cloud.Storage.V1 version 4.16.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;h2&gt;Changes Since &lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/7.1/7.1.0-preview3.md"&gt;7.1.0-preview3&lt;/a&gt;&lt;/h2&gt;
+&lt;h3&gt;Added&lt;/h3&gt;
+&lt;h4&gt;Application Identity in the USERAGENT Payload&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;What Changed:&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Add idempotency header (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4957453242" data-permission-text="Title is private" data-url="https://github.com/googleapis/google-cloud-dotnet/issues/15778" data-hovercard-type="pull_request" data-hovercard-url="/googleapis/google-cloud-dotnet/pull/15778/hovercard" href="https://github.com/googleapis/google-cloud-dotnet/pull/15778"&gt;#15778&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added a &lt;code&gt;RegisteredApplication&lt;/code&gt; enum and a matching &lt;code&gt;SqlConnection.RegisteredApplication&lt;/code&gt; property that let a library or tool identify itself to SQL Server through version 2 of the TDS USERAGENT feature extension. The payload also carries a new driver-owned 64-bit &lt;em&gt;Driver Properties&lt;/em&gt; flag field; bit 0 reports whether connection pool V2 is enabled for the process. Both fields are emitted as unpadded uppercase hexadecimal. (&lt;a href="https://github.com/dotnet/SqlClient/issues/3201" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/3201/hovercard"&gt;#3201&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4632" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4632/hovercard"&gt;#4632&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.ParameterManager.V1-1.1.0"&gt;Google.Cloud.ParameterManager.V1 version 1.1.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Who Benefits:&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Add Templates functionality to parametermanager API&lt;/li&gt;
-&lt;li&gt;Add Tagging support on Parameters&lt;/li&gt;
-&lt;li&gt;Add checksum support on Parameters&lt;/li&gt;
+&lt;li&gt;Middleware and tooling built on top of the driver — Entity Framework Core, Semantic Kernel, SQL Server Management Studio, SqlPackage, Data API Builder, and similar — can be distinguished in server-side telemetry without the driver accepting arbitrary user-supplied user-agent text. This originated as a request from the Entity Framework Core team.&lt;/li&gt;
+&lt;li&gt;Service operators gain a more accurate picture of which client stacks are connecting, which helps when diagnosing workload-specific behavior.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Impact:&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Update documentation for ListLocations and View enum&lt;/li&gt;
+&lt;li&gt;Purely additive from the application's perspective: a newly created physical connection whose &lt;code&gt;RegisteredApplication&lt;/code&gt; is unset reports &lt;code&gt;Unknown&lt;/code&gt; (&lt;code&gt;0&lt;/code&gt;). On the wire the field itself is new — USERAGENT payload v1 carried no application identifier, while v2 always emits one.&lt;/li&gt;
+&lt;li&gt;Set the property before calling &lt;code&gt;Open&lt;/code&gt; or &lt;code&gt;OpenAsync&lt;/code&gt;. Assigning it while the connection is connecting or open throws &lt;code&gt;InvalidOperationException&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.ApiGateway.V1-2.6.0"&gt;Google.Cloud.ApiGateway.V1 version 2.6.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="using var connection = new SqlConnection(connectionString);
+connection.RegisteredApplication = RegisteredApplication.EntityFrameworkCore;
+await connection.OpenAsync();"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;using&lt;/span&gt; &lt;span class="pl-k"&gt;var&lt;/span&gt; &lt;span class="pl-s1"&gt;connection&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-smi"&gt;SqlConnection&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-s1"&gt;connectionString&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+&lt;span class="pl-s1"&gt;connection&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;RegisteredApplication&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-s1"&gt;RegisteredApplication&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;EntityFrameworkCore&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;
+&lt;span class="pl-k"&gt;await&lt;/span&gt; &lt;span class="pl-s1"&gt;connection&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-en"&gt;OpenAsync&lt;/span&gt;&lt;span class="pl-kos"&gt;(&lt;/span&gt;&lt;span class="pl-kos"&gt;)&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
-&lt;li&gt;Add streaming_mode and effective_streaming_mode to the Gateway resource&lt;/li&gt;
+&lt;li&gt;The enum is &lt;code&gt;ushort&lt;/code&gt;-backed and marked &lt;code&gt;[CLSCompliant(false)]&lt;/code&gt;. Values are partitioned by range: &lt;code&gt;0x0001&lt;/code&gt;–&lt;code&gt;0x7FFF&lt;/code&gt; for Microsoft-defined large-scale applications, &lt;code&gt;0x8000&lt;/code&gt;–&lt;code&gt;0xBFFF&lt;/code&gt; for small-scale use, and &lt;code&gt;0xC000&lt;/code&gt;–&lt;code&gt;0xFFFF&lt;/code&gt; for public/developer use. Applications that are not yet registered can cast an unassigned value from the appropriate range.&lt;/li&gt;
+&lt;li&gt;Application identity is &lt;strong&gt;client-supplied telemetry and must never be used for authorization or any other security decision.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;The value is not part of the connection pool key. A pooled physical connection reports the application that originally created it, and background &lt;code&gt;Min Pool Size&lt;/code&gt; connections report &lt;code&gt;Unknown&lt;/code&gt;. Cloned connections preserve the value.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;h4&gt;&lt;code&gt;TransparentNetworkIPResolution&lt;/code&gt; Is Now Obsolete&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;What Changed:&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Describe defaultHostname by what it serves rather than by a fixed hostname template&lt;/li&gt;
-&lt;li&gt;Rewrap field comments to the publishing tool's line width, with no change of meaning&lt;/li&gt;
-&lt;li&gt;Reference google.longrunning.Operation.error explicitly in OperationMetadata so the link resolves&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SqlConnectionStringBuilder.TransparentNetworkIPResolution&lt;/code&gt; is now marked &lt;code&gt;[Obsolete]&lt;/code&gt;. The obsoletion message directs callers to &lt;code&gt;MultiSubnetFailover&lt;/code&gt; and notes that Transparent Network IP Resolution (TNIR) is a .NET Framework-only feature. (&lt;a href="https://github.com/dotnet/SqlClient/issues/4494" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4494/hovercard"&gt;#4494&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4576" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4576/hovercard"&gt;#4576&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Ads.AdManager.V1-1.0.0-beta12"&gt;Google.Ads.AdManager.V1 version 1.0.0-beta12&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Who Benefits:&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;DaiSessionService&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;startTime&lt;/code&gt;, &lt;code&gt;archived&lt;/code&gt;, and &lt;code&gt;publisherFloorExempt&lt;/code&gt; fields to &lt;code&gt;PrivateAuctionDeal&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Applications still relying on TNIR get a compile-time signal to move to &lt;code&gt;MultiSubnetFailover&lt;/code&gt;, which addresses the same "connect quickly across multiple DNS-resolved addresses" goal, works consistently on every supported target framework, and is the documented strategy for Always On availability group listeners.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Impact:&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Fix for some documentation cross-references&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;No runtime behavior change.&lt;/strong&gt; TNIR still defaults to &lt;code&gt;true&lt;/code&gt; on .NET Framework, and &lt;code&gt;MultiSubnetFailover&lt;/code&gt; still defaults to &lt;code&gt;false&lt;/code&gt;. The property remains .NET Framework-only and is not exposed on modern .NET, where a connection string containing the &lt;code&gt;Transparent Network IP Resolution&lt;/code&gt; keyword still throws &lt;code&gt;NotSupportedException&lt;/code&gt;. No new AppContext switches were introduced.&lt;/li&gt;
+&lt;li&gt;The only visible effect is a new &lt;code&gt;CS0618&lt;/code&gt; build warning for code that references the property. Suppress it, or migrate to &lt;code&gt;MultiSubnetFailover&lt;/code&gt;, at your own pace. Flipping the TNIR and &lt;code&gt;MultiSubnetFailover&lt;/code&gt; defaults is deferred to a future major version.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Other changes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated &lt;code&gt;Microsoft.Data.SqlClient.SNI&lt;/code&gt; and &lt;code&gt;Microsoft.Data.SqlClient.SNI.runtime&lt;/code&gt; to v7.1.0 (was v7.1.0-preview3.26226.3). (&lt;a href="https://github.com/dotnet/SqlClient/pull/4698" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4698/hovercard"&gt;#4698&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Unified the exception message raised when conflicting token-based and SSPI authentication properties are set on the same &lt;code&gt;SqlConnection&lt;/code&gt;, and documented the complete set of properties that conflict with &lt;code&gt;AccessToken&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4629" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4629/hovercard"&gt;#4629&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Documentation corrections:
+&lt;ul&gt;
+&lt;li&gt;Rewrote the &lt;code&gt;SqlDataRecord&lt;/code&gt; and &lt;code&gt;SqlMetaData&lt;/code&gt; documentation, which incorrectly described the SQL CLR-only &lt;code&gt;SqlContext&lt;/code&gt; and &lt;code&gt;SqlPipe&lt;/code&gt; types, and clarified whether &lt;code&gt;SqlDataRecord&lt;/code&gt; instances can be reused. (&lt;a href="https://github.com/dotnet/SqlClient/issues/1805" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/1805/hovercard"&gt;#1805&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4440" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4440/hovercard"&gt;#4440&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Corrected the LCID 1033 sample comment to use the official Windows locale name &lt;code&gt;English (United States)&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4646" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4646/hovercard"&gt;#4646&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed a pooled connection being returned to the pool in a broken state after a &lt;code&gt;TransactionScope&lt;/code&gt; rollback — for example, when distributed transaction promotion fails on .NET 8+ where implicit distributed transactions are disabled by default. A subsequent &lt;code&gt;Open()&lt;/code&gt; succeeded but &lt;code&gt;BeginTransaction()&lt;/code&gt; threw &lt;code&gt;InvalidOperationException&lt;/code&gt; ("the connection has been broken"). Connection reset now preserves the transaction when the pooled connection is either a delegated transaction root &lt;strong&gt;or&lt;/strong&gt; enlisted in a transaction, instead of only the latter. (&lt;a href="https://github.com/dotnet/SqlClient/issues/4001" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4001/hovercard"&gt;#4001&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4557" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4557/hovercard"&gt;#4557&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;GetSchema("DataTypes")&lt;/code&gt; never reporting the SQL Server 2025 &lt;code&gt;json&lt;/code&gt; type against Azure SQL. The row was filtered by a string comparison against a minimum server version of &lt;code&gt;17.00.000.0&lt;/code&gt;, which Azure SQL can never satisfy because it always reports &lt;code&gt;12.00.xxxx&lt;/code&gt;. The decision now uses the &lt;code&gt;json&lt;/code&gt; support flag negotiated through the TDS &lt;code&gt;FEATUREEXTACK&lt;/code&gt; token, which is accurate on both Azure SQL and on-premises SQL Server 2025+. (&lt;a href="https://github.com/dotnet/SqlClient/issues/4592" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4592/hovercard"&gt;#4592&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4682" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4682/hovercard"&gt;#4682&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed a malformed UNC pipe path being composed for IPv6 literal server names over Named Pipes in managed SNI (for example &lt;code&gt;Server=np:::1&lt;/code&gt;, &lt;code&gt;Server=np:[::1]&lt;/code&gt;, or &lt;code&gt;Server=\\::1\pipe\sql\query&lt;/code&gt;). A UNC path component may not contain a colon, and handing such a path to the OS could trigger an access violation inside LSASS on Windows, forcing a reboot. IPv6 literals are now transcribed to their &lt;code&gt;.ipv6-literal.net&lt;/code&gt; form as defined by &lt;a href="https://learn.microsoft.com/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc" rel="nofollow"&gt;MS-DTYP 2.2.57&lt;/a&gt;, and a colon-bearing host with no valid IPv6 interpretation now fails with the standard invalid-connection-string error. Colon-free host names, LocalDB, &lt;code&gt;localhost&lt;/code&gt;, &lt;code&gt;.&lt;/code&gt;, and IPv6 over TCP are unaffected. (net8.0/net9.0 only — this is the managed SNI counterpart to the native SNI fix) (&lt;a href="https://github.com/dotnet/SqlClient/issues/4523" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4523/hovercard"&gt;#4523&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4558" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4558/hovercard"&gt;#4558&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed configurable retry logic installing a permanent, process-wide assembly-resolution handler that could interfere with unrelated assembly loading. The handler is now installed only while an explicitly configured custom retry provider is being resolved and constructed, and it probes &lt;code&gt;AppContext.BaseDirectory&lt;/code&gt; instead of the current working directory. Place custom retry assemblies in the application base directory; dependencies loaded after provider construction must be resolvable through normal application dependency resolution or an application-supplied handler. (net8.0/net9.0 only — the .NET Framework path does not use &lt;code&gt;AssemblyLoadContext&lt;/code&gt;) (&lt;a href="https://github.com/dotnet/SqlClient/issues/2214" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/2214/hovercard"&gt;#2214&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4547" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4547/hovercard"&gt;#4547&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed open/close throughput regressions in the opt-in connection pool V2 (&lt;code&gt;Switch.Microsoft.Data.SqlClient.UseConnectionPoolV2&lt;/code&gt;). Acquiring an already-pooled connection no longer dispatches to the thread pool before attempting an inline, non-blocking acquisition, no longer allocates a timer-backed &lt;code&gt;CancellationTokenSource&lt;/code&gt; before it is known that the caller will wait, and no longer allocates a &lt;code&gt;Task&lt;/code&gt; on the synchronous completion path. The default pool is unaffected. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4543" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4543/hovercard"&gt;#4543&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Cumulative Changes Since &lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/7.0/7.0.3.md"&gt;7.0.3&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;This section summarizes all changes across the &lt;code&gt;7.1&lt;/code&gt; preview cycle for users upgrading from the latest &lt;code&gt;7.0&lt;/code&gt; stable release. Changes that were also serviced into &lt;code&gt;7.0.1&lt;/code&gt;, &lt;code&gt;7.0.2&lt;/code&gt;, or &lt;code&gt;7.0.3&lt;/code&gt; are omitted — they are already present for &lt;code&gt;7.0.x&lt;/code&gt; users.&lt;/p&gt;
+&lt;h3&gt;Added&lt;/h3&gt;
+&lt;h4&gt;&lt;code&gt;SqlBatch&lt;/code&gt; Support on .NET Framework (net462 only)&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;What Changed:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;SqlBatch&lt;/code&gt;, &lt;code&gt;SqlBatchCommand&lt;/code&gt;, and the related execution methods are now available on the .NET Framework target, so the batching API spans the full supported platform matrix. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3926" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3926/hovercard"&gt;#3926&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Who Benefits:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Libraries and applications that multi-target .NET Framework and modern .NET can use a single data-access surface instead of maintaining separate batching strategies.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Impact:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Purely additive; existing &lt;code&gt;SqlCommand&lt;/code&gt; code is unchanged.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;&lt;code&gt;SqlConnection.GetSchemaAsync&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;What Changed:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added asynchronous overloads of &lt;code&gt;SqlConnection.GetSchema&lt;/code&gt; that mirror the existing synchronous shapes and honor a supplied &lt;code&gt;CancellationToken&lt;/code&gt;. The .NET Framework schema code paths were unified with the .NET implementation in the process. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3005" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3005/hovercard"&gt;#3005&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Who Benefits:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Applications that enumerate database metadata as part of a request pipeline no longer block a thread on synchronous I/O.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Impact:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Additive; existing &lt;code&gt;GetSchema(...)&lt;/code&gt; calls are unchanged.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Asynchronous Key Store Provider APIs for Always Encrypted&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;What Changed:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added four &lt;code&gt;virtual&lt;/code&gt; asynchronous counterparts to the synchronous methods on &lt;code&gt;SqlColumnEncryptionKeyStoreProvider&lt;/code&gt;: &lt;code&gt;DecryptColumnEncryptionKeyAsync&lt;/code&gt;, &lt;code&gt;EncryptColumnEncryptionKeyAsync&lt;/code&gt;, &lt;code&gt;SignColumnMasterKeyMetadataAsync&lt;/code&gt;, and &lt;code&gt;VerifyColumnMasterKeyMetadataAsync&lt;/code&gt;. Each accepts an optional &lt;code&gt;CancellationToken&lt;/code&gt;, and the default implementations delegate to the existing synchronous methods. (&lt;a href="https://github.com/dotnet/SqlClient/issues/3672" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/3672/hovercard"&gt;#3672&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/3673" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3673/hovercard"&gt;#3673&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Who Benefits:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Authors of custom key store providers backed by network-bound stores such as HSMs or cloud key vaults can implement genuinely asynchronous key operations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Impact:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Purely additive; existing providers compile and run unmodified.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Introduced, but not yet consumed by the driver.&lt;/strong&gt; The driver's own column encryption key resolution path still invokes the synchronous provider methods on both the synchronous and asynchronous command paths. &lt;strong&gt;A future release will enable their use from the driver's own asynchronous APIs.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;The in-box &lt;code&gt;SqlColumnEncryptionAzureKeyVaultProvider&lt;/code&gt; overrides all four methods. See the &lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/add-ons/AzureKeyVaultProvider/7.1/7.1.0.md"&gt;AzureKeyVaultProvider 7.1.0&lt;/a&gt; release notes. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4540" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4540/hovercard"&gt;#4540&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Configurable Idle Connection Timeout&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;What Changed:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added a &lt;code&gt;Connection Idle Timeout&lt;/code&gt; connection-string keyword and matching &lt;code&gt;SqlConnectionStringBuilder.IdleTimeout&lt;/code&gt; property that let the pool evict connections whose idle time exceeds the configured value. The default is &lt;code&gt;300&lt;/code&gt; seconds; &lt;code&gt;0&lt;/code&gt; disables idle expiration and negative values throw &lt;code&gt;ArgumentException&lt;/code&gt;. Enforcement is gated on &lt;code&gt;Switch.Microsoft.Data.SqlClient.UseLegacyIdleTimeoutBehavior&lt;/code&gt;, which defaults to &lt;code&gt;true&lt;/code&gt; to preserve historical pooling behavior. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4295" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4295/hovercard"&gt;#4295&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Who Benefits:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Applications running against Azure SQL Database and other elastic backends can bound connection idle time to align with server-side session recycling and reduce stale-connection failures.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Impact:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Default behavior is unchanged: the keyword is parsed but not enforced until the legacy switch is set to &lt;code&gt;false&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Connection Pool V2 Feature Completeness&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;What Changed:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Substantially expanded &lt;code&gt;ChannelDbConnectionPool&lt;/code&gt;, the opt-in pool behind &lt;code&gt;Switch.Microsoft.Data.SqlClient.UseConnectionPoolV2&lt;/code&gt;, bringing it to parity with the default &lt;code&gt;WaitHandleDbConnectionPool&lt;/code&gt;: transaction support, broken-connection replacement, background warmup and replenishment to &lt;code&gt;Min Pool Size&lt;/code&gt;, idle pruning derived from &lt;code&gt;Connection Idle Timeout&lt;/code&gt;, optional connection-creation rate limiting, leaked-connection reclamation, and metrics/tracing parity. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4395" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4395/hovercard"&gt;#4395&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4396" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4396/hovercard"&gt;#4396&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4429" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4429/hovercard"&gt;#4429&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4452" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4452/hovercard"&gt;#4452&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4463" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4463/hovercard"&gt;#4463&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4487" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4487/hovercard"&gt;#4487&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4504" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4504/hovercard"&gt;#4504&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4529" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4529/hovercard"&gt;#4529&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4543" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4543/hovercard"&gt;#4543&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SqlConnection.ClearPool(SqlConnection)&lt;/code&gt; and &lt;code&gt;SqlConnection.ClearAllPools()&lt;/code&gt; now work correctly under pool V2. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4194" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4194/hovercard"&gt;#4194&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Who Benefits:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Applications evaluating the V2 pool can exercise transaction-enlisted workloads, broken-connection recovery, leaked-connection reclamation, and pool warmup, and can observe the pool through the existing performance counters and EventSource traces.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Impact:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No change to default behavior. Connection pool V2 remains &lt;strong&gt;in evaluation&lt;/strong&gt; and is used only when the AppContext switch is enabled.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Other additions&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Added application identity reporting through &lt;code&gt;SqlConnection.RegisteredApplication&lt;/code&gt; and USERAGENT payload version 2 (see &lt;em&gt;Changes Since 7.1.0-preview3&lt;/em&gt; above). (&lt;a href="https://github.com/dotnet/SqlClient/pull/4632" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4632/hovercard"&gt;#4632&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SqlBulkCopy&lt;/code&gt; column mappings now accept the SQL Graph pseudo-column aliases &lt;code&gt;$node_id&lt;/code&gt;, &lt;code&gt;$edge_id&lt;/code&gt;, &lt;code&gt;$from_id&lt;/code&gt;, and &lt;code&gt;$to_id&lt;/code&gt; as destination column names. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3677" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3677/hovercard"&gt;#3677&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SqlBatchCommand.CommandBehavior&lt;/code&gt; is now honored inside a &lt;code&gt;SqlBatch&lt;/code&gt;, and &lt;code&gt;SqlBatch.ExecuteReader&lt;/code&gt; respects the &lt;code&gt;CommandBehavior&lt;/code&gt; passed to it. Batches that previously set the property and relied on it being ignored will now see it applied. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4125" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4125/hovercard"&gt;#4125&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added connection-string synonyms for better compatibility with other SQL Server drivers: &lt;code&gt;ColumnEncryption&lt;/code&gt;, &lt;code&gt;ConnectTimeout&lt;/code&gt;, &lt;code&gt;FailoverPartner&lt;/code&gt;, &lt;code&gt;PacketSize&lt;/code&gt;, and &lt;code&gt;WorkstationId&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4192" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4192/hovercard"&gt;#4192&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added the SQL Server 2025 &lt;code&gt;json&lt;/code&gt; data type to the &lt;code&gt;DataTypes&lt;/code&gt; collection returned by &lt;code&gt;SqlConnection.GetSchema&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3858" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3858/hovercard"&gt;#3858&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;h4&gt;Connection Timeout Can Now Propagate Through the Pool&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;What Changed:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Replaced raw &lt;code&gt;TimeSpan&lt;/code&gt; timeouts with a shared &lt;code&gt;TimeoutTimer&lt;/code&gt; across &lt;code&gt;SqlConnection.Open[Async]&lt;/code&gt;, pool acquisition, and physical connection creation, so the &lt;code&gt;Connect Timeout&lt;/code&gt; budget can be deducted while a request waits in the pool. Enforcement is gated on &lt;code&gt;Switch.Microsoft.Data.SqlClient.UseOverallConnectTimeoutForPoolWait&lt;/code&gt;, which defaults to &lt;code&gt;false&lt;/code&gt;. Introduces a dependency on &lt;code&gt;Microsoft.Bcl.TimeProvider&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4270" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4270/hovercard"&gt;#4270&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Who Benefits:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Applications that observe pool contention can opt in to having the configured &lt;code&gt;Connect Timeout&lt;/code&gt; respected end-to-end instead of the budget effectively restarting when a physical connection is eventually opened.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Impact:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Default behavior is unchanged. When the switch is enabled, &lt;code&gt;Open&lt;/code&gt;/&lt;code&gt;OpenAsync&lt;/code&gt; under heavy pool contention may surface timeouts sooner than before; successful opens are unaffected.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;&lt;code&gt;TransparentNetworkIPResolution&lt;/code&gt; Is Now Obsolete&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;See &lt;em&gt;Changes Since 7.1.0-preview3&lt;/em&gt; above. (&lt;a href="https://github.com/dotnet/SqlClient/issues/4494" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4494/hovercard"&gt;#4494&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4576" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4576/hovercard"&gt;#4576&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Other changes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows-only native SNI types are now removed cleanly by the IL trimmer on Linux and macOS, and &lt;code&gt;LocalAppContextSwitches.UseManagedNetworking&lt;/code&gt; is substituted for a constant. The driver builds a single OS-agnostic assembly for all platforms; NuGet package structure and contents are unchanged. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4207" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4207/hovercard"&gt;#4207&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/issues/4239" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4239/hovercard"&gt;#4239&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4465" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4465/hovercard"&gt;#4465&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4474" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4474/hovercard"&gt;#4474&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Performance and allocation improvements:
+&lt;ul&gt;
+&lt;li&gt;Restored reuse of &lt;code&gt;PacketData&lt;/code&gt; linked-list nodes via a bounded free list on &lt;code&gt;StateSnapshot&lt;/code&gt;, returning &lt;code&gt;SqlCommand/ExecuteReaderAsync&lt;/code&gt; from +120.9% allocated against the 6.1.6 baseline to +0.1%. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4536" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4536/hovercard"&gt;#4536&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SqlBulkCopy&lt;/code&gt; no longer builds SQL Graph column alias mapping tables when neither the source nor destination table contains graph pseudo-columns. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4535" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4535/hovercard"&gt;#4535&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Reduced allocations when sending large string values to SQL Server, when reading &lt;code&gt;SqlErrorCollection&lt;/code&gt; counters with no errors present, and on expected &lt;code&gt;null&lt;/code&gt;-return paths that previously materialized stack traces. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4072" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4072/hovercard"&gt;#4072&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4157" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4157/hovercard"&gt;#4157&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4099" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4099/hovercard"&gt;#4099&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4102" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4102/hovercard"&gt;#4102&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Use hardcoded LCID mappings when decoding strings, avoiding repeated culture lookups. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4212" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4212/hovercard"&gt;#4212&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Internal hardening and refactoring:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;SqlConnection&lt;/code&gt; internal state transitions now use &lt;code&gt;Interlocked.CompareExchange&lt;/code&gt; guards. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4267" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4267/hovercard"&gt;#4267&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Removed legacy connection-options inheritance from internal APIs and refactored &lt;code&gt;ForceNewConnection&lt;/code&gt; handling. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4235" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4235/hovercard"&gt;#4235&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4237" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4237/hovercard"&gt;#4237&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4261" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4261/hovercard"&gt;#4261&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4415" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4415/hovercard"&gt;#4415&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added async generic helpers to reduce duplication across sync/async code paths. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4334" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4334/hovercard"&gt;#4334&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SqlVector&amp;lt;float&amp;gt;&lt;/code&gt; now serializes and deserializes little-endian multibyte values explicitly for consistent behavior across architectures. (&lt;a href="https://github.com/dotnet/SqlClient/pull/3861" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/3861/hovercard"&gt;#3861&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Improved &lt;code&gt;EnclaveDiffieHellmanInfo.Size&lt;/code&gt; accuracy. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4346" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4346/hovercard"&gt;#4346&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Documentation corrections for &lt;code&gt;SqlDataRecord&lt;/code&gt;, &lt;code&gt;SqlMetaData&lt;/code&gt;, server certificate configuration, and the LCID 1033 locale name. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4408" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4408/hovercard"&gt;#4408&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4440" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4440/hovercard"&gt;#4440&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4646" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4646/hovercard"&gt;#4646&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Updated Dependencies:
+&lt;ul&gt;
+&lt;li&gt;Updated &lt;code&gt;Microsoft.Bcl.Cryptography&lt;/code&gt;, &lt;code&gt;Microsoft.Extensions.Caching.Memory&lt;/code&gt;, &lt;code&gt;System.Configuration.ConfigurationManager&lt;/code&gt;, and &lt;code&gt;System.Security.Cryptography.Pkcs&lt;/code&gt; to v9.0.18 for the &lt;code&gt;net9.0&lt;/code&gt; target framework. Non-&lt;code&gt;net9.0&lt;/code&gt; targets keep their existing &lt;code&gt;8.0.x&lt;/code&gt; pins. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4507" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4507/hovercard"&gt;#4507&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;System.Threading.RateLimiting&lt;/code&gt; and &lt;code&gt;Microsoft.Bcl.TimeProvider&lt;/code&gt; to the packaged dependency metadata. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4270" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4270/hovercard"&gt;#4270&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4507" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4507/hovercard"&gt;#4507&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Microsoft.Data.SqlClient.SNI&lt;/code&gt; and &lt;code&gt;Microsoft.Data.SqlClient.SNI.runtime&lt;/code&gt; to v7.1.0 (was v6.0.3). (&lt;a href="https://github.com/dotnet/SqlClient/pull/4564" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4564/hovercard"&gt;#4564&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4698" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4698/hovercard"&gt;#4698&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed Always Encrypted reads of &lt;code&gt;CekMdVersion&lt;/code&gt; and &lt;code&gt;EkValueCount&lt;/code&gt; to align with the TDS specification. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4240" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4240/hovercard"&gt;#4240&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed an &lt;code&gt;OverflowException&lt;/code&gt; when sending large &lt;code&gt;decimal&lt;/code&gt; values (for example &lt;code&gt;decimal.MaxValue&lt;/code&gt;) as a parameter with explicit &lt;code&gt;Precision&lt;/code&gt; and &lt;code&gt;Scale&lt;/code&gt;. This primarily affected Always Encrypted scenarios, where both must always be set. (&lt;a href="https://github.com/dotnet/SqlClient/issues/1655" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/1655/hovercard"&gt;#1655&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4443" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4443/hovercard"&gt;#4443&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed a TDS stream error when passing a &lt;code&gt;DateOnly&lt;/code&gt; value as a parameter with &lt;code&gt;SqlDbType.Variant&lt;/code&gt;, and fixed &lt;code&gt;DateOnly&lt;/code&gt; values written to a &lt;code&gt;sql_variant&lt;/code&gt; column of a table-valued parameter being sent as &lt;code&gt;datetime&lt;/code&gt; instead of &lt;code&gt;date&lt;/code&gt; (which also caused overflows for values valid for &lt;code&gt;date&lt;/code&gt; but out of range for &lt;code&gt;datetime&lt;/code&gt;). Reading continues to return &lt;code&gt;DateTime&lt;/code&gt; instances by default for backwards compatibility. (net8.0/net9.0 only — .NET Framework has no &lt;code&gt;DateOnly&lt;/code&gt; type) (&lt;a href="https://github.com/dotnet/SqlClient/issues/3953" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/3953/hovercard"&gt;#3953&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/issues/3934" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/3934/hovercard"&gt;#3934&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4294" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4294/hovercard"&gt;#4294&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4439" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4439/hovercard"&gt;#4439&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed a &lt;code&gt;SqlConnectionFactory&lt;/code&gt; timer that woke the process every 30 seconds for the lifetime of the application even when no connection pools existed — including with &lt;code&gt;Pooling=False&lt;/code&gt; and after &lt;code&gt;ClearAllPools()&lt;/code&gt;. The pruning timer is now armed on demand and disarmed once there is nothing left to prune. A missing .NET Framework unload hook was also added. (&lt;a href="https://github.com/dotnet/SqlClient/issues/1881" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/1881/hovercard"&gt;#1881&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4479" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4479/hovercard"&gt;#4479&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed connection pool performance counter defects affecting the &lt;strong&gt;default&lt;/strong&gt; pool as well as pool V2. &lt;code&gt;active-soft-connects&lt;/code&gt; and &lt;code&gt;number-of-active-connections&lt;/code&gt; could go negative after a failed connection activation, and &lt;code&gt;active-soft-connects&lt;/code&gt;, &lt;code&gt;active-hard-connections&lt;/code&gt;, and &lt;code&gt;number-of-pooled-connections&lt;/code&gt; drifted upward permanently after a broken connection was replaced. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4504" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4504/hovercard"&gt;#4504&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed a pooled connection being returned to the pool in a broken state after a &lt;code&gt;TransactionScope&lt;/code&gt; rollback, which caused a later &lt;code&gt;BeginTransaction()&lt;/code&gt; to throw &lt;code&gt;InvalidOperationException&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/issues/4001" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4001/hovercard"&gt;#4001&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4557" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4557/hovercard"&gt;#4557&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;GetSchema("DataTypes")&lt;/code&gt; never reporting the &lt;code&gt;json&lt;/code&gt; type against Azure SQL. (&lt;a href="https://github.com/dotnet/SqlClient/issues/4592" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4592/hovercard"&gt;#4592&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4682" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4682/hovercard"&gt;#4682&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed a malformed UNC pipe path being composed for IPv6 literal server names over Named Pipes in managed SNI, which could trigger an LSASS access violation and a forced reboot on Windows. (net8.0/net9.0 only) (&lt;a href="https://github.com/dotnet/SqlClient/issues/4523" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4523/hovercard"&gt;#4523&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4558" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4558/hovercard"&gt;#4558&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed several async entry points in &lt;code&gt;SqlBulkCopy&lt;/code&gt;, &lt;code&gt;SqlDataReader.InvokeAsyncCall&lt;/code&gt;, &lt;code&gt;SqlCommand.Reader&lt;/code&gt;, and &lt;code&gt;SqlCommand.Xml&lt;/code&gt; that captured fatal exceptions such as &lt;code&gt;OutOfMemoryException&lt;/code&gt; into faulted &lt;code&gt;Task&lt;/code&gt;s instead of letting them propagate. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4437" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4437/hovercard"&gt;#4437&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed a &lt;code&gt;SqlDataReader&lt;/code&gt; streaming bug where calling &lt;code&gt;IsDBNull()&lt;/code&gt; before reading a streamed value could skip column data. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4082" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4082/hovercard"&gt;#4082&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed a race in &lt;code&gt;SqlConnection.TryOpenInner&lt;/code&gt; that could surface as &lt;code&gt;InvalidCastException&lt;/code&gt;; the same race now returns a deterministic &lt;code&gt;InvalidOperationException&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4179" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4179/hovercard"&gt;#4179&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;LoginWithFailover&lt;/code&gt; to validate parser state before continuing, preventing null-reference failures during failover login. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4140" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4140/hovercard"&gt;#4140&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed the SPN used during login to use the resolved port instead of the instance name when &lt;code&gt;Protocol=None&lt;/code&gt; or &lt;code&gt;Protocol=Admin&lt;/code&gt; is specified. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4180" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4180/hovercard"&gt;#4180&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed several &lt;code&gt;CancellationTokenSource&lt;/code&gt; leaks in &lt;code&gt;SqlDataReader&lt;/code&gt;, &lt;code&gt;SqlConnection&lt;/code&gt;, the &lt;code&gt;SqlCommand&lt;/code&gt; reconnect paths, and the sequential-stream helpers. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4009" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4009/hovercard"&gt;#4009&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Removed&lt;/h3&gt;
+&lt;h4&gt;SQL Server 7.0 and 2000 Support&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;What Changed:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed dead protocol-level code paths for SQL Server 7.0 and SQL Server 2000, along with the now-orphaned &lt;code&gt;SQL Server 2000&lt;/code&gt; type-system compatibility option. The &lt;code&gt;TypeSystem.SQLServer2000&lt;/code&gt; enum value and the &lt;code&gt;Type System Version=SQL Server 2000&lt;/code&gt; connection-string branch are gone. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4015" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4015/hovercard"&gt;#4015&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Who Benefits:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The driver no longer carries dead legacy code, and the documented connection-string surface (&lt;code&gt;Latest&lt;/code&gt;, &lt;code&gt;SQL Server 2005&lt;/code&gt;, &lt;code&gt;SQL Server 2008&lt;/code&gt;, &lt;code&gt;SQL Server 2012&lt;/code&gt;) now matches the implementation exactly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Impact:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Breaking:&lt;/strong&gt; A connection string that specifies &lt;code&gt;Type System Version=SQL Server 2000&lt;/code&gt; now throws &lt;code&gt;ArgumentException&lt;/code&gt; when the connection is opened. Switch to a supported value such as &lt;code&gt;Latest&lt;/code&gt;. There is no change to which servers the driver connects to — SQL Server 7.0 and 2000 were already rejected during login version negotiation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;We thank the following public contributors. Their efforts toward this project are very much appreciated.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/edwardneal"&gt;edwardneal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Mahdigln"&gt;Mahdigln&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Target Platform Support&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;.NET Framework 4.6.2+ (Windows x86, Windows x64, Windows ARM64)&lt;/li&gt;
+&lt;li&gt;.NET 8.0+ (Windows x86, Windows x64, Windows ARM, Windows ARM64, Linux, macOS)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Dependencies&lt;/h3&gt;
+&lt;h4&gt;.NET 9.0&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft.Bcl.Cryptography 9.0.18&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Extensions.Abstractions 7.1.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Internal.Logging 7.1.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.SNI.runtime 7.1.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 9.0.18&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.SqlServer.Server 1.0.0&lt;/li&gt;
+&lt;li&gt;System.Configuration.ConfigurationManager 9.0.18&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 9.0.18&lt;/li&gt;
+&lt;li&gt;System.Threading.RateLimiting 9.0.18&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;.NET 8.0&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft.Bcl.Cryptography 8.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Extensions.Abstractions 7.1.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Internal.Logging 7.1.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.SNI.runtime 7.1.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 8.0.1&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.SqlServer.Server 1.0.0&lt;/li&gt;
+&lt;li&gt;System.Configuration.ConfigurationManager 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Threading.RateLimiting 8.0.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;.NET Standard 2.0&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft.Bcl.Cryptography 8.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Bcl.TimeProvider 8.0.1&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Extensions.Abstractions 7.1.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Internal.Logging 7.1.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.SNI.runtime 7.1.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 8.0.1&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.SqlServer.Server 1.0.0&lt;/li&gt;
+&lt;li&gt;System.Configuration.ConfigurationManager 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Text.Json 10.0.3&lt;/li&gt;
+&lt;li&gt;System.Threading.Channels 10.0.3&lt;/li&gt;
+&lt;li&gt;System.Threading.RateLimiting 8.0.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;.NET Framework 4.6.2+&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft.Bcl.Cryptography 8.0.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Bcl.TimeProvider 8.0.1&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Extensions.Abstractions 7.1.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.Internal.Logging 7.1.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Data.SqlClient.SNI 7.1.0&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Caching.Memory 8.0.1&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.JsonWebTokens 8.16.0&lt;/li&gt;
+&lt;li&gt;Microsoft.IdentityModel.Protocols.OpenIdConnect 8.16.0&lt;/li&gt;
+&lt;li&gt;System.Buffers 4.6.1&lt;/li&gt;
+&lt;li&gt;System.Data.Common 4.3.0&lt;/li&gt;
+&lt;li&gt;System.Diagnostics.DiagnosticSource 10.0.3&lt;/li&gt;
+&lt;li&gt;System.Memory 4.6.3&lt;/li&gt;
+&lt;li&gt;System.Runtime.InteropServices.RuntimeInformation 4.3.0&lt;/li&gt;
+&lt;li&gt;System.Security.Cryptography.Pkcs 8.0.1&lt;/li&gt;
+&lt;li&gt;System.Text.Json 10.0.3&lt;/li&gt;
+&lt;li&gt;System.Threading.Channels 10.0.3&lt;/li&gt;
+&lt;li&gt;System.Threading.RateLimiting 8.0.0&lt;/li&gt;
+&lt;li&gt;System.ValueTuple 4.6.2&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -303,43 +563,332 @@
             </content>
   </entry>
   <entry>
-    <title>grpc/grpc-dotnet - Releases - 2026-09-17</title>
-    <id>https://github.com/grpc/grpc-dotnet#2026-09-17</id>
-    <link href="https://github.com/grpc/grpc-dotnet" />
-    <updated>2026-09-18T00:09:47Z</updated>
+    <title>open-telemetry/opentelemetry-dotnet - Releases - 2026-09-18</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet#2026-09-18</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet" />
+    <updated>2026-09-19T00:10:38Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc-dotnet/releases/tag/v2.84.0-pre1"&gt;Release v2.84.0-pre1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/coreunstable-1.19.0-beta.1"&gt;coreunstable-1.19.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+                                &lt;p&gt;The following changes are from the previous release &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/coreunstable-1.18.0-beta.1"&gt;1.18.0-beta.1&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Document complete release version updates by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4946352221" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2748" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2748/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2748"&gt;#2748&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump axios from 1.16.0 to 1.18.1 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4931825428" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2745" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2745/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2745"&gt;#2745&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump fast-uri from 3.1.2 to 3.1.4 in /examples/Browser/Server/wwwroot by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4947269634" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2749" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2749/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2749"&gt;#2749&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Avoid blocking SemaphoreSlim.Wait(0) on single-threaded browser WASM by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/pavelsavara/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/pavelsavara"&gt;@pavelsavara&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5111976543" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2756" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2756/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2756"&gt;#2756&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Update package dependencies and examples by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5156816890" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2759" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2759/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2759"&gt;#2759&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump fast-uri from 3.1.4 to 3.1.5 in /examples/Browser/Server/wwwroot by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5072982070" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2754" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2754/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2754"&gt;#2754&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump brace-expansion in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5104424600" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2755" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2755/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2755"&gt;#2755&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump ip-address from 10.2.0 to 10.5.0 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5115166382" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2757" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2757/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2757"&gt;#2757&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Stabilize unobserved exception retry test by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5116324096" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2758" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2758/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2758"&gt;#2758&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix corrupted bytes sent after GOAWAY by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/DeagleGross/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/DeagleGross"&gt;@DeagleGross&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5460854478" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2766" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2766/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2766"&gt;#2766&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump fast-uri from 3.1.5 to 3.1.7 in /examples/Browser/Server/wwwroot by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5330136820" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2761" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2761/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2761"&gt;#2761&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump js-yaml in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5413397844" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2765" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2765/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2765"&gt;#2765&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump joi from 17.13.4 to 17.13.7 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5413390840" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2764" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2764/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2764"&gt;#2764&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump baseline-browser-mapping from 2.9.19 to 2.11.21 in /examples/Browser/Server/wwwroot by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5410003527" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2763" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2763/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2763"&gt;#2763&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump browserslist from 4.25.1 to 4.28.8 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5330826652" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2762" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2762/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2762"&gt;#2762&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bump @babel/core from 7.28.0 to 7.29.7 in /testassets/InteropTestsGrpcWebWebsite/Tests by &lt;a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/dependabot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/dependabot"&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5468477880" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2767" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2767/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2767"&gt;#2767&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Update the versions for pre release. by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/asheshvidyut/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/asheshvidyut"&gt;@asheshvidyut&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5483373954" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2768" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2768/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2768"&gt;#2768&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Update version for 2.84.x-pre1 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/asheshvidyut/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/asheshvidyut"&gt;@asheshvidyut&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5486797226" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2769" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2769/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2769"&gt;#2769&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Prometheus.AspNetCore/1.19.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Prometheus.AspNetCore v1.19.0-beta.1&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/pavelsavara/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/pavelsavara"&gt;@pavelsavara&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5111976543" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2756" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2756/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2756"&gt;#2756&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/DeagleGross/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/DeagleGross"&gt;@DeagleGross&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5460854478" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2766" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2766/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2766"&gt;#2766&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt; The &lt;code&gt;PrometheusTranslationStrategy&lt;/code&gt; enum was renamed to &lt;code&gt;PrometheusAspNetCoreTranslationStrategy&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7751" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7751/hovercard"&gt;#7751&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed OpenMetrics &lt;code&gt;_created&lt;/code&gt; series being emitted for metric points with a default start time.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7754" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7754/hovercard"&gt;#7754&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Prometheus text/OpenMetrics escaping of label values, label names and help text is now more efficient.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7758" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7758/hovercard"&gt;#7758&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A scrape request whose connection is aborted, or whose &lt;code&gt;X-Prometheus-Scrape-Timeout-Seconds&lt;/code&gt; deadline elapses, now stops waiting for an in-progress metrics collection instead of continuing to wait for it to finish. The collection itself is not cancelled and continues running in the background.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7757" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7757/hovercard"&gt;#7757&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.19.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7785" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7785/hovercard"&gt;#7785&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/grpc/grpc-dotnet/compare/v2.83.0...v2.84.0-pre1"&gt;&lt;tt&gt;v2.83.0...v2.84.0-pre1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/coreunstable-1.19.0-beta.1/src/OpenTelemetry.Exporter.Prometheus.AspNetCore/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Prometheus.HttpListener/1.19.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Prometheus.HttpListener v1.19.0-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt; The &lt;code&gt;PrometheusTranslationStrategy&lt;/code&gt; enum was renamed to &lt;code&gt;PrometheusHttpListenerTranslationStrategy&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7751" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7751/hovercard"&gt;#7751&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed OpenMetrics &lt;code&gt;_created&lt;/code&gt; series being emitted for metric points with a default start time.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7754" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7754/hovercard"&gt;#7754&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Prometheus text/OpenMetrics escaping of label values, label names and help text is now more efficient.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7758" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7758/hovercard"&gt;#7758&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added &lt;code&gt;PrometheusHttpListenerOptions.ScrapeResponseTimeoutMilliseconds&lt;/code&gt; (default &lt;code&gt;60000&lt;/code&gt;) which bounds how long a scrape request waits for its response. &lt;code&gt;X-Prometheus-Scrape-Timeout-Seconds&lt;/code&gt; request header values may only shorten this limit. The limit bounds the request's wait only: a metrics collection already running when it is reached is not cancelled and continues running in the background.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7757" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7757/hovercard"&gt;#7757&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.19.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7785" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7785/hovercard"&gt;#7785&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/coreunstable-1.19.0-beta.1/src/OpenTelemetry.Exporter.Prometheus.HttpListener/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Shims.OpenTracing/1.19.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Shims.OpenTracing v1.19.0-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.19.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7785" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7785/hovercard"&gt;#7785&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/coreunstable-1.19.0-beta.1/src/OpenTelemetry.Shims.OpenTracing/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.19.0"&gt;core-1.19.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;For highlights and announcements pertaining to this release see: &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/RELEASENOTES.md#1190"&gt;Release Notes &amp;gt; 1.19.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The following changes are from the previous release &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.19.0-rc.1"&gt;1.19.0-rc.1&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry/1.19.0" rel="nofollow"&gt;OpenTelemetry v1.19.0&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Added Schema URL to internally created &lt;code&gt;Resource&lt;/code&gt; instances.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7726" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7726/hovercard"&gt;#7726&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reduced allocations when formatting self-diagnostics events with up to three parameters.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7730" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7730/hovercard"&gt;#7730&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added &lt;code&gt;AlwaysRecordSampler&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7695" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7695/hovercard"&gt;#7695&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed &lt;code&gt;CircularBufferBuckets&lt;/code&gt; so the first delta histogram insertion after a reset does not result in an unnecessary scale reduction.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7749" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7749/hovercard"&gt;#7749&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Improved wildcard source/meter name matching to avoid excessive matching time at runtime.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7760" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7760/hovercard"&gt;#7760&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed lazy logger provider builds after a failure from reusing partially initialized provider state.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7761" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7761/hovercard"&gt;#7761&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.19.0/src/OpenTelemetry/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Api/1.19.0" rel="nofollow"&gt;OpenTelemetry.Api v1.19.0&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Reduced allocations when creating log record attributes from an array.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7699" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7699/hovercard"&gt;#7699&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reduced allocations when setting baggage through the &lt;code&gt;params&lt;/code&gt; overload.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7697" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7697/hovercard"&gt;#7697&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reduced allocations when constructing &lt;code&gt;SpanAttributes&lt;/code&gt; from an array.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7698" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7698/hovercard"&gt;#7698&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed parsing of an inbound &lt;code&gt;tracestate&lt;/code&gt; header whose member value trimmed to an empty value that previously threw an &lt;code&gt;IndexOutOfRangeException&lt;/code&gt; internally and could silently truncate the tracestate.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7756" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7756/hovercard"&gt;#7756&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.19.0/src/OpenTelemetry.Api/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Api.ProviderBuilderExtensions/1.19.0" rel="nofollow"&gt;OpenTelemetry.Api.ProviderBuilderExtensions v1.19.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.19.0/src/OpenTelemetry.Api.ProviderBuilderExtensions/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Console/1.19.0" rel="nofollow"&gt;OpenTelemetry.Exporter.Console v1.19.0&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Extended key/value list attribute handling to cover additional dictionary shapes (&lt;code&gt;IEnumerable&amp;lt;KeyValuePair&amp;lt;string, string?&amp;gt;&amp;gt;&lt;/code&gt; and &lt;code&gt;IDictionary&lt;/code&gt;). These attributes will be serialized as JSON objects.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7679" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7679/hovercard"&gt;#7679&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.19.0/src/OpenTelemetry.Exporter.Console/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.InMemory/1.19.0" rel="nofollow"&gt;OpenTelemetry.Exporter.InMemory v1.19.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.19.0/src/OpenTelemetry.Exporter.InMemory/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.OpenTelemetryProtocol/1.19.0" rel="nofollow"&gt;OpenTelemetry.Exporter.OpenTelemetryProtocol v1.19.0&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If an exception is thrown when serializing an attribute, the attribute will now be dropped.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7688" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7688/hovercard"&gt;#7688&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Extended key/value list attribute serialization to cover additional dictionary shapes (&lt;code&gt;IEnumerable&amp;lt;KeyValuePair&amp;lt;string, string?&amp;gt;&amp;gt;&lt;/code&gt; and &lt;code&gt;IDictionary&lt;/code&gt;). These attributes will be serialized as nested OTLP &lt;code&gt;kvlist&lt;/code&gt; values.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7679" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7679/hovercard"&gt;#7679&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Disable HttpClientFactory integration on browser WebAssembly (e.g. Blazor) environments to avoid stalled export requests when async HTTP handlers are used.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7709" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7709/hovercard"&gt;#7709&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed CA certificate loading (e.g. using &lt;code&gt;OTEL_EXPORTER_OTLP_CERTIFICATE&lt;/code&gt;) for PEM-encoded certificates that only contain a public key.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7693" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7693/hovercard"&gt;#7693&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Prevented oversized metric metadata from being cached when it cannot fit within the configured request size.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7752" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7752/hovercard"&gt;#7752&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.19.0/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Zipkin/1.19.0" rel="nofollow"&gt;OpenTelemetry.Exporter.Zipkin v1.19.0&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Key/value list attribute values are now written as a JSON object embedded in a string, mirroring the existing array handling, instead of their &lt;code&gt;ToString()&lt;/code&gt; representation. This also covers additional dictionary shapes (&lt;code&gt;IEnumerable&amp;lt;KeyValuePair&amp;lt;string, string?&amp;gt;&amp;gt;&lt;/code&gt; and &lt;code&gt;IDictionary&lt;/code&gt;).&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7679" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7679/hovercard"&gt;#7679&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.19.0/src/OpenTelemetry.Exporter.Zipkin/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Hosting/1.19.0" rel="nofollow"&gt;OpenTelemetry.Extensions.Hosting v1.19.0&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added an &lt;code&gt;AddOpenTelemetry&lt;/code&gt; extension method for &lt;code&gt;IHostApplicationBuilder&lt;/code&gt;. It registers the OpenTelemetry SDK services and additionally seeds &lt;code&gt;service.name&lt;/code&gt; from &lt;code&gt;IHostEnvironment.ApplicationName&lt;/code&gt; and &lt;code&gt;deployment.environment.name&lt;/code&gt; from &lt;code&gt;IHostEnvironment.EnvironmentName&lt;/code&gt; as low-priority resource defaults. It also registers the host's live configuration into DI so that extensions receiving only &lt;code&gt;IServiceCollection&lt;/code&gt; can contribute configuration sources during setup.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7723" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7723/hovercard"&gt;#7723&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.19.0/src/OpenTelemetry.Extensions.Hosting/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Propagators/1.19.0" rel="nofollow"&gt;OpenTelemetry.Extensions.Propagators v1.19.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.19.0/src/OpenTelemetry.Extensions.Propagators/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.19.0-rc.1"&gt;core-1.19.0-rc.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;The following changes are from the previous release &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.18.0"&gt;1.18.0&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry/1.19.0-rc.1" rel="nofollow"&gt;OpenTelemetry v1.19.0-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Added Schema URL to internally created &lt;code&gt;Resource&lt;/code&gt; instances.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7726" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7726/hovercard"&gt;#7726&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reduced allocations when formatting self-diagnostics events with up to three parameters.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7730" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7730/hovercard"&gt;#7730&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added &lt;code&gt;AlwaysRecordSampler&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7695" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7695/hovercard"&gt;#7695&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed &lt;code&gt;CircularBufferBuckets&lt;/code&gt; so the first delta histogram insertion after a reset does not result in an unnecessary scale reduction.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7749" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7749/hovercard"&gt;#7749&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Improved wildcard source/meter name matching to avoid excessive matching time at runtime.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7760" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7760/hovercard"&gt;#7760&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed lazy logger provider builds after a failure from reusing partially initialized provider state.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7761" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7761/hovercard"&gt;#7761&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.19.0-rc.1/src/OpenTelemetry/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Api/1.19.0-rc.1" rel="nofollow"&gt;OpenTelemetry.Api v1.19.0-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Reduced allocations when creating log record attributes from an array.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7699" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7699/hovercard"&gt;#7699&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reduced allocations when setting baggage through the &lt;code&gt;params&lt;/code&gt; overload.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7697" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7697/hovercard"&gt;#7697&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reduced allocations when constructing &lt;code&gt;SpanAttributes&lt;/code&gt; from an array.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7698" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7698/hovercard"&gt;#7698&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed parsing of an inbound &lt;code&gt;tracestate&lt;/code&gt; header whose member value trimmed to an empty value that previously threw an &lt;code&gt;IndexOutOfRangeException&lt;/code&gt; internally and could silently truncate the tracestate.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7756" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7756/hovercard"&gt;#7756&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.19.0-rc.1/src/OpenTelemetry.Api/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Api.ProviderBuilderExtensions/1.19.0-rc.1" rel="nofollow"&gt;OpenTelemetry.Api.ProviderBuilderExtensions v1.19.0-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.19.0-rc.1/src/OpenTelemetry.Api.ProviderBuilderExtensions/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Console/1.19.0-rc.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Console v1.19.0-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Extended key/value list attribute handling to cover additional dictionary shapes (&lt;code&gt;IEnumerable&amp;lt;KeyValuePair&amp;lt;string, string?&amp;gt;&amp;gt;&lt;/code&gt; and &lt;code&gt;IDictionary&lt;/code&gt;). These attributes will be serialized as JSON objects.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7679" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7679/hovercard"&gt;#7679&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.19.0-rc.1/src/OpenTelemetry.Exporter.Console/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.InMemory/1.19.0-rc.1" rel="nofollow"&gt;OpenTelemetry.Exporter.InMemory v1.19.0-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.19.0-rc.1/src/OpenTelemetry.Exporter.InMemory/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.OpenTelemetryProtocol/1.19.0-rc.1" rel="nofollow"&gt;OpenTelemetry.Exporter.OpenTelemetryProtocol v1.19.0-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If an exception is thrown when serializing an attribute, the attribute will now be dropped.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7688" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7688/hovercard"&gt;#7688&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Extended key/value list attribute serialization to cover additional dictionary shapes (&lt;code&gt;IEnumerable&amp;lt;KeyValuePair&amp;lt;string, string?&amp;gt;&amp;gt;&lt;/code&gt; and &lt;code&gt;IDictionary&lt;/code&gt;). These attributes will be serialized as nested OTLP &lt;code&gt;kvlist&lt;/code&gt; values.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7679" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7679/hovercard"&gt;#7679&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Disable HttpClientFactory integration on browser WebAssembly (e.g. Blazor) environments to avoid stalled export requests when async HTTP handlers are used.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7709" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7709/hovercard"&gt;#7709&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed CA certificate loading (e.g. using &lt;code&gt;OTEL_EXPORTER_OTLP_CERTIFICATE&lt;/code&gt;) for PEM-encoded certificates that only contain a public key.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7693" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7693/hovercard"&gt;#7693&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Prevented oversized metric metadata from being cached when it cannot fit within the configured request size.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7752" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7752/hovercard"&gt;#7752&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.19.0-rc.1/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Zipkin/1.19.0-rc.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Zipkin v1.19.0-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Key/value list attribute values are now written as a JSON object embedded in a string, mirroring the existing array handling, instead of their &lt;code&gt;ToString()&lt;/code&gt; representation. This also covers additional dictionary shapes (&lt;code&gt;IEnumerable&amp;lt;KeyValuePair&amp;lt;string, string?&amp;gt;&amp;gt;&lt;/code&gt; and &lt;code&gt;IDictionary&lt;/code&gt;).&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7679" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7679/hovercard"&gt;#7679&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.19.0-rc.1/src/OpenTelemetry.Exporter.Zipkin/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Hosting/1.19.0-rc.1" rel="nofollow"&gt;OpenTelemetry.Extensions.Hosting v1.19.0-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added an &lt;code&gt;AddOpenTelemetry&lt;/code&gt; extension method for &lt;code&gt;IHostApplicationBuilder&lt;/code&gt;. It registers the OpenTelemetry SDK services and additionally seeds &lt;code&gt;service.name&lt;/code&gt; from &lt;code&gt;IHostEnvironment.ApplicationName&lt;/code&gt; and &lt;code&gt;deployment.environment.name&lt;/code&gt; from &lt;code&gt;IHostEnvironment.EnvironmentName&lt;/code&gt; as low-priority resource defaults. It also registers the host's live configuration into DI so that extensions receiving only &lt;code&gt;IServiceCollection&lt;/code&gt; can contribute configuration sources during setup.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7723" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7723/hovercard"&gt;#7723&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.19.0-rc.1/src/OpenTelemetry.Extensions.Hosting/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Propagators/1.19.0-rc.1" rel="nofollow"&gt;OpenTelemetry.Extensions.Propagators v1.19.0-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.19.0-rc.1/src/OpenTelemetry.Extensions.Propagators/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
@@ -347,106 +896,214 @@
             </content>
   </entry>
   <entry>
-    <title>MessagePack-CSharp/MessagePack-CSharp - Releases - 2026-09-17</title>
-    <id>https://github.com/MessagePack-CSharp/MessagePack-CSharp#2026-09-17</id>
-    <link href="https://github.com/MessagePack-CSharp/MessagePack-CSharp" />
-    <updated>2026-09-18T00:09:50Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/releases/tag/v3.1.9"&gt;v3.1.9&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;h3&gt;Security fix&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix &lt;a href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/security/advisories/GHSA-qhrr-8q5h-9q3h"&gt;Nested arrays can blow past buffer length limits&lt;/a&gt; via &lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/commit/7fd78bbf3476e03beae8b0f7a521125525a8a64a/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/commit/7fd78bbf3476e03beae8b0f7a521125525a8a64a"&gt;&lt;tt&gt;7fd78bb&lt;/tt&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update DynamicAssembly usage to honor different AssemblyLoadContext's by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/BertanAygun/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/BertanAygun"&gt;@BertanAygun&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2983990698" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2183" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2183/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2183"&gt;#2183&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Update v2.x to build again by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4450317245" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2264" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2264/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2264"&gt;#2264&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Add more types to the default disallow list of named types to be deserialized by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4450179775" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2263" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2263/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2263"&gt;#2263&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Add several known unsafe 'gadgets' to the disallow list by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4497687076" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2269" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2269/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2269"&gt;#2269&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Revise end-of-life date for version 2.x by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4942773526" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2282" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2282/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2282"&gt;#2282&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix OldSpec byte[] encoding emitting unsupported str8 headers by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; with @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5025487061" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2287" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2287/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2287"&gt;#2287&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;v2 to master by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5331694941" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2295" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2295/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2295"&gt;#2295&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix build warning and Windows build break by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5489771091" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2300" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2300/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2300"&gt;#2300&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix source generator snapshot ordering by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5490743180" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2303" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2303/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2303"&gt;#2303&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Test before versioned release build by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5491093993" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2304" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2304/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2304"&gt;#2304&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/compare/v3.1.8...v3.1.9"&gt;&lt;tt&gt;v3.1.8...v3.1.9&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/releases/tag/v2.5.303"&gt;v2.5.303&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;Security Fix&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix &lt;a href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/security/advisories/GHSA-qhrr-8q5h-9q3h"&gt;Nested arrays can blow past buffer length limits&lt;/a&gt; via &lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/commit/7fd78bbf3476e03beae8b0f7a521125525a8a64a/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/commit/7fd78bbf3476e03beae8b0f7a521125525a8a64a"&gt;&lt;tt&gt;7fd78bb&lt;/tt&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/compare/v2.5.302...v2.5.303"&gt;&lt;tt&gt;v2.5.302...v2.5.303&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/releases/tag/v3.1.8"&gt;v3.1.8&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Update README built-in supported types list with missing types by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; with @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4833554039" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2278" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2278/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2278"&gt;#2278&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;perf: drop redundant char* fixed in MessagePackWriter.Write(string) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/unsafePtr/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/unsafePtr"&gt;@unsafePtr&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4380377926" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2258" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2258/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2258"&gt;#2258&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix CS8669 warning in generated MessagePack.GeneratedMessagePackResolver.g.cs by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; with @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4833566100" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2279" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2279/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2279"&gt;#2279&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;New Contributors&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AArnott/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AArnott"&gt;@AArnott&lt;/a&gt; with @Copilot made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4833554039" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2278" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2278/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2278"&gt;#2278&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/unsafePtr/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/unsafePtr"&gt;@unsafePtr&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4380377926" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2258" data-hovercard-type="pull_request" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/pull/2258/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/pull/2258"&gt;#2258&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/compare/v3.1.7...v3.1.8"&gt;&lt;tt&gt;v3.1.7...v3.1.8&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-09-17</title>
-    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-09-17</id>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-09-18</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-09-18</id>
     <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-    <updated>2026-09-18T00:09:54Z</updated>
+    <updated>2026-09-19T00:10:38Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/OpAmp.Client-0.7.0-alpha.2"&gt;OpAmp.Client-0.7.0-alpha.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.Host-1.19.0-beta.1"&gt;Resources.Host-1.19.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.OpAmp.Client/0.7.0-alpha.2" rel="nofollow"&gt;OpenTelemetry.OpAmp.Client v0.7.0-alpha.2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.Host/1.19.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Resources.Host v1.19.0-beta.1&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Dispatch server capabilities before flags received in the same frame.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5231" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5231/hovercard"&gt;#5231&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added the &lt;code&gt;host.ip&lt;/code&gt; and &lt;code&gt;host.mac&lt;/code&gt; resource attributes, emitted when&lt;br&gt;
+&lt;code&gt;OTEL_DOTNET_EXPERIMENTAL_HOST_RESOURCE_ENABLE_NETWORK_ADDRESSES&lt;/code&gt; is &lt;code&gt;true&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5172" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5172/hovercard"&gt;#5172&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated semantic conventions to &lt;a href="https://github.com/open-telemetry/semantic-conventions/blob/v1.44.0/docs/resource/host.md"&gt;v1.44.0&lt;/a&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5172" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5172/hovercard"&gt;#5172&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.19.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5240" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5240/hovercard"&gt;#5240&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/OpAmp.Client-0.7.0-alpha.2/src/OpenTelemetry.OpAmp.Client/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.Host-1.19.0-beta.1/src/OpenTelemetry.Resources.Host/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.StackExchangeRedis-1.18.0-beta.3"&gt;Instrumentation.StackExchangeRedis-1.18.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Extensions.Enrichment.AspNetCore-1.19.0-beta.1"&gt;Extensions.Enrichment.AspNetCore-1.19.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.StackExchangeRedis/1.18.0-beta.3" rel="nofollow"&gt;OpenTelemetry.Instrumentation.StackExchangeRedis v1.18.0-beta.3&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed &lt;code&gt;SetVerboseDatabaseStatements&lt;/code&gt; losing the script text for &lt;code&gt;EVAL&lt;/code&gt;/&lt;code&gt;EVALSHA&lt;/code&gt;&lt;br&gt;
-commands with StackExchange.Redis 3.2.0+.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5223" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5223/hovercard"&gt;#5223&lt;/a&gt;)&lt;/li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Enrichment.AspNetCore/1.19.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Extensions.Enrichment.AspNetCore v1.19.0-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Extensions.Enrichment.AspNetCore-1.19.0-beta.1/src/OpenTelemetry.Extensions.Enrichment.AspNetCore/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.StackExchangeRedis-1.18.0-beta.3/src/OpenTelemetry.Instrumentation.StackExchangeRedis/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Extensions.Enrichment.Http-1.19.0-beta.1"&gt;Extensions.Enrichment.Http-1.19.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Enrichment.Http/1.19.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Extensions.Enrichment.Http v1.19.0-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Extensions.Enrichment.Http-1.19.0-beta.1/src/OpenTelemetry.Extensions.Enrichment.Http/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.Process-1.19.0-rc.1"&gt;Resources.Process-1.19.0-rc.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.Process/1.19.0-rc.1" rel="nofollow"&gt;OpenTelemetry.Resources.Process v1.19.0-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.19.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5240" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5240/hovercard"&gt;#5240&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated Semantic Conventions version to &lt;code&gt;1.44.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5240" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5240/hovercard"&gt;#5240&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.Process-1.19.0-rc.1/src/OpenTelemetry.Resources.Process/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.OperatingSystem-1.19.0-beta.1"&gt;Resources.OperatingSystem-1.19.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.OperatingSystem/1.19.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Resources.OperatingSystem v1.19.0-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.19.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5240" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5240/hovercard"&gt;#5240&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated Semantic Conventions version to &lt;code&gt;1.44.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5240" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5240/hovercard"&gt;#5240&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.OperatingSystem-1.19.0-beta.1/src/OpenTelemetry.Resources.OperatingSystem/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.ProcessRuntime-1.19.0-beta.1"&gt;Resources.ProcessRuntime-1.19.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.ProcessRuntime/1.19.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Resources.ProcessRuntime v1.19.0-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.19.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5240" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5240/hovercard"&gt;#5240&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated Semantic Conventions version to &lt;code&gt;1.44.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5240" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5240/hovercard"&gt;#5240&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.ProcessRuntime-1.19.0-beta.1/src/OpenTelemetry.Resources.ProcessRuntime/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.Azure-1.19.0-beta.1"&gt;Resources.Azure-1.19.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.Azure/1.19.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Resources.Azure v1.19.0-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.19.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5240" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5240/hovercard"&gt;#5240&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.Azure-1.19.0-beta.1/src/OpenTelemetry.Resources.Azure/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.Container-1.19.0-beta.1"&gt;Resources.Container-1.19.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.Container/1.19.0-beta.1" rel="nofollow"&gt;OpenTelemetry.Resources.Container v1.19.0-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Added the &lt;code&gt;container.runtime.name&lt;/code&gt; attribute, detected from the Docker&lt;br&gt;
+(&lt;code&gt;/.dockerenv&lt;/code&gt;) or Podman (&lt;code&gt;/run/.containerenv&lt;/code&gt;) marker files.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5144" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5144/hovercard"&gt;#5144&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.19.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5240" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5240/hovercard"&gt;#5240&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated Semantic Conventions version to &lt;code&gt;1.44.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5240" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5240/hovercard"&gt;#5240&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.Container-1.19.0-beta.1/src/OpenTelemetry.Resources.Container/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.Gcp-1.0.0-alpha.5"&gt;Resources.Gcp-1.0.0-alpha.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.Gcp/1.0.0-alpha.5" rel="nofollow"&gt;OpenTelemetry.Resources.Gcp v1.0.0-alpha.5&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Add &lt;code&gt;host.type&lt;/code&gt; and &lt;code&gt;host.image.name&lt;/code&gt; attributes to the Google Compute Engine&lt;br&gt;
+resource detector.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5194" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5194/hovercard"&gt;#5194&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated semantic conventions to&lt;br&gt;
+&lt;a href="https://github.com/open-telemetry/semantic-conventions/blob/v1.44.0/docs/resource/host.md"&gt;v1.44.0&lt;/a&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5194" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5194/hovercard"&gt;#5194&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.19.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5240" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5240/hovercard"&gt;#5240&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.Gcp-1.0.0-alpha.5/src/OpenTelemetry.Resources.Gcp/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.AWS-1.19.0"&gt;Resources.AWS-1.19.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.AWS/1.19.0" rel="nofollow"&gt;OpenTelemetry.Resources.AWS v1.19.0&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.19.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5240" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5240/hovercard"&gt;#5240&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.AWS-1.19.0/src/OpenTelemetry.Resources.AWS/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
@@ -456,45 +1113,35 @@ commands with StackExchange.Redis 3.2.0+.&lt;br&gt;
             </content>
   </entry>
   <entry>
-    <title>StackExchange/StackExchange.Redis - Releases - 2026-09-17</title>
-    <id>https://github.com/StackExchange/StackExchange.Redis#2026-09-17</id>
+    <title>StackExchange/StackExchange.Redis - Releases - 2026-09-18</title>
+    <id>https://github.com/StackExchange/StackExchange.Redis#2026-09-18</id>
     <link href="https://github.com/StackExchange/StackExchange.Redis" />
-    <updated>2026-09-18T00:09:56Z</updated>
+    <updated>2026-09-19T00:10:39Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/3.2.15"&gt;3.2.15&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/3.3.0"&gt;3.3.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;h1&gt;connection stability&lt;/h1&gt;
+                                &lt;h2&gt;Features&lt;/h2&gt;
+&lt;p&gt;The primary feature in 3.3.0 is "smart-client-handoffs" (aka "hitless"), whereby the client responds to server maintenance notifications on suitable environments. This feature is &lt;strong&gt;currently opt-in&lt;/strong&gt;, and is planned to be automatic (opt-out) in most supported cases in an upcoming release.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://seredis.dev/ServerMaintenanceEvent" rel="nofollow"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Opt in through configuration;&lt;/p&gt;
+&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="my-redis.internal.example.com:6379,maintNotifications=Auto"&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;my-redis.internal.example.com:6379,maintNotifications=Auto
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;or in code:&lt;/p&gt;
+&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="options.MaintenanceNotifications = MaintenanceNotificationMode.Auto;"&gt;&lt;pre&gt;&lt;span class="pl-s1"&gt;options&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;MaintenanceNotifications&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-s1"&gt;MaintenanceNotificationMode&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;Auto&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;A fully-down connection group throws RedisConnectionException (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5466746870" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3223" data-hovercard-type="issue" data-hovercard-url="/StackExchange/StackExchange.Redis/issues/3223/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/issues/3223"&gt;#3223&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5466970943" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3224" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3224/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3224"&gt;#3224&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;SwitchPrimary retires the servers its rebuild drops by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5473441715" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3225" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3225/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3225"&gt;#3225&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Make fallback discovery and keep-alive probes cluster-slot aware by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/HarnageaGabriel/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/HarnageaGabriel"&gt;@HarnageaGabriel&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5185834743" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3185" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3185/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3185"&gt;#3185&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix Sentinel connection leak and AbortOnConnectFail=false handling by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/HarnageaGabriel/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/HarnageaGabriel"&gt;@HarnageaGabriel&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5185912409" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3187" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3187/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3187"&gt;#3187&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix a vacuous cluster-probe assertion, and pin the first-handshake residue by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5474675457" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3226" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3226/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3226"&gt;#3226&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;A tracer redirect proves liveness, so it completes the handshake by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5475445901" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3227" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3227/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3227"&gt;#3227&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Dial a cluster node before waiting for it to connect by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5486434731" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3238" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3238/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3238"&gt;#3238&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Server-native maintenance notifications: opt in, react, hand off, and recover when nothing is announced by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5236717449" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3191" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3191/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3191"&gt;#3191&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;fixes&lt;/h1&gt;
+&lt;h3&gt;Maintenance&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Compare strings against blobs without decoding them into a string by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5478749817" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3228" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3228/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3228"&gt;#3228&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;Add RedisValue.EqualityComparer, with an opt-in binary reading by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5480436530" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3230" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3230/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3230"&gt;#3230&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Sort the public API tracking files, with a script that keeps them that way by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5489674520" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3245" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3245/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3245"&gt;#3245&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Promote geo-redundant failover and the Redis 8.10 bindings out of preview by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5495397404" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3247" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3247/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3247"&gt;#3247&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Retire SER001: vector sets are not experimental any more by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5495363699" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3246" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3246/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3246"&gt;#3246&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IServer.Execute supplies the default database rather than refusing the command by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5486080593" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3237" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3237/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3237"&gt;#3237&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;background / engineering&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;CI: resolve the NuGet cache key once, so the post step never walks the tree by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5483375452" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3231" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3231/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3231"&gt;#3231&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Close the test-suite gaps from &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5485485277" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3234" data-hovercard-type="issue" data-hovercard-url="/StackExchange/StackExchange.Redis/issues/3234/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/issues/3234"&gt;#3234&lt;/a&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5485789636" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3235" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3235/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3235"&gt;#3235&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Point the obsolete messages at 4.0, since 3.2 has shipped without them by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5488666688" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3244" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3244/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3244"&gt;#3244&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Drop explicit Microsoft.SourceLink.GitHub reference by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5462769691" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3222" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3222/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3222"&gt;#3222&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/3.2.1...3.2.15"&gt;&lt;tt&gt;3.2.1...3.2.15&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/3.2.15...3.3.0"&gt;&lt;tt&gt;3.2.15...3.3.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
