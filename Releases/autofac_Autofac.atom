@@ -1,27 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>autofac/Autofac - Releases</title>
   <link href="https://github.com/autofac/Autofac" />
-  <updated>2026-09-19T00:10:14Z</updated>
+  <updated>2026-09-20T00:11:38Z</updated>
   <id>https://github.com/autofac/Autofac</id>
-  <entry>
-    <title>autofac/Autofac - Releases - 2026-09-18</title>
-    <id>https://github.com/autofac/Autofac#2026-09-18</id>
-    <link href="https://github.com/autofac/Autofac" />
-    <updated>2026-09-19T00:10:14Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/autofac/Autofac/releases/tag/v9.3.4"&gt;v9.3.4&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;p&gt;Do not build a held registration's pipeline early by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/tillig/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/tillig"&gt;@tillig&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5501144451" data-permission-text="Title is private" data-url="https://github.com/autofac/Autofac/issues/1504" data-hovercard-type="pull_request" data-hovercard-url="/autofac/Autofac/pull/1504/hovercard" href="https://github.com/autofac/Autofac/pull/1504"&gt;#1504&lt;/a&gt; (fixes &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5496384269" data-permission-text="Title is private" data-url="https://github.com/autofac/Autofac/issues/1503" data-hovercard-type="issue" data-hovercard-url="/autofac/Autofac/issues/1503/hovercard" href="https://github.com/autofac/Autofac/issues/1503"&gt;#1503&lt;/a&gt;) - a regression introduced in 9.3.3. Registering an open generic for several services (&lt;code&gt;.As(typeof(IFirstService&amp;lt;&amp;gt;)).As(typeof(ISecondService&amp;lt;&amp;gt;))&lt;/code&gt;) threw &lt;code&gt;InvalidOperationException: Component pipeline has already been built, and cannot be modified.&lt;/code&gt; on first resolve whenever anything attached to &lt;code&gt;PipelineBuilding&lt;/code&gt; from the component registry's &lt;code&gt;Registered&lt;/code&gt; event. &lt;code&gt;Autofac.Extensions.DependencyInjection&lt;/code&gt; attaches exactly that way on every registration, so ASP.NET Core applications using a multi-service open generic registration hit it deterministically. The fix restores the ordering 9.3.2 had, where the pipeline is built only after &lt;code&gt;Registered&lt;/code&gt; has been raised.&lt;/p&gt;
-&lt;p&gt;If you are on 9.3.3 and register an open generic against more than one service, upgrade. Thanks to &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/hjalle/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/hjalle"&gt;@hjalle&lt;/a&gt; for the report and for pinning it to the exact line.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/autofac/Autofac/compare/v9.3.3...v9.3.4"&gt;&lt;tt&gt;v9.3.3...v9.3.4&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>

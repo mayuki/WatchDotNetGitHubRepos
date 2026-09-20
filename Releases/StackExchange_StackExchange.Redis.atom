@@ -1,42 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>StackExchange/StackExchange.Redis - Releases</title>
   <link href="https://github.com/StackExchange/StackExchange.Redis" />
-  <updated>2026-09-19T00:10:39Z</updated>
+  <updated>2026-09-20T00:12:10Z</updated>
   <id>https://github.com/StackExchange/StackExchange.Redis</id>
-  <entry>
-    <title>StackExchange/StackExchange.Redis - Releases - 2026-09-18</title>
-    <id>https://github.com/StackExchange/StackExchange.Redis#2026-09-18</id>
-    <link href="https://github.com/StackExchange/StackExchange.Redis" />
-    <updated>2026-09-19T00:10:39Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/3.3.0"&gt;3.3.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;Features&lt;/h2&gt;
-&lt;p&gt;The primary feature in 3.3.0 is "smart-client-handoffs" (aka "hitless"), whereby the client responds to server maintenance notifications on suitable environments. This feature is &lt;strong&gt;currently opt-in&lt;/strong&gt;, and is planned to be automatic (opt-out) in most supported cases in an upcoming release.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://seredis.dev/ServerMaintenanceEvent" rel="nofollow"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Opt in through configuration;&lt;/p&gt;
-&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="my-redis.internal.example.com:6379,maintNotifications=Auto"&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;my-redis.internal.example.com:6379,maintNotifications=Auto
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;or in code:&lt;/p&gt;
-&lt;div class="highlight highlight-source-cs notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="options.MaintenanceNotifications = MaintenanceNotificationMode.Auto;"&gt;&lt;pre&gt;&lt;span class="pl-s1"&gt;options&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;MaintenanceNotifications&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; &lt;span class="pl-s1"&gt;MaintenanceNotificationMode&lt;/span&gt;&lt;span class="pl-kos"&gt;.&lt;/span&gt;&lt;span class="pl-s1"&gt;Auto&lt;/span&gt;&lt;span class="pl-kos"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Server-native maintenance notifications: opt in, react, hand off, and recover when nothing is announced by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5236717449" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3191" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3191/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3191"&gt;#3191&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Maintenance&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Sort the public API tracking files, with a script that keeps them that way by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5489674520" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3245" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3245/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3245"&gt;#3245&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Promote geo-redundant failover and the Redis 8.10 bindings out of preview by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5495397404" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3247" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3247/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3247"&gt;#3247&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Retire SER001: vector sets are not experimental any more by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5495363699" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3246" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3246/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3246"&gt;#3246&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/3.2.15...3.3.0"&gt;&lt;tt&gt;3.2.15...3.3.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
