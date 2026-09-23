@@ -1,6 +1,42 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>StackExchange/StackExchange.Redis - Releases</title>
   <link href="https://github.com/StackExchange/StackExchange.Redis" />
-  <updated>2026-09-22T00:10:40Z</updated>
+  <updated>2026-09-23T00:10:47Z</updated>
   <id>https://github.com/StackExchange/StackExchange.Redis</id>
+  <entry>
+    <title>StackExchange/StackExchange.Redis - Releases - 2026-09-22</title>
+    <id>https://github.com/StackExchange/StackExchange.Redis#2026-09-22</id>
+    <link href="https://github.com/StackExchange/StackExchange.Redis" />
+    <updated>2026-09-23T00:10:47Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/3.3.1"&gt;3.3.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Distinguish explicit and inferred TLS host names useful when cluster shards exposed using TLS/SNI by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/sandeepkunusoth/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/sandeepkunusoth"&gt;@sandeepkunusoth&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5536245353" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3250" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3250/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3250"&gt;#3250&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/sandeepkunusoth/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/sandeepkunusoth"&gt;@sandeepkunusoth&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5536245353" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3250" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3250/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3250"&gt;#3250&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;When &lt;code&gt;SslHost&lt;/code&gt; is specified, it is always used for SNI&lt;/li&gt;
+&lt;li&gt;Otherwise, for endpoints discovered at runtime:
+&lt;ul&gt;
+&lt;li&gt;If they are advertised with a host name, that host name is used for SNI&lt;/li&gt;
+&lt;li&gt;Otherwise the &lt;em&gt;declared&lt;/em&gt; host name in the configuration is used&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(previously, the declared host name in configuration would take precedence over an advertised host name if &lt;code&gt;SslHost&lt;/code&gt; was not specified)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/3.3.0...3.3.1"&gt;&lt;tt&gt;3.3.0...3.3.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
