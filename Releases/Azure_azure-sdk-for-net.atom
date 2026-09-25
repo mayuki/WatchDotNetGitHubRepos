@@ -1,64 +1,62 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-09-24T00:09:25Z</updated>
+  <updated>2026-09-25T00:10:26Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-09-23</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-09-23</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-09-24</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-09-24</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-09-24T00:09:25Z</updated>
+    <updated>2026-09-25T00:10:26Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Data.Tables_12.13.0"&gt;Azure.Data.Tables_12.13.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Messaging.ServiceBus_7.21.0"&gt;Azure.Messaging.ServiceBus_7.21.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.13.0 (2026-09-23)&lt;/h2&gt;
-&lt;h3&gt;Acknowledgments&lt;/h3&gt;
-&lt;p&gt;Thank you to our developer community members who helped to make Azure Tables better with their contributions to this release:&lt;/p&gt;
+                                &lt;h2&gt;7.21.0 (2026-10-06)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Jamie Rees &lt;em&gt;(&lt;a href="https://github.com/tidusjar"&gt;GitHub&lt;/a&gt;)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;SqlFilterCount&lt;/code&gt; and &lt;code&gt;CorrelationFilterCount&lt;/code&gt; properties to &lt;code&gt;TopicRuntimeProperties&lt;/code&gt;, exposing the total number of SQL filters and correlation filters across all of a topic's subscriptions. These are populated by &lt;code&gt;GetTopicRuntimePropertiesAsync&lt;/code&gt; and &lt;code&gt;GetTopicsRuntimePropertiesAsync&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ServiceBusAdministrationClientOptions.ServiceVersion.V2024_05&lt;/code&gt; and made it the default service version. The topic filter counts above are served by the &lt;code&gt;2024-05&lt;/code&gt; service API version, so the administration client now sends &lt;code&gt;api-version=2024-05&lt;/code&gt; by default.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;GetMessageSessionsAsync&lt;/code&gt; overloads on &lt;code&gt;ServiceBusClient&lt;/code&gt; for queues and subscriptions. The no-filter overload returns the IDs of sessions that have active messages or session state, and the &lt;code&gt;sessionStateUpdatedAfter&lt;/code&gt; overload returns session IDs whose session state was updated after the specified timestamp. Implements the &lt;code&gt;com.microsoft:get-message-sessions&lt;/code&gt; AMQP management operation. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/58761" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/58761/hovercard"&gt;#58761&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added opt-in support for non-exclusive session locking on &lt;code&gt;ServiceBusSessionReceiver&lt;/code&gt;, allowing a session to be cooperatively taken over by another receiver. Set &lt;code&gt;ServiceBusSessionReceiverOptions.EnableNonExclusiveSession&lt;/code&gt; to accept a session non-exclusively, then read the token from &lt;code&gt;ServiceBusSessionReceiver.SessionLockToken&lt;/code&gt; and pass it as &lt;code&gt;ServiceBusSessionReceiverOptions.SessionLockToken = Guid.Parse(token)&lt;/code&gt; to take that session over. &lt;code&gt;ServiceBusSessionReceiver.IsSessionExclusive&lt;/code&gt; reports the mode the session was established under. Dispositions for a non-exclusive session are routed over the management link so that settlement keeps working across a takeover, which lowers settlement throughput compared to an exclusive session. This applies to &lt;code&gt;ServiceBusSessionReceiver&lt;/code&gt; only; &lt;code&gt;ServiceBusSessionProcessor&lt;/code&gt; continues to lock sessions exclusively. Accepting a session with &lt;code&gt;EnableNonExclusiveSession&lt;/code&gt; set throws &lt;code&gt;NotSupportedException&lt;/code&gt; when the endpoint declines it, either by refusing the request outright or by accepting it without assigning a lock token, which is how a caller detects whether the feature is available for a namespace. An endpoint that declines in some other way surfaces the exception its own error maps to. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/60060" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/60060/hovercard"&gt;#60060&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed an issue where combined &lt;code&gt;[Flags]&lt;/code&gt; enum values written as comma-separated names were skipped during strongly typed table entity deserialization, while continuing to reject comma-separated values for non-&lt;code&gt;[Flags]&lt;/code&gt; enums. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/62508" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/62508/hovercard"&gt;#62508&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Search_1.4.0-beta.3"&gt;Azure.ResourceManager.Search_1.4.0-beta.3&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.4.0-beta.3 (2026-09-04)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded API version to 2026-09-01-preview.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed retry classification for web socket failures with nested causes.  On modern .NET, a transient network failure during a web socket connection attempt surfaces as a &lt;code&gt;WebSocketException&lt;/code&gt; that wraps an &lt;code&gt;HttpRequestException&lt;/code&gt;, which wraps the meaningful &lt;code&gt;IOException&lt;/code&gt; or &lt;code&gt;SocketException&lt;/code&gt;.  The retry policy previously inspected only one level of nesting and treated these failures as terminal.  The policy now unwraps nested wrapper exceptions to a bounded depth, so transient failures such as a connection reset use the configured retries.  Terminal socket failures, such as host-not-found and host-unreachable, are not retried at any supported depth.  A host-unreachable failure on an established connection is now terminal.  Earlier versions retried it. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/61868" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/61868/hovercard"&gt;#61868&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed a bug where canceling &lt;code&gt;ServiceBusReceiver.CloseAsync&lt;/code&gt; left the receiver unable to close its own links. The receiver was marked as closed, and its set of locked messages disposed, before the cancellation was observed, so every later call to &lt;code&gt;CloseAsync&lt;/code&gt; returned immediately without doing any work and the links stayed open until the owning &lt;code&gt;ServiceBusClient&lt;/code&gt; was disposed. The receiver is now left open and closable when a close does not complete, so the operation can be retried. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/59309" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/59309/hovercard"&gt;#59309&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded dependent Azure.Core to 1.61.0.&lt;/li&gt;
+&lt;li&gt;The default &lt;code&gt;ServiceBusAdministrationClient&lt;/code&gt; service version is now &lt;code&gt;2024-05&lt;/code&gt; (previously &lt;code&gt;2021-05&lt;/code&gt;). Existing operations are unaffected in behavior; the change is required to surface the new topic filter count properties.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects_3.0.0-beta.3"&gt;Azure.AI.Projects_3.0.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Databricks_1.0.0-beta.1"&gt;Azure.Provisioning.Databricks_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;3.0.0-beta.3 (2026-09-16)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-09-24)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;ProjectsRealtimeClient&lt;/code&gt; and &lt;code&gt;ProjectsRealtimeSessionClient&lt;/code&gt; to work with voice agents. &lt;code&gt;AIProjectClient.ProjectsRealtimeClient&lt;/code&gt; gets a &lt;code&gt;ProjectsRealtimeClient&lt;/code&gt;; calling &lt;code&gt;StartSessionAsync(model, intent, options, cancellationToken)&lt;/code&gt; on it -- the same method used with OpenAI's own &lt;code&gt;RealtimeClient&lt;/code&gt; -- connects a &lt;code&gt;ProjectsRealtimeSessionClient&lt;/code&gt; to the named voice agent's realtime endpoint (&lt;code&gt;/agents/{agentName}/endpoint/protocols/voice&lt;/code&gt;). Pass &lt;code&gt;store=true&lt;/code&gt;/&lt;code&gt;store=false&lt;/code&gt; via &lt;code&gt;options.QueryString&lt;/code&gt; to control whether the session's conversation is persisted. &lt;code&gt;ProjectsRealtimeClient&lt;/code&gt; is also available when &lt;code&gt;AIProjectClient&lt;/code&gt; is constructed from an &lt;code&gt;AIProjectClientSettings&lt;/code&gt; whose credential resolves a token provider.&lt;/li&gt;
+&lt;li&gt;Initial beta release of Azure.Provisioning.Databricks.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.AppContainers_1.3.0-beta.2"&gt;Azure.Provisioning.AppContainers_1.3.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.3.0-beta.2 (2026-09-24)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;MaxSamples&lt;/code&gt; member was removed from &lt;code&gt;DataGenerationJobOptions&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;AIProjectClient.GetProjectsRealtimeSessionClient(string, string)&lt;/code&gt; and its replacement &lt;code&gt;GetProjectsRealtimeSessionClientAsync(string, string, bool?, CancellationToken)&lt;/code&gt; were both removed in favor of &lt;code&gt;AIProjectClient.ProjectsRealtimeClient.StartSessionAsync(string, string, RealtimeSessionClientOptions, CancellationToken)&lt;/code&gt;, reusing OpenAI's own &lt;code&gt;RealtimeClient.StartSessionAsync&lt;/code&gt; method rather than introducing a separate one.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ProjectsRealtimeSessionClient&lt;/code&gt;'s public constructor was removed. An instance constructed through it could never become connected (its &lt;code&gt;ConnectAsync&lt;/code&gt; override is only reachable through &lt;code&gt;ProjectsRealtimeClient.StartSessionAsync&lt;/code&gt;), so it offered no working standalone use; call &lt;code&gt;AIProjectClient.ProjectsRealtimeClient.StartSessionAsync&lt;/code&gt; to obtain an already-connected instance instead.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Sample Updates&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;Sample_VoiceAgent&lt;/code&gt;, showing how to create a voice agent and exchange a realtime text turn with it, and &lt;code&gt;Sample_VoiceAgent_ReadConversation&lt;/code&gt;, showing how to persist a realtime session's conversation with &lt;code&gt;store: true&lt;/code&gt; and read it back afterward through &lt;code&gt;BetaVoiceAgentsConversations&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Corrected default names for Container Apps managed environments to use 2–60 lowercase letters, numbers, or hyphens.&lt;br&gt;
+Expect automatically generated managed environment names to change when upgrading if explicit names are not set.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
