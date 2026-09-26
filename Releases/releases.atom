@@ -1,221 +1,232 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-09-25T00:10:51Z</updated>
+  <updated>2026-09-26T00:10:39Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-09-24</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-09-24</id>
+    <title>aws/aws-sdk-net - Releases - 2026-09-25</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-09-25</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-09-25T00:10:25Z</updated>
+    <updated>2026-09-26T00:10:17Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.341.0"&gt;4.0.341.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.342.0"&gt;4.0.342.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.341.0 (2026-09-24 18:15 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.342.0 (2026-09-25 18:20 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Appflow (4.0.101.3)
+&lt;li&gt;AccessAnalyzer (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;Appflow is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Artifact (4.0.102.9)
-&lt;ul&gt;
-&lt;li&gt;Artifact is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;AccessAnalyzer is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AuditManager (4.0.100.15)
+&lt;li&gt;Account (4.0.101.8)
 &lt;ul&gt;
-&lt;li&gt;AuditManager is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Braket (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;Braket is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CloudWatch (4.0.105.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds Create, Get, Update, and DeleteResourceMetricsConfiguration to enable detailed metric collection for an AWS resource, and adds UpdateOTelEnrichment plus include and exclude filters on StartOTelEnrichment so you can choose which metric namespaces CloudWatch enriches.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CodeCatalyst (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;CodeCatalyst is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CodeGuruProfiler (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;CodeGuruProfiler is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CodeGuruReviewer (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;CodeGuruReviewer is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CodeGuruSecurity (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;CodeGuruSecurity is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DataExchange (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;DataExchange is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DataZone (4.0.107.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon DataZone now supports the TOOLING blueprint category on CreateEnvironmentBlueprint, UpdateEnvironmentBlueprint, GetEnvironmentBlueprint, and ListEnvironmentBlueprints, for custom tooling blueprints. CreateConnection now accepts roleArn in iamProperties.&lt;/li&gt;
-&lt;li&gt;DataZone is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (4.0.105.0)
-&lt;ul&gt;
-&lt;li&gt;Added support for using .NET record types, other immutable types, and value types (struct and record struct) with the DynamoDB DataModel (object persistence) API. On the .NET 8 (and later) target, a type without a public parameterless constructor is populated by binding stored attribute values to a parameterized constructor, matched to members by name. A value type is bound to a constructor only when every parameter names a modeled member, and is otherwise populated by zero-initialization followed by member assignment, so a struct with a convenience constructor whose parameter names differ from its members is supported. Use the new [DynamoDBConstructor] attribute to select the constructor when a type has more than one eligible constructor. Items are stored using the same DynamoDB attributes as an equivalent type with settable members, so data written by any build of the SDK remains readable by any other, and retargeting an application to .NET 8 does not change how an existing item is read or written.&lt;/li&gt;
-&lt;li&gt;Models that cannot round-trip are now rejected when the type is first configured rather than failing later, so that saving and loading fail the same way instead of an item being written that cannot be read back. This applies to a constructor parameter whose type cannot accept the value produced for the member that supplies it, a read-only member that no constructor parameter supplies, a version, atomic counter, auto-generated timestamp or UpdateBehavior.IfNotExists member that the SDK cannot write back after a save, and [DynamoDBFlatten] on a type that cannot be reconstructed when an item is loaded.&lt;/li&gt;
-&lt;li&gt;When loading an item into a type populated through a constructor, a missing attribute and an attribute stored as a DynamoDB NULL both fall back to the constructor parameter's declared default value, or to the default of its type when the parameter declares none. Parameters that can hold null receive the stored null. Matching is by parameter name rather than position, so adding a member, or reordering positional parameters, does not break existing items.&lt;/li&gt;
-&lt;li&gt;Fixed [DynamoDBFlatten] members nested inside another [DynamoDBFlatten] member being left null when an item was loaded. The values were already saved correctly, so no stored data changes and existing items become readable without migration. This fix applies to all target frameworks. Two behavior changes follow from it: when none of a nested flattened member's attributes are present the member is now an empty instance rather than null, which matches how the outermost flattened member has always behaved; and a [DynamoDBFlatten] member whose type cannot be instantiated is now rejected when the type is first configured, with an error naming the property, instead of failing only on save and silently loading as null.&lt;/li&gt;
-&lt;li&gt;Fixed [DynamoDBIgnore] not being honored when loading a member of a [DynamoDBFlatten] type. The member was correctly omitted when saving, but an attribute of the same name already present in the stored item was read back onto the object. Ignored members of a flattened type are now excluded on load as well as on save, matching how an ignored member of the top-level type has always behaved. This fix applies to all target frameworks.&lt;/li&gt;
-&lt;li&gt;Fixed [DynamoDBIgnore] not being honored for atomic counter and UpdateBehavior.IfNotExists members when saving. An ignored [DynamoDBAtomicCounter] member was still included in the update expression, so DynamoDB incremented an attribute the model declares as not persisted, and an ignored UpdateBehavior.IfNotExists member caused the whole updated item to be requested and applied back onto the instance unnecessarily. This affected a property declared directly on the model as well as a member of a [DynamoDBFlatten] type at any depth. Ignored members are now excluded in both cases. This fix applies to all target frameworks.&lt;/li&gt;
-&lt;li&gt;Fixed a [DynamoDBVersion] property inside a [DynamoDBFlatten] type not being used for optimistic locking when it was nested more than one level deep. The version was saved but not captured, so the conditional expression checked that the attribute did not exist and every update of an existing item failed its condition check. The version is now located through the whole flattened chain. Also fixed a KeyNotFoundException when a flattened type had a version property that was marked [DynamoDBIgnore]. Both fixes apply to all target frameworks.&lt;/li&gt;
-&lt;li&gt;Loading an item that does not exist into a struct or record struct now returns the default value of the type instead of throwing a NullReferenceException. Loading a missing item into a class continues to return null.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ElastiCache (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Added tagging support for ElastiCache Global DataStore.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;EventBridge (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Adds a ManagedBy field to the DescribeEventBus and ListEventBuses responses, identifying the AWS service that created an event bus on your behalf.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;EventBridgeV2 (4.0.100.0)
-&lt;ul&gt;
-&lt;li&gt;Introducing Amazon EventBridge enhanced Custom event bus, a new shareable event bus for organizational-scale event-driven applications feature ordered delivery, deduplication, open event formats, and cross-account bus sharing.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;GroundStation (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;GroundStation is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IoT (4.0.101.4)
-&lt;ul&gt;
-&lt;li&gt;Fixed ListV2LoggingLevels and DeleteV2LoggingLevel documentation to include all supported target-types&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Ivschat (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;Ivschat is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ManagedGrafana (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;ManagedGrafana is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Account is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MarketplaceDiscovery (4.0.103.0)
+&lt;li&gt;AIOps (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;AWS Marketplace Discovery API now supports localized responses and SigV4a request signing. It returns new fulfillment details, including AMI architecture, EBS volume and security group information, SaaS quick-launch status, and SageMaker input and output MIME types.&lt;/li&gt;
+&lt;li&gt;AIOps is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PaymentCryptographyData (4.0.102.1)
+&lt;li&gt;Amplify (4.0.102.5)
 &lt;ul&gt;
-&lt;li&gt;PaymentCryptographyData is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Amplify is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PinpointEmail (4.0.100.15)
+&lt;li&gt;AmplifyUIBuilder (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;PinpointEmail is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;AmplifyUIBuilder is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PinpointSMSVoice (4.0.100.15)
+&lt;li&gt;AppConfig (4.0.101.12)
 &lt;ul&gt;
-&lt;li&gt;PinpointSMSVoice is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;AppConfig is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;RedshiftDataAPIService (4.0.103.0)
+&lt;li&gt;AppConfigData (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;Updates to the ListDatabases and WorkgroupName validation&lt;/li&gt;
+&lt;li&gt;AppConfigData is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Route53Resolver (4.0.100.15)
+&lt;li&gt;AppIntegrationsService (4.0.102.1)
 &lt;ul&gt;
-&lt;li&gt;Documentation updates for Route 53 Resolver. Clarifies which Outpost Resolver operations apply to first-generation AWS Outposts and that Resolver is managed automatically on second-generation Outposts. Adds Local Network Interface subnet compatibility notes for Resolver endpoints.&lt;/li&gt;
+&lt;li&gt;AppIntegrationsService is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMakerMetrics (4.0.100.15)
+&lt;li&gt;ARCRegionswitch (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;SageMakerMetrics is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Adds a service quota checker to Region switch to verify quota parity between your primary and standby Region, and automatically submit quota limit increases. Adds an optional EC2 Auto Scaling and ECS setting that waits for instances or tasks in the scaled-up Region to be healthy in target groups.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SecurityAgent (4.0.106.0)
+&lt;li&gt;AugmentedAIRuntime (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;Added support for Confluence export, enabling customers to publish security findings to Confluence pages.&lt;/li&gt;
+&lt;li&gt;AugmentedAIRuntime is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ServerlessApplicationRepository (4.0.100.15)
+&lt;li&gt;BedrockAgent (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;ServerlessApplicationRepository is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Adds support for calling VPC configuration API's in Bedrock. These configurations allow the use of On Prem connectors in Bedrock Managed Knowledge bases&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Signer (4.0.100.15)
+&lt;li&gt;BedrockAgentCoreControl (4.0.118.0)
 &lt;ul&gt;
-&lt;li&gt;Signer is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Amazon Bedrock AgentCore Payments now supports credential rotation for payment connectors, letting you rotate API and wallet secrets for Quick Create payment auths from the console. This release also adds Type and Creation type columns to the payment managers views.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SignerData (4.0.100.15)
+&lt;li&gt;BillingConductor (4.0.102.1)
 &lt;ul&gt;
-&lt;li&gt;SignerData is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SnowDeviceManagement (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;SnowDeviceManagement is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SSMGuiConnect (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;SSMGuiConnect is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SSMIncidents (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;SSMIncidents is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SSMQuickSetup (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;SSMQuickSetup is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Sustainability (4.0.101.11)
-&lt;ul&gt;
-&lt;li&gt;Sustainability is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WorkSpacesThinClient (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;WorkSpacesThinClient is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;BillingConductor is now generated from its Smithy model.&lt;/li&gt;
+&lt;li&gt;Added a paginator for the GetBillingGroupCostReport operation.&lt;/li&gt;
 &lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;WorkSpacesWeb (4.0.100.15)
+&lt;li&gt;CleanRooms (4.0.104.7)
 &lt;ul&gt;
-&lt;li&gt;WorkSpacesWeb is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;CleanRooms is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Connect (4.0.120.0)
+&lt;ul&gt;
+&lt;li&gt;Agent Privacy During Hold is a new privacy capability for Amazon Connect Voice that prevents agent audio from being captured in call recordings or Contact Lens conversational analytics during hold. When enabled, agents are automatically muted on entering hold and unmuted on resuming the contact&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DirectoryServiceData (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;DirectoryServiceData is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 4.0.102.7
+&lt;li&gt;DLM (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;Added an internal retry delay setting to GenericContainerCredentials so unit tests can skip the retry backoff. No customer-visible behavior change.&lt;/li&gt;
+&lt;li&gt;DLM is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Glue (4.0.108.0)
+&lt;ul&gt;
+&lt;li&gt;add support for table level federation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;InspectorScan (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;InspectorScan is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IotData (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;IotData is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IoTDeviceAdvisor (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;IoTDeviceAdvisor is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IoTJobsDataPlane (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;IoTJobsDataPlane is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IoTManagedIntegrations (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;IoTManagedIntegrations is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IoTTwinMaker (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;IoTTwinMaker is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IoTWireless (4.0.102.1)
+&lt;ul&gt;
+&lt;li&gt;IoTWireless is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LicenseManagerLinuxSubscriptions (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;LicenseManagerLinuxSubscriptions is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LocationService (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;LocationService is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MainframeModernization (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;MainframeModernization is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaConnect (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for RTMP push router outputs in AWS Elemental MediaConnect.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;NeptuneGraph (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;Add GraphIdentifier filter for ListImportTasks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;OpenSearchService (4.0.102.14)
+&lt;ul&gt;
+&lt;li&gt;OpenSearchService is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PersonalizeEvents (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;PersonalizeEvents is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PersonalizeRuntime (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;PersonalizeRuntime is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;QConnect (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;Release shapes for the proactive agentic recommendations and the multi-knowledge base search features. Increases the maximum length of QuickResponseContent.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Rekognition (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for Feedback and Metadata in the GetFaceLivenessSessionResults response. Feedback returns codes explaining why a Face Liveness check produced its result. Metadata includes the client SDK type.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Repostspace (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;Repostspace is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ResourceExplorer2 (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;ResourceExplorer2 is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RTBFabric (4.0.102.2)
+&lt;ul&gt;
+&lt;li&gt;RTBFabric is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SecurityAgent (4.0.107.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds the ListActorMessages operation, which returns the multi-factor authentication messages received at an actor's server-generated email address&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SsmSap (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;SsmSap is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WellArchitected (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;This change releases the Well-Architected Agent, a generative AI service that analyzes a customer's AWS environment and delivers personalized, prioritized recommendations across cost, security, performance, and resilience.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -226,215 +237,55 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-09-24</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-09-24</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-09-25</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-09-25</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-09-25T00:10:26Z</updated>
+    <updated>2026-09-26T00:10:18Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Messaging.ServiceBus_7.21.0"&gt;Azure.Messaging.ServiceBus_7.21.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.63.0"&gt;Azure.Core_1.63.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;7.21.0 (2026-10-06)&lt;/h2&gt;
+                                &lt;h2&gt;1.63.0 (2026-09-25)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;SqlFilterCount&lt;/code&gt; and &lt;code&gt;CorrelationFilterCount&lt;/code&gt; properties to &lt;code&gt;TopicRuntimeProperties&lt;/code&gt;, exposing the total number of SQL filters and correlation filters across all of a topic's subscriptions. These are populated by &lt;code&gt;GetTopicRuntimePropertiesAsync&lt;/code&gt; and &lt;code&gt;GetTopicsRuntimePropertiesAsync&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ServiceBusAdministrationClientOptions.ServiceVersion.V2024_05&lt;/code&gt; and made it the default service version. The topic filter counts above are served by the &lt;code&gt;2024-05&lt;/code&gt; service API version, so the administration client now sends &lt;code&gt;api-version=2024-05&lt;/code&gt; by default.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;GetMessageSessionsAsync&lt;/code&gt; overloads on &lt;code&gt;ServiceBusClient&lt;/code&gt; for queues and subscriptions. The no-filter overload returns the IDs of sessions that have active messages or session state, and the &lt;code&gt;sessionStateUpdatedAfter&lt;/code&gt; overload returns session IDs whose session state was updated after the specified timestamp. Implements the &lt;code&gt;com.microsoft:get-message-sessions&lt;/code&gt; AMQP management operation. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/58761" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/58761/hovercard"&gt;#58761&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Added opt-in support for non-exclusive session locking on &lt;code&gt;ServiceBusSessionReceiver&lt;/code&gt;, allowing a session to be cooperatively taken over by another receiver. Set &lt;code&gt;ServiceBusSessionReceiverOptions.EnableNonExclusiveSession&lt;/code&gt; to accept a session non-exclusively, then read the token from &lt;code&gt;ServiceBusSessionReceiver.SessionLockToken&lt;/code&gt; and pass it as &lt;code&gt;ServiceBusSessionReceiverOptions.SessionLockToken = Guid.Parse(token)&lt;/code&gt; to take that session over. &lt;code&gt;ServiceBusSessionReceiver.IsSessionExclusive&lt;/code&gt; reports the mode the session was established under. Dispositions for a non-exclusive session are routed over the management link so that settlement keeps working across a takeover, which lowers settlement throughput compared to an exclusive session. This applies to &lt;code&gt;ServiceBusSessionReceiver&lt;/code&gt; only; &lt;code&gt;ServiceBusSessionProcessor&lt;/code&gt; continues to lock sessions exclusively. Accepting a session with &lt;code&gt;EnableNonExclusiveSession&lt;/code&gt; set throws &lt;code&gt;NotSupportedException&lt;/code&gt; when the endpoint declines it, either by refusing the request outright or by accepting it without assigning a lock token, which is how a caller detects whether the feature is available for a namespace. An endpoint that declines in some other way surfaces the exception its own error maps to. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/60060" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/60060/hovercard"&gt;#60060&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added mTLS proof-of-possession support to &lt;code&gt;ClientCertificateCredential&lt;/code&gt;, including subject name and issuer certificate authentication configured with &lt;code&gt;SendCertificateChain&lt;/code&gt;. Proof-of-possession is used by default when requested; first-party applications can opt out by setting the &lt;code&gt;Azure.Identity.EnableClientCertificateMtlsProofOfPossession&lt;/code&gt; AppContext switch (or &lt;code&gt;AZURE_IDENTITY_ENABLE_CLIENT_CERTIFICATE_MTLS_POP&lt;/code&gt; environment variable) to &lt;code&gt;false&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added mTLS proof-of-possession support to the managed identity federated identity flow used by configured credentials, covering both managed identity assertion acquisition and client assertion token redemption. It is enabled by default; set &lt;code&gt;EnableMtlsProofOfPossession&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt; in the credential's JSON configuration to force bearer authentication for both exchanges. On a host that cannot provide a binding certificate, the flow falls back to a bearer token instead of failing, matching the direct managed identity flow.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Renamed the experimental &lt;code&gt;ManagedIdentityCredentialOptions.DisableMtlsProofOfPossession&lt;/code&gt; property and corresponding configuration setting to &lt;code&gt;EnableMtlsProofOfPossession&lt;/code&gt;. mTLS proof-of-possession is enabled by default for direct and configured managed identity when requested and supported. To force bearer authentication, replace &lt;code&gt;DisableMtlsProofOfPossession = true&lt;/code&gt; with &lt;code&gt;EnableMtlsProofOfPossession = false&lt;/code&gt; in code or credential configuration.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed retry classification for web socket failures with nested causes.  On modern .NET, a transient network failure during a web socket connection attempt surfaces as a &lt;code&gt;WebSocketException&lt;/code&gt; that wraps an &lt;code&gt;HttpRequestException&lt;/code&gt;, which wraps the meaningful &lt;code&gt;IOException&lt;/code&gt; or &lt;code&gt;SocketException&lt;/code&gt;.  The retry policy previously inspected only one level of nesting and treated these failures as terminal.  The policy now unwraps nested wrapper exceptions to a bounded depth, so transient failures such as a connection reset use the configured retries.  Terminal socket failures, such as host-not-found and host-unreachable, are not retried at any supported depth.  A host-unreachable failure on an established connection is now terminal.  Earlier versions retried it. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/61868" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/61868/hovercard"&gt;#61868&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed a bug where canceling &lt;code&gt;ServiceBusReceiver.CloseAsync&lt;/code&gt; left the receiver unable to close its own links. The receiver was marked as closed, and its set of locked messages disposed, before the cancellation was observed, so every later call to &lt;code&gt;CloseAsync&lt;/code&gt; returned immediately without doing any work and the links stayed open until the owning &lt;code&gt;ServiceBusClient&lt;/code&gt; was disposed. The receiver is now left open and closable when a close does not complete, so the operation can be retried. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/59309" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/59309/hovercard"&gt;#59309&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The default &lt;code&gt;ServiceBusAdministrationClient&lt;/code&gt; service version is now &lt;code&gt;2024-05&lt;/code&gt; (previously &lt;code&gt;2021-05&lt;/code&gt;). Existing operations are unaffected in behavior; the change is required to surface the new topic filter count properties.&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;ModelReaderWriter&lt;/code&gt; deserialization of &lt;code&gt;GeoPoint&lt;/code&gt; with &lt;code&gt;AzureCoreContext&lt;/code&gt; or a generated consumer context throwing because its type builder was not registered.&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;DefaultAzureCredential&lt;/code&gt; taking up to a minute to continue past managed identity on hosts where IMDS is unavailable. Ordinary chained requests use the short Azure.Core IMDS probe, while proof-of-possession capability discovery passes the same initial IMDS timeout to MSAL so discovery retry delays are canceled and timed-out discovery results are not cached.&lt;/li&gt;
+&lt;li&gt;Fixed chained managed identity aborting the credential chain when MSAL reports all sources unavailable immediately after a successful initial IMDS probe.&lt;/li&gt;
+&lt;li&gt;Managed identity mTLS proof-of-possession now requires a KeyGuard-backed host capability and enforces KeyGuard as the minimum binding strength during token acquisition. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/62585" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/62585/hovercard"&gt;#62585&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Databricks_1.0.0-beta.1"&gt;Azure.Provisioning.Databricks_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Storage_1.8.0"&gt;Azure.ResourceManager.Storage_1.8.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-09-24)&lt;/h2&gt;
+                                &lt;h2&gt;1.8.0 (2026-09-23)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial beta release of Azure.Provisioning.Databricks.&lt;/li&gt;
+&lt;li&gt;Upgraded api-version from &lt;code&gt;2025-08-01&lt;/code&gt; to &lt;code&gt;2026-06-01&lt;/code&gt;. Tag details available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/tree/302730db231ef7b679967f94db3bb492cba291f7/specification/storage/Storage.Management"&gt;https://github.com/Azure/azure-rest-api-specs/tree/302730db231ef7b679967f94db3bb492cba291f7/specification/storage/Storage.Management&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;Supported new &lt;code&gt;AdvancedPlatformMetricsRuleResource&lt;/code&gt; for managing advanced platform metrics rules on storage accounts.&lt;/li&gt;
+&lt;li&gt;Supported new &lt;code&gt;ContextCacheResource&lt;/code&gt; and &lt;code&gt;ContextCacheContainerResource&lt;/code&gt; for managing context caches and their containers.&lt;/li&gt;
+&lt;li&gt;Supported new &lt;code&gt;AllowCrossTenantDelegationSas&lt;/code&gt; property on storage account create/update.&lt;/li&gt;
+&lt;li&gt;Supported new &lt;code&gt;IsUserBoundUserDelegationSasRequired&lt;/code&gt; and &lt;code&gt;RequireUserBoundUserDelegationSasAction&lt;/code&gt; properties on &lt;code&gt;StorageAccountSasPolicy&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Supported new &lt;code&gt;GuardrailIOScalar&lt;/code&gt; and &lt;code&gt;GuardrailBandwidthScalar&lt;/code&gt; properties on &lt;code&gt;FileShareLimits&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.AppContainers_1.3.0-beta.2"&gt;Azure.Provisioning.AppContainers_1.3.0-beta.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.3.0-beta.2 (2026-09-24)&lt;/h2&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Corrected default names for Container Apps managed environments to use 2–60 lowercase letters, numbers, or hyphens.&lt;br&gt;
-Expect automatically generated managed environment names to change when upgrading if explicit names are not set.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>microsoft/microsoft-ui-xaml - Releases - 2026-09-24</title>
-    <id>https://github.com/microsoft/microsoft-ui-xaml#2026-09-24</id>
-    <link href="https://github.com/microsoft/microsoft-ui-xaml" />
-    <updated>2026-09-25T00:10:44Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/releases/tag/winui3/release/1.8.12"&gt;WinUI 3 in WinAppSDK 1.8.12&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;WinUI 3 in Windows App SDK 1.8.12 contains no WinUI-specific changes. This final servicing release for version 1.8 fixes a Windows ML issue that could expose an unavailable execution provider on certain Arm64 devices.&lt;/p&gt;
-&lt;p&gt;For the complete release details, see the &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-1-8?pivots=stable#version-1812-18260921001" rel="nofollow"&gt;Windows App SDK 1.8.12 release notes&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Try it out&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.8.260921001" rel="nofollow"&gt;1.8.260921001 Windows App SDK NuGet package&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>microsoft/WindowsAppSDK - Releases - 2026-09-24</title>
-    <id>https://github.com/microsoft/WindowsAppSDK#2026-09-24</id>
-    <link href="https://github.com/microsoft/WindowsAppSDK" />
-    <updated>2026-09-25T00:10:44Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.8.12"&gt;Windows App SDK 1.8.12 (1.8.260921001)&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;Windows App SDK 1.8.12 is the final servicing release for version 1.8. It fixes a Windows ML issue that could expose an unavailable execution provider on certain Arm64 devices.&lt;/p&gt;
-&lt;h3&gt;Bug fixes&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Bug fix&lt;/th&gt;
-&lt;th&gt;&lt;a href="https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.applicationmodel.windowsappruntime.runtimecompatibilityoptions.disabledchanges?view=windows-app-sdk-1.8" rel="nofollow"&gt;Runtime Compatibility Change&lt;/a&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Fixed an issue where &lt;code&gt;ExecutionProviderCatalog.FindAllProviders&lt;/code&gt; could return an execution provider in the &lt;code&gt;NotPresent&lt;/code&gt; state on certain Arm64 devices even though &lt;code&gt;ExecutionProvider.EnsureReadyAsync&lt;/code&gt; could not acquire it. The unavailable provider is no longer returned on affected devices.&lt;/td&gt;
-&lt;td&gt;N/A, Windows ML provider availability fix&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;To see everything that's new and changed, see the full &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-1-8?pivots=stable#version-1812-18260921001" rel="nofollow"&gt;Windows App SDK 1.8.12 release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
-&lt;h3&gt;Try it out&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/1.8.260921001" rel="nofollow"&gt;1.8.260921001 NuGet&lt;/a&gt; package to use WinAppSDK 1.8 in your app.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Getting started&lt;/h3&gt;
-&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-09-24</title>
-    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-09-24</id>
-    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-    <updated>2026-09-25T00:10:48Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.Gcp-1.0.0-alpha.7"&gt;Resources.Gcp-1.0.0-alpha.7&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.Gcp/1.0.0-alpha.7" rel="nofollow"&gt;OpenTelemetry.Resources.Gcp v1.0.0-alpha.7&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;The minimum supported version of &lt;code&gt;Google.Api.Gax&lt;/code&gt; is now &lt;code&gt;4.14.0&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5212" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5212/hovercard"&gt;#5212&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed a &lt;code&gt;NullReferenceException&lt;/code&gt; thrown by the resource detector, which&lt;br&gt;
-caused provider construction to fail when running as a Google Cloud Run job&lt;br&gt;
-with &lt;code&gt;Google.Api.Gax&lt;/code&gt; 4.14.0 or later. Cloud Run jobs are now detected&lt;br&gt;
-(&lt;code&gt;cloud.platform&lt;/code&gt; is &lt;code&gt;gcp_cloud_run&lt;/code&gt;) with the &lt;code&gt;faas.name&lt;/code&gt;,&lt;br&gt;
-&lt;code&gt;gcp.cloud_run.job.execution&lt;/code&gt; and &lt;code&gt;gcp.cloud_run.job.task_index&lt;/code&gt; attributes.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5212" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5212/hovercard"&gt;#5212&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The detector now catches and logs an exception and returns an empty resource.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5212" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5212/hovercard"&gt;#5212&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.Gcp-1.0.0-alpha.7/src/OpenTelemetry.Resources.Gcp/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.Azure-1.19.1-beta.2"&gt;Resources.Azure-1.19.1-beta.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.Azure/1.19.1-beta.2" rel="nofollow"&gt;OpenTelemetry.Resources.Azure v1.19.1-beta.2&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Add &lt;code&gt;cloud.account.id&lt;/code&gt; and &lt;code&gt;azure.resource_group.name&lt;/code&gt; attributes to the Azure&lt;br&gt;
-VM resource detector.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5195" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5195/hovercard"&gt;#5195&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.Azure-1.19.1-beta.2/src/OpenTelemetry.Resources.Azure/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.EntityFrameworkCore-1.19.1-beta.1"&gt;Instrumentation.EntityFrameworkCore-1.19.1-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.EntityFrameworkCore/1.19.1-beta.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.EntityFrameworkCore v1.19.1-beta.1&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.19.1&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5329" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5329/hovercard"&gt;#5329&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed query sanitization so that backslash-escaped quotes (&lt;code&gt;'a\'b'&lt;/code&gt;) in&lt;br&gt;
-MySQL/MariaDB string literals and PostgreSQL dollar-quoted strings&lt;br&gt;
-(&lt;code&gt;$$...$$&lt;/code&gt;) are correctly redacted.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4986" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4986/hovercard"&gt;#4986&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed query sanitization so that MySQL/MariaDB double-quoted string&lt;br&gt;
-literals (&lt;code&gt;"..."&lt;/code&gt;, valid when &lt;code&gt;ANSI_QUOTES&lt;/code&gt; is disabled) are correctly&lt;br&gt;
-redacted.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4986" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/4986/hovercard"&gt;#4986&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.EntityFrameworkCore-1.19.1-beta.1/src/OpenTelemetry.Instrumentation.EntityFrameworkCore/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;StorageAccountResourceAccessRule.TenantId&lt;/code&gt; deserialization to handle empty or invalid string values returned by the service (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/59323" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/59323/hovercard"&gt;#59323&lt;/a&gt;).&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;

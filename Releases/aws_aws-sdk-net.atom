@@ -1,221 +1,232 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-09-25T00:10:25Z</updated>
+  <updated>2026-09-26T00:10:17Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-09-24</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-09-24</id>
+    <title>aws/aws-sdk-net - Releases - 2026-09-25</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-09-25</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-09-25T00:10:25Z</updated>
+    <updated>2026-09-26T00:10:17Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.341.0"&gt;4.0.341.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.342.0"&gt;4.0.342.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.341.0 (2026-09-24 18:15 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.342.0 (2026-09-25 18:20 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Appflow (4.0.101.3)
+&lt;li&gt;AccessAnalyzer (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;Appflow is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Artifact (4.0.102.9)
-&lt;ul&gt;
-&lt;li&gt;Artifact is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;AccessAnalyzer is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AuditManager (4.0.100.15)
+&lt;li&gt;Account (4.0.101.8)
 &lt;ul&gt;
-&lt;li&gt;AuditManager is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Braket (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;Braket is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CloudWatch (4.0.105.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds Create, Get, Update, and DeleteResourceMetricsConfiguration to enable detailed metric collection for an AWS resource, and adds UpdateOTelEnrichment plus include and exclude filters on StartOTelEnrichment so you can choose which metric namespaces CloudWatch enriches.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CodeCatalyst (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;CodeCatalyst is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CodeGuruProfiler (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;CodeGuruProfiler is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CodeGuruReviewer (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;CodeGuruReviewer is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CodeGuruSecurity (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;CodeGuruSecurity is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DataExchange (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;DataExchange is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DataZone (4.0.107.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon DataZone now supports the TOOLING blueprint category on CreateEnvironmentBlueprint, UpdateEnvironmentBlueprint, GetEnvironmentBlueprint, and ListEnvironmentBlueprints, for custom tooling blueprints. CreateConnection now accepts roleArn in iamProperties.&lt;/li&gt;
-&lt;li&gt;DataZone is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (4.0.105.0)
-&lt;ul&gt;
-&lt;li&gt;Added support for using .NET record types, other immutable types, and value types (struct and record struct) with the DynamoDB DataModel (object persistence) API. On the .NET 8 (and later) target, a type without a public parameterless constructor is populated by binding stored attribute values to a parameterized constructor, matched to members by name. A value type is bound to a constructor only when every parameter names a modeled member, and is otherwise populated by zero-initialization followed by member assignment, so a struct with a convenience constructor whose parameter names differ from its members is supported. Use the new [DynamoDBConstructor] attribute to select the constructor when a type has more than one eligible constructor. Items are stored using the same DynamoDB attributes as an equivalent type with settable members, so data written by any build of the SDK remains readable by any other, and retargeting an application to .NET 8 does not change how an existing item is read or written.&lt;/li&gt;
-&lt;li&gt;Models that cannot round-trip are now rejected when the type is first configured rather than failing later, so that saving and loading fail the same way instead of an item being written that cannot be read back. This applies to a constructor parameter whose type cannot accept the value produced for the member that supplies it, a read-only member that no constructor parameter supplies, a version, atomic counter, auto-generated timestamp or UpdateBehavior.IfNotExists member that the SDK cannot write back after a save, and [DynamoDBFlatten] on a type that cannot be reconstructed when an item is loaded.&lt;/li&gt;
-&lt;li&gt;When loading an item into a type populated through a constructor, a missing attribute and an attribute stored as a DynamoDB NULL both fall back to the constructor parameter's declared default value, or to the default of its type when the parameter declares none. Parameters that can hold null receive the stored null. Matching is by parameter name rather than position, so adding a member, or reordering positional parameters, does not break existing items.&lt;/li&gt;
-&lt;li&gt;Fixed [DynamoDBFlatten] members nested inside another [DynamoDBFlatten] member being left null when an item was loaded. The values were already saved correctly, so no stored data changes and existing items become readable without migration. This fix applies to all target frameworks. Two behavior changes follow from it: when none of a nested flattened member's attributes are present the member is now an empty instance rather than null, which matches how the outermost flattened member has always behaved; and a [DynamoDBFlatten] member whose type cannot be instantiated is now rejected when the type is first configured, with an error naming the property, instead of failing only on save and silently loading as null.&lt;/li&gt;
-&lt;li&gt;Fixed [DynamoDBIgnore] not being honored when loading a member of a [DynamoDBFlatten] type. The member was correctly omitted when saving, but an attribute of the same name already present in the stored item was read back onto the object. Ignored members of a flattened type are now excluded on load as well as on save, matching how an ignored member of the top-level type has always behaved. This fix applies to all target frameworks.&lt;/li&gt;
-&lt;li&gt;Fixed [DynamoDBIgnore] not being honored for atomic counter and UpdateBehavior.IfNotExists members when saving. An ignored [DynamoDBAtomicCounter] member was still included in the update expression, so DynamoDB incremented an attribute the model declares as not persisted, and an ignored UpdateBehavior.IfNotExists member caused the whole updated item to be requested and applied back onto the instance unnecessarily. This affected a property declared directly on the model as well as a member of a [DynamoDBFlatten] type at any depth. Ignored members are now excluded in both cases. This fix applies to all target frameworks.&lt;/li&gt;
-&lt;li&gt;Fixed a [DynamoDBVersion] property inside a [DynamoDBFlatten] type not being used for optimistic locking when it was nested more than one level deep. The version was saved but not captured, so the conditional expression checked that the attribute did not exist and every update of an existing item failed its condition check. The version is now located through the whole flattened chain. Also fixed a KeyNotFoundException when a flattened type had a version property that was marked [DynamoDBIgnore]. Both fixes apply to all target frameworks.&lt;/li&gt;
-&lt;li&gt;Loading an item that does not exist into a struct or record struct now returns the default value of the type instead of throwing a NullReferenceException. Loading a missing item into a class continues to return null.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ElastiCache (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Added tagging support for ElastiCache Global DataStore.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;EventBridge (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Adds a ManagedBy field to the DescribeEventBus and ListEventBuses responses, identifying the AWS service that created an event bus on your behalf.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;EventBridgeV2 (4.0.100.0)
-&lt;ul&gt;
-&lt;li&gt;Introducing Amazon EventBridge enhanced Custom event bus, a new shareable event bus for organizational-scale event-driven applications feature ordered delivery, deduplication, open event formats, and cross-account bus sharing.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;GroundStation (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;GroundStation is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IoT (4.0.101.4)
-&lt;ul&gt;
-&lt;li&gt;Fixed ListV2LoggingLevels and DeleteV2LoggingLevel documentation to include all supported target-types&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Ivschat (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;Ivschat is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ManagedGrafana (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;ManagedGrafana is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Account is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MarketplaceDiscovery (4.0.103.0)
+&lt;li&gt;AIOps (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;AWS Marketplace Discovery API now supports localized responses and SigV4a request signing. It returns new fulfillment details, including AMI architecture, EBS volume and security group information, SaaS quick-launch status, and SageMaker input and output MIME types.&lt;/li&gt;
+&lt;li&gt;AIOps is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PaymentCryptographyData (4.0.102.1)
+&lt;li&gt;Amplify (4.0.102.5)
 &lt;ul&gt;
-&lt;li&gt;PaymentCryptographyData is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Amplify is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PinpointEmail (4.0.100.15)
+&lt;li&gt;AmplifyUIBuilder (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;PinpointEmail is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;AmplifyUIBuilder is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PinpointSMSVoice (4.0.100.15)
+&lt;li&gt;AppConfig (4.0.101.12)
 &lt;ul&gt;
-&lt;li&gt;PinpointSMSVoice is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;AppConfig is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;RedshiftDataAPIService (4.0.103.0)
+&lt;li&gt;AppConfigData (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;Updates to the ListDatabases and WorkgroupName validation&lt;/li&gt;
+&lt;li&gt;AppConfigData is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Route53Resolver (4.0.100.15)
+&lt;li&gt;AppIntegrationsService (4.0.102.1)
 &lt;ul&gt;
-&lt;li&gt;Documentation updates for Route 53 Resolver. Clarifies which Outpost Resolver operations apply to first-generation AWS Outposts and that Resolver is managed automatically on second-generation Outposts. Adds Local Network Interface subnet compatibility notes for Resolver endpoints.&lt;/li&gt;
+&lt;li&gt;AppIntegrationsService is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SageMakerMetrics (4.0.100.15)
+&lt;li&gt;ARCRegionswitch (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;SageMakerMetrics is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Adds a service quota checker to Region switch to verify quota parity between your primary and standby Region, and automatically submit quota limit increases. Adds an optional EC2 Auto Scaling and ECS setting that waits for instances or tasks in the scaled-up Region to be healthy in target groups.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SecurityAgent (4.0.106.0)
+&lt;li&gt;AugmentedAIRuntime (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;Added support for Confluence export, enabling customers to publish security findings to Confluence pages.&lt;/li&gt;
+&lt;li&gt;AugmentedAIRuntime is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ServerlessApplicationRepository (4.0.100.15)
+&lt;li&gt;BedrockAgent (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;ServerlessApplicationRepository is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Adds support for calling VPC configuration API's in Bedrock. These configurations allow the use of On Prem connectors in Bedrock Managed Knowledge bases&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Signer (4.0.100.15)
+&lt;li&gt;BedrockAgentCoreControl (4.0.118.0)
 &lt;ul&gt;
-&lt;li&gt;Signer is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Amazon Bedrock AgentCore Payments now supports credential rotation for payment connectors, letting you rotate API and wallet secrets for Quick Create payment auths from the console. This release also adds Type and Creation type columns to the payment managers views.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SignerData (4.0.100.15)
+&lt;li&gt;BillingConductor (4.0.102.1)
 &lt;ul&gt;
-&lt;li&gt;SignerData is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SnowDeviceManagement (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;SnowDeviceManagement is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SSMGuiConnect (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;SSMGuiConnect is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SSMIncidents (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;SSMIncidents is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SSMQuickSetup (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;SSMQuickSetup is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Sustainability (4.0.101.11)
-&lt;ul&gt;
-&lt;li&gt;Sustainability is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WorkSpacesThinClient (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;WorkSpacesThinClient is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;BillingConductor is now generated from its Smithy model.&lt;/li&gt;
+&lt;li&gt;Added a paginator for the GetBillingGroupCostReport operation.&lt;/li&gt;
 &lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;WorkSpacesWeb (4.0.100.15)
+&lt;li&gt;CleanRooms (4.0.104.7)
 &lt;ul&gt;
-&lt;li&gt;WorkSpacesWeb is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;CleanRooms is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Connect (4.0.120.0)
+&lt;ul&gt;
+&lt;li&gt;Agent Privacy During Hold is a new privacy capability for Amazon Connect Voice that prevents agent audio from being captured in call recordings or Contact Lens conversational analytics during hold. When enabled, agents are automatically muted on entering hold and unmuted on resuming the contact&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DirectoryServiceData (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;DirectoryServiceData is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 4.0.102.7
+&lt;li&gt;DLM (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;Added an internal retry delay setting to GenericContainerCredentials so unit tests can skip the retry backoff. No customer-visible behavior change.&lt;/li&gt;
+&lt;li&gt;DLM is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Glue (4.0.108.0)
+&lt;ul&gt;
+&lt;li&gt;add support for table level federation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;InspectorScan (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;InspectorScan is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IotData (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;IotData is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IoTDeviceAdvisor (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;IoTDeviceAdvisor is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IoTJobsDataPlane (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;IoTJobsDataPlane is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IoTManagedIntegrations (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;IoTManagedIntegrations is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IoTTwinMaker (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;IoTTwinMaker is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IoTWireless (4.0.102.1)
+&lt;ul&gt;
+&lt;li&gt;IoTWireless is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LicenseManagerLinuxSubscriptions (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;LicenseManagerLinuxSubscriptions is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LocationService (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;LocationService is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MainframeModernization (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;MainframeModernization is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaConnect (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for RTMP push router outputs in AWS Elemental MediaConnect.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;NeptuneGraph (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;Add GraphIdentifier filter for ListImportTasks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;OpenSearchService (4.0.102.14)
+&lt;ul&gt;
+&lt;li&gt;OpenSearchService is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PersonalizeEvents (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;PersonalizeEvents is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PersonalizeRuntime (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;PersonalizeRuntime is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;QConnect (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;Release shapes for the proactive agentic recommendations and the multi-knowledge base search features. Increases the maximum length of QuickResponseContent.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Rekognition (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for Feedback and Metadata in the GetFaceLivenessSessionResults response. Feedback returns codes explaining why a Face Liveness check produced its result. Metadata includes the client SDK type.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Repostspace (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;Repostspace is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ResourceExplorer2 (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;ResourceExplorer2 is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RTBFabric (4.0.102.2)
+&lt;ul&gt;
+&lt;li&gt;RTBFabric is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SecurityAgent (4.0.107.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds the ListActorMessages operation, which returns the multi-factor authentication messages received at an actor's server-generated email address&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SsmSap (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;SsmSap is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WellArchitected (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;This change releases the Well-Architected Agent, a generative AI service that analyzes a customer's AWS environment and delivers personalized, prioritized recommendations across cost, security, performance, and resilience.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
