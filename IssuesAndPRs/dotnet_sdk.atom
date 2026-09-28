@@ -1,26 +1,20 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/sdk - Issues &amp; Pull Requests</title>
   <link href="https://github.com/dotnet/sdk" />
-  <updated>2026-09-27T00:11:40Z</updated>
+  <updated>2026-09-28T00:11:31Z</updated>
   <id>https://github.com/dotnet/sdk</id>
   <entry>
-    <title>dotnet/sdk - Issues &amp; Pull Requests - 2026-09-26</title>
-    <id>https://github.com/dotnet/sdk#2026-09-26</id>
+    <title>dotnet/sdk - Issues &amp; Pull Requests - 2026-09-27</title>
+    <id>https://github.com/dotnet/sdk#2026-09-27</id>
     <link href="https://github.com/dotnet/sdk" />
-    <updated>2026-09-27T00:11:40Z</updated>
+    <updated>2026-09-28T00:11:31Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/issues/56413"&gt;CA5390 and CA5403 slow byte-array emission without cryptographic sinks #56413&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/issues/56412"&gt;CA1508 dominates analyzer time in a small C# library #56412&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/56416"&gt;`dotnet format`: IMPORTS fix ignores documented option defaults and grouping #56416&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -29,13 +23,7 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/issues/23388"&gt;MSBuild rebuilds project when custom .target, .props files are modified #23388&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Discussion&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/issues/55551"&gt;Microsoft.DotNet.Cli.New.IntegrationTests.CommonTemplatesTests.FeaturesSupport: intermittent hang (test host hang-dump timeout, exit code 7) #55551&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/issues/24864"&gt;With 6.0.300-preview.22204.3, warning NU5104 occurs when packing a F# project #24864&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -46,7 +34,19 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/56411"&gt;[wasm] Default R2R inlining/debug-info stripping for browser and wasi RIDs #56411&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/56417"&gt;Defer package/nuget help to the managed CLI in AOT mode #56417&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/56415"&gt;Avoid redundant dataflow in security analyzers #56415&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/56414"&gt;Reduce CA1508 analysis cost for local-function calls #56414&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -55,33 +55,39 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/54130"&gt;Fix missing indentation in API diff for first member after synthesized constructor #54130&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-Infrastructure, stale&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/55511"&gt;Add `dotnetup self update` command #55511&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
         &lt;a href="https://github.com/dotnet/sdk/pull/56395"&gt;Port runtime PR dotnet/runtime#133111 R2R changes to SDK Crossgen tasks #56395&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;Area-ReadyToRun, Area-WasmSdk, 12.0-preview1&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/56408"&gt;Accept `dotnet run -p` as a short form of `--project` #56408&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/55339"&gt;[Multithreaded] Migrate RunReadyToRunCompiler #55339&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
+      &lt;div&gt;stale&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/sdk/pull/56406"&gt;Validate workload --source feeds before acquiring manifests #56406&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/52514"&gt;Fix container debugging when using 9.0.3xx SDK in VS2026 #52514&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
+      &lt;div&gt;Branch Lockdown, stale&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/55514"&gt;Make ResolvePackageAssets cache hash location-independent under DeterministicSourcePaths #55514&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;stale&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/54991"&gt;Avoid parsing unused global.json in dotnetup installs #54991&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;stale&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/sdk/pull/54130"&gt;Fix missing indentation in API diff for first member after synthesized constructor #54130&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Area-Infrastructure&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;</content>
