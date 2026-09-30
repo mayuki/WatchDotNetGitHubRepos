@@ -1,6 +1,46 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/aspire - Releases</title>
   <link href="https://github.com/dotnet/aspire" />
-  <updated>2026-09-29T00:11:23Z</updated>
+  <updated>2026-09-30T00:11:11Z</updated>
   <id>https://github.com/dotnet/aspire</id>
+  <entry>
+    <title>dotnet/aspire - Releases - 2026-09-29</title>
+    <id>https://github.com/dotnet/aspire#2026-09-29</id>
+    <link href="https://github.com/dotnet/aspire" />
+    <updated>2026-09-30T00:11:11Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.6.0"&gt;Aspire 13.6.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h1&gt;Aspire 13.6.0&lt;/h1&gt;
+&lt;p&gt;Aspire 13.6 brings persistent application history, a refreshed and more interactive dashboard, first-party Java and Rust hosting, and new Azure deployment options. Coordinated .NET builds, portable volume paths, sharper CLI workflows, and more capable editor tooling make it easier to build, debug, and deploy applications across languages.&lt;/p&gt;
+&lt;h2&gt;Highlights&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;🗃️ &lt;strong&gt;Persistent, refreshed dashboard&lt;/strong&gt; — SQLite-backed telemetry and resource snapshots let you revisit up to ten application runs, with read-only access to completed runs and default retention limits of 100,000 console log messages, structured logs, and traces each. The dashboard now ships as Native AOT and adopts Fluent UI v5 with a collapsible navigation rail.&lt;/li&gt;
+&lt;li&gt;🖥️ &lt;strong&gt;AppHost-owned terminals and database REPLs&lt;/strong&gt; — Experimental terminal APIs let AppHosts create interactive sessions in a dashboard dock, dialog, or separate window. Opt-in &lt;code&gt;WithRepl()&lt;/code&gt; commands open bundled clients for PostgreSQL, MySQL, MongoDB, SQL Server, Redis, and Valkey, while &lt;code&gt;aspire terminal ps&lt;/code&gt; and &lt;code&gt;aspire terminal tape play&lt;/code&gt; support discovery and repeatable terminal interactions.&lt;/li&gt;
+&lt;li&gt;🌐 &lt;strong&gt;First-party Java and Rust hosting&lt;/strong&gt; — New &lt;code&gt;Aspire.Hosting.Java&lt;/code&gt; and &lt;code&gt;Aspire.Hosting.Rust&lt;/code&gt; packages bring Maven, Gradle, Spring Boot, Quarkus, and Cargo applications into the app model, with generated container builds and VS Code debugging. These integrations build on work that originated in the Aspire Community Toolkit.&lt;/li&gt;
+&lt;li&gt;🛠️ &lt;strong&gt;More flexible AppHosts&lt;/strong&gt; — The prerelease &lt;code&gt;Aspire.Hosting.Dotnet&lt;/code&gt; integration coordinates compatible projects into shared restore and build groups and supports .NET SDK container publishing. Portable volume-path environment variables work across local execution and deployment, while TypeScript AppHosts gain standard &lt;code&gt;appsettings.json&lt;/code&gt; configuration and Deno runtime support.&lt;/li&gt;
+&lt;li&gt;⌨️ &lt;strong&gt;Sharper CLI workflows&lt;/strong&gt; — Select launch profiles with &lt;code&gt;aspire run&lt;/code&gt; and &lt;code&gt;aspire start&lt;/code&gt;, update repository-local CLI manifests with &lt;code&gt;aspire update&lt;/code&gt;, create file-based C# AppHosts with &lt;code&gt;aspire init --language csharp --file-based&lt;/code&gt;, and export TypeScript API data with &lt;code&gt;aspire sdk export&lt;/code&gt;. Terminal commands no longer need a feature flag, Linux certificate trust includes Firefox NSS databases, and &lt;code&gt;aspire stop --force --volumes&lt;/code&gt; adds explicit cleanup of Aspire-owned volumes.&lt;/li&gt;
+&lt;li&gt;💻 &lt;strong&gt;More capable VS Code tooling&lt;/strong&gt; — Coding agents can start and stop AppHosts through the extension, and the Aspire pane exposes deploy, publish, and pipeline actions. Multi-root discovery, worktree-scoped lifecycle operations, preserved launch arguments, clearer debug logs, and missing-debugger guidance make complex workspaces more predictable.&lt;/li&gt;
+&lt;li&gt;☁️ &lt;strong&gt;New Azure options in preview&lt;/strong&gt; — Azure Connector Namespace models external-service connections and managed MCP server configurations. Azure Container Apps Sandboxes adds isolated sandbox deployments with configurable resource tiers and lifecycle policies, while Azure Container Apps Express offers a simplified environment option for rapid provisioning.&lt;/li&gt;
+&lt;li&gt;☸️ &lt;strong&gt;More expressive, reliable deployments&lt;/strong&gt; — Experimental Azure Provisioning SDK proxies let polyglot AppHosts customize infrastructure. Deployment state is isolated under &lt;code&gt;ASPIRE_HOME&lt;/code&gt;, Kubernetes preserves inherited hostnames and embedded parameter values, and AKS gains persistent-volume provisioning and more reliable cleanup.&lt;/li&gt;
+&lt;li&gt;🔌 &lt;strong&gt;Expanded integrations&lt;/strong&gt; — Experimental Deno hosting and MongoDB replica sets join Foundry Toolboxes, remote Foundry Local endpoints, Blazor WebAssembly debugging, and configurable Dev Tunnel expiration. Azure Cosmos DB and AI Inference client integrations gain health checks, and the vNext Cosmos DB emulator sends its own telemetry to the dashboard.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;g-emoji class="g-emoji" alias="warning"&gt;⚠️&lt;/g-emoji&gt; Breaking changes&lt;/h2&gt;
+&lt;p&gt;Notable changes include automatic TLS for local MongoDB servers when a certificate is available, the Linux-based vNext Cosmos DB emulator becoming the default, new Azure Front Door origin names that can require cleanup of existing origins, portable connection-string environment-variable aliases on stricter deployment targets, and experimental terminal types moving from &lt;code&gt;Aspire.Hosting.Terminals&lt;/code&gt; to &lt;code&gt;Aspire.Hosting.ApplicationModel&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;See the full list and migration guidance in the &lt;a href="https://aspire.dev/whats-new/aspire-13-6/#breaking-changes" rel="nofollow"&gt;Aspire 13.6 breaking changes&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;📖 Learn more&lt;/h2&gt;
+&lt;p&gt;For complete details, examples, migration guidance, and everything new in this release, read &lt;a href="https://aspire.dev/whats-new/aspire-13-6/" rel="nofollow"&gt;What's new in Aspire 13.6&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thank you to all the community contributors who helped make Aspire 13.6 possible! 💜&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a href="https://github.com/microsoft/aspire/compare/v13.5.4...v13.6.0"&gt;v13.5.4...v13.6.0&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/56f3e9c0d216c0c7069dabb49dd0464e4827744f"&gt;56f3e9c0d216c0c7069dabb49dd0464e4827744f&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

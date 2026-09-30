@@ -1,237 +1,275 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-09-29T00:11:17Z</updated>
+  <updated>2026-09-30T00:11:05Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-09-28</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-09-28</id>
+    <title>aws/aws-sdk-net - Releases - 2026-09-29</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-09-29</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-09-29T00:11:17Z</updated>
+    <updated>2026-09-30T00:11:05Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.343.0"&gt;4.0.343.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.344.0"&gt;4.0.344.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.343.0 (2026-09-28 18:26 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.344.0 (2026-09-29 18:32 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AgentRegistry (4.0.103.0)
+&lt;li&gt;AppStream (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Agent Registry adds support for custom metadata. Discovery APIs now return custom metadata on registry records and support filtering by metadata fields. Semantic search includes custom metadata for improved relevance. Filter customMetadata fields using eq, ne, and in operators.&lt;/li&gt;
+&lt;li&gt;Add support for NVIDIA GRID driver version metadata in Workspace Applications image responses through the new ImageSoftwareMetadata field.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AgentRegistryControl (4.0.102.0)
+&lt;li&gt;BedrockAgentCore (4.0.112.1)
 &lt;ul&gt;
-&lt;li&gt;AWS Agent Registry adds support for custom metadata. Define a typed metadata schema on your registry and attach structured key-value metadata to registry records. Schemas are additive only. Enforcement is progressive. Records show a compliance status computed against the current schema.&lt;/li&gt;
+&lt;li&gt;BedrockAgentCore is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AppSync (4.0.100.15)
+&lt;li&gt;BedrockAgentRuntime (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;AppSync is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Amazon Bedrock Agentic Retrieve now supports the Bedrock Mantle (OpenAI Responses) endpoint via a new MantleFoundationModel configuration with an optional projectId.&lt;/li&gt;
+&lt;li&gt;BedrockAgentRuntime is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Backup (4.0.101.9)
+&lt;li&gt;CodeArtifact (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;Backup is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BackupSearch (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;BackupSearch is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;CodeArtifact is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.119.0)
+&lt;li&gt;ConnectHealth (4.0.101.1)
 &lt;ul&gt;
-&lt;li&gt;Amazon Bedrock AgentCore Gateway now supports returning the complete MCP tools list in a single response by disabling pagination for the tools list operation. This feature is available in limited preview.&lt;/li&gt;
+&lt;li&gt;ConnectHealth is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockDataAutomation (4.0.100.15)
+&lt;li&gt;Deadline (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;BedrockDataAutomation is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;AWS Deadline Cloud now supports Docker software add-ons on service-managed fleets. Adds support for Open Job Description EXPR and Feature Bundle 1 job templates with typed job parameters and job, step, and parameter names up to 512 characters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Billing (4.0.105.0)
+&lt;li&gt;DevOpsAgent (4.0.103.4)
 &lt;ul&gt;
-&lt;li&gt;Adds support for (a) listing Business Support account charges via ListBusinessSupportAccountCharges and (b) subscription history via ListBusinessSupportSubscriptionHistory through the AWS Billing API.&lt;/li&gt;
+&lt;li&gt;DevOpsAgent is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CleanRoomsML (4.0.101.8)
+&lt;li&gt;EBS (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;CleanRoomsML is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;EBS is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudDirectory (4.0.100.15)
+&lt;li&gt;EC2 (4.0.126.0)
 &lt;ul&gt;
-&lt;li&gt;CloudDirectory is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Adds the LaunchStatus field to CapacityReservation in the DescribeCapacityReservations response. This field indicates whether you can currently launch instances into an UltraServer.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudWatchRUM (4.0.100.15)
+&lt;li&gt;ElastiCache (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;CloudWatchRUM is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Amazon ElastiCache Serverless now supports public endpoints for Valkey caches. With the new Connection Type parameter, you can create a serverless cache accessible over the internet without any VPC configuration. Public endpoint caches require IAM authentication.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ElementalInference (4.0.106.0)
+&lt;ul&gt;
+&lt;li&gt;Adds an extendedAnalysis setting to contextual metadata outputs to control detection of people, environments, brands, and on-screen text, and updates the summaryGeneration documentation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Glue (4.0.110.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for Glue system-managed materialized views.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GlueDataBrew (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;GlueDataBrew is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IAMRolesAnywhere (4.0.101.8)
+&lt;ul&gt;
+&lt;li&gt;IAMRolesAnywhere is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IdentityStore (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Add support for network access controls to restrict Identity Store API and SCIM access to trusted networks, optimistic locking for users and groups via resource revisions, and resource ARNs as identifiers in requests.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Inspector2 (4.0.106.0)
+&lt;ul&gt;
+&lt;li&gt;The ListFindingAggregations API now includes Low, Informational, and Untriaged counts alongside the existing severity counts in SeverityCounts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IoTSiteWise (4.0.102.4)
+&lt;ul&gt;
+&lt;li&gt;IoTSiteWise is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;KinesisVideoArchivedMedia (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;KinesisVideoArchivedMedia is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;KinesisVideoMedia (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;KinesisVideoMedia is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LakeFormation (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;LakeFormation is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LambdaCore (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;LambdaCore is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.121.0)
+&lt;li&gt;Lex (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;This release adds ConnectionTypes and ChatStreamingConfiguration to StartChatContact, and ConnectionCredentials, Websocket, and StreamingId to its response, so customers can request connection information and chat streaming in the same call that starts the chat.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ControlCatalog (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;ControlCatalog is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ControlTower (4.0.100.16)
-&lt;ul&gt;
-&lt;li&gt;ControlTower is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Lex is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Detective (4.0.100.15)
+&lt;li&gt;ManagedBlockchain (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;Detective is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;ManagedBlockchain is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DocDBElastic (4.0.100.15)
+&lt;li&gt;ManagedBlockchainQuery (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;DocDBElastic is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;ManagedBlockchainQuery is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (4.0.106.0)
+&lt;li&gt;MarketplaceCatalog (4.0.104.1)
 &lt;ul&gt;
-&lt;li&gt;Added AttributeCasing property and CaseMode enum (Unset, PascalCase, CamelCase, LegacyCamelCase) to DynamoDBTableAttribute for the object persistence model, plus DynamoDBTableAttribute constructors that take a CaseMode. CaseMode.CamelCase now camelCases nested objects (stored as DynamoDB Maps) that do not declare their own casing, addressing the long-standing gap where LowerCamelCaseProperties only affected root attribute names. AttributeCasing defaults to CaseMode.Unset, which lets an explicit CaseMode.PascalCase on a nested type opt out of inheriting an enclosing CamelCase. LowerCamelCaseProperties and the DynamoDBTableAttribute constructors that take a lowerCamelCaseProperties bool are now obsolete; use CaseMode instead (LowerCamelCaseProperties=true is equivalent to AttributeCasing=CaseMode.LegacyCamelCase, i.e. camelCase root, PascalCase nested).&lt;/li&gt;
+&lt;li&gt;MarketplaceCatalog is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.125.0)
+&lt;li&gt;MarketplaceDeployment (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;API changes to AWS Client VPN to support device posture assessment and Cedar authorization policies&lt;/li&gt;
+&lt;li&gt;MarketplaceDeployment is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EKS (4.0.106.0)
+&lt;li&gt;MediaStoreData (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;An optional customer provided prefix used to construct the hostname of the Argo CD server endpoint for EKS Argo CD Capability.&lt;/li&gt;
-&lt;li&gt;EKS is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;MediaStoreData is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EMRContainers (4.0.103.8)
+&lt;li&gt;MediaTailor (4.0.107.0)
 &lt;ul&gt;
-&lt;li&gt;EMRContainers is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;AWS Elemental MediaTailor now supports beaconing configuration on playback configurations. In Insights reporting mode, MediaTailor will now gather client side beaconing metrics. Set the reporting mode to Disabled to turn this off.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EMRServerless (4.0.100.15)
+&lt;li&gt;MedicalImaging (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;EMRServerless is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;MedicalImaging is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;FSx (4.0.101.0)
+&lt;li&gt;MigrationHubOrchestrator (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;Amazon FSx has expanded the model-level maximum on the ThroughputCapacity, ThroughputCapacityPerHAPair, and Iops API parameters. Actual supported values are unchanged and depend on file system type and configuration.&lt;/li&gt;
+&lt;li&gt;MigrationHubOrchestrator is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;GameLiftStreams (4.0.104.8)
+&lt;li&gt;MigrationHubRefactorSpaces (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;GameLiftStreams is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Glue (4.0.109.0)
-&lt;ul&gt;
-&lt;li&gt;Added a new exception to several batch APIs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;GuardDuty (4.0.107.0)
-&lt;ul&gt;
-&lt;li&gt;Adding awsServiceName field to GuardDuty Findings&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;InternetMonitor (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;InternetMonitor is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MediaPackageVod (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;MediaPackageVod is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;NetworkFlowMonitor (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;NetworkFlowMonitor is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;NetworkManager (4.0.100.15)
-&lt;ul&gt;
-&lt;li&gt;NetworkManager is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;MigrationHubRefactorSpaces is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;NetworkMonitor (4.0.100.15)
+&lt;li&gt;MigrationHubStrategyRecommendations (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;NetworkMonitor is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;MigrationHubStrategyRecommendations is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;OSIS (4.0.100.15)
+&lt;li&gt;NeptuneGraph (4.0.102.1)
 &lt;ul&gt;
-&lt;li&gt;OSIS is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;NeptuneGraph is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Outposts (4.0.104.2)
+&lt;li&gt;Omics (4.0.102.3)
 &lt;ul&gt;
-&lt;li&gt;Outposts is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Omics is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Pipes (4.0.100.15)
+&lt;li&gt;OpenSearchService (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Pipes is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
+&lt;li&gt;Amazon OpenSearch Service now supports advisory pre-validations for domain config changes. Non-critical checks now surface as warnings you can acknowledge (via the new AcceptedWarnings parameter) and proceed, instead of hard-blocking. Severity is reported in change-progress and dry-run results.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;QConnect (4.0.102.1)
+&lt;li&gt;Polly (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;QConnect is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Polly is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Route53GlobalResolver (4.0.101.13)
+&lt;li&gt;QBusiness (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;Route53GlobalResolver is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;li&gt;Exception properties bound to response headers are now populated from those headers.&lt;/li&gt;
+&lt;li&gt;QBusiness is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Route53Profiles (4.0.100.15)
+&lt;li&gt;QuickSight (4.0.109.1)
 &lt;ul&gt;
-&lt;li&gt;Route53Profiles is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;QuickSight is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Route53RecoveryControlConfig (4.0.100.15)
+&lt;li&gt;RAM (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;Route53RecoveryControlConfig is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;RAM is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Route53RecoveryReadiness (4.0.100.15)
+&lt;li&gt;RDS (4.0.106.0)
 &lt;ul&gt;
-&lt;li&gt;Route53RecoveryReadiness is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Adds the TargetResourceConfigurations parameter to CreateBlueGreenDeployment, letting you specify a target KMS key for each resource in the green environment.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SecurityAgent (4.0.108.0)
+&lt;li&gt;SageMaker (4.0.118.0)
 &lt;ul&gt;
-&lt;li&gt;Run automated penetration tests directly from your CI-CD pipeline to scan code changes before they ship, gating deployments on the findings&lt;/li&gt;
+&lt;li&gt;Adds support for cpu flex type instances on SageMaker Training and Processing. Also contains minor updates to DescribeTrainingPlan to support ARN inputs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SimpleSystemsManagement (4.0.104.0)
+&lt;li&gt;SagemakerJobRuntime (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;Add support for sharing SSM documents with organizations and OUs using RAM.&lt;/li&gt;
+&lt;li&gt;SagemakerJobRuntime is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SocialMessaging (4.0.103.1)
+&lt;li&gt;SageMakerRuntime (4.0.101.8)
 &lt;ul&gt;
-&lt;li&gt;SocialMessaging is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;SageMakerRuntime is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SupplyChain (4.0.100.15)
+&lt;li&gt;SageMakerRuntimeHTTP2 (4.0.100.15)
 &lt;ul&gt;
-&lt;li&gt;SupplyChain is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;SageMakerRuntimeHTTP2 is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SecurityAgent (4.0.109.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for Azure DevOps and Bitbucket Data Center integration providers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SimpleEmailV2 (4.0.106.0)
+&lt;ul&gt;
+&lt;li&gt;Added Filter support for ListTenants, ListEmailIdentities, and ListConfigurationSets APIs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;TranscribeStreaming (4.0.101.8)
+&lt;ul&gt;
+&lt;li&gt;TranscribeStreaming is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Transfer (4.0.103.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Transfer Family now supports configuring up to three custom ports on public SFTP servers, instead of the single default port 22. You can also set each port's communication mode (server-talk-first or client-talk-first) so legacy and modern SFTP clients connect reliably.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkMailMessageFlow (4.0.100.15)
+&lt;ul&gt;
+&lt;li&gt;WorkMailMessageFlow is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Extensions.NETCore.Setup (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;Added AWSOptions.GetCredentials() to resolve the AWSCredentials described by an AWSOptions instance using the same logic used when creating a service client, so credential-only APIs such as RDSAuthTokenGenerator can share a single AWSOptions configuration source.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
