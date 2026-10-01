@@ -1,138 +1,89 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-09-30T00:11:06Z</updated>
+  <updated>2026-10-01T00:12:44Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-09-29</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-09-29</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-09-30</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-09-30</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-09-30T00:11:06Z</updated>
+    <updated>2026-10-01T00:12:44Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Communication.CallAutomation_1.6.1"&gt;Azure.Communication.CallAutomation_1.6.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.Batch_12.27.0"&gt;Azure.Storage.Blobs.Batch_12.27.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.6.1 (2026-09-29)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+                                &lt;h2&gt;12.27.0 (2026-09-28)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed ResultInformation property handling in event parsing and deserialization scenarios to ensure correct initialization and serialization of result codes and messages.&lt;/li&gt;
+&lt;li&gt;Includes all features from 12.27.0-beta.1 and 12.27.0-beta.2.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Administration_4.9.0-beta.3"&gt;Azure.Security.KeyVault.Administration_4.9.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.65"&gt;Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.65&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;4.9.0-beta.3 (2026-09-27)&lt;/h2&gt;
+                                &lt;h2&gt;12.0.0-preview.65 (2026-09-28)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;IDisposable&lt;/code&gt; to &lt;code&gt;KeyVaultAccessControlClient&lt;/code&gt;, &lt;code&gt;KeyVaultBackupClient&lt;/code&gt;, &lt;code&gt;KeyVaultEkmClient&lt;/code&gt;, and &lt;code&gt;KeyVaultSettingsClient&lt;/code&gt; to release internally owned HTTP pipelines and transports. Reuse clients and dispose them after all operations and polling have completed; caller-provided transports are not disposed.&lt;/li&gt;
-&lt;li&gt;Added a narrowly scoped bearer-token fallback for attested managed-identity tenant eligibility denials, with the decision remembered by the Key Vault client for subsequent token acquisitions.&lt;/li&gt;
-&lt;li&gt;Added support for Proof-of-Possession (PoP) token binding in the Key Vault authentication policy.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed intermittent authentication failures by retrying requests rejected because the mTLS Proof-of-Possession certificate did not match the token binding.&lt;/li&gt;
-&lt;li&gt;Fixed a &lt;code&gt;NullReferenceException&lt;/code&gt; in the challenge-based authentication policy that could occur when a Continuous Access Evaluation (CAE) claims challenge was received for an authority that had not yet been cached.&lt;/li&gt;
-&lt;li&gt;Fixed an issue in the challenge-based authentication policy where a cached authentication challenge, and the access token acquired for it, could be reused for a request to a different Key Vault or Managed HSM endpoint. The policy now resolves the challenge per request endpoint, ensuring a token acquired for one vault is never attached to a request to another.&lt;/li&gt;
+&lt;li&gt;This release contains bug fixes to improve quality.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Secrets_4.12.0-beta.2"&gt;Azure.Security.KeyVault.Secrets_4.12.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.DataLake_12.28.0"&gt;Azure.Storage.Files.DataLake_12.28.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;4.12.0-beta.2 (2026-09-27)&lt;/h2&gt;
+                                &lt;h2&gt;12.28.0 (2026-09-28)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;IDisposable&lt;/code&gt; to &lt;code&gt;SecretClient&lt;/code&gt; to release its internally owned HTTP pipeline and transport. Reuse clients and dispose them after all operations have completed; caller-provided transports are not disposed.&lt;/li&gt;
-&lt;li&gt;Added a narrowly scoped bearer-token fallback for attested managed-identity tenant eligibility denials, with the decision remembered by the Key Vault client for subsequent token acquisitions.&lt;/li&gt;
-&lt;li&gt;Added support for Proof-of-Possession (PoP) token binding in the Key Vault authentication policy.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed intermittent authentication failures by retrying requests rejected because the mTLS Proof-of-Possession certificate did not match the token binding.&lt;/li&gt;
-&lt;li&gt;Fixed a &lt;code&gt;NullReferenceException&lt;/code&gt; in the challenge-based authentication policy that could occur when a Continuous Access Evaluation (CAE) claims challenge was received for an authority that had not yet been cached.&lt;/li&gt;
-&lt;li&gt;Fixed an issue in the challenge-based authentication policy where a cached authentication challenge, and the access token acquired for it, could be reused for a request to a different Key Vault or Managed HSM endpoint. The policy now resolves the challenge per request endpoint, ensuring a token acquired for one vault is never attached to a request to another.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Internal: the &lt;code&gt;SecretClient&lt;/code&gt; transport now delegates to a TypeSpec-generated implementation. Public API surface, default service version, exception contracts, on-the-wire requests, and OpenTelemetry / &lt;code&gt;DiagnosticListener&lt;/code&gt; activity names are all unchanged. &lt;code&gt;SecretClientOptions&lt;/code&gt; (custom retry, transport, diagnostics allow-lists, &lt;code&gt;AddPolicy&lt;/code&gt; entries) continues to flow end-to-end. The TypeSpec emitter incidentally adds one additive public type (&lt;code&gt;AzureSecurityKeyVaultSecretsContext&lt;/code&gt;, the &lt;code&gt;ModelReaderWriterContext&lt;/code&gt; required for AOT-friendly &lt;code&gt;ModelReaderWriter&lt;/code&gt; round-trip), matching the sibling &lt;code&gt;Azure.Security.KeyVault.Administration&lt;/code&gt; package convention.&lt;/li&gt;
+&lt;li&gt;Includes all features from 12.28.0-beta.1&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Certificates_4.10.0-beta.3"&gt;Azure.Security.KeyVault.Certificates_4.10.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.Shares_12.28.0"&gt;Azure.Storage.Files.Shares_12.28.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;4.10.0-beta.3 (2026-09-27)&lt;/h2&gt;
+                                &lt;h2&gt;12.28.0 (2026-09-28)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;IDisposable&lt;/code&gt; to &lt;code&gt;CertificateClient&lt;/code&gt; to release its internally owned HTTP pipeline and transport. Reuse clients and dispose them after all operations have completed; caller-provided transports are not disposed.&lt;/li&gt;
-&lt;li&gt;Added a narrowly scoped bearer-token fallback for attested managed-identity tenant eligibility denials, with the decision remembered by the Key Vault client for subsequent token acquisitions.&lt;/li&gt;
-&lt;li&gt;Added support for Proof-of-Possession (PoP) token binding in the Key Vault authentication policy.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed intermittent authentication failures by retrying requests rejected because the mTLS Proof-of-Possession certificate did not match the token binding.&lt;/li&gt;
-&lt;li&gt;Fixed a &lt;code&gt;NullReferenceException&lt;/code&gt; in the challenge-based authentication policy that could occur when a Continuous Access Evaluation (CAE) claims challenge was received for an authority that had not yet been cached.&lt;/li&gt;
-&lt;li&gt;Fixed an issue in the challenge-based authentication policy where a cached authentication challenge, and the access token acquired for it, could be reused for a request to a different Key Vault or Managed HSM endpoint. The policy now resolves the challenge per request endpoint, ensuring a token acquired for one vault is never attached to a request to another.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Internal: the &lt;code&gt;CertificateClient&lt;/code&gt; transport now delegates to a TypeSpec-generated implementation. All public method signatures, return types, exception contracts, default service version, on-the-wire requests, and OpenTelemetry / &lt;code&gt;DiagnosticListener&lt;/code&gt; activity names are unchanged for existing callers. &lt;code&gt;CertificateClientOptions&lt;/code&gt; (custom retry, transport, diagnostics allow-lists, &lt;code&gt;AddPolicy&lt;/code&gt; entries) continues to flow end-to-end into the new pipeline. A small set of additive types from the new transport layer (&lt;code&gt;AzureSecurityKeyVaultCertificatesContext&lt;/code&gt;, &lt;code&gt;KeyVaultCertificatesModelFactory&lt;/code&gt;, and &lt;code&gt;IJsonModel&amp;lt;PlatformManaged&amp;gt;&lt;/code&gt; / &lt;code&gt;IPersistableModel&amp;lt;PlatformManaged&amp;gt;&lt;/code&gt; on &lt;code&gt;PlatformManaged&lt;/code&gt;) appears on the public surface; these are net additions that existing customer code is unaffected by — same pattern as &lt;code&gt;Azure.Security.KeyVault.Administration&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Includes all features from 12.28.0-beta.1&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Data.AI_1.0.0-beta.1"&gt;Azure.Data.AI_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Queues_12.28.0"&gt;Azure.Storage.Queues_12.28.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-09-28)&lt;/h2&gt;
+                                &lt;h2&gt;12.28.0 (2026-09-28)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added the provisional TypeSpec-generated &lt;code&gt;InferenceClient&lt;/code&gt; for Semantic Reranker operations.&lt;/li&gt;
-&lt;li&gt;Added API-key authentication for the &lt;code&gt;Ocp-Apim-Subscription-Key&lt;/code&gt; header.&lt;/li&gt;
-&lt;li&gt;Added Microsoft Entra authentication using the &lt;code&gt;https://dbinference.azure.com/.default&lt;/code&gt; scope.&lt;/li&gt;
-&lt;li&gt;Added per-sentence relevance scores through &lt;code&gt;SemanticRerankingScore.SentenceScores&lt;/code&gt;, opted into with &lt;code&gt;SemanticRerankingInferenceContent.ReturnSentenceScore&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added result ordering control through &lt;code&gt;SemanticRerankingInferenceContent.Sort&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;InferenceModelFactory&lt;/code&gt; mocking factory.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed &lt;code&gt;InferenceClient(InferenceClientSettings)&lt;/code&gt; so that API-key settings authenticate with the &lt;code&gt;Ocp-Apim-Subscription-Key&lt;/code&gt; header instead of throwing &lt;code&gt;ArgumentNullException&lt;/code&gt;. This also unblocks API-key authentication through &lt;code&gt;AddInferenceClient&lt;/code&gt; and &lt;code&gt;AddKeyedInferenceClient&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Includes all features from 12.28.0-beta.1&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Keys_4.11.0-beta.4"&gt;Azure.Security.KeyVault.Keys_4.11.0-beta.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs_12.30.0"&gt;Azure.Storage.Blobs_12.30.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;4.11.0-beta.4 (2026-09-27)&lt;/h2&gt;
+                                &lt;h2&gt;12.30.0 (2026-09-28)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;IDisposable&lt;/code&gt; to &lt;code&gt;KeyClient&lt;/code&gt;, &lt;code&gt;CryptographyClient&lt;/code&gt;, and &lt;code&gt;KeyResolver&lt;/code&gt; to release internally owned HTTP pipelines and transports. Cryptography clients returned by a key client or resolver borrow its pipeline and do not dispose it; keep the parent alive until all use of those clients has completed. Caller-provided transports are not disposed.&lt;/li&gt;
-&lt;li&gt;Added a narrowly scoped bearer-token fallback for attested managed-identity tenant eligibility denials, with the decision remembered by the Key Vault client for subsequent token acquisitions.&lt;/li&gt;
-&lt;li&gt;Added support for Proof-of-Possession (PoP) token binding in the Key Vault authentication policy.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed intermittent authentication failures by retrying requests rejected because the mTLS Proof-of-Possession certificate did not match the token binding.&lt;/li&gt;
-&lt;li&gt;Fixed a &lt;code&gt;NullReferenceException&lt;/code&gt; in the challenge-based authentication policy that could occur when a Continuous Access Evaluation (CAE) claims challenge was received for an authority that had not yet been cached.&lt;/li&gt;
-&lt;li&gt;Fixed an issue in the challenge-based authentication policy where a cached authentication challenge, and the access token acquired for it, could be reused for a request to a different Key Vault or Managed HSM endpoint. The policy now resolves the challenge per request endpoint, ensuring a token acquired for one vault is never attached to a request to another.&lt;/li&gt;
+&lt;li&gt;Includes all features from 12.30.0-beta.1 and 12.30.0-beta.2.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Fabric_1.1.0-beta.4"&gt;Azure.ResourceManager.Fabric_1.1.0-beta.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Common_12.29.0"&gt;Azure.Storage.Common_12.29.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.1.0-beta.4 (2026-09-22)&lt;/h2&gt;
+                                &lt;h2&gt;12.29.0 (2026-09-28)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded to API version 2026-09-01-preview.&lt;/li&gt;
+&lt;li&gt;Includes all features from 12.29.0-beta.1&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
