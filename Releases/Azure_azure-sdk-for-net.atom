@@ -1,89 +1,76 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-10-01T00:12:44Z</updated>
+  <updated>2026-10-02T00:11:21Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-09-30</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-09-30</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-10-01</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-01</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-10-01T00:12:44Z</updated>
+    <updated>2026-10-02T00:11:21Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.Batch_12.27.0"&gt;Azure.Storage.Blobs.Batch_12.27.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.ConfidentialLedger_2.0.0-beta.5"&gt;Azure.Security.ConfidentialLedger_2.0.0-beta.5&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.27.0 (2026-09-28)&lt;/h2&gt;
+                                &lt;h2&gt;2.0.0-beta.5 (2026-09-30)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Includes all features from 12.27.0-beta.1 and 12.27.0-beta.2.&lt;/li&gt;
+&lt;li&gt;Added support for the &lt;code&gt;2026-07-31-preview&lt;/code&gt; service API version, selectable via &lt;code&gt;ConfidentialLedgerClientOptions.ServiceVersion.V2026_07_31_Preview&lt;/code&gt;. The default &lt;code&gt;ServiceVersion&lt;/code&gt; remains the latest GA version &lt;code&gt;V2026_02_23&lt;/code&gt;, so clients that leave the version unspecified are unaffected; preview features such as &lt;code&gt;waitForCommit&lt;/code&gt; require explicitly opting in to the preview version.&lt;/li&gt;
+&lt;li&gt;Added a &lt;code&gt;waitForCommit&lt;/code&gt; parameter to &lt;code&gt;PostLedgerEntry&lt;/code&gt;/&lt;code&gt;PostLedgerEntryAsync&lt;/code&gt;. When set to &lt;code&gt;true&lt;/code&gt;, the service holds the response until the transaction is globally committed and the returned &lt;code&gt;Operation&lt;/code&gt; is already completed, so no additional status polling is required. The operation is only treated as already-completed when the response body confirms &lt;code&gt;"state": "Committed"&lt;/code&gt;; against an API version or service build that does not support &lt;code&gt;waitForCommit&lt;/code&gt;, the client falls back to normal status polling.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed retryable transport exceptions being swallowed for writes and reads that are not eligible for failover, including archived-collection history queries. These operations now preserve the original transport exception instead of throwing "Response was not set, make sure SendAsync was called".&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.65"&gt;Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.65&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Optimization_1.0.0-beta.1"&gt;Azure.AI.AgentServer.Optimization_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.0.0-preview.65 (2026-09-28)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-09-30)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;p&gt;Consolidated configuration types ahead of public preview. The package now has a single canonical mutable options type that binds idiomatically via &lt;code&gt;Microsoft.Extensions.Configuration&lt;/code&gt;, and the loader returns it directly (no result wrapper).&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;This release contains bug fixes to improve quality.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OptimizationConfig&lt;/code&gt; → &lt;code&gt;OptimizationOptions&lt;/code&gt; (mutable class, &lt;code&gt;{ get; set; }&lt;/code&gt; properties).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OptimizationConfigLoader&lt;/code&gt; → &lt;code&gt;OptimizationOptionsLoader&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Loader API collapsed from four overloads to two:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;OptimizationOptionsLoader.Load(LoadOptions? = null)&lt;/code&gt; → &lt;code&gt;OptimizationOptions?&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OptimizationOptionsLoader.LoadAsync(LoadOptions? = null, CancellationToken = default)&lt;/code&gt; → &lt;code&gt;Task&amp;lt;OptimizationOptions?&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;The previous &lt;code&gt;AuthenticationTokenProvider&lt;/code&gt;-only overloads are gone — pass the provider via &lt;code&gt;LoadOptions.TokenProvider&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;LoadResult&lt;/code&gt; wrapper. &lt;code&gt;LoadResult.SourceUsed&lt;/code&gt; duplicated &lt;code&gt;OptimizationOptions.Source&lt;/code&gt;, and &lt;code&gt;LoadResult.Warnings&lt;/code&gt; is now surfaced as stderr diagnostics only.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LoadConfigOptions&lt;/code&gt; → &lt;code&gt;LoadOptions&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OptimizationSkill&lt;/code&gt; is now a mutable class (was a &lt;code&gt;readonly struct&lt;/code&gt;). Reference equality only.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ToolDefinition&lt;/code&gt; is now a mutable class with &lt;code&gt;{ get; set; }&lt;/code&gt; properties.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Skills&lt;/code&gt; and &lt;code&gt;ToolDefinitions&lt;/code&gt; collections are typed &lt;code&gt;IList&amp;lt;&amp;gt;&lt;/code&gt; (mutable) instead of &lt;code&gt;IReadOnlyList&amp;lt;&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Removed the &lt;code&gt;OptimizationOptions.FromOptimizationConfig&lt;/code&gt; / &lt;code&gt;ToOptimizationConfig&lt;/code&gt; shim — there is now only one type.&lt;/li&gt;
+&lt;li&gt;Multi-targeting: ships &lt;code&gt;net8.0&lt;/code&gt; and &lt;code&gt;net10.0&lt;/code&gt; assemblies, matching the sibling Core SDK.&lt;/li&gt;
+&lt;li&gt;Priority-3 resolution: &lt;code&gt;OptimizationOptionsLoader&lt;/code&gt; now loads candidate configs from &lt;code&gt;OPTIMIZATION_LOCAL_DIR/&amp;lt;OPTIMIZATION_CANDIDATE_ID&amp;gt;/&lt;/code&gt; on disk, populated by &lt;code&gt;azd ai agent optimize apply --candidate&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Initial release of &lt;code&gt;Azure.AI.AgentServer.Optimization&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OptimizationConfigLoader.LoadConfig()&lt;/code&gt; and &lt;code&gt;LoadConfigAsync()&lt;/code&gt; — resolves optimized agent configurations from the resolver API or environment variable.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OptimizationConfig&lt;/code&gt; — immutable config object with instructions, model, temperature, skills, and tool definitions.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OptimizationSkill&lt;/code&gt; — represents a single learned skill with name, description, and body.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.DataLake_12.28.0"&gt;Azure.Storage.Files.DataLake_12.28.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Administration_4.9.0-beta.4"&gt;Azure.Security.KeyVault.Administration_4.9.0-beta.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.28.0 (2026-09-28)&lt;/h2&gt;
+                                &lt;h2&gt;4.9.0-beta.4 (2026-09-30)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Includes all features from 12.28.0-beta.1&lt;/li&gt;
+&lt;li&gt;Added External Key Manager (EKM) proxy private endpoint support to &lt;code&gt;KeyVaultEkmClient&lt;/code&gt;, including &lt;code&gt;CreateEkmPrivateEndpoint&lt;/code&gt;, &lt;code&gt;GetEkmPrivateEndpoint&lt;/code&gt;, &lt;code&gt;GetEkmPrivateEndpoints&lt;/code&gt;, &lt;code&gt;DeleteEkmPrivateEndpoint&lt;/code&gt;, and &lt;code&gt;GetEkmPrivateEndpointOperationStatus&lt;/code&gt; operations.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;KeyVaultEkmConnectivityMode&lt;/code&gt; to &lt;code&gt;KeyVaultEkmConnection&lt;/code&gt; to route an EKM connection through an EKM proxy private endpoint.&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.Shares_12.28.0"&gt;Azure.Storage.Files.Shares_12.28.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.28.0 (2026-09-28)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Includes all features from 12.28.0-beta.1&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Queues_12.28.0"&gt;Azure.Storage.Queues_12.28.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.28.0 (2026-09-28)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Includes all features from 12.28.0-beta.1&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs_12.30.0"&gt;Azure.Storage.Blobs_12.30.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.30.0 (2026-09-28)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Includes all features from 12.30.0-beta.1 and 12.30.0-beta.2.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Common_12.29.0"&gt;Azure.Storage.Common_12.29.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.29.0 (2026-09-28)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Includes all features from 12.29.0-beta.1&lt;/li&gt;
+&lt;li&gt;The default service version is now &lt;code&gt;2026-07-01-preview&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;

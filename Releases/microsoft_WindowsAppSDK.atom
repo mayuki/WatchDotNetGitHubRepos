@@ -1,54 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>microsoft/WindowsAppSDK - Releases</title>
   <link href="https://github.com/microsoft/WindowsAppSDK" />
-  <updated>2026-10-01T00:13:03Z</updated>
+  <updated>2026-10-02T00:11:44Z</updated>
   <id>https://github.com/microsoft/WindowsAppSDK</id>
-  <entry>
-    <title>microsoft/WindowsAppSDK - Releases - 2026-09-30</title>
-    <id>https://github.com/microsoft/WindowsAppSDK#2026-09-30</id>
-    <link href="https://github.com/microsoft/WindowsAppSDK" />
-    <updated>2026-10-01T00:13:03Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.5.4-exp"&gt;2.5 Experimental (2.5.4-experimental) 🧪&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;Windows App SDK 2.5 Experimental is the latest experimental release, adding new Windows AI capabilities, code-based theme resource bindings and &lt;code&gt;DataTemplate&lt;/code&gt; construction, the new &lt;code&gt;TableView&lt;/code&gt; and &lt;code&gt;Chart&lt;/code&gt; controls, and expanded WinUI 3 inking support. It follows Windows App SDK 2.5.1 stable and brings forward the changes from that release alongside the experimental-only additions below.&lt;/p&gt;
-&lt;h3&gt;What's new in WinAppSDK 2.5 Experimental:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Windows AI device selection.&lt;/strong&gt; New &lt;code&gt;AIComputeDevice&lt;/code&gt; APIs let apps choose the default, CPU, or NPU execution device for text recognition. App Content Index image indexing can use the same preference for OCR through &lt;code&gt;ContentRegionImageOptions.PreferredTextRecognizerDevice&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AI Speech and language model updates.&lt;/strong&gt; New speech recognition factories improve model configuration and creation, while updated audio, streaming, and continuous recognition APIs expand speech scenarios. Language model APIs now expose model identity, low-rank adapter compatibility, and response statuses for game mode and low video memory.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Theme resource binding from code.&lt;/strong&gt; The experimental &lt;code&gt;FrameworkElement.SetThemeResourceBinding&lt;/code&gt; API lets apps create the equivalent of a &lt;code&gt;{ThemeResource}&lt;/code&gt; binding programmatically.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Delegate-based &lt;code&gt;DataTemplate&lt;/code&gt; construction.&lt;/strong&gt; A new experimental &lt;code&gt;DataTemplate&lt;/code&gt; constructor accepts an app-provided delegate that creates the template's element subtree.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;TableView&lt;/code&gt; control.&lt;/strong&gt; The experimental &lt;code&gt;TableView&lt;/code&gt; control is now available in the public WinMDs, with grouping, templated group headers, sorting and filtering, resizable columns, and optional cell and header tooltips.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;Chart&lt;/code&gt; control.&lt;/strong&gt; A new experimental WinUI 3 &lt;code&gt;Chart&lt;/code&gt; control presents Cartesian data as line, area, and bar series, with configurable axes, legends, labels, and markers.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;WinUI 3 inking updates.&lt;/strong&gt; New &lt;code&gt;InkPresenter.ActivateCustomDrying&lt;/code&gt; and &lt;code&gt;InkSynchronizer&lt;/code&gt; APIs let apps render committed ink themselves, and &lt;code&gt;InkToolbar&lt;/code&gt; now targets an &lt;code&gt;InkPresenter&lt;/code&gt; directly.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs fixed:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed an access violation that could occur when reading &lt;code&gt;InkPresenter.StrokeContainer&lt;/code&gt; while custom drying was active.&lt;/li&gt;
-&lt;li&gt;Fixed &lt;code&gt;InkCanvas&lt;/code&gt; presenter sizing under a &lt;code&gt;RenderTransform&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Fixed a WinUI resource-tracking issue that could cause memory usage to grow when apps repeatedly created visual-state storyboards or resolved static or theme resources.&lt;/li&gt;
-&lt;li&gt;Improved cleanup of unreachable native WinUI objects in .NET apps after tab or page teardown.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;To see everything that's new and changed, see the full &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-2-0?pivots=experimental#version-25-experimental-254-experimental" rel="nofollow"&gt;Windows App SDK 2.5 Experimental release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
-&lt;h3&gt;Try it out&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.5.4-experimental" rel="nofollow"&gt;2.5.4-experimental NuGet&lt;/a&gt; package to use WinAppSDK 2.5 Experimental in your app.&lt;/li&gt;
-&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Getting started&lt;/h3&gt;
-&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
