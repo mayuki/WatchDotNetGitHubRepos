@@ -1,74 +1,59 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-10-02T00:11:20Z</updated>
+  <updated>2026-10-03T00:10:36Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-10-01</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-10-01</id>
+    <title>aws/aws-sdk-net - Releases - 2026-10-02</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-10-02</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-10-02T00:11:20Z</updated>
+    <updated>2026-10-03T00:10:36Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.346.0"&gt;4.0.346.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.347.0"&gt;4.0.347.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.346.0 (2026-10-01 18:20 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.347.0 (2026-10-02 18:22 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AWSHealth (4.0.101.0)
+&lt;li&gt;CognitoIdentityProvider (4.0.106.0)
 &lt;ul&gt;
-&lt;li&gt;Adds DescribeServiceLifecycle operation returning lifecycle information for AWS services, including end-of-support dates, version recommendations, and lifecycle events.&lt;/li&gt;
+&lt;li&gt;Amazon Cognito User Pools now supports the OIDC-standard authentication context class reference (ACR) and authentication methods reference (AMR) claims on issued access and Id tokens. Amazon Cognito User Pools also now supports step-up authentication via our existing authentication APIs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgent (4.0.104.0)
+&lt;li&gt;DataExchange (4.0.100.17)
 &lt;ul&gt;
-&lt;li&gt;Adds an optional textReadyAt field to ListIngestionJobs and GetIngestionJob for Managed Knowledge Bases data source sync jobs. The field denotes the timestamp at which all the documents in the scope of a sync job had their text content indexed and are available for retrieval.&lt;/li&gt;
+&lt;li&gt;Check if string / enum payload is set before calling GetBytes to avoid ArgumentNullException&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudFront (4.0.102.0)
+&lt;li&gt;Glue (4.0.112.0)
 &lt;ul&gt;
-&lt;li&gt;Added always-amz-auth as a supported signing behavior for Origin Access Control (OAC), enabling CloudFront to authenticate requests to Lambda-Web origins.&lt;/li&gt;
+&lt;li&gt;Added refresh token grant type to Glue Connection supported OAuth 2.0 grant types&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.126.2)
+&lt;li&gt;Invoicing (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;This release launches the AMI tag sharing feature, which lets AMI owners share tags alongside their AMIs, eliminating the need to build and maintain custom tag replication workflows.&lt;/li&gt;
+&lt;li&gt;API and doc updates related to adding MarketplacePunchOutEnabled and MarketplacePunchOutPreference fields to ProcurementPortalPreferences related APIs&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EndUserMessaging (4.0.100.0)
+&lt;li&gt;LambdaWeb (4.0.100.1)
 &lt;ul&gt;
-&lt;li&gt;AWS End User Messaging now supports Brand profiles and Notify code configurations. Brand profiles capture your sender details once to reuse across phone number registrations. Notify code configurations let you define your OTP policy and delivery settings to send passcodes in minutes.&lt;/li&gt;
+&lt;li&gt;Documentation update for AWS Lambda Web Functions, clarifies that the LambdaWeb APIs are experimental and not yet available to external customers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;LambdaWeb (4.0.100.0)
+&lt;li&gt;MediaPackageV2 (4.0.105.0)
 &lt;ul&gt;
-&lt;li&gt;Lambda Web Functions GA launch. Lambda Web Functions enable customers to run web applications and API backends&lt;/li&gt;
+&lt;li&gt;Dynamic Multiview enables viewers to watch multiple live video streams in a single combined output. Static filter configuration allows users to configure endpoints with layouts and sources without using query parameters. The number of sources per multiview channel has been increased to 50.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;QuickSight (4.0.110.0)
+&lt;li&gt;PinpointSMSVoiceV2 (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds HierarchyFilter support for Amazon QuickSight analysis and dashboard and 2 legged OAuth for databricks datasources.&lt;/li&gt;
+&lt;li&gt;AWS End User Messaging SMS CarrierLookup API now supports phone number cleansing on customer opt-in. when selected, the response includes the additional field "OriginalPhoneNumber". It can also return additional PhoneNumberType enums, VOIP and PREPAID.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3 (4.0.104.1)
+&lt;li&gt;SecurityAgent (4.0.110.0)
 &lt;ul&gt;
-&lt;li&gt;Fixed a bug where TransferUtility.Download/DownloadAsync (the non-multipart path) always waited 100ms after a successful download. The backoff delay now only applies before an actual retry, and the async path uses a non-blocking await instead of a blocking Thread.Sleep.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMaker (4.0.120.0)
-&lt;ul&gt;
-&lt;li&gt;Release support for c8a.16xlarge and m8a.16xlarge instance types for SageMaker HyperPod&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SecurityHub (4.0.104.0)
-&lt;ul&gt;
-&lt;li&gt;Adds GetRemediationsV2 and ListExposuresByRemediationV2 APIs. This feature allows customers to see their highest priority remediations for their Exposure findings. Remediations target key changes customers can make to resources to drive finding resolution.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Transfer (4.0.104.0)
-&lt;ul&gt;
-&lt;li&gt;AWS Transfer Family Workflows adds support for the structuredLogDestinations option, enabling customers to specify a custom Amazon CloudWatch Logs log group for managed workflow execution logs.&lt;/li&gt;
+&lt;li&gt;Adds trigger filters that control which pull request events, target branches, and labels start an automatic code review.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

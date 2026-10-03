@@ -1,76 +1,85 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-10-02T00:11:21Z</updated>
+  <updated>2026-10-03T00:10:37Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-10-01</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-01</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-10-02</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-02</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-10-02T00:11:21Z</updated>
+    <updated>2026-10-03T00:10:37Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.ConfidentialLedger_2.0.0-beta.5"&gt;Azure.Security.ConfidentialLedger_2.0.0-beta.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Administration_4.8.2"&gt;Azure.Security.KeyVault.Administration_4.8.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;2.0.0-beta.5 (2026-09-30)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for the &lt;code&gt;2026-07-31-preview&lt;/code&gt; service API version, selectable via &lt;code&gt;ConfidentialLedgerClientOptions.ServiceVersion.V2026_07_31_Preview&lt;/code&gt;. The default &lt;code&gt;ServiceVersion&lt;/code&gt; remains the latest GA version &lt;code&gt;V2026_02_23&lt;/code&gt;, so clients that leave the version unspecified are unaffected; preview features such as &lt;code&gt;waitForCommit&lt;/code&gt; require explicitly opting in to the preview version.&lt;/li&gt;
-&lt;li&gt;Added a &lt;code&gt;waitForCommit&lt;/code&gt; parameter to &lt;code&gt;PostLedgerEntry&lt;/code&gt;/&lt;code&gt;PostLedgerEntryAsync&lt;/code&gt;. When set to &lt;code&gt;true&lt;/code&gt;, the service holds the response until the transaction is globally committed and the returned &lt;code&gt;Operation&lt;/code&gt; is already completed, so no additional status polling is required. The operation is only treated as already-completed when the response body confirms &lt;code&gt;"state": "Committed"&lt;/code&gt;; against an API version or service build that does not support &lt;code&gt;waitForCommit&lt;/code&gt;, the client falls back to normal status polling.&lt;/li&gt;
-&lt;/ul&gt;
+                                &lt;h2&gt;4.8.2 (2026-10-02)&lt;/h2&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed retryable transport exceptions being swallowed for writes and reads that are not eligible for failover, including archived-collection history queries. These operations now preserve the original transport exception instead of throwing "Response was not set, make sure SendAsync was called".&lt;/li&gt;
+&lt;li&gt;Fixed handling of claims challenges when the authentication challenge cache is empty or cleared while a request is in flight.&lt;/li&gt;
+&lt;li&gt;Fixed an issue in the challenge-based authentication policy where a cached authentication challenge accepted with challenge resource verification disabled could be reused by a separate default-strict client without revalidating the challenge resource.&lt;/li&gt;
+&lt;li&gt;Improved authentication challenge resource validation.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Optimization_1.0.0-beta.1"&gt;Azure.AI.AgentServer.Optimization_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Secrets_4.11.2"&gt;Azure.Security.KeyVault.Secrets_4.11.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-09-30)&lt;/h2&gt;
+                                &lt;h2&gt;4.11.2 (2026-10-02)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed handling of claims challenges when the authentication challenge cache is empty or cleared while a request is in flight.&lt;/li&gt;
+&lt;li&gt;Fixed an issue in the challenge-based authentication policy where a cached authentication challenge accepted with challenge resource verification disabled could be reused by a separate default-strict client without revalidating the challenge resource.&lt;/li&gt;
+&lt;li&gt;Improved authentication challenge resource validation.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Keys_4.10.2"&gt;Azure.Security.KeyVault.Keys_4.10.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;4.10.2 (2026-10-02)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed handling of claims challenges when the authentication challenge cache is empty or cleared while a request is in flight.&lt;/li&gt;
+&lt;li&gt;Fixed an issue in the challenge-based authentication policy where a cached authentication challenge accepted with challenge resource verification disabled could be reused by a separate default-strict client without revalidating the challenge resource.&lt;/li&gt;
+&lt;li&gt;Improved authentication challenge resource validation.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Communication.Identity_2.0.0"&gt;Azure.Communication.Identity_2.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;2.0.0 (2026-10-01)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;p&gt;Consolidated configuration types ahead of public preview. The package now has a single canonical mutable options type that binds idiomatically via &lt;code&gt;Microsoft.Extensions.Configuration&lt;/code&gt;, and the loader returns it directly (no result wrapper).&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;OptimizationConfig&lt;/code&gt; → &lt;code&gt;OptimizationOptions&lt;/code&gt; (mutable class, &lt;code&gt;{ get; set; }&lt;/code&gt; properties).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;OptimizationConfigLoader&lt;/code&gt; → &lt;code&gt;OptimizationOptionsLoader&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Loader API collapsed from four overloads to two:
+&lt;li&gt;Added support for the &lt;code&gt;2026-09-23&lt;/code&gt; stable service API version, which is now the default. Use&lt;br&gt;
+&lt;code&gt;CommunicationIdentityClientOptions.ServiceVersion.V2026_09_23&lt;/code&gt; to target it explicitly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;OptimizationOptionsLoader.Load(LoadOptions? = null)&lt;/code&gt; → &lt;code&gt;OptimizationOptions?&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;OptimizationOptionsLoader.LoadAsync(LoadOptions? = null, CancellationToken = default)&lt;/code&gt; → &lt;code&gt;Task&amp;lt;OptimizationOptions?&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;The previous &lt;code&gt;AuthenticationTokenProvider&lt;/code&gt;-only overloads are gone — pass the provider via &lt;code&gt;LoadOptions.TokenProvider&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The library is now generated from TypeSpec. The public API surface is unchanged by this, apart from the&lt;br&gt;
+additions noted below.&lt;/li&gt;
+&lt;li&gt;Removed preview-only API surface that is not modelled in the &lt;code&gt;2026-09-23&lt;/code&gt; stable API version. All of the&lt;br&gt;
+following shipped only in &lt;code&gt;1.4.0-beta.1&lt;/code&gt; and were never part of a stable release:
+&lt;ul&gt;
+&lt;li&gt;Removed &lt;code&gt;CommunicationIdentityClient.GetUserDetail&lt;/code&gt; and &lt;code&gt;GetUserDetailAsync&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Removed the &lt;code&gt;Azure.Communication.Identity.Models.CommunicationUserDetail&lt;/code&gt; type and the corresponding&lt;br&gt;
+&lt;code&gt;CommunicationIdentityModelFactory.CommunicationUserDetail&lt;/code&gt; factory method.&lt;/li&gt;
+&lt;li&gt;Removed the &lt;code&gt;customId&lt;/code&gt; overloads of &lt;code&gt;CreateUser&lt;/code&gt;, &lt;code&gt;CreateUserAsync&lt;/code&gt;, &lt;code&gt;CreateUserAndToken&lt;/code&gt; and&lt;br&gt;
+&lt;code&gt;CreateUserAndTokenAsync&lt;/code&gt;. The overloads without &lt;code&gt;customId&lt;/code&gt; are unchanged.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Removed &lt;code&gt;LoadResult&lt;/code&gt; wrapper. &lt;code&gt;LoadResult.SourceUsed&lt;/code&gt; duplicated &lt;code&gt;OptimizationOptions.Source&lt;/code&gt;, and &lt;code&gt;LoadResult.Warnings&lt;/code&gt; is now surfaced as stderr diagnostics only.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;LoadConfigOptions&lt;/code&gt; → &lt;code&gt;LoadOptions&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;OptimizationSkill&lt;/code&gt; is now a mutable class (was a &lt;code&gt;readonly struct&lt;/code&gt;). Reference equality only.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ToolDefinition&lt;/code&gt; is now a mutable class with &lt;code&gt;{ get; set; }&lt;/code&gt; properties.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Skills&lt;/code&gt; and &lt;code&gt;ToolDefinitions&lt;/code&gt; collections are typed &lt;code&gt;IList&amp;lt;&amp;gt;&lt;/code&gt; (mutable) instead of &lt;code&gt;IReadOnlyList&amp;lt;&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Removed the &lt;code&gt;OptimizationOptions.FromOptimizationConfig&lt;/code&gt; / &lt;code&gt;ToOptimizationConfig&lt;/code&gt; shim — there is now only one type.&lt;/li&gt;
-&lt;li&gt;Multi-targeting: ships &lt;code&gt;net8.0&lt;/code&gt; and &lt;code&gt;net10.0&lt;/code&gt; assemblies, matching the sibling Core SDK.&lt;/li&gt;
-&lt;li&gt;Priority-3 resolution: &lt;code&gt;OptimizationOptionsLoader&lt;/code&gt; now loads candidate configs from &lt;code&gt;OPTIMIZATION_LOCAL_DIR/&amp;lt;OPTIMIZATION_CANDIDATE_ID&amp;gt;/&lt;/code&gt; on disk, populated by &lt;code&gt;azd ai agent optimize apply --candidate&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Initial release of &lt;code&gt;Azure.AI.AgentServer.Optimization&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;OptimizationConfigLoader.LoadConfig()&lt;/code&gt; and &lt;code&gt;LoadConfigAsync()&lt;/code&gt; — resolves optimized agent configurations from the resolver API or environment variable.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;OptimizationConfig&lt;/code&gt; — immutable config object with instructions, model, temperature, skills, and tool definitions.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;OptimizationSkill&lt;/code&gt; — represents a single learned skill with name, description, and body.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Administration_4.9.0-beta.4"&gt;Azure.Security.KeyVault.Administration_4.9.0-beta.4&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;4.9.0-beta.4 (2026-09-30)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added External Key Manager (EKM) proxy private endpoint support to &lt;code&gt;KeyVaultEkmClient&lt;/code&gt;, including &lt;code&gt;CreateEkmPrivateEndpoint&lt;/code&gt;, &lt;code&gt;GetEkmPrivateEndpoint&lt;/code&gt;, &lt;code&gt;GetEkmPrivateEndpoints&lt;/code&gt;, &lt;code&gt;DeleteEkmPrivateEndpoint&lt;/code&gt;, and &lt;code&gt;GetEkmPrivateEndpointOperationStatus&lt;/code&gt; operations.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;KeyVaultEkmConnectivityMode&lt;/code&gt; to &lt;code&gt;KeyVaultEkmConnection&lt;/code&gt; to route an EKM connection through an EKM proxy private endpoint.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;ServiceVersion.V2025_03_02_PREVIEW&lt;/code&gt;. The previously released stable service API versions&lt;br&gt;
+&lt;code&gt;V2021_03_07&lt;/code&gt;, &lt;code&gt;V2022_06_01&lt;/code&gt;, &lt;code&gt;V2022_10_01&lt;/code&gt; and &lt;code&gt;V2023_10_01&lt;/code&gt; remain available and unchanged.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;The default service version is now &lt;code&gt;2026-07-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CommunicationUserIdentifierAndToken&lt;/code&gt; now implements &lt;code&gt;IJsonModel&amp;lt;T&amp;gt;&lt;/code&gt; and &lt;code&gt;IPersistableModel&amp;lt;T&amp;gt;&lt;/code&gt;, and&lt;br&gt;
+&lt;code&gt;CommunicationTokenScope&lt;/code&gt; gains an implicit conversion from a nullable string. Both are additive.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
