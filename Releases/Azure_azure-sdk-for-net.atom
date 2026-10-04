@@ -1,85 +1,37 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-10-03T00:10:37Z</updated>
+  <updated>2026-10-04T00:54:39Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-10-02</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-02</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-10-03</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-03</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-10-03T00:10:37Z</updated>
+    <updated>2026-10-04T00:54:39Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Administration_4.8.2"&gt;Azure.Security.KeyVault.Administration_4.8.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.RecoveryServicesBackup_1.5.0"&gt;Azure.ResourceManager.RecoveryServicesBackup_1.5.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;4.8.2 (2026-10-02)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed handling of claims challenges when the authentication challenge cache is empty or cleared while a request is in flight.&lt;/li&gt;
-&lt;li&gt;Fixed an issue in the challenge-based authentication policy where a cached authentication challenge accepted with challenge resource verification disabled could be reused by a separate default-strict client without revalidating the challenge resource.&lt;/li&gt;
-&lt;li&gt;Improved authentication challenge resource validation.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Secrets_4.11.2"&gt;Azure.Security.KeyVault.Secrets_4.11.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;4.11.2 (2026-10-02)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed handling of claims challenges when the authentication challenge cache is empty or cleared while a request is in flight.&lt;/li&gt;
-&lt;li&gt;Fixed an issue in the challenge-based authentication policy where a cached authentication challenge accepted with challenge resource verification disabled could be reused by a separate default-strict client without revalidating the challenge resource.&lt;/li&gt;
-&lt;li&gt;Improved authentication challenge resource validation.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Keys_4.10.2"&gt;Azure.Security.KeyVault.Keys_4.10.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;4.10.2 (2026-10-02)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed handling of claims challenges when the authentication challenge cache is empty or cleared while a request is in flight.&lt;/li&gt;
-&lt;li&gt;Fixed an issue in the challenge-based authentication policy where a cached authentication challenge accepted with challenge resource verification disabled could be reused by a separate default-strict client without revalidating the challenge resource.&lt;/li&gt;
-&lt;li&gt;Improved authentication challenge resource validation.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Communication.Identity_2.0.0"&gt;Azure.Communication.Identity_2.0.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;2.0.0 (2026-10-01)&lt;/h2&gt;
+                                &lt;h2&gt;1.5.0 (2026-09-09)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for the &lt;code&gt;2026-09-23&lt;/code&gt; stable service API version, which is now the default. Use&lt;br&gt;
-&lt;code&gt;CommunicationIdentityClientOptions.ServiceVersion.V2026_09_23&lt;/code&gt; to target it explicitly.&lt;/li&gt;
+&lt;li&gt;Upgraded the service API version to &lt;code&gt;2026-08-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added support for retrieving the iSCSI mount scripts of an instant item recovery operation via the new &lt;code&gt;InstantItemRecoveryOperationResult&lt;/code&gt; API, including the &lt;code&gt;InstantItemRecoveryTarget&lt;/code&gt; and &lt;code&gt;ClientScriptForConnect&lt;/code&gt; models.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Certificates_4.9.2"&gt;Azure.Security.KeyVault.Certificates_4.9.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;4.9.2 (2026-10-02)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;The library is now generated from TypeSpec. The public API surface is unchanged by this, apart from the&lt;br&gt;
-additions noted below.&lt;/li&gt;
-&lt;li&gt;Removed preview-only API surface that is not modelled in the &lt;code&gt;2026-09-23&lt;/code&gt; stable API version. All of the&lt;br&gt;
-following shipped only in &lt;code&gt;1.4.0-beta.1&lt;/code&gt; and were never part of a stable release:
-&lt;ul&gt;
-&lt;li&gt;Removed &lt;code&gt;CommunicationIdentityClient.GetUserDetail&lt;/code&gt; and &lt;code&gt;GetUserDetailAsync&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Removed the &lt;code&gt;Azure.Communication.Identity.Models.CommunicationUserDetail&lt;/code&gt; type and the corresponding&lt;br&gt;
-&lt;code&gt;CommunicationIdentityModelFactory.CommunicationUserDetail&lt;/code&gt; factory method.&lt;/li&gt;
-&lt;li&gt;Removed the &lt;code&gt;customId&lt;/code&gt; overloads of &lt;code&gt;CreateUser&lt;/code&gt;, &lt;code&gt;CreateUserAsync&lt;/code&gt;, &lt;code&gt;CreateUserAndToken&lt;/code&gt; and&lt;br&gt;
-&lt;code&gt;CreateUserAndTokenAsync&lt;/code&gt;. The overloads without &lt;code&gt;customId&lt;/code&gt; are unchanged.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Removed &lt;code&gt;ServiceVersion.V2025_03_02_PREVIEW&lt;/code&gt;. The previously released stable service API versions&lt;br&gt;
-&lt;code&gt;V2021_03_07&lt;/code&gt;, &lt;code&gt;V2022_06_01&lt;/code&gt;, &lt;code&gt;V2022_10_01&lt;/code&gt; and &lt;code&gt;V2023_10_01&lt;/code&gt; remain available and unchanged.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;CommunicationUserIdentifierAndToken&lt;/code&gt; now implements &lt;code&gt;IJsonModel&amp;lt;T&amp;gt;&lt;/code&gt; and &lt;code&gt;IPersistableModel&amp;lt;T&amp;gt;&lt;/code&gt;, and&lt;br&gt;
-&lt;code&gt;CommunicationTokenScope&lt;/code&gt; gains an implicit conversion from a nullable string. Both are additive.&lt;/li&gt;
+&lt;li&gt;Fixed handling of claims challenges when the authentication challenge cache is empty or cleared while a request is in flight.&lt;/li&gt;
+&lt;li&gt;Fixed an issue in the challenge-based authentication policy where a cached authentication challenge accepted with challenge resource verification disabled could be reused by a separate default-strict client without revalidating the challenge resource.&lt;/li&gt;
+&lt;li&gt;Improved authentication challenge resource validation.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
