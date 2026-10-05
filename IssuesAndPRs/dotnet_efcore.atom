@@ -1,31 +1,22 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/efcore - Issues &amp; Pull Requests</title>
   <link href="https://github.com/dotnet/efcore" />
-  <updated>2026-10-04T00:54:18Z</updated>
+  <updated>2026-10-05T00:11:11Z</updated>
   <id>https://github.com/dotnet/efcore</id>
   <entry>
-    <title>dotnet/efcore - Issues &amp; Pull Requests - 2026-10-03</title>
-    <id>https://github.com/dotnet/efcore#2026-10-03</id>
+    <title>dotnet/efcore - Issues &amp; Pull Requests - 2026-10-04</title>
+    <id>https://github.com/dotnet/efcore#2026-10-04</id>
     <link href="https://github.com/dotnet/efcore" />
-    <updated>2026-10-04T00:54:18Z</updated>
+    <updated>2026-10-05T00:11:11Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
-  &lt;h3&gt;Created&lt;/h3&gt;
+  &lt;h3&gt;Updated&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/39158"&gt;# Bug report: `dotnet ef migrations add` generates incorrect `RenameColumn` for an `[Owned]`-discovered owned type the moment any of its properties is touched via `OwnsOne()` #39158&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/24607"&gt;Scaffold-DbContext can name namespace wrong if phrase with space is used on OutputDir #24607&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Closed&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/38757"&gt;SQLite: Implement SqliteCommand.Cancel() and register CancellationToken handler #38757&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;12.0-preview1&lt;/div&gt;
+      &lt;div&gt;Backlog&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;&lt;section&gt;
@@ -34,40 +25,37 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/39159"&gt;Preserve SQLITE_DETERMINISTIC when re-registering functions on Open #39159&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;community-contribution&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Merged&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/39104"&gt;Inline char constants as Unicode string literals in SQL Server IndexO… #39104&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;community-contribution, 12.0-preview1&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/39140"&gt;Write the entry that owns the ordinal in JSON collection element updates #39140&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;community-contribution, 12.0-preview1&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/39105"&gt;Translate string.TrimStart/TrimEnd with a char parameter instead of d… #39105&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;community-contribution, 12.0-preview1&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/39110"&gt;Implement SqliteCommand.Cancel() and honor CancellationToken while executing (#38757) #39110&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39165"&gt;Add regression tests for three issues already fixed on main (#34183, #28488, #32513) #39165&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;community-contribution&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/39157"&gt;Parse the identity seed as a long when generating DBCC CHECKIDENT on SQL Server #39157&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39164"&gt;Set the schema, table and name on AlterColumnOperation.OldColumn #39164&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;community-contribution&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39163"&gt;Place complex property columns in CLR property order when creating tables #39163&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;community-contribution&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39162"&gt;Read vector dimensions when scaffolding SQL Server databases below compatibility level 170 #39162&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;community-contribution&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39161"&gt;Don't add an IS NOT NULL filter to unique indexes on required TPT and TPC columns on SQL Server #39161&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;community-contribution&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39160"&gt;Type the zero in COALESCE(SUM(...), 0) to match the SUM result #39160&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;community-contribution&lt;/div&gt;
     &lt;/li&gt;
