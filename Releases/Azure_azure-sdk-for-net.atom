@@ -1,70 +1,20 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-10-07T00:11:17Z</updated>
+  <updated>2026-10-08T00:10:54Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-10-06</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-06</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-10-07</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-07</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-10-07T00:11:17Z</updated>
+    <updated>2026-10-08T00:10:54Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.66"&gt;Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.66&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6930099"&gt;Azure.Template_1.0.3-beta.6930099&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.0.0-preview.66 (2026-10-05)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded &lt;code&gt;Azure.Storage.Blobs&lt;/code&gt; package dependency to 12.30.1&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Monitor.OpenTelemetry.Exporter_1.10.0"&gt;Azure.Monitor.OpenTelemetry.Exporter_1.10.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.10.0 (2026-10-05)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added the &lt;code&gt;Azure.Monitor.OpenTelemetry.Exporter.StorageSubDirectory&lt;/code&gt; AppContext value, settable with &lt;code&gt;AppContext.SetData&lt;/code&gt; or a &lt;code&gt;runtimeconfig.json&lt;/code&gt; configProperty, so that the processes or entry points of one application can share a persistent storage directory. By default the directory name is derived from the process name and &lt;code&gt;AppContext.BaseDirectory&lt;/code&gt;, which splits storage when components of one application differ in either, and a component that runs rarely never drains its backlog. When set, the value replaces those two inputs; the instrumentation key and user name still contribute, so different users and resources stay isolated. Behaviour is unchanged when the value is not set.&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/62997" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/62997/hovercard"&gt;#62997&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;SDK statistics sent to the Microsoft OpenTelemetry distro's configured ingestion endpoint (the &lt;code&gt;Azure.Monitor.OpenTelemetry.Exporter.RouteSdkStatsToDistroEndpoint&lt;/code&gt; AppContext switch) now carry the same region-matched SDK statistics instrumentation key as the existing SDK statistics endpoint, instead of an all-zero placeholder. Only the destination differs on the distro path.&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/63342" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/63342/hovercard"&gt;#63342&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Keys_4.11.0-beta.5"&gt;Azure.Security.KeyVault.Keys_4.11.0-beta.5&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;4.11.0-beta.5 (2026-10-06)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for Algorithm Key Pair (AKP) keys, such as ML-DSA post-quantum keys:
-&lt;ul&gt;
-&lt;li&gt;Added the &lt;code&gt;KeyType.Akp&lt;/code&gt; and &lt;code&gt;KeyType.AkpHsm&lt;/code&gt; key types.&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;AkpAlgorithm&lt;/code&gt; type listing the supported AKP algorithms.&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;CreateAkpKeyOptions&lt;/code&gt; model and the new &lt;code&gt;CreateAkpKey&lt;/code&gt; and &lt;code&gt;CreateAkpKeyAsync&lt;/code&gt; methods in &lt;code&gt;KeyClient&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;Algorithm&lt;/code&gt; and &lt;code&gt;Pub&lt;/code&gt; properties to &lt;code&gt;JsonWebKey&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The default service version is now &lt;code&gt;2026-07-01-preview&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6920743"&gt;Azure.Template_1.0.3-beta.6920743&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.3-beta.6920743 (2026-10-06)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.3-beta.6930099 (2026-10-07)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Added &lt;code&gt;WidgetAnalyticsClientSettings&lt;/code&gt; to support creating a &lt;code&gt;WidgetAnalyticsClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
@@ -73,42 +23,9 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.Batch_12.27.1"&gt;Azure.Storage.Blobs.Batch_12.27.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6928792"&gt;Azure.Template_1.0.3-beta.6928792&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.27.1 (2026-10-05)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded &lt;code&gt;Azure.Storage.Blobs&lt;/code&gt; package dependency to 12.30.1&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs_12.30.1"&gt;Azure.Storage.Blobs_12.30.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.30.1 (2026-10-05)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed &lt;code&gt;AuthenticatedRegionCryptoStream.Dispose()&lt;/code&gt; to be idempotent and thread-safe, so the buffer it rents is no longer returned to the shared &lt;code&gt;ArrayPool&amp;lt;byte&amp;gt;&lt;/code&gt; more than once when the stream is disposed repeatedly or concurrently. Returning the same array twice allowed unrelated callers to rent the same array instance and corrupt each other's data.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Queues_12.28.1"&gt;Azure.Storage.Queues_12.28.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.28.1 (2026-10-05)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed &lt;code&gt;AuthenticatedRegionCryptoStream.Dispose()&lt;/code&gt; to be idempotent and thread-safe, so the buffer it rents is no longer returned to the shared &lt;code&gt;ArrayPool&amp;lt;byte&amp;gt;&lt;/code&gt; more than once when the stream is disposed repeatedly or concurrently. Returning the same array twice allowed unrelated callers to rent the same array instance and corrupt each other's data.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6920528"&gt;Azure.Template_1.0.3-beta.6920528&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.3-beta.6920528 (2026-10-06)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.3-beta.6928792 (2026-10-07)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Added &lt;code&gt;WidgetAnalyticsClientSettings&lt;/code&gt; to support creating a &lt;code&gt;WidgetAnalyticsClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;

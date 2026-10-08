@@ -1,95 +1,20 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-10-07T00:11:45Z</updated>
+  <updated>2026-10-08T00:11:26Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-10-06</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-10-06</id>
-    <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-10-07T00:11:16Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.348.0"&gt;4.0.348.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;4.0.348.0 (2026-10-06 22:23 UTC)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;LambdaWeb (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Removes operations that are not yet generally available from the Lambda Web.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-10-06</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-06</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-10-07</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-07</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-10-07T00:11:17Z</updated>
+    <updated>2026-10-08T00:10:54Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.66"&gt;Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.66&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6930099"&gt;Azure.Template_1.0.3-beta.6930099&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.0.0-preview.66 (2026-10-05)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded &lt;code&gt;Azure.Storage.Blobs&lt;/code&gt; package dependency to 12.30.1&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Monitor.OpenTelemetry.Exporter_1.10.0"&gt;Azure.Monitor.OpenTelemetry.Exporter_1.10.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.10.0 (2026-10-05)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added the &lt;code&gt;Azure.Monitor.OpenTelemetry.Exporter.StorageSubDirectory&lt;/code&gt; AppContext value, settable with &lt;code&gt;AppContext.SetData&lt;/code&gt; or a &lt;code&gt;runtimeconfig.json&lt;/code&gt; configProperty, so that the processes or entry points of one application can share a persistent storage directory. By default the directory name is derived from the process name and &lt;code&gt;AppContext.BaseDirectory&lt;/code&gt;, which splits storage when components of one application differ in either, and a component that runs rarely never drains its backlog. When set, the value replaces those two inputs; the instrumentation key and user name still contribute, so different users and resources stay isolated. Behaviour is unchanged when the value is not set.&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/62997" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/62997/hovercard"&gt;#62997&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;SDK statistics sent to the Microsoft OpenTelemetry distro's configured ingestion endpoint (the &lt;code&gt;Azure.Monitor.OpenTelemetry.Exporter.RouteSdkStatsToDistroEndpoint&lt;/code&gt; AppContext switch) now carry the same region-matched SDK statistics instrumentation key as the existing SDK statistics endpoint, instead of an all-zero placeholder. Only the destination differs on the distro path.&lt;br&gt;
-(&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/63342" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/63342/hovercard"&gt;#63342&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Keys_4.11.0-beta.5"&gt;Azure.Security.KeyVault.Keys_4.11.0-beta.5&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;4.11.0-beta.5 (2026-10-06)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for Algorithm Key Pair (AKP) keys, such as ML-DSA post-quantum keys:
-&lt;ul&gt;
-&lt;li&gt;Added the &lt;code&gt;KeyType.Akp&lt;/code&gt; and &lt;code&gt;KeyType.AkpHsm&lt;/code&gt; key types.&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;AkpAlgorithm&lt;/code&gt; type listing the supported AKP algorithms.&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;CreateAkpKeyOptions&lt;/code&gt; model and the new &lt;code&gt;CreateAkpKey&lt;/code&gt; and &lt;code&gt;CreateAkpKeyAsync&lt;/code&gt; methods in &lt;code&gt;KeyClient&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;Algorithm&lt;/code&gt; and &lt;code&gt;Pub&lt;/code&gt; properties to &lt;code&gt;JsonWebKey&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The default service version is now &lt;code&gt;2026-07-01-preview&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6920743"&gt;Azure.Template_1.0.3-beta.6920743&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.3-beta.6920743 (2026-10-06)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.3-beta.6930099 (2026-10-07)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Added &lt;code&gt;WidgetAnalyticsClientSettings&lt;/code&gt; to support creating a &lt;code&gt;WidgetAnalyticsClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
@@ -98,42 +23,9 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.Batch_12.27.1"&gt;Azure.Storage.Blobs.Batch_12.27.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6928792"&gt;Azure.Template_1.0.3-beta.6928792&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;12.27.1 (2026-10-05)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded &lt;code&gt;Azure.Storage.Blobs&lt;/code&gt; package dependency to 12.30.1&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs_12.30.1"&gt;Azure.Storage.Blobs_12.30.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.30.1 (2026-10-05)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed &lt;code&gt;AuthenticatedRegionCryptoStream.Dispose()&lt;/code&gt; to be idempotent and thread-safe, so the buffer it rents is no longer returned to the shared &lt;code&gt;ArrayPool&amp;lt;byte&amp;gt;&lt;/code&gt; more than once when the stream is disposed repeatedly or concurrently. Returning the same array twice allowed unrelated callers to rent the same array instance and corrupt each other's data.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Queues_12.28.1"&gt;Azure.Storage.Queues_12.28.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;12.28.1 (2026-10-05)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed &lt;code&gt;AuthenticatedRegionCryptoStream.Dispose()&lt;/code&gt; to be idempotent and thread-safe, so the buffer it rents is no longer returned to the shared &lt;code&gt;ArrayPool&amp;lt;byte&amp;gt;&lt;/code&gt; more than once when the stream is disposed repeatedly or concurrently. Returning the same array twice allowed unrelated callers to rent the same array instance and corrupt each other's data.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6920528"&gt;Azure.Template_1.0.3-beta.6920528&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.3-beta.6920528 (2026-10-06)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.3-beta.6928792 (2026-10-07)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Added &lt;code&gt;WidgetAnalyticsClientSettings&lt;/code&gt; to support creating a &lt;code&gt;WidgetAnalyticsClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
@@ -145,29 +37,121 @@
             </content>
   </entry>
   <entry>
-    <title>newrelic/newrelic-dotnet-agent - Releases - 2026-10-06</title>
-    <id>https://github.com/newrelic/newrelic-dotnet-agent#2026-10-06</id>
-    <link href="https://github.com/newrelic/newrelic-dotnet-agent" />
-    <updated>2026-10-07T00:11:39Z</updated>
+    <title>domaindrivendev/Swashbuckle.AspNetCore - Releases - 2026-10-07</title>
+    <id>https://github.com/domaindrivendev/Swashbuckle.AspNetCore#2026-10-07</id>
+    <link href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore" />
+    <updated>2026-10-08T00:10:59Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/releases/tag/v10.56.0"&gt;v10.56.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/releases/tag/v10.3.0"&gt;v10.3.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/compare/v10.55.0...v10.56.0"&gt;10.56.0&lt;/a&gt; (2026-10-05)&lt;/h2&gt;
-&lt;h3&gt;New features&lt;/h3&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Add connect response OTLP resource attributes to hybrid agent metrics (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3857" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3857/hovercard"&gt;#3857&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/80cb2d1b92862c8aeba8b6dad09fc7989972b4b2"&gt;80cb2d1&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Add continuous profiling for .NET applications. Continuous Profiling is a new feature which is not yet generally available for use. The agent-side component code is now present in the agent but to actually use it ahead of the General Availability release, you will need to contact your New Relic sales representative to join the preview early. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/1f06aef816a072bcacbc92675f833bf2643689b4"&gt;1f06aef&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Change nullability handling for schemas with &lt;code&gt;anyOf&lt;/code&gt;, &lt;code&gt;allOf&lt;/code&gt;, &lt;code&gt;oneOf&lt;/code&gt; or &lt;code&gt;type = null&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ldeluigi/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ldeluigi"&gt;@ldeluigi&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4563692221" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/3976" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/3976/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/3976"&gt;#3976&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Handle leading slash on route prefix during index.html GET by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/superstator/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/superstator"&gt;@superstator&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4953140117" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4084" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4084/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4084"&gt;#4084&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Move NRT handling to DataContractResolver by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/desjoerd/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/desjoerd"&gt;@desjoerd&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4660212935" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/3998" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/3998/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/3998"&gt;#3998&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Clarify nullable behaviour by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/martincostello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/martincostello"&gt;@martincostello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5052084976" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4094" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4094/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4094"&gt;#4094&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix review issues for caching and encoding by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/martincostello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/martincostello"&gt;@martincostello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5051685235" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4093" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4093/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4093"&gt;#4093&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support multiple response types per status code by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/DeagleGross/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/DeagleGross"&gt;@DeagleGross&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5069354554" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4100" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4100/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4100"&gt;#4100&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add coverage for &lt;code&gt;AddServer&lt;/code&gt; across multiple documents by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/RaphaelFakhri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/RaphaelFakhri"&gt;@RaphaelFakhri&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5182047629" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4115" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4115/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4115"&gt;#4115&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix Swagger sort key fallback for empty endpoint tags metadata by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AleksaMCode/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AleksaMCode"&gt;@AleksaMCode&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5238348974" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4125" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4125/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4125"&gt;#4125&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix parameter matching to consider location when names collide by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/nonsoikem/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/nonsoikem"&gt;@nonsoikem&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5245850533" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4126" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4126/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4126"&gt;#4126&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Emit form encoding for properties of a complex form parameter by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/RaphaelFakhri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/RaphaelFakhri"&gt;@RaphaelFakhri&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5249448396" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4128" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4128/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4128"&gt;#4128&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Keep a property's own summary when comments come from several XML files by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/RaphaelFakhri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/RaphaelFakhri"&gt;@RaphaelFakhri&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5249766422" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4129" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4129/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4129"&gt;#4129&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Strip query string from relative document URLs in Swagger UI by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/GabeSilvaDev/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/GabeSilvaDev"&gt;@GabeSilvaDev&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5427080377" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4152" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4152/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4152"&gt;#4152&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Document that System.Text.Json ignores &lt;code&gt;[EnumMember]&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/RaphaelFakhri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/RaphaelFakhri"&gt;@RaphaelFakhri&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5249328366" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4127" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4127/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4127"&gt;#4127&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Drop the regex route constraint from the default Swagger route by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/RaphaelFakhri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/RaphaelFakhri"&gt;@RaphaelFakhri&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5249858442" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4130" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4130/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4130"&gt;#4130&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Serialize custom values in the UI &lt;code&gt;ConfigObject.AdditionalItems&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/RaphaelFakhri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/RaphaelFakhri"&gt;@RaphaelFakhri&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5249905861" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4132" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4132/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4132"&gt;#4132&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Use Minimal APIs JSON options when MVC is not registered by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/RaphaelFakhri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/RaphaelFakhri"&gt;@RaphaelFakhri&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5182139154" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4116" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4116/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4116"&gt;#4116&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Resolve enum contracts against the underlying type under source generation by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/RaphaelFakhri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/RaphaelFakhri"&gt;@RaphaelFakhri&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5249867666" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4131" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4131/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4131"&gt;#4131&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Fixes&lt;/h3&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Add empty-rule fast path to MetricNameService regex renaming. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3853" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3853/hovercard"&gt;#3853&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/778af9853de79bfc775c019df9f187bc23b15acb"&gt;778af98&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Convert integral OpenTelemetry bridge tag values to the requested type (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3863" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3863/hovercard"&gt;#3863&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/b5aef25ad50301f6fd16aa4b9128d8f57da27a4b"&gt;b5aef25&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Exclude the MongoDB.Driver ActivitySource from the OpenTelemetry bridge by default (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3854" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3854/hovercard"&gt;#3854&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/79a39fa2508f55d42800f81662dea68fc11d4320"&gt;79a39fa&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Report the actual transport type for MassTransit consumers (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3865" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3865/hovercard"&gt;#3865&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/92d75b52fd11248332d1684afec3f2fc5486f89a"&gt;92d75b5&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ldeluigi/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ldeluigi"&gt;@ldeluigi&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4563692221" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/3976" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/3976/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/3976"&gt;#3976&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/superstator/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/superstator"&gt;@superstator&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4953140117" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4084" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4084/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4084"&gt;#4084&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/desjoerd/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/desjoerd"&gt;@desjoerd&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4660212935" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/3998" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/3998/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/3998"&gt;#3998&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/RaphaelFakhri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/RaphaelFakhri"&gt;@RaphaelFakhri&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5182047629" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4115" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4115/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4115"&gt;#4115&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AleksaMCode/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AleksaMCode"&gt;@AleksaMCode&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5238348974" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4125" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4125/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4125"&gt;#4125&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/nonsoikem/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/nonsoikem"&gt;@nonsoikem&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5245850533" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4126" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4126/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4126"&gt;#4126&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/GabeSilvaDev/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/GabeSilvaDev"&gt;@GabeSilvaDev&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5427080377" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4152" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4152/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4152"&gt;#4152&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JulianThoms/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JulianThoms"&gt;@JulianThoms&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5658128246" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4182" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4182/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4182"&gt;#4182&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/compare/v10.2.3...v10.3.0"&gt;&lt;tt&gt;v10.2.3...v10.3.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>dotnet/aspire - Releases - 2026-10-07</title>
+    <id>https://github.com/dotnet/aspire#2026-10-07</id>
+    <link href="https://github.com/dotnet/aspire" />
+    <updated>2026-10-08T00:11:00Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.6.1"&gt;Aspire 13.6.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's New in Aspire 13.6.1&lt;/h2&gt;
+&lt;p&gt;Patch release for Aspire 13.6 that reduces dashboard CPU usage during sustained metric ingestion, restores scrolling in the Metrics tree, improves dashboard navigation, fixes container exec watch failures, and ensures session-scoped containers are cleaned up when stopping .NET AppHosts on Windows.&lt;/p&gt;
+&lt;h3&gt;🐛 Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;📊 &lt;strong&gt;Dashboard CPU usage could increase during long-running metric ingestion&lt;/strong&gt; — Metric retention repeatedly scanned retained history on every insertion, causing steadily increasing CPU usage even with a fixed workload. Cleanup now skips dimensions below capacity and removes only the oldest surplus points when needed. Existing retention limits and exemplar behavior are unchanged, and no configuration changes are required. Regression introduced in 13.6. Fixes &lt;a href="https://github.com/microsoft/aspire/issues/20725" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/20725/hovercard"&gt;#20725&lt;/a&gt;. (&lt;a href="https://github.com/microsoft/aspire/pull/20747" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20747/hovercard"&gt;#20747&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20736" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20736/hovercard"&gt;#20736&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;James Newton-King (@JamesNK)&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;📈 &lt;strong&gt;The Metrics tree could not be scrolled&lt;/strong&gt; — The meter and instrument tree now scrolls when it exceeds the viewport, allowing you to reach and select instruments below the fold. Regression introduced in 13.6. Fixes &lt;a href="https://github.com/microsoft/aspire/issues/20728" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/20728/hovercard"&gt;#20728&lt;/a&gt;. (&lt;a href="https://github.com/microsoft/aspire/pull/20762" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20762/hovercard"&gt;#20762&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20758" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20758/hovercard"&gt;#20758&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/heyysiri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/heyysiri"&gt;Siri (@heyysiri)&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🧭 &lt;strong&gt;Dashboard navigation could fail after a browser disconnect&lt;/strong&gt; — Pending page-state updates now persist session state before navigating and skip navigation when the browser has disconnected, avoiding an unhandled navigation failure. The navigation rail's overflow button also has consistent sizing, icon alignment, and hover styling in expanded and collapsed layouts and both light and dark themes. (&lt;a href="https://github.com/microsoft/aspire/pull/20545" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20545/hovercard"&gt;#20545&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20527" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20527/hovercard"&gt;#20527&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;James Newton-King (@JamesNK)&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🖥️ &lt;strong&gt;Container exec watches could terminate shortly after AppHost startup&lt;/strong&gt; — A stalled DCP watch connection could produce a critical &lt;code&gt;Watch task over Kubernetes ContainerExec resources terminated unexpectedly&lt;/code&gt; error and stop subsequent terminal state and log updates from being observed. Watch connection attempts now retry after timeouts, and periodic restarts correctly recreate connections without swallowing unrelated cancellation. Regression introduced in 13.6.0. (&lt;a href="https://github.com/microsoft/aspire/pull/20664" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20664/hovercard"&gt;#20664&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20466" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20466/hovercard"&gt;#20466&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/radical/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/radical"&gt;Ankit Jain (@radical)&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🪟 &lt;strong&gt;Session-scoped containers could remain running after stopping a .NET AppHost on Windows&lt;/strong&gt; — AppHosts launched through &lt;code&gt;dotnet run&lt;/code&gt; or &lt;code&gt;dotnet watch&lt;/code&gt; now allow DCP to finish resource cleanup during shutdown, including existing Ctrl+C and &lt;code&gt;aspire stop&lt;/code&gt; flows. Persistent resources remain unaffected, while direct .NET launches and TypeScript/polyglot AppHosts retain their existing process protection. Fixes &lt;a href="https://github.com/microsoft/aspire/issues/20495" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/20495/hovercard"&gt;#20495&lt;/a&gt;. (&lt;a href="https://github.com/microsoft/aspire/pull/20514" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20514/hovercard"&gt;#20514&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20494" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20494/hovercard"&gt;#20494&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/danegsta/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/danegsta"&gt;David Negstad (@danegsta)&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a href="https://github.com/microsoft/aspire/compare/v13.6.0...v13.6.1"&gt;v13.6.0...v13.6.1&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/3751e615ad660621f2a7aa4c390ef48e08a0eed8"&gt;3751e615ad660621f2a7aa4c390ef48e08a0eed8&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>microsoft/CsWin32 - Releases - 2026-10-07</title>
+    <id>https://github.com/microsoft/CsWin32#2026-10-07</id>
+    <link href="https://github.com/microsoft/CsWin32" />
+    <updated>2026-10-08T00:11:17Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/CsWin32/releases/tag/v0.3.355"&gt;v0.3.355&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Changes:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5723217941" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1838" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1838/hovercard" href="https://github.com/microsoft/CsWin32/pull/1838"&gt;#1838&lt;/a&gt;: Update Win32 metadata to 71.0.28-preview&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This list of changes was &lt;a href="https://devdiv.visualstudio.com/DevDiv/_build/results?buildId=15590335&amp;amp;view=logs" rel="nofollow"&gt;auto generated&lt;/a&gt;.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/CsWin32/releases/tag/v0.3.347"&gt;v0.3.347&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Changes:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5416912232" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1821" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1821/hovercard" href="https://github.com/microsoft/CsWin32/pull/1821"&gt;#1821&lt;/a&gt;: Honor configured visibility for IVTable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This list of changes was &lt;a href="https://devdiv.visualstudio.com/DevDiv/_build/results?buildId=15574118&amp;amp;view=logs" rel="nofollow"&gt;auto generated&lt;/a&gt;.&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
