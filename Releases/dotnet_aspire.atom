@@ -1,46 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/aspire - Releases</title>
   <link href="https://github.com/dotnet/aspire" />
-  <updated>2026-10-08T00:11:00Z</updated>
+  <updated>2026-10-09T00:11:55Z</updated>
   <id>https://github.com/dotnet/aspire</id>
-  <entry>
-    <title>dotnet/aspire - Releases - 2026-10-07</title>
-    <id>https://github.com/dotnet/aspire#2026-10-07</id>
-    <link href="https://github.com/dotnet/aspire" />
-    <updated>2026-10-08T00:11:00Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.6.1"&gt;Aspire 13.6.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;What's New in Aspire 13.6.1&lt;/h2&gt;
-&lt;p&gt;Patch release for Aspire 13.6 that reduces dashboard CPU usage during sustained metric ingestion, restores scrolling in the Metrics tree, improves dashboard navigation, fixes container exec watch failures, and ensures session-scoped containers are cleaned up when stopping .NET AppHosts on Windows.&lt;/p&gt;
-&lt;h3&gt;🐛 Fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;📊 &lt;strong&gt;Dashboard CPU usage could increase during long-running metric ingestion&lt;/strong&gt; — Metric retention repeatedly scanned retained history on every insertion, causing steadily increasing CPU usage even with a fixed workload. Cleanup now skips dimensions below capacity and removes only the oldest surplus points when needed. Existing retention limits and exemplar behavior are unchanged, and no configuration changes are required. Regression introduced in 13.6. Fixes &lt;a href="https://github.com/microsoft/aspire/issues/20725" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/20725/hovercard"&gt;#20725&lt;/a&gt;. (&lt;a href="https://github.com/microsoft/aspire/pull/20747" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20747/hovercard"&gt;#20747&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20736" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20736/hovercard"&gt;#20736&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;James Newton-King (@JamesNK)&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;📈 &lt;strong&gt;The Metrics tree could not be scrolled&lt;/strong&gt; — The meter and instrument tree now scrolls when it exceeds the viewport, allowing you to reach and select instruments below the fold. Regression introduced in 13.6. Fixes &lt;a href="https://github.com/microsoft/aspire/issues/20728" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/20728/hovercard"&gt;#20728&lt;/a&gt;. (&lt;a href="https://github.com/microsoft/aspire/pull/20762" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20762/hovercard"&gt;#20762&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20758" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20758/hovercard"&gt;#20758&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/heyysiri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/heyysiri"&gt;Siri (@heyysiri)&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;🧭 &lt;strong&gt;Dashboard navigation could fail after a browser disconnect&lt;/strong&gt; — Pending page-state updates now persist session state before navigating and skip navigation when the browser has disconnected, avoiding an unhandled navigation failure. The navigation rail's overflow button also has consistent sizing, icon alignment, and hover styling in expanded and collapsed layouts and both light and dark themes. (&lt;a href="https://github.com/microsoft/aspire/pull/20545" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20545/hovercard"&gt;#20545&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20527" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20527/hovercard"&gt;#20527&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;James Newton-King (@JamesNK)&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;🖥️ &lt;strong&gt;Container exec watches could terminate shortly after AppHost startup&lt;/strong&gt; — A stalled DCP watch connection could produce a critical &lt;code&gt;Watch task over Kubernetes ContainerExec resources terminated unexpectedly&lt;/code&gt; error and stop subsequent terminal state and log updates from being observed. Watch connection attempts now retry after timeouts, and periodic restarts correctly recreate connections without swallowing unrelated cancellation. Regression introduced in 13.6.0. (&lt;a href="https://github.com/microsoft/aspire/pull/20664" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20664/hovercard"&gt;#20664&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20466" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20466/hovercard"&gt;#20466&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/radical/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/radical"&gt;Ankit Jain (@radical)&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;🪟 &lt;strong&gt;Session-scoped containers could remain running after stopping a .NET AppHost on Windows&lt;/strong&gt; — AppHosts launched through &lt;code&gt;dotnet run&lt;/code&gt; or &lt;code&gt;dotnet watch&lt;/code&gt; now allow DCP to finish resource cleanup during shutdown, including existing Ctrl+C and &lt;code&gt;aspire stop&lt;/code&gt; flows. Persistent resources remain unaffected, while direct .NET launches and TypeScript/polyglot AppHosts retain their existing process protection. Fixes &lt;a href="https://github.com/microsoft/aspire/issues/20495" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/20495/hovercard"&gt;#20495&lt;/a&gt;. (&lt;a href="https://github.com/microsoft/aspire/pull/20514" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20514/hovercard"&gt;#20514&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20494" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20494/hovercard"&gt;#20494&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/danegsta/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/danegsta"&gt;David Negstad (@danegsta)&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a href="https://github.com/microsoft/aspire/compare/v13.6.0...v13.6.1"&gt;v13.6.0...v13.6.1&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/3751e615ad660621f2a7aa4c390ef48e08a0eed8"&gt;3751e615ad660621f2a7aa4c390ef48e08a0eed8&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>

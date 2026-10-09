@@ -1,20 +1,190 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-10-08T00:11:26Z</updated>
+  <updated>2026-10-09T00:12:16Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-10-07</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-07</id>
+    <title>aws/aws-sdk-net - Releases - 2026-10-08</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-10-08</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2026-10-09T00:11:48Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.349.0"&gt;4.0.349.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.349.0 (2026-10-08 18:18 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;AWSHealth (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Budgets (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Adds a product attribute dimension to CreateBudget and UpdateBudget, letting customers filter AWS Budgets costs by structured attributes such as Amazon Bedrock model, provider, inference type, and feature.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CloudFormation (4.0.103.0)
+&lt;ul&gt;
+&lt;li&gt;CloudFormation introduces force rollback, a new opt-in capability that lets your stacks complete a rollback even when an individual resource cannot be reverted. Set ForceRollback on ContinueUpdateRollback and CloudFormation records each resource that fails as skipped, completing the rollback.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CodeConnections (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.0. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CostExplorer (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Adds a product attribute dimension to GetCostAndUsage, GetCostAndUsageWithResources, and GetDimensionValues, letting customers group, filter, and discover Cost Explorer costs by structured attributes such as Amazon Bedrock model, provider, inference type, and feature.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DataZone (4.0.109.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for multi-file notebook import. StartNotebookImport now accepts an s3Files source location with an ordered list of Amazon S3 objects, creating one notebook cell per file, plus a type field to create either a DATA or SQL notebook.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DevOpsAgent (4.0.104.0)
+&lt;ul&gt;
+&lt;li&gt;Adds release management associations with private network access to AWS DevOps Agent, and a releaseManagementAssociationId field on GitHub and GitLab associations. This helps release management agents (Release-readiness review and Release Testing) access customer resources that are behind a VPC.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EKS (4.0.107.0)
+&lt;ul&gt;
+&lt;li&gt;Configurations support for EKS ACK Capabilities, including EnableCrossNamespace and DisableServices configuration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EMRServerless (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds support for system profile logs for lakeformation enabled Spark connect sessions .&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;FMS (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GameLift (4.0.103.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon GameLift Servers container fleets now support CPU bursting for game server container groups. The TotalVcpuLimit property of a game server container group definition is now optional. When you omit it, the group has no CPU cap and its containers can burst into unused CPU on the instance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Glue (4.0.113.0)
+&lt;ul&gt;
+&lt;li&gt;Introduced GetSystemLogsForJobRun and GetSystemLogsForSession APIs, enabling account admins to retrieve system-space logs for FGAC-enabled Glue jobs and sessions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GuardDuty (4.0.109.0)
+&lt;ul&gt;
+&lt;li&gt;Added support for GuardDuty RDS Data Activity Monitoring&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Keyspaces (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.0. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Lambda (4.0.109.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Lambda now supports OAuth 2.0 (OAUTHBEARER), IAM, and IAM with OAUTHBEARER authentication for self-managed Apache Kafka event source mappings, including optional OAuth scope, audience, logical cluster, and identity pool parameters. OAuth 2.0 is also available for Confluent Schema Registry.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MarketplaceAgreement (4.0.103.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.0. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaLive (4.0.106.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Elemental MediaLive Workflow Monitor now supports AWS Elemental Inference feeds as a target resource type for CloudWatch alarm templates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;OpenSearchService (4.0.104.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds a new EncryptionMode option (DISK or NATIVE) to EncryptionAtRestOptions for the CreateDomain and UpdateDomainConfig operations, enabling selection of engine-native index-level encryption on supported Amazon OpenSearch Service domains.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PI (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SecurityAgent (4.0.111.0)
+&lt;ul&gt;
+&lt;li&gt;Include model field for suggested remediation steps as part of findings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SecurityHub (4.0.105.0)
+&lt;ul&gt;
+&lt;li&gt;Release findings export APIs - StartExportJobV2, GetExportJobV2, ListExportJobsV2, and CancelExportJobV2. This supports exporting findings from AWS Security Hub to Amazon S3 bucket.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SecurityIR (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for retrieving finding-lifecycle metrics for an AWS Security Incident Response membership.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SimpleEmailV2 (4.0.106.2)
+&lt;ul&gt;
+&lt;li&gt;SESV2 DEED - Documentation Update&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Translate (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.102.9
+&lt;ul&gt;
+&lt;li&gt;Cache derived SigV4 signing keys per secret, region, service and UTC date instead of re-deriving them (4 HMAC-SHA256 operations) on every request.&lt;/li&gt;
+&lt;li&gt;Fixed an issue where a cancelled CancellationToken was ignored while reading the response body, causing async calls to hang indefinitely if the connection stalled after headers were received (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5720887538" data-permission-text="Title is private" data-url="https://github.com/aws/aws-sdk-net/issues/4534" data-hovercard-type="issue" data-hovercard-url="/aws/aws-sdk-net/issues/4534/hovercard" href="https://github.com/aws/aws-sdk-net/issues/4534"&gt;#4534&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Skip telemetry metric bookkeeping (attribute and histogram allocations) when no MeterProvider is registered.&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-10-08</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-08</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-10-08T00:10:54Z</updated>
+    <updated>2026-10-09T00:11:49Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6930099"&gt;Azure.Template_1.0.3-beta.6930099&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Sql_1.2.0-beta.3"&gt;Azure.Provisioning.Sql_1.2.0-beta.3&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.3-beta.6930099 (2026-10-07)&lt;/h2&gt;
+                                &lt;h2&gt;1.2.0-beta.3 (2026-09-28)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version to 2025-08-01-preview.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Sql_1.5.0-beta.1"&gt;Azure.ResourceManager.Sql_1.5.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.5.0-beta.1 (2026-09-23)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version to 2025-08-01-preview.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6934150"&gt;Azure.Template_1.0.3-beta.6934150&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.3-beta.6934150 (2026-10-08)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Added &lt;code&gt;WidgetAnalyticsClientSettings&lt;/code&gt; to support creating a &lt;code&gt;WidgetAnalyticsClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
@@ -23,12 +193,12 @@
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Template_1.0.3-beta.6928792"&gt;Azure.Template_1.0.3-beta.6928792&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Relay_1.4.0-beta.2"&gt;Azure.ResourceManager.Relay_1.4.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.3-beta.6928792 (2026-10-07)&lt;/h2&gt;
+                                &lt;h2&gt;1.4.0-beta.2 (2026-10-10)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;WidgetAnalyticsClientSettings&lt;/code&gt; to support creating a &lt;code&gt;WidgetAnalyticsClient&lt;/code&gt; from &lt;code&gt;IConfiguration&lt;/code&gt;, including configuration-based credential resolution and dependency injection registration.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ClusterArmId&lt;/code&gt; to &lt;code&gt;RelayNamespaceData&lt;/code&gt; and &lt;code&gt;RelayNamespacePatch&lt;/code&gt;, exposing the cluster ARM ID of a namespace as a &lt;code&gt;ResourceIdentifier&lt;/code&gt; in create, read, and update operations.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -37,48 +207,422 @@
             </content>
   </entry>
   <entry>
-    <title>domaindrivendev/Swashbuckle.AspNetCore - Releases - 2026-10-07</title>
-    <id>https://github.com/domaindrivendev/Swashbuckle.AspNetCore#2026-10-07</id>
-    <link href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore" />
-    <updated>2026-10-08T00:10:59Z</updated>
+    <title>dotnet/diagnostics - Releases - 2026-10-08</title>
+    <id>https://github.com/dotnet/diagnostics#2026-10-08</id>
+    <link href="https://github.com/dotnet/diagnostics" />
+    <updated>2026-10-09T00:11:58Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/releases/tag/v10.3.0"&gt;v10.3.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/diagnostics/releases/tag/v10.0.750501"&gt;Diagnostics Release - v10.0.750501&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+                                &lt;h3&gt;dotnet-dump / SOS&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Change nullability handling for schemas with &lt;code&gt;anyOf&lt;/code&gt;, &lt;code&gt;allOf&lt;/code&gt;, &lt;code&gt;oneOf&lt;/code&gt; or &lt;code&gt;type = null&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ldeluigi/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ldeluigi"&gt;@ldeluigi&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4563692221" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/3976" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/3976/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/3976"&gt;#3976&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Handle leading slash on route prefix during index.html GET by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/superstator/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/superstator"&gt;@superstator&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4953140117" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4084" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4084/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4084"&gt;#4084&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Move NRT handling to DataContractResolver by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/desjoerd/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/desjoerd"&gt;@desjoerd&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4660212935" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/3998" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/3998/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/3998"&gt;#3998&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Clarify nullable behaviour by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/martincostello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/martincostello"&gt;@martincostello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5052084976" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4094" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4094/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4094"&gt;#4094&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix review issues for caching and encoding by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/martincostello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/martincostello"&gt;@martincostello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5051685235" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4093" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4093/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4093"&gt;#4093&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Support multiple response types per status code by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/DeagleGross/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/DeagleGross"&gt;@DeagleGross&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5069354554" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4100" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4100/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4100"&gt;#4100&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Add coverage for &lt;code&gt;AddServer&lt;/code&gt; across multiple documents by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/RaphaelFakhri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/RaphaelFakhri"&gt;@RaphaelFakhri&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5182047629" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4115" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4115/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4115"&gt;#4115&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix Swagger sort key fallback for empty endpoint tags metadata by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AleksaMCode/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AleksaMCode"&gt;@AleksaMCode&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5238348974" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4125" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4125/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4125"&gt;#4125&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix parameter matching to consider location when names collide by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/nonsoikem/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/nonsoikem"&gt;@nonsoikem&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5245850533" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4126" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4126/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4126"&gt;#4126&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Emit form encoding for properties of a complex form parameter by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/RaphaelFakhri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/RaphaelFakhri"&gt;@RaphaelFakhri&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5249448396" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4128" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4128/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4128"&gt;#4128&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Keep a property's own summary when comments come from several XML files by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/RaphaelFakhri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/RaphaelFakhri"&gt;@RaphaelFakhri&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5249766422" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4129" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4129/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4129"&gt;#4129&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Strip query string from relative document URLs in Swagger UI by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/GabeSilvaDev/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/GabeSilvaDev"&gt;@GabeSilvaDev&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5427080377" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4152" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4152/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4152"&gt;#4152&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Document that System.Text.Json ignores &lt;code&gt;[EnumMember]&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/RaphaelFakhri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/RaphaelFakhri"&gt;@RaphaelFakhri&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5249328366" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4127" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4127/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4127"&gt;#4127&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Drop the regex route constraint from the default Swagger route by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/RaphaelFakhri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/RaphaelFakhri"&gt;@RaphaelFakhri&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5249858442" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4130" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4130/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4130"&gt;#4130&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Serialize custom values in the UI &lt;code&gt;ConfigObject.AdditionalItems&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/RaphaelFakhri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/RaphaelFakhri"&gt;@RaphaelFakhri&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5249905861" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4132" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4132/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4132"&gt;#4132&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Use Minimal APIs JSON options when MVC is not registered by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/RaphaelFakhri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/RaphaelFakhri"&gt;@RaphaelFakhri&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5182139154" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4116" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4116/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4116"&gt;#4116&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Resolve enum contracts against the underlying type under source generation by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/RaphaelFakhri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/RaphaelFakhri"&gt;@RaphaelFakhri&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5249867666" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4131" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4131/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4131"&gt;#4131&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Improves managed host runtime selection and framework-specific payload handling across supported .NET versions. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5486984845" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/6045" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/6045/hovercard" href="https://github.com/dotnet/diagnostics/pull/6045"&gt;#6045&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;h3&gt;dotnet-gcdump&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ldeluigi/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ldeluigi"&gt;@ldeluigi&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4563692221" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/3976" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/3976/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/3976"&gt;#3976&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/superstator/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/superstator"&gt;@superstator&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4953140117" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4084" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4084/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4084"&gt;#4084&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/desjoerd/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/desjoerd"&gt;@desjoerd&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4660212935" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/3998" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/3998/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/3998"&gt;#3998&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/RaphaelFakhri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/RaphaelFakhri"&gt;@RaphaelFakhri&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5182047629" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4115" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4115/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4115"&gt;#4115&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AleksaMCode/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AleksaMCode"&gt;@AleksaMCode&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5238348974" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4125" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4125/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4125"&gt;#4125&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/nonsoikem/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/nonsoikem"&gt;@nonsoikem&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5245850533" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4126" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4126/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4126"&gt;#4126&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/GabeSilvaDev/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/GabeSilvaDev"&gt;@GabeSilvaDev&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5427080377" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4152" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4152/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4152"&gt;#4152&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JulianThoms/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JulianThoms"&gt;@JulianThoms&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5658128246" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4182" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4182/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4182"&gt;#4182&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Requests non-lossy EventPipe buffering for large-heap collection on .NET 11 and later. Older runtimes retain the existing buffering mode with a warning that events may be lost. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4686917980" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5886" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5886/hovercard" href="https://github.com/dotnet/diagnostics/pull/5886"&gt;#5886&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Reports failure rather than success when heap graph conversion or collection logging fails. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5506012611" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/6051" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/6051/hovercard" href="https://github.com/dotnet/diagnostics/pull/6051"&gt;#6051&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/compare/v10.2.3...v10.3.0"&gt;&lt;tt&gt;v10.2.3...v10.3.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;dotnet-trace&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Adds collect --buffering-mode Drop|Block. Drop remains the default; Block requests non-lossy buffering and requires runtime support. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4686917980" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5886" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5886/hovercard" href="https://github.com/dotnet/diagnostics/pull/5886"&gt;#5886&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Adds collect-linux --max-memory  to stop collection when the collecting process reaches the specified memory limit. No limit is applied by default. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5616339517" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/6071" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/6071/hovercard" href="https://github.com/dotnet/diagnostics/pull/6071"&gt;#6071&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Removes the preview banner from collect-linux output. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5206587437" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5970" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5970/hovercard" href="https://github.com/dotnet/diagnostics/pull/5970"&gt;#5970&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Microsoft.Diagnostics.NETCore.Client&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Makes Linux process discovery more resilient by skipping unavailable /proc entries instead of aborting when processes exit or entries cannot be read. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4752753419" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5904" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5904/hovercard" href="https://github.com/dotnet/diagnostics/pull/5904"&gt;#5904&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;details&gt;
+&lt;summary&gt;Packages released to NuGet&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;dotnet-counters.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dotnet-dsrouter.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dotnet-dump.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dotnet-gcdump.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dotnet-sos.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dotnet-stack.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dotnet-symbol.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dotnet-trace.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.linux-arm.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.linux-arm64.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.linux-musl-arm.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.linux-musl-arm64.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.linux-musl-x64.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.linux-x64.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.osx-arm64.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.osx-x64.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.win-arm64.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.win-x64.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DbgShim.win-x86.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.NETCore.Client.0.2.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DebugServices.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.DebugServices.Implementation.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.ExtensionCommands.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.Monitoring.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.Monitoring.EventPipe.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.ReleaseTool.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.Repl.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.TestHelpers.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.Diagnostics.WebSocketServer.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.FileFormats.1.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.NETCore.SOS.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.NETCore.SOS.Symbols.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.SymbolManifestGenerator.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Microsoft.SymbolStore.1.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SOS.Hosting.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SOS.InstallHelper.10.0.750501.nupkg&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;details&gt;
+&lt;summary&gt;Global Tools - Single File Links&lt;/summary&gt;
+&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: All Windows assets are signed with a trusted Microsoft Authenticode Certificate. To verify&lt;br&gt;
+integrity for Linux and macOS assets check the CSV in the assets section of the release for their SHA512 hashes.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="center"&gt;Tool&lt;/th&gt;
+&lt;th align="center"&gt;Platform&lt;/th&gt;
+&lt;th align="center"&gt;Download Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-counters&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/87CBCC9CEDE30EDEDA27A1201349C6819FCD58A8F930D939BA59AAC7463B9BE5/dotnet-counters" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-dump&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/465B1E8691CD3D557D921BD4ABE3E54B25DE0DE339025DFEC9623EEE5FAE779A/dotnet-dump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-gcdump&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/ED1880E47584BFD309872141AC864F325844B08321CADCBEC631D2C58B0D3DED/dotnet-gcdump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-sos&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/D03173C6AD0F1965F8E6202809373AC669EE8721D417FA933FE98A7DECDC824E/dotnet-sos" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-stack&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/EDE8A9E2BF7911B14EB686E1C6033D1810295605EB8A02A0453B49E2679DC0E3/dotnet-stack" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-symbol&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/7759D4CC2B1F1087FB512D381A11D4F2677B4EDFA889EFECE5C78EFD0CA1EDF6/dotnet-symbol" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-trace&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/958D2EBEC702174CA94829D60D1562817301B6676CDCCADEA0041CDE068FF0F1/dotnet-trace" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-counters&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/58E390A7B28187B9FFFBE222D6264D1F2D085D56DCB49C5F1C75F73CCCF98BB0/dotnet-counters" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-dump&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/DED4BA55D112C1AC63984B2179A93E1CA9EC415E60E2255E8D4990036C0E3F81/dotnet-dump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-gcdump&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/A60C953B335054EAFB0D3AC82C2EE97D37474C696EB2B021518CE66BF659A484/dotnet-gcdump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-sos&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/21A91EE2AE7AC7DAB168DE1C6A22442F27776914564D2D5B7668AE7B49AEEC6D/dotnet-sos" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-stack&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/80C00246F31237DA0B80D0A32EFF6ED79861B072A9D757AAA050FDC2DA4DDABF/dotnet-stack" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-symbol&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/48598F8AFF66968ABF4DA54732DD33FEE0A0B1059FB648D429E2BC940267D1EE/dotnet-symbol" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-trace&lt;/td&gt;
+&lt;td align="center"&gt;linux-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/4362A506A076616A1D9C05804B4DFC3646B5D57A9518204F1C5CC03238BB41D8/dotnet-trace" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-counters&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/51E78D990254F2EB4BF5844325DE24D41677E9F10A55A1325A88FCE8F6DC8794/dotnet-counters" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-dump&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/AD9CBFBF3A4772436839E6948AAB314CDD632C2C4D8C4FA878CD34237B0E85E9/dotnet-dump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-gcdump&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/176DF9B10B5749B1A72A3559EF6D0D2334BDE5E7F32D379252D86A1D2D85A97F/dotnet-gcdump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-sos&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/BBED288EE249211A23C983325E394CAC2D1B3C9579B7FF05E98165C55A429F5D/dotnet-sos" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-stack&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/65CF5C099C6BCF3007F50C140F99B734A3400D796877518312E606A74B0F58E5/dotnet-stack" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-symbol&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/220A68935931AD46C9C925A772943CCAC2282B0587002D5D80D61E3638F9B548/dotnet-symbol" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-trace&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/3788382A917609B407C28B15B9D99DD40852833531DC35E3428EC8ECF052EB61/dotnet-trace" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-counters&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/CCFF99D251F92203C41ACBD08112240BD9FF1DA4C354D2632CBA6D40F55617E5/dotnet-counters" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-dump&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/D3466A5CDA27346FE92A846BE5734643C32DD2C620B20293B9A5E4728CC8865E/dotnet-dump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-gcdump&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/4E3CBCF7D93393ADC27E67B966728BE2C44E2B39895C94A2840E0E7818F3B959/dotnet-gcdump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-sos&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/0A8FEC8A48F3468E462FB9598FE4E53284B779CFB636243E1ED439F23D82FB7D/dotnet-sos" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-stack&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/C319D9DDB067401027AD1BCB23BA0FAFFB46B4DB8DEB834A66469F52551DA2C8/dotnet-stack" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-symbol&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/2DF6D2CB6D08EF975361C73F4B870FCB82C2D7B20CF56BD186FDFDBA31E809D6/dotnet-symbol" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-trace&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/E644492543E2B6887AD6361DB544E610D34313297DB9A515A0313D18435B165D/dotnet-trace" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-counters&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/3BD09685234DBAADC0371BE0B424CCBF47878735CCF47525EB207992F82BEF99/dotnet-counters" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-dump&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/6F48DE50F1DC9BD8A6AAF5353177A8BCBA84770294496966E34BC41D93C55C9F/dotnet-dump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-gcdump&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/3CD563AF8EDECF3BEA323DD6D001B3B40547A82AC3A2833662C89051242F013D/dotnet-gcdump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-sos&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/7AE0F1F9825D4B63507CBFDEF4BCDBA62D10DE0794F7C9BA6F93CCD455358026/dotnet-sos" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-stack&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/A669D2802D2524AEA7CFC736ECA43C3C08FD75D4304F31894FD046FD72391A0B/dotnet-stack" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-symbol&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/14F892A651E810552D456B4A1EEAD0D5650DC9D92B2F113A6412CDF2DC1D4C2F/dotnet-symbol" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-trace&lt;/td&gt;
+&lt;td align="center"&gt;linux-musl-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/A88783DC0EE9DCD82E2E3492FBB9CAD28BA8F6D6B7F337AA970C3D1344CBC676/dotnet-trace" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-counters&lt;/td&gt;
+&lt;td align="center"&gt;linux-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/E71238BF2ACD521D7A16828A648B3A182100B5E4942BFE7332EFFE86AD459EE8/dotnet-counters" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-dump&lt;/td&gt;
+&lt;td align="center"&gt;linux-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/390423FFAC2E83313BCA324D67EE598D74E62E1592026CA511CDE24F1ADD5330/dotnet-dump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-gcdump&lt;/td&gt;
+&lt;td align="center"&gt;linux-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/DC08BD07E116A29B73555284D00C9E8C42AFBFA37A37E3795D6BC8F6FEEDE15B/dotnet-gcdump" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-sos&lt;/td&gt;
+&lt;td align="center"&gt;linux-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/2BCF2326CF8EA7BA504CD6888A149F99DFC0D636BF2EF2830FC460ECE1EC4259/dotnet-sos" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-stack&lt;/td&gt;
+&lt;td align="center"&gt;linux-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/A38864F56554FBBDB44E4B9DFD332F216486D53D756877B679FCF2833C40032A/dotnet-stack" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-symbol&lt;/td&gt;
+&lt;td align="center"&gt;linux-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/498FB8E8AFF023235F40EC5B668D834FA10D3C4555FDAA84C9F09B614B50C665/dotnet-symbol" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-trace&lt;/td&gt;
+&lt;td align="center"&gt;linux-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/2243FF7AD095CE742D70C2276FF3317E2C9CC3E881FF171D0D89C2FBA8B76ABB/dotnet-trace" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-counters&lt;/td&gt;
+&lt;td align="center"&gt;win-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/FE5D73677EE8EAD4C6C453ADE0E0469BC104ECE4FE3C2776366ECB3DCBA23E0F/dotnet-counters.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-dump&lt;/td&gt;
+&lt;td align="center"&gt;win-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/45769EEEC4C93E523EAA291C358CD16CDC0039577EB865F1CB22135F25E335CC/dotnet-dump.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-gcdump&lt;/td&gt;
+&lt;td align="center"&gt;win-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/58250DE00438400C97B014D8166DC9051163954AF0A1367955F4DC9A76897F93/dotnet-gcdump.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-sos&lt;/td&gt;
+&lt;td align="center"&gt;win-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/53A6DD7E9CAE39ABC20848D2C8F8C5267A367F6DD1D09120FF8D0AC0F565051D/dotnet-sos.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-stack&lt;/td&gt;
+&lt;td align="center"&gt;win-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/2ECBA00786ED414C41FAA4AF2C43D126F6D8346A4C7C9AFD4B946C69501A2818/dotnet-stack.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-symbol&lt;/td&gt;
+&lt;td align="center"&gt;win-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/2274985FEFA2187C0CE79A73F174FA42179150000274554A127BAF261B72D384/dotnet-symbol.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-trace&lt;/td&gt;
+&lt;td align="center"&gt;win-arm64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/463C4CAAB8614A66073D2321F24E312B42B5ABC53769BC744C4A61C1DA6AF71B/dotnet-trace.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-counters&lt;/td&gt;
+&lt;td align="center"&gt;win-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/0BB42DC227237CE2B5F4B1A5E76494F1CE9FA30E32B5FAE72ADA2F2C5D261DFE/dotnet-counters.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-dump&lt;/td&gt;
+&lt;td align="center"&gt;win-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/FF10121EF04826883B1CB991A8FC9E547B55E37AE07B7948DDE64881F34A31DC/dotnet-dump.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-gcdump&lt;/td&gt;
+&lt;td align="center"&gt;win-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/BB6C9D63477CAD33110C3C8800E1DE2D1475E84E52E8D7F6D4F8708B2A1CE51F/dotnet-gcdump.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-sos&lt;/td&gt;
+&lt;td align="center"&gt;win-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/959CD6F64BA8E0D7C11E6ED82AF3167A989B553D8A3CA67D7AA53BE73F1937DD/dotnet-sos.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-stack&lt;/td&gt;
+&lt;td align="center"&gt;win-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/89BA87BAA9BA908A911F0D34EC9FB1B238438935EB34580D01438263515D3F90/dotnet-stack.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-symbol&lt;/td&gt;
+&lt;td align="center"&gt;win-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/F0229DB6BC0B7537572DC1E46B398C01322E426592C13BDFFAEDA6DB2979A1EE/dotnet-symbol.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-trace&lt;/td&gt;
+&lt;td align="center"&gt;win-x64&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/292221861D5B3052E819B715947662E179183E6570F757C79AAE43F31641FF47/dotnet-trace.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-counters&lt;/td&gt;
+&lt;td align="center"&gt;win-x86&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/76B450D73C1D1EF8769BF514A8DA9387AF77F58AF892C0D541D31CF8A949579F/dotnet-counters.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-dump&lt;/td&gt;
+&lt;td align="center"&gt;win-x86&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/ED254523DC4622A57559A35A63AAF244959B6A3A638DE5D770C93C3959F9F2B0/dotnet-dump.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-gcdump&lt;/td&gt;
+&lt;td align="center"&gt;win-x86&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/3939A966FB03F76D0652668164D08B2DAA3A9C929DB2461CB331FD90DC15E35A/dotnet-gcdump.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-sos&lt;/td&gt;
+&lt;td align="center"&gt;win-x86&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/CF519C33BF5988C2D19BCB0D4C501EB2A25F239EAFB100CBD407B87B1B502099/dotnet-sos.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-stack&lt;/td&gt;
+&lt;td align="center"&gt;win-x86&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/34C306C3FEAAFD977F285AF19D14FB8C3288827AEC3528ED499C402F108A7D46/dotnet-stack.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-symbol&lt;/td&gt;
+&lt;td align="center"&gt;win-x86&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/1BEAF72491F4166E88BC12EDD4C0473D86DE60F2363995B5888F52B13C9E4898/dotnet-symbol.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;dotnet-trace&lt;/td&gt;
+&lt;td align="center"&gt;win-x86&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://download.visualstudio.microsoft.com/download/pr/dotnet-diagnostics_20261005.1/2824D0D2A8C68E66146B93D8950FD490F8B2BE58978F72BA24F06852597B9A13/dotnet-trace.exe" rel="nofollow"&gt;Download&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/details&gt;
+&lt;h2&gt;Changes:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/ad724c4b85e7ae775e42f393c6e95a7557a57954/hovercard" href="https://github.com/dotnet/diagnostics/commit/ad724c4b85e7ae775e42f393c6e95a7557a57954"&gt;&lt;tt&gt;ad724c4&lt;/tt&gt;&lt;/a&gt; Merged PR 65925: [internal/release/stable] Update dependencies from dnceng/internal/microsoft-clrmd&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/d24af9f494755d8ab4e492eea4ed4393fbed8b31/hovercard" href="https://github.com/dotnet/diagnostics/commit/d24af9f494755d8ab4e492eea4ed4393fbed8b31"&gt;&lt;tt&gt;d24af9f&lt;/tt&gt;&lt;/a&gt; [release/stable] Backport process discovery, gcdump, and trace updates (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5638455476" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/6078" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/6078/hovercard" href="https://github.com/dotnet/diagnostics/pull/6078"&gt;#6078&lt;/a&gt;) [ &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5477577627" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/6040" data-hovercard-type="issue" data-hovercard-url="/dotnet/diagnostics/issues/6040/hovercard" href="https://github.com/dotnet/diagnostics/issues/6040"&gt;#6040&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4686917980" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5886" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5886/hovercard" href="https://github.com/dotnet/diagnostics/pull/5886"&gt;#5886&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5506012611" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/6051" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/6051/hovercard" href="https://github.com/dotnet/diagnostics/pull/6051"&gt;#6051&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5206587437" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5970" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5970/hovercard" href="https://github.com/dotnet/diagnostics/pull/5970"&gt;#5970&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5616339517" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/6071" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/6071/hovercard" href="https://github.com/dotnet/diagnostics/pull/6071"&gt;#6071&lt;/a&gt; ]&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/69341b632018d012b96847a0e8b1fb31a1e0419e/hovercard" href="https://github.com/dotnet/diagnostics/commit/69341b632018d012b96847a0e8b1fb31a1e0419e"&gt;&lt;tt&gt;69341b6&lt;/tt&gt;&lt;/a&gt; Bump record-trace package, and add max-memory option to collect-linux (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5616339517" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/6071" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/6071/hovercard" href="https://github.com/dotnet/diagnostics/pull/6071"&gt;#6071&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/e147272813765bcc07004c81703fe193a5f16b11/hovercard" href="https://github.com/dotnet/diagnostics/commit/e147272813765bcc07004c81703fe193a5f16b11"&gt;&lt;tt&gt;e147272&lt;/tt&gt;&lt;/a&gt; [dotnet-trace] Remove preview banner from collect-linux (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5206587437" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5970" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5970/hovercard" href="https://github.com/dotnet/diagnostics/pull/5970"&gt;#5970&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/ef62f35ea1f07293f9b35ac6a7d6ff75a11cee08/hovercard" href="https://github.com/dotnet/diagnostics/commit/ef62f35ea1f07293f9b35ac6a7d6ff75a11cee08"&gt;&lt;tt&gt;ef62f35&lt;/tt&gt;&lt;/a&gt; Fix gcdump false success after collection errors (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5506012611" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/6051" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/6051/hovercard" href="https://github.com/dotnet/diagnostics/pull/6051"&gt;#6051&lt;/a&gt;) [ &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5500429670" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/6048" data-hovercard-type="issue" data-hovercard-url="/dotnet/diagnostics/issues/6048/hovercard" href="https://github.com/dotnet/diagnostics/issues/6048"&gt;#6048&lt;/a&gt; ]&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/df8606adaabb614cc83674053a708e76258c1fe2/hovercard" href="https://github.com/dotnet/diagnostics/commit/df8606adaabb614cc83674053a708e76258c1fe2"&gt;&lt;tt&gt;df8606a&lt;/tt&gt;&lt;/a&gt; [IPC Protocol][dotnet-gcdump] Add non-lossy dotnet-gcdump mode (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4686917980" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5886" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5886/hovercard" href="https://github.com/dotnet/diagnostics/pull/5886"&gt;#5886&lt;/a&gt;) [ &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="933837293" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/2404" data-hovercard-type="issue" data-hovercard-url="/dotnet/diagnostics/issues/2404/hovercard" href="https://github.com/dotnet/diagnostics/issues/2404"&gt;#2404&lt;/a&gt; ]&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/a9311078f337e65777d297715cbc4aa660e97871/hovercard" href="https://github.com/dotnet/diagnostics/commit/a9311078f337e65777d297715cbc4aa660e97871"&gt;&lt;tt&gt;a931107&lt;/tt&gt;&lt;/a&gt; [DiagnosticsClient] Tolerate IOException when reading /proc during process discovery (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4752753419" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5904" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5904/hovercard" href="https://github.com/dotnet/diagnostics/pull/5904"&gt;#5904&lt;/a&gt;) [ &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4752439305" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5903" data-hovercard-type="issue" data-hovercard-url="/dotnet/diagnostics/issues/5903/hovercard" href="https://github.com/dotnet/diagnostics/issues/5903"&gt;#5903&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3970531354" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5735" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5735/hovercard" href="https://github.com/dotnet/diagnostics/pull/5735"&gt;#5735&lt;/a&gt; ]&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/a8e8b10f5f05acc3acad76a4fa5db0e1ebbb341c/hovercard" href="https://github.com/dotnet/diagnostics/commit/a8e8b10f5f05acc3acad76a4fa5db0e1ebbb341c"&gt;&lt;tt&gt;a8e8b10&lt;/tt&gt;&lt;/a&gt; [release/stable] Port SOS payload split and host runtime selection (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5486984845" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/6045" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/6045/hovercard" href="https://github.com/dotnet/diagnostics/pull/6045"&gt;#6045&lt;/a&gt;) [ &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5460182439" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/6033" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/6033/hovercard" href="https://github.com/dotnet/diagnostics/pull/6033"&gt;#6033&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5480890855" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/6043" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/6043/hovercard" href="https://github.com/dotnet/diagnostics/pull/6043"&gt;#6043&lt;/a&gt; ]&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/47a46c06402a5fe3a82215a70f2be2571359115c/hovercard" href="https://github.com/dotnet/diagnostics/commit/47a46c06402a5fe3a82215a70f2be2571359115c"&gt;&lt;tt&gt;47a46c0&lt;/tt&gt;&lt;/a&gt; Port SOS payload split to stable&lt;/li&gt;
+&lt;li&gt;&lt;a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/dotnet/diagnostics/commit/0b979265e4fe5646458db605db02845c5719f742/hovercard" href="https://github.com/dotnet/diagnostics/commit/0b979265e4fe5646458db605db02845c5719f742"&gt;&lt;tt&gt;0b97926&lt;/tt&gt;&lt;/a&gt; Merge alternate release changes (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5417156192" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/6024" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/6024/hovercard" href="https://github.com/dotnet/diagnostics/pull/6024"&gt;#6024&lt;/a&gt;) [ &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5305723336" data-permission-text="Title is private" data-url="https://github.com/dotnet/diagnostics/issues/5988" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/diagnostics/pull/5988/hovercard" href="https://github.com/dotnet/diagnostics/pull/5988"&gt;#5988&lt;/a&gt; ]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This list of changes was &lt;a href="https://dev.azure.com/dnceng/internal/_build/results?buildId=3097612&amp;amp;view=logs" rel="nofollow"&gt;auto generated&lt;/a&gt;.&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
@@ -86,72 +630,41 @@
             </content>
   </entry>
   <entry>
-    <title>dotnet/aspire - Releases - 2026-10-07</title>
-    <id>https://github.com/dotnet/aspire#2026-10-07</id>
-    <link href="https://github.com/dotnet/aspire" />
-    <updated>2026-10-08T00:11:00Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.6.1"&gt;Aspire 13.6.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;What's New in Aspire 13.6.1&lt;/h2&gt;
-&lt;p&gt;Patch release for Aspire 13.6 that reduces dashboard CPU usage during sustained metric ingestion, restores scrolling in the Metrics tree, improves dashboard navigation, fixes container exec watch failures, and ensures session-scoped containers are cleaned up when stopping .NET AppHosts on Windows.&lt;/p&gt;
-&lt;h3&gt;🐛 Fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;📊 &lt;strong&gt;Dashboard CPU usage could increase during long-running metric ingestion&lt;/strong&gt; — Metric retention repeatedly scanned retained history on every insertion, causing steadily increasing CPU usage even with a fixed workload. Cleanup now skips dimensions below capacity and removes only the oldest surplus points when needed. Existing retention limits and exemplar behavior are unchanged, and no configuration changes are required. Regression introduced in 13.6. Fixes &lt;a href="https://github.com/microsoft/aspire/issues/20725" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/20725/hovercard"&gt;#20725&lt;/a&gt;. (&lt;a href="https://github.com/microsoft/aspire/pull/20747" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20747/hovercard"&gt;#20747&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20736" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20736/hovercard"&gt;#20736&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;James Newton-King (@JamesNK)&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;📈 &lt;strong&gt;The Metrics tree could not be scrolled&lt;/strong&gt; — The meter and instrument tree now scrolls when it exceeds the viewport, allowing you to reach and select instruments below the fold. Regression introduced in 13.6. Fixes &lt;a href="https://github.com/microsoft/aspire/issues/20728" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/20728/hovercard"&gt;#20728&lt;/a&gt;. (&lt;a href="https://github.com/microsoft/aspire/pull/20762" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20762/hovercard"&gt;#20762&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20758" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20758/hovercard"&gt;#20758&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/heyysiri/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/heyysiri"&gt;Siri (@heyysiri)&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;🧭 &lt;strong&gt;Dashboard navigation could fail after a browser disconnect&lt;/strong&gt; — Pending page-state updates now persist session state before navigating and skip navigation when the browser has disconnected, avoiding an unhandled navigation failure. The navigation rail's overflow button also has consistent sizing, icon alignment, and hover styling in expanded and collapsed layouts and both light and dark themes. (&lt;a href="https://github.com/microsoft/aspire/pull/20545" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20545/hovercard"&gt;#20545&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20527" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20527/hovercard"&gt;#20527&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;James Newton-King (@JamesNK)&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;🖥️ &lt;strong&gt;Container exec watches could terminate shortly after AppHost startup&lt;/strong&gt; — A stalled DCP watch connection could produce a critical &lt;code&gt;Watch task over Kubernetes ContainerExec resources terminated unexpectedly&lt;/code&gt; error and stop subsequent terminal state and log updates from being observed. Watch connection attempts now retry after timeouts, and periodic restarts correctly recreate connections without swallowing unrelated cancellation. Regression introduced in 13.6.0. (&lt;a href="https://github.com/microsoft/aspire/pull/20664" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20664/hovercard"&gt;#20664&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20466" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20466/hovercard"&gt;#20466&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/radical/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/radical"&gt;Ankit Jain (@radical)&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;🪟 &lt;strong&gt;Session-scoped containers could remain running after stopping a .NET AppHost on Windows&lt;/strong&gt; — AppHosts launched through &lt;code&gt;dotnet run&lt;/code&gt; or &lt;code&gt;dotnet watch&lt;/code&gt; now allow DCP to finish resource cleanup during shutdown, including existing Ctrl+C and &lt;code&gt;aspire stop&lt;/code&gt; flows. Persistent resources remain unaffected, while direct .NET launches and TypeScript/polyglot AppHosts retain their existing process protection. Fixes &lt;a href="https://github.com/microsoft/aspire/issues/20495" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/20495/hovercard"&gt;#20495&lt;/a&gt;. (&lt;a href="https://github.com/microsoft/aspire/pull/20514" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20514/hovercard"&gt;#20514&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20494" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20494/hovercard"&gt;#20494&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/danegsta/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/danegsta"&gt;David Negstad (@danegsta)&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a href="https://github.com/microsoft/aspire/compare/v13.6.0...v13.6.1"&gt;v13.6.0...v13.6.1&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/3751e615ad660621f2a7aa4c390ef48e08a0eed8"&gt;3751e615ad660621f2a7aa4c390ef48e08a0eed8&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>microsoft/CsWin32 - Releases - 2026-10-07</title>
-    <id>https://github.com/microsoft/CsWin32#2026-10-07</id>
+    <title>microsoft/CsWin32 - Releases - 2026-10-08</title>
+    <id>https://github.com/microsoft/CsWin32#2026-10-08</id>
     <link href="https://github.com/microsoft/CsWin32" />
-    <updated>2026-10-08T00:11:17Z</updated>
+    <updated>2026-10-09T00:12:08Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/CsWin32/releases/tag/v0.3.355"&gt;v0.3.355&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/CsWin32/releases/tag/v0.3.358"&gt;v0.3.358&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;h2&gt;Changes:&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5723217941" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1838" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1838/hovercard" href="https://github.com/microsoft/CsWin32/pull/1838"&gt;#1838&lt;/a&gt;: Update Win32 metadata to 71.0.28-preview&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5750161172" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1843" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1843/hovercard" href="https://github.com/microsoft/CsWin32/pull/1843"&gt;#1843&lt;/a&gt;: Use published Win32 metadata for interior-pointer tests&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5736061133" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1840" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1840/hovercard" href="https://github.com/microsoft/CsWin32/pull/1840"&gt;#1840&lt;/a&gt;: Keep buffers containing interior pointers as native pointers&lt;/li&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5411895798" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1820" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1820/hovercard" href="https://github.com/microsoft/CsWin32/pull/1820"&gt;#1820&lt;/a&gt;: Exclude Foundation.Metadata from direct API generation&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;This list of changes was &lt;a href="https://devdiv.visualstudio.com/DevDiv/_build/results?buildId=15590335&amp;amp;view=logs" rel="nofollow"&gt;auto generated&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This list of changes was &lt;a href="https://devdiv.visualstudio.com/DevDiv/_build/results?buildId=15604398&amp;amp;view=logs" rel="nofollow"&gt;auto generated&lt;/a&gt;.&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>StackExchange/StackExchange.Redis - Releases - 2026-10-08</title>
+    <id>https://github.com/StackExchange/StackExchange.Redis#2026-10-08</id>
+    <link href="https://github.com/StackExchange/StackExchange.Redis" />
+    <updated>2026-10-09T00:12:14Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/CsWin32/releases/tag/v0.3.347"&gt;v0.3.347&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/4.0.69-alpha"&gt;4.0.69-alpha&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;Changes:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5416912232" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1821" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1821/hovercard" href="https://github.com/microsoft/CsWin32/pull/1821"&gt;#1821&lt;/a&gt;: Honor configured visibility for IVTable&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This list of changes was &lt;a href="https://devdiv.visualstudio.com/DevDiv/_build/results?buildId=15574118&amp;amp;view=logs" rel="nofollow"&gt;auto generated&lt;/a&gt;.&lt;/p&gt;
+                                &lt;p&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/pull/3262" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3262/hovercard"&gt;v4 alpha build&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
