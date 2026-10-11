@@ -1,131 +1,89 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-10-10T00:11:05Z</updated>
+  <updated>2026-10-11T00:12:35Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-10-09</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-09</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-10-10</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-10</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-10-10T00:11:05Z</updated>
+    <updated>2026-10-11T00:12:35Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.Storage_5.3.10"&gt;Microsoft.Azure.WebJobs.Extensions.Storage_5.3.10&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;5.3.10 (2026-10-09)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;p&gt;Please refer to &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs/CHANGELOG.md"&gt;&lt;code&gt;Microsoft.Azure.WebJobs.Extension.Storage.Blobs&lt;/code&gt;&lt;/a&gt; and &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage.Queues/CHANGELOG.md"&gt;&lt;code&gt;Microsoft.Azure.WebJobs.Extension.Storage.Queues&lt;/code&gt;&lt;/a&gt; for detailed list of changes.&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.Storage.Queues_5.3.10"&gt;Microsoft.Azure.WebJobs.Extensions.Storage.Queues_5.3.10&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;5.3.10 (2026-10-09)&lt;/h2&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;This release contains bug fixes to improve quality.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs_5.3.10"&gt;Microsoft.Azure.WebJobs.Extensions.Storage.Blobs_5.3.10&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;5.3.10 (2026-10-09)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed a regression from 5.3.8 where a complete (single-page) container scan could skip blobs whose &lt;code&gt;LastModified&lt;/code&gt; was after &lt;code&gt;PollingStartTime&lt;/code&gt;, then advance the stored scan watermark past those blobs so listing never notified them (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5387038430" data-permission-text="Title is private" data-url="https://github.com/Azure/azure-sdk-for-net/issues/62763" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/62763/hovercard" href="https://github.com/Azure/azure-sdk-for-net/issues/62763"&gt;#62763&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Fixed container scan not starting a new cycle when the listing API returns an empty continuation marker instead of null, which left &lt;code&gt;PollingStartTime&lt;/code&gt; stuck and hid blobs uploaded after the first sweep (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5051474053" data-permission-text="Title is private" data-url="https://github.com/Azure/azure-sdk-for-net/issues/61660" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/61660/hovercard" href="https://github.com/Azure/azure-sdk-for-net/issues/61660"&gt;#61660&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetworkCloud_1.4.0"&gt;Azure.ResourceManager.NetworkCloud_1.4.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.OperationalInsights_1.4.0"&gt;Azure.ResourceManager.OperationalInsights_1.4.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;h2&gt;1.4.0 (2026-10-08)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;AdministrativeCredentialsPatch&lt;/code&gt;, &lt;code&gt;BareMetalMachineConfigurationPatch&lt;/code&gt;, &lt;code&gt;ClusterSecretArchivePatch&lt;/code&gt;, &lt;code&gt;ClusterUpdateStrategyPatch&lt;/code&gt;, &lt;code&gt;ImageRepositoryCredentialsPatch&lt;/code&gt;, &lt;code&gt;NetworkCloudRackDefinitionPatch&lt;/code&gt;, &lt;code&gt;NetworkCloudSshPublicKeyPatch&lt;/code&gt;, &lt;code&gt;RuntimeProtectionConfigurationPatch&lt;/code&gt;, &lt;code&gt;ServicePrincipalInformationPatch&lt;/code&gt;, &lt;code&gt;StorageApplianceConfigurationPatch&lt;/code&gt;, and &lt;code&gt;ValidationThresholdPatch&lt;/code&gt; models to align the update/patch payloads with their corresponding patch semantics.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Cdn_1.0.0-beta.4"&gt;Azure.Provisioning.Cdn_1.0.0-beta.4&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.4 (2026-10-09)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Restored the beta.2 resource name requirements lost during the TypeSpec&lt;br&gt;
-migration for &lt;code&gt;FrontDoorEndpoint&lt;/code&gt;, &lt;code&gt;FrontDoorOriginGroup&lt;/code&gt;, &lt;code&gt;FrontDoorOrigin&lt;/code&gt;,&lt;br&gt;
-and &lt;code&gt;FrontDoorRoute&lt;/code&gt;. Generated names again allow uppercase letters, numbers,&lt;br&gt;
-and hyphens, with maximum lengths of 46 for endpoints and 90 for origin&lt;br&gt;
-groups, origins, and routes instead of the beta.3 inherited 24-character&lt;br&gt;
-lowercase defaults. Generated resource names may therefore differ when&lt;br&gt;
-upgrading from beta.3.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Fabric_1.0.0-beta.1"&gt;Azure.Provisioning.Fabric_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-10-09)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Initial preview of &lt;code&gt;Azure.Provisioning.Fabric&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.VerifiedId_1.0.0-beta.1"&gt;Azure.Provisioning.VerifiedId_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-10-09)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Initial beta release of Azure.Provisioning.VerifiedId.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NapsterOmniagentApi_1.0.0"&gt;Azure.ResourceManager.NapsterOmniagentApi_1.0.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0 (2026-09-23)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded to API version 2026-08-11.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerService_1.8.0"&gt;Azure.ResourceManager.ContainerService_1.8.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.8.0 (2026-10-08)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version to 2026-07-01.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CosmosDB_1.6.0-beta.1"&gt;Azure.ResourceManager.CosmosDB_1.6.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.6.0-beta.1 (2026-09-22)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded API version to 2026-04-01-preview.&lt;/li&gt;
+&lt;li&gt;Upgraded the API version to 2026-03-01.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded dependent Azure.Core to 1.62.0.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Upgraded dependent Azure.Core to 1.62.0.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Corrected the names of Summary Logs enum types. The previous names remain available as obsolete compatibility APIs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.TrafficManager_1.2.0"&gt;Azure.ResourceManager.TrafficManager_1.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0 (2026-10-08)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for the stable Traffic Manager service API version &lt;code&gt;2026-09-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added endpoint-specific resource and collection APIs for Azure, External, and Nested Traffic Manager endpoints.&lt;/li&gt;
+&lt;li&gt;Added support for ahead-of-time (AOT) compilation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Deprecated the generic &lt;code&gt;TrafficManagerEndpointResource&lt;/code&gt; and &lt;code&gt;TrafficManagerEndpointCollection&lt;/code&gt; APIs. Use the endpoint-specific APIs instead.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.AppNetwork_1.0.0-beta.1"&gt;Azure.Provisioning.AppNetwork_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-10-09)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial beta release of Azure.Provisioning.AppNetwork.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.AppNetwork_1.0.0-beta.2"&gt;Azure.ResourceManager.AppNetwork_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.2 (2026-10-05)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated to support API version &lt;code&gt;2026-08-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added the &lt;code&gt;Network&lt;/code&gt; property to &lt;code&gt;AppLinkConnectivityProfile&lt;/code&gt; and support for updating connectivity settings with &lt;code&gt;AppLinkConnectivityProfilePatch&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added support for updating managed identities through &lt;code&gt;AppLinkPatch.Identity&lt;/code&gt; and &lt;code&gt;AppNetworkManagedServiceIdentityPatch&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Changed &lt;code&gt;AppLinkMemberUpdateProperties.ConnectivityProfile&lt;/code&gt; from &lt;code&gt;AppLinkConnectivityProfile&lt;/code&gt; to &lt;code&gt;AppLinkConnectivityProfilePatch&lt;/code&gt;, and &lt;code&gt;UpgradeProfile&lt;/code&gt; from &lt;code&gt;AppLinkUpgradeProfile&lt;/code&gt; to &lt;code&gt;AppLinkMemberUpgradeProfilePatch&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;AppLinkMemberUpdateProperties.ObservabilityMetricsEndpoint&lt;/code&gt; and updated the corresponding &lt;code&gt;ArmAppNetworkModelFactory&lt;/code&gt; methods to match the new models.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.CertificateRegistration_1.0.0-beta.1"&gt;Azure.Provisioning.CertificateRegistration_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-10-08)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial preview of &lt;code&gt;Azure.Provisioning.CertificateRegistration&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
