@@ -1,26 +1,32 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/roslyn - Issues &amp; Pull Requests</title>
   <link href="https://github.com/dotnet/roslyn" />
-  <updated>2026-10-11T00:12:18Z</updated>
+  <updated>2026-10-12T00:12:18Z</updated>
   <id>https://github.com/dotnet/roslyn</id>
   <entry>
-    <title>dotnet/roslyn - Issues &amp; Pull Requests - 2026-10-10</title>
-    <id>https://github.com/dotnet/roslyn#2026-10-10</id>
+    <title>dotnet/roslyn - Issues &amp; Pull Requests - 2026-10-11</title>
+    <id>https://github.com/dotnet/roslyn#2026-10-11</id>
     <link href="https://github.com/dotnet/roslyn" />
-    <updated>2026-10-11T00:12:18Z</updated>
+    <updated>2026-10-12T00:12:18Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/85995"&gt;IDE0046	'if' statement can be simplified - should be smarter #85995&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/86002"&gt;IDE0065 fix (`csharp_using_directive_placement = outside_namespace`) changes what names bind to, and `dotnet format` applies it silently: CS0104, CS0118 #86002&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/85988"&gt;Razor: custom snippet fields (`&amp;lt;Literal&amp;gt;` declarations) are inserted as plain text, with no tab stops #85988&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/86001"&gt;`dotnet format` crashes with "Changes must be within bounds of SourceText" in `LinkedFileMergeConflictCommentAdditionService` (multi-targeted project, CRLF file, `end_of_line = lf`) #86001&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/86000"&gt;Fix All in a multi-targeted project writes merge conflict markers into source when code exists in only some target frameworks (IDE0040, IDE0011, IDE0047, IDE0048, IDE0055) #86000&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -29,7 +35,7 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/issues/85989"&gt;[Automated] PRs inserted in VS build main-12309.278 #85989&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/issues/85971"&gt;Razor Tag Helpers with ParentTag appear to not execute at all despite supposedly matching. #85971&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
@@ -40,81 +46,24 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/85997"&gt;Indent list pattern contents relative to '[' when it starts its own line #85997&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Community, VSCode&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/85996"&gt;Don't offer 'var' for an out argument when the call binds outside the checked member group #85996&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Community, VSCode&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/85994"&gt;Don't track const locals in unused value analysis #85994&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Community, VSCode&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/85993"&gt;Allow goto out of a block across a using declaration in that block #85993&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/85999"&gt;docs(banned-api): add package readme and bundle with NuGet package #85999&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;Community&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/85992"&gt;Do not force a newline between } and , in switch expressions #85992&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/roslyn/pull/85998"&gt;fix(analyzers): restrict NamedTypeFullNameNotNullSuppressor to C# #85998&lt;/a&gt;
       &lt;/div&gt;
-      &lt;div&gt;Community, VSCode&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/85991"&gt;Don't offer 'use pattern matching' when a local function writes the 'as' operand #85991&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Community, VSCode&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/85990"&gt;[release/insiders] Backport ProjectData fixes to release/insiders #85990&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
+      &lt;div&gt;Community&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
   &lt;h3&gt;Merged&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/85977"&gt;Add src/ExpressionEvaluator to CODEOWNERS #85977&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Next&lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Updated&lt;/h3&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/85281"&gt;Let F# Find All References results carry pre-classified line text #85281&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-IDE, Community&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/85986"&gt;Ensure unused BoundPassByCopy access evaluates all observable side effects #85986&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;Area-Compilers&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
         &lt;a href="https://github.com/dotnet/roslyn/pull/85981"&gt;Fix ParentTag binding for Tag Helpers inside plain HTML elements #85981&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;Community, Area-Razor&lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/roslyn/pull/85985"&gt;Bound test runner output draining after process exit #85985&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;</content>
