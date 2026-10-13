@@ -1,22 +1,37 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/efcore - Issues &amp; Pull Requests</title>
   <link href="https://github.com/dotnet/efcore" />
-  <updated>2026-10-12T00:12:12Z</updated>
+  <updated>2026-10-13T00:11:18Z</updated>
   <id>https://github.com/dotnet/efcore</id>
   <entry>
-    <title>dotnet/efcore - Issues &amp; Pull Requests - 2026-10-11</title>
-    <id>https://github.com/dotnet/efcore#2026-10-11</id>
+    <title>dotnet/efcore - Issues &amp; Pull Requests - 2026-10-12</title>
+    <id>https://github.com/dotnet/efcore#2026-10-12</id>
     <link href="https://github.com/dotnet/efcore" />
-    <updated>2026-10-12T00:12:12Z</updated>
+    <updated>2026-10-13T00:11:18Z</updated>
     <content type="html">&lt;section&gt;
   &lt;h2&gt;Issues&lt;/h2&gt;
   &lt;h3&gt;Created&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/issues/39222"&gt;Invalid translation for constant negative TimeSpan for SQL Server #39222&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/39235"&gt;Support native SQL Server MERGE statement inside SaveChanges batching #39235&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;Closed&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/39146"&gt;ToString() on an enum with a string value converter fails in projections on EF 11 ("No coercion operator is defined"), possible regression from #38156 #39146&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;11.0.0&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/issues/39186"&gt;ExecuteDelete reports CommandSource.ExecuteUpdate to interceptors and diagnostics #39186&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;10.0.15&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/section&gt;&lt;section&gt;
@@ -25,28 +40,121 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/39224"&gt;Enable nullable annotations in precompiled query interceptors #39224&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39236"&gt;Cast to the closed ValueConverter&amp;lt;,&amp;gt; in the precompiled shaper #39236&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;community-contribution&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/39223"&gt;Fix TODATETIMEOFFSET translation in projection #39223&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39234"&gt;Add AggregateFunctionExpression as a relational base for provider aggregate functions #39234&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;community-contribution&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39233"&gt;Use CreateTempSubdirectory for temporary directories #39233&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39232"&gt;Don't apply optimized null expansion to the projection of an IN subquery #39232&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;community-contribution&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39231"&gt;Return the starting position for IndexOf with an empty string on SQL … #39231&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;community-contribution&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39230"&gt;Fix Not on bool? and Increment/Decrement on non-int types in LinqToCS… #39230&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;community-contribution&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39229"&gt;Keep fractional seconds in SQL Server TimeSpan literals #39229&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;community-contribution&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39228"&gt;Convert unsigned enums to decimal through their underlying type #39228&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;community-contribution&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39227"&gt;Read TimeOnly values stored as REAL in Microsoft.Data.Sqlite #39227&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;community-contribution&lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;Merged&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39226"&gt;[automated] Merge branch 'release/11.0' =&amp;gt; 'main' #39226&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39215"&gt;[release/11.0] Fix Cosmos concurrency tests by normalizing ETag comparisons #39215&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-test&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39191"&gt;[automated] Merge branch 'release/11.0' =&amp;gt; 'main' #39191&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39219"&gt;Correct remaining SQLite schema metadata #39219&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;community-contribution&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39212"&gt;[release/11.0]: Bump Microsoft.DotNet.XUnitV3Extensions from 11.0.0-beta.26473.115 to 11.0.0-beta.26509.3 #39212&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-infrastructure&lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
   &lt;h3&gt;Updated&lt;/h3&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/39218"&gt;Log FirstWithoutOrderByAndFilterWarning for First on a collection navigation in a subquery #39218&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39205"&gt;[automated] Merge branch 'release/10.0' =&amp;gt; 'release/11.0' #39205&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39213"&gt;[release/11.0]: Bump Microsoft.Testing.Extensions.CodeCoverage from 18.11.2 to 18.12.0 #39213&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-infrastructure&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39217"&gt;Make the evals more realistic and improve the skills accordingly #39217&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;area-harness&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39100"&gt;Add experimental ExecuteMerge / upsert support #39100&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;community-contribution&lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;div&gt;
-        &lt;a href="https://github.com/dotnet/efcore/pull/39221"&gt;Fix Concat on string in query #39221&lt;/a&gt;
+        &lt;a href="https://github.com/dotnet/efcore/pull/39218"&gt;Log FirstWithoutOrderByAndFilterWarning for First on a collection navigation in a subquery #39218&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;community-contribution&lt;/div&gt;
     &lt;/li&gt;

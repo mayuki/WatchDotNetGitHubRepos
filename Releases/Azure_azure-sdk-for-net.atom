@@ -1,6 +1,50 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-10-12T00:12:38Z</updated>
+  <updated>2026-10-13T00:11:42Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-10-12</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-12</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2026-10-13T00:11:42Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.IotHub_1.2.0-beta.5"&gt;Azure.ResourceManager.IotHub_1.2.0-beta.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0-beta.5 (2026-10-12)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded API version from &lt;code&gt;2026-05-01-preview&lt;/code&gt; to &lt;code&gt;2026-10-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added MQTT v5 support: &lt;code&gt;IotHubProperties.ConnectionProfile&lt;/code&gt; (&lt;code&gt;IotHubConnectionProfile&lt;/code&gt;) and &lt;code&gt;IotHubProperties.MqttV5TopicGroups&lt;/code&gt; (&lt;code&gt;MqttV5TopicGroup&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;MessagePayloadFormat&lt;/code&gt; property (&lt;code&gt;IotHubMessagePayloadFormat&lt;/code&gt;) to all routing endpoint property models (&lt;code&gt;RoutingCosmosDBSqlApiProperties&lt;/code&gt;, &lt;code&gt;RoutingEventHubProperties&lt;/code&gt;, &lt;code&gt;RoutingEventStreamProperties&lt;/code&gt;, &lt;code&gt;RoutingServiceBusQueueEndpointProperties&lt;/code&gt;, &lt;code&gt;RoutingServiceBusTopicEndpointProperties&lt;/code&gt;, &lt;code&gt;RoutingStorageContainerProperties&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;RoutingRuleProperties.DataSchema&lt;/code&gt; property.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;NamespaceUuid&lt;/code&gt;, &lt;code&gt;DataPlaneHostName&lt;/code&gt;, &lt;code&gt;Identity&lt;/code&gt; (&lt;code&gt;DeviceRegistryIdentity&lt;/code&gt;) and &lt;code&gt;LinkingProperties&lt;/code&gt; (&lt;code&gt;DeviceRegistryLinkingProperties&lt;/code&gt;) properties to &lt;code&gt;IotHubDeviceRegistry&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Renamed &lt;code&gt;PolicyResourceId&lt;/code&gt; to &lt;code&gt;CertificateAuthorityResourceId&lt;/code&gt; on &lt;code&gt;IotHubCertificateProperties&lt;/code&gt; and &lt;code&gt;IotHubCertificatePropertiesWithNonce&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;IotHubDeviceRegistry&lt;/code&gt; is now output-only: its public constructor was removed, &lt;code&gt;IotHubProperties.DeviceRegistry&lt;/code&gt; no longer has a setter, and &lt;code&gt;IotHubDeviceRegistry.IdentityResourceId&lt;/code&gt; was replaced by &lt;code&gt;IotHubDeviceRegistry.Identity&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ProviderHub_1.3.0"&gt;Azure.ResourceManager.ProviderHub_1.3.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.3.0 (2026-10-06)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Regenerated from the relocated ProviderHub TypeSpec (&lt;code&gt;specification/providerhub/resource-manager/Microsoft.ProviderHub/ProviderHub&lt;/code&gt;), targeting API version &lt;code&gt;2025-10-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ManifestInfo&lt;/code&gt; and &lt;code&gt;OperationsPutContent&lt;/code&gt; resources, along with the models supporting them.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ApplicationDataAuthorization.IsApplicationIdExcludedFromManifest&lt;/code&gt;, &lt;code&gt;ResourceTypeRegistrationProperties.IsSuperScaleEnabled&lt;/code&gt; and the &lt;code&gt;LinkedAccessCheckOption&lt;/code&gt; enum, all new in API version &lt;code&gt;2025-10-01&lt;/code&gt;. Their .NET names come from &lt;code&gt;@@clientName&lt;/code&gt; customizations in the specification so that they follow the &lt;a href="https://azure.github.io/azure-sdk/dotnet_introduction.html" rel="nofollow"&gt;.NET naming guidelines&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
