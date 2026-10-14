@@ -1,20 +1,32 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>StackExchange/StackExchange.Redis - Releases</title>
   <link href="https://github.com/StackExchange/StackExchange.Redis" />
-  <updated>2026-10-13T00:12:08Z</updated>
+  <updated>2026-10-14T00:10:01Z</updated>
   <id>https://github.com/StackExchange/StackExchange.Redis</id>
   <entry>
-    <title>StackExchange/StackExchange.Redis - Releases - 2026-10-12</title>
-    <id>https://github.com/StackExchange/StackExchange.Redis#2026-10-12</id>
+    <title>StackExchange/StackExchange.Redis - Releases - 2026-10-13</title>
+    <id>https://github.com/StackExchange/StackExchange.Redis#2026-10-13</id>
     <link href="https://github.com/StackExchange/StackExchange.Redis" />
-    <updated>2026-10-13T00:12:08Z</updated>
+    <updated>2026-10-14T00:10:01Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/4.0.127-alpha"&gt;4.0.127-alpha&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/3.4.5"&gt;3.4.5&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/pull/3262" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3262/hovercard"&gt;V4&lt;/a&gt;&lt;/p&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Tolerate refused CLUSTER SLOTS/NODES during topology updates by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5827944468" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3275" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3275/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3275"&gt;#3275&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ConnectionAttemptCompleted: take the sequence number and timestamp together by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5790782716" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3270" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3270/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3270"&gt;#3270&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Lag-aware failback checks for geo-redundant failover by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5488346289" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3242" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3242/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3242"&gt;#3242&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix StringSet(Expiration, ValueCondition) doc link: set, not delex by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5811585355" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3272" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3272/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3272"&gt;#3272&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Report a transport connection's failure the way a stream connection's is reported by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/MDA2AV/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/MDA2AV"&gt;@MDA2AV&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5820037665" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3273" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3273/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3273"&gt;#3273&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/MDA2AV/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/MDA2AV"&gt;@MDA2AV&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5820037665" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3273" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3273/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3273"&gt;#3273&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/3.4.0...3.4.5"&gt;&lt;tt&gt;3.4.0...3.4.5&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
