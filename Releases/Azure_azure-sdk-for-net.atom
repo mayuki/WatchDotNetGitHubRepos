@@ -1,84 +1,97 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-10-15T00:09:42Z</updated>
+  <updated>2026-10-16T00:09:13Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-10-14</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-14</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-10-15</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-15</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-10-15T00:09:42Z</updated>
+    <updated>2026-10-16T00:09:13Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Sphere_1.0.0-beta.1"&gt;Azure.Provisioning.Sphere_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.ConfidentialLedger_2.0.0-beta.6"&gt;Azure.Security.ConfidentialLedger_2.0.0-beta.6&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-10-14)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Initial release of Azure.Provisioning.Sphere.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Storage_1.2.0-beta.2"&gt;Azure.Provisioning.Storage_1.2.0-beta.2&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.2 (2026-10-13)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated the default Azure Storage resource API version to &lt;code&gt;2026-06-01&lt;/code&gt;, while retaining previously supported explicit API versions.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;AdvancedPlatformMetricsRule&lt;/code&gt;, &lt;code&gt;ContextCache&lt;/code&gt;, &lt;code&gt;ContextCacheContainer&lt;/code&gt;, &lt;code&gt;StorageConnector&lt;/code&gt;, and &lt;code&gt;StorageDataShare&lt;/code&gt; resources and related models.&lt;/li&gt;
-&lt;li&gt;Added support for the &lt;code&gt;Smart&lt;/code&gt; storage account access tier, &lt;code&gt;AllowedCopyScope.All&lt;/code&gt;, &lt;code&gt;TaskExecutionTriggerType.MockRun&lt;/code&gt;, shared-key access settings, cross-tenant delegation SAS, data collaboration policies, blob static websites, and object replication tag settings.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;StorageBuiltInRole.StorageFileDataSmbMIAdmin&lt;/code&gt; for the Storage File Data SMB MI Admin role (&lt;code&gt;a235d3ee-5935-4cfb-8cc5-a3303ad5995e&lt;/code&gt;).&lt;/li&gt;
-&lt;/ul&gt;
+                                &lt;h2&gt;2.0.0-beta.6 (2026-10-15)&lt;/h2&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed &lt;code&gt;StorageActiveDirectoryProperties.DomainGuid&lt;/code&gt; to share its value with &lt;code&gt;ActiveDirectoryDomainGuid&lt;/code&gt;, preventing conflicting assignments from emitting an outdated domain GUID.&lt;/li&gt;
+&lt;li&gt;Fixed long-lived clients failing TLS validation after a ledger's service identity certificate changes, for example after disaster recovery or after a new ledger instance replaces the old one behind the same DNS name. Previously the certificate was fetched only when the client was constructed, so the application had to be restarted. The pinned certificate is still used for every handshake; only when server authentication fails because the presented certificate no longer chains to the pinned certificate does the client re-query the independently trusted Identity Service for that ledger's current certificate, replace the pin, and re-validate. The refresh is throttled per ledger so a persistently mismatched certificate cannot force an Identity Service lookup on every handshake, and a man-in-the-middle certificate is still rejected because it cannot chain to the Identity Service's current certificate.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Compute.BulkActions_1.2.0-alpha.20261013.7"&gt;Azure.ResourceManager.Compute.BulkActions_1.2.0-alpha.20261013.7&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CloudHealth_1.0.0-beta.6"&gt;Azure.ResourceManager.CloudHealth_1.0.0-beta.6&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;[Missing change log entry]&lt;/p&gt;
+                                &lt;h2&gt;1.0.0-beta.6 (2026-10-15)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded API version to 2026-10-01-preview&lt;/li&gt;
+&lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Compute.BulkActions_1.2.0-beta.5"&gt;Azure.ResourceManager.Compute.BulkActions_1.2.0-beta.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.ContainerService_1.0.0-beta.7"&gt;Azure.Provisioning.ContainerService_1.0.0-beta.7&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0-beta.5 (2026-10-14)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.7 (2026-10-15)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;BulkActionsVirtualMachinePlacement&lt;/code&gt; and the &lt;code&gt;ZonePlacementPolicyType&lt;/code&gt; enum, surfaced as the &lt;code&gt;Placement&lt;/code&gt; property on &lt;code&gt;LocationBasedBulkCreateData&lt;/code&gt; and &lt;code&gt;LocationBasedBulkCreateCustomData&lt;/code&gt;. Use &lt;code&gt;ZonePlacementPolicy&lt;/code&gt; together with &lt;code&gt;IncludeZones&lt;/code&gt; and &lt;code&gt;ExcludeZones&lt;/code&gt; to constrain which zones a bulk operation may place VMs into.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ExtendedLocation&lt;/code&gt; on &lt;code&gt;LocationBasedBulkCreateData&lt;/code&gt; and &lt;code&gt;LocationBasedBulkCreateCustomData&lt;/code&gt;, alongside the existing &lt;code&gt;Zones&lt;/code&gt;, for targeting an extended location such as an Azure Edge Zone.&lt;/li&gt;
-&lt;li&gt;Added per-VM &lt;code&gt;Zone&lt;/code&gt;, &lt;code&gt;ExtendedLocation&lt;/code&gt;, and &lt;code&gt;Placement&lt;/code&gt; overrides on &lt;code&gt;BulkCreateCustomOverride&lt;/code&gt;, which take precedence over the operation-level values. Leaving &lt;code&gt;Zone&lt;/code&gt; unset keeps the operation-level &lt;code&gt;Zones&lt;/code&gt;; setting it to an empty string requests a regional (non-zonal) VM.&lt;/li&gt;
-&lt;li&gt;Added Spot settings on &lt;code&gt;BulkActionVMProperties&lt;/code&gt;: &lt;code&gt;Priority&lt;/code&gt;, &lt;code&gt;BillingMaxPrice&lt;/code&gt;, and &lt;code&gt;EvictionPolicy&lt;/code&gt;. Priority is now configured per VM through the compute profile.&lt;/li&gt;
+&lt;li&gt;Updated the default resource API version to &lt;code&gt;2026-07-01&lt;/code&gt; to align with &lt;code&gt;Azure.ResourceManager.ContainerService&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ManagedClusterIdentityBinding&lt;/code&gt; resources and support for the associated monitoring, ingress, security, and agent pool features.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Removed the &lt;code&gt;PriorityProfile&lt;/code&gt; and &lt;code&gt;BulkCreateCustomPriorityProfile&lt;/code&gt; models, along with the &lt;code&gt;PriorityProfile&lt;/code&gt; properties on &lt;code&gt;BulkCreateProperties&lt;/code&gt; and &lt;code&gt;BulkCreateCustomProperties&lt;/code&gt;. Set &lt;code&gt;Priority&lt;/code&gt;, &lt;code&gt;BillingMaxPrice&lt;/code&gt;, and &lt;code&gt;EvictionPolicy&lt;/code&gt; on &lt;code&gt;ComputeProfile.VirtualMachineProfile&lt;/code&gt; (&lt;code&gt;BulkActionVMProperties&lt;/code&gt;) instead.&lt;/li&gt;
-&lt;li&gt;Removed &lt;code&gt;MinCapacity&lt;/code&gt; from &lt;code&gt;BulkCreateProperties&lt;/code&gt; and &lt;code&gt;BulkCreateCustomProperties&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Removed the &lt;code&gt;PartialFulfillmentPolicy&lt;/code&gt;, &lt;code&gt;PartialFulfillmentMode&lt;/code&gt;, and &lt;code&gt;PartialFulfillmentReason&lt;/code&gt; models, along with the &lt;code&gt;PartialFulfillmentPolicy&lt;/code&gt; properties on &lt;code&gt;BulkCreateProperties&lt;/code&gt; and &lt;code&gt;BulkCreateCustomProperties&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Updated the corresponding &lt;code&gt;ArmComputeBulkActionsModelFactory&lt;/code&gt; methods to drop the parameters for the removed properties and add the new ones.&lt;/li&gt;
+&lt;li&gt;Replaced &lt;code&gt;ContainerServiceManagedCluster.IngressWebAppRouting&lt;/code&gt; and &lt;code&gt;AzureMonitorMetrics&lt;/code&gt; with &lt;code&gt;IngressProfile.WebAppRouting&lt;/code&gt; and &lt;code&gt;AzureMonitorProfile.Metrics&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Replaced &lt;code&gt;VirtualMachinesScaleManual&lt;/code&gt; on &lt;code&gt;ContainerServiceAgentPool&lt;/code&gt; and &lt;code&gt;ManagedClusterAgentPoolProfileProperties&lt;/code&gt; with &lt;code&gt;VirtualMachinesScale.Manual&lt;/code&gt;, and &lt;code&gt;VirtualMachinesProfile.ScaleManual&lt;/code&gt; with &lt;code&gt;Scale.Manual&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Replaced &lt;code&gt;ManagedClusterNatGatewayProfile.ManagedOutboundIPCount&lt;/code&gt; with &lt;code&gt;ManagedOutboundIPProfile.Count&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Changed the numeric value of &lt;code&gt;ContainerServiceOSSku.Ubuntu2404&lt;/code&gt; from &lt;code&gt;7&lt;/code&gt; to &lt;code&gt;8&lt;/code&gt; as &lt;code&gt;Windows2025&lt;/code&gt; was added.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;The client continues to target API version &lt;code&gt;2026-10-06-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Corrected &lt;code&gt;ManagedClusterDelegatedIdentity.ResourceId&lt;/code&gt; and &lt;code&gt;ReferralResource&lt;/code&gt; to be optional.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.ApiCenter_1.0.0-beta.1"&gt;Azure.Provisioning.ApiCenter_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.StorageDiscovery_1.1.0-beta.1"&gt;Azure.ResourceManager.StorageDiscovery_1.1.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-10-13)&lt;/h2&gt;
+                                &lt;h2&gt;1.1.0-beta.1 (2026-10-14)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial preview of &lt;code&gt;Azure.Provisioning.ApiCenter&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added support for configuring Azure Blob Storage capabilities on Storage Discovery workspaces with the 2026-10-01-preview API, including capacity-details status and prefix configurations.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ElasticSan_1.3.0-beta.1"&gt;Azure.ResourceManager.ElasticSan_1.3.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.3.0-beta.1 (2026-10-14)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version to &lt;code&gt;2026-05-01-preview&lt;/code&gt;.
+&lt;ul&gt;
+&lt;li&gt;Added Elastic SAN V2 support: &lt;code&gt;ElasticSanData.Version&lt;/code&gt; (&lt;code&gt;ElasticSanVersion&lt;/code&gt;), new SKU &lt;code&gt;ElasticSanSkuName.ElasticSanLrs&lt;/code&gt;, and settable &lt;code&gt;TotalIops&lt;/code&gt;, &lt;code&gt;TotalMbps&lt;/code&gt; and &lt;code&gt;TotalSizeTiB&lt;/code&gt; on &lt;code&gt;ElasticSanData&lt;/code&gt; and &lt;code&gt;ElasticSanPatch&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;TotalReservedIops&lt;/code&gt;, &lt;code&gt;TotalReservedMBps&lt;/code&gt; and &lt;code&gt;UsedCapacityGiB&lt;/code&gt; to &lt;code&gt;ElasticSanData&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;QualityOfService&lt;/code&gt; (&lt;code&gt;ElasticSanQualityOfService&lt;/code&gt;), &lt;code&gt;ReservedIops&lt;/code&gt;, &lt;code&gt;ReservedMBps&lt;/code&gt; and &lt;code&gt;IsEncryptionInTransitEnabled&lt;/code&gt; to &lt;code&gt;ElasticSanVolumeGroupData&lt;/code&gt;, and &lt;code&gt;ReservedIops&lt;/code&gt;/&lt;code&gt;ReservedMBps&lt;/code&gt; to &lt;code&gt;ElasticSanVolumeGroupPatch&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ElasticSanStorageTargetType.DirectAttach&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ManagedBy&lt;/code&gt; (a list of &lt;code&gt;ElasticSanManagedByInfo&lt;/code&gt;) to &lt;code&gt;ElasticSanVolumeData&lt;/code&gt; and &lt;code&gt;ElasticSanVolumePatch&lt;/code&gt;, so a volume can be managed by multiple resources. The existing &lt;code&gt;ManagedByResourceId&lt;/code&gt; property is kept for backward compatibility and maps to a single &lt;code&gt;ManagedBy&lt;/code&gt; entry.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;SnapshotAccessState&lt;/code&gt; and &lt;code&gt;CompletionPercent&lt;/code&gt; to &lt;code&gt;ElasticSanSnapshotData&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ZoneDetails&lt;/code&gt; (&lt;code&gt;ElasticSanSkuZoneDetails&lt;/code&gt;) to &lt;code&gt;ElasticSanSkuLocationInfo&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added an optional &lt;code&gt;accessSoftDeletedResources&lt;/code&gt; parameter to &lt;code&gt;ElasticSanVolumeCollection.GetAll&lt;/code&gt; and &lt;code&gt;ElasticSanVolumeGroupCollection.GetAll&lt;/code&gt; for listing soft-deleted resources.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed &lt;code&gt;ElasticSanVolumeResource.RestoreVolume&lt;/code&gt; so it uses the resource's API version instead of always sending &lt;code&gt;2024-07-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ElasticSanVolumeData&lt;/code&gt; and &lt;code&gt;ElasticSanVolumePatch&lt;/code&gt; now deserialize both the legacy &lt;code&gt;managedBy&lt;/code&gt; object (&lt;code&gt;{ "resourceId": "..." }&lt;/code&gt;) and the new array shape, so responses from older API versions and models persisted by earlier library versions continue to load.&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;ElasticSanVolumeCollection.GetAll&lt;/code&gt; and &lt;code&gt;ElasticSanVolumeGroupCollection.GetAll&lt;/code&gt; so the &lt;code&gt;accessSoftDeletedResources&lt;/code&gt; filter is also sent on continuation pages.&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;ElasticSanVolumeGroupData.DeleteRetentionPolicy&lt;/code&gt;, &lt;code&gt;ElasticSanVolumeGroupPatch.DeleteRetentionPolicy&lt;/code&gt; and &lt;code&gt;ElasticSanSnapshotData.CreationDataSourceId&lt;/code&gt;, which were not serialized or populated from service responses.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
