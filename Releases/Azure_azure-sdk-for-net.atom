@@ -1,6 +1,57 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-10-19T00:10:32Z</updated>
+  <updated>2026-10-20T00:09:54Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-10-19</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-19</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2026-10-20T00:09:54Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.ContainerService_1.0.0"&gt;Azure.Provisioning.ContainerService_1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0 (2026-10-19)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;First stable release of Azure.Provisioning.ContainerService for declarative provisioning of Azure Kubernetes Service resources, using API version &lt;code&gt;2026-07-01&lt;/code&gt; by default.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.HybridConnectivity_1.2.0"&gt;Azure.ResourceManager.HybridConnectivity_1.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.0 (2026-10-20)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded API version to &lt;code&gt;2027-01-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added support for Google Cloud Platform (GCP) public cloud connectors:
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;PublicCloudHostType.Gcp&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;GcpCloudProfile&lt;/code&gt;, &lt;code&gt;GcpProjectProperties&lt;/code&gt;, and &lt;code&gt;GcpOrganizationProperties&lt;/code&gt; models, exposed via &lt;code&gt;PublicCloudConnectorProperties.GcpCloudProfile&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;SubscriptionResource.PostGenerateGcpTemplate&lt;/code&gt; and &lt;code&gt;PostGenerateGcpTemplateAsync&lt;/code&gt; for retrieving a GCP access control template, along with the &lt;code&gt;GenerateGcpTemplateContent&lt;/code&gt;, &lt;code&gt;GenerateGcpTemplateResult&lt;/code&gt;, and &lt;code&gt;GcpTemplateFormat&lt;/code&gt; models.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;PublicCloudConnectorData.Kind&lt;/code&gt; identifying which public cloud a connector targets.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;HostTypes&lt;/code&gt; to &lt;code&gt;PublicCloudConnectorSolutionTypeProperties&lt;/code&gt; and &lt;code&gt;PublicCloudConnectorSolutionTypeSettingsProperties&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;PublicCloudConnectorPatch.AwsCloudExcludedAccounts&lt;/code&gt; is obsolete in favor of &lt;code&gt;PublicCloudConnectorPatch.Properties.AwsCloudExcludedAccounts&lt;/code&gt;. The patch payload now carries a &lt;code&gt;PublicCloudConnectorPropertiesPatch&lt;/code&gt; because the connector properties can describe either an AWS or a GCP profile, so the single-property flattening used in earlier versions no longer applies. The original member is retained and forwards to the new location, so existing code continues to compile and run.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PublicCloudConnectorProperties.AwsCloudProfile&lt;/code&gt; is now optional, since a connector may instead be configured with a GCP profile.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Regenerated from the &lt;code&gt;2027-01-01&lt;/code&gt; TypeSpec specification.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

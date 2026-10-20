@@ -1,6 +1,218 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-10-19T00:10:31Z</updated>
+  <updated>2026-10-20T00:09:53Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
+  <entry>
+    <title>aws/aws-sdk-net - Releases - 2026-10-19</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-10-19</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2026-10-20T00:09:53Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.354.0"&gt;4.0.354.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.354.0 (2026-10-19 18:17 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Amplify (4.0.103.0)
+&lt;ul&gt;
+&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BedrockAgent (4.0.105.0)
+&lt;ul&gt;
+&lt;li&gt;Adds Retrieval Instructions for Amazon Bedrock Knowledge Bases. Create, get, update, delete, list, and version customer-authored instructions that guide how a knowledge base retrieves and answers, with content review before use.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BedrockAgentCore (4.0.114.0)
+&lt;ul&gt;
+&lt;li&gt;Adds the Builtin.FailureAnalysis evaluator for batch evaluations. GetBatchEvaluation now returns insightResults that group session failures into insights with root causes and suggested fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BedrockAgentRuntime (4.0.104.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for applying a Retrieval Instruction, optionally by version, to AgenticRetrieveStream requests for Amazon Bedrock Knowledge Bases, and reports the applied instruction and version on the trace.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CloudWatch (4.0.106.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds ActionConfiguration to PutMetricAlarm, PutCompositeAlarm and PutLogAlarm. It allows customers to include an alarm's tags in its notifications and alarm state change events&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CloudWatchLogs (4.0.106.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon CloudWatch Logs now supports filtering DescribeDeliverySources by resourceArns, DescribeDeliveryDestinations by names, and DescribeDeliveries by deliverySourceNames.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CodeCommit (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CodeConnections (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CodeDeploy (4.0.103.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for suspending Amazon EC2 Auto Scaling processes during CodeDeploy EC2 in-place deployments. Use ec2DeploymentOptions to choose which processes are suspended and resumed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CodePipeline (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CodeStarNotifications (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Connect (4.0.124.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon Connect GetAttachedFile API now supports an optional UrlContentDisposition parameter. Set it to INLINE to get a pre-signed URL that displays the file in the browser, so agents can preview email attachments without downloading them. ATTACHMENT (download) remains the default.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ControlTower (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DataZone (4.0.110.0)
+&lt;ul&gt;
+&lt;li&gt;Adds SDK and CLI support for the Iceberg REST catalog connection types already available in Amazon SageMaker Unified Studio - ICEBERGRESTCATALOG, SNOWFLAKEICEBERGRESTCATALOG, and DATABRICKSICEBERGRESTCATALOG.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DevOpsAgent (4.0.106.0)
+&lt;ul&gt;
+&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Drs (4.0.104.0)
+&lt;ul&gt;
+&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DynamoDBv2 (4.0.108.0)
+&lt;ul&gt;
+&lt;li&gt;Enable account endpoint generation for existing CN and GovCloud regions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ECR (4.0.101.11)
+&lt;ul&gt;
+&lt;li&gt;ECR is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ECS (4.0.107.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for configurable envoy application log levels. Customers can now debug network connectivity issues with their task's sidecar envoys.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EMRContainers (4.0.104.0)
+&lt;ul&gt;
+&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Finspace (Removed)
+&lt;ul&gt;
+&lt;li&gt;Amazon FinSpace has been removed from the SDK because it has been discontinued.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;FinSpaceData (Removed)
+&lt;ul&gt;
+&lt;li&gt;Amazon FinSpace Data has been removed from the SDK because it has been discontinued.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GlueDataBrew (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GuardDuty (4.0.111.0)
+&lt;ul&gt;
+&lt;li&gt;Adding a new Expected Bucket Owner optional field for GuardDuty publishing destination APIs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IoTWireless (4.0.103.0)
+&lt;ul&gt;
+&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ManagedGrafana (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ObservabilityAdmin (4.0.108.0)
+&lt;ul&gt;
+&lt;li&gt;Adding support for EKS Container Insights Telemetry Rules&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;OpenSearchService (4.0.105.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon OpenSearch Service adds a new TLS security policy to support FIPS policy and post-quantum cryptography&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3 (4.0.104.5)
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue where TransferUtility.DownloadDirectory could report fewer objects in ObjectsDownloaded than were actually downloaded, because the count was updated from a background progress callback.&lt;/li&gt;
+&lt;li&gt;Fixes an issue where empty requests were failing if the request had a string payload.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SocialMessaging (4.0.104.0)
+&lt;ul&gt;
+&lt;li&gt;Adding support for WhatsApp Direct Send.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;TimestreamInfluxDB (4.0.104.0)
+&lt;ul&gt;
+&lt;li&gt;Adds four new parameters to the InfluxDBv3Enterprise parameter group for Amazon Timestream for InfluxDB. The new parameters are upgradePachaTree, walBufferSize, snapshotSize, and snapshotDuration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Tnb (Removed)
+&lt;ul&gt;
+&lt;li&gt;AWS Telco Network Builder has been removed from the SDK because it has been discontinued.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WAFV2 (4.0.101.14)
+&lt;ul&gt;
+&lt;li&gt;WAFV2 is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkDocs (4.0.100.19)
+&lt;ul&gt;
+&lt;li&gt;WorkDocs is now generated from its Smithy model. &lt;code&gt;DeactivatingLastSystemUserException&lt;/code&gt; and &lt;code&gt;UnauthorizedOperationException&lt;/code&gt; now expose the &lt;code&gt;Code&lt;/code&gt; property that the service returns in error responses.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkSpaces (4.0.104.0)
+&lt;ul&gt;
+&lt;li&gt;Adds optional imageValidationMode enum to ImportCustomWorkspaceImageRequest. This allows customers to opt-in to having prevalidation run in the service account instead of customer account.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkspacesInstances (4.0.103.0)
+&lt;ul&gt;
+&lt;li&gt;ModifyVolume is a new public API for WorkSpaces Core Managed Instances. Customers can change the size, type, IOPS, or throughput of an existing managed volume online, with no stop required. Customers track progress by calling EC2 DescribeVolumesModifications directly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;XRay (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for encrypting the Transaction Search spans log group with a customer managed AWS KMS key. Pass the key ARN in the new CloudWatchLogsConfiguration.SpansLogGroupKmsKeyId field of UpdateTraceSegmentDestination. X-Ray applies the key when it creates the log group.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Core 4.0.102.12
+&lt;ul&gt;
+&lt;li&gt;Fixed SSO token refresh after a failed attempt to retry at most once every 30 seconds, both before and after the token expires, as the SSO token provider specification requires.&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
