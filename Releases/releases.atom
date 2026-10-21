@@ -1,211 +1,90 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-10-20T00:10:17Z</updated>
+  <updated>2026-10-21T00:09:53Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-10-19</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-10-19</id>
+    <title>aws/aws-sdk-net - Releases - 2026-10-20</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-10-20</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-10-20T00:09:53Z</updated>
+    <updated>2026-10-21T00:09:33Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.354.0"&gt;4.0.354.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.355.0"&gt;4.0.355.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.354.0 (2026-10-19 18:17 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.355.0 (2026-10-20 18:20 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Amplify (4.0.103.0)
+&lt;li&gt;Bedrock (4.0.104.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon Bedrock Guardrails now supports a configurable tier for the contextual grounding policy via a new tier option. Select the Standard tier for grounding that better supports conversations and reasoning, with expanded language coverage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CleanRooms (4.0.105.0)
+&lt;ul&gt;
+&lt;li&gt;This release allows customers and their partners to easily collaborate with data stored in Databricks, without having to move or share their underlying data among collaborators.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CloudWatch (4.0.107.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon CloudWatch now supports two new anomaly detector settings. AdaptationSpeed (FAST, NORMAL, SLOW) controls how fast the model adapts to baseline changes, and OutlierFilteringStrength (MINIMAL, MODERATE, STRICT) controls how aggressively outliers are filtered.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CloudWatchOmni (4.0.102.0)
+&lt;ul&gt;
+&lt;li&gt;Updating max value for maxResults in SearchPrincipals API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DynamoDBv2 (4.0.109.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for disassociating a replica from an Amazon DynamoDB multi-Region eventual consistency global table, so you can keep it as a single-Region table with its existing data. Also adds disassociation protection, on by default, to help prevent accidental disassociation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ECS (4.0.108.0)
+&lt;ul&gt;
+&lt;li&gt;ECS Service Gateway makes it easier for developers to deploy ECS services without having to worry about complex ingress networking constructs.&lt;/li&gt;
+&lt;li&gt;ECS is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ElastiCache (4.0.103.0)
+&lt;ul&gt;
+&lt;li&gt;LiveMigration enables customers to migrate from self-hosted EC2 Redis and Valkey clusters to ElastiCache Serverless with near-zero downtime. Customers control the migration through three API-driven phases (prepare, start, complete) that handle traffic proxying, data replication, and cutover.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LexModelsV2 (4.0.101.6)
+&lt;ul&gt;
+&lt;li&gt;LexModelsV2 is now generated from its Smithy model. The RetryAfterSeconds property on ThrottlingException is now populated from the Retry-After response header.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MarketplaceCatalog (4.0.105.0)
+&lt;ul&gt;
+&lt;li&gt;Adds ListEntities filter, sort, and summary support for the ExpressPrivateOfferConfiguration entity type, including filtering by ProductId.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaPackage (4.0.100.20)
+&lt;ul&gt;
+&lt;li&gt;MediaPackage is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RDS (4.0.107.0)
+&lt;ul&gt;
+&lt;li&gt;Amazon RDS now supports On-Demand Capacity Reservations for DB instances.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RDSDataService (4.0.100.20)
+&lt;ul&gt;
+&lt;li&gt;RDSDataService is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;S3Files (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;S3 Files adds support for the "Misconfigured" file system status.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WorkspacesInstances (4.0.104.0)
 &lt;ul&gt;
 &lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BedrockAgent (4.0.105.0)
-&lt;ul&gt;
-&lt;li&gt;Adds Retrieval Instructions for Amazon Bedrock Knowledge Bases. Create, get, update, delete, list, and version customer-authored instructions that guide how a knowledge base retrieves and answers, with content review before use.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BedrockAgentCore (4.0.114.0)
-&lt;ul&gt;
-&lt;li&gt;Adds the Builtin.FailureAnalysis evaluator for batch evaluations. GetBatchEvaluation now returns insightResults that group session failures into insights with root causes and suggested fixes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BedrockAgentRuntime (4.0.104.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for applying a Retrieval Instruction, optionally by version, to AgenticRetrieveStream requests for Amazon Bedrock Knowledge Bases, and reports the applied instruction and version on the trace.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CloudWatch (4.0.106.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds ActionConfiguration to PutMetricAlarm, PutCompositeAlarm and PutLogAlarm. It allows customers to include an alarm's tags in its notifications and alarm state change events&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CloudWatchLogs (4.0.106.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon CloudWatch Logs now supports filtering DescribeDeliverySources by resourceArns, DescribeDeliveryDestinations by names, and DescribeDeliveries by deliverySourceNames.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CodeCommit (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CodeConnections (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CodeDeploy (4.0.103.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for suspending Amazon EC2 Auto Scaling processes during CodeDeploy EC2 in-place deployments. Use ec2DeploymentOptions to choose which processes are suspended and resumed.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CodePipeline (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CodeStarNotifications (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Connect (4.0.124.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon Connect GetAttachedFile API now supports an optional UrlContentDisposition parameter. Set it to INLINE to get a pre-signed URL that displays the file in the browser, so agents can preview email attachments without downloading them. ATTACHMENT (download) remains the default.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ControlTower (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DataZone (4.0.110.0)
-&lt;ul&gt;
-&lt;li&gt;Adds SDK and CLI support for the Iceberg REST catalog connection types already available in Amazon SageMaker Unified Studio - ICEBERGRESTCATALOG, SNOWFLAKEICEBERGRESTCATALOG, and DATABRICKSICEBERGRESTCATALOG.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DevOpsAgent (4.0.106.0)
-&lt;ul&gt;
-&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Drs (4.0.104.0)
-&lt;ul&gt;
-&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (4.0.108.0)
-&lt;ul&gt;
-&lt;li&gt;Enable account endpoint generation for existing CN and GovCloud regions&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ECR (4.0.101.11)
-&lt;ul&gt;
-&lt;li&gt;ECR is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ECS (4.0.107.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for configurable envoy application log levels. Customers can now debug network connectivity issues with their task's sidecar envoys.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;EMRContainers (4.0.104.0)
-&lt;ul&gt;
-&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Finspace (Removed)
-&lt;ul&gt;
-&lt;li&gt;Amazon FinSpace has been removed from the SDK because it has been discontinued.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;FinSpaceData (Removed)
-&lt;ul&gt;
-&lt;li&gt;Amazon FinSpace Data has been removed from the SDK because it has been discontinued.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;GlueDataBrew (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;GuardDuty (4.0.111.0)
-&lt;ul&gt;
-&lt;li&gt;Adding a new Expected Bucket Owner optional field for GuardDuty publishing destination APIs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IoTWireless (4.0.103.0)
-&lt;ul&gt;
-&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ManagedGrafana (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Documentation update release for AWS service&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ObservabilityAdmin (4.0.108.0)
-&lt;ul&gt;
-&lt;li&gt;Adding support for EKS Container Insights Telemetry Rules&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;OpenSearchService (4.0.105.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon OpenSearch Service adds a new TLS security policy to support FIPS policy and post-quantum cryptography&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3 (4.0.104.5)
-&lt;ul&gt;
-&lt;li&gt;Fixed an issue where TransferUtility.DownloadDirectory could report fewer objects in ObjectsDownloaded than were actually downloaded, because the count was updated from a background progress callback.&lt;/li&gt;
-&lt;li&gt;Fixes an issue where empty requests were failing if the request had a string payload.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SocialMessaging (4.0.104.0)
-&lt;ul&gt;
-&lt;li&gt;Adding support for WhatsApp Direct Send.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;TimestreamInfluxDB (4.0.104.0)
-&lt;ul&gt;
-&lt;li&gt;Adds four new parameters to the InfluxDBv3Enterprise parameter group for Amazon Timestream for InfluxDB. The new parameters are upgradePachaTree, walBufferSize, snapshotSize, and snapshotDuration.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Tnb (Removed)
-&lt;ul&gt;
-&lt;li&gt;AWS Telco Network Builder has been removed from the SDK because it has been discontinued.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WAFV2 (4.0.101.14)
-&lt;ul&gt;
-&lt;li&gt;WAFV2 is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WorkDocs (4.0.100.19)
-&lt;ul&gt;
-&lt;li&gt;WorkDocs is now generated from its Smithy model. &lt;code&gt;DeactivatingLastSystemUserException&lt;/code&gt; and &lt;code&gt;UnauthorizedOperationException&lt;/code&gt; now expose the &lt;code&gt;Code&lt;/code&gt; property that the service returns in error responses.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WorkSpaces (4.0.104.0)
-&lt;ul&gt;
-&lt;li&gt;Adds optional imageValidationMode enum to ImportCustomWorkspaceImageRequest. This allows customers to opt-in to having prevalidation run in the service account instead of customer account.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WorkspacesInstances (4.0.103.0)
-&lt;ul&gt;
-&lt;li&gt;ModifyVolume is a new public API for WorkSpaces Core Managed Instances. Customers can change the size, type, IOPS, or throughput of an existing managed volume online, with no stop required. Customers track progress by calling EC2 DescribeVolumesModifications directly.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;XRay (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for encrypting the Transaction Search spans log group with a customer managed AWS KMS key. Pass the key ARN in the new CloudWatchLogsConfiguration.SpansLogGroupKmsKeyId field of UpdateTraceSegmentDestination. X-Ray applies the key when it creates the log group.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.0.102.12
-&lt;ul&gt;
-&lt;li&gt;Fixed SSO token refresh after a failed attempt to retry at most once every 30 seconds, both before and after the token expires, as the SSO token provider specification requires.&lt;/li&gt;
-&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -216,49 +95,637 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-10-19</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-19</id>
-    <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-10-20T00:09:54Z</updated>
+    <title>dotnet/aspire - Releases - 2026-10-20</title>
+    <id>https://github.com/dotnet/aspire#2026-10-20</id>
+    <link href="https://github.com/dotnet/aspire" />
+    <updated>2026-10-21T00:09:38Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.ContainerService_1.0.0"&gt;Azure.Provisioning.ContainerService_1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.6.2"&gt;Aspire 13.6.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0 (2026-10-19)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/af07e33f8d1ef733645138b3f8e36067d073148d"&gt;af07e33f8d1ef733645138b3f8e36067d073148d&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;What's Changed&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;First stable release of Azure.Provisioning.ContainerService for declarative provisioning of Azure Kubernetes Service resources, using API version &lt;code&gt;2026-07-01&lt;/code&gt; by default.&lt;/li&gt;
+&lt;li&gt;[release/13.6] Bump version to 13.6.2 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/danegsta/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/danegsta"&gt;David Negstad (@danegsta)&lt;/a&gt; with @Copilot in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5788903859" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/20877" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20877/hovercard" href="https://github.com/microsoft/aspire/pull/20877"&gt;#20877&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[release/13.6] Pin MessagePack to 2.5.307 for security fixes by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/eerhardt/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/eerhardt"&gt;Eric Erhardt (@eerhardt)&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5930911743" data-permission-text="Title is private" data-url="https://github.com/microsoft/aspire/issues/21156" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/21156/hovercard" href="https://github.com/microsoft/aspire/pull/21156"&gt;#21156&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/microsoft/aspire/compare/v13.6.1...v13.6.2"&gt;&lt;tt&gt;v13.6.1...v13.6.2&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>dotnet/wcf - Releases - 2026-10-20</title>
+    <id>https://github.com/dotnet/wcf#2026-10-20</id>
+    <link href="https://github.com/dotnet/wcf" />
+    <updated>2026-10-21T00:09:43Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/wcf/releases/tag/v10.1.0-rtm"&gt;WCF 10.1.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h1&gt;Release Notes&lt;/h1&gt;
+&lt;h2&gt;Package Info&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/wcf/blob/main/release-notes/System.ServiceModel.Http.md"&gt;System.ServiceModel.Http 10.1.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/wcf/blob/main/release-notes/System.ServiceModel.NetFramingBase.md"&gt;System.ServiceModel.NetFramingBase 10.1.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/wcf/blob/main/release-notes/System.ServiceModel.NetTcp.md"&gt;System.ServiceModel.NetTcp 10.1.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/wcf/blob/main/release-notes/System.ServiceModel.NetNamedPipe.md"&gt;System.ServiceModel.NetNamedPipe 10.1.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/wcf/blob/main/release-notes/System.ServiceModel.Primitives.md"&gt;System.ServiceModel.Primitives 10.1.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/wcf/blob/main/release-notes/System.ServiceModel.Federation.md"&gt;System.ServiceModel.Federation 10.1.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/wcf/blob/main/release-notes/System.Web.Services.Description.md"&gt;System.Web.Services.Description 10.1.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/wcf/blob/main/release-notes/System.ServiceModel.UnixDomainSocket.md"&gt;System.ServiceModel.UnixDomainSocket 10.1.0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What's New&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Transaction flow on Windows:&lt;/strong&gt; Add support for flowing ambient transactions to services through &lt;code&gt;NetTcpBinding&lt;/code&gt;, &lt;code&gt;WSHttpBinding&lt;/code&gt;, &lt;code&gt;WS2007HttpBinding&lt;/code&gt;, and custom bindings. Includes OLETransactions and WS-AtomicTransaction protocols, &lt;code&gt;TransactionFlowAttribute&lt;/code&gt;, and &lt;code&gt;TransactionFlowBindingElement&lt;/code&gt; (&lt;a href="https://github.com/dotnet/wcf/pull/5926" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/wcf/pull/5926/hovercard"&gt;#5926&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cross-platform Windows message credentials:&lt;/strong&gt; Add Windows authentication with &lt;code&gt;SecurityMode.TransportWithMessageCredential&lt;/code&gt; for &lt;code&gt;NetTcpBinding&lt;/code&gt; and the WSHttp bindings, using &lt;code&gt;NegotiateAuthentication&lt;/code&gt; (&lt;a href="https://github.com/dotnet/wcf/pull/5920" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/wcf/pull/5920/hovercard"&gt;#5920&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AppContainer named-pipe support:&lt;/strong&gt; Add AppContainer-aware named-pipe endpoint discovery and connections on Windows. The new &lt;code&gt;NamedPipeSettings&lt;/code&gt; and &lt;code&gt;ApplicationContainerSettings&lt;/code&gt; APIs allow clients to specify the target package and Windows session (&lt;a href="https://github.com/dotnet/wcf/pull/5865" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/wcf/pull/5865/hovercard"&gt;#5865&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Transaction flow is disabled by default. Enable &lt;code&gt;TransactionFlow&lt;/code&gt; on standard bindings, or add a &lt;code&gt;TransactionFlowBindingElement&lt;/code&gt; to a custom binding, and apply &lt;code&gt;TransactionFlowAttribute&lt;/code&gt; to the relevant contract operations. To allow local transactions to be promoted to distributed transactions, applications must also opt in with &lt;code&gt;TransactionManager.ImplicitDistributedTransactions = true&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Bug Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix secure-conversation token renewal against .NET Framework WCF services by correcting WS-Addressing &lt;code&gt;To&lt;/code&gt;-header signing for security-context-token-derived keys. This prevents signature-validation failures and faulted channels when renewing certificate-authenticated sessions (&lt;a href="https://github.com/dotnet/wcf/pull/5943" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/wcf/pull/5943/hovercard"&gt;#5943&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Ensure idle duplex client channels transition to &lt;code&gt;Closed&lt;/code&gt; and raise &lt;code&gt;Closing&lt;/code&gt; and &lt;code&gt;Closed&lt;/code&gt; events when the server gracefully closes the session, instead of remaining in &lt;code&gt;Opened&lt;/code&gt; (&lt;a href="https://github.com/dotnet/wcf/pull/5946" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/wcf/pull/5946/hovercard"&gt;#5946&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fix correlation-state allocation and indexing for duplex callback message and parameter inspectors, preventing array-bounds errors and one inspector's state from overwriting another's (&lt;a href="https://github.com/dotnet/wcf/pull/5971" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/wcf/pull/5971/hovercard"&gt;#5971&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Retry transient named-pipe connection probe timeouts under contention, rather than failing immediately while the server is busy. Retries use the existing backoff and configured connection timeout (&lt;a href="https://github.com/dotnet/wcf/pull/5978" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/wcf/pull/5978/hovercard"&gt;#5978&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Dependency Updates&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Update &lt;code&gt;System.ServiceModel.Federation&lt;/code&gt; from &lt;code&gt;Microsoft.IdentityModel.Protocols.WsTrust&lt;/code&gt; 6.8.0 to 8.23.0, with aligned &lt;code&gt;Microsoft.IdentityModel.Tokens.Saml&lt;/code&gt; and &lt;code&gt;Microsoft.IdentityModel.Xml&lt;/code&gt; 8.23.0 dependencies (&lt;a href="https://github.com/dotnet/wcf/pull/5994" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/wcf/pull/5994/hovercard"&gt;#5994&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Update &lt;code&gt;Microsoft.Extensions.ObjectPool&lt;/code&gt; and &lt;code&gt;System.Security.Cryptography.Xml&lt;/code&gt; to 10.0.13 (&lt;a href="https://github.com/dotnet/wcf/pull/5994" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/wcf/pull/5994/hovercard"&gt;#5994&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/dotnet/wcf/compare/v10.0.0-rtm...v10.1.0-rtm"&gt;&lt;tt&gt;v10.0.0-rtm...v10.1.0-rtm&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>open-telemetry/opentelemetry-dotnet - Releases - 2026-10-20</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet#2026-10-20</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet" />
+    <updated>2026-10-21T00:09:50Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/coreunstable-1.20.1-beta.1"&gt;coreunstable-1.20.1-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;The following changes are from the previous release &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/coreunstable-1.20.0-beta.1"&gt;1.20.0-beta.1&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Prometheus.AspNetCore/1.20.1-beta.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Prometheus.AspNetCore v1.20.1-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed scrape responses being handed to the server in a single write, which&lt;br&gt;
+made the server buffer a full copy of the response for each client that did&lt;br&gt;
+not read it until the request completed or timed out. Responses are now&lt;br&gt;
+written in bounded slices so the server's back-pressure applies.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7957" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7957/hovercard"&gt;#7957&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed startup scrapes permanently omitting &lt;code&gt;target_info&lt;/code&gt; and configured&lt;br&gt;
+resource constant labels from subsequent scrape responses.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7984" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7984/hovercard"&gt;#7984&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.20.1&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7990" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7990/hovercard"&gt;#7990&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/coreunstable-1.20.1-beta.1/src/OpenTelemetry.Exporter.Prometheus.AspNetCore/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Prometheus.HttpListener/1.20.1-beta.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Prometheus.HttpListener v1.20.1-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed scrape responses being handed to the server in a single write, which&lt;br&gt;
+on Linux and macOS made the listener allocate and hold a full copy of the&lt;br&gt;
+response for each client that did not read it until the request completed or&lt;br&gt;
+timed out. Responses are now written in bounded slices.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7957" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7957/hovercard"&gt;#7957&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed scrape requests that announce a request body holding a thread pool&lt;br&gt;
+thread after their response had been sent on Linux and macOS for as long as&lt;br&gt;
+the client kept trickling in the body. The connection is now closed after&lt;br&gt;
+responding to a request with a body instead of being kept alive.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7962" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7962/hovercard"&gt;#7962&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed startup scrapes permanently omitting &lt;code&gt;target_info&lt;/code&gt; and configured&lt;br&gt;
+resource constant labels from subsequent scrape responses.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7984" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7984/hovercard"&gt;#7984&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.20.1&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7990" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7990/hovercard"&gt;#7990&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/coreunstable-1.20.1-beta.1/src/OpenTelemetry.Exporter.Prometheus.HttpListener/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Shims.OpenTracing/1.20.1-beta.1" rel="nofollow"&gt;OpenTelemetry.Shims.OpenTracing v1.20.1-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.20.1&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7990" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7990/hovercard"&gt;#7990&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/coreunstable-1.20.1-beta.1/src/OpenTelemetry.Shims.OpenTracing/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.HybridConnectivity_1.2.0"&gt;Azure.ResourceManager.HybridConnectivity_1.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.20.1"&gt;core-1.20.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0 (2026-10-20)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;p&gt;For highlights and announcements pertaining to this release see: &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/RELEASENOTES.md#1201"&gt;Release Notes &amp;gt; 1.20.1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The following changes are from the previous release &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.20.0"&gt;1.20.0&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded API version to &lt;code&gt;2027-01-01&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added support for Google Cloud Platform (GCP) public cloud connectors:
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry/1.20.1" rel="nofollow"&gt;OpenTelemetry v1.20.1&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;PublicCloudHostType.Gcp&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;GcpCloudProfile&lt;/code&gt;, &lt;code&gt;GcpProjectProperties&lt;/code&gt;, and &lt;code&gt;GcpOrganizationProperties&lt;/code&gt; models, exposed via &lt;code&gt;PublicCloudConnectorProperties.GcpCloudProfile&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;SubscriptionResource.PostGenerateGcpTemplate&lt;/code&gt; and &lt;code&gt;PostGenerateGcpTemplateAsync&lt;/code&gt; for retrieving a GCP access control template, along with the &lt;code&gt;GenerateGcpTemplateContent&lt;/code&gt;, &lt;code&gt;GenerateGcpTemplateResult&lt;/code&gt;, and &lt;code&gt;GcpTemplateFormat&lt;/code&gt; models.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed a possible race condition on ARM64 when multiple threads record the&lt;br&gt;
+first measurement with no tags, or the first overflow measurement, that could&lt;br&gt;
+cause the measurement to be recorded incorrectly.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7951" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7951/hovercard"&gt;#7951&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed self-diagnostics preamble redaction of quoted or encoded PEM material&lt;br&gt;
+and prefixed JWTs.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7955" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7955/hovercard"&gt;#7955&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed default HTTP client log filtering when registering the OTLP log exporter&lt;br&gt;
+through &lt;code&gt;OpenTelemetryLoggerOptions&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7959" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7959/hovercard"&gt;#7959&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed legacy self-diagnostics logging terminating the process when the log&lt;br&gt;
+file is truncated or the log volume runs out of space.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7956" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7956/hovercard"&gt;#7956&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Experimental (pre-release builds only):&lt;/strong&gt; Fixed &lt;code&gt;Logger.EmitLog&lt;/code&gt; ignoring&lt;br&gt;
+instrumentation suppression, which could cause recursive exports or deadlocks.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7961" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7961/hovercard"&gt;#7961&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed delta double counters losing subsequent measurements after a non-finite&lt;br&gt;
+or large value and idle metric points with a &lt;code&gt;NaN&lt;/code&gt; value failing to be reclaimed.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7963" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7963/hovercard"&gt;#7963&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Improve the assignment of values to exponential histogram buckets when the&lt;br&gt;
+value is near a bucket boundary by using a pre-computed lookup table.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7911" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7911/hovercard"&gt;#7911&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed &lt;code&gt;LogRecord&lt;/code&gt;s being returned to the shared pool while still queued for&lt;br&gt;
+export when an exporter stops enumerating a single-item or array&lt;br&gt;
+&lt;code&gt;Batch&amp;lt;LogRecord&amp;gt;&lt;/code&gt; early which could cause a &lt;code&gt;BatchLogRecordExportProcessor&lt;/code&gt;&lt;br&gt;
+on the same provider to export missing or incorrect data.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7965" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7965/hovercard"&gt;#7965&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed a &lt;code&gt;SuppressInstrumentationScope.Enter()&lt;/code&gt; reference count never being&lt;br&gt;
+released when the &lt;code&gt;Activity&lt;/code&gt; it was entered for is not recorded, which caused&lt;br&gt;
+all subsequent telemetry in that execution context to be suppressed.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7966" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7966/hovercard"&gt;#7966&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Self-diagnostics log files, whether configured through &lt;code&gt;OTEL_DIAGNOSTICS.json&lt;/code&gt;&lt;br&gt;
+or &lt;code&gt;SelfDiagnosticsOptions&lt;/code&gt;, are now always created as new files.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7968" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7968/hovercard"&gt;#7968&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Self-diagnostics messages written to the sinks configured by&lt;br&gt;
+&lt;code&gt;SelfDiagnosticsOptions&lt;/code&gt; are now truncated to 16,384 characters so that the&lt;br&gt;
+memory used by entries waiting to be written is bounded.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7969" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7969/hovercard"&gt;#7969&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The self-diagnostics file sink now creates its log directory and log files&lt;br&gt;
+so that only the owner can access them (&lt;code&gt;0700&lt;/code&gt;/&lt;code&gt;0600&lt;/code&gt;) on Linux and macOS,&lt;br&gt;
+instead of inheriting the process umask.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7967" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7967/hovercard"&gt;#7967&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed pooled log records retaining completed log data until reused.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7978" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7978/hovercard"&gt;#7978&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed slow metric recording when distinct wide tag values, such as &lt;code&gt;long&lt;/code&gt; or&lt;br&gt;
+&lt;code&gt;Guid&lt;/code&gt;, share the same built-in hash code.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7979" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7979/hovercard"&gt;#7979&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed &lt;code&gt;ObservableCounter&lt;/code&gt; and &lt;code&gt;ObservableUpDownCounter&lt;/code&gt; overflow points&lt;br&gt;
+reporting only the last observation instead of the sum for each collection.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7985" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7985/hovercard"&gt;#7985&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed replaced log attributes being exported together with their original&lt;br&gt;
+values when buffering or updating &lt;code&gt;LogRecord.State&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7987" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7987/hovercard"&gt;#7987&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.20.1/src/OpenTelemetry/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Api/1.20.1" rel="nofollow"&gt;OpenTelemetry.Api v1.20.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed &lt;code&gt;TracerProvider.GetTracer&lt;/code&gt; caching a new tracer for each call with equal&lt;br&gt;
+array-valued scope tags.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7960" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7960/hovercard"&gt;#7960&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.20.1/src/OpenTelemetry.Api/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Api.ProviderBuilderExtensions/1.20.1" rel="nofollow"&gt;OpenTelemetry.Api.ProviderBuilderExtensions v1.20.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.20.1/src/OpenTelemetry.Api.ProviderBuilderExtensions/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Console/1.20.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Console v1.20.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.20.1/src/OpenTelemetry.Exporter.Console/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.InMemory/1.20.1" rel="nofollow"&gt;OpenTelemetry.Exporter.InMemory v1.20.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.20.1/src/OpenTelemetry.Exporter.InMemory/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.OpenTelemetryProtocol/1.20.1" rel="nofollow"&gt;OpenTelemetry.Exporter.OpenTelemetryProtocol v1.20.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed informational HTTP client logs not being suppressed by default when the&lt;br&gt;
+OTLP log exporter is registered using &lt;code&gt;OpenTelemetryLoggerOptions.AddOtlpExporter&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7959" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7959/hovercard"&gt;#7959&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Breaking:&lt;/strong&gt; &lt;code&gt;HttpClient&lt;/code&gt; instances created by the exporter directly no&lt;br&gt;
+longer follow HTTP redirects. A &lt;code&gt;3xx&lt;/code&gt; response is now treated as a failed&lt;br&gt;
+export. See &lt;a href="/open-telemetry/opentelemetry-dotnet/blob/core-1.20.1/README.md#configure-httpclient"&gt;Configure HttpClient&lt;/a&gt;&lt;br&gt;
+to prevent &lt;code&gt;HttpClient&lt;/code&gt; created by &lt;code&gt;IHttpClientFactory&lt;/code&gt; from following&lt;br&gt;
+redirects.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7958" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7958/hovercard"&gt;#7958&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The value of &lt;code&gt;OTEL_EXPORTER_OTLP_ENDPOINT&lt;/code&gt;, or of its signal-specific&lt;br&gt;
+variants, is no longer written to the exporter's diagnostic log when it is&lt;br&gt;
+not a valid URI.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7971" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7971/hovercard"&gt;#7971&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hardened the experimental disk retry feature.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When running on .NET on non-Windows platforms, the retry directory and&lt;br&gt;
+the blob files within it are now created accessible to the current user&lt;br&gt;
+only, including when the directory is recreated after being deleted.&lt;/li&gt;
+&lt;li&gt;Directory size accounting no longer follows subdirectories, avoiding&lt;br&gt;
+a symbolic-link/junction walk.&lt;/li&gt;
+&lt;li&gt;Expired lease-file cleanup now correctly locates the lease timestamp&lt;br&gt;
+delimiter within the file name rather than the whole path.&lt;/li&gt;
+&lt;li&gt;Storage maintenance no longer deletes or renames files with a &lt;code&gt;.blob&lt;/code&gt;,&lt;br&gt;
+&lt;code&gt;.tmp&lt;/code&gt; or &lt;code&gt;.lock&lt;/code&gt; extension that the exporter did not create when the&lt;br&gt;
+retry directory is shared with other files. Only files named the way the&lt;br&gt;
+exporter names its blobs, and the temporary and lease files derived from&lt;br&gt;
+them, are now removed or renamed, and only blobs named that way are now&lt;br&gt;
+retried.&lt;/li&gt;
+&lt;li&gt;Timestamps in blob and lease file names are now always written using the&lt;br&gt;
+Gregorian calendar. Previously, when the current culture used a different&lt;br&gt;
+calendar, files were given timestamps that caused them never to be&lt;br&gt;
+removed or released when the storage was maintained.&lt;/li&gt;
+&lt;li&gt;A stored request whose lease has expired is no longer deleted after it has&lt;br&gt;
+been retried, as it may have since been leased again for another retry.&lt;/li&gt;
+&lt;li&gt;Stored blobs that are empty or that are larger than the maximum size of&lt;br&gt;
+the storage are no longer read. When running on .NET, stored blobs that&lt;br&gt;
+are symbolic links are also no longer read.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7857" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7857/hovercard"&gt;#7857&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;PublicCloudConnectorData.Kind&lt;/code&gt; identifying which public cloud a connector targets.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;HostTypes&lt;/code&gt; to &lt;code&gt;PublicCloudConnectorSolutionTypeProperties&lt;/code&gt; and &lt;code&gt;PublicCloudConnectorSolutionTypeSettingsProperties&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Only the first 4 KiB of the body of an unsuccessful response is now read and&lt;br&gt;
+written to the exporter's diagnostic log, instead of up to&lt;br&gt;
+&lt;code&gt;MaxResponseSizeBytes&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7969" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7969/hovercard"&gt;#7969&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed reading the body of a failed export response for the exporter's&lt;br&gt;
+diagnostic log not being bounded by the export timeout.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7970" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7970/hovercard"&gt;#7970&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed the body of a failed export response never being written to the&lt;br&gt;
+exporter's diagnostic log when running on .NET Framework.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7970" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7970/hovercard"&gt;#7970&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed attributes whose value is converted with &lt;code&gt;ToString()&lt;/code&gt; (for example&lt;br&gt;
+enums, &lt;code&gt;Uri&lt;/code&gt; or &lt;code&gt;StringValues&lt;/code&gt;) being dropped as unsupported, and for metric&lt;br&gt;
+data points omitted from every later export, when the export buffer had to&lt;br&gt;
+be resized while the attribute was being written.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7973" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7973/hovercard"&gt;#7973&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Breaking:&lt;/strong&gt; Fixed telemetry stored by the experimental disk retry feature&lt;br&gt;
+for one exporter being resent by another exporter for the same signal to its&lt;br&gt;
+own endpoint and with its own headers. Disk retry storage is now additionally&lt;br&gt;
+separated by a subdirectory derived from the exporter's &lt;code&gt;Protocol&lt;/code&gt;,&lt;br&gt;
+&lt;code&gt;Endpoint&lt;/code&gt; and &lt;code&gt;Headers&lt;/code&gt;. Telemetry stored on disk by earlier versions is&lt;br&gt;
+not resent.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7972" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7972/hovercard"&gt;#7972&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Exponential histogram bucket counts are now serialized in the packed&lt;br&gt;
+encoding, which reduces the size of the exported payload.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7897" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7897/hovercard"&gt;#7897&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed inline certificate or private key material being included in OTLP&lt;br&gt;
+diagnostic events and exceptions when supplied instead of a file path.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7981" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7981/hovercard"&gt;#7981&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed early metric collections permanently omitting resource attributes from&lt;br&gt;
+subsequent exports while the &lt;code&gt;MeterProvider&lt;/code&gt; is being built.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7984" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7984/hovercard"&gt;#7984&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.20.1/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Zipkin/1.20.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Zipkin v1.20.1&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;PublicCloudConnectorPatch.AwsCloudExcludedAccounts&lt;/code&gt; is obsolete in favor of &lt;code&gt;PublicCloudConnectorPatch.Properties.AwsCloudExcludedAccounts&lt;/code&gt;. The patch payload now carries a &lt;code&gt;PublicCloudConnectorPropertiesPatch&lt;/code&gt; because the connector properties can describe either an AWS or a GCP profile, so the single-property flattening used in earlier versions no longer applies. The original member is retained and forwards to the new location, so existing code continues to compile and run.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PublicCloudConnectorProperties.AwsCloudProfile&lt;/code&gt; is now optional, since a connector may instead be configured with a GCP profile.&lt;/li&gt;
+&lt;li&gt;The value of &lt;code&gt;OTEL_EXPORTER_ZIPKIN_ENDPOINT&lt;/code&gt; is no longer written to the&lt;br&gt;
+exporter's diagnostic log when it is not a valid URI.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7971" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7971/hovercard"&gt;#7971&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.20.1/src/OpenTelemetry.Exporter.Zipkin/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Hosting/1.20.1" rel="nofollow"&gt;OpenTelemetry.Extensions.Hosting v1.20.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.20.1/src/OpenTelemetry.Extensions.Hosting/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Propagators/1.20.1" rel="nofollow"&gt;OpenTelemetry.Extensions.Propagators v1.20.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.20.1/src/OpenTelemetry.Extensions.Propagators/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.20.1-rc.1"&gt;core-1.20.1-rc.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;The following changes are from the previous release &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.20.0"&gt;1.20.0&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Regenerated from the &lt;code&gt;2027-01-01&lt;/code&gt; TypeSpec specification.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry/1.20.1-rc.1" rel="nofollow"&gt;OpenTelemetry v1.20.1-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed a possible race condition on ARM64 when multiple threads record the&lt;br&gt;
+first measurement with no tags, or the first overflow measurement, that could&lt;br&gt;
+cause the measurement to be recorded incorrectly.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7951" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7951/hovercard"&gt;#7951&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed self-diagnostics preamble redaction of quoted or encoded PEM material&lt;br&gt;
+and prefixed JWTs.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7955" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7955/hovercard"&gt;#7955&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed default HTTP client log filtering when registering the OTLP log exporter&lt;br&gt;
+through &lt;code&gt;OpenTelemetryLoggerOptions&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7959" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7959/hovercard"&gt;#7959&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed legacy self-diagnostics logging terminating the process when the log&lt;br&gt;
+file is truncated or the log volume runs out of space.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7956" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7956/hovercard"&gt;#7956&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Experimental (pre-release builds only):&lt;/strong&gt; Fixed &lt;code&gt;Logger.EmitLog&lt;/code&gt; ignoring&lt;br&gt;
+instrumentation suppression, which could cause recursive exports or deadlocks.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7961" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7961/hovercard"&gt;#7961&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed delta double counters losing subsequent measurements after a non-finite&lt;br&gt;
+or large value and idle metric points with a &lt;code&gt;NaN&lt;/code&gt; value failing to be reclaimed.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7963" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7963/hovercard"&gt;#7963&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Improve the assignment of values to exponential histogram buckets when the&lt;br&gt;
+value is near a bucket boundary by using a pre-computed lookup table.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7911" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7911/hovercard"&gt;#7911&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed &lt;code&gt;LogRecord&lt;/code&gt;s being returned to the shared pool while still queued for&lt;br&gt;
+export when an exporter stops enumerating a single-item or array&lt;br&gt;
+&lt;code&gt;Batch&amp;lt;LogRecord&amp;gt;&lt;/code&gt; early which could cause a &lt;code&gt;BatchLogRecordExportProcessor&lt;/code&gt;&lt;br&gt;
+on the same provider to export missing or incorrect data.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7965" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7965/hovercard"&gt;#7965&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed a &lt;code&gt;SuppressInstrumentationScope.Enter()&lt;/code&gt; reference count never being&lt;br&gt;
+released when the &lt;code&gt;Activity&lt;/code&gt; it was entered for is not recorded, which caused&lt;br&gt;
+all subsequent telemetry in that execution context to be suppressed.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7966" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7966/hovercard"&gt;#7966&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Self-diagnostics log files, whether configured through &lt;code&gt;OTEL_DIAGNOSTICS.json&lt;/code&gt;&lt;br&gt;
+or &lt;code&gt;SelfDiagnosticsOptions&lt;/code&gt;, are now always created as new files.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7968" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7968/hovercard"&gt;#7968&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Self-diagnostics messages written to the sinks configured by&lt;br&gt;
+&lt;code&gt;SelfDiagnosticsOptions&lt;/code&gt; are now truncated to 16,384 characters so that the&lt;br&gt;
+memory used by entries waiting to be written is bounded.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7969" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7969/hovercard"&gt;#7969&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The self-diagnostics file sink now creates its log directory and log files&lt;br&gt;
+so that only the owner can access them (&lt;code&gt;0700&lt;/code&gt;/&lt;code&gt;0600&lt;/code&gt;) on Linux and macOS,&lt;br&gt;
+instead of inheriting the process umask.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7967" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7967/hovercard"&gt;#7967&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed pooled log records retaining completed log data until reused.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7978" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7978/hovercard"&gt;#7978&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed slow metric recording when distinct wide tag values, such as &lt;code&gt;long&lt;/code&gt; or&lt;br&gt;
+&lt;code&gt;Guid&lt;/code&gt;, share the same built-in hash code.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7979" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7979/hovercard"&gt;#7979&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed &lt;code&gt;ObservableCounter&lt;/code&gt; and &lt;code&gt;ObservableUpDownCounter&lt;/code&gt; overflow points&lt;br&gt;
+reporting only the last observation instead of the sum for each collection.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7985" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7985/hovercard"&gt;#7985&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed replaced log attributes being exported together with their original&lt;br&gt;
+values when buffering or updating &lt;code&gt;LogRecord.State&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7987" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7987/hovercard"&gt;#7987&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.20.1-rc.1/src/OpenTelemetry/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Api/1.20.1-rc.1" rel="nofollow"&gt;OpenTelemetry.Api v1.20.1-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed &lt;code&gt;TracerProvider.GetTracer&lt;/code&gt; caching a new tracer for each call with equal&lt;br&gt;
+array-valued scope tags.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7960" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7960/hovercard"&gt;#7960&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.20.1-rc.1/src/OpenTelemetry.Api/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Api.ProviderBuilderExtensions/1.20.1-rc.1" rel="nofollow"&gt;OpenTelemetry.Api.ProviderBuilderExtensions v1.20.1-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.20.1-rc.1/src/OpenTelemetry.Api.ProviderBuilderExtensions/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Console/1.20.1-rc.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Console v1.20.1-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.20.1-rc.1/src/OpenTelemetry.Exporter.Console/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.InMemory/1.20.1-rc.1" rel="nofollow"&gt;OpenTelemetry.Exporter.InMemory v1.20.1-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.20.1-rc.1/src/OpenTelemetry.Exporter.InMemory/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.OpenTelemetryProtocol/1.20.1-rc.1" rel="nofollow"&gt;OpenTelemetry.Exporter.OpenTelemetryProtocol v1.20.1-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed informational HTTP client logs not being suppressed by default when the&lt;br&gt;
+OTLP log exporter is registered using &lt;code&gt;OpenTelemetryLoggerOptions.AddOtlpExporter&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7959" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7959/hovercard"&gt;#7959&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Breaking:&lt;/strong&gt; &lt;code&gt;HttpClient&lt;/code&gt; instances created by the exporter directly no&lt;br&gt;
+longer follow HTTP redirects. A &lt;code&gt;3xx&lt;/code&gt; response is now treated as a failed&lt;br&gt;
+export. See &lt;a href="/open-telemetry/opentelemetry-dotnet/blob/core-1.20.1-rc.1/README.md#configure-httpclient"&gt;Configure HttpClient&lt;/a&gt;&lt;br&gt;
+to prevent &lt;code&gt;HttpClient&lt;/code&gt; created by &lt;code&gt;IHttpClientFactory&lt;/code&gt; from following&lt;br&gt;
+redirects.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7958" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7958/hovercard"&gt;#7958&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The value of &lt;code&gt;OTEL_EXPORTER_OTLP_ENDPOINT&lt;/code&gt;, or of its signal-specific&lt;br&gt;
+variants, is no longer written to the exporter's diagnostic log when it is&lt;br&gt;
+not a valid URI.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7971" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7971/hovercard"&gt;#7971&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hardened the experimental disk retry feature.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When running on .NET on non-Windows platforms, the retry directory and&lt;br&gt;
+the blob files within it are now created accessible to the current user&lt;br&gt;
+only, including when the directory is recreated after being deleted.&lt;/li&gt;
+&lt;li&gt;Directory size accounting no longer follows subdirectories, avoiding&lt;br&gt;
+a symbolic-link/junction walk.&lt;/li&gt;
+&lt;li&gt;Expired lease-file cleanup now correctly locates the lease timestamp&lt;br&gt;
+delimiter within the file name rather than the whole path.&lt;/li&gt;
+&lt;li&gt;Storage maintenance no longer deletes or renames files with a &lt;code&gt;.blob&lt;/code&gt;,&lt;br&gt;
+&lt;code&gt;.tmp&lt;/code&gt; or &lt;code&gt;.lock&lt;/code&gt; extension that the exporter did not create when the&lt;br&gt;
+retry directory is shared with other files. Only files named the way the&lt;br&gt;
+exporter names its blobs, and the temporary and lease files derived from&lt;br&gt;
+them, are now removed or renamed, and only blobs named that way are now&lt;br&gt;
+retried.&lt;/li&gt;
+&lt;li&gt;Timestamps in blob and lease file names are now always written using the&lt;br&gt;
+Gregorian calendar. Previously, when the current culture used a different&lt;br&gt;
+calendar, files were given timestamps that caused them never to be&lt;br&gt;
+removed or released when the storage was maintained.&lt;/li&gt;
+&lt;li&gt;A stored request whose lease has expired is no longer deleted after it has&lt;br&gt;
+been retried, as it may have since been leased again for another retry.&lt;/li&gt;
+&lt;li&gt;Stored blobs that are empty or that are larger than the maximum size of&lt;br&gt;
+the storage are no longer read. When running on .NET, stored blobs that&lt;br&gt;
+are symbolic links are also no longer read.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7857" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7857/hovercard"&gt;#7857&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Only the first 4 KiB of the body of an unsuccessful response is now read and&lt;br&gt;
+written to the exporter's diagnostic log, instead of up to&lt;br&gt;
+&lt;code&gt;MaxResponseSizeBytes&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7969" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7969/hovercard"&gt;#7969&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed reading the body of a failed export response for the exporter's&lt;br&gt;
+diagnostic log not being bounded by the export timeout.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7970" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7970/hovercard"&gt;#7970&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed the body of a failed export response never being written to the&lt;br&gt;
+exporter's diagnostic log when running on .NET Framework.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7970" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7970/hovercard"&gt;#7970&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed attributes whose value is converted with &lt;code&gt;ToString()&lt;/code&gt; (for example&lt;br&gt;
+enums, &lt;code&gt;Uri&lt;/code&gt; or &lt;code&gt;StringValues&lt;/code&gt;) being dropped as unsupported, and for metric&lt;br&gt;
+data points omitted from every later export, when the export buffer had to&lt;br&gt;
+be resized while the attribute was being written.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7973" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7973/hovercard"&gt;#7973&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Breaking:&lt;/strong&gt; Fixed telemetry stored by the experimental disk retry feature&lt;br&gt;
+for one exporter being resent by another exporter for the same signal to its&lt;br&gt;
+own endpoint and with its own headers. Disk retry storage is now additionally&lt;br&gt;
+separated by a subdirectory derived from the exporter's &lt;code&gt;Protocol&lt;/code&gt;,&lt;br&gt;
+&lt;code&gt;Endpoint&lt;/code&gt; and &lt;code&gt;Headers&lt;/code&gt;. Telemetry stored on disk by earlier versions is&lt;br&gt;
+not resent.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7972" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7972/hovercard"&gt;#7972&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Exponential histogram bucket counts are now serialized in the packed&lt;br&gt;
+encoding, which reduces the size of the exported payload.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7897" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7897/hovercard"&gt;#7897&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed inline certificate or private key material being included in OTLP&lt;br&gt;
+diagnostic events and exceptions when supplied instead of a file path.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7981" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7981/hovercard"&gt;#7981&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed early metric collections permanently omitting resource attributes from&lt;br&gt;
+subsequent exports while the &lt;code&gt;MeterProvider&lt;/code&gt; is being built.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7984" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7984/hovercard"&gt;#7984&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.20.1-rc.1/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.Zipkin/1.20.1-rc.1" rel="nofollow"&gt;OpenTelemetry.Exporter.Zipkin v1.20.1-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The value of &lt;code&gt;OTEL_EXPORTER_ZIPKIN_ENDPOINT&lt;/code&gt; is no longer written to the&lt;br&gt;
+exporter's diagnostic log when it is not a valid URI.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/pull/7971" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet/pull/7971/hovercard"&gt;#7971&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.20.1-rc.1/src/OpenTelemetry.Exporter.Zipkin/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Hosting/1.20.1-rc.1" rel="nofollow"&gt;OpenTelemetry.Extensions.Hosting v1.20.1-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.20.1-rc.1/src/OpenTelemetry.Extensions.Hosting/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.Propagators/1.20.1-rc.1" rel="nofollow"&gt;OpenTelemetry.Extensions.Propagators v1.20.1-rc.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet/blob/core-1.20.1-rc.1/src/OpenTelemetry.Extensions.Propagators/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -267,231 +734,36 @@
             </content>
   </entry>
   <entry>
-    <title>DataDog/dd-trace-dotnet - Releases - 2026-10-19</title>
-    <id>https://github.com/DataDog/dd-trace-dotnet#2026-10-19</id>
-    <link href="https://github.com/DataDog/dd-trace-dotnet" />
-    <updated>2026-10-20T00:09:54Z</updated>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-10-20</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-10-20</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2026-10-21T00:09:50Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/releases/tag/v3.56.0"&gt;3.56.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.AWS-1.20.1"&gt;Instrumentation.AWS-1.20.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;Summary&lt;/h2&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.AWS/1.20.1" rel="nofollow"&gt;OpenTelemetry.Extensions.AWS v1.20.1&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[Debugger] Fix native stack buffer overflow on large type signatures (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5747385926" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9377" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9377/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9377"&gt;#9377&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[ASP.NET MVC] Stop child actions from naming the request (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5662426798" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9346" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9346/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9346"&gt;#9346&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Profiler] Take the heap snapshot memory threshold into account (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5814022981" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9399" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9399/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9399"&gt;#9399&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Updated OpenTelemetry core component version(s) to &lt;code&gt;1.20.1&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5651" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5651/hovercard"&gt;#5651&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Changes&lt;/h2&gt;
-&lt;h3&gt;Tracer&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[Debugger] Fix stale local variable names from PDB lookup (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5769362250" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9389" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9389/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9389"&gt;#9389&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Tracer] Check only new methods in Desktop CLR NGen inliner replays (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5856921728" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9412" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9412/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9412"&gt;#9412&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Tracer] Restore OTLP adoption markers and fix smoke snapshots (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5713486852" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9363" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9363/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9363"&gt;#9363&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[ASP.NET MVC] Stop child actions from naming the request (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5662426798" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9346" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9346/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9346"&gt;#9346&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;feat(telemetry): report Quartz and Azure Service Bus spans (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5352182950" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9183" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9183/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9183"&gt;#9183&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;feat(otel): Enable the OTel operator init container build (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5729193943" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9368" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9368/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9368"&gt;#9368&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Expose resolved OpenTelemetry configuration in startup logs (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5746947049" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9376" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9376/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9376"&gt;#9376&lt;/a&gt;)&lt;/li&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AWS-1.20.1/src/OpenTelemetry.Extensions.AWS/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.AWS/1.20.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.AWS v1.20.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AWS-1.20.1/src/OpenTelemetry.Instrumentation.AWS/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.AWSLambda/1.20.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.AWSLambda v1.20.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AWS-1.20.1/src/OpenTelemetry.Instrumentation.AWSLambda/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;CI Visibility&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[Test Optimization] Fix MSTest 4.4.0 discovery and native retries (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5375203689" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9192" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9192/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9192"&gt;#9192&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[CI] Bump DatadogTestCollector and DatadogTestLogger to 0.0.60 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5864171586" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9417" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9417/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9417"&gt;#9417&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;ASM&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;perf(tracer): reduce query-string matching cost (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5746348127" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9374" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9374/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9374"&gt;#9374&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;perf(tracer): use lookbehind for JWT prefix in default query-string regex (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5847124913" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9405" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9405/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9405"&gt;#9405&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Attempt to work around runtime flake for ASM (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4847052315" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/8884" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/8884/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/8884"&gt;#8884&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Continuous Profiler&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Mark CheckCpuSamples as Flaky (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5778006639" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9392" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9392/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9392"&gt;#9392&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Mark CheckTimestampAsLabel as Flaky (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5778237649" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9393" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9393/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9393"&gt;#9393&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Profiler] Take the heap snapshot memory threshold into account (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5814022981" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9399" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9399/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9399"&gt;#9399&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Debugger&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[Debugger] Fix native stack buffer overflow on large type signatures (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5747385926" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9377" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9377/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9377"&gt;#9377&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Serverless&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[Serverless] Remove serverless-azure-and-gcp and serverless-aws from CODEOWNERS (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5674679277" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9354" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9354/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9354"&gt;#9354&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Feature Flags&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[Feature Flags] Add agentless EVP fallback transport (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5431055600" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9235" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9235/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9235"&gt;#9235&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Feature Flags] experimental synchronous provider APIs (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5638250952" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9334" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9334/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9334"&gt;#9334&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Feature Flags] Bind discovery results to the Agent endpoint (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5670054775" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9352" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9352/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9352"&gt;#9352&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Feature Flags] Bound exposure shutdown and own the existing EVP sender (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5670061406" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9353" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9353/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9353"&gt;#9353&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Defer Desktop CLR NGen inliner enumeration to CLR callbacks (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5734333683" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9370" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9370/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9370"&gt;#9370&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;fix(otel): emit stable deployment environment in logs (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5739255717" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9371" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9371/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9371"&gt;#9371&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix false positives in LLM validation benchmarks (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5679285712" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9357" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9357/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9357"&gt;#9357&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix hotfix branch creation from release tags (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5775224624" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9390" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9390/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9390"&gt;#9390&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix regex test on .NET 5 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5777894890" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9391" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9391/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9391"&gt;#9391&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fix flaky exposure shutdown flush test (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5783325362" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9396" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9396/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9396"&gt;#9396&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Build / Test&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Update to .NET 11 RC2 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5844453765" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9404" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9404/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9404"&gt;#9404&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Test Package Versions Bump] Updating package versions (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5547253607" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9290" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9290/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9290"&gt;#9290&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Remoting] Fix bug when only a single server formatter is registered (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5637267816" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9333" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9333/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9333"&gt;#9333&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Local Agentic Code Review Scripts (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5646258180" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9338" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9338/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9338"&gt;#9338&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Ignore stale legacy benchmark results (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5667276570" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9349" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9349/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9349"&gt;#9349&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Run smoke tests on PRs when the likely have changed (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5717194454" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9365" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9365/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9365"&gt;#9365&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Use base APM SDK capabilities team in CODEOWNERS (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5731181569" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9369" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9369/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9369"&gt;#9369&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Update log4net to 3.5.0 and fix log correlation tests (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5750254297" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9378" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9378/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9378"&gt;#9378&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Attempt to correct &lt;code&gt;tracer/&lt;/code&gt; CODEOWNERS (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5750968283" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9379" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9379/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9379"&gt;#9379&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;test: snapshot mock agent telemetry before casting to avoid race (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5760521405" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9381" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9381/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9381"&gt;#9381&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Removes LLM related skills and settings that are unused or invalid (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5766986235" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9386" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9386/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9386"&gt;#9386&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Make exposure shutdown flush test deterministic (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5831241242" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9401" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9401/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9401"&gt;#9401&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Pin Windows VMs to v1.16.0 to fix .NET 11 RC2 requirements  (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5852586961" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9409" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9409/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9409"&gt;#9409&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;[Tracer] Add .NET Framework regression tests for the NGen inliner crash (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5856971596" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9413" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9413/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9413"&gt;#9413&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Run Windows microbenchmarks on processor group zero (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5668070812" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9350" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9350/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9350"&gt;#9350&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Miscellaneous&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;ci: update one-pipeline version (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5680237381" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9358" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9358/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9358"&gt;#9358&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;ci: update one-pipeline version (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5746739015" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9375" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9375/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9375"&gt;#9375&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;ci: update one-pipeline version (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5782020033" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9395" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9395/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9395"&gt;#9395&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;ci: update one-pipeline version (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5861891488" data-permission-text="Title is private" data-url="https://github.com/DataDog/dd-trace-dotnet/issues/9416" data-hovercard-type="pull_request" data-hovercard-url="/DataDog/dd-trace-dotnet/pull/9416/hovercard" href="https://github.com/DataDog/dd-trace-dotnet/pull/9416"&gt;#9416&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://github.com/DataDog/dd-trace-dotnet/compare/v3.55.2...v3.56.0"&gt;Changes since 3.55.2&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>domaindrivendev/Swashbuckle.AspNetCore - Releases - 2026-10-19</title>
-    <id>https://github.com/domaindrivendev/Swashbuckle.AspNetCore#2026-10-19</id>
-    <link href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore" />
-    <updated>2026-10-20T00:09:58Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/releases/tag/v10.3.1"&gt;v10.3.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;What's Changed&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Remove Swashbuckle.AspNetCore.ApiTesting.Xunit by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/martincostello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/martincostello"&gt;@martincostello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5746356575" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4188" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4188/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4188"&gt;#4188&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Migrate to xunit v3 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/martincostello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/martincostello"&gt;@martincostello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5747221918" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4189" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4189/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4189"&gt;#4189&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Normalize line endings by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/martincostello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/martincostello"&gt;@martincostello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5747848803" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4190" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4190/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4190"&gt;#4190&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Update .git-blame-ignore-revs by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/martincostello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/martincostello"&gt;@martincostello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5748015315" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4191" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4191/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4191"&gt;#4191&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix &lt;code&gt;AmbiguousMatchException&lt;/code&gt; for &lt;code&gt;[FromQuery]&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/SENESO/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/SENESO"&gt;@SENESO&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5907008211" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4209" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4209/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4209"&gt;#4209&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Avoid deadlock when a schema filter depends on &lt;code&gt;ISerializerDataContractResolver&lt;/code&gt; by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/DevKaurav-14/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/DevKaurav-14"&gt;@DevKaurav-14&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5911457187" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4210" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4210/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4210"&gt;#4210&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fix tests by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/martincostello/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/martincostello"&gt;@martincostello&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5925872644" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4214" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4214/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4214"&gt;#4214&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Deprecations&lt;/h2&gt;
-&lt;div class="markdown-alert markdown-alert-important"&gt;&lt;p class="markdown-alert-title"&gt;&lt;svg data-component="Octicon" class="octicon octicon-report mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"&gt;&lt;/path&gt;&lt;/svg&gt;Important&lt;/p&gt;&lt;p&gt;Swashbuckle.AspNetCore.ApiTesting.Xunit depended on Xunit v2, which is no longer supported.&lt;/p&gt;
-&lt;p&gt;The package has been removed and no further versions will be released.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h2&gt;New Contributors&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/SENESO/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/SENESO"&gt;@SENESO&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5907008211" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4209" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4209/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4209"&gt;#4209&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/DevKaurav-14/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/DevKaurav-14"&gt;@DevKaurav-14&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5911457187" data-permission-text="Title is private" data-url="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/4210" data-hovercard-type="pull_request" data-hovercard-url="/domaindrivendev/Swashbuckle.AspNetCore/pull/4210/hovercard" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/pull/4210"&gt;#4210&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/compare/v10.3.0...v10.3.1"&gt;&lt;tt&gt;v10.3.0...v10.3.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>googleapis/google-cloud-dotnet - Releases - 2026-10-19</title>
-    <id>https://github.com/googleapis/google-cloud-dotnet#2026-10-19</id>
-    <link href="https://github.com/googleapis/google-cloud-dotnet" />
-    <updated>2026-10-20T00:10:08Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.DevicesAndServices.Health.V4Beta-1.0.0-beta02"&gt;Google.DevicesAndServices.Health.V4Beta version 1.0.0-beta02&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add &lt;code&gt;next_page_token&lt;/code&gt; to &lt;code&gt;DailyRollUpDataPointsResponse&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bug fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Remove the Skin Temperature data type from the beta channel&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Clarify that &lt;code&gt;{user}&lt;/code&gt; in resource names can be the &lt;code&gt;me&lt;/code&gt; alias or the&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.VertexAI.Extensions-1.0.0-beta09"&gt;Google.Cloud.VertexAI.Extensions version 1.0.0-beta09&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;Bug fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Pass the cancellation token to Predict in the embedding and image generators&lt;/li&gt;
-&lt;li&gt;Keep all citations in PredictionServiceChatClient responses&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.CloudBuild.V1-2.22.0"&gt;Google.Cloud.CloudBuild.V1 version 2.22.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Expose approval_config on BuildTrigger in Cloud Build v1&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.CertificateManager.V1-2.10.0"&gt;Google.Cloud.CertificateManager.V1 version 2.10.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add Troubleshooting info to a Managed Certificate&lt;/li&gt;
-&lt;li&gt;Add UsedBy info to a Certificate&lt;/li&gt;
-&lt;li&gt;Add ManagedIdentityCertificate Certificate type&lt;/li&gt;
-&lt;li&gt;Add support for PER_PROJECT_RECORD DNS Authorizations&lt;/li&gt;
-&lt;li&gt;Add UpdateCertificateIssuanceConfig method&lt;/li&gt;
-&lt;li&gt;Add support for tags&lt;/li&gt;
-&lt;li&gt;Add support for AllowlistedCertificate in Trust Configs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Documentation improvements&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Minor docs upates&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>microsoft/CsWin32 - Releases - 2026-10-19</title>
-    <id>https://github.com/microsoft/CsWin32#2026-10-19</id>
-    <link href="https://github.com/microsoft/CsWin32" />
-    <updated>2026-10-20T00:10:11Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/CsWin32/releases/tag/v0.3.366"&gt;v0.3.366&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;Changes:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5918772646" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1860" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1860/hovercard" href="https://github.com/microsoft/CsWin32/pull/1860"&gt;#1860&lt;/a&gt;: Update Win32 metadata to 71.0.37-preview&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5913680653" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1859" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1859/hovercard" href="https://github.com/microsoft/CsWin32/pull/1859"&gt;#1859&lt;/a&gt;: Generate SafeHandle owners for cleanup functions that return BOOLEAN&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5753988199" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1844" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1844/hovercard" href="https://github.com/microsoft/CsWin32/pull/1844"&gt;#1844&lt;/a&gt;: Generate SafeHandle for RAIIFree-annotated parameters, and make getting the Value from a SafeHandle easier (but still safe)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This list of changes was &lt;a href="https://devdiv.visualstudio.com/DevDiv/_build/results?buildId=15738141&amp;amp;view=logs" rel="nofollow"&gt;auto generated&lt;/a&gt;.&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
