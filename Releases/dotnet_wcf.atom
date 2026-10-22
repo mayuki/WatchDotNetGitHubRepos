@@ -1,55 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/wcf - Releases</title>
   <link href="https://github.com/dotnet/wcf" />
-  <updated>2026-10-21T00:09:43Z</updated>
+  <updated>2026-10-22T00:09:14Z</updated>
   <id>https://github.com/dotnet/wcf</id>
-  <entry>
-    <title>dotnet/wcf - Releases - 2026-10-20</title>
-    <id>https://github.com/dotnet/wcf#2026-10-20</id>
-    <link href="https://github.com/dotnet/wcf" />
-    <updated>2026-10-21T00:09:43Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/wcf/releases/tag/v10.1.0-rtm"&gt;WCF 10.1.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h1&gt;Release Notes&lt;/h1&gt;
-&lt;h2&gt;Package Info&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/wcf/blob/main/release-notes/System.ServiceModel.Http.md"&gt;System.ServiceModel.Http 10.1.0&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/wcf/blob/main/release-notes/System.ServiceModel.NetFramingBase.md"&gt;System.ServiceModel.NetFramingBase 10.1.0&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/wcf/blob/main/release-notes/System.ServiceModel.NetTcp.md"&gt;System.ServiceModel.NetTcp 10.1.0&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/wcf/blob/main/release-notes/System.ServiceModel.NetNamedPipe.md"&gt;System.ServiceModel.NetNamedPipe 10.1.0&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/wcf/blob/main/release-notes/System.ServiceModel.Primitives.md"&gt;System.ServiceModel.Primitives 10.1.0&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/wcf/blob/main/release-notes/System.ServiceModel.Federation.md"&gt;System.ServiceModel.Federation 10.1.0&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/wcf/blob/main/release-notes/System.Web.Services.Description.md"&gt;System.Web.Services.Description 10.1.0&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/wcf/blob/main/release-notes/System.ServiceModel.UnixDomainSocket.md"&gt;System.ServiceModel.UnixDomainSocket 10.1.0&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;What's New&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Transaction flow on Windows:&lt;/strong&gt; Add support for flowing ambient transactions to services through &lt;code&gt;NetTcpBinding&lt;/code&gt;, &lt;code&gt;WSHttpBinding&lt;/code&gt;, &lt;code&gt;WS2007HttpBinding&lt;/code&gt;, and custom bindings. Includes OLETransactions and WS-AtomicTransaction protocols, &lt;code&gt;TransactionFlowAttribute&lt;/code&gt;, and &lt;code&gt;TransactionFlowBindingElement&lt;/code&gt; (&lt;a href="https://github.com/dotnet/wcf/pull/5926" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/wcf/pull/5926/hovercard"&gt;#5926&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cross-platform Windows message credentials:&lt;/strong&gt; Add Windows authentication with &lt;code&gt;SecurityMode.TransportWithMessageCredential&lt;/code&gt; for &lt;code&gt;NetTcpBinding&lt;/code&gt; and the WSHttp bindings, using &lt;code&gt;NegotiateAuthentication&lt;/code&gt; (&lt;a href="https://github.com/dotnet/wcf/pull/5920" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/wcf/pull/5920/hovercard"&gt;#5920&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AppContainer named-pipe support:&lt;/strong&gt; Add AppContainer-aware named-pipe endpoint discovery and connections on Windows. The new &lt;code&gt;NamedPipeSettings&lt;/code&gt; and &lt;code&gt;ApplicationContainerSettings&lt;/code&gt; APIs allow clients to specify the target package and Windows session (&lt;a href="https://github.com/dotnet/wcf/pull/5865" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/wcf/pull/5865/hovercard"&gt;#5865&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Transaction flow is disabled by default. Enable &lt;code&gt;TransactionFlow&lt;/code&gt; on standard bindings, or add a &lt;code&gt;TransactionFlowBindingElement&lt;/code&gt; to a custom binding, and apply &lt;code&gt;TransactionFlowAttribute&lt;/code&gt; to the relevant contract operations. To allow local transactions to be promoted to distributed transactions, applications must also opt in with &lt;code&gt;TransactionManager.ImplicitDistributedTransactions = true&lt;/code&gt;.&lt;/p&gt;
-&lt;h2&gt;Bug Fixes&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix secure-conversation token renewal against .NET Framework WCF services by correcting WS-Addressing &lt;code&gt;To&lt;/code&gt;-header signing for security-context-token-derived keys. This prevents signature-validation failures and faulted channels when renewing certificate-authenticated sessions (&lt;a href="https://github.com/dotnet/wcf/pull/5943" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/wcf/pull/5943/hovercard"&gt;#5943&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Ensure idle duplex client channels transition to &lt;code&gt;Closed&lt;/code&gt; and raise &lt;code&gt;Closing&lt;/code&gt; and &lt;code&gt;Closed&lt;/code&gt; events when the server gracefully closes the session, instead of remaining in &lt;code&gt;Opened&lt;/code&gt; (&lt;a href="https://github.com/dotnet/wcf/pull/5946" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/wcf/pull/5946/hovercard"&gt;#5946&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Fix correlation-state allocation and indexing for duplex callback message and parameter inspectors, preventing array-bounds errors and one inspector's state from overwriting another's (&lt;a href="https://github.com/dotnet/wcf/pull/5971" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/wcf/pull/5971/hovercard"&gt;#5971&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Retry transient named-pipe connection probe timeouts under contention, rather than failing immediately while the server is busy. Retries use the existing backoff and configured connection timeout (&lt;a href="https://github.com/dotnet/wcf/pull/5978" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/wcf/pull/5978/hovercard"&gt;#5978&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Dependency Updates&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Update &lt;code&gt;System.ServiceModel.Federation&lt;/code&gt; from &lt;code&gt;Microsoft.IdentityModel.Protocols.WsTrust&lt;/code&gt; 6.8.0 to 8.23.0, with aligned &lt;code&gt;Microsoft.IdentityModel.Tokens.Saml&lt;/code&gt; and &lt;code&gt;Microsoft.IdentityModel.Xml&lt;/code&gt; 8.23.0 dependencies (&lt;a href="https://github.com/dotnet/wcf/pull/5994" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/wcf/pull/5994/hovercard"&gt;#5994&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Update &lt;code&gt;Microsoft.Extensions.ObjectPool&lt;/code&gt; and &lt;code&gt;System.Security.Cryptography.Xml&lt;/code&gt; to 10.0.13 (&lt;a href="https://github.com/dotnet/wcf/pull/5994" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/wcf/pull/5994/hovercard"&gt;#5994&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/dotnet/wcf/compare/v10.0.0-rtm...v10.1.0-rtm"&gt;&lt;tt&gt;v10.0.0-rtm...v10.1.0-rtm&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
