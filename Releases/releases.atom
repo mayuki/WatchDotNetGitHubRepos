@@ -1,238 +1,43 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-10-23T00:10:35Z</updated>
+  <updated>2026-10-24T00:09:33Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-10-22</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-10-22</id>
-    <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-10-23T00:10:04Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.357.0"&gt;4.0.357.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h3&gt;4.0.357.0 (2026-10-22 18:12 UTC)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;AccountAccess (4.0.101.12)
-&lt;ul&gt;
-&lt;li&gt;AccountAccess is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ApiGatewayV2 (4.0.100.21)
-&lt;ul&gt;
-&lt;li&gt;ApiGatewayV2 is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ApplicationDiscoveryService (4.0.100.21)
-&lt;ul&gt;
-&lt;li&gt;ApplicationDiscoveryService is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;AppStream (4.0.103.4)
-&lt;ul&gt;
-&lt;li&gt;AppStream is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;AWSHealth (4.0.102.5)
-&lt;ul&gt;
-&lt;li&gt;AWSHealth is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;AWSMarketplaceCommerceAnalytics (4.0.100.21)
-&lt;ul&gt;
-&lt;li&gt;AWSMarketplaceCommerceAnalytics is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BedrockAgentCore (4.0.115.0)
-&lt;ul&gt;
-&lt;li&gt;Adds the dimension name to evaluation results and batch evaluation summaries. For multi-dimensional LLM-as-a-Judge evaluators, each result and summary now identifies which dimension it corresponds to.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.123.0)
-&lt;ul&gt;
-&lt;li&gt;Adds model-based routing and fallback to AgentCore Gateway rules. Rules can match the requested model, route to a specific model, and fall back across inference targets with an optional circuit breaker. Adds multi-dimensional rating scales for AgentCore Evaluations LLM-as-a-Judge evaluators.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Connect (4.0.126.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for customer queryable replication errors.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Continuum (4.0.100.0)
-&lt;ul&gt;
-&lt;li&gt;Releasing Continuum for Code Vulnerabilities APIs for SDKs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DatabaseMigrationService (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;DatabaseMigrationService is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Deadline (4.0.103.5)
-&lt;ul&gt;
-&lt;li&gt;Deadline is now generated from its Smithy model. The RetryAfterSeconds property on InternalServerErrorException and ThrottlingException is now populated from the Retry-After response header.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DevOpsGuru (4.0.100.21)
-&lt;ul&gt;
-&lt;li&gt;DevOpsGuru is now generated from its Smithy model. The RetryAfterSeconds property on InternalServerException and ThrottlingException is now populated from the Retry-After response header.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Drs (4.0.104.2)
-&lt;ul&gt;
-&lt;li&gt;Drs is now generated from its Smithy model. The RetryAfterSeconds property on InternalServerException and ThrottlingException is now populated from the Retry-After response header.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;EC2 (4.0.129.0)
-&lt;ul&gt;
-&lt;li&gt;AWS Transit Gateway now provides managed one-to-one NAT directly on its attachments, through integration with Regional Private NAT Gateway. Use ModifyTransitGatewayAttachmentNatConfiguration to enable NAT and configure NAT rules, and GetTransitGatewayAttachmentNatConfiguration to view them.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ElementalInference (4.0.107.0)
-&lt;ul&gt;
-&lt;li&gt;Elemental Inference now supports feed scheduling, letting you apply feed configuration changes at a time you choose instead of building your own automation.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;GlobalAccelerator (4.0.101.6)
-&lt;ul&gt;
-&lt;li&gt;GlobalAccelerator is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Glue (4.0.116.0)
-&lt;ul&gt;
-&lt;li&gt;Add support for large worker types in AWS Glue&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;GuardDuty (4.0.111.2)
-&lt;ul&gt;
-&lt;li&gt;GuardDuty is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Inspector2 (4.0.106.7)
-&lt;ul&gt;
-&lt;li&gt;Inspector2 is now generated from its Smithy model. The RetryAfterSeconds property on InternalServerException and ThrottlingException is now populated from the Retry-After response header.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IVSRealTime (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;Adds RevokeConnectionToken operation for Amazon IVS Real-Time Streaming.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;KafkaConnect (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon MSK Connect now supports pausing and resuming connectors via the asynchronous PauseConnector and ResumeConnector APIs. Paused connectors keep their configuration and committed offsets and resume where they left off. Each call returns an operation ARN to track with DescribeConnectorOperation.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Lambda (4.0.110.3)
-&lt;ul&gt;
-&lt;li&gt;AWS Lambda durable functions now supports payloads up to 1 MB for checkpoints, callback completion, and error details.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Lightsail (4.0.103.1)
-&lt;ul&gt;
-&lt;li&gt;Lightsail is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MTurk (4.0.100.21)
-&lt;ul&gt;
-&lt;li&gt;MTurk is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;NetworkManager (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;AWS Cloud WAN now provides managed one-to-one NAT directly on it's core network attachments, through integration with Regional Private NAT Gateway. Use UpdateAttachmentNatConfiguration to enable NAT and configure NAT rules, and ListAttachmentNatConfigurations to view them.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;OpenSearchServerless (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Adds APIs to create, get, list, and cancel ingestion jobs, and to create, get, list, and delete ingestion streams, for ingesting data from Amazon S3 into OpenSearch Serverless collections.&lt;/li&gt;
-&lt;li&gt;OpenSearchServerless is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Resiliencehubv2 (4.0.105.4)
-&lt;ul&gt;
-&lt;li&gt;Resiliencehubv2 is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ResourceGroups (4.0.100.21)
-&lt;ul&gt;
-&lt;li&gt;ResourceGroups is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMakerGeospatial (4.0.100.21)
-&lt;ul&gt;
-&lt;li&gt;SageMakerGeospatial is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Scheduler (4.0.100.21)
-&lt;ul&gt;
-&lt;li&gt;Scheduler is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Shield (4.0.100.21)
-&lt;ul&gt;
-&lt;li&gt;Shield is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-10-22</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-22</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-10-23</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-23</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-10-23T00:10:05Z</updated>
+    <updated>2026-10-24T00:09:12Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.SerialConsole_1.0.0-beta.1"&gt;Azure.Provisioning.SerialConsole_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.EdgeActions_1.0.0-beta.4"&gt;Azure.ResourceManager.EdgeActions_1.0.0-beta.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-10-22)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.4 (2026-10-22)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial release of Azure.Provisioning.SerialConsole.&lt;/li&gt;
+&lt;li&gt;Updated the default service API version from &lt;code&gt;2025-12-01-preview&lt;/code&gt; to &lt;code&gt;2026-10-01&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;EdgeActionVersionResource.DeployVersionCode&lt;/code&gt; and &lt;code&gt;DeployVersionCodeAsync&lt;/code&gt; now return operations with an &lt;code&gt;EdgeActionVersionResource&lt;/code&gt; result instead of &lt;code&gt;EdgeActionVersionProperties&lt;/code&gt;. Access the deployed version's properties through &lt;code&gt;operation.Value.Data.Properties&lt;/code&gt; instead of &lt;code&gt;operation.Value&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Clarified documentation for PATCH tag replacement and clearing, rejected SKU updates, version deployment-type restrictions, and default-version changes through &lt;code&gt;SwapDefault&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.HealthBot_1.0.0-beta.1"&gt;Azure.Provisioning.HealthBot_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Hci_1.4.0"&gt;Azure.ResourceManager.Hci_1.4.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-10-22)&lt;/h2&gt;
+                                &lt;h2&gt;1.4.0 (2026-10-22)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial beta release of Azure.Provisioning.HealthBot.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.SiteManager_1.0.0-beta.1"&gt;Azure.Provisioning.SiteManager_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-10-22)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Initial beta release of Azure.Provisioning.SiteManager.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerService_1.9.0"&gt;Azure.ResourceManager.ContainerService_1.9.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.9.0 (2026-10-19)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version to 2026-08-01.&lt;/li&gt;
-&lt;li&gt;Added NVIDIA GPU management settings to agent pool GPU profiles.&lt;/li&gt;
+&lt;li&gt;Upgraded API version to &lt;code&gt;2026-10-01&lt;/code&gt; (stable).&lt;/li&gt;
+&lt;li&gt;Added support for cluster jobs and edge-machine management, including deployment settings, disks, network adapters, security settings, volumes, and associated job operations.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -241,23 +46,30 @@
             </content>
   </entry>
   <entry>
-    <title>grpc/grpc - Releases - 2026-10-22</title>
-    <id>https://github.com/grpc/grpc#2026-10-22</id>
-    <link href="https://github.com/grpc/grpc" />
-    <updated>2026-10-23T00:10:22Z</updated>
+    <title>dotnet/aspire - Releases - 2026-10-23</title>
+    <id>https://github.com/dotnet/aspire#2026-10-23</id>
+    <link href="https://github.com/dotnet/aspire" />
+    <updated>2026-10-24T00:09:16Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.84.1"&gt;Release v1.84.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.6.3"&gt;Aspire 13.6.3&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;This is release gRPC Core 1.84.1 (gimbal).&lt;/p&gt;
-&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
-&lt;h2&gt;Core&lt;/h2&gt;
+                                &lt;h2&gt;What's New in Aspire 13.6.3&lt;/h2&gt;
+&lt;p&gt;Patch release for Aspire 13.6 that improves resource orchestration reliability by preventing unread resource watches from stalling resource updates and operations.&lt;/p&gt;
+&lt;h3&gt;🐛 Fixes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;[Backport][v1.84.x][security] Update gRPC repo roots. (&lt;a href="https://github.com/grpc/grpc/pull/43700" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43700/hovercard"&gt;#43700&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🖥️ &lt;strong&gt;Resource operations could stall when a watch stopped being read&lt;/strong&gt; — AppHost now closes abandoned watch connections when setup is canceled and keeps reading resource events even when event handlers are slow. Resource event ordering, lifecycle callback dispatch, and the existing periodic reconnection safeguard are preserved. (&lt;a href="https://github.com/microsoft/aspire/pull/21002" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/21002/hovercard"&gt;#21002&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20972" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20972/hovercard"&gt;#20972&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/danegsta/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/danegsta"&gt;David Negstad (@danegsta)&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🔄 &lt;strong&gt;Slow watchers could block other resource updates or watcher shutdown&lt;/strong&gt; — The bundled Developer Control Plane (DCP) is updated to 0.26.6, which keeps internal lifecycle watches draining and uses bounded, asynchronous watch delivery to prevent unread watches from blocking resource-change publication and unrelated watcher shutdown. (&lt;a href="https://github.com/microsoft/aspire/pull/21215" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/21215/hovercard"&gt;#21215&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/danegsta/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/danegsta"&gt;David Negstad (@danegsta)&lt;/a&gt;; includes &lt;a href="https://github.com/microsoft/dcp/pull/307" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/dcp/pull/307/hovercard"&gt;microsoft/dcp#307&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a href="https://github.com/microsoft/aspire/compare/v13.6.2...v13.6.3"&gt;v13.6.2...v13.6.3&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/38294b1b31552dae42a516cffa0cbc737ec08976"&gt;38294b1b31552dae42a516cffa0cbc737ec08976&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
@@ -265,42 +77,42 @@
             </content>
   </entry>
   <entry>
-    <title>MessagePack-CSharp/MessagePack-CSharp - Releases - 2026-10-22</title>
-    <id>https://github.com/MessagePack-CSharp/MessagePack-CSharp#2026-10-22</id>
-    <link href="https://github.com/MessagePack-CSharp/MessagePack-CSharp" />
-    <updated>2026-10-23T00:10:25Z</updated>
+    <title>StackExchange/StackExchange.Redis - Releases - 2026-10-23</title>
+    <id>https://github.com/StackExchange/StackExchange.Redis#2026-10-23</id>
+    <link href="https://github.com/StackExchange/StackExchange.Redis" />
+    <updated>2026-10-24T00:09:31Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/releases/tag/v4.0.0-preview.1"&gt;v4.0.0-preview.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/3.4.20"&gt;3.4.20&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;p&gt;This is the first preview of v4.&lt;/p&gt;
-&lt;p&gt;v4 is a ground-up redesign: more than twice the performance, stronger security by default, full Native AOT support, and many new features, including support for C# 14 union types.&lt;/p&gt;
-&lt;p&gt;The basic API shape is unchanged, and v4 is feature-compatible and wire-compatible with v3 (v3 and v4 read each other’s output). It does, however, contain many breaking changes; see the &lt;a href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/tree/v4"&gt;v4 README&lt;/a&gt; and its “Migrating from v3” section before upgrading.&lt;/p&gt;
-&lt;p&gt;Please report any problems in the Issues.&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>microsoft/CsWin32 - Releases - 2026-10-22</title>
-    <id>https://github.com/microsoft/CsWin32#2026-10-22</id>
-    <link href="https://github.com/microsoft/CsWin32" />
-    <updated>2026-10-23T00:10:26Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/CsWin32/releases/tag/v0.3.367"&gt;v0.3.367&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;Changes:&lt;/h2&gt;
+                                &lt;h2&gt;Stability improvements&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5968710008" data-permission-text="Title is private" data-url="https://github.com/microsoft/CsWin32/issues/1864" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/CsWin32/pull/1864/hovercard" href="https://github.com/microsoft/CsWin32/pull/1864"&gt;#1864&lt;/a&gt;: Fix OverflowException for sign-extended handles in SafeHandle conversions&lt;/li&gt;
+&lt;li&gt;Do not abandon a connection attempt before ConnectTimeout has elapsed by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5864341719" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3277" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3277/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3277"&gt;#3277&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Read HELLO "server" before trusting "version" as the Redis API version by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5880920046" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3279" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3279/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3279"&gt;#3279&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Sentinel soft-fail follow-ups: discovery failure as RedisConnectionException, late sentinel init, clear LastException by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5881722074" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3280" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3280/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3280"&gt;#3280&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Sentinel: re-resolve the primary when it is demoted on a healthy connection by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rebaseandpanic/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rebaseandpanic"&gt;@rebaseandpanic&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5898360980" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3281" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3281/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3281"&gt;#3281&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Route as a cluster only with a slot map; take HELLO mode/role from the interactive connection only by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5976532849" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3285" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3285/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3285"&gt;#3285&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fail connection-dropped commands with RedisConnectionException, never a raw transport exception or a cancellation by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5977684587" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3287" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3287/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3287"&gt;#3287&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Connection groups: a member answering LOADING triggers an immediate re-probe and re-select by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5980369278" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3289" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3289/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3289"&gt;#3289&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;IBatch: complete commands refused by a poisoned connection; divert a batch's tail on reconnect by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5977430244" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3286" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3286/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3286"&gt;#3286&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Give multi-message sub-commands and injected prefix commands a write time by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5994794450" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3293" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3293/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3293"&gt;#3293&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Send primary-only commands to the primary when the caller prefers a replica by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AsadIqbal-Dev/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AsadIqbal-Dev"&gt;@AsadIqbal-Dev&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5987575961" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3291" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3291/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3291"&gt;#3291&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;This list of changes was &lt;a href="https://devdiv.visualstudio.com/DevDiv/_build/results?buildId=15771099&amp;amp;view=logs" rel="nofollow"&gt;auto generated&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Maintenance&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Tests: stabilise two recurring Windows CI flakes (hash-field expiry clock skew, backlog counter quiescence) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5980368439" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3288" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3288/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3288"&gt;#3288&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tests: don't race the connect's own reconfigures in AllClusterCommandsRefusedIsQuiet by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5981576663" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3290" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3290/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3290"&gt;#3290&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Refresh package pins: 10.0.13 servicing family and tooling by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5995516668" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3294" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3294/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3294"&gt;#3294&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;xunit.v3 4.0 on Microsoft.Testing.Platform by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5995669997" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3295" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3295/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3295"&gt;#3295&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;StyleCop.Analyzers 1.3.151-beta, and the tidy-up it asks for by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5996643806" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3296" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3296/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3296"&gt;#3296&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AsadIqbal-Dev/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AsadIqbal-Dev"&gt;@AsadIqbal-Dev&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5987575961" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3291" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3291/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3291"&gt;#3291&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/3.4.5...3.4.20"&gt;&lt;tt&gt;3.4.5...3.4.20&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     

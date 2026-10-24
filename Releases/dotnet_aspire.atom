@@ -1,6 +1,37 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/aspire - Releases</title>
   <link href="https://github.com/dotnet/aspire" />
-  <updated>2026-10-23T00:10:11Z</updated>
+  <updated>2026-10-24T00:09:16Z</updated>
   <id>https://github.com/dotnet/aspire</id>
+  <entry>
+    <title>dotnet/aspire - Releases - 2026-10-23</title>
+    <id>https://github.com/dotnet/aspire#2026-10-23</id>
+    <link href="https://github.com/dotnet/aspire" />
+    <updated>2026-10-24T00:09:16Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.6.3"&gt;Aspire 13.6.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's New in Aspire 13.6.3&lt;/h2&gt;
+&lt;p&gt;Patch release for Aspire 13.6 that improves resource orchestration reliability by preventing unread resource watches from stalling resource updates and operations.&lt;/p&gt;
+&lt;h3&gt;🐛 Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;🖥️ &lt;strong&gt;Resource operations could stall when a watch stopped being read&lt;/strong&gt; — AppHost now closes abandoned watch connections when setup is canceled and keeps reading resource events even when event handlers are slow. Resource event ordering, lifecycle callback dispatch, and the existing periodic reconnection safeguard are preserved. (&lt;a href="https://github.com/microsoft/aspire/pull/21002" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/21002/hovercard"&gt;#21002&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20972" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20972/hovercard"&gt;#20972&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/danegsta/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/danegsta"&gt;David Negstad (@danegsta)&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🔄 &lt;strong&gt;Slow watchers could block other resource updates or watcher shutdown&lt;/strong&gt; — The bundled Developer Control Plane (DCP) is updated to 0.26.6, which keeps internal lifecycle watches draining and uses bounded, asynchronous watch delivery to prevent unread watches from blocking resource-change publication and unrelated watcher shutdown. (&lt;a href="https://github.com/microsoft/aspire/pull/21215" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/21215/hovercard"&gt;#21215&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/danegsta/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/danegsta"&gt;David Negstad (@danegsta)&lt;/a&gt;; includes &lt;a href="https://github.com/microsoft/dcp/pull/307" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/dcp/pull/307/hovercard"&gt;microsoft/dcp#307&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a href="https://github.com/microsoft/aspire/compare/v13.6.2...v13.6.3"&gt;v13.6.2...v13.6.3&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/38294b1b31552dae42a516cffa0cbc737ec08976"&gt;38294b1b31552dae42a516cffa0cbc737ec08976&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

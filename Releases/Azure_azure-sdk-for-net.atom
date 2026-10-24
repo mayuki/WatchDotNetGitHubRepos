@@ -1,57 +1,43 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-10-23T00:10:05Z</updated>
+  <updated>2026-10-24T00:09:12Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-10-22</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-22</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-10-23</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-23</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-10-23T00:10:05Z</updated>
+    <updated>2026-10-24T00:09:12Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.SerialConsole_1.0.0-beta.1"&gt;Azure.Provisioning.SerialConsole_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.EdgeActions_1.0.0-beta.4"&gt;Azure.ResourceManager.EdgeActions_1.0.0-beta.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-10-22)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.4 (2026-10-22)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial release of Azure.Provisioning.SerialConsole.&lt;/li&gt;
+&lt;li&gt;Updated the default service API version from &lt;code&gt;2025-12-01-preview&lt;/code&gt; to &lt;code&gt;2026-10-01&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;EdgeActionVersionResource.DeployVersionCode&lt;/code&gt; and &lt;code&gt;DeployVersionCodeAsync&lt;/code&gt; now return operations with an &lt;code&gt;EdgeActionVersionResource&lt;/code&gt; result instead of &lt;code&gt;EdgeActionVersionProperties&lt;/code&gt;. Access the deployed version's properties through &lt;code&gt;operation.Value.Data.Properties&lt;/code&gt; instead of &lt;code&gt;operation.Value&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Clarified documentation for PATCH tag replacement and clearing, rejected SKU updates, version deployment-type restrictions, and default-version changes through &lt;code&gt;SwapDefault&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.HealthBot_1.0.0-beta.1"&gt;Azure.Provisioning.HealthBot_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Hci_1.4.0"&gt;Azure.ResourceManager.Hci_1.4.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-10-22)&lt;/h2&gt;
+                                &lt;h2&gt;1.4.0 (2026-10-22)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial beta release of Azure.Provisioning.HealthBot.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.SiteManager_1.0.0-beta.1"&gt;Azure.Provisioning.SiteManager_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-10-22)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Initial beta release of Azure.Provisioning.SiteManager.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerService_1.9.0"&gt;Azure.ResourceManager.ContainerService_1.9.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.9.0 (2026-10-19)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version to 2026-08-01.&lt;/li&gt;
-&lt;li&gt;Added NVIDIA GPU management settings to agent pool GPU profiles.&lt;/li&gt;
+&lt;li&gt;Upgraded API version to &lt;code&gt;2026-10-01&lt;/code&gt; (stable).&lt;/li&gt;
+&lt;li&gt;Added support for cluster jobs and edge-machine management, including deployment settings, disks, network adapters, security settings, volumes, and associated job operations.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
