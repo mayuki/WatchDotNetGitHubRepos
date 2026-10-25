@@ -1,33 +1,36 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/aspire - Releases</title>
   <link href="https://github.com/dotnet/aspire" />
-  <updated>2026-10-24T00:09:16Z</updated>
+  <updated>2026-10-25T00:10:45Z</updated>
   <id>https://github.com/dotnet/aspire</id>
   <entry>
-    <title>dotnet/aspire - Releases - 2026-10-23</title>
-    <id>https://github.com/dotnet/aspire#2026-10-23</id>
+    <title>dotnet/aspire - Releases - 2026-10-24</title>
+    <id>https://github.com/dotnet/aspire#2026-10-24</id>
     <link href="https://github.com/dotnet/aspire" />
-    <updated>2026-10-24T00:09:16Z</updated>
+    <updated>2026-10-25T00:10:45Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.6.3"&gt;Aspire 13.6.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.6.4"&gt;Aspire 13.6.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;What's New in Aspire 13.6.3&lt;/h2&gt;
-&lt;p&gt;Patch release for Aspire 13.6 that improves resource orchestration reliability by preventing unread resource watches from stalling resource updates and operations.&lt;/p&gt;
+                                &lt;h2&gt;What's New in Aspire 13.6.4&lt;/h2&gt;
+&lt;p&gt;Patch release for Aspire 13.6 that improves resource startup reliability, fixes Azure publishing with parameterized enum properties in TypeScript AppHosts, and tightens CLI diagnostic log permissions on Unix.&lt;/p&gt;
 &lt;h3&gt;🐛 Fixes&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;🖥️ &lt;strong&gt;Resource operations could stall when a watch stopped being read&lt;/strong&gt; — AppHost now closes abandoned watch connections when setup is canceled and keeps reading resource events even when event handlers are slow. Resource event ordering, lifecycle callback dispatch, and the existing periodic reconnection safeguard are preserved. (&lt;a href="https://github.com/microsoft/aspire/pull/21002" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/21002/hovercard"&gt;#21002&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20972" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20972/hovercard"&gt;#20972&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/danegsta/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/danegsta"&gt;David Negstad (@danegsta)&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;🖥️ &lt;strong&gt;Resources could fail to start after a DCP create request timed out&lt;/strong&gt; — AppHost now checks whether a resource was created before retrying a timed-out or HTTP 504 request, avoiding a premature &lt;code&gt;FailedToStart&lt;/code&gt; state when DCP completed the operation. API operations default to a 40-second timeout with an additional 20-second allowance before the first successful operation, and resource creation has a two-minute recovery budget. These limits can be configured through &lt;code&gt;DcpPublisher:KubernetesApiTimeout&lt;/code&gt;, &lt;code&gt;DcpPublisher:KubernetesInitializationAdditionalTimeout&lt;/code&gt;, and &lt;code&gt;DcpPublisher:KubernetesCreateRecoveryTimeout&lt;/code&gt;. Established watch and log streams are not limited by these operation timeouts. Addresses startup timeouts reported in 13.6. Fixes &lt;a href="https://github.com/microsoft/aspire/issues/20691" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/20691/hovercard"&gt;#20691&lt;/a&gt;. (&lt;a href="https://github.com/microsoft/aspire/pull/20868" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20868/hovercard"&gt;#20868&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20752" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20752/hovercard"&gt;#20752&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/danegsta/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/danegsta"&gt;David Negstad (@danegsta)&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;🔄 &lt;strong&gt;Slow watchers could block other resource updates or watcher shutdown&lt;/strong&gt; — The bundled Developer Control Plane (DCP) is updated to 0.26.6, which keeps internal lifecycle watches draining and uses bounded, asynchronous watch delivery to prevent unread watches from blocking resource-change publication and unrelated watcher shutdown. (&lt;a href="https://github.com/microsoft/aspire/pull/21215" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/21215/hovercard"&gt;#21215&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/danegsta/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/danegsta"&gt;David Negstad (@danegsta)&lt;/a&gt;; includes &lt;a href="https://github.com/microsoft/dcp/pull/307" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/dcp/pull/307/hovercard"&gt;microsoft/dcp#307&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;☁️ &lt;strong&gt;TypeScript AppHosts could fail to publish parameterized Azure enum properties&lt;/strong&gt; — Assigning a &lt;code&gt;bicep().parameter(...)&lt;/code&gt; expression to an enum-valued provisioning property, such as an Azure Storage SKU name, now works instead of failing with a type-assignment error. Type checking for literal values and incompatible expression types is preserved. Fixes a scenario introduced with the Azure provisioning proxy feature in 13.6. (&lt;a href="https://github.com/microsoft/aspire/pull/20767" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20767/hovercard"&gt;#20767&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20557" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20557/hovercard"&gt;#20557&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/sebastienros/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/sebastienros"&gt;Sébastien Ros (@sebastienros)&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🔒 &lt;strong&gt;CLI diagnostic logs now use owner-only permissions on Unix&lt;/strong&gt; — Log files are restricted to owner read/write access (&lt;code&gt;0600&lt;/code&gt;), including reused files, and the dedicated Aspire logs directory uses owner-only access (&lt;code&gt;0700&lt;/code&gt;), repairing existing permissions when needed. Newly created custom log directories also use &lt;code&gt;0700&lt;/code&gt;; existing custom parent directories and Windows permission behavior are unchanged. Diagnostic logs can contain sensitive data, including dashboard login URLs, so review them before sharing. (&lt;a href="https://github.com/microsoft/aspire/pull/21282" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/21282/hovercard"&gt;#21282&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/21276" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/21276/hovercard"&gt;#21276&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mitchdenny/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mitchdenny"&gt;Mitch Denny (@mitchdenny)&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a href="https://github.com/microsoft/aspire/compare/v13.6.2...v13.6.3"&gt;v13.6.2...v13.6.3&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/38294b1b31552dae42a516cffa0cbc737ec08976"&gt;38294b1b31552dae42a516cffa0cbc737ec08976&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a href="https://github.com/microsoft/aspire/compare/v13.6.3...v13.6.4"&gt;v13.6.3...v13.6.4&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/c89352703f78ae46de90fbf751ed8b52b77b89bf"&gt;c89352703f78ae46de90fbf751ed8b52b77b89bf&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     

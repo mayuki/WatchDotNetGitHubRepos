@@ -1,118 +1,36 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-10-24T00:09:33Z</updated>
+  <updated>2026-10-25T00:11:04Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-10-23</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-23</id>
-    <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-10-24T00:09:12Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.EdgeActions_1.0.0-beta.4"&gt;Azure.ResourceManager.EdgeActions_1.0.0-beta.4&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.4 (2026-10-22)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated the default service API version from &lt;code&gt;2025-12-01-preview&lt;/code&gt; to &lt;code&gt;2026-10-01&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;EdgeActionVersionResource.DeployVersionCode&lt;/code&gt; and &lt;code&gt;DeployVersionCodeAsync&lt;/code&gt; now return operations with an &lt;code&gt;EdgeActionVersionResource&lt;/code&gt; result instead of &lt;code&gt;EdgeActionVersionProperties&lt;/code&gt;. Access the deployed version's properties through &lt;code&gt;operation.Value.Data.Properties&lt;/code&gt; instead of &lt;code&gt;operation.Value&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Clarified documentation for PATCH tag replacement and clearing, rejected SKU updates, version deployment-type restrictions, and default-version changes through &lt;code&gt;SwapDefault&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Hci_1.4.0"&gt;Azure.ResourceManager.Hci_1.4.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.4.0 (2026-10-22)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded API version to &lt;code&gt;2026-10-01&lt;/code&gt; (stable).&lt;/li&gt;
-&lt;li&gt;Added support for cluster jobs and edge-machine management, including deployment settings, disks, network adapters, security settings, volumes, and associated job operations.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>dotnet/aspire - Releases - 2026-10-23</title>
-    <id>https://github.com/dotnet/aspire#2026-10-23</id>
+    <title>dotnet/aspire - Releases - 2026-10-24</title>
+    <id>https://github.com/dotnet/aspire#2026-10-24</id>
     <link href="https://github.com/dotnet/aspire" />
-    <updated>2026-10-24T00:09:16Z</updated>
+    <updated>2026-10-25T00:10:45Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.6.3"&gt;Aspire 13.6.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.6.4"&gt;Aspire 13.6.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;What's New in Aspire 13.6.3&lt;/h2&gt;
-&lt;p&gt;Patch release for Aspire 13.6 that improves resource orchestration reliability by preventing unread resource watches from stalling resource updates and operations.&lt;/p&gt;
+                                &lt;h2&gt;What's New in Aspire 13.6.4&lt;/h2&gt;
+&lt;p&gt;Patch release for Aspire 13.6 that improves resource startup reliability, fixes Azure publishing with parameterized enum properties in TypeScript AppHosts, and tightens CLI diagnostic log permissions on Unix.&lt;/p&gt;
 &lt;h3&gt;🐛 Fixes&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;🖥️ &lt;strong&gt;Resource operations could stall when a watch stopped being read&lt;/strong&gt; — AppHost now closes abandoned watch connections when setup is canceled and keeps reading resource events even when event handlers are slow. Resource event ordering, lifecycle callback dispatch, and the existing periodic reconnection safeguard are preserved. (&lt;a href="https://github.com/microsoft/aspire/pull/21002" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/21002/hovercard"&gt;#21002&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20972" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20972/hovercard"&gt;#20972&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/danegsta/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/danegsta"&gt;David Negstad (@danegsta)&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;🖥️ &lt;strong&gt;Resources could fail to start after a DCP create request timed out&lt;/strong&gt; — AppHost now checks whether a resource was created before retrying a timed-out or HTTP 504 request, avoiding a premature &lt;code&gt;FailedToStart&lt;/code&gt; state when DCP completed the operation. API operations default to a 40-second timeout with an additional 20-second allowance before the first successful operation, and resource creation has a two-minute recovery budget. These limits can be configured through &lt;code&gt;DcpPublisher:KubernetesApiTimeout&lt;/code&gt;, &lt;code&gt;DcpPublisher:KubernetesInitializationAdditionalTimeout&lt;/code&gt;, and &lt;code&gt;DcpPublisher:KubernetesCreateRecoveryTimeout&lt;/code&gt;. Established watch and log streams are not limited by these operation timeouts. Addresses startup timeouts reported in 13.6. Fixes &lt;a href="https://github.com/microsoft/aspire/issues/20691" data-hovercard-type="issue" data-hovercard-url="/microsoft/aspire/issues/20691/hovercard"&gt;#20691&lt;/a&gt;. (&lt;a href="https://github.com/microsoft/aspire/pull/20868" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20868/hovercard"&gt;#20868&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20752" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20752/hovercard"&gt;#20752&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/danegsta/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/danegsta"&gt;David Negstad (@danegsta)&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;🔄 &lt;strong&gt;Slow watchers could block other resource updates or watcher shutdown&lt;/strong&gt; — The bundled Developer Control Plane (DCP) is updated to 0.26.6, which keeps internal lifecycle watches draining and uses bounded, asynchronous watch delivery to prevent unread watches from blocking resource-change publication and unrelated watcher shutdown. (&lt;a href="https://github.com/microsoft/aspire/pull/21215" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/21215/hovercard"&gt;#21215&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/danegsta/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/danegsta"&gt;David Negstad (@danegsta)&lt;/a&gt;; includes &lt;a href="https://github.com/microsoft/dcp/pull/307" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/dcp/pull/307/hovercard"&gt;microsoft/dcp#307&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;☁️ &lt;strong&gt;TypeScript AppHosts could fail to publish parameterized Azure enum properties&lt;/strong&gt; — Assigning a &lt;code&gt;bicep().parameter(...)&lt;/code&gt; expression to an enum-valued provisioning property, such as an Azure Storage SKU name, now works instead of failing with a type-assignment error. Type checking for literal values and incompatible expression types is preserved. Fixes a scenario introduced with the Azure provisioning proxy feature in 13.6. (&lt;a href="https://github.com/microsoft/aspire/pull/20767" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20767/hovercard"&gt;#20767&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/20557" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/20557/hovercard"&gt;#20557&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/sebastienros/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/sebastienros"&gt;Sébastien Ros (@sebastienros)&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🔒 &lt;strong&gt;CLI diagnostic logs now use owner-only permissions on Unix&lt;/strong&gt; — Log files are restricted to owner read/write access (&lt;code&gt;0600&lt;/code&gt;), including reused files, and the dedicated Aspire logs directory uses owner-only access (&lt;code&gt;0700&lt;/code&gt;), repairing existing permissions when needed. Newly created custom log directories also use &lt;code&gt;0700&lt;/code&gt;; existing custom parent directories and Windows permission behavior are unchanged. Diagnostic logs can contain sensitive data, including dashboard login URLs, so review them before sharing. (&lt;a href="https://github.com/microsoft/aspire/pull/21282" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/21282/hovercard"&gt;#21282&lt;/a&gt;, backport of &lt;a href="https://github.com/microsoft/aspire/pull/21276" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/21276/hovercard"&gt;#21276&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mitchdenny/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mitchdenny"&gt;Mitch Denny (@mitchdenny)&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a href="https://github.com/microsoft/aspire/compare/v13.6.2...v13.6.3"&gt;v13.6.2...v13.6.3&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/38294b1b31552dae42a516cffa0cbc737ec08976"&gt;38294b1b31552dae42a516cffa0cbc737ec08976&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>StackExchange/StackExchange.Redis - Releases - 2026-10-23</title>
-    <id>https://github.com/StackExchange/StackExchange.Redis#2026-10-23</id>
-    <link href="https://github.com/StackExchange/StackExchange.Redis" />
-    <updated>2026-10-24T00:09:31Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/3.4.20"&gt;3.4.20&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;Stability improvements&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Do not abandon a connection attempt before ConnectTimeout has elapsed by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5864341719" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3277" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3277/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3277"&gt;#3277&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Read HELLO "server" before trusting "version" as the Redis API version by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5880920046" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3279" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3279/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3279"&gt;#3279&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Sentinel soft-fail follow-ups: discovery failure as RedisConnectionException, late sentinel init, clear LastException by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5881722074" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3280" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3280/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3280"&gt;#3280&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Sentinel: re-resolve the primary when it is demoted on a healthy connection by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rebaseandpanic/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rebaseandpanic"&gt;@rebaseandpanic&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5898360980" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3281" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3281/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3281"&gt;#3281&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Route as a cluster only with a slot map; take HELLO mode/role from the interactive connection only by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5976532849" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3285" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3285/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3285"&gt;#3285&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fail connection-dropped commands with RedisConnectionException, never a raw transport exception or a cancellation by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5977684587" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3287" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3287/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3287"&gt;#3287&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Connection groups: a member answering LOADING triggers an immediate re-probe and re-select by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5980369278" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3289" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3289/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3289"&gt;#3289&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;IBatch: complete commands refused by a poisoned connection; divert a batch's tail on reconnect by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5977430244" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3286" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3286/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3286"&gt;#3286&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Give multi-message sub-commands and injected prefix commands a write time by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5994794450" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3293" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3293/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3293"&gt;#3293&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Send primary-only commands to the primary when the caller prefers a replica by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AsadIqbal-Dev/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AsadIqbal-Dev"&gt;@AsadIqbal-Dev&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5987575961" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3291" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3291/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3291"&gt;#3291&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Maintenance&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Tests: stabilise two recurring Windows CI flakes (hash-field expiry clock skew, backlog counter quiescence) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5980368439" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3288" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3288/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3288"&gt;#3288&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Tests: don't race the connect's own reconfigures in AllClusterCommandsRefusedIsQuiet by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5981576663" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3290" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3290/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3290"&gt;#3290&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Refresh package pins: 10.0.13 servicing family and tooling by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5995516668" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3294" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3294/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3294"&gt;#3294&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;xunit.v3 4.0 on Microsoft.Testing.Platform by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5995669997" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3295" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3295/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3295"&gt;#3295&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;StyleCop.Analyzers 1.3.151-beta, and the tidy-up it asks for by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5996643806" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3296" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3296/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3296"&gt;#3296&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;New Contributors&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AsadIqbal-Dev/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AsadIqbal-Dev"&gt;@AsadIqbal-Dev&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5987575961" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3291" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3291/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3291"&gt;#3291&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/3.4.5...3.4.20"&gt;&lt;tt&gt;3.4.5...3.4.20&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a href="https://github.com/microsoft/aspire/compare/v13.6.3...v13.6.4"&gt;v13.6.3...v13.6.4&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/c89352703f78ae46de90fbf751ed8b52b77b89bf"&gt;c89352703f78ae46de90fbf751ed8b52b77b89bf&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
