@@ -1,6 +1,49 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-10-26T00:10:19Z</updated>
+  <updated>2026-10-27T00:09:20Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
+  <entry>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-10-26</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-26</id>
+    <link href="https://github.com/Azure/azure-sdk-for-net" />
+    <updated>2026-10-27T00:09:20Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.64.0"&gt;Azure.Core_1.64.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.64.0 (2026-10-26)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Promoted AKS identity binding support in &lt;code&gt;WorkloadIdentityCredential&lt;/code&gt; to general availability. &lt;code&gt;WorkloadIdentityCredentialOptions.IsAzureProxyEnabled&lt;/code&gt; no longer requires suppressing experimental diagnostic &lt;code&gt;AZID0002&lt;/code&gt;. Identity binding remains opt-in and isn't supported by &lt;code&gt;DefaultAzureCredential&lt;/code&gt; or &lt;code&gt;ManagedIdentityCredential&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed CA certificate reloads for an already-used Kubernetes token proxy in &lt;code&gt;WorkloadIdentityCredential&lt;/code&gt;, so subsequent requests use the new CA without throwing or retaining the old trust configuration.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CognitiveServices_1.7.0-beta.1"&gt;Azure.ResourceManager.CognitiveServices_1.7.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.7.0-beta.1 (2026-10-26)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version to 2026-09-15-preview.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Compared to &lt;code&gt;1.6.0-beta.4&lt;/code&gt;, renamed &lt;code&gt;CapabilitySettings&lt;/code&gt; to &lt;code&gt;CognitiveServicesAgentCapabilitySettings&lt;/code&gt;, including references in account/project properties and model-factory methods.&lt;/li&gt;
+&lt;li&gt;Compared to &lt;code&gt;1.6.0-beta.4&lt;/code&gt;, changed &lt;code&gt;CognitiveServicesClusterComputeProperties.SubnetArmId&lt;/code&gt; from &lt;code&gt;string&lt;/code&gt; to &lt;code&gt;Azure.Core.ResourceIdentifier&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Compared to &lt;code&gt;1.6.0-beta.4&lt;/code&gt;, changed &lt;code&gt;CognitiveServicesManagedComputeDeploymentInfo.DeploymentId&lt;/code&gt; and &lt;code&gt;ProjectId&lt;/code&gt; from &lt;code&gt;string&lt;/code&gt; to &lt;code&gt;Azure.Core.ResourceIdentifier&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

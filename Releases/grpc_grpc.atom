@@ -1,6 +1,48 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>grpc/grpc - Releases</title>
   <link href="https://github.com/grpc/grpc" />
-  <updated>2026-10-26T00:10:36Z</updated>
+  <updated>2026-10-27T00:09:36Z</updated>
   <id>https://github.com/grpc/grpc</id>
+  <entry>
+    <title>grpc/grpc - Releases - 2026-10-26</title>
+    <id>https://github.com/grpc/grpc#2026-10-26</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2026-10-27T00:09:36Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.85.0"&gt;Release v1.85.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release 1.85.0 (&lt;a href="https://github.com/grpc/grpc/blob/master/doc/g_stands_for.md"&gt;googol&lt;/a&gt;) of gRPC Core.&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Backport][v1.85.x][security] Update gRPC repo roots. (&lt;a href="https://github.com/grpc/grpc/pull/43717" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43717/hovercard"&gt;#43717&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[experiments] Add map_host_header_to_authority experiment. (&lt;a href="https://github.com/grpc/grpc/pull/43561" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43561/hovercard"&gt;#43561&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Security] Add MLKEM1024 as a key exchange option. (&lt;a href="https://github.com/grpc/grpc/pull/43514" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43514/hovercard"&gt;#43514&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Remove OpenSSL1.0.2 Support. (&lt;a href="https://github.com/grpc/grpc/pull/43466" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43466/hovercard"&gt;#43466&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Autosharding-LB][Part-1] Implementing A119. (&lt;a href="https://github.com/grpc/grpc/pull/43406" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43406/hovercard"&gt;#43406&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[OpenSSL] Add support for OpenSSL 4. (&lt;a href="https://github.com/grpc/grpc/pull/41932" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/41932/hovercard"&gt;#41932&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[A110] Add child channel options. (&lt;a href="https://github.com/grpc/grpc/pull/43314" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43314/hovercard"&gt;#43314&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C#&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Build] Disambiguate protobuf_version in templates. (&lt;a href="https://github.com/grpc/grpc/pull/43433" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43433/hovercard"&gt;#43433&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Python][AIO] Fixed data race in PollerCompletionQueue. (&lt;a href="https://github.com/grpc/grpc/pull/43429" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43429/hovercard"&gt;#43429&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Fix SyncServicerContext abort not raising exception. (&lt;a href="https://github.com/grpc/grpc/pull/43126" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43126/hovercard"&gt;#43126&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Fixed channelz module leak. (&lt;a href="https://github.com/grpc/grpc/pull/43196" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43196/hovercard"&gt;#43196&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Fixed CSDS memory leak. (&lt;a href="https://github.com/grpc/grpc/pull/43202" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43202/hovercard"&gt;#43202&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[Python] Unpin Cython dependency for source builds. (&lt;a href="https://github.com/grpc/grpc/pull/43378" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43378/hovercard"&gt;#43378&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
