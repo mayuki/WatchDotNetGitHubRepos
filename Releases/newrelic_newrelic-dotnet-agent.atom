@@ -1,6 +1,40 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>newrelic/newrelic-dotnet-agent - Releases</title>
   <link href="https://github.com/newrelic/newrelic-dotnet-agent" />
-  <updated>2026-10-28T00:07:53Z</updated>
+  <updated>2026-10-29T00:08:12Z</updated>
   <id>https://github.com/newrelic/newrelic-dotnet-agent</id>
+  <entry>
+    <title>newrelic/newrelic-dotnet-agent - Releases - 2026-10-28</title>
+    <id>https://github.com/newrelic/newrelic-dotnet-agent#2026-10-28</id>
+    <link href="https://github.com/newrelic/newrelic-dotnet-agent" />
+    <updated>2026-10-29T00:08:12Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/releases/tag/v10.57.0"&gt;v10.57.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/compare/v10.56.0...v10.57.0"&gt;10.57.0&lt;/a&gt; (2026-10-26)&lt;/h2&gt;
+&lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add .NET 11 version detection to the core agent (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3905" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3905/hovercard"&gt;#3905&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/418a0f2f11a340a1f803456371cb3b0dc07f6c54"&gt;418a0f2&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add browser_monitoring.version config to pin the Browser Agent version (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3890" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3890/hovercard"&gt;#3890&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/99fcbc8b2f40bd722bd37c232497d47af5d113d1"&gt;99fcbc8&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Warn during MSI install when .NET Framework strong crypto is not enabled (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3902" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3902/hovercard"&gt;#3902&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/66a58b3a4c13cd9cb53d9f58d2becbdae430e6f9"&gt;66a58b3&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Bridge observable instruments with single-value callbacks on .NET 11  (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3905" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3905/hovercard"&gt;#3905&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/418a0f2f11a340a1f803456371cb3b0dc07f6c54"&gt;418a0f2&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Don't report SignalR long polling and Server-Sent Events transport requests as web transactions (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3895" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3895/hovercard"&gt;#3895&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/b7c437bf86f138e09403c8d59bc265a99a7066d6"&gt;b7c437b&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Export tagged OpenTelemetry measurements on .NET Framework (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3907" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3907/hovercard"&gt;#3907&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/bef2cfe683ecfb2cd0bc51d7e91286df24010c53"&gt;bef2cfe&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Inject agent helper references lazily on .NET Core (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3873" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3873/hovercard"&gt;#3873&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/e8572b5b2828f19cfc9ad84beea4783db7977132"&gt;e8572b5&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Log configuration problems in newrelic.config at startup (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3897" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3897/hovercard"&gt;#3897&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/f35e62e1bbe32a2c6b8c8c6516e665316579a0e9"&gt;f35e62e&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Prevent cross-transaction parent ids in the async call stack (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3881" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3881/hovercard"&gt;#3881&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/fb0b523e3d205d1680e351a5cc482932baa23f84"&gt;fb0b523&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Use the correct AWS partition in Lambda ARNs from the OpenTelemetry bridge and support the EU Sovereign Cloud partition. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3893" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3893/hovercard"&gt;#3893&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/6bb77b1a7d7ef93d62f7a2ce41e79dfae266a7ec"&gt;6bb77b1&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>

@@ -1,55 +1,74 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-10-28T00:07:26Z</updated>
+  <updated>2026-10-29T00:07:48Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-10-27</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-10-27</id>
+    <title>aws/aws-sdk-net - Releases - 2026-10-28</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-10-28</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-10-28T00:07:26Z</updated>
+    <updated>2026-10-29T00:07:48Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.359.0"&gt;4.0.359.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.360.0"&gt;4.0.360.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.359.0 (2026-10-27 18:12 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.360.0 (2026-10-28 18:11 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.124.0)
+&lt;li&gt;Artifact (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Adds the ResetTokenVaultKeyMaterial API, which restores a token vault whose customer managed key was deleted by moving it to an AWS owned key. The reset permanently deletes the stored OAuth 2.0 tokens, users must consent again. Adds on-behalf-of token exchange client authentication override option.&lt;/li&gt;
+&lt;li&gt;Update support mode for Assurance Assistance&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (4.0.109.3)
+&lt;li&gt;CertificateManager (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;DynamoDBv2 is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;li&gt;Added the InvalidEndpointException type. Operations that return HTTP 421 now throw InvalidEndpointException, a subclass of AmazonDynamoDBException, instead of the base exception.&lt;/li&gt;
+&lt;li&gt;AWS Certificate Manager now supports the Automatic Certificate Management Environment (ACME) protocol in the AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.130.0)
+&lt;li&gt;Connect (4.0.128.0)
 &lt;ul&gt;
-&lt;li&gt;EC2 AMIs can now show vulnerability data and be targeted directly for scanning.&lt;/li&gt;
+&lt;li&gt;Amazon Connect APIs - CreateTaskTemplate and UpdateTaskTemplate accept a new ContactHooks parameter called WrapUpFlowId to identify the flow module that runs when an agent attempts to disconnect from a task created with the template. Use this to verify an agent's work or update external case repos.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ECS (4.0.109.0)
+&lt;li&gt;ConnectParticipant (4.0.101.0)
 &lt;ul&gt;
-&lt;li&gt;ECS now supports GPU sharing via NVIDIA Multi-Process Service (MPS) on ECS Managed Instances and ECS EC2, allowing multiple ECS tasks to share a single Nvidia GPU for improved utilization.&lt;/li&gt;
+&lt;li&gt;Amazon Connect Participant Service now supports the optional UrlContentDisposition parameter on GetAttachment, which returns a pre-signed URL that renders a chat attachment inline in the browser instead of forcing a download.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Inspector2 (4.0.107.0)
+&lt;li&gt;EC2 (4.0.131.0)
 &lt;ul&gt;
-&lt;li&gt;Adding support for Machine Image scan&lt;/li&gt;
+&lt;li&gt;Amazon EC2 Capacity Manager adds supportability checks and capacity fulfillment metrics. Use GetCapacityManagerSupportabilityScores to score how well instance types and Availability Zones can support a capacity request, and GetCapacityManagerMetricData to retrieve fulfillment metrics.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;LicenseManager (4.0.102.0)
+&lt;li&gt;IVS (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;AWS License Manager now supports delegate grants for read-only visibility into license distributions. CreateGrant accepts a new GrantType (BuyerGrant or DelegateGrant) and a desired status at distribution time.&lt;/li&gt;
+&lt;li&gt;InsertAdBreak now allows setting a customized adBreakId on a request and also adds a new field targetStartAt for a delayed ad insertion&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Lightsail (4.0.105.0)
+&lt;li&gt;KafkaConnect (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Added the attributeUpdates parameter to the Lightsail StartInstance API, which allows customers to update the attributes of a stopped instance when starting it.&lt;/li&gt;
+&lt;li&gt;Amazon MSK Connect now supports updating a connector's custom plugin and worker configuration via the UpdateConnector API. MSK Connect checks connector and task health after the update and rolls back on failure. Each call returns an operation ARN to track with DescribeConnectorOperation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MediaLive (4.0.108.0)
+&lt;ul&gt;
+&lt;li&gt;AWS Elemental MediaLive now supports SMPTE 2022-7 seamless protection switching for multicast inputs on MediaLive Anywhere. Support for MulticastSettings sources to add a redundant copy of the stream received on a second network interface.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Neptunedata (4.0.101.0)
+&lt;ul&gt;
+&lt;li&gt;Get Storage API analyzes storage usage to identify database bloat and your storage footprint. Index Rebuild API triggers on-demand index reconstruction to eliminate bloat and restore query performance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;OpenSearchService (4.0.106.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds APIs to simplify setting up a replication relationship between OpenSearch clusters. The APIs include new Switchover and Failover actions for planned switchovers and unplanned failovers to ensure high availability for OpenSearch in the event of disaster in a single region.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SecurityAgent (4.0.114.0)
+&lt;ul&gt;
+&lt;li&gt;Adds support for attaching client certificates for mutual TLS (mTLS) authentication to penetration test target endpoints via the new ClientCertificates field on Assets, enabling pentesting of endpoints that require client certificate authentication.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

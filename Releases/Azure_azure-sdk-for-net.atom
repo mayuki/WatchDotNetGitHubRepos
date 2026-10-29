@@ -1,37 +1,75 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-10-28T00:07:27Z</updated>
+  <updated>2026-10-29T00:07:49Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-10-27</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-27</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-10-28</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-28</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-10-28T00:07:27Z</updated>
+    <updated>2026-10-29T00:07:49Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning_1.7.0-beta.1"&gt;Azure.Provisioning_1.7.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Network_1.18.0-beta.2"&gt;Azure.ResourceManager.Network_1.18.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.7.0-beta.1 (2026-10-27)&lt;/h2&gt;
+                                &lt;h2&gt;1.18.0-beta.2 (2026-10-28)&lt;/h2&gt;
+&lt;p&gt;The changes below are described relative to version 1.15.0. Previously published releases after 1.15.0, including 1.16.1 and 1.17.0, are planned for retraction.&lt;/p&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added JSON serialization and deserialization for &lt;code&gt;Infrastructure&lt;/code&gt; and Bicep syntax nodes through &lt;code&gt;ModelReaderWriter&lt;/code&gt;, including schema-compatible decorators, 64-bit integers, type annotations, and reverse indexing.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;OfResourceType&amp;lt;T&amp;gt;&lt;/code&gt; to upgrade deserialized resources to generated resource types while preserving properties, metadata, conditions, and resource dependencies.&lt;/li&gt;
-&lt;li&gt;Added validation that rejects Bicep constructs without a JSON schema representation, including nested resource access, null suppression, and standalone decorators.&lt;/li&gt;
+&lt;li&gt;Upgraded API version from 2025-05-01 to 2026-01-01.&lt;/li&gt;
+&lt;li&gt;Added resource APIs for address prefix sets, connection analyzers, connection policies, ExpressRoute LAGs, firewall policy Kubernetes selector groups, identity integration authentication policies, interconnect groups, and network manager configuration commits.&lt;/li&gt;
+&lt;li&gt;Added models for Application Gateway advanced routing conditions, maps, and rules.&lt;/li&gt;
+&lt;li&gt;Added strongly typed &lt;code&gt;BastionHostPatch&lt;/code&gt; overloads to &lt;code&gt;BastionHostResource.Update&lt;/code&gt; and &lt;code&gt;UpdateAsync&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;This release contains breaking changes compared with versions 1.16.1 and 1.17.0.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Migrated code generation from AutoRest to TypeSpec.&lt;/li&gt;
+&lt;li&gt;Deprecated &lt;code&gt;PolicySettings.CaptchaCookieExpirationInMins&lt;/code&gt; in favor of &lt;code&gt;CaptchaExpirationInMins&lt;/code&gt; and hid the legacy property from IntelliSense. The legacy property forwards to the replacement property for serialization.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CloudHealth_1.0.0"&gt;Azure.ResourceManager.CloudHealth_1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetApp_1.19.0"&gt;Azure.ResourceManager.NetApp_1.19.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0 (2026-10-27)&lt;/h2&gt;
-&lt;p&gt;This is the first stable release of this library.&lt;/p&gt;
+                                &lt;h2&gt;1.19.0 (2026-10-20)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded API version from &lt;code&gt;2026-10-01-preview&lt;/code&gt; to the stable &lt;code&gt;2026-11-01&lt;/code&gt; version.&lt;/li&gt;
+&lt;li&gt;Upgraded api-version to &lt;code&gt;2026-08-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Expanded &lt;code&gt;LdapConfiguration&lt;/code&gt; and &lt;code&gt;LdapConfigurationPatch&lt;/code&gt; with bind authentication, DNS servers, distinguished names, LDAP port, and Key Vault-backed bind password settings.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;BindPasswordKeyVaultConfig&lt;/code&gt; and &lt;code&gt;BindPasswordKeyVaultConfigPatch&lt;/code&gt; models.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;BindAuthenticationLevel&lt;/code&gt; and &lt;code&gt;SecureLdapType&lt;/code&gt; enums for LDAP authentication and secure LDAP configuration.&lt;/li&gt;
+&lt;li&gt;Added the &lt;code&gt;Canceled&lt;/code&gt; member to &lt;code&gt;NetAppProvisioningState&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;RefreshLdapBindPassword&lt;/code&gt; and &lt;code&gt;RefreshLdapBindPasswordAsync&lt;/code&gt; operations to &lt;code&gt;NetAppAccountResource&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Preserved the existing &lt;code&gt;NetAppAccountPatch.Encryption&lt;/code&gt; and &lt;code&gt;NetAppAccountPatch.ActiveDirectories&lt;/code&gt; property types and &lt;code&gt;NfsV4IdDomain&lt;/code&gt; property name when generating from TypeSpec.&lt;/li&gt;
+&lt;li&gt;Preserved explicit-null NFSv4 ID domain updates and their serialization round-trips.&lt;/li&gt;
+&lt;li&gt;Restored mutable empty tags when Elastic resource model factories receive omitted or null tags.&lt;/li&gt;
+&lt;li&gt;Restored collection interface enumeration through overridden listing methods, including cancellation-token forwarding.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.OracleDatabase_1.3.0"&gt;Azure.ResourceManager.OracleDatabase_1.3.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.3.0 (2026-10-16)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded API version to 2026-06-01.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed hostname deserialization for cloud VM clusters.&lt;/li&gt;
+&lt;li&gt;Fixed base database model factories to return concrete mock instances while preserving discriminator values.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
