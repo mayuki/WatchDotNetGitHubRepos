@@ -1,75 +1,129 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-10-29T00:07:49Z</updated>
+  <updated>2026-10-30T00:07:27Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-10-28</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-28</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-10-29</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-29</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-10-29T00:07:49Z</updated>
+    <updated>2026-10-30T00:07:27Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Network_1.18.0-beta.2"&gt;Azure.ResourceManager.Network_1.18.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Invocations_1.0.0-beta.8"&gt;Azure.AI.AgentServer.Invocations_1.0.0-beta.8&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.18.0-beta.2 (2026-10-28)&lt;/h2&gt;
-&lt;p&gt;The changes below are described relative to version 1.15.0. Previously published releases after 1.15.0, including 1.16.1 and 1.17.0, are planned for retraction.&lt;/p&gt;
+                                &lt;h2&gt;1.0.0-beta.8 (2026-10-28)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded API version from 2025-05-01 to 2026-01-01.&lt;/li&gt;
-&lt;li&gt;Added resource APIs for address prefix sets, connection analyzers, connection policies, ExpressRoute LAGs, firewall policy Kubernetes selector groups, identity integration authentication policies, interconnect groups, and network manager configuration commits.&lt;/li&gt;
-&lt;li&gt;Added models for Application Gateway advanced routing conditions, maps, and rules.&lt;/li&gt;
-&lt;li&gt;Added strongly typed &lt;code&gt;BastionHostPatch&lt;/code&gt; overloads to &lt;code&gt;BastionHostResource.Update&lt;/code&gt; and &lt;code&gt;UpdateAsync&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;This release contains breaking changes compared with versions 1.16.1 and 1.17.0.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;VoiceInputDataPart&lt;/code&gt;, ordered &lt;code&gt;VoiceUserMessageEvent.ContentParts&lt;/code&gt;, and &lt;code&gt;VoiceResponseOutputDataDoneMessage&lt;/code&gt; for application data in Bridge protocol &lt;code&gt;1.0&lt;/code&gt;. The existing text-only &lt;code&gt;Content&lt;/code&gt; projection and explicit silent completion remain available.&lt;/li&gt;
+&lt;li&gt;Added a standalone &lt;code&gt;/voice_conversation_engine&lt;/code&gt; WebSocket route for typed Voice&lt;br&gt;
+handlers registered with &lt;code&gt;AddVoice&amp;lt;THandler&amp;gt;()&lt;/code&gt;. It reuses the existing Bridge&lt;br&gt;
+Protocol 1.0 relay alongside &lt;code&gt;/invocations_ws&lt;/code&gt;, without new registration options&lt;br&gt;
+or changes to generic Invocations handlers.&lt;/li&gt;
+&lt;li&gt;Aligned the experimental Voice caller-interruption contract with &lt;code&gt;user.barge_in&lt;/code&gt;, &lt;code&gt;VoiceUserBargeInEvent&lt;/code&gt;, and &lt;code&gt;OnUserBargeInAsync&lt;/code&gt;, preserving playback snapshots and application-owned cancellation/history. Voice Live senders must use the same event contract. Generic raw WebSocket handlers are unchanged.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Migrated code generation from AutoRest to TypeSpec.&lt;/li&gt;
-&lt;li&gt;Deprecated &lt;code&gt;PolicySettings.CaptchaCookieExpirationInMins&lt;/code&gt; in favor of &lt;code&gt;CaptchaExpirationInMins&lt;/code&gt; and hid the legacy property from IntelliSense. The legacy property forwards to the replacement property for serialization.&lt;/li&gt;
+&lt;li&gt;Reference the published &lt;code&gt;Azure.AI.AgentServer.Core&lt;/code&gt; 1.0.0-beta.30 package instead of the current Core project, so this release does not require publishing Core 1.0.0-beta.31.&lt;/li&gt;
+&lt;li&gt;Updated resilient task samples to call &lt;code&gt;SetResilientTasksEnabled()&lt;/code&gt; explicitly; task&lt;br&gt;
+registration alone no longer activates storage or recovery.&lt;/li&gt;
+&lt;li&gt;Updated the resilient research sample to use constructor-injected task handlers and&lt;br&gt;
+task-bound producer/consumer streams, while retaining registry lookup for later GET&lt;br&gt;
+replay by invocation id.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetApp_1.19.0"&gt;Azure.ResourceManager.NetApp_1.19.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning_1.7.0-beta.2"&gt;Azure.Provisioning_1.7.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.19.0 (2026-10-20)&lt;/h2&gt;
+                                &lt;h2&gt;1.7.0-beta.2 (2026-10-29)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded api-version to &lt;code&gt;2026-08-01&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Expanded &lt;code&gt;LdapConfiguration&lt;/code&gt; and &lt;code&gt;LdapConfigurationPatch&lt;/code&gt; with bind authentication, DNS servers, distinguished names, LDAP port, and Key Vault-backed bind password settings.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;BindPasswordKeyVaultConfig&lt;/code&gt; and &lt;code&gt;BindPasswordKeyVaultConfigPatch&lt;/code&gt; models.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;BindAuthenticationLevel&lt;/code&gt; and &lt;code&gt;SecureLdapType&lt;/code&gt; enums for LDAP authentication and secure LDAP configuration.&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;Canceled&lt;/code&gt; member to &lt;code&gt;NetAppProvisioningState&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;RefreshLdapBindPassword&lt;/code&gt; and &lt;code&gt;RefreshLdapBindPasswordAsync&lt;/code&gt; operations to &lt;code&gt;NetAppAccountResource&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added a typed &lt;code&gt;ManagementLock.Scope&lt;/code&gt; property to apply a lock to an individual resource. Leaving it unset or assigning &lt;code&gt;null&lt;/code&gt; preserves deployment-scope locking. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/63624" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/63624/hovercard"&gt;#63624&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Types deriving from &lt;code&gt;ManagementLock&lt;/code&gt; that declare their own &lt;code&gt;Scope&lt;/code&gt; member, such as the workaround described in the issue, now hide this property (warning CS0108). Remove that member and use &lt;code&gt;ManagementLock.Scope&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added support for explicitly tagged raw Bicep expressions in &lt;code&gt;BicepValue&amp;lt;BinaryData&amp;gt;&lt;/code&gt; using the &lt;code&gt;text/vnd.microsoft.bicep&lt;/code&gt; media type.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Preserved the existing &lt;code&gt;NetAppAccountPatch.Encryption&lt;/code&gt; and &lt;code&gt;NetAppAccountPatch.ActiveDirectories&lt;/code&gt; property types and &lt;code&gt;NfsV4IdDomain&lt;/code&gt; property name when generating from TypeSpec.&lt;/li&gt;
-&lt;li&gt;Preserved explicit-null NFSv4 ID domain updates and their serialization round-trips.&lt;/li&gt;
-&lt;li&gt;Restored mutable empty tags when Elastic resource model factories receive omitted or null tags.&lt;/li&gt;
-&lt;li&gt;Restored collection interface enumeration through overridden listing methods, including cancellation-token forwarding.&lt;/li&gt;
+&lt;li&gt;Fixed null assignments to generated resource references in this library to clear the reference instead of emitting an explicit null. Clearing a required &lt;code&gt;Parent&lt;/code&gt; leaves it unset for required-property validation.&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;BicepValue&amp;lt;BinaryData&amp;gt;&lt;/code&gt; literal compilation to emit JSON through Bicep's &lt;code&gt;json(...)&lt;/code&gt; function while preserving generated base64-encoded properties.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.OracleDatabase_1.3.0"&gt;Azure.ResourceManager.OracleDatabase_1.3.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.EventHubs_6.5.5"&gt;Microsoft.Azure.WebJobs.Extensions.EventHubs_6.5.5&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.3.0 (2026-10-16)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded API version to 2026-06-01.&lt;/li&gt;
-&lt;/ul&gt;
+                                &lt;h2&gt;6.5.5 (2026-10-27)&lt;/h2&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed hostname deserialization for cloud VM clusters.&lt;/li&gt;
-&lt;li&gt;Fixed base database model factories to return concrete mock instances while preserving discriminator values.&lt;/li&gt;
+&lt;li&gt;Fixed an issue where stale checkpoints could prevent scale-in when &lt;code&gt;BatchCheckpointFrequency&lt;/code&gt; was greater than 1. Pending processed events are now checkpointed after 10 minutes of inactivity so that the scale controller does not report backlog for events that have already been processed. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/59801" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/59801/hovercard"&gt;#59801&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Storage_1.9.0"&gt;Azure.ResourceManager.Storage_1.9.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.9.0 (2026-10-28)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version from &lt;code&gt;2026-06-01&lt;/code&gt; to &lt;code&gt;2026-09-01&lt;/code&gt;. Tag details available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/tree/fd6b671904429f73310b882648f81346b05024d1/specification/storage/resource-manager/Microsoft.Storage/Storage"&gt;https://github.com/Azure/azure-rest-api-specs/tree/fd6b671904429f73310b882648f81346b05024d1/specification/storage/resource-manager/Microsoft.Storage/Storage&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;Supported new &lt;code&gt;BlobAccessPointConfigurationResource&lt;/code&gt; for managing Blob Access Point configurations and testing proposed and existing connections to backing data stores.&lt;/li&gt;
+&lt;li&gt;Supported attaching blob containers to Blob Access Point configurations and enabling Blob Access Points through &lt;code&gt;StorageDataCollaborationPolicyProperties.AllowBlobAccessPoints&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Supported new &lt;code&gt;TurboTier&lt;/code&gt; configuration on storage account create/update, including status and target percentage.&lt;/li&gt;
+&lt;li&gt;Supported context cache name availability checks.&lt;/li&gt;
+&lt;li&gt;Supported new &lt;code&gt;ServiceTags&lt;/code&gt; property on &lt;code&gt;NspAccessRuleProperties&lt;/code&gt; for inbound network security perimeter access rules.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerService_1.10.0-beta.1"&gt;Azure.ResourceManager.ContainerService_1.10.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.10.0-beta.1 (2026-10-22)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version to 2026-08-02-preview.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.VoiceLive_1.2.1"&gt;Azure.AI.VoiceLive_1.2.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.2.1 (2026-10-28)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;WebSocket connections no longer follow redirects, preventing API keys and other handshake headers from being forwarded to redirect destinations.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Secrets_4.12.0"&gt;Azure.Security.KeyVault.Secrets_4.12.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;4.12.0 (2026-10-27)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Regenerated the library for stable Key Vault API version &lt;code&gt;2026-04-01&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Certificates_4.10.0"&gt;Azure.Security.KeyVault.Certificates_4.10.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;4.10.0 (2026-10-27)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Regenerated the library for stable Key Vault API version &lt;code&gt;2026-04-01&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;

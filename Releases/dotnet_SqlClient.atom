@@ -1,65 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/SqlClient - Releases</title>
   <link href="https://github.com/dotnet/SqlClient" />
-  <updated>2026-10-29T00:08:02Z</updated>
+  <updated>2026-10-30T00:07:40Z</updated>
   <id>https://github.com/dotnet/SqlClient</id>
-  <entry>
-    <title>dotnet/SqlClient - Releases - 2026-10-28</title>
-    <id>https://github.com/dotnet/SqlClient#2026-10-28</id>
-    <link href="https://github.com/dotnet/SqlClient" />
-    <updated>2026-10-29T00:08:02Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/SqlClient/releases/tag/v6.1.8"&gt;Stable Release v6.1.8&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;This update brings the following changes since the &lt;a href="https://github.com/dotnet/SqlClient/releases/tag/v6.1.7"&gt;6.1.7&lt;/a&gt; release:&lt;/p&gt;
-&lt;h3&gt;Changed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Updated the &lt;code&gt;System.Security.Cryptography.Pkcs&lt;/code&gt; dependency to 8.0.2 (was 8.0.1) for .NET Framework 4.6.2, .NET 8.0, and .NET Standard 2.0, and updated the &lt;code&gt;Microsoft.Extensions.Caching.Memory&lt;/code&gt;, &lt;code&gt;System.Configuration.ConfigurationManager&lt;/code&gt;, and &lt;code&gt;System.Security.Cryptography.Pkcs&lt;/code&gt; dependencies to 9.0.21 (was 9.0.11) for .NET 9.0.&lt;br&gt;
-(&lt;a href="https://github.com/dotnet/SqlClient/pull/4842" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4842/hovercard"&gt;#4842&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4862" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4862/hovercard"&gt;#4862&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4870" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4870/hovercard"&gt;#4870&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Improved the error reported when &lt;code&gt;Active Directory Interactive&lt;/code&gt; authentication through the Windows Web Account Manager (WAM) broker fails because the host has no parent window, such as a service or Azure Functions host. The resulting error now explains the supported alternatives: supply a parent window with &lt;code&gt;SetParentActivityOrWindowFunc&lt;/code&gt;, use &lt;code&gt;Active Directory Default&lt;/code&gt; with a configured non-interactive credential, or supply a custom &lt;code&gt;ApplicationClientId&lt;/code&gt; with &lt;code&gt;UseWamBroker&lt;/code&gt; disabled. The original MSAL error code and inner exception are preserved, and authentication selection, retry behavior, and other failures are unchanged. (Windows only)&lt;br&gt;
-(&lt;a href="https://github.com/dotnet/SqlClient/issues/4854" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4854/hovercard"&gt;#4854&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4858" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4858/hovercard"&gt;#4858&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4918" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4918/hovercard"&gt;#4918&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed the managed SNI path ignoring &lt;code&gt;HostNameInCertificate&lt;/code&gt; during server certificate validation. When &lt;code&gt;HostNameInCertificate&lt;/code&gt; is set, it is now the only host name the server certificate is validated against, and certificates that do not match it are rejected. Default host-name selection when the property is not set, certificate chain validation, &lt;code&gt;ServerCertificate&lt;/code&gt; matching, and the connection destination are unchanged. (net8.0/net9.0 only)&lt;br&gt;
-(&lt;a href="https://github.com/dotnet/SqlClient/pull/4905" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4905/hovercard"&gt;#4905&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4909" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4909/hovercard"&gt;#4909&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed Always Encrypted enclave session caching so that cached enclave sessions are isolated by attestation protocol. A session established with one &lt;code&gt;Attestation Protocol&lt;/code&gt; setting is no longer reused by a connection to the same server, database, and attestation URL that uses a different protocol.&lt;br&gt;
-(&lt;a href="https://github.com/dotnet/SqlClient/pull/4829" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4829/hovercard"&gt;#4829&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4868" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4868/hovercard"&gt;#4868&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed &lt;code&gt;SqlDataReader.HasRows&lt;/code&gt; returning &lt;code&gt;false&lt;/code&gt; when a result set contains rows but the server sends multiple informational messages, or an informational message before an &lt;code&gt;ORDER&lt;/code&gt; token, ahead of the first row. Empty results still report &lt;code&gt;false&lt;/code&gt;, and &lt;code&gt;InfoMessage&lt;/code&gt; delivery is unchanged.&lt;br&gt;
-(&lt;a href="https://github.com/dotnet/SqlClient/issues/3018" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/3018/hovercard"&gt;#3018&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4773" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4773/hovercard"&gt;#4773&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4898" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4898/hovercard"&gt;#4898&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed an intermittent &lt;code&gt;InvalidOperationException&lt;/code&gt; ("Nullable object must have a value") from statistics bookkeeping when commands complete concurrently on a MARS connection. This issue was reported as a regression starting with 6.1.4.&lt;br&gt;
-(&lt;a href="https://github.com/dotnet/SqlClient/issues/4778" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4778/hovercard"&gt;#4778&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4875" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4875/hovercard"&gt;#4875&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4896" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4896/hovercard"&gt;#4896&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed Entra ID authentication when the server supplies an authority URL with an OAuth endpoint suffix, such as &lt;code&gt;https://login.microsoftonline.com/&amp;lt;tenant&amp;gt;/oauth2/authorize&lt;/code&gt; returned by the Dataverse/Dynamics 365 TDS endpoint. The provider now extracts the tenant from the first path segment and uses the normalized authority for Azure.Identity credentials, MSAL, and their cache keys. An authority URL that cannot be parsed now fails with a clear, localized &lt;code&gt;ArgumentException&lt;/code&gt; naming the authority. Bare tenant authority URLs used by Azure SQL and Fabric retain their existing behavior.&lt;br&gt;
-(&lt;a href="https://github.com/dotnet/SqlClient/issues/4496" data-hovercard-type="issue" data-hovercard-url="/dotnet/SqlClient/issues/4496/hovercard"&gt;#4496&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4521" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4521/hovercard"&gt;#4521&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4791" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4791/hovercard"&gt;#4791&lt;/a&gt;, &lt;a href="https://github.com/dotnet/SqlClient/pull/4807" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4807/hovercard"&gt;#4807&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Target Platform Support&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;.NET Framework 4.6.2+ (Windows x86, Windows x64, Windows ARM64)&lt;/li&gt;
-&lt;li&gt;.NET 8.0+ (Windows x86, Windows x64, Windows ARM64, Linux, macOS)&lt;/li&gt;
-&lt;li&gt;.NET Standard 2.0+ (Windows x86, Windows x64, Windows ARM64, Linux, macOS)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Full details: &lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/6.1/6.1.8.md"&gt;release-notes/6.1/6.1.8.md&lt;/a&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
