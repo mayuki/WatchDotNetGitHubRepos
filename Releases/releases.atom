@@ -1,231 +1,74 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-10-30T00:07:55Z</updated>
+  <updated>2026-10-31T00:06:04Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-10-29</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-10-29</id>
+    <title>aws/aws-sdk-net - Releases - 2026-10-30</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-10-30</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-10-30T00:07:26Z</updated>
+    <updated>2026-10-31T00:05:41Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.361.0"&gt;4.0.361.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.362.0"&gt;4.0.362.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.361.0 (2026-10-29 18:09 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.362.0 (2026-10-30 18:10 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AppMesh (4.0.100.22)
+&lt;li&gt;BedrockAgentRuntime (4.0.105.0)
 &lt;ul&gt;
-&lt;li&gt;AppMesh is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Adds the CodeExecution step and codeExecution action to AgenticRetrieveStream trace events, showing when the agent runs code and which documents it reads.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AWSSupport (4.0.101.11)
+&lt;li&gt;CloudWatchLogs (4.0.107.0)
 &lt;ul&gt;
-&lt;li&gt;AWSSupport is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Adds support for account-level retention policies in Amazon CloudWatch Logs. Customers can now use PutAccountPolicy with the new RETENTION POLICY type to set default log retention across all log groups in an account. Includes dry-run mode to preview the impact of policy changes before applying them.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCore (4.0.116.0)
+&lt;li&gt;Connect (4.0.129.0)
 &lt;ul&gt;
-&lt;li&gt;Adds AgentCore Runtime session endpoint support, including sessionEndpointUrl on the InvokeAgentRuntime response&lt;/li&gt;
+&lt;li&gt;Amazon Connect adds tag-based access control for Contact Lens rules. ListRealtimeContactAnalysisSegmentsV2 adds a ListFilter to return only category segments whose rules match given tags. PreEvaluationFilter now supports contact evaluation resources for OnContactEvaluationSubmit rules.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.125.0)
+&lt;li&gt;CustomerProfiles (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;Adds Session Endpoint Feature on AgentCore Runtime&lt;/li&gt;
+&lt;li&gt;Adds support for template ingestion controls in the GetProfileObjectTypeTemplate API response.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CleanRooms (4.0.106.0)
+&lt;li&gt;DocDB (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for the PySpark 2.0 analysis template format and for choosing the file format (CSV or Parquet) of protected job results written to Amazon S3, including in a membership's default job result configuration.&lt;/li&gt;
+&lt;li&gt;Amazon DocumentDB now returns ServerlessV2PlatformVersion in DBCluster API responses and adds the DescribeServerlessV2PlatformVersions API to discover available platform versions and their capabilities.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudHSM (4.0.100.22)
+&lt;li&gt;Lambda (4.0.111.0)
 &lt;ul&gt;
-&lt;li&gt;CloudHSM is now generated from its Smithy model. CloudHsmInternalException and InvalidRequestException now expose the Retryable flag (bool?) that the service returns, hiding the base RetryableDetails property as CloudHsmServiceException already does.&lt;/li&gt;
+&lt;li&gt;Adds ConsumptionMode to SelfManagedKafkaEventSourceConfig, letting Lambda event source mappings consume self-managed Apache Kafka topics as a queue. Set ConsumptionMode to Queue when creating an event source mapping.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudTrail (4.0.101.10)
+&lt;li&gt;Omics (4.0.105.0)
 &lt;ul&gt;
-&lt;li&gt;CloudTrail is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;li&gt;The X-Amz-Target request header now uses the service shape name (CloudTrail_20131101.{Operation}) instead of the legacy namespaced prefix; the service accepts both and other AWS SDKs already send the new form.&lt;/li&gt;
+&lt;li&gt;Adds the outputUriPrefixMode parameter to StartRun and GetRun. You can now write run outputs directly under outputUri, without the prefixes the service adds by default. When you opt in, outputs overwrite existing objects at the same keys.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudWatchLogs (4.0.106.3)
+&lt;li&gt;PrometheusService (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;CloudWatchLogs is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Managed Prometheus collectors now support Amazon MSK consumer-group metrics for Amazon Managed Service for Prometheus and CloudWatch.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CodeDeploy (4.0.103.3)
+&lt;li&gt;SageMaker (4.0.124.0)
 &lt;ul&gt;
-&lt;li&gt;CodeDeploy is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Create endpoints with AcceleratorPartitionLayouts on ProductionVariant and deploy inference components with AcceleratorPartitionType in ComputeResourceRequirements to divide accelerators into hardware-isolated NVIDIA MIG partitions, running multiple models per GPU. P4d, P5, G7, G7e.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CodePipeline (4.0.101.3)
+&lt;li&gt;TimestreamInfluxDB (4.0.105.0)
 &lt;ul&gt;
-&lt;li&gt;CodePipeline is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Add DeploymentConfiguration field to CreateDbCluster and UpdateDbCluster APIs to support creation of heterogenous InfluxDB v3 Enterprise clusters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CognitoSync (4.0.100.22)
+&lt;li&gt;Core 4.0.102.16
 &lt;ul&gt;
-&lt;li&gt;CognitoSync is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ConfigService (4.0.102.20)
-&lt;ul&gt;
-&lt;li&gt;ConfigService is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Connect (4.0.128.1)
-&lt;ul&gt;
-&lt;li&gt;Connect is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DataPipeline (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;DataPipeline is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;li&gt;The DescribeObjects, ListPipelines and QueryObjects paginators now stop when the response carries no marker instead of checking the HasMoreResults flag; the service omits the marker on the last page.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DeviceFarm (4.0.102.12)
-&lt;ul&gt;
-&lt;li&gt;DeviceFarm is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DirectConnect (4.0.103.8)
-&lt;ul&gt;
-&lt;li&gt;DirectConnect is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DirectoryService (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;DirectoryService is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DynamoDBStreams (4.0.101.4)
-&lt;ul&gt;
-&lt;li&gt;DynamoDBStreams is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ElasticFileSystem (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;ElasticFileSystem is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ElasticMapReduce (4.0.101.18)
-&lt;ul&gt;
-&lt;li&gt;ElasticMapReduce is now generated from its Smithy model. BlockPublicAccessConfiguration now exposes the Classification, Configurations and Properties members that the service returns.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;GameLift (4.0.104.5)
-&lt;ul&gt;
-&lt;li&gt;GameLift is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Glacier (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;Glacier is now generated from its Smithy model.&lt;/li&gt;
-&lt;li&gt;Added the ListMultipartUploads paginator (IGlacierPaginatorFactory.ListMultipartUploads). The operation was always declared as paginated, but the previous generator skipped it.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Imagebuilder (4.0.104.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds support for on-demand AMI scanning with Amazon Inspector.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IoT (4.0.101.12)
-&lt;ul&gt;
-&lt;li&gt;IoT is now generated from its Smithy model.&lt;/li&gt;
-&lt;li&gt;Added the ListPrincipalThings, ListThings and ListTopicRules paginators (IIoTPaginatorFactory). The operations were always declared as paginated, but the previous generator skipped them.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;KeyManagementService (4.0.101.1)
-&lt;ul&gt;
-&lt;li&gt;KeyManagementService is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;li&gt;The DescribeCustomKeyStores, ListAliases, ListGrants, ListKeyPolicies, ListKeyRotations, ListKeys, ListResourceTags and ListRetirableGrants paginators now stop when the response carries no NextMarker instead of checking the Truncated flag; the service omits NextMarker on the last page.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Kinesis (4.0.104.8)
-&lt;ul&gt;
-&lt;li&gt;Kinesis is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;li&gt;The ListStreams paginator now stops when the response carries no NextToken instead of checking the HasMoreStreams flag; the service omits NextToken on the last page, which is how the other Smithy-based SDKs already paginate it.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;KinesisFirehose (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;KinesisFirehose is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Lightsail (4.0.106.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds support for instance health status checks and system status checks.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MachineLearning (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;MachineLearning is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Route53Domains (4.0.101.5)
-&lt;ul&gt;
-&lt;li&gt;Route53Domains is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3 (4.0.104.8)
-&lt;ul&gt;
-&lt;li&gt;Fix S3 Express sessions being shared between clients that use different credentials with the same AmazonS3Config. Each client now creates and caches its own sessions, keyed by bucket and credentials, and clients no longer dispose an S3ExpressCredentialProvider set on the config.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SimpleSystemsManagement (4.0.104.8)
-&lt;ul&gt;
-&lt;li&gt;SimpleSystemsManagement is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SQS (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;SQS is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;StorageGateway (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;StorageGateway is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;TimestreamQuery (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;TimestreamQuery is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;TimestreamWrite (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;TimestreamWrite is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WAF (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;WAF is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WAFRegional (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;WAFRegional is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WAFV2 (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;AWS WAF customers using Targeted Bot Control, ATP, or ACFP managed rule groups can now enable automatic Challenge JavaScript SDK injection. When enabled, Amazon CloudFront injects the script tag into HTML responses on your behalf, removing the need for manual integration.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WorkSpaces (4.0.104.3)
-&lt;ul&gt;
-&lt;li&gt;WorkSpaces is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.0.102.15
-&lt;ul&gt;
-&lt;li&gt;Read the AWS_LAMBDA_FUNCTION_NAME environment variable once per process instead of on every request when setting the recursion detection header.&lt;/li&gt;
-&lt;li&gt;Removed a lock from the cached logger lookup and avoided building debug log arguments during request path canonicalization unless a debug logger is attached.&lt;/li&gt;
+&lt;li&gt;Return the streaming JSON reader's pooled buffer once the root value has been read, and dispose the unmarshaller context for non-streaming responses, so JSON responses no longer allocate a fresh buffer per request.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -236,126 +79,141 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-10-29</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-29</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-10-30</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-30</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-10-30T00:07:27Z</updated>
+    <updated>2026-10-31T00:05:41Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Invocations_1.0.0-beta.8"&gt;Azure.AI.AgentServer.Invocations_1.0.0-beta.8&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.DeviceProvisioningServices_1.4.0"&gt;Azure.ResourceManager.DeviceProvisioningServices_1.4.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.8 (2026-10-28)&lt;/h2&gt;
+                                &lt;h2&gt;1.4.0 (2026-11-01)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;VoiceInputDataPart&lt;/code&gt;, ordered &lt;code&gt;VoiceUserMessageEvent.ContentParts&lt;/code&gt;, and &lt;code&gt;VoiceResponseOutputDataDoneMessage&lt;/code&gt; for application data in Bridge protocol &lt;code&gt;1.0&lt;/code&gt;. The existing text-only &lt;code&gt;Content&lt;/code&gt; projection and explicit silent completion remain available.&lt;/li&gt;
-&lt;li&gt;Added a standalone &lt;code&gt;/voice_conversation_engine&lt;/code&gt; WebSocket route for typed Voice&lt;br&gt;
-handlers registered with &lt;code&gt;AddVoice&amp;lt;THandler&amp;gt;()&lt;/code&gt;. It reuses the existing Bridge&lt;br&gt;
-Protocol 1.0 relay alongside &lt;code&gt;/invocations_ws&lt;/code&gt;, without new registration options&lt;br&gt;
-or changes to generic Invocations handlers.&lt;/li&gt;
-&lt;li&gt;Aligned the experimental Voice caller-interruption contract with &lt;code&gt;user.barge_in&lt;/code&gt;, &lt;code&gt;VoiceUserBargeInEvent&lt;/code&gt;, and &lt;code&gt;OnUserBargeInAsync&lt;/code&gt;, preserving playback snapshots and application-owned cancellation/history. Voice Live senders must use the same event contract. Generic raw WebSocket handlers are unchanged.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Reference the published &lt;code&gt;Azure.AI.AgentServer.Core&lt;/code&gt; 1.0.0-beta.30 package instead of the current Core project, so this release does not require publishing Core 1.0.0-beta.31.&lt;/li&gt;
-&lt;li&gt;Updated resilient task samples to call &lt;code&gt;SetResilientTasksEnabled()&lt;/code&gt; explicitly; task&lt;br&gt;
-registration alone no longer activates storage or recovery.&lt;/li&gt;
-&lt;li&gt;Updated the resilient research sample to use constructor-injected task handlers and&lt;br&gt;
-task-bound producer/consumer streams, while retaining registry lookup for later GET&lt;br&gt;
-replay by invocation id.&lt;/li&gt;
+&lt;li&gt;Updated to support API version &lt;code&gt;2026-11-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added support for Device Registry namespaces linked to a Device Provisioning Service.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning_1.7.0-beta.2"&gt;Azure.Provisioning_1.7.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.Attestation_2.0.0"&gt;Azure.Security.Attestation_2.0.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.7.0-beta.2 (2026-10-29)&lt;/h2&gt;
+                                &lt;h2&gt;2.0.0 (2026-10-30)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added a typed &lt;code&gt;ManagementLock.Scope&lt;/code&gt; property to apply a lock to an individual resource. Leaving it unset or assigning &lt;code&gt;null&lt;/code&gt; preserves deployment-scope locking. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/63624" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/63624/hovercard"&gt;#63624&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Types deriving from &lt;code&gt;ManagementLock&lt;/code&gt; that declare their own &lt;code&gt;Scope&lt;/code&gt; member, such as the workaround described in the issue, now hide this property (warning CS0108). Remove that member and use &lt;code&gt;ManagementLock.Scope&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added support for explicitly tagged raw Bicep expressions in &lt;code&gt;BicepValue&amp;lt;BinaryData&amp;gt;&lt;/code&gt; using the &lt;code&gt;text/vnd.microsoft.bicep&lt;/code&gt; media type.&lt;/li&gt;
+&lt;li&gt;Updated the client library to target the &lt;code&gt;2025-06-01&lt;/code&gt; Azure Attestation service API version.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;AttestationClientOptions.ServiceVersion.V2025_06_01&lt;/code&gt;, which is now the default service version. &lt;code&gt;V2020_10_01&lt;/code&gt; remains available for callers that need to continue targeting the previous service API version.&lt;/li&gt;
+&lt;li&gt;Added the &lt;code&gt;AttestationType.AzureGuest&lt;/code&gt;, &lt;code&gt;AttestationType.SevSnpVm&lt;/code&gt;, and &lt;code&gt;AttestationType.TdxVm&lt;/code&gt; values. &lt;code&gt;TdxVm&lt;/code&gt; requires service version &lt;code&gt;V2025_06_01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;AttestationClient.AttestTdxVm&lt;/code&gt; and &lt;code&gt;AttestationClient.AttestSevSnpVm&lt;/code&gt; (and their async counterparts) to attest Intel TDX and AMD SEV-SNP confidential virtual machines. &lt;code&gt;AttestTdxVm&lt;/code&gt; requires service version &lt;code&gt;V2025_06_01&lt;/code&gt;; &lt;code&gt;AttestationClient.CanAttestTdxVm&lt;/code&gt; indicates whether the client supports it.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;AttestationRequest.Nonce&lt;/code&gt;, which the service returns in the &lt;code&gt;nonce&lt;/code&gt; claim of the attestation token.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;AttestationResult.AdditionalClaims&lt;/code&gt;, which exposes the token's claims that have no dedicated property, such as the TDX and SEV-SNP claims and claims issued by attestation policy. &lt;code&gt;AttestationModelFactory.AttestationResult&lt;/code&gt; accepts them as &lt;code&gt;additionalClaims&lt;/code&gt; for mocking.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;AttestationClient.GetOpenIdMetadata&lt;/code&gt; (and its async counterpart), which retrieves the attestation provider's OpenID Connect discovery document as an &lt;code&gt;AttestationOpenIdMetadata&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;AttestationClient.AttestAzureGuest&lt;/code&gt; (and its async counterpart) to attest Azure confidential and Trusted Launch virtual machines. It returns a &lt;code&gt;SealedAttestationResult&lt;/code&gt; whose token is encrypted to the virtual machine's TPM, so the client does not validate it.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;AttestationAdministrationClient.GetTcbBaselines&lt;/code&gt; (and its async counterpart), which lists the SGX trusted computing base (TCB) baselines an attestation policy can require, as &lt;code&gt;TcbBaselineResult&lt;/code&gt; and &lt;code&gt;TcbBaseline&lt;/code&gt;. It requires service version &lt;code&gt;V2025_06_01&lt;/code&gt;; &lt;code&gt;AttestationAdministrationClient.CanGetTcbBaselines&lt;/code&gt; indicates whether the client supports it.&lt;/li&gt;
+&lt;li&gt;Model types now implement &lt;code&gt;IJsonModel&amp;lt;T&amp;gt;&lt;/code&gt; and &lt;code&gt;IPersistableModel&amp;lt;T&amp;gt;&lt;/code&gt;, and &lt;code&gt;AzureSecurityAttestationContext&lt;/code&gt; was added, for use with &lt;code&gt;System.ClientModel.Primitives.ModelReaderWriter&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;p&gt;This release changes how attestation tokens are validated, so code that worked with 1.0.0 might need changes. See the &lt;a href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/attestation/Azure.Security.Attestation/MigrationGuide.md"&gt;migration guide&lt;/a&gt; for how to update it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;AttestationToken.ValidateToken&lt;/code&gt; and &lt;code&gt;AttestationToken.ValidateTokenAsync&lt;/code&gt; now return &lt;code&gt;false&lt;/code&gt; for unsecured tokens, that is, tokens whose &lt;code&gt;alg&lt;/code&gt; header is &lt;code&gt;none&lt;/code&gt;. Such tokens carry no signature, so no signature verification was performed and validation previously succeeded by default. The &lt;code&gt;AttestationTokenValidationOptions.TokenValidated&lt;/code&gt; handler is no longer invoked for these tokens and cannot be used to accept them. Tokens returned by the Attestation service are signed and are unaffected, except for the response to an attestation request that sets &lt;code&gt;DraftPolicyForAttestation&lt;/code&gt;: the service never signs it, so the client still returns it, as before, after checking its time claims and invoking the &lt;code&gt;TokenValidated&lt;/code&gt; handler. Unsecured tokens sent to the service by &lt;code&gt;SetPolicy&lt;/code&gt; and &lt;code&gt;ResetPolicy&lt;/code&gt; are also unaffected, as they are never validated by the client.&lt;/li&gt;
+&lt;li&gt;Attestation tokens are now validated against their issuer by default. &lt;code&gt;AttestationTokenValidationOptions.ValidateIssuer&lt;/code&gt; defaults to &lt;code&gt;true&lt;/code&gt;, and &lt;code&gt;AttestationClient&lt;/code&gt; and &lt;code&gt;AttestationAdministrationClient&lt;/code&gt; use their endpoint as the expected issuer when &lt;code&gt;ExpectedIssuer&lt;/code&gt; is not set. While issuer validation is enabled, a token without an issuer is rejected. Callers of &lt;code&gt;AttestationToken.ValidateToken&lt;/code&gt; and &lt;code&gt;AttestationToken.ValidateTokenAsync&lt;/code&gt; must set &lt;code&gt;ExpectedIssuer&lt;/code&gt; to the base URI of the attestation provider the token must come from, or set &lt;code&gt;ValidateIssuer&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AttestationToken.ValidateToken&lt;/code&gt; and &lt;code&gt;AttestationToken.ValidateTokenAsync&lt;/code&gt; now accept a signed token only if one of the signing certificates passed as &lt;code&gt;attestationSigningCertificates&lt;/code&gt; signed it. Previously, when no signing certificates were passed, the token was checked against the certificates in its own header. They now throw &lt;code&gt;ArgumentNullException&lt;/code&gt; when &lt;code&gt;attestationSigningCertificates&lt;/code&gt; is &lt;code&gt;null&lt;/code&gt; and &lt;code&gt;ArgumentException&lt;/code&gt; when it is empty; use &lt;code&gt;AttestationClient.GetSigningCertificates&lt;/code&gt; to retrieve the attestation provider's signing certificates. Certificates and keys in a token's header are no longer used to select a signer in any case.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AttestationClient&lt;/code&gt; and &lt;code&gt;AttestationAdministrationClient&lt;/code&gt; now throw &lt;code&gt;ArgumentException&lt;/code&gt; when the endpoint does not use &lt;code&gt;https&lt;/code&gt;. An &lt;code&gt;AttestationClient&lt;/code&gt; created without a credential previously sent its requests, including the request for the certificates that validate tokens, without TLS.&lt;/li&gt;
+&lt;li&gt;When several handlers are attached to &lt;code&gt;AttestationTokenValidationOptions.TokenValidated&lt;/code&gt;, the token is now rejected if any of them sets &lt;code&gt;IsValid&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt;. Previously only the value set by the last handler was used.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AttestationTokenSigningKey&lt;/code&gt; now throws &lt;code&gt;ArgumentException&lt;/code&gt; for keys and certificates that are not RSA, such as ECDSA keys, instead of &lt;code&gt;NotSupportedException&lt;/code&gt; or &lt;code&gt;NullReferenceException&lt;/code&gt;. Only RSA signing keys are supported.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AttestationTokenValidationOptions.TimeValidationSlack&lt;/code&gt; now defaults to 5 seconds instead of 0. The service sets a token's &lt;code&gt;nbf&lt;/code&gt; claim with its own clock, which can be slightly ahead of the caller's, so with no slack a token returned by the service was intermittently rejected as not yet valid. Set &lt;code&gt;TimeValidationSlack&lt;/code&gt; to 0 to restore exact time checks.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed null assignments to generated resource references in this library to clear the reference instead of emitting an explicit null. Clearing a required &lt;code&gt;Parent&lt;/code&gt; leaves it unset for required-property validation.&lt;/li&gt;
-&lt;li&gt;Fixed &lt;code&gt;BicepValue&amp;lt;BinaryData&amp;gt;&lt;/code&gt; literal compilation to emit JSON through Bicep's &lt;code&gt;json(...)&lt;/code&gt; function while preserving generated base64-encoded properties.&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;GetPolicy&lt;/code&gt; throwing instead of returning a null policy when the requested attestation type has no policy configured.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AttestationClient.GetSigningCertificatesAsync&lt;/code&gt;, which the async operations also use to fetch the keys that validate tokens, no longer makes a blocking network call.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AttestationToken.ExpirationTime&lt;/code&gt;, &lt;code&gt;NotBeforeTime&lt;/code&gt;, and &lt;code&gt;IssuedAtTime&lt;/code&gt; no longer truncate fractional seconds in the token's &lt;code&gt;exp&lt;/code&gt;, &lt;code&gt;nbf&lt;/code&gt;, and &lt;code&gt;iat&lt;/code&gt; claims.&lt;/li&gt;
+&lt;li&gt;With a nonzero &lt;code&gt;AttestationTokenValidationOptions.TimeValidationSlack&lt;/code&gt;, token validation compared only the seconds component of the time elapsed since &lt;code&gt;exp&lt;/code&gt; (or remaining until &lt;code&gt;nbf&lt;/code&gt;) with the slack, so a token outside the slack by a whole number of minutes could pass. It now compares the total elapsed time.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AttestationToken.X509CertificateChain&lt;/code&gt; now decodes the base64-encoded certificates in the token's &lt;code&gt;x5c&lt;/code&gt; header on all target frameworks, and returns an empty array when the header has none. On .NET 9 and earlier, and on .NET Framework, it treated each entry as a file name, so it could not read the certificates in tokens returned by the service.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AttestationAdministrationClient.SetPolicy&lt;/code&gt;, &lt;code&gt;GetPolicyManagementCertificates&lt;/code&gt;, and &lt;code&gt;GetPolicyManagementCertificatesAsync&lt;/code&gt; no longer throw when a &lt;code&gt;TokenValidated&lt;/code&gt; handler is attached; they now invoke it like the other operations.&lt;/li&gt;
+&lt;li&gt;A token without a &lt;code&gt;kid&lt;/code&gt; header is now checked against every signing certificate passed to &lt;code&gt;ValidateToken&lt;/code&gt; and &lt;code&gt;ValidateTokenAsync&lt;/code&gt;. Previously only the first was tried, so a token signed by another of them was rejected.&lt;/li&gt;
+&lt;li&gt;Tokens signed with an &lt;code&gt;AttestationTokenSigningKey&lt;/code&gt; now carry the standard JWS algorithm &lt;code&gt;RS256&lt;/code&gt; in their &lt;code&gt;alg&lt;/code&gt; header, instead of &lt;code&gt;RSA256&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Tokens signed with an &lt;code&gt;AttestationTokenSigningKey&lt;/code&gt; created from a certificate alone now use the certificate's private key. Previously, on .NET 8 and later, signing failed with a &lt;code&gt;CryptographicException&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ValidateToken&lt;/code&gt; and &lt;code&gt;ValidateTokenAsync&lt;/code&gt; now throw &lt;code&gt;ArgumentNullException&lt;/code&gt; when &lt;code&gt;options&lt;/code&gt; is &lt;code&gt;null&lt;/code&gt; or &lt;code&gt;attestationSigningCertificates&lt;/code&gt; contains &lt;code&gt;null&lt;/code&gt;, throw &lt;code&gt;ArgumentException&lt;/code&gt; when one of the signers has no certificate, and return &lt;code&gt;false&lt;/code&gt; for a token without an &lt;code&gt;alg&lt;/code&gt; header, instead of throwing &lt;code&gt;NullReferenceException&lt;/code&gt; or &lt;code&gt;ArgumentOutOfRangeException&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AttestationToken.ExpirationTime&lt;/code&gt;, &lt;code&gt;NotBeforeTime&lt;/code&gt;, and &lt;code&gt;IssuedAtTime&lt;/code&gt; now return &lt;code&gt;DateTimeOffset.MaxValue&lt;/code&gt; or &lt;code&gt;DateTimeOffset.MinValue&lt;/code&gt; for claims outside the range of &lt;code&gt;DateTimeOffset&lt;/code&gt;, instead of throwing &lt;code&gt;ArgumentOutOfRangeException&lt;/code&gt;, so such tokens are validated against those values.&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.EventHubs_6.5.5"&gt;Microsoft.Azure.WebJobs.Extensions.EventHubs_6.5.5&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;6.5.5 (2026-10-27)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed an issue where stale checkpoints could prevent scale-in when &lt;code&gt;BatchCheckpointFrequency&lt;/code&gt; was greater than 1. Pending processed events are now checkpointed after 10 minutes of inactivity so that the scale controller does not report backlog for events that have already been processed. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/59801" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/59801/hovercard"&gt;#59801&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Storage_1.9.0"&gt;Azure.ResourceManager.Storage_1.9.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.9.0 (2026-10-28)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version from &lt;code&gt;2026-06-01&lt;/code&gt; to &lt;code&gt;2026-09-01&lt;/code&gt;. Tag details available at &lt;a href="https://github.com/Azure/azure-rest-api-specs/tree/fd6b671904429f73310b882648f81346b05024d1/specification/storage/resource-manager/Microsoft.Storage/Storage"&gt;https://github.com/Azure/azure-rest-api-specs/tree/fd6b671904429f73310b882648f81346b05024d1/specification/storage/resource-manager/Microsoft.Storage/Storage&lt;/a&gt;.
-&lt;ul&gt;
-&lt;li&gt;Supported new &lt;code&gt;BlobAccessPointConfigurationResource&lt;/code&gt; for managing Blob Access Point configurations and testing proposed and existing connections to backing data stores.&lt;/li&gt;
-&lt;li&gt;Supported attaching blob containers to Blob Access Point configurations and enabling Blob Access Points through &lt;code&gt;StorageDataCollaborationPolicyProperties.AllowBlobAccessPoints&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Supported new &lt;code&gt;TurboTier&lt;/code&gt; configuration on storage account create/update, including status and target percentage.&lt;/li&gt;
-&lt;li&gt;Supported context cache name availability checks.&lt;/li&gt;
-&lt;li&gt;Supported new &lt;code&gt;ServiceTags&lt;/code&gt; property on &lt;code&gt;NspAccessRuleProperties&lt;/code&gt; for inbound network security perimeter access rules.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerService_1.10.0-beta.1"&gt;Azure.ResourceManager.ContainerService_1.10.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.10.0-beta.1 (2026-10-22)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded api-version to 2026-08-02-preview.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.VoiceLive_1.2.1"&gt;Azure.AI.VoiceLive_1.2.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.2.1 (2026-10-28)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;WebSocket connections no longer follow redirects, preventing API keys and other handshake headers from being forwarded to redirect destinations.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Secrets_4.12.0"&gt;Azure.Security.KeyVault.Secrets_4.12.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;4.12.0 (2026-10-27)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Regenerated the library for stable Key Vault API version &lt;code&gt;2026-04-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Migrated the code generation from AutoRest/Swagger to TypeSpec.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Certificates_4.10.0"&gt;Azure.Security.KeyVault.Certificates_4.10.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Network_1.2.0-beta.1"&gt;Azure.Provisioning.Network_1.2.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;4.10.0 (2026-10-27)&lt;/h2&gt;
+                                &lt;h2&gt;1.2.0-beta.1 (2026-10-30)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the default Network API version to &lt;code&gt;2026-03-01&lt;/code&gt;, adding support for new resources and properties.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Regenerated the library for stable Key Vault API version &lt;code&gt;2026-04-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Migrated code generation to TypeSpec.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Network_1.18.0-beta.3"&gt;Azure.ResourceManager.Network_1.18.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.18.0-beta.3 (2026-10-30)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded API version from 2026-01-01 to 2026-03-01.&lt;/li&gt;
+&lt;li&gt;Added support for managing ExpressRoute LAG authorizations, including retrieving authorization keys.&lt;/li&gt;
+&lt;li&gt;Added support for listing and retrieving virtual network appliance capabilities.&lt;/li&gt;
+&lt;li&gt;Added DDoS custom policy mitigation rules with traffic scopes, TCP and UDP mitigation settings, and source-specific policy overrides.&lt;/li&gt;
+&lt;li&gt;Exposed strongly typed &lt;code&gt;ETag&lt;/code&gt; properties on &lt;code&gt;NetworkChildResourceData&lt;/code&gt; and &lt;code&gt;NetworkProxyResourceData&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.PrivateTrafficManager_1.0.0-beta.1"&gt;Azure.ResourceManager.PrivateTrafficManager_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-10-29)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial beta release of the Azure Resource Manager client for Private Traffic Manager.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.RedHatOpenShiftHcp_1.0.0-beta.2"&gt;Azure.ResourceManager.RedHatOpenShiftHcp_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.2 (2026-10-27)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added active OpenShift version information to cluster and node pool resource status.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;HcpOpenShiftClusterKmsEncryptionProfile.KeyVaultType&lt;/code&gt; to select Azure Key Vault or Managed HSM for KMS encryption.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;HcpOpenShiftClusterPlatformProfile.ContainerRegistryManagedIdentity&lt;/code&gt; to configure the managed identity used for container registry access.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Replaced &lt;code&gt;HcpOpenShiftClusterProperties.StatusConditions&lt;/code&gt; and &lt;code&gt;HcpOpenShiftClusterNodePoolProperties.StatusConditions&lt;/code&gt; with &lt;code&gt;Status.Conditions&lt;/code&gt;. The new &lt;code&gt;Status&lt;/code&gt; properties also expose &lt;code&gt;ActiveVersions&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Updated the corresponding &lt;code&gt;ArmRedHatOpenShiftHcpModelFactory&lt;/code&gt; method signatures to reflect the new status models, KMS key vault type, and container registry managed identity.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.EdgeActions_1.0.0"&gt;Azure.ResourceManager.EdgeActions_1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0 (2026-10-28)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial stable release of the Azure Edge Actions management library for .NET, using service API version &lt;code&gt;2026-10-01&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Supports managing edge actions, versions, code deployments, and execution filters.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -364,24 +222,21 @@ replay by invocation id.&lt;/li&gt;
             </content>
   </entry>
   <entry>
-    <title>grpc/grpc-dotnet - Releases - 2026-10-29</title>
-    <id>https://github.com/grpc/grpc-dotnet#2026-10-29</id>
-    <link href="https://github.com/grpc/grpc-dotnet" />
-    <updated>2026-10-30T00:07:43Z</updated>
+    <title>dotnet/orleans - Releases - 2026-10-30</title>
+    <id>https://github.com/dotnet/orleans#2026-10-30</id>
+    <link href="https://github.com/dotnet/orleans" />
+    <updated>2026-10-31T00:05:53Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc-dotnet/releases/tag/v2.85.0"&gt;Release v2.85.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/orleans/releases/tag/v10.4.2"&gt;v10.4.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;h2&gt;What's Changed&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Update .NET and JavaScript dependencies by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6074197820" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2779" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2779/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2779"&gt;#2779&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Enforce receive message size limits during decompression by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;@JamesNK&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6074473144" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2780" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2780/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2780"&gt;#2780&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Update versions for stable release by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/asheshvidyut/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/asheshvidyut"&gt;@asheshvidyut&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6078674665" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2782" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2782/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2782"&gt;#2782&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Update version in release branch by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/asheshvidyut/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/asheshvidyut"&gt;@asheshvidyut&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6081022123" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc-dotnet/issues/2783" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc-dotnet/pull/2783/hovercard" href="https://github.com/grpc/grpc-dotnet/pull/2783"&gt;#2783&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[10.x] fix(azure): tolerate legacy membership writers during rolling upgrades by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ReubenBond/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ReubenBond"&gt;@ReubenBond&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6106057297" data-permission-text="Title is private" data-url="https://github.com/dotnet/orleans/issues/11624" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/orleans/pull/11624/hovercard" href="https://github.com/dotnet/orleans/pull/11624"&gt;#11624&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/grpc/grpc-dotnet/compare/v2.84.0...v2.85.0"&gt;&lt;tt&gt;v2.84.0...v2.85.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/dotnet/orleans/compare/v10.4.1...v10.4.2"&gt;&lt;tt&gt;v10.4.1...v10.4.2&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
@@ -389,26 +244,135 @@ replay by invocation id.&lt;/li&gt;
             </content>
   </entry>
   <entry>
-    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-10-29</title>
-    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-10-29</id>
-    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-    <updated>2026-10-30T00:07:51Z</updated>
+    <title>grpc/grpc - Releases - 2026-10-30</title>
+    <id>https://github.com/grpc/grpc#2026-10-30</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2026-10-31T00:05:55Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/OpAmp.Client-0.9.0-alpha.2"&gt;OpAmp.Client-0.9.0-alpha.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.84.2"&gt;Release v1.84.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release gRPC Core 1.84.2 (gimbal).&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes.&lt;/p&gt;
+&lt;h3&gt;Python&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixes Denial of service in Health Watch RPC (&lt;a href="https://github.com/grpc/grpc/pull/43784" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43784/hovercard"&gt;#43784&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixes Memory leak in AsyncIO client-streaming calls with interceptors (&lt;a href="https://github.com/grpc/grpc/pull/43784" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43784/hovercard"&gt;#43784&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Core&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;host/:authority handling: consistent authority in xDS routing/RBAC, HPACK host-&amp;gt;:authority mapping, enable map_host_header_to_authority (&lt;a href="https://github.com/grpc/grpc/pull/43798" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43798/hovercard"&gt;#43798&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.85.1"&gt;Release v1.85.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release gRPC Core 1.85.1 (googol).&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes.&lt;/p&gt;
+&lt;h3&gt;Python&lt;/h3&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixes Denial of service in Health Watch RPC (&lt;a href="https://github.com/grpc/grpc/pull/43783" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43783/hovercard"&gt;#43783&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixes Memory leak in AsyncIO client-streaming calls with interceptors (&lt;a href="https://github.com/grpc/grpc/pull/43783" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43783/hovercard"&gt;#43783&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Core&lt;/h3&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;host/:authority handling in the HPACK parser (&lt;a href="https://github.com/grpc/grpc/pull/43797" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43797/hovercard"&gt;#43797&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>MessagePack-CSharp/MessagePack-CSharp - Releases - 2026-10-30</title>
+    <id>https://github.com/MessagePack-CSharp/MessagePack-CSharp#2026-10-30</id>
+    <link href="https://github.com/MessagePack-CSharp/MessagePack-CSharp" />
+    <updated>2026-10-31T00:05:57Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/releases/tag/v4.0.0-preview.2"&gt;v4.0.0-preview.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is the second preview of v4.&lt;/p&gt;
+&lt;p&gt;v4 is a ground-up redesign: more than twice the performance, stronger security by default, full Native AOT support, and many new features, including support for C# 15 union types. It is feature-compatible and wire-compatible with v3, but contains breaking changes; see the &lt;a href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/tree/v4"&gt;v4 README&lt;/a&gt; and its "Migrating from v3" section before upgrading.&lt;/p&gt;
+&lt;p&gt;Unless something major comes up, the next release will be v4.0.0, after .NET 11 is released.&lt;/p&gt;
+&lt;p&gt;Please report any problems in the Issues.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-10-30</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-10-30</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2026-10-31T00:06:01Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.AspNet-1.20.2"&gt;Instrumentation.AspNet-1.20.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.OpAmp.Client/0.9.0-alpha.2" rel="nofollow"&gt;OpenTelemetry.OpAmp.Client v0.9.0-alpha.2&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Include the configured agent capabilities in every message sent to the server.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5812" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5812/hovercard"&gt;#5812&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/OpAmp.Client-0.9.0-alpha.2/src/OpenTelemetry.OpAmp.Client/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.AspNet/1.20.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.AspNet v1.20.2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AspNet-1.20.2/src/OpenTelemetry.Instrumentation.AspNet/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.AspNet.TelemetryHttpModule/1.20.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.AspNet.TelemetryHttpModule v1.20.2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AspNet-1.20.2/src/OpenTelemetry.Instrumentation.AspNet.TelemetryHttpModule/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>StackExchange/StackExchange.Redis - Releases - 2026-10-30</title>
+    <id>https://github.com/StackExchange/StackExchange.Redis#2026-10-30</id>
+    <link href="https://github.com/StackExchange/StackExchange.Redis" />
+    <updated>2026-10-31T00:06:02Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/3.4.29"&gt;3.4.29&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;(stabilty) Reset a CycleBuffer segment's start trim when it is recycled (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6055820953" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3302" data-hovercard-type="issue" data-hovercard-url="/StackExchange/StackExchange.Redis/issues/3302/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/issues/3302"&gt;#3302&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6057368533" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3303" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3303/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3303"&gt;#3303&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Restore: make the dedicated subscription connection lazy by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6116820895" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3310" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3310/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3310"&gt;#3310&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update RedisType.Bitmap and the keyspace-event tokens to reflect current server values by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6118188066" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3312" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3312/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3312"&gt;#3312&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix ConnectionGroupMember string-ctor dropping the name by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6118394414" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3314" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3314/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3314"&gt;#3314&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Parse unbracketed IPv6 ip:port from the server (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="594997303" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/1422" data-hovercard-type="issue" data-hovercard-url="/StackExchange/StackExchange.Redis/issues/1422/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/issues/1422"&gt;#1422&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6102248096" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3307" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3307/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3307"&gt;#3307&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Profile commands sent in a batch (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1284528231" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/2175" data-hovercard-type="issue" data-hovercard-url="/StackExchange/StackExchange.Redis/issues/2175/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/issues/2175"&gt;#2175&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mohsinaliwork686-rgb/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mohsinaliwork686-rgb"&gt;@mohsinaliwork686-rgb&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6118305848" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3313" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3313/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3313"&gt;#3313&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tooling&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;gitignore: .claude is per-user state except .claude/skills by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6102214628" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3306" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3306/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3306"&gt;#3306&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Command coverage ledger and audit skill by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6117830986" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3311" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3311/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3311"&gt;#3311&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update public API docs by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a href="https://github.com/StackExchange/StackExchange.Redis/pull/3429"&gt;https://github.com/StackExchange/StackExchange.Redis/pull/3429&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mohsinaliwork686-rgb/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mohsinaliwork686-rgb"&gt;@mohsinaliwork686-rgb&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6118305848" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3313" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3313/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3313"&gt;#3313&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/3.4.20...3.4.29"&gt;&lt;tt&gt;3.4.20...3.4.29&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
