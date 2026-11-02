@@ -1,33 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>StackExchange/StackExchange.Redis - Releases</title>
   <link href="https://github.com/StackExchange/StackExchange.Redis" />
-  <updated>2026-11-01T00:08:16Z</updated>
+  <updated>2026-11-02T00:06:45Z</updated>
   <id>https://github.com/StackExchange/StackExchange.Redis</id>
-  <entry>
-    <title>StackExchange/StackExchange.Redis - Releases - 2026-10-31</title>
-    <id>https://github.com/StackExchange/StackExchange.Redis#2026-10-31</id>
-    <link href="https://github.com/StackExchange/StackExchange.Redis" />
-    <updated>2026-11-01T00:08:16Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/4.0.155-alpha"&gt;4.0.155-alpha&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/pull/3262" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3262/hovercard"&gt;V4&lt;/a&gt; preview. Since 4.0.146-alpha:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;high-integrity mode restored — a sequence check behind every command (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6103223736" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3308" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3308/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3308"&gt;#3308&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;client-side caching replaces a TimeToLive-expired entry on the next fill rather than waiting for the sweep (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6122774273" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3318" data-hovercard-type="issue" data-hovercard-url="/StackExchange/StackExchange.Redis/issues/3318/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/issues/3318"&gt;#3318&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6123356671" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3320" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3320/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3320"&gt;#3320&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;an ASK re-send keeps &lt;code&gt;CLIENT CACHING&lt;/code&gt; out of the prefix and exempts &lt;code&gt;ASKING&lt;/code&gt; from the sequence check (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6123142320" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3319" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3319/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3319"&gt;#3319&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;cluster failover recovery — the library's own topology refresh is exempt from the &lt;code&gt;AllowAdmin&lt;/code&gt; gate, a replica-write refusal marks the slot map suspect, and losing an established connection prompts a reconfigure (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6133773476" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3324" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3324/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3324"&gt;#3324&lt;/a&gt;, from the &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6131941440" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3323" data-hovercard-type="issue" data-hovercard-url="/StackExchange/StackExchange.Redis/issues/3323/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/issues/3323"&gt;#3323&lt;/a&gt; investigation)&lt;/li&gt;
-&lt;li&gt;the connect wait covers the eagerly-dialled subscription connection (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6135518331" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3325" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3325/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3325"&gt;#3325&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;HOTKEYS&lt;/code&gt; and &lt;code&gt;CLIENT KILL&lt;/code&gt; write through &lt;code&gt;IRespArgument&lt;/code&gt; operands (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6125362990" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3321" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3321/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3321"&gt;#3321&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;plus main merged in up to 3.4.29 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6125844795" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3322" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3322/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3322"&gt;#3322&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>

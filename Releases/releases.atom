@@ -1,143 +1,71 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-11-01T00:08:18Z</updated>
+  <updated>2026-11-02T00:06:47Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-10-31</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-10-31</id>
-    <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-11-01T00:07:50Z</updated>
+    <title>mysql-net/MySqlConnector - Releases - 2026-11-01</title>
+    <id>https://github.com/mysql-net/MySqlConnector#2026-11-01</id>
+    <link href="https://github.com/mysql-net/MySqlConnector" />
+    <updated>2026-11-02T00:06:40Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects_3.0.0-beta.6"&gt;Azure.AI.Projects_3.0.0-beta.6&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/mysql-net/MySqlConnector/releases/tag/3.0.0-beta.1"&gt;3.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;3.0.0-beta.6 (2026-10-30)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;ul&gt;
+&lt;li&gt;Support .NET 11.
 &lt;ul&gt;
-&lt;li&gt;Added opt-in Voice Agent realtime tracing for connections, sessions, responses, tool milestones, audio usage, cancellation, and errors using the existing Foundry GenAI tracing settings. Added correlated, payload-free realtime diagnostic logs.&lt;/li&gt;
-&lt;li&gt;Included first-text/audio latency, reported audio formats and sample rates, session audio totals, consistent session lifecycle events, and bounded opt-in transcript/tool message content in Voice Agent telemetry.&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;MaxSamples&lt;/code&gt; property to &lt;code&gt;SimulationSeedDataGenerationJobConfiguration&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Support &lt;code&gt;zstd&lt;/code&gt; compression on .NET 11: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/717" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/717/hovercard"&gt;#717&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;With &lt;code&gt;UseCompression=True&lt;/code&gt;, &lt;code&gt;zstd&lt;/code&gt; is preferred over &lt;code&gt;zlib&lt;/code&gt; if the server supports it.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Breaking&lt;/strong&gt; Remove .NET 6.0 and .NET 9.0 target frameworks.
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;SimulationSeedDataGenerationJobConfiguration&lt;/code&gt; now requires a &lt;code&gt;maxSamples&lt;/code&gt; constructor argument. Replace parameterless construction with &lt;code&gt;new SimulationSeedDataGenerationJobConfiguration(maxSamples)&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added an optional &lt;code&gt;maxSamples&lt;/code&gt; parameter to &lt;code&gt;AzureAIProjectsModelFactory.SimulationSeedDataGenerationJobConfiguration&lt;/code&gt;, changing its binary signature. Recompile code that uses this factory.&lt;/li&gt;
+&lt;li&gt;.NET 6.0 support ended on 12 November 2024.&lt;/li&gt;
+&lt;li&gt;The minimum supported version of .NET is now .NET 8.0; .NET 9.0 applications will use the &lt;code&gt;net8.0&lt;/code&gt; build.&lt;/li&gt;
+&lt;li&gt;.NET 6.0 and .NET 7.0 applications should still work via &lt;code&gt;netstandard2.1&lt;/code&gt;, but won't have &lt;code&gt;DbBatch&lt;/code&gt; integration or &lt;code&gt;DateOnly&lt;/code&gt;/&lt;code&gt;TimeOnly&lt;/code&gt; support.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Sample Updates&lt;/h3&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Breaking&lt;/strong&gt; Remove experimental OpenTelemetry semantic conventions: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1435" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1435/hovercard"&gt;#1435&lt;/a&gt;.
 &lt;ul&gt;
-&lt;li&gt;Added runnable Voice Agent REST and realtime telemetry samples using the existing Foundry tracing settings, OpenTelemetry console exporter, and correlated realtime diagnostic logs.&lt;/li&gt;
+&lt;li&gt;Only the &lt;a href="https://opentelemetry.io/docs/specs/semconv/db/database-spans/" rel="nofollow"&gt;stable database semantic conventions&lt;/a&gt; are emitted; the &lt;code&gt;OTEL_SEMCONV_STABILITY_OPT_IN&lt;/code&gt; environment variable is ignored.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MySqlConnectorTracingOptionsBuilder.WithSemanticConventionsKinds&lt;/code&gt; is now &lt;code&gt;[Obsolete]&lt;/code&gt; and has no effect.&lt;/li&gt;
+&lt;li&gt;The legacy &lt;code&gt;db.connection_string&lt;/code&gt;, &lt;code&gt;db.name&lt;/code&gt;, &lt;code&gt;db.statement&lt;/code&gt;, &lt;code&gt;db.system&lt;/code&gt;, &lt;code&gt;db.user&lt;/code&gt;, &lt;code&gt;net.*&lt;/code&gt;, and &lt;code&gt;thread.id&lt;/code&gt; tags and the &lt;code&gt;exception&lt;/code&gt; event are no longer recorded.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Open&lt;/code&gt; activities now have &lt;code&gt;db.namespace&lt;/code&gt; and &lt;code&gt;server.address&lt;/code&gt; tags even if the connection fails.&lt;/li&gt;
+&lt;li&gt;A command timeout sets &lt;code&gt;error.type&lt;/code&gt; to &lt;code&gt;timeout&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Extensions.OpenAI_3.0.0-beta.6"&gt;Azure.AI.Extensions.OpenAI_3.0.0-beta.6&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;3.0.0-beta.6 (2026-10-30)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Possibly breaking&lt;/strong&gt; Update dependencies: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1674" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1674/hovercard"&gt;#1674&lt;/a&gt;.
 &lt;ul&gt;
-&lt;li&gt;Exposed the constructors of &lt;code&gt;GitHubCopilotToolsetPreview&lt;/code&gt;, &lt;code&gt;GitHubCopilotToolsetDefaultConfig&lt;/code&gt; &lt;code&gt;GitHubCopilotToolsetConfig&lt;/code&gt;, &lt;code&gt;MicrosoftCopilotToolsetPreview&lt;/code&gt;, &lt;code&gt;MicrosoftCopilotToolsetDefaultConfig&lt;/code&gt; and &lt;code&gt;MicrosoftCopilotToolsetConfig&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Microsoft.Extensions.Logging.Abstractions from 8.0.2 to 10.0.12.&lt;/li&gt;
+&lt;li&gt;System.Diagnostics.DiagnosticSource from 8.0.1 to 10.0.12.&lt;/li&gt;
+&lt;li&gt;Replace IndexRange with Microsoft.Bcl.Memory 10.0.12.&lt;/li&gt;
+&lt;li&gt;MySqlConnector.Authentication.Ed25519: Microsoft.AspNetCore.Cryptography.KeyDerivation from 8.0.16 to 10.0.12.&lt;/li&gt;
+&lt;li&gt;This lets MySqlConnector load on .NET Framework without binding redirects, e.g., in a plugin host or WiX custom action.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Possibly breaking&lt;/strong&gt; When a pooled connection's database was changed (with &lt;code&gt;ChangeDatabase&lt;/code&gt; or &lt;code&gt;USE&lt;/code&gt;), select the connection string's &lt;code&gt;Database&lt;/code&gt; again without reauthenticating: &lt;a href="https://github.com/mysql-net/MySqlConnector/pull/1671" data-hovercard-type="pull_request" data-hovercard-url="/mysql-net/MySqlConnector/pull/1671/hovercard"&gt;#1671&lt;/a&gt;.
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;BrowserAutomationPreviewTool&lt;/code&gt; is deprecated and hidden from IntelliSense. Please use &lt;code&gt;BrowserAutomationTool&lt;/code&gt; instead.&lt;/li&gt;
-&lt;li&gt;Removed the &lt;code&gt;type&lt;/code&gt; parameter from response-item methods on &lt;code&gt;ExtensionsOpenAIModelFactory&lt;/code&gt;. Each factory now uses the discriminator value for its concrete response-item type.&lt;/li&gt;
+&lt;li&gt;This avoids calling &lt;code&gt;ProvidePasswordCallback&lt;/code&gt; and saves round trips when pipelining is enabled.&lt;/li&gt;
+&lt;li&gt;With &lt;code&gt;ConnectionReset=False&lt;/code&gt;, other session state is no longer reset in this case.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Sample Updates&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added sample for Hosted Agent identity isolation.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects.Agents_3.0.0-beta.6"&gt;Azure.AI.Projects.Agents_3.0.0-beta.6&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;3.0.0-beta.6 (2026-10-30)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added experimental Voice Agent post-call delivery to Event Grid connections and routines.&lt;/li&gt;
-&lt;li&gt;Added experimental Voice Agent soundscapes for telephony ambience and event cues.&lt;/li&gt;
-&lt;li&gt;Added Azure Speech streaming transcription and headset/personal noise suppression modes.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;ProjectsAgentProtocol.VoiceConversationEngine&lt;/code&gt; for hosted voice conversation engines.&lt;/li&gt;
-&lt;li&gt;Enriched existing Foundry GenAI agent-creation traces with privacy-safe Voice Agent metadata and bounded instruction content under the existing opt-in setting. Other Voice Agent REST operations retain their existing SDK diagnostics.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Added the &lt;code&gt;postCall&lt;/code&gt; parameter before &lt;code&gt;store&lt;/code&gt; in &lt;code&gt;ProjectsAgentsModelFactory.VoiceAgentDefinition&lt;/code&gt;, affecting positional arguments.&lt;/li&gt;
-&lt;li&gt;Added the &lt;code&gt;soundscape&lt;/code&gt; parameter before &lt;code&gt;outputModalities&lt;/code&gt; in &lt;code&gt;ProjectsAgentsModelFactory.VoiceAgentDefinition&lt;/code&gt;, affecting positional arguments.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceAgentAvatarVideoCrop.BottomRight&lt;/code&gt; and &lt;code&gt;VoiceAgentAvatarVideoCrop.TopLeft&lt;/code&gt; types were changed from &lt;code&gt;IList&amp;lt;object&amp;gt;&lt;/code&gt; to &lt;code&gt;IList&amp;lt;uint&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceAgentAzureSemanticVadEnTurnDetection.IdleTimeoutMs&lt;/code&gt; was renamed to &lt;code&gt;VoiceAgentAzureSemanticVadEnTurnDetection.IdleTimeout&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceAgentAzureSemanticVadMultilingualTurnDetection.IdleTimeoutMs&lt;/code&gt; was renamed to &lt;code&gt;VoiceAgentAzureSemanticVadMultilingualTurnDetection.IdleTimeout&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceAgentAzureSemanticVadTurnDetection.IdleTimeoutMs&lt;/code&gt; was renamed to &lt;code&gt;VoiceAgentAzureSemanticVadTurnDetection.IdleTimeout&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceAgentSubagent.InvokeTimeoutSeconds&lt;/code&gt; was renamed to &lt;code&gt;VoiceAgentSubagent.InvokeTimeout&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;OtlpTelemetryEndpoint.Endpoint&lt;/code&gt; type was changed from &lt;code&gt;string&lt;/code&gt; to &lt;code&gt;System.Uri&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceAgentMcpTool.AllowedTools&lt;/code&gt; and &lt;code&gt;MCPToolboxTool.AllowedTools&lt;/code&gt;, along with their model-factory parameters, now use &lt;code&gt;OpenAI.Responses.McpToolFilter&lt;/code&gt; instead of &lt;code&gt;BinaryData&lt;/code&gt;. &lt;code&gt;MCPToolboxTool.AllowedTools&lt;/code&gt; now requires the &lt;code&gt;AAIP002&lt;/code&gt; experimental opt-in.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceResult.Metadata&lt;/code&gt; now uses &lt;code&gt;IDictionary&amp;lt;string, BinaryData&amp;gt;&lt;/code&gt; instead of &lt;code&gt;OpenAI.InternalMetadataContainer&lt;/code&gt;. The public &lt;code&gt;OpenAI.InternalMetadataContainer&lt;/code&gt; type was removed.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;BrowserAutomationPreviewToolboxTool&lt;/code&gt; is deprecated and hidden from IntelliSense. Please use &lt;code&gt;BrowserAutomationToolboxTool&lt;/code&gt; instead.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VoiceAgentSoundscapeSound&lt;/code&gt; was converted from enumeration to structure allowing extensibility from the service side.&lt;/li&gt;
-&lt;li&gt;The &lt;code&gt;VoiceAgentSoundscapeWorkingTrackConfig&lt;/code&gt; property &lt;code&gt;DelayMs&lt;/code&gt; was renamed to &lt;code&gt;Delay&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>microsoft/microsoft-ui-xaml - Releases - 2026-10-31</title>
-    <id>https://github.com/microsoft/microsoft-ui-xaml#2026-10-31</id>
-    <link href="https://github.com/microsoft/microsoft-ui-xaml" />
-    <updated>2026-11-01T00:08:11Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/releases/tag/winui3/release/2.6.4"&gt;WinUI 3 in WinAppSDK 2.6.4&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;WinUI 3 in Windows App SDK 2.6.4 includes reliability fixes for text controls during app shutdown, &lt;code&gt;ItemsView&lt;/code&gt;, and &lt;code&gt;WebView2&lt;/code&gt;, plus a fix for false IntelliSense errors in VS Code. It is available through the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.6.4" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.6.4 NuGet package&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Bug fixes:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed an access violation crash that could occur during app shutdown when a text control, such as a &lt;code&gt;TextBox&lt;/code&gt; or &lt;code&gt;RichEditBox&lt;/code&gt;, was still alive while the XAML core was being torn down.&lt;/li&gt;
-&lt;li&gt;Fixed a crash in &lt;code&gt;ItemsView&lt;/code&gt; when the target of &lt;code&gt;StartBringItemIntoView&lt;/code&gt; was collapsed or recycled before the scroll completed (&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/11865" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/11865/hovercard"&gt;microsoft/microsoft-ui-xaml#11865&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Fixed a crash that could occur when a &lt;code&gt;WebView2&lt;/code&gt; control received focus while still initializing and its parent window was temporarily disabled when initialization finished.&lt;/li&gt;
-&lt;li&gt;Fixed false IntelliSense errors on XAML-generated members, such as &lt;code&gt;InitializeComponent&lt;/code&gt; and &lt;code&gt;x:Name&lt;/code&gt; fields, in WinUI 3 C# projects edited in VS Code with C# Dev Kit. To opt out, set the &lt;code&gt;EnableWinUIDesignTimeGeneratedXamlCompileItems&lt;/code&gt; property to &lt;code&gt;false&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For the full set of changes across Windows App SDK 2.6.4, see the &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-2-0?pivots=stable#version-264" rel="nofollow"&gt;Windows App SDK 2.6.4 release notes&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Try it out&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.6.4" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.6.4 NuGet package&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>StackExchange/StackExchange.Redis - Releases - 2026-10-31</title>
-    <id>https://github.com/StackExchange/StackExchange.Redis#2026-10-31</id>
-    <link href="https://github.com/StackExchange/StackExchange.Redis" />
-    <updated>2026-11-01T00:08:16Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/4.0.155-alpha"&gt;4.0.155-alpha&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/pull/3262" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3262/hovercard"&gt;V4&lt;/a&gt; preview. Since 4.0.146-alpha:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;high-integrity mode restored — a sequence check behind every command (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6103223736" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3308" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3308/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3308"&gt;#3308&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;client-side caching replaces a TimeToLive-expired entry on the next fill rather than waiting for the sweep (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6122774273" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3318" data-hovercard-type="issue" data-hovercard-url="/StackExchange/StackExchange.Redis/issues/3318/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/issues/3318"&gt;#3318&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6123356671" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3320" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3320/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3320"&gt;#3320&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;an ASK re-send keeps &lt;code&gt;CLIENT CACHING&lt;/code&gt; out of the prefix and exempts &lt;code&gt;ASKING&lt;/code&gt; from the sequence check (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6123142320" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3319" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3319/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3319"&gt;#3319&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;cluster failover recovery — the library's own topology refresh is exempt from the &lt;code&gt;AllowAdmin&lt;/code&gt; gate, a replica-write refusal marks the slot map suspect, and losing an established connection prompts a reconfigure (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6133773476" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3324" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3324/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3324"&gt;#3324&lt;/a&gt;, from the &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6131941440" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3323" data-hovercard-type="issue" data-hovercard-url="/StackExchange/StackExchange.Redis/issues/3323/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/issues/3323"&gt;#3323&lt;/a&gt; investigation)&lt;/li&gt;
-&lt;li&gt;the connect wait covers the eagerly-dialled subscription connection (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6135518331" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3325" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3325/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3325"&gt;#3325&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;HOTKEYS&lt;/code&gt; and &lt;code&gt;CLIENT KILL&lt;/code&gt; write through &lt;code&gt;IRespArgument&lt;/code&gt; operands (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6125362990" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3321" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3321/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3321"&gt;#3321&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;plus main merged in up to 3.4.29 (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6125844795" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3322" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3322/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3322"&gt;#3322&lt;/a&gt;)&lt;/li&gt;
+&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;MySqlDataSource.Clear&lt;/code&gt; and &lt;code&gt;MySqlDataSource.ClearAsync&lt;/code&gt;: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1670" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1670/hovercard"&gt;#1670&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Return &lt;code&gt;true&lt;/code&gt; from &lt;code&gt;MySqlTransaction.SupportsSavepoints&lt;/code&gt;: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1676" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1676/hovercard"&gt;#1676&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Use a plugin registered with &lt;code&gt;AuthenticationPlugins.Register&lt;/code&gt; when the server switches to an authentication method that MySqlConnector doesn't implement: &lt;a href="https://github.com/mysql-net/MySqlConnector/pull/1678" data-hovercard-type="pull_request" data-hovercard-url="/mysql-net/MySqlConnector/pull/1678/hovercard"&gt;#1678&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;performance_schema.processlist&lt;/code&gt; for the &lt;code&gt;ProcessList&lt;/code&gt; schema with MySQL 8.0.22 and later: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1443" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1443/hovercard"&gt;#1443&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Remove proxy detection for retired Azure Database for MySQL Single Server: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1661" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1661/hovercard"&gt;#1661&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Fix &lt;code&gt;DnsCheckInterval&lt;/code&gt; so new connections use the pool's cached DNS addresses, instead of possibly reconnecting to the old IP address after a DNS change: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1666" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1666/hovercard"&gt;#1666&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Fix prepared statement executing against the wrong database: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1684" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1684/hovercard"&gt;#1684&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Fix &lt;code&gt;DbType.Object&lt;/code&gt; being mapped to &lt;code&gt;MySqlDbType.Vector&lt;/code&gt;: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1679" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1679/hovercard"&gt;#1679&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Fix error status not being recorded on &lt;code&gt;Execute&lt;/code&gt; activity: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1667" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1667/hovercard"&gt;#1667&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Optimization: Read typed values (e.g., &lt;code&gt;GetInt32&lt;/code&gt;, &lt;code&gt;GetDateTime&lt;/code&gt;) without boxing: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/721" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/721/hovercard"&gt;#721&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Optimization: Reduce lock contention when resetting the command timeout for each row: &lt;a href="https://github.com/mysql-net/MySqlConnector/issues/1290" data-hovercard-type="issue" data-hovercard-url="/mysql-net/MySqlConnector/issues/1290/hovercard"&gt;#1290&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Optimization: Reuse a cached buffer for large packets: &lt;a href="https://github.com/mysql-net/MySqlConnector/pull/1686" data-hovercard-type="pull_request" data-hovercard-url="/mysql-net/MySqlConnector/pull/1686/hovercard"&gt;#1686&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Optimization: Use runtime async, &lt;code&gt;ZLibEncoder&lt;/code&gt;, and &lt;code&gt;ZLibDecoder&lt;/code&gt; in .NET 11.&lt;/li&gt;
+&lt;li&gt;Thanks to &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/alaricd/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/alaricd"&gt;@alaricd&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/birdnamoo/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/birdnamoo"&gt;@birdnamoo&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/eriawan/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/eriawan"&gt;@eriawan&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rodri-oliveira-dev/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rodri-oliveira-dev"&gt;@rodri-oliveira-dev&lt;/a&gt;, and &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/VerstraeteNick/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/VerstraeteNick"&gt;@VerstraeteNick&lt;/a&gt; for contributions to this release.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
