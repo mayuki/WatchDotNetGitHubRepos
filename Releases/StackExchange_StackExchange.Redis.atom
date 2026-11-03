@@ -1,6 +1,56 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>StackExchange/StackExchange.Redis - Releases</title>
   <link href="https://github.com/StackExchange/StackExchange.Redis" />
-  <updated>2026-11-02T00:06:45Z</updated>
+  <updated>2026-11-03T00:06:38Z</updated>
   <id>https://github.com/StackExchange/StackExchange.Redis</id>
+  <entry>
+    <title>StackExchange/StackExchange.Redis - Releases - 2026-11-02</title>
+    <id>https://github.com/StackExchange/StackExchange.Redis#2026-11-02</id>
+    <link href="https://github.com/StackExchange/StackExchange.Redis" />
+    <updated>2026-11-03T00:06:38Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/2.13.23"&gt;2.13.23&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Primary fix&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;v2: a close with commands in flight no longer completes a call with the previous call's reply (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6150672157" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3329" data-hovercard-type="issue" data-hovercard-url="/StackExchange/StackExchange.Redis/issues/3329/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/issues/3329"&gt;#3329&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6153175255" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3331" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3331/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3331"&gt;#3331&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Additional changes previously only released in v3&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix &lt;code&gt;OperationCount&lt;/code&gt; calculation by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jnyrup/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jnyrup"&gt;@jnyrup&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4607638797" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3095" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3095/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3095"&gt;#3095&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Sentinel: re-elect primary on failover between already-known nodes by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rebaseandpanic/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rebaseandpanic"&gt;@rebaseandpanic&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4876202100" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3131" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3131/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3131"&gt;#3131&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Maintenance inherited from v3&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgrade GitHub Actions versions by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/uglide/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/uglide"&gt;@uglide&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4589204114" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3094" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3094/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3094"&gt;#3094&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jnyrup/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jnyrup"&gt;@jnyrup&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4607638797" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3095" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3095/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3095"&gt;#3095&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/2.13.17...2.13.23"&gt;&lt;tt&gt;2.13.17...2.13.23&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/StackExchange/StackExchange.Redis/releases/tag/3.4.31"&gt;3.4.31&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A close with commands in flight no longer completes a call with the previous call's reply (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6150672157" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3329" data-hovercard-type="issue" data-hovercard-url="/StackExchange/StackExchange.Redis/issues/3329/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/issues/3329"&gt;#3329&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6153156085" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3330" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3330/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3330"&gt;#3330&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Admin&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Split third-party notices out of LICENSE so GitHub detects MIT by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mgravell/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mgravell"&gt;@mgravell&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6122652763" data-permission-text="Title is private" data-url="https://github.com/StackExchange/StackExchange.Redis/issues/3317" data-hovercard-type="pull_request" data-hovercard-url="/StackExchange/StackExchange.Redis/pull/3317/hovercard" href="https://github.com/StackExchange/StackExchange.Redis/pull/3317"&gt;#3317&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/StackExchange/StackExchange.Redis/compare/3.4.29...3.4.31"&gt;&lt;tt&gt;3.4.29...3.4.31&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
