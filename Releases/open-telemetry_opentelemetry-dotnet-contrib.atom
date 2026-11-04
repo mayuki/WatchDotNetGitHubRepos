@@ -1,28 +1,56 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>open-telemetry/opentelemetry-dotnet-contrib - Releases</title>
   <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-  <updated>2026-11-03T00:06:37Z</updated>
+  <updated>2026-11-04T00:06:46Z</updated>
   <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib</id>
   <entry>
-    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-11-02</title>
-    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-11-02</id>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-11-03</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-11-03</id>
     <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-    <updated>2026-11-03T00:06:37Z</updated>
+    <updated>2026-11-04T00:06:46Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/OpAmp.Client-0.9.0-alpha.3"&gt;OpAmp.Client-0.9.0-alpha.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.AWS-1.20.3"&gt;Instrumentation.AWS-1.20.3&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.OpAmp.Client/0.9.0-alpha.3" rel="nofollow"&gt;OpenTelemetry.OpAmp.Client v0.9.0-alpha.3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Extensions.AWS/1.20.3" rel="nofollow"&gt;OpenTelemetry.Extensions.AWS v1.20.3&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed the flags and the capabilities sent by the server being truncated to&lt;br&gt;
-32 bits.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5823" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5823/hovercard"&gt;#5823&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed &lt;code&gt;AddXRayTraceId()&lt;/code&gt; and &lt;code&gt;AddXRayTraceIdWithSampler()&lt;/code&gt; not replacing&lt;br&gt;
+trace IDs when targeting .NET Framework or .NET Standard. The X-Ray ID&lt;br&gt;
+generator now uses &lt;code&gt;Activity.TraceIdGenerator&lt;/code&gt; on all target frameworks.&lt;br&gt;
+As a result, &lt;code&gt;AWSXRayIdGenerator.ReplaceTraceId()&lt;/code&gt; is now public on all&lt;br&gt;
+target frameworks, and &lt;code&gt;AddXRayTraceIdWithSampler()&lt;/code&gt; and&lt;br&gt;
+&lt;code&gt;AWSXRayIdGenerator.ReplaceTraceId(Sampler)&lt;/code&gt; are now obsolete on all&lt;br&gt;
+target frameworks.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5809" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5809/hovercard"&gt;#5809&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;No longer throw and catch an exception in &lt;code&gt;AWSXRayPropagator&lt;/code&gt; for an&lt;br&gt;
+&lt;code&gt;X-Amzn-Trace-Id&lt;/code&gt; header with upper case or padded hexadecimal identifiers,&lt;br&gt;
+or with a trace or parent identifier of all zeros.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5825" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5825/hovercard"&gt;#5825&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed &lt;code&gt;AWSXRayPropagator&lt;/code&gt; using the value of a field of the &lt;code&gt;X-Amzn-Trace-Id&lt;/code&gt;&lt;br&gt;
+header whose name only starts with &lt;code&gt;Root&lt;/code&gt;, &lt;code&gt;Parent&lt;/code&gt; or &lt;code&gt;Sampled&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5825" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5825/hovercard"&gt;#5825&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/OpAmp.Client-0.9.0-alpha.3/src/OpenTelemetry.OpAmp.Client/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AWS-1.20.3/src/OpenTelemetry.Extensions.AWS/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.AWS/1.20.3" rel="nofollow"&gt;OpenTelemetry.Instrumentation.AWS v1.20.3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AWS-1.20.3/src/OpenTelemetry.Instrumentation.AWS/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.AWSLambda/1.20.3" rel="nofollow"&gt;OpenTelemetry.Instrumentation.AWSLambda v1.20.3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No notable changes.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AWS-1.20.3/src/OpenTelemetry.Instrumentation.AWSLambda/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;

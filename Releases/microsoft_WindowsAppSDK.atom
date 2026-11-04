@@ -1,6 +1,67 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>microsoft/WindowsAppSDK - Releases</title>
   <link href="https://github.com/microsoft/WindowsAppSDK" />
-  <updated>2026-11-03T00:06:34Z</updated>
+  <updated>2026-11-04T00:06:42Z</updated>
   <id>https://github.com/microsoft/WindowsAppSDK</id>
+  <entry>
+    <title>microsoft/WindowsAppSDK - Releases - 2026-11-03</title>
+    <id>https://github.com/microsoft/WindowsAppSDK#2026-11-03</id>
+    <link href="https://github.com/microsoft/WindowsAppSDK" />
+    <updated>2026-11-04T00:06:42Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.6.5"&gt;Windows App SDK 2.6.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;Windows App SDK 2.6.5 delivers targeted fixes for rendering, window composition, system backdrops, and packaged app installation.&lt;/p&gt;
+&lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Bug fix&lt;/th&gt;
+&lt;th&gt;&lt;a href="https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.applicationmodel.windowsappruntime.runtimecompatibilityoptions.disabledchanges" rel="nofollow"&gt;Runtime Compatibility Change&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed rendering corruption that could occur on systems with multiple graphics adapters or monitors.&lt;/td&gt;
+&lt;td&gt;N/A, rendering-region fix&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an &lt;code&gt;E_NOINTERFACE&lt;/code&gt; crash when enabling the System Composition Engine on Windows builds that lack the required interfaces. The runtime now uses the lifted compositor on those builds.&lt;/td&gt;
+&lt;td&gt;N/A, operating system capability detection fix&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an issue where window backgrounds and GDI controls could become unexpectedly transparent on Windows 10, including apps hosting XAML islands.&lt;/td&gt;
+&lt;td&gt;N/A, window composition ABI fix&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Reverted the system backdrop change introduced in 2.6.4 to address wrong-thread exceptions. System backdrops for content islands and XAML windows are not supported when using the System Composition Engine in this release.&lt;/td&gt;
+&lt;td&gt;N/A, revert of a previously contained change&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an issue where app-extension registration metadata generation returned &lt;code&gt;E_NOTIMPL&lt;/code&gt;, which could prevent packaged apps from installing.&lt;/td&gt;
+&lt;td&gt;N/A, missing implementation fix&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;For details, see the full &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-2-0?pivots=stable#version-265" rel="nofollow"&gt;Windows App SDK 2.6.5 release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.6.5" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.6.5 NuGet package&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Getting started&lt;/h3&gt;
+&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
