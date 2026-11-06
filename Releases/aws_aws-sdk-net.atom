@@ -1,211 +1,102 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-11-05T00:06:08Z</updated>
+  <updated>2026-11-06T00:06:05Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-11-04</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-11-04</id>
+    <title>aws/aws-sdk-net - Releases - 2026-11-05</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-11-05</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-11-05T00:06:08Z</updated>
+    <updated>2026-11-06T00:06:05Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.363.0"&gt;4.0.363.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.364.0"&gt;4.0.364.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.363.0 (2026-11-04 20:18 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.0.364.0 (2026-11-05 19:17 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AutoScaling (4.0.105.2)
+&lt;li&gt;AccountAccessRuntime (4.0.100.0)
 &lt;ul&gt;
-&lt;li&gt;AutoScaling is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Adds SDK support for Account Access user portal operations, enabling users to list out and get credentials for role assignments configured in AWS IAM Account Access Manager.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudFormation (4.0.103.6)
+&lt;li&gt;AgentRegistryControl (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;CloudFormation is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Adds support for OAuth2 Authorization Server Metadata (RFC 8414) discovery URLs in custom JWT authorizer.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudSearch (4.0.100.22)
+&lt;li&gt;AppIntegrationsService (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;CloudSearch is now generated from its Smithy model.&lt;/li&gt;
-&lt;li&gt;Added the Code property to DisabledOperationException, InternalException, InvalidTypeException, LimitExceededException, ResourceAlreadyExistsException, ResourceNotFoundException and ValidationException. It is populated from the Code element of the error response.&lt;/li&gt;
+&lt;li&gt;This release adds a LastModifiedRegion field to GetApplication and ListApplications so customers can see which Region an application was last modified in.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudWatch (4.0.107.3)
+&lt;li&gt;BedrockAgentCoreControl (4.0.126.0)
 &lt;ul&gt;
-&lt;li&gt;CloudWatch is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Adds support for OAuth2 Authorization Server Metadata (RFC 8414) discovery URLs in custom JWT authorizer and OAuth2 credential provider configurations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CognitoIdentity (4.0.100.22)
+&lt;li&gt;BedrockAgentRuntime (4.0.106.0)
 &lt;ul&gt;
-&lt;li&gt;CognitoIdentity is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Amazon Bedrock Managed Knowledge Base now supports an optional mediaId parameter in GetDocumentContent that you can use to retrieve images embedded in source documents.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.130.0)
+&lt;li&gt;CloudWatchLogs (4.0.108.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for retrieving associated cases in contact responses. The Contact object now includes a Cases field containing case IDs and reference numbers linked to the contact.&lt;/li&gt;
+&lt;li&gt;Adds account-level retention policies with dry run preview and the Essentials log group class to Amazon CloudWatch Logs&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ConnectContactLens (4.0.102.0)
+&lt;li&gt;DataSync (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Rules TBAC GA (Contact Lens V1) - Adds an optional ListFilter (CategoriesAttributeFilter with OrConditions, AndCondition and TagCondition) to ListRealtimeContactAnalysisSegments. This filters matched categories by rule tags. It also adds an optional RuleId to CategoryDetails in the response.&lt;/li&gt;
+&lt;li&gt;Adds support for federated identity on Azure Blob Storage and object storage locations, enabling DataSync to authenticate to Azure and Google Cloud Storage using Workload Identity Federation (WIF) over OpenID Connect (OIDC) instead of stored long-lived credentials.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DocDB (4.0.102.1)
+&lt;li&gt;Glue (4.0.117.0)
 &lt;ul&gt;
-&lt;li&gt;DocDB is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;AWS Glue Spark ETL jobs can now auto-upgrade to the latest version. Set GlueVersion to Auto, then track progress with the AutoVersionStatus field in GetJob. Use StartJobUpgradeAnalysis to approve or decline an upgrade, GetJobUpgradeAnalysis to view details, and StopJobUpgradeAnalysis to stop it.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (4.0.110.0)
+&lt;li&gt;LambdaMicrovms (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Adds StartBulkPutItems, DescribeBulkOperation, ListBulkOperations, and CancelBulkOperation for asynchronously loading Amazon S3 datasets into existing DynamoDB tables.&lt;/li&gt;
+&lt;li&gt;AWS Lambda MicroVMs now support the x86-64 CPU architecture, which you can select in addition to ARM64 (Graviton) when launching a MicroVM.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.132.0)
+&lt;li&gt;QConnect (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Add the Unsupported SupportabilityScore to GetCapacityManagerSupportabilityScores.&lt;/li&gt;
+&lt;li&gt;Adds support for real-time agent assistance and self-service with Amazon Connect Global Resiliency, including cross-Region replication of supported AI agent resources and configurations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ECS (4.0.110.0)
+&lt;li&gt;QuickSight (4.0.113.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon ECS Managed Instances now supports the json-file log driver in task definitions. Daemon task definition volumes also support logDriverVolumeConfiguration, letting managed daemons read those logs.&lt;/li&gt;
+&lt;li&gt;Amazon QuickSight adds APIs to view account service role settings and switch to or replace a customer-managed IAM role.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElastiCache (4.0.103.3)
+&lt;li&gt;Route53Domains (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;ElastiCache is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Route 53 Domains now supports restoring domains. This release adds the RestoreDomain API to self-serve domain restoration.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticBeanstalk (4.0.102.0)
+&lt;li&gt;SageMaker (4.0.125.0)
 &lt;ul&gt;
-&lt;li&gt;Adds DefaultAmiList to DescribePlatformVersion to return the default AMI for each processor architecture that a platform version supports.&lt;/li&gt;
-&lt;li&gt;ElasticBeanstalk is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Fixed the ImageDeleted and ImageVersionDeleted waiters to succeed on the ResourceNotFound error returned by DescribeImage and DescribeImageVersion&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticLoadBalancing (4.0.100.22)
+&lt;li&gt;SecurityAgent (4.0.115.0)
 &lt;ul&gt;
-&lt;li&gt;ElasticLoadBalancing is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Adds support for IAM Identity Center groups as Agent Space members. CreateMembership, DeleteMembership, and ListMemberships now accept the GROUP member type. ListMemberships can filter by USER, GROUP, or ALL, and returns group display name and description.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticLoadBalancingV2 (4.0.101.19)
+&lt;li&gt;WAFV2 (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;ElasticLoadBalancingV2 is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;AWS WAF customers who monetize AI traffic on Web ACLs can now configure payments through connected accounts (Stripe).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticMapReduce (4.0.102.0)
+&lt;li&gt;Core 4.0.102.18
 &lt;ul&gt;
-&lt;li&gt;Added StepAdditionalInfo on DescribeStep and ListSteps to surface YARN application IDs for steps.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IAMRolesAnywhere (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;Adds the crlDpRevocationEnabled field to enable automatic revocation checking using CRL distribution points in X.509 certificates.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IdentityManagement (4.0.103.14)
-&lt;ul&gt;
-&lt;li&gt;IdentityManagement is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IoTSiteWise (4.0.103.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for an optional jobName on CreateDatasetExportJob. The jobName is returned by DescribeDatasetExportJob and ListDatasetExportJobs, making dataset export jobs easier to identify and track. If jobName is omitted, a default name is generated automatically.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;LexRuntimeV2 (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;LexRuntimeV2 is now generated from its Smithy model.&lt;/li&gt;
-&lt;li&gt;Marked PutSessionRequest.SessionStateValue as required ([AWSProperty(Required = true)]), matching the service model. The previous generator omitted it because of a bug; the service already rejected requests without it.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;LookoutEquipment (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon Lookout for Equipment reached end of support on October 7, 2026. All Lookout for Equipment APIs are now marked as deprecated.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MarketplaceDiscovery (4.0.104.0)
-&lt;ul&gt;
-&lt;li&gt;GetListing and SearchListings APIs now return G2 and PeerSpot review sources in review summaries.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Mgn (4.0.103.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds Migration Planning artifacts as a source environment for network migration definitions, and an optional clientToken on CreateNetworkMigrationDefinition so that retried requests don't create duplicate definitions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MWAAServerless (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;Adding support to Environment Variables in MWAA Serverless&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Neptune (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;Neptune is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Polly (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon Polly now supports tagging lexicons. Use the new TagResource, UntagResource and ListTagsForResource APIs, or add tags when creating a lexicon with PutLexicon, to organize lexicons and control access with tag-based (ABAC) IAM policies.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;RDS (4.0.108.0)
-&lt;ul&gt;
-&lt;li&gt;Adding support for copying and tagging option groups with cross-Region DB snapshot copies, in the same account or across accounts.&lt;/li&gt;
-&lt;li&gt;RDS is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Redshift (4.0.102.13)
-&lt;ul&gt;
-&lt;li&gt;Redshift is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3Tables (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon S3 Tables now supports migrating AWS Glue Data Catalog tables into S3 Table buckets. This release adds the StartTableMigration, SyncTableMigration, UpdateTableMigration, CompleteTableMigration, GetTableMigration, and ListTableMigrations APIs.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SecurityHub (4.0.107.0)
-&lt;ul&gt;
-&lt;li&gt;Release Software APIs- GetSoftwareV2, GetSoftwareStatisticsV2 and GetSoftwareResourcesV2 to list software packages with aggregated resource count, get aggregated software statistics, and find the resources that contain a specific software package.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SecurityToken (4.0.101.8)
-&lt;ul&gt;
-&lt;li&gt;SecurityToken is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SimpleEmail (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;SimpleEmail is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SimpleNotificationService (4.0.100.23)
-&lt;ul&gt;
-&lt;li&gt;SimpleNotificationService is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SimpleWorkflow (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;SimpleWorkflow is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;TaxSettings (4.0.103.0)
-&lt;ul&gt;
-&lt;li&gt;Adds Colombia additional information (responsibility codes, taxpayer type code, and RUT issue date) and a rejection reason (statusReason) to tax registration responses, and adds Argentina and Uruguay tax registration types.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WorkSpaces (4.0.105.0)
-&lt;ul&gt;
-&lt;li&gt;Add Ubuntu 24.04, Ubuntu 26.04, RHEL 9, RHEL10, Rocky 9 and Rocky 10 to OperatingSystemName and documentation update for WorkspaceProperties Protocols.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.0.102.17
-&lt;ul&gt;
-&lt;li&gt;Fixed clock skew correction recording a false offset after long-running requests. The skew is now the response Date header minus the time the response headers were received, instead of being measured from the midpoint of the request round trip.&lt;/li&gt;
-&lt;li&gt;Generated doc comments, assembly descriptions and NuGet package descriptions now use the service name from the service model. No API changes.&lt;/li&gt;
-&lt;li&gt;Reuse the endpoint resolved during auth scheme resolution instead of evaluating the endpoint ruleset twice per request, and build partition property bags from a per-partition prototype.&lt;/li&gt;
-&lt;li&gt;Stop the streaming JSON reader from exposing its pooled buffer after it has been returned to the pool, and read the whole body of a JSON error response so the response body in the exception message is complete.&lt;/li&gt;
+&lt;li&gt;Documented that LogMetrics output includes the signed request and LogResponses output includes the raw response body.&lt;/li&gt;
+&lt;li&gt;EC2InstanceMetadata returns null instead of sending a request when an absolute path is not on the configured metadata service endpoint.&lt;/li&gt;
+&lt;li&gt;On Linux and macOS, the shared credentials and config files and the SSO and login token cache files are created with owner-only permissions in the create call instead of being created and then restricted.&lt;/li&gt;
+&lt;li&gt;Writes to the shared credentials and config files are rejected when a section name, property name or value contains a line break, or when a property name would not read back as the same property.&lt;/li&gt;
 &lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;

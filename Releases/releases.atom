@@ -1,211 +1,206 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-11-05T00:06:31Z</updated>
+  <updated>2026-11-06T00:06:32Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-11-04</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-11-04</id>
-    <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-11-05T00:06:08Z</updated>
+    <title>AutoMapper/AutoMapper - Releases - 2026-11-05</title>
+    <id>https://github.com/AutoMapper/AutoMapper#2026-11-05</id>
+    <link href="https://github.com/AutoMapper/AutoMapper" />
+    <updated>2026-11-06T00:06:04Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.363.0"&gt;4.0.363.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/LuckyPennySoftware/AutoMapper/releases/tag/v15.1.4"&gt;v15.1.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.363.0 (2026-11-04 20:18 UTC)&lt;/h3&gt;
+                                &lt;h2&gt;Security&lt;/h2&gt;
+&lt;p&gt;This release fixes two denial-of-service vulnerabilities. In both, deeply nested input could bypass &lt;code&gt;MaxDepth&lt;/code&gt; and exhaust the stack. The resulting &lt;code&gt;StackOverflowException&lt;/code&gt; can't be caught, so it ends the process. Please upgrade if your application maps untrusted, deeply nested data.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;AutoScaling (4.0.105.2)
+&lt;li&gt;&lt;a href="https://github.com/LuckyPennySoftware/AutoMapper/security/advisories/GHSA-6vhm-j9h7-f9gh"&gt;GHSA-6vhm-j9h7-f9gh&lt;/a&gt;: &lt;code&gt;MaxDepth&lt;/code&gt; wasn't enforced when mapping through constructor parameters, including positional records. Thanks to &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mcambria/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mcambria"&gt;@mcambria&lt;/a&gt; for the report.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/LuckyPennySoftware/AutoMapper/security/advisories/GHSA-gpwp-5797-mjff"&gt;GHSA-gpwp-5797-mjff&lt;/a&gt;: other recursion paths bypassed &lt;code&gt;MaxDepth&lt;/code&gt;: derived maps, &lt;code&gt;object&lt;/code&gt; and interface members, dictionary and dynamic sources, and recursive type converters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CVE IDs have been requested and will be added here once they're assigned.&lt;/p&gt;
+&lt;h2&gt;Behavior changes&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;AutoScaling is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Recursion that &lt;code&gt;MaxDepth&lt;/code&gt; can't limit now throws a catchable &lt;code&gt;InsufficientExecutionStackException&lt;/code&gt; instead of crashing the process.&lt;/li&gt;
+&lt;li&gt;Derived maps (&lt;code&gt;Include&lt;/code&gt; / &lt;code&gt;IncludeBase&lt;/code&gt;) now inherit &lt;code&gt;MaxDepth&lt;/code&gt; and get the default limit of 64 for self-referential maps. If your polymorphic graphs legitimately go deeper, set &lt;code&gt;MaxDepth&lt;/code&gt; explicitly.&lt;/li&gt;
+&lt;li&gt;Constructor mapping now stops at the same depth as property mapping.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Other fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed &lt;code&gt;Context.Items are only available...&lt;/code&gt; exceptions with &lt;code&gt;MaxDepth&lt;/code&gt;, which depended on registration or warmup order (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5340823602" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4651" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4651/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4651"&gt;#4651&lt;/a&gt;, backported in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6126192868" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4676" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4676/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4676"&gt;#4676&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[15.x] Fail the release when the tag is not on its release branch by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6049028958" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4669" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4669/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4669"&gt;#4669&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[15.x] Emit the context check for the containing type map in CollectionMapper by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6126192868" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4676" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4676/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4676"&gt;#4676&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[15.x] Run unit tests on .NET Framework in CI by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6150180885" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4678" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4678/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4678"&gt;#4678&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/LuckyPennySoftware/AutoMapper/compare/v15.1.3...v15.1.4"&gt;&lt;tt&gt;v15.1.3...v15.1.4&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/LuckyPennySoftware/AutoMapper/releases/tag/v16.3.0"&gt;v16.3.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;Security&lt;/h2&gt;
+&lt;p&gt;This release fixes two denial-of-service vulnerabilities. In both, deeply nested input could bypass &lt;code&gt;MaxDepth&lt;/code&gt; and exhaust the stack. The resulting &lt;code&gt;StackOverflowException&lt;/code&gt; can't be caught, so it ends the process. Please upgrade if your application maps untrusted, deeply nested data.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/LuckyPennySoftware/AutoMapper/security/advisories/GHSA-6vhm-j9h7-f9gh"&gt;GHSA-6vhm-j9h7-f9gh&lt;/a&gt;: &lt;code&gt;MaxDepth&lt;/code&gt; wasn't enforced when mapping through constructor parameters, including positional records. Thanks to &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mcambria/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mcambria"&gt;@mcambria&lt;/a&gt; for the report.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/LuckyPennySoftware/AutoMapper/security/advisories/GHSA-gpwp-5797-mjff"&gt;GHSA-gpwp-5797-mjff&lt;/a&gt;: other recursion paths bypassed &lt;code&gt;MaxDepth&lt;/code&gt;: derived maps, &lt;code&gt;object&lt;/code&gt; and interface members, dictionary and dynamic sources, and recursive type converters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CVE IDs have been requested and will be added here once they're assigned.&lt;/p&gt;
+&lt;h2&gt;Behavior changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Recursion that &lt;code&gt;MaxDepth&lt;/code&gt; can't limit now throws a catchable &lt;code&gt;InsufficientExecutionStackException&lt;/code&gt; instead of crashing the process.&lt;/li&gt;
+&lt;li&gt;Derived maps (&lt;code&gt;Include&lt;/code&gt; / &lt;code&gt;IncludeBase&lt;/code&gt;) now inherit &lt;code&gt;MaxDepth&lt;/code&gt; and get the default limit of 64 for self-referential maps. If your polymorphic graphs legitimately go deeper, set &lt;code&gt;MaxDepth&lt;/code&gt; explicitly.&lt;/li&gt;
+&lt;li&gt;Constructor mapping now stops at the same depth as property mapping.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Condition&lt;/code&gt; on &lt;code&gt;ForAllMembers&lt;/code&gt;, or any condition whose member parameter is &lt;code&gt;object&lt;/code&gt; or a base type, now receives the source member value instead of the value converted to the destination type, when those types differ. This matches the documented contract. A &lt;code&gt;null&lt;/code&gt; in a nullable source member is now seen as &lt;code&gt;null&lt;/code&gt; rather than &lt;code&gt;0&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5352547409" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4655" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4655/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4655"&gt;#4655&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Other highlights&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed &lt;code&gt;Context.Items are only available...&lt;/code&gt; exceptions with &lt;code&gt;MaxDepth&lt;/code&gt;, which depended on registration or warmup order (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5340823602" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4651" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4651/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4651"&gt;#4651&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;License keys get a 30-day renewal grace period, which logs a warning instead of an error (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6045702465" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4667" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4667/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4667"&gt;#4667&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Clearer license validation messages for malformed keys, client platforms and IdentityModel version mismatches (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6060660040" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4670" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4670/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4670"&gt;#4670&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Whitespace is stripped from license keys (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5618859121" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4663" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4663/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4663"&gt;#4663&lt;/a&gt;), and license validation is isolated from the host app's &lt;code&gt;CryptoProviderFactory&lt;/code&gt; (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6081817421" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4674" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4674/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4674"&gt;#4674&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Bump Testcontainers.MsSql to 4.14.0 to clear NU1903 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5341681579" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4652" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4652/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4652"&gt;#4652&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;docs: replace dead MyGet build link with CI feed link by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JiuYue0820/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JiuYue0820"&gt;@JiuYue0820&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5170481574" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4648" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4648/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4648"&gt;#4648&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Emit the context check for the containing type map in CollectionMapper (fixes &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5340821958" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4650" data-hovercard-type="issue" data-hovercard-url="/LuckyPennySoftware/AutoMapper/issues/4650/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/issues/4650"&gt;#4650&lt;/a&gt;) by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5340823602" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4651" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4651/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4651"&gt;#4651&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Pass the source member value to Condition by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5352547409" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4655" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4655/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4655"&gt;#4655&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix licensing page structure in docs ToC by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5890328853" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4664" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4664/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4664"&gt;#4664&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix BuildDateUtc embedding on Windows builds by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5979047056" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4666" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4666/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4666"&gt;#4666&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;License validation: WARNING during the renewal grace period by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6045702465" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4667" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4667/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4667"&gt;#4667&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fail the release when the tag is not on its release branch by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6049028399" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4668" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4668/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4668"&gt;#4668&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ci: bump lock-threads to v6 to fix token validation failure by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/simpleqt/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/simpleqt"&gt;@simpleqt&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5570054407" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4658" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4658/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4658"&gt;#4658&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Strip whitespace from license keys before resolving precedence by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AVTUNEY/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AVTUNEY"&gt;@AVTUNEY&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5618859121" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4663" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4663/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4663"&gt;#4663&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;License validation: clear messages for malformed keys, client platforms, and IdentityModel version mismatches by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6060660040" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4670" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4670/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4670"&gt;#4670&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Move to central package management by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6067499799" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4672" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4672/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4672"&gt;#4672&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;License validation: isolate from the host app's CryptoProviderFactory by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6081817421" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4674" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4674/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4674"&gt;#4674&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Replace broken ApiCompat setup with SDK package validation by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6068698036" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4673" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4673/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4673"&gt;#4673&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add regression test for registration-order MaxDepth context failure by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6101014114" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4675" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4675/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4675"&gt;#4675&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Document license key environment variables in the README by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6126198678" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4677" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4677/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4677"&gt;#4677&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JiuYue0820/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JiuYue0820"&gt;@JiuYue0820&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5170481574" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4648" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4648/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4648"&gt;#4648&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/simpleqt/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/simpleqt"&gt;@simpleqt&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5570054407" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4658" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4658/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4658"&gt;#4658&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AVTUNEY/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AVTUNEY"&gt;@AVTUNEY&lt;/a&gt; made their first contribution in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5618859121" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/AutoMapper/issues/4663" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/AutoMapper/pull/4663/hovercard" href="https://github.com/LuckyPennySoftware/AutoMapper/pull/4663"&gt;#4663&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/LuckyPennySoftware/AutoMapper/compare/v16.2.0...v16.3.0"&gt;&lt;tt&gt;v16.2.0...v16.3.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>aws/aws-sdk-net - Releases - 2026-11-05</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-11-05</id>
+    <link href="https://github.com/aws/aws-sdk-net" />
+    <updated>2026-11-06T00:06:05Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.364.0"&gt;4.0.364.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.0.364.0 (2026-11-05 19:17 UTC)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;AccountAccessRuntime (4.0.100.0)
+&lt;ul&gt;
+&lt;li&gt;Adds SDK support for Account Access user portal operations, enabling users to list out and get credentials for role assignments configured in AWS IAM Account Access Manager.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudFormation (4.0.103.6)
+&lt;li&gt;AgentRegistryControl (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;CloudFormation is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Adds support for OAuth2 Authorization Server Metadata (RFC 8414) discovery URLs in custom JWT authorizer.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudSearch (4.0.100.22)
+&lt;li&gt;AppIntegrationsService (4.0.104.0)
 &lt;ul&gt;
-&lt;li&gt;CloudSearch is now generated from its Smithy model.&lt;/li&gt;
-&lt;li&gt;Added the Code property to DisabledOperationException, InternalException, InvalidTypeException, LimitExceededException, ResourceAlreadyExistsException, ResourceNotFoundException and ValidationException. It is populated from the Code element of the error response.&lt;/li&gt;
+&lt;li&gt;This release adds a LastModifiedRegion field to GetApplication and ListApplications so customers can see which Region an application was last modified in.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudWatch (4.0.107.3)
+&lt;li&gt;BedrockAgentCoreControl (4.0.126.0)
 &lt;ul&gt;
-&lt;li&gt;CloudWatch is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Adds support for OAuth2 Authorization Server Metadata (RFC 8414) discovery URLs in custom JWT authorizer and OAuth2 credential provider configurations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CognitoIdentity (4.0.100.22)
+&lt;li&gt;BedrockAgentRuntime (4.0.106.0)
 &lt;ul&gt;
-&lt;li&gt;CognitoIdentity is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Amazon Bedrock Managed Knowledge Base now supports an optional mediaId parameter in GetDocumentContent that you can use to retrieve images embedded in source documents.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.130.0)
+&lt;li&gt;CloudWatchLogs (4.0.108.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for retrieving associated cases in contact responses. The Contact object now includes a Cases field containing case IDs and reference numbers linked to the contact.&lt;/li&gt;
+&lt;li&gt;Adds account-level retention policies with dry run preview and the Essentials log group class to Amazon CloudWatch Logs&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ConnectContactLens (4.0.102.0)
+&lt;li&gt;DataSync (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Rules TBAC GA (Contact Lens V1) - Adds an optional ListFilter (CategoriesAttributeFilter with OrConditions, AndCondition and TagCondition) to ListRealtimeContactAnalysisSegments. This filters matched categories by rule tags. It also adds an optional RuleId to CategoryDetails in the response.&lt;/li&gt;
+&lt;li&gt;Adds support for federated identity on Azure Blob Storage and object storage locations, enabling DataSync to authenticate to Azure and Google Cloud Storage using Workload Identity Federation (WIF) over OpenID Connect (OIDC) instead of stored long-lived credentials.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DocDB (4.0.102.1)
+&lt;li&gt;Glue (4.0.117.0)
 &lt;ul&gt;
-&lt;li&gt;DocDB is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;AWS Glue Spark ETL jobs can now auto-upgrade to the latest version. Set GlueVersion to Auto, then track progress with the AutoVersionStatus field in GetJob. Use StartJobUpgradeAnalysis to approve or decline an upgrade, GetJobUpgradeAnalysis to view details, and StopJobUpgradeAnalysis to stop it.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (4.0.110.0)
+&lt;li&gt;LambdaMicrovms (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;Adds StartBulkPutItems, DescribeBulkOperation, ListBulkOperations, and CancelBulkOperation for asynchronously loading Amazon S3 datasets into existing DynamoDB tables.&lt;/li&gt;
+&lt;li&gt;AWS Lambda MicroVMs now support the x86-64 CPU architecture, which you can select in addition to ARM64 (Graviton) when launching a MicroVM.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.132.0)
+&lt;li&gt;QConnect (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;Add the Unsupported SupportabilityScore to GetCapacityManagerSupportabilityScores.&lt;/li&gt;
+&lt;li&gt;Adds support for real-time agent assistance and self-service with Amazon Connect Global Resiliency, including cross-Region replication of supported AI agent resources and configurations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ECS (4.0.110.0)
+&lt;li&gt;QuickSight (4.0.113.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon ECS Managed Instances now supports the json-file log driver in task definitions. Daemon task definition volumes also support logDriverVolumeConfiguration, letting managed daemons read those logs.&lt;/li&gt;
+&lt;li&gt;Amazon QuickSight adds APIs to view account service role settings and switch to or replace a customer-managed IAM role.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElastiCache (4.0.103.3)
+&lt;li&gt;Route53Domains (4.0.102.0)
 &lt;ul&gt;
-&lt;li&gt;ElastiCache is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Route 53 Domains now supports restoring domains. This release adds the RestoreDomain API to self-serve domain restoration.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticBeanstalk (4.0.102.0)
+&lt;li&gt;SageMaker (4.0.125.0)
 &lt;ul&gt;
-&lt;li&gt;Adds DefaultAmiList to DescribePlatformVersion to return the default AMI for each processor architecture that a platform version supports.&lt;/li&gt;
-&lt;li&gt;ElasticBeanstalk is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Fixed the ImageDeleted and ImageVersionDeleted waiters to succeed on the ResourceNotFound error returned by DescribeImage and DescribeImageVersion&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticLoadBalancing (4.0.100.22)
+&lt;li&gt;SecurityAgent (4.0.115.0)
 &lt;ul&gt;
-&lt;li&gt;ElasticLoadBalancing is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;Adds support for IAM Identity Center groups as Agent Space members. CreateMembership, DeleteMembership, and ListMemberships now accept the GROUP member type. ListMemberships can filter by USER, GROUP, or ALL, and returns group display name and description.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticLoadBalancingV2 (4.0.101.19)
+&lt;li&gt;WAFV2 (4.0.103.0)
 &lt;ul&gt;
-&lt;li&gt;ElasticLoadBalancingV2 is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
+&lt;li&gt;AWS WAF customers who monetize AI traffic on Web ACLs can now configure payments through connected accounts (Stripe).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticMapReduce (4.0.102.0)
+&lt;li&gt;Core 4.0.102.18
 &lt;ul&gt;
-&lt;li&gt;Added StepAdditionalInfo on DescribeStep and ListSteps to surface YARN application IDs for steps.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IAMRolesAnywhere (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;Adds the crlDpRevocationEnabled field to enable automatic revocation checking using CRL distribution points in X.509 certificates.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IdentityManagement (4.0.103.14)
-&lt;ul&gt;
-&lt;li&gt;IdentityManagement is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IoTSiteWise (4.0.103.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for an optional jobName on CreateDatasetExportJob. The jobName is returned by DescribeDatasetExportJob and ListDatasetExportJobs, making dataset export jobs easier to identify and track. If jobName is omitted, a default name is generated automatically.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;LexRuntimeV2 (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;LexRuntimeV2 is now generated from its Smithy model.&lt;/li&gt;
-&lt;li&gt;Marked PutSessionRequest.SessionStateValue as required ([AWSProperty(Required = true)]), matching the service model. The previous generator omitted it because of a bug; the service already rejected requests without it.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;LookoutEquipment (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon Lookout for Equipment reached end of support on October 7, 2026. All Lookout for Equipment APIs are now marked as deprecated.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MarketplaceDiscovery (4.0.104.0)
-&lt;ul&gt;
-&lt;li&gt;GetListing and SearchListings APIs now return G2 and PeerSpot review sources in review summaries.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Mgn (4.0.103.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds Migration Planning artifacts as a source environment for network migration definitions, and an optional clientToken on CreateNetworkMigrationDefinition so that retried requests don't create duplicate definitions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MWAAServerless (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;Adding support to Environment Variables in MWAA Serverless&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Neptune (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;Neptune is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Polly (4.0.102.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon Polly now supports tagging lexicons. Use the new TagResource, UntagResource and ListTagsForResource APIs, or add tags when creating a lexicon with PutLexicon, to organize lexicons and control access with tag-based (ABAC) IAM policies.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;RDS (4.0.108.0)
-&lt;ul&gt;
-&lt;li&gt;Adding support for copying and tagging option groups with cross-Region DB snapshot copies, in the same account or across accounts.&lt;/li&gt;
-&lt;li&gt;RDS is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Redshift (4.0.102.13)
-&lt;ul&gt;
-&lt;li&gt;Redshift is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3Tables (4.0.101.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon S3 Tables now supports migrating AWS Glue Data Catalog tables into S3 Table buckets. This release adds the StartTableMigration, SyncTableMigration, UpdateTableMigration, CompleteTableMigration, GetTableMigration, and ListTableMigrations APIs.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SecurityHub (4.0.107.0)
-&lt;ul&gt;
-&lt;li&gt;Release Software APIs- GetSoftwareV2, GetSoftwareStatisticsV2 and GetSoftwareResourcesV2 to list software packages with aggregated resource count, get aggregated software statistics, and find the resources that contain a specific software package.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SecurityToken (4.0.101.8)
-&lt;ul&gt;
-&lt;li&gt;SecurityToken is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SimpleEmail (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;SimpleEmail is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SimpleNotificationService (4.0.100.23)
-&lt;ul&gt;
-&lt;li&gt;SimpleNotificationService is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SimpleWorkflow (4.0.100.22)
-&lt;ul&gt;
-&lt;li&gt;SimpleWorkflow is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;TaxSettings (4.0.103.0)
-&lt;ul&gt;
-&lt;li&gt;Adds Colombia additional information (responsibility codes, taxpayer type code, and RUT issue date) and a rejection reason (statusReason) to tax registration responses, and adds Argentina and Uruguay tax registration types.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WorkSpaces (4.0.105.0)
-&lt;ul&gt;
-&lt;li&gt;Add Ubuntu 24.04, Ubuntu 26.04, RHEL 9, RHEL10, Rocky 9 and Rocky 10 to OperatingSystemName and documentation update for WorkspaceProperties Protocols.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.0.102.17
-&lt;ul&gt;
-&lt;li&gt;Fixed clock skew correction recording a false offset after long-running requests. The skew is now the response Date header minus the time the response headers were received, instead of being measured from the midpoint of the request round trip.&lt;/li&gt;
-&lt;li&gt;Generated doc comments, assembly descriptions and NuGet package descriptions now use the service name from the service model. No API changes.&lt;/li&gt;
-&lt;li&gt;Reuse the endpoint resolved during auth scheme resolution instead of evaluating the endpoint ruleset twice per request, and build partition property bags from a per-partition prototype.&lt;/li&gt;
-&lt;li&gt;Stop the streaming JSON reader from exposing its pooled buffer after it has been returned to the pool, and read the whole body of a JSON error response so the response body in the exception message is complete.&lt;/li&gt;
+&lt;li&gt;Documented that LogMetrics output includes the signed request and LogResponses output includes the raw response body.&lt;/li&gt;
+&lt;li&gt;EC2InstanceMetadata returns null instead of sending a request when an absolute path is not on the configured metadata service endpoint.&lt;/li&gt;
+&lt;li&gt;On Linux and macOS, the shared credentials and config files and the SSO and login token cache files are created with owner-only permissions in the create call instead of being created and then restricted.&lt;/li&gt;
+&lt;li&gt;Writes to the shared credentials and config files are rejected when a section name, property name or value contains a line break, or when a property name would not read back as the same property.&lt;/li&gt;
 &lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -217,56 +212,111 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-11-04</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-11-04</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-11-05</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-11-05</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-11-05T00:06:09Z</updated>
+    <updated>2026-11-06T00:06:06Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.AIInfraOptimization_1.0.0-beta.1"&gt;Azure.ResourceManager.AIInfraOptimization_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Monitor.Workspaces_1.1.0-beta.1"&gt;Azure.ResourceManager.Monitor.Workspaces_1.1.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.1.0-beta.1 (2026-11-03)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for managing metric namespaces and metric configurations in Azure Monitor Workspaces.&lt;/li&gt;
+&lt;li&gt;Added support for managing trace containers in Azure Monitor Workspaces and trace associations at resource, resource group, and subscription scopes.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Activity_1.0.0-beta.1"&gt;Azure.AI.AgentServer.Activity_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;h2&gt;1.0.0-beta.1 (2026-11-04)&lt;/h2&gt;
-&lt;p&gt;This is the initial public preview release of the Azure AI Infrastructure Optimization management client library for .NET.&lt;/p&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Adds synchronous and asynchronous &lt;code&gt;RecommendVmSku&lt;/code&gt; operations for requesting VM SKU recommendations.&lt;/li&gt;
-&lt;li&gt;Supports the &lt;code&gt;Microsoft.AIInfraOptimization&lt;/code&gt; service API version &lt;code&gt;2026-06-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Initial release of &lt;code&gt;Azure.AI.AgentServer.Activity&lt;/code&gt; — a .NET library for hosting a Microsoft 365&lt;br&gt;
+Agents SDK &lt;code&gt;AgentApplication&lt;/code&gt; as an Azure AI Foundry hosted agent that speaks the &lt;strong&gt;activity&lt;br&gt;
+protocol&lt;/strong&gt; (&lt;code&gt;POST /activity/messages&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ActivityServer.Run(...)&lt;/code&gt; one-liner startup that wires Kestrel, health probes, OpenTelemetry, and&lt;br&gt;
+the activity endpoint, with overloads for the way your agent is constructed:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Run&amp;lt;TAgent&amp;gt;()&lt;/code&gt; — host an &lt;code&gt;AgentApplication&lt;/code&gt; subclass by type.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Run(app =&amp;gt; ...)&lt;/code&gt; — register handlers inline on the built &lt;code&gt;AgentApplication&lt;/code&gt; (no agent class).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Run(agentApp)&lt;/code&gt; — host a pre-built &lt;code&gt;AgentApplication&lt;/code&gt; instance.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Run(Func&amp;lt;IServiceProvider, AgentApplication&amp;gt;)&lt;/code&gt; — factory registration with access to DI.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Run(RequestDelegate)&lt;/code&gt; — own the raw request pipeline (the Microsoft 365 Agents SDK is not&lt;br&gt;
+initialized).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;This package is a public preview, so expect incompatible changes in subsequent releases as we improve the product. To provide feedback, submit an issue in the &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues"&gt;Azure SDK for .NET GitHub repository&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Composition on the shared Core host builder via &lt;code&gt;AgentHostBuilder.AddActivity&amp;lt;TAgent&amp;gt;()&lt;/code&gt;,&lt;br&gt;
+&lt;code&gt;AddActivity(agentApp)&lt;/code&gt;, and &lt;code&gt;AddActivity(Func&amp;lt;IServiceProvider, AgentApplication&amp;gt;)&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Self-hosting on your own &lt;code&gt;WebApplication&lt;/code&gt; via &lt;code&gt;AddFoundryActivity()&lt;/code&gt; / &lt;code&gt;MapFoundryActivity()&lt;/code&gt;&lt;br&gt;
+(aliased as &lt;code&gt;AddActivityServer()&lt;/code&gt; / &lt;code&gt;MapActivityServer()&lt;/code&gt;), including a &lt;code&gt;RequestDelegate&lt;/code&gt; overload&lt;br&gt;
+of &lt;code&gt;MapFoundryActivity&lt;/code&gt; for owning the request pipeline in a self-hosted app. This is also the&lt;br&gt;
+two-line conversion path for an existing Microsoft 365 Agents SDK application.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ActivityServerOptions&lt;/code&gt; for configuring the built stack: outbound-auth model (&lt;code&gt;DigitalWorker&lt;/code&gt;),&lt;br&gt;
+turn-state &lt;code&gt;Storage&lt;/code&gt;, the outbound &lt;code&gt;Connections&lt;/code&gt; provider, the &lt;code&gt;Connections:*&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;ConnectionConfiguration&lt;/code&gt; mapping, and a &lt;code&gt;ConfigureServices&lt;/code&gt; hook.&lt;/li&gt;
+&lt;li&gt;Foundry outbound-auth is configuration-driven: &lt;code&gt;ActivityEnvironment&lt;/code&gt; derives the M365&lt;br&gt;
+&lt;code&gt;Connections:*&lt;/code&gt; settings from the Foundry-native identity (managed identity for the &lt;strong&gt;simple&lt;/strong&gt;&lt;br&gt;
+agent-instance model, &lt;code&gt;IdentityProxyManager&lt;/code&gt; for the &lt;strong&gt;digital worker&lt;/strong&gt; blueprint + FMI exchange&lt;br&gt;
+model) and the SDK-native connection provider mints the outbound reply token. No process&lt;br&gt;
+environment is mutated.&lt;/li&gt;
+&lt;li&gt;Session resolution (&lt;code&gt;agent_session_id&lt;/code&gt; query / &lt;code&gt;x-agent-session-id&lt;/code&gt; header / environment /&lt;br&gt;
+generated), sanitized session-id response header, &lt;code&gt;x-platform-error-source&lt;/code&gt; error classification&lt;br&gt;
+(&lt;code&gt;user&lt;/code&gt; / &lt;code&gt;platform&lt;/code&gt; / &lt;code&gt;upstream&lt;/code&gt;), and distributed tracing via &lt;code&gt;ActivityProtocolActivitySource&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.SecretsStoreExtension_1.0.0-beta.3"&gt;Azure.ResourceManager.SecretsStoreExtension_1.0.0-beta.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Core_1.0.0-beta.31"&gt;Azure.AI.AgentServer.Core_1.0.0-beta.31&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.3 (2026-11-03)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.31 (2026-11-04)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for specifying the Azure cloud using the &lt;code&gt;CloudName&lt;/code&gt; property on &lt;code&gt;KeyVaultSecretProviderClassProperties&lt;/code&gt; and &lt;code&gt;AzureKeyVaultSecretProviderClassUpdateProperties&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added the &lt;code&gt;microsoft.foundry = "True"&lt;/code&gt; string attribute to all collected spans and log records. The default telemetry processors override conflicting marker values without changing &lt;code&gt;gen_ai.provider.name&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added protocol-scoped task access for composed hosts and per-task activation&lt;br&gt;
+checks, stamping the owning protocol on new task records so a disabled&lt;br&gt;
+protocol cannot start or recover its tasks merely because another protocol&lt;br&gt;
+enabled the shared runtime. Legacy unmarked application tasks require the&lt;br&gt;
+explicit Core switch for recovery; existing Invocations chains continue under&lt;br&gt;
+that opt-in. The new public protocol-scoping helpers and per-task activation&lt;br&gt;
+option are experimental (&lt;code&gt;AAAS003&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Prevented a stale steering nudge from canceling a promoted turn after its pending-input queue has drained. Pending-input publication now follows the same turn as the cancellation signal.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.SecretsStoreExtension_1.0.0-beta.1"&gt;Azure.Provisioning.SecretsStoreExtension_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ComputeFleet_1.1.0-beta.4"&gt;Azure.ResourceManager.ComputeFleet_1.1.0-beta.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-11-02)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h2&gt;1.1.0-beta.4 (2026-11-03)&lt;/h2&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial release of the Azure.Provisioning.SecretsStoreExtension library.&lt;/li&gt;
+&lt;li&gt;Removed the &lt;code&gt;ZoneAllocationPolicy&lt;/code&gt; property from &lt;code&gt;ComputeFleetProperties&lt;/code&gt; and the corresponding &lt;code&gt;zoneAllocationPolicy&lt;/code&gt; parameter from &lt;code&gt;ArmComputeFleetModelFactory.ComputeFleetProperties&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;ComputeFleetZoneAllocationPolicy&lt;/code&gt;, &lt;code&gt;ComputeFleetZoneDistributionStrategy&lt;/code&gt;, and &lt;code&gt;ZonePreference&lt;/code&gt;, along with the &lt;code&gt;ArmComputeFleetModelFactory.ComputeFleetZoneAllocationPolicy&lt;/code&gt; and &lt;code&gt;ArmComputeFleetModelFactory.ZonePreference&lt;/code&gt; methods.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.ResourceConnector_1.0.0-beta.1"&gt;Azure.Provisioning.ResourceConnector_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/System.ClientModel_1.17.0"&gt;System.ClientModel_1.17.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-11-02)&lt;/h2&gt;
+                                &lt;h2&gt;1.17.0 (2026-11-04)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial beta release of Azure.Provisioning.ResourceConnector.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ClientPipeline.Send&lt;/code&gt; and &lt;code&gt;SendAsync&lt;/code&gt; overloads accepting a &lt;code&gt;CancellationToken&lt;/code&gt; to override cancellation for a send while preserving applied request options.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed invalid JSON when &lt;code&gt;JsonPatch&lt;/code&gt; replaces string-like values inside stored JSON objects or arrays.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
@@ -275,104 +325,376 @@
             </content>
   </entry>
   <entry>
-    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-11-04</title>
-    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-11-04</id>
-    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-    <updated>2026-11-05T00:06:29Z</updated>
+    <title>grpc/grpc - Releases - 2026-11-05</title>
+    <id>https://github.com/grpc/grpc#2026-11-05</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2026-11-06T00:06:21Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.ConfluentKafka-0.4.0-alpha.1"&gt;Instrumentation.ConfluentKafka-0.4.0-alpha.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.80.1"&gt;Release v1.80.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release gRPC Core 1.80.1 (glimmering).&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[security] Update gRPC repo roots. (&lt;a href="https://github.com/grpc/grpc/pull/43845" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43845/hovercard"&gt;#43845&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixes Denial of service in Health Watch RPC (&lt;a href="https://github.com/grpc/grpc/pull/43819" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43819/hovercard"&gt;#43819&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixes Memory leak in AsyncIO client-streaming calls with interceptors (&lt;a href="https://github.com/grpc/grpc/pull/43819" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43819/hovercard"&gt;#43819&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.78.2"&gt;Release v1.78.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release gRPC Core 1.78.2 (gutsy).&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release contains refinements, improvements, and bug fixes, with highlights listed below.&lt;/p&gt;
+&lt;h2&gt;PHP&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Disable php infinite recursion check for callback from Core to PHP (&lt;a href="https://github.com/grpc/grpc/pull/42600" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42600/hovercard"&gt;42600&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[security] Update gRPC repo roots (&lt;a href="https://github.com/grpc/grpc/pull/43847" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43847/hovercard"&gt;43847&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixes Denial of service in Health Watch RPC (&lt;a href="https://github.com/grpc/grpc/pull/43818" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43818/hovercard"&gt;#43818&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixes Memory leak in AsyncIO client-streaming calls with interceptors (&lt;a href="https://github.com/grpc/grpc/pull/43818" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43818/hovercard"&gt;#43818&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>jbogard/MediatR - Releases - 2026-11-05</title>
+    <id>https://github.com/jbogard/MediatR#2026-11-05</id>
+    <link href="https://github.com/jbogard/MediatR" />
+    <updated>2026-11-06T00:06:23Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/LuckyPennySoftware/MediatR/releases/tag/v14.3.0"&gt;v14.3.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix BuildDateUtc embedding on Windows builds by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5979059694" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/MediatR/issues/1182" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/MediatR/pull/1182/hovercard" href="https://github.com/LuckyPennySoftware/MediatR/pull/1182"&gt;#1182&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;License validation: WARNING during the renewal grace period by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6045741773" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/MediatR/issues/1183" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/MediatR/pull/1183/hovercard" href="https://github.com/LuckyPennySoftware/MediatR/pull/1183"&gt;#1183&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Infer open behavior type parameters from generic constraints by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6047038625" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/MediatR/issues/1184" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/MediatR/pull/1184/hovercard" href="https://github.com/LuckyPennySoftware/MediatR/pull/1184"&gt;#1184&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Let chained constraints revise inferred type parameters by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6060151846" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/MediatR/issues/1186" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/MediatR/pull/1186/hovercard" href="https://github.com/LuckyPennySoftware/MediatR/pull/1186"&gt;#1186&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;License validation: strip whitespace, clear messages for malformed keys, client platforms, and IdentityModel version mismatches by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6060664000" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/MediatR/issues/1187" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/MediatR/pull/1187/hovercard" href="https://github.com/LuckyPennySoftware/MediatR/pull/1187"&gt;#1187&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Move to central package management by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6067397320" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/MediatR/issues/1188" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/MediatR/pull/1188/hovercard" href="https://github.com/LuckyPennySoftware/MediatR/pull/1188"&gt;#1188&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Migrate tests to xUnit v3 by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6079979459" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/MediatR/issues/1189" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/MediatR/pull/1189/hovercard" href="https://github.com/LuckyPennySoftware/MediatR/pull/1189"&gt;#1189&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;License validation: isolate from the host app's CryptoProviderFactory by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6081839983" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/MediatR/issues/1190" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/MediatR/pull/1190/hovercard" href="https://github.com/LuckyPennySoftware/MediatR/pull/1190"&gt;#1190&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add LicenseKeyFactory to supply the license key from DI by &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jbogard/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jbogard"&gt;@jbogard&lt;/a&gt; in &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6226961330" data-permission-text="Title is private" data-url="https://github.com/LuckyPennySoftware/MediatR/issues/1192" data-hovercard-type="pull_request" data-hovercard-url="/LuckyPennySoftware/MediatR/pull/1192/hovercard" href="https://github.com/LuckyPennySoftware/MediatR/pull/1192"&gt;#1192&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class="commit-link" href="https://github.com/LuckyPennySoftware/MediatR/compare/v14.2.0...v14.3.0"&gt;&lt;tt&gt;v14.2.0...v14.3.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-11-05</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-11-05</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2026-11-06T00:06:29Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Http-1.20.2"&gt;Instrumentation.Http-1.20.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.ConfluentKafka/0.4.0-alpha.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.ConfluentKafka v0.4.0-alpha.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Http/1.20.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Http v1.20.2&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Fixed unbounded memory use caused by long string message keys being recorded&lt;br&gt;
-in full in the &lt;code&gt;messaging.kafka.message.key&lt;/code&gt; span attribute. Keys longer than&lt;br&gt;
-256 characters are now truncated.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5859" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5859/hovercard"&gt;#5859&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Updated Semantic Conventions version to &lt;code&gt;1.45.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5833" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5833/hovercard"&gt;#5833&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Added the &lt;code&gt;UseCreationContextAsParent&lt;/code&gt; option to&lt;br&gt;
-&lt;code&gt;ConfluentKafkaInstrumentedConsumerBuilderOptions&lt;/code&gt;. When enabled, the&lt;br&gt;
-&lt;code&gt;process&lt;/code&gt; span created by &lt;code&gt;ConsumeAndProcessMessageAsync&lt;/code&gt; uses the message&lt;br&gt;
-creation context (extracted from the message headers) as its parent instead&lt;br&gt;
-of only linking to it, as allowed by the messaging semantic conventions.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5510" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5510/hovercard"&gt;#5510&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Fixed an issue on .NET Framework where an asynchronous &lt;code&gt;HttpWebRequest&lt;/code&gt;&lt;br&gt;
+(including &lt;code&gt;HttpClient&lt;/code&gt;) that waited for a free connection could be sent with&lt;br&gt;
+the trace context and baggage of another request.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5873" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5873/hovercard"&gt;#5873&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.ConfluentKafka-0.4.0-alpha.1/src/OpenTelemetry.Instrumentation.ConfluentKafka/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Http-1.20.2/src/OpenTelemetry.Instrumentation.Http/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Wcf-1.20.1-beta.2"&gt;Instrumentation.Wcf-1.20.1-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Hangfire-1.20.2-beta.1"&gt;Instrumentation.Hangfire-1.20.2-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Wcf/1.20.1-beta.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Wcf v1.20.1-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Hangfire/1.20.2-beta.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Hangfire v1.20.2-beta.1&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Fixed an issue where a late reply or the telemetry timeout for a failed&lt;br&gt;
-outgoing duplex request could stop the client activity a second time and&lt;br&gt;
-record reply data on it.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5791" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5791/hovercard"&gt;#5791&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Fixed failed jobs exporting the exception message as the span status description.&lt;br&gt;
+The message is now only recorded when &lt;code&gt;RecordException&lt;/code&gt; is enabled.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5884" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5884/hovercard"&gt;#5884&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Fixed an &lt;code&gt;ArgumentOutOfRangeException&lt;/code&gt; from the telemetry timeout timer,&lt;br&gt;
-which could terminate the process, for outgoing duplex requests with a send&lt;br&gt;
-timeout longer than about 49 days, such as &lt;code&gt;TimeSpan.MaxValue&lt;/code&gt;.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5841" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5841/hovercard"&gt;#5841&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Fixed baggage from a job being visible to work started by other jobs&lt;br&gt;
+performed on the same worker.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5886" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5886/hovercard"&gt;#5886&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Fixed exceptions thrown while completing timed out outgoing duplex requests&lt;br&gt;
-escaping the timeout timer's thread, where they could terminate the process.&lt;br&gt;
-They are now reported through the &lt;code&gt;OpenTelemetry-Instrumentation-Wcf&lt;/code&gt; event&lt;br&gt;
-source.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5841" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5841/hovercard"&gt;#5841&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Added &lt;code&gt;EnrichWithBackgroundJob&lt;/code&gt; and &lt;code&gt;CustomStateMappings&lt;/code&gt; to&lt;br&gt;
+&lt;code&gt;HangfireMetricsInstrumentationOptions&lt;/code&gt;. Use them to add custom attributes to&lt;br&gt;
+the metrics and to count jobs in custom Hangfire states.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5810" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5810/hovercard"&gt;#5810&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Fixed outgoing duplex requests that never received a reply, and their&lt;br&gt;
-activities, being tracked indefinitely when their channel was closed,&lt;br&gt;
-aborted or faulted. They are now completed when the channel goes away.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5841" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5841/hovercard"&gt;#5841&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fixed an issue where outgoing requests that share an&lt;br&gt;
-&lt;code&gt;HttpRequestMessageProperty&lt;/code&gt; instance leaked &lt;code&gt;traceparent&lt;/code&gt;, &lt;code&gt;tracestate&lt;/code&gt; and&lt;br&gt;
-&lt;code&gt;baggage&lt;/code&gt; HTTP headers from one call to later calls.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5860" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5860/hovercard"&gt;#5860&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Fixed &lt;code&gt;workflow.execution.duration&lt;/code&gt; for the &lt;code&gt;executing&lt;/code&gt; state. It included the&lt;br&gt;
+time of other measurements of this instrumentation, for example the database&lt;br&gt;
+query that &lt;code&gt;RecordQueueLatency&lt;/code&gt; adds.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5810" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5810/hovercard"&gt;#5810&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Wcf-1.20.1-beta.2/src/OpenTelemetry.Instrumentation.Wcf/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Hangfire-1.20.2-beta.1/src/OpenTelemetry.Instrumentation.Hangfire/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Exporter.InfluxDB-1.0.0-alpha.17"&gt;Exporter.InfluxDB-1.0.0-alpha.17&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/OpAmp.Client-0.10.0-alpha.1"&gt;OpAmp.Client-0.10.0-alpha.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
                                 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Exporter.InfluxDB/1.0.0-alpha.17" rel="nofollow"&gt;OpenTelemetry.Exporter.InfluxDB v1.0.0-alpha.17&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.OpAmp.Client/0.10.0-alpha.1" rel="nofollow"&gt;OpenTelemetry.OpAmp.Client v0.10.0-alpha.1&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Fixed invalid line protocol produced by certain metric tag keys and values.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5842" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5842/hovercard"&gt;#5842&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Fixed &lt;code&gt;OpAmpClient.FlushAsync()&lt;/code&gt; potentially waiting indefinitely when new&lt;br&gt;
+messages kept being queued. Messages queued after a flush starts no longer&lt;br&gt;
+delay its completion.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5882" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5882/hovercard"&gt;#5882&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Limited HTTP write responses buffered by the InfluxDB exporter to 1 MiB.&lt;br&gt;
-Larger responses cause the export to fail.&lt;br&gt;
-(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5861" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5861/hovercard"&gt;#5861&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Fixed the pending message byte limit not counting state reports queued together&lt;br&gt;
+with custom messages, which allowed pending frames to retain more memory than&lt;br&gt;
+the configured limit.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5881" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5881/hovercard"&gt;#5881&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Breaking change:&lt;/strong&gt; Renamed &lt;code&gt;OpAmpClientSettings.MaxPendingCustomMessageBytes&lt;/code&gt;&lt;br&gt;
+to &lt;code&gt;MaxPendingMessageBytes&lt;/code&gt; to reflect that the limit also counts state reports&lt;br&gt;
+queued with custom messages.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5881" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5881/hovercard"&gt;#5881&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fix WebSocket transport startup blocking when the server sends messages&lt;br&gt;
+immediately after the handshake.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5883" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5883/hovercard"&gt;#5883&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt;: The default HTTP client and the default WebSocket&lt;br&gt;
+client no longer follow HTTP redirects. A redirect response now fails the&lt;br&gt;
+request or connection instead of being followed. To restore redirects, set&lt;br&gt;
+the new &lt;code&gt;OpAmpClientSettings.AllowRedirects&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt;; it does not apply to&lt;br&gt;
+clients returned by &lt;code&gt;HttpClientFactory&lt;/code&gt; or &lt;code&gt;ClientWebSocketFactory&lt;/code&gt;.&lt;br&gt;
+WebSocket redirects cannot be disabled on .NET Framework and&lt;br&gt;
+.NET Standard 2.0 targets.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5885" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5885/hovercard"&gt;#5885&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Exporter.InfluxDB-1.0.0-alpha.17/src/OpenTelemetry.Exporter.InfluxDB/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/OpAmp.Client-0.10.0-alpha.1/src/OpenTelemetry.OpAmp.Client/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.Azure-1.20.2-beta.1"&gt;Resources.Azure-1.20.2-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.Azure/1.20.2-beta.1" rel="nofollow"&gt;OpenTelemetry.Resources.Azure v1.20.2-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Updated Semantic Conventions version to &lt;code&gt;1.45.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5833" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5833/hovercard"&gt;#5833&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Azure VM resource detector no longer follows HTTP redirects returned by&lt;br&gt;
+the Azure Instance Metadata Service endpoint. A redirect response is now&lt;br&gt;
+treated as a failed detection.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5843" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5843/hovercard"&gt;#5843&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.Azure-1.20.2-beta.1/src/OpenTelemetry.Resources.Azure/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Sampler.AWS-0.1.0-alpha.18"&gt;Sampler.AWS-0.1.0-alpha.18&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Sampler.AWS/0.1.0-alpha.18" rel="nofollow"&gt;OpenTelemetry.Sampler.AWS v0.1.0-alpha.18&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed the attributes of a sampling rule being matched incorrectly when a span&lt;br&gt;
+has more than one tag with the same key.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5824" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5824/hovercard"&gt;#5824&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The sampling endpoint client no longer follows HTTP redirects or retains&lt;br&gt;
+cookies. A redirect response is now treated as a failed poll, so deployments&lt;br&gt;
+that rely on a redirect in front of the sampling endpoint must configure the&lt;br&gt;
+final URL via &lt;code&gt;SetEndpoint&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5856" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5856/hovercard"&gt;#5856&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Sampler.AWS-0.1.0-alpha.18/src/OpenTelemetry.Sampler.AWS/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Resources.AWS-1.20.2"&gt;Resources.AWS-1.20.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Resources.AWS/1.20.2" rel="nofollow"&gt;OpenTelemetry.Resources.AWS v1.20.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;AWSEC2Detector&lt;/code&gt;, &lt;code&gt;AWSECSDetector&lt;/code&gt; and &lt;code&gt;AWSEKSDetector&lt;/code&gt; no longer follow HTTP&lt;br&gt;
+redirects when requesting metadata. A redirect response is now treated as a&lt;br&gt;
+failed request.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5878" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5878/hovercard"&gt;#5878&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Resources.AWS-1.20.2/src/OpenTelemetry.Resources.AWS/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Owin-1.20.2-beta.1"&gt;Instrumentation.Owin-1.20.2-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Owin/1.20.2-beta.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Owin v1.20.2-beta.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Updated Semantic Conventions version to &lt;code&gt;1.45.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5833" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5833/hovercard"&gt;#5833&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt;: The &lt;code&gt;http.server.request.duration&lt;/code&gt; metric no longer&lt;br&gt;
+includes the &lt;code&gt;http.request.method_original&lt;/code&gt; tag, and records only the&lt;br&gt;
+normalized &lt;code&gt;http.request.method&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5880" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5880/hovercard"&gt;#5880&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Owin-1.20.2-beta.1/src/OpenTelemetry.Instrumentation.Owin/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.ConfluentKafka-0.5.0-alpha.1"&gt;Instrumentation.ConfluentKafka-0.5.0-alpha.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.ConfluentKafka/0.5.0-alpha.1" rel="nofollow"&gt;OpenTelemetry.Instrumentation.ConfluentKafka v0.5.0-alpha.1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Breaking change&lt;/strong&gt;: Updated the traces and metrics emitted by the Kafka&lt;br&gt;
+producer and consumer to follow the&lt;br&gt;
+&lt;a href="https://github.com/open-telemetry/semantic-conventions/tree/v1.45.0/docs/messaging"&gt;v1.45.0 messaging semantic conventions&lt;/a&gt;.&lt;br&gt;
+The following attributes were renamed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;messaging.system.name&lt;/code&gt; (replacing &lt;code&gt;messaging.system&lt;/code&gt;), on both spans and&lt;br&gt;
+metrics&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kafka.offset&lt;/code&gt; (replacing &lt;code&gt;messaging.kafka.offset&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kafka.message.key&lt;/code&gt; (replacing &lt;code&gt;messaging.kafka.message.key&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kafka.message.tombstone&lt;/code&gt; (replacing &lt;code&gt;messaging.kafka.message.tombstone&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kafka.cluster.id&lt;/code&gt; (replacing &lt;code&gt;messaging.kafka.cluster.id&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5831" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5831/hovercard"&gt;#5831&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.ConfluentKafka-0.5.0-alpha.1/src/OpenTelemetry.Instrumentation.ConfluentKafka/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.GrpcCore-1.0.0-beta.19"&gt;Instrumentation.GrpcCore-1.0.0-beta.19&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.GrpcCore/1.0.0-beta.19" rel="nofollow"&gt;OpenTelemetry.Instrumentation.GrpcCore v1.0.0-beta.19&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed unbounded memory growth on streaming calls when &lt;code&gt;RecordMessageEvents&lt;/code&gt;&lt;br&gt;
+is enabled. At most 128 message events are now recorded per call.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5879" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5879/hovercard"&gt;#5879&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed &lt;code&gt;ServerTracingInterceptor&lt;/code&gt; applying the baggage received with one RPC&lt;br&gt;
+to other RPCs.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5874" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5874/hovercard"&gt;#5874&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.GrpcCore-1.0.0-beta.19/src/OpenTelemetry.Instrumentation.GrpcCore/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.AspNet-1.20.3"&gt;Instrumentation.AspNet-1.20.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.AspNet/1.20.3" rel="nofollow"&gt;OpenTelemetry.Instrumentation.AspNet v1.20.3&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Updated Semantic Conventions version to &lt;code&gt;1.45.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5833" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5833/hovercard"&gt;#5833&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed &lt;code&gt;http.route&lt;/code&gt; and the span name containing the &lt;code&gt;controller&lt;/code&gt; and &lt;code&gt;action&lt;/code&gt;&lt;br&gt;
+values from the request URL for conventional MVC and WebAPI routes. The names&lt;br&gt;
+are now only used once a request for them has completed successfully, otherwise&lt;br&gt;
+the &lt;code&gt;{controller}&lt;/code&gt; and &lt;code&gt;{action}&lt;/code&gt; tokens of the route template are reported.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5858" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5858/hovercard"&gt;#5858&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AspNet-1.20.3/src/OpenTelemetry.Instrumentation.AspNet/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.AspNet.TelemetryHttpModule/1.20.3" rel="nofollow"&gt;OpenTelemetry.Instrumentation.AspNet.TelemetryHttpModule v1.20.3&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed baggage and an unstopped &lt;code&gt;Activity&lt;/code&gt; being left behind when an&lt;br&gt;
+&lt;code&gt;EndRequest&lt;/code&gt; handler that runs after &lt;code&gt;TelemetryHttpModule&lt;/code&gt; throws.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5868" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5868/hovercard"&gt;#5868&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AspNet-1.20.3/src/OpenTelemetry.Instrumentation.AspNet.TelemetryHttpModule/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
