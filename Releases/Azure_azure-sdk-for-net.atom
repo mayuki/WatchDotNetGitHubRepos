@@ -1,114 +1,201 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-11-06T00:06:06Z</updated>
+  <updated>2026-11-07T00:05:39Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-11-05</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-11-05</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-11-06</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-11-06</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-11-06T00:06:06Z</updated>
+    <updated>2026-11-07T00:05:39Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Monitor.Workspaces_1.1.0-beta.1"&gt;Azure.ResourceManager.Monitor.Workspaces_1.1.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Sql_1.5.0-beta.2"&gt;Azure.ResourceManager.Sql_1.5.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.1.0-beta.1 (2026-11-03)&lt;/h2&gt;
+                                &lt;h2&gt;1.5.0-beta.2 (2026-11-06)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added support for managing metric namespaces and metric configurations in Azure Monitor Workspaces.&lt;/li&gt;
-&lt;li&gt;Added support for managing trace containers in Azure Monitor Workspaces and trace associations at resource, resource group, and subscription scopes.&lt;/li&gt;
+&lt;li&gt;Upgraded api-version to 2026-08-01-preview.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Activity_1.0.0-beta.1"&gt;Azure.AI.AgentServer.Activity_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.RecoveryServicesBackup_1.6.0"&gt;Azure.ResourceManager.RecoveryServicesBackup_1.6.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-11-04)&lt;/h2&gt;
+                                &lt;h2&gt;1.6.0 (2026-11-06)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Initial release of &lt;code&gt;Azure.AI.AgentServer.Activity&lt;/code&gt; — a .NET library for hosting a Microsoft 365&lt;br&gt;
-Agents SDK &lt;code&gt;AgentApplication&lt;/code&gt; as an Azure AI Foundry hosted agent that speaks the &lt;strong&gt;activity&lt;br&gt;
-protocol&lt;/strong&gt; (&lt;code&gt;POST /activity/messages&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ActivityServer.Run(...)&lt;/code&gt; one-liner startup that wires Kestrel, health probes, OpenTelemetry, and&lt;br&gt;
-the activity endpoint, with overloads for the way your agent is constructed:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Run&amp;lt;TAgent&amp;gt;()&lt;/code&gt; — host an &lt;code&gt;AgentApplication&lt;/code&gt; subclass by type.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Run(app =&amp;gt; ...)&lt;/code&gt; — register handlers inline on the built &lt;code&gt;AgentApplication&lt;/code&gt; (no agent class).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Run(agentApp)&lt;/code&gt; — host a pre-built &lt;code&gt;AgentApplication&lt;/code&gt; instance.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Run(Func&amp;lt;IServiceProvider, AgentApplication&amp;gt;)&lt;/code&gt; — factory registration with access to DI.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Run(RequestDelegate)&lt;/code&gt; — own the raw request pipeline (the Microsoft 365 Agents SDK is not&lt;br&gt;
-initialized).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Composition on the shared Core host builder via &lt;code&gt;AgentHostBuilder.AddActivity&amp;lt;TAgent&amp;gt;()&lt;/code&gt;,&lt;br&gt;
-&lt;code&gt;AddActivity(agentApp)&lt;/code&gt;, and &lt;code&gt;AddActivity(Func&amp;lt;IServiceProvider, AgentApplication&amp;gt;)&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Self-hosting on your own &lt;code&gt;WebApplication&lt;/code&gt; via &lt;code&gt;AddFoundryActivity()&lt;/code&gt; / &lt;code&gt;MapFoundryActivity()&lt;/code&gt;&lt;br&gt;
-(aliased as &lt;code&gt;AddActivityServer()&lt;/code&gt; / &lt;code&gt;MapActivityServer()&lt;/code&gt;), including a &lt;code&gt;RequestDelegate&lt;/code&gt; overload&lt;br&gt;
-of &lt;code&gt;MapFoundryActivity&lt;/code&gt; for owning the request pipeline in a self-hosted app. This is also the&lt;br&gt;
-two-line conversion path for an existing Microsoft 365 Agents SDK application.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ActivityServerOptions&lt;/code&gt; for configuring the built stack: outbound-auth model (&lt;code&gt;DigitalWorker&lt;/code&gt;),&lt;br&gt;
-turn-state &lt;code&gt;Storage&lt;/code&gt;, the outbound &lt;code&gt;Connections&lt;/code&gt; provider, the &lt;code&gt;Connections:*&lt;/code&gt;&lt;br&gt;
-&lt;code&gt;ConnectionConfiguration&lt;/code&gt; mapping, and a &lt;code&gt;ConfigureServices&lt;/code&gt; hook.&lt;/li&gt;
-&lt;li&gt;Foundry outbound-auth is configuration-driven: &lt;code&gt;ActivityEnvironment&lt;/code&gt; derives the M365&lt;br&gt;
-&lt;code&gt;Connections:*&lt;/code&gt; settings from the Foundry-native identity (managed identity for the &lt;strong&gt;simple&lt;/strong&gt;&lt;br&gt;
-agent-instance model, &lt;code&gt;IdentityProxyManager&lt;/code&gt; for the &lt;strong&gt;digital worker&lt;/strong&gt; blueprint + FMI exchange&lt;br&gt;
-model) and the SDK-native connection provider mints the outbound reply token. No process&lt;br&gt;
-environment is mutated.&lt;/li&gt;
-&lt;li&gt;Session resolution (&lt;code&gt;agent_session_id&lt;/code&gt; query / &lt;code&gt;x-agent-session-id&lt;/code&gt; header / environment /&lt;br&gt;
-generated), sanitized session-id response header, &lt;code&gt;x-platform-error-source&lt;/code&gt; error classification&lt;br&gt;
-(&lt;code&gt;user&lt;/code&gt; / &lt;code&gt;platform&lt;/code&gt; / &lt;code&gt;upstream&lt;/code&gt;), and distributed tracing via &lt;code&gt;ActivityProtocolActivitySource&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Upgraded the service API version to &lt;code&gt;2026-11-01&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.AgentServer.Core_1.0.0-beta.31"&gt;Azure.AI.AgentServer.Core_1.0.0-beta.31&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetworkSecurity_1.0.0-beta.1"&gt;Azure.ResourceManager.NetworkSecurity_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.31 (2026-11-04)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-11-10)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added the &lt;code&gt;microsoft.foundry = "True"&lt;/code&gt; string attribute to all collected spans and log records. The default telemetry processors override conflicting marker values without changing &lt;code&gt;gen_ai.provider.name&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added protocol-scoped task access for composed hosts and per-task activation&lt;br&gt;
-checks, stamping the owning protocol on new task records so a disabled&lt;br&gt;
-protocol cannot start or recover its tasks merely because another protocol&lt;br&gt;
-enabled the shared runtime. Legacy unmarked application tasks require the&lt;br&gt;
-explicit Core switch for recovery; existing Invocations chains continue under&lt;br&gt;
-that opt-in. The new public protocol-scoping helpers and per-task activation&lt;br&gt;
-option are experimental (&lt;code&gt;AAAS003&lt;/code&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Prevented a stale steering nudge from canceling a promoted turn after its pending-input queue has drained. Pending-input publication now follows the same turn as the cancellation signal.&lt;/li&gt;
+&lt;li&gt;Initial release of the Azure Network Security management client library, supporting NeuroShield resources, protected resources, findings, mitigations, and summaries.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ComputeFleet_1.1.0-beta.4"&gt;Azure.ResourceManager.ComputeFleet_1.1.0-beta.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.67"&gt;Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.67&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.1.0-beta.4 (2026-11-03)&lt;/h2&gt;
+                                &lt;h2&gt;12.0.0-preview.67 (2026-11-05)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded &lt;code&gt;Azure.Storage.Blobs&lt;/code&gt; package dependency to 12.31.0-beta.1&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.DataLake_12.29.0-beta.1"&gt;Azure.Storage.Files.DataLake_12.29.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.29.0-beta.1 (2026-11-05)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for Session Authentication for &lt;code&gt;TokenCredential&lt;/code&gt;-authenticated clients using GET Blob operations. This is currently disabled by default and can be enabled via &lt;code&gt;DataLakeClientOptions.SessionOptions.SessionMode&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added support for locality-aware downloads for &lt;code&gt;DataLakeFileClient.ReadTo&lt;/code&gt;, &lt;code&gt;DataLakeFileClient.ReadToAsync&lt;/code&gt;, &lt;code&gt;DataLakeFileClient.OpenRead&lt;/code&gt;, and &lt;code&gt;DataLakeFileClient.OpenReadAsync&lt;/code&gt; operations. This is currently disabled by default and can be enabled via &lt;code&gt;DataLakeFileReadToOptions.LayoutAwareRouting&lt;/code&gt; and &lt;code&gt;DataLakeOpenReadOptions.LayoutAwareRouting&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added support for scheduling file deletion with &lt;code&gt;DataLakeFileClient.Upload&lt;/code&gt; and &lt;code&gt;UploadAsync&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Removed the &lt;code&gt;ZoneAllocationPolicy&lt;/code&gt; property from &lt;code&gt;ComputeFleetProperties&lt;/code&gt; and the corresponding &lt;code&gt;zoneAllocationPolicy&lt;/code&gt; parameter from &lt;code&gt;ArmComputeFleetModelFactory.ComputeFleetProperties&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Removed &lt;code&gt;ComputeFleetZoneAllocationPolicy&lt;/code&gt;, &lt;code&gt;ComputeFleetZoneDistributionStrategy&lt;/code&gt;, and &lt;code&gt;ZonePreference&lt;/code&gt;, along with the &lt;code&gt;ArmComputeFleetModelFactory.ComputeFleetZoneAllocationPolicy&lt;/code&gt; and &lt;code&gt;ArmComputeFleetModelFactory.ZonePreference&lt;/code&gt; methods.&lt;/li&gt;
+&lt;li&gt;Changed the default value of &lt;code&gt;StorageTransferOptions.InitialTransferSize&lt;/code&gt; used by partitioned uploads and downloads when it is not set by the caller. It now matches the default size of subsequent chunks instead of 256 MB:
+&lt;ul&gt;
+&lt;li&gt;Downloads (&lt;code&gt;DataLakeFileClient.ReadTo&lt;/code&gt;/&lt;code&gt;ReadToAsync&lt;/code&gt;): the first range request now defaults to 4 MB, the same as subsequent ranges. Previously, it was 256 MB when no transfer checksum was used.&lt;/li&gt;
+&lt;li&gt;Uploads (&lt;code&gt;DataLakeFileClient.Upload&lt;/code&gt;/&lt;code&gt;UploadAsync&lt;/code&gt;): a file is now uploaded in a single Append and Flush only if its content is smaller than the default block size (4 MB, or 8 MB for content of 100 MB or more). Previously, content smaller than 256 MB was uploaded in a single append.&lt;/li&gt;
+&lt;li&gt;This means uploads and downloads may be partitioned more often, leading to more requests.&lt;/li&gt;
+&lt;li&gt;Explicitly set &lt;code&gt;InitialTransferSize&lt;/code&gt; and &lt;code&gt;MaximumTransferSize&lt;/code&gt; values are still respected. To restore the previous behavior, set &lt;code&gt;StorageTransferOptions.InitialTransferSize&lt;/code&gt; to 256 MB.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed SAS timestamp handling for non-UTC &lt;code&gt;DateTimeOffset&lt;/code&gt; values. SAS times are now normalized to UTC before formatting/signing, preventing unintended validity windows in st/se (Start Time, Expiry Time) and related delegation key fields. Affected APIs include:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;DataLakeFileSystemClient.GenerateSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DataLakeFileSystemClient.GenerateUserDelegationSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DataLakePathClient.GenerateSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DataLakePathClient.GenerateUserDelegationSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DataLakeServiceClient.GenerateAccountSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DataLakeSasBuilder&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/System.ClientModel_1.17.0"&gt;System.ClientModel_1.17.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.Shares.ChangeFeed_12.0.0-beta.1"&gt;Azure.Storage.Files.Shares.ChangeFeed_12.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.17.0 (2026-11-04)&lt;/h2&gt;
+                                &lt;h2&gt;12.0.0-beta.1 (2026-11-05)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;ClientPipeline.Send&lt;/code&gt; and &lt;code&gt;SendAsync&lt;/code&gt; overloads accepting a &lt;code&gt;CancellationToken&lt;/code&gt; to override cancellation for a send while preserving applied request options.&lt;/li&gt;
+&lt;li&gt;Initial release of Azure.Storage.Files.Shares.ChangeFeed.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.Batch_12.28.0-beta.1"&gt;Azure.Storage.Blobs.Batch_12.28.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.28.0-beta.1 (2026-11-05)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded &lt;code&gt;Azure.Storage.Blobs&lt;/code&gt; package dependency to 12.31.0-beta.1&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs_12.31.0-beta.1"&gt;Azure.Storage.Blobs_12.31.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.31.0-beta.1 (2026-11-05)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for Session Authentication for &lt;code&gt;TokenCredential&lt;/code&gt;-authenticated clients using GET Blob operations. This is currently disabled by default and can be enabled via &lt;code&gt;BlobClientOptions.SessionOptions.SessionMode&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Changed the default value of &lt;code&gt;GetBlobsOptions.ResponseFormat&lt;/code&gt; and &lt;code&gt;GetBlobsByHierarchyOptions.ResponseFormat&lt;/code&gt; to &lt;code&gt;StorageResponseFormat.Arrow&lt;/code&gt;. The default value was previously &lt;code&gt;StorageResponseFormat.Xml&lt;/code&gt;. This change will improve performance and modify the response format of the &lt;code&gt;GetBlobs&lt;/code&gt; and &lt;code&gt;GetBlobsByHierarchy&lt;/code&gt; APIs when the caller does not explicitly set the response format. Callers that require XML responses should explicitly set the response format to &lt;code&gt;StorageResponseFormat.Xml&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added support for locality-aware downloads for &lt;code&gt;BlobBaseClient.DownloadTo&lt;/code&gt;, &lt;code&gt;BlobBaseClient.DownloadToAsync&lt;/code&gt;, &lt;code&gt;BlobBaseClient.OpenRead&lt;/code&gt;, and &lt;code&gt;BlobBaseClient.OpenReadAsync&lt;/code&gt; operations. This is currently disabled by default and can be enabled via &lt;code&gt;BlobDownloadToOptions.LayoutAwareRouting&lt;/code&gt; and &lt;code&gt;BlobOpenReadOptions.LayoutAwareRouting&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Changed the default value of &lt;code&gt;StorageTransferOptions.InitialTransferSize&lt;/code&gt; used by partitioned uploads and downloads when it is not set by the caller. It now matches the default size of subsequent chunks instead of 256 MB:
+&lt;ul&gt;
+&lt;li&gt;Downloads (&lt;code&gt;BlobBaseClient.DownloadTo&lt;/code&gt;/&lt;code&gt;DownloadToAsync&lt;/code&gt;): the first range request now defaults to 4 MB, the same as subsequent ranges. Previously, it was 256 MB when no transfer checksum was used.&lt;/li&gt;
+&lt;li&gt;Uploads (&lt;code&gt;BlobClient.Upload&lt;/code&gt;/&lt;code&gt;UploadAsync&lt;/code&gt;, &lt;code&gt;BlockBlobClient.Upload&lt;/code&gt;/&lt;code&gt;UploadAsync&lt;/code&gt;): a blob is now uploaded in a single Put Blob request only if its content is smaller than the default block size (4 MB, or 8 MB for content of 100 MB or more). Previously, content smaller than 256 MB was uploaded in a single request.&lt;/li&gt;
+&lt;li&gt;This means uploads and downloads may be partitioned more often, leading to more requests.&lt;/li&gt;
+&lt;li&gt;Explicitly set &lt;code&gt;InitialTransferSize&lt;/code&gt; and &lt;code&gt;MaximumTransferSize&lt;/code&gt; values are still respected. To restore the previous behavior, set &lt;code&gt;StorageTransferOptions.InitialTransferSize&lt;/code&gt; to 256 MB.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed invalid JSON when &lt;code&gt;JsonPatch&lt;/code&gt; replaces string-like values inside stored JSON objects or arrays.&lt;/li&gt;
+&lt;li&gt;Fixed client-side encryption v1 decryption of ranged downloads so the 16-byte IV is fully read even when the ciphertext stream returns short reads, and a truncated IV now fails instead of silently corrupting plaintext.&lt;/li&gt;
+&lt;li&gt;Fixed SAS timestamp handling for non-UTC &lt;code&gt;DateTimeOffset&lt;/code&gt; values. SAS times are now normalized to UTC before formatting/signing, preventing unintended validity windows in st/se (Start Time, Expiry Time) and related delegation key fields. Affected APIs include:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;BlobBaseClient.GenerateSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BlobBaseClient.GenerateUserDelegationSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BlobContainerClient.GenerateSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BlobContainerClient.GenerateUserDelegationSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BlobServiceClient.GenerateAccountSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BlobSasBuilder&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Queues_12.29.0-beta.1"&gt;Azure.Storage.Queues_12.29.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.29.0-beta.1 (2026-11-05)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed SAS timestamp handling for non-UTC &lt;code&gt;DateTimeOffset&lt;/code&gt; values. SAS times are now normalized to UTC before formatting/signing, preventing unintended validity windows in st/se (Start Time, Expiry Time) and related delegation key fields. Affected APIs include:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;QueueClient.GenerateSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;QueueClient.GenerateUserDelegationSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;QueueServiceClient.GenerateAccountSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;QueueSasBuilder&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.Shares_12.29.0-beta.1"&gt;Azure.Storage.Files.Shares_12.29.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.29.0-beta.1 (2026-11-05)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for &lt;code&gt;ShareFileClient&lt;/code&gt; and &lt;code&gt;ShareDirectoryClient&lt;/code&gt; constructed using File Id-based URLs. &lt;code&gt;ShareFileClient&lt;/code&gt; constructed via File Id-based URLs can only perform &lt;code&gt;GetProperties&lt;/code&gt; and &lt;code&gt;GetFileLinks&lt;/code&gt; operations currently. &lt;code&gt;ShareDirectoryClient&lt;/code&gt; constructed via File Id-based URLs can only perform &lt;code&gt;GetProperties&lt;/code&gt; operation currently.&lt;/li&gt;
+&lt;li&gt;Added support for &lt;code&gt;ShareFileClient.GetFileLinks&lt;/code&gt; and &lt;code&gt;ShareFileClient.GetFileLinksAsync&lt;/code&gt; operations. These operations are only supported for clients constructed using File Id-based URLs and not path-based URLs.&lt;/li&gt;
+&lt;li&gt;Added support for &lt;code&gt;ShareProperties.CreatedOn&lt;/code&gt; for &lt;code&gt;ShareServiceClient.GetShare&lt;/code&gt;, &lt;code&gt;ShareServiceClient.GetShareAsync&lt;/code&gt;, &lt;code&gt;ShareClient.GetProperties&lt;/code&gt;, and &lt;code&gt;ShareClient.GetPropertiesAsync&lt;/code&gt; operations.&lt;/li&gt;
+&lt;li&gt;Added support for &lt;code&gt;ShareProperties.EnableChangeFeed&lt;/code&gt;, &lt;code&gt;ShareProperties.ChangeFeedRetentionInDays&lt;/code&gt;, and &lt;code&gt;ShareProperties.ChangeFeedBlobContainerName&lt;/code&gt; for &lt;code&gt;ShareClient.GetProperties&lt;/code&gt; and &lt;code&gt;ShareClient.GetPropertiesAsync&lt;/code&gt; operations.&lt;/li&gt;
+&lt;li&gt;Added support for &lt;code&gt;ShareSetPropertiesOptions.EnableChangeFeed&lt;/code&gt; and &lt;code&gt;ShareSetPropertiesOptions.ChangeFeedRetentionInDays&lt;/code&gt; for &lt;code&gt;ShareClient.SetProperties&lt;/code&gt; and &lt;code&gt;ShareClient.SetPropertiesAsync&lt;/code&gt; operations.&lt;/li&gt;
+&lt;li&gt;Added support for &lt;code&gt;ShareCreateOptions.EnableChangeFeed&lt;/code&gt; and &lt;code&gt;ShareCreateOptions.ChangeFeedRetentionInDays&lt;/code&gt; for &lt;code&gt;ShareClient.Create&lt;/code&gt; and &lt;code&gt;ShareClient.CreateAsync&lt;/code&gt; operations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed SAS timestamp handling for non-UTC &lt;code&gt;DateTimeOffset&lt;/code&gt; values. SAS times are now normalized to UTC before formatting/signing, preventing unintended validity windows in st/se (Start Time, Expiry Time) and related delegation key fields. Affected APIs include:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ShareClient.GenerateSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ShareClient.GenerateUserDelegationSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ShareDirectoryClient.GenerateSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ShareFileClient.GenerateSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ShareFileClient.GenerateUserDelegationSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ShareServiceClient.GenerateAccountSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ShareSasBuilder&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
