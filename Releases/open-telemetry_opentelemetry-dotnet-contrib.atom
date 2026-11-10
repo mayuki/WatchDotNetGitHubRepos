@@ -1,6 +1,74 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>open-telemetry/opentelemetry-dotnet-contrib - Releases</title>
   <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
-  <updated>2026-11-09T00:07:10Z</updated>
+  <updated>2026-11-10T00:06:05Z</updated>
   <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib</id>
+  <entry>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-11-09</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-11-09</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2026-11-10T00:06:05Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.Kusto-0.1.0-alpha.8"&gt;Instrumentation.Kusto-0.1.0-alpha.8&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Kusto/0.1.0-alpha.8" rel="nofollow"&gt;OpenTelemetry.Instrumentation.Kusto v0.1.0-alpha.8&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Updated Semantic Conventions version to &lt;code&gt;1.45.0&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5833" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5833/hovercard"&gt;#5833&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Breaking change&lt;/strong&gt;: The &lt;code&gt;server.port&lt;/code&gt; attribute is no longer recorded when the&lt;br&gt;
+port is the default port for the scheme of the cluster URI (for example &lt;code&gt;443&lt;/code&gt;&lt;br&gt;
+for &lt;code&gt;https&lt;/code&gt;), to follow the v1.45.0 database semantic conventions.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5833" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5833/hovercard"&gt;#5833&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed query text sanitization taking quadratic time for queries with many&lt;br&gt;
+signed numeric literals when &lt;code&gt;RecordQueryText&lt;/code&gt; is enabled.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5937" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5937/hovercard"&gt;#5937&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed excessive CPU usage when generating &lt;code&gt;db.query.summary&lt;/code&gt; for queries&lt;br&gt;
+containing a very large number of &lt;code&gt;materialized_view()&lt;/code&gt; calls.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5938" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5938/hovercard"&gt;#5938&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed literal values not being sanitized in &lt;code&gt;db.query.text&lt;/code&gt; for control&lt;br&gt;
+commands the Kusto grammar does not recognize (such as &lt;code&gt;.list blobs&lt;/code&gt;).&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5936" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5936/hovercard"&gt;#5936&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed failed operations exporting the error message returned by the cluster as&lt;br&gt;
+the span status description. The message is now only recorded as an exception&lt;br&gt;
+event when the new &lt;code&gt;RecordException&lt;/code&gt; option is enabled.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5911" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5911/hovercard"&gt;#5911&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed a client request id or database name containing &lt;code&gt;text=&lt;/code&gt; being able to&lt;br&gt;
+bypass &lt;code&gt;db.query.text&lt;/code&gt; sanitization and set &lt;code&gt;db.query.summary&lt;/code&gt;.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5913" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5913/hovercard"&gt;#5913&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed &lt;code&gt;db.query.summary&lt;/code&gt; generation consuming excessive CPU and memory for&lt;br&gt;
+some queries. Table names are now identified from the query syntax, so&lt;br&gt;
+&lt;code&gt;db.query.summary&lt;/code&gt; may differ for some queries (for example, column names&lt;br&gt;
+are no longer included).&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/5912" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/5912/hovercard"&gt;#5912&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Kusto-0.1.0-alpha.8/src/OpenTelemetry.Instrumentation.Kusto/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
