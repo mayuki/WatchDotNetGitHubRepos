@@ -1,49 +1,72 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-11-10T00:05:45Z</updated>
+  <updated>2026-11-11T00:06:18Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-11-09</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-11-09</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-11-10</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-11-10</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-11-10T00:05:45Z</updated>
+    <updated>2026-11-11T00:06:18Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.RedisEnterprise_1.4.0"&gt;Azure.ResourceManager.RedisEnterprise_1.4.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CommvaultContentStore_1.0.0"&gt;Azure.ResourceManager.CommvaultContentStore_1.0.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.4.0 (2026-10-30)&lt;/h2&gt;
+                                &lt;h2&gt;1.0.0 (2026-11-06)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated the default service API version to stable &lt;code&gt;2026-09-01&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added migration workflows for validation, start, retrieval, undo, and migrated-endpoint unlink.&lt;/li&gt;
-&lt;li&gt;Added migration rollback metadata through &lt;code&gt;RollbackEligibilityExpiresOn&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;Undo&lt;/code&gt; and &lt;code&gt;UndoAsync&lt;/code&gt; migration operations with optional rollback reasons.&lt;/li&gt;
-&lt;li&gt;Added migrated-endpoint unlink operations for Azure Cache for Redis and Azure Cache for Redis Enterprise migration workflows.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;Unlinking&lt;/code&gt;, &lt;code&gt;Unlinked&lt;/code&gt;, and &lt;code&gt;UnlinkFailed&lt;/code&gt; migration provisioning states.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The stable &lt;code&gt;1.3.0&lt;/code&gt; to &lt;code&gt;1.4.0&lt;/code&gt; upgrade remains API compatible. The following changes apply only when moving from the prerelease &lt;code&gt;1.4.0-beta.2&lt;/code&gt; package:
-&lt;ul&gt;
-&lt;li&gt;Renamed the preview migration &lt;code&gt;Cancel&lt;/code&gt; and &lt;code&gt;CancelAsync&lt;/code&gt; operations to &lt;code&gt;Undo&lt;/code&gt; and &lt;code&gt;UndoAsync&lt;/code&gt;. The undo operations also accept an optional rollback reason.&lt;/li&gt;
-&lt;li&gt;Removed the preview-only &lt;code&gt;AccessString&lt;/code&gt; and &lt;code&gt;ProvisioningError&lt;/code&gt; properties from access policy assignments and removed the &lt;code&gt;AccessPolicyAssignmentProvisioningError&lt;/code&gt; model. Access policy assignments again use &lt;code&gt;AccessPolicyName&lt;/code&gt;, with only the &lt;code&gt;"default"&lt;/code&gt; policy currently supported.&lt;/li&gt;
-&lt;li&gt;Updated the related model factory methods to match the stable API, removing preview-only parameters and adding migration rollback metadata.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;First stable release of the Azure.ResourceManager.CommvaultContentStore library.&lt;/li&gt;
+&lt;li&gt;Upgraded the API version to 2026-11-03.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.CodeTransparency_1.1.0-beta.1"&gt;Azure.Security.CodeTransparency_1.1.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.65.0"&gt;Azure.Core_1.65.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.1.0-beta.1 (2026-10-07)&lt;/h2&gt;
+                                &lt;h2&gt;1.65.0 (2026-11-09)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for Azure Arc user-assigned managed identities. &lt;code&gt;ManagedIdentityCredential&lt;/code&gt; supports selection by client ID, resource ID, or object ID; &lt;code&gt;DefaultAzureCredential&lt;/code&gt; supports selection through its client ID and resource ID options.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fixed &lt;code&gt;CodeTransparencyClient&lt;/code&gt; permanently rejecting the service TLS connection after a ledger CCF node certificate is reissued (for example, after a node pod restart). The server certificate validation callback previously captured a single &lt;code&gt;X509Chain&lt;/code&gt; with a frozen &lt;code&gt;VerificationTime&lt;/code&gt; at client construction, so reissued node certificates whose &lt;code&gt;NotBefore&lt;/code&gt; was later than the construction time were rejected as &lt;code&gt;NotTimeValid&lt;/code&gt; until the process restarted. Validation now builds a fresh chain per TLS handshake, which also removes the concurrent use of a non-thread-safe shared &lt;code&gt;X509Chain&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;ManagedIdentityCredential&lt;/code&gt; truncating federated token files larger than 4096 characters during token exchange.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated &lt;code&gt;Microsoft.Identity.Client&lt;/code&gt; and &lt;code&gt;Microsoft.Identity.Client.Extensions.Msal&lt;/code&gt; dependencies to version 4.92.0.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Monitor.OpenTelemetry.Exporter_1.11.0-beta.1"&gt;Azure.Monitor.OpenTelemetry.Exporter_1.11.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.11.0-beta.1 (2026-11-09)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added Attach SDK statistics per customer connection string observed in newly exported telemetry for multi-endpoint routing. A configured connection string alone no longer produces Attach in this mode, and offline-storage replays do not create or refresh Attach associations. Single-endpoint Attach is unchanged.&lt;/li&gt;
+&lt;li&gt;Multi-endpoint routing reads a new &lt;code&gt;microsoft.ingestion_auth&lt;/code&gt; attribute. Telemetry marked &lt;code&gt;"aad"&lt;/code&gt; is sent and stored separately from instrumentation-key telemetry for the same endpoint, in preparation for Microsoft Entra ID support.&lt;/li&gt;
+&lt;li&gt;Multi-endpoint routing can now be used with &lt;code&gt;AzureMonitorExporterOptions.Credential&lt;/code&gt;. Only telemetry marked &lt;code&gt;"aad"&lt;/code&gt; is sent with a token, scoped to the audience in the &lt;code&gt;Azure.Monitor.OpenTelemetry.Exporter.MultiEndpointAadAudience&lt;/code&gt; AppContext value (public cloud by default). Without a credential, telemetry marked &lt;code&gt;"aad"&lt;/code&gt; is dropped.&lt;/li&gt;
+&lt;li&gt;Added the experimental &lt;code&gt;Azure.Monitor.OpenTelemetry.Exporter.Experimental.gen_ai_input_output_limit_increase&lt;/code&gt; AppContext switch. When enabled, the custom property truncation limit for &lt;code&gt;gen_ai.input.messages&lt;/code&gt; and &lt;code&gt;gen_ai.output.messages&lt;/code&gt; increases from 256 KiB to 4 MiB (characters) to support GenAI multimodal content. Limits are unchanged by default: 256 KiB for GenAI attributes and 8 KiB for all other custom properties.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed a multi-endpoint offline-storage race where disk-size recounts discarded in-progress write reservations, potentially allowing storage to exceed its shared budget. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/63845" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/63845/hovercard"&gt;#63845&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Multi-endpoint Attach SDK statistics refresh version and attachment mode after late resource initialization.&lt;/li&gt;
+&lt;li&gt;Attach SDK statistics use monotonic time for reporting intervals and association expiry, avoiding delays caused by system clock adjustments.&lt;/li&gt;
+&lt;li&gt;Microsoft OpenTelemetry SDK statistics use the standard collector endpoint for all customer regions while retaining each item's EU/non-EU SDK statistics instrumentation key and customer key. Non-distro Breeze routing is unchanged.&lt;/li&gt;
+&lt;li&gt;Uploading telemetry from offline storage (at startup, on retry, and at shutdown) is no longer recorded as an HTTP dependency by HttpClient instrumentation.&lt;br&gt;
+(&lt;a href="https://github.com/Azure/azure-sdk-for-net/issues/63821" data-hovercard-type="issue" data-hovercard-url="/Azure/azure-sdk-for-net/issues/63821/hovercard"&gt;#63821&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;LogFilteringProcessor&lt;/code&gt; behavior in .net 11 when &lt;code&gt;RandomTraceId&lt;/code&gt; is set. (&lt;a href="https://github.com/Azure/azure-sdk-for-net/pull/64084" data-hovercard-type="pull_request" data-hovercard-url="/Azure/azure-sdk-for-net/pull/64084/hovercard"&gt;64084&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated &lt;code&gt;OpenTelemetry&lt;/code&gt; and &lt;code&gt;OpenTelemetry.Extensions.Hosting&lt;/code&gt; from 1.18.0 to 1.20.1, and &lt;code&gt;OpenTelemetry.PersistentStorage.FileSystem&lt;/code&gt; from 1.1.1 to 1.1.3.&lt;/li&gt;
+&lt;li&gt;Removed registry-owned locks from multi-endpoint Attach SDK statistics observation and collection. Endpoint regions are cached, and observation is skipped when both stats regions are disabled.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;

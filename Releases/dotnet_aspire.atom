@@ -1,6 +1,46 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/aspire - Releases</title>
   <link href="https://github.com/dotnet/aspire" />
-  <updated>2026-11-10T00:05:50Z</updated>
+  <updated>2026-11-11T00:06:23Z</updated>
   <id>https://github.com/dotnet/aspire</id>
+  <entry>
+    <title>dotnet/aspire - Releases - 2026-11-10</title>
+    <id>https://github.com/dotnet/aspire#2026-11-10</id>
+    <link href="https://github.com/dotnet/aspire" />
+    <updated>2026-11-11T00:06:23Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v13.6.5"&gt;Aspire 13.6.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;What's New in Aspire 13.6.5&lt;/h2&gt;
+&lt;p&gt;Patch release for Aspire 13.6 with dashboard and CLI security hardening and .NET runtime servicing updates.&lt;/p&gt;
+&lt;h3&gt;🐛 Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;🖥️ &lt;strong&gt;Dashboard authentication is enforced on missing and unauthorized routes&lt;/strong&gt; — Secured dashboards now check authorization before rendering the main layout for missing routes or denied access. In browser-token mode, unauthenticated users are redirected to login with the original route preserved. Additional authentication checks protect layout, dialog, interaction, and standalone terminal-window initialization; unsecured mode is unchanged. (&lt;a href="https://github.com/microsoft/aspire/pull/22071" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/22071/hovercard"&gt;#22071&lt;/a&gt;, &lt;a href="https://github.com/microsoft/aspire/commit/0b6bfe2f538d4eed8a9ae7e11651c09dbbe886b8"&gt;0b6bfe2&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/JamesNK/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/JamesNK"&gt;James Newton-King (@JamesNK)&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🔒 &lt;strong&gt;Container telemetry no longer implicitly exposes the dashboard frontend&lt;/strong&gt; — When the Aspire container tunnel is enabled, automatic dashboard tunneling exposes only the OTLP gRPC and HTTP endpoints. Explicit references to other dashboard endpoints remain supported, and tunneling for ordinary host-resource dependencies is unchanged. (&lt;a href="https://github.com/microsoft/aspire/pull/22071" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/22071/hovercard"&gt;#22071&lt;/a&gt;, &lt;a href="https://github.com/microsoft/aspire/commit/f017f668fd6e0938e23058dc0450a1403f409809"&gt;f017f66&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/karolz-ms/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/karolz-ms"&gt;Karol Zadora-Przylecki (@karolz-ms)&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🔒 &lt;strong&gt;CLI-generated builds and SDK working directories are isolated&lt;/strong&gt; — Generated AppHost server and integration builds now ignore automatic MSBuild response files without changing user-authored builds or support for explicitly supplied response files. The &lt;code&gt;aspire sdk generate&lt;/code&gt;, &lt;code&gt;aspire sdk dump&lt;/code&gt;, and &lt;code&gt;aspire sdk export&lt;/code&gt; commands use isolated working directories under &lt;code&gt;&amp;lt;ASPIRE_HOME&amp;gt;/tmp/sdk/&amp;lt;unique-id&amp;gt;&lt;/code&gt;, with owner-only Unix permissions, local configuration isolation, and cleanup when the command finishes. Normal AppHost caches are unchanged. (&lt;a href="https://github.com/microsoft/aspire/pull/22071" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/22071/hovercard"&gt;#22071&lt;/a&gt;, &lt;a href="https://github.com/microsoft/aspire/commit/1ecd7cc70b5a5a5b8571fe3af69faa1646b8de47"&gt;1ecd7cc&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/sebastienros/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/sebastienros"&gt;Sébastien Ros (@sebastienros)&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🔒 &lt;strong&gt;Agent setup no longer writes configuration content to a shared temporary log&lt;/strong&gt; — &lt;code&gt;aspire agent init&lt;/code&gt; stops writing agent configuration paths, configuration content, and scan diagnostics to &lt;code&gt;aspire-deprecated-scan.log&lt;/code&gt; in the operating system's temporary directory. Deprecated MCP command detection, migration prompts, configuration updates, and existing structured debug logging are preserved. Previously written temporary log files are not removed by this update. (&lt;a href="https://github.com/microsoft/aspire/pull/22071" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/22071/hovercard"&gt;#22071&lt;/a&gt;, &lt;a href="https://github.com/microsoft/aspire/commit/c408ec5bf44e43203c278990a43aea93145248f3"&gt;c408ec5&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/mitchdenny/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mitchdenny"&gt;Mitch Denny (@mitchdenny)&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🛠️ &lt;strong&gt;Updated .NET runtimes and dependencies for startup reliability&lt;/strong&gt; — Refreshes bundled runtimes and .NET servicing dependencies, including .NET 10.0.14, 9.0.22, and 8.0.33, to pick up servicing fixes relevant to Native AOT process startup. (&lt;a href="https://github.com/microsoft/aspire/pull/21348" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/aspire/pull/21348/hovercard"&gt;#21348&lt;/a&gt;, &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/joperezr/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/joperezr"&gt;Jose Perez Rodriguez (@joperezr)&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a href="https://github.com/microsoft/aspire/compare/v13.6.4...v13.6.5"&gt;v13.6.4...v13.6.5&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/b33d222049f1ecc3bc7257ec07b622fe550b2580"&gt;b33d222049f1ecc3bc7257ec07b622fe550b2580&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
