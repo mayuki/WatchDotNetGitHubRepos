@@ -1,63 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>microsoft/microsoft-ui-xaml - Releases</title>
   <link href="https://github.com/microsoft/microsoft-ui-xaml" />
-  <updated>2026-11-12T00:06:22Z</updated>
+  <updated>2026-11-13T00:06:27Z</updated>
   <id>https://github.com/microsoft/microsoft-ui-xaml</id>
-  <entry>
-    <title>microsoft/microsoft-ui-xaml - Releases - 2026-11-11</title>
-    <id>https://github.com/microsoft/microsoft-ui-xaml#2026-11-11</id>
-    <link href="https://github.com/microsoft/microsoft-ui-xaml" />
-    <updated>2026-11-12T00:06:22Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/releases/tag/winui3/release/2.6.6-experimental"&gt;WinUI 3 in WinAppSDK 2.6.6-experimental 🧪&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;This is the WinUI 3 release that ships as part of Windows App SDK 2.6 Experimental. It extends the experimental &lt;code&gt;TableView&lt;/code&gt; and &lt;code&gt;Chart&lt;/code&gt; controls, lets scrolling content render outside its viewport, and includes accessibility and reliability fixes. It also carries forward the changes from Windows App SDK 2.6.5 stable.&lt;/p&gt;
-&lt;h3&gt;What's new&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;TableView&lt;/code&gt; hierarchy and live data.&lt;/strong&gt; &lt;code&gt;TableViewSource.ParentBy&lt;/code&gt; builds hierarchical rows, and &lt;code&gt;IsLiveShaping&lt;/code&gt; keeps sorting, filtering, grouping, and hierarchy up to date as item properties change. The control also adds cell and column-header context menus, row expansion APIs and automation support, and improvements to high-contrast rendering and column resizing.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;Chart&lt;/code&gt; accessibility.&lt;/strong&gt; &lt;code&gt;ChartAutomationPeer&lt;/code&gt; and chart parts add UI Automation support to the experimental &lt;code&gt;Chart&lt;/code&gt; control.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Scrolling content outside bounds.&lt;/strong&gt; &lt;code&gt;ScrollView.CanContentRenderOutsideBounds&lt;/code&gt; and &lt;code&gt;ScrollPresenter.CanContentRenderOutsideBounds&lt;/code&gt; let apps opt out of viewport clipping so content can render outside the bounds. Both properties default to &lt;code&gt;false&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Accessibility and reliability fixes.&lt;/strong&gt; This release improves &lt;code&gt;InkToolbar&lt;/code&gt; and &lt;code&gt;InkCanvas&lt;/code&gt; accessibility and display scaling, fixes missing &lt;code&gt;InkToolbar&lt;/code&gt; translations (&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/pull/12162" data-hovercard-type="pull_request" data-hovercard-url="/microsoft/microsoft-ui-xaml/pull/12162/hovercard"&gt;microsoft/microsoft-ui-xaml#12162&lt;/a&gt;), and improves &lt;code&gt;Window.Width&lt;/code&gt; and &lt;code&gt;Window.Height&lt;/code&gt; behavior after a window closes. It also fixes a &lt;code&gt;Flyout&lt;/code&gt; theme crash (&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/12089" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/12089/hovercard"&gt;microsoft/microsoft-ui-xaml#12089&lt;/a&gt;), &lt;code&gt;ContentDialog&lt;/code&gt; and &lt;code&gt;MenuFlyout&lt;/code&gt; issues with &lt;code&gt;OptimizeApplyStyles&lt;/code&gt; enabled (&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/11257" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/11257/hovercard"&gt;microsoft/microsoft-ui-xaml#11257&lt;/a&gt;), and custom dependency properties being lost when XAML shuts down and restarts.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;To see everything that's new and changed across the whole release, see the full &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-2-0?pivots=experimental#version-26-experimental-266-experimental" rel="nofollow"&gt;Windows App SDK 2.6 Experimental release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
-&lt;h3&gt;Try it out&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Download the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.6.6-experimental" rel="nofollow"&gt;2.6.6-experimental NuGet&lt;/a&gt; package to use WinAppSDK 2.6 Experimental in your app.&lt;/li&gt;
-&lt;li&gt;Download and update the &lt;a href="https://www.microsoft.com/store/productId/9P3JFPWWDZRC" rel="nofollow"&gt;WinUI Gallery&lt;/a&gt; to see the WinUI 3 updates firsthand.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Getting started&lt;/h3&gt;
-&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/releases/tag/winui3/release/2.6.5"&gt;WinUI 3 in WinAppSDK 2.6.5&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;WinUI 3 in Windows App SDK 2.6.5 picks up runtime hotfixes for rendering, window composition, system backdrops, and packaged app installation. It is available through the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.6.5" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.6.5 NuGet package&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Bug fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed rendering corruption on systems with multiple graphics adapters or monitors, plus unexpected transparency in window backgrounds and GDI controls on Windows 10, including apps hosting XAML islands.&lt;/li&gt;
-&lt;li&gt;Fixed an &lt;code&gt;E_NOINTERFACE&lt;/code&gt; crash when enabling the System Composition Engine on Windows builds without the required interfaces. The runtime now uses the lifted compositor on those builds.&lt;/li&gt;
-&lt;li&gt;Reverted the system backdrop change introduced in 2.6.4 to address wrong-thread exceptions. System backdrops for content islands and XAML windows are not supported when using the System Composition Engine in this release.&lt;/li&gt;
-&lt;li&gt;Fixed an issue where app-extension registration metadata generation returned &lt;code&gt;E_NOTIMPL&lt;/code&gt;, which could prevent packaged apps from installing.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For the full set of changes, see the &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-2-0?pivots=stable#version-265" rel="nofollow"&gt;Windows App SDK 2.6.5 release notes&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Try it out&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.6.5" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.6.5 NuGet package&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>

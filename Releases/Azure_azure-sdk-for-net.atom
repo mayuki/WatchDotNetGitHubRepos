@@ -1,50 +1,160 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-11-12T00:06:02Z</updated>
+  <updated>2026-11-13T00:06:09Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-11-11</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-11-11</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-11-12</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-11-12</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-11-12T00:06:02Z</updated>
+    <updated>2026-11-13T00:06:09Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Monitor_1.4.0-beta.6"&gt;Azure.ResourceManager.Monitor_1.4.0-beta.6&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Compute.Recommender_1.1.0-beta.3"&gt;Azure.ResourceManager.Compute.Recommender_1.1.0-beta.3&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.4.0-beta.6 (2026-11-10)&lt;/h2&gt;
+                                &lt;h2&gt;1.1.0-beta.3 (2026-11-12)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Added managed identity support to autoscale settings.&lt;/li&gt;
-&lt;li&gt;Added tenant action group management and test notification operations.&lt;/li&gt;
+&lt;li&gt;Upgraded API version to &lt;code&gt;2026-10-05-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added regular compute placement scoring through &lt;code&gt;GetComputePlacementScores(AzureLocation)&lt;/code&gt;, which requires the scoring location. The new request and result models expose zonal scope as &lt;code&gt;IsZonal&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ComputeRecommenderPlacementScore.PlacementPreference&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;VM Insights onboarding status JSON now uses generated serialization for the required &lt;code&gt;resourceId&lt;/code&gt;, &lt;code&gt;onboardingStatus&lt;/code&gt;, and &lt;code&gt;dataStatus&lt;/code&gt; fields instead of the legacy omission and null-tolerant customization.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Restored generated diagnostic setting operations, model serialization, and model factory support instead of throwing compatibility stubs.&lt;/li&gt;
+&lt;li&gt;Upgraded Azure.Core from 1.62.0 to 1.64.0.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Data.AI_1.0.0"&gt;Azure.Data.AI_1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Secrets_4.13.0-beta.1"&gt;Azure.Security.KeyVault.Secrets_4.13.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0 (2026-11-10)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h2&gt;4.13.0-beta.1 (2026-11-11)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;First stable release of the Azure.Data.AI client library for semantic reranking.&lt;/li&gt;
-&lt;li&gt;Supports the generally available service API version &lt;code&gt;2026-10-30&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;code&gt;Azure.Core&lt;/code&gt; dependency to &lt;code&gt;1.65.0&lt;/code&gt;, which includes the MSAL &lt;code&gt;4.92.0&lt;/code&gt; update.&lt;/li&gt;
 &lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Certificates_4.11.0-beta.1"&gt;Azure.Security.KeyVault.Certificates_4.11.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;4.11.0-beta.1 (2026-11-11)&lt;/h2&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Renamed &lt;code&gt;SemanticRerankingInferenceContent&lt;/code&gt; to &lt;code&gt;SemanticRerankingContent&lt;/code&gt;, &lt;code&gt;SemanticRerankingInferenceResult&lt;/code&gt; to &lt;code&gt;SemanticRerankingResult&lt;/code&gt;, and &lt;code&gt;SemanticRerankingMetaResult&lt;/code&gt; to &lt;code&gt;SemanticRerankingMetadata&lt;/code&gt;, including the corresponding model factory methods.&lt;/li&gt;
-&lt;li&gt;Renamed the result's &lt;code&gt;Meta&lt;/code&gt; property to &lt;code&gt;Metadata&lt;/code&gt;; the JSON property remains &lt;code&gt;meta&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Changed &lt;code&gt;TargetPaths&lt;/code&gt; from a settable string to an &lt;code&gt;IList&amp;lt;string&amp;gt;&lt;/code&gt; collection with an API contract limit of 100 paths.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;CertificateClientOptions.ServiceVersion.V2026_03_01_Preview&lt;/code&gt;. Use &lt;code&gt;V2026_04_01&lt;/code&gt; instead.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Preserved the service version value shipped for &lt;code&gt;2026-04-01&lt;/code&gt; in version &lt;code&gt;4.10.0&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the &lt;code&gt;Azure.Core&lt;/code&gt; dependency to &lt;code&gt;1.65.0&lt;/code&gt;, which includes the MSAL &lt;code&gt;4.92.0&lt;/code&gt; update.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.RedisEnterprise_1.5.0-beta.1"&gt;Azure.ResourceManager.RedisEnterprise_1.5.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.5.0-beta.1 (2026-11-11)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the default service API version to &lt;code&gt;2026-10-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added cluster firewall rules for Azure Managed Redis. Use an empty array to clear rules; omit &lt;code&gt;firewallRules&lt;/code&gt; on PATCH to leave them unchanged unless public network access is disabled.&lt;/li&gt;
+&lt;li&gt;Reintroduced custom Redis ACL access strings and provisioning error details to access policy assignments, previously available in &lt;code&gt;1.4.0-beta.2&lt;/code&gt; but not in &lt;code&gt;1.4.0&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.AppContainers_1.3.0"&gt;Azure.Provisioning.AppContainers_1.3.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.3.0 (2026-11-11)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded api-version to 2026-07-01.&lt;/li&gt;
+&lt;li&gt;Added support for Container App private endpoint connections, Azure Functions, Dapr component resiliency policies, .NET components, label history, sandbox groups, and sandbox group virtual network connections.&lt;/li&gt;
+&lt;li&gt;Added support for managed environment migration eligibility checks and OpenTelemetry configuration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Corrected default names for Container Apps managed environments to use 2–60 lowercase letters, numbers, or hyphens.&lt;br&gt;
+Expect automatically generated managed environment names to change when upgrading if explicit names are not set.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Migrated library generation to the TypeSpec provisioning emitter.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Sovereign_1.0.0-beta.1"&gt;Azure.ResourceManager.Sovereign_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.0.0-beta.1 (2026-11-11)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;p&gt;This is the first preview release of the Microsoft Azure Sovereign management client library for .NET, generated from TypeSpec with API version &lt;code&gt;2026-10-31-preview&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;SovereignViewResource&lt;/code&gt; and &lt;code&gt;SovereignViewCollection&lt;/code&gt; to manage Sovereign views.&lt;/li&gt;
+&lt;li&gt;Added the &lt;code&gt;CheckSovereignNameAvailability&lt;/code&gt; and &lt;code&gt;CheckSovereignNameAvailabilityLocal&lt;/code&gt; operations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Expose &lt;code&gt;RemediationId&lt;/code&gt; when a successful remediation long-running operation returns its action result in the ARM &lt;code&gt;properties&lt;/code&gt; envelope. Flat responses and standard ARM polling, cancellation, and failure handling are unchanged.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Administration_4.9.0-beta.5"&gt;Azure.Security.KeyVault.Administration_4.9.0-beta.5&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;4.9.0-beta.5 (2026-11-11)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the &lt;code&gt;Azure.Core&lt;/code&gt; dependency to &lt;code&gt;1.65.0&lt;/code&gt;, which includes the MSAL &lt;code&gt;4.92.0&lt;/code&gt; update.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Security.KeyVault.Keys_4.11.0-beta.6"&gt;Azure.Security.KeyVault.Keys_4.11.0-beta.6&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;4.11.0-beta.6 (2026-11-11)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the &lt;code&gt;Azure.Core&lt;/code&gt; dependency to &lt;code&gt;1.65.0&lt;/code&gt;, which includes the MSAL &lt;code&gt;4.92.0&lt;/code&gt; update.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.PrivateDns_1.1.0-beta.1"&gt;Azure.Provisioning.PrivateDns_1.1.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.1.0-beta.1 (2026-09-03)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Migrated generation to the TypeSpec-based provisioning generator.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.PrivateDns_1.3.0-beta.1"&gt;Azure.ResourceManager.PrivateDns_1.3.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.3.0-beta.1 (2026-10-19)&lt;/h2&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for API version &lt;code&gt;2026-06-01-preview&lt;/code&gt;, including querying Private DNS resource references.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;TrafficManagementProfileId&lt;/code&gt; and read-only &lt;code&gt;ProvisioningState&lt;/code&gt; to record data models.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Migrated the library generation from AutoRest to TypeSpec.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;

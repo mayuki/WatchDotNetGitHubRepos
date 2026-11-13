@@ -1,174 +1,181 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-11-12T00:06:02Z</updated>
+  <updated>2026-11-13T00:06:08Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-11-11</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-11-11</id>
+    <title>aws/aws-sdk-net - Releases - 2026-11-12</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-11-12</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-11-12T00:06:02Z</updated>
+    <updated>2026-11-13T00:06:08Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.0.368.0"&gt;4.0.368.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.1.1.0"&gt;4.1.1.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.0.368.0 (2026-11-11 19:09 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.1.1.0 (2026-11-12 19:48 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;ACMPCA (4.0.102.0)
+&lt;li&gt;ACMPCA (4.1.0.1)
 &lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;li&gt;ACMPCA is now generated from its Smithy model. There are no changes to the public API.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AWSMarketplaceMetering (4.0.102.0)
+&lt;li&gt;AutoScaling (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Marketplace Metering Service adds decimal quantity support to the MeterUsage and BatchMeterUsage APIs. This includes new request fields UsageQuantityAsDecimal (MeterUsage), QuantityAsDecimal (BatchMeterUsage), and AllocatedUsageQuantityAsDecimal (UsageAllocation for both APIs).&lt;/li&gt;
+&lt;li&gt;Amazon EC2 Auto Scaling now supports ASGAverageCPUUtilizationHighResolution as a predefined metric type for target tracking scaling policies.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCore (4.0.118.0)
+&lt;li&gt;Backup (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;Support SigV4 request signing (cryptographically signed) in the Bedrock AgentCore Harness MCP connector tool.&lt;/li&gt;
+&lt;li&gt;Adding new notification types for SNS notifications&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.0.128.0)
+&lt;li&gt;CleanRooms (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;Adds private certificate authority (CA) support for AgentCore Identity custom OAuth2.0 credential providers and custom JWT authorizers, enabling connections to IdPs with private CAs. Support SigV4 request signing (cryptographically signed) in the Bedrock AgentCore Harness MCP connector tool.&lt;/li&gt;
+&lt;li&gt;Adds a retry signal to protected query and protected job errors that indicates whether running the same request again might succeed, and defines error codes that identify the category of the failure.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudHSMV2 (4.0.101.0)
+&lt;li&gt;CloudWatch (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;li&gt;Adds support for saving, retrieving, listing, and deleting CloudWatch metric data query definitions.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CodeBuild (4.0.102.0)
+&lt;li&gt;CloudWatchOmni (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;li&gt;Add aggregationTemporality and monotonicity to GetContextGraph MetricMetadata&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CodeDeploy (4.0.104.0)
+&lt;li&gt;Connect (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;li&gt;This release adds a LastModifiedTime and LastModifiedRegion field to ListIntegrationAssociations so customers can see at what time and in which Region an IntegrationAssociation was last modified in.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CodePipeline (4.0.102.0)
+&lt;li&gt;EC2 (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;li&gt;This release adds support for multiple features, including EC2 Image Builder image recipes and container recipes in AMI usage reports, Amazon EC2 Detailed Monitoring adds opt-in metrics, and Global Accelerator and API Gateway V2 as resource exclusions for VPC Encryption Control.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CognitoIdentityProvider (4.0.107.0)
+&lt;li&gt;EMRContainers (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds session management operations that let user pool administrators and users list and revoke active sessions, and configure session tracking, per-user session limits, and SSO session validity per app client.&lt;/li&gt;
+&lt;li&gt;This release updates range of maxInQueueDepth and maxConcurrency limit from 10000 to 1000.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Comprehend (4.0.101.0)
+&lt;li&gt;GameLiftStreams (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;li&gt;Adds support for ApplicationStartedAt on stream sessions, a timestamp that indicates when the application launched for the stream session, returned by GetStreamSession and StartStreamSession. Also added streamingStartedAt and streamingEndedAt.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ConfigService (4.0.103.0)
+&lt;li&gt;GuardDuty (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Config now supports connectors for Google Cloud. PutConnector accepts a Google Cloud connector configuration, and ListConnectors returns Google Cloud connector details.&lt;/li&gt;
+&lt;li&gt;Adds the ListInvestigationRecords API, which returns the step-by-step records of a completed investigation. Adds investigation scope details and an optional structured summary to GetInvestigation. Adds filter criteria and investigation type to ListInvestigations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.0.133.0)
+&lt;li&gt;ImportExport (Removed)
 &lt;ul&gt;
-&lt;li&gt;Added support for 96 new languages for AI-powered automated evaluations. Chat interactions support all 96 languages. Voice interactions support 57 languages, those with transcription available through post-call conversational analytics.&lt;/li&gt;
+&lt;li&gt;AWS Import/Export has been removed from the SDK because it has been discontinued.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ConnectCases (4.0.102.0)
+&lt;li&gt;Lightsail (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds APIs that allow customers to merge cases to consolidate case history, and get the status of an ongoing case merge operation.&lt;/li&gt;
+&lt;li&gt;Amazon Lightsail now offers web addresses, so you can quickly make a website or application reachable at a name like mysite.amazonlightsail.com. A web address is free while attached to a Lightsail CDN, with no domain to register and no SSL TLS certificate to create or renew.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DataSync (4.0.103.0)
+&lt;li&gt;MediaConnect (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;li&gt;MediaConnect adds four features. (1) RTMP Push on Router Input and Flows (RTMP, RTMPS, eRTMP). (2) PID Remapping on Router rewrites PIDs inline without transcoding. (3) Key Frame Switching transitions router inputs on video boundaries. (4) SRT Merge Input bonds redundant SRT streams.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DirectConnect (4.0.104.0)
+&lt;li&gt;MediaLive (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;li&gt;AWS Elemental MediaLive now adds a caption language setting for MediaPackage V2 output groups that signals a stream carries no closed captions.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DirectoryService (4.0.101.0)
+&lt;li&gt;MediaTailor (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;li&gt;Add post origin manifest hook, add HLS tag processor&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.0.133.0)
+&lt;li&gt;MobileAnalytics (Removed)
 &lt;ul&gt;
-&lt;li&gt;Adds support for AWS Cloud WAN Flow Logs. The CreateFlowLogs API now accepts CoreNetwork, CoreNetworkEdge, and CoreNetworkAttachment resource types, enabling customers to capture information about IP traffic traversing their Cloud WAN core networks.&lt;/li&gt;
+&lt;li&gt;Amazon Mobile Analytics has been removed from the SDK because it has been discontinued.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IdentityStore (4.0.102.0)
+&lt;li&gt;MWAA (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;Updated ApiRestrictSourceVpcs in NetworkConfiguration to accept VPC ARNs in addition to VPC IDs.&lt;/li&gt;
+&lt;li&gt;Amazon MWAA now supports Airflow environments with IAM Identity Center (IDC) integration and exposes OSS Airflow Multi-Team feature. Users can configure individual IDC-backed identities and fine-grained authorization, and define Dags on per-team basis.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Imagebuilder (4.0.105.0)
+&lt;li&gt;MWAAServerless (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;Update list operations to support wildcard name filtering and page sizes up to 100 results via MaxResults&lt;/li&gt;
+&lt;li&gt;Adds support for Airflow UI in MWAA Serverless&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;KinesisAnalyticsV2 (4.0.102.0)
+&lt;li&gt;Odb (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for Enhanced Snapshots in Amazon Managed Service for Apache Flink, enabling application state to be managed as a standalone resource that customers can export, import, and reuse across applications.&lt;/li&gt;
+&lt;li&gt;ODB now supports scaling for Exadata Dedicated offerings. Customers can scale database and storage servers on Exadata infrastructure, resize VM clusters and Autonomous VM clusters, and add or remove virtual machines in a VM cluster.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MediaPackageV2 (4.0.106.0)
+&lt;li&gt;Route53 (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds the BandwidthReportingMode setting to DASH manifest configurations, which lets you choose whether the bandwidth attribute of video Representations in the DASH manifest reports the average (default) or peak bitrate of the video track.&lt;/li&gt;
+&lt;li&gt;Amazon Route 53 now supports Record Set Protection, which blocks changes to protected records in a hosted zone.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MemoryDB (4.0.101.0)
+&lt;li&gt;SageMaker (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;li&gt;Adds CreatedBy and LastModifiedBy to the DescribeHub and DescribeHubContent responses and to HubContent records returned by the Search API, identifying the IAM identity or SageMaker Studio user profile that created or last modified a hub or hub content.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;NetworkFirewall (4.0.108.0)
+&lt;li&gt;SecretsManager (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.0. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;li&gt;Adds support for cross-account replication with the new AssociateCrossAccountReplica, DisassociateCrossAccountReplica, and ListResourcePolicies APIs, CrossAccountPrimaryARN in CreateSecret, cross-account replication status in DescribeSecret, and PolicyName in the resource policy APIs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ResourceGroupsTaggingAPI (4.0.101.0)
+&lt;li&gt;SecurityAgent (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;li&gt;Adds support for cleanup strategy in CreatePentestInput and UpdatePentestInput.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Route53Domains (4.0.103.0)
+&lt;li&gt;SSOAdmin (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;li&gt;Adds support for Network Controls on IAM Identity Center instances. You can now require that access to your instance and AWS managed applications originate from VPC endpoints in your organization, and optionally narrow that perimeter to specific VPCs, IP ranges, or application exceptions.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ServiceCatalog (4.0.101.0)
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.1.0.0"&gt;4.1.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;4.1.0.0 (2026-11-11 23:14 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;li&gt;S3 (4.1.0.0)
+&lt;ul&gt;
+&lt;li&gt;Fixed a bug where TransferUtility.Download/DownloadAsync (the non-multipart path) always waited 100ms after a successful download. The backoff delay now only applies before an actual retry, and the async path uses a non-blocking await instead of a blocking Thread.Sleep.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ServiceDiscovery (4.0.102.0)
+&lt;li&gt;Extensions.CborProtocol (4.1.0.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;li&gt;Added Smithy RPC v2 CBOR support for the byte, short, bigInteger and bigDecimal types (Full Numeric Type Support specification): byte and short as CBOR integers, bigInteger as a bignum (tags 2/3) and bigDecimal as a decimal fraction (tag 4) via the new CborWriterExtensions.WriteBigDecimal.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Shield (4.0.101.0)
+&lt;li&gt;Extensions.Numerics (4.1.0.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;li&gt;Breaking Change: The assembly now has AssemblyVersion 4.0.0.0 and AssemblyFileVersion 4.0.0.x. Version 4.0.0.2 shipped with 0.0.0.0 because the project was missing Properties/AssemblyInfo.cs, so the version from _sdk-versions.json was never applied.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Textract (4.0.101.0)
+&lt;li&gt;Core 4.1.0.0
 &lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;TranscribeService (4.0.103.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WorkSpaces (4.0.106.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds Smithy RPC v2 CBOR as an additional protocol alongside the existing AWS JSON 1.1. The SDK will prioritize its most performant protocol.&lt;/li&gt;
+&lt;li&gt;Added AWS4aSigner class that implements SigV4a signing in managed code. AWS CRT is no longer used by the SDK for this purpose, and the related APIs were deprecated.&lt;/li&gt;
+&lt;li&gt;Added build targets for .NET 10 and .NET 11&lt;/li&gt;
+&lt;li&gt;Added support for the byte, short, bigInteger and bigDecimal model types (Full Numeric Type Support specification): byte maps to sbyte, short to short, bigInteger to System.Numerics.BigInteger and bigDecimal to Amazon.Extensions.Numerics.BigDecimal, serialized without losing digits or scale.&lt;/li&gt;
+&lt;li&gt;AWSSDK.Core now depends on AWSSDK.Extensions.Numerics, which provides BigDecimal.&lt;/li&gt;
+&lt;li&gt;Breaking Change: Removed support .NET Core 3.1&lt;/li&gt;
+&lt;li&gt;Fixed a buffer overflow in ChunkedUploadWrapperStream when an encrypting stream is uploaded with a buffer size that does not divide the chunk size, and reduced the per-chunk allocations of chunked uploads.&lt;/li&gt;
+&lt;li&gt;Reduce CPU and memory used by checksums and chunked uploads: stop allocating per 64-byte block in the managed MD5 used to validate GetObject responses, size aws-chunked upload buffers to small payloads, stop allocating a temporary buffer per read when sending trailing checksums, and compute CRC32 with a faster slicing-by-16 implementation on targets where System.IO.Hashing is not vectorized (.NET 8, .NET Standard and .NET Framework).&lt;/li&gt;
+&lt;li&gt;Replace checksum provider from the native Amazon Common Runtime to System.IO.Hashing&lt;/li&gt;
+&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

@@ -1,46 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>MessagePack-CSharp/MessagePack-CSharp - Releases</title>
   <link href="https://github.com/MessagePack-CSharp/MessagePack-CSharp" />
-  <updated>2026-11-12T00:06:21Z</updated>
+  <updated>2026-11-13T00:06:27Z</updated>
   <id>https://github.com/MessagePack-CSharp/MessagePack-CSharp</id>
-  <entry>
-    <title>MessagePack-CSharp/MessagePack-CSharp - Releases - 2026-11-11</title>
-    <id>https://github.com/MessagePack-CSharp/MessagePack-CSharp#2026-11-11</id>
-    <link href="https://github.com/MessagePack-CSharp/MessagePack-CSharp" />
-    <updated>2026-11-12T00:06:21Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/releases/tag/v4.0.0-rc.1"&gt;v4.0.0-rc.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;This is the release candidate of v4.&lt;/p&gt;
-&lt;p&gt;v4 is a ground-up redesign: more than twice the performance, stronger security by default, full Native AOT support, and many new features, including support for C# 15 union types. It is feature-compatible and wire-compatible with v3, but contains breaking changes; see the &lt;a href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/tree/v4"&gt;v4 README&lt;/a&gt; and its "Migrating from v3" section before upgrading.&lt;/p&gt;
-&lt;p&gt;.NET 11 has been released, and this version is built with its release SDK. Unless something major comes up, the next release will be v4.0.0.&lt;/p&gt;
-&lt;p&gt;Please report any problems in the Issues.&lt;/p&gt;
-&lt;h2&gt;Changes since preview.2&lt;/h2&gt;
-&lt;p&gt;New&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;[MessagePackObject(EnumAsString = true)]&lt;/code&gt; writes the enums of a type by name.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Behavior changes&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Nullable annotations are enforced by default (&lt;code&gt;ValidateNullableAnnotations&lt;/code&gt;), on both serialization and deserialization. The SignalR hub protocol's default options leave it off.&lt;/li&gt;
-&lt;li&gt;A constructor parameter that the payload omits takes its declared default value.&lt;/li&gt;
-&lt;li&gt;Typeless: a non-generic class derived from &lt;code&gt;Collection&amp;lt;T&amp;gt;&lt;/code&gt;, &lt;code&gt;List&amp;lt;T&amp;gt;&lt;/code&gt;, &lt;code&gt;Dictionary&amp;lt;K, V&amp;gt;&lt;/code&gt; and the like is written the way v3 wrote it, each element with its type name, and payloads written by v3 for such a class are readable again (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6304686467" data-permission-text="Title is private" data-url="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2321" data-hovercard-type="issue" data-hovercard-url="/MessagePack-CSharp/MessagePack-CSharp/issues/2321/hovercard" href="https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2321"&gt;#2321&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;An &lt;code&gt;int&lt;/code&gt; key above 65,535 is an error (MsgPack008), and &lt;code&gt;MaxBufferedMessageSize&lt;/code&gt; must be positive.&lt;/li&gt;
-&lt;li&gt;The reflection tier writes the same bytes as the source generator for a type that overrides a property in map mode.&lt;/li&gt;
-&lt;li&gt;Analyzers: MsgPack101 / MsgPack108 report &lt;code&gt;CultureInfo&lt;/code&gt;, &lt;code&gt;TimeZoneInfo&lt;/code&gt;, &lt;code&gt;System.Type&lt;/code&gt; and &lt;code&gt;ExpandoObject&lt;/code&gt;, which no default chain serves; MsgPack113 / MsgPack115 follow a container read into a helper method.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Dependencies&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;SerializerFoundation 1.4.1 and NativeCompressions 1.3.2.&lt;/li&gt;
-&lt;li&gt;The netstandard assets require Microsoft.Bcl.AsyncInterfaces and System.IO.Pipelines 8.0.0 instead of 10.0.0.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
