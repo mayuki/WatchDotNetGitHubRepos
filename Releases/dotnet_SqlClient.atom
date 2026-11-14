@@ -1,6 +1,136 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/SqlClient - Releases</title>
   <link href="https://github.com/dotnet/SqlClient" />
-  <updated>2026-11-13T00:06:20Z</updated>
+  <updated>2026-11-14T00:06:10Z</updated>
   <id>https://github.com/dotnet/SqlClient</id>
+  <entry>
+    <title>dotnet/SqlClient - Releases - 2026-11-13</title>
+    <id>https://github.com/dotnet/SqlClient#2026-11-13</id>
+    <link href="https://github.com/dotnet/SqlClient" />
+    <updated>2026-11-14T00:06:10Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/SqlClient/releases/tag/v7.0.4"&gt;Stable Release v7.0.4&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This servicing release includes security updates, certificate and enclave-session validation fixes, and improvements to result reading and managed networking.&lt;/p&gt;
+&lt;p&gt;Use matching &lt;code&gt;7.0.4&lt;/code&gt; versions of the driver and companion packages. Assemblies retain &lt;code&gt;AssemblyVersion 7.0.0.0&lt;/code&gt;; no new .NET Framework binding redirects are required when upgrading from &lt;code&gt;7.0.3&lt;/code&gt;. &lt;code&gt;Microsoft.SqlServer.Server&lt;/code&gt; is unchanged and versioned independently.&lt;/p&gt;
+&lt;h2&gt;Changes Since 7.0.3&lt;/h2&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated dependencies to address &lt;a href="https://github.com/advisories/GHSA-846f-f764-76mx"&gt;CVE-2026-84008&lt;/a&gt;: &lt;code&gt;System.Security.Cryptography.Pkcs&lt;/code&gt; 8.0.2 for net462/net8.0/netstandard2.0 and affected .NET 9 dependencies to 9.0.21.&lt;/li&gt;
+&lt;li&gt;Updated native SNI dependencies to 6.0.4.&lt;/li&gt;
+&lt;li&gt;Updated user-agent telemetry to v2 and added compatibility-switch reporting. Async behavior and switch defaults are unchanged.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Enforced an explicit &lt;code&gt;HostNameInCertificate&lt;/code&gt; during managed SNI certificate validation, even when the certificate matches the server name (net8.0/net9.0). (&lt;a href="https://github.com/dotnet/SqlClient/pull/4908" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4908/hovercard"&gt;#4908&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Isolated Always Encrypted enclave-session cache entries by attestation protocol. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4867" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4867/hovercard"&gt;#4867&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed unobserved receive exceptions and packet cleanup when closing managed SNI connections with MARS reads pending (net8.0/net9.0). (&lt;a href="https://github.com/dotnet/SqlClient/pull/4950" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4950/hovercard"&gt;#4950&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;SqlDataReader.HasRows&lt;/code&gt; returning &lt;code&gt;false&lt;/code&gt; when informational messages precede the first row. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4899" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4899/hovercard"&gt;#4899&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed statistics timer races throwing "Nullable object must have a value." Connection and MARS use remain non-thread-safe. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4897" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4897/hovercard"&gt;#4897&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed sequential &lt;code&gt;GetTextReader&lt;/code&gt; reads corrupting &lt;code&gt;nvarchar&lt;/code&gt; text on big-endian platforms. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4962" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4962/hovercard"&gt;#4962&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Rejected malformed PRELOGIN responses with a corrupted-stream error instead of &lt;code&gt;IndexOutOfRangeException&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4978" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4978/hovercard"&gt;#4978&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Rejected row, alternate-result, and authentication responses missing required metadata or state, and prevented affected connections from returning to the pool. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4982" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4982/hovercard"&gt;#4982&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Companion Packages&lt;/h2&gt;
+&lt;p&gt;All packages below ship as &lt;code&gt;7.0.4&lt;/code&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Package&lt;/th&gt;
+&lt;th&gt;Highlights&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/Extensions/Azure/7.0/7.0.4.md"&gt;Extensions.Azure&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Added actionable guidance for Windows WAM &lt;code&gt;window_handle_required&lt;/code&gt; errors, preserving the original error code and inner exception.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/add-ons/AzureKeyVaultProvider/7.0/7.0.4.md"&gt;AlwaysEncrypted.AzureKeyVaultProvider&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Version alignment only; no functional or API changes.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/Extensions/Abstractions/7.0/7.0.4.md"&gt;Extensions.Abstractions&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Version alignment only; no functional or API changes.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/Internal/Logging/7.0/7.0.4.md"&gt;Internal.Logging&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Version alignment only; internal use, not for direct application references.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;For Windows WAM errors, provide a parent window through &lt;code&gt;SetParentActivityOrWindowFunc&lt;/code&gt;, or use &lt;code&gt;Authentication=Active Directory Default&lt;/code&gt; with a configured non-interactive credential in windowless hosts. Interactive authentication without WAM requires a custom &lt;code&gt;ApplicationClientId&lt;/code&gt; and &lt;code&gt;UseWamBroker=false&lt;/code&gt;. WAM remains enforced for SqlClient's first-party application ID; no automatic fallback was added.&lt;/p&gt;
+&lt;h2&gt;Platform Support&lt;/h2&gt;
+&lt;p&gt;.NET Framework 4.6.2+ on Windows and .NET 8.0+ on Windows, Linux, and macOS. Companion package targets and dependency lists are included in the linked package notes.&lt;/p&gt;
+&lt;p&gt;Thanks to &lt;a href="https://github.com/LaurensVergote"&gt;LaurensVergote&lt;/a&gt; for contributing.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/7.0/7.0.4.md"&gt;Full release notes and dependency versions&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/dotnet/SqlClient/releases/tag/v7.1.2"&gt;Stable Release v7.1.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This servicing release includes security updates, certificate and enclave-session validation fixes, and improvements to result reading and managed networking.&lt;/p&gt;
+&lt;p&gt;Use matching &lt;code&gt;7.1.2&lt;/code&gt; versions of the driver and companion packages. Assemblies retain &lt;code&gt;AssemblyVersion 7.0.0.0&lt;/code&gt;; no new .NET Framework binding redirects are required when upgrading from &lt;code&gt;7.1.1&lt;/code&gt;. &lt;code&gt;Microsoft.SqlServer.Server&lt;/code&gt; is unchanged and versioned independently.&lt;/p&gt;
+&lt;h2&gt;Changes Since 7.1.1&lt;/h2&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated dependencies to address &lt;a href="https://github.com/advisories/GHSA-846f-f764-76mx"&gt;CVE-2026-84008&lt;/a&gt;: &lt;code&gt;System.Security.Cryptography.Pkcs&lt;/code&gt; 8.0.2 for net462/net8.0/netstandard2.0 and affected .NET 9 dependencies, including &lt;code&gt;System.Threading.RateLimiting&lt;/code&gt;, to 9.0.21.&lt;/li&gt;
+&lt;li&gt;Updated native SNI dependencies to 7.1.2.&lt;/li&gt;
+&lt;li&gt;Added user-agent reporting for async and SNI compatibility switches. Async behavior and switch defaults are unchanged.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Enforced an explicit &lt;code&gt;HostNameInCertificate&lt;/code&gt; during managed SNI certificate validation, even when the certificate matches the server name (net8.0/net9.0). (&lt;a href="https://github.com/dotnet/SqlClient/pull/4907" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4907/hovercard"&gt;#4907&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Isolated Always Encrypted enclave-session cache entries by attestation protocol. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4866" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4866/hovercard"&gt;#4866&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed unobserved receive exceptions and packet cleanup when closing managed SNI connections with MARS reads pending (net8.0/net9.0). (&lt;a href="https://github.com/dotnet/SqlClient/pull/4951" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4951/hovercard"&gt;#4951&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;SqlDataReader.HasRows&lt;/code&gt; returning &lt;code&gt;false&lt;/code&gt; when informational messages precede the first row. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4900" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4900/hovercard"&gt;#4900&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed statistics timer races throwing "Nullable object must have a value." Connection and MARS use remain non-thread-safe. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4895" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4895/hovercard"&gt;#4895&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed sequential &lt;code&gt;GetTextReader&lt;/code&gt; reads corrupting &lt;code&gt;nvarchar&lt;/code&gt; text on big-endian platforms. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4961" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4961/hovercard"&gt;#4961&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Rejected malformed PRELOGIN responses with a corrupted-stream error instead of &lt;code&gt;IndexOutOfRangeException&lt;/code&gt;. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4977" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4977/hovercard"&gt;#4977&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Rejected row, alternate-result, and authentication responses missing required metadata or state, and prevented affected connections from returning to the pool. (&lt;a href="https://github.com/dotnet/SqlClient/pull/4983" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4983/hovercard"&gt;#4983&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed eager Windows native SNI initialization causing &lt;code&gt;TypeInitializationException&lt;/code&gt; or &lt;code&gt;DllNotFoundException&lt;/code&gt; on Unix (net8.0/net9.0). (&lt;a href="https://github.com/dotnet/SqlClient/pull/4770" data-hovercard-type="pull_request" data-hovercard-url="/dotnet/SqlClient/pull/4770/hovercard"&gt;#4770&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Companion Packages&lt;/h2&gt;
+&lt;p&gt;All packages below ship as &lt;code&gt;7.1.2&lt;/code&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Package&lt;/th&gt;
+&lt;th&gt;Highlights&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/Extensions/Azure/7.1/7.1.2.md"&gt;Extensions.Azure&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Added actionable guidance for Windows WAM &lt;code&gt;window_handle_required&lt;/code&gt; errors, preserving the original error code and inner exception.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/add-ons/AzureKeyVaultProvider/7.1/7.1.2.md"&gt;AlwaysEncrypted.AzureKeyVaultProvider&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Version alignment only; no functional or API changes.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/Extensions/Abstractions/7.1/7.1.2.md"&gt;Extensions.Abstractions&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Version alignment only; no functional or API changes.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/Internal/Logging/7.1/7.1.2.md"&gt;Internal.Logging&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Version alignment only; internal use, not for direct application references.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;For Windows WAM errors, provide a parent window through &lt;code&gt;SetParentActivityOrWindowFunc&lt;/code&gt;, or use &lt;code&gt;Authentication=Active Directory Default&lt;/code&gt; with a configured non-interactive credential in windowless hosts. Interactive authentication without WAM requires a custom &lt;code&gt;ApplicationClientId&lt;/code&gt; and &lt;code&gt;UseWamBroker=false&lt;/code&gt;. WAM remains enforced for SqlClient's first-party application ID; no automatic fallback was added.&lt;/p&gt;
+&lt;h2&gt;Platform Support&lt;/h2&gt;
+&lt;p&gt;.NET Framework 4.6.2+ on Windows and .NET 8.0+ on Windows, Linux, and macOS. Companion package targets and dependency lists are included in the linked package notes.&lt;/p&gt;
+&lt;p&gt;Thanks to &lt;a href="https://github.com/LaurensVergote"&gt;LaurensVergote&lt;/a&gt; and &lt;a href="https://github.com/shreyarao4"&gt;shreyarao4&lt;/a&gt; for contributing.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/dotnet/SqlClient/blob/main/release-notes/7.1/7.1.2.md"&gt;Full release notes and dependency versions&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
