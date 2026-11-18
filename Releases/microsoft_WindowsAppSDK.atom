@@ -1,6 +1,82 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>microsoft/WindowsAppSDK - Releases</title>
   <link href="https://github.com/microsoft/WindowsAppSDK" />
-  <updated>2026-11-17T00:06:35Z</updated>
+  <updated>2026-11-18T00:06:13Z</updated>
   <id>https://github.com/microsoft/WindowsAppSDK</id>
+  <entry>
+    <title>microsoft/WindowsAppSDK - Releases - 2026-11-17</title>
+    <id>https://github.com/microsoft/WindowsAppSDK#2026-11-17</id>
+    <link href="https://github.com/microsoft/WindowsAppSDK" />
+    <updated>2026-11-18T00:06:13Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.7.0"&gt;Windows App SDK 2.7.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;Windows App SDK 2.7.0 brings GPU support and richer diagnostics to the on-device language model, updates ONNX Runtime, and fixes issues across input, text controls, styling, windowing, and ARM64EC app startup.&lt;/p&gt;
+&lt;h3&gt;What's new in WinAppSDK 2.7.0:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GPU support for &lt;code&gt;LanguageModel&lt;/code&gt;.&lt;/strong&gt; The language model can now run on devices with a compatible GPU.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LoRA adapter compatibility and model identity.&lt;/strong&gt; New &lt;code&gt;LanguageModelLowRankAdapterResult.Status&lt;/code&gt; and &lt;code&gt;LanguageModel.ModelName&lt;/code&gt; / &lt;code&gt;ModelVersion&lt;/code&gt; properties help apps pick the right adapter and identify compatibility warnings or loading failures. Availability of model identity and detailed compatibility results depends on the installed AI components.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Clearer GPU resource errors.&lt;/strong&gt; New &lt;code&gt;LanguageModelResponseStatus.InsufficientVideoRam&lt;/code&gt; and &lt;code&gt;LanguageModelResponseStatus.BlockedByGameMode&lt;/code&gt; values tell apps when GPU inference stops because video memory is low or Game Mode is active.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Updated ONNX Runtime.&lt;/strong&gt; ONNX Runtime is updated to 1.28.3, and the Windows ML dependency is updated to 2.5.96. See &lt;a href="https://learn.microsoft.com/windows/ai/new-windows-ml/onnx-versions" rel="nofollow"&gt;ONNX Runtime versions&lt;/a&gt; for more info.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Bug fix&lt;/th&gt;
+&lt;th&gt;&lt;a href="https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.applicationmodel.windowsappruntime.runtimecompatibilityoptions.disabledchanges" rel="nofollow"&gt;Runtime Compatibility Change&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an input offset in DPI-aware apps when &lt;code&gt;CompositionEngineType.System&lt;/code&gt; is selected.&lt;/td&gt;
+&lt;td&gt;InputPointerSource_SystemEngineDPIOffset&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed the Text Cursor Indicator not appearing immediately when an empty &lt;code&gt;TextBox&lt;/code&gt; or &lt;code&gt;RichEditBox&lt;/code&gt; receives focus.&lt;/td&gt;
+&lt;td&gt;WinUI_TextCursorIndicatorForEmptyTextControl&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed &lt;code&gt;ContentDialog&lt;/code&gt; entrance animations not playing and &lt;code&gt;MenuFlyout&lt;/code&gt; items incorrectly showing tooltips when &lt;code&gt;XamlChangeId.OptimizeApplyStyles&lt;/code&gt; is enabled (&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/11257" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/11257/hovercard"&gt;microsoft/microsoft-ui-xaml#11257&lt;/a&gt;).&lt;/td&gt;
+&lt;td&gt;Xaml_OptimizeApplyStylesApplyTemplate&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a crash when reading &lt;code&gt;Window.DispatcherQueue&lt;/code&gt; from a background thread after the window's XAML thread shuts down.&lt;/td&gt;
+&lt;td&gt;Window_DispatcherQueueAfterXamlShutdown&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed a &lt;code&gt;LanguageModel&lt;/code&gt; streaming crash when the session host terminates and improved recovery for eligible requests that fail before any response is returned.&lt;/td&gt;
+&lt;td&gt;LanguageModel_StreamingAndHostExitRecovery&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed an issue that prevented ARM64EC applications from starting on ARM64 Windows because the runtime could not resolve the &lt;code&gt;TransformPoint&lt;/code&gt; entry point (&lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/6911" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/6911/hovercard"&gt;microsoft/WindowsAppSDK#6911&lt;/a&gt;).&lt;/td&gt;
+&lt;td&gt;N/A, DLL import resolution occurs before runtime containment can execute&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fixed first-chance exceptions in default &lt;code&gt;ScrollBar&lt;/code&gt; templates when &lt;code&gt;DefaultStyleOptimizations&lt;/code&gt; is enabled.&lt;/td&gt;
+&lt;td&gt;N/A, default template change in a .xaml file&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;For details, see the full &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-2-0?pivots=stable#version-270" rel="nofollow"&gt;Windows App SDK 2.7.0 release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;Try it out&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.7.0" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.7.0 NuGet package&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Getting started&lt;/h3&gt;
+&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
 </feed>
