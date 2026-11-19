@@ -1,166 +1,104 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>.NET related GitHub Releases</title>
   <link href="https://github.com/mayuki/WatchDotNetGitHubRepos" />
-  <updated>2026-11-18T00:06:21Z</updated>
+  <updated>2026-11-19T00:06:40Z</updated>
   <id>https://github.com/mayuki/WatchDotNetGitHubRepos</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-11-17</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-11-17</id>
+    <title>aws/aws-sdk-net - Releases - 2026-11-18</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-11-18</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-11-18T00:05:53Z</updated>
+    <updated>2026-11-19T00:06:18Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.1.4.0"&gt;4.1.4.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.1.5.0"&gt;4.1.5.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.1.4.0 (2026-11-17 19:18 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.1.5.0 (2026-11-18 19:36 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;APIGateway (4.1.1.0)
+&lt;li&gt;AbuseSignal (4.1.0.0)
 &lt;ul&gt;
-&lt;li&gt;API Gateway now adds support for JWT authorizers on REST APIs.&lt;/li&gt;
+&lt;li&gt;This release introduces the AWS Abuse Signal API, enabling customers to programmatically submit and track AWS abuse reports.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AppStream (4.1.2.0)
+&lt;li&gt;AWSHealth (4.1.2.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for In-Session SmartCard Redirection for Windows Multi-Session fleets&lt;/li&gt;
+&lt;li&gt;Adds resource tags functionality to the AWS Health service&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCore (4.1.1.0)
+&lt;li&gt;AWSSupport (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for continuous insights and automatic dataset generation&lt;/li&gt;
+&lt;li&gt;Updated endpoint resolution for AWS Support, including FIPS and dual-stack endpoints.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.1.1.0)
+&lt;li&gt;BedrockAgentCoreControl (4.1.2.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for agent insight stores that help frame insight evaluators, and dataset source support for batch evaluation&lt;/li&gt;
+&lt;li&gt;Adds s3BucketMount to mount an Amazon S3 bucket as a file system in AgentCore Runtime, with an optional per-session key prefix and adds operatingSystemConfiguration with a Linux privilegeMode (STANDARD or PRIVILEGED) to the capacity provider configuration&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Billing (4.1.1.0)
+&lt;li&gt;Braket (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;Adds the SplitCredit and TransferCredit APIs to split or transfer credits, and adds benefit level sharing for Reserved Instances and Savings Plans to GetBillingPreferences and UpdateBillingPreferences.&lt;/li&gt;
+&lt;li&gt;Supporting a new PAUSED device status and a DeviceStatusReason.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudWatchRUM (4.1.1.0)
+&lt;li&gt;CleanRooms (4.1.2.0)
 &lt;ul&gt;
-&lt;li&gt;Add SessionMetadata to PutRumEvents for attributes that apply to every event in a batch, such as browser, device, and operating system.&lt;/li&gt;
+&lt;li&gt;Adds support for populating intermediate tables with results from PySpark analysis templates.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ConfigService (4.1.1.0)
+&lt;li&gt;CloudFormation (4.1.2.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for AWS Config managed conformance packs, with new Source and Scope parameters on PutConformancePack, a new Type field and type Filters on DescribeConformancePacks and DescribeConformancePackStatus, and an optional StackArn in DescribeConformancePackStatus.&lt;/li&gt;
+&lt;li&gt;AWS CloudFormation StackSets now provides stage-by-stage progress for deployments that span thousands of accounts and AWS Regions, which enables you to see where each deployment stands while it runs&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.1.3.0)
+&lt;li&gt;CognitoIdentityProvider (4.1.3.0)
 &lt;ul&gt;
-&lt;li&gt;Evaluation forms can now adapt to each contact. Questions and sections can be shown or hidden, and single-select answers can be set automatically, based on answers to other questions, contact data (Contact Lens categories, sentiment, agent, queue, contact attributes and more).&lt;/li&gt;
+&lt;li&gt;Add support for restoring user pool's user data to point in time.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ConnectCases (4.1.1.0)
+&lt;li&gt;ElasticLoadBalancingV2 (4.1.0.3)
 &lt;ul&gt;
-&lt;li&gt;PutCaseEventConfiguration now supports an optional autoIncludeFields attribute on case event included data. Set it to All, System, or Custom to automatically include a category of case fields in case event data, combined as a union with any fields you list explicitly.&lt;/li&gt;
+&lt;li&gt;This release adds support for the keyExchange field in CloudTrail tlsDetails, enabling customers to distinguish classical from post-quantum hybrid key exchange for TLS connections on Application Load Balancers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ConnectContactLens (4.1.1.0)
+&lt;li&gt;IdentityManagement (4.1.2.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon Connect Customer now allows conversational analytics for voice contacts to be analyzed in more than one language. The languages detected will be present in the output.&lt;/li&gt;
+&lt;li&gt;Adds MaxSignInSessionDuration to IAM Roles and Login Profiles, allowing customers to configure the maximum Console sign-in session duration per principal. Affects CreateRole, UpdateRole, GetRole and LoginProfile APIs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ControlTower (4.1.1.0)
+&lt;li&gt;Neptune (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Control Tower now reports source drift when an enabled baseline no longer matches the landing zone's configuration.&lt;/li&gt;
+&lt;li&gt;Neptune Database Serverless support for graviton3 based r8g instances.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DevOpsAgent (4.1.2.0)
+&lt;li&gt;Resiliencehubv2 (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;AWS DevOps Agent adds Code Change Risk Analysis capability and task types, and GetChat and UpdateChat operations to rename, archive, and unarchive chats and filter ListChats by archive status.&lt;/li&gt;
+&lt;li&gt;This release includes support for adding new field for the effective policy used in test runs and documentation updates.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EC2 (4.1.4.0)
+&lt;li&gt;S3 (4.1.2.0)
 &lt;ul&gt;
-&lt;li&gt;Adds multipath resilience for inter-Region VPC peering connections and Transit Gateway peering attachments. Adds support for quantum-resistant key exchanges to Site-to-Site VPN. Allows querying multiple instance types in a single DescribeCapacityBlockOfferings request.&lt;/li&gt;
+&lt;li&gt;Adds exclusions and Multi-Region key resolution to S3 Replication. Rule filters support a Not element to exclude prefixes and object tags. Destination EncryptionConfiguration supports UseSourceMultiRegionKey to encrypt replicas with the related replica KMS multi-Region key in the destination Region.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ECR (4.1.2.0)
+&lt;li&gt;SecurityAgent (4.1.2.0)
 &lt;ul&gt;
-&lt;li&gt;Adds a new image scan status for images that exceed the maximum size supported by Amazon ECR enhanced scanning.&lt;/li&gt;
+&lt;li&gt;This release adds support for resuming a paused penetration test job from its last saved checkpoint.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElastiCache (4.1.1.0)
+&lt;li&gt;Signin (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;Enables creation of a serverless Valkey cache that supports write-through caching for DynamoDB table data.&lt;/li&gt;
+&lt;li&gt;These APIs enable customers and administrators to list, view, and revoke AWS Sign-In Sessions programmatically using the AWS CLI and SDKs, providing greater visibility and control over authenticated access.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElementalInference (4.1.1.0)
+&lt;li&gt;SimpleEmailV2 (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Elemental Inference now supports functions, for running your own analysis on feed media, and question sets, for custom decisions on contextual metadata shots and scenes.&lt;/li&gt;
+&lt;li&gt;This release adds support for Spillover Routing in Amazon SES.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Inspector2 (4.1.1.0)
+&lt;li&gt;WAFV2 (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release extends vulnerability management to Google Cloud Platform (GCP) Compute Engine virtual machine (VM) instances, container images in Google Artifact Registry (GAR), and Cloud Run functions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Kinesis (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for queues on on-demand streams with new CreateQueue, UpdateQueue, DeleteQueue, DescribeQueue, ListQueues, ReceiveQueueRecords, AcknowledgeQueueRecords, and UpdateQueueRecordsVisibility APIs, plus four dead-letter APIs, for Amazon Kinesis Data Streams.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Lambda (4.1.3.0)
-&lt;ul&gt;
-&lt;li&gt;AWS Lambda durable functions now supports pausing, resuming, and deleting durable executions with the new PauseDurableExecution, ResumeDurableExecution, and DeleteDurableExecution APIs.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MarketplaceAgreement (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;Adds buyer agreement request and approval APIs. Buyers can get, list and cancel agreement requests and start approvals, which organization administrators approve or reject. Buyers can share a contact when they create an agreement request, and sellers can retrieve it with GetAgreementContacts.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Mgn (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;AWS Transform adds Express Migration for MAP, remote source actions, per-server default launch settings, F5 BIG-IP to Elastic Load Balancing migration, AWS Outposts support, greenfield network design, and replication of volumes up to 64 TB.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;NetworkManager (4.1.2.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for Multipath Resilience change values to be delivered when reviewing a core network change set.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ObservabilityAdmin (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds Microsoft Azure connectors, third-party telemetry enrichment and StartTelemetryPipelineRefresh, to discover Azure resources, enrich their telemetry and refresh external-cloud pipelines.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Route53GlobalResolver (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;Adds AWS Cloud WAN support to Route 53 Global Resolver via new core network endpoint APIs to connect a global resolver to a core network, segment-based access sources, and a publicIpStatus setting to disable public IPs so a resolver is reachable only over Cloud WAN.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3 (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;For the S3 operations AbortMultipartUpload, CreateMultipartUpload, ListParts, UploadPart, UploadPartCopy, the Object Version ID is returned as a response header, if the bucket has versioning enabled. For ListMultipartUploads, it will be returned in the response body.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;S3Control (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for S3 Intelligent Tiering Access Tier and publishing to AWS Billing and Cost Management in S3 Storage Lens&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SecurityHub (4.1.2.0)
-&lt;ul&gt;
-&lt;li&gt;Security Hub now supports Google Cloud. Use connector APIs to connect GCP organizations or projects and monitor their security posture. It also infers resource criticality from tags, CloudWatch metrics, and SBOM data to help you prioritize findings&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WorkSpaces (4.1.2.0)
-&lt;ul&gt;
-&lt;li&gt;Added the NestedVirtualization and EnableEndUserAdvisor self-service permissions. Use them with ModifySelfservicePermissions to turn nested virtualization and End User Advisor on or off for a directory, and view the settings with DescribeWorkspaceDirectories. End User Advisor is on by default.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Core 4.1.1.1
-&lt;ul&gt;
-&lt;li&gt;Back off on retries of the Kinesis &lt;code&gt;ReceiveQueueRecords&lt;/code&gt; and &lt;code&gt;ReceiveDeadLetterQueueRecords&lt;/code&gt; long polling operations even when the retry quota is depleted.&lt;/li&gt;
-&lt;li&gt;Pass the caller's cancellation token to the inner stream read of CompressionWrapperStream.ReadAsync.&lt;/li&gt;
-&lt;li&gt;All service and extension packages updated to require new Core&lt;/li&gt;
+&lt;li&gt;Adds the AnalyticsConfig parameter to CreateWebACL and UpdateWebACL to enable or disable cross-Region security analytics for a WebACL. When you enable security analytics, you authorize AWS to transfer and store full request logs outside the AWS Region where the WebACL is hosted.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -171,169 +109,569 @@
             </content>
   </entry>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-11-17</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-11-17</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-11-18</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-11-18</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-11-18T00:05:53Z</updated>
+    <updated>2026-11-19T00:06:19Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerServiceSafeguards_1.0.0-beta.1"&gt;Azure.ResourceManager.ContainerServiceSafeguards_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.AI.Projects.Agents_3.0.0"&gt;Azure.AI.Projects.Agents_3.0.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-11-16)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;p&gt;This is the first beta release of the Azure Container Service Deployment Safeguards management library, providing management-plane support for the &lt;code&gt;Microsoft.ContainerService/deploymentSafeguards&lt;/code&gt; resource type (API version 2025-07-01).&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ImageBuilder_1.0.0-beta.1"&gt;Azure.ResourceManager.ImageBuilder_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-11-16)&lt;/h2&gt;
-&lt;p&gt;Initial release of the Azure.ResourceManager.ImageBuilder library, generated from the TypeSpec specification.&lt;/p&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;p&gt;This package follows the &lt;a href="https://azure.github.io/azure-sdk/general_introduction.html" rel="nofollow"&gt;new Azure SDK guidelines&lt;/a&gt;, and provides many core capabilities:&lt;/p&gt;
-&lt;div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
-- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
-- HTTP pipeline with custom policies.
-- Better error-handling.
-- Support uniform telemetry across all languages."&gt;&lt;pre class="notranslate"&gt;&lt;code&gt;- Support MSAL.NET, Azure.Identity is out of box for supporting MSAL.NET.
-- Support [OpenTelemetry](https://opentelemetry.io/) for distributed tracing.
-- HTTP pipeline with custom policies.
-- Better error-handling.
-- Support uniform telemetry across all languages.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This package is a Public Preview version, so expect incompatible changes in subsequent releases as we improve the product. To provide feedback, submit an issue in our &lt;a href="https://github.com/Azure/azure-sdk-for-net/issues"&gt;Azure SDK for .NET GitHub repo&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;NOTE: For more information about unified authentication, please refer to &lt;a href="https://docs.microsoft.com//dotnet/api/overview/azure/identity-readme?view=azure-dotnet" rel="nofollow"&gt;Microsoft Azure Identity documentation for .NET&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerService_1.10.0"&gt;Azure.ResourceManager.ContainerService_1.10.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.10.0 (2026-11-17)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
+                                &lt;h2&gt;3.0.0 (2026-11-12)&lt;/h2&gt;
+&lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded api-version to 2026-09-01.&lt;/li&gt;
-&lt;li&gt;Added pagination support for listing private link resources and private endpoint connections.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.KoreAIArtemis_1.0.0-beta.1"&gt;Azure.ResourceManager.KoreAIArtemis_1.0.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.1 (2026-11-12)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;p&gt;First release for API version 2026-07-01-preview.&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>microsoft/microsoft-ui-xaml - Releases - 2026-11-17</title>
-    <id>https://github.com/microsoft/microsoft-ui-xaml#2026-11-17</id>
-    <link href="https://github.com/microsoft/microsoft-ui-xaml" />
-    <updated>2026-11-18T00:06:12Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/releases/tag/winui3/release/2.7.0"&gt;WinUI 3 in WinAppSDK 2.7.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;WinUI 3 in Windows App SDK 2.7.0 includes fixes for input, text controls, styling, and windowing. It is available through the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.7.0" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.7.0 NuGet package&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Bug fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed an input offset in DPI-aware apps when &lt;code&gt;CompositionEngineType.System&lt;/code&gt; is selected.&lt;/li&gt;
-&lt;li&gt;Fixed the Text Cursor Indicator not appearing immediately when an empty &lt;code&gt;TextBox&lt;/code&gt; or &lt;code&gt;RichEditBox&lt;/code&gt; receives focus.&lt;/li&gt;
-&lt;li&gt;Fixed &lt;code&gt;ContentDialog&lt;/code&gt; entrance animations not playing and &lt;code&gt;MenuFlyout&lt;/code&gt; items incorrectly showing tooltips when &lt;code&gt;XamlChangeId.OptimizeApplyStyles&lt;/code&gt; is enabled (&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/11257" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/11257/hovercard"&gt;microsoft/microsoft-ui-xaml#11257&lt;/a&gt;), plus first-chance exceptions in default &lt;code&gt;ScrollBar&lt;/code&gt; templates when &lt;code&gt;DefaultStyleOptimizations&lt;/code&gt; is enabled.&lt;/li&gt;
-&lt;li&gt;Fixed a crash when reading &lt;code&gt;Window.DispatcherQueue&lt;/code&gt; from a background thread after the window's XAML thread shuts down.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For the full set of changes, see the &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-2-0?pivots=stable#version-270" rel="nofollow"&gt;Windows App SDK 2.7.0 release notes&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Try it out&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.7.0" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.7.0 NuGet package&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
-  <entry>
-    <title>microsoft/WindowsAppSDK - Releases - 2026-11-17</title>
-    <id>https://github.com/microsoft/WindowsAppSDK#2026-11-17</id>
-    <link href="https://github.com/microsoft/WindowsAppSDK" />
-    <updated>2026-11-18T00:06:13Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.7.0"&gt;Windows App SDK 2.7.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;Windows App SDK 2.7.0 brings GPU support and richer diagnostics to the on-device language model, updates ONNX Runtime, and fixes issues across input, text controls, styling, windowing, and ARM64EC app startup.&lt;/p&gt;
-&lt;h3&gt;What's new in WinAppSDK 2.7.0:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;GPU support for &lt;code&gt;LanguageModel&lt;/code&gt;.&lt;/strong&gt; The language model can now run on devices with a compatible GPU.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;LoRA adapter compatibility and model identity.&lt;/strong&gt; New &lt;code&gt;LanguageModelLowRankAdapterResult.Status&lt;/code&gt; and &lt;code&gt;LanguageModel.ModelName&lt;/code&gt; / &lt;code&gt;ModelVersion&lt;/code&gt; properties help apps pick the right adapter and identify compatibility warnings or loading failures. Availability of model identity and detailed compatibility results depends on the installed AI components.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Clearer GPU resource errors.&lt;/strong&gt; New &lt;code&gt;LanguageModelResponseStatus.InsufficientVideoRam&lt;/code&gt; and &lt;code&gt;LanguageModelResponseStatus.BlockedByGameMode&lt;/code&gt; values tell apps when GPU inference stops because video memory is low or Game Mode is active.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Updated ONNX Runtime.&lt;/strong&gt; ONNX Runtime is updated to 1.28.3, and the Windows ML dependency is updated to 2.5.96. See &lt;a href="https://learn.microsoft.com/windows/ai/new-windows-ml/onnx-versions" rel="nofollow"&gt;ONNX Runtime versions&lt;/a&gt; for more info.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;AzureFunctionDefinitionFunction&lt;/code&gt; was removed, please use the same class from &lt;code&gt;Azure.AI.Extensions.OpenAI&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Renamed &lt;code&gt;GenerateVoiceAgentRequest&lt;/code&gt; to &lt;code&gt;GenerateVoiceAgentContent&lt;/code&gt; and &lt;code&gt;UpdateToolboxRequest&lt;/code&gt; to &lt;code&gt;UpdateToolboxContent&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Removed the &lt;code&gt;AgentCard(string, IEnumerable&amp;lt;AgentCardSkill&amp;gt;)&lt;/code&gt; and &lt;code&gt;VersionSelector(IEnumerable&amp;lt;VersionSelectionRule&amp;gt;)&lt;/code&gt; constructors. Use the parameterless constructors and set &lt;code&gt;Version&lt;/code&gt;/&lt;code&gt;Skills&lt;/code&gt; and &lt;code&gt;VersionSelectionRules&lt;/code&gt; with initializers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;TelephonyTransferTarget&lt;/code&gt; constructor no longer takes &lt;code&gt;name&lt;/code&gt;; set the &lt;code&gt;Name&lt;/code&gt; property instead.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;AgentReference&lt;/code&gt; class was removed, please use class &lt;code&gt;AgentReference&lt;/code&gt; from &lt;code&gt;Azure.AI.Extensions.OpenAI&lt;/code&gt; package.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;MCPToolboxTool&lt;/code&gt; was renamed to &lt;code&gt;McpToolboxTool&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;PSTNTelephonyTransferDestination&lt;/code&gt; was renamed to &lt;code&gt;PstnTelephonyTransferDestination&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The order of &lt;code&gt;GetAgentVersionsAsync&lt;/code&gt; and &lt;code&gt;GetAgentVersions&lt;/code&gt; arguments was changed. Now it is &lt;code&gt;string agentName, bool? includeDrafts, int? limit = default, AgentListOrder? order = default, string after = default, string before = default, CancellationToken cancellationToken = default&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;DownloadAgentCode&lt;/code&gt; and &lt;code&gt;DownloadAgentCodeAsync&lt;/code&gt; methods of &lt;code&gt;AgentAdministrationClient&lt;/code&gt; are now returning &lt;code&gt;ClientResult&amp;lt;BinaryData&amp;gt;&lt;/code&gt; and &lt;code&gt;Task&amp;lt;ClientResult&amp;lt;BinaryData&amp;gt;&amp;gt;&lt;/code&gt; respectively.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;Download&lt;/code&gt; and &lt;code&gt;DownloadAsync&lt;/code&gt; methods of &lt;code&gt;AgentSessionFiles&lt;/code&gt; are now returning  returning &lt;code&gt;ClientResult&amp;lt;BinaryData&amp;gt;&lt;/code&gt; and &lt;code&gt;Task&amp;lt;ClientResult&amp;lt;BinaryData&amp;gt;&amp;gt;&lt;/code&gt; respectively.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Renamed the following models and their &lt;code&gt;ProjectsAgentsModelFactory&lt;/code&gt; methods:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;Bug fix&lt;/th&gt;
-&lt;th&gt;&lt;a href="https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.applicationmodel.windowsappruntime.runtimecompatibilityoptions.disabledchanges" rel="nofollow"&gt;Runtime Compatibility Change&lt;/a&gt;&lt;/th&gt;
+&lt;th&gt;Previous&lt;/th&gt;
+&lt;th&gt;Replacement&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;Fixed an input offset in DPI-aware apps when &lt;code&gt;CompositionEngineType.System&lt;/code&gt; is selected.&lt;/td&gt;
-&lt;td&gt;InputPointerSource_SystemEngineDPIOffset&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;AgentOptimizationCandidatePromotionInfo&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;AgentOptimizationCandidatePromotion&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Fixed the Text Cursor Indicator not appearing immediately when an empty &lt;code&gt;TextBox&lt;/code&gt; or &lt;code&gt;RichEditBox&lt;/code&gt; receives focus.&lt;/td&gt;
-&lt;td&gt;WinUI_TextCursorIndicatorForEmptyTextControl&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;HeaderTelemetryEndpointAuth&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;HeaderTelemetryEndpointAuthentication&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Fixed &lt;code&gt;ContentDialog&lt;/code&gt; entrance animations not playing and &lt;code&gt;MenuFlyout&lt;/code&gt; items incorrectly showing tooltips when &lt;code&gt;XamlChangeId.OptimizeApplyStyles&lt;/code&gt; is enabled (&lt;a href="https://github.com/microsoft/microsoft-ui-xaml/issues/11257" data-hovercard-type="issue" data-hovercard-url="/microsoft/microsoft-ui-xaml/issues/11257/hovercard"&gt;microsoft/microsoft-ui-xaml#11257&lt;/a&gt;).&lt;/td&gt;
-&lt;td&gt;Xaml_OptimizeApplyStylesApplyTemplate&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;InlineSkillParam&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;InlineSkill&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Fixed a crash when reading &lt;code&gt;Window.DispatcherQueue&lt;/code&gt; from a background thread after the window's XAML thread shuts down.&lt;/td&gt;
-&lt;td&gt;Window_DispatcherQueueAfterXamlShutdown&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;InlineSkillSourceParam&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;InlineSkillSource&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Fixed a &lt;code&gt;LanguageModel&lt;/code&gt; streaming crash when the session host terminates and improved recovery for eligible requests that fail before any response is returned.&lt;/td&gt;
-&lt;td&gt;LanguageModel_StreamingAndHostExitRecovery&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;SkillReference&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;AgentSkillReference&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Fixed an issue that prevented ARM64EC applications from starting on ARM64 Windows because the runtime could not resolve the &lt;code&gt;TransformPoint&lt;/code&gt; entry point (&lt;a href="https://github.com/microsoft/WindowsAppSDK/issues/6911" data-hovercard-type="issue" data-hovercard-url="/microsoft/WindowsAppSDK/issues/6911/hovercard"&gt;microsoft/WindowsAppSDK#6911&lt;/a&gt;).&lt;/td&gt;
-&lt;td&gt;N/A, DLL import resolution occurs before runtime containment can execute&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;SkillReferenceParam&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;SkillReference&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Fixed first-chance exceptions in default &lt;code&gt;ScrollBar&lt;/code&gt; templates when &lt;code&gt;DefaultStyleOptimizations&lt;/code&gt; is enabled.&lt;/td&gt;
-&lt;td&gt;N/A, default template change in a .xaml file&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;TelemetryConfig&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;TelemetryConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VersionRefIndicator&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;VersionReferenceIndicator&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentAudioConfig&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentAudioConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentAudioInputConfig&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentAudioInputConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentAudioOutputConfig&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentAudioOutputConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentAvatarConfig&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentAvatarConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentAvatarVideoParams&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentAvatarVideoParameters&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentGreetingConfig&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentGreetingConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentInterimResponseConfig&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentInterimResponseConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentLlmGeneratedGreetingConfig&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentLlmGeneratedGreetingConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentLlmInterimResponseConfig&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentLlmInterimResponseConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentPostCallConfig&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentPostCallConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentSoundscapeConfig&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentSoundscapeConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentSoundscapeSourceConfig&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentSoundscapeSourceConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentSoundscapeTrackConfig&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentSoundscapeTrackConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentSoundscapeWorkingTrackConfig&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentSoundscapeWorkingTrackConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentStaticInterimResponseConfig&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentStaticInterimResponseConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentSubagentConfig&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentSubagentConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentTemplateGreetingConfig&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentTemplateGreetingConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentTurnDetectionConfig&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentTurnDetectionConfiguration&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;For details, see the full &lt;a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-2-0?pivots=stable#version-270" rel="nofollow"&gt;Windows App SDK 2.7.0 release notes&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
-&lt;h3&gt;Try it out&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Install the &lt;a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK/2.7.0" rel="nofollow"&gt;Microsoft.WindowsAppSDK 2.7.0 NuGet package&lt;/a&gt;.&lt;/li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;SkillReference&lt;/code&gt; and &lt;code&gt;ProjectsAgentsModelFactory.SkillReference&lt;/code&gt; now refer to the former &lt;code&gt;SkillReferenceParam&lt;/code&gt; container skill. Use &lt;code&gt;AgentSkillReference&lt;/code&gt; and &lt;code&gt;ProjectsAgentsModelFactory.AgentSkillReference&lt;/code&gt; for the previous agent skill reference.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Renamed the following properties and their corresponding model-factory parameters where present. Type names in the table reflect the renamed models above.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Previous&lt;/th&gt;
+&lt;th&gt;Replacement&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;A2AToolboxTool&lt;/code&gt;, &lt;code&gt;A2APreviewToolboxTool&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;BaseUrl&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;BaseUri&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;TelephonyBinding&lt;/code&gt;, &lt;code&gt;TelephonyBindingListItem&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;IncomingCallUrl&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;IncomingCallUri&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentAudioOutputConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;CustomLexiconUrl&lt;/code&gt;, &lt;code&gt;CustomTextNormalizationUrl&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;CustomLexiconUri&lt;/code&gt;, &lt;code&gt;CustomTextNormalizationUri&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentAvatarVideoBackground&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ImageUrl&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ImageUri&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentMcpTool&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ServerUrl&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ServerUri&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;TelephonyCallRecord&lt;/code&gt;, &lt;code&gt;TelephonyCallSummary&lt;/code&gt;, &lt;code&gt;VoiceAudioItem&lt;/code&gt;, &lt;code&gt;VoiceGeneratedAudioItem&lt;/code&gt;, &lt;code&gt;VoiceRecording&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;DurationMs&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Duration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAudioItem&lt;/code&gt;, &lt;code&gt;VoiceGeneratedAudioItem&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;StartOffsetMs&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;StartOffset&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;AgentOptimizationJob&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;RunDurationMs&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;RunDuration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;AgentOptimizationCandidateEvaluation&lt;/code&gt;, &lt;code&gt;AgentOptimizationJobLatency&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;AvgLatencyMs&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;AvgLatency&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;SessionConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;IdleTimeoutSeconds&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;IdleTimeout&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentEndOfUtteranceDetection&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;TimeoutMs&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Timeout&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VoiceAgentInterimResponseConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;LatencyThresholdMs&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;LatencyThreshold&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;FileSearchToolboxTool&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;MaxNumResults&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;MaxResultCount&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;UserConversationSimulationConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;DesiredNumTurns&lt;/code&gt;, &lt;code&gt;MaxNumTurns&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;DesiredTurnCount&lt;/code&gt;, &lt;code&gt;MaxTurnCount&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ToolboxPolicies&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;RaiConfig&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ContentFilterConfiguration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On &lt;code&gt;VoiceAgentServerVadTurnDetection&lt;/code&gt;, &lt;code&gt;VoiceAgentAzureSemanticVadTurnDetection&lt;/code&gt;, &lt;code&gt;VoiceAgentAzureSemanticVadEnTurnDetection&lt;/code&gt;, and &lt;code&gt;VoiceAgentAzureSemanticVadMultilingualTurnDetection&lt;/code&gt;, renamed &lt;code&gt;PrefixPaddingMs&lt;/code&gt;, &lt;code&gt;SilenceDurationMs&lt;/code&gt;, and &lt;code&gt;SpeechDurationMs&lt;/code&gt; to &lt;code&gt;PrefixPadding&lt;/code&gt;, &lt;code&gt;SilenceDuration&lt;/code&gt;, and &lt;code&gt;SpeechDuration&lt;/code&gt;. On &lt;code&gt;VoiceAgentServerVadTurnDetection&lt;/code&gt;, &lt;code&gt;IdleTimeoutMs&lt;/code&gt; was also renamed to &lt;code&gt;IdleTimeout&lt;/code&gt;, and &lt;code&gt;IdleTimeout&lt;/code&gt;, &lt;code&gt;PrefixPadding&lt;/code&gt;, and &lt;code&gt;SilenceDuration&lt;/code&gt; changed from &lt;code&gt;long?&lt;/code&gt; to &lt;code&gt;TimeSpan?&lt;/code&gt;. Convert millisecond values with &lt;code&gt;TimeSpan.FromMilliseconds&lt;/code&gt;. The corresponding model-factory parameters changed as well.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On those four turn-detection types and &lt;code&gt;VoiceAgentSemanticVadTurnDetection&lt;/code&gt;, renamed &lt;code&gt;CreateResponse&lt;/code&gt; and &lt;code&gt;InterruptResponse&lt;/code&gt; to &lt;code&gt;CreateResponseEnabled&lt;/code&gt; and &lt;code&gt;InterruptResponseEnabled&lt;/code&gt;, including the corresponding model-factory parameters.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;CallableToolAllowedCaller&lt;/code&gt;, &lt;code&gt;VoiceAgentAudioInputConfigTranscriptionDelay&lt;/code&gt;, &lt;code&gt;VoiceAgentAudioTimestampType&lt;/code&gt;, &lt;code&gt;VoiceAgentEchoCancellationReferenceSource&lt;/code&gt;, and &lt;code&gt;VoiceAgentSessionIncludeOption&lt;/code&gt; changed from enums to extensible structs. Replace enum-specific casts and constant &lt;code&gt;switch&lt;/code&gt; cases with comparisons against their static values.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;AllowedCallers&lt;/code&gt; is now get-only on &lt;code&gt;CodeInterpreterToolboxTool&lt;/code&gt;, &lt;code&gt;McpToolboxTool&lt;/code&gt;, and &lt;code&gt;VoiceAgentMcpTool&lt;/code&gt;; add items to the collection instead of replacing it. The &lt;code&gt;ShellToolboxTool.AllowedCallers&lt;/code&gt; setter was also removed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Renamed &lt;code&gt;AgentAdministrationClient.GetAgentOptimizationJobCandidatesClient&lt;/code&gt; to &lt;code&gt;GetAgentOptimizationJobCandidates&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;AgentAdministrationClient.GetSessionLogStream&lt;/code&gt; and &lt;code&gt;GetSessionLogStreamAsync&lt;/code&gt; are now experimental and require the &lt;code&gt;AAIP001&lt;/code&gt; diagnostic to be suppressed on supported target frameworks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Renamed the &lt;code&gt;internalMaxOutputTokens&lt;/code&gt; named parameter of &lt;code&gt;ProjectsAgentsModelFactory.VoiceAgentDefinition&lt;/code&gt; to &lt;code&gt;maxOutputTokens&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Getting started&lt;/h3&gt;
-&lt;p&gt;To get started using Windows App SDK to develop Windows apps, check out the following documentation:&lt;/p&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment" rel="nofollow"&gt;Install developer tools&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/windows/apps/winui/winui3/create-your-first-winui3-app" rel="nofollow"&gt;Create a WinUI 3 app&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/windows/apps/develop" rel="nofollow"&gt;Continue your development journey&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Fixed the cancellation of &lt;code&gt;ToolboxRecord&lt;/code&gt; update.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>dotnet/aspire - Releases - 2026-11-18</title>
+    <id>https://github.com/dotnet/aspire#2026-11-18</id>
+    <link href="https://github.com/dotnet/aspire" />
+    <updated>2026-11-19T00:06:24Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v17.0.0"&gt;Aspire 17.0.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h1&gt;Aspire 17.0.0&lt;/h1&gt;
+&lt;p&gt;Aspire 17.0 brings a resource-first dashboard, Go AppHosts in preview, stable .NET project hosting and Kubernetes deployment packages, and new Microsoft Entra ID and Azure API Management integrations. Shell completion, shared team configuration, environment-specific secrets, richer editor tooling, and a preview tray companion make it easier to build, inspect, and deploy applications across languages.&lt;/p&gt;
+&lt;h2&gt;Highlights&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;📊 &lt;strong&gt;Resource-first dashboard&lt;/strong&gt; — A resource table home page and shared resource pane keep services in view as you navigate logs, traces, and metrics. Search, filters, multi-selection, grouping, and pinnable metric cards with live sparklines help focus investigations. Interactive terminals get a dedicated page, first-run guidance helps connect telemetry, and the dashboard and &lt;code&gt;aspire describe --format mermaid&lt;/code&gt; can export your resource graph.&lt;/li&gt;
+&lt;li&gt;🐹 &lt;strong&gt;Go AppHosts in preview&lt;/strong&gt; — Create Go AppHosts with &lt;code&gt;aspire new&lt;/code&gt; or &lt;code&gt;aspire init --language go&lt;/code&gt;, with no experimental feature flag required. Go templates, VS Code launch and debugging, &lt;code&gt;aspire doctor&lt;/code&gt; tooling checks, generated SDK documentation, and &lt;code&gt;aspire sdk export --language go&lt;/code&gt; round out the preview.&lt;/li&gt;
+&lt;li&gt;🛠️ &lt;strong&gt;Stable .NET project hosting and more stable APIs&lt;/strong&gt; — &lt;code&gt;Aspire.Hosting.Dotnet&lt;/code&gt; now ships as a stable package, with path-based &lt;code&gt;AddDotnetProject&lt;/code&gt;, SDK-style C#, F#, and Visual Basic support, and parallel builds within compatible project groups. Deno hosting, Next.js hosting and JavaScript publishing, core pipeline and deployment-state APIs, HTTP probes, and MCP endpoint declarations also graduate from experimental.&lt;/li&gt;
+&lt;li&gt;⌨️ &lt;strong&gt;Sharper CLI and agent workflows&lt;/strong&gt; — Shell completion supports Bash, Fish, PowerShell, and Zsh. Environment-specific secrets keep deployment values separate, and masked prompts or &lt;code&gt;--envvar&lt;/code&gt; avoid putting secret values on the command line. Agent setup selects clients and project or global scope, configuring plugins instead of copying bundled skill folders.&lt;/li&gt;
+&lt;li&gt;🧩 &lt;strong&gt;Reusable team customization&lt;/strong&gt; — Create apps from local or Git-backed templates, discover hosting packages through named integration sources, and configure team skill sources. Opt-in Git-backed initialization configuration supplies shared defaults, with explicit source acceptance and refresh through &lt;code&gt;aspire update --config-source&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;🖥️ &lt;strong&gt;Tray companion in preview&lt;/strong&gt; — &lt;code&gt;aspire tray start&lt;/code&gt; keeps local AppHosts within reach from the macOS menu bar, Windows notification area, or a supported Linux desktop tray. The companion requires a native CLI installation; Linux support also requires a graphical desktop session and GTK 3.&lt;/li&gt;
+&lt;li&gt;💻 &lt;strong&gt;More capable VS Code tooling&lt;/strong&gt; — Attach a debugger to already-running .NET and Go resources without restarting them, and launch and debug Go AppHosts. New language model tools help coding agents inspect debug status, discover AppHosts, explain launch failures, check Hot Reload applicability, and open the dashboard or Aspire output channel.&lt;/li&gt;
+&lt;li&gt;☁️ &lt;strong&gt;New Azure integrations&lt;/strong&gt; — Preview Microsoft Entra ID hosting models application registrations, service principals, credentials, permissions, and workload references. Preview Azure API Management hosting models deployment-time gateways, APIs, backends, policies, and OpenAPI imports. New &lt;code&gt;Aspire.Azure.AI.Extensions.OpenAI&lt;/code&gt; and &lt;code&gt;Aspire.Azure.AI.Projects&lt;/code&gt; client integrations support Azure OpenAI and Foundry using the updated SDKs.&lt;/li&gt;
+&lt;li&gt;☸️ &lt;strong&gt;Stable Kubernetes deployment packages&lt;/strong&gt; — Kubernetes and AKS hosting packages now ship stable versions, while persistent-volume APIs remain experimental. Target existing AKS clusters, choose node-pool OS SKUs, configure cert-manager External Account Binding, and preserve per-image registries in Helm charts. Experimental Azure Front Door Private Link origins support Container Apps and App Service environments.&lt;/li&gt;
+&lt;li&gt;🔌 &lt;strong&gt;More flexible AppHosts and integrations&lt;/strong&gt; — Optional parameters can remain unset without prompting or blocking supported publishing flows, while browser-origin references simplify CORS and authentication redirects. Experimental TypeScript and JavaScript Azure Functions hosting adds Node.js debugging in VS Code. Azure Web PubSub gains a local emulator, and the Service Bus emulator can reuse an existing SQL Server resource.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;g-emoji class="g-emoji" alias="warning"&gt;⚠️&lt;/g-emoji&gt; Breaking changes&lt;/h2&gt;
+&lt;p&gt;Aspire's minimum supported .NET version is now &lt;strong&gt;.NET 10&lt;/strong&gt;; this does not require every orchestrated workload to retarget. &lt;code&gt;AddProject&lt;/code&gt;, &lt;code&gt;AddCSharpApp&lt;/code&gt;, and &lt;code&gt;Aspire.AppHost.Sdk&lt;/code&gt; remain available but are deprecated in favor of path-based .NET project registration and standard &lt;code&gt;Microsoft.NET.Sdk&lt;/code&gt; AppHosts. C# AppHosts also require the Aspire CLI bundle.&lt;/p&gt;
+&lt;p&gt;Other notable changes include removal of the legacy RabbitMQ v6 and MongoDB v2 client integrations, replacement of the Azure AI OpenAI and Inference packages, service-provider-aware Cosmos DB client callbacks, renamed polyglot feature flags, and rejection of empty required parameter values. Kubernetes deployment requires &lt;strong&gt;Helm 4.0.0 or later&lt;/strong&gt;, and AKS defaults to the paid Standard control-plane tier with separate user-assigned identities; review existing-cluster updates and custom permissions. MongoDB's default container image advances to &lt;strong&gt;9.0&lt;/strong&gt;, so review persistent-data compatibility or pin the previous tag.&lt;/p&gt;
+&lt;p&gt;See the full list and migration guidance in the &lt;a href="https://aspire.dev/whats-new/aspire-17/#breaking-changes" rel="nofollow"&gt;Aspire 17.0 breaking changes&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;📖 Learn more&lt;/h2&gt;
+&lt;p&gt;For complete details, examples, migration guidance, and everything new in this release, read &lt;a href="https://aspire.dev/whats-new/aspire-17/" rel="nofollow"&gt;What's new in Aspire 17.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thank you to all the community contributors who helped make Aspire 17.0 possible! 💜&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a href="https://github.com/microsoft/aspire/compare/v13.6.5...v17.0.0"&gt;v13.6.5...v17.0.0&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/2d325b13709752ba6d9a943635c5e2940a2530c0"&gt;2d325b13709752ba6d9a943635c5e2940a2530c0&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>googleapis/google-cloud-dotnet - Releases - 2026-11-18</title>
+    <id>https://github.com/googleapis/google-cloud-dotnet#2026-11-18</id>
+    <link href="https://github.com/googleapis/google-cloud-dotnet" />
+    <updated>2026-11-19T00:06:31Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.GeminiDataAnalytics.V1-2.2.0"&gt;Google.Cloud.GeminiDataAnalytics.V1 version 2.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add ListMessagesRequest.pending_write_wait_skipped to skip waiting for in-flight writes on the most recent turn&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Clarify BigQuery Agent Analytics field behavior and validation on DataAgent&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Dataform.V1-1.4.0"&gt;Google.Cloud.Dataform.V1 version 1.4.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;API regeneration: 20261112T170133Z (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6355068712" data-permission-text="Title is private" data-url="https://github.com/googleapis/google-cloud-dotnet/issues/16101" data-hovercard-type="pull_request" data-hovercard-url="/googleapis/google-cloud-dotnet/pull/16101/hovercard" href="https://github.com/googleapis/google-cloud-dotnet/pull/16101"&gt;#16101&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added method &lt;code&gt;CreateWorkspaceLongRunning&lt;/code&gt; and message &lt;code&gt;CreateWorkspaceMetadata&lt;/code&gt; to service &lt;code&gt;Dataform&lt;/code&gt; to create workspaces asynchronously&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Firestore-4.7.0"&gt;Google.Cloud.Firestore version 4.7.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Enforce maximum retry attempts on expired transactions&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Run.V2-2.21.0"&gt;Google.Cloud.Run.V2 version 2.21.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add ambient_networking to Service&lt;/li&gt;
+&lt;li&gt;Add workload_identity_config to Service and Jobs to support Agent Identity&lt;/li&gt;
+&lt;li&gt;Add sandbox_launcher and sandboxes fields to support launching sandboxes from a container&lt;/li&gt;
+&lt;li&gt;Add functional_type to Service and Job&lt;/li&gt;
+&lt;li&gt;Add ssh_enabled to Service and Instance&lt;/li&gt;
+&lt;li&gt;Add inlined_source to SourceCode&lt;/li&gt;
+&lt;li&gt;Add SourceUpload service with UploadSource RPC&lt;/li&gt;
+&lt;li&gt;Add UpdateInstance and IAM policy RPCs, restart_policy and default_uri_disabled to Instance&lt;/li&gt;
+&lt;li&gt;Add instance_reason to Condition&lt;/li&gt;
+&lt;li&gt;Add delay_execution to ExecutionTemplate and RunJobRequest overrides&lt;/li&gt;
+&lt;li&gt;Add force_new_revision to UpdateServiceRequest&lt;/li&gt;
+&lt;li&gt;Add cpu_utilization and concurrency_utilization to RevisionScaling&lt;/li&gt;
+&lt;li&gt;Add client and client_version to RevisionTemplate, ExecutionTemplate and WorkerPoolRevisionTemplate&lt;/li&gt;
+&lt;li&gt;Make service_id, job_id, worker_pool_id and instance_id optional in create requests&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update comments for Instances, Instance, Container, VolumeMount, CloudSqlInstance, GCSVolumeSource, launch_stage, worker_pool, and the resource ID fields in create requests&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.PubSub.V1-3.40.0"&gt;Google.Cloud.PubSub.V1 version 3.40.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add &lt;code&gt;ZSTD&lt;/code&gt; to &lt;code&gt;Compression.CompressionAlgorithm&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Prevent unobserved task exception on stream close and shutdown&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.OracleDatabase.V1-1.10.0"&gt;Google.Cloud.OracleDatabase.V1 version 1.10.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add UpdateOdbDnsZone to update labels of an ODB DNS Zone&lt;/li&gt;
+&lt;li&gt;Add Workload Identity Connector, DatabaseConnection, ExecuteSql, FlexComponent, DbSystemComputePerformance and Update RPCs to the Oracle Database v1 API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation improvements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update field comments to note immutable and input-only fields on Oracle Database v1 resources and Update requests&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Kms.V1-3.28.0"&gt;Google.Cloud.Kms.V1 version 3.28.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add enum attestation format for additional firmware&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.DiscoveryEngine.V1Beta-1.0.0-beta26"&gt;Google.Cloud.DiscoveryEngine.V1Beta version 1.0.0-beta26&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add ProvisionIntent, pre_provision_mode, provision_intent and idp_config to ProvisionProjectRequest in v1 and v1beta&lt;/li&gt;
+&lt;li&gt;Add locations HTTP binding to ProjectService.ProvisionProject in v1beta&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.DiscoveryEngine.V1-1.19.0"&gt;Google.Cloud.DiscoveryEngine.V1 version 1.19.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add ProvisionIntent, pre_provision_mode, provision_intent and idp_config to ProvisionProjectRequest in v1 and v1beta&lt;/li&gt;
+&lt;li&gt;Add locations HTTP binding to ProjectService.ProvisionProject in v1beta&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/googleapis/google-cloud-dotnet/releases/tag/Google.Cloud.Dataform.V1Beta1-1.0.0-beta17"&gt;Google.Cloud.Dataform.V1Beta1 version 1.0.0-beta17&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;API regeneration: 20261112T170133Z (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6355068712" data-permission-text="Title is private" data-url="https://github.com/googleapis/google-cloud-dotnet/issues/16101" data-hovercard-type="pull_request" data-hovercard-url="/googleapis/google-cloud-dotnet/pull/16101/hovercard" href="https://github.com/googleapis/google-cloud-dotnet/pull/16101"&gt;#16101&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added method &lt;code&gt;CreateWorkspaceLongRunning&lt;/code&gt; and message &lt;code&gt;CreateWorkspaceMetadata&lt;/code&gt; to service &lt;code&gt;Dataform&lt;/code&gt; to create workspaces asynchronously&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>grpc/grpc - Releases - 2026-11-18</title>
+    <id>https://github.com/grpc/grpc#2026-11-18</id>
+    <link href="https://github.com/grpc/grpc" />
+    <updated>2026-11-19T00:06:32Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/grpc/grpc/releases/tag/v1.85.3"&gt;Release v1.85.3&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;p&gt;This is release gRPC Core 1.85.3 (googol).&lt;/p&gt;
+&lt;p&gt;For gRPC documentation, see &lt;a href="https://grpc.io/" rel="nofollow"&gt;grpc.io&lt;/a&gt;. For previous releases, see &lt;a href="https://github.com/grpc/grpc/releases"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is a Python-only release that contains a bug fix.&lt;/p&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="6437417933" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/43961" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/43961/hovercard" href="https://github.com/grpc/grpc/pull/43961"&gt;#43961&lt;/a&gt; Fixed a deadlock that could freeze the entire Python process when closing a channel (synchronous API) while gRPC's background threads were running Python callbacks (for example, call credentials plugins). (Backport of &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4339726712" data-permission-text="Title is private" data-url="https://github.com/grpc/grpc/issues/42247" data-hovercard-type="pull_request" data-hovercard-url="/grpc/grpc/pull/42247/hovercard" href="https://github.com/grpc/grpc/pull/42247"&gt;#42247&lt;/a&gt;; credits: &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/PeterZhizhin/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/PeterZhizhin"&gt;@PeterZhizhin&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>newrelic/newrelic-dotnet-agent - Releases - 2026-11-18</title>
+    <id>https://github.com/newrelic/newrelic-dotnet-agent#2026-11-18</id>
+    <link href="https://github.com/newrelic/newrelic-dotnet-agent" />
+    <updated>2026-11-19T00:06:36Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/releases/tag/v10.58.0"&gt;v10.58.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/compare/v10.57.0...v10.58.0"&gt;10.58.0&lt;/a&gt; (2026-11-18)&lt;/h2&gt;
+&lt;h3&gt;Notice&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;LLM instrumentation is now enabled by default and sends &lt;code&gt;Llm*&lt;/code&gt; custom events, spans, and metrics (without message content) unless configured otherwise. To opt out, add &lt;code&gt;to `newrelic.config`, or set the `NEW_RELIC_AI_MONITORING_BASIC_TELEMETRY_ENABLED` environment variable to `false`. The `enabled` attribute on&lt;/code&gt; and the &lt;code&gt;NEW_RELIC_AI_MONITORING_ENABLED&lt;/code&gt; environment variable are deprecated and will be removed in a future major release, but setting either one to &lt;code&gt;false&lt;/code&gt; also opts out. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/0b65f338448a6a6213a1db59c4a55844cb4c63af"&gt;0b65f33&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Starting with this release, every file published to download.newrelic.com has a build provenance attestation, which you can verify with &lt;code&gt;gh attestation verify  --repo newrelic/newrelic-dotnet-agent&lt;/code&gt;. SHA-256 hashes of the files in all versions on download.newrelic.com, including earlier ones, are published in &lt;code&gt;release-data/download-site-hashes.json&lt;/code&gt; in the agent repository. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/99335b1f2500ead5e0662b0f6646e86bc68caaba"&gt;99335b1&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Starting with this release, the New Relic binaries inside every package (MSI, ZIP, NuGet, deb, rpm and tar.gz) are Authenticode-signed, and the signatures are timestamped, including the MSI signatures. The timestamps keep signatures valid after the signing certificate expires. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/99335b1f2500ead5e0662b0f6646e86bc68caaba"&gt;99335b1&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Enable AI basic telemetry by default (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3913" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3913/hovercard"&gt;#3913&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/0b65f338448a6a6213a1db59c4a55844cb4c63af"&gt;0b65f33&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Apply spec-compliant SQL obfuscation to MySQL, Oracle, SQL Server and other datastores. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3914" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3914/hovercard"&gt;#3914&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/2ddbcd4a335402a9cbd69834daa8a69d5e328ec8"&gt;2ddbcd4&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Capture default request headers case-insensitively for AWS Lambda HTTP events (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3955" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3955/hovercard"&gt;#3955&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/8520fba111e28ddfd3b43792b27924a7aa519d5c"&gt;8520fba&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Capture request headers on Azure Function HTTP trigger transactions (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3948" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3948/hovercard"&gt;#3948&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/9f3230a01ce19b9763dff000917357da1c3b115e"&gt;9f3230a&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;End MassTransit consume transactions when the consumer throws (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3915" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3915/hovercard"&gt;#3915&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/2202417b326a7ddc99b03f1c8eb0ba6ab5e11a52"&gt;2202417&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixes problems related to explain plan capture for MySQL and SQL Server. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3940" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3940/hovercard"&gt;#3940&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/93e755c7b5ca3a431598e85d591a4b65597297af"&gt;93e755c&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Instrument isolated Azure Functions workers whose command line contains the site name (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3947" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3947/hovercard"&gt;#3947&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/ba553b86ce9b6f7cc86d5a8b626614d2a4c6ce34"&gt;ba553b8&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Preserve Postgres double-quoted identifiers and apply spec-compliant SQL obfuscation for Postgres. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3903" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3903/hovercard"&gt;#3903&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/7edfdc623721816c7e30e285a3820791c57a93e6"&gt;7edfdc6&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Reduce agent memory by lazily loading MVC and response compression assemblies (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3956" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3956/hovercard"&gt;#3956&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/af1528e3ae9c5ab4467c8eb2fd2cfccb4c57deed"&gt;af1528e&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Ship executable run.sh in the Linux tarball and remove the profile.d script on package removal (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3925" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3925/hovercard"&gt;#3925&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/02e7ab6c3be969206c3dabb999118250f395cca6"&gt;02e7ab6&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;config-schema: 1.7.0&lt;/p&gt;
+&lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/compare/config-schema-1.6.0...config-schema-1.7.0"&gt;1.7.0&lt;/a&gt; (2026-11-18)&lt;/h2&gt;
+&lt;h3&gt;Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Enable AI basic telemetry by default (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3913" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3913/hovercard"&gt;#3913&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/0b65f338448a6a6213a1db59c4a55844cb4c63af"&gt;0b65f33&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                &lt;/div&gt;
+            </content>
+  </entry>
+  <entry>
+    <title>open-telemetry/opentelemetry-dotnet-contrib - Releases - 2026-11-18</title>
+    <id>https://github.com/open-telemetry/opentelemetry-dotnet-contrib#2026-11-18</id>
+    <link href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" />
+    <updated>2026-11-19T00:06:37Z</updated>
+    <content type="html">
+                &lt;div&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/releases/tag/Instrumentation.EntityFrameworkCore-1.21.0-beta.2"&gt;Instrumentation.EntityFrameworkCore-1.21.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NuGet: &lt;a href="https://www.nuget.org/packages/OpenTelemetry.Instrumentation.EntityFrameworkCore/1.21.0-beta.2" rel="nofollow"&gt;OpenTelemetry.Instrumentation.EntityFrameworkCore v1.21.0-beta.2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed &lt;code&gt;server.address&lt;/code&gt; and &lt;code&gt;peer.service&lt;/code&gt; being set to a meaningless value, such&lt;br&gt;
+as the first directory of the path, from the path to the database file when using&lt;br&gt;
+SQLite. These attributes are no longer set for SQLite.&lt;br&gt;
+(&lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/6076" data-hovercard-type="pull_request" data-hovercard-url="/open-telemetry/opentelemetry-dotnet-contrib/pull/6076/hovercard"&gt;#6076&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.EntityFrameworkCore-1.21.0-beta.2/src/OpenTelemetry.Instrumentation.EntityFrameworkCore/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
