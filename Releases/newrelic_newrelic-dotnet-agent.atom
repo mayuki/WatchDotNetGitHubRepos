@@ -1,52 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>newrelic/newrelic-dotnet-agent - Releases</title>
   <link href="https://github.com/newrelic/newrelic-dotnet-agent" />
-  <updated>2026-11-19T00:06:36Z</updated>
+  <updated>2026-11-20T00:06:41Z</updated>
   <id>https://github.com/newrelic/newrelic-dotnet-agent</id>
-  <entry>
-    <title>newrelic/newrelic-dotnet-agent - Releases - 2026-11-18</title>
-    <id>https://github.com/newrelic/newrelic-dotnet-agent#2026-11-18</id>
-    <link href="https://github.com/newrelic/newrelic-dotnet-agent" />
-    <updated>2026-11-19T00:06:36Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/releases/tag/v10.58.0"&gt;v10.58.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/compare/v10.57.0...v10.58.0"&gt;10.58.0&lt;/a&gt; (2026-11-18)&lt;/h2&gt;
-&lt;h3&gt;Notice&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;LLM instrumentation is now enabled by default and sends &lt;code&gt;Llm*&lt;/code&gt; custom events, spans, and metrics (without message content) unless configured otherwise. To opt out, add &lt;code&gt;to `newrelic.config`, or set the `NEW_RELIC_AI_MONITORING_BASIC_TELEMETRY_ENABLED` environment variable to `false`. The `enabled` attribute on&lt;/code&gt; and the &lt;code&gt;NEW_RELIC_AI_MONITORING_ENABLED&lt;/code&gt; environment variable are deprecated and will be removed in a future major release, but setting either one to &lt;code&gt;false&lt;/code&gt; also opts out. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/0b65f338448a6a6213a1db59c4a55844cb4c63af"&gt;0b65f33&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Starting with this release, every file published to download.newrelic.com has a build provenance attestation, which you can verify with &lt;code&gt;gh attestation verify  --repo newrelic/newrelic-dotnet-agent&lt;/code&gt;. SHA-256 hashes of the files in all versions on download.newrelic.com, including earlier ones, are published in &lt;code&gt;release-data/download-site-hashes.json&lt;/code&gt; in the agent repository. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/99335b1f2500ead5e0662b0f6646e86bc68caaba"&gt;99335b1&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Starting with this release, the New Relic binaries inside every package (MSI, ZIP, NuGet, deb, rpm and tar.gz) are Authenticode-signed, and the signatures are timestamped, including the MSI signatures. The timestamps keep signatures valid after the signing certificate expires. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/99335b1f2500ead5e0662b0f6646e86bc68caaba"&gt;99335b1&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable AI basic telemetry by default (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3913" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3913/hovercard"&gt;#3913&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/0b65f338448a6a6213a1db59c4a55844cb4c63af"&gt;0b65f33&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Apply spec-compliant SQL obfuscation to MySQL, Oracle, SQL Server and other datastores. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3914" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3914/hovercard"&gt;#3914&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/2ddbcd4a335402a9cbd69834daa8a69d5e328ec8"&gt;2ddbcd4&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Capture default request headers case-insensitively for AWS Lambda HTTP events (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3955" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3955/hovercard"&gt;#3955&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/8520fba111e28ddfd3b43792b27924a7aa519d5c"&gt;8520fba&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Capture request headers on Azure Function HTTP trigger transactions (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3948" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3948/hovercard"&gt;#3948&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/9f3230a01ce19b9763dff000917357da1c3b115e"&gt;9f3230a&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;End MassTransit consume transactions when the consumer throws (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3915" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3915/hovercard"&gt;#3915&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/2202417b326a7ddc99b03f1c8eb0ba6ab5e11a52"&gt;2202417&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fixes problems related to explain plan capture for MySQL and SQL Server. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3940" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3940/hovercard"&gt;#3940&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/93e755c7b5ca3a431598e85d591a4b65597297af"&gt;93e755c&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Instrument isolated Azure Functions workers whose command line contains the site name (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3947" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3947/hovercard"&gt;#3947&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/ba553b86ce9b6f7cc86d5a8b626614d2a4c6ce34"&gt;ba553b8&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Preserve Postgres double-quoted identifiers and apply spec-compliant SQL obfuscation for Postgres. (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3903" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3903/hovercard"&gt;#3903&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/7edfdc623721816c7e30e285a3820791c57a93e6"&gt;7edfdc6&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Reduce agent memory by lazily loading MVC and response compression assemblies (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3956" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3956/hovercard"&gt;#3956&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/af1528e3ae9c5ab4467c8eb2fd2cfccb4c57deed"&gt;af1528e&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Ship executable run.sh in the Linux tarball and remove the profile.d script on package removal (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3925" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3925/hovercard"&gt;#3925&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/02e7ab6c3be969206c3dabb999118250f395cca6"&gt;02e7ab6&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;config-schema: 1.7.0&lt;/p&gt;
-&lt;h2&gt;&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/compare/config-schema-1.6.0...config-schema-1.7.0"&gt;1.7.0&lt;/a&gt; (2026-11-18)&lt;/h2&gt;
-&lt;h3&gt;Features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable AI basic telemetry by default (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/issues/3913" data-hovercard-type="pull_request" data-hovercard-url="/newrelic/newrelic-dotnet-agent/pull/3913/hovercard"&gt;#3913&lt;/a&gt;) (&lt;a href="https://github.com/newrelic/newrelic-dotnet-agent/commit/0b65f338448a6a6213a1db59c4a55844cb4c63af"&gt;0b65f33&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>

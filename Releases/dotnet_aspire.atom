@@ -1,48 +1,6 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>dotnet/aspire - Releases</title>
   <link href="https://github.com/dotnet/aspire" />
-  <updated>2026-11-19T00:06:24Z</updated>
+  <updated>2026-11-20T00:06:23Z</updated>
   <id>https://github.com/dotnet/aspire</id>
-  <entry>
-    <title>dotnet/aspire - Releases - 2026-11-18</title>
-    <id>https://github.com/dotnet/aspire#2026-11-18</id>
-    <link href="https://github.com/dotnet/aspire" />
-    <updated>2026-11-19T00:06:24Z</updated>
-    <content type="html">
-                &lt;div&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/microsoft/aspire/releases/tag/v17.0.0"&gt;Aspire 17.0.0&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h1&gt;Aspire 17.0.0&lt;/h1&gt;
-&lt;p&gt;Aspire 17.0 brings a resource-first dashboard, Go AppHosts in preview, stable .NET project hosting and Kubernetes deployment packages, and new Microsoft Entra ID and Azure API Management integrations. Shell completion, shared team configuration, environment-specific secrets, richer editor tooling, and a preview tray companion make it easier to build, inspect, and deploy applications across languages.&lt;/p&gt;
-&lt;h2&gt;Highlights&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;📊 &lt;strong&gt;Resource-first dashboard&lt;/strong&gt; — A resource table home page and shared resource pane keep services in view as you navigate logs, traces, and metrics. Search, filters, multi-selection, grouping, and pinnable metric cards with live sparklines help focus investigations. Interactive terminals get a dedicated page, first-run guidance helps connect telemetry, and the dashboard and &lt;code&gt;aspire describe --format mermaid&lt;/code&gt; can export your resource graph.&lt;/li&gt;
-&lt;li&gt;🐹 &lt;strong&gt;Go AppHosts in preview&lt;/strong&gt; — Create Go AppHosts with &lt;code&gt;aspire new&lt;/code&gt; or &lt;code&gt;aspire init --language go&lt;/code&gt;, with no experimental feature flag required. Go templates, VS Code launch and debugging, &lt;code&gt;aspire doctor&lt;/code&gt; tooling checks, generated SDK documentation, and &lt;code&gt;aspire sdk export --language go&lt;/code&gt; round out the preview.&lt;/li&gt;
-&lt;li&gt;🛠️ &lt;strong&gt;Stable .NET project hosting and more stable APIs&lt;/strong&gt; — &lt;code&gt;Aspire.Hosting.Dotnet&lt;/code&gt; now ships as a stable package, with path-based &lt;code&gt;AddDotnetProject&lt;/code&gt;, SDK-style C#, F#, and Visual Basic support, and parallel builds within compatible project groups. Deno hosting, Next.js hosting and JavaScript publishing, core pipeline and deployment-state APIs, HTTP probes, and MCP endpoint declarations also graduate from experimental.&lt;/li&gt;
-&lt;li&gt;⌨️ &lt;strong&gt;Sharper CLI and agent workflows&lt;/strong&gt; — Shell completion supports Bash, Fish, PowerShell, and Zsh. Environment-specific secrets keep deployment values separate, and masked prompts or &lt;code&gt;--envvar&lt;/code&gt; avoid putting secret values on the command line. Agent setup selects clients and project or global scope, configuring plugins instead of copying bundled skill folders.&lt;/li&gt;
-&lt;li&gt;🧩 &lt;strong&gt;Reusable team customization&lt;/strong&gt; — Create apps from local or Git-backed templates, discover hosting packages through named integration sources, and configure team skill sources. Opt-in Git-backed initialization configuration supplies shared defaults, with explicit source acceptance and refresh through &lt;code&gt;aspire update --config-source&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;🖥️ &lt;strong&gt;Tray companion in preview&lt;/strong&gt; — &lt;code&gt;aspire tray start&lt;/code&gt; keeps local AppHosts within reach from the macOS menu bar, Windows notification area, or a supported Linux desktop tray. The companion requires a native CLI installation; Linux support also requires a graphical desktop session and GTK 3.&lt;/li&gt;
-&lt;li&gt;💻 &lt;strong&gt;More capable VS Code tooling&lt;/strong&gt; — Attach a debugger to already-running .NET and Go resources without restarting them, and launch and debug Go AppHosts. New language model tools help coding agents inspect debug status, discover AppHosts, explain launch failures, check Hot Reload applicability, and open the dashboard or Aspire output channel.&lt;/li&gt;
-&lt;li&gt;☁️ &lt;strong&gt;New Azure integrations&lt;/strong&gt; — Preview Microsoft Entra ID hosting models application registrations, service principals, credentials, permissions, and workload references. Preview Azure API Management hosting models deployment-time gateways, APIs, backends, policies, and OpenAPI imports. New &lt;code&gt;Aspire.Azure.AI.Extensions.OpenAI&lt;/code&gt; and &lt;code&gt;Aspire.Azure.AI.Projects&lt;/code&gt; client integrations support Azure OpenAI and Foundry using the updated SDKs.&lt;/li&gt;
-&lt;li&gt;☸️ &lt;strong&gt;Stable Kubernetes deployment packages&lt;/strong&gt; — Kubernetes and AKS hosting packages now ship stable versions, while persistent-volume APIs remain experimental. Target existing AKS clusters, choose node-pool OS SKUs, configure cert-manager External Account Binding, and preserve per-image registries in Helm charts. Experimental Azure Front Door Private Link origins support Container Apps and App Service environments.&lt;/li&gt;
-&lt;li&gt;🔌 &lt;strong&gt;More flexible AppHosts and integrations&lt;/strong&gt; — Optional parameters can remain unset without prompting or blocking supported publishing flows, while browser-origin references simplify CORS and authentication redirects. Experimental TypeScript and JavaScript Azure Functions hosting adds Node.js debugging in VS Code. Azure Web PubSub gains a local emulator, and the Service Bus emulator can reuse an existing SQL Server resource.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;g-emoji class="g-emoji" alias="warning"&gt;⚠️&lt;/g-emoji&gt; Breaking changes&lt;/h2&gt;
-&lt;p&gt;Aspire's minimum supported .NET version is now &lt;strong&gt;.NET 10&lt;/strong&gt;; this does not require every orchestrated workload to retarget. &lt;code&gt;AddProject&lt;/code&gt;, &lt;code&gt;AddCSharpApp&lt;/code&gt;, and &lt;code&gt;Aspire.AppHost.Sdk&lt;/code&gt; remain available but are deprecated in favor of path-based .NET project registration and standard &lt;code&gt;Microsoft.NET.Sdk&lt;/code&gt; AppHosts. C# AppHosts also require the Aspire CLI bundle.&lt;/p&gt;
-&lt;p&gt;Other notable changes include removal of the legacy RabbitMQ v6 and MongoDB v2 client integrations, replacement of the Azure AI OpenAI and Inference packages, service-provider-aware Cosmos DB client callbacks, renamed polyglot feature flags, and rejection of empty required parameter values. Kubernetes deployment requires &lt;strong&gt;Helm 4.0.0 or later&lt;/strong&gt;, and AKS defaults to the paid Standard control-plane tier with separate user-assigned identities; review existing-cluster updates and custom permissions. MongoDB's default container image advances to &lt;strong&gt;9.0&lt;/strong&gt;, so review persistent-data compatibility or pin the previous tag.&lt;/p&gt;
-&lt;p&gt;See the full list and migration guidance in the &lt;a href="https://aspire.dev/whats-new/aspire-17/#breaking-changes" rel="nofollow"&gt;Aspire 17.0 breaking changes&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;📖 Learn more&lt;/h2&gt;
-&lt;p&gt;For complete details, examples, migration guidance, and everything new in this release, read &lt;a href="https://aspire.dev/whats-new/aspire-17/" rel="nofollow"&gt;What's new in Aspire 17.0&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Thank you to all the community contributors who helped make Aspire 17.0 possible! 💜&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;em&gt;Full Changelog: &lt;a href="https://github.com/microsoft/aspire/compare/v13.6.5...v17.0.0"&gt;v13.6.5...v17.0.0&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Full commit: &lt;a href="https://github.com/microsoft/aspire/commit/2d325b13709752ba6d9a943635c5e2940a2530c0"&gt;2d325b13709752ba6d9a943635c5e2940a2530c0&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                &lt;/div&gt;
-            </content>
-  </entry>
 </feed>
