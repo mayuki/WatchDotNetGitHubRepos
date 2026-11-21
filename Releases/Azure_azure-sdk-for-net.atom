@@ -1,35 +1,157 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-11-20T00:06:17Z</updated>
+  <updated>2026-11-21T00:06:13Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-11-19</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-11-19</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-11-20</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-11-20</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-11-20T00:06:17Z</updated>
+    <updated>2026-11-21T00:06:13Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Microsoft.Azure.WebJobs.Extensions.SignalRService_2.4.0"&gt;Microsoft.Azure.WebJobs.Extensions.SignalRService_2.4.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.Batch_12.27.2"&gt;Azure.Storage.Blobs.Batch_12.27.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;2.4.0 (2026-11-20)&lt;/h2&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+                                &lt;h2&gt;12.27.2 (2026-11-19)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;SignalR trigger invocation failures now return a generic error message instead of exposing internal exception details to clients.&lt;/li&gt;
-&lt;li&gt;Fixed SignalR trigger dispatch failures exposing internal exception details or throwing when the exception message contains line breaks.&lt;/li&gt;
+&lt;li&gt;Upgraded &lt;code&gt;Azure.Storage.Blobs&lt;/code&gt; package dependency to 12.30.2&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Data.AppConfiguration_1.11.2"&gt;Azure.Data.AppConfiguration_1.11.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.Shares_12.28.1"&gt;Azure.Storage.Files.Shares_12.28.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.11.2 (2026-11-19)&lt;/h2&gt;
+                                &lt;h2&gt;12.28.1 (2026-11-19)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed SAS timestamp handling for non-UTC &lt;code&gt;DateTimeOffset&lt;/code&gt; values. SAS times are now normalized to UTC before formatting/signing, preventing unintended validity windows in st/se (Start Time, Expiry Time) and related delegation key fields. Affected APIs include:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ShareClient.GenerateSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ShareClient.GenerateUserDelegationSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ShareDirectoryClient.GenerateSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ShareFileClient.GenerateSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ShareFileClient.GenerateUserDelegationSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ShareServiceClient.GenerateAccountSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ShareSasBuilder&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fixed SAS builder/client share and path name validation to use ordinal comparisons in &lt;code&gt;ShareClient&lt;/code&gt;, &lt;code&gt;ShareDirectoryClient&lt;/code&gt;, and &lt;code&gt;ShareFileClient&lt;/code&gt;, so culture-equivalent but service-distinct Unicode names are rejected when generating SAS URIs.&lt;/li&gt;
+&lt;li&gt;Fixed an issue where conditional create/write flows using structured-message upload validation could classify &lt;code&gt;409 *AlreadyExists&lt;/code&gt; responses as non-errors, potentially resulting in &lt;code&gt;InvalidDataException&lt;/code&gt; instead of the expected &lt;code&gt;RequestFailedException&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs_12.30.2"&gt;Azure.Storage.Blobs_12.30.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.30.2 (2026-11-19)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed SAS builder/client resource-name validation to use ordinal comparisons in &lt;code&gt;BlobBaseClient&lt;/code&gt; and &lt;code&gt;BlobContainerClient&lt;/code&gt;, so culture-equivalent but service-distinct Unicode names are rejected when generating SAS URIs.&lt;/li&gt;
+&lt;li&gt;Fixed an issue where &lt;code&gt;BlobClient.Upload(..., overwrite: false)&lt;/code&gt; with upload checksum validation configured as &lt;code&gt;StorageChecksumAlgorithm.StorageCrc64&lt;/code&gt; could throw &lt;code&gt;InvalidDataException&lt;/code&gt; when the blob already existed. The operation now surfaces the expected &lt;code&gt;RequestFailedException&lt;/code&gt; for &lt;code&gt;409 *AlreadyExists&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Fixed client-side encryption v1 decryption of ranged downloads so the 16-byte IV is fully read even when the ciphertext stream returns short reads, and a truncated IV now fails instead of silently corrupting plaintext.&lt;/li&gt;
+&lt;li&gt;Fixed SAS timestamp handling for non-UTC &lt;code&gt;DateTimeOffset&lt;/code&gt; values. SAS times are now normalized to UTC before formatting/signing, preventing unintended validity windows in st/se (Start Time, Expiry Time) and related delegation key fields. Affected APIs include:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;BlobBaseClient.GenerateSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BlobBaseClient.GenerateUserDelegationSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BlobContainerClient.GenerateSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BlobContainerClient.GenerateUserDelegationSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BlobServiceClient.GenerateAccountSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BlobSasBuilder&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Queues_12.28.2"&gt;Azure.Storage.Queues_12.28.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.28.2 (2026-11-19)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed SAS timestamp handling for non-UTC &lt;code&gt;DateTimeOffset&lt;/code&gt; values. SAS times are now normalized to UTC before formatting/signing, preventing unintended validity windows in st/se (Start Time, Expiry Time) and related delegation key fields. Affected APIs include:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;QueueClient.GenerateSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;QueueClient.GenerateUserDelegationSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;QueueServiceClient.GenerateAccountSasUri(...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;QueueSasBuilder&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fixed SAS builder/client queue-name validation to use ordinal comparisons in &lt;code&gt;QueueClient&lt;/code&gt;, so culture-equivalent but service-distinct Unicode names are rejected when generating SAS URIs.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Common_12.29.1"&gt;Azure.Storage.Common_12.29.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.29.1 (2026-11-19)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed SAS timestamp handling for non-UTC &lt;code&gt;DateTimeOffset&lt;/code&gt; values (e.g. &lt;code&gt;AccountSasBuilder&lt;/code&gt;). Times are now converted to UTC before formatting/signing to prevent unintended validity windows in st/se and related delegation key time fields.&lt;/li&gt;
+&lt;li&gt;Fixed an issue where conditional &lt;code&gt;409 *AlreadyExists&lt;/code&gt; responses on structured-message requests were incorrectly classified as non-errors, which could cause &lt;code&gt;InvalidDataException&lt;/code&gt; to be thrown instead of the expected &lt;code&gt;RequestFailedException&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.Shares.ChangeFeed_12.0.0-beta.2"&gt;Azure.Storage.Files.Shares.ChangeFeed_12.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.0.0-beta.2 (2026-11-19)&lt;/h2&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Improved Microsoft Entra ID authentication audience inference for additional App Configuration endpoint formats.&lt;/li&gt;
+&lt;li&gt;Upgraded &lt;code&gt;Azure.Storage.Blobs&lt;/code&gt; package dependency to 12.31.0-beta.2&lt;/li&gt;
+&lt;li&gt;Upgraded &lt;code&gt;Azure.Storage.Files.Shares&lt;/code&gt; package dependency to 12.29.0-beta.2&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.DataLake_12.29.0-beta.2"&gt;Azure.Storage.Files.DataLake_12.29.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.29.0-beta.2 (2026-11-19)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed SAS builder/client file system and path name validation to use ordinal comparisons in &lt;code&gt;DataLakeFileSystemClient&lt;/code&gt;, &lt;code&gt;DataLakeDirectoryClient&lt;/code&gt;, and &lt;code&gt;DataLakePathClient&lt;/code&gt;, so culture-equivalent but service-distinct Unicode names are rejected when generating SAS URIs.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.Batch_12.28.0-beta.2"&gt;Azure.Storage.Blobs.Batch_12.28.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.28.0-beta.2 (2026-11-19)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded &lt;code&gt;Azure.Storage.Blobs&lt;/code&gt; package dependency to 12.31.0-beta.2&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.68"&gt;Azure.Storage.Blobs.ChangeFeed_12.0.0-preview.68&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.0.0-preview.68 (2026-11-19)&lt;/h2&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded &lt;code&gt;Azure.Storage.Blobs&lt;/code&gt; package dependency to 12.31.0-beta.2&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.Shares_12.29.0-beta.2"&gt;Azure.Storage.Files.Shares_12.29.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;12.29.0-beta.2 (2026-11-19)&lt;/h2&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed SAS builder/client share and path name validation to use ordinal comparisons in &lt;code&gt;ShareClient&lt;/code&gt;, &lt;code&gt;ShareDirectoryClient&lt;/code&gt;, and &lt;code&gt;ShareFileClient&lt;/code&gt;, so culture-equivalent but service-distinct Unicode names are rejected when generating SAS URIs.&lt;/li&gt;
+&lt;li&gt;Fixed an issue where conditional create/write flows using structured-message upload validation could classify &lt;code&gt;409 *AlreadyExists&lt;/code&gt; responses as non-errors, potentially resulting in &lt;code&gt;InvalidDataException&lt;/code&gt; instead of the expected &lt;code&gt;RequestFailedException&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;

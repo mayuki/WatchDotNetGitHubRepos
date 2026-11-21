@@ -1,224 +1,230 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-11-20T00:06:16Z</updated>
+  <updated>2026-11-21T00:06:12Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-11-19</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-11-19</id>
+    <title>aws/aws-sdk-net - Releases - 2026-11-20</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-11-20</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-11-20T00:06:16Z</updated>
+    <updated>2026-11-21T00:06:12Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.1.6.0"&gt;4.1.6.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.1.7.0"&gt;4.1.7.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.1.6.0 (2026-11-19 19:26 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.1.7.0 (2026-11-20 20:02 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AgentRegistry (4.1.1.0)
+&lt;li&gt;AgentDiscovery (4.1.0.0)
 &lt;ul&gt;
-&lt;li&gt;BatchGetDiscoverableRegistryRecord returns a short-lived download URL and SHA-256 checksum for approved skill packages. SearchDiscoverableRegistryRecords adds searchType (KEYWORD, SEMANTIC, HYBRID) and pagination. Adds bearer token authentication for registries that use JWT authorization.&lt;/li&gt;
+&lt;li&gt;Adds the SearchPublicRecords API, which searches public registry records for AI agents, tools, and skills that their publishers have made discoverable.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AgentRegistryControl (4.1.1.0)
+&lt;li&gt;AgentRegistry (4.1.2.0)
 &lt;ul&gt;
-&lt;li&gt;Adds skill packages and skill source sync for agent skill records. Upload a skill package (ZIP) or sync SKILL.md or the full package from Amazon S3 or GitHub. GetRegistryRecord returns a short-lived download URL and SHA-256 checksum. GitHub sources use OAuth 2.0 user authorization.&lt;/li&gt;
+&lt;li&gt;Adds support for the WEBBOT registry record type&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AppStream (4.1.3.0)
+&lt;li&gt;AgentRegistryControl (4.1.2.0)
 &lt;ul&gt;
-&lt;li&gt;Enable stack-level WebAuthn redirection to relay passkey and security-key authentication from a WorkSpaces Applications streaming session to the user's local device.&lt;/li&gt;
+&lt;li&gt;Adds APIs to create publishers, verify that a publisher owns a domain, and associate registry records with a publisher. Publishers can approve or reject each association.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BCMPricingCalculator (4.1.1.0)
+&lt;li&gt;APIPortal (4.1.0.0)
 &lt;ul&gt;
-&lt;li&gt;Adding new API, GetUsageLinesEstimatedCost which can be used to estimate the cost of usage lines.&lt;/li&gt;
+&lt;li&gt;Adds support for API Portal, a new Amazon API Gateway feature that discovers the APIs running behind API Gateway, Application Load Balancer, and CloudFront across an AWS Organization, evaluates their security posture, and publishes documentation portals for them.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCore (4.1.2.0)
+&lt;li&gt;Backup (4.1.2.0)
 &lt;ul&gt;
-&lt;li&gt;Adds the AWS Billing x402 payment type to ProcessPayment. Agents can purchase x402-enabled AWS Marketplace products and have the charges billed to the AWS account, without a wallet. Requests use the service-managed payment instrument ID aws.agentcorepayments.awsbilling.v1.&lt;/li&gt;
+&lt;li&gt;This release adds ResourceTypeOptInIncremental to the UpdateRegionSettings request and the DescribeRegionSettings response, so customers can opt in to or out of incremental backups. It currently applies only to Amazon DynamoDB table backups.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.1.3.0)
+&lt;li&gt;Bedrock (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;Adds AWS Billing payments to ProcessPayment. Agents can pay x402 sellers that accept AWS Marketplace billing, and the charge goes on the buyer's AWS bill. Adds support for nested virtualization in Runtime Instances. When you turn on nested virtualization, Runtime launches instances with KVM enabled.&lt;/li&gt;
+&lt;li&gt;Amazon Bedrock adds APIs to manage projects, discover and apply to Trusted Access Programs, manage enrollments, and configure data retention storage for accounts, organizations, and projects. Model and inference profile discovery now supports project context.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CertificateManager (4.1.1.0)
+&lt;li&gt;BedrockAgentCoreControl (4.1.4.0)
 &lt;ul&gt;
-&lt;li&gt;AWS Certificate Manager now supports the ability to issue certificates from the Amazon N2 certificate authorities (CAs), an Amazon-operated CA hierarchy.&lt;/li&gt;
+&lt;li&gt;Adds responseInterceptionMode and responseStreamingConfiguration to gateway interceptor configurations. Set responseInterceptionMode to STREAM to have the response interceptor process streaming responses from HTTP and inference targets in batches of events.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudFormation (4.1.3.0)
+&lt;li&gt;BedrockRuntime (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;Adds parameters to support custom execution roles for service-managed stack sets to CreateStackSet, UpdateStackSet, and DescribeStackSet, enabling the use of Macros, Transforms, and Nested Stacks.&lt;/li&gt;
+&lt;li&gt;Amazon Bedrock Runtime adds an optional projectIdentifier parameter to InvokeModel, InvokeModelWithResponseStream, Converse, and ConverseStream, allowing requests to specify a project by ID or ARN.&lt;/li&gt;
+&lt;li&gt;The NuGet package README now includes an example of the bidirectional streaming operation and a pointer to the AWS.Bedrock.MEAI package.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CloudFront (4.1.1.0)
+&lt;li&gt;CloudFront (4.1.2.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon CloudFront adds configuration for SNI-less clients on Anycast static IPs, introduces Anycast IP based domain routing for Distribution Tenants, provides automatic domain ownership validation when creating or updating Distribution Tenants, and enables HTTP traffic via DNS validation.&lt;/li&gt;
+&lt;li&gt;Amazon CloudFront now supports HTTP2 connections to custom and VPC origins, so you can multiplex many requests over fewer origin connections, including WebSocket connections to HTTP2 origins that support extended CONNECT.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CodeConnections (4.1.1.0)
+&lt;li&gt;ComputeOptimizerAutomation (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;AWS CodeConnections now supports GitHub Enterprise Cloud with data residency (GHEC-DR) via the new GitHubEnterpriseCloudDataResidency provider type and ProviderEndpoint parameter in CreateConnection. This release also tightens connection ARN validation to enforce the expected ARN format.&lt;/li&gt;
+&lt;li&gt;Adds organization enrollment configurations, which enable Automation and set the organization rule mode for the organization root, organizational units (OUs), and accounts. Organization rules can include and exclude OUs, and recommended actions and automation events can be filtered by OU.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CognitoIdentityProvider (4.1.4.0)
+&lt;li&gt;DataZone (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for storing user pool app client secrets in AWS Secrets Manager and adds support OAuth Client ID Metadata Document (CIMD) which lets a client use an HTTPS URL as its client ID instead of registering in advance.&lt;/li&gt;
+&lt;li&gt;Amazon DataZone now supports detaching a project from its project profile via UpdateProject, specifying the environment blueprint ID in environment configuration user parameters, and transferring asset ownership from a source project to a target project via UpdateAssetOwner.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Connect (4.1.4.0)
+&lt;li&gt;DeviceFarm (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon Connect adds voicemail support, with new reference types, file use case types, contact details, and a voicemail task contact subtype for managing voicemail recordings and transcripts.&lt;/li&gt;
+&lt;li&gt;Add support for the use of virtual devices on Device Farm.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ConnectCases (4.1.2.0)
+&lt;li&gt;DSQL (4.1.1.2)
 &lt;ul&gt;
-&lt;li&gt;This release adds support for SLAs that track any single-select field, including custom fields, and for updating the target duration of an SLA with the UpdateRelatedItem API.&lt;/li&gt;
+&lt;li&gt;The NuGet package README now includes an example of generating an authentication token.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;CostExplorer (4.1.1.0)
+&lt;li&gt;EC2 (4.1.5.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds five standardized cost metrics to the Cost Explorer API BilledCost, ListCost, ContractedCost, PublicEquivalentBilledCost and PublicOnDemandCost. Use these metrics with GetCostAndUsage and GetCostAndUsageWithResources. The metrics return values for usage from November 2026 onwards.&lt;/li&gt;
+&lt;li&gt;This release adds documentation for the T9g instance family to the EC2 ModifyDefaultCreditSpecification and GetDefaultCreditSpecification APIs, adds the disable-complete state for IPAM routing policy registrations, and adds Network Firewall automated Internet firewall API changes.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DevOpsAgent (4.1.3.0)
+&lt;li&gt;ElementalInference (4.1.2.0)
 &lt;ul&gt;
-&lt;li&gt;AWS DevOps Agent adds AWS Organizations support so that agent spaces can monitor member accounts across an organizational unit.&lt;/li&gt;
+&lt;li&gt;Adds Arabic (ara) as a supported language for subtitling transcription and custom vocabulary dictionaries.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;DynamoDBv2 (4.1.0.3)
+&lt;li&gt;FSx (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;The NuGet package README now includes an overview of the object persistence model and the document model.&lt;/li&gt;
+&lt;li&gt;Adds support for FSx for NetApp ONTAP 3rd Generation file systems and API operations for new FSx for NetApp ONTAP resources&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ElasticLoadBalancingV2 (4.1.1.0)
+&lt;li&gt;Glue (4.1.2.0)
 &lt;ul&gt;
-&lt;li&gt;Network Load Balancer now supports mutual TLS (mTLS), letting you authenticate client certificates before granting access. You can configure a trust store of certificate authorities on your Network Load Balancer, which will then verify the client certificate on each inbound connection.&lt;/li&gt;
+&lt;li&gt;Minor updates to the Glue Business Context APIs&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;EventBridgeV2 (4.1.1.0)
+&lt;li&gt;Inspector2 (4.1.3.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds Webhook event sources, which receive events from third-party providers over HTTPS and authenticate them with a static token, HTTP Basic authentication, or an HMAC signature, and Amazon MSK subscribers, which deliver events to a topic in an Amazon MSK and MSK Serverless cluster.&lt;/li&gt;
+&lt;li&gt;This release adds runtimeReachability, runtimeReachabilityReason, and purl fields to vulnerable packages in the finding model. It also adds runtimeReachability, runtimeReachabilityReason and purlQualifier package filters for listing findings, suppression rules, and findings reports.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IAMRolesAnywhere (4.1.2.0)
+&lt;li&gt;LambdaMicrovms (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;Adds the tipConfiguration field to profiles to turn on trusted identity propagation, which adds the identity from an X.509 certificate to sessions as origin identity condition keys.&lt;/li&gt;
+&lt;li&gt;AWS Lambda MicroVMs now supports customer managed keys (CMK) in AWS Key Management Service (AWS KMS), enabling you to encrypt Lambda MicroVM data at rest using keys you control.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;IdentityManagement (4.1.3.0)
+&lt;li&gt;MarketplaceDiscovery (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;This release adds API support for configuring trusted identity propagation for IAM SAML and OpenIDConnect providers.&lt;/li&gt;
+&lt;li&gt;AWS Marketplace Discovery adds ListListingAttributes, an API for trust center, case study, and specialization details. SearchListings adds summaries, seller engagements and filters. GetListing and GetProduct return purchase indicators when products cannot be subscribed to or require no subscription.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Inspector2 (4.1.2.0)
+&lt;li&gt;MediaConvert (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon Inspector Code Security now supports GitHub Enterprise Server integrations. For GitHub Enterprise Server and GitLab Self-Managed, you can connect over a private network by adding a VPC configuration when you create an integration.&lt;/li&gt;
+&lt;li&gt;This release adds support for the DTS-X and DTS audio codecs, AV1 encoding improvements including Fast decode, GOP size in seconds, and temporal adaptive quantization, and Dynamic Multiview for H.264 and H.265 outputs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Kafka (4.1.1.0)
+&lt;li&gt;MediaLive (4.1.3.0)
 &lt;ul&gt;
-&lt;li&gt;Amazon MSK now supports in-place migration of provisioned clusters from Standard to Express brokers. This release adds APIs to assess a cluster before migration and to reassign topics, and returns broker type upgrade details in cluster operations.&lt;/li&gt;
+&lt;li&gt;AWS Elemental MediaLive now supports converting captions from non-embedded sources, such as Teletext and Smart Subtitles, into CEA-608 and CEA-708 embedded captions, and supports WebVTT subtitle renditions from HLS inputs as a caption source.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;LakeFormation (4.1.1.0)
+&lt;li&gt;NetworkFirewall (4.1.3.0)
 &lt;ul&gt;
-&lt;li&gt;Adds Status and StatusReason to RLSPolicy in GetRLSPolicy and ListRLSPolicies, indicating whether a row-level security policy is valid or references a deleted lookup table or user-defined function&lt;/li&gt;
+&lt;li&gt;Adds read-only support for internet gateway firewalls, which are created and managed by AWS Network Security Manager. Adds FirewallType to firewall operations and IgwFirewallConfiguration to Firewall.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Lambda (4.1.4.0)
+&lt;li&gt;NetworkSecurityManager (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;Increase function timeout limit to 30 minutes for Lambda Event Functions.&lt;/li&gt;
+&lt;li&gt;Adds support for Network Firewall automated internet firewall to Network Security Manager&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MarketplaceCatalog (4.1.1.0)
+&lt;li&gt;ObservabilityAdmin (4.1.2.0)
 &lt;ul&gt;
-&lt;li&gt;AI Listing Experience that provides listing quality, content and feature recommendations through ListAssessments and DescribeAssessment APIs. Adds a new API StartAssessment to trigger Seller testing for Metering and Entitlement integration for products.&lt;/li&gt;
+&lt;li&gt;Enablement for Network Firewall and Omni Events via Observability Admin Telemetry Rule for account and organization level&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MarketplaceDeployment (4.1.1.0)
+&lt;li&gt;Odb (4.1.2.0)
 &lt;ul&gt;
-&lt;li&gt;Add support for deployment configurations for Data as a Service products in AWS Marketplace&lt;/li&gt;
+&lt;li&gt;Adds the ListAutonomousDatabaseRefreshableClones and StartAutonomousDatabaseRefresh APIs for listing and refreshing refreshable clones of Autonomous Database Serverless.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;MediaLive (4.1.2.0)
+&lt;li&gt;Omics (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;This feature adds a new codec "JPEGXS" to the Input Specification Codec field. It adds a new "MAX 500 MBPS" maximum bitrate to the maximum bitrate Input Specification field. These input spec changes are used to enable TR-07 inputs and are also tied to metering of JPEGXS inputs.&lt;/li&gt;
+&lt;li&gt;Adds the parametersUri field to StartRun, which lets you provide run parameters in a JSON file in Amazon S3 instead of inline. GetRun returns parametersUri for runs started this way.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PartnerCentralMarketing (4.1.0.0)
+&lt;li&gt;PartnerCentralChannel (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;Initial release of AWS Partner Central Marketing, which AWS Partners use to create co-branded marketing campaigns from AWS-authored templates, tailor and activate their emails, landing pages, documents and social posts, and export campaign assets.&lt;/li&gt;
+&lt;li&gt;Adds MSP program relationships support in AWS Partner Central. Partners can now create, update, list, and delete MSP relationships using the new MSP program type on the CreateProgramManagementAccount, CreateRelationship, UpdateRelationship, and ListRelationships operations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PartnerCentralRevenueMeasurement (4.1.1.0)
+&lt;li&gt;Payments (4.1.0.0)
 &lt;ul&gt;
-&lt;li&gt;Marketplace revenue shares are now identified by a marketplace revenue share ID. Adds the UpdateMarketplaceRevenueShare API, optional grouping of AWS Marketplace products that run on the same backend AWS infrastructure, and context attributes for revenue attributions.&lt;/li&gt;
+&lt;li&gt;Initial release of AWS Payments API, which lets you view your account balance, invoices, credit memos, and payment instruments.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PartnerCentralSelling (4.1.1.0)
+&lt;li&gt;PCS (4.1.2.0)
 &lt;ul&gt;
-&lt;li&gt;Adds the Leads APIs (SearchEngagements, ListEngagementGroups), customer account APIs with statistics and bulk jobs, SearchOpportunities, opportunity bulk jobs, account planning invitations, co-sell motion reason on AWS opportunity summaries, and channel recommendations on lead insights.&lt;/li&gt;
+&lt;li&gt;Added support for Instance Health Checks in AWS PCS.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;PCS (4.1.1.0)
+&lt;li&gt;RDS (4.1.1.1)
 &lt;ul&gt;
-&lt;li&gt;Added support for Job Submit Plugins in AWS PCS.&lt;/li&gt;
+&lt;li&gt;The NuGet package README now includes an example of generating an IAM database authentication token.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Polly (4.1.1.0)
+&lt;li&gt;Route53 (4.1.3.0)
 &lt;ul&gt;
-&lt;li&gt;Adds voice cloning to Amazon Polly. The new CreateVoice, GetVoice and DeleteVoice operations create and manage a custom voice from a speaker's recording, usable with the generative engine in all synthesis operations.&lt;/li&gt;
+&lt;li&gt;Amazon Route 53 support for advanced hosted zones. Including change guardrails, public dns fallback, change history. Also support for AZAffinityRouting.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;RDS (4.1.1.0)
+&lt;li&gt;SageMaker (4.1.4.0)
 &lt;ul&gt;
-&lt;li&gt;Adds the PrimaryEndpoint structure to DBInstance. It returns the connection endpoint for the current primary instance, so no need to reconnect to a different DNS name after the switchover. Create Aurora clusters with express configuration in a VPC, and move clusters into, out of, or between VPCs.&lt;/li&gt;
+&lt;li&gt;Adds HyperPod Global Inference Gateway APIs to route inference across HyperPod clusters in multiple Regions. Adds the MoveClusterNodes API, which moves running nodes between instance groups, within a cluster or between clusters in the same region, account and subnet, without releasing the instances.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Route53 (4.1.2.0)
+&lt;li&gt;SageMakerGatewayRuntime (4.1.0.0)
 &lt;ul&gt;
-&lt;li&gt;Route 53 Private Endpoint Health Checks support&lt;/li&gt;
+&lt;li&gt;Adds the InvokeGlobalInferenceGateway and InvokeGlobalInferenceGatewayWithResponseStream APIs for sending inference requests to a SageMaker HyperPod Global Inference Gateway.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Route53Resolver (4.1.1.0)
+&lt;li&gt;SecurityToken (4.1.1.1)
 &lt;ul&gt;
-&lt;li&gt;Route 53 Resolver DNS Firewall adds the AutoAllowlist firewall rule type, which observes the domains your VPCs resolve and allows the ones you approve, and the ListFirewallRuleDomains API.&lt;/li&gt;
+&lt;li&gt;The NuGet package README now shows how to use temporary credentials and lists the credential sources that need this package.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;RTBFabric (4.1.1.0)
+&lt;li&gt;SimpleSystemsManagement (4.1.2.0)
 &lt;ul&gt;
-&lt;li&gt;AWS RTB Fabric now lets you discover modules and attach them to your links. Find modules and their versions with ListAvailableModules, GetAvailableModule, ListAvailableModuleVersions and GetAvailableModuleVersion, attach them with PutLinkFlows and track each change with GetUpdate and ListUpdates.&lt;/li&gt;
+&lt;li&gt;This release adds a CloudProviders field to SSM documents. Specify the cloud providers (AWS, Azure, GCP) a document can run on in CreateDocument and UpdateDocument, view it in DescribeDocument, ListDocuments and ListDocumentVersions, and filter ListDocuments by cloud provider.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;S3Tables (4.1.1.0)
+&lt;li&gt;SSO (4.1.0.3)
 &lt;ul&gt;
-&lt;li&gt;Adds support for disassociating replica tables in S3 Tables replication with the new DisassociateTableReplication API, which promotes a read-only replica table to a standalone table.&lt;/li&gt;
+&lt;li&gt;The NuGet package README now explains when the SDK needs this package.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SecurityAgent (4.1.3.0)
+&lt;li&gt;SSOOIDC (4.1.0.3)
 &lt;ul&gt;
-&lt;li&gt;This release exposes additional per-job metadata within code remediation tasks.&lt;/li&gt;
+&lt;li&gt;The NuGet package README now explains when the SDK needs this package.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;SecurityToken (4.1.1.0)
+&lt;li&gt;TaxSettings (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;AWS STS adds GetScopedCredentials and expands Trusted Identity Propagation (TIP) to IAM federation and IAM Roles Anywhere. GetScopedCredentials reduces an existing session's permissions and duration. TIP carries verified user or workload identity for authorization and CloudTrail auditing.&lt;/li&gt;
+&lt;li&gt;Adds support for Norway, New Zealand and United Arab Emirates additional tax information, and the Vietnam VAT credit method and 20-digit payment voucher number.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Extensions.NETCore.Setup (4.1.0.3)
+&lt;li&gt;Textract (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;Added a README to the NuGet package.&lt;/li&gt;
+&lt;li&gt;Amazon Textract Insights uses generative AI to split, classify, and extract data from documents with one asynchronous API. Get text, layout, and tables as Markdown, HTML, or CSV, plus summaries and figure captions, and extract the fields you define in a blueprint with confidence scores and locations&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Core 4.1.1.2
+&lt;li&gt;TranscribeService (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;Added a README to the NuGet package.&lt;/li&gt;
+&lt;li&gt;This release adds the TranscribeAudio API for synchronous transcription. Send a media file inline or from Amazon S3 and receive the transcript in the same response, with support for speaker, channel identification, language identification, custom vocabularies, vocabulary filters, and PII redaction.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;WAFV2 (4.1.2.0)
+&lt;ul&gt;
+&lt;li&gt;This release adds AI Security AMR configuration and five read-only APIs for AWS WAF API Security events. Use ListEvents and ListEventsByWebACL to list events, GetEvent to get event details including the timeline, and ListEventActors and GetEventActor to view the clients attributed to events&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
