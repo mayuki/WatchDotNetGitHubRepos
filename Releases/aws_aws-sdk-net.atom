@@ -1,230 +1,29 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>aws/aws-sdk-net - Releases</title>
   <link href="https://github.com/aws/aws-sdk-net" />
-  <updated>2026-11-21T00:06:12Z</updated>
+  <updated>2026-11-22T00:06:45Z</updated>
   <id>https://github.com/aws/aws-sdk-net</id>
   <entry>
-    <title>aws/aws-sdk-net - Releases - 2026-11-20</title>
-    <id>https://github.com/aws/aws-sdk-net#2026-11-20</id>
+    <title>aws/aws-sdk-net - Releases - 2026-11-21</title>
+    <id>https://github.com/aws/aws-sdk-net#2026-11-21</id>
     <link href="https://github.com/aws/aws-sdk-net" />
-    <updated>2026-11-21T00:06:12Z</updated>
+    <updated>2026-11-22T00:06:45Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.1.7.0"&gt;4.1.7.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/aws/aws-sdk-net/releases/tag/4.1.8.0"&gt;4.1.8.0&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h3&gt;4.1.7.0 (2026-11-20 20:02 UTC)&lt;/h3&gt;
+                                &lt;h3&gt;4.1.8.0 (2026-11-21 00:26 UTC)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;AgentDiscovery (4.1.0.0)
+&lt;li&gt;QuickSight (4.1.1.0)
 &lt;ul&gt;
-&lt;li&gt;Adds the SearchPublicRecords API, which searches public registry records for AI agents, tools, and skills that their publishers have made discoverable.&lt;/li&gt;
+&lt;li&gt;Quicksight public SDK release for November 20&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;AgentRegistry (4.1.2.0)
+&lt;li&gt;SageMaker (4.1.5.0)
 &lt;ul&gt;
-&lt;li&gt;Adds support for the WEBBOT registry record type&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;AgentRegistryControl (4.1.2.0)
-&lt;ul&gt;
-&lt;li&gt;Adds APIs to create publishers, verify that a publisher owns a domain, and associate registry records with a publisher. Publishers can approve or reject each association.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;APIPortal (4.1.0.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for API Portal, a new Amazon API Gateway feature that discovers the APIs running behind API Gateway, Application Load Balancer, and CloudFront across an AWS Organization, evaluates their security posture, and publishes documentation portals for them.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Backup (4.1.2.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds ResourceTypeOptInIncremental to the UpdateRegionSettings request and the DescribeRegionSettings response, so customers can opt in to or out of incremental backups. It currently applies only to Amazon DynamoDB table backups.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Bedrock (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon Bedrock adds APIs to manage projects, discover and apply to Trusted Access Programs, manage enrollments, and configure data retention storage for accounts, organizations, and projects. Model and inference profile discovery now supports project context.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BedrockAgentCoreControl (4.1.4.0)
-&lt;ul&gt;
-&lt;li&gt;Adds responseInterceptionMode and responseStreamingConfiguration to gateway interceptor configurations. Set responseInterceptionMode to STREAM to have the response interceptor process streaming responses from HTTP and inference targets in batches of events.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BedrockRuntime (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon Bedrock Runtime adds an optional projectIdentifier parameter to InvokeModel, InvokeModelWithResponseStream, Converse, and ConverseStream, allowing requests to specify a project by ID or ARN.&lt;/li&gt;
-&lt;li&gt;The NuGet package README now includes an example of the bidirectional streaming operation and a pointer to the AWS.Bedrock.MEAI package.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;CloudFront (4.1.2.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon CloudFront now supports HTTP2 connections to custom and VPC origins, so you can multiplex many requests over fewer origin connections, including WebSocket connections to HTTP2 origins that support extended CONNECT.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ComputeOptimizerAutomation (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;Adds organization enrollment configurations, which enable Automation and set the organization rule mode for the organization root, organizational units (OUs), and accounts. Organization rules can include and exclude OUs, and recommended actions and automation events can be filtered by OU.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DataZone (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon DataZone now supports detaching a project from its project profile via UpdateProject, specifying the environment blueprint ID in environment configuration user parameters, and transferring asset ownership from a source project to a target project via UpdateAssetOwner.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DeviceFarm (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;Add support for the use of virtual devices on Device Farm.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DSQL (4.1.1.2)
-&lt;ul&gt;
-&lt;li&gt;The NuGet package README now includes an example of generating an authentication token.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;EC2 (4.1.5.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds documentation for the T9g instance family to the EC2 ModifyDefaultCreditSpecification and GetDefaultCreditSpecification APIs, adds the disable-complete state for IPAM routing policy registrations, and adds Network Firewall automated Internet firewall API changes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ElementalInference (4.1.2.0)
-&lt;ul&gt;
-&lt;li&gt;Adds Arabic (ara) as a supported language for subtitling transcription and custom vocabulary dictionaries.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;FSx (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for FSx for NetApp ONTAP 3rd Generation file systems and API operations for new FSx for NetApp ONTAP resources&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Glue (4.1.2.0)
-&lt;ul&gt;
-&lt;li&gt;Minor updates to the Glue Business Context APIs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Inspector2 (4.1.3.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds runtimeReachability, runtimeReachabilityReason, and purl fields to vulnerable packages in the finding model. It also adds runtimeReachability, runtimeReachabilityReason and purlQualifier package filters for listing findings, suppression rules, and findings reports.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;LambdaMicrovms (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;AWS Lambda MicroVMs now supports customer managed keys (CMK) in AWS Key Management Service (AWS KMS), enabling you to encrypt Lambda MicroVM data at rest using keys you control.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MarketplaceDiscovery (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;AWS Marketplace Discovery adds ListListingAttributes, an API for trust center, case study, and specialization details. SearchListings adds summaries, seller engagements and filters. GetListing and GetProduct return purchase indicators when products cannot be subscribed to or require no subscription.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MediaConvert (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds support for the DTS-X and DTS audio codecs, AV1 encoding improvements including Fast decode, GOP size in seconds, and temporal adaptive quantization, and Dynamic Multiview for H.264 and H.265 outputs.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MediaLive (4.1.3.0)
-&lt;ul&gt;
-&lt;li&gt;AWS Elemental MediaLive now supports converting captions from non-embedded sources, such as Teletext and Smart Subtitles, into CEA-608 and CEA-708 embedded captions, and supports WebVTT subtitle renditions from HLS inputs as a caption source.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;NetworkFirewall (4.1.3.0)
-&lt;ul&gt;
-&lt;li&gt;Adds read-only support for internet gateway firewalls, which are created and managed by AWS Network Security Manager. Adds FirewallType to firewall operations and IgwFirewallConfiguration to Firewall.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;NetworkSecurityManager (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for Network Firewall automated internet firewall to Network Security Manager&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ObservabilityAdmin (4.1.2.0)
-&lt;ul&gt;
-&lt;li&gt;Enablement for Network Firewall and Omni Events via Observability Admin Telemetry Rule for account and organization level&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Odb (4.1.2.0)
-&lt;ul&gt;
-&lt;li&gt;Adds the ListAutonomousDatabaseRefreshableClones and StartAutonomousDatabaseRefresh APIs for listing and refreshing refreshable clones of Autonomous Database Serverless.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Omics (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;Adds the parametersUri field to StartRun, which lets you provide run parameters in a JSON file in Amazon S3 instead of inline. GetRun returns parametersUri for runs started this way.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;PartnerCentralChannel (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;Adds MSP program relationships support in AWS Partner Central. Partners can now create, update, list, and delete MSP relationships using the new MSP program type on the CreateProgramManagementAccount, CreateRelationship, UpdateRelationship, and ListRelationships operations.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Payments (4.1.0.0)
-&lt;ul&gt;
-&lt;li&gt;Initial release of AWS Payments API, which lets you view your account balance, invoices, credit memos, and payment instruments.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;PCS (4.1.2.0)
-&lt;ul&gt;
-&lt;li&gt;Added support for Instance Health Checks in AWS PCS.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;RDS (4.1.1.1)
-&lt;ul&gt;
-&lt;li&gt;The NuGet package README now includes an example of generating an IAM database authentication token.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Route53 (4.1.3.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon Route 53 support for advanced hosted zones. Including change guardrails, public dns fallback, change history. Also support for AZAffinityRouting.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMaker (4.1.4.0)
-&lt;ul&gt;
-&lt;li&gt;Adds HyperPod Global Inference Gateway APIs to route inference across HyperPod clusters in multiple Regions. Adds the MoveClusterNodes API, which moves running nodes between instance groups, within a cluster or between clusters in the same region, account and subnet, without releasing the instances.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SageMakerGatewayRuntime (4.1.0.0)
-&lt;ul&gt;
-&lt;li&gt;Adds the InvokeGlobalInferenceGateway and InvokeGlobalInferenceGatewayWithResponseStream APIs for sending inference requests to a SageMaker HyperPod Global Inference Gateway.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SecurityToken (4.1.1.1)
-&lt;ul&gt;
-&lt;li&gt;The NuGet package README now shows how to use temporary credentials and lists the credential sources that need this package.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SimpleSystemsManagement (4.1.2.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds a CloudProviders field to SSM documents. Specify the cloud providers (AWS, Azure, GCP) a document can run on in CreateDocument and UpdateDocument, view it in DescribeDocument, ListDocuments and ListDocumentVersions, and filter ListDocuments by cloud provider.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SSO (4.1.0.3)
-&lt;ul&gt;
-&lt;li&gt;The NuGet package README now explains when the SDK needs this package.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SSOOIDC (4.1.0.3)
-&lt;ul&gt;
-&lt;li&gt;The NuGet package README now explains when the SDK needs this package.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;TaxSettings (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;Adds support for Norway, New Zealand and United Arab Emirates additional tax information, and the Vietnam VAT credit method and 20-digit payment voucher number.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Textract (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;Amazon Textract Insights uses generative AI to split, classify, and extract data from documents with one asynchronous API. Get text, layout, and tables as Markdown, HTML, or CSV, plus summaries and figure captions, and extract the fields you define in a blueprint with confidence scores and locations&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;TranscribeService (4.1.1.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds the TranscribeAudio API for synchronous transcription. Send a media file inline or from Amazon S3 and receive the transcript in the same response, with support for speaker, channel identification, language identification, custom vocabularies, vocabulary filters, and PII redaction.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;WAFV2 (4.1.2.0)
-&lt;ul&gt;
-&lt;li&gt;This release adds AI Security AMR configuration and five read-only APIs for AWS WAF API Security events. Use ListEvents and ListEventsByWebACL to list events, GetEvent to get event details including the timeline, and ListEventActors and GetEventActor to view the clients attributed to events&lt;/li&gt;
+&lt;li&gt;Amazon SageMaker AI adds APIs to view capacity reservations and their usage.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
