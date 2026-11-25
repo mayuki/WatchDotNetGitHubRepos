@@ -1,63 +1,57 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-11-24T00:06:24Z</updated>
+  <updated>2026-11-25T00:06:23Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-11-23</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-11-23</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-11-24</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-11-24</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-11-24T00:06:24Z</updated>
+    <updated>2026-11-25T00:06:23Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CognitiveServices_1.7.0"&gt;Azure.ResourceManager.CognitiveServices_1.7.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetApp_1.20.0-beta.2"&gt;Azure.ResourceManager.NetApp_1.20.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.7.0 (2026-11-13)&lt;/h2&gt;
+                                &lt;h2&gt;1.20.0-beta.2 (2026-11-24)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded API version to 2026-11-01.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;CognitiveServicesAccountProperties.TrustedCertificateSources&lt;/code&gt; to trust private CA certificate bundles stored in Azure Key Vault.&lt;/li&gt;
-&lt;li&gt;Added RAI policy egress configuration through &lt;code&gt;RaiPolicyProperties.EgressPolicy&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;GetCognitiveServicesManagedComputeCapacities&lt;/code&gt; to list managed compute capacity for a subscription, with &lt;code&gt;deploymentId&lt;/code&gt; typed as &lt;code&gt;Azure.Core.ResourceIdentifier&lt;/code&gt; and &lt;code&gt;location&lt;/code&gt; typed as &lt;code&gt;Azure.Core.AzureLocation?&lt;/code&gt; for both synchronous and asynchronous calls.&lt;/li&gt;
-&lt;li&gt;Added the extensible &lt;code&gt;CognitiveServicesManagedComputeCapacityOfferScope&lt;/code&gt; type for &lt;code&gt;CognitiveServicesManagedComputeCapacityProperties.OfferScope&lt;/code&gt;, with known values &lt;code&gt;Global&lt;/code&gt; and &lt;code&gt;DataZone&lt;/code&gt; and support for unknown values.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;CognitiveServicesAccountDeploymentProperties.ContextCacheContainerId&lt;/code&gt; typed as &lt;code&gt;Azure.Core.ResourceIdentifier&lt;/code&gt;, &lt;code&gt;CognitiveServicesAccountProperties.IsA365LoggingEnabled&lt;/code&gt;, and &lt;code&gt;ServiceAccountUsage.Id&lt;/code&gt; and &lt;code&gt;Type&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Upgraded the default service API version to &lt;code&gt;2026-09-01&lt;/code&gt;. Subvolume operations continue to use &lt;code&gt;2026-08-01&lt;/code&gt; by default.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Compared to &lt;code&gt;1.6.0&lt;/code&gt;, the &lt;code&gt;ArmCognitiveServicesModelFactory.CognitiveServicesAccountProperties&lt;/code&gt; compatibility overload accepting &lt;code&gt;aiFoundryNetworkInjection&lt;/code&gt; now requires all arguments to avoid ambiguity with other overloads.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;2026-09-01&lt;/code&gt; service API no longer exposes the geographic namespace origin, asynchronous directory deletion, or bucket Key Vault user-assigned identity settings from &lt;code&gt;2026-08-15-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The wire value of &lt;code&gt;NetAppLdapServerType.OpenLdap&lt;/code&gt; is now &lt;code&gt;OpenLdap&lt;/code&gt; rather than &lt;code&gt;OpenLDAP&lt;/code&gt;, matching the service specification.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Preserved optional parameters on 13 &lt;code&gt;ArmCognitiveServicesModelFactory&lt;/code&gt; compatibility overloads so parameterless and partial named-argument calls supported in &lt;code&gt;1.6.0&lt;/code&gt; continue to work.&lt;/li&gt;
+&lt;li&gt;Marked the legacy subvolume types, operations, volume properties, and model factory overloads as obsolete. They remain callable for existing applications.&lt;/li&gt;
+&lt;li&gt;Marked the legacy Entra ID configuration models, account properties, and model factory overloads as obsolete. They remain callable with a service API version that supports Entra ID configuration.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.MongoCluster_1.2.0"&gt;Azure.ResourceManager.MongoCluster_1.2.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.EventHubs_1.4.0-beta.2"&gt;Azure.ResourceManager.EventHubs_1.4.0-beta.2&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.2.0 (2026-11-20)&lt;/h2&gt;
+                                &lt;h2&gt;1.4.0-beta.2 (2026-11-25)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded API version to &lt;code&gt;2026-09-01&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added member &lt;code&gt;Planned&lt;/code&gt; to enum &lt;code&gt;MongoClusterPromoteOption&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;With API version &lt;code&gt;2026-09-01&lt;/code&gt;, creating a cluster without &lt;code&gt;MongoClusterStorageProperties.Type&lt;/code&gt; provisions &lt;code&gt;PremiumSSDv2&lt;/code&gt; storage (API version &lt;code&gt;2026-06-01&lt;/code&gt; used &lt;code&gt;PremiumSSD&lt;/code&gt;). Set &lt;code&gt;Type&lt;/code&gt; explicitly to keep the previous storage type. Omitting &lt;code&gt;Type&lt;/code&gt; in an update still leaves the storage type unchanged.&lt;/li&gt;
+&lt;li&gt;Added long-running namespace update overloads accepting &lt;code&gt;WaitUntil&lt;/code&gt; for API version &lt;code&gt;2026-07-01-preview&lt;/code&gt;. Existing &lt;code&gt;Update&lt;/code&gt; and &lt;code&gt;UpdateAsync&lt;/code&gt; overloads remain supported and wait for completion.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerService_1.11.0-beta.1"&gt;Azure.ResourceManager.ContainerService_1.11.0-beta.1&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.KeyVault_1.6.0-beta.1"&gt;Azure.ResourceManager.KeyVault_1.6.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.11.0-beta.1 (2026-11-18)&lt;/h2&gt;
+                                &lt;h2&gt;1.6.0-beta.1 (2026-11-17)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded api-version to 2026-09-02-preview.&lt;/li&gt;
+&lt;li&gt;Upgraded the API version to &lt;code&gt;2026-10-01-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added network security perimeter configuration operations and models.&lt;/li&gt;
+&lt;li&gt;Added support for managed identities, token binding, cross-tenant access protection, and external protection-key wrapping.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
