@@ -1,69 +1,72 @@
 ﻿<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Azure/azure-sdk-for-net - Releases</title>
   <link href="https://github.com/Azure/azure-sdk-for-net" />
-  <updated>2026-11-27T00:05:47Z</updated>
+  <updated>2026-11-28T00:06:02Z</updated>
   <id>https://github.com/Azure/azure-sdk-for-net</id>
   <entry>
-    <title>Azure/azure-sdk-for-net - Releases - 2026-11-26</title>
-    <id>https://github.com/Azure/azure-sdk-for-net#2026-11-26</id>
+    <title>Azure/azure-sdk-for-net - Releases - 2026-11-27</title>
+    <id>https://github.com/Azure/azure-sdk-for-net#2026-11-27</id>
     <link href="https://github.com/Azure/azure-sdk-for-net" />
-    <updated>2026-11-27T00:05:47Z</updated>
+    <updated>2026-11-28T00:06:02Z</updated>
     <content type="html">
                 &lt;div&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.NetApp_1.20.0"&gt;Azure.ResourceManager.NetApp_1.20.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CognitiveServices_1.8.0-beta.1"&gt;Azure.ResourceManager.CognitiveServices_1.8.0-beta.1&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.20.0 (2026-11-24)&lt;/h2&gt;
+                                &lt;h2&gt;1.8.0-beta.1 (2026-11-25)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Upgraded the default service API version to &lt;code&gt;2026-09-01&lt;/code&gt;. Subvolume operations continue to use &lt;code&gt;2026-08-01&lt;/code&gt; by default.&lt;/li&gt;
+&lt;li&gt;Upgraded API version to &lt;code&gt;2026-11-15-preview&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added management of attached AKS clusters through &lt;code&gt;CognitiveServicesAccountResource.GetAttachedAksClusters&lt;/code&gt;, &lt;code&gt;AttachedAksClusterResource&lt;/code&gt;, and related status and configuration models.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;CognitiveServicesProjectCostControlResource&lt;/code&gt; for project-level cost controls and budget settings for cost or token usage, filters, grouping, notifications, and enforcement actions.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;CognitiveServicesProjectProperties.ToolControls&lt;/code&gt; to configure the default tool access policy and explicitly allowed tools.&lt;/li&gt;
+&lt;li&gt;Added RAI ACS intervention points for agent startup and shutdown and before and after model calls, along with new policy targets.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;CognitiveServicesManagedComputeUsage.ScopeId&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ArcDeploymentModel.AssetId&lt;/code&gt; and read-only &lt;code&gt;Version&lt;/code&gt;, and a &lt;code&gt;force&lt;/code&gt; option for deleting an Arc deployment when its extension is disconnected.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Breaking Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;The &lt;code&gt;2026-09-01&lt;/code&gt; service API no longer exposes the geographic namespace origin, asynchronous directory deletion, or bucket Key Vault user-assigned identity settings from &lt;code&gt;2026-08-15-preview&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;The wire value of &lt;code&gt;NetAppLdapServerType.OpenLdap&lt;/code&gt; is now &lt;code&gt;OpenLdap&lt;/code&gt; rather than &lt;code&gt;OpenLDAP&lt;/code&gt;, matching the service specification.&lt;/li&gt;
+&lt;li&gt;Changed &lt;code&gt;TargetClusterId&lt;/code&gt; from &lt;code&gt;string&lt;/code&gt; to &lt;code&gt;ResourceIdentifier&lt;/code&gt; in the preview compute and workbench models &lt;code&gt;ContainerInstanceComputeProperties&lt;/code&gt;, &lt;code&gt;CognitiveServicesWorkbenchProperties&lt;/code&gt;, and &lt;code&gt;CognitiveServicesWorkbenchPatchProperties&lt;/code&gt;, including their constructors and model-factory parameters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bugs Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Aligned new AKS attachment status properties, Foundry agent hosting models, project tool-control models, workbench models, and the AKS attachment deletion disposition with .NET naming conventions.&lt;/li&gt;
+&lt;li&gt;Preserved partial positional model-factory calls supported in &lt;code&gt;1.7.0&lt;/code&gt; for deployment properties and RAI policy properties.&lt;/li&gt;
+&lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/article&gt;
+                    
+                        &lt;article&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Network_1.18.0"&gt;Azure.ResourceManager.Network_1.18.0&lt;/a&gt;&lt;/h2&gt;
+                            &lt;div&gt;
+                                &lt;h2&gt;1.18.0 (2026-11-24)&lt;/h2&gt;
+&lt;p&gt;This release ensures no breaking API changes compared with version 1.15.0 only. Versions 1.16.x and 1.17.x have been retracted; compatibility with those versions or previous preview releases is not guaranteed.&lt;/p&gt;
+&lt;h3&gt;Features Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded the default Network API version from 2026-03-01 to 2026-05-01.&lt;/li&gt;
+&lt;li&gt;Added Application Gateway deployment tiers and confidential compute settings.&lt;/li&gt;
+&lt;li&gt;Added configurable TCP idle timeouts for Azure Firewall.&lt;/li&gt;
+&lt;li&gt;Added network adapter indices for network interfaces.&lt;/li&gt;
+&lt;li&gt;Added load-balancer configuration for network virtual appliances and their inbound security rules, including load distribution and idle timeout settings.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Other Changes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Marked the legacy subvolume types, operations, volume properties, and model factory overloads as obsolete. They remain callable for existing applications.&lt;/li&gt;
-&lt;li&gt;Marked the legacy Entra ID configuration models, account properties, and model factory overloads as obsolete. They remain callable with a service API version that supports Entra ID configuration.&lt;/li&gt;
+&lt;li&gt;Regenerated the library from the updated Network specification.&lt;/li&gt;
+&lt;li&gt;Updated the preview capability API: removed &lt;code&gt;VirtualNetworkApplianceCapabilityBaseData&lt;/code&gt;. &lt;code&gt;VirtualNetworkApplianceCapabilityData&lt;/code&gt; now derives directly from &lt;code&gt;ResourceData&lt;/code&gt; and declares &lt;code&gt;Properties&lt;/code&gt; itself.&lt;/li&gt;
+&lt;li&gt;Updated the preview Interconnect Group and Subgroup APIs: flattened properties onto their resource data types and updated the corresponding model factories. The property-envelope types are now internal.&lt;/li&gt;
+&lt;li&gt;Represented the Interconnect Group resource GUID as &lt;code&gt;Guid?&lt;/code&gt; instead of &lt;code&gt;string&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
                     
                         &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Messaging.WebPubSub.Chat_1.0.0-beta.2"&gt;Azure.Messaging.WebPubSub.Chat_1.0.0-beta.2&lt;/a&gt;&lt;/h2&gt;
+                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Chaos_1.2.0-beta.4"&gt;Azure.ResourceManager.Chaos_1.2.0-beta.4&lt;/a&gt;&lt;/h2&gt;
                             &lt;div&gt;
-                                &lt;h2&gt;1.0.0-beta.2 (2026-11-25)&lt;/h2&gt;
+                                &lt;h2&gt;1.2.0-beta.4 (2026-11-20)&lt;/h2&gt;
 &lt;h3&gt;Features Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Regenerated the client from service API version &lt;code&gt;2026-08-01-preview&lt;/code&gt;, now the default.&lt;/li&gt;
-&lt;li&gt;Added pageable listing of rooms, users, topics, and rooms associated with a user.&lt;/li&gt;
-&lt;li&gt;Added topic creation, retrieval, merge-patch updates, and conditional soft deletion, with topic lifecycle states and conversation metadata.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;UpdateTopicOptions&lt;/code&gt; and typed topic update methods returning the updated topic.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;UpdateMessageOptions&lt;/code&gt; for partial message updates, including explicit null assignments to clear the creator or content.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Breaking Changes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Renamed &lt;code&gt;WebPubSubChatConversation.ParentRoom&lt;/code&gt; to &lt;code&gt;RoomId&lt;/code&gt;, including the model factory parameter; the wire property remains &lt;code&gt;parentRoom&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Renamed typed create-or-replace request parameters from &lt;code&gt;resource&lt;/code&gt; to &lt;code&gt;role&lt;/code&gt;, &lt;code&gt;room&lt;/code&gt;, &lt;code&gt;member&lt;/code&gt;, &lt;code&gt;user&lt;/code&gt;, and &lt;code&gt;topic&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;The typed &lt;code&gt;UpdateMessage&lt;/code&gt; and &lt;code&gt;UpdateMessageAsync&lt;/code&gt; overloads now accept &lt;code&gt;UpdateMessageOptions&lt;/code&gt; instead of &lt;code&gt;WebPubSubChatMessage&lt;/code&gt;. The &lt;code&gt;RequestContent&lt;/code&gt; overloads are unchanged.&lt;/li&gt;
-&lt;li&gt;Create message content with &lt;code&gt;WebPubSubChatMessageContent.FromText&lt;/code&gt; or &lt;code&gt;FromBinary&lt;/code&gt; instead of a parameterless constructor and writable properties.&lt;/li&gt;
-&lt;li&gt;Removed the initial &lt;code&gt;continuationToken&lt;/code&gt; parameter from next-link pageable list methods. Resume paging with &lt;code&gt;AsPages(page.ContinuationToken)&lt;/code&gt; instead.&lt;/li&gt;
-&lt;/ul&gt;
-                            &lt;/div&gt;
-                        &lt;/article&gt;
-                    
-                        &lt;article&gt;
-                            &lt;h2&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.ContainerServiceFleet_1.4.0-beta.1"&gt;Azure.ResourceManager.ContainerServiceFleet_1.4.0-beta.1&lt;/a&gt;&lt;/h2&gt;
-                            &lt;div&gt;
-                                &lt;h2&gt;1.4.0-beta.1 (2026-11-16)&lt;/h2&gt;
-&lt;h3&gt;Features Added&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Upgraded the service API version to &lt;code&gt;2026-11-02-preview&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Added identity binding profile management and an Apply operation to apply identity bindings to fleet members selected by label.&lt;/li&gt;
-&lt;li&gt;Added configurable allowed-failure thresholds for update stages and groups, and failure counts in update run, stage, and group status.&lt;/li&gt;
+&lt;li&gt;Updated the default API version to &lt;code&gt;2026-11-01&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/article&gt;
